@@ -1,54 +1,376 @@
 {
-    "Quiz Title": "Análisis Forense de Aplicaciones – Unidad 1",
-    "Questions": [
-      {
-        "Category": "Introducción al análisis forense",
-        "Question Text": {
-          "en-US": ["What is the main goal of digital forensics?"],
-          "es-MX": ["¿Cuál es el objetivo principal de la informática forense?"]
-        },
-        "Options": {
-          "en-US": ["Identify, preserve, analyze and present evidence", "Delete sensitive data", "Accelerate system performance", "Encrypt personal files"],
-          "es-MX": ["Identificar, preservar, analizar y presentar evidencia", "Eliminar datos sensibles", "Acelerar el rendimiento del sistema", "Cifrar archivos personales"]
-        },
-        "Correct Answer": {
-          "en-US": "Identify, preserve, analyze and present evidence",
-          "es-MX": "Identificar, preservar, analizar y presentar evidencia"
-        },
-        "Explanation": {
-          "en-US": [
-            { "type": "text", "content": "Digital forensics ensures that evidence can be validated, reproduced and accepted in court." },
-            { "type": "ul", "items": ["Identification", "Preservation", "Analysis", "Presentation"] }
-          ],
-          "es-MX": [
-            { "type": "text", "content": "El análisis forense digital garantiza que la evidencia sea válida, reproducible y aceptada en los tribunales." },
-            { "type": "ul", "items": ["Identificación", "Preservación", "Análisis", "Presentación"] }
-          ]
-        }
+  "Title": "Análisis Forense de Apps – Clase 1 (U.I-1)",
+  "Questions": [
+    {
+      "Category": "Conceptos",
+      "Question Text": {
+        "en-US": ["What is digital forensic analysis?", "Digital forensics mainly consists of..."],
+        "es-MX": ["¿Qué es el análisis forense digital?", "El análisis forense digital consiste principalmente en..."]
       },
-      {
-        "Category": "Buenas prácticas",
-        "Question Text": {
-          "en-US": ["Which international guideline defines procedures for handling digital evidence?"],
-          "es-MX": ["¿Qué guía internacional define los procedimientos para manejar evidencia digital?"]
-        },
-        "Options": {
-          "en-US": ["ISO/IEC 27037", "ISO/IEC 27001", "NIST SP 800-30", "GDPR"],
-          "es-MX": ["ISO/IEC 27037", "ISO/IEC 27001", "NIST SP 800-30", "GDPR"]
-        },
-        "Correct Answer": {
-          "en-US": "ISO/IEC 27037",
-          "es-MX": "ISO/IEC 27037"
-        },
-        "Explanation": {
-          "en-US": [
-            { "type": "text", "content": "ISO/IEC 27037 provides guidance on identification, collection, acquisition and preservation of digital evidence." }
-          ],
-          "es-MX": [
-            { "type": "text", "content": "ISO/IEC 27037 brinda orientación sobre la identificación, recolección, adquisición y preservación de evidencia digital." }
-          ]
-        }
+      "Options": {
+        "en-US": [
+          "Identifying, acquiring, analyzing, and presenting digital evidence lawfully",
+          "Blocking users and resetting passwords",
+          "Only encrypting backups",
+          "Monitoring social media ads"
+        ],
+        "es-MX": [
+          "Identificar, adquirir, analizar y presentar evidencia digital de forma legal",
+          "Bloquear usuarios y reiniciar contraseñas",
+          "Solo cifrar respaldos",
+          "Monitorear anuncios en redes"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Identifying, acquiring, analyzing, and presenting digital evidence lawfully",
+        "es-MX": "Identificar, adquirir, analizar y presentar evidencia digital de forma legal"
+      },
+      "Explanation": {
+        "en-US": [{ "type": "text", "content": "Forensics follows a technical-methodological process focused on legally valid evidence." }],
+        "es-MX": [{ "type": "text", "content": "La forensia sigue un proceso técnico y metodológico centrado en evidencia legalmente válida." }]
       }
-    ]
-  }
-  
+    },
+    {
+      "Category": "Importancia",
+      "Question Text": {
+        "en-US": ["Why are communication apps a key forensic target in 2025?", "Why focus on messaging apps today?"],
+        "es-MX": ["¿Por qué las apps de comunicación son un frente clave en 2025?", "¿Por qué enfocarse en apps de mensajería hoy?"]
+      },
+      "Options": {
+        "en-US": [
+          "Because most personal and corporate info flows through them",
+          "Because they are the easiest to program",
+          "Because they are never encrypted",
+          "Because courts do not accept other evidence"
+        ],
+        "es-MX": [
+          "Porque por ellas fluye la mayoría de la información personal y corporativa",
+          "Porque son las más fáciles de programar",
+          "Porque nunca están cifradas",
+          "Porque los tribunales no aceptan otra evidencia"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Because most personal and corporate info flows through them",
+        "es-MX": "Porque por ellas fluye la mayoría de la información personal y corporativa"
+      },
+      "Explanation": {
+        "en-US": [{ "type": "text", "content": "Messaging platforms concentrate conversations, files, metadata and locations." }],
+        "es-MX": [{ "type": "text", "content": "Las plataformas concentran conversaciones, archivos, metadatos y ubicaciones." }]
+      }
+    },
+    {
+      "Category": "Evidencia en apps",
+      "Question Text": {
+        "en-US": ["Which is a typical data source in messaging-app forensics?", "Select a valid artifact for app forensics:"],
+        "es-MX": ["¿Cuál es una fuente típica de datos en forense de mensajería?", "Selecciona un artefacto válido para forense de apps:"]
+      },
+      "Options": {
+        "en-US": [
+          "Local SQLite databases",
+          "Only printed screenshots",
+          "Unrelated bank statements",
+          "Router firmware source code"
+        ],
+        "es-MX": [
+          "Bases de datos locales SQLite",
+          "Solo capturas impresas",
+          "Estados de cuenta no relacionados",
+          "Código fuente del firmware del router"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Local SQLite databases",
+        "es-MX": "Bases de datos locales SQLite"
+      },
+      "Explanation": {
+        "en-US": [{ "type": "text", "content": "Apps store chats/metadata locally; SQLite is common on mobile." }],
+        "es-MX": [{ "type": "text", "content": "Las apps guardan chats/metadatos localmente; SQLite es común en móviles." }]
+      }
+    },
+    {
+      "Category": "Reconstrucción temporal",
+      "Question Text": {
+        "en-US": ["What is a core goal of app forensics?", "Forensics on messaging apps aims to..."],
+        "es-MX": ["¿Cuál es un objetivo central del forense en apps?", "El forense en mensajería busca..."]
+      },
+      "Options": {
+        "en-US": [
+          "Reconstruct events chronologically using multiple artifacts",
+          "Change message contents to fit the case",
+          "Delete backups to save space",
+          "Only export contact lists"
+        ],
+        "es-MX": [
+          "Reconstruir cronológicamente los hechos usando múltiples artefactos",
+          "Cambiar el contenido de mensajes para favorecer el caso",
+          "Borrar respaldos para ahorrar espacio",
+          "Solo exportar listas de contactos"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Reconstruct events chronologically using multiple artifacts",
+        "es-MX": "Reconstruir cronológicamente los hechos usando múltiples artefactos"
+      },
+      "Explanation": {
+        "en-US": [{ "type": "text", "content": "Timeline building relies on chats, attachments, logs and backups." }],
+        "es-MX": [{ "type": "text", "content": "La línea de tiempo se apoya en chats, adjuntos, logs y respaldos." }]
+      }
+    },
+    {
+      "Category": "Caso real 2024",
+      "Question Text": {
+        "en-US": ["In the 2024 case, what made the difference in court?", "What was key about 'deleted' Telegram messages?"],
+        "es-MX": ["En el caso de 2024, ¿qué marcó la diferencia en el juicio?", "¿Qué fue clave respecto a mensajes de Telegram 'eliminados'?"]
+      },
+      "Options": {
+        "en-US": [
+          "Some \"deleted\" messages remained in local DB files and were restored",
+          "They were impossible to recover in any way",
+          "Only server backups were checked",
+          "Only screenshots were accepted"
+        ],
+        "es-MX": [
+          "Algunos mensajes \"eliminados\" quedaron en bases locales y se restauraron",
+          "Eran imposibles de recuperar de cualquier forma",
+          "Solo se revisaron respaldos del servidor",
+          "Solo se aceptaron capturas de pantalla"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Some \"deleted\" messages remained in local DB files and were restored",
+        "es-MX": "Algunos mensajes \"eliminados\" quedaron en bases locales y se restauraron"
+      },
+      "Explanation": {
+        "en-US": [{ "type": "text", "content": "Local artifacts (e.g., tdb/map) preserved timestamps and user links." }],
+        "es-MX": [{ "type": "text", "content": "Artefactos locales (p. ej., tdb/map) conservaron marcas de tiempo y vínculos a usuarios." }]
+      }
+    },
+    {
+      "Category": "Herramientas",
+      "Question Text": {
+        "en-US": ["Which tool is FREE and used for file systems and mobile apps?", "Pick the open-source option:"],
+        "es-MX": ["¿Qué herramienta es GRATUITA para sistemas de archivos y apps móviles?", "Elige la opción de código abierto:"]
+      },
+      "Options": {
+        "en-US": [
+          "Autopsy",
+          "Cellebrite UFED",
+          "Magnet AXIOM",
+          "Oxygen Forensics"
+        ],
+        "es-MX": [
+          "Autopsy",
+          "Cellebrite UFED",
+          "Magnet AXIOM",
+          "Oxygen Forensics"
+        ]
+      },
+      "Correct Answer": { "en-US": "Autopsy", "es-MX": "Autopsy" },
+      "Explanation": {
+        "en-US": [{ "type": "text", "content": "Autopsy is a free platform used broadly for forensic analysis." }],
+        "es-MX": [{ "type": "text", "content": "Autopsy es una plataforma gratuita ampliamente usada en análisis forense." }]
+      }
+    },
+    {
+      "Category": "Integridad / Hash",
+      "Question Text": {
+        "en-US": ["Which tool is commonly used to verify evidence integrity (hashes)?", "To verify integrity via hashing you would use..."],
+        "es-MX": ["¿Qué herramienta se usa para verificar integridad de evidencia (hashes)?", "Para verificar integridad con hashing usarías..."]
+      },
+      "Options": {
+        "en-US": [
+          "FTK Imager",
+          "Adobe Premiere",
+          "Figma",
+          "Excel"
+        ],
+        "es-MX": [
+          "FTK Imager",
+          "Adobe Premiere",
+          "Figma",
+          "Excel"
+        ]
+      },
+      "Correct Answer": { "en-US": "FTK Imager", "es-MX": "FTK Imager" },
+      "Explanation": {
+        "en-US": [{ "type": "text", "content": "Hashing ensures the acquired copy matches the original (integrity)." }],
+        "es-MX": [{ "type": "text", "content": "El hashing asegura que la copia obtenida coincide con el original (integridad)." }]
+      }
+    },
+    {
+      "Category": "Copia forense",
+      "Question Text": {
+        "en-US": ["Why do experts work on forensic copies and not the original device?", "What is the reason to avoid touching the original?"],
+        "es-MX": ["¿Por qué se trabaja con copias forenses y no con el dispositivo original?", "¿Cuál es la razón para no tocar el original?"]
+      },
+      "Options": {
+        "en-US": [
+          "To preserve integrity and admissibility of the original evidence",
+          "Because copies are faster to sell",
+          "Because originals cannot be hashed",
+          "Because tools do not support originals"
+        ],
+        "es-MX": [
+          "Para preservar la integridad y admisibilidad de la evidencia original",
+          "Porque las copias se venden más rápido",
+          "Porque los originales no se pueden hashear",
+          "Porque las herramientas no soportan originales"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To preserve integrity and admissibility of the original evidence",
+        "es-MX": "Para preservar la integridad y admisibilidad de la evidencia original"
+      },
+      "Explanation": {
+        "en-US": [{ "type": "text", "content": "Workflows must avoid altering the original media to keep chain of custody intact." }],
+        "es-MX": [{ "type": "text", "content": "El flujo debe evitar alterar el medio original para mantener cadena de custodia." }]
+      }
+    },
+    {
+      "Category": "Rol del analista",
+      "Question Text": {
+        "en-US": ["Which set describes the modern forensic analyst?", "A good forensic examiner must be..."],
+        "es-MX": ["¿Qué conjunto describe al analista forense moderno?", "Un buen perito forense debe ser..."]
+      },
+      "Options": {
+        "en-US": [
+          "Technical, legally responsible, ethical, and a clear communicator",
+          "Only technical",
+          "Only a lawyer",
+          "Only a writer"
+        ],
+        "es-MX": [
+          "Técnico, legalmente responsable, ético y buen comunicador",
+          "Solo técnico",
+          "Solo abogado",
+          "Solo redactor"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Technical, legally responsible, ethical, and a clear communicator",
+        "es-MX": "Técnico, legalmente responsable, ético y buen comunicador"
+      },
+      "Explanation": {
+        "en-US": [{ "type": "text", "content": "Skills must combine tech, legal, ethics and reporting/defense." }],
+        "es-MX": [{ "type": "text", "content": "Se combinan habilidades técnicas, legales, éticas y de informe/defensa." }]
+      }
+    },
+    {
+      "Category": "Ética",
+      "Question Text": {
+        "en-US": ["Which action can invalidate an entire case?", "Ethically unacceptable behavior is..."],
+        "es-MX": ["¿Qué acción puede invalidar todo un caso?", "Un comportamiento éticamente inaceptable es..."]
+      },
+      "Options": {
+        "en-US": [
+          "Leaking conversations or manipulating evidence",
+          "Hashing evidence",
+          "Documenting chain of custody",
+          "Working on forensic images"
+        ],
+        "es-MX": [
+          "Filtrar conversaciones o manipular evidencia",
+          "Hashear evidencia",
+          "Documentar cadena de custodia",
+          "Trabajar sobre imágenes forenses"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Leaking conversations or manipulating evidence",
+        "es-MX": "Filtrar conversaciones o manipular evidencia"
+      },
+      "Explanation": {
+        "en-US": [{ "type": "text", "content": "Ethics and confidentiality are central; violations can void cases." }],
+        "es-MX": [{ "type": "text", "content": "La ética y confidencialidad son centrales; violarlas puede anular casos." }]
+      }
+    },
+    {
+      "Category": "Normas",
+      "Question Text": {
+        "en-US": ["Which standards are cited as guidance for handling digital evidence?", "Pick the correct pair of standards:"],
+        "es-MX": ["¿Qué normas se citan como guía para manejo de evidencia digital?", "Elige el par de normas correcto:"]
+      },
+      "Options": {
+        "en-US": [
+          "ISO/IEC 27037 and NIST SP 800-86",
+          "PCI-DSS and ITIL",
+          "IEEE 802.11 and RFC 1918",
+          "COBIT and PMBOK"
+        ],
+        "es-MX": [
+          "ISO/IEC 27037 y NIST SP 800-86",
+          "PCI-DSS e ITIL",
+          "IEEE 802.11 y RFC 1918",
+          "COBIT y PMBOK"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "ISO/IEC 27037 and NIST SP 800-86",
+        "es-MX": "ISO/IEC 27037 y NIST SP 800-86"
+      },
+      "Explanation": {
+        "en-US": [{ "type": "text", "content": "They guide identification, acquisition, analysis and validation of digital evidence." }],
+        "es-MX": [{ "type": "text", "content": "Orientan identificación, adquisición, análisis y validación de evidencia digital." }]
+      }
+    },
+    {
+      "Category": "Tipos de datos",
+      "Question Text": {
+        "en-US": ["Which is NOT a typical artifact for messaging-app forensics?", "Select the out-of-scope item:"],
+        "es-MX": ["¿Cuál NO es un artefacto típico en forense de mensajería?", "Selecciona el elemento fuera de alcance:"]
+      },
+      "Options": {
+        "en-US": [
+          "GPU fan RPM logs",
+          "Chats and metadata",
+          "Attachments (photos/videos/audio/docs)",
+          "Cloud encrypted backups"
+        ],
+        "es-MX": [
+          "Registros de RPM del ventilador de la GPU",
+          "Chats y metadatos",
+          "Adjuntos (fotos/videos/audios/docs)",
+          "Respaldos cifrados en la nube"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "GPU fan RPM logs",
+        "es-MX": "Registros de RPM del ventilador de la GPU"
+      },
+      "Explanation": {
+        "en-US": [{ "type": "text", "content": "GPU fan logs are unrelated to app-forensics artifacts." }],
+        "es-MX": [{ "type": "text", "content": "Los RPM de la GPU no son artefactos propios de forense de apps." }]
+      }
+    },
+    {
+      "Category": "Dinámica de clase",
+      "Question Text": {
+        "en-US": ["What is the main message for the class closing?", "The examiner's mission is to..."],
+        "es-MX": ["¿Cuál es el mensaje principal del cierre de la clase?", "La misión del perito es..."]
+      },
+      "Options": {
+        "en-US": [
+          "Seek the digital truth, not blame",
+          "Accuse suspects",
+          "Publish private chats",
+          "Ignore ethics to solve cases"
+        ],
+        "es-MX": [
+          "Buscar la verdad digital, no culpables",
+          "Acusar sospechosos",
+          "Publicar chats privados",
+          "Ignorar la ética para resolver casos"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Seek the digital truth, not blame",
+        "es-MX": "Buscar la verdad digital, no culpables"
+      },
+      "Explanation": {
+        "en-US": [{ "type": "text", "content": "The role centers on truth, integrity and due process." }],
+        "es-MX": [{ "type": "text", "content": "El rol se centra en la verdad, la integridad y el debido proceso." }]
+      }
+    }
+  ]
+}
