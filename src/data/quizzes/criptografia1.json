@@ -1,0 +1,54 @@
+{
+    "Quiz Title": "Criptografía – Unidad 1",
+    "Questions": [
+      {
+        "Category": "Conceptos básicos",
+        "Question Text": {
+          "en-US": ["What is cryptography mainly used for?"],
+          "es-MX": ["¿Para qué se utiliza principalmente la criptografía?"]
+        },
+        "Options": {
+          "en-US": ["Data security and privacy", "Data compression", "Data redundancy", "File sharing"],
+          "es-MX": ["Seguridad y privacidad de datos", "Compresión de datos", "Redundancia de datos", "Compartir archivos"]
+        },
+        "Correct Answer": {
+          "en-US": "Data security and privacy",
+          "es-MX": "Seguridad y privacidad de datos"
+        },
+        "Explanation": {
+          "en-US": [
+            { "type": "text", "content": "Cryptography protects information by transforming it into unreadable formats for unauthorized users." },
+            { "type": "ul", "items": ["Encryption", "Decryption", "Hashing"] }
+          ],
+          "es-MX": [
+            { "type": "text", "content": "La criptografía protege la información transformándola en formatos ilegibles para usuarios no autorizados." },
+            { "type": "ul", "items": ["Cifrado", "Descifrado", "Hashing"] }
+          ]
+        }
+      },
+      {
+        "Category": "Cifrado simétrico",
+        "Question Text": {
+          "en-US": ["Which of the following algorithms is symmetric?"],
+          "es-MX": ["¿Cuál de los siguientes algoritmos es simétrico?"]
+        },
+        "Options": {
+          "en-US": ["AES", "RSA", "ECC", "Diffie-Hellman"],
+          "es-MX": ["AES", "RSA", "ECC", "Diffie-Hellman"]
+        },
+        "Correct Answer": {
+          "en-US": "AES",
+          "es-MX": "AES"
+        },
+        "Explanation": {
+          "en-US": [
+            { "type": "text", "content": "AES (Advanced Encryption Standard) uses the same key for both encryption and decryption." }
+          ],
+          "es-MX": [
+            { "type": "text", "content": "AES (Estándar de Cifrado Avanzado) usa la misma clave para cifrar y descifrar." }
+          ]
+        }
+      }
+    ]
+  }
+  

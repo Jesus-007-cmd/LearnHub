@@ -1,0 +1,54 @@
+{
+    "Quiz Title": "Análisis Forense de Aplicaciones – Unidad 1",
+    "Questions": [
+      {
+        "Category": "Introducción al análisis forense",
+        "Question Text": {
+          "en-US": ["What is the main goal of digital forensics?"],
+          "es-MX": ["¿Cuál es el objetivo principal de la informática forense?"]
+        },
+        "Options": {
+          "en-US": ["Identify, preserve, analyze and present evidence", "Delete sensitive data", "Accelerate system performance", "Encrypt personal files"],
+          "es-MX": ["Identificar, preservar, analizar y presentar evidencia", "Eliminar datos sensibles", "Acelerar el rendimiento del sistema", "Cifrar archivos personales"]
+        },
+        "Correct Answer": {
+          "en-US": "Identify, preserve, analyze and present evidence",
+          "es-MX": "Identificar, preservar, analizar y presentar evidencia"
+        },
+        "Explanation": {
+          "en-US": [
+            { "type": "text", "content": "Digital forensics ensures that evidence can be validated, reproduced and accepted in court." },
+            { "type": "ul", "items": ["Identification", "Preservation", "Analysis", "Presentation"] }
+          ],
+          "es-MX": [
+            { "type": "text", "content": "El análisis forense digital garantiza que la evidencia sea válida, reproducible y aceptada en los tribunales." },
+            { "type": "ul", "items": ["Identificación", "Preservación", "Análisis", "Presentación"] }
+          ]
+        }
+      },
+      {
+        "Category": "Buenas prácticas",
+        "Question Text": {
+          "en-US": ["Which international guideline defines procedures for handling digital evidence?"],
+          "es-MX": ["¿Qué guía internacional define los procedimientos para manejar evidencia digital?"]
+        },
+        "Options": {
+          "en-US": ["ISO/IEC 27037", "ISO/IEC 27001", "NIST SP 800-30", "GDPR"],
+          "es-MX": ["ISO/IEC 27037", "ISO/IEC 27001", "NIST SP 800-30", "GDPR"]
+        },
+        "Correct Answer": {
+          "en-US": "ISO/IEC 27037",
+          "es-MX": "ISO/IEC 27037"
+        },
+        "Explanation": {
+          "en-US": [
+            { "type": "text", "content": "ISO/IEC 27037 provides guidance on identification, collection, acquisition and preservation of digital evidence." }
+          ],
+          "es-MX": [
+            { "type": "text", "content": "ISO/IEC 27037 brinda orientación sobre la identificación, recolección, adquisición y preservación de evidencia digital." }
+          ]
+        }
+      }
+    ]
+  }
+  
