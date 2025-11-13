@@ -87,6 +87,7 @@ export default function InterviewQuiz({
   const [showExplanation, setShowExplanation] = useState(false);
   const [showTranslation, setShowTranslation] = useState(false); // SIEMPRE el otro idioma
   const [readQuestionsAloud, setReadQuestionsAloud] = useState(true);
+  const [showLogo, setShowLogo] = useState(true);
 
   // Calificación
   const [correctCount, setCorrectCount] = useState(0);
@@ -361,7 +362,7 @@ export default function InterviewQuiz({
     1 + (showExplanation ? 1 : 0) + (showTranslation ? 1 : 0);
   const gridColsClass =
     activePanels === 1 ? "md:grid-cols-1" :
-    activePanels === 2 ? "md:grid-cols-2" : "md:grid-cols-3";
+      activePanels === 2 ? "md:grid-cols-2" : "md:grid-cols-3";
 
   const totalQuestions = questions.length || 1;
   const progressPct = Math.round(((currentQuestionIndex + 1) / totalQuestions) * 100);
@@ -374,71 +375,63 @@ export default function InterviewQuiz({
     >
       {/* Header */}
       <header className="mx-auto max-w-6xl flex items-center justify-between gap-4">
-  {/* Izquierda: logo + títulos */}
-  <div className="flex items-center gap-3">
-    {/* Logo animado pequeño */}
-    <div className="h-10 w-auto rounded-2xl bg-white/10 backdrop-blur ring-1 ring-white/10 grid place-items-center px-2">
-      <VideoLogo className="h-8 w-auto" />
-      {/* Si aún no tienes VideoLogo.tsx, usa temporalmente:
-      <video className="h-8 w-auto" muted loop playsInline autoPlay preload="metadata">
-        <source src="/videologo.webm" type="video/webm" />
-        <source src="/videologo.mp4"  type="video/mp4" />
-      </video>
-      */}
-    </div>
+        {/* Izquierda: logo + títulos */}
+        <div className="flex items-center gap-3">
+          {/* Logo animado pequeño */}
 
-    <div>
-      <h1 className="text-2xl md:text-3xl font-bold tracking-tight">UVA Learning · Super Quiz</h1>
-      <p className="text-white/70 text-sm">
-        Atajos: <kbd className="px-1.5 py-0.5 rounded bg-white/10">Enter</kbd> repetir ·{" "}
-        <kbd className="px-1.5 py-0.5 rounded bg-white/10">*</kbd> ver respuesta ·{" "}
-        <kbd className="px-1.5 py-0.5 rounded bg-white/10">-</kbd> contestar ·{" "}
-        <kbd className="px-1.5 py-0.5 rounded bg-white/10">0</kbd> escuchar
-      </p>
-    </div>
-  </div>
 
-  {/* Derecha: Inicio + idioma + fullscreen */}
-  <div className="flex items-center gap-2">
-    {/* Botón Inicio */}
-    <Link
-      href="/"
-      className="inline-flex items-center gap-2 rounded-xl bg-white/10 hover:bg-white/15 px-3 py-2 ring-1 ring-white/10 transition"
-    >
-      <Home className="h-4 w-4" />
-      Inicio
-    </Link>
+          <div>
+            <h1 className="text-2xl md:text-3xl font-bold tracking-tight">UVA Learning · Super Quiz</h1>
+            <p className="text-white/70 text-sm">
+              Atajos: <kbd className="px-1.5 py-0.5 rounded bg-white/10">Enter</kbd> repetir ·{" "}
+              <kbd className="px-1.5 py-0.5 rounded bg-white/10">*</kbd> ver respuesta ·{" "}
+              <kbd className="px-1.5 py-0.5 rounded bg-white/10">-</kbd> contestar ·{" "}
+              <kbd className="px-1.5 py-0.5 rounded bg-white/10">0</kbd> escuchar
+            </p>
+          </div>
+        </div>
 
-    {/* Botón rápido para cambiar idioma activo */}
-    {isJsonSelected && (
-      <button
-        onClick={() => {
-          setShowTranslation(false); // opcional: cierra panel
-          setQuestionLanguage(isES ? "en-US" : "es-MX");
-        }}
-        className="inline-flex items-center gap-2 rounded-xl bg-white/10 hover:bg-white/15 px-3 py-2 ring-1 ring-white/10 transition"
-      >
-        <Languages className="h-4 w-4" />
-        {isES ? "Cambiar a Inglés" : "Switch to Spanish"}
-      </button>
-    )}
+        {/* Derecha: Inicio + idioma + fullscreen */}
+        <div className="flex items-center gap-2">
+          {/* Botón Inicio */}
+          <Link
+            href="/"
+            className="inline-flex items-center gap-2 rounded-xl bg-white/10 hover:bg-white/15 px-3 py-2 ring-1 ring-white/10 transition"
+          >
+            <Home className="h-4 w-4" />
+            Inicio
+          </Link>
 
-    {/* Badge de idioma actual */}
-    <span className="hidden sm:inline-flex items-center gap-2 text-xs px-2.5 py-1 rounded-full bg-white/10 ring-1 ring-white/10">
-      <Languages className="h-4 w-4" /> {questionLanguage || ""}
-    </span>
+          {/* Botón rápido para cambiar idioma activo */}
+          {isJsonSelected && (
+            <button
+              onClick={() => {
+                setShowTranslation(false); // opcional: cierra panel
+                setQuestionLanguage(isES ? "en-US" : "es-MX");
+              }}
+              className="inline-flex items-center gap-2 rounded-xl bg-white/10 hover:bg-white/15 px-3 py-2 ring-1 ring-white/10 transition"
+            >
+              <Languages className="h-4 w-4" />
+              {isES ? "Cambiar a Inglés" : "Switch to Spanish"}
+            </button>
+          )}
 
-    {/* Pantalla completa */}
-    {!isFullScreen && (
-      <button
-        onClick={enterFullScreen}
-        className="inline-flex items-center gap-2 rounded-xl bg-white/10 hover:bg-white/15 px-3 py-2 ring-1 ring-white/10 transition"
-      >
-        <Maximize2 className="h-4 w-4" /> Pantalla completa
-      </button>
-    )}
-  </div>
-</header>
+          {/* Badge de idioma actual */}
+          <span className="hidden sm:inline-flex items-center gap-2 text-xs px-2.5 py-1 rounded-full bg-white/10 ring-1 ring-white/10">
+            <Languages className="h-4 w-4" /> {questionLanguage || ""}
+          </span>
+
+          {/* Pantalla completa */}
+          {!isFullScreen && (
+            <button
+              onClick={enterFullScreen}
+              className="inline-flex items-center gap-2 rounded-xl bg-white/10 hover:bg-white/15 px-3 py-2 ring-1 ring-white/10 transition"
+            >
+              <Maximize2 className="h-4 w-4" /> Pantalla completa
+            </button>
+          )}
+        </div>
+      </header>
       {/* Barra de progreso */}
       <div className="mx-auto max-w-6xl mt-6">
         <div className="h-2 w-full rounded-full bg-white/10 overflow-hidden">
@@ -630,6 +623,13 @@ export default function InterviewQuiz({
             <ActionButton onClick={() => setResponseMode(m => !m)}>
               <ArrowRightLeft className="h-4 w-4" /> {responseMode ? (isES ? "Modo respuesta ON" : "Answer mode ON") : (isES ? "Modo escuchar ON" : "Listen mode ON")}
             </ActionButton>
+            <ActionButton
+              onClick={() => setShowLogo(s => !s)}
+            >
+              {showLogo ? "Ocultar logo" : "Mostrar logo"}
+            </ActionButton>
+
+
           </div>
         </>
       ) : (
@@ -657,30 +657,78 @@ export default function InterviewQuiz({
         </div>
       )}
 
-      {/* Instrucciones & respuesta visible */}
-      <div className="mx-auto max-w-3xl mt-10 rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-6">
-        {showAnswer && !!questions.length && (
-          <div className="mb-4 inline-flex items-center gap-2 text-emerald-300">
-            <CheckCircle2 className="h-5 w-5" />
-            <span>
-              {isES ? "Respuesta" : "Answer"}:{" "}
-              <strong>
-                {isES
-                  ? questions[currentQuestionIndex].correct_es_text
-                  : questions[currentQuestionIndex].correct_en_text}
-              </strong>
-            </span>
+      <div className="mx-auto max-w-6xl flex pt-4 flex-col md:flex-row items-center justify-between gap-6 ">
+
+        {/* === LOGO GRANDE/ESTÉTICO === */}
+        {showLogo && (
+          <div className="flex items-center justify-center w-full md:w-1/2 h-32 overflow-hidden rounded-xl transition-all duration-300">
+            <video
+              className="w-full h-full object-cover"
+              muted
+              loop
+              playsInline
+              autoPlay
+              preload="metadata"
+            >
+              <source src="/videologo.webm" type="video/webm" />
+              <source src="/videologo.mp4" type="video/mp4" />
+            </video>
           </div>
         )}
-        <h3 className="text-lg font-semibold mb-3 flex items-center gap-2">
-          <Keyboard className="h-5 w-5" /> {isES ? "Instrucciones" : "Instructions"}
-        </h3>
-        <ul className="grid gap-2 text-white/80 text-sm md:grid-cols-2">
-          <li className="inline-flex items-center gap-2"><kbd className="px-1.5 py-0.5 rounded bg-white/10">Enter</kbd> {isES ? "Repetir pregunta" : "Repeat question"}</li>
-          <li className="inline-flex items-center gap-2"><kbd className="px-1.5 py-0.5 rounded bg-white/10">*</kbd> {isES ? "Mostrar respuesta" : "Show answer"}</li>
-          <li className="inline-flex items-center gap-2"><kbd className="px-1.5 py-0.5 rounded bg-white/10">-</kbd> {isES ? "Contestar y avanzar" : "Answer & next"}</li>
-          <li className="inline-flex items-center gap-2"><kbd className="px-1.5 py-0.5 rounded bg-white/10">0</kbd> {isES ? "Alternar escuchar/responder" : "Toggle listen/answer"}</li>
-        </ul>
+
+
+
+        {/* === RECUADRO DE INSTRUCCIONES === */}
+        <div
+  className={`
+    w-full
+    ${showLogo ? "md:w-2/3" : "md:w-1/2"}
+    mx-auto
+    rounded-3xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-6
+    transition-all duration-300
+  `}
+>
+
+
+          {showAnswer && !!questions.length && (
+            <div className="mb-4 inline-flex items-center gap-2 text-emerald-300">
+              <CheckCircle2 className="h-5 w-5" />
+              <span>
+                {isES ? "Respuesta" : "Answer"}:{" "}
+                <strong>
+                  {isES
+                    ? questions[currentQuestionIndex].correct_es_text
+                    : questions[currentQuestionIndex].correct_en_text}
+                </strong>
+              </span>
+            </div>
+          )}
+
+          <h3 className="text-lg font-semibold mb-3 flex items-center gap-2">
+            <Keyboard className="h-5 w-5" />
+            {isES ? "Instrucciones" : "Instructions"}
+          </h3>
+
+          <ul className="grid gap-2 text-white/80 text-sm md:grid-cols-2">
+            <li className="inline-flex items-center gap-2">
+              <kbd className="px-2 py-1 rounded bg-white/10">Enter</kbd>
+              {isES ? "Repetir pregunta" : "Repeat question"}
+            </li>
+            <li className="inline-flex items-center gap-2">
+              <kbd className="px-2 py-1 rounded bg-white/10">*</kbd>
+              {isES ? "Mostrar respuesta" : "Show answer"}
+            </li>
+            <li className="inline-flex items-center gap-2">
+              <kbd className="px-2 py-1 rounded bg-white/10">-</kbd>
+              {isES ? "Contestar y avanzar" : "Answer & next"}
+            </li>
+            <li className="inline-flex items-center gap-2">
+              <kbd className="px-2 py-1 rounded bg-white/10">0</kbd>
+              {isES ? "Alternar escuchar/responder" : "Toggle listen/answer"}
+            </li>
+          </ul>
+
+        </div>
       </div>
 
       {/* Ir a pregunta específica */}
