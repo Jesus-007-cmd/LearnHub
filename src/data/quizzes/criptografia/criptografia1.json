@@ -1,5 +1,13 @@
 {
-    "Quiz Title": "Criptografía – Unidad 1",
+  "meta": {
+    "slug": "criptografia1",
+    "title":"",
+    "subject": "Criptografía",
+    "unit": 1,
+    "classNo": 1,
+    "description": "Qué es la criptografía y por qué es importante.",
+    "tags": ["criptografía", "fundamentos"]
+  },
     "Questions": [
       {
         "Category": "Conceptos básicos",
