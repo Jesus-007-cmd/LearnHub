@@ -20,9 +20,12 @@ import {
 import Link from "next/link";
 
 import {
-  quizzes as QUIZ_META,
+  getAllQuizMeta,
   loadQuizJsonBySlug,
 } from "@/data/quizzes/registry";
+
+const QUIZ_META = getAllQuizMeta();
+
 // ---------- Tipos ----------
 type ExplItem =
   | { type: "text" | "title-h2" | "link" | "code"; content: string }
