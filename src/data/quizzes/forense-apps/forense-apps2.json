@@ -1,12 +1,22 @@
 {
   "meta": {
     "slug": "forense-apps2",
-    "title": "U1C2 · Informática forense y evidencia digital",
-    "subject": "Forense de Aplicaciones",
+    "title": "U1C2 · Computer forensics and digital evidence",
+    "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
     "unit": 1,
     "classNo": 2,
-    "description": "Clase 2: informática forense, ciclo de ciberseguridad y evidencia digital aplicada a apps.",
-    "tags": ["informática forense", "evidencia digital", "ciberseguridad", "apps de comunicación"]
+    "description": "Class 2: basic concepts of computer forensics, its role in cybersecurity and digital evidence.",
+    "tags": [
+      "informática forense",
+      "computer forensics",
+      "ciberseguridad",
+      "digital evidence",
+      "apps de comunicación",
+      "cadena de custodia",
+      "herramientas forenses"
+    ],
+    "questionCount": 14,
+    "languages": ["en-US", "es-MX"]
   },
 
   "Questions": [
@@ -14,41 +24,57 @@
       "Category": "Definición",
       "Question Text": {
         "en-US": [
-          "¿Cuál de las siguientes definiciones describe mejor la informática forense según lo visto en la Clase 2?"
+          "Which option best describes computer forensics according to Class 2?"
         ],
         "es-MX": [
-          "¿Cuál de las siguientes definiciones describe mejor la informática forense según lo visto en la Clase 2?"
+          "¿Cuál de las siguientes opciones describe mejor la informática forense según la Clase 2?"
         ]
       },
       "Options": {
         "en-US": [
-          "Disciplina que se encarga de diseñar sistemas de seguridad para prevenir ataques informáticos.",
-          "Rama de la programación orientada a optimizar el rendimiento de sistemas operativos.",
-          "Disciplina que identifica, preserva, analiza y presenta evidencia digital para procesos legales o investigaciones internas.",
-          "Campo de estudio que se enfoca en el desarrollo de antivirus y firewalls."
+          "Discipline that identifies, preserves, analyzes and presents digital evidence for legal processes or internal investigations.",
+          "Branch of programming focused on optimizing operating system performance.",
+          "Area of cybersecurity that only installs antivirus and firewalls.",
+          "Discipline dedicated exclusively to encrypting all company data."
         ],
         "es-MX": [
-          "Disciplina que se encarga de diseñar sistemas de seguridad para prevenir ataques informáticos.",
-          "Rama de la programación orientada a optimizar el rendimiento de sistemas operativos.",
           "Disciplina que identifica, preserva, analiza y presenta evidencia digital para procesos legales o investigaciones internas.",
-          "Campo de estudio que se enfoca en el desarrollo de antivirus y firewalls."
+          "Rama de la programación enfocada en optimizar el rendimiento de sistemas operativos.",
+          "Área de ciberseguridad que solo instala antivirus y firewalls.",
+          "Disciplina dedicada exclusivamente a cifrar todos los datos de la empresa."
         ]
       },
       "Correct Answer": {
-        "en-US": "Disciplina que identifica, preserva, analiza y presenta evidencia digital para procesos legales o investigaciones internas.",
+        "en-US": "Discipline that identifies, preserves, analyzes and presents digital evidence for legal processes or internal investigations.",
         "es-MX": "Disciplina que identifica, preserva, analiza y presenta evidencia digital para procesos legales o investigaciones internas."
       },
       "Explanation": {
         "en-US": [
           {
             "type": "text",
-            "content": "La informática forense es una disciplina cuyo propósito central es trabajar con evidencia digital siguiendo metodologías estrictas para garantizar integridad, autenticidad y trazabilidad. Esto significa identificar dónde están los datos relevantes, preservarlos sin alterarlos, analizarlos con herramientas técnicas especializadas y presentarlos adecuadamente ante autoridades legales o internas. No se limita a proteger sistemas ni a crear antivirus; su enfoque está en reconstruir la verdad técnica detrás de eventos digitales."
+            "content": "Class 2 defines computer forensics as a discipline focused on the complete lifecycle of digital evidence: identification, preservation, analysis and presentation. The goal is that this evidence can be used in legal proceedings or internal investigations."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "It goes beyond security tools: it reconstructs what happened.",
+              "It requires strict methods to maintain integrity and authenticity.",
+              "It is closely linked to legal and organizational procedures."
+            ]
           }
         ],
         "es-MX": [
           {
             "type": "text",
-            "content": "La informática forense es una disciplina cuyo propósito central es trabajar con evidencia digital siguiendo metodologías estrictas para garantizar integridad, autenticidad y trazabilidad. Esto significa identificar dónde están los datos relevantes, preservarlos sin alterarlos, analizarlos con herramientas técnicas especializadas y presentarlos adecuadamente ante autoridades legales o internas. No se limita a proteger sistemas ni a crear antivirus; su enfoque está en reconstruir la verdad técnica detrás de eventos digitales."
+            "content": "La Clase 2 define la informática forense como la disciplina enfocada en todo el ciclo de vida de la evidencia digital: identificarla, preservarla, analizarla y presentarla. El objetivo es que pueda usarse en procesos legales o investigaciones internas."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Va más allá de las herramientas de seguridad: reconstruye lo que ocurrió.",
+              "Requiere métodos estrictos para mantener integridad y autenticidad.",
+              "Está muy vinculada a procedimientos legales y organizacionales."
+            ]
           }
         ]
       }
@@ -57,7 +83,7 @@
       "Category": "Objetivo",
       "Question Text": {
         "en-US": [
-          "¿Cuál es el objetivo principal de la informática forense dentro de una investigación?"
+          "What is the main objective of computer forensics in an investigation?"
         ],
         "es-MX": [
           "¿Cuál es el objetivo principal de la informática forense dentro de una investigación?"
@@ -65,33 +91,33 @@
       },
       "Options": {
         "en-US": [
-          "Encontrar rápidamente a un culpable para cerrar el caso.",
-          "Recuperar la verdad técnica detrás de un evento digital respetando integridad y trazabilidad de los datos.",
-          "Eliminar toda evidencia que comprometa a la organización.",
-          "Optimizar el rendimiento de las bases de datos de la empresa."
+          "Recover the technical truth behind a digital event while respecting integrity and traceability of the data.",
+          "Quickly find a culprit to close the case as soon as possible.",
+          "Delete all evidence that could harm the organization.",
+          "Only speed up the performance of corporate databases."
         ],
         "es-MX": [
-          "Encontrar rápidamente a un culpable para cerrar el caso.",
-          "Recuperar la verdad técnica detrás de un evento digital respetando integridad y trazabilidad de los datos.",
-          "Eliminar toda evidencia que comprometa a la organización.",
-          "Optimizar el rendimiento de las bases de datos de la empresa."
+          "Recuperar la verdad técnica detrás de un evento digital respetando la integridad y trazabilidad de los datos.",
+          "Encontrar rápidamente a un culpable para cerrar el caso lo antes posible.",
+          "Eliminar toda evidencia que pueda perjudicar a la organización.",
+          "Únicamente agilizar el rendimiento de las bases de datos corporativas."
         ]
       },
       "Correct Answer": {
-        "en-US": "Recuperar la verdad técnica detrás de un evento digital respetando integridad y trazabilidad de los datos.",
-        "es-MX": "Recuperar la verdad técnica detrás de un evento digital respetando integridad y trazabilidad de los datos."
+        "en-US": "Recover the technical truth behind a digital event while respecting integrity and traceability of the data.",
+        "es-MX": "Recuperar la verdad técnica detrás de un evento digital respetando la integridad y trazabilidad de los datos."
       },
       "Explanation": {
         "en-US": [
           {
             "type": "text",
-            "content": "La informática forense busca reconstruir qué ocurrió realmente en un incidente digital, utilizando evidencia digital verificable y manteniendo siempre la integridad de los datos. No busca apresurar culpables ni eliminar rastros; se enfoca en preservar, analizar y documentar la evidencia de manera profesional para que pueda sostener procesos legales o investigaciones internas."
+            "content": "The central goal of computer forensics is to understand, with technical evidence, what really happened: who did what, when, and how. The analysis must always respect data integrity (no unauthorized changes) and traceability (clear record of actions performed)."
           }
         ],
         "es-MX": [
           {
             "type": "text",
-            "content": "La informática forense busca reconstruir qué ocurrió realmente en un incidente digital, utilizando evidencia digital verificable y manteniendo siempre la integridad de los datos. No busca apresurar culpables ni eliminar rastros; se enfoca en preservar, analizar y documentar la evidencia de manera profesional para que pueda sostener procesos legales o investigaciones internas."
+            "content": "El objetivo central de la informática forense es comprender, con base en evidencia técnica, qué ocurrió realmente: quién hizo qué, cuándo y cómo. Todo el análisis debe respetar la integridad de los datos (que no se alteren sin control) y la trazabilidad (dejar registro claro de lo realizado)."
           }
         ]
       }
@@ -100,127 +126,256 @@
       "Category": "Ciclo de ciberseguridad",
       "Question Text": {
         "en-US": [
-          "¿En qué etapa del ciclo de ciberseguridad se ubica la informática forense según la Clase 2?"
+          "Where does computer forensics fit within the cybersecurity cycle presented in Class 2?"
         ],
         "es-MX": [
-          "¿En qué etapa del ciclo de ciberseguridad se ubica la informática forense según la Clase 2?"
+          "¿En qué parte del ciclo de ciberseguridad se ubica la informática forense según la Clase 2?"
         ]
       },
       "Options": {
         "en-US": [
-          "Es parte exclusiva de la fase de prevención.",
-          "Aparece antes de que ocurra un incidente.",
-          "Corresponde a la fase de análisis posterior al incidente, después de la respuesta.",
-          "No forma parte del ciclo de ciberseguridad."
+          "It corresponds to the forensic analysis phase after the incident, following response actions.",
+          "It is only used in the prevention phase, before any incident occurs.",
+          "It replaces the detection phase completely.",
+          "It is not part of the cybersecurity cycle."
         ],
         "es-MX": [
-          "Es parte exclusiva de la fase de prevención.",
-          "Aparece antes de que ocurra un incidente.",
-          "Corresponde a la fase de análisis posterior al incidente, después de la respuesta.",
+          "Corresponde a la fase de análisis forense posterior al incidente, después de la respuesta.",
+          "Solo se utiliza en la fase de prevención, antes de cualquier incidente.",
+          "Sustituye por completo la fase de detección.",
           "No forma parte del ciclo de ciberseguridad."
         ]
       },
       "Correct Answer": {
-        "en-US": "Corresponde a la fase de análisis posterior al incidente, después de la respuesta.",
-        "es-MX": "Corresponde a la fase de análisis posterior al incidente, después de la respuesta."
+        "en-US": "It corresponds to the forensic analysis phase after the incident, following response actions.",
+        "es-MX": "Corresponde a la fase de análisis forense posterior al incidente, después de la respuesta."
       },
       "Explanation": {
         "en-US": [
           {
             "type": "text",
-            "content": "La informática forense se activa después de que ocurre un incidente. El ciclo presentado en la Clase 2 es: Prevención → Detección → Respuesta → Análisis forense. Su propósito es investigar qué sucedió, cómo y por qué. No es preventiva ni se utiliza antes del incidente; forma parte de la respuesta integral ante incidentes."
+            "content": "The cycle described in Class 2 is: Prevention → Detection → Response → Forensic analysis. Computer forensics activates after an incident has occurred and initial response actions have been taken. Its purpose is to investigate what happened and how."
           }
         ],
         "es-MX": [
           {
             "type": "text",
-            "content": "La informática forense se activa después de que ocurre un incidente. El ciclo presentado en la Clase 2 es: Prevención → Detección → Respuesta → Análisis forense. Su propósito es investigar qué sucedió, cómo y por qué. No es preventiva ni se utiliza antes del incidente; forma parte de la respuesta integral ante incidentes."
+            "content": "El ciclo descrito en la Clase 2 es: Prevención → Detección → Respuesta → Análisis forense. La informática forense se activa una vez que el incidente ya ocurrió y se dieron las primeras acciones de respuesta. Su propósito es investigar qué pasó y cómo sucedió."
           }
         ]
       }
     },
     {
-      "Category": "Aplicación empresarial",
+      "Category": "Ciclo de ciberseguridad",
       "Question Text": {
         "en-US": [
-          "¿Cuál de los siguientes escenarios ilustra mejor el uso de informática forense en un contexto empresarial?"
+          "Which sequence correctly represents the cybersecurity cycle related to computer forensics?"
         ],
         "es-MX": [
-          "¿Cuál de los siguientes escenarios ilustra mejor el uso de informática forense en un contexto empresarial?"
+          "¿Qué secuencia representa correctamente el ciclo de ciberseguridad relacionado con la informática forense?"
         ]
       },
       "Options": {
         "en-US": [
-          "Una compañía implementa un nuevo firewall.",
-          "Una empresa investiga quién filtró una base de datos y analiza logs para rastrear el origen.",
-          "Una organización realiza una capacitación de ciberseguridad.",
-          "Un equipo de TI renueva computadoras."
+          "Prevention → Detection → Response → Forensic analysis.",
+          "Response → Prevention → Forensic analysis → Detection.",
+          "Detection → Forensic analysis → Prevention → Response.",
+          "Forensic analysis → Prevention → Response → Detection."
         ],
         "es-MX": [
-          "Una compañía implementa un nuevo firewall.",
-          "Una empresa investiga quién filtró una base de datos y analiza logs para rastrear el origen.",
-          "Una organización realiza una capacitación de ciberseguridad.",
-          "Un equipo de TI renueva computadoras."
+          "Prevención → Detección → Respuesta → Análisis forense.",
+          "Respuesta → Prevención → Análisis forense → Detección.",
+          "Detección → Análisis forense → Prevención → Respuesta.",
+          "Análisis forense → Prevención → Respuesta → Detección."
         ]
       },
       "Correct Answer": {
-        "en-US": "Una empresa investiga quién filtró una base de datos y analiza logs para rastrear el origen.",
-        "es-MX": "Una empresa investiga quién filtró una base de datos y analiza logs para rastrear el origen."
+        "en-US": "Prevention → Detection → Response → Forensic analysis.",
+        "es-MX": "Prevención → Detección → Respuesta → Análisis forense."
       },
       "Explanation": {
         "en-US": [
           {
             "type": "text",
-            "content": "El análisis de una fuga de datos usando logs y artefactos digitales es un ejemplo directo de informática forense aplicada en empresas. Consiste en investigar actividades sospechosas, accesos no autorizados y comportamientos anómalos para identificar responsables y reconstruir los hechos usando evidencia digital."
+            "content": "The cycle starts by protecting systems (prevention), then monitoring to detect possible incidents, reacting to them (response) and finally performing a forensic analysis to investigate in depth what happened and how it can be prevented in the future."
           }
         ],
         "es-MX": [
           {
             "type": "text",
-            "content": "El análisis de una fuga de datos usando logs y artefactos digitales es un ejemplo directo de informática forense aplicada en empresas. Consiste en investigar actividades sospechosas, accesos no autorizados y comportamientos anómalos para identificar responsables y reconstruir los hechos usando evidencia digital."
+            "content": "El ciclo comienza protegiendo los sistemas (prevención), luego detectando posibles incidentes, reaccionando ante ellos (respuesta) y finalmente realizando un análisis forense para investigar a profundidad qué pasó y cómo evitarlo en el futuro."
           }
         ]
       }
     },
     {
-      "Category": "Ámbitos de aplicación",
+      "Category": "Campos de aplicación",
       "Question Text": {
         "en-US": [
-          "¿Cuál de los siguientes ámbitos NO se menciona como campo de aplicación de la informática forense?"
+          "Which of the following is NOT mentioned in Class 2 as an application field of computer forensics?"
         ],
         "es-MX": [
-          "¿Cuál de los siguientes ámbitos NO se menciona como campo de aplicación de la informática forense?"
+          "¿Cuál de los siguientes NO se menciona en la Clase 2 como campo de aplicación de la informática forense?"
         ]
       },
       "Options": {
         "en-US": [
-          "Judicial",
-          "Gubernamental",
-          "Académico / educativo",
-          "Marketing digital y publicidad"
+          "Digital marketing and advertising campaigns.",
+          "Business investigations of internal fraud and data theft.",
+          "Judicial cases involving cybercrime.",
+          "Government expertise for prosecutors and cyber police units."
         ],
         "es-MX": [
-          "Judicial",
-          "Gubernamental",
-          "Académico / educativo",
-          "Marketing digital y publicidad"
+          "Campañas de marketing digital y publicidad.",
+          "Investigaciones empresariales de fraudes internos y robo de información.",
+          "Casos judiciales relacionados con delitos informáticos.",
+          "Peritajes gubernamentales para fiscalías y policías cibernéticas."
         ]
       },
       "Correct Answer": {
-        "en-US": "Marketing digital y publicidad",
-        "es-MX": "Marketing digital y publicidad"
+        "en-US": "Digital marketing and advertising campaigns.",
+        "es-MX": "Campañas de marketing digital y publicidad."
       },
       "Explanation": {
         "en-US": [
           {
             "type": "text",
-            "content": "La Clase 2 menciona los ámbitos: empresarial, judicial, académico/educativo y gubernamental. Marketing digital no aparece como ámbito forense, ya que la informática forense se orienta principalmente a investigación, legalidad y ciberseguridad."
+            "content": "Class 2 highlights several fields where computer forensics is applied: business, judicial, academic/educational and governmental. Digital marketing is not presented as a typical forensic application, because the focus is on investigation, legality and cybersecurity."
           }
         ],
         "es-MX": [
           {
             "type": "text",
-            "content": "La Clase 2 menciona los ámbitos: empresarial, judicial, académico/educativo y gubernamental. Marketing digital no aparece como ámbito forense, ya que la informática forense se orienta principalmente a investigación, legalidad y ciberseguridad."
+            "content": "La Clase 2 menciona varios ámbitos donde se aplica la informática forense: empresarial, judicial, académico/educativo y gubernamental. El marketing digital no se presenta como un campo típico de aplicación, ya que el enfoque está en la investigación, la legalidad y la ciberseguridad."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Empresarial",
+      "Question Text": {
+        "en-US": [
+          "Which scenario best represents the use of computer forensics in a business (enterprise) context?"
+        ],
+        "es-MX": [
+          "¿Cuál de los siguientes escenarios representa mejor el uso de informática forense en un contexto empresarial?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "An organization investigates who leaked a database and analyzes logs to trace the origin of the incident.",
+          "A company renews all laptops for a newer model.",
+          "A business launches a social media advertising campaign.",
+          "The IT department changes the desktop background for all employees."
+        ],
+        "es-MX": [
+          "Una organización investiga quién filtró una base de datos y analiza logs para rastrear el origen del incidente.",
+          "Una empresa renueva todas las computadoras portátiles por un modelo más reciente.",
+          "Una empresa lanza una campaña de publicidad en redes sociales.",
+          "El área de TI cambia el fondo de pantalla de todos los empleados."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "An organization investigates who leaked a database and analyzes logs to trace the origin of the incident.",
+        "es-MX": "Una organización investiga quién filtró una base de datos y analiza logs para rastrear el origen del incidente."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "In the business field, computer forensics is used to investigate internal fraud, data theft and security incidents. Analyzing logs, access records and backups to determine who leaked a database is a direct example of this kind of work."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "En el ámbito empresarial, la informática forense se usa para investigar fraudes internos, robo de información e incidentes de seguridad. Analizar logs, registros de acceso y respaldos para determinar quién filtró una base de datos es un ejemplo directo de este tipo de trabajo."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Judicial y gubernamental",
+      "Question Text": {
+        "en-US": [
+          "In judicial or governmental contexts, what type of cases typically involve computer forensics according to Class 2?"
+        ],
+        "es-MX": [
+          "En los contextos judicial o gubernamental, ¿qué tipo de casos suelen involucrar informática forense según la Clase 2?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Cybercrime, harassment, extortion and electronic fraud.",
+          "Only traffic fines and parking violations.",
+          "Exclusive management of paper archives.",
+          "Only noise complaints in neighborhoods."
+        ],
+        "es-MX": [
+          "Delitos informáticos, acoso, extorsión y fraude electrónico.",
+          "Únicamente multas de tránsito y sanciones de estacionamiento.",
+          "Gestión exclusiva de archivos físicos en papel.",
+          "Quejas por ruido en vecindarios."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Cybercrime, harassment, extortion and electronic fraud.",
+        "es-MX": "Delitos informáticos, acoso, extorsión y fraude electrónico."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Courts and government agencies use computer forensics to investigate crimes that rely on digital media: extortion through messaging apps, harassment in social networks, phishing, electronic fraud, among others. Digital evidence is key to proving these behaviors."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los tribunales y las instituciones gubernamentales utilizan la informática forense para investigar delitos que se apoyan en medios digitales: extorsión mediante apps de mensajería, acoso en redes sociales, phishing, fraudes electrónicos, entre otros. La evidencia digital es clave para demostrar estas conductas."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Académico",
+      "Question Text": {
+        "en-US": [
+          "How is computer forensics used in academic and educational environments according to Class 2?"
+        ],
+        "es-MX": [
+          "¿Cómo se utiliza la informática forense en entornos académicos y educativos según la Clase 2?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Through simulation of cases and practice scenarios to train future professionals.",
+          "Only by blocking student access to social networks.",
+          "By eliminating all digital material from classrooms.",
+          "By replacing all teachers with automated systems."
+        ],
+        "es-MX": [
+          "Mediante simulación de casos y escenarios de práctica para formar futuros profesionales.",
+          "Solo bloqueando el acceso de los estudiantes a las redes sociales.",
+          "Eliminando todo material digital de las aulas.",
+          "Reemplazando a todos los docentes por sistemas automatizados."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Through simulation of cases and practice scenarios to train future professionals.",
+        "es-MX": "Mediante simulación de casos y escenarios de práctica para formar futuros profesionales."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "In the educational field, computer forensics is used to design realistic case studies, labs and exercises where students practice handling digital evidence. This helps them understand both the technical and legal aspects before working on real cases."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "En el ámbito educativo, la informática forense se utiliza para diseñar casos de estudio, laboratorios y ejercicios realistas donde los estudiantes practican el manejo de evidencia digital. Esto les permite comprender los aspectos técnicos y legales antes de enfrentar casos reales."
           }
         ]
       }
@@ -229,84 +384,41 @@
       "Category": "Evidencia digital",
       "Question Text": {
         "en-US": [
-          "¿Cuál de los siguientes elementos es un tipo de evidencia digital relevante en informática forense?"
+          "Which of the following options shows examples of digital evidence mentioned in Class 2?"
         ],
         "es-MX": [
-          "¿Cuál de los siguientes elementos es un tipo de evidencia digital relevante en informática forense?"
+          "¿Cuál de las siguientes opciones muestra ejemplos de evidencia digital mencionados en la Clase 2?"
         ]
       },
       "Options": {
         "en-US": [
-          "Rumores entre empleados.",
-          "Imágenes de disco o memoria RAM obtenidas con herramientas especializadas.",
-          "Opiniones del administrador del sistema.",
-          "Documentos físicos o impresos."
+          "System files and logs, emails, disk images, RAM images, application databases and cloud backups.",
+          "Only printed contracts signed by hand.",
+          "Only photographs printed on paper.",
+          "Handwritten notes with passwords."
         ],
         "es-MX": [
-          "Rumores entre empleados.",
-          "Imágenes de disco o memoria RAM obtenidas con herramientas especializadas.",
-          "Opiniones del administrador del sistema.",
-          "Documentos físicos o impresos."
+          "Archivos del sistema y logs, correos electrónicos, imágenes de disco y RAM, bases de datos de aplicaciones y copias de seguridad en la nube.",
+          "Solo contratos impresos firmados a mano.",
+          "Únicamente fotografías reveladas en papel.",
+          "Notas escritas a mano con contraseñas."
         ]
       },
       "Correct Answer": {
-        "en-US": "Imágenes de disco o memoria RAM obtenidas con herramientas especializadas.",
-        "es-MX": "Imágenes de disco o memoria RAM obtenidas con herramientas especializadas."
+        "en-US": "System files and logs, emails, disk images, RAM images, application databases and cloud backups.",
+        "es-MX": "Archivos del sistema y logs, correos electrónicos, imágenes de disco y RAM, bases de datos de aplicaciones y copias de seguridad en la nube."
       },
       "Explanation": {
         "en-US": [
           {
             "type": "text",
-            "content": "Las imágenes de disco y memoria RAM son evidencias digitales clave porque capturan información exacta del estado del sistema. Permiten analizar archivos, procesos, conexiones, artefactos de apps y más. Los rumores y opiniones no constituyen evidencia técnica verificable."
+            "content": "Class 2 lists multiple forms of digital evidence: logs, messages and emails, forensic images of disks and memory, application databases and backups in the cloud. All of them can help reconstruct events during an investigation."
           }
         ],
         "es-MX": [
           {
             "type": "text",
-            "content": "Las imágenes de disco y memoria RAM son evidencias digitales clave porque capturan información exacta del estado del sistema. Permiten analizar archivos, procesos, conexiones, artefactos de apps y más. Los rumores y opiniones no constituyen evidencia técnica verificable."
-          }
-        ]
-      }
-    },
-    {
-      "Category": "Tipos de evidencia",
-      "Question Text": {
-        "en-US": [
-          "¿Cuál de las siguientes combinaciones representa correctamente tipos de evidencia digital mencionados en la Clase 2?"
-        ],
-        "es-MX": [
-          "¿Cuál de las siguientes combinaciones representa correctamente tipos de evidencia digital mencionados en la Clase 2?"
-        ]
-      },
-      "Options": {
-        "en-US": [
-          "Logs del sistema, correos electrónicos y copias de seguridad en la nube.",
-          "Fotos impresas y documentos físicos.",
-          "Contraseñas en papel.",
-          "Historias orales de usuarios."
-        ],
-        "es-MX": [
-          "Logs del sistema, correos electrónicos y copias de seguridad en la nube.",
-          "Fotos impresas y documentos físicos.",
-          "Contraseñas en papel.",
-          "Historias orales de usuarios."
-        ]
-      },
-      "Correct Answer": {
-        "en-US": "Logs del sistema, correos electrónicos y copias de seguridad en la nube.",
-        "es-MX": "Logs del sistema, correos electrónicos y copias de seguridad en la nube."
-      },
-      "Explanation": {
-        "en-US": [
-          {
-            "type": "text",
-            "content": "La Clase 2 identifica varias formas de evidencia digital: logs, mensajes y correos, imágenes forenses, bases de datos y respaldos en la nube. Estos datos permiten reconstruir actividades y eventos de forma técnica y verificable. Las demás opciones no son evidencia digital."
-          }
-        ],
-        "es-MX": [
-          {
-            "type": "text",
-            "content": "La Clase 2 identifica varias formas de evidencia digital: logs, mensajes y correos, imágenes forenses, bases de datos y respaldos en la nube. Estos datos permiten reconstruir actividades y eventos de forma técnica y verificable. Las demás opciones no son evidencia digital."
+            "content": "La Clase 2 menciona distintas formas de evidencia digital: logs, mensajes y correos, imágenes forenses de disco y memoria, bases de datos de aplicaciones y respaldos en la nube. Todos ellos pueden ayudar a reconstruir los hechos durante una investigación."
           }
         ]
       }
@@ -315,41 +427,41 @@
       "Category": "Herramientas",
       "Question Text": {
         "en-US": [
-          "¿Qué rol juega FTK Imager dentro de un proceso de informática forense?"
+          "Which pair correctly associates a tool with its main role as explained in Class 2?"
         ],
         "es-MX": [
-          "¿Qué rol juega FTK Imager dentro de un proceso de informática forense?"
+          "¿Qué par asocia correctamente una herramienta con su función principal según la Clase 2?"
         ]
       },
       "Options": {
         "en-US": [
-          "Analiza campañas de marketing.",
-          "Sirve para crear copias forenses e identificar hashes.",
-          "Es un motor de bases de datos.",
-          "Permite diseñar sitios web."
+          "FTK Imager → Creating forensic copies and verifying hashes.",
+          "Autopsy → Designing advertising campaigns.",
+          "Cellebrite UFED → Editing photos and videos for social media.",
+          "Magnet AXIOM → Installing antivirus on corporate computers."
         ],
         "es-MX": [
-          "Analiza campañas de marketing.",
-          "Sirve para crear copias forenses e identificar hashes.",
-          "Es un motor de bases de datos.",
-          "Permite diseñar sitios web."
+          "FTK Imager → Creación de copias forenses y verificación de hashes.",
+          "Autopsy → Diseño de campañas publicitarias.",
+          "Cellebrite UFED → Edición de fotos y videos para redes sociales.",
+          "Magnet AXIOM → Instalación de antivirus en equipos corporativos."
         ]
       },
       "Correct Answer": {
-        "en-US": "Sirve para crear copias forenses e identificar hashes.",
-        "es-MX": "Sirve para crear copias forenses e identificar hashes."
+        "en-US": "FTK Imager → Creating forensic copies and verifying hashes.",
+        "es-MX": "FTK Imager → Creación de copias forenses y verificación de hashes."
       },
       "Explanation": {
         "en-US": [
           {
             "type": "text",
-            "content": "FTK Imager permite crear copias forenses bit a bit de discos y verificar su integridad mediante hashes. Esto garantiza que el análisis se realiza sobre una copia exacta del original, protegiendo la evidencia en caso de auditorías o procesos legales."
+            "content": "FTK Imager is used to create bit-by-bit forensic images and to calculate hashes that verify the integrity of those copies. Other tools mentioned, such as Autopsy, Magnet AXIOM, Cellebrite UFED and Oxygen, are also focused on analyzing disks, mobiles and apps, not on marketing or multimedia editing."
           }
         ],
         "es-MX": [
           {
             "type": "text",
-            "content": "FTK Imager permite crear copias forenses bit a bit de discos y verificar su integridad mediante hashes. Esto garantiza que el análisis se realiza sobre una copia exacta del original, protegiendo la evidencia en caso de auditorías o procesos legales."
+            "content": "FTK Imager se utiliza para crear imágenes forenses bit a bit y calcular hashes que permiten verificar la integridad de esas copias. Otras herramientas mencionadas, como Autopsy, Magnet AXIOM, Cellebrite UFED y Oxygen, también se enfocan en analizar discos, móviles y apps, no en marketing ni edición multimedia."
           }
         ]
       }
@@ -358,41 +470,41 @@
       "Category": "Herramientas",
       "Question Text": {
         "en-US": [
-          "¿Por qué se mencionan herramientas como Autopsy, AXIOM y Cellebrite en la Clase 2?"
+          "Why does Class 2 highlight tools such as Autopsy, Magnet AXIOM, Cellebrite UFED and Oxygen Forensics?"
         ],
         "es-MX": [
-          "¿Por qué se mencionan herramientas como Autopsy, AXIOM y Cellebrite en la Clase 2?"
+          "¿Por qué la Clase 2 destaca herramientas como Autopsy, Magnet AXIOM, Cellebrite UFED y Oxygen Forensics?"
         ]
       },
       "Options": {
         "en-US": [
-          "Porque son las únicas herramientas que existen.",
-          "Porque muestran la importancia de herramientas especializadas y actualizadas.",
-          "Porque reemplazan al analista forense.",
-          "Porque permiten borrar evidencias automáticamente."
+          "Because they show the need for specialized and up-to-date tools to work with disks, mobiles, apps and social networks.",
+          "Because they completely replace the forensic analyst.",
+          "Because they are only used to delete evidence automatically.",
+          "Because they are the only tools allowed by law."
         ],
         "es-MX": [
-          "Porque son las únicas herramientas que existen.",
-          "Porque muestran la importancia de herramientas especializadas y actualizadas.",
-          "Porque reemplazan al analista forense.",
-          "Porque permiten borrar evidencias automáticamente."
+          "Porque muestran la necesidad de herramientas especializadas y actualizadas para trabajar con discos, móviles, apps y redes sociales.",
+          "Porque sustituyen por completo al analista forense.",
+          "Porque solo se utilizan para borrar evidencia automáticamente.",
+          "Porque son las únicas herramientas permitidas por la ley."
         ]
       },
       "Correct Answer": {
-        "en-US": "Porque muestran la importancia de herramientas especializadas y actualizadas.",
-        "es-MX": "Porque muestran la importancia de herramientas especializadas y actualizadas."
+        "en-US": "Because they show the need for specialized and up-to-date tools to work with disks, mobiles, apps and social networks.",
+        "es-MX": "Porque muestran la necesidad de herramientas especializadas y actualizadas para trabajar con discos, móviles, apps y redes sociales."
       },
       "Explanation": {
         "en-US": [
           {
             "type": "text",
-            "content": "La informática forense requiere herramientas especializadas para trabajar con discos duros, móviles, apps de mensajería, redes sociales y nube. Estas herramientas cambian rápido, por lo que el analista debe actualizarse constantemente. No reemplazan al analista humano: lo complementan."
+            "content": "The material emphasizes that forensic work requires tools capable of handling different sources: hard disks, smartphones, messaging apps, social networks and cloud services. These tools evolve quickly, so analysts must stay up to date and cannot rely on a single static toolset."
           }
         ],
         "es-MX": [
           {
             "type": "text",
-            "content": "La informática forense requiere herramientas especializadas para trabajar con discos duros, móviles, apps de mensajería, redes sociales y nube. Estas herramientas cambian rápido, por lo que el analista debe actualizarse constantemente. No reemplazan al analista humano: lo complementan."
+            "content": "El material destaca que el trabajo forense requiere herramientas capaces de manejar distintas fuentes: discos duros, teléfonos móviles, apps de mensajería, redes sociales y servicios en la nube. Estas herramientas cambian rápido, por lo que el analista debe mantenerse actualizado y no depender de un conjunto estático."
           }
         ]
       }
@@ -401,41 +513,41 @@
       "Category": "Cadena de custodia",
       "Question Text": {
         "en-US": [
-          "¿Qué es la cadena de custodia en informática forense?"
+          "What is the chain of custody in the context of digital evidence?"
         ],
         "es-MX": [
-          "¿Qué es la cadena de custodia en informática forense?"
+          "¿Qué es la cadena de custodia en el contexto de la evidencia digital?"
         ]
       },
       "Options": {
         "en-US": [
-          "Una lista de contraseñas.",
-          "Un conjunto de respaldos.",
-          "La documentación que registra cada paso que sigue la evidencia digital.",
-          "Un sistema que borra archivos automáticamente."
+          "Documentation that records each step followed by the evidence from collection to presentation.",
+          "A list with all user passwords.",
+          "A software that automatically deletes old files.",
+          "A simple copy of files without any record."
         ],
         "es-MX": [
-          "Una lista de contraseñas.",
-          "Un conjunto de respaldos.",
-          "La documentación que registra cada paso que sigue la evidencia digital.",
-          "Un sistema que borra archivos automáticamente."
+          "La documentación que registra cada paso que sigue la evidencia desde su recolección hasta su presentación.",
+          "Una lista con todas las contraseñas de los usuarios.",
+          "Un programa que borra archivos antiguos automáticamente.",
+          "Una simple copia de archivos sin ningún registro."
         ]
       },
       "Correct Answer": {
-        "en-US": "La documentación que registra cada paso que sigue la evidencia digital.",
-        "es-MX": "La documentación que registra cada paso que sigue la evidencia digital."
+        "en-US": "Documentation that records each step followed by the evidence from collection to presentation.",
+        "es-MX": "La documentación que registra cada paso que sigue la evidencia desde su recolección hasta su presentación."
       },
       "Explanation": {
         "en-US": [
           {
             "type": "text",
-            "content": "La cadena de custodia documenta quién manipuló la evidencia, cuándo, cómo y dónde se almacenó. Es esencial para garantizar la autenticidad y validez legal de los datos. Si no se documenta correctamente, la evidencia puede ser rechazada en un proceso judicial."
+            "content": "The chain of custody shows who handled the evidence, when, where it was stored and what operations were performed. This documentation is essential so that a court or authority can trust that the evidence has not been tampered with."
           }
         ],
         "es-MX": [
           {
             "type": "text",
-            "content": "La cadena de custodia documenta quién manipuló la evidencia, cuándo, cómo y dónde se almacenó. Es esencial para garantizar la autenticidad y validez legal de los datos. Si no se documenta correctamente, la evidencia puede ser rechazada en un proceso judicial."
+            "content": "La cadena de custodia deja constancia de quién manipuló la evidencia, en qué momento, dónde se almacenó y qué operaciones se realizaron. Esta documentación es esencial para que un tribunal o autoridad confíe en que la evidencia no fue alterada."
           }
         ]
       }
@@ -444,213 +556,127 @@
       "Category": "Cadena de custodia",
       "Question Text": {
         "en-US": [
-          "¿Cuál es una consecuencia de una cadena de custodia mal gestionada?"
+          "What can happen if the chain of custody is poorly managed or broken?"
         ],
         "es-MX": [
-          "¿Cuál es una consecuencia de una cadena de custodia mal gestionada?"
+          "¿Qué puede ocurrir si la cadena de custodia se gestiona mal o se rompe?"
         ]
       },
       "Options": {
         "en-US": [
-          "La evidencia gana valor legal.",
-          "La evidencia puede declararse inválida en juicio.",
-          "El análisis es más rápido.",
-          "Los resultados son más replicables."
+          "The evidence may be declared invalid in court, even if the technical analysis was correct.",
+          "The evidence automatically gains more legal value.",
+          "The analysis becomes faster and easier.",
+          "The results are always more reliable and replicable."
         ],
         "es-MX": [
-          "La evidencia gana valor legal.",
-          "La evidencia puede declararse inválida en juicio.",
-          "El análisis es más rápido.",
-          "Los resultados son más replicables."
+          "La evidencia puede declararse inválida en un juicio, incluso si el análisis técnico fue correcto.",
+          "La evidencia gana automáticamente más valor legal.",
+          "El análisis se vuelve más rápido y sencillo.",
+          "Los resultados siempre son más confiables y replicables."
         ]
       },
       "Correct Answer": {
-        "en-US": "La evidencia puede declararse inválida en juicio.",
-        "es-MX": "La evidencia puede declararse inválida en juicio."
+        "en-US": "The evidence may be declared invalid in court, even if the technical analysis was correct.",
+        "es-MX": "La evidencia puede declararse inválida en un juicio, incluso si el análisis técnico fue correcto."
       },
       "Explanation": {
         "en-US": [
           {
             "type": "text",
-            "content": "Una cadena de custodia deficiente puede invalidar completamente la evidencia, aun si el análisis técnico fue correcto. La defensa puede argumentar posible manipulación o contaminación, lo que suele llevar a que la evidencia sea rechazada legalmente."
+            "content": "If there are gaps or inconsistencies in the chain of custody, the defense can argue that the evidence might have been manipulated or contaminated. In many cases, this leads to the evidence being rejected, regardless of the quality of the technical analysis."
           }
         ],
         "es-MX": [
           {
             "type": "text",
-            "content": "Una cadena de custodia deficiente puede invalidar completamente la evidencia, aun si el análisis técnico fue correcto. La defensa puede argumentar posible manipulación o contaminación, lo que suele llevar a que la evidencia sea rechazada legalmente."
+            "content": "Si existen huecos o inconsistencias en la cadena de custodia, la defensa puede argumentar que la evidencia pudo ser manipulada o contaminada. En muchos casos esto lleva a que la evidencia sea rechazada, sin importar que el análisis técnico haya sido correcto."
           }
         ]
       }
     },
     {
-      "Category": "Apps de mensajería",
+      "Category": "Actividad en clase",
       "Question Text": {
         "en-US": [
-          "¿Cuál de los siguientes elementos es un ejemplo válido de evidencia digital en una app de mensajería?"
+          "What is the educational purpose of the brainstorming activity about 'where digital evidence can be found in a messaging app'?"
         ],
         "es-MX": [
-          "¿Cuál de los siguientes elementos es un ejemplo válido de evidencia digital en una app de mensajería?"
+          "¿Cuál es el propósito educativo de la actividad de lluvia de ideas sobre 'dónde puede encontrarse evidencia digital en una app de mensajería'?"
         ]
       },
       "Options": {
         "en-US": [
-          "El color del fondo del teléfono.",
-          "Mensajes borrados que permanecen en la base de datos interna.",
-          "La ropa del usuario.",
-          "La marca de la funda del dispositivo."
+          "Help students recognize possible sources of digital evidence in real apps and connect them with real investigations.",
+          "Teach students to program their own messaging application from scratch.",
+          "Memorize all existing forensic tools by heart.",
+          "Learn how to delete messages so they cannot be recovered."
         ],
         "es-MX": [
-          "El color del fondo del teléfono.",
-          "Mensajes borrados que permanecen en la base de datos interna.",
-          "La ropa del usuario.",
-          "La marca de la funda del dispositivo."
+          "Ayudar a los estudiantes a reconocer posibles fuentes de evidencia digital en apps reales y vincularlas con investigaciones reales.",
+          "Enseñar a los estudiantes a programar su propia aplicación de mensajería desde cero.",
+          "Memorizar de memoria todas las herramientas forenses existentes.",
+          "Aprender a borrar mensajes para que no puedan recuperarse."
         ]
       },
       "Correct Answer": {
-        "en-US": "Mensajes borrados que permanecen en la base de datos interna.",
-        "es-MX": "Mensajes borrados que permanecen en la base de datos interna."
+        "en-US": "Help students recognize possible sources of digital evidence in real apps and connect them with real investigations.",
+        "es-MX": "Ayudar a los estudiantes a reconocer posibles fuentes de evidencia digital en apps reales y vincularlas con investigaciones reales."
       },
       "Explanation": {
         "en-US": [
           {
             "type": "text",
-            "content": "Las apps de mensajería almacenan datos en bases internas. Muchas veces, los mensajes borrados siguen en la base de datos, en índices o en respaldos. Esto permite recuperarlos y usarlos como evidencia forense. Los demás elementos no son evidencia digital."
+            "content": "The in-class activity invites students to think about where evidence might be hidden in a messaging app (GPS data, deleted messages, sent files, etc.) and how each element could contribute to a real case. The goal is to build a forensic mindset, not to focus on programming or data deletion."
           }
         ],
         "es-MX": [
           {
             "type": "text",
-            "content": "Las apps de mensajería almacenan datos en bases internas. Muchas veces, los mensajes borrados siguen en la base de datos, en índices o en respaldos. Esto permite recuperarlos y usarlos como evidencia forense. Los demás elementos no son evidencia digital."
+            "content": "La actividad en clase invita a los estudiantes a pensar dónde puede esconderse evidencia en una app de mensajería (datos GPS, mensajes borrados, archivos enviados, etc.) y cómo cada elemento podría aportar en un caso real. El objetivo es desarrollar mentalidad forense, no centrarse en programación ni en borrado de datos."
           }
         ]
       }
     },
     {
-      "Category": "Objetivo educativo",
+      "Category": "Conclusiones",
       "Question Text": {
         "en-US": [
-          "¿Cuál es el propósito educativo de pedir 'qué evidencia digital fue clave' en un caso real?"
+          "According to the key conclusions of Class 2, why is computer forensics considered indispensable against digital crimes?"
         ],
         "es-MX": [
-          "¿Cuál es el propósito educativo de pedir 'qué evidencia digital fue clave' en un caso real?"
+          "Según las conclusiones clave de la Clase 2, ¿por qué la informática forense se considera indispensable frente a los delitos digitales?"
         ]
       },
       "Options": {
         "en-US": [
-          "Programar una app de mensajería.",
-          "Identificar qué datos pueden volverse críticos en una investigación.",
-          "Memorizar herramientas.",
-          "Aprender redacción jurídica."
+          "Because it allows incidents to be reconstructed and provides solid evidence to support legal decisions and security improvements.",
+          "Because it automatically prevents all attacks without any other security measures.",
+          "Because it replaces police and judges entirely.",
+          "Because it makes all actions legal as long as they happen on the internet."
         ],
         "es-MX": [
-          "Programar una app de mensajería.",
-          "Identificar qué datos pueden volverse críticos en una investigación.",
-          "Memorizar herramientas.",
-          "Aprender redacción jurídica."
+          "Porque permite reconstruir incidentes y ofrecer evidencia sólida para sustentar decisiones legales y mejoras de seguridad.",
+          "Porque evita automáticamente todos los ataques sin necesidad de otras medidas de seguridad.",
+          "Porque reemplaza por completo a policías y jueces.",
+          "Porque vuelve legales todas las acciones siempre que ocurran en internet."
         ]
       },
       "Correct Answer": {
-        "en-US": "Identificar qué datos pueden volverse críticos en una investigación.",
-        "es-MX": "Identificar qué datos pueden volverse críticos en una investigación."
+        "en-US": "Because it allows incidents to be reconstructed and provides solid evidence to support legal decisions and security improvements.",
+        "es-MX": "Porque permite reconstruir incidentes y ofrecer evidencia sólida para sustentar decisiones legales y mejoras de seguridad."
       },
       "Explanation": {
         "en-US": [
           {
             "type": "text",
-            "content": "La actividad busca que el estudiante entienda qué tipo de evidencias (metadatos, mensajes, ubicaciones, logs, etc.) son decisivas en casos reales. No es una actividad técnica de programación ni legal; es una reflexión sobre el impacto del análisis forense."
+            "content": "Computer forensics is part of the response cycle in cybersecurity and is essential to understand what happened in a digital crime. It generates evidence that supports legal decisions and helps organizations strengthen their controls to avoid future incidents."
           }
         ],
         "es-MX": [
           {
             "type": "text",
-            "content": "La actividad busca que el estudiante entienda qué tipo de evidencias (metadatos, mensajes, ubicaciones, logs, etc.) son decisivas en casos reales. No es una actividad técnica de programación ni legal; es una reflexión sobre el impacto del análisis forense."
-          }
-        ]
-      }
-    },
-    {
-      "Category": "Importancia",
-      "Question Text": {
-        "en-US": [
-          "¿Por qué la informática forense se considera indispensable contra delitos digitales?"
-        ],
-        "es-MX": [
-          "¿Por qué la informática forense se considera indispensable contra delitos digitales?"
-        ]
-      },
-      "Options": {
-        "en-US": [
-          "Porque elimina rastros.",
-          "Porque vuelve legal cualquier acción.",
-          "Porque permite reconstruir incidentes y sustentar decisiones legales.",
-          "Porque reemplaza policías."
-        ],
-        "es-MX": [
-          "Porque elimina rastros.",
-          "Porque vuelve legal cualquier acción.",
-          "Porque permite reconstruir incidentes y sustentar decisiones legales.",
-          "Porque reemplaza policías."
-        ]
-      },
-      "Correct Answer": {
-        "en-US": "Porque permite reconstruir incidentes y sustentar decisiones legales.",
-        "es-MX": "Porque permite reconstruir incidentes y sustentar decisiones legales."
-      },
-      "Explanation": {
-        "en-US": [
-          {
-            "type": "text",
-            "content": "La informática forense permite descubrir qué ocurrió, quién estuvo involucrado y qué datos fueron afectados. Proporciona evidencia sólida para procesos legales y para mejorar la seguridad. No elimina rastros ni convierte acciones en legales."
-          }
-        ],
-        "es-MX": [
-          {
-            "type": "text",
-            "content": "La informática forense permite descubrir qué ocurrió, quién estuvo involucrado y qué datos fueron afectados. Proporciona evidencia sólida para procesos legales y para mejorar la seguridad. No elimina rastros ni convierte acciones en legales."
-          }
-        ]
-      }
-    },
-    {
-      "Category": "Ciclo de ciberseguridad",
-      "Question Text": {
-        "en-US": [
-          "¿Qué implica que la informática forense forme parte del ciclo de ciberseguridad?"
-        ],
-        "es-MX": [
-          "¿Qué implica que la informática forense forme parte del ciclo de ciberseguridad?"
-        ]
-      },
-      "Options": {
-        "en-US": [
-          "Que solo se enfoquen en prevenir ataques.",
-          "Que después del incidente se ignore lo ocurrido.",
-          "Que se analicen incidentes para aprender, mejorar y actuar legalmente si es necesario.",
-          "Que solo se investiguen ataques grandes."
-        ],
-        "es-MX": [
-          "Que solo se enfoquen en prevenir ataques.",
-          "Que después del incidente se ignore lo ocurrido.",
-          "Que se analicen incidentes para aprender, mejorar y actuar legalmente si es necesario.",
-          "Que solo se investiguen ataques grandes."
-        ]
-      },
-      "Correct Answer": {
-        "en-US": "Que se analicen incidentes para aprender, mejorar y actuar legalmente si es necesario.",
-        "es-MX": "Que se analicen incidentes para aprender, mejorar y actuar legalmente si es necesario."
-      },
-      "Explanation": {
-        "en-US": [
-          {
-            "type": "text",
-            "content": "Integrar la informática forense en el ciclo de seguridad significa aprender de los incidentes: identificar vulnerabilidades, reconstruir rutas de ataque, reforzar controles y sustentar acciones legales. Es un proceso de mejora continua en una organización madura en seguridad."
-          }
-        ],
-        "es-MX": [
-          {
-            "type": "text",
-            "content": "Integrar la informática forense en el ciclo de seguridad significa aprender de los incidentes: identificar vulnerabilidades, reconstruir rutas de ataque, reforzar controles y sustentar acciones legales. Es un proceso de mejora continua en una organización madura en seguridad."
+            "content": "La informática forense forma parte del ciclo de respuesta en ciberseguridad y es indispensable para entender qué pasó en un delito digital. Genera evidencia que respalda decisiones legales y ayuda a las organizaciones a fortalecer sus controles para evitar incidentes futuros."
           }
         ]
       }

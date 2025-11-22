@@ -1,0 +1,799 @@
+{
+    "meta": {
+      "slug": "forense-apps5",
+      "title": "U1C5 · Cadena de custodia y preservación de evidencia digital",
+      "subject": "Forense de Aplicaciones",
+      "unit": 1,
+      "classNo": 5,
+      "description": "Cadena de custodia, registro de movimientos y mejores prácticas de preservación de evidencia digital para garantizar validez técnica y legal.",
+      "tags": [
+        "cadena de custodia",
+        "preservación de evidencia",
+        "hash",
+        "integridad",
+        "NIST",
+        "ISO 27037",
+        "Autopsy",
+        "evidencia digital"
+      ],
+      "questionCount": 12,
+      "languages": ["en-US", "es-MX"]
+    },
+  
+    "Questions": [
+      {
+        "Category": "Definición",
+        "Question Text": {
+          "en-US": [
+            "What is the digital chain of custody?"
+          ],
+          "es-MX": [
+            "¿Qué es la cadena de custodia digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The formal, chronological and documented record of all actions performed on digital evidence from its location to its final storage.",
+            "A list of passwords used in the investigation.",
+            "A backup copy stored in the cloud.",
+            "An internal memo summarizing the company’s security policies."
+          ],
+          "es-MX": [
+            "El registro formal, cronológico y documentado de todas las acciones realizadas sobre una evidencia digital desde su localización hasta su almacenamiento final.",
+            "Una lista de contraseñas usadas en la investigación.",
+            "Una copia de respaldo almacenada en la nube.",
+            "Un memorándum interno que resume las políticas de seguridad de la empresa."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The formal, chronological and documented record of all actions performed on digital evidence from its location to its final storage.",
+          "es-MX": "El registro formal, cronológico y documentado de todas las acciones realizadas sobre una evidencia digital desde su localización hasta su almacenamiento final."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Chain of custody: the story of the evidence"
+            },
+            {
+              "type": "text",
+              "content": "The chain of custody is not just a form: it is the complete history of the evidence. It records who handled it, when, where it was stored and what actions were performed. This chronological record is what allows a court to trust that the evidence presented is the same that was collected at the beginning of the investigation."
+            },
+            {
+              "type": "text",
+              "content": "Passwords, backups or internal memos can be part of the context, but by themselves they do not describe the full, formal and documented path of the evidence from collection to final storage."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Cadena de custodia: la historia de la evidencia"
+            },
+            {
+              "type": "text",
+              "content": "La cadena de custodia no es solo un formato: es la historia completa de la evidencia. Registra quién la manipuló, en qué momento, dónde se almacenó y qué acciones se realizaron. Este registro cronológico es lo que permite que un juez confíe en que la evidencia presentada es la misma que se recolectó al inicio de la investigación."
+            },
+            {
+              "type": "text",
+              "content": "Las contraseñas, los respaldos o los memorándums internos pueden formar parte del contexto, pero por sí solos no describen el recorrido formal, documentado y completo de la evidencia desde su recolección hasta su almacenamiento final."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Importancia",
+        "Question Text": {
+          "en-US": [
+            "Why is the chain of custody so important in digital forensics?"
+          ],
+          "es-MX": [
+            "¿Por qué es tan importante la cadena de custodia en informática forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it helps ensure that data has not been altered and prevents evidence from being rejected in legal processes.",
+            "Because it allows evidence to be modified freely without any record.",
+            "Because it focuses only on improving system performance.",
+            "Because it replaces the need to calculate hashes."
+          ],
+          "es-MX": [
+            "Porque ayuda a garantizar que los datos no han sido alterados y evita que la evidencia sea rechazada en procesos legales.",
+            "Porque permite modificar la evidencia libremente sin dejar registro.",
+            "Porque se centra únicamente en mejorar el rendimiento de los sistemas.",
+            "Porque sustituye la necesidad de calcular valores hash."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it helps ensure that data has not been altered and prevents evidence from being rejected in legal processes.",
+          "es-MX": "Porque ayuda a garantizar que los datos no han sido alterados y evita que la evidencia sea rechazada en procesos legales."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Legal value: integrity and traceability"
+            },
+            {
+              "type": "text",
+              "content": "Courts and auditors do not only ask what was found; they also ask whether they can trust the path that the evidence followed. A complete chain of custody shows that data integrity and traceability were protected at every step."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "If the chain of custody is weak or incomplete, the defense can argue that the evidence may have been altered or contaminated.",
+                "In extreme cases, the judge may decide to reject the evidence, even if the technical analysis was correct."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Valor legal: integridad y trazabilidad"
+            },
+            {
+              "type": "text",
+              "content": "Jueces y auditores no solo preguntan qué se encontró; también quieren saber si pueden confiar en el recorrido que siguió la evidencia. Una cadena de custodia completa demuestra que la integridad y la trazabilidad de los datos se cuidaron en cada paso."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Si la cadena de custodia es débil o incompleta, la defensa puede argumentar que la evidencia pudo haberse alterado o contaminado.",
+                "En casos extremos, el juez puede decidir rechazar la evidencia, incluso si el análisis técnico fue correcto."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Elementos del registro",
+        "Question Text": {
+          "en-US": [
+            "Which of the following elements belongs to the case data section of a chain-of-custody record?"
+          ],
+          "es-MX": [
+            "¿Cuál de los siguientes elementos pertenece a los datos del caso dentro de un registro de cadena de custodia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Incident number, date, time and collection location.",
+            "The password used for the analyst’s email account.",
+            "The brand of the analyst’s personal phone.",
+            "The name of the operating system vendor."
+          ],
+          "es-MX": [
+            "Número de incidente, fecha, hora y ubicación de la recolección.",
+            "La contraseña usada en la cuenta de correo del analista.",
+            "La marca del teléfono personal del analista.",
+            "El nombre del proveedor del sistema operativo."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Incident number, date, time and collection location.",
+          "es-MX": "Número de incidente, fecha, hora y ubicación de la recolección."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Case data: context of when and where"
+            },
+            {
+              "type": "text",
+              "content": "Case data provide basic context: which incident is being investigated, when and where the evidence was collected. These fields connect the physical or digital object with a specific event or investigation."
+            },
+            {
+              "type": "text",
+              "content": "Passwords, the analyst’s personal devices or vendor names are not part of the formal case data section. Including irrelevant information can generate confusion and does not add legal value."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Datos del caso: contexto de cuándo y dónde"
+            },
+            {
+              "type": "text",
+              "content": "Los datos del caso dan el contexto básico: qué incidente se está investigando, cuándo y dónde se recolectó la evidencia. Estos campos vinculan el objeto físico o digital con un evento o investigación específica."
+            },
+            {
+              "type": "text",
+              "content": "Las contraseñas, los dispositivos personales del analista o los nombres de proveedores no forman parte de la sección formal de datos del caso. Incluir información irrelevante genera confusión y no aporta valor legal."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Descripción del dispositivo",
+        "Question Text": {
+          "en-US": [
+            "Which set of data best describes a device in a chain-of-custody form?"
+          ],
+          "es-MX": [
+            "¿Qué conjunto de datos describe mejor un dispositivo en un formato de cadena de custodia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Device type, brand, model, serial number, capacity and physical condition.",
+            "Only the color of the device and the wallpaper.",
+            "The analyst’s favorite apps.",
+            "The name of the person who originally bought the device, without any technical details."
+          ],
+          "es-MX": [
+            "Tipo de dispositivo, marca, modelo, número de serie, capacidad y estado físico.",
+            "Solo el color del dispositivo y la imagen de fondo.",
+            "Las aplicaciones favoritas del analista.",
+            "El nombre de quien compró el dispositivo originalmente, sin datos técnicos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Device type, brand, model, serial number, capacity and physical condition.",
+          "es-MX": "Tipo de dispositivo, marca, modelo, número de serie, capacidad y estado físico."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Device description: technical identity"
+            },
+            {
+              "type": "text",
+              "content": "A proper device description allows the evidence to be uniquely identified: a specific phone, USB or drive with concrete technical attributes. This avoids confusion with other devices in the same lab or organization."
+            },
+            {
+              "type": "text",
+              "content": "Subjective or cosmetic details (color, wallpaper, favorite apps) do not provide a robust technical identity. The purchase history may be useful in other documents, but here the priority is the technical description."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Descripción del dispositivo: identidad técnica"
+            },
+            {
+              "type": "text",
+              "content": "Una descripción adecuada del dispositivo permite identificar de manera única la evidencia: un teléfono, USB o disco específico con atributos técnicos concretos. Esto evita confusiones con otros equipos en el mismo laboratorio u organización."
+            },
+            {
+              "type": "text",
+              "content": "Los detalles subjetivos o cosméticos (color, fondo de pantalla, apps favoritas) no ofrecen una identidad técnica sólida. El historial de compra puede ser útil en otros documentos, pero aquí la prioridad es la descripción técnica."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Personas involucradas",
+        "Question Text": {
+          "en-US": [
+            "Which information should be documented for people involved in handling digital evidence?"
+          ],
+          "es-MX": [
+            "¿Qué información debe documentarse sobre las personas involucradas en el manejo de la evidencia digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Name, role or position, signature and action performed (collect, transport, analyze, store).",
+            "Only the nickname used in social networks.",
+            "Their favorite programming language.",
+            "Only their phone number without any description of their role."
+          ],
+          "es-MX": [
+            "Nombre, cargo o rol, firma y acción realizada (recoger, trasladar, analizar, almacenar).",
+            "Solo el apodo que usan en redes sociales.",
+            "Su lenguaje de programación favorito.",
+            "Solo su número de teléfono sin indicar su función."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Name, role or position, signature and action performed (collect, transport, analyze, store).",
+          "es-MX": "Nombre, cargo o rol, firma y acción realizada (recoger, trasladar, analizar, almacenar)."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Who did what, and when?"
+            },
+            {
+              "type": "text",
+              "content": "The chain of custody must clearly show who interacted with the evidence and what they did. Names, roles and signatures link each action to a specific, accountable person."
+            },
+            {
+              "type": "text",
+              "content": "Informal or incomplete identifiers (nicknames, favorite topics, only a phone number) are not enough to support legal accountability and can be easily challenged in court."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "¿Quién hizo qué y cuándo?"
+            },
+            {
+              "type": "text",
+              "content": "La cadena de custodia debe mostrar de forma clara quién interactuó con la evidencia y qué hizo. Nombres, cargos y firmas vinculan cada acción con una persona específica y responsable."
+            },
+            {
+              "type": "text",
+              "content": "Identificadores informales o incompletos (apodos, gustos personales, solo un teléfono) no son suficientes para sostener la responsabilidad legal y pueden ser fácilmente cuestionados en un juicio."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Detalles técnicos y hash",
+        "Question Text": {
+          "en-US": [
+            "What is the main purpose of calculating a hash (MD5, SHA-1, SHA-256) for digital evidence?"
+          ],
+          "es-MX": [
+            "¿Cuál es el propósito principal de calcular un valor hash (MD5, SHA-1, SHA-256) para la evidencia digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To verify the integrity of the evidence and prove that it has not been altered.",
+            "To speed up the internet connection.",
+            "To encrypt the device so that nobody can access it again.",
+            "To reduce the size of the evidence file."
+          ],
+          "es-MX": [
+            "Verificar la integridad de la evidencia y demostrar que no ha sido alterada.",
+            "Acelerar la conexión a internet.",
+            "Cifrar el dispositivo para que nadie pueda acceder a él nuevamente.",
+            "Reducir el tamaño del archivo de evidencia."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To verify the integrity of the evidence and prove that it has not been altered.",
+          "es-MX": "Verificar la integridad de la evidencia y demostrar que no ha sido alterada."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Hash values: fingerprints of the evidence"
+            },
+            {
+              "type": "text",
+              "content": "A hash is like a digital fingerprint. If the evidence changes by a single bit, the hash value changes. By calculating hashes before and after transfers or analysis, the analyst can prove that the content remained intact."
+            },
+            {
+              "type": "text",
+              "content": "Hashes are not used to compress data or speed up networks. Their core role in forensics is to support claims such as: 'this copy is exact and this evidence has not been modified'."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Valores hash: huellas digitales de la evidencia"
+            },
+            {
+              "type": "text",
+              "content": "Un hash funciona como una huella digital. Si la evidencia cambia en un solo bit, el valor hash también cambia. Al calcular hashes antes y después de traslados o análisis, el analista puede demostrar que el contenido se mantuvo intacto."
+            },
+            {
+              "type": "text",
+              "content": "Los hashes no se usan para comprimir datos ni para acelerar redes. Su función central en forense es respaldar afirmaciones como: 'esta copia es exacta y esta evidencia no ha sido modificada'."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Movimientos",
+        "Question Text": {
+          "en-US": [
+            "Which information must be recorded when evidence is moved from one place to another?"
+          ],
+          "es-MX": [
+            "¿Qué información debe registrarse cuando la evidencia se traslada de un lugar a otro?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Date and time of the movement, who delivers, who receives and the reason for the transfer.",
+            "Only the transport company used.",
+            "Only the name of the city.",
+            "Nothing; movements do not need to be documented."
+          ],
+          "es-MX": [
+            "Fecha y hora del movimiento, quién entrega, quién recibe y el motivo del traslado.",
+            "Solo la empresa de transporte utilizada.",
+            "Solo el nombre de la ciudad.",
+            "Nada; los movimientos no necesitan documentarse."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Date and time of the movement, who delivers, who receives and the reason for the transfer.",
+          "es-MX": "Fecha y hora del movimiento, quién entrega, quién recibe y el motivo del traslado."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Each movement is a link in the chain"
+            },
+            {
+              "type": "text",
+              "content": "Every time evidence changes hands or location, a new link is added to the chain of custody. If one of these links is missing, it becomes harder to prove that the evidence was always under proper control."
+            },
+            {
+              "type": "text",
+              "content": "Recording only partial information (for example, just the city or the courier company) leaves gaps that the defense can use to claim possible tampering or loss."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Cada traslado es un eslabón de la cadena"
+            },
+            {
+              "type": "text",
+              "content": "Cada vez que la evidencia cambia de manos o de ubicación, se añade un nuevo eslabón a la cadena de custodia. Si alguno de estos eslabones falta, se vuelve más difícil demostrar que la evidencia estuvo siempre bajo control adecuado."
+            },
+            {
+              "type": "text",
+              "content": "Registrar solo información parcial (por ejemplo, solo la ciudad o la empresa de mensajería) deja huecos que la defensa puede usar para alegar posible manipulación o pérdida."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Preservación",
+        "Question Text": {
+          "en-US": [
+            "Which of the following is a good practice for preserving digital evidence?"
+          ],
+          "es-MX": [
+            "¿Cuál de las siguientes es una buena práctica para la preservación de evidencia digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Work exclusively on forensic copies, store them in identified, sealed and protected media and control access strictly.",
+            "Analyze directly on the original device and let anyone access it without logging their actions.",
+            "Change the evidence file name every day without documenting it.",
+            "Store the evidence on an unlabelled USB that is reused for other tasks."
+          ],
+          "es-MX": [
+            "Trabajar exclusivamente sobre copias forenses, almacenarlas en medios identificados, sellados y protegidos, y controlar estrictamente el acceso.",
+            "Analizar directamente el dispositivo original y permitir acceso libre sin registrar quién entra.",
+            "Cambiar el nombre del archivo de evidencia cada día sin documentarlo.",
+            "Guardar la evidencia en una USB sin etiqueta que se reutiliza para otras tareas."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Work exclusively on forensic copies, store them in identified, sealed and protected media and control access strictly.",
+          "es-MX": "Trabajar exclusivamente sobre copias forenses, almacenarlas en medios identificados, sellados y protegidos, y controlar estrictamente el acceso."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Preservation: protect, label and control"
+            },
+            {
+              "type": "text",
+              "content": "Preservation is about avoiding physical and logical damage. Working on copies prevents accidental changes to the original, and using labeled, sealed media with controlled access reduces risks of loss or manipulation."
+            },
+            {
+              "type": "text",
+              "content": "Using anonymous USB drives, changing names without documentation or allowing uncontrolled access are classic examples of poor preservation that can invalidate an entire investigation."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Preservación: proteger, etiquetar y controlar"
+            },
+            {
+              "type": "text",
+              "content": "La preservación busca evitar daños físicos y lógicos. Trabajar sobre copias impide que se altere el original por accidente, y usar medios etiquetados, sellados y con acceso controlado reduce los riesgos de pérdida o manipulación."
+            },
+            {
+              "type": "text",
+              "content": "Usar memorias USB sin identificar, cambiar nombres sin documentar o permitir acceso sin control son ejemplos clásicos de mala preservación que pueden invalidar una investigación completa."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Buenas prácticas (NIST / ISO)",
+        "Question Text": {
+          "en-US": [
+            "Which option aligns with good practices recommended by standards such as NIST and ISO/IEC 27037?"
+          ],
+          "es-MX": [
+            "¿Qué opción se alinea con las buenas prácticas recomendadas por estándares como NIST e ISO/IEC 27037?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Document every step, keep the original evidence intact, use reliable tools and verify integrity before and after analysis.",
+            "Rely only on memory and avoid documenting the procedure.",
+            "Use untested tools without recording their version.",
+            "Modify the original data to simplify the report and then delete the logs."
+          ],
+          "es-MX": [
+            "Documentar cada paso, mantener intacta la evidencia original, usar herramientas confiables y verificar la integridad antes y después del análisis.",
+            "Confiar únicamente en la memoria y evitar documentar el procedimiento.",
+            "Usar herramientas sin probar y sin registrar su versión.",
+            "Modificar los datos originales para simplificar el informe y luego borrar los registros."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Document every step, keep the original evidence intact, use reliable tools and verify integrity before and after analysis.",
+          "es-MX": "Documentar cada paso, mantener intacta la evidencia original, usar herramientas confiables y verificar la integridad antes y después del análisis."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Standards: documentation, integrity and tool control"
+            },
+            {
+              "type": "text",
+              "content": "International standards emphasize that good forensic work must be transparent and reproducible. This requires detailed documentation, protection of the original evidence and the use of tools whose behavior and version are known."
+            },
+            {
+              "type": "text",
+              "content": "Skipping documentation, using unknown tools or changing original data without control weakens the credibility of the investigation and makes it difficult to defend the results in a legal context."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Estándares: documentación, integridad y control de herramientas"
+            },
+            {
+              "type": "text",
+              "content": "Los estándares internacionales insisten en que un buen trabajo forense debe ser transparente y reproducible. Para lograrlo se requiere documentar con detalle, proteger la evidencia original y usar herramientas cuyo comportamiento y versión sean conocidos."
+            },
+            {
+              "type": "text",
+              "content": "Omitir la documentación, usar herramientas desconocidas o modificar los datos originales sin control debilita la credibilidad de la investigación y dificulta defender los resultados en un contexto legal."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Errores que invalidan",
+        "Question Text": {
+          "en-US": [
+            "Which of the following is an error that can invalidate digital evidence?"
+          ],
+          "es-MX": [
+            "¿Cuál de las siguientes es un error que puede invalidar la evidencia digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Not calculating hash values and having unregistered movements or unauthorized access.",
+            "Keeping a complete chain of custody and verifying integrity.",
+            "Storing the original and the copy in separate, identified media.",
+            "Documenting the software versions used in the analysis."
+          ],
+          "es-MX": [
+            "No calcular valores hash y tener movimientos no registrados o accesos no autorizados.",
+            "Mantener una cadena de custodia completa y verificar la integridad.",
+            "Guardar el original y la copia en medios separados e identificados.",
+            "Registrar las versiones de software utilizadas en el análisis."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Not calculating hash values and having unregistered movements or unauthorized access.",
+          "es-MX": "No calcular valores hash y tener movimientos no registrados o accesos no autorizados."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Critical mistakes: gaps in integrity and control"
+            },
+            {
+              "type": "text",
+              "content": "If there are no hashes, there is no strong proof that the data remained unchanged. If there are unregistered movements or unauthorized access, it is impossible to know what happened to the evidence in those periods."
+            },
+            {
+              "type": "text",
+              "content": "In court, these weaknesses can be used to argue that the evidence might have been manipulated, which can lead to its exclusion. The other options describe good practices that strengthen the investigation instead of harming it."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Errores críticos: huecos en integridad y control"
+            },
+            {
+              "type": "text",
+              "content": "Si no hay valores hash, no existe una prueba sólida de que los datos se mantuvieron sin cambios. Si hay movimientos no registrados o accesos no autorizados, es imposible saber qué ocurrió con la evidencia en esos periodos."
+            },
+            {
+              "type": "text",
+              "content": "En juicio, estas debilidades pueden usarse para argumentar que la evidencia fue manipulada, lo que puede llevar a que se excluya. Las otras opciones describen buenas prácticas que fortalecen la investigación en lugar de dañarla."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Actividad práctica Autopsy",
+        "Question Text": {
+          "en-US": [
+            "In the suggested practical activity with Autopsy, what is the main educational goal of using public or self-created evidence files?"
+          ],
+          "es-MX": [
+            "En la actividad práctica sugerida con Autopsy, ¿cuál es el objetivo educativo principal de usar archivos de evidencia públicos o creados por el alumno?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To simulate a real forensic case and practice documenting the chain of custody and handling of digital evidence in a controlled, educational context.",
+            "To replace all real investigations in courts.",
+            "To learn how to delete evidence without leaving traces.",
+            "To test the speed of the internet connection."
+          ],
+          "es-MX": [
+            "Simular un caso forense real y practicar la documentación de la cadena de custodia y el manejo de evidencia digital en un contexto controlado y educativo.",
+            "Sustituir todas las investigaciones reales en los tribunales.",
+            "Aprender a borrar evidencia sin dejar rastros.",
+            "Probar la velocidad de la conexión a internet."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To simulate a real forensic case and practice documenting the chain of custody and handling of digital evidence in a controlled, educational context.",
+          "es-MX": "Simular un caso forense real y practicar la documentación de la cadena de custodia y el manejo de evidencia digital en un contexto controlado y educativo."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Practice cases: learning without risk"
+            },
+            {
+              "type": "text",
+              "content": "Using public images (like Digital Corpora) or self-created evidence allows students to make mistakes and learn procedures without affecting real cases. The focus is on practicing documentation, hash calculation and proper handling in Autopsy."
+            },
+            {
+              "type": "text",
+              "content": "These exercises do not replace real investigations, nor are they designed to teach how to hide or destroy evidence; they help to internalize the workflow of professional digital forensics."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Casos de práctica: aprender sin riesgo"
+            },
+            {
+              "type": "text",
+              "content": "Usar imágenes públicas (como Digital Corpora) o evidencias creadas por el alumno permite cometer errores y aprender procedimientos sin afectar casos reales. El enfoque está en practicar la documentación, el cálculo de hash y el manejo adecuado en Autopsy."
+            },
+            {
+              "type": "text",
+              "content": "Estos ejercicios no sustituyen investigaciones reales ni están pensados para enseñar a ocultar o destruir evidencia; ayudan a interiorizar el flujo de trabajo de la informática forense profesional."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Reflexión",
+        "Question Text": {
+          "en-US": [
+            "What is the purpose of the final reflection questions in the practice activity (missing data, possible errors and good practices achieved)?"
+          ],
+          "es-MX": [
+            "¿Cuál es el propósito de las preguntas de reflexión final en la actividad práctica (datos faltantes, posibles errores y buenas prácticas logradas)?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To help the student identify gaps in their own chain of custody and understand how those weaknesses could invalidate a real investigation.",
+            "To memorize all the names of the tools used in the market.",
+            "To design a new social network app.",
+            "To learn how to win any court case automatically."
+          ],
+          "es-MX": [
+            "Ayudar al estudiante a identificar huecos en su propia cadena de custodia y entender cómo esas debilidades podrían invalidar una investigación real.",
+            "Memorizar todos los nombres de las herramientas existentes en el mercado.",
+            "Diseñar una nueva app de red social.",
+            "Aprender a ganar automáticamente cualquier juicio."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To help the student identify gaps in their own chain of custody and understand how those weaknesses could invalidate a real investigation.",
+          "es-MX": "Ayudar al estudiante a identificar huecos en su propia cadena de custodia y entender cómo esas debilidades podrían invalidar una investigación real."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Reflect to avoid repeating mistakes"
+            },
+            {
+              "type": "text",
+              "content": "The reflection step turns a simple exercise into a learning experience. By asking what data were missing and which errors could invalidate the analysis, the student connects the practice with real-world consequences."
+            },
+            {
+              "type": "text",
+              "content": "The goal is not to memorize brand names or magically 'win cases', but to understand the impact that documentation and preservation have on the legal value of digital evidence."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Reflexionar para no repetir errores"
+            },
+            {
+              "type": "text",
+              "content": "La etapa de reflexión convierte un simple ejercicio en una experiencia de aprendizaje. Al preguntar qué datos faltaron y qué errores podrían invalidar el análisis, el estudiante conecta la práctica con las consecuencias del mundo real."
+            },
+            {
+              "type": "text",
+              "content": "La meta no es memorizar nombres de marcas ni 'ganar casos' mágicamente, sino entender el impacto que tienen la documentación y la preservación en el valor legal de la evidencia digital."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Conclusiones clave",
+        "Question Text": {
+          "en-US": [
+            "According to the key conclusions, what can happen if documentation of the chain of custody is incomplete?"
+          ],
+          "es-MX": [
+            "Según las conclusiones clave, ¿qué puede ocurrir si la documentación de la cadena de custodia es incompleta?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The entire investigation may be invalidated, even if the technical analysis was correct.",
+            "The investigation automatically becomes more credible.",
+            "The hash values are no longer necessary.",
+            "It only affects the speed of the forensic tools."
+          ],
+          "es-MX": [
+            "Puede invalidarse toda la investigación, incluso si el análisis técnico fue correcto.",
+            "La investigación se vuelve automáticamente más creíble.",
+            "Los valores hash dejan de ser necesarios.",
+            "Solo se ve afectada la velocidad de las herramientas forenses."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The entire investigation may be invalidated, even if the technical analysis was correct.",
+          "es-MX": "Puede invalidarse toda la investigación, incluso si el análisis técnico fue correcto."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Documentation as a condition for legal validity"
+            },
+            {
+              "type": "text",
+              "content": "Digital forensics is not only about technical skill; it is also about being able to demonstrate, with documents, that everything was done correctly. If the chain of custody has serious gaps, a judge may decide that the evidence is unreliable."
+            },
+            {
+              "type": "text",
+              "content": "In that situation, the best technical analysis in the world loses its value, because the path that the evidence followed cannot be trusted. This is why documentation is treated as a critical part of the investigation, not as an optional extra."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "La documentación como condición de validez legal"
+            },
+            {
+              "type": "text",
+              "content": "La informática forense no se trata solo de habilidad técnica; también implica poder demostrar, con documentos, que todo se hizo correctamente. Si la cadena de custodia tiene huecos graves, un juez puede decidir que la evidencia no es confiable."
+            },
+            {
+              "type": "text",
+              "content": "En esa situación, incluso el mejor análisis técnico del mundo pierde su valor, porque no se puede confiar en el recorrido que siguió la evidencia. Por eso la documentación se trata como una parte crítica de la investigación, no como algo opcional."
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

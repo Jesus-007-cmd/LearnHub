@@ -1,0 +1,850 @@
+{
+    "meta": {
+      "slug": "forense-apps4",
+      "title": "U1C4 · Fases del proceso forense digital y metodologías",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 1,
+      "classNo": 4,
+      "description": "Fases del proceso forense digital (identificación, adquisición, preservación, análisis y presentación) y metodologías NIST / ISO / DFRWS para garantizar integridad y trazabilidad.",
+      "tags": [
+        "proceso forense digital",
+        "fases del análisis forense",
+        "cadena de custodia",
+        "metodologías NIST",
+        "ISO/IEC 27037",
+        "DFRWS",
+        "integridad de evidencia"
+      ],
+      "questionCount": 11,
+      "languages": ["en-US", "es-MX"]
+    },
+  
+    "Questions": [
+      {
+        "Category": "Definición",
+        "Question Text": {
+          "en-US": [
+            "What is the main idea behind the digital forensic process?"
+          ],
+          "es-MX": [
+            "¿Cuál es la idea central del proceso forense digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A systematic set of steps to discover, analyze and present digital evidence in a scientific and legally acceptable way.",
+            "A collection of improvised techniques to recover deleted files as fast as possible.",
+            "A process focused only on installing security patches on servers.",
+            "A methodology used exclusively to design new communication apps."
+          ],
+          "es-MX": [
+            "Un conjunto de pasos sistemáticos para descubrir, analizar y presentar evidencia digital de forma científica y legalmente aceptable.",
+            "Un conjunto de técnicas improvisadas para recuperar archivos borrados lo más rápido posible.",
+            "Un proceso enfocado únicamente en instalar parches de seguridad en servidores.",
+            "Una metodología usada exclusivamente para diseñar nuevas aplicaciones de comunicación."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A systematic set of steps to discover, analyze and present digital evidence in a scientific and legally acceptable way.",
+          "es-MX": "Un conjunto de pasos sistemáticos para descubrir, analizar y presentar evidencia digital de forma científica y legalmente aceptable."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Why is the process called “digital forensic”?"
+            },
+            {
+              "type": "text",
+              "content": "The key idea is that digital forensics is not about hacking or improvising; it is about following a structured, repeatable and well-documented process. Each phase (identification, acquisition, preservation, analysis and presentation) must be performed with technical rigor so that the evidence can be trusted."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Systematic: the steps follow an ordered workflow, not random actions.",
+                "Scientific: methods and tools must be verifiable and reproducible by other experts.",
+                "Legally acceptable: the way evidence is obtained and handled must withstand legal scrutiny."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "The distractors focus on isolated tasks (recovering files, installing patches, developing apps), but they do not describe a complete process that guarantees integrity, documentation and legal validity of the evidence."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "¿Por qué se habla de “proceso forense digital”?"
+            },
+            {
+              "type": "text",
+              "content": "La idea central es que la informática forense no consiste en improvisar o “hackear”, sino en seguir un proceso estructurado, repetible y bien documentado. Cada fase (identificación, adquisición, preservación, análisis y presentación) se ejecuta con rigor técnico para que la evidencia sea confiable."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Sistemático: los pasos siguen un flujo de trabajo ordenado, no acciones al azar.",
+                "Científico: los métodos y herramientas deben ser verificables y reproducibles por otros expertos.",
+                "Legalmente aceptable: la forma en que se obtiene y maneja la evidencia debe soportar revisiones legales."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Los distractores se enfocan en tareas aisladas (recuperar archivos, instalar parches, desarrollar apps), pero no describen un proceso completo que garantice integridad, documentación y validez legal de la evidencia."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Objetivo del proceso",
+        "Question Text": {
+          "en-US": [
+            "What is one of the main goals of the digital forensic process during an investigation?"
+          ],
+          "es-MX": [
+            "¿Cuál es uno de los objetivos principales del proceso forense digital durante una investigación?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Maintain the chain of custody and avoid data alteration throughout the investigation.",
+            "Modify the original data to make the report easier to read.",
+            "Hide evidence that could harm the organization’s image.",
+            "Speed up computers by deleting all old logs."
+          ],
+          "es-MX": [
+            "Mantener la cadena de custodia y evitar la alteración de los datos durante toda la investigación.",
+            "Modificar los datos originales para que el informe sea más fácil de leer.",
+            "Ocultar evidencias que puedan dañar la imagen de la organización.",
+            "Acelerar las computadoras borrando todos los logs antiguos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Maintain the chain of custody and avoid data alteration throughout the investigation.",
+          "es-MX": "Mantener la cadena de custodia y evitar la alteración de los datos durante toda la investigación."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Integrity and chain of custody as central goals"
+            },
+            {
+              "type": "text",
+              "content": "A digital forensic investigation does not only aim to find what happened; it must also prove that the data presented in the report is the same data that was originally collected. This is where integrity and chain of custody become essential."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Integrity: ensuring that the content of the evidence has not been altered (verified through hashes, controls and documentation).",
+                "Chain of custody: recording who handled the evidence, when, where and for what purpose."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Actions such as modifying original data, deleting logs or hiding evidence may make the organization “look better” in the short term, but completely destroy the credibility and legal value of the investigation."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Integridad y cadena de custodia como objetivos centrales"
+            },
+            {
+              "type": "text",
+              "content": "Una investigación forense digital no solo busca saber qué ocurrió; también debe demostrar que los datos presentados en el informe son los mismos que se recolectaron originalmente. Ahí es donde la integridad y la cadena de custodia se vuelven esenciales."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Integridad: garantizar que el contenido de la evidencia no se ha alterado (mediante hashes, controles y documentación).",
+                "Cadena de custodia: registrar quién manipuló la evidencia, cuándo, dónde y con qué propósito."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Acciones como modificar datos originales, borrar logs u ocultar evidencias pueden “mejorar la imagen” de la organización a corto plazo, pero destruyen por completo la credibilidad y el valor legal de la investigación."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Fases",
+        "Question Text": {
+          "en-US": [
+            "Which sequence correctly represents the typical order of the main phases in a digital forensic process?"
+          ],
+          "es-MX": [
+            "¿Qué secuencia representa correctamente el orden típico de las fases principales en un proceso forense digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Identification → Acquisition → Preservation → Analysis → Presentation.",
+            "Preservation → Presentation → Analysis → Acquisition → Identification.",
+            "Acquisition → Identification → Presentation → Analysis → Preservation.",
+            "Presentation → Analysis → Identification → Preservation → Acquisition."
+          ],
+          "es-MX": [
+            "Identificación → Adquisición → Preservación → Análisis → Presentación.",
+            "Preservación → Presentación → Análisis → Adquisición → Identificación.",
+            "Adquisición → Identificación → Presentación → Análisis → Preservación.",
+            "Presentación → Análisis → Identificación → Preservación → Adquisición."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Identification → Acquisition → Preservation → Analysis → Presentation.",
+          "es-MX": "Identificación → Adquisición → Preservación → Análisis → Presentación."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Logical flow of a forensic investigation"
+            },
+            {
+              "type": "text",
+              "content": "The sequence matters because each phase depends on the previous one. You cannot analyze what you have not acquired, and you cannot safely acquire what you have not identified."
+            },
+            {
+              "type": "ol",
+              "items": [
+                "Identification: deciding which devices, systems or apps may contain evidence.",
+                "Acquisition: creating a forensic copy of the data, normally with images and hashes.",
+                "Preservation: protecting and storing evidence and its copies so they are not altered.",
+                "Analysis: examining the data in depth to reconstruct events and find indicators.",
+                "Presentation: communicating the findings through a clear and well-structured report."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "The other sequences invert this logic and would imply analyzing or presenting information that has not been properly acquired or preserved, which would be unacceptable in professional practice."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Flujo lógico de una investigación forense"
+            },
+            {
+              "type": "text",
+              "content": "El orden es importante porque cada fase depende de la anterior. No se puede analizar lo que no se ha adquirido, ni adquirir de forma segura lo que no se ha identificado primero."
+            },
+            {
+              "type": "ol",
+              "items": [
+                "Identificación: decidir qué dispositivos, sistemas o apps pueden contener evidencia.",
+                "Adquisición: crear una copia forense de los datos, normalmente con imágenes y hashes.",
+                "Preservación: proteger y almacenar la evidencia y sus copias para que no se alteren.",
+                "Análisis: examinar los datos a profundidad para reconstruir eventos y encontrar indicios.",
+                "Presentación: comunicar los hallazgos mediante un informe claro y bien estructurado."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Las otras secuencias invierten esta lógica e implicarían analizar o presentar información que no fue correctamente adquirida o preservada, lo cual es inaceptable en la práctica profesional."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Identificación",
+        "Question Text": {
+          "en-US": [
+            "What best describes the identification phase in the digital forensic process?"
+          ],
+          "es-MX": [
+            "¿Qué describe mejor la fase de identificación dentro del proceso forense digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Recognizing which systems, devices or applications may contain relevant evidence.",
+            "Editing reports to make them shorter.",
+            "Designing new security policies for the company.",
+            "Encrypting all devices in the organization."
+          ],
+          "es-MX": [
+            "Reconocer qué sistemas, dispositivos o aplicaciones pueden contener evidencia relevante.",
+            "Editar los informes para hacerlos más cortos.",
+            "Diseñar nuevas políticas de seguridad para la empresa.",
+            "Cifrar todos los dispositivos de la organización."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Recognizing which systems, devices or applications may contain relevant evidence.",
+          "es-MX": "Reconocer qué sistemas, dispositivos o aplicaciones pueden contener evidencia relevante."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Identification: deciding where to look"
+            },
+            {
+              "type": "text",
+              "content": "Before touching any device, the analyst must decide which assets are truly relevant for the case. This prevents wasting time and reduces the risk of unnecessary manipulation of systems."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Examples: phones with messaging apps, laptops with email logs, cloud accounts with backups.",
+                "Good identification helps define scope, priorities and the acquisition plan."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "The distractors describe administrative or security tasks (writing policies, encrypting devices, editing reports) but not the core forensic decision: ‘where could the evidence be?’."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Identificación: decidir dónde buscar"
+            },
+            {
+              "type": "text",
+              "content": "Antes de tocar cualquier dispositivo, el analista debe decidir qué activos son realmente relevantes para el caso. Esto evita perder tiempo y reduce el riesgo de manipular sistemas de forma innecesaria."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Ejemplos: teléfonos con apps de mensajería, laptops con registros de correo, cuentas en la nube con respaldos.",
+                "Una buena identificación ayuda a definir el alcance, las prioridades y el plan de adquisición."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Los distractores describen tareas administrativas o de seguridad (escribir políticas, cifrar dispositivos, editar reportes), pero no la decisión forense central: “¿dónde podría estar la evidencia?”."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Adquisición",
+        "Question Text": {
+          "en-US": [
+            "Which action corresponds to the acquisition phase in digital forensics?"
+          ],
+          "es-MX": [
+            "¿Qué acción corresponde a la fase de adquisición en informática forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Creating a forensic copy of the data without altering the original content, using tools such as FTK Imager or Cellebrite UFED.",
+            "Deleting temporary files from the original device to free space.",
+            "Changing the user passwords on all systems.",
+            "Rewriting the logs to improve system performance."
+          ],
+          "es-MX": [
+            "Obtener una copia forense de los datos sin alterar el contenido original, usando herramientas como FTK Imager o Cellebrite UFED.",
+            "Borrar archivos temporales del dispositivo original para liberar espacio.",
+            "Cambiar las contraseñas de usuario en todos los sistemas.",
+            "Reescribir los logs para mejorar el rendimiento del sistema."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Creating a forensic copy of the data without altering the original content, using tools such as FTK Imager or Cellebrite UFED.",
+          "es-MX": "Obtener una copia forense de los datos sin alterar el contenido original, usando herramientas como FTK Imager o Cellebrite UFED."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Acquisition: working on a copy, not on the original"
+            },
+            {
+              "type": "text",
+              "content": "The acquisition phase aims to obtain an exact copy of the data (bit by bit), so the analysis can be done on the copy while the original remains untouched and protected."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Tools such as FTK Imager, Autopsy or Cellebrite UFED are used to create forensic images and calculate hashes.",
+                "Common formats: .E01, .dd and others that allow later mounting and analysis."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Deleting files, changing passwords or rewriting logs usually alter the system and can destroy evidence. These actions go against the principle of preserving the original state of the device."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Adquisición: trabajar sobre una copia, no sobre el original"
+            },
+            {
+              "type": "text",
+              "content": "La fase de adquisición busca obtener una copia exacta de los datos (bit a bit), de modo que el análisis se realice sobre la copia mientras el original se mantiene intacto y protegido."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Se usan herramientas como FTK Imager, Autopsy o Cellebrite UFED para crear imágenes forenses y calcular hashes.",
+                "Formatos comunes: .E01, .dd y otros que permiten montar y analizar la copia después."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Borrar archivos, cambiar contraseñas o reescribir logs suele alterar el sistema y puede destruir evidencias. Estas acciones van en contra del principio de preservar el estado original del dispositivo."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Preservación",
+        "Question Text": {
+          "en-US": [
+            "What is the main objective of the preservation phase in the forensic process?"
+          ],
+          "es-MX": [
+            "¿Cuál es el objetivo principal de la fase de preservación en el proceso forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Ensure that the evidence is not modified during storage and that the chain of custody is properly documented.",
+            "Compress all files to save disk space, even if hashes change.",
+            "Allow different people to modify the evidence freely.",
+            "Restore the evidence to its original device to simplify access."
+          ],
+          "es-MX": [
+            "Asegurar que la evidencia no se modifique durante su almacenamiento y que la cadena de custodia quede correctamente documentada.",
+            "Comprimir todos los archivos para ahorrar espacio, aunque cambien los hashes.",
+            "Permitir que distintas personas modifiquen la evidencia libremente.",
+            "Devolver la evidencia a su dispositivo original para facilitar el acceso."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Ensure that the evidence is not modified during storage and that the chain of custody is properly documented.",
+          "es-MX": "Asegurar que la evidencia no se modifique durante su almacenamiento y que la cadena de custodia quede correctamente documentada."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Preservation: protecting what has been acquired"
+            },
+            {
+              "type": "text",
+              "content": "Once the forensic copy has been created, it must be stored under controlled conditions so that it remains unchanged from acquisition to trial or internal review."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Secure media (external disks, sealed storage, controlled access).",
+                "Complete chain-of-custody documentation: dates, people involved, actions performed.",
+                "Hash verification when moving or copying images."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "If files are compressed without control or the evidence is modified freely, hash values change and it becomes much harder to prove that the data presented later is still authentic."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Preservación: proteger lo que ya se adquirió"
+            },
+            {
+              "type": "text",
+              "content": "Una vez creada la copia forense, debe almacenarse en condiciones controladas para que permanezca sin cambios desde la adquisición hasta el juicio o la revisión interna."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Medios seguros (discos externos, almacenamiento sellado, acceso controlado).",
+                "Documentación completa de cadena de custodia: fechas, personas involucradas, acciones realizadas.",
+                "Verificación de hashes al mover o copiar las imágenes."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Si se comprimen archivos sin control o la evidencia se modifica libremente, los valores hash cambian y se vuelve mucho más difícil demostrar que los datos que se presentan después siguen siendo auténticos."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Análisis",
+        "Question Text": {
+          "en-US": [
+            "What occurs mainly during the analysis phase of the digital forensic process?"
+          ],
+          "es-MX": [
+            "¿Qué ocurre principalmente durante la fase de análisis del proceso forense digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Data are interpreted, events are reconstructed and evidence from different sources is correlated using specialized tools.",
+            "Only the device’s wallpaper is changed.",
+            "All logs are deleted to avoid legal problems.",
+            "The analyst writes random conclusions without checking the data."
+          ],
+          "es-MX": [
+            "Se interpretan los datos, se reconstruyen eventos y se correlacionan evidencias de distintas fuentes usando herramientas especializadas.",
+            "Solo se cambia el fondo de pantalla del dispositivo.",
+            "Se borran todos los logs para evitar problemas legales.",
+            "El analista redacta conclusiones al azar sin revisar los datos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Data are interpreted, events are reconstructed and evidence from different sources is correlated using specialized tools.",
+          "es-MX": "Se interpretan los datos, se reconstruyen eventos y se correlacionan evidencias de distintas fuentes usando herramientas especializadas."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Analysis: turning raw data into a coherent story"
+            },
+            {
+              "type": "text",
+              "content": "In the analysis phase, the analyst no longer focuses on ‘making copies’ but on understanding what the data means. Logs, chat databases, images, network captures and other artifacts are correlated to reconstruct what happened."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Tools: Magnet AXIOM, Oxygen Forensics, Autopsy, Wireshark, among others.",
+                "Tasks: timeline creation, user activity reconstruction, detection of suspicious patterns.",
+                "Goal: transform thousands of artifacts into a clear narrative supported by evidence."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Changing wallpapers or deleting logs are not forensic tasks; they are examples of actions that either add no value or actively destroy potential evidence."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Análisis: convertir datos crudos en una historia coherente"
+            },
+            {
+              "type": "text",
+              "content": "En la fase de análisis, el analista deja de centrarse en “hacer copias” y se enfoca en entender qué significan los datos. Logs, bases de chats, imágenes, capturas de red y otros artefactos se correlacionan para reconstruir lo sucedido."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Herramientas: Magnet AXIOM, Oxygen Forensics, Autopsy, Wireshark, entre otras.",
+                "Tareas: creación de líneas de tiempo, reconstrucción de actividad de usuario, detección de patrones sospechosos.",
+                "Meta: transformar miles de artefactos en un relato claro respaldado por evidencia."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Cambiar fondos de pantalla o borrar logs no son tareas forenses; son ejemplos de acciones que o bien no añaden valor o directamente destruyen evidencia potencial."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Presentación",
+        "Question Text": {
+          "en-US": [
+            "What is expected from the presentation phase in a digital forensic investigation?"
+          ],
+          "es-MX": [
+            "¿Qué se espera de la fase de presentación en una investigación forense digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A clear, objective and understandable technical report for non-technical authorities, describing methods, findings and conclusions.",
+            "A highly technical report that only the analyst can understand.",
+            "An informal chat message with screenshots sent to a friend.",
+            "A brief note without details, so that nobody can question the methods used."
+          ],
+          "es-MX": [
+            "Un informe técnico claro, objetivo y comprensible para autoridades no técnicas, que describa métodos, hallazgos y conclusiones.",
+            "Un reporte extremadamente técnico que solo el analista pueda entender.",
+            "Un mensaje informal de chat con capturas enviado a un amigo.",
+            "Una nota breve sin detalles para que nadie pueda cuestionar los métodos usados."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A clear, objective and understandable technical report for non-technical authorities, describing methods, findings and conclusions.",
+          "es-MX": "Un informe técnico claro, objetivo y comprensible para autoridades no técnicas, que describa métodos, hallazgos y conclusiones."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Presentation: communicating the investigation to decision makers"
+            },
+            {
+              "type": "text",
+              "content": "The value of the investigation depends on whether judges, lawyers or managers can understand what was found and why it matters. The report must bridge the gap between highly technical work and non-technical readers."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Describe the methods used and justify why they are appropriate.",
+                "Explain the main findings and how they were obtained.",
+                "Present conclusions and, when appropriate, recommendations for security."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "If the report is written in a way that only the analyst understands, or if it lacks details, it becomes easy to attack in court and much harder to use for making decisions."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Presentación: comunicar la investigación a quienes deciden"
+            },
+            {
+              "type": "text",
+              "content": "El valor de la investigación depende de que jueces, abogados o directivos puedan entender qué se encontró y por qué es importante. El informe debe conectar el trabajo altamente técnico con lectores no técnicos."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Describir los métodos utilizados y justificar por qué son adecuados.",
+                "Explicar los hallazgos principales y cómo se obtuvieron.",
+                "Presentar conclusiones y, cuando sea pertinente, recomendaciones de mejora en seguridad."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Si el informe está redactado de forma que solo el analista lo entienda, o si carece de detalles, se vuelve fácil de atacar en juicio y difícil de usar para tomar decisiones."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Metodologías",
+        "Question Text": {
+          "en-US": [
+            "Which option correctly lists recognized digital forensic methodologies or standards?"
+          ],
+          "es-MX": [
+            "¿Qué opción enumera correctamente metodologías o estándares forenses digitales reconocidos?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "NIST model, ISO/IEC 27037, DFRWS, ACPO guidelines.",
+            "Random blog posts and memes from social networks.",
+            "Only the internal policy of a single private company.",
+            "Antivirus user manuals with no forensic content."
+          ],
+          "es-MX": [
+            "Modelo NIST, ISO/IEC 27037, DFRWS, lineamientos ACPO.",
+            "Publicaciones aleatorias de blogs y memes de redes sociales.",
+            "Únicamente la política interna de una sola empresa privada.",
+            "Manuales de antivirus sin contenido forense."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "NIST model, ISO/IEC 27037, DFRWS, ACPO guidelines.",
+          "es-MX": "Modelo NIST, ISO/IEC 27037, DFRWS, lineamientos ACPO."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "International references in digital forensics"
+            },
+            {
+              "type": "text",
+              "content": "Professional practice does not start from scratch in every organization. International bodies and working groups have defined models and standards that describe good practices in handling digital evidence."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "NIST model (USA): defines phases such as identification, collection, examination, analysis and presentation.",
+                "ISO/IEC 27037: provides guidance on identification, collection and preservation of digital evidence.",
+                "DFRWS: academic model that emphasizes validation and continuous documentation.",
+                "ACPO (UK): guidelines focused on integrity and detailed documentation in all stages."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "While internal policies or online articles can be useful, they do not replace having a methodology recognized and accepted across courts and professional communities."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Referencias internacionales en informática forense"
+            },
+            {
+              "type": "text",
+              "content": "La práctica profesional no empieza desde cero en cada organización. Organismos y grupos de trabajo internacionales han definido modelos y estándares que describen buenas prácticas en el manejo de evidencia digital."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Modelo NIST (EE. UU.): define fases como identificación, recolección, examen, análisis y presentación.",
+                "ISO/IEC 27037: ofrece guías sobre identificación, recolección y preservación de evidencia digital.",
+                "DFRWS: modelo académico que enfatiza la validación y la documentación continua.",
+                "ACPO (Reino Unido): lineamientos centrados en la integridad y la documentación detallada en todas las etapas."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Aunque las políticas internas o los artículos en línea pueden ser útiles, no sustituyen el uso de metodologías reconocidas y aceptadas en tribunales y comunidades profesionales."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Importancia de la metodología",
+        "Question Text": {
+          "en-US": [
+            "Why is it important to follow a formal methodology in digital forensics?"
+          ],
+          "es-MX": [
+            "¿Por qué es importante seguir una metodología formal en informática forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it ensures that results are reproducible, verifiable and more likely to be accepted in legal procedures.",
+            "Because it allows the analyst to skip documentation and rely only on memory.",
+            "Because it guarantees that no one will review the work.",
+            "Because it replaces all technical analysis with intuition."
+          ],
+          "es-MX": [
+            "Porque asegura que los resultados sean reproducibles, verificables y más fáciles de aceptar en procedimientos judiciales.",
+            "Porque permite al analista omitir documentación y confiar solo en su memoria.",
+            "Porque garantiza que nadie revisará el trabajo realizado.",
+            "Porque sustituye todo análisis técnico por intuición."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it ensures that results are reproducible, verifiable and more likely to be accepted in legal procedures.",
+          "es-MX": "Porque asegura que los resultados sean reproducibles, verificables y más fáciles de aceptar en procedimientos judiciales."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Methodology as a guarantee of quality and credibility"
+            },
+            {
+              "type": "text",
+              "content": "A formal methodology allows another analyst to repeat the steps and obtain similar results. This reproducibility is fundamental in scientific disciplines and is especially important when evidence is presented in court."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Reproducible: others can repeat the procedure and confirm the findings.",
+                "Verifiable: the judge or opposing party can review the steps and tools used.",
+                "Credible: the report is perceived as professional, not arbitrary."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Relying only on memory, ignoring documentation or basing the work on intuition weakens the case and gives the defense more arguments to question the entire investigation."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "La metodología como garantía de calidad y credibilidad"
+            },
+            {
+              "type": "text",
+              "content": "Una metodología formal permite que otro analista repita los pasos y obtenga resultados similares. Esta reproducibilidad es clave en disciplinas científicas y es especialmente importante cuando la evidencia se presenta ante un juez."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Reproducible: otros pueden repetir el procedimiento y confirmar los hallazgos.",
+                "Verificable: el juez o la parte contraria pueden revisar los pasos y las herramientas usadas.",
+                "Creíble: el informe se percibe como profesional, no como algo arbitrario."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Confiar solo en la memoria, ignorar la documentación o basar el trabajo en la intuición debilita el caso y da más argumentos a la defensa para cuestionar toda la investigación."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Errores comunes",
+        "Question Text": {
+          "en-US": [
+            "Which of the following is a common mistake that can compromise a digital forensic investigation?"
+          ],
+          "es-MX": [
+            "¿Cuál de las siguientes es un error común que puede comprometer una investigación forense digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Analyzing the original device directly without creating a forensic copy and without calculating hashes.",
+            "Documenting the chain of custody carefully and verifying each step.",
+            "Using recognized standards such as NIST or ISO/IEC 27037.",
+            "Correlating data from different sources and providing clear context."
+          ],
+          "es-MX": [
+            "Analizar directamente el dispositivo original sin generar copia forense y sin calcular hashes.",
+            "Documentar cuidadosamente la cadena de custodia y verificar cada paso.",
+            "Utilizar estándares reconocidos como NIST o ISO/IEC 27037.",
+            "Correlacionar datos de distintas fuentes y aportar contexto claro."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Analyzing the original device directly without creating a forensic copy and without calculating hashes.",
+          "es-MX": "Analizar directamente el dispositivo original sin generar copia forense y sin calcular hashes."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Typical mistake: working on the original device"
+            },
+            {
+              "type": "text",
+              "content": "One of the most serious and frequent mistakes is to start investigating directly on the original device. Any small change (a new log, an automatic update, opening an app) can alter or destroy evidence."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Without a forensic copy, there is no way to compare later if the data changed.",
+                "Without hashes, it is difficult to prove that the evidence remained intact over time.",
+                "In court, the defense can argue that the evidence was contaminated and request its exclusion."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "The other options (documenting, using standards, correlating data) are examples of good practice that strengthen the investigation instead of harming it."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Error típico: trabajar sobre el dispositivo original"
+            },
+            {
+              "type": "text",
+              "content": "Uno de los errores más graves y frecuentes es comenzar a investigar directamente sobre el dispositivo original. Cualquier cambio pequeño (un nuevo log, una actualización automática, abrir una app) puede alterar o destruir evidencia."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Sin una copia forense, no hay forma de comparar después si los datos cambiaron.",
+                "Sin hashes, es difícil demostrar que la evidencia se mantuvo intacta en el tiempo.",
+                "En juicio, la defensa puede argumentar que la evidencia fue contaminada y pedir que se excluya."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Las otras opciones (documentar, usar estándares, correlacionar datos) son ejemplos de buenas prácticas que fortalecen la investigación en lugar de dañarla."
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

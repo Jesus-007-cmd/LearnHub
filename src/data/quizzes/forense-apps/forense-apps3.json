@@ -1,0 +1,697 @@
+{
+  "meta": {
+    "slug": "forense-apps3",
+    "title": "U1C3 · Digital evidence types and classification",
+    "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+    "unit": 1,
+    "classNo": 3,
+    "description": "Class 3: volatile, persistent evidence and metadata applied to messaging apps.",
+    "tags": [
+      "digital evidence",
+      "computer forensics",
+      "volatile",
+      "persistent",
+      "metadata",
+      "WhatsApp",
+      "Telegram"
+    ],
+    "questionCount": 14,
+    "languages": ["en-US", "es-MX"]
+  },
+  "Questions": [
+    {
+      "Category": "Concepto",
+      "Question Text": {
+        "en-US": [
+          "Which of the following options best describes what digital evidence is according to Class 3?"
+        ],
+        "es-MX": [
+          "¿Cuál de las siguientes opciones describe mejor qué es la evidencia digital según la Clase 3?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Information stored or transmitted by an electronic device that can have probative value in an investigation.",
+          "Any file that uses a lot of disk space, regardless of its content.",
+          "Only photos and videos stored on a mobile phone.",
+          "Only documents digitally signed with official certificates."
+        ],
+        "es-MX": [
+          "Información almacenada o transmitida por un dispositivo electrónico que puede tener valor probatorio en una investigación.",
+          "Cualquier archivo que ocupe mucho espacio en el disco duro, sin importar su contenido.",
+          "Exclusivamente las fotos y videos guardados en un teléfono móvil.",
+          "Solo los documentos firmados digitalmente con certificados oficiales."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Information stored or transmitted by an electronic device that can have probative value in an investigation.",
+        "es-MX": "Información almacenada o transmitida por un dispositivo electrónico que puede tener valor probatorio en una investigación."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Class 3 defines digital evidence as any information stored or transmitted by an electronic device that can be used as proof. This includes logs, databases, messages, cloud data and more, as long as it can support an investigation."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "It is not limited to a single format (it may be text, image, audio, etc.).",
+              "It must have potential to be used as evidence.",
+              "It can be at rest (stored) or in transit (being transmitted)."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La Clase 3 define evidencia digital como toda información almacenada o transmitida mediante un dispositivo electrónico que puede tener valor probatorio. Esto incluye desde logs y bases de datos hasta mensajes en apps, siempre que puedan aportar pruebas en una investigación."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "No se limita a un solo formato (puede ser texto, imagen, audio, etc.).",
+              "Debe tener potencial de ser usada como prueba.",
+              "Puede estar tanto en tránsito como en reposo."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Concepto",
+      "Question Text": {
+        "en-US": [
+          "Why is the correct identification and preservation of digital evidence essential?"
+        ],
+        "es-MX": [
+          "¿Por qué es esencial la correcta identificación y preservación de la evidencia digital?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Because the technical and legal validity of the forensic analysis depends on it.",
+          "Only to save storage space in the organization.",
+          "So that end users do not notice changes on their devices.",
+          "Because the law requires deleting all evidence at the end of a case."
+        ],
+        "es-MX": [
+          "Porque de ello depende la validez técnica y legal del análisis forense.",
+          "Solo para ahorrar espacio en el almacenamiento de la organización.",
+          "Para que los usuarios finales no noten cambios en sus dispositivos.",
+          "Porque la ley exige borrar toda evidencia al finalizar un caso."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Because the technical and legal validity of the forensic analysis depends on it.",
+        "es-MX": "Porque de ello depende la validez técnica y legal del análisis forense."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "If evidence is not properly identified and preserved, it can be altered, corrupted or lost. This directly affects its probative value: a judge or authority may consider the data unreliable and discard it."
+          },
+          {
+            "type": "text",
+            "content": "Good preservation implies using procedures and tools that keep the integrity of the information from acquisition to the final report."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Si la evidencia no se identifica ni se preserva correctamente, puede alterarse, corromperse o perderse. Esto afecta directamente su valor probatorio: un juez o una autoridad podrían considerar que los datos no son confiables y descartarlos."
+          },
+          {
+            "type": "text",
+            "content": "Una buena preservación implica usar procedimientos y herramientas que mantengan la integridad de la información desde la adquisición hasta la presentación del informe."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Evidencia volátil",
+      "Question Text": {
+        "en-US": [
+          "What key characteristic distinguishes volatile digital evidence?"
+        ],
+        "es-MX": [
+          "¿Qué característica principal distingue a la evidencia digital volátil?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "It disappears when the system is powered off or rebooted.",
+          "It is only stored on external hard drives.",
+          "It only exists in cloud backups.",
+          "It remains intact regardless of what the user does."
+        ],
+        "es-MX": [
+          "Desaparece al apagar o reiniciar el sistema.",
+          "Se almacena en discos duros externos únicamente.",
+          "Solo existe en copias de seguridad en la nube.",
+          "Permanece intacta sin importar las acciones del usuario."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "It disappears when the system is powered off or rebooted.",
+        "es-MX": "Desaparece al apagar o reiniciar el sistema."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Volatile evidence typically resides in RAM or in real-time execution elements. When the device is powered off or rebooted, that information is lost if it was not captured beforehand."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Examples: running processes, active network connections, open sessions.",
+              "Also includes temporary or self-destructing messages in some apps.",
+              "Requires specific tools and immediate capture procedures."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La evidencia volátil reside típicamente en la memoria RAM o en elementos de ejecución en tiempo real. Al apagar o reiniciar el dispositivo, esa información se pierde si no se capturó previamente."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Ejemplos: procesos activos, conexiones de red, sesiones abiertas.",
+              "También incluye mensajes temporales o autodestructivos en algunas apps.",
+              "Requiere herramientas y procedimientos de captura inmediata."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Evidencia volátil",
+      "Question Text": {
+        "en-US": [
+          "Which of the following examples best corresponds to volatile evidence?"
+        ],
+        "es-MX": [
+          "¿Cuál de los siguientes ejemplos corresponde mejor a evidencia volátil?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Ephemeral Telegram messages configured to self-destruct.",
+          "PDF files stored on the hard drive for several years.",
+          "Weekly cloud backups.",
+          "Photos saved in the phone’s gallery."
+        ],
+        "es-MX": [
+          "Mensajes efímeros de Telegram configurados para autodestruirse.",
+          "Archivos PDF almacenados en el disco duro por varios años.",
+          "Copias de seguridad en la nube generadas semanalmente.",
+          "Fotografías guardadas en la galería del teléfono."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Ephemeral Telegram messages configured to self-destruct.",
+        "es-MX": "Mensajes efímeros de Telegram configurados para autodestruirse."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Ephemeral or temporary messages in apps like Telegram or WhatsApp can disappear after a set time or when a session ends. They are volatile because their lifetime is limited and they depend on the current state of the app or device."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los mensajes efímeros o temporales en apps como Telegram o WhatsApp pueden desaparecer después de cierto tiempo o al cerrar la sesión. Constituyen evidencia volátil porque su permanencia es limitada y dependen del estado actual de la app o del dispositivo."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Evidencia volátil",
+      "Question Text": {
+        "en-US": [
+          "From a forensic perspective, why is early collection of volatile evidence so critical?"
+        ],
+        "es-MX": [
+          "Desde la perspectiva forense, ¿por qué es tan crítica la recolección temprana de evidencia volátil?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Because it can be irreversibly lost when the device is powered off or rebooted.",
+          "Because it uses too much disk space and should be deleted quickly.",
+          "Because it can always be recovered from any backup.",
+          "Because it has no probative value and is only for reference."
+        ],
+        "es-MX": [
+          "Porque puede perderse de forma irreversible al apagar o reiniciar el dispositivo.",
+          "Porque ocupa demasiado espacio en disco y conviene borrarla rápido.",
+          "Porque siempre se puede recuperar desde cualquier copia de seguridad.",
+          "Porque carece de valor probatorio y solo sirve como referencia."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Because it can be irreversibly lost when the device is powered off or rebooted.",
+        "es-MX": "Porque puede perderse de forma irreversible al apagar o reiniciar el dispositivo."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The analyst’s priority is to capture volatile data before the system changes state. If the device is shut down without properly acquiring memory or active sessions, that evidence may disappear and there may be no way to rebuild it later."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La prioridad del analista forense es capturar lo volátil antes de que el sistema cambie de estado. Si se apaga el equipo sin una adquisición adecuada de memoria o sesiones activas, esa evidencia puede desaparecer y no habrá forma de reconstruirla."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Evidencia persistente",
+      "Question Text": {
+        "en-US": [
+          "What is a key characteristic of persistent digital evidence?"
+        ],
+        "es-MX": [
+          "¿Cuál es una característica clave de la evidencia digital persistente?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "It remains stored even when the device is powered off.",
+          "It only exists for a few seconds in RAM.",
+          "It is automatically deleted every time the application is closed.",
+          "It cannot be recovered once the user deletes it."
+        ],
+        "es-MX": [
+          "Permanece almacenada aunque el dispositivo se apague.",
+          "Solo existe durante unos segundos en la memoria RAM.",
+          "Se elimina automáticamente cada vez que se cierra la aplicación.",
+          "No puede recuperarse una vez que el usuario la borra."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "It remains stored even when the device is powered off.",
+        "es-MX": "Permanece almacenada aunque el dispositivo se apague."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Persistent evidence is stored in non-volatile media (disks, flash storage, etc.). The information remains available after powering off the device and, in many cases, can be recovered even if the user has logically deleted it."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Includes chat databases, photos, videos and logs.",
+              "Is the main focus of many disk analysis tools.",
+              "Can remain on a device for years if it is not overwritten."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La evidencia persistente se guarda en medios de almacenamiento no volátiles (discos, memoria flash, etc.). Eso permite que la información continúe disponible luego de apagar el dispositivo y, en muchos casos, pueda recuperarse incluso si el usuario la borra lógicamente."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Incluye bases de datos de chats, fotos, videos y logs.",
+              "Es el foco principal de muchas herramientas de análisis de disco.",
+              "Puede permanecer años en un dispositivo si no se sobrescribe."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Evidencia persistente",
+      "Question Text": {
+        "en-US": [
+          "In the context of WhatsApp, which of the following elements is a direct example of persistent evidence?"
+        ],
+        "es-MX": [
+          "En el contexto de WhatsApp, ¿cuál de los siguientes elementos es un ejemplo directo de evidencia persistente?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "The msgstore.db database with conversations.",
+          "Temporary messages that disappear after 7 days.",
+          "Real-time captured network connections.",
+          "The chat window that the user currently has open."
+        ],
+        "es-MX": [
+          "La base de datos msgstore.db con conversaciones.",
+          "Los mensajes temporales que desaparecen a los 7 días.",
+          "Las conexiones activas de red capturadas en tiempo real.",
+          "La ventana de chat que el usuario tiene actualmente abierta."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "The msgstore.db database with conversations.",
+        "es-MX": "La base de datos msgstore.db con conversaciones."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The msgstore.db file stores WhatsApp chat history in a persistent way. Even if the user changes screens or powers off the phone, the database remains on the device or in backups, which allows later forensic analysis."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El archivo msgstore.db guarda el historial de chats de WhatsApp de manera persistente. Aunque el usuario cambie de pantalla o apague el teléfono, esa base de datos continúa almacenada en el dispositivo o en respaldos, lo que permite su análisis forense posterior."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Metadatos",
+      "Question Text": {
+        "en-US": [
+          "What are metadata in the context of digital evidence?"
+        ],
+        "es-MX": [
+          "¿Qué son los metadatos en el contexto de evidencia digital?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Data about the data, adding context such as dates, locations or identifiers.",
+          "Compressed files that store large volumes of information.",
+          "Malicious code hidden inside images and documents.",
+          "Any binary file with an unreadable extension."
+        ],
+        "es-MX": [
+          "Datos sobre los datos, que añaden contexto como fechas, ubicaciones o identificadores.",
+          "Archivos comprimidos que contienen grandes volúmenes de información.",
+          "Códigos maliciosos ocultos en imágenes y documentos.",
+          "Cualquier archivo binario sin extensión legible."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Data about the data, adding context such as dates, locations or identifiers.",
+        "es-MX": "Datos sobre los datos, que añaden contexto como fechas, ubicaciones o identificadores."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Metadata describe attributes of the evidence: when it was created, who generated it, from which device, what location, what size, etc. They are not the main content, but contextual information that helps interpret and validate the evidence."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Examples: creation date and time, geolocation, sender and receiver IDs.",
+              "They can be critical to prove authenticity and origin.",
+              "They are often generated automatically by the system or the app."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los metadatos describen atributos de la evidencia: cuándo se creó, quién la generó, desde qué dispositivo, con qué ubicación, qué tamaño tiene, etc. No son el contenido principal, sino información contextual que ayuda a interpretar y validar la evidencia."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Ejemplos: fecha/hora de creación, geolocalización, ID de remitente y receptor.",
+              "Pueden ser críticos para demostrar autenticidad y origen.",
+              "Se generan muchas veces de forma automática por el sistema o la app."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Metadatos",
+      "Question Text": {
+        "en-US": [
+          "Which of the following examples best represents a relevant metadata item in an investigation?"
+        ],
+        "es-MX": [
+          "¿Cuál de los siguientes ejemplos corresponde mejor a un metadato relevante en una investigación?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "The creation date and time of a chat file.",
+          "The full text of a WhatsApp conversation.",
+          "The written content of a PDF document.",
+          "The graphic design of the application icon."
+        ],
+        "es-MX": [
+          "La fecha y hora de creación de un archivo de chat.",
+          "El texto completo de una conversación de WhatsApp.",
+          "El contenido de un documento en formato PDF.",
+          "El diseño gráfico del ícono de la aplicación."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "The creation date and time of a chat file.",
+        "es-MX": "La fecha y hora de creación de un archivo de chat."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The date and time associated with a file are not part of the message content, but indicate when it was created or modified. That extra information is metadata and helps reconstruct the timeline of events in an investigation."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La fecha y hora asociadas a un archivo no forman parte del contenido del mensaje, pero sí indican cuándo fue creado o modificado. Esa información adicional es un metadato que ayuda a reconstruir la línea de tiempo de los hechos en una investigación."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Metadatos",
+      "Question Text": {
+        "en-US": [
+          "According to Class 3, why are metadata essential for digital evidence?"
+        ],
+        "es-MX": [
+          "Según la Clase 3, ¿por qué los metadatos son esenciales para la evidencia digital?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Because they help validate authenticity, timing and origin of the data.",
+          "Because they completely replace the main content of the messages.",
+          "Because they only serve to reduce file sizes.",
+          "Because they prevent the user from deleting information from the device."
+        ],
+        "es-MX": [
+          "Porque permiten validar autenticidad, temporalidad y origen de los datos.",
+          "Porque reemplazan completamente al contenido principal de los mensajes.",
+          "Porque solo sirven para reducir el tamaño de los archivos.",
+          "Porque impiden que el usuario borre información del dispositivo."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Because they help validate authenticity, timing and origin of the data.",
+        "es-MX": "Porque permiten validar autenticidad, temporalidad y origen de los datos."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Metadata help answer questions such as: When was this file generated? From which device? Who sent it? Where was the user located? Without this context, it is much harder to defend that a piece of evidence is authentic and has not been manipulated."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los metadatos ayudan a responder preguntas como: ¿cuándo se generó este archivo?, ¿desde qué dispositivo?, ¿quién lo envió?, ¿dónde se encontraba el usuario? Sin este contexto, sería mucho más difícil defender que una evidencia es auténtica y que no ha sido manipulada."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "WhatsApp y Telegram",
+      "Question Text": {
+        "en-US": [
+          "Which of the following associations is correct according to the examples from Class 3?"
+        ],
+        "es-MX": [
+          "¿Cuál de las siguientes asociaciones es correcta según los ejemplos de la Clase 3?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "WhatsApp: msgstore.db as persistent; temporary messages as volatile; date and sender number as metadata.",
+          "WhatsApp: all data are volatile and are lost when the phone is powered off.",
+          "Telegram: all chats are persistent and there is never volatile evidence.",
+          "WhatsApp and Telegram: they only generate metadata, but no persistent evidence."
+        ],
+        "es-MX": [
+          "WhatsApp: msgstore.db como persistente; mensajes temporales como volátiles; fecha y número del remitente como metadatos.",
+          "WhatsApp: todos los datos son volátiles y se pierden al apagar el teléfono.",
+          "Telegram: todos los chats son persistentes y nunca hay evidencia volátil.",
+          "WhatsApp y Telegram: solo generan metadatos, pero no evidencia persistente."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "WhatsApp: msgstore.db as persistent; temporary messages as volatile; date and sender number as metadata.",
+        "es-MX": "WhatsApp: msgstore.db como persistente; mensajes temporales como volátiles; fecha y número del remitente como metadatos."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The material explains that in WhatsApp, msgstore.db and the /Media folder are examples of persistent evidence; ephemeral messages are volatile; and elements such as date, time, phone number or chat ID are metadata. Telegram shows a similar pattern with downloaded files (persistent), secret chats (volatile) and user/channel data (metadata)."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El material menciona que en WhatsApp la base de datos msgstore.db y la carpeta /Media son ejemplos de evidencia persistente, los mensajes efímeros son volátiles y elementos como fecha, hora, número o ID del chat constituyen metadatos. En Telegram ocurre algo similar con archivos descargados (persistentes), chats secretos (volátiles) y datos de usuario/canal (metadatos)."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Importancia de la clasificación",
+      "Question Text": {
+        "en-US": [
+          "What is one of the most important reasons for classifying evidence as volatile, persistent and metadata?"
+        ],
+        "es-MX": [
+          "¿Cuál es una de las razones más importantes para clasificar la evidencia en volátil, persistente y metadatos?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "It allows analysts to decide what to capture first and how to design the acquisition procedure.",
+          "It only serves to arrange folders in the file explorer.",
+          "It helps reduce the number of forensic tools to a single one.",
+          "It completely removes the need to maintain chain of custody."
+        ],
+        "es-MX": [
+          "Permite decidir qué capturar primero y cómo diseñar el procedimiento de adquisición.",
+          "Sirve únicamente para ordenar carpetas en el explorador de archivos.",
+          "Ayuda a reducir el número de herramientas forenses necesarias a una sola.",
+          "Evita por completo la necesidad de mantener cadena de custodia."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "It allows analysts to decide what to capture first and how to design the acquisition procedure.",
+        "es-MX": "Permite decidir qué capturar primero y cómo diseñar el procedimiento de adquisición."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Knowing which evidence is volatile, which is persistent and which metadata exist allows the analyst to set priorities: first, capture what might be lost (volatile), then preserve what is stored (persistent), and make sure that metadata are not altered."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Saber qué evidencia es volátil, cuál es persistente y qué metadatos existen permite al analista definir prioridades: primero se adquiere lo que se puede perder (volátil), luego se preserva lo que está en almacenamiento (persistente) y se cuida que los metadatos no se alteren."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Prioridades forenses",
+      "Question Text": {
+        "en-US": [
+          "When starting a forensic analysis on a device with messaging apps, which type of evidence usually has collection priority?"
+        ],
+        "es-MX": [
+          "Al iniciar un análisis forense en un dispositivo con apps de mensajería, ¿qué tipo de evidencia suele tener prioridad de recolección?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Volatile evidence, because of its high risk of being lost.",
+          "Persistent evidence, because it is never deleted.",
+          "Metadata, because they cannot be modified.",
+          "Operating system temporary files, regardless of their content."
+        ],
+        "es-MX": [
+          "La evidencia volátil, por su alta probabilidad de pérdida.",
+          "La evidencia persistente, porque nunca se borra.",
+          "Los metadatos, ya que no pueden modificarse.",
+          "Los archivos temporales del sistema operativo, sin importar su contenido."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Volatile evidence, because of its high risk of being lost.",
+        "es-MX": "La evidencia volátil, por su alta probabilidad de pérdida."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Volatile evidence is the most fragile: it can disappear if a session is closed, a process ends or the device is powered off. Professional procedures therefore prioritize capturing it before moving on to more detailed analysis of persistent evidence."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La evidencia volátil es la más frágil: puede desaparecer si se cierra una sesión, se termina un proceso o se apaga el dispositivo. Por eso, los procedimientos profesionales dan prioridad a su captura antes de pasar a análisis más detallados de evidencias persistentes."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Coexistencia de evidencias",
+      "Question Text": {
+        "en-US": [
+          "According to the conclusions of Class 3, which statement best describes the situation on a device with apps such as WhatsApp or Telegram?"
+        ],
+        "es-MX": [
+          "Según las conclusiones de la Clase 3, ¿qué afirmación describe mejor la situación en un dispositivo con apps como WhatsApp o Telegram?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Volatile evidence, persistent evidence and metadata can coexist at the same time.",
+          "Only persistent evidence exists, because everything is stored on disk.",
+          "Only metadata exist, because content is always deleted.",
+          "Volatile evidence is never present in messaging applications."
+        ],
+        "es-MX": [
+          "Pueden coexistir evidencia volátil, persistente y metadatos al mismo tiempo.",
+          "Solo existe evidencia persistente, ya que todo se guarda en el disco.",
+          "Solo hay metadatos, porque el contenido se borra siempre.",
+          "La evidencia volátil no se presenta nunca en aplicaciones de mensajería."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Volatile evidence, persistent evidence and metadata can coexist at the same time.",
+        "es-MX": "Pueden coexistir evidencia volátil, persistente y metadatos al mismo tiempo."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "A single device can contain ephemeral messages (volatile), chat databases and multimedia files (persistent), and metadata describing both. The analyst’s challenge is to understand this mix and handle each type of evidence with the right technique."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Un mismo dispositivo puede contener: mensajes efímeros (volátiles), bases de datos y archivos multimedia (persistentes) y, además, metadatos que describen ambos tipos. El reto del analista es entender esta combinación y tratar cada tipo de evidencia con la técnica adecuada."
+          }
+        ]
+      }
+    }
+  ]
+}
