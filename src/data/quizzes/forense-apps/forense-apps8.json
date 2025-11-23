@@ -1,0 +1,537 @@
+{
+    "meta": {
+      "slug": "forense-apps-mejores-practicas-estandares",
+      "title": "Procedimientos y mejores prácticas en el análisis forense digital",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 1,
+      "classNo": 8,
+      "description": "Estándares, marcos normativos y mejores prácticas que garantizan la validez técnica y legal de la evidencia digital.",
+      "tags": [
+        "mejores prácticas",
+        "ISO 27037",
+        "NIST",
+        "ACPO",
+        "cadena de custodia",
+        "análisis forense digital"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "Importancia de las mejores prácticas",
+        "Question Text": {
+          "en-US": [
+            "Why is it not enough just to extract data in a digital forensic analysis?"
+          ],
+          "es-MX": [
+            "¿Por qué no basta solo con extraer datos en un análisis forense digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because the important thing is only the volume of information obtained.",
+            "Because it is essential to prove that the process was professional, documented and reproducible.",
+            "Because laws require the use of the most expensive tools.",
+            "Because only screenshots are accepted as valid evidence."
+          ],
+          "es-MX": [
+            "Porque lo importante es solo el volumen de información obtenido.",
+            "Porque es indispensable demostrar que el proceso fue profesional, documentado y reproducible.",
+            "Porque las leyes exigen usar las herramientas más caras.",
+            "Porque solo se aceptan como evidencia válida las capturas de pantalla."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it is essential to prove that the process was professional, documented and reproducible.",
+          "es-MX": "Porque es indispensable demostrar que el proceso fue profesional, documentado y reproducible."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Best practices state that evidence is not just the data itself, but also how it was obtained and processed. A forensic process must be professional, fully documented and reproducible so that another expert can review it and reach similar conclusions, which strengthens legal validity."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las mejores prácticas indican que la evidencia no es solo el dato, sino también cómo se obtuvo y procesó. Un proceso forense debe ser profesional, estar completamente documentado y ser reproducible, de modo que otra persona experta pueda revisarlo y llegar a conclusiones similares, lo que fortalece su validez legal."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "ISO/IEC 27037",
+        "Question Text": {
+          "en-US": [
+            "What is the main focus of the ISO/IEC 27037 standard in digital forensics?"
+          ],
+          "es-MX": [
+            "¿En qué se enfoca principalmente la norma ISO/IEC 27037 en el contexto forense digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "On the design of secure networks.",
+            "On guidelines for identification, collection, acquisition and preservation of digital evidence.",
+            "On creating antivirus software.",
+            "On training in programming languages."
+          ],
+          "es-MX": [
+            "En el diseño de redes seguras.",
+            "En directrices para la identificación, recolección, adquisición y preservación de evidencia digital.",
+            "En la creación de software antivirus.",
+            "En la capacitación en lenguajes de programación."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "On guidelines for identification, collection, acquisition and preservation of digital evidence.",
+          "es-MX": "En directrices para la identificación, recolección, adquisición y preservación de evidencia digital."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "ISO/IEC 27037 is one of the core standards in digital forensics. It describes how to correctly identify sources of evidence, how to collect and acquire them without altering information, and how to preserve them safely with proper documentation to maintain authenticity and traceability."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "ISO/IEC 27037 es una de las normas base en informática forense. Describe cómo identificar correctamente las fuentes de evidencia, cómo recolectarlas y adquirirlas sin alterar la información, y cómo preservarlas de forma segura con documentación adecuada para mantener su autenticidad y trazabilidad."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "ISO/IEC 27041",
+        "Question Text": {
+          "en-US": [
+            "What is the purpose of ISO/IEC 27041 in the context of forensic methods and processes?"
+          ],
+          "es-MX": [
+            "¿Cuál es el propósito de ISO/IEC 27041 en el contexto de métodos y procesos forenses?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To evaluate if the methods used are suitable, reproducible and technically reliable.",
+            "To define how to configure firewalls.",
+            "To regulate only the physical security of laboratories.",
+            "To describe how to design mobile apps."
+          ],
+          "es-MX": [
+            "Evaluar si los métodos utilizados son adecuados, reproducibles y técnicamente fiables.",
+            "Definir cómo configurar firewalls.",
+            "Regular únicamente la seguridad física de los laboratorios.",
+            "Describir cómo diseñar aplicaciones móviles."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To evaluate if the methods used are suitable, reproducible and technically reliable.",
+          "es-MX": "Evaluar si los métodos utilizados son adecuados, reproducibles y técnicamente fiables."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "ISO/IEC 27041 focuses on assuring the suitability and adequacy of digital evidence methods. It promotes validation of tools, evaluation of the process and consistency checks between different analysts so that the methods used can be trusted and reproduced in other contexts."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "ISO/IEC 27041 se centra en asegurar la idoneidad y adecuación de los métodos para trabajar con evidencia digital. Promueve la validación de herramientas, la evaluación del proceso y la verificación de consistencia entre distintas personas analistas, de modo que los métodos utilizados sean confiables y reproducibles."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "ISO/IEC 27042",
+        "Question Text": {
+          "en-US": [
+            "Which aspect of the forensic process is mainly addressed by ISO/IEC 27042?"
+          ],
+          "es-MX": [
+            "¿Qué aspecto del proceso forense aborda principalmente la norma ISO/IEC 27042?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The physical design of data centers.",
+            "The analysis and interpretation of digital evidence.",
+            "The purchase of forensic equipment.",
+            "The backup of personal photos."
+          ],
+          "es-MX": [
+            "El diseño físico de los centros de datos.",
+            "El análisis e interpretación de la evidencia digital.",
+            "La compra de equipo forense.",
+            "El respaldo de fotografías personales."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The analysis and interpretation of digital evidence.",
+          "es-MX": "El análisis e interpretación de la evidencia digital."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "ISO/IEC 27042 explains how to examine, interpret and correlate digital data, and how to reconstruct events in a way that is understandable and verifiable. It guides the central phase of analysis, ensuring that the conclusions are based on a rigorous and well-documented process."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "ISO/IEC 27042 explica cómo examinar, interpretar y correlacionar datos digitales, y cómo reconstruir eventos de manera comprensible y verificable. Orienta la fase central de análisis, asegurando que las conclusiones se basen en un proceso riguroso y bien documentado."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "ISO/IEC 27043",
+        "Question Text": {
+          "en-US": [
+            "What topic does ISO/IEC 27043 mainly focus on?"
+          ],
+          "es-MX": [
+            "¿En qué tema se enfoca principalmente la norma ISO/IEC 27043?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Incident investigation principles and digital incident processes.",
+            "Graphic design of forensic reports.",
+            "Development of operating systems.",
+            "Configuration of network printers."
+          ],
+          "es-MX": [
+            "En principios de investigación de incidentes y procesos de incidentes digitales.",
+            "En el diseño gráfico de los informes forenses.",
+            "En el desarrollo de sistemas operativos.",
+            "En la configuración de impresoras de red."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Incident investigation principles and digital incident processes.",
+          "es-MX": "En principios de investigación de incidentes y procesos de incidentes digitales."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "ISO/IEC 27043 deals with how to investigate digital incidents as a complete process: response, collection of logs and artifacts, coordination between security and forensic teams and management of the incident lifecycle. It connects forensic work with incident response."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "ISO/IEC 27043 trata sobre cómo investigar incidentes digitales como un proceso completo: respuesta, recolección de registros y artefactos, coordinación entre equipos de seguridad y forenses, y gestión del ciclo de vida del incidente. Conecta el trabajo forense con la respuesta a incidentes."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Guías NIST",
+        "Question Text": {
+          "en-US": [
+            "Which of the following statements correctly describes the role of NIST guides in digital forensics?"
+          ],
+          "es-MX": [
+            "¿Cuál de las siguientes afirmaciones describe correctamente el papel de las guías del NIST en informática forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They provide practical guides for mobile forensics and integrating forensic techniques into incident response.",
+            "They are only marketing manuals for cybersecurity companies.",
+            "They are focused exclusively on physical crime scene photography.",
+            "They are documents used only in European courts."
+          ],
+          "es-MX": [
+            "Ofrecen guías prácticas para forense móvil y la integración de técnicas forenses en la respuesta a incidentes.",
+            "Son solo manuales de marketing para empresas de ciberseguridad.",
+            "Se enfocan exclusivamente en la fotografía de escenas del crimen físicas.",
+            "Son documentos utilizados únicamente en tribunales europeos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They provide practical guides for mobile forensics and integrating forensic techniques into incident response.",
+          "es-MX": "Ofrecen guías prácticas para forense móvil y la integración de técnicas forenses en la respuesta a incidentes."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "NIST documents, such as SP 800-101 and SP 800-86, provide detailed recommendations on mobile device forensics and on how to integrate forensic techniques into incident response processes. They are widely used as technical and procedural references worldwide."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los documentos del NIST, como SP 800-101 y SP 800-86, ofrecen recomendaciones detalladas sobre forense en dispositivos móviles y sobre cómo integrar técnicas forenses en los procesos de respuesta a incidentes. Son referencias técnicas y procedimentales ampliamente utilizadas a nivel mundial."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Principios ACPO",
+        "Question Text": {
+          "en-US": [
+            "Which option best summarizes the principles of ACPO for digital evidence?"
+          ],
+          "es-MX": [
+            "¿Qué opción resume mejor los principios de ACPO para la evidencia digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Not modifying evidence, documenting any manipulation and maintaining detailed chain of custody with competent personnel.",
+            "Allowing any person to manipulate the device without documentation.",
+            "Prioritizing speed over documentation and integrity.",
+            "Deleting data that seems irrelevant without leaving records."
+          ],
+          "es-MX": [
+            "No modificar la evidencia, documentar cualquier manipulación y mantener cadena de custodia detallada con personal competente.",
+            "Permitir que cualquier persona manipule el dispositivo sin documentación.",
+            "Priorizar la rapidez sobre la documentación y la integridad.",
+            "Borrar datos que parezcan irrelevantes sin dejar registros."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Not modifying evidence, documenting any manipulation and maintaining detailed chain of custody with competent personnel.",
+          "es-MX": "No modificar la evidencia, documentar cualquier manipulación y mantener cadena de custodia detallada con personal competente."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "ACPO principles emphasize that original evidence should not be modified whenever possible; if some manipulation is necessary, it must be fully explained and documented. They also require a clear chain of custody and competent personnel to ensure the evidence remains reliable."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los principios de ACPO enfatizan que, en lo posible, la evidencia original no debe modificarse; si se requiere alguna manipulación, debe explicarse y documentarse por completo. También exigen una cadena de custodia clara y personal competente para asegurar que la evidencia siga siendo confiable."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Procedimiento forense",
+        "Question Text": {
+          "en-US": [
+            "Which of the following sequences correctly reflects the essential phases of a professional forensic analysis?"
+          ],
+          "es-MX": [
+            "¿Cuál de las siguientes secuencias refleja correctamente las fases esenciales de un análisis forense profesional?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Identification → Preservation → Collection → Analysis → Documentation → Final report.",
+            "Collection → Deletion → Encryption → Publication.",
+            "Design → Programming → Testing → Deployment.",
+            "Search on the internet → Printing → Filing."
+          ],
+          "es-MX": [
+            "Identificación → Preservación → Recolección → Análisis → Documentación → Informe final.",
+            "Recolección → Borrado → Cifrado → Publicación.",
+            "Diseño → Programación → Pruebas → Despliegue.",
+            "Búsqueda en internet → Impresión → Archivado."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Identification → Preservation → Collection → Analysis → Documentation → Final report.",
+          "es-MX": "Identificación → Preservación → Recolección → Análisis → Documentación → Informe final."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Professional practice recognizes a logical sequence: first identify potential sources; then preserve them; later collect or acquire forensic images; after that, analyze the data; document every step and finally produce a clear and impartial report based on the findings."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La práctica profesional reconoce una secuencia lógica: primero identificar las fuentes potenciales; después preservarlas; más tarde recolectar o adquirir imágenes forenses; luego analizar los datos; documentar cada paso y, finalmente, elaborar un informe claro e imparcial basado en los hallazgos."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Buenas prácticas: evidencia original",
+        "Question Text": {
+          "en-US": [
+            "What is the main reason why best practices recommend not working directly on the original evidence?"
+          ],
+          "es-MX": [
+            "¿Cuál es la razón principal por la que las mejores prácticas recomiendan no trabajar directamente sobre la evidencia original?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because copies are more visually attractive.",
+            "To avoid altering the original data and preserve it intact for future reviews or legal processes.",
+            "Because the original device cannot be turned on.",
+            "Because the law prohibits creating forensic images."
+          ],
+          "es-MX": [
+            "Porque las copias son más vistosas.",
+            "Para evitar alterar los datos originales y preservarlos intactos para revisiones futuras o procesos legales.",
+            "Porque el dispositivo original no puede encenderse.",
+            "Porque la ley prohíbe crear imágenes forenses."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To avoid altering the original data and preserve it intact for future reviews or legal processes.",
+          "es-MX": "Para evitar alterar los datos originales y preservarlos intactos para revisiones futuras o procesos legales."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Working on a forensic copy protects the original evidence from accidental changes. If there is any doubt, the original can be re-examined or a new copy can be made. This is crucial to maintain credibility, integrity and legal admissibility of the evidence."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Trabajar sobre una copia forense protege la evidencia original de cambios accidentales. Si hay dudas, se puede volver a revisar el original o generar una nueva copia. Esto es clave para mantener la credibilidad, la integridad y la admisibilidad legal de la evidencia."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Buenas prácticas: integridad y confidencialidad",
+        "Question Text": {
+          "en-US": [
+            "Which combination represents two general best practices recognized worldwide in digital forensics?"
+          ],
+          "es-MX": [
+            "¿Qué combinación representa dos buenas prácticas generales reconocidas mundialmente en informática forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Working without documentation and sharing interesting data on social networks.",
+            "Maintaining integrity through hashes and ensuring confidentiality of all information.",
+            "Analyzing any personal data even if it is not relevant and not calculating hashes.",
+            "Using unlicensed tools and skipping the chain of custody."
+          ],
+          "es-MX": [
+            "Trabajar sin documentación y compartir datos interesantes en redes sociales.",
+            "Mantener la integridad mediante hashes y asegurar la confidencialidad de toda la información.",
+            "Analizar cualquier dato personal aunque no sea relevante y no calcular hashes.",
+            "Utilizar herramientas sin licencia y omitir la cadena de custodia."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Maintaining integrity through hashes and ensuring confidentiality of all information.",
+          "es-MX": "Mantener la integridad mediante hashes y asegurar la confidencialidad de toda la información."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Best practices highlight that integrity and confidentiality are pillars of digital forensics. Hashes show that the data has not been altered, while confidentiality protects the privacy and security of the people involved, avoiding leaks or misuse of the information."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las mejores prácticas señalan que la integridad y la confidencialidad son pilares de la informática forense. Los hashes demuestran que los datos no han sido alterados, mientras que la confidencialidad protege la privacidad y la seguridad de las personas involucradas, evitando filtraciones o usos indebidos de la información."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Herramientas y personal competente",
+        "Question Text": {
+          "en-US": [
+            "According to the material, why is it important to validate tools and have competent personnel in digital forensics?"
+          ],
+          "es-MX": [
+            "De acuerdo con el material, ¿por qué es importante validar las herramientas y contar con personal competente en informática forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because any tool and any person can do forensics without training.",
+            "Because reliable tools and trained analysts reduce errors and increase the credibility of the results.",
+            "Because validation replaces the need to document processes.",
+            "Because it allows ignoring international standards."
+          ],
+          "es-MX": [
+            "Porque cualquier herramienta y cualquier persona pueden hacer forense sin capacitación.",
+            "Porque herramientas confiables y personas analistas capacitadas reducen errores y aumentan la credibilidad de los resultados.",
+            "Porque la validación sustituye la necesidad de documentar procesos.",
+            "Porque permite ignorar las normas internacionales."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because reliable tools and trained analysts reduce errors and increase the credibility of the results.",
+          "es-MX": "Porque herramientas confiables y personas analistas capacitadas reducen errores y aumentan la credibilidad de los resultados."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Validating tools ensures that they work as expected and do not introduce errors into the evidence. Competent and continuously trained personnel can correctly apply methods, interpret results and explain them clearly, which reinforces trust in the forensic process."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Validar las herramientas asegura que funcionen como se espera y que no introduzcan errores en la evidencia. Contar con personal competente y en formación continua permite aplicar correctamente los métodos, interpretar los resultados y explicarlos con claridad, lo que refuerza la confianza en el proceso forense."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Rigor y estándares",
+        "Question Text": {
+          "en-US": [
+            "What is one of the main benefits of aligning digital forensic work with international standards and best practices?"
+          ],
+          "es-MX": [
+            "¿Cuál es uno de los principales beneficios de alinear el trabajo forense digital con normas y mejores prácticas internacionales?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "That the process becomes secret and cannot be audited.",
+            "That the evidence is more likely to be considered reliable, admissible and transparent in legal and technical reviews.",
+            "That documentation is no longer necessary.",
+            "That any person can change the methodology without justification."
+          ],
+          "es-MX": [
+            "Que el proceso se vuelva secreto y no pueda auditarse.",
+            "Que la evidencia tenga mayor probabilidad de considerarse confiable, admisible y transparente en revisiones legales y técnicas.",
+            "Que ya no sea necesaria la documentación.",
+            "Que cualquier persona pueda cambiar la metodología sin justificación."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "That the evidence is more likely to be considered reliable, admissible and transparent in legal and technical reviews.",
+          "es-MX": "Que la evidencia tenga mayor probabilidad de considerarse confiable, admisible y transparente en revisiones legales y técnicas."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Working in line with ISO, NIST, ACPO, SWGDE and ENISA guides shows that the analyst follows recognized and rigorous procedures. This increases the chances that the evidence will be accepted, that the methodology will withstand audits, and that the entire process will be viewed as transparent and professional."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Trabajar alineado con las guías de ISO, NIST, ACPO, SWGDE y ENISA demuestra que la persona analista sigue procedimientos reconocidos y rigurosos. Esto aumenta la probabilidad de que la evidencia sea aceptada, de que la metodología resista auditorías y de que todo el proceso se perciba como transparente y profesional."
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

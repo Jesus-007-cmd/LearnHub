@@ -1,0 +1,536 @@
+{
+    "meta": {
+      "slug": "forense-apps-principios-legales-eticos",
+      "title": "Principios legales y éticos en el análisis forense digital",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 1,
+      "classNo": 7,
+      "description": "Principios legales y éticos que guían el análisis forense digital y el manejo responsable de la evidencia.",
+      "tags": [
+        "principios legales",
+        "ética forense",
+        "privacidad",
+        "evidencia digital",
+        "ciberseguridad"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "Dimensión legal y ética",
+        "Question Text": {
+          "en-US": [
+            "What is the main implication of saying that digital forensic analysis has a legal and ethical dimension?"
+          ],
+          "es-MX": [
+            "¿Cuál es la principal implicación de decir que el análisis forense digital tiene una dimensión legal y ética?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "That it only focuses on recovering deleted files.",
+            "That the analyst works with sensitive information and must respect laws, privacy and rights.",
+            "That it is an activity without impact on people’s lives.",
+            "That it only depends on the power of the forensic tools."
+          ],
+          "es-MX": [
+            "Que solo se enfoca en recuperar archivos borrados.",
+            "Que la persona analista trabaja con información sensible y debe respetar leyes, privacidad y derechos.",
+            "Que es una actividad sin impacto en la vida de las personas.",
+            "Que solo depende de la potencia de las herramientas forenses."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "That the analyst works with sensitive information and must respect laws, privacy and rights.",
+          "es-MX": "Que la persona analista trabaja con información sensible y debe respetar leyes, privacidad y derechos."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Digital forensic work goes far beyond technical recovery of data. The analyst deals with highly sensitive information that can affect people’s rights, reputation and legal situation. For that reason, every action must respect legal frameworks, privacy and human rights, or the evidence can lose validity and the analyst can incur responsibility."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El trabajo forense digital va mucho más allá de la recuperación técnica de datos. La persona analista trata con información altamente sensible que puede afectar derechos, reputación y situación legal de las personas. Por ello, cada acción debe respetar los marcos legales, la privacidad y los derechos humanos, o la evidencia puede perder validez y el analista incurrir en responsabilidades."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Principios legales",
+        "Question Text": {
+          "en-US": [
+            "Which legal principle indicates that evidence must be obtained based on a valid legal basis, such as a court order or informed consent?"
+          ],
+          "es-MX": [
+            "¿Qué principio legal indica que la evidencia debe obtenerse con una base legal válida, como una orden judicial o un consentimiento informado?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Confidentiality.",
+            "Legality.",
+            "Objectivity.",
+            "Minimization of data."
+          ],
+          "es-MX": [
+            "Confidencialidad.",
+            "Legalidad.",
+            "Objetividad.",
+            "Minimización de datos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Legality.",
+          "es-MX": "Legalidad."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Legality means that forensic actions must be supported by a valid legal basis: court orders, institutional authorizations or the owner’s informed consent. If evidence is obtained without this support, it can be considered illegally obtained and may be excluded from a trial."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La legalidad implica que las acciones forenses deben estar respaldadas por una base jurídica válida: órdenes judiciales, autorizaciones institucionales o consentimiento informado del titular. Si la evidencia se obtiene sin este respaldo, puede considerarse ilícita y ser excluida de un juicio."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Debido proceso",
+        "Question Text": {
+          "en-US": [
+            "Why is it important to respect due process when collecting digital evidence?"
+          ],
+          "es-MX": [
+            "¿Por qué es importante respetar el debido proceso al recolectar evidencia digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it allows collecting evidence faster, even without authorization.",
+            "Because it guarantees that rights are not violated and the evidence can be admitted in court.",
+            "Because it avoids using hashes and technical controls.",
+            "Because it allows sharing information freely with third parties."
+          ],
+          "es-MX": [
+            "Porque permite recolectar evidencia más rápido, incluso sin autorización.",
+            "Porque garantiza que no se violen derechos y que la evidencia pueda ser admitida en juicio.",
+            "Porque evita el uso de hashes y controles técnicos.",
+            "Porque permite compartir libremente la información con terceros."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it guarantees that rights are not violated and the evidence can be admitted in court.",
+          "es-MX": "Porque garantiza que no se violen derechos y que la evidencia pueda ser admitida en juicio."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Due process ensures that evidence is collected without violating fundamental rights such as privacy and legal security. If procedures are not respected, even technically correct evidence can be rejected because it was obtained in an unlawful or abusive way."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El debido proceso asegura que la evidencia se recolecte sin violar derechos fundamentales como la privacidad y la seguridad jurídica. Si no se respetan los procedimientos, incluso una evidencia técnicamente correcta puede ser rechazada por haberse obtenido de manera ilícita o abusiva."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Integridad técnica",
+        "Question Text": {
+          "en-US": [
+            "What is the main purpose of calculating hashes (MD5, SHA-1, SHA-256) during digital forensic analysis?"
+          ],
+          "es-MX": [
+            "¿Cuál es el propósito principal de calcular hashes (MD5, SHA-1, SHA-256) durante el análisis forense digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To encrypt all the files and hide them.",
+            "To prove the integrity and authenticity of the evidence by verifying it has not been altered.",
+            "To speed up the internet connection.",
+            "To delete irrelevant files automatically."
+          ],
+          "es-MX": [
+            "Cifrar todos los archivos y ocultarlos.",
+            "Demostrar la integridad y autenticidad de la evidencia verificando que no ha sido alterada.",
+            "Acelerar la conexión a internet.",
+            "Borrar automáticamente los archivos irrelevantes."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To prove the integrity and authenticity of the evidence by verifying it has not been altered.",
+          "es-MX": "Demostrar la integridad y autenticidad de la evidencia verificando que no ha sido alterada."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Hashes act like a digital fingerprint of the evidence. If the hash remains the same before and after the analysis, it can be shown that the content has not changed. This is essential for legal validity and for defending the work in court."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los hashes funcionan como una huella digital de la evidencia. Si el hash se mantiene igual antes y después del análisis, se puede demostrar que el contenido no ha cambiado. Esto es esencial para la validez legal y para defender el trabajo ante un tribunal."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Trazabilidad",
+        "Question Text": {
+          "en-US": [
+            "What does traceability and chain of custody mean in the context of digital evidence?"
+          ],
+          "es-MX": [
+            "¿Qué significan la trazabilidad y la cadena de custodia en el contexto de la evidencia digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A list of passwords used in the investigation.",
+            "A detailed record of who handled the evidence, when, how and where it was stored.",
+            "A backup of the operating system.",
+            "A summary of the case written informally."
+          ],
+          "es-MX": [
+            "Una lista de contraseñas usadas en la investigación.",
+            "Un registro detallado de quién manipuló la evidencia, cuándo, cómo y dónde se almacenó.",
+            "Un respaldo del sistema operativo.",
+            "Un resumen del caso redactado de forma informal."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A detailed record of who handled the evidence, when, how and where it was stored.",
+          "es-MX": "Un registro detallado de quién manipuló la evidencia, cuándo, cómo y dónde se almacenó."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Traceability and chain of custody refer to the documented path that the evidence follows from its collection to its final storage. It includes people, dates, places and actions. If this record is incomplete, the defence can argue possible tampering and the evidence may be discarded."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La trazabilidad y la cadena de custodia se refieren al camino documentado que sigue la evidencia desde su recolección hasta su almacenamiento final. Incluye personas, fechas, lugares y acciones. Si este registro es incompleto, la defensa puede alegar posible manipulación y la evidencia puede ser descartada."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Admisibilidad",
+        "Question Text": {
+          "en-US": [
+            "Which combination correctly describes the basic criteria for the admissibility of digital evidence?"
+          ],
+          "es-MX": [
+            "¿Cuál combinación describe correctamente los criterios básicos de admisibilidad de la evidencia digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Relevant, technically reliable and obtained without violating rights.",
+            "Cheap, fast to obtain and visually attractive.",
+            "Secret, unrepeatable and obtained without documentation.",
+            "Encrypted, large and difficult to interpret."
+          ],
+          "es-MX": [
+            "Relevante, técnicamente fiable y obtenida sin violar derechos.",
+            "Barata, rápida de obtener y visualmente atractiva.",
+            "Secreta, irrepetible y obtenida sin documentación.",
+            "Cifrada, de gran tamaño y difícil de interpretar."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Relevant, technically reliable and obtained without violating rights.",
+          "es-MX": "Relevante, técnicamente fiable y obtenida sin violar derechos."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "For evidence to be admissible, it must be related to the case, obtained with reliable technical methods and collected without violating fundamental rights. If any of these elements fails, the court can reject the digital evidence, even if it is interesting from a technical point of view."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Para que la evidencia sea admisible, debe estar relacionada con el caso, obtenerse mediante métodos técnicos fiables y recolectarse sin violar derechos fundamentales. Si alguno de estos elementos falla, el tribunal puede rechazar la evidencia digital, incluso si es interesante desde el punto de vista técnico."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Ética: confidencialidad",
+        "Question Text": {
+          "en-US": [
+            "What does the ethical principle of confidentiality imply for the digital forensic analyst?"
+          ],
+          "es-MX": [
+            "¿Qué implica el principio ético de confidencialidad para la persona analista forense digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Being allowed to comment on the case details with friends and on social networks.",
+            "Keeping all examined information secret and not sharing it outside the authorized scope.",
+            "Publishing interesting chats as educational examples without permission.",
+            "Sending copies of the evidence to any person who asks for them."
+          ],
+          "es-MX": [
+            "Poder comentar los detalles del caso con amistades y en redes sociales.",
+            "Mantener en secreto toda la información examinada y no compartirla fuera del ámbito autorizado.",
+            "Publicar chats interesantes como ejemplos educativos sin permiso.",
+            "Enviar copias de la evidencia a cualquier persona que las solicite."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Keeping all examined information secret and not sharing it outside the authorized scope.",
+          "es-MX": "Mantener en secreto toda la información examinada y no compartirla fuera del ámbito autorizado."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Confidentiality means that the analyst must protect all information obtained during the analysis and only share it with authorized people or entities. Leaks, indiscreet comments or unauthorized publications can harm the people involved and seriously damage the credibility of the forensic work."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La confidencialidad implica que la persona analista debe proteger toda la información obtenida durante el análisis y compartirla solo con personas o entidades autorizadas. Las filtraciones, comentarios indiscretos o publicaciones no autorizadas pueden dañar a las personas involucradas y afectar gravemente la credibilidad del trabajo forense."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Ética: imparcialidad y objetividad",
+        "Question Text": {
+          "en-US": [
+            "What does it mean that the digital forensic analyst must be impartial and objective?"
+          ],
+          "es-MX": [
+            "¿Qué significa que la persona analista forense digital debe ser imparcial y objetiva?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "That they must support the side that pays the most.",
+            "That their conclusions must be based on facts and evidence, without favoring any party.",
+            "That they can modify the report if one party requests it.",
+            "That they can ignore evidence that does not fit their personal opinion."
+          ],
+          "es-MX": [
+            "Que debe apoyar a la parte que paga más.",
+            "Que sus conclusiones deben basarse en hechos y evidencias, sin favorecer a ninguna parte.",
+            "Que puede modificar el informe si una de las partes se lo pide.",
+            "Que puede ignorar evidencias que no coincidan con su opinión personal."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "That their conclusions must be based on facts and evidence, without favoring any party.",
+          "es-MX": "Que sus conclusiones deben basarse en hechos y evidencias, sin favorecer a ninguna parte."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Impartiality and objectivity mean that the analyst does not work to benefit one side but to clarify the facts. Their report must be supported by verifiable evidence and technical reasoning, even if the results are not convenient for one of the parties involved."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La imparcialidad y la objetividad significan que la persona analista no trabaja para beneficiar a una parte, sino para aclarar los hechos. Su informe debe sustentarse en evidencias verificables y en razonamientos técnicos, aunque los resultados no sean convenientes para alguna de las partes."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Privacidad y justicia",
+        "Question Text": {
+          "en-US": [
+            "How can the relationship between privacy, justice and digital evidence be described in forensic analysis?"
+          ],
+          "es-MX": [
+            "¿Cómo puede describirse la relación entre privacidad, justicia y evidencia digital en el análisis forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "There is no relationship; evidence is above any right.",
+            "It is a balance between the right to privacy and the legitimate need to obtain evidence for clarifying facts.",
+            "Privacy is always more important than any investigation.",
+            "Justice can ignore all privacy rules in digital environments."
+          ],
+          "es-MX": [
+            "No hay relación; la evidencia está por encima de cualquier derecho.",
+            "Es un equilibrio entre el derecho a la privacidad y la necesidad legítima de obtener evidencia para aclarar hechos.",
+            "La privacidad siempre es más importante que cualquier investigación.",
+            "La justicia puede ignorar todas las reglas de privacidad en entornos digitales."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It is a balance between the right to privacy and the legitimate need to obtain evidence for clarifying facts.",
+          "es-MX": "Es un equilibrio entre el derecho a la privacidad y la necesidad legítima de obtener evidencia para aclarar hechos."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Digital forensics operates in a space where both privacy and the search for truth are important. The analyst must respect the user’s rights while collaborating with justice. The key is to obtain only the necessary evidence, with authorization and preserving integrity, without invading private areas that are not relevant to the case."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La informática forense se mueve en un espacio donde tanto la privacidad como la búsqueda de la verdad son importantes. La persona analista debe respetar los derechos del usuario y al mismo tiempo colaborar con la justicia. La clave es obtener solo la evidencia necesaria, con autorización y preservando la integridad, sin invadir áreas privadas que no sean relevantes para el caso."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Riesgos éticos y legales",
+        "Question Text": {
+          "en-US": [
+            "Which of the following is a serious ethical and legal risk in digital forensic analysis?"
+          ],
+          "es-MX": [
+            "¿Cuál de las siguientes es un riesgo ético y legal grave en el análisis forense digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Obtaining evidence without valid authorization or reviewing excessive irrelevant information.",
+            "Documenting all steps of the chain of custody.",
+            "Using updated tools and verifying hashes.",
+            "Limiting the analysis to what is necessary for the case."
+          ],
+          "es-MX": [
+            "Obtener evidencia sin autorización válida o revisar información irrelevante y excesiva.",
+            "Documentar todos los pasos de la cadena de custodia.",
+            "Utilizar herramientas actualizadas y verificar hashes.",
+            "Limitar el análisis a lo necesario para el caso."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Obtaining evidence without valid authorization or reviewing excessive irrelevant information.",
+          "es-MX": "Obtener evidencia sin autorización válida o revisar información irrelevante y excesiva."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Collecting evidence without proper authorization or exploring areas that are not relevant to the investigation violates privacy and legal limits. This can lead to the exclusion of the evidence, legal sanctions and loss of trust in the analyst and the institution."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Recolectar evidencia sin la autorización adecuada o explorar áreas que no son relevantes para la investigación viola la privacidad y los límites legales. Esto puede provocar la exclusión de la evidencia, sanciones legales y pérdida de confianza en la persona analista y en la institución."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Estudio de caso",
+        "Question Text": {
+          "en-US": [
+            "In a case where screenshots of private conversations were leaked on social networks before being formally presented as evidence, which ethical principle is clearly violated?"
+          ],
+          "es-MX": [
+            "En un caso donde se filtraron capturas de pantalla de conversaciones privadas en redes sociales antes de presentarse formalmente como evidencia, ¿qué principio ético se viola de forma clara?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Confidentiality of the information.",
+            "Use of updated tools.",
+            "Minimization of data.",
+            "Chain of custody calculation."
+          ],
+          "es-MX": [
+            "La confidencialidad de la información.",
+            "El uso de herramientas actualizadas.",
+            "La minimización de datos.",
+            "El cálculo de cadena de custodia."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Confidentiality of the information.",
+          "es-MX": "La confidencialidad de la información."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Leaking screenshots before they are formally presented breaks the confidentiality duty. The information leaves the controlled environment of the case and becomes public, affecting privacy, generating distrust and even contaminating potential witnesses or the judicial process."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Filtrar capturas de pantalla antes de presentarlas formalmente rompe el deber de confidencialidad. La información sale del entorno controlado del caso y se vuelve pública, afectando la privacidad, generando desconfianza e incluso contaminando a posibles testigos o el proceso judicial."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Credibilidad del analista",
+        "Question Text": {
+          "en-US": [
+            "According to the principles studied, what does the credibility of the digital forensic analyst mainly depend on?"
+          ],
+          "es-MX": [
+            "De acuerdo con los principios estudiados, ¿de qué depende principalmente la credibilidad de la persona analista forense digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "On personal opinions and what social networks say.",
+            "On their integrity, technical rigor and responsible handling of sensitive information.",
+            "On the number of cases they publish on the internet.",
+            "On using the most expensive forensic tools."
+          ],
+          "es-MX": [
+            "De sus opiniones personales y de lo que digan las redes sociales.",
+            "De su integridad, rigor técnico y manejo responsable de la información sensible.",
+            "De la cantidad de casos que publica en internet.",
+            "De usar las herramientas forenses más costosas."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "On their integrity, technical rigor and responsible handling of sensitive information.",
+          "es-MX": "De su integridad, rigor técnico y manejo responsable de la información sensible."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The analyst’s credibility is built through ethical behavior, technical quality and strict respect for legal and privacy principles. Acting with integrity, documenting everything and protecting the information are key so that judges, institutions and society trust the forensic work."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La credibilidad de la persona analista se construye con un comportamiento ético, calidad técnica y respeto estricto de los principios legales y de privacidad. Actuar con integridad, documentar todo y proteger la información es clave para que jueces, instituciones y sociedad confíen en el trabajo forense."
+            }
+          ]
+        }
+      }
+    ]
+  }
+  
