@@ -1,0 +1,862 @@
+{
+    "meta": {
+      "slug": "forense-apps10",
+      "title": "Introducción a Autopsy y FTK Imager",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 1,
+      "classNo": 10,
+      "description": "Uso básico de FTK Imager y Autopsy para adquisición y análisis de evidencia digital.",
+      "tags": [
+        "FTK Imager",
+        "Autopsy",
+        "herramientas forenses",
+        "imágenes forenses",
+        "timeline",
+        "artefactos"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "Herramientas forenses básicas",
+        "Question Text": {
+          "en-US": [
+            "What is the main purpose of digital forensic tools such as FTK Imager and Autopsy?",
+            "In digital forensics, what is the primary role of tools like FTK Imager and Autopsy?"
+          ],
+          "es-MX": [
+            "¿Cuál es el objetivo principal de herramientas forenses como FTK Imager y Autopsy?",
+            "En informática forense, ¿cuál es la función principal de herramientas como FTK Imager y Autopsy?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To extract, visualize and analyze data from digital devices without altering the original evidence",
+            "To speed up the operating system of the suspect's computer",
+            "To automatically delete irrelevant files from the evidence",
+            "To encrypt the evidence so nobody can access it"
+          ],
+          "es-MX": [
+            "Extraer, visualizar y analizar datos de dispositivos digitales sin alterar la evidencia original",
+            "Acelerar el sistema operativo de la computadora del sospechoso",
+            "Eliminar automáticamente archivos irrelevantes de la evidencia",
+            "Cifrar la evidencia para que nadie pueda acceder a ella"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To extract, visualize and analyze data from digital devices without altering the original evidence",
+          "es-MX": "Extraer, visualizar y analizar datos de dispositivos digitales sin alterar la evidencia original"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Digital forensic tools are designed to work with data in a way that preserves the integrity of the original evidence."
+            },
+            {
+              "type": "text",
+              "content": "The material explicitly states that these tools allow you to extract, visualize and analyze information without modifying the original device."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las herramientas forenses están diseñadas para trabajar con los datos preservando la integridad de la evidencia original."
+            },
+            {
+              "type": "text",
+              "content": "El material indica que permiten extraer, visualizar y analizar información sin alterar el dispositivo original."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "FTK Imager",
+        "Question Text": {
+          "en-US": [
+            "What is FTK Imager mainly oriented to?",
+            "FTK Imager is primarily a tool for what type of forensic task?"
+          ],
+          "es-MX": [
+            "¿A qué está principalmente orientado FTK Imager?",
+            "FTK Imager es, sobre todo, una herramienta para qué tipo de tarea forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Acquisition and visualization of forensic images",
+            "Advanced timeline correlation and artifact analysis",
+            "Writing expert reports automatically",
+            "Managing user passwords in Windows"
+          ],
+          "es-MX": [
+            "Adquisición y visualización de imágenes forenses",
+            "Correlación avanzada de líneas de tiempo y análisis de artefactos",
+            "Redactar dictámenes periciales de forma automática",
+            "Administrar contraseñas de usuarios en Windows"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Acquisition and visualization of forensic images",
+          "es-MX": "Adquisición y visualización de imágenes forenses"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The text says that FTK Imager is oriented to the acquisition and visualization of forensic images."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Creates forensic images of disks, USBs, folders or files",
+                "Allows viewing content without modifying the original",
+                "Supports basic recovery of deleted files"
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El texto indica que FTK Imager está orientado a la adquisición y visualización de imágenes forenses."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Crea imágenes forenses de discos, USB, carpetas o archivos",
+                "Permite ver el contenido sin modificar el original",
+                "Soporta recuperación básica de archivos eliminados"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "FTK Imager",
+        "Question Text": {
+          "en-US": [
+            "Which of the following tasks can FTK Imager perform?",
+            "What can you do with FTK Imager according to the class material?"
+          ],
+          "es-MX": [
+            "¿Cuál de las siguientes tareas puede realizar FTK Imager?",
+            "Según el material, ¿qué puedes hacer con FTK Imager?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Create bit-by-bit forensic images in formats like E01 and raw",
+            "Edit and overwrite files directly on the suspect disk",
+            "Format the suspect drive to clean the evidence",
+            "Only generate PDF reports"
+          ],
+          "es-MX": [
+            "Crear imágenes forenses bit a bit en formatos como E01 y raw",
+            "Editar y sobrescribir archivos directamente en el disco sospechoso",
+            "Formatear la unidad sospechosa para limpiar la evidencia",
+            "Únicamente generar reportes en PDF"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Create bit-by-bit forensic images in formats like E01 and raw",
+          "es-MX": "Crear imágenes forenses bit a bit en formatos como E01 y raw"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The material states that FTK Imager can create exact bit-by-bit copies in formats such as E01, raw (.dd, .img) and AFF."
+            },
+            {
+              "type": "text",
+              "content": "Overwriting or formatting the suspect drive would destroy evidence, which is the opposite of good forensic practice."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El material señala que FTK Imager puede crear copias exactas bit a bit en formatos como E01, raw (.dd, .img) y AFF."
+            },
+            {
+              "type": "text",
+              "content": "Sobrescribir o formatear la unidad sospechosa destruiría la evidencia, lo contrario a las buenas prácticas forenses."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "FTK Imager",
+        "Question Text": {
+          "en-US": [
+            "Which hash algorithms does FTK Imager generate to ensure integrity?",
+            "According to the material, which hash values can FTK Imager calculate?"
+          ],
+          "es-MX": [
+            "¿Qué algoritmos de hash genera FTK Imager para asegurar la integridad?",
+            "Según el material, ¿qué valores hash puede calcular FTK Imager?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "MD5, SHA-1 and SHA-256",
+            "Only CRC32",
+            "SHA-512 and RIPEMD-160 only",
+            "No hash algorithms at all"
+          ],
+          "es-MX": [
+            "MD5, SHA-1 y SHA-256",
+            "Solo CRC32",
+            "Solo SHA-512 y RIPEMD-160",
+            "Ningún algoritmo de hash"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "MD5, SHA-1 and SHA-256",
+          "es-MX": "MD5, SHA-1 y SHA-256"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The text explicitly mentions that FTK Imager can generate MD5, SHA-1 and SHA-256 hashes."
+            },
+            {
+              "type": "text",
+              "content": "These hashes are used to verify that the acquired image matches the original evidence."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El texto menciona explícitamente que FTK Imager puede generar hashes MD5, SHA-1 y SHA-256."
+            },
+            {
+              "type": "text",
+              "content": "Estos hashes se usan para verificar que la imagen adquirida coincide con la evidencia original."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "FTK Imager",
+        "Question Text": {
+          "en-US": [
+            "What type of deleted data can FTK Imager display?",
+            "In basic practice, what does FTK Imager allow you to see about deleted files?"
+          ],
+          "es-MX": [
+            "¿Qué tipo de datos eliminados puede mostrar FTK Imager?",
+            "En una práctica básica, ¿qué te permite ver FTK Imager sobre los archivos eliminados?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Files that have not yet been overwritten",
+            "Files that were securely wiped with multiple overwrite passes",
+            "Only system logs but never deleted files",
+            "No deleted information at all"
+          ],
+          "es-MX": [
+            "Archivos que aún no han sido sobrescritos",
+            "Archivos que fueron borrados de forma segura con varias pasadas",
+            "Solo registros de sistema pero nunca archivos eliminados",
+            "Ningún tipo de información eliminada"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Files that have not yet been overwritten",
+          "es-MX": "Archivos que aún no han sido sobrescritos"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The material says that FTK Imager can show deleted files that have not yet been overwritten."
+            },
+            {
+              "type": "text",
+              "content": "Once the disk sectors are overwritten, recovery becomes much more difficult or impossible."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El material indica que FTK Imager puede mostrar archivos eliminados que todavía no han sido sobrescritos."
+            },
+            {
+              "type": "text",
+              "content": "Cuando los sectores del disco se sobrescriben, la recuperación se vuelve mucho más difícil o imposible."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Autopsy",
+        "Question Text": {
+          "en-US": [
+            "Autopsy is mainly described as what kind of platform?",
+            "According to the class, how is Autopsy characterized as a forensic tool?"
+          ],
+          "es-MX": [
+            "¿Autopsy se describe principalmente como qué tipo de plataforma?",
+            "Según la clase, ¿cómo se caracteriza Autopsy como herramienta forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A complete analysis platform built on The Sleuth Kit",
+            "A simple hash calculator without any GUI",
+            "A password manager for investigators",
+            "A tool exclusively for mobile phone acquisition"
+          ],
+          "es-MX": [
+            "Una plataforma de análisis completo construida sobre The Sleuth Kit",
+            "Un simple calculador de hashes sin interfaz gráfica",
+            "Un gestor de contraseñas para investigadores",
+            "Una herramienta exclusiva para adquisición de teléfonos móviles"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A complete analysis platform built on The Sleuth Kit",
+          "es-MX": "Una plataforma de análisis completo construida sobre The Sleuth Kit"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The material explains that Autopsy is a graphical environment that provides complete analysis and is built on The Sleuth Kit."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El material explica que Autopsy es un entorno gráfico que ofrece un análisis completo y está construido sobre The Sleuth Kit."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Autopsy",
+        "Question Text": {
+          "en-US": [
+            "Which of the following functionalities is specifically associated with Autopsy?",
+            "What can Autopsy do according to the list of main functions?"
+          ],
+          "es-MX": [
+            "¿Cuál de las siguientes funcionalidades está asociada específicamente a Autopsy?",
+            "Según la lista de funciones principales, ¿qué puede hacer Autopsy?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Timeline analysis to reveal user activities",
+            "Format the suspect disk after acquisition",
+            "Disable the operating system firewall",
+            "Automatically erase browser history"
+          ],
+          "es-MX": [
+            "Análisis de línea de tiempo para revelar actividades del usuario",
+            "Formatear el disco sospechoso después de la adquisición",
+            "Desactivar el firewall del sistema operativo",
+            "Borrar automáticamente el historial del navegador"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Timeline analysis to reveal user activities",
+          "es-MX": "Análisis de línea de tiempo para revelar actividades del usuario"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The text highlights timeline analysis as one of Autopsy's key features, revealing file openings, software installs and content changes."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El texto destaca el análisis de línea de tiempo como una de las funciones clave de Autopsy, revelando aperturas de archivos, instalaciones y cambios de contenido."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Autopsy",
+        "Question Text": {
+          "en-US": [
+            "Which type of forensic artifacts can Autopsy detect?",
+            "According to the material, what kind of artifacts does Autopsy analyze?"
+          ],
+          "es-MX": [
+            "¿Qué tipo de artefactos forenses puede detectar Autopsy?",
+            "Según el material, ¿qué tipo de artefactos analiza Autopsy?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Browser history, downloads, cookies, chats and application logs",
+            "Only physical hardware components",
+            "Only email attachments from one specific provider",
+            "Exclusively BIOS configuration data"
+          ],
+          "es-MX": [
+            "Historial de navegadores, descargas, cookies, chats y registros de aplicaciones",
+            "Solo componentes físicos de hardware",
+            "Solo adjuntos de correo de un proveedor específico",
+            "Exclusivamente datos de configuración de la BIOS"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Browser history, downloads, cookies, chats and application logs",
+          "es-MX": "Historial de navegadores, descargas, cookies, chats y registros de aplicaciones"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "The text mentions analysis of browser history",
+                "Downloads and cookies",
+                "Chats and application logs as part of Autopsy's artifact analysis"
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "El texto menciona análisis de historial de navegadores",
+                "Descargas y cookies",
+                "Chats y registros de aplicaciones como parte del análisis de artefactos de Autopsy"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Autopsy",
+        "Question Text": {
+          "en-US": [
+            "Which report formats can Autopsy generate according to the material?",
+            "What output formats are mentioned for Autopsy forensic reports?"
+          ],
+          "es-MX": [
+            "¿En qué formatos puede generar reportes Autopsy según el material?",
+            "¿Qué formatos de salida se mencionan para los reportes forenses de Autopsy?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "HTML, PDF and CSV",
+            "Only .exe executables",
+            "Only proprietary encrypted formats",
+            "JPEG and MP3 only"
+          ],
+          "es-MX": [
+            "HTML, PDF y CSV",
+            "Solo ejecutables .exe",
+            "Solo formatos propietarios cifrados",
+            "Solo JPEG y MP3"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "HTML, PDF and CSV",
+          "es-MX": "HTML, PDF y CSV"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The material explicitly lists HTML, PDF and CSV as formats for automatic forensic reports in Autopsy."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El material lista explícitamente HTML, PDF y CSV como formatos de reportes forenses automáticos en Autopsy."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Comparación FTK vs Autopsy",
+        "Question Text": {
+          "en-US": [
+            "Which statement correctly compares FTK Imager and Autopsy?",
+            "According to the comparison table, which option is true about FTK Imager vs Autopsy?"
+          ],
+          "es-MX": [
+            "¿Qué afirmación compara correctamente a FTK Imager y Autopsy?",
+            "Según la tabla comparativa, ¿qué opción es verdadera sobre FTK Imager vs Autopsy?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "FTK Imager focuses on acquisition and visualization, while Autopsy performs complete analysis",
+            "Both FTK Imager and Autopsy generate forensic images in the same way",
+            "Autopsy is only for acquisition and FTK Imager only for reports",
+            "Neither tool can recover deleted data"
+          ],
+          "es-MX": [
+            "FTK Imager se enfoca en adquisición y visualización, mientras Autopsy realiza análisis completo",
+            "Tanto FTK Imager como Autopsy generan imágenes forenses de la misma forma",
+            "Autopsy es solo para adquisición y FTK Imager solo para reportes",
+            "Ninguna de las dos herramientas puede recuperar datos eliminados"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "FTK Imager focuses on acquisition and visualization, while Autopsy performs complete analysis",
+          "es-MX": "FTK Imager se enfoca en adquisición y visualización, mientras Autopsy realiza análisis completo"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The comparison table describes FTK Imager as an acquisition and visualization tool, and Autopsy as a complete analysis platform."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La tabla comparativa describe a FTK Imager como herramienta de adquisición y visualización, y a Autopsy como plataforma de análisis completo."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Comparación FTK vs Autopsy",
+        "Question Text": {
+          "en-US": [
+            "Which tool generates forensic images according to the material?",
+            "In the comparison, which application is marked as generating images?"
+          ],
+          "es-MX": [
+            "¿Qué herramienta genera imágenes forenses según el material?",
+            "En la comparación, ¿qué aplicación aparece como generadora de imágenes?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "FTK Imager only",
+            "Autopsy only",
+            "Both FTK Imager and Autopsy",
+            "Neither of them"
+          ],
+          "es-MX": [
+            "Solo FTK Imager",
+            "Solo Autopsy",
+            "Tanto FTK Imager como Autopsy",
+            "Ninguna de las dos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "FTK Imager only",
+          "es-MX": "Solo FTK Imager"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The table marks image generation as 'Yes' for FTK Imager and 'No' for Autopsy."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La tabla marca la generación de imágenes como 'Sí' para FTK Imager y 'No' para Autopsy."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Comparación FTK vs Autopsy",
+        "Question Text": {
+          "en-US": [
+            "For which type of user is FTK Imager described as ideal?",
+            "According to the comparison, FTK Imager is especially suitable for which scenario?"
+          ],
+          "es-MX": [
+            "¿Para qué tipo de usuario se describe FTK Imager como ideal?",
+            "Según la comparación, ¿para qué escenario es especialmente adecuado FTK Imager?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Beginners and acquisition phase",
+            "Only expert analysts doing deep correlation",
+            "Network monitoring in real time",
+            "Physical destruction of media"
+          ],
+          "es-MX": [
+            "Principiantes y fase de adquisición",
+            "Solo analistas expertos en correlación profunda",
+            "Monitoreo de red en tiempo real",
+            "Destrucción física de medios"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Beginners and acquisition phase",
+          "es-MX": "Principiantes y fase de adquisición"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The table marks FTK Imager as ideal for beginners and acquisition, while Autopsy is ideal for deep analysis and correlation."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La tabla indica que FTK Imager es ideal para principiantes y adquisición, mientras Autopsy es ideal para análisis profundo y correlación."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Flujo de trabajo",
+        "Question Text": {
+          "en-US": [
+            "What is the recommended order of use for FTK Imager and Autopsy according to the workflow?",
+            "In the basic workflow, how should FTK Imager and Autopsy be combined?"
+          ],
+          "es-MX": [
+            "¿Cuál es el orden recomendado de uso para FTK Imager y Autopsy según el flujo de trabajo?",
+            "En el flujo básico, ¿cómo se deben combinar FTK Imager y Autopsy?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Acquire with FTK Imager and then analyze with Autopsy",
+            "Analyze with Autopsy first and then overwrite with FTK Imager",
+            "Use Autopsy to format the disk and then FTK Imager to hash it",
+            "Run both tools at the same time on the original disk"
+          ],
+          "es-MX": [
+            "Adquirir con FTK Imager y después analizar con Autopsy",
+            "Analizar con Autopsy primero y luego sobrescribir con FTK Imager",
+            "Usar Autopsy para formatear el disco y luego FTK Imager para hashearlo",
+            "Ejecutar ambas herramientas al mismo tiempo sobre el disco original"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Acquire with FTK Imager and then analyze with Autopsy",
+          "es-MX": "Adquirir con FTK Imager y después analizar con Autopsy"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Acquire the evidence with FTK Imager (image + hashes)",
+                "Import the image into Autopsy",
+                "Analyze files, metadata, timeline and artifacts",
+                "Document findings and export the forensic report"
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Adquirir la evidencia con FTK Imager (imagen + hashes)",
+                "Importar la imagen en Autopsy",
+                "Analizar archivos, metadatos, línea de tiempo y artefactos",
+                "Documentar hallazgos y exportar el reporte forense"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Flujo de trabajo",
+        "Question Text": {
+          "en-US": [
+            "Which activities are mentioned as part of Autopsy analysis in the workflow?",
+            "In the basic workflow, what does the material suggest doing inside Autopsy?"
+          ],
+          "es-MX": [
+            "¿Qué actividades se mencionan como parte del análisis en Autopsy dentro del flujo de trabajo?",
+            "En el flujo básico, ¿qué sugiere el material hacer dentro de Autopsy?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Analyze files, metadata, timeline, deleted files and artifacts",
+            "Encrypt the original disk and delete the image",
+            "Only check the operating system version",
+            "Reinstall the suspect's applications"
+          ],
+          "es-MX": [
+            "Analizar archivos, metadatos, línea de tiempo, archivos eliminados y artefactos",
+            "Cifrar el disco original y borrar la imagen",
+            "Solo revisar la versión del sistema operativo",
+            "Reinstalar las aplicaciones del sospechoso"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Analyze files, metadata, timeline, deleted files and artifacts",
+          "es-MX": "Analizar archivos, metadatos, línea de tiempo, archivos eliminados y artefactos"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The step-by-step workflow mentions analyzing files, metadata, timeline, deleted files and artifacts once the image is loaded into Autopsy."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El flujo paso a paso menciona analizar archivos, metadatos, línea de tiempo, archivos eliminados y artefactos una vez cargada la imagen en Autopsy."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Estándares y buenas prácticas",
+        "Question Text": {
+          "en-US": [
+            "Which international standards are explicitly mentioned as related to the recommended workflow?",
+            "According to the text, the basic workflow aligns with which standards or guides?"
+          ],
+          "es-MX": [
+            "¿Qué estándares internacionales se mencionan explícitamente como relacionados con el flujo recomendado?",
+            "Según el texto, ¿con qué normas o guías se alinea el flujo básico?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "ISO/IEC 27037 and NIST SP 800-101",
+            "Only ISO/IEC 27001",
+            "PCI-DSS and HIPAA only",
+            "No standards are mentioned"
+          ],
+          "es-MX": [
+            "ISO/IEC 27037 y NIST SP 800-101",
+            "Solo ISO/IEC 27001",
+            "Solo PCI-DSS y HIPAA",
+            "No se menciona ningún estándar"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "ISO/IEC 27037 and NIST SP 800-101",
+          "es-MX": "ISO/IEC 27037 y NIST SP 800-101"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The material states that the recommended flow coincides with standards like ISO/IEC 27037 and NIST SP 800-101."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El material indica que el flujo recomendado coincide con estándares como ISO/IEC 27037 y NIST SP 800-101."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Práctica en clase",
+        "Question Text": {
+          "en-US": [
+            "Which activity is part of the recommended classroom practice with FTK Imager and Autopsy?",
+            "According to the practice section, what should students do with a USB or personal folder?"
+          ],
+          "es-MX": [
+            "¿Qué actividad forma parte de la práctica recomendada en clase con FTK Imager y Autopsy?",
+            "Según la sección de práctica, ¿qué deben hacer los estudiantes con una USB o carpeta personal?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Create a forensic image and then analyze it in FTK Imager and Autopsy",
+            "Format the USB and reuse it without imaging",
+            "Directly analyze the original disk without creating an image",
+            "Encrypt the USB and send it to another student without documentation"
+          ],
+          "es-MX": [
+            "Crear una imagen forense y luego analizarla en FTK Imager y Autopsy",
+            "Formatear la USB y reutilizarla sin hacer imagen",
+            "Analizar directamente el disco original sin crear imagen",
+            "Cifrar la USB y enviarla a otro estudiante sin documentación"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Create a forensic image and then analyze it in FTK Imager and Autopsy",
+          "es-MX": "Crear una imagen forense y luego analizarla en FTK Imager y Autopsy"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Download FTK Imager and Autopsy",
+                "Create a forensic image of a personal USB or folder",
+                "Mount and view it in FTK Imager",
+                "Import the image into Autopsy and observe files, deleted data, timeline and artifacts"
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Descargar FTK Imager y Autopsy",
+                "Crear una imagen forense de una USB o carpeta personal",
+                "Montarla y visualizarla en FTK Imager",
+                "Importar la imagen en Autopsy y observar archivos, eliminados, línea de tiempo y artefactos"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Conclusiones clave",
+        "Question Text": {
+          "en-US": [
+            "According to the conclusions, what is the recommended general flow when using these tools?",
+            "In the key takeaways, how is the sequence of FTK Imager and Autopsy summarized?"
+          ],
+          "es-MX": [
+            "Según las conclusiones, ¿cuál es el flujo general recomendado al usar estas herramientas?",
+            "En los puntos clave, ¿cómo se resume la secuencia de uso de FTK Imager y Autopsy?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Acquire with FTK Imager and then analyze with Autopsy",
+            "Analyze with Autopsy and finally destroy the image with FTK Imager",
+            "Only use Autopsy and ignore FTK Imager",
+            "Only use FTK Imager and ignore analysis in Autopsy"
+          ],
+          "es-MX": [
+            "Adquirir con FTK Imager y luego analizar con Autopsy",
+            "Analizar con Autopsy y al final destruir la imagen con FTK Imager",
+            "Usar solo Autopsy e ignorar FTK Imager",
+            "Usar solo FTK Imager e ignorar el análisis en Autopsy"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Acquire with FTK Imager and then analyze with Autopsy",
+          "es-MX": "Adquirir con FTK Imager y luego analizar con Autopsy"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "One of the explicit key conclusions says: 'The recommended flow is: acquire with FTK → analyze with Autopsy.'"
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Una de las conclusiones clave indica explícitamente: 'El flujo recomendado es: adquirir con FTK → analizar con Autopsy.'"
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

@@ -1,0 +1,88 @@
+{
+    "meta": {
+      "slug": "forense-apps9",
+      "title": "Roles en una investigación forense digital",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 9,
+      "classNo": 9,
+      "description": "Funciones y responsabilidades del perito forense digital, analista forense y abogado digital dentro de una investigación."
+    },
+    "Questions": [
+      {
+        "question": "¿Cuál es el objetivo principal de identificar los roles en una investigación forense digital?",
+        "options": [
+          "Garantizar que la evidencia digital sea válida, íntegra y legalmente admisible",
+          "Aumentar la velocidad del análisis forense",
+          "Evitar que los analistas usen demasiadas herramientas",
+          "Reducir el número de reportes generados"
+        ],
+        "answer": "Garantizar que la evidencia digital sea válida, íntegra y legalmente admisible",
+        "explanation": [
+          "Los roles existen para asegurar que cada parte del proceso se realice correctamente.",
+          "La validez legal y técnica depende del trabajo coordinado de perito, analista y abogado.",
+          "Una investigación sin roles definidos arriesga perder credibilidad y evidencia."
+        ]
+      },
+      {
+        "question": "¿Cuál es la función principal del perito forense digital?",
+        "options": [
+          "Emitir dictámenes técnicos y presentarlos ante autoridades",
+          "Realizar búsquedas rápidas en dispositivos",
+          "Supervisar redes empresariales",
+          "Escribir aplicaciones móviles"
+        ],
+        "answer": "Emitir dictámenes técnicos y presentarlos ante autoridades",
+        "explanation": [
+          "El perito es el especialista acreditado para emitir opiniones técnicas formales.",
+          "Su dictamen tiene validez jurídica ante jueces y audiencias.",
+          "Complementa el trabajo técnico del analista forense."
+        ]
+      },
+      {
+        "question": "¿Cuál es una función esencial del analista forense digital?",
+        "options": [
+          "Realizar la adquisición y análisis técnico profundo de la evidencia digital",
+          "Representar legalmente a las partes en un juicio",
+          "Imponer sanciones a usuarios",
+          "Otorgar permisos judiciales"
+        ],
+        "answer": "Realizar la adquisición y análisis técnico profundo de la evidencia digital",
+        "explanation": [
+          "El analista realiza extracción, análisis y reconstrucción de eventos.",
+          "Opera herramientas forenses como Autopsy, FTK, Cellebrite, entre otras.",
+          "Su trabajo alimenta los dictámenes formales del perito."
+        ]
+      },
+      {
+        "question": "¿Qué función cumple el abogado digital dentro de una investigación forense?",
+        "options": [
+          "Determinar la legalidad y admisibilidad de la evidencia digital",
+          "Realizar copias forenses bit a bit",
+          "Configurar equipos para análisis",
+          "Cifrar dispositivos móviles"
+        ],
+        "answer": "Determinar la legalidad y admisibilidad de la evidencia digital",
+        "explanation": [
+          "El abogado asegura que la evidencia se obtuvo con autorización válida.",
+          "Interpreta el análisis técnico en términos legales.",
+          "Puede impugnar o defender evidencia según el caso."
+        ]
+      },
+      {
+        "question": "¿Por qué la colaboración entre perito, analista y abogado es fundamental?",
+        "options": [
+          "Porque cada rol aporta elementos técnicos, legales y formales necesarios para una investigación sólida",
+          "Para reducir el tiempo total del proceso",
+          "Para evitar redactar reportes largos",
+          "Para eliminar la necesidad de cadena de custodia"
+        ],
+        "answer": "Porque cada rol aporta elementos técnicos, legales y formales necesarios para una investigación sólida",
+        "explanation": [
+          "El analista produce evidencia técnica y el perito la valida formalmente.",
+          "El abogado garantiza la legalidad y admisibilidad.",
+          "Sin cooperación, la investigación pierde fuerza, validez y consistencia."
+        ]
+      }
+    ]
+  }
+  
