@@ -1,0 +1,823 @@
+{
+    "meta": {
+      "slug": "forense-apps12",
+      "title": "Integración de conocimientos de la Unidad I",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 1,
+      "classNo": 12,
+      "description": "Repaso global de la Unidad I mediante buenas prácticas: preservación, cadena de custodia, aspectos legales, herramientas y reporte final.",
+      "tags": [
+        "preservación",
+        "cadena de custodia",
+        "hash",
+        "legal",
+        "ética",
+        "herramientas forenses",
+        "reporte forense",
+        "unidad I"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "Preservación e integridad",
+        "Question Text": {
+          "en-US": [
+            "What is the first recommended action when a potential evidence device is found?",
+            "When a device may contain digital evidence, what should be done before any manipulation?"
+          ],
+          "es-MX": [
+            "¿Cuál es la primera acción recomendada cuando se localiza un dispositivo con posible evidencia?",
+            "Cuando un dispositivo puede contener evidencia digital, ¿qué debe hacerse antes de cualquier manipulación?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Physically isolate the device when necessary",
+            "Navigate through apps to see what is inside",
+            "Update the operating system immediately",
+            "Format the device to free space"
+          ],
+          "es-MX": [
+            "Aislar físicamente el dispositivo cuando sea necesario",
+            "Navegar por las aplicaciones para ver qué contiene",
+            "Actualizar de inmediato el sistema operativo",
+            "Formatear el dispositivo para liberar espacio"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Physically isolate the device when necessary",
+          "es-MX": "Aislar físicamente el dispositivo cuando sea necesario"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Preservation starts with isolation"
+            },
+            {
+              "type": "text",
+              "content": "The first goal is to prevent any intentional or unintentional change in the original evidence."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Physical isolation can include disconnecting from networks, removing SIM cards or putting the device in a Faraday bag.",
+                "Avoiding direct use of the device reduces the risk of remote access, sync operations or automatic deletions.",
+                "Every later action (imaging, hashing, analysis) depends on the evidence remaining in its original state."
+              ]
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "text",
+              "content": "Navigating, updating or formatting the device before isolation can destroy or alter crucial data."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "La preservación inicia con el aislamiento"
+            },
+            {
+              "type": "text",
+              "content": "El objetivo inicial es evitar cualquier cambio intencional o no intencional sobre la evidencia original."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "El aislamiento físico puede incluir desconectar redes, retirar la SIM o usar una bolsa de Faraday.",
+                "Evitar usar el dispositivo reduce el riesgo de accesos remotos, sincronizaciones o borrados automáticos.",
+                "Las acciones posteriores (imagen, hash, análisis) dependen de que la evidencia se mantenga en su estado original."
+              ]
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "text",
+              "content": "Navegar, actualizar o formatear el dispositivo antes de aislarlo puede destruir o alterar datos críticos."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Copia forense",
+        "Question Text": {
+          "en-US": [
+            "What type of copy should be generated to work without altering the original evidence?",
+            "Which option best describes the recommended copy for forensic analysis?"
+          ],
+          "es-MX": [
+            "¿Qué tipo de copia debe generarse para trabajar sin alterar la evidencia original?",
+            "¿Qué opción describe mejor la copia recomendada para el análisis forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A forensic image created with recognized methods",
+            "A manual copy using copy and paste",
+            "A compressed backup without documentation",
+            "A photo of the screen"
+          ],
+          "es-MX": [
+            "Una imagen forense generada con métodos reconocidos",
+            "Una copia manual usando copiar y pegar",
+            "Un respaldo comprimido sin documentación",
+            "Una foto de la pantalla"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A forensic image created with recognized methods",
+          "es-MX": "Una imagen forense generada con métodos reconocidos"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Forensic image vs. simple copy"
+            },
+            {
+              "type": "text",
+              "content": "A forensic image is a bit-to-bit copy that includes all sectors, including free space and deleted data."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Preserves structure and hidden areas of the storage.",
+                "Allows repeating the analysis multiple times without touching the original.",
+                "Is aligned with good practices in ISO/IEC 27037 and NIST guides."
+              ]
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "text",
+              "content": "Regular copy-and-paste operations ignore free space and can change access times, which is not acceptable in forensics."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Imagen forense vs. copia simple"
+            },
+            {
+              "type": "text",
+              "content": "Una imagen forense es una copia bit a bit que incluye todos los sectores, incluso espacio libre y datos borrados."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Preserva la estructura y zonas ocultas del almacenamiento.",
+                "Permite repetir el análisis varias veces sin tocar el original.",
+                "Se alinea con buenas prácticas de ISO/IEC 27037 y guías del NIST."
+              ]
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "text",
+              "content": "Las copias comunes de copiar y pegar ignoran espacio libre y pueden modificar tiempos de acceso, lo cual no es aceptable en forense."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Hashes – algoritmos",
+        "Question Text": {
+          "en-US": [
+            "Which hash algorithms are recommended to verify integrity in this unit?",
+            "Which pair of hash functions is used to validate the integrity of evidence?"
+          ],
+          "es-MX": [
+            "¿Qué algoritmos hash se recomiendan para verificar la integridad en esta unidad?",
+            "¿Qué par de funciones hash se utiliza para validar la integridad de la evidencia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "MD5 and SHA-256",
+            "SHA-1 and CRC32",
+            "Only MD5",
+            "Only SHA-1"
+          ],
+          "es-MX": [
+            "MD5 y SHA-256",
+            "SHA-1 y CRC32",
+            "Solo MD5",
+            "Solo SHA-1"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "MD5 and SHA-256",
+          "es-MX": "MD5 y SHA-256"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Using more than one hash"
+            },
+            {
+              "type": "text",
+              "content": "Combining MD5 and SHA-256 provides redundancy and stronger confidence in integrity validation."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "MD5: 128-bit hash, historically widely used.",
+                "SHA-256: 256-bit hash, more robust and recommended in modern forensic practice.",
+                "Both are calculated on the original and on the forensic copy to compare results."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Uso de más de un hash"
+            },
+            {
+              "type": "text",
+              "content": "Combinar MD5 y SHA-256 da redundancia y mayor confianza en la validación de integridad."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "MD5: hash de 128 bits, ampliamente usado históricamente.",
+                "SHA-256: hash de 256 bits, más robusto y recomendado en la práctica forense actual.",
+                "Se calculan sobre el original y sobre la copia forense para comparar resultados."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Hashes – momento de cálculo",
+        "Question Text": {
+          "en-US": [
+            "When should hash values be calculated in the forensic process?",
+            "At what moments must MD5 and SHA-256 be generated?"
+          ],
+          "es-MX": [
+            "¿Cuándo deben calcularse los valores hash dentro del proceso forense?",
+            "¿En qué momentos se deben generar MD5 y SHA-256?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Before and after acquisition or relevant transfers",
+            "Only once at the end of the case",
+            "Only if the judge requests it",
+            "Only when the device is brand new"
+          ],
+          "es-MX": [
+            "Antes y después de la adquisición o transferencias relevantes",
+            "Solo una vez al final del caso",
+            "Solo si el juez lo solicita",
+            "Solo cuando el dispositivo es nuevo"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Before and after acquisition or relevant transfers",
+          "es-MX": "Antes y después de la adquisición o transferencias relevantes"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Hash values as checkpoints"
+            },
+            {
+              "type": "ol",
+              "items": [
+                "Hash is generated on the original media before acquisition.",
+                "Hash is generated on the forensic image after acquisition.",
+                "Additional hashes can be generated after copies or transfers.",
+                "Matching results confirm that no changes occurred in those steps."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Valores hash como puntos de control"
+            },
+            {
+              "type": "ol",
+              "items": [
+                "Se genera hash sobre el medio original antes de la adquisición.",
+                "Se genera hash sobre la imagen forense después de la adquisición.",
+                "Pueden generarse hashes adicionales tras copias o transferencias.",
+                "Si los resultados coinciden, se confirma que no hubo cambios en esos pasos."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Cadena de custodia – datos mínimos",
+        "Question Text": {
+          "en-US": [
+            "What information must be documented in each evidence transfer to maintain chain of custody?",
+            "Which data set is essential for every custody record?"
+          ],
+          "es-MX": [
+            "¿Qué información debe documentarse en cada transferencia de evidencia para mantener la cadena de custodia?",
+            "¿Qué conjunto de datos es esencial en cada registro de custodia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Date, time, responsible person and reason for the transfer",
+            "Only the name of the last person who touched the device",
+            "Only the device serial number",
+            "Only the location of the lab"
+          ],
+          "es-MX": [
+            "Fecha, hora, responsable y motivo de la transferencia",
+            "Solo el nombre de la última persona que tocó el dispositivo",
+            "Solo el número de serie del dispositivo",
+            "Solo la ubicación del laboratorio"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Date, time, responsible person and reason for the transfer",
+          "es-MX": "Fecha, hora, responsable y motivo de la transferencia"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Traceability in chain of custody"
+            },
+            {
+              "type": "text",
+              "content": "Chain of custody is about documenting every change of possession or control of the evidence."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Date and time show when each movement occurred.",
+                "The responsible person links each step to a specific individual.",
+                "The reason explains why the evidence was moved or accessed.",
+                "Together, these fields protect against accusations of manipulation or unauthorized access."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Trazabilidad en la cadena de custodia"
+            },
+            {
+              "type": "text",
+              "content": "La cadena de custodia documenta cada cambio de posesión o control de la evidencia."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "La fecha y la hora indican cuándo ocurrió cada movimiento.",
+                "El responsable vincula cada paso con una persona concreta.",
+                "El motivo explica por qué se movió o accedió a la evidencia.",
+                "En conjunto, estos campos protegen frente a acusaciones de manipulación o accesos no autorizados."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Cadena de custodia – objetivo",
+        "Question Text": {
+          "en-US": [
+            "What is the main purpose of maintaining a proper chain of custody?",
+            "Why is chain of custody fundamental in digital forensics?"
+          ],
+          "es-MX": [
+            "¿Cuál es el propósito principal de mantener una cadena de custodia adecuada?",
+            "¿Por qué la cadena de custodia es fundamental en la informática forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To guarantee complete traceability of who had the evidence, when and why",
+            "To speed up device performance",
+            "To encrypt all data automatically",
+            "To reduce storage costs"
+          ],
+          "es-MX": [
+            "Garantizar la trazabilidad completa de quién tuvo la evidencia, cuándo y por qué",
+            "Acelerar el rendimiento del dispositivo",
+            "Cifrar automáticamente todos los datos",
+            "Reducir costos de almacenamiento"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To guarantee complete traceability of who had the evidence, when and why",
+          "es-MX": "Garantizar la trazabilidad completa de quién tuvo la evidencia, cuándo y por qué"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "If every step is documented, it is easier to demonstrate that the evidence was not altered or mishandled."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Supports admissibility in court.",
+                "Helps identify any irregular step in handling.",
+                "Protects both the process and the professionals involved."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Si cada paso queda documentado, es más fácil demostrar que la evidencia no fue alterada ni mal manejada."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Apoya la admisibilidad ante tribunales.",
+                "Ayuda a detectar cualquier paso irregular en el manejo.",
+                "Protege tanto al proceso como a los profesionales involucrados."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Legal – autorización",
+        "Question Text": {
+          "en-US": [
+            "What condition must be confirmed before collecting digital evidence from a device?",
+            "Before starting the acquisition, what must be guaranteed at the legal level?"
+          ],
+          "es-MX": [
+            "¿Qué condición debe confirmarse antes de recolectar evidencia digital de un dispositivo?",
+            "Antes de iniciar la adquisición, ¿qué debe garantizarse a nivel legal?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "That there is valid legal authorization",
+            "That the device battery is fully charged",
+            "That the suspect agrees verbally",
+            "That the internet connection is stable"
+          ],
+          "es-MX": [
+            "Que exista una autorización legal válida",
+            "Que la batería del dispositivo esté al 100%",
+            "Que el sospechoso lo acepte verbalmente",
+            "Que la conexión a internet sea estable"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "That there is valid legal authorization",
+          "es-MX": "Que exista una autorización legal válida"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Legal authorization as a prerequisite"
+            },
+            {
+              "type": "text",
+              "content": "Even if the evidence is technically interesting, it must be obtained under a legal framework."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Ensures respect for privacy and fundamental rights.",
+                "Avoids exclusion of evidence in trial due to illegal collection.",
+                "Aligns the forensic work with law and institutional policies."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "La autorización legal como requisito previo"
+            },
+            {
+              "type": "text",
+              "content": "Aunque la evidencia sea técnicamente interesante, debe obtenerse dentro de un marco legal."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Garantiza respeto a la privacidad y derechos fundamentales.",
+                "Evita que la evidencia sea excluida en juicio por obtención ilegal.",
+                "Alinea el trabajo forense con la ley y las políticas institucionales."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Ética – confidencialidad",
+        "Question Text": {
+          "en-US": [
+            "What ethical commitment must be maintained regarding the findings in a forensic case?",
+            "Which principle protects the information discovered during analysis?"
+          ],
+          "es-MX": [
+            "¿Qué compromiso ético debe mantenerse respecto a los hallazgos en un caso forense?",
+            "¿Qué principio protege la información descubierta durante el análisis?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Confidentiality of information and minimization of data",
+            "Public disclosure so everyone knows",
+            "Sharing full content on social networks",
+            "Sending raw data to any interested person"
+          ],
+          "es-MX": [
+            "Confidencialidad de la información y minimización de datos",
+            "Divulgación pública para que todos sepan",
+            "Compartir el contenido completo en redes sociales",
+            "Enviar los datos en bruto a cualquier interesado"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Confidentiality of information and minimization of data",
+          "es-MX": "Confidencialidad de la información y minimización de datos"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Forensic work often exposes very sensitive personal or corporate data."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Only information relevant to the case should be processed.",
+                "Access must be limited to authorized people.",
+                "Findings should not be shared outside formal and legal channels."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El trabajo forense suele exponer datos personales o corporativos muy sensibles."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Solo debe procesarse la información relevante para el caso.",
+                "El acceso se limita a personas autorizadas.",
+                "Los hallazgos no se comparten fuera de los canales formales y legales."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Herramientas – FTK Imager",
+        "Question Text": {
+          "en-US": [
+            "Which action is FTK Imager specifically used for in the workflow?",
+            "What role does FTK Imager play in the basic forensic process?"
+          ],
+          "es-MX": [
+            "¿Para qué acción específica se utiliza FTK Imager dentro del flujo de trabajo?",
+            "¿Qué papel cumple FTK Imager en el proceso forense básico?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Creating forensic images and viewing structure without altering the source",
+            "Designing presentations for court",
+            "Editing documents directly on the device",
+            "Simulating network traffic"
+          ],
+          "es-MX": [
+            "Crear imágenes forenses y visualizar la estructura sin alterar el origen",
+            "Diseñar presentaciones para el tribunal",
+            "Editar documentos directamente en el dispositivo",
+            "Simular tráfico de red"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Creating forensic images and viewing structure without altering the source",
+          "es-MX": "Crear imágenes forenses y visualizar la estructura sin alterar el origen"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "FTK Imager as an acquisition tool"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Generates bit-to-bit images of disks, USB drives or folders.",
+                "Allows previewing files in a read-only mode.",
+                "Is ideal for the acquisition and initial visualization phase, without touching the original device."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "FTK Imager como herramienta de adquisición"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Genera imágenes bit a bit de discos, USB o carpetas.",
+                "Permite previsualizar archivos en modo solo lectura.",
+                "Es ideal para la fase de adquisición y visualización inicial, sin tocar el dispositivo original."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Herramientas – Autopsy",
+        "Question Text": {
+          "en-US": [
+            "Which tasks are performed with Autopsy in the forensic workflow?",
+            "What is Autopsy mainly used for?"
+          ],
+          "es-MX": [
+            "¿Qué tareas se realizan con Autopsy dentro del flujo forense?",
+            "¿Para qué se utiliza principalmente Autopsy?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Analyzing metadata, timelines and forensic artifacts",
+            "Formatting storage devices",
+            "Creating operating system images for backups",
+            "Editing photos and videos"
+          ],
+          "es-MX": [
+            "Analizar metadatos, líneas de tiempo y artefactos forenses",
+            "Formatear dispositivos de almacenamiento",
+            "Crear imágenes de sistemas operativos para respaldos",
+            "Editar fotos y videos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Analyzing metadata, timelines and forensic artifacts",
+          "es-MX": "Analizar metadatos, líneas de tiempo y artefactos forenses"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Autopsy is a forensic analysis platform built over The Sleuth Kit."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Shows file systems, hidden files and metadata.",
+                "Builds timelines from MAC times and events.",
+                "Identifies artifacts such as browser history, downloads, chats and application logs."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Autopsy es una plataforma de análisis forense construida sobre The Sleuth Kit."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Muestra sistemas de archivos, archivos ocultos y metadatos.",
+                "Construye líneas de tiempo a partir de tiempos MAC y eventos.",
+                "Identifica artefactos como historial de navegación, descargas, chats y registros de aplicaciones."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Reporte final",
+        "Question Text": {
+          "en-US": [
+            "Which element is essential in the final forensic report?",
+            "What must be explicitly included to support the integrity of the analysis?"
+          ],
+          "es-MX": [
+            "¿Qué elemento es esencial en el reporte forense final?",
+            "¿Qué debe incluirse explícitamente para respaldar la integridad del análisis?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Hash values of the original and the forensic copy",
+            "Only a narrative opinion",
+            "Only a list of tools without results",
+            "Only screenshots without context"
+          ],
+          "es-MX": [
+            "Los valores hash del original y la copia forense",
+            "Solo una opinión narrativa",
+            "Solo una lista de herramientas sin resultados",
+            "Solo capturas de pantalla sin contexto"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Hash values of the original and the forensic copy",
+          "es-MX": "Los valores hash del original y la copia forense"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Integrity proofs inside the report"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Documenting hash values demonstrates that the analyzed image is identical to the original.",
+                "It links technical work to preservation and chain of custody.",
+                "Together with methodology and findings, it supports the credibility of the entire investigation."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Pruebas de integridad dentro del reporte"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Documentar los valores hash demuestra que la imagen analizada es idéntica al original.",
+                "Vincula el trabajo técnico con la preservación y la cadena de custodia.",
+                "En conjunto con metodología y hallazgos, respalda la credibilidad de toda la investigación."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Flujo integrado",
+        "Question Text": {
+          "en-US": [
+            "Which sequence best represents a complete forensic workflow based on Unit I?",
+            "Which option shows a coherent order of actions in the digital forensic process?"
+          ],
+          "es-MX": [
+            "¿Qué secuencia representa mejor un flujo forense completo basado en la Unidad I?",
+            "¿Qué opción muestra un orden coherente de acciones en el proceso forense digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Identify and preserve evidence → Maintain chain of custody → Acquire and hash → Analyze with validated tools → Document and generate final report",
+            "Analyze directly on the original → Decide later if integrity matters → Write a short informal summary",
+            "Delete irrelevant files → Install new software → Copy manually → Present only screenshots",
+            "Start with the final report → Then search for evidence → Finally think about preservation"
+          ],
+          "es-MX": [
+            "Identificar y preservar evidencia → Mantener cadena de custodia → Adquirir y hashear → Analizar con herramientas validadas → Documentar y generar reporte final",
+            "Analizar directamente sobre el original → Decidir después si importa la integridad → Redactar un breve resumen informal",
+            "Borrar archivos irrelevantes → Instalar nuevo software → Copiar manualmente → Presentar solo capturas de pantalla",
+            "Comenzar con el reporte final → Luego buscar evidencia → Finalmente pensar en la preservación"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Identify and preserve evidence → Maintain chain of custody → Acquire and hash → Analyze with validated tools → Document and generate final report",
+          "es-MX": "Identificar y preservar evidencia → Mantener cadena de custodia → Adquirir y hashear → Analizar con herramientas validadas → Documentar y generar reporte final"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Identify and preserve relevant digital evidence.",
+                "Maintain a documented chain of custody for every transfer.",
+                "Acquire images and calculate hashes to protect integrity.",
+                "Analyze the data using validated and updated tools.",
+                "Document methodology, hashes, findings and conclusions in a structured report."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Identificar y preservar la evidencia digital relevante.",
+                "Mantener una cadena de custodia documentada en cada transferencia.",
+                "Adquirir imágenes y calcular hashes para proteger la integridad.",
+                "Analizar los datos con herramientas validadas y actualizadas.",
+                "Documentar metodología, hashes, hallazgos y conclusiones en un reporte estructurado."
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

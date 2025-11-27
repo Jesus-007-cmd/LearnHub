@@ -1,88 +1,750 @@
 {
-    "meta": {
-      "slug": "forense-apps9",
-      "title": "Roles en una investigación forense digital",
-      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
-      "unit": 9,
-      "classNo": 9,
-      "description": "Funciones y responsabilidades del perito forense digital, analista forense y abogado digital dentro de una investigación."
-    },
-    "Questions": [
-      {
-        "question": "¿Cuál es el objetivo principal de identificar los roles en una investigación forense digital?",
-        "options": [
-          "Garantizar que la evidencia digital sea válida, íntegra y legalmente admisible",
-          "Aumentar la velocidad del análisis forense",
-          "Evitar que los analistas usen demasiadas herramientas",
-          "Reducir el número de reportes generados"
+  "meta": {
+    "slug": "forense-apps9",
+    "title": "Roles en una investigación forense digital",
+    "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+    "unit": 1,
+    "classNo": 9,
+    "description": "Perito forense digital, analista forense y abogado digital: funciones, responsabilidades y colaboración.",
+    "tags": [
+      "roles forenses",
+      "perito forense",
+      "analista forense",
+      "abogado digital",
+      "evidencia digital"
+    ]
+  },
+  "Questions": [
+    {
+      "Category": "Introducción a roles",
+      "Question Text": {
+        "en-US": [
+          "Why are multiple specialized roles needed in a digital forensic investigation?",
+          "In a digital forensic case, why is collaboration between different professionals necessary?"
         ],
-        "answer": "Garantizar que la evidencia digital sea válida, íntegra y legalmente admisible",
-        "explanation": [
-          "Los roles existen para asegurar que cada parte del proceso se realice correctamente.",
-          "La validez legal y técnica depende del trabajo coordinado de perito, analista y abogado.",
-          "Una investigación sin roles definidos arriesga perder credibilidad y evidencia."
+        "es-MX": [
+          "¿Por qué se necesitan varios roles especializados en una investigación forense digital?",
+          "En un caso forense digital, ¿por qué es necesaria la colaboración de distintos profesionales?"
         ]
       },
-      {
-        "question": "¿Cuál es la función principal del perito forense digital?",
-        "options": [
-          "Emitir dictámenes técnicos y presentarlos ante autoridades",
-          "Realizar búsquedas rápidas en dispositivos",
-          "Supervisar redes empresariales",
-          "Escribir aplicaciones móviles"
+      "Options": {
+        "en-US": [
+          "Because technical, legal and methodological knowledge must be combined to handle digital evidence correctly",
+          "Because it is cheaper to hire many people instead of one",
+          "Because the law requires at least ten people in every investigation",
+          "Because only programmers can decide if evidence is valid"
         ],
-        "answer": "Emitir dictámenes técnicos y presentarlos ante autoridades",
-        "explanation": [
-          "El perito es el especialista acreditado para emitir opiniones técnicas formales.",
-          "Su dictamen tiene validez jurídica ante jueces y audiencias.",
-          "Complementa el trabajo técnico del analista forense."
+        "es-MX": [
+          "Porque se deben combinar conocimientos técnicos, legales y metodológicos para manejar bien la evidencia digital",
+          "Porque es más barato contratar a muchas personas en lugar de una",
+          "Porque la ley exige al menos diez personas en toda investigación",
+          "Porque solo los programadores pueden decidir si la evidencia es válida"
         ]
       },
-      {
-        "question": "¿Cuál es una función esencial del analista forense digital?",
-        "options": [
-          "Realizar la adquisición y análisis técnico profundo de la evidencia digital",
-          "Representar legalmente a las partes en un juicio",
-          "Imponer sanciones a usuarios",
-          "Otorgar permisos judiciales"
-        ],
-        "answer": "Realizar la adquisición y análisis técnico profundo de la evidencia digital",
-        "explanation": [
-          "El analista realiza extracción, análisis y reconstrucción de eventos.",
-          "Opera herramientas forenses como Autopsy, FTK, Cellebrite, entre otras.",
-          "Su trabajo alimenta los dictámenes formales del perito."
-        ]
+      "Correct Answer": {
+        "en-US": "Because technical, legal and methodological knowledge must be combined to handle digital evidence correctly",
+        "es-MX": "Porque se deben combinar conocimientos técnicos, legales y metodológicos para manejar bien la evidencia digital"
       },
-      {
-        "question": "¿Qué función cumple el abogado digital dentro de una investigación forense?",
-        "options": [
-          "Determinar la legalidad y admisibilidad de la evidencia digital",
-          "Realizar copias forenses bit a bit",
-          "Configurar equipos para análisis",
-          "Cifrar dispositivos móviles"
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The text explains that each role contributes technical, legal or methodological expertise to ensure valid, integral and legally admissible evidence."
+          }
         ],
-        "answer": "Determinar la legalidad y admisibilidad de la evidencia digital",
-        "explanation": [
-          "El abogado asegura que la evidencia se obtuvo con autorización válida.",
-          "Interpreta el análisis técnico en términos legales.",
-          "Puede impugnar o defender evidencia según el caso."
-        ]
-      },
-      {
-        "question": "¿Por qué la colaboración entre perito, analista y abogado es fundamental?",
-        "options": [
-          "Porque cada rol aporta elementos técnicos, legales y formales necesarios para una investigación sólida",
-          "Para reducir el tiempo total del proceso",
-          "Para evitar redactar reportes largos",
-          "Para eliminar la necesidad de cadena de custodia"
-        ],
-        "answer": "Porque cada rol aporta elementos técnicos, legales y formales necesarios para una investigación sólida",
-        "explanation": [
-          "El analista produce evidencia técnica y el perito la valida formalmente.",
-          "El abogado garantiza la legalidad y admisibilidad.",
-          "Sin cooperación, la investigación pierde fuerza, validez y consistencia."
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El texto indica que cada rol aporta conocimientos técnicos, legales o metodológicos para garantizar evidencia válida, íntegra y legalmente admisible."
+          }
         ]
       }
-    ]
-  }
-  
+    },
+    {
+      "Category": "Introducción a roles",
+      "Question Text": {
+        "en-US": [
+          "Which three main roles are highlighted in a digital forensic investigation?",
+          "According to the material, what are the three principal roles in a forensic digital case?"
+        ],
+        "es-MX": [
+          "¿Cuáles son los tres roles principales destacados en una investigación forense digital?",
+          "Según el material, ¿cuáles son los tres roles principales en un caso forense digital?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Digital forensic expert, forensic analyst and digital lawyer",
+          "Network administrator, hacker and system user",
+          "Judge, jury and police officer",
+          "Software developer, UX designer and database admin"
+        ],
+        "es-MX": [
+          "Perito forense digital, analista forense y abogado digital",
+          "Administrador de red, hacker y usuario del sistema",
+          "Juez, jurado y policía",
+          "Desarrollador de software, diseñador UX y administrador de bases de datos"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Digital forensic expert, forensic analyst and digital lawyer",
+        "es-MX": "Perito forense digital, analista forense y abogado digital"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "ul",
+            "items": [
+              "Digital forensic expert (perito forense digital)",
+              "Forensic analyst",
+              "Digital lawyer or lawyer specialized in technological evidence"
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "ul",
+            "items": [
+              "Perito forense digital",
+              "Analista forense",
+              "Abogado digital o abogado especializado en evidencia tecnológica"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Perito forense digital",
+      "Question Text": {
+        "en-US": [
+          "How is the digital forensic expert (perito forense) mainly characterized?",
+          "What best describes the role of the digital forensic expert in an investigation?"
+        ],
+        "es-MX": [
+          "¿Cómo se caracteriza principalmente al perito forense digital?",
+          "¿Qué descripción representa mejor el papel del perito forense digital en una investigación?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "A legally accredited expert who issues technical opinions on digital evidence and participates in judicial processes",
+          "A student who practices with forensic tools but has no legal responsibility",
+          "A technician who repairs computers without documenting anything",
+          "A programmer hired only to speed up the investigation software"
+        ],
+        "es-MX": [
+          "Un especialista legalmente acreditado que emite opiniones técnicas sobre evidencia digital y participa en procesos judiciales",
+          "Un estudiante que practica con herramientas forenses pero sin responsabilidad legal",
+          "Un técnico que repara computadoras sin documentar nada",
+          "Un programador contratado solo para acelerar el software de la investigación"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "A legally accredited expert who issues technical opinions on digital evidence and participates in judicial processes",
+        "es-MX": "Un especialista legalmente acreditado que emite opiniones técnicas sobre evidencia digital y participa en procesos judiciales"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The material defines the perito forense as the legally accredited specialist who issues technical opinions and participates directly in judicial processes."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El material define al perito forense como el especialista legalmente acreditado que emite opiniones técnicas y participa directamente en procesos judiciales."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Perito forense digital",
+      "Question Text": {
+        "en-US": [
+          "Which task is part of the digital forensic expert's responsibilities?",
+          "What is one of the main functions of the perito forense digital?"
+        ],
+        "es-MX": [
+          "¿Cuál de las siguientes tareas forma parte de las responsabilidades del perito forense digital?",
+          "¿Cuál es una de las funciones principales del perito forense digital?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Elaborating official expert reports that explain what was analyzed, how it was analyzed and the technical conclusions",
+          "Writing the criminal code from scratch",
+          "Developing the operating system used by the suspect",
+          "Only configuring network devices without touching evidence"
+        ],
+        "es-MX": [
+          "Elaborar dictámenes periciales oficiales que explican qué se analizó, cómo se analizó y las conclusiones técnicas",
+          "Redactar desde cero el código penal",
+          "Desarrollar el sistema operativo usado por el sospechoso",
+          "Configurar únicamente dispositivos de red sin tocar la evidencia"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Elaborating official expert reports that explain what was analyzed, how it was analyzed and the technical conclusions",
+        "es-MX": "Elaborar dictámenes periciales oficiales que explican qué se analizó, cómo se analizó y las conclusiones técnicas"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "ol",
+            "items": [
+              "The perito forense writes formal reports (dictámenes periciales).",
+              "They must describe what was analyzed, how it was analyzed and what technical conclusions are obtained."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "ol",
+            "items": [
+              "El perito forense redacta dictámenes periciales formales.",
+              "Debe describir qué se analizó, cómo se analizó y qué conclusiones técnicas se obtienen."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Perito forense digital",
+      "Question Text": {
+        "en-US": [
+          "What ethical attitude must the digital forensic expert maintain?",
+          "Regarding impartiality, what is expected from the perito forense digital?"
+        ],
+        "es-MX": [
+          "¿Qué actitud ética debe mantener el perito forense digital?",
+          "En cuanto a imparcialidad, ¿qué se espera del perito forense digital?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Total neutrality and objectivity, acting as an impartial technical expert",
+          "Defending only the side that pays more",
+          "Hiding evidence that harms his own client",
+          "Taking personal revenge through his report"
+        ],
+        "es-MX": [
+          "Mantener neutralidad total y objetividad, actuando como experto técnico imparcial",
+          "Defender únicamente a la parte que le paga más",
+          "Ocultar evidencia que perjudique a su propio cliente",
+          "Tomar venganza personal a través de su dictamen"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Total neutrality and objectivity, acting as an impartial technical expert",
+        "es-MX": "Mantener neutralidad total y objetividad, actuando como experto técnico imparcial"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The text explicitly states that the perito must act with impartiality and serve as an objective technical expert."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El texto señala explícitamente que el perito debe actuar con imparcialidad y servir como experto técnico objetivo."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Analista forense digital",
+      "Question Text": {
+        "en-US": [
+          "What is the main focus of the forensic analyst's role?",
+          "Which description best fits the forensic analyst in a digital investigation?"
+        ],
+        "es-MX": [
+          "¿En qué se centra principalmente el rol del analista forense?",
+          "¿Qué descripción se ajusta mejor al analista forense en una investigación digital?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Technical acquisition, extraction, interpretation and deep analysis of digital evidence",
+          "Writing the final court sentence",
+          "Managing the salaries of investigators",
+          "Designing the court's web page"
+        ],
+        "es-MX": [
+          "En la adquisición, extracción, interpretación y análisis profundo de la evidencia digital",
+          "Redactar la sentencia final del tribunal",
+          "Administrar los salarios de los investigadores",
+          "Diseñar la página web del tribunal"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Technical acquisition, extraction, interpretation and deep analysis of digital evidence",
+        "es-MX": "En la adquisición, extracción, interpretación y análisis profundo de la evidencia digital"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The material defines the forensic analyst as the technical specialist in acquisition, extraction, interpretation and deep analysis of digital evidence."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El material define al analista forense como el especialista técnico en adquisición, extracción, interpretación y análisis profundo de la evidencia digital."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Analista forense digital",
+      "Question Text": {
+        "en-US": [
+          "Which of the following activities belongs to the forensic analyst?",
+          "According to the text, what does the forensic analyst usually do?"
+        ],
+        "es-MX": [
+          "¿Cuál de las siguientes actividades pertenece al analista forense?",
+          "Según el texto, ¿qué suele hacer el analista forense?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Perform bit-by-bit copies, clone disks and extract mobile data without altering the original",
+          "Decide the final legal strategy in court",
+          "Approve or deny search warrants",
+          "Only install antivirus software on the suspect's computer"
+        ],
+        "es-MX": [
+          "Realizar copias bit a bit, clonar discos y extraer datos de móviles sin alterar el original",
+          "Decidir la estrategia legal final en el juicio",
+          "Aprobar o negar órdenes de cateo",
+          "Instalar únicamente antivirus en la computadora del sospechoso"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Perform bit-by-bit copies, clone disks and extract mobile data without altering the original",
+        "es-MX": "Realizar copias bit a bit, clonar discos y extraer datos de móviles sin alterar el original"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "ul",
+            "items": [
+              "The analyst performs forensic acquisition.",
+              "He clones disks, performs bit-by-bit copies and extracts data from mobile devices."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "ul",
+            "items": [
+              "El analista realiza la adquisición forense.",
+              "Clona discos, hace copias bit a bit y extrae datos de dispositivos móviles."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Analista forense digital",
+      "Question Text": {
+        "en-US": [
+          "Which elements are mentioned as part of the forensic analyst's technical analysis?",
+          "What kinds of data does the forensic analyst examine according to the material?"
+        ],
+        "es-MX": [
+          "¿Qué elementos se mencionan como parte del análisis técnico del analista forense?",
+          "¿Qué tipos de datos examina el analista forense según el material?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Databases, histories, metadata, deleted files, application logs and system events",
+          "Only the device wallpaper and theme settings",
+          "Only printing configuration of the office",
+          "Only weather information on the suspect's phone"
+        ],
+        "es-MX": [
+          "Bases de datos, historiales, metadatos, archivos eliminados, registros de aplicaciones y eventos del sistema",
+          "Solo el fondo de pantalla y los temas del dispositivo",
+          "Solo la configuración de impresión de la oficina",
+          "Solo la información del clima en el teléfono del sospechoso"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Databases, histories, metadata, deleted files, application logs and system events",
+        "es-MX": "Bases de datos, historiales, metadatos, archivos eliminados, registros de aplicaciones y eventos del sistema"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The text lists several items the analyst examines: databases, histories, metadata, deleted files, application logs and system events."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El texto enumera varios elementos que examina el analista: bases de datos, historiales, metadatos, archivos eliminados, registros de aplicaciones y eventos del sistema."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Analista forense digital",
+      "Question Text": {
+        "en-US": [
+          "Which tools are explicitly mentioned as examples used by the forensic analyst?",
+          "According to the material, which software can the forensic analyst operate?"
+        ],
+        "es-MX": [
+          "¿Qué herramientas se mencionan explícitamente como ejemplos usadas por el analista forense?",
+          "Según el material, ¿qué software puede operar el analista forense?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Autopsy, FTK, EnCase, Oxygen Forensics, Cellebrite and Volatility",
+          "Only text editors and web browsers",
+          "Only spreadsheet software",
+          "Only video games for training"
+        ],
+        "es-MX": [
+          "Autopsy, FTK, EnCase, Oxygen Forensics, Cellebrite y Volatility",
+          "Solo editores de texto y navegadores web",
+          "Solo hojas de cálculo",
+          "Solo videojuegos de entrenamiento"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Autopsy, FTK, EnCase, Oxygen Forensics, Cellebrite and Volatility",
+        "es-MX": "Autopsy, FTK, EnCase, Oxygen Forensics, Cellebrite y Volatility"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "ul",
+            "items": [
+              "Autopsy",
+              "FTK",
+              "EnCase",
+              "Oxygen Forensics",
+              "Cellebrite",
+              "Volatility"
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "ul",
+            "items": [
+              "Autopsy",
+              "FTK",
+              "EnCase",
+              "Oxygen Forensics",
+              "Cellebrite",
+              "Volatility"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Abogado digital",
+      "Question Text": {
+        "en-US": [
+          "What is the core responsibility of the digital lawyer in a forensic investigation?",
+          "Which description best summarizes the role of the digital lawyer?"
+        ],
+        "es-MX": [
+          "¿Cuál es la responsabilidad central del abogado digital en una investigación forense?",
+          "¿Qué descripción resume mejor el rol del abogado digital?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "To interpret evidence within the legal framework, ensuring lawful acquisition, preservation and presentation",
+          "To configure forensic tools on the lab computers",
+          "To design the lab's physical security system",
+          "To write the code of the forensic software"
+        ],
+        "es-MX": [
+          "Interpretar la evidencia dentro del marco legal, asegurando obtención, preservación y presentación conforme a la ley",
+          "Configurar herramientas forenses en las computadoras del laboratorio",
+          "Diseñar el sistema de seguridad física del laboratorio",
+          "Escribir el código del software forense"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To interpret evidence within the legal framework, ensuring lawful acquisition, preservation and presentation",
+        "es-MX": "Interpretar la evidencia dentro del marco legal, asegurando obtención, preservación y presentación conforme a la ley"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The text states that the digital lawyer ensures that evidence acquisition, preservation and presentation comply with the law."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El texto señala que el abogado digital garantiza que la obtención, preservación y presentación de la evidencia cumplan con la ley."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Abogado digital",
+      "Question Text": {
+        "en-US": [
+          "Which task corresponds to the digital lawyer according to the material?",
+          "What is one of the functions of the digital lawyer regarding legality?"
+        ],
+        "es-MX": [
+          "¿Qué tarea corresponde al abogado digital según el material?",
+          "¿Cuál es una de las funciones del abogado digital en cuanto a legalidad?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Assessing whether evidence was obtained with authorization and without violating fundamental rights",
+          "Cloning disks and extracting mobile data",
+          "Configuring operating system logs",
+          "Choosing the color of the forensic lab logo"
+        ],
+        "es-MX": [
+          "Evaluar si la evidencia se obtuvo con autorización y sin violar derechos fundamentales",
+          "Clonar discos y extraer datos de móviles",
+          "Configurar los registros del sistema operativo",
+          "Elegir el color del logotipo del laboratorio forense"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Assessing whether evidence was obtained with authorization and without violating fundamental rights",
+        "es-MX": "Evaluar si la evidencia se obtuvo con autorización y sin violar derechos fundamentales"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "ul",
+            "items": [
+              "The digital lawyer advises on evidence legality.",
+              "Checks authorization, privacy and respect for fundamental rights."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "ul",
+            "items": [
+              "El abogado digital asesora sobre la legalidad de la evidencia.",
+              "Revisa autorización, privacidad y respeto a derechos fundamentales."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Abogado digital",
+      "Question Text": {
+        "en-US": [
+          "How does the digital lawyer interact with technical reports?",
+          "According to the text, what does the digital lawyer do with technical forensic findings?"
+        ],
+        "es-MX": [
+          "¿Cómo interactúa el abogado digital con los informes técnicos?",
+          "Según el texto, ¿qué hace el abogado digital con los hallazgos forenses técnicos?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Translates technical findings into legal arguments understandable for the authority",
+          "Ignores the reports and only reads social media posts",
+          "Erases all technical details to simplify the case",
+          "Rewrites the reports as fiction novels"
+        ],
+        "es-MX": [
+          "Traduce los hallazgos técnicos en argumentos legales comprensibles para la autoridad",
+          "Ignora los informes y solo lee publicaciones de redes sociales",
+          "Borra todos los detalles técnicos para simplificar el caso",
+          "Reescribe los informes como novelas de ficción"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Translates technical findings into legal arguments understandable for the authority",
+        "es-MX": "Traduce los hallazgos técnicos en argumentos legales comprensibles para la autoridad"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The material states that the digital lawyer interprets technical reports and turns them into understandable legal arguments."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El material indica que el abogado digital interpreta los informes técnicos y los convierte en argumentos legales comprensibles."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Colaboración entre roles",
+      "Question Text": {
+        "en-US": [
+          "How do the analyst, the expert and the digital lawyer relate in a successful forensic investigation?",
+          "According to the material, how do the three roles collaborate?"
+        ],
+        "es-MX": [
+          "¿Cómo se relacionan el analista, el perito y el abogado digital en una investigación forense exitosa?",
+          "Según el material, ¿cómo colaboran los tres roles?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "The analyst does the technical work, the expert formalizes and presents the results, and the lawyer integrates them into a valid legal strategy",
+          "Each one works separately without sharing information",
+          "Only the analyst works; the other two are optional",
+          "The lawyer acquires the evidence, the expert programs the tools and the analyst writes the sentence"
+        ],
+        "es-MX": [
+          "El analista realiza el trabajo técnico, el perito formaliza y presenta los resultados, y el abogado los integra en una estrategia legal válida",
+          "Cada uno trabaja por separado sin compartir información",
+          "Solo trabaja el analista; los otros dos son opcionales",
+          "El abogado adquiere la evidencia, el perito programa las herramientas y el analista redacta la sentencia"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "The analyst does the technical work, the expert formalizes and presents the results, and the lawyer integrates them into a valid legal strategy",
+        "es-MX": "El analista realiza el trabajo técnico, el perito formaliza y presenta los resultados, y el abogado los integra en una estrategia legal válida"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "ol",
+            "items": [
+              "The forensic analyst: specialized technical work.",
+              "The forensic expert: formalizes and presents results in an expert report.",
+              "The digital lawyer: builds a valid legal strategy with those results."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "ol",
+            "items": [
+              "El analista forense: realiza el trabajo técnico especializado.",
+              "El perito forense: formaliza y presenta los resultados en un dictamen.",
+              "El abogado digital: construye una estrategia legal válida con esos resultados."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Conclusiones",
+      "Question Text": {
+        "en-US": [
+          "What happens to a digital forensic investigation if one of the three roles is missing?",
+          "According to the final reflection, what is the impact of lacking one of the roles?"
+        ],
+        "es-MX": [
+          "¿Qué ocurre con una investigación forense digital si falta uno de los tres roles?",
+          "Según la reflexión final, ¿cuál es el impacto de que falte uno de los roles?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "The investigation loses strength, consistency or legality",
+          "The investigation automatically becomes faster and more efficient",
+          "Nothing changes; roles are interchangeable",
+          "The evidence becomes more reliable without so many people"
+        ],
+        "es-MX": [
+          "La investigación pierde fuerza, consistencia o legalidad",
+          "La investigación automáticamente se vuelve más rápida y eficiente",
+          "No cambia nada; los roles son intercambiables",
+          "La evidencia se vuelve más confiable sin tanta gente"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "The investigation loses strength, consistency or legality",
+        "es-MX": "La investigación pierde fuerza, consistencia o legalidad"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The reflection states that without one of the roles the investigation loses strength, consistency or legality."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La reflexión final indica que sin alguno de ellos la investigación pierde fuerza, consistencia o legalidad."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Conclusiones",
+      "Question Text": {
+        "en-US": [
+          "Which option correctly matches each role with its main contribution?",
+          "According to the key conclusions, how is each role summarized?"
+        ],
+        "es-MX": [
+          "¿Qué opción relaciona correctamente cada rol con su principal aporte?",
+          "Según las conclusiones clave, ¿cómo se resume cada rol?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Expert: formal validity, Analyst: technical rigor, Lawyer: legal framework",
+          "Expert: writes laws, Analyst: prosecutes crimes, Lawyer: configures hardware",
+          "Expert: repairs computers, Analyst: designs logos, Lawyer: installs operating systems",
+          "Expert: human resources, Analyst: marketing, Lawyer: social media management"
+        ],
+        "es-MX": [
+          "Perito: validez formal, Analista: rigor técnico, Abogado: marco legal",
+          "Perito: redacta leyes, Analista: persigue delitos, Abogado: configura hardware",
+          "Perito: repara computadoras, Analista: diseña logotipos, Abogado: instala sistemas operativos",
+          "Perito: recursos humanos, Analista: marketing, Abogado: redes sociales"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Expert: formal validity, Analyst: technical rigor, Lawyer: legal framework",
+        "es-MX": "Perito: validez formal, Analista: rigor técnico, Abogado: marco legal"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "ul",
+            "items": [
+              "The expert (perito) provides formal validity of conclusions.",
+              "The analyst provides technical rigor and reconstruction.",
+              "The lawyer provides the legal framework and admissibility."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "ul",
+            "items": [
+              "El perito aporta validez formal de las conclusiones.",
+              "El analista aporta rigor técnico y reconstrucción.",
+              "El abogado aporta el marco legal y la admisibilidad."
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

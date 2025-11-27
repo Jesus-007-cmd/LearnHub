@@ -1,0 +1,878 @@
+{
+    "meta": {
+      "slug": "forense-apps11",
+      "title": "Validación y preservación de evidencia digital (Hash MD5 y SHA-256)",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 1,
+      "classNo": 11,
+      "description": "Integridad de la evidencia digital, concepto de hash, MD5 y SHA-256, procedimiento de validación y documentación.",
+      "tags": [
+        "hash",
+        "MD5",
+        "SHA-256",
+        "integridad",
+        "cadena de custodia",
+        "ISO 27037",
+        "NIST"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "Integridad",
+        "Question Text": {
+          "en-US": [
+            "What does integrity of digital evidence guarantee according to the text?",
+            "In a forensic context, what does integrity of evidence mean?"
+          ],
+          "es-MX": [
+            "¿Qué garantiza la integridad de la evidencia digital según el texto?",
+            "En contexto forense, ¿qué significa la integridad de la evidencia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "That the evidence remains in the same state from collection to final analysis",
+            "That the evidence can be freely modified to improve readability",
+            "That the evidence always occupies the same disk space",
+            "That the evidence is automatically encrypted"
+          ],
+          "es-MX": [
+            "Que la evidencia se mantiene en el mismo estado desde su obtención hasta su análisis final",
+            "Que la evidencia puede modificarse libremente para mejorar su lectura",
+            "Que la evidencia siempre ocupa el mismo espacio en disco",
+            "Que la evidencia se cifra automáticamente"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "That the evidence remains in the same state from collection to final analysis",
+          "es-MX": "Que la evidencia se mantiene en el mismo estado desde su obtención hasta su análisis final"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The text defines integrity as keeping the evidence in the same state from its acquisition to the final analysis."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El texto define la integridad como mantener la evidencia en el mismo estado desde su obtención hasta el análisis final."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Integridad",
+        "Question Text": {
+          "en-US": [
+            "According to the material, what is the impact of even a minimal alteration of the evidence?",
+            "What does the text say about any small modification to the evidence?"
+          ],
+          "es-MX": [
+            "Según el material, ¿cuál es el impacto de una alteración incluso mínima en la evidencia?",
+            "¿Qué indica el texto sobre cualquier pequeña modificación en la evidencia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It invalidates the evidence",
+            "It improves the quality of the evidence",
+            "It has no effect as long as the size is similar",
+            "It only affects the file name"
+          ],
+          "es-MX": [
+            "Invalida la evidencia",
+            "Mejora la calidad de la evidencia",
+            "No tiene efecto mientras el tamaño sea similar",
+            "Solo afecta el nombre del archivo"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It invalidates the evidence",
+          "es-MX": "Invalida la evidencia"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The text states that any alteration, even minimal, invalidates the evidence."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El texto señala que cualquier alteración, incluso mínima, invalida la evidencia."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Concepto de hash",
+        "Question Text": {
+          "en-US": [
+            "How is a hash defined in the text?",
+            "What is a hash value according to the material?"
+          ],
+          "es-MX": [
+            "¿Cómo se define un hash en el texto?",
+            "¿Qué es un valor hash según el material?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "An alphanumeric value generated from the file content by a mathematical algorithm",
+            "A compressed version of the original file",
+            "A password chosen by the investigator",
+            "A random number unrelated to the file"
+          ],
+          "es-MX": [
+            "Un valor alfanumérico generado a partir del contenido de un archivo mediante un algoritmo matemático",
+            "Una versión comprimida del archivo original",
+            "Una contraseña elegida por el investigador",
+            "Un número aleatorio sin relación con el archivo"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "An alphanumeric value generated from the file content by a mathematical algorithm",
+          "es-MX": "Un valor alfanumérico generado a partir del contenido de un archivo mediante un algoritmo matemático"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The material defines hash as an alphanumeric value derived from the file via a mathematical algorithm."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El material define el hash como un valor alfanumérico generado a partir del archivo mediante un algoritmo matemático."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Propiedades del hash",
+        "Question Text": {
+          "en-US": [
+            "Which property refers to the fact that modifying a single bit completely changes the hash?",
+            "What is the name of the property where a minimal change in the file drastically changes the hash?"
+          ],
+          "es-MX": [
+            "¿Qué propiedad se refiere a que al modificar un solo bit el hash cambia por completo?",
+            "¿Cómo se llama la propiedad en la que un cambio mínimo en el archivo altera drásticamente el hash?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Sensitivity to changes",
+            "Compressibility",
+            "Reversibility",
+            "Random sampling"
+          ],
+          "es-MX": [
+            "Sensibilidad a cambios",
+            "Compresibilidad",
+            "Reversibilidad",
+            "Muestreo aleatorio"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Sensitivity to changes",
+          "es-MX": "Sensibilidad a cambios"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The text lists 'sensitivity to changes' as a property: modifying one bit completely changes the hash."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El texto menciona la 'sensibilidad a cambios' como propiedad: modificar un bit cambia completamente el hash."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Propiedades del hash",
+        "Question Text": {
+          "en-US": [
+            "What does the property 'impossibility to revert' mean in the context of hash functions?",
+            "According to the text, what does it mean that it is impossible to revert a hash?"
+          ],
+          "es-MX": [
+            "¿Qué significa la propiedad de 'imposibilidad de revertir' en el contexto de funciones hash?",
+            "Según el texto, ¿qué implica que no sea posible revertir un hash?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "That it is not possible to reconstruct the original file from the hash value",
+            "That the hash cannot be recalculated again",
+            "That the hash disappears after a few minutes",
+            "That the file becomes unreadable"
+          ],
+          "es-MX": [
+            "Que no es posible reconstruir el archivo original a partir del valor hash",
+            "Que el hash no puede volver a calcularse",
+            "Que el hash desaparece después de unos minutos",
+            "Que el archivo se vuelve ilegible"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "That it is not possible to reconstruct the original file from the hash value",
+          "es-MX": "Que no es posible reconstruir el archivo original a partir del valor hash"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The property 'impossibility to revert' means that the original content cannot be rebuilt from the hash."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La propiedad de 'imposibilidad de revertir' indica que no se puede reconstruir el archivo original a partir del hash."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Propiedades del hash",
+        "Question Text": {
+          "en-US": [
+            "What does the text say about comparing hashes between two files?",
+            "According to the concept of 'exact comparison', what does it mean if two hashes match?"
+          ],
+          "es-MX": [
+            "¿Qué dice el texto sobre comparar hashes entre dos archivos?",
+            "Según la 'comparación exacta', ¿qué significa que dos hashes coincidan?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "That the two files are identical",
+            "That the files have different content",
+            "That the files have similar size but different data",
+            "That the files cannot be used as evidence"
+          ],
+          "es-MX": [
+            "Que los dos archivos son idénticos",
+            "Que los archivos tienen contenido distinto",
+            "Que los archivos tienen tamaño similar pero datos diferentes",
+            "Que los archivos no pueden usarse como evidencia"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "That the two files are identical",
+          "es-MX": "Que los dos archivos son idénticos"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The text states that two files are identical if their hashes match, due to exact comparison."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El texto señala que dos archivos son idénticos si sus hashes coinciden, gracias a la comparación exacta."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "MD5 y SHA-256",
+        "Question Text": {
+          "en-US": [
+            "What characteristics of MD5 are mentioned in the material?",
+            "According to the text, which statements describe MD5?"
+          ],
+          "es-MX": [
+            "¿Qué características de MD5 se mencionan en el material?",
+            "Según el texto, ¿qué afirmaciones describen a MD5?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "128-bit length, historical wide use and suitable for basic validations",
+            "256-bit length and currently the most reliable algorithm",
+            "Only used for disk encryption by default",
+            "Designed exclusively for image compression"
+          ],
+          "es-MX": [
+            "Longitud de 128 bits, amplio uso histórico y adecuado para validaciones básicas",
+            "Longitud de 256 bits y actualmente el algoritmo más confiable",
+            "Usado solo para cifrado de discos por defecto",
+            "Diseñado exclusivamente para compresión de imágenes"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "128-bit length, historical wide use and suitable for basic validations",
+          "es-MX": "Longitud de 128 bits, amplio uso histórico y adecuado para validaciones básicas"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Length: 128 bits",
+                "Historical wide use",
+                "Suitable for basic validations"
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Longitud: 128 bits",
+                "Amplio uso histórico",
+                "Adecuado para validaciones básicas"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "MD5 y SHA-256",
+        "Question Text": {
+          "en-US": [
+            "How is SHA-256 described in the text?",
+            "According to the material, what is special about SHA-256?"
+          ],
+          "es-MX": [
+            "¿Cómo se describe SHA-256 en el texto?",
+            "Según el material, ¿qué tiene de especial SHA-256?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It is 256-bit long and currently the most reliable algorithm, recommended in forensic and judicial processes",
+            "It is 32-bit long and used only in games",
+            "It is a deprecated algorithm without forensic relevance",
+            "It is a proprietary algorithm without documentation"
+          ],
+          "es-MX": [
+            "Tiene longitud de 256 bits y actualmente es el algoritmo más confiable, recomendado en procesos forenses y judiciales",
+            "Tiene 32 bits y se usa solo en videojuegos",
+            "Es un algoritmo obsoleto sin relevancia forense",
+            "Es un algoritmo propietario sin documentación"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It is 256-bit long and currently the most reliable algorithm, recommended in forensic and judicial processes",
+          "es-MX": "Tiene longitud de 256 bits y actualmente es el algoritmo más confiable, recomendado en procesos forenses y judiciales"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The text states that SHA-256 is 256-bit, currently the most reliable and recommended in forensic and judicial processes."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El texto indica que SHA-256 tiene 256 bits, es el más confiable y se recomienda en procesos forenses y judiciales."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Función del hash",
+        "Question Text": {
+          "en-US": [
+            "Which of the following is a function of the hash in preserving evidence, according to the text?",
+            "What does the hash value allow in the preservation of digital evidence?"
+          ],
+          "es-MX": [
+            "¿Cuál de las siguientes es una función del hash en la preservación de la evidencia, según el texto?",
+            "¿Qué permite el valor hash en la preservación de evidencia digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Confirm that the forensic copy is identical to the original",
+            "Compress the evidence to save disk space",
+            "Automatically translate the evidence language",
+            "Generate passwords for the investigator"
+          ],
+          "es-MX": [
+            "Confirmar que la copia forense es idéntica al original",
+            "Comprimir la evidencia para ahorrar espacio",
+            "Traducir automáticamente el idioma de la evidencia",
+            "Generar contraseñas para el investigador"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Confirm that the forensic copy is identical to the original",
+          "es-MX": "Confirmar que la copia forense es idéntica al original"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Confirm identity between original and forensic copy",
+                "Detect any modification",
+                "Register authenticity in the chain of custody"
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Confirmar la identidad entre original y copia forense",
+                "Detectar cualquier modificación",
+                "Registrar autenticidad en la cadena de custodia"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Procedimiento de validación",
+        "Question Text": {
+          "en-US": [
+            "Which of the following best summarizes the initial hash generation procedure described in the text?",
+            "According to the material, what should be done in the initial hash generation phase?"
+          ],
+          "es-MX": [
+            "¿Cuál de las siguientes opciones resume mejor el procedimiento de generación inicial de hash descrito en el texto?",
+            "Según el material, ¿qué debe hacerse en la fase de generación inicial del hash?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Select the file, use a reliable tool, calculate MD5 and SHA-256 and record values with date, time and tool used",
+            "Copy the file, delete the original and guess the hash",
+            "Encrypt the file and not record any information",
+            "Only open the file and visually check it"
+          ],
+          "es-MX": [
+            "Seleccionar el archivo, usar una herramienta confiable, calcular MD5 y SHA-256 y registrar los valores con fecha, hora y herramienta usada",
+            "Copiar el archivo, borrar el original y adivinar el hash",
+            "Cifrar el archivo y no registrar información",
+            "Solo abrir el archivo y revisarlo visualmente"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Select the file, use a reliable tool, calculate MD5 and SHA-256 and record values with date, time and tool used",
+          "es-MX": "Seleccionar el archivo, usar una herramienta confiable, calcular MD5 y SHA-256 y registrar los valores con fecha, hora y herramienta usada"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Select the file or forensic image.",
+                "Use a reliable tool (FTK Imager, HashCalc, WinMD5Free or PowerShell).",
+                "Calculate MD5 and SHA-256.",
+                "Record values with date, time and tool used."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Seleccionar el archivo o imagen forense.",
+                "Usar una herramienta confiable (FTK Imager, HashCalc, WinMD5Free o PowerShell).",
+                "Calcular MD5 y SHA-256.",
+                "Registrar valores con fecha, hora y herramienta utilizada."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Herramientas",
+        "Question Text": {
+          "en-US": [
+            "Which tools are mentioned as examples to calculate hashes in the initial generation?",
+            "According to the text, which tools can be used to calculate MD5 and SHA-256?"
+          ],
+          "es-MX": [
+            "¿Qué herramientas se mencionan como ejemplo para calcular hashes en la generación inicial?",
+            "Según el texto, ¿qué herramientas pueden usarse para calcular MD5 y SHA-256?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "FTK Imager, HashCalc, WinMD5Free and PowerShell",
+            "Only a web browser and a text editor",
+            "Only a word processor",
+            "Only a graphics editor"
+          ],
+          "es-MX": [
+            "FTK Imager, HashCalc, WinMD5Free y PowerShell",
+            "Solo un navegador web y un editor de texto",
+            "Solo un procesador de textos",
+            "Solo un editor de gráficos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "FTK Imager, HashCalc, WinMD5Free and PowerShell",
+          "es-MX": "FTK Imager, HashCalc, WinMD5Free y PowerShell"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "FTK Imager",
+                "HashCalc",
+                "WinMD5Free",
+                "PowerShell"
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "FTK Imager",
+                "HashCalc",
+                "WinMD5Free",
+                "PowerShell"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Verificación posterior",
+        "Question Text": {
+          "en-US": [
+            "According to the verification phase, what does it mean if the recalculated hashes match the original ones?",
+            "In the verification step, how is equality of hashes interpreted?"
+          ],
+          "es-MX": [
+            "Según la fase de verificación, ¿qué significa que los hashes recalculados coincidan con los originales?",
+            "En el paso de verificación, ¿cómo se interpreta la igualdad de hashes?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The evidence maintains integrity",
+            "The evidence has been modified and must be discarded",
+            "The evidence has become unreadable",
+            "The evidence automatically loses legal value"
+          ],
+          "es-MX": [
+            "Que la evidencia mantiene integridad",
+            "Que la evidencia fue modificada y debe descartarse",
+            "Que la evidencia se volvió ilegible",
+            "Que la evidencia pierde automáticamente valor legal"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The evidence maintains integrity",
+          "es-MX": "Que la evidencia mantiene integridad"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The text says: if hashes match → the evidence maintains integrity; if not, it was modified and must be discarded."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El texto indica: si los hashes coinciden → la evidencia mantiene integridad; si no coinciden, fue modificada y debe descartarse."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Documentación",
+        "Question Text": {
+          "en-US": [
+            "Where should the hash value be recorded according to the section on documentation importance?",
+            "In which records must the hash value be documented?"
+          ],
+          "es-MX": [
+            "¿Dónde debe registrarse el valor hash según la sección de importancia documental?",
+            "¿En qué registros debe documentarse el valor hash?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "In chain of custody forms, technical reports, secure backup and acquisition/analysis logs",
+            "Only in a private chat with the investigator",
+            "Only on a sticky note on the monitor",
+            "Only in the operating system configuration"
+          ],
+          "es-MX": [
+            "En formatos de cadena de custodia, informes técnicos, respaldo seguro y bitácoras de adquisición y análisis",
+            "Solo en un chat privado con el investigador",
+            "Solo en un papel pegado en el monitor",
+            "Solo en la configuración del sistema operativo"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "In chain of custody forms, technical reports, secure backup and acquisition/analysis logs",
+          "es-MX": "En formatos de cadena de custodia, informes técnicos, respaldo seguro y bitácoras de adquisición y análisis"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Chain of custody forms",
+                "Technical reports",
+                "Secure backup",
+                "Acquisition and analysis logs"
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Formatos de cadena de custodia",
+                "Informes técnicos",
+                "Respaldo seguro",
+                "Bitácoras de adquisición y análisis"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Documentación",
+        "Question Text": {
+          "en-US": [
+            "Which elements must be included in the documentation, according to the text?",
+            "What information should be recorded together with the hash value?"
+          ],
+          "es-MX": [
+            "¿Qué elementos deben incluirse en la documentación, según el texto?",
+            "¿Qué información debe registrarse junto con el valor hash?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Algorithm used, file name, location, date and time, tool used and calculated hash",
+            "Only the file name and a random number",
+            "Only the investigator's name and signature",
+            "Only the date of the trial"
+          ],
+          "es-MX": [
+            "Algoritmo utilizado, nombre de archivo, ubicación, fecha y hora, herramienta empleada y hash calculado",
+            "Solo el nombre de archivo y un número al azar",
+            "Solo el nombre y firma del investigador",
+            "Solo la fecha del juicio"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Algorithm used, file name, location, date and time, tool used and calculated hash",
+          "es-MX": "Algoritmo utilizado, nombre de archivo, ubicación, fecha y hora, herramienta empleada y hash calculado"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The text lists these elements as mandatory in documentation to support chain of custody and integrity."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El texto enumera estos elementos como obligatorios en la documentación para respaldar cadena de custodia e integridad."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Conclusiones y estándares",
+        "Question Text": {
+          "en-US": [
+            "According to the key conclusions, what do MD5 and SHA-256 allow us to verify?",
+            "In the conclusions, what is the main purpose of MD5 and SHA-256?"
+          ],
+          "es-MX": [
+            "Según las conclusiones clave, ¿qué permiten verificar MD5 y SHA-256?",
+            "En las conclusiones, ¿cuál es el propósito principal de MD5 y SHA-256?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The integrity of files and devices",
+            "The amount of RAM installed",
+            "The speed of the processor",
+            "The geographical location of the suspect"
+          ],
+          "es-MX": [
+            "La integridad de archivos y dispositivos",
+            "La cantidad de memoria RAM instalada",
+            "La velocidad del procesador",
+            "La ubicación geográfica del sospechoso"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The integrity of files and devices",
+          "es-MX": "La integridad de archivos y dispositivos"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The conclusions specify that MD5 and SHA-256 allow verification of the integrity of files and devices."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las conclusiones especifican que MD5 y SHA-256 permiten verificar la integridad de archivos y dispositivos."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Conclusiones y estándares",
+        "Question Text": {
+          "en-US": [
+            "According to the conclusions, when should hashes be calculated?",
+            "In the text, at which moments of the process must hash values be generated?"
+          ],
+          "es-MX": [
+            "Según las conclusiones, ¿cuándo deben calcularse los hashes?",
+            "En el texto, ¿en qué momentos del proceso deben generarse los valores hash?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Before and after the analysis",
+            "Only once, at the end of the trial",
+            "Only during the suspect's interrogation",
+            "Only when the defense requests it"
+          ],
+          "es-MX": [
+            "Antes y después del análisis",
+            "Solo una vez, al final del juicio",
+            "Solo durante el interrogatorio del sospechoso",
+            "Solo cuando lo solicite la defensa"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Before and after the analysis",
+          "es-MX": "Antes y después del análisis"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The conclusions clearly state that hashes must be calculated before and after the analysis."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las conclusiones indican claramente que los hashes deben calcularse antes y después del análisis."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Conclusiones y estándares",
+        "Question Text": {
+          "en-US": [
+            "Which standards or guides are mentioned as supporting the use of hashes in forensic processes?",
+            "According to the text, which references back the use of MD5 and SHA-256 in digital forensics?"
+          ],
+          "es-MX": [
+            "¿Qué normas o guías se mencionan como respaldo del uso de hashes en procesos forenses?",
+            "Según el texto, ¿qué referencias respaldan el uso de MD5 y SHA-256 en informática forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "ISO/IEC 27037 and NIST guides",
+            "Only traffic laws",
+            "Only health regulations",
+            "Only marketing guidelines"
+          ],
+          "es-MX": [
+            "ISO/IEC 27037 y guías del NIST",
+            "Solo leyes de tránsito",
+            "Solo regulaciones de salud",
+            "Solo guías de mercadotecnia"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "ISO/IEC 27037 and NIST guides",
+          "es-MX": "ISO/IEC 27037 y guías del NIST"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The conclusions say that the use of hashes is supported by ISO/IEC 27037 and NIST guidelines."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las conclusiones señalan que el uso de hashes está respaldado por ISO/IEC 27037 y guías del NIST."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Reflexión final",
+        "Question Text": {
+          "en-US": [
+            "How is hash validation described in the final reflection?",
+            "According to the reflection, what role does hash validation play in modern digital forensics?"
+          ],
+          "es-MX": [
+            "¿Cómo se describe la validación mediante hash en la reflexión final?",
+            "Según la reflexión, ¿qué papel juega la validación por hash en la informática forense moderna?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It is an essential pillar that demonstrates integrity and reliability throughout the process",
+            "It is an optional luxury without real impact",
+            "It is only a decorative technical step",
+            "It is a marketing technique to promote forensic tools"
+          ],
+          "es-MX": [
+            "Es un pilar esencial que demuestra integridad y confiabilidad durante todo el proceso",
+            "Es un lujo opcional sin impacto real",
+            "Es solo un paso técnico decorativo",
+            "Es una técnica de mercadotecnia para promocionar herramientas forenses"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It is an essential pillar that demonstrates integrity and reliability throughout the process",
+          "es-MX": "Es un pilar esencial que demuestra integridad y confiabilidad durante todo el proceso"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The reflection states that hash validation is an essential pillar of modern digital forensics, ensuring authenticity and traceability."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La reflexión indica que la validación mediante hash es un pilar esencial de la informática forense moderna, asegurando autenticidad y trazabilidad."
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

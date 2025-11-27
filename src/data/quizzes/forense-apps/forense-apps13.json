@@ -1,0 +1,677 @@
+{
+    "meta": {
+      "slug": "forense-apps13-adquisicion",
+      "title": "Adquisición física, lógica y selectiva",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 2,
+      "classNo": 13,
+      "description": "Diferencias entre adquisición física, lógica y selectiva, con ejemplos prácticos y relación con herramientas forenses.",
+      "tags": [
+        "adquisición física",
+        "adquisición lógica",
+        "adquisición selectiva",
+        "dispositivos móviles",
+        "evidencia digital",
+        "integridad",
+        "herramientas forenses"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "Concepto general",
+        "Question Text": {
+          "en-US": [
+            "What is the main purpose of digital acquisition in forensic analysis?",
+            "Why is a controlled acquisition process applied to a device in digital forensics?"
+          ],
+          "es-MX": [
+            "¿Cuál es el propósito principal de la adquisición digital en el análisis forense?",
+            "¿Por qué se aplica un proceso de adquisición controlado a un dispositivo en informática forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To obtain a faithful and intact copy of the data without modifying the original",
+            "To clean and optimize the device so it works faster",
+            "To encrypt all information and block access forever",
+            "To delete irrelevant files before the investigation"
+          ],
+          "es-MX": [
+            "Obtener una copia fiel e íntegra de los datos sin modificar el original",
+            "Limpiar y optimizar el dispositivo para que funcione más rápido",
+            "Cifrar toda la información y bloquear el acceso para siempre",
+            "Borrar archivos irrelevantes antes de la investigación"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To obtain a faithful and intact copy of the data without modifying the original",
+          "es-MX": "Obtener una copia fiel e íntegra de los datos sin modificar el original"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Acquisition as controlled copying"
+            },
+            {
+              "type": "text",
+              "content": "Digital acquisition is not about cleaning or modifying the device, but about protecting it and extracting a reliable copy."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "The original device must remain unchanged to preserve its evidential value.",
+                "The copy must be faithful so that analysis results are valid in court.",
+                "Integrity and traceability are maintained throughout the process with hashes and documentation."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "La adquisición como copia controlada"
+            },
+            {
+              "type": "text",
+              "content": "La adquisición digital no busca limpiar ni modificar el dispositivo, sino protegerlo y extraer una copia confiable."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "El dispositivo original debe permanecer sin cambios para conservar su valor probatorio.",
+                "La copia debe ser fiel para que los resultados del análisis sean válidos ante un tribunal.",
+                "La integridad y trazabilidad se mantienen con hashes y documentación a lo largo del proceso."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Adquisición física – profundidad",
+        "Question Text": {
+          "en-US": [
+            "What does a physical acquisition of a device include?",
+            "When a physical acquisition is performed, what kind of data is obtained?"
+          ],
+          "es-MX": [
+            "¿Qué incluye la adquisición física de un dispositivo?",
+            "Cuando se realiza una adquisición física, ¿qué tipo de datos se obtienen?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A complete bit-to-bit copy including free space and deleted data",
+            "Only visible files and folders shown by the operating system",
+            "Only photos and videos selected by the user",
+            "Only configuration files without user data"
+          ],
+          "es-MX": [
+            "Una copia completa bit a bit incluyendo espacio libre y datos eliminados",
+            "Solo archivos y carpetas visibles que muestra el sistema operativo",
+            "Solo fotos y videos seleccionados por el usuario",
+            "Solo archivos de configuración sin datos de usuario"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A complete bit-to-bit copy including free space and deleted data",
+          "es-MX": "Una copia completa bit a bit incluyendo espacio libre y datos eliminados"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Physical acquisition = total view of the storage"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Includes file system, free space and unallocated sectors.",
+                "Allows recovering deleted files and hidden partitions.",
+                "Is the most complete and detailed acquisition type."
+              ]
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "text",
+              "content": "This is the method chosen when the investigation requires maximum depth and possible recovery of past activity."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Adquisición física = vista total del almacenamiento"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Incluye sistema de archivos, espacio libre y sectores no asignados.",
+                "Permite recuperar archivos eliminados y particiones ocultas.",
+                "Es el tipo de adquisición más completo y detallado."
+              ]
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "text",
+              "content": "Este método se elige cuando la investigación requiere máxima profundidad y posible recuperación de actividad pasada."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Adquisición lógica – alcance",
+        "Question Text": {
+          "en-US": [
+            "What type of information is obtained in a logical acquisition?",
+            "In a logical acquisition, what is mainly extracted from the device?"
+          ],
+          "es-MX": [
+            "¿Qué tipo de información se obtiene en una adquisición lógica?",
+            "En una adquisición lógica, ¿qué se extrae principalmente del dispositivo?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Only data accessible through the operating system, such as visible files and app data",
+            "All sectors of the storage, including unallocated space",
+            "Only network traffic captures",
+            "Only the operating system files without user content"
+          ],
+          "es-MX": [
+            "Solo los datos accesibles desde el sistema operativo, como archivos visibles y datos de apps",
+            "Todos los sectores del almacenamiento, incluyendo espacio no asignado",
+            "Solo capturas de tráfico de red",
+            "Solo archivos del sistema operativo sin contenido de usuario"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Only data accessible through the operating system, such as visible files and app data",
+          "es-MX": "Solo los datos accesibles desde el sistema operativo, como archivos visibles y datos de apps"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Logical acquisition uses the same view that the operating system exposes to the user or to normal apps."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Includes photos, videos, documents, app databases and visible messages.",
+                "Does not include free space or low-level structures.",
+                "Is faster and less invasive, useful for preliminary or focused analysis."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La adquisición lógica utiliza la misma vista que el sistema operativo expone al usuario o a las aplicaciones normales."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Incluye fotos, videos, documentos, bases de datos de apps y mensajes visibles.",
+                "No incluye espacio libre ni estructuras de bajo nivel.",
+                "Es más rápida y menos invasiva, útil para análisis preliminares o enfocados."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Adquisición selectiva – propósito",
+        "Question Text": {
+          "en-US": [
+            "What is the main goal of selective acquisition?",
+            "Why would an investigator choose a selective acquisition instead of a complete one?"
+          ],
+          "es-MX": [
+            "¿Cuál es el objetivo principal de la adquisición selectiva?",
+            "¿Por qué un investigador elegiría una adquisición selectiva en lugar de una completa?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To extract only specific data relevant to the case and minimize unnecessary access",
+            "To erase irrelevant information and free space",
+            "To capture network traffic in real time",
+            "To automatically decrypt all apps on the device"
+          ],
+          "es-MX": [
+            "Extraer solo datos específicos relevantes para el caso y minimizar accesos innecesarios",
+            "Borrar información irrelevante y liberar espacio",
+            "Capturar tráfico de red en tiempo real",
+            "Descifrar automáticamente todas las apps del dispositivo"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To extract only specific data relevant to the case and minimize unnecessary access",
+          "es-MX": "Extraer solo datos específicos relevantes para el caso y minimizar accesos innecesarios"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Selective acquisition and data minimization"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Is chosen when the device contains a huge volume of information.",
+                "Focuses on a specific type of evidence: messages, photos in a date range, call logs, etc.",
+                "Supports privacy and legal requirements by avoiding access to unrelated personal data."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Adquisición selectiva y minimización de datos"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Se elige cuando el dispositivo contiene un volumen enorme de información.",
+                "Se enfoca en un tipo específico de evidencia: mensajes, fotos en un rango de fechas, registros de llamadas, etc.",
+                "Apoya la privacidad y los requisitos legales al evitar acceso a datos personales no relacionados."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Comparación – profundidad vs velocidad",
+        "Question Text": {
+          "en-US": [
+            "Which option correctly compares depth and speed among physical, logical and selective acquisition?",
+            "How do physical, logical and selective acquisitions differ in depth and speed?"
+          ],
+          "es-MX": [
+            "¿Qué opción compara correctamente la profundidad y la velocidad entre adquisición física, lógica y selectiva?",
+            "¿Cómo se diferencian en profundidad y velocidad la adquisición física, lógica y selectiva?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Physical: highest depth and slowest; Logical: medium depth and faster; Selective: partial depth and very fast",
+            "Physical: very fast and partial; Logical: total and slow; Selective: medium and constant",
+            "Physical: only visible data; Logical: only deleted data; Selective: only system files",
+            "All three always obtain exactly the same amount of data at the same speed"
+          ],
+          "es-MX": [
+            "Física: mayor profundidad y más lenta; Lógica: profundidad media y más rápida; Selectiva: profundidad parcial y muy rápida",
+            "Física: muy rápida y parcial; Lógica: total y lenta; Selectiva: media y constante",
+            "Física: solo datos visibles; Lógica: solo datos eliminados; Selectiva: solo archivos de sistema",
+            "Las tres obtienen siempre la misma cantidad de datos y a la misma velocidad"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Physical: highest depth and slowest; Logical: medium depth and faster; Selective: partial depth and very fast",
+          "es-MX": "Física: mayor profundidad y más lenta; Lógica: profundidad media y más rápida; Selectiva: profundidad parcial y muy rápida"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Physical acquisition: full storage, more time and resources.",
+                "Logical acquisition: only visible and accessible data, faster.",
+                "Selective acquisition: only some specific data, can be very fast if the target is well defined."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Adquisición física: todo el almacenamiento, más tiempo y recursos.",
+                "Adquisición lógica: solo datos visibles y accesibles, más rápida.",
+                "Adquisición selectiva: solo algunos datos específicos, puede ser muy rápida si el objetivo está bien definido."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Ejemplos – física",
+        "Question Text": {
+          "en-US": [
+            "Which of the following is a clear example of physical acquisition?",
+            "Which scenario best represents a physical extraction?"
+          ],
+          "es-MX": [
+            "¿Cuál de los siguientes es un ejemplo claro de adquisición física?",
+            "¿Qué escenario representa mejor una extracción física?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Creating a complete bit-to-bit image of a hard drive in .E01 format with FTK Imager",
+            "Copying only the WhatsApp folder through the file explorer",
+            "Taking screenshots of conversations and photos",
+            "Exporting a contact list using a mobile app"
+          ],
+          "es-MX": [
+            "Crear una imagen completa bit a bit de un disco duro en formato .E01 con FTK Imager",
+            "Copiar solo la carpeta de WhatsApp desde el explorador de archivos",
+            "Tomar capturas de pantalla de conversaciones y fotos",
+            "Exportar la lista de contactos usando una app del celular"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Creating a complete bit-to-bit image of a hard drive in .E01 format with FTK Imager",
+          "es-MX": "Crear una imagen completa bit a bit de un disco duro en formato .E01 con FTK Imager"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The example describes a full forensic image created with a specialized tool and stored in a forensic format."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Bit-to-bit capture is characteristic of physical acquisition.",
+                "Formats like .E01 or .dd are standard in forensic imaging.",
+                "Tools such as FTK Imager are explicitly designed for that purpose."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El ejemplo describe una imagen forense completa creada con una herramienta especializada y almacenada en un formato forense."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "La captura bit a bit es característica de la adquisición física.",
+                "Formatos como .E01 o .dd son estándar en imágenes forenses.",
+                "Herramientas como FTK Imager están diseñadas específicamente para ello."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Ejemplos – lógica",
+        "Question Text": {
+          "en-US": [
+            "Which situation corresponds to a logical acquisition on a mobile device?",
+            "What is an example of logical extraction in practice?"
+          ],
+          "es-MX": [
+            "¿Qué situación corresponde a una adquisición lógica en un dispositivo móvil?",
+            "¿Cuál es un ejemplo de extracción lógica en la práctica?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Extracting photos, videos and visible messages through the operating system or a standard API",
+            "Cloning every sector of the flash memory including unallocated space",
+            "Reading raw blocks directly from the chip with hardware tools",
+            "Removing the chip and performing a chip-off extraction"
+          ],
+          "es-MX": [
+            "Extraer fotos, videos y mensajes visibles a través del sistema operativo o una API estándar",
+            "Clonar cada sector de la memoria flash, incluyendo espacio no asignado",
+            "Leer bloques en bruto directamente del chip con herramientas de hardware",
+            "Retirar el chip y hacer una extracción tipo chip-off"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Extracting photos, videos and visible messages through the operating system or a standard API",
+          "es-MX": "Extraer fotos, videos y mensajes visibles a través del sistema operativo o una API estándar"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Logical extraction relies on the same view the OS provides and on communication channels officially supported by the device."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La extracción lógica se basa en la misma vista que ofrece el sistema operativo y en canales de comunicación soportados oficialmente por el dispositivo."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Ejemplos – selectiva",
+        "Question Text": {
+          "en-US": [
+            "Which of the following is a typical example of selective acquisition?",
+            "In which case is selective acquisition being applied?"
+          ],
+          "es-MX": [
+            "¿Cuál de los siguientes es un ejemplo típico de adquisición selectiva?",
+            "¿En qué caso se está aplicando una adquisición selectiva?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Extracting only the WhatsApp database msgstore.db and calls in a specific date range",
+            "Copying the entire content of the device including hidden partitions",
+            "Capturing all traffic from every network interface",
+            "Dumping the full physical memory of the device"
+          ],
+          "es-MX": [
+            "Extraer solo la base de datos msgstore.db de WhatsApp y las llamadas en un rango de fechas específico",
+            "Copiar todo el contenido del dispositivo, incluidas particiones ocultas",
+            "Capturar todo el tráfico de todas las interfaces de red",
+            "Volcar toda la memoria física del dispositivo"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Extracting only the WhatsApp database msgstore.db and calls in a specific date range",
+          "es-MX": "Extraer solo la base de datos msgstore.db de WhatsApp y las llamadas en un rango de fechas específico"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Only a subset of data is collected.",
+                "The selection is guided by relevance to the case.",
+                "This reduces exposure of unrelated private information."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Solo se recopila un subconjunto de datos.",
+                "La selección está guiada por la relevancia para el caso.",
+                "Esto reduce la exposición de información privada no relacionada."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Relación con herramientas – FTK y Autopsy",
+        "Question Text": {
+          "en-US": [
+            "How are acquisition methods usually combined with FTK Imager and Autopsy in a forensic workflow?",
+            "Which sequence shows a coherent use of acquisition and tools?"
+          ],
+          "es-MX": [
+            "¿Cómo se combinan normalmente los métodos de adquisición con FTK Imager y Autopsy en un flujo forense?",
+            "¿Qué secuencia muestra un uso coherente de adquisición y herramientas?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Physical acquisition or logical/ selective acquisition → Image or data with hashes → Analysis in Autopsy",
+            "Direct analysis in Autopsy on the original device without any image",
+            "Delete unused data → Use Autopsy → Create an image afterwards",
+            "Export screenshots → Open them in FTK Imager → Modify the original"
+          ],
+          "es-MX": [
+            "Adquisición física o lógica/ selectiva → Imagen o datos con hashes → Análisis en Autopsy",
+            "Análisis directo en Autopsy sobre el dispositivo original sin ninguna imagen",
+            "Borrar datos no usados → Usar Autopsy → Crear una imagen después",
+            "Exportar capturas de pantalla → Abrirlas en FTK Imager → Modificar el original"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Physical acquisition or logical/ selective acquisition → Image or data with hashes → Analysis in Autopsy",
+          "es-MX": "Adquisición física o lógica/ selectiva → Imagen o datos con hashes → Análisis en Autopsy"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Separation between acquisition and analysis"
+            },
+            {
+              "type": "ol",
+              "items": [
+                "First, a physical, logical or selective acquisition is performed depending on the case.",
+                "The result (image or exported data) is validated with hash values.",
+                "Then Autopsy or similar tools are used to analyze the acquired material, not the original device."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Separación entre adquisición y análisis"
+            },
+            {
+              "type": "ol",
+              "items": [
+                "Primero se realiza una adquisición física, lógica o selectiva según el caso.",
+                "El resultado (imagen o datos exportados) se valida con valores hash.",
+                "Después se utiliza Autopsy u otras herramientas para analizar el material adquirido, no el dispositivo original."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Criterios de elección",
+        "Question Text": {
+          "en-US": [
+            "Which factors guide the choice between physical, logical and selective acquisition?",
+            "What aspects are considered when deciding the type of acquisition to use?"
+          ],
+          "es-MX": [
+            "¿Qué factores orientan la elección entre adquisición física, lógica y selectiva?",
+            "¿Qué aspectos se consideran al decidir qué tipo de adquisición utilizar?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Legal permissions, case objectives, device sensitivity, available time and data minimization policies",
+            "Only the color and brand of the device",
+            "Only the operating system version",
+            "Only the personal preference of the analyst"
+          ],
+          "es-MX": [
+            "Permisos legales, objetivos del caso, sensibilidad del dispositivo, tiempo disponible y políticas de minimización de datos",
+            "Solo el color y la marca del dispositivo",
+            "Solo la versión del sistema operativo",
+            "Solo la preferencia personal del analista"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Legal permissions, case objectives, device sensitivity, available time and data minimization policies",
+          "es-MX": "Permisos legales, objetivos del caso, sensibilidad del dispositivo, tiempo disponible y políticas de minimización de datos"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Legal permissions define how deep the acquisition can go.",
+                "Case objectives indicate which data are truly necessary.",
+                "Device sensitivity and privacy influence whether a selective approach is more appropriate.",
+                "Available time and resources also affect the choice of method."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Los permisos legales marcan hasta dónde se puede llegar en la adquisición.",
+                "Los objetivos del caso indican qué datos son realmente necesarios.",
+                "La sensibilidad del dispositivo y la privacidad influyen en si conviene un enfoque selectivo.",
+                "El tiempo y los recursos disponibles también afectan la elección del método."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Integridad en todos los métodos",
+        "Question Text": {
+          "en-US": [
+            "What must be preserved in any type of acquisition (physical, logical or selective)?",
+            "What requirement is common to all forms of digital acquisition?"
+          ],
+          "es-MX": [
+            "¿Qué debe preservarse en cualquier tipo de adquisición (física, lógica o selectiva)?",
+            "¿Qué requisito es común a todas las formas de adquisición digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The integrity of the evidence through proper documentation and hash verification",
+            "The performance of the device for daily use",
+            "The visual design of the user interface",
+            "The automatic update of all installed apps"
+          ],
+          "es-MX": [
+            "La integridad de la evidencia mediante documentación adecuada y verificación de hashes",
+            "El rendimiento del dispositivo para uso diario",
+            "El diseño visual de la interfaz de usuario",
+            "La actualización automática de todas las apps instaladas"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The integrity of the evidence through proper documentation and hash verification",
+          "es-MX": "La integridad de la evidencia mediante documentación adecuada y verificación de hashes"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Regardless of the type of acquisition, evidence must remain demonstrably unchanged."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Hash values are used to verify that data has not been altered.",
+                "Documentation explains how, when and with which tools the acquisition was performed.",
+                "This allows the results to be defended in legal and technical contexts."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Independientemente del tipo de adquisición, la evidencia debe mantenerse demostrablemente sin cambios."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Los valores hash verifican que los datos no han sido alterados.",
+                "La documentación explica cómo, cuándo y con qué herramientas se realizó la adquisición.",
+                "Esto permite defender los resultados en contextos legales y técnicos."
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+  
