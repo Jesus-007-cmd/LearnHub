@@ -1,0 +1,690 @@
+{
+    "meta": {
+      "slug": "forense-apps15",
+      "title": "Extracción lógica con Autopsy y FTK Imager",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 2,
+      "classNo": 15,
+      "description": "Procedimiento básico de extracción lógica en entorno controlado utilizando FTK Imager y Autopsy, con énfasis en integridad y documentación.",
+      "tags": [
+        "extracción lógica",
+        "FTK Imager",
+        "Autopsy",
+        "hash",
+        "integridad",
+        "herramientas gratuitas"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "Concepto general de extracción lógica",
+        "Question Text": {
+          "en-US": [
+            "What is logical extraction in digital forensics?",
+            "How is logical acquisition best described when working with a device or directory?"
+          ],
+          "es-MX": [
+            "¿Qué es la extracción lógica en informática forense?",
+            "¿Cómo se describe mejor la adquisición lógica al trabajar con un dispositivo o directorio?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Obtaining information accessible through the operating system without reading the physical level of the device",
+            "Desoldering the memory chip and reading all raw sectors bit by bit",
+            "Only capturing network traffic from the device while it is online",
+            "Rewriting the original evidence to compress it before analysis"
+          ],
+          "es-MX": [
+            "Obtener información accesible a través del sistema operativo sin leer el nivel físico del dispositivo",
+            "Desoldar el chip de memoria y leer todos los sectores en bruto bit a bit",
+            "Capturar únicamente el tráfico de red del dispositivo mientras está en línea",
+            "Reescribir la evidencia original para comprimirla antes del análisis"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Obtaining information accessible through the operating system without reading the physical level of the device",
+          "es-MX": "Obtener información accesible a través del sistema operativo sin leer el nivel físico del dispositivo"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Logical extraction: OS-level access"
+            },
+            {
+              "type": "text",
+              "content": "Logical extraction focuses on files and data that the operating system exposes without interacting directly with raw sectors of the disk or chip."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Includes visible files, photos, videos, documents and accessible app databases.",
+                "Uses normal file system interfaces or backup mechanisms instead of low-level hardware access.",
+                "Is less invasive than physical acquisition and ideal for training and initial analyses."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Extracción lógica: acceso a nivel de sistema operativo"
+            },
+            {
+              "type": "text",
+              "content": "La extracción lógica se centra en los archivos y datos que expone el sistema operativo, sin interactuar directamente con los sectores en bruto del disco o del chip."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Incluye archivos visibles, fotos, videos, documentos y bases de datos de aplicaciones accesibles.",
+                "Utiliza las interfaces normales del sistema de archivos o mecanismos de respaldo, en lugar de acceso de bajo nivel al hardware.",
+                "Es menos invasiva que la adquisición física e ideal para formación y análisis iniciales."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Datos típicos en extracción lógica",
+        "Question Text": {
+          "en-US": [
+            "Which type of information is typically obtained through logical extraction?",
+            "What kind of data is commonly recovered with logical acquisition using free tools?"
+          ],
+          "es-MX": [
+            "¿Qué tipo de información se obtiene típicamente mediante extracción lógica?",
+            "¿Qué clase de datos se recupera comúnmente con adquisición lógica usando herramientas gratuitas?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Visible files, photos, videos, call logs and accessible application databases",
+            "Only damaged sectors and unallocated raw blocks",
+            "Exclusively low-level boot records and firmware images",
+            "Only deleted files and wiped partitions"
+          ],
+          "es-MX": [
+            "Archivos visibles, fotos, videos, registros de llamadas y bases de datos accesibles de aplicaciones",
+            "Solo sectores dañados y bloques en bruto no asignados",
+            "Exclusivamente registros de arranque de bajo nivel e imágenes de firmware",
+            "Solo archivos eliminados y particiones borradas"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Visible files, photos, videos, call logs and accessible application databases",
+          "es-MX": "Archivos visibles, fotos, videos, registros de llamadas y bases de datos accesibles de aplicaciones"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Logical acquisition works with what the system exposes at file-system level or through backup functions."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Documents, multimedia and user folders.",
+                "Call logs or system logs that are accessible without deep hardware access.",
+                "Databases from apps (such as SQLite files) when they are not restricted by elevated permissions."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La adquisición lógica trabaja con lo que el sistema expone a nivel de sistema de archivos o mediante funciones de respaldo."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Documentos, archivos multimedia y carpetas de usuario.",
+                "Registros de llamadas o del sistema accesibles sin acceso profundo al hardware.",
+                "Bases de datos de aplicaciones (como archivos SQLite) cuando no están restringidas por permisos elevados."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "FTK Imager – selección de origen",
+        "Question Text": {
+          "en-US": [
+            "What is the first step when performing a logical extraction with FTK Imager?",
+            "Which initial action must be taken in FTK Imager to start a logical acquisition?"
+          ],
+          "es-MX": [
+            "¿Cuál es el primer paso al realizar una extracción lógica con FTK Imager?",
+            "¿Qué acción inicial debe realizarse en FTK Imager para iniciar una adquisición lógica?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Select the logical source such as a folder, USB device, partition or system directory",
+            "Physically remove the memory chip from the device and solder it to a reader",
+            "Format the device to clean previous data before acquisition",
+            "Edit the original files directly to make them easier to analyze"
+          ],
+          "es-MX": [
+            "Seleccionar el origen lógico como una carpeta, dispositivo USB, partición o directorio del sistema",
+            "Retirar físicamente el chip de memoria del dispositivo y soldarlo a un lector",
+            "Formatear el dispositivo para limpiar datos previos antes de la adquisición",
+            "Editar directamente los archivos originales para que sean más fáciles de analizar"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Select the logical source such as a folder, USB device, partition or system directory",
+          "es-MX": "Seleccionar el origen lógico como una carpeta, dispositivo USB, partición o directorio del sistema"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Starting a logical extraction in FTK Imager"
+            },
+            {
+              "type": "ol",
+              "items": [
+                "Open FTK Imager and choose to add a logical evidence item.",
+                "Select the source: folder, USB, partition or directory.",
+                "Verify you are pointing to the copy or controlled environment, not the original in production."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Inicio de una extracción lógica en FTK Imager"
+            },
+            {
+              "type": "ol",
+              "items": [
+                "Abrir FTK Imager y elegir agregar un elemento de evidencia lógica.",
+                "Seleccionar el origen: carpeta, USB, partición o directorio.",
+                "Verificar que se trabaja sobre la copia o entorno controlado, no sobre el sistema original en producción."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "FTK Imager – exploración y exportación",
+        "Question Text": {
+          "en-US": [
+            "Once the logical source is added in FTK Imager, what is the next typical step?",
+            "After selecting the logical source, what does the examiner usually do inside FTK Imager?"
+          ],
+          "es-MX": [
+            "Una vez agregado el origen lógico en FTK Imager, ¿cuál es el siguiente paso típico?",
+            "Después de seleccionar el origen lógico, ¿qué suele hacer el examinador dentro de FTK Imager?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Browse the folder structure, identify relevant files and export them to a destination folder preserving structure",
+            "Immediately calculate physical sector hashes of the entire disk without viewing any file",
+            "Delete temporary files to save space in the evidence source",
+            "Modify documents to make them more readable before exporting"
+          ],
+          "es-MX": [
+            "Recorrer la estructura de carpetas, identificar archivos relevantes y exportarlos a una carpeta destino preservando la estructura",
+            "Calcular de inmediato hashes de sectores físicos de todo el disco sin ver ningún archivo",
+            "Borrar archivos temporales para ahorrar espacio en el origen de evidencia",
+            "Modificar documentos para que sean más legibles antes de exportarlos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Browse the folder structure, identify relevant files and export them to a destination folder preserving structure",
+          "es-MX": "Recorrer la estructura de carpetas, identificar archivos relevantes y exportarlos a una carpeta destino preservando la estructura"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "FTK Imager acts as a safe viewer that lets the examiner examine the logical content before exporting it for further analysis."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Folder trees, documents, multimedia and databases can be inspected.",
+                "Relevant items are exported to a separate folder in a controlled environment.",
+                "Preserving structure helps maintain context and facilitates later review or ingestion into Autopsy."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "FTK Imager funciona como un visor seguro que permite al examinador revisar el contenido lógico antes de exportarlo para un análisis posterior."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Se pueden inspeccionar árboles de carpetas, documentos, multimedia y bases de datos.",
+                "Los elementos relevantes se exportan a una carpeta separada en un entorno controlado.",
+                "Conservar la estructura ayuda a mantener el contexto y facilita la revisión posterior o la ingesta en Autopsy."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "FTK Imager – hash e integridad",
+        "Question Text": {
+          "en-US": [
+            "Why is hash generation (MD5 or SHA-256) applied to the exported files in FTK Imager?",
+            "What is the main purpose of calculating hashes on files extracted with FTK Imager?"
+          ],
+          "es-MX": [
+            "¿Por qué se aplica la generación de hash (MD5 o SHA-256) a los archivos exportados en FTK Imager?",
+            "¿Cuál es el propósito principal de calcular hashes sobre los archivos extraídos con FTK Imager?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To verify integrity and demonstrate that the exported files have not been altered during the process",
+            "To compress the files and save storage space automatically",
+            "To encrypt the evidence so that no one can ever review it again",
+            "To change the timestamps of the files and hide access traces"
+          ],
+          "es-MX": [
+            "Verificar la integridad y demostrar que los archivos exportados no se han alterado durante el proceso",
+            "Comprimir los archivos y ahorrar espacio de almacenamiento automáticamente",
+            "Cifrar la evidencia para que nadie pueda revisarla nunca más",
+            "Cambiar las marcas de tiempo de los archivos y ocultar rastros de acceso"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To verify integrity and demonstrate that the exported files have not been altered during the process",
+          "es-MX": "Verificar la integridad y demostrar que los archivos exportados no se han alterado durante el proceso"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Hashes as integrity proof"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Hashes provide a unique digital fingerprint for each file.",
+                "If the hash value changes, it means the file content has been modified.",
+                "Recording hash, date, time and tool used supports chain of custody and reproducibility."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Hashes como prueba de integridad"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Los hashes proporcionan una huella digital única para cada archivo.",
+                "Si el valor del hash cambia, significa que el contenido del archivo se modificó.",
+                "Registrar hash, fecha, hora y herramienta utilizada respalda la cadena de custodia y la reproducibilidad."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Autopsy – creación de caso e ingesta",
+        "Question Text": {
+          "en-US": [
+            "What are the first two main steps when starting work with Autopsy in a logical extraction scenario?",
+            "How does an examiner begin a case in Autopsy using data exported from FTK Imager?"
+          ],
+          "es-MX": [
+            "¿Cuáles son los dos primeros pasos principales al comenzar a trabajar con Autopsy en un escenario de extracción lógica?",
+            "¿Cómo inicia el examinador un caso en Autopsy usando datos exportados desde FTK Imager?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Create a new case and then add the data source (folder, logical image or backup)",
+            "Directly edit original system files without creating any case",
+            "Format the analysis disk before adding any data source",
+            "Only generate a report without loading any files"
+          ],
+          "es-MX": [
+            "Crear un nuevo caso y después agregar el origen de datos (carpeta, imagen lógica o respaldo)",
+            "Editar directamente archivos originales del sistema sin crear ningún caso",
+            "Formatear el disco de análisis antes de agregar cualquier origen de datos",
+            "Generar solo un reporte sin cargar ningún archivo"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Create a new case and then add the data source (folder, logical image or backup)",
+          "es-MX": "Crear un nuevo caso y después agregar el origen de datos (carpeta, imagen lógica o respaldo)"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Autopsy organizes its work around cases, which act as containers for all sources, artifacts and reports."
+            },
+            {
+              "type": "ol",
+              "items": [
+                "Create a case with name, description and storage path.",
+                "Add the data source, such as a folder with exported files or a logical image produced by FTK Imager."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Autopsy organiza su trabajo alrededor de casos, que actúan como contenedores de todos los orígenes, artefactos y reportes."
+            },
+            {
+              "type": "ol",
+              "items": [
+                "Crear un caso con nombre, descripción y ruta de almacenamiento.",
+                "Agregar el origen de datos, como una carpeta con archivos exportados o una imagen lógica generada por FTK Imager."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Autopsy – análisis y búsqueda",
+        "Question Text": {
+          "en-US": [
+            "What kinds of analyses can Autopsy perform on logically extracted data?",
+            "Which capabilities does Autopsy offer when working with a logical folder or image?"
+          ],
+          "es-MX": [
+            "¿Qué tipo de análisis puede realizar Autopsy sobre datos extraídos lógicamente?",
+            "¿Qué capacidades ofrece Autopsy al trabajar con una carpeta o imagen lógica?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "File type classification, thumbnails, EXIF, browser history, SQLite databases and keyword searches",
+            "Only changing the operating system of the original device remotely",
+            "Wiping and overwriting the evidence to free space",
+            "Encrypting all data irreversibly without allowing any view"
+          ],
+          "es-MX": [
+            "Clasificación de tipos de archivo, miniaturas, EXIF, historial de navegador, bases de datos SQLite y búsquedas por palabras clave",
+            "Cambiar únicamente el sistema operativo del dispositivo original de forma remota",
+            "Borrar y sobreescribir la evidencia para liberar espacio",
+            "Cifrar todos los datos de forma irreversible sin permitir ninguna visualización"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "File type classification, thumbnails, EXIF, browser history, SQLite databases and keyword searches",
+          "es-MX": "Clasificación de tipos de archivo, miniaturas, EXIF, historial de navegador, bases de datos SQLite y búsquedas por palabras clave"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Autopsy as a structured analysis platform"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Groups files by type, extension or relevance.",
+                "Displays thumbnails, EXIF metadata and document previews.",
+                "Parses browser histories and SQLite databases when possible.",
+                "Supports keyword searches, filters and timelines to locate relevant artifacts."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Autopsy como plataforma de análisis estructurado"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Agrupa archivos por tipo, extensión o relevancia.",
+                "Muestra miniaturas, metadatos EXIF y vistas previas de documentos.",
+                "Interpreta historiales de navegación y bases de datos SQLite cuando es posible.",
+                "Permite búsquedas por palabras clave, filtros y líneas de tiempo para localizar artefactos relevantes."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Flujo combinado FTK Imager + Autopsy",
+        "Question Text": {
+          "en-US": [
+            "In a training scenario using only free tools, what is a coherent workflow combining FTK Imager and Autopsy?",
+            "How can FTK Imager and Autopsy be used together in a logical extraction process?"
+          ],
+          "es-MX": [
+            "En un escenario de formación usando solo herramientas gratuitas, ¿cuál es un flujo coherente combinando FTK Imager y Autopsy?",
+            "¿Cómo pueden utilizarse juntos FTK Imager y Autopsy en un proceso de extracción lógica?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Use FTK Imager to explore and export logical files, calculate hashes, then ingest those files in Autopsy for structured analysis and reporting",
+            "Use Autopsy to physically desolder chips and FTK Imager to rewrite firmware",
+            "Only use FTK Imager to delete irrelevant files and Autopsy to change file contents",
+            "Use both tools to format the evidence and prepare the device for normal user use"
+          ],
+          "es-MX": [
+            "Usar FTK Imager para explorar y exportar archivos lógicos, calcular hashes y luego ingresar esos archivos en Autopsy para análisis estructurado y reportes",
+            "Usar Autopsy para desoldar físicamente chips y FTK Imager para reescribir el firmware",
+            "Usar solo FTK Imager para borrar archivos irrelevantes y Autopsy para cambiar el contenido de los archivos",
+            "Utilizar ambas herramientas para formatear la evidencia y preparar el dispositivo para el uso normal del usuario"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Use FTK Imager to explore and export logical files, calculate hashes, then ingest those files in Autopsy for structured analysis and reporting",
+          "es-MX": "Usar FTK Imager para explorar y exportar archivos lógicos, calcular hashes y luego ingresar esos archivos en Autopsy para análisis estructurado y reportes"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Select and explore the logical source with FTK Imager.",
+                "Export relevant files and calculate MD5/SHA-256 hashes.",
+                "Create a case in Autopsy and add the exported folder or logical image.",
+                "Use Autopsy to analyze artifacts, correlate information and generate the final report."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Seleccionar y explorar el origen lógico con FTK Imager.",
+                "Exportar archivos relevantes y calcular hashes MD5/SHA-256.",
+                "Crear un caso en Autopsy y agregar la carpeta o imagen lógica exportada.",
+                "Usar Autopsy para analizar artefactos, correlacionar información y generar el reporte final."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Limitaciones de la extracción lógica",
+        "Question Text": {
+          "en-US": [
+            "Which limitation is inherent to logical extraction compared to physical acquisition?",
+            "What is a known restriction when using logical extraction instead of a full physical image?"
+          ],
+          "es-MX": [
+            "¿Qué limitación es inherente a la extracción lógica en comparación con la adquisición física?",
+            "¿Cuál es una restricción conocida al usar extracción lógica en lugar de una imagen física completa?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It does not normally recover deleted files or unallocated space contents",
+            "It always destroys the original evidence at hardware level",
+            "It cannot be documented in any chain of custody",
+            "It automatically bypasses any encryption without legal constraints"
+          ],
+          "es-MX": [
+            "Normalmente no recupera archivos eliminados ni contenido de espacio no asignado",
+            "Siempre destruye la evidencia original a nivel de hardware",
+            "No puede documentarse en ninguna cadena de custodia",
+            "Elude automáticamente cualquier cifrado sin restricciones legales"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It does not normally recover deleted files or unallocated space contents",
+          "es-MX": "Normalmente no recupera archivos eliminados ni contenido de espacio no asignado"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Because logical extraction works through file-system level and OS interfaces, it does not usually reach raw unallocated areas."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Deleted files that are no longer referenced may not appear.",
+                "Space not assigned to any file system structure is not read.",
+                "For recovery of deleted data, physical or more advanced methods are often required."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Como la extracción lógica trabaja a nivel de sistema de archivos e interfaces del sistema operativo, normalmente no llega a las áreas no asignadas en bruto."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Los archivos eliminados que ya no están referenciados pueden no aparecer.",
+                "El espacio no asignado a estructuras del sistema de archivos no se lee.",
+                "Para recuperar datos borrados suelen requerirse métodos físicos o más avanzados."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Escenario – práctica con herramientas gratuitas",
+        "Question Text": {
+          "en-US": [
+            "In a classroom exercise using only free tools, students receive a copied folder from a mobile device. What sequence of actions best applies?",
+            "During training, you must analyze a directory extracted from a device using free software. What is a coherent workflow?"
+          ],
+          "es-MX": [
+            "En un ejercicio de aula usando solo herramientas gratuitas, los estudiantes reciben una carpeta copiada desde un dispositivo móvil. ¿Qué secuencia de acciones aplica mejor?",
+            "Durante la formación, debes analizar un directorio extraído de un dispositivo usando software gratuito. ¿Cuál es un flujo de trabajo coherente?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Load the folder in FTK Imager, export relevant logical files with hashes, then analyze them in Autopsy and generate a report",
+            "Delete half of the folder to simplify and only analyze what remains",
+            "Open the folder in the original operating system and freely edit the files before analysis",
+            "Compress the folder into a ZIP file and send it without any verification or documentation"
+          ],
+          "es-MX": [
+            "Cargar la carpeta en FTK Imager, exportar archivos lógicos relevantes con hashes y luego analizarlos en Autopsy y generar un reporte",
+            "Borrar la mitad de la carpeta para simplificar y analizar solo lo que queda",
+            "Abrir la carpeta en el sistema operativo original y editar libremente los archivos antes del análisis",
+            "Comprimir la carpeta en un archivo ZIP y enviarla sin ninguna verificación o documentación"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Load the folder in FTK Imager, export relevant logical files with hashes, then analyze them in Autopsy and generate a report",
+          "es-MX": "Cargar la carpeta en FTK Imager, exportar archivos lógicos relevantes con hashes y luego analizarlos en Autopsy y generar un reporte"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Use FTK Imager to logically view and export the contents of the training folder.",
+                "Calculate hashes of the exported files and record them with date, time and tool.",
+                "Import those files into an Autopsy case, perform searches and identify key evidence.",
+                "Generate a structured report including files, metadata, paths and hash values."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Utilizar FTK Imager para visualizar y exportar lógicamente el contenido de la carpeta de práctica.",
+                "Calcular hashes de los archivos exportados y registrarlos con fecha, hora y herramienta.",
+                "Importar esos archivos en un caso de Autopsy, realizar búsquedas e identificar evidencia clave.",
+                "Generar un reporte estructurado con archivos, metadatos, rutas y valores de hash."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Documentación y trazabilidad",
+        "Question Text": {
+          "en-US": [
+            "Which elements should be documented when performing a logical extraction with FTK Imager and Autopsy?",
+            "What information is essential in the documentation to keep traceability in a logical extraction process?"
+          ],
+          "es-MX": [
+            "¿Qué elementos deben documentarse al realizar una extracción lógica con FTK Imager y Autopsy?",
+            "¿Qué información es esencial en la documentación para mantener la trazabilidad en un proceso de extracción lógica?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Date, time, tools and versions used, source and destination paths, files exported and hash values",
+            "Only the examiner’s name, without technical details",
+            "Just a screenshot, with no indication of tools or times",
+            "Only the number of files, without indicating their origin or integrity"
+          ],
+          "es-MX": [
+            "Fecha, hora, herramientas y versiones utilizadas, rutas de origen y destino, archivos exportados y valores de hash",
+            "Solo el nombre del perito, sin detalles técnicos",
+            "Únicamente una captura de pantalla, sin indicar herramientas ni horarios",
+            "Solo el número de archivos, sin indicar su origen o integridad"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Date, time, tools and versions used, source and destination paths, files exported and hash values",
+          "es-MX": "Fecha, hora, herramientas y versiones utilizadas, rutas de origen y destino, archivos exportados y valores de hash"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Proper documentation links each step of the logical extraction to verifiable technical details."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Date and time of each action.",
+                "Name and version of FTK Imager and Autopsy used.",
+                "Paths of the original source and the export destination.",
+                "List of exported files and hashes (MD5/SHA-256) for integrity verification."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Una documentación adecuada vincula cada paso de la extracción lógica con detalles técnicos verificables."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Fecha y hora de cada acción.",
+                "Nombre y versión de FTK Imager y Autopsy utilizadas.",
+                "Rutas del origen original y del destino de exportación.",
+                "Listado de archivos exportados y hashes (MD5/SHA-256) para verificar la integridad."
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

@@ -1,0 +1,730 @@
+{
+    "meta": {
+      "slug": "forense-apps16",
+      "title": "Adquisición de evidencia en PC: correo, navegadores y logs",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 2,
+      "classNo": 16,
+      "description": "Identificación y copia controlada de directorios clave en Windows para extraer correos, historiales de navegación, logs y archivos temporales preservando integridad.",
+      "tags": [
+        "AppData",
+        "Windows",
+        "correo electrónico",
+        "navegadores",
+        "logs",
+        "evidencia digital"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "Concepto general de adquisición en PC",
+        "Question Text": {
+          "en-US": [
+            "What is the main objective when acquiring digital evidence from a PC?",
+            "When working on a computer, what should be the primary goal of a forensic acquisition process?"
+          ],
+          "es-MX": [
+            "¿Cuál es el objetivo principal al adquirir evidencia digital desde una PC?",
+            "Al trabajar en una computadora, ¿cuál debe ser la meta principal de un proceso de adquisición forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Identify key storage directories and make controlled copies without altering the original content",
+            "Modify system files to free space before copying evidence",
+            "Only analyze data directly on the original disk without creating any copy",
+            "Compress the entire disk to save space, even if integrity is lost"
+          ],
+          "es-MX": [
+            "Identificar directorios clave de almacenamiento y hacer copias controladas sin alterar el contenido original",
+            "Modificar archivos del sistema para liberar espacio antes de copiar la evidencia",
+            "Analizar únicamente los datos directamente sobre el disco original sin crear ninguna copia",
+            "Comprimir todo el disco para ahorrar espacio aunque se pierda integridad"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Identify key storage directories and make controlled copies without altering the original content",
+          "es-MX": "Identificar directorios clave de almacenamiento y hacer copias controladas sin alterar el contenido original"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Controlled copying as the core objective"
+            },
+            {
+              "type": "text",
+              "content": "On a PC, the examiner must focus on preserving evidence exactly as it is while extracting relevant artifacts."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Locate directories where important artifacts are stored (email, browsers, logs, temp files).",
+                "Copy those directories in a controlled way, avoiding unnecessary changes on the original system.",
+                "Maintain integrity and traceability so the copied data can be used as valid evidence."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "La copia controlada como objetivo central"
+            },
+            {
+              "type": "text",
+              "content": "En una PC, el examinador debe centrarse en preservar la evidencia exactamente como está mientras extrae los artefactos relevantes."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Localizar los directorios donde se almacenan artefactos importantes (correo, navegadores, logs, archivos temporales).",
+                "Copiar esos directorios de forma controlada, evitando cambios innecesarios en el sistema original.",
+                "Mantener integridad y trazabilidad para que los datos copiados sean utilizables como evidencia válida."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Directorios clave en Windows – AppData",
+        "Question Text": {
+          "en-US": [
+            "In Windows, what type of information is typically found in the AppData\\Local directory?",
+            "What does the AppData\\Local folder usually store in a Windows user profile?"
+          ],
+          "es-MX": [
+            "En Windows, ¿qué tipo de información se encuentra típicamente en el directorio AppData\\Local?",
+            "¿Qué suele almacenar la carpeta AppData\\Local en el perfil de un usuario de Windows?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Temporary files, caches and local configurations for applications",
+            "Only the complete copy of the Windows registry",
+            "Exclusively system logs in .evtx format",
+            "Firmware images and BIOS configuration files"
+          ],
+          "es-MX": [
+            "Archivos temporales, cachés y configuraciones locales de aplicaciones",
+            "Solo la copia completa del registro de Windows",
+            "Exclusivamente logs del sistema en formato .evtx",
+            "Imágenes de firmware y archivos de configuración de BIOS"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Temporary files, caches and local configurations for applications",
+          "es-MX": "Archivos temporales, cachés y configuraciones locales de aplicaciones"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "AppData\\Local concentrates artifacts created by applications on the local machine."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Temporary files and cache created by browsers and applications.",
+                "Local configuration files specific to that device.",
+                "Valuable traces of recent activity that complement other directories such as Roaming or LocalLow."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "AppData\\Local concentra artefactos generados por las aplicaciones en la máquina local."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Archivos temporales y caché generados por navegadores y programas.",
+                "Archivos de configuración local específicos de ese equipo.",
+                "Rastros valiosos de actividad reciente que complementan otros directorios como Roaming o LocalLow."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "AppData – Roaming y LocalLow",
+        "Question Text": {
+          "en-US": [
+            "What is a common characteristic of the AppData\\Roaming directory in Windows?",
+            "Why is AppData\\Roaming relevant for a forensic examiner?"
+          ],
+          "es-MX": [
+            "¿Cuál es una característica común del directorio AppData\\Roaming en Windows?",
+            "¿Por qué es relevante AppData\\Roaming para un examinador forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It stores user profiles and configurations that can move or sync between different machines in a domain",
+            "It only contains device drivers and kernel modules",
+            "It is used exclusively for storing system event logs",
+            "It keeps the BIOS configuration and firmware images"
+          ],
+          "es-MX": [
+            "Almacena perfiles y configuraciones de usuario que pueden moverse o sincronizarse entre distintas máquinas en un dominio",
+            "Solo contiene controladores de dispositivo y módulos del kernel",
+            "Se usa exclusivamente para almacenar registros de eventos del sistema",
+            "Guarda la configuración de la BIOS y las imágenes de firmware"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It stores user profiles and configurations that can move or sync between different machines in a domain",
+          "es-MX": "Almacena perfiles y configuraciones de usuario que pueden moverse o sincronizarse entre distintas máquinas en un dominio"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Roaming profiles and synchronized settings"
+            },
+            {
+              "type": "text",
+              "content": "AppData\\Roaming is designed to hold data that follows the user, especially in corporate or domain environments."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Profiles and settings that can be loaded on different machines.",
+                "Configuration of some applications that synchronize between sessions.",
+                "Useful to reconstruct activity across multiple devices used by the same account."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Perfiles móviles y configuraciones sincronizadas"
+            },
+            {
+              "type": "text",
+              "content": "AppData\\Roaming está pensado para almacenar datos que siguen al usuario, especialmente en entornos corporativos o de dominio."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Perfiles y configuraciones que pueden cargarse en distintas máquinas.",
+                "Configuración de algunas aplicaciones que se sincroniza entre sesiones.",
+                "Útil para reconstruir actividad en múltiples equipos usados por la misma cuenta."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Prefetch y temporales",
+        "Question Text": {
+          "en-US": [
+            "What is the forensic value of the Prefetch directory in Windows?",
+            "Why is the Prefetch folder important when analyzing a Windows system?"
+          ],
+          "es-MX": [
+            "¿Cuál es el valor forense del directorio Prefetch en Windows?",
+            "¿Por qué es importante la carpeta Prefetch al analizar un sistema Windows?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It records recent program executions, helping to infer which applications were run and when",
+            "It stores only the user’s email messages in PST format",
+            "It contains only raw disk images created by backup tools",
+            "It is used exclusively to store system BIOS updates"
+          ],
+          "es-MX": [
+            "Registra ejecuciones recientes de programas, ayudando a inferir qué aplicaciones se ejecutaron y cuándo",
+            "Almacena únicamente los mensajes de correo del usuario en formato PST",
+            "Contiene solo imágenes en bruto de disco creadas por herramientas de respaldo",
+            "Se usa exclusivamente para almacenar actualizaciones del BIOS del sistema"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It records recent program executions, helping to infer which applications were run and when",
+          "es-MX": "Registra ejecuciones recientes de programas, ayudando a inferir qué aplicaciones se ejecutaron y cuándo"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Prefetch files are created by Windows to speed up application launch, but they also serve as evidence of execution."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Show which executables have been run on the system.",
+                "Contain timestamps that help build a timeline of activity.",
+                "Complement logs and other artifacts when reconstructing user actions."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los archivos Prefetch son creados por Windows para acelerar el arranque de aplicaciones, pero también sirven como evidencia de ejecución."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Muestran qué ejecutables se han ejecutado en el sistema.",
+                "Contienen marcas de tiempo que ayudan a construir una línea de tiempo de actividad.",
+                "Complementan logs y otros artefactos al reconstruir acciones del usuario."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Correo electrónico – Outlook",
+        "Question Text": {
+          "en-US": [
+            "Where are Outlook email data commonly stored in a Windows profile?",
+            "In a typical Windows environment, which path is used to store Outlook PST/OST files?"
+          ],
+          "es-MX": [
+            "¿Dónde se almacenan comúnmente los datos de correo de Outlook en un perfil de Windows?",
+            "En un entorno Windows típico, ¿qué ruta se utiliza para almacenar archivos PST/OST de Outlook?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "C:\\Users\\<user>\\AppData\\Local\\Microsoft\\Outlook",
+            "C:\\Windows\\System32\\winevt\\Logs",
+            "C:\\Program Files\\Common Files\\System",
+            "C:\\Users\\<user>\\Documents\\Prefetch"
+          ],
+          "es-MX": [
+            "C:\\Users\\<usuario>\\AppData\\Local\\Microsoft\\Outlook",
+            "C:\\Windows\\System32\\winevt\\Logs",
+            "C:\\Program Files\\Common Files\\System",
+            "C:\\Users\\<usuario>\\Documents\\Prefetch"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "C:\\Users\\<user>\\AppData\\Local\\Microsoft\\Outlook",
+          "es-MX": "C:\\Users\\<usuario>\\AppData\\Local\\Microsoft\\Outlook"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Outlook data files on disk"
+            },
+            {
+              "type": "text",
+              "content": "Outlook uses PST and OST containers to store emails, calendar items and other objects locally."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "The Local\\Microsoft\\Outlook path is a standard location for these data files.",
+                "Copying PST/OST files allows offline review and extraction of emails.",
+                "Preserving filenames and timestamps is essential for later correlation."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Archivos de datos de Outlook en disco"
+            },
+            {
+              "type": "text",
+              "content": "Outlook utiliza contenedores PST y OST para almacenar correos, elementos de calendario y otros objetos de forma local."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "La ruta Local\\Microsoft\\Outlook es una ubicación estándar para estos archivos de datos.",
+                "Copiar los archivos PST/OST permite revisar y extraer correos de forma offline.",
+                "Conservar nombres de archivo y marcas de tiempo es esencial para la correlación posterior."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Correo electrónico – Thunderbird",
+        "Question Text": {
+          "en-US": [
+            "Which path is commonly used to store Thunderbird profiles in Windows?",
+            "Where can a forensic examiner usually find Thunderbird MBOX and SQLite files in a Windows system?"
+          ],
+          "es-MX": [
+            "¿Qué ruta se utiliza comúnmente para almacenar perfiles de Thunderbird en Windows?",
+            "¿Dónde puede encontrar un examinador forense archivos MBOX y SQLite de Thunderbird en un sistema Windows?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "C:\\Users\\<user>\\AppData\\Roaming\\Thunderbird\\Profiles",
+            "C:\\Users\\<user>\\AppData\\LocalLow\\Logs",
+            "C:\\Windows\\System32\\winevt\\Profiles",
+            "C:\\Program Files\\Mozilla\\SystemLogs"
+          ],
+          "es-MX": [
+            "C:\\Users\\<usuario>\\AppData\\Roaming\\Thunderbird\\Profiles",
+            "C:\\Users\\<usuario>\\AppData\\LocalLow\\Logs",
+            "C:\\Windows\\System32\\winevt\\Profiles",
+            "C:\\Program Files\\Mozilla\\SystemLogs"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "C:\\Users\\<user>\\AppData\\Roaming\\Thunderbird\\Profiles",
+          "es-MX": "C:\\Users\\<usuario>\\AppData\\Roaming\\Thunderbird\\Profiles"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Thunderbird stores email folders and settings inside user profiles located in the Roaming area."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Profiles contain MBOX files, SQLite databases and configuration files.",
+                "These artifacts allow reconstruction of folders, messages and accounts.",
+                "Copying the entire Profiles directory preserves structure for later analysis."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Thunderbird guarda las carpetas de correo y configuraciones dentro de perfiles de usuario ubicados en el área Roaming."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Los perfiles contienen archivos MBOX, bases de datos SQLite y archivos de configuración.",
+                "Estos artefactos permiten reconstruir carpetas, mensajes y cuentas.",
+                "Copiar el directorio Profiles completo preserva la estructura para el análisis posterior."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Navegadores web – artefactos",
+        "Question Text": {
+          "en-US": [
+            "Which artifacts are typically stored by web browsers and are valuable in forensic analysis?",
+            "When acquiring evidence from browsers, which types of data are most commonly analyzed?"
+          ],
+          "es-MX": [
+            "¿Qué artefactos almacenan típicamente los navegadores web y son valiosos en el análisis forense?",
+            "Al adquirir evidencia de navegadores, ¿qué tipos de datos se analizan con mayor frecuencia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "History, cookies, downloads, cache, sessions and sometimes saved logins in SQLite or JSON files",
+            "Only hardware drivers and firmware update packages",
+            "Exclusively antivirus signatures and quarantine files",
+            "Only system error logs in .evtx format"
+          ],
+          "es-MX": [
+            "Historial, cookies, descargas, caché, sesiones y a veces credenciales guardadas en archivos SQLite o JSON",
+            "Solo controladores de hardware y paquetes de actualización de firmware",
+            "Exclusivamente firmas de antivirus y archivos en cuarentena",
+            "Solo registros de errores del sistema en formato .evtx"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "History, cookies, downloads, cache, sessions and sometimes saved logins in SQLite or JSON files",
+          "es-MX": "Historial, cookies, descargas, caché, sesiones y a veces credenciales guardadas en archivos SQLite o JSON"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Browser artifacts as behavioral evidence"
+            },
+            {
+              "type": "text",
+              "content": "Browser data provides a detailed view of user activity on the internet."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "History and downloads show visited sites and retrieved files.",
+                "Cookies and sessions reveal logins, platforms and active services.",
+                "SQLite and JSON files store configuration and usage details that help build timelines."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Artefactos de navegador como evidencia de comportamiento"
+            },
+            {
+              "type": "text",
+              "content": "Los datos del navegador ofrecen una vista detallada de la actividad del usuario en internet."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "El historial y las descargas muestran sitios visitados y archivos obtenidos.",
+                "Las cookies y sesiones revelan inicios de sesión, plataformas y servicios activos.",
+                "Los archivos SQLite y JSON guardan detalles de configuración y uso que ayudan a construir líneas de tiempo."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Rutas de navegadores – Chrome y Edge",
+        "Question Text": {
+          "en-US": [
+            "Which path corresponds to the default profile of Google Chrome in Windows?",
+            "Where is the Default profile of Google Chrome typically located on a Windows system?"
+          ],
+          "es-MX": [
+            "¿Qué ruta corresponde al perfil Default de Google Chrome en Windows?",
+            "¿Dónde se encuentra típicamente el perfil Default de Google Chrome en un sistema Windows?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "C:\\Users\\<user>\\AppData\\Local\\Google\\Chrome\\User Data\\Default",
+            "C:\\Users\\<user>\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles",
+            "C:\\Windows\\System32\\winevt\\Logs",
+            "C:\\Users\\<user>\\AppData\\Local\\Microsoft\\Outlook"
+          ],
+          "es-MX": [
+            "C:\\Users\\<usuario>\\AppData\\Local\\Google\\Chrome\\User Data\\Default",
+            "C:\\Users\\<usuario>\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles",
+            "C:\\Windows\\System32\\winevt\\Logs",
+            "C:\\Users\\<usuario>\\AppData\\Local\\Microsoft\\Outlook"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "C:\\Users\\<user>\\AppData\\Local\\Google\\Chrome\\User Data\\Default",
+          "es-MX": "C:\\Users\\<usuario>\\AppData\\Local\\Google\\Chrome\\User Data\\Default"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The Default profile in Chrome stores most everyday browser artifacts for a user."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "History, cookies, downloads and cache are usually under this path.",
+                "Extensions and configuration files also live inside the User Data structure.",
+                "Copying the entire Default folder preserves context for later analysis with forensic tools."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El perfil Default de Chrome almacena la mayoría de los artefactos de navegación cotidianos de un usuario."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Historial, cookies, descargas y caché suelen encontrarse bajo esta ruta.",
+                "Las extensiones y archivos de configuración también viven dentro de User Data.",
+                "Copiar la carpeta Default completa preserva el contexto para análisis posterior con herramientas forenses."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Logs del sistema Windows",
+        "Question Text": {
+          "en-US": [
+            "Where are Windows event log files (.evtx) primarily stored?",
+            "Which directory contains the main Windows event logs used in forensic analysis?"
+          ],
+          "es-MX": [
+            "¿Dónde se almacenan principalmente los archivos de registro de eventos de Windows (.evtx)?",
+            "¿Qué directorio contiene los logs principales de eventos de Windows usados en análisis forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "C:\\Windows\\System32\\winevt\\Logs",
+            "C:\\Users\\<user>\\AppData\\Local\\Temp",
+            "C:\\Users\\<user>\\Documents\\Logs",
+            "C:\\Program Files\\Windows\\Registry"
+          ],
+          "es-MX": [
+            "C:\\Windows\\System32\\winevt\\Logs",
+            "C:\\Users\\<usuario>\\AppData\\Local\\Temp",
+            "C:\\Users\\<usuario>\\Documents\\Logs",
+            "C:\\Program Files\\Windows\\Registry"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "C:\\Windows\\System32\\winevt\\Logs",
+          "es-MX": "C:\\Windows\\System32\\winevt\\Logs"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Windows event logs as a timeline source"
+            },
+            {
+              "type": "text",
+              "content": "Event logs register system events, errors, security changes and user logons."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "The .evtx files in winevt\\Logs are essential to reconstruct system and user activity.",
+                "They can be read with Event Viewer, Log Parser or imported into forensic suites.",
+                "Copying them intact is a key step for later correlation with browser history and email activity."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Logs de eventos de Windows como fuente de línea de tiempo"
+            },
+            {
+              "type": "text",
+              "content": "Los logs de eventos registran sucesos del sistema, errores, cambios de seguridad e inicios de sesión de usuario."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Los archivos .evtx en winevt\\Logs son esenciales para reconstruir la actividad del sistema y del usuario.",
+                "Pueden leerse con Visor de eventos, Log Parser o importarse en suites forenses.",
+                "Copiarlos intactos es un paso clave para correlacionarlos con historial de navegación y actividad de correo."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Procedimiento guiado de copia controlada",
+        "Question Text": {
+          "en-US": [
+            "Which sequence best describes a safe workflow to acquire key directories from a PC?",
+            "When extracting evidence from a Windows computer, which ordered steps represent a controlled acquisition?"
+          ],
+          "es-MX": [
+            "¿Qué secuencia describe mejor un flujo seguro para adquirir directorios clave de una PC?",
+            "Al extraer evidencia de una computadora Windows, ¿qué pasos ordenados representan una adquisición controlada?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Access the user profile, identify AppData and relevant folders, copy them to a prepared external medium, calculate hashes and organize them by category",
+            "Format the disk, reinstall Windows and then copy the remaining files",
+            "Open each file directly on the original system and edit it to highlight important parts",
+            "Send screenshots of the desktop without copying any folders or verifying integrity"
+          ],
+          "es-MX": [
+            "Acceder al perfil de usuario, identificar AppData y carpetas relevantes, copiarlas a un medio externo preparado, calcular hashes y organizarlas por categoría",
+            "Formatear el disco, reinstalar Windows y después copiar los archivos que queden",
+            "Abrir cada archivo directamente en el sistema original y editarlo para resaltar las partes importantes",
+            "Enviar capturas de pantalla del escritorio sin copiar carpetas ni verificar integridad"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Access the user profile, identify AppData and relevant folders, copy them to a prepared external medium, calculate hashes and organize them by category",
+          "es-MX": "Acceder al perfil de usuario, identificar AppData y carpetas relevantes, copiarlas a un medio externo preparado, calcular hashes y organizarlas por categoría"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Enter the system with minimal impact and access the user profile.",
+                "Locate AppData (Local, Roaming, LocalLow), browser folders, email stores and logs.",
+                "Copy the relevant folders to a pre-prepared external medium while preserving structure.",
+                "Calculate SHA-256 hashes to verify integrity.",
+                "Organize the material by type (email, browsers, logs, docs, temp) for later analysis."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Ingresar al sistema con el menor impacto posible y acceder al perfil de usuario.",
+                "Localizar AppData (Local, Roaming, LocalLow), carpetas de navegadores, almacenes de correo y logs.",
+                "Copiar las carpetas relevantes a un medio externo preparado, preservando la estructura.",
+                "Calcular hashes SHA-256 para verificar la integridad.",
+                "Organizar el material por tipo (correo, navegadores, logs, documentos, temporales) para el análisis posterior."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Escenario integrado de adquisición en PC",
+        "Question Text": {
+          "en-US": [
+            "In the integrated example, which elements are copied to reconstruct user activity from a PC?",
+            "In a controlled scenario with simulated user activity, what combination of artifacts is acquired to rebuild behavior on a Windows machine?"
+          ],
+          "es-MX": [
+            "En el ejemplo integrado, ¿qué elementos se copian para reconstruir la actividad del usuario desde una PC?",
+            "En un escenario controlado con actividad simulada, ¿qué combinación de artefactos se adquiere para reconstruir el comportamiento en una máquina Windows?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Browser history and cookies, recent downloads, Outlook OST/PST files and Windows event logs",
+            "Only temporary files from the Temp folder, deleting everything else",
+            "Only BIOS configuration files and antivirus signatures",
+            "Just screenshots of the desktop without copying any data files"
+          ],
+          "es-MX": [
+            "Historial y cookies del navegador, descargas recientes, archivos OST/PST de Outlook y logs de eventos de Windows",
+            "Solo archivos temporales de la carpeta Temp, borrando todo lo demás",
+            "Solo archivos de configuración de la BIOS y firmas de antivirus",
+            "Solo capturas de pantalla del escritorio sin copiar archivos de datos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Browser history and cookies, recent downloads, Outlook OST/PST files and Windows event logs",
+          "es-MX": "Historial y cookies del navegador, descargas recientes, archivos OST/PST de Outlook y logs de eventos de Windows"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Combining email, browser artifacts and system logs allows a complete reconstruction of user actions."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Browsers: visited sites, searches, downloads and session data.",
+                "Email: messages, headers, attachments and account configuration.",
+                "Event logs: logons, errors, software installations and security events.",
+                "Together, these sources provide a correlated view of what the user did and when."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Combinar correo, artefactos de navegador y logs del sistema permite reconstruir de forma completa las acciones del usuario."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Navegadores: sitios visitados, búsquedas, descargas y datos de sesión.",
+                "Correo: mensajes, encabezados, adjuntos y configuración de cuentas.",
+                "Logs de eventos: inicios de sesión, errores, instalaciones de software y eventos de seguridad.",
+                "En conjunto, estas fuentes ofrecen una vista correlacionada de qué hizo el usuario y cuándo."
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

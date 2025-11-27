@@ -1,0 +1,766 @@
+{
+    "meta": {
+      "slug": "forense-apps14",
+      "title": "Métodos de adquisición móvil: Chip-off, JTAG, backups y herramientas comerciales",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 2,
+      "classNo": 14,
+      "description": "Métodos de adquisición en dispositivos móviles: chip-off, JTAG, extracciones lógicas y uso de herramientas comerciales especializadas.",
+      "tags": [
+        "chip-off",
+        "JTAG",
+        "backups",
+        "extracción lógica",
+        "herramientas comerciales",
+        "dispositivos móviles",
+        "evidencia digital"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "Introducción general",
+        "Question Text": {
+          "en-US": [
+            "What is the main goal of using different acquisition methods on mobile devices in forensic analysis?",
+            "Why are several acquisition techniques used on mobile devices instead of a single universal method?"
+          ],
+          "es-MX": [
+            "¿Cuál es el objetivo principal de utilizar diferentes métodos de adquisición en dispositivos móviles en el análisis forense?",
+            "¿Por qué se emplean varias técnicas de adquisición en móviles en lugar de un único método universal?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To adapt to the device state, security level and type of data needed",
+            "To make the investigation slower and more complex on purpose",
+            "To erase data and free space before the trial",
+            "To ensure the device cannot be used again by its owner"
+          ],
+          "es-MX": [
+            "Adaptarse al estado del dispositivo, nivel de seguridad y tipo de datos requeridos",
+            "Hacer la investigación más lenta y compleja a propósito",
+            "Borrar datos y liberar espacio antes del juicio",
+            "Asegurar que el dispositivo no pueda volver a ser utilizado por su dueño"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To adapt to the device state, security level and type of data needed",
+          "es-MX": "Adaptarse al estado del dispositivo, nivel de seguridad y tipo de datos requeridos"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Why multiple mobile acquisition methods exist"
+            },
+            {
+              "type": "text",
+              "content": "Mobile devices differ in hardware, operating system, encryption, damage level and legal constraints, so a single method is not enough."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Some devices are fully functional, others are physically damaged or will not boot.",
+                "Security and encryption levels change what is technically accessible.",
+                "Sometimes only superficial data is needed, while in other cases a deep recovery of deleted data is required.",
+                "Legal and privacy limits can restrict how invasive a method can be."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Por qué existen varios métodos de adquisición móvil"
+            },
+            {
+              "type": "text",
+              "content": "Los dispositivos móviles difieren en hardware, sistema operativo, cifrado, nivel de daño y restricciones legales, por lo que un solo método no es suficiente."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Algunos equipos están totalmente funcionales, otros están dañados o no encienden.",
+                "El nivel de seguridad y cifrado cambia lo que es técnicamente accesible.",
+                "A veces solo se necesitan datos superficiales y, en otros casos, una recuperación profunda de información eliminada.",
+                "Los límites legales y de privacidad restringen qué tan invasivo puede ser el método."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Chip-off – concepto",
+        "Question Text": {
+          "en-US": [
+            "What best describes the chip-off acquisition method on a mobile device?",
+            "How is data accessed in a chip-off procedure?"
+          ],
+          "es-MX": [
+            "¿Qué describe mejor el método de adquisición chip-off en un dispositivo móvil?",
+            "¿Cómo se accede a los datos en un procedimiento chip-off?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Physically removing the memory chip and reading it directly with specialized hardware",
+            "Copying photos and messages using the normal USB cable and a backup app",
+            "Capturing only network traffic from the device while it is connected to Wi-Fi",
+            "Accessing the device only through its graphical user interface"
+          ],
+          "es-MX": [
+            "Retirar físicamente el chip de memoria y leerlo directamente con hardware especializado",
+            "Copiar fotos y mensajes usando el cable USB normal y una app de respaldo",
+            "Capturar solo el tráfico de red del dispositivo mientras está conectado a Wi-Fi",
+            "Acceder al dispositivo únicamente desde su interfaz gráfica de usuario"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Physically removing the memory chip and reading it directly with specialized hardware",
+          "es-MX": "Retirar físicamente el chip de memoria y leerlo directamente con hardware especializado"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Chip-off is a hardware-level technique that bypasses the normal boot process and the operating system."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "The memory chip (NAND, eMMC, etc.) is desoldered from the board.",
+                "It is then connected to a reader or programmer to obtain a raw image.",
+                "This allows access even when the device will not power on or has severe motherboard damage."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Chip-off es una técnica a nivel de hardware que evita el arranque normal y al sistema operativo."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "El chip de memoria (NAND, eMMC, etc.) se desolda de la tarjeta.",
+                "Después se conecta a un lector o programador para obtener una imagen en bruto.",
+                "Esto permite acceder aunque el dispositivo no encienda o tenga daño grave en la tarjeta lógica."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Chip-off – ventajas",
+        "Question Text": {
+          "en-US": [
+            "Which is a key advantage of the chip-off method in mobile forensics?",
+            "Why is chip-off considered one of the deepest acquisition techniques?"
+          ],
+          "es-MX": [
+            "¿Cuál es una ventaja clave del método chip-off en informática forense móvil?",
+            "¿Por qué el chip-off se considera una de las técnicas de adquisición más profundas?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It can access the entire memory, including deleted and unallocated areas, even if the device is not functional",
+            "It is completely risk-free and does not require any special equipment",
+            "It only works on devices with no damage and fully unlocked",
+            "It is the fastest and least invasive method in all cases"
+          ],
+          "es-MX": [
+            "Puede acceder a toda la memoria, incluyendo áreas eliminadas y no asignadas, incluso si el equipo no funciona",
+            "Es totalmente libre de riesgos y no requiere equipo especial",
+            "Solo funciona en dispositivos sin daño y completamente desbloqueados",
+            "Es siempre el método más rápido y menos invasivo en todos los casos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It can access the entire memory, including deleted and unallocated areas, even if the device is not functional",
+          "es-MX": "Puede acceder a toda la memoria, incluyendo áreas eliminadas y no asignadas, incluso si el equipo no funciona"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Chip-off: maximum depth of access"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Reads directly from the memory chip, not through the operating system.",
+                "Allows obtaining deleted data, system areas and hidden partitions.",
+                "Is suitable for severely damaged devices as long as the chip remains intact."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "This depth makes chip-off extremely powerful, but also technically demanding and high risk."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Chip-off: máxima profundidad de acceso"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Lee directamente desde el chip de memoria, no a través del sistema operativo.",
+                "Permite obtener datos eliminados, áreas del sistema y particiones ocultas.",
+                "Es útil en dispositivos con daño severo siempre que el chip siga íntegro."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Esta profundidad hace que chip-off sea muy potente, pero también técnicamente exigente y de alto riesgo."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Chip-off – riesgos",
+        "Question Text": {
+          "en-US": [
+            "What is a major disadvantage or risk of the chip-off method?",
+            "Which limitation makes chip-off a procedure that must be used carefully?"
+          ],
+          "es-MX": [
+            "¿Cuál es una desventaja o riesgo importante del método chip-off?",
+            "¿Qué limitación hace que el chip-off deba usarse con mucha precaución?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It is invasive and destructive, and there is a high risk of damaging the chip if done incorrectly",
+            "It never works on encrypted devices",
+            "It always requires the original PIN code to start",
+            "It can only be used on very old devices without any security"
+          ],
+          "es-MX": [
+            "Es invasivo y destructivo, y existe alto riesgo de dañar el chip si se hace incorrectamente",
+            "Nunca funciona en dispositivos cifrados",
+            "Siempre requiere conocer el PIN original para iniciar",
+            "Solo puede usarse en dispositivos muy antiguos sin ninguna seguridad"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It is invasive and destructive, and there is a high risk of damaging the chip if done incorrectly",
+          "es-MX": "Es invasivo y destructivo, y existe alto riesgo de dañar el chip si se hace incorrectamente"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Chip-off requires desoldering and manipulating tiny components under heat and tools, which is inherently risky."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Once the chip is removed, the device is usually unusable.",
+                "Bad handling may physically destroy the memory and lose all data.",
+                "It demands specialized equipment and advanced micro-soldering skills."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El chip-off requiere desoldar y manipular componentes muy pequeños con calor y herramientas, lo cual es inherentemente riesgoso."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Una vez retirado el chip, el dispositivo suele quedar inutilizable.",
+                "Un mal manejo puede destruir físicamente la memoria y perder toda la información.",
+                "Exige equipo especializado y habilidades avanzadas de microsoldadura."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "JTAG – concepto",
+        "Question Text": {
+          "en-US": [
+            "What is JTAG acquisition on a mobile device?",
+            "How does JTAG access memory in a forensic procedure?"
+          ],
+          "es-MX": [
+            "¿Qué es la adquisición JTAG en un dispositivo móvil?",
+            "¿Cómo accede JTAG a la memoria en un procedimiento forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Connecting to test points on the board to read memory through a debugging interface",
+            "Removing the memory chip from the board and reading it externally",
+            "Copying only photos and videos via Bluetooth",
+            "Capturing data only from the SIM card"
+          ],
+          "es-MX": [
+            "Conectarse a puntos de prueba en la tarjeta para leer memoria a través de una interfaz de depuración",
+            "Retirar el chip de memoria de la tarjeta y leerlo externamente",
+            "Copiar solo fotos y videos vía Bluetooth",
+            "Capturar datos únicamente de la tarjeta SIM"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Connecting to test points on the board to read memory through a debugging interface",
+          "es-MX": "Conectarse a puntos de prueba en la tarjeta para leer memoria a través de una interfaz de depuración"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "JTAG as a non-destructive hardware access"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Uses the debugging standard defined by the Joint Test Action Group.",
+                "Accesses memory through test pads or pins on the mainboard.",
+                "Does not require removing the memory chip, which makes it less destructive than chip-off."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "JTAG como acceso de hardware no destructivo"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Utiliza el estándar de depuración definido por el Joint Test Action Group.",
+                "Accede a la memoria a través de pads o pines de prueba en la placa principal.",
+                "No requiere retirar el chip de memoria, lo que lo hace menos destructivo que chip-off."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "JTAG – ventajas y limitaciones",
+        "Question Text": {
+          "en-US": [
+            "Which combination correctly describes advantages and limitations of JTAG acquisition?",
+            "How can JTAG be characterized compared to chip-off?"
+          ],
+          "es-MX": [
+            "¿Qué combinación describe correctamente ventajas y limitaciones de la adquisición JTAG?",
+            "¿Cómo puede caracterizarse JTAG en comparación con chip-off?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Non-destructive and deep, but not supported by all models and may be limited by encryption",
+            "Always destructive and requires removing the chip",
+            "Only logical and very superficial, without any hardware access",
+            "Works only on devices without any security features"
+          ],
+          "es-MX": [
+            "No destructivo y profundo, pero no todos los modelos lo soportan y puede estar limitado por el cifrado",
+            "Siempre destructivo y requiere retirar el chip",
+            "Solo lógico y muy superficial, sin ningún acceso de hardware",
+            "Funciona únicamente en dispositivos sin ninguna característica de seguridad"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Non-destructive and deep, but not supported by all models and may be limited by encryption",
+          "es-MX": "No destructivo y profundo, pero no todos los modelos lo soportan y puede estar limitado por el cifrado"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "JTAG offers low-level access without physically removing the chip, but it still faces practical and cryptographic limits."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Some boards do not expose JTAG points or they are undocumented.",
+                "Soldering to tiny test pads still requires technical skill.",
+                "Even with JTAG, strong encryption may prevent interpreting the extracted data."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "JTAG ofrece acceso de bajo nivel sin retirar el chip, pero enfrenta límites prácticos y criptográficos."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Algunas tarjetas no exponen puntos JTAG o no están documentados.",
+                "Soldar a pads de prueba muy pequeños sigue requiriendo habilidad técnica.",
+                "Aun con JTAG, el cifrado fuerte puede impedir interpretar los datos extraídos."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Backups y extracción lógica",
+        "Question Text": {
+          "en-US": [
+            "What best describes logical acquisition or backup-based acquisition on mobile devices?",
+            "How is data usually obtained when a logical extraction is performed?"
+          ],
+          "es-MX": [
+            "¿Qué describe mejor la adquisición lógica o basada en backups en dispositivos móviles?",
+            "¿Cómo se obtienen normalmente los datos cuando se realiza una extracción lógica?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "By using the operating system or backup mechanisms to export visible and app data",
+            "By removing the memory chip and reading its raw content",
+            "By connecting directly to the memory bus and ignoring the operating system",
+            "By reading only the SIM card and ignoring internal storage"
+          ],
+          "es-MX": [
+            "Mediante el sistema operativo o mecanismos de respaldo para exportar datos visibles y de aplicaciones",
+            "Retirando el chip de memoria y leyendo su contenido en bruto",
+            "Conectándose directamente al bus de memoria e ignorando el sistema operativo",
+            "Leyendo únicamente la tarjeta SIM e ignorando el almacenamiento interno"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "By using the operating system or backup mechanisms to export visible and app data",
+          "es-MX": "Mediante el sistema operativo o mecanismos de respaldo para exportar datos visibles y de aplicaciones"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Logical acquisition as OS-level access"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Uses official interfaces, APIs or backup functions of the system.",
+                "Recovers contacts, photos, messages and app databases that are currently accessible.",
+                "Does not typically capture deleted data or unallocated space."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Adquisición lógica como acceso a nivel de sistema operativo"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Usa interfaces oficiales, APIs o funciones de respaldo del sistema.",
+                "Recupera contactos, fotos, mensajes y bases de datos de apps accesibles en ese momento.",
+                "Normalmente no captura datos eliminados ni espacio no asignado."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Backups – ventajas y límites",
+        "Question Text": {
+          "en-US": [
+            "What is a typical advantage and a typical limitation of backup-based or logical acquisition?",
+            "How can logical/backup extraction be evaluated in terms of risk and depth?"
+          ],
+          "es-MX": [
+            "¿Cuál es una ventaja típica y una limitación típica de la adquisición basada en backups o lógica?",
+            "¿Cómo puede evaluarse la extracción lógica/por respaldo en términos de riesgo y profundidad?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It is fast and low risk, but does not usually recover deleted data",
+            "It always recovers all deleted data but is extremely destructive",
+            "It is the only method that works on damaged devices that will not boot",
+            "It never depends on passwords or encryption"
+          ],
+          "es-MX": [
+            "Es rápida y de bajo riesgo, pero normalmente no recupera datos eliminados",
+            "Siempre recupera todos los datos eliminados pero es extremadamente destructiva",
+            "Es el único método que funciona en dispositivos dañados que no encienden",
+            "Nunca depende de contraseñas o cifrado"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It is fast and low risk, but does not usually recover deleted data",
+          "es-MX": "Es rápida y de bajo riesgo, pero normalmente no recupera datos eliminados"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Logical or backup-based acquisition is ideal when the device is functional and a non-invasive approach is preferred."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "It works with the device turned on and cooperating with the operating system.",
+                "Risk of physical damage is very low compared to chip-off or JTAG.",
+                "Its depth is limited because it does not access unallocated or low-level storage areas."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La adquisición lógica o basada en respaldos es ideal cuando el dispositivo está funcional y se prefiere un enfoque no invasivo."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Funciona con el dispositivo encendido y cooperando con el sistema operativo.",
+                "El riesgo de daño físico es muy bajo comparado con chip-off o JTAG.",
+                "Su profundidad es limitada porque no accede a espacio no asignado ni a áreas de bajo nivel."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Herramientas comerciales – funciones",
+        "Question Text": {
+          "en-US": [
+            "What is a main role of commercial tools like Cellebrite UFED, Magnet AXIOM or Oxygen Forensic Detective?",
+            "How do commercial mobile forensic tools help in acquisition and analysis?"
+          ],
+          "es-MX": [
+            "¿Cuál es una función principal de herramientas comerciales como Cellebrite UFED, Magnet AXIOM u Oxygen Forensic Detective?",
+            "¿Cómo ayudan las herramientas forenses comerciales móviles en la adquisición y el análisis?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They automate and combine different acquisition modes and provide structured reports from many apps and artifacts",
+            "They only change the wallpaper and visual settings of the device",
+            "They always remove encryption from any device automatically",
+            "They only work as antivirus scanners without any acquisition options"
+          ],
+          "es-MX": [
+            "Automatizan y combinan distintos modos de adquisición y generan reportes estructurados de muchas apps y artefactos",
+            "Solo cambian el fondo de pantalla y la apariencia visual del dispositivo",
+            "Siempre eliminan el cifrado de cualquier dispositivo de forma automática",
+            "Solo funcionan como antivirus sin opciones de adquisición"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They automate and combine different acquisition modes and provide structured reports from many apps and artifacts",
+          "es-MX": "Automatizan y combinan distintos modos de adquisición y generan reportes estructurados de muchas apps y artefactos"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Commercial tools as integrators"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Support thousands of device models and system versions.",
+                "Offer physical, logical and advanced extractions depending on the device.",
+                "Parse data from messaging apps, system logs, GPS, multimedia and more.",
+                "Generate timelines and reports ready to be used in investigations."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Herramientas comerciales como integradoras"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Soportan miles de modelos de dispositivos y versiones de sistema.",
+                "Ofrecen extracciones físicas, lógicas y avanzadas según el equipo.",
+                "Interpretan datos de apps de mensajería, registros del sistema, GPS, multimedia y más.",
+                "Generan líneas de tiempo y reportes listos para usarse en la investigación."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Comparación general",
+        "Question Text": {
+          "en-US": [
+            "Which option correctly compares chip-off, JTAG and logical/backup acquisition?",
+            "How can chip-off, JTAG and logical extraction be contrasted?"
+          ],
+          "es-MX": [
+            "¿Qué opción compara correctamente chip-off, JTAG y la adquisición lógica/por backup?",
+            "¿Cómo pueden contrastarse chip-off, JTAG y la extracción lógica?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Chip-off: very invasive and deepest; JTAG: deep and less destructive; Logical/backup: low risk and more superficial",
+            "Chip-off: always safe and superficial; JTAG: only graphical; Logical/backup: hardware-only",
+            "Chip-off: only network capture; JTAG: only SIM data; Logical/backup: only system logs",
+            "All three always have the same depth and risk level"
+          ],
+          "es-MX": [
+            "Chip-off: muy invasivo y más profundo; JTAG: profundo y menos destructivo; Lógica/backup: bajo riesgo y más superficial",
+            "Chip-off: siempre seguro y superficial; JTAG: solo gráfico; Lógica/backup: solo de hardware",
+            "Chip-off: solo captura de red; JTAG: solo datos de SIM; Lógica/backup: solo registros del sistema",
+            "Los tres tienen siempre la misma profundidad y nivel de riesgo"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Chip-off: very invasive and deepest; JTAG: deep and less destructive; Logical/backup: low risk and more superficial",
+          "es-MX": "Chip-off: muy invasivo y más profundo; JTAG: profundo y menos destructivo; Lógica/backup: bajo riesgo y más superficial"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Chip-off: maximum access and maximum physical risk.",
+                "JTAG: deep access through test points without removing the chip.",
+                "Logical/backup: uses OS-level access, lower depth but safer and faster."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Chip-off: acceso máximo y máximo riesgo físico.",
+                "JTAG: acceso profundo mediante puntos de prueba sin retirar el chip.",
+                "Lógica/backup: usa acceso a nivel de sistema, menor profundidad pero más seguro y rápido."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Escenario – dispositivo dañado",
+        "Question Text": {
+          "en-US": [
+            "A mobile device is severely damaged and does not power on. The case is high priority and requires maximum recovery. Which method is most appropriate?",
+            "For a burned or water-damaged phone that will not boot, what acquisition approach is usually considered when maximum depth is needed?"
+          ],
+          "es-MX": [
+            "Un dispositivo móvil está gravemente dañado y no enciende. El caso es de alta prioridad y requiere máxima recuperación. ¿Qué método es más adecuado?",
+            "Para un teléfono quemado o dañado por agua que no enciende, ¿qué enfoque de adquisición suele considerarse cuando se necesita máxima profundidad?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Chip-off acquisition on the memory chip",
+            "A simple screenshot of the locked screen",
+            "Only a logical backup via the normal USB cable",
+            "Changing the battery and deleting user data"
+          ],
+          "es-MX": [
+            "Una adquisición chip-off sobre el chip de memoria",
+            "Una simple captura de pantalla de la pantalla bloqueada",
+            "Solo un respaldo lógico usando el cable USB normal",
+            "Cambiar la batería y borrar los datos del usuario"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Chip-off acquisition on the memory chip",
+          "es-MX": "Una adquisición chip-off sobre el chip de memoria"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "When the device does not power on and the mainboard is seriously damaged, hardware-level methods are considered."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Chip-off can access the memory without needing the device to boot.",
+                "If the chip is intact, a raw image may be extracted.",
+                "Because of its complexity and risk, it is reserved for high-value or critical cases."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Cuando el dispositivo no enciende y la tarjeta lógica está muy dañada, se consideran métodos a nivel de hardware."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Chip-off permite acceder a la memoria sin que el equipo arranque.",
+                "Si el chip sigue intacto, puede extraerse una imagen en bruto.",
+                "Por su complejidad y riesgo, se reserva para casos de alto valor o críticos."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Escenario – dispositivo funcional y privacidad",
+        "Question Text": {
+          "en-US": [
+            "A mobile device is functional and unlocked. Time is limited and only recent chat conversations and contacts are needed, respecting data minimization. Which approach is most coherent?",
+            "In a case where the phone works and only specific app data is relevant, what acquisition type is usually preferred first?"
+          ],
+          "es-MX": [
+            "Un dispositivo móvil está funcional y desbloqueado. El tiempo es limitado y solo se necesitan conversaciones recientes de chat y contactos, respetando la minimización de datos. ¿Qué enfoque es más coherente?",
+            "En un caso donde el teléfono funciona y solo interesan datos específicos de apps, ¿qué tipo de adquisición suele preferirse primero?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A logical or backup-based acquisition, possibly combined with a selective extraction using a commercial tool",
+            "A chip-off procedure that removes the memory chip",
+            "A JTAG extraction that reads all low-level memory",
+            "Physically destroying the device to protect privacy"
+          ],
+          "es-MX": [
+            "Una adquisición lógica o basada en backup, combinada si es necesario con una extracción selectiva usando una herramienta comercial",
+            "Un procedimiento chip-off retirando el chip de memoria",
+            "Una extracción JTAG leyendo toda la memoria de bajo nivel",
+            "Destruir físicamente el dispositivo para proteger la privacidad"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A logical or backup-based acquisition, possibly combined with a selective extraction using a commercial tool",
+          "es-MX": "Una adquisición lógica o basada en backup, combinada si es necesario con una extracción selectiva usando una herramienta comercial"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Functional device + focused scope"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "A logical or backup extraction is faster and low risk when the device is working.",
+                "Selective options and filters in commercial tools can focus on chats, contacts or recent data.",
+                "This aligns with data minimization and privacy requirements while still preserving evidential value."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Dispositivo funcional + alcance enfocado"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Una extracción lógica o por respaldo es más rápida y de bajo riesgo cuando el equipo está operativo.",
+                "Las opciones selectivas y filtros en herramientas comerciales permiten enfocarse en chats, contactos o datos recientes.",
+                "Esto se alinea con la minimización de datos y la privacidad, manteniendo el valor probatorio."
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+  
