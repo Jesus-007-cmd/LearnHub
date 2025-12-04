@@ -1,0 +1,612 @@
+{
+    "meta": {
+      "slug": "forense-apps32",
+      "title": "Clase 32 – Análisis de conversaciones en Telegram y Gmail",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 3,
+      "classNo": 32,
+      "description": "Comparación forense entre Telegram y Gmail: tipos de almacenamiento, diferencias de cifrado, estructuras internas (TDB, SQLite, encabezados de correo) y su utilidad como evidencia digital para reconstruir comunicaciones, rutas de entrega y actividad del usuario.",
+      "tags": [
+        "telegram",
+        "gmail",
+        "cifrado",
+        "encabezados de correo",
+        "tdb",
+        "sqlite",
+        "evidencia digital",
+        "metadatos",
+        "cloud forensics"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "vision-general-telegram-gmail",
+        "Question Text": {
+          "en-US": [
+            "Why does the class consider Telegram and Gmail especially relevant for modern forensic analysis?"
+          ],
+          "es-MX": [
+            "¿Por qué la clase considera a Telegram y Gmail especialmente relevantes para el análisis forense moderno?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because both platforms store rich communication records and metadata (timestamps, senders, routes, devices) that allow reconstructing user activities",
+            "Because they automatically delete all messages and emails after 24 hours, leaving no trace",
+            "Because they only work offline and never synchronize with the cloud",
+            "Because they do not keep any metadata, only anonymous messages without context"
+          ],
+          "es-MX": [
+            "Porque ambas plataformas almacenan registros de comunicación y metadatos ricos (fechas, remitentes, rutas, dispositivos) que permiten reconstruir actividades del usuario",
+            "Porque borran automáticamente todos los mensajes y correos a las 24 horas, sin dejar rastro",
+            "Porque solo funcionan sin conexión y nunca se sincronizan con la nube",
+            "Porque no conservan metadatos, solo mensajes anónimos sin contexto"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because both platforms store rich communication records and metadata (timestamps, senders, routes, devices) that allow reconstructing user activities",
+          "es-MX": "Porque ambas plataformas almacenan registros de comunicación y metadatos ricos (fechas, remitentes, rutas, dispositivos) que permiten reconstruir actividades del usuario"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Telegram captures chats, groups, channels and media with detailed timestamps.",
+                "Gmail preserves full messages plus headers with routing and authentication data.",
+                "Together they provide complementary views of who communicated, when, from where and by which path."
+              ],
+              "es-MX": [
+                "Telegram captura chats, grupos, canales y multimedia con timestamps detallados.",
+                "Gmail conserva mensajes completos más encabezados con datos de ruta y autenticación.",
+                "En conjunto ofrecen vistas complementarias de quién se comunicó, cuándo, desde dónde y por qué ruta."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "telegram-tipos-chat",
+        "Question Text": {
+          "en-US": [
+            "According to the class, what is the MAIN forensic difference between Telegram cloud chats and secret chats?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿cuál es la diferencia forense PRINCIPAL entre los chats en la nube y los chats secretos de Telegram?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Cloud chats are stored on Telegram servers and synchronized across devices, while secret chats are end-to-end encrypted, exist only on the devices and do not sync to the cloud",
+            "Cloud chats are always anonymous and secret chats always include the user’s full passport data",
+            "Cloud chats are stored only locally and secret chats only in the cloud",
+            "There is no difference: both are always stored and synchronized in exactly the same way"
+          ],
+          "es-MX": [
+            "Los chats en la nube se almacenan en los servidores de Telegram y se sincronizan entre dispositivos, mientras que los chats secretos tienen cifrado extremo a extremo, solo existen en los dispositivos y no se sincronizan en la nube",
+            "Los chats en la nube son siempre anónimos y los secretos siempre incluyen los datos completos del pasaporte del usuario",
+            "Los chats en la nube se almacenan solo localmente y los secretos solo en la nube",
+            "No hay diferencia: ambos siempre se almacenan y sincronizan exactamente igual"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Cloud chats are stored on Telegram servers and synchronized across devices, while secret chats are end-to-end encrypted, exist only on the devices and do not sync to the cloud",
+          "es-MX": "Los chats en la nube se almacenan en los servidores de Telegram y se sincronizan entre dispositivos, mientras que los chats secretos tienen cifrado extremo a extremo, solo existen en los dispositivos y no se sincronizan en la nube"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The material explains that normal Telegram chats are cloud-based and recoverable from servers, whereas secret chats rely on end-to-end encryption, live only on the endpoints, and can include self-destruct timers, which drastically changes what can be recovered.",
+              "es-MX": "El material explica que los chats normales de Telegram son en la nube y recuperables desde los servidores, mientras que los chats secretos usan cifrado extremo a extremo, viven solo en los extremos y pueden incluir temporizadores de autodestrucción, lo que cambia drásticamente lo que puede recuperarse."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "telegram-storage-android",
+        "Question Text": {
+          "en-US": [
+            "Which option BEST describes where Telegram typically stores local artifacts on Android according to the class?"
+          ],
+          "es-MX": [
+            "¿Qué opción describe MEJOR dónde almacena Telegram los artefactos locales en Android según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "In paths such as /data/data/org.telegram.messenger/files/, /Android/data/org.telegram.messenger/cache/ and /Android/data/org.telegram.messenger/files/download/",
+            "Only in C:\\\\Windows\\\\System32\\\\Telegram\\\\, regardless of the device",
+            "Exclusively in the SIM card, without using internal memory",
+            "Only in iCloud backups, never on the device itself"
+          ],
+          "es-MX": [
+            "En rutas como /data/data/org.telegram.messenger/files/, /Android/data/org.telegram.messenger/cache/ y /Android/data/org.telegram.messenger/files/download/",
+            "Solo en C:\\\\Windows\\\\System32\\\\Telegram\\\\, sin importar el dispositivo",
+            "Exclusivamente en la tarjeta SIM, sin usar la memoria interna",
+            "Solo en respaldos de iCloud, nunca en el dispositivo"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "In paths such as /data/data/org.telegram.messenger/files/, /Android/data/org.telegram.messenger/cache/ and /Android/data/org.telegram.messenger/files/download/",
+          "es-MX": "En rutas como /data/data/org.telegram.messenger/files/, /Android/data/org.telegram.messenger/cache/ y /Android/data/org.telegram.messenger/files/download/"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Telegram uses internal app directories under /data/data for databases and configuration.",
+                "It uses /Android/data/.../cache for temporary and thumbnail-like artifacts.",
+                "Downloaded media often appears under files/download/ with original names and timestamps."
+              ],
+              "es-MX": [
+                "Telegram usa directorios internos de la app en /data/data para bases y configuración.",
+                "Utiliza /Android/data/.../cache para artefactos temporales y miniaturas.",
+                "Los archivos descargados suelen aparecer en files/download/ con nombres y timestamps originales."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "telegram-bases-tdb",
+        "Question Text": {
+          "en-US": [
+            "What type of internal storage structures does Telegram use that are especially relevant for forensic analysis?"
+          ],
+          "es-MX": [
+            "¿Qué tipo de estructuras internas de almacenamiento utiliza Telegram que son especialmente relevantes para el análisis forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "TDB databases and .map index files, sometimes combined with internal SQLite databases depending on the version",
+            ".docx and .xlsx files exclusively",
+            "Plain text .txt logs without any structure",
+            "Only encrypted PDF files with no way to link them to messages"
+          ],
+          "es-MX": [
+            "Bases TDB y archivos de índice .map, a veces combinados con bases SQLite internas según la versión",
+            "Archivos .docx y .xlsx exclusivamente",
+            "Registros .txt en texto plano sin ninguna estructura",
+            "Solo archivos PDF cifrados sin forma de vincularlos con mensajes"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "TDB databases and .map index files, sometimes combined with internal SQLite databases depending on the version",
+          "es-MX": "Bases TDB y archivos de índice .map, a veces combinados con bases SQLite internas según la versión"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class mentions Telegram’s use of TDB databases, .map index files and, in some builds, SQLite structures, all of which hold messages, references to media, user states, edits and deletion metadata.",
+              "es-MX": "La clase menciona el uso de bases TDB, archivos de índice .map y, en algunas versiones, estructuras SQLite, que contienen mensajes, referencias a multimedia, estados de usuario, ediciones y metadatos de eliminación."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "telegram-evidencia-cache",
+        "Question Text": {
+          "en-US": [
+            "Which option BEST summarizes why Telegram cache and thumbnails are valuable forensics artifacts?"
+          ],
+          "es-MX": [
+            "¿Qué opción resume MEJOR por qué la caché y las miniaturas de Telegram son artefactos forenses valiosos?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because they can preserve traces of photos, videos and messages even when the visible chats or main files have been deleted",
+            "Because they automatically overwrite all content every time the app is opened",
+            "Because they only store app settings and never contain user-related data",
+            "Because they are always fully encrypted and cannot be interpreted"
+          ],
+          "es-MX": [
+            "Porque pueden conservar rastros de fotos, videos y mensajes incluso cuando los chats visibles o los archivos principales ya fueron eliminados",
+            "Porque sobrescriben automáticamente todo el contenido cada vez que se abre la app",
+            "Porque solo almacenan configuraciones de la aplicación y nunca contienen datos de usuario",
+            "Porque siempre están totalmente cifrados y no pueden interpretarse"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because they can preserve traces of photos, videos and messages even when the visible chats or main files have been deleted",
+          "es-MX": "Porque pueden conservar rastros de fotos, videos y mensajes incluso cuando los chats visibles o los archivos principales ya fueron eliminados"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Cache folders often keep thumbnails after the main media is gone.",
+                "Residual records in TDB and cache can show that specific content existed.",
+                "These remnants help corroborate user behavior and message history."
+              ],
+              "es-MX": [
+                "Las carpetas de caché suelen conservar miniaturas aun cuando el archivo principal ya no está.",
+                "Registros residuales en TDB y caché pueden mostrar que cierto contenido existió.",
+                "Estos restos ayudan a corroborar el comportamiento del usuario y el historial de mensajes."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "telegram-cloud-sync",
+        "Question Text": {
+          "en-US": [
+            "From a forensic perspective, what is one MAJOR consequence of Telegram’s cloud synchronization for normal (non-secret) chats?"
+          ],
+          "es-MX": [
+            "Desde la perspectiva forense, ¿cuál es una consecuencia MAYOR de la sincronización en la nube de los chats normales de Telegram?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Messages can often be recovered from the cloud history even if the local device has been partially wiped",
+            "All local artifacts are immediately destroyed when they are uploaded to the cloud",
+            "Cloud synchronization prevents any timeline reconstruction",
+            "Cloud chats are always stored only on the SIM card and never on servers"
+          ],
+          "es-MX": [
+            "Frecuentemente se pueden recuperar mensajes desde el historial en la nube incluso si el dispositivo local ha sido limpiado parcialmente",
+            "Todos los artefactos locales se destruyen en cuanto se suben a la nube",
+            "La sincronización en la nube impide cualquier reconstrucción de línea de tiempo",
+            "Los chats en la nube se almacenan siempre solo en la tarjeta SIM y nunca en servidores"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Messages can often be recovered from the cloud history even if the local device has been partially wiped",
+          "es-MX": "Frecuentemente se pueden recuperar mensajes desde el historial en la nube incluso si el dispositivo local ha sido limpiado parcialmente"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "Because normal Telegram chats live on servers and sync across devices, a wiped or damaged phone does not necessarily mean the conversation is lost, which can support recovery via other logged-in sessions or server-side exports.",
+              "es-MX": "Como los chats normales de Telegram viven en servidores y se sincronizan entre dispositivos, un teléfono borrado o dañado no implica necesariamente que la conversación se pierda, lo que puede permitir la recuperación a través de otras sesiones iniciadas o exportaciones del lado del servidor."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "gmail-encabezados-rol",
+        "Question Text": {
+          "en-US": [
+            "Why are Gmail headers considered a highly valuable source of forensic information?"
+          ],
+          "es-MX": [
+            "¿Por qué los encabezados de Gmail se consideran una fuente de información forense altamente valiosa?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because they contain routing, authentication and client information (Received, SPF, DKIM, DMARC, User-Agent) that allows tracing origin, path and legitimacy of emails",
+            "Because they only contain decorative emojis and marketing tags",
+            "Because they store only the email’s subject and nothing else",
+            "Because they are automatically removed when the message is opened for the first time"
+          ],
+          "es-MX": [
+            "Porque contienen información de enrutamiento, autenticación y cliente (Received, SPF, DKIM, DMARC, User-Agent) que permite rastrear origen, ruta y legitimidad de los correos",
+            "Porque solo contienen emojis decorativos y etiquetas de mercadotecnia",
+            "Porque almacenan únicamente el asunto del correo y nada más",
+            "Porque se eliminan automáticamente cuando el mensaje se abre por primera vez"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because they contain routing, authentication and client information (Received, SPF, DKIM, DMARC, User-Agent) that allows tracing origin, path and legitimacy of emails",
+          "es-MX": "Porque contienen información de enrutamiento, autenticación y cliente (Received, SPF, DKIM, DMARC, User-Agent) que permite rastrear origen, ruta y legitimidad de los correos"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Received lines show the sequence of servers that handled the message.",
+                "SPF, DKIM and DMARC help verify if the sender domain is authentic.",
+                "User-Agent, IP and timestamps help infer device type, region and sending behavior."
+              ],
+              "es-MX": [
+                "Las líneas Received muestran la secuencia de servidores que manejaron el mensaje.",
+                "SPF, DKIM y DMARC ayudan a verificar si el dominio remitente es auténtico.",
+                "User-Agent, IP y timestamps ayudan a inferir tipo de dispositivo, región y patrón de envío."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "gmail-local-storage",
+        "Question Text": {
+          "en-US": [
+            "According to the class, which local artifacts can be relevant when analyzing Gmail on computers and mobile devices?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿qué artefactos locales pueden ser relevantes al analizar Gmail en computadoras y dispositivos móviles?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "OST, PST or MBOX files and internal SQLite databases that store cached emails, headers, indexes and synchronization data",
+            "Only the Windows wallpaper image, which replaces email storage",
+            "Temporary internet files that are always deleted when closing the browser, without any persistent email data",
+            "Audio files in MP3 format that contain voice recordings of the user reading their emails aloud"
+          ],
+          "es-MX": [
+            "Archivos OST, PST o MBOX y bases SQLite internas que almacenan correos en caché, encabezados, índices y datos de sincronización",
+            "Solo la imagen de fondo de Windows, que sustituye el almacenamiento de correos",
+            "Archivos temporales de internet que siempre se borran al cerrar el navegador, sin datos persistentes de correo",
+            "Archivos de audio en formato MP3 que contienen grabaciones de voz del usuario leyendo sus correos en voz alta"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "OST, PST or MBOX files and internal SQLite databases that store cached emails, headers, indexes and synchronization data",
+          "es-MX": "Archivos OST, PST o MBOX y bases SQLite internas que almacenan correos en caché, encabezados, índices y datos de sincronización"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class notes that desktop clients and mobile apps often keep local replicas of Gmail data (OST/PST/MBOX or SQLite), which can be examined even without live access to the account.",
+              "es-MX": "La clase señala que los clientes de escritorio y las apps móviles suelen mantener réplicas locales de datos de Gmail (OST/PST/MBOX o SQLite), que pueden examinarse incluso sin acceso en línea a la cuenta."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "gmail-campos-encabezado",
+        "Question Text": {
+          "en-US": [
+            "Which set of header fields is MOST directly used to verify email authenticity and domain validation in Gmail?"
+          ],
+          "es-MX": [
+            "¿Qué conjunto de campos de encabezado se utiliza MÁS directamente para verificar la autenticidad del correo y la validación del dominio en Gmail?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "SPF, DKIM and DMARC inside Authentication-Results",
+            "Wallpaper-Color, Emoji-Style and Font-Size",
+            "RAM-Usage, CPU-Temperature and Screen-Resolution",
+            "Only the Subject field, which fully proves authenticity by itself"
+          ],
+          "es-MX": [
+            "SPF, DKIM y DMARC dentro de Authentication-Results",
+            "Wallpaper-Color, Emoji-Style y Font-Size",
+            "RAM-Usage, CPU-Temperature y Screen-Resolution",
+            "Solo el campo Subject, que prueba completamente la autenticidad por sí mismo"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "SPF, DKIM and DMARC inside Authentication-Results",
+          "es-MX": "SPF, DKIM y DMARC dentro de Authentication-Results"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "SPF verifies whether the sending IP is authorized for that domain.",
+                "DKIM uses a cryptographic signature to check message integrity and domain control.",
+                "DMARC defines how receivers should handle failures of SPF/DKIM, reinforcing trust decisions."
+              ],
+              "es-MX": [
+                "SPF verifica si la IP remitente está autorizada para ese dominio.",
+                "DKIM usa una firma criptográfica para comprobar integridad del mensaje y control del dominio.",
+                "DMARC define cómo deben tratar los receptores los fallos de SPF/DKIM, reforzando decisiones de confianza."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "comparacion-tabla",
+        "Question Text": {
+          "en-US": [
+            "According to the comparison table in the class, which statement BEST highlights a structural difference between Telegram and Gmail?"
+          ],
+          "es-MX": [
+            "Según la tabla comparativa de la clase, ¿qué afirmación resalta MEJOR una diferencia estructural entre Telegram y Gmail?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Telegram is a messaging platform with hybrid local+cloud storage and chat-oriented metadata, while Gmail is an email platform with server-first storage and very rich header-based metadata",
+            "Telegram and Gmail are both purely offline platforms with no cloud integration at all",
+            "Telegram uses only email-style headers and Gmail only uses TDB databases for chats",
+            "Telegram is only a browser history manager and Gmail is only a photo gallery"
+          ],
+          "es-MX": [
+            "Telegram es una plataforma de mensajería con almacenamiento híbrido local+nube y metadatos orientados a chats, mientras que Gmail es una plataforma de correo con almacenamiento server-first y metadatos muy ricos basados en encabezados",
+            "Telegram y Gmail son plataformas completamente offline sin integración con la nube",
+            "Telegram usa solo encabezados de tipo correo y Gmail solo bases TDB para chats",
+            "Telegram es solo un gestor de historial de navegador y Gmail solo una galería de fotos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Telegram is a messaging platform with hybrid local+cloud storage and chat-oriented metadata, while Gmail is an email platform with server-first storage and very rich header-based metadata",
+          "es-MX": "Telegram es una plataforma de mensajería con almacenamiento híbrido local+nube y metadatos orientados a chats, mientras que Gmail es una plataforma de correo con almacenamiento server-first y metadatos muy ricos basados en encabezados"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The summary table contrasts both: Telegram is centered on message threads and local/cloud caches, while Gmail focuses on messages as emails with detailed network and server metadata in each header.",
+              "es-MX": "La tabla de resumen contrasta ambas: Telegram se centra en hilos de mensajes y cachés local/nube, mientras que Gmail se enfoca en mensajes como correos con metadatos de red y servidores muy detallados en cada encabezado."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "identidad-cuentas",
+        "Question Text": {
+          "en-US": [
+            "How is user identity typically represented in Telegram versus Gmail, according to the material?"
+          ],
+          "es-MX": [
+            "¿Cómo se representa típicamente la identidad del usuario en Telegram frente a Gmail, según el material?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Telegram uses internal IDs and phone-based accounts, while Gmail is tied to a Google account (email address) and its associated login records",
+            "Both platforms use only anonymous random numbers with no link to real-world accounts",
+            "Telegram uses a passport number as the primary identifier, while Gmail uses the device’s IMEI only",
+            "Telegram and Gmail both rely exclusively on Bluetooth addresses for identity"
+          ],
+          "es-MX": [
+            "Telegram utiliza IDs internos y cuentas ligadas al número telefónico, mientras que Gmail se vincula a una cuenta de Google (dirección de correo) y a sus registros de inicio de sesión",
+            "Ambas plataformas usan solo números aleatorios anónimos sin vínculo a cuentas reales",
+            "Telegram usa el número de pasaporte como identificador principal y Gmail solo el IMEI del dispositivo",
+            "Telegram y Gmail se basan exclusivamente en direcciones Bluetooth para la identidad"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Telegram uses internal IDs and phone-based accounts, while Gmail is tied to a Google account (email address) and its associated login records",
+          "es-MX": "Telegram utiliza IDs internos y cuentas ligadas al número telefónico, mientras que Gmail se vincula a una cuenta de Google (dirección de correo) y a sus registros de inicio de sesión"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Telegram accounts are usually created with a phone number and mapped to internal IDs in its databases.",
+                "Gmail identity is anchored to the email address and Google account infrastructure.",
+                "Login logs and linked devices in Gmail provide additional identity context."
+              ],
+              "es-MX": [
+                "Las cuentas de Telegram suelen crearse con un número telefónico y se mapean a IDs internos en sus bases.",
+                "La identidad en Gmail se ancla a la dirección de correo y a la infraestructura de cuenta de Google.",
+                "Los registros de inicio de sesión y dispositivos vinculados en Gmail aportan contexto adicional de identidad."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "cifrado-diferencias",
+        "Question Text": {
+          "en-US": [
+            "Which statement BEST reflects the differences in encryption between Telegram and Gmail as described in the class?"
+          ],
+          "es-MX": [
+            "¿Qué afirmación refleja MEJOR las diferencias de cifrado entre Telegram y Gmail según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Telegram provides end-to-end encryption only in secret chats, while cloud chats are not E2E; Gmail typically uses TLS in transit and cryptographic signatures (DKIM) but emails are stored server-side",
+            "Both Telegram and Gmail use end-to-end encryption for absolutely all content without exceptions",
+            "Telegram does not use any encryption and Gmail is stored only in plain text without TLS",
+            "Gmail uses only Bluetooth-based encryption and Telegram uses only QR-code-based encryption"
+          ],
+          "es-MX": [
+            "Telegram ofrece cifrado extremo a extremo solo en los chats secretos, mientras que los chats en la nube no son E2E; Gmail normalmente usa TLS en tránsito y firmas criptográficas (DKIM), pero los correos se almacenan del lado del servidor",
+            "Telegram y Gmail usan cifrado extremo a extremo para absolutamente todo el contenido sin excepciones",
+            "Telegram no usa ningún cifrado y Gmail se almacena solo en texto plano sin TLS",
+            "Gmail usa solo cifrado basado en Bluetooth y Telegram solo cifrado basado en códigos QR"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Telegram provides end-to-end encryption only in secret chats, while cloud chats are not E2E; Gmail typically uses TLS in transit and cryptographic signatures (DKIM) but emails are stored server-side",
+          "es-MX": "Telegram ofrece cifrado extremo a extremo solo en los chats secretos, mientras que los chats en la nube no son E2E; Gmail normalmente usa TLS en tránsito y firmas criptográficas (DKIM), pero los correos se almacenan del lado del servidor"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class emphasizes that Telegram’s highest protection is limited to secret chats, and that Gmail focuses on secure transport and domain-level authenticity, not on end-to-end storage encryption for each message.",
+              "es-MX": "La clase enfatiza que la máxima protección de Telegram se limita a los chats secretos, y que Gmail se centra en el transporte seguro y la autenticidad del dominio, no en el cifrado extremo a extremo del almacenamiento de cada mensaje."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "ejemplo-integrado-telegram",
+        "Question Text": {
+          "en-US": [
+            "In the integrated Telegram example, which combination of findings would MOST strongly indicate the past existence of a photo that is no longer visible in the chat?"
+          ],
+          "es-MX": [
+            "En el ejemplo integrado de Telegram, ¿qué combinación de hallazgos indicaría MÁS fuertemente la existencia pasada de una foto que ya no es visible en el chat?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A thumbnail file in the cache, a TDB record referencing an image-type message with a timestamp and a download path to a deleted file",
+            "Only an empty home screen with no apps installed",
+            "A change in the device’s wallpaper color but no records in TDB",
+            "A low battery event in the system logs unrelated to Telegram"
+          ],
+          "es-MX": [
+            "Un archivo de miniatura en la caché, un registro TDB que referencia un mensaje de tipo imagen con un timestamp y una ruta de descarga hacia un archivo eliminado",
+            "Solo una pantalla de inicio vacía sin aplicaciones instaladas",
+            "Un cambio en el color del fondo de pantalla del dispositivo pero sin registros en TDB",
+            "Un evento de batería baja en los logs del sistema sin relación con Telegram"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A thumbnail file in the cache, a TDB record referencing an image-type message with a timestamp and a download path to a deleted file",
+          "es-MX": "Un archivo de miniatura en la caché, un registro TDB que referencia un mensaje de tipo imagen con un timestamp y una ruta de descarga hacia un archivo eliminado"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Thumbnails show a visual trace of the image.",
+                "TDB records provide structural evidence of an image message in a specific chat and time.",
+                "A path pointing to a missing file suggests subsequent deletion of the main media."
+              ],
+              "es-MX": [
+                "Las miniaturas muestran un rastro visual de la imagen.",
+                "Los registros TDB aportan evidencia estructural de un mensaje de imagen en un chat y momento concretos.",
+                "Una ruta que apunta a un archivo ausente sugiere la eliminación posterior del medio principal."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "ejemplo-integrado-gmail",
+        "Question Text": {
+          "en-US": [
+            "In the integrated Gmail example, an email header shows valid SPF and DKIM, a Message-ID, multiple Received lines and User-Agent: Gmail/Android. What can the examiner MOST reasonably conclude?"
+          ],
+          "es-MX": [
+            "En el ejemplo integrado de Gmail, un encabezado muestra SPF y DKIM válidos, un Message-ID, varias líneas Received y User-Agent: Gmail/Android. ¿Qué puede concluir MÁS razonablemente el perito?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "That the email was legitimately sent through Google’s infrastructure from an Android device, following the server path shown in the Received lines",
+            "That the email is certainly fake because SPF and DKIM are always false when sent from Android",
+            "That the email contains no useful forensic information due to encryption",
+            "That the email was composed on paper and later scanned, with no relation to Gmail"
+          ],
+          "es-MX": [
+            "Que el correo fue enviado legítimamente a través de la infraestructura de Google desde un dispositivo Android, siguiendo la ruta de servidores mostrada en las líneas Received",
+            "Que el correo es seguramente falso porque SPF y DKIM siempre son falsos cuando se envía desde Android",
+            "Que el correo no contiene información forense útil debido al cifrado",
+            "Que el correo se redactó en papel y luego se escaneó, sin relación con Gmail"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "That the email was legitimately sent through Google’s infrastructure from an Android device, following the server path shown in the Received lines",
+          "es-MX": "Que el correo fue enviado legítimamente a través de la infraestructura de Google desde un dispositivo Android, siguiendo la ruta de servidores mostrada en las líneas Received"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "Valid SPF and DKIM plus a consistent Message-ID and Received chain support authenticity; User-Agent: Gmail/Android indicates the client type, helping link the activity to a mobile device.",
+              "es-MX": "SPF y DKIM válidos, junto con un Message-ID coherente y una cadena Received consistente, respaldan la autenticidad; User-Agent: Gmail/Android indica el tipo de cliente, ayudando a vincular la actividad a un dispositivo móvil."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

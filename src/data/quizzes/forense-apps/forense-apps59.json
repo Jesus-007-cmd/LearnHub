@@ -1,0 +1,568 @@
+{
+    "meta": {
+      "slug": "forense-apps59",
+      "title": "Uso de herramientas automáticas de reporte (Autopsy, Magnet AXIOM)",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 5,
+      "classNo": 59,
+      "description": "Generación y revisión de reportes automáticos profesionalizados utilizando Autopsy, Magnet AXIOM y herramientas complementarias, diferenciando entre reportes técnicos completos, filtrados y ejecutivos.",
+      "tags": [
+        "reportes automáticos",
+        "Autopsy",
+        "Magnet AXIOM",
+        "Oxygen",
+        "Cellebrite",
+        "FTK",
+        "informes forenses",
+        "unidad V"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "Importancia de los reportes automáticos",
+        "Question Text": {
+          "en-US": [
+            "Why are automatic reporting tools considered central in modern digital forensic laboratories according to the class?"
+          ],
+          "es-MX": [
+            "¿Por qué las herramientas automáticas de reporte se consideran centrales en los laboratorios forenses digitales modernos según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because they save time, reduce human errors, guarantee standardization, maintain evidence traceability and present information in a comprehensible and verifiable format.",
+            "Because they completely replace the need for human experts and interpretation.",
+            "Because they are used only to decorate the report with colors and icons.",
+            "Because they allow generating reports without any prior analysis or selection of artifacts."
+          ],
+          "es-MX": [
+            "Porque ahorran tiempo, reducen errores humanos, garantizan estandarización, mantienen la trazabilidad de la evidencia y presentan la información en un formato comprensible y verificable.",
+            "Porque sustituyen por completo la necesidad de peritos humanos e interpretación.",
+            "Porque se usan solo para decorar el informe con colores e íconos.",
+            "Porque permiten generar reportes sin ningún análisis previo ni selección de artefactos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because they save time, reduce human errors, guarantee standardization, maintain evidence traceability and present information in a comprehensible and verifiable format.",
+          "es-MX": "Porque ahorran tiempo, reducen errores humanos, garantizan estandarización, mantienen la trazabilidad de la evidencia y presentan la información en un formato comprensible y verificable."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Modern tools do much more than export data: they organize findings, generate tables, attach hashes and include full metadata automatically.",
+                "They help the laboratory work faster and with fewer manual mistakes when copying or transcribing information.",
+                "They follow standardized formats that facilitate auditing and comparison between cases.",
+                "They structure the data so that it can be understood and verified by other experts, auditors or courts."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Las herramientas modernas hacen mucho más que exportar datos: organizan hallazgos, generan tablas, adjuntan hashes e incluyen metadatos completos de forma automática.",
+                "Ayudan a que el laboratorio trabaje más rápido y con menos errores manuales al copiar o transcribir información.",
+                "Permiten seguir formatos estandarizados que facilitan auditorías y comparación entre casos.",
+                "Estructuran los datos para que puedan ser comprendidos y verificados por otros peritos, auditores o tribunales."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Autopsy Report Module",
+        "Question Text": {
+          "en-US": [
+            "Which of the following best describes the reporting capabilities of Autopsy according to the class?"
+          ],
+          "es-MX": [
+            "¿Cuál de las siguientes opciones describe mejor las capacidades de reporte de Autopsy según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It can generate HTML, Excel/CSV, PDF (depending on plugins) and JSON reports, select artifact types (chats, locations, deleted files, images), include SHA-256 hashes, add EXIF metadata and export SQLite databases.",
+            "It only allows printing a simple text file without any structure.",
+            "It only exports screenshots without any metadata or hash information.",
+            "It is limited to generating reports of operating system logs and nothing else."
+          ],
+          "es-MX": [
+            "Puede generar reportes en HTML, Excel/CSV, PDF (dependiendo de plugins) y JSON, seleccionar tipos de artefactos (chats, ubicaciones, archivos borrados, imágenes), incluir hashes SHA-256, agregar metadatos EXIF y exportar bases de datos SQLite.",
+            "Solo permite imprimir un archivo de texto simple sin ninguna estructura.",
+            "Solo exporta capturas de pantalla sin metadatos ni información de hashes.",
+            "Se limita a generar reportes de registros del sistema operativo y nada más."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It can generate HTML, Excel/CSV, PDF (depending on plugins) and JSON reports, select artifact types (chats, locations, deleted files, images), include SHA-256 hashes, add EXIF metadata and export SQLite databases.",
+          "es-MX": "Puede generar reportes en HTML, Excel/CSV, PDF (dependiendo de plugins) y JSON, seleccionar tipos de artefactos (chats, ubicaciones, archivos borrados, imágenes), incluir hashes SHA-256, agregar metadatos EXIF y exportar bases de datos SQLite."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Autopsy’s Report Module is designed to export relevant artifacts in multiple formats that fit different needs."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "HTML reports allow easy navigation through artifacts and evidence sources.",
+                "Excel/CSV reports are convenient for tabular analysis and importing into tools like Excel or Power BI.",
+                "The module can automatically include hashes and EXIF metadata, which are essential for forensic integrity and context.",
+                "Export of SQLite databases and their tables preserves original data structures for deeper analysis."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El módulo de reportes de Autopsy está diseñado para exportar artefactos relevantes en múltiples formatos que se adaptan a distintas necesidades."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Los reportes en HTML permiten navegar fácilmente entre artefactos y fuentes de evidencia.",
+                "Los reportes en Excel/CSV son útiles para análisis tabular e importación en herramientas como Excel o Power BI.",
+                "El módulo puede incluir automáticamente hashes y metadatos EXIF, fundamentales para la integridad forense y el contexto.",
+                "La exportación de bases de datos SQLite y sus tablas preserva las estructuras originales para análisis más profundo."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Magnet AXIOM Case Reporting",
+        "Question Text": {
+          "en-US": [
+            "Which features are highlighted in the class as strengths of Magnet AXIOM’s reporting system?"
+          ],
+          "es-MX": [
+            "¿Qué características se destacan en la clase como fortalezas del sistema de reportes de Magnet AXIOM?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Automatic case summary section, forensic timeline, chat exports with conversation view, multimedia exports with thumbnails, pattern and connection analysis and filtered reports by relevant artifacts.",
+            "Only the ability to generate a plain text file without structure.",
+            "Exclusive support for image files, without chats, timelines or metadata.",
+            "A single, fixed report template that cannot be filtered or customized."
+          ],
+          "es-MX": [
+            "Sección automática de resumen de caso, timeline forense, exportación de chats con vista tipo conversación, exportación multimedia con miniaturas, análisis de patrones y conexiones y reportes filtrados por artefactos relevantes.",
+            "Solo la capacidad de generar un archivo de texto plano sin estructura.",
+            "Soporte exclusivo para archivos de imagen, sin chats, líneas de tiempo ni metadatos.",
+            "Una única plantilla de reporte fija que no puede filtrarse ni personalizarse."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Automatic case summary section, forensic timeline, chat exports with conversation view, multimedia exports with thumbnails, pattern and connection analysis and filtered reports by relevant artifacts.",
+          "es-MX": "Sección automática de resumen de caso, timeline forense, exportación de chats con vista tipo conversación, exportación multimedia con miniaturas, análisis de patrones y conexiones y reportes filtrados por artefactos relevantes."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Magnet AXIOM is presented as one of the most complete professional reporting systems."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "The automatic case summary organizes the key aspects of the investigation for quick review.",
+                "The forensic timeline helps correlate events across different data sources.",
+                "Conversation-style chat exports make it easier for non-technical readers to follow message sequences.",
+                "Pattern and connection analysis plus filtered reports focus attention on the most relevant artifacts."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Magnet AXIOM se presenta como uno de los sistemas de reportes profesionales más completos."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "El resumen automático de caso organiza los aspectos clave de la investigación para una revisión rápida.",
+                "La línea de tiempo forense ayuda a correlacionar eventos entre distintas fuentes de datos.",
+                "La exportación de chats en vista tipo conversación facilita que lectores no técnicos sigan las secuencias de mensajes.",
+                "El análisis de patrones y conexiones, junto con reportes filtrados, dirige la atención a los artefactos más relevantes."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Flujo profesional de reporte",
+        "Question Text": {
+          "en-US": [
+            "According to the class, what is the correct professional sequence when generating automatic reports?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿cuál es la secuencia profesional correcta al generar reportes automáticos?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Select relevant artifacts, configure the reporting module, export the automatic report and then manually review and validate it.",
+            "Configure the report format first, then export everything without selecting artifacts and finally skip any manual review.",
+            "Directly export all available data in every possible format and send it without validation.",
+            "Only review the artifacts visually and never use automatic reporting tools."
+          ],
+          "es-MX": [
+            "Seleccionar artefactos relevantes, configurar el módulo de reporte, exportar el reporte automático y luego revisarlo y validarlo manualmente.",
+            "Configurar primero el formato del reporte, luego exportar todo sin seleccionar artefactos y finalmente omitir cualquier revisión manual.",
+            "Exportar directamente todos los datos disponibles en todos los formatos posibles y enviarlos sin validación.",
+            "Revisar solo los artefactos de forma visual y nunca usar herramientas de reporte automático."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Select relevant artifacts, configure the reporting module, export the automatic report and then manually review and validate it.",
+          "es-MX": "Seleccionar artefactos relevantes, configurar el módulo de reporte, exportar el reporte automático y luego revisarlo y validarlo manualmente."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Step 1: Review extracted artifacts and select only those relevant to the case (chats, multimedia, locations, logs, etc.).",
+                "Step 2: Configure the reporting module (format, level of detail, hashes, thumbnails, filters, language).",
+                "Step 3: Export the automatic report in the selected formats (HTML, PDF, CSV, etc.).",
+                "Step 4: Manually review the report to verify dates, time zones, filenames, chat sequences and hash presence."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Skipping the selection or manual review stages produces long, unfocused reports that may lose probative value."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Paso 1: Revisar los artefactos extraídos y seleccionar solo aquellos relevantes al caso (chats, multimedia, ubicaciones, registros, etc.).",
+                "Paso 2: Configurar el módulo de reporte (formato, nivel de detalle, hashes, miniaturas, filtros, idioma).",
+                "Paso 3: Exportar el reporte automático en los formatos elegidos (HTML, PDF, CSV, etc.).",
+                "Paso 4: Revisar manualmente el reporte para verificar fechas, zonas horarias, nombres de archivo, secuencias de chats y presencia de hashes."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Saltar la etapa de selección o de revisión manual produce reportes extensos y poco enfocados que pueden perder valor probatorio."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Configuración del reporte",
+        "Question Text": {
+          "en-US": [
+            "When configuring an automatic report in tools like Autopsy or Magnet AXIOM, which options are mentioned in the class as relevant?"
+          ],
+          "es-MX": [
+            "Al configurar un reporte automático en herramientas como Autopsy o Magnet AXIOM, ¿qué opciones se mencionan en la clase como relevantes?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Report type (HTML, PDF, Excel, JSON), level of detail, inclusion of hashes and thumbnails, inclusion of exported files or references only, report language and filters by date, keyword, application or file type.",
+            "Only the report background color and font size for titles.",
+            "The expert’s favorite icons and personal logo, without any technical options.",
+            "A random selection of settings that changes in each execution without user control."
+          ],
+          "es-MX": [
+            "Tipo de reporte (HTML, PDF, Excel, JSON), nivel de detalle, inclusión de hashes y miniaturas, inclusión de archivos exportados o solo referencias, idioma del reporte y filtros por fecha, palabra clave, aplicación o tipo de archivo.",
+            "Únicamente el color de fondo del reporte y el tamaño de fuente de los títulos.",
+            "Los íconos favoritos del perito y su logotipo personal, sin opciones técnicas.",
+            "Una selección aleatoria de opciones que cambia en cada ejecución sin control del usuario."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Report type (HTML, PDF, Excel, JSON), level of detail, inclusion of hashes and thumbnails, inclusion of exported files or references only, report language and filters by date, keyword, application or file type.",
+          "es-MX": "Tipo de reporte (HTML, PDF, Excel, JSON), nivel de detalle, inclusión de hashes y miniaturas, inclusión de archivos exportados o solo referencias, idioma del reporte y filtros por fecha, palabra clave, aplicación o tipo de archivo."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Proper configuration of the reporting module aligns the exported information with the needs of the case and the target audience."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Choosing the format affects how the report will be read and processed (court, auditors, analysts).",
+                "Level of detail and filters avoid extremely long and unfocused reports.",
+                "Including hashes and thumbnails strengthens integrity and helps visual identification of evidence.",
+                "Language configuration is important when reports will be used in different jurisdictions or by multilingual teams."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Una configuración adecuada del módulo de reporte alinea la información exportada con las necesidades del caso y del público objetivo."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Elegir el formato influye en cómo se leerá y procesará el reporte (tribunales, auditores, analistas).",
+                "El nivel de detalle y los filtros evitan reportes excesivamente largos y poco enfocados.",
+                "Incluir hashes y miniaturas refuerza la integridad y ayuda a identificar visualmente la evidencia.",
+                "La configuración de idioma es importante cuando el reporte se usará en distintas jurisdicciones o por equipos multilingües."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Tipos de reporte",
+        "Question Text": {
+          "en-US": [
+            "Which pair correctly matches the type of report with its main use according to the class?"
+          ],
+          "es-MX": [
+            "¿Qué par relaciona correctamente el tipo de reporte con su uso principal según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Technical full report: includes everything (messages, metadata, locations, multimedia, deleted files) for courts or extensive audits; executive report: summarizes key findings with graphics and avoids excessive technical detail for managers and lawyers.",
+            "Technical full report: only contains a short narrative; executive report: includes all raw data and logs.",
+            "Thematic or filtered report: always ignores chats; executive report: is only a collection of hashes.",
+            "All types of reports always contain exactly the same content, only the file extension changes."
+          ],
+          "es-MX": [
+            "Reporte técnico completo: incluye todo (mensajes, metadatos, ubicaciones, multimedia, archivos eliminados) para tribunales o auditorías extensas; reporte ejecutivo: resume hallazgos clave con gráficos y evita exceso de tecnicismo para directivos y abogados.",
+            "Reporte técnico completo: solo contiene una narrativa corta; reporte ejecutivo: incluye todos los datos crudos y registros.",
+            "Reporte temático o filtrado: siempre ignora chats; reporte ejecutivo: es solo una colección de hashes.",
+            "Todos los tipos de reporte contienen siempre exactamente el mismo contenido, solo cambia la extensión del archivo."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Technical full report: includes everything (messages, metadata, locations, multimedia, deleted files) for courts or extensive audits; executive report: summarizes key findings with graphics and avoids excessive technical detail for managers and lawyers.",
+          "es-MX": "Reporte técnico completo: incluye todo (mensajes, metadatos, ubicaciones, multimedia, archivos eliminados) para tribunales o auditorías extensas; reporte ejecutivo: resume hallazgos clave con gráficos y evita exceso de tecnicismo para directivos y abogados."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "The technical full report is exhaustive and used when every detail may be relevant (courts, internal audits, deep investigations).",
+                "Thematic or filtered reports focus on specific artifacts (chats, GPS, photos, call logs) related to a hypothesis.",
+                "The executive report summarizes key results, often in PDF or PowerPoint, with graphics and minimal technical jargon.",
+                "Choosing the correct type for each audience is part of professional forensic communication."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "El reporte técnico completo es exhaustivo y se usa cuando cada detalle puede ser relevante (tribunales, auditorías internas, investigaciones profundas).",
+                "Los reportes temáticos o filtrados se centran en artefactos específicos (chats, GPS, fotos, registros de llamadas) relacionados con una hipótesis.",
+                "El reporte ejecutivo resume los resultados clave, a menudo en PDF o PowerPoint, con gráficos y mínimo tecnicismo.",
+                "Elegir el tipo adecuado para cada audiencia forma parte de la comunicación forense profesional."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Ventajas y limitaciones",
+        "Question Text": {
+          "en-US": [
+            "Which statement correctly reflects both an advantage and a limitation of automatic forensic reports mentioned in the class?"
+          ],
+          "es-MX": [
+            "¿Qué afirmación refleja correctamente una ventaja y una limitación de los reportes forenses automáticos mencionadas en la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They provide speed, standardization and organized evidence, but they do not interpret context or complex relationships and can include too much irrelevant data if not filtered.",
+            "They interpret all social and psychological aspects of the case, so human analysis is no longer necessary.",
+            "They deliberately modify data to make the story fit the expert’s hypothesis.",
+            "They always produce short and perfectly focused reports without any configuration or manual review."
+          ],
+          "es-MX": [
+            "Ofrecen rapidez, estandarización y evidencia organizada, pero no interpretan el contexto ni las relaciones complejas y pueden incluir demasiados datos irrelevantes si no se filtran.",
+            "Interpretan todos los aspectos sociales y psicológicos del caso, por lo que el análisis humano deja de ser necesario.",
+            "Modifican deliberadamente los datos para que la historia se adapte a la hipótesis del perito.",
+            "Siempre producen reportes cortos y perfectamente enfocados sin necesidad de configuración ni revisión manual."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They provide speed, standardization and organized evidence, but they do not interpret context or complex relationships and can include too much irrelevant data if not filtered.",
+          "es-MX": "Ofrecen rapidez, estandarización y evidencia organizada, pero no interpretan el contexto ni las relaciones complejas y pueden incluir demasiados datos irrelevantes si no se filtran."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Automatic reports are powerful tools, but they are not a substitute for expert judgment."
+            },
+            {
+              "type": "ol",
+              "items": [
+                "Advantage: they accelerate data extraction and organization, reduce manual errors and keep evidence structured and traceable.",
+                "Limitation: they do not understand the legal or human context of the case; they only group and present data.",
+                "Limitation: if the expert does not configure filters or select artifacts, the report may contain a large amount of irrelevant information.",
+                "Therefore, the class insists that human analysis is always required to interpret and refine the automatic output."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los reportes automáticos son herramientas muy potentes, pero no sustituyen el criterio del perito."
+            },
+            {
+              "type": "ol",
+              "items": [
+                "Ventaja: aceleran la extracción y organización de datos, reducen errores manuales y mantienen la evidencia estructurada y trazable.",
+                "Limitación: no comprenden el contexto legal o humano del caso; solo agrupan y presentan datos.",
+                "Limitación: si el perito no configura filtros ni selecciona artefactos, el reporte puede contener gran cantidad de información irrelevante.",
+                "Por ello, la clase insiste en que siempre se requiere análisis humano para interpretar y depurar el resultado automático."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Revisión del reporte automático",
+        "Question Text": {
+          "en-US": [
+            "According to the class, what should a professional do after generating an automatic report?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿qué debe hacer un perito profesional después de generar un reporte automático?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Manually review the report to verify dates and time zones, check filenames and thumbnails, ensure chat sequences are correct and confirm that important tables and hashes are present.",
+            "Immediately send the report without reading it, trusting that the tool never makes mistakes.",
+            "Delete the original evidence because it is already included in the report.",
+            "Edit the report to add personal opinions and speculations not supported by the data."
+          ],
+          "es-MX": [
+            "Revisar manualmente el reporte para verificar fechas y zonas horarias, comprobar nombres de archivo y miniaturas, asegurar que las secuencias de chats sean correctas y confirmar que estén presentes las tablas e hashes importantes.",
+            "Enviar inmediatamente el reporte sin leerlo, confiando en que la herramienta nunca se equivoca.",
+            "Borrar la evidencia original porque ya está incluida en el reporte.",
+            "Editar el reporte para agregar opiniones personales y especulaciones no respaldadas por los datos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Manually review the report to verify dates and time zones, check filenames and thumbnails, ensure chat sequences are correct and confirm that important tables and hashes are present.",
+          "es-MX": "Revisar manualmente el reporte para verificar fechas y zonas horarias, comprobar nombres de archivo y miniaturas, asegurar que las secuencias de chats sean correctas y confirmar que estén presentes las tablas e hashes importantes."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "divider"
+            },
+            {
+              "type": "text",
+              "content": "An automatic report that is not reviewed loses probative value, even if the underlying analysis is correct."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "The expert must verify that time zones and timestamps make sense for the case.",
+                "It is necessary to confirm that filenames and thumbnails match the correct artifacts.",
+                "Chat exports should preserve the temporal sequence of messages.",
+                "The expert must ensure that all relevant tables and hash fields were actually generated and included."
+              ]
+            },
+            {
+              "type": "divider"
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "divider"
+            },
+            {
+              "type": "text",
+              "content": "Un reporte automático que no se revisa pierde valor probatorio, incluso si el análisis de fondo es correcto."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "El perito debe verificar que las zonas horarias y marcas de tiempo tengan sentido para el caso.",
+                "Es necesario confirmar que los nombres de archivo y miniaturas correspondan a los artefactos correctos.",
+                "Las exportaciones de chats deben conservar la secuencia temporal de los mensajes.",
+                "El perito debe asegurarse de que todas las tablas y campos de hashes relevantes se hayan generado e incluido."
+              ]
+            },
+            {
+              "type": "divider"
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Conclusión de la clase",
+        "Question Text": {
+          "en-US": [
+            "Which statement best summarizes the main conclusion of this class about automatic reporting tools?"
+          ],
+          "es-MX": [
+            "¿Qué afirmación resume mejor la conclusión principal de esta clase sobre las herramientas de reporte automático?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Automatic reports generated with tools such as Autopsy and Magnet are central to modern forensic work, but they must always be configured, reviewed and complemented by human analysis to have full legal value.",
+            "Automatic reports are optional and irrelevant; only handwritten notes are valid in court.",
+            "Once an automatic report is generated, there is no need for any additional documentation or expert intervention.",
+            "Automatic reporting tools are mainly entertainment utilities and should not be used in serious investigations."
+          ],
+          "es-MX": [
+            "Los reportes automáticos generados con herramientas como Autopsy y Magnet son una parte central del trabajo forense moderno, pero SIEMPRE deben configurarse, revisarse y complementarse con análisis humano para tener pleno valor jurídico.",
+            "Los reportes automáticos son opcionales e irrelevantes; solo las notas escritas a mano son válidas en juicio.",
+            "Una vez generado el reporte automático, no se necesita documentación adicional ni intervención del perito.",
+            "Las herramientas de reporte automático son principalmente utilidades de entretenimiento y no deben usarse en investigaciones serias."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Automatic reports generated with tools such as Autopsy and Magnet are central to modern forensic work, but they must always be configured, reviewed and complemented by human analysis to have full legal value.",
+          "es-MX": "Los reportes automáticos generados con herramientas como Autopsy y Magnet son una parte central del trabajo forense moderno, pero SIEMPRE deben configurarse, revisarse y complementarse con análisis humano para tener pleno valor jurídico."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The class closes by reinforcing that automatic reporting is not a shortcut to skip professional responsibility."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "The tools provide structure, speed and consistency across cases.",
+                "The expert decides what to include, how to filter and how to interpret the exported data.",
+                "Courts evaluate both the technical content and the way it is presented and explained.",
+                "Therefore, the combination of powerful tools and rigorous human analysis is what gives the report its true probative strength."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La clase cierra reforzando que el reporte automático no es un atajo para evitar la responsabilidad profesional."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Las herramientas aportan estructura, rapidez y coherencia entre casos.",
+                "El perito decide qué incluir, cómo filtrar y cómo interpretar los datos exportados.",
+                "Los tribunales evalúan tanto el contenido técnico como la forma en que se presenta y se explica.",
+                "Por ello, la combinación de herramientas potentes y análisis humano riguroso es lo que da al informe su verdadera fuerza probatoria."
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+      

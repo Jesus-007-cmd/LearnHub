@@ -1,0 +1,657 @@
+{
+    "meta": {
+      "slug": "forense-apps30",
+      "title": "Clase 30 – Tipos de metadatos y su utilidad en la investigación forense",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 3,
+      "classNo": 30,
+      "description": "Clasificación y análisis de metadatos de mensajes, archivos e interfaces de dispositivos para reconstruir cronologías, validar autenticidad, detectar manipulación y fortalecer el valor probatorio de la evidencia digital.",
+      "tags": [
+        "metadatos",
+        "EXIF",
+        "evidencia digital",
+        "mensajería",
+        "forense móvil",
+        "dispositivos",
+        "cronología",
+        "autenticidad"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "definicion-metadatos",
+        "Question Text": {
+          "en-US": [
+            "According to the class, what is the MOST accurate definition of metadata in the context of digital forensics?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿cuál es la definición MÁS acertada de metadatos en el contexto del análisis forense digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Data about data, which describes, accompanies or contextualizes a file, message, photograph or device",
+            "Any encrypted content that cannot be read by normal users",
+            "Only the visible text of a message or document",
+            "Temporary cache files that the system deletes after each reboot"
+          ],
+          "es-MX": [
+            "Datos sobre los datos, que describen, acompañan o contextualizan un archivo, mensaje, fotografía o dispositivo",
+            "Cualquier contenido cifrado que no puede ser leído por usuarios normales",
+            "Solo el texto visible de un mensaje o documento",
+            "Archivos temporales de caché que el sistema elimina en cada reinicio"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Data about data, which describes, accompanies or contextualizes a file, message, photograph or device",
+          "es-MX": "Datos sobre los datos, que describen, acompañan o contextualizan un archivo, mensaje, fotografía o dispositivo"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Metadata is not the main content itself, but the information that describes how, when, where and with what the content was created or handled.",
+                "Examples: timestamps, GPS coordinates, camera model, sender and recipient, file size and more.",
+                "In forensics, these elements are crucial to understand context, chronology and authenticity."
+              ],
+              "es-MX": [
+                "Los metadatos no son el contenido principal, sino la información que describe cómo, cuándo, dónde y con qué se creó o manejó ese contenido.",
+                "Ejemplos: fechas y horas, coordenadas GPS, modelo de cámara, remitente y destinatario, tamaño de archivo, entre otros.",
+                "En forense, estos elementos son claves para entender el contexto, la cronología y la autenticidad."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "objetivo-metadatos",
+        "Question Text": {
+          "en-US": [
+            "Which option BEST summarizes why metadata is considered one of the most powerful sources of information in a digital investigation?"
+          ],
+          "es-MX": [
+            "¿Qué opción resume MEJOR por qué los metadatos se consideran una de las fuentes de información más poderosas en una investigación digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because they help reconstruct timelines, identify authors or devices, correlate activities, validate authenticity and detect manipulation",
+            "Because they allow modifying files without anyone noticing",
+            "Because they automatically generate final forensic reports without human intervention",
+            "Because they are visible only to the device owner and not to investigators"
+          ],
+          "es-MX": [
+            "Porque ayudan a reconstruir cronologías, identificar autores o dispositivos, correlacionar actividades, validar autenticidad y detectar manipulación",
+            "Porque permiten modificar archivos sin que nadie lo note",
+            "Porque generan automáticamente informes forenses finales sin intervención humana",
+            "Porque solo son visibles para el propietario del dispositivo y no para los investigadores"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because they help reconstruct timelines, identify authors or devices, correlate activities, validate authenticity and detect manipulation",
+          "es-MX": "Porque ayudan a reconstruir cronologías, identificar autores o dispositivos, correlacionar actividades, validar autenticidad y detectar manipulación"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class explains that metadata gives structure and context to raw data. They tell us when and where something happened, with which device, who participated and if there are signs of editing or inconsistency.",
+              "es-MX": "La clase explica que los metadatos dan estructura y contexto a los datos crudos. Nos dicen cuándo y dónde ocurrió algo, con qué dispositivo, quién participó y si hay señales de edición o inconsistencias."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "tipos-metadatos-principales",
+        "Question Text": {
+          "en-US": [
+            "What are the THREE main categories of metadata described in the class for forensic analysis?"
+          ],
+          "es-MX": [
+            "¿Cuáles son las TRES categorías principales de metadatos descritas en la clase para el análisis forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Message metadata, file metadata and device metadata",
+            "Network metadata, printer metadata and antivirus metadata only",
+            "CPU metadata, RAM metadata and battery metadata",
+            "Only EXIF metadata, with no other categories"
+          ],
+          "es-MX": [
+            "Metadatos de mensaje, metadatos de archivo y metadatos de dispositivo",
+            "Metadatos de red, metadatos de impresora y metadatos de antivirus únicamente",
+            "Metadatos de CPU, metadatos de RAM y metadatos de batería",
+            "Solo metadatos EXIF, sin otras categorías"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Message metadata, file metadata and device metadata",
+          "es-MX": "Metadatos de mensaje, metadatos de archivo y metadatos de dispositivo"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Message metadata: describes how, when and who interacted with a message.",
+                "File metadata: describes technical details about images, videos, documents, etc.",
+                "Device metadata: describes the environment and device where the evidence was generated or stored."
+              ],
+              "es-MX": [
+                "Metadatos de mensaje: describen cómo, cuándo y quién interactuó con un mensaje.",
+                "Metadatos de archivo: describen detalles técnicos sobre imágenes, videos, documentos, etc.",
+                "Metadatos de dispositivo: describen el entorno y el equipo donde se generó o almacenó la evidencia."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "metadatos-mensaje-elementos",
+        "Question Text": {
+          "en-US": [
+            "Which set BEST represents typical message metadata fields mentioned in the class?"
+          ],
+          "es-MX": [
+            "¿Qué conjunto representa MEJOR campos típicos de metadatos de mensaje mencionados en la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Sender, recipient, send/receive/read timestamps, content type, status, deletion indicators, forward count, message ID and chat ID",
+            "Only the visible text of the message and its emojis",
+            "Only the color theme and font size of the chat",
+            "Only the battery level and Wi-Fi signal strength at the time of sending"
+          ],
+          "es-MX": [
+            "Remitente, destinatario, timestamps de envío/recepción/lectura, tipo de contenido, estado, indicadores de borrado, número de reenvíos, ID de mensaje e ID de chat",
+            "Solo el texto visible del mensaje y sus emojis",
+            "Solo el tema de color y el tamaño de letra del chat",
+            "Solo el nivel de batería y la intensidad del Wi-Fi al momento de enviar"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Sender, recipient, send/receive/read timestamps, content type, status, deletion indicators, forward count, message ID and chat ID",
+          "es-MX": "Remitente, destinatario, timestamps de envío/recepción/lectura, tipo de contenido, estado, indicadores de borrado, número de reenvíos, ID de mensaje e ID de chat"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "These fields do not describe the text itself, but the context of interaction: who sent, who received, when it was read, how many times it was forwarded, and in which conversation it appeared.",
+              "es-MX": "Estos campos no describen el texto en sí, sino el contexto de la interacción: quién envió, quién recibió, cuándo se leyó, cuántas veces se reenviaron y en qué conversación aparecieron."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "utilidad-metadatos-mensaje",
+        "Question Text": {
+          "en-US": [
+            "In forensic analysis, which is the MOST important use of message metadata according to the class?"
+          ],
+          "es-MX": [
+            "En el análisis forense, ¿cuál es el uso MÁS importante de los metadatos de mensaje según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Determining the temporal sequence of the conversation, verifying if a message was actually sent or read by a user and establishing communication routes",
+            "Changing the visual theme of the chat interface for convenience",
+            "Automatically translating messages without reviewing their content",
+            "Increasing the storage capacity of the device"
+          ],
+          "es-MX": [
+            "Determinar la secuencia temporal de la conversación, verificar si un mensaje fue realmente enviado o leído por un usuario y establecer rutas de comunicación",
+            "Cambiar el tema visual de la interfaz de chat por comodidad",
+            "Traducir automáticamente mensajes sin revisar su contenido",
+            "Incrementar la capacidad de almacenamiento del dispositivo"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Determining the temporal sequence of the conversation, verifying if a message was actually sent or read by a user and establishing communication routes",
+          "es-MX": "Determinar la secuencia temporal de la conversación, verificar si un mensaje fue realmente enviado o leído por un usuario y establecer rutas de comunicación"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Message metadata allows building a timeline of who communicated with whom and at what times.",
+                "Read receipts and status fields help confirm whether the message reached and was opened by the recipient.",
+                "Routes of communication can be tracked across multiple messages and apps."
+              ],
+              "es-MX": [
+                "Los metadatos de mensaje permiten construir una línea de tiempo de quién se comunicó con quién y en qué momentos.",
+                "Los acuses de lectura y campos de estado ayudan a confirmar si el mensaje llegó y fue abierto por el destinatario.",
+                "Las rutas de comunicación se pueden seguir a través de múltiples mensajes y aplicaciones."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "metadatos-archivo-imagen",
+        "Question Text": {
+          "en-US": [
+            "Which option BEST describes typical EXIF metadata found in an image, as discussed in the class?"
+          ],
+          "es-MX": [
+            "¿Qué opción describe MEJOR los metadatos EXIF típicos que se encuentran en una imagen, según lo visto en la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Capture date and time, camera make and model, GPS coordinates, shutter speed, ISO, sensor temperature, orientation and editing software",
+            "Only the file name and the icon used by the operating system",
+            "Only the resolution in pixels and nothing else",
+            "Only a random identifier with no relation to the device or the capture"
+          ],
+          "es-MX": [
+            "Fecha y hora de captura, marca y modelo de la cámara, coordenadas GPS, velocidad de obturación, ISO, temperatura del sensor, orientación y software de edición",
+            "Solo el nombre del archivo y el ícono que usa el sistema operativo",
+            "Solo la resolución en píxeles y nada más",
+            "Solo un identificador aleatorio sin relación con el dispositivo o la captura"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Capture date and time, camera make and model, GPS coordinates, shutter speed, ISO, sensor temperature, orientation and editing software",
+          "es-MX": "Fecha y hora de captura, marca y modelo de la cámara, coordenadas GPS, velocidad de obturación, ISO, temperatura del sensor, orientación y software de edición"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The EXIF block of a photo is a rich container of technical details that can reveal when, where and with what device the image was taken, and whether it was later edited.",
+              "es-MX": "El bloque EXIF de una fotografía es un contenedor rico de detalles técnicos que pueden revelar cuándo, dónde y con qué dispositivo se tomó la imagen, y si después fue editada."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "metadatos-documentos",
+        "Question Text": {
+          "en-US": [
+            "According to the material, which set of fields is characteristic of metadata in documents such as Word files or PDFs?"
+          ],
+          "es-MX": [
+            "Según el material, ¿qué conjunto de campos es característico de metadatos en documentos como archivos Word o PDFs?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Author, creation date, modification date, editor used, software version and in some formats revision history",
+            "Only the document’s visible title on the first page",
+            "Only the printer model used to print the file",
+            "Only the number of pages and the font color"
+          ],
+          "es-MX": [
+            "Autor, fecha de creación, fecha de modificación, editor utilizado, versión del software y en algunos formatos historial de revisiones",
+            "Solo el título visible del documento en la primera página",
+            "Solo el modelo de impresora usado para imprimir el archivo",
+            "Solo el número de páginas y el color de la fuente"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Author, creation date, modification date, editor used, software version and in some formats revision history",
+          "es-MX": "Autor, fecha de creación, fecha de modificación, editor utilizado, versión del software y en algunos formatos historial de revisiones"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Document metadata can reveal who created or edited a file and when.",
+                "Changes in creation or modification dates may signal potential manipulation.",
+                "Revision history (if available) shows how the content evolved over time."
+              ],
+              "es-MX": [
+                "Los metadatos de documentos pueden revelar quién creó o editó un archivo y en qué momento.",
+                "Cambios en fechas de creación o modificación pueden indicar manipulación.",
+                "El historial de revisiones (cuando existe) muestra cómo ha evolucionado el contenido."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "metadatos-video",
+        "Question Text": {
+          "en-US": [
+            "Which option BEST describes relevant metadata in videos from a forensic perspective?"
+          ],
+          "es-MX": [
+            "¿Qué opción describe MEJOR los metadatos relevantes en videos desde la perspectiva forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Duration, resolution, GPS data, recording date, codec, embedded thumbnails and camera used",
+            "Only the file extension (.mp4, .avi, etc.)",
+            "Only the volume level used during playback",
+            "Only the color of the video player interface"
+          ],
+          "es-MX": [
+            "Duración, resolución, datos GPS, fecha de grabación, códec, miniaturas incrustadas y cámara utilizada",
+            "Solo la extensión de archivo (.mp4, .avi, etc.)",
+            "Solo el nivel de volumen usado durante la reproducción",
+            "Solo el color de la interfaz del reproductor de video"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Duration, resolution, GPS data, recording date, codec, embedded thumbnails and camera used",
+          "es-MX": "Duración, resolución, datos GPS, fecha de grabación, códec, miniaturas incrustadas y cámara utilizada"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "These fields help identify when and where a video was recorded, with which device and how it is encoded, which can be critical for authenticity and correlation with other evidence.",
+              "es-MX": "Estos campos ayudan a identificar cuándo y dónde se grabó un video, con qué dispositivo y cómo está codificado, lo cual puede ser crítico para la autenticidad y la correlación con otra evidencia."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "metadatos-dispositivo-ejemplos",
+        "Question Text": {
+          "en-US": [
+            "Which group BEST represents device metadata described in the class?"
+          ],
+          "es-MX": [
+            "¿Qué grupo representa MEJOR metadatos de dispositivo descritos en la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Phone model, operating system, IMEI number, Android ID, device name, time zone, last power-on, MAC address, installed apps and app versions",
+            "Only the wallpaper image and ringtone melody",
+            "Only the amount of RAM and storage space available",
+            "Only the battery health percentage and charging speed"
+          ],
+          "es-MX": [
+            "Modelo del teléfono, sistema operativo, número IMEI, Android ID, nombre del dispositivo, zona horaria, último encendido, dirección MAC, aplicaciones instaladas y versiones de apps",
+            "Solo la imagen de fondo de pantalla y la melodía del tono de llamada",
+            "Solo la cantidad de RAM y el espacio de almacenamiento disponible",
+            "Solo el porcentaje de salud de la batería y la velocidad de carga"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Phone model, operating system, IMEI number, Android ID, device name, time zone, last power-on, MAC address, installed apps and app versions",
+          "es-MX": "Modelo del teléfono, sistema operativo, número IMEI, Android ID, nombre del dispositivo, zona horaria, último encendido, dirección MAC, aplicaciones instaladas y versiones de apps"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Device metadata links evidence to a specific physical or logical device.",
+                "IMEI, MAC and OS version are useful to differentiate and compare devices.",
+                "Time zone and last power-on help detect suspicious changes or activity windows."
+              ],
+              "es-MX": [
+                "Los metadatos de dispositivo vinculan la evidencia con un equipo físico o lógico específico.",
+                "IMEI, MAC y versión de sistema operativo ayudan a diferenciar y comparar dispositivos.",
+                "Zona horaria y último encendido ayudan a detectar cambios sospechosos o ventanas de actividad."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "uso-forense-metadatos-dispositivo",
+        "Question Text": {
+          "en-US": [
+            "What is a key forensic use of device metadata mentioned in the material?"
+          ],
+          "es-MX": [
+            "¿Cuál es un uso forense clave de los metadatos de dispositivo mencionado en el material?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Associating a file or message with a specific device and detecting changes in time zone or configuration that may indicate manipulation attempts",
+            "Changing the phone’s visual theme to dark mode for comfort",
+            "Improving battery performance by disabling background apps",
+            "Automatically backing up all content to social networks"
+          ],
+          "es-MX": [
+            "Asociar un archivo o mensaje con un dispositivo específico y detectar cambios de zona horaria o configuración que puedan indicar intentos de manipulación",
+            "Cambiar el tema visual del teléfono a modo oscuro por comodidad",
+            "Mejorar el rendimiento de la batería deshabilitando apps en segundo plano",
+            "Respaldar automáticamente todo el contenido en redes sociales"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Associating a file or message with a specific device and detecting changes in time zone or configuration that may indicate manipulation attempts",
+          "es-MX": "Asociar un archivo o mensaje con un dispositivo específico y detectar cambios de zona horaria o configuración que puedan indicar intentos de manipulación"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "Device metadata allows the examiner to tie evidence to the analyzed phone or system and to spot unusual configuration changes that do not match the rest of the history.",
+              "es-MX": "Los metadatos de dispositivo permiten al perito vincular la evidencia con el teléfono o sistema analizado y detectar cambios de configuración inusuales que no encajan con el resto del historial."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "relacion-tipos-metadatos",
+        "Question Text": {
+          "en-US": [
+            "How does the class describe the relationship between message, file and device metadata in a complete forensic analysis?"
+          ],
+          "es-MX": [
+            "¿Cómo describe la clase la relación entre metadatos de mensaje, de archivo y de dispositivo en un análisis forense completo?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They must be combined so that message metadata shows when and who, file metadata shows how and where, and device metadata shows on which environment the event occurred",
+            "They are independent and should never be correlated to avoid confusion",
+            "Only message metadata matters; file and device metadata are irrelevant",
+            "Only device metadata is used, while message and file metadata are always discarded"
+          ],
+          "es-MX": [
+            "Deben combinarse de forma que los metadatos de mensaje muestren cuándo y quién, los de archivo muestren cómo y dónde, y los de dispositivo muestren en qué entorno ocurrió el evento",
+            "Son independientes y nunca deben correlacionarse para evitar confusión",
+            "Solo importan los metadatos de mensaje; los de archivo y dispositivo son irrelevantes",
+            "Solo se usan metadatos de dispositivo, mientras que los de mensaje y archivo siempre se descartan"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They must be combined so that message metadata shows when and who, file metadata shows how and where, and device metadata shows on which environment the event occurred",
+          "es-MX": "Deben combinarse de forma que los metadatos de mensaje muestren cuándo y quién, los de archivo muestren cómo y dónde, y los de dispositivo muestren en qué entorno ocurrió el evento"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Each type of metadata covers a different dimension of the same event.",
+                "By correlating them, the examiner reconstructs a more complete and coherent story.",
+                "This multi-layer view is essential for strong, defensible conclusions."
+              ],
+              "es-MX": [
+                "Cada tipo de metadatos cubre una dimensión distinta del mismo suceso.",
+                "Al correlacionarlos, el perito reconstruye una historia más completa y coherente.",
+                "Esta visión en varias capas es esencial para conclusiones sólidas y defendibles."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "ejemplo-integrado-foto",
+        "Question Text": {
+          "en-US": [
+            "In the example with IMG_20230912_183020.jpg, what is the MAIN reason the class concludes that the photo is authentic and taken from the analyzed device?"
+          ],
+          "es-MX": [
+            "En el ejemplo con IMG_20230912_183020.jpg, ¿cuál es la razón PRINCIPAL por la que la clase concluye que la foto es auténtica y tomada desde el dispositivo analizado?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because EXIF metadata (date and time, GPS, device model, rear camera, no editing software) matches the phone settings and is consistent with the WhatsApp message timeline",
+            "Because the file name starts with IMG_, which always guarantees authenticity",
+            "Because the user verbally confirmed that the photo is genuine, without reviewing metadata",
+            "Because the operating system automatically marks all photos as authentic by default"
+          ],
+          "es-MX": [
+            "Porque los metadatos EXIF (fecha y hora, GPS, modelo de dispositivo, cámara trasera, sin software de edición) coinciden con la configuración del teléfono y son consistentes con la línea de tiempo del mensaje de WhatsApp",
+            "Porque el nombre de archivo comienza con IMG_, lo que siempre garantiza autenticidad",
+            "Porque el usuario confirmó verbalmente que la foto es genuina, sin revisar metadatos",
+            "Porque el sistema operativo marca automáticamente todas las fotos como auténticas por defecto"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because EXIF metadata (date and time, GPS, device model, rear camera, no editing software) matches the phone settings and is consistent with the WhatsApp message timeline",
+          "es-MX": "Porque los metadatos EXIF (fecha y hora, GPS, modelo de dispositivo, cámara trasera, sin software de edición) coinciden con la configuración del teléfono y son consistentes con la línea de tiempo del mensaje de WhatsApp"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The conclusion is based on correlation: EXIF, device configuration and WhatsApp timestamps all tell the same story, and there is no indication of external editing software.",
+              "es-MX": "La conclusión se basa en la correlación: EXIF, configuración del dispositivo y timestamps de WhatsApp cuentan la misma historia, y no hay indicios de software de edición externo."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "deteccion-manipulacion",
+        "Question Text": {
+          "en-US": [
+            "Which situation would MOST strongly suggest possible manipulation or editing of a photo according to the class discussion on metadata?"
+          ],
+          "es-MX": [
+            "¿Qué situación sugeriría MÁS fuertemente una posible manipulación o edición de una foto según lo visto sobre metadatos?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "EXIF metadata showing editing software, inconsistent creation/modification dates, or GPS data that does not match the alleged location",
+            "File size larger than 1 MB, regardless of context",
+            "A very common camera model such as a popular smartphone brand",
+            "File name written in uppercase instead of lowercase"
+          ],
+          "es-MX": [
+            "Metadatos EXIF que muestran software de edición, fechas de creación/modificación inconsistentes o datos GPS que no coinciden con la ubicación alegada",
+            "Tamaño de archivo mayor a 1 MB, sin importar el contexto",
+            "Un modelo de cámara muy común como un teléfono inteligente popular",
+            "Nombre de archivo escrito en mayúsculas en lugar de minúsculas"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "EXIF metadata showing editing software, inconsistent creation/modification dates, or GPS data that does not match the alleged location",
+          "es-MX": "Metadatos EXIF que muestran software de edición, fechas de creación/modificación inconsistentes o datos GPS que no coinciden con la ubicación alegada"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Editing software tags may indicate that the image was altered after capture.",
+                "Creation and modification timestamps that do not align with the story are red flags.",
+                "GPS information that contradicts the declared place suggests possible falsification."
+              ],
+              "es-MX": [
+                "Las etiquetas de software de edición pueden indicar que la imagen fue alterada después de la captura.",
+                "Fechas de creación y modificación que no cuadran con la narrativa son señales de alerta.",
+                "Información GPS que contradice el lugar declarado sugiere posible falsificación."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "geolocalizacion-metadatos",
+        "Question Text": {
+          "en-US": [
+            "What is the MAIN forensic value of GPS metadata in photos and videos?"
+          ],
+          "es-MX": [
+            "¿Cuál es el valor forense PRINCIPAL de los metadatos GPS en fotos y videos?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They allow placing the user or device at a specific location and time, which can be correlated with other evidence",
+            "They automatically increase the resolution of the image or video",
+            "They are used only to customize the language of the device’s interface",
+            "They serve exclusively to calculate the remaining battery life during recording"
+          ],
+          "es-MX": [
+            "Permiten situar al usuario o dispositivo en una ubicación y momento específicos, que pueden correlacionarse con otras evidencias",
+            "Incrementan automáticamente la resolución de la imagen o video",
+            "Se usan solo para personalizar el idioma de la interfaz del dispositivo",
+            "Sirven exclusivamente para calcular la batería restante durante la grabación"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They allow placing the user or device at a specific location and time, which can be correlated with other evidence",
+          "es-MX": "Permiten situar al usuario o dispositivo en una ubicación y momento específicos, que pueden correlacionarse con otras evidencias"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "GPS coordinates in EXIF or video metadata can confirm or challenge testimonies about where an event occurred, and can be matched with chats, logs or external records.",
+              "es-MX": "Las coordenadas GPS en EXIF o metadatos de video pueden confirmar o cuestionar testimonios sobre dónde ocurrió un evento, y pueden cruzarse con chats, logs o registros externos."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "correlacion-metadatos",
+        "Question Text": {
+          "en-US": [
+            "Why does the class emphasize correlating metadata across messages, files and devices instead of analyzing each element in isolation?"
+          ],
+          "es-MX": [
+            "¿Por qué la clase enfatiza correlacionar los metadatos entre mensajes, archivos y dispositivos en lugar de analizar cada elemento aislado?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because only when combined can they provide a complete and coherent story about what happened, when, where and with which device",
+            "Because correlation eliminates the need for any documentation or hash validation",
+            "Because analyzing elements in isolation is legally forbidden in all cases",
+            "Because it is the only way to reduce the size of the case files"
+          ],
+          "es-MX": [
+            "Porque solo al combinarlos pueden ofrecer una historia completa y coherente sobre qué ocurrió, cuándo, dónde y con qué dispositivo",
+            "Porque la correlación elimina la necesidad de cualquier documentación o validación con hash",
+            "Porque analizar elementos aislados está legalmente prohibido en todos los casos",
+            "Porque es la única forma de reducir el tamaño de los archivos del caso"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because only when combined can they provide a complete and coherent story about what happened, when, where and with which device",
+          "es-MX": "Porque solo al combinarlos pueden ofrecer una historia completa y coherente sobre qué ocurrió, cuándo, dónde y con qué dispositivo"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "A timestamp alone is less meaningful if we do not know which device or chat it belongs to.",
+                "EXIF data gains value when aligned with chat timestamps and device configuration.",
+                "Correlation turns isolated data points into a consistent narrative for the case."
+              ],
+              "es-MX": [
+                "Un timestamp aislado dice poco si no sabemos a qué dispositivo o chat pertenece.",
+                "Los datos EXIF cobran valor cuando se alinean con los horarios de chats y la configuración del dispositivo.",
+                "La correlación convierte puntos de datos sueltos en una narrativa coherente para el caso."
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

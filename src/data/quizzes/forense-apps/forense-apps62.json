@@ -1,0 +1,531 @@
+{
+    "meta": {
+      "slug": "forense-apps62",
+      "title": "Actividad de encargo: informe forense completo",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 5,
+      "classNo": 62,
+      "description": "Actividad integradora donde el estudiante elabora un informe forense digital completo, basado en un caso simulado de filtración de información confidencial, aplicando principios legales, técnicos, éticos y redacción pericial.",
+      "tags": [
+        "actividad de encargo",
+        "informe forense",
+        "cadena de custodia",
+        "análisis técnico",
+        "hallazgos",
+        "conclusiones",
+        "unidad V"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "Propósito de la actividad",
+        "Question Text": {
+          "en-US": [
+            "According to the class, what is the main learning objective of the assignment activity in Class 62?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿cuál es el objetivo principal de aprendizaje de la actividad de encargo en la Clase 62?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To integrate all the knowledge acquired in the unit by drafting a complete digital forensic report based on a simulated case, documenting processes, justifying findings and writing clear conclusions.",
+            "To design a graphical user interface for a security application without performing any forensic analysis.",
+            "To memorize the names of as many forensic tools as possible without using them in a real workflow.",
+            "To practice only theoretical concepts of law, without touching any digital evidence or writing a report."
+          ],
+          "es-MX": [
+            "Integrar todos los conocimientos adquiridos en la unidad mediante la elaboración de un informe forense digital completo basado en un caso simulado, documentando procesos, justificando hallazgos y redactando conclusiones claras.",
+            "Diseñar una interfaz gráfica de usuario para una aplicación de seguridad sin realizar ningún análisis forense.",
+            "Memorizar la mayor cantidad posible de nombres de herramientas forenses sin usarlas en un flujo de trabajo real.",
+            "Practicar solo conceptos teóricos de derecho, sin trabajar con evidencia digital ni redactar un informe."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To integrate all the knowledge acquired in the unit by drafting a complete digital forensic report based on a simulated case, documenting processes, justifying findings and writing clear conclusions.",
+          "es-MX": "Integrar todos los conocimientos adquiridos en la unidad mediante la elaboración de un informe forense digital completo basado en un caso simulado, documentando procesos, justificando hallazgos y redactando conclusiones claras."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "The activity is described as the closure of the unit, where the student applies legal, ethical and technical principles.",
+                "It focuses on documenting processes, preserving evidence integrity and drafting a professional report.",
+                "The simulated case is used as a realistic scenario similar to real expert reports.",
+                "The goal is to demonstrate the ability to justify findings and present clear, objective conclusions."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "La actividad se presenta como el cierre de la unidad, donde el estudiante aplica principios legales, éticos y técnicos.",
+                "Se centra en documentar procesos, mantener la integridad de la evidencia y elaborar un informe profesional.",
+                "El caso simulado funciona como un escenario realista similar a peritajes auténticos.",
+                "La meta es demostrar la capacidad de justificar hallazgos y presentar conclusiones claras y objetivas."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Caso simulado",
+        "Question Text": {
+          "en-US": [
+            "In the simulated case of suspected confidential information leakage, what is the main task of the forensic analyst according to the class material?"
+          ],
+          "es-MX": [
+            "En el caso simulado de presunta filtración de información confidencial, ¿cuál es la tarea principal del analista forense según el material de la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To identify relevant evidence on the employee’s corporate laptop, review files and recent documents, verify the use of email, messaging and cloud platforms, determine if there was extraction or transfer of files and produce a complete report for the legal department.",
+            "To change the company’s security policies without any analysis of the device.",
+            "To interview the suspect and decide personally whether they are guilty or innocent.",
+            "To physically destroy the laptop so that nobody else can access its contents."
+          ],
+          "es-MX": [
+            "Identificar evidencia relevante en la laptop corporativa del empleado, revisar archivos y documentos recientes, verificar el uso de correo, mensajería y plataformas en la nube, determinar si hubo extracción o transferencia de archivos y elaborar un informe completo para dirección jurídica.",
+            "Cambiar las políticas de seguridad de la empresa sin realizar ningún análisis del equipo.",
+            "Entrevistar al sospechoso y decidir personalmente si es culpable o inocente.",
+            "Destruir físicamente la laptop para que nadie más pueda acceder a su contenido."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To identify relevant evidence on the employee’s corporate laptop, review files and recent documents, verify the use of email, messaging and cloud platforms, determine if there was extraction or transfer of files and produce a complete report for the legal department.",
+          "es-MX": "Identificar evidencia relevante en la laptop corporativa del empleado, revisar archivos y documentos recientes, verificar el uso de correo, mensajería y plataformas en la nube, determinar si hubo extracción o transferencia de archivos y elaborar un informe completo para dirección jurídica."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The description of the simulated case lists specific responsibilities for the analyst."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Reviewing recent documents and file history on the corporate laptop.",
+                "Checking the use of email, messaging apps and cloud platforms for possible leaks.",
+                "Determining whether files were copied, extracted or transferred without authorization.",
+                "Documenting all this in a complete forensic report addressed to the legal or management team."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La descripción del caso simulado enumera responsabilidades específicas para el analista."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Revisar documentos recientes e historial de archivos en la laptop corporativa.",
+                "Verificar el uso de correo, apps de mensajería y plataformas en la nube para posibles filtraciones.",
+                "Determinar si hubo copias, extracción o transferencia de archivos sin autorización.",
+                "Documentar todo en un informe forense completo dirigido al área jurídica o directiva."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Alcance y limitaciones",
+        "Question Text": {
+          "en-US": [
+            "What should the ‘Scope and limitations’ section include in the student’s forensic report according to the activity instructions?"
+          ],
+          "es-MX": [
+            "¿Qué debe incluir la sección de ‘Alcance y limitaciones’ en el informe forense del estudiante según las instrucciones de la actividad?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Evidence delivered, procedures performed, techniques that could not be applied due to time or access constraints and any relevant restrictions of the case.",
+            "Only a personal opinion about how difficult the case was and whether the student liked it.",
+            "A detailed biography of the suspect and their relationship with the company.",
+            "A list of all the forensic tools that exist, even if none of them were used in the case."
+          ],
+          "es-MX": [
+            "La evidencia que se entregó, los procedimientos realizados, las técnicas que no pudieron aplicarse por limitaciones de tiempo o acceso y cualquier restricción relevante del caso.",
+            "Solo una opinión personal sobre qué tan difícil fue el caso y si al estudiante le gustó.",
+            "Una biografía detallada del sospechoso y su relación con la empresa.",
+            "Un listado de todas las herramientas forenses que existen, aunque no se hayan utilizado en el caso."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Evidence delivered, procedures performed, techniques that could not be applied due to time or access constraints and any relevant restrictions of the case.",
+          "es-MX": "La evidencia que se entregó, los procedimientos realizados, las técnicas que no pudieron aplicarse por limitaciones de tiempo o acceso y cualquier restricción relevante del caso."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "The scope must clarify which evidence was actually available to the analyst.",
+                "The section should list the procedures that were carried out in the case.",
+                "It must also mention techniques that could not be used (e.g., no physical acquisition due to lack of access).",
+                "Stating these limitations helps the reader understand what the report can and cannot affirm."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "El alcance debe aclarar qué evidencia estuvo realmente disponible para el analista.",
+                "La sección debe enumerar los procedimientos que efectivamente se realizaron.",
+                "También debe mencionar técnicas que no pudieron aplicarse (por ejemplo, no se hizo adquisición física por falta de acceso).",
+                "Expresar estas limitaciones ayuda al lector a entender qué puede y qué no puede afirmar el informe."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Metodología forense",
+        "Question Text": {
+          "en-US": [
+            "Which sequence best represents the forensic methodology that the student must document, aligned with ISO/IEC 27037 principles?"
+          ],
+          "es-MX": [
+            "¿Qué secuencia representa mejor la metodología forense que el estudiante debe documentar, alineada con los principios de ISO/IEC 27037?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Identification of evidence, collection/acquisition, preservation and hash calculation, technical analysis, documentation of results and elaboration of conclusions.",
+            "Directly writing conclusions, and later deciding whether evidence and analysis are necessary.",
+            "Only turning the device on and browsing it informally without documenting steps.",
+            "Focusing exclusively on legal theory without touching any digital device or data."
+          ],
+          "es-MX": [
+            "Identificación de la evidencia, recolección/adquisición, preservación y cálculo de hash, análisis técnico, documentación de resultados y elaboración de conclusiones.",
+            "Escribir las conclusiones directamente y después decidir si la evidencia y el análisis son necesarios.",
+            "Encender el dispositivo y explorarlo de forma informal sin documentar los pasos.",
+            "Enfocarse exclusivamente en teoría legal sin tocar ningún dispositivo o dato digital."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Identification of evidence, collection/acquisition, preservation and hash calculation, technical analysis, documentation of results and elaboration of conclusions.",
+          "es-MX": "Identificación de la evidencia, recolección/adquisición, preservación y cálculo de hash, análisis técnico, documentación de resultados y elaboración de conclusiones."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "The class explicitly aligns the methodology with ISO/IEC 27037 guidelines.",
+                "It emphasizes a structured workflow: identify, acquire, preserve, analyze, document and conclude.",
+                "Hash calculation is part of preservation to protect integrity.",
+                "This sequence must appear clearly in the ‘Methodology’ section of the student’s report."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "La clase alinea explícitamente la metodología con las directrices de ISO/IEC 27037.",
+                "Se enfatiza un flujo estructurado: identificar, adquirir, preservar, analizar, documentar y concluir.",
+                "El cálculo de hashes forma parte de la preservación para proteger la integridad.",
+                "Esta secuencia debe aparecer claramente en la sección de ‘Metodología’ del informe del estudiante."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Cadena de custodia",
+        "Question Text": {
+          "en-US": [
+            "What requirement is highlighted in the class for the chain of custody section in the student’s report?"
+          ],
+          "es-MX": [
+            "¿Qué requisito se destaca en la clase para la sección de cadena de custodia en el informe del estudiante?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It must include a table with who delivered and who received the device, date and time, device condition and subsequent transfers or accesses, with no empty gaps.",
+            "It should only mention that “the device was received at some point”, without details.",
+            "It is enough to state that the device was handled carefully, without documenting who accessed it.",
+            "The chain of custody is optional and can be omitted if the case is only academic."
+          ],
+          "es-MX": [
+            "Debe incluir una tabla con quién entregó y quién recibió el dispositivo, fecha y hora, estado del dispositivo y traslados o accesos posteriores, sin espacios vacíos.",
+            "Solo debe mencionar que “en algún momento se recibió el dispositivo”, sin detalles.",
+            "Basta con afirmar que el dispositivo fue manipulado con cuidado, sin documentar quién tuvo acceso.",
+            "La cadena de custodia es opcional y puede omitirse si el caso es solo académico."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It must include a table with who delivered and who received the device, date and time, device condition and subsequent transfers or accesses, with no empty gaps.",
+          "es-MX": "Debe incluir una tabla con quién entregó y quién recibió el dispositivo, fecha y hora, estado del dispositivo y traslados o accesos posteriores, sin espacios vacíos."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The material insists that the chain of custody must be “complete and without empty spaces”."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Each transfer or access to the device must be registered.",
+                "Dates, times and the state of the device at each step must be documented.",
+                "A clear table format helps maintain traceability and legal defensibility.",
+                "Even in academic practice, following this standard trains the student for real-world cases."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El material insiste en que la cadena de custodia debe estar “completa y sin espacios vacíos”."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Cada traslado o acceso al dispositivo debe registrarse.",
+                "Se deben documentar fechas, horas y el estado del dispositivo en cada paso.",
+                "Un formato de tabla claro ayuda a mantener la trazabilidad y la defensa jurídica.",
+                "Aun en una práctica académica, seguir este estándar entrena al estudiante para casos reales."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Análisis técnico",
+        "Question Text": {
+          "en-US": [
+            "Which group of elements belongs to the ‘Technical analysis’ section in this assignment, according to the class?"
+          ],
+          "es-MX": [
+            "¿Cuál de los siguientes conjuntos de elementos pertenece a la sección de ‘Análisis técnico’ en esta actividad, según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "File system detected, folders analyzed, recent documents, evidence of file transfer or deletion, browsing history, suspicious activity, traces of messaging or document sending, including screenshots with date and description.",
+            "Only the student’s personal opinion about the suspect’s behavior and personality.",
+            "A general description of the company’s history and mission statement.",
+            "Only a list of laws and regulations, without reference to any digital data."
+          ],
+          "es-MX": [
+            "Sistema de archivos encontrado, carpetas analizadas, documentos recientes, evidencia de transferencia o borrado de archivos, historial de navegación, actividad sospechosa, trazas de mensajería o envío de documentos, incluyendo capturas de pantalla con fecha y descripción.",
+            "Solo la opinión personal del estudiante sobre el comportamiento y la personalidad del sospechoso.",
+            "Una descripción general de la historia y misión de la empresa.",
+            "Solo un listado de leyes y reglamentos, sin referencia a datos digitales."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "File system detected, folders analyzed, recent documents, evidence of file transfer or deletion, browsing history, suspicious activity, traces of messaging or document sending, including screenshots with date and description.",
+          "es-MX": "Sistema de archivos encontrado, carpetas analizadas, documentos recientes, evidencia de transferencia o borrado de archivos, historial de navegación, actividad sospechosa, trazas de mensajería o envío de documentos, incluyendo capturas de pantalla con fecha y descripción."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "The class specifies that technical analysis must describe what was reviewed inside the device.",
+                "This includes file system, folders, recent documents, browsing history and application traces.",
+                "It must also report evidence of transfers, deletions and suspicious activity.",
+                "Screenshots must be dated and described to support the narrative of the analysis."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "La clase indica que el análisis técnico debe describir qué se revisó dentro del dispositivo.",
+                "Incluye sistema de archivos, carpetas, documentos recientes, historial de navegación y trazas de aplicaciones.",
+                "También debe reportar evidencia de transferencias, borrados y actividad sospechosa.",
+                "Las capturas de pantalla deben ir con fecha y descripción para respaldar la narrativa del análisis."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Hallazgos vs. conclusiones",
+        "Question Text": {
+          "en-US": [
+            "According to the activity description, what is the main difference between the ‘Findings’ and ‘Conclusions’ sections in the student’s report?"
+          ],
+          "es-MX": [
+            "Según la descripción de la actividad, ¿cuál es la diferencia principal entre las secciones de ‘Hallazgos’ y ‘Conclusiones’ en el informe del estudiante?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Findings summarize the results of the analysis in terms of confirmed evidence and observed activity, while conclusions answer what happened according to the evidence, what cannot be assured and whether the initial hypothesis is confirmed or not.",
+            "Findings are a space for personal opinions, and conclusions are used to describe the tools used.",
+            "Findings are optional and can be omitted, while conclusions are a narrative story of what the expert imagines happened.",
+            "Both sections contain exactly the same text and there is no functional difference between them."
+          ],
+          "es-MX": [
+            "Los hallazgos resumen los resultados del análisis en términos de evidencias confirmadas y actividad observada, mientras que las conclusiones responden qué ocurrió según la evidencia, qué no puede asegurarse y si se confirma o no la hipótesis inicial.",
+            "Los hallazgos son un espacio para opiniones personales y las conclusiones se usan para describir las herramientas utilizadas.",
+            "Los hallazgos son opcionales y pueden omitirse, mientras que las conclusiones son un relato de lo que el perito imagina que pasó.",
+            "Ambas secciones contienen exactamente el mismo texto y no hay diferencia funcional entre ellas."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Findings summarize the results of the analysis in terms of confirmed evidence and observed activity, while conclusions answer what happened according to the evidence, what cannot be assured and whether the initial hypothesis is confirmed or not.",
+          "es-MX": "Los hallazgos resumen los resultados del análisis en términos de evidencias confirmadas y actividad observada, mientras que las conclusiones responden qué ocurrió según la evidencia, qué no puede asegurarse y si se confirma o no la hipótesis inicial."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The material separates ‘Hallazgos’ and ‘Conclusiones’ with different functions."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Findings: list the evidences, verified activities, confirmed or refuted elements and data-based observations.",
+                "Conclusions: interpret these findings to answer the investigation questions in an objective and limited way.",
+                "The conclusions must also state explicitly what cannot be affirmed with the available evidence.",
+                "Together they provide a data-based path from raw evidence to legal-relevant statements."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El material separa ‘Hallazgos’ y ‘Conclusiones’ con funciones distintas."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Hallazgos: enumeran las evidencias, actividades verificadas, elementos confirmados o refutados y observaciones basadas en datos.",
+                "Conclusiones: interpretan esos hallazgos para responder las preguntas de la investigación de forma objetiva y acotada.",
+                "Las conclusiones también deben indicar explícitamente qué no puede asegurarse con la evidencia disponible.",
+                "Juntas proporcionan un camino basado en datos desde la evidencia cruda hasta afirmaciones relevantes en el ámbito jurídico."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Checklist y evaluación",
+        "Question Text": {
+          "en-US": [
+            "According to the checklist, which combination reflects key elements that the student must verify before submitting the forensic report?"
+          ],
+          "es-MX": [
+            "Según el checklist, ¿qué combinación refleja elementos clave que el estudiante debe verificar antes de entregar el informe forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Complete header, clear summary, ordered methodology, correct chain of custody, evidence described with hashes, screenshots with date and explanation, data-based findings, objective conclusions, technical writing without personal judgments and clean professional format.",
+            "A striking cover image, many colors and emojis, informal language and personal opinions about the suspect.",
+            "Only a long theoretical introduction about digital forensics, without specific data from the case.",
+            "A list of tool names and a brief comment about which one the student liked the most."
+          ],
+          "es-MX": [
+            "Encabezado completo, resumen claro, metodología ordenada, cadena de custodia correcta, evidencia descrita con hashes, capturas con fecha y explicación, hallazgos basados en datos, conclusiones objetivas, redacción técnica sin juicios personales y formato limpio y profesional.",
+            "Una portada llamativa, muchos colores y emojis, lenguaje informal y opiniones personales sobre el sospechoso.",
+            "Solo una introducción teórica extensa sobre forense digital, sin datos específicos del caso.",
+            "Un listado de nombres de herramientas y un breve comentario sobre cuál le gustó más al estudiante."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Complete header, clear summary, ordered methodology, correct chain of custody, evidence described with hashes, screenshots with date and explanation, data-based findings, objective conclusions, technical writing without personal judgments and clean professional format.",
+          "es-MX": "Encabezado completo, resumen claro, metodología ordenada, cadena de custodia correcta, evidencia descrita con hashes, capturas con fecha y explicación, hallazgos basados en datos, conclusiones objetivas, redacción técnica sin juicios personales y formato limpio y profesional."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "The checklist section of the class explicitly mentions these items as verification points.",
+                "They cover structure (header, summary, methodology), integrity (hashes, chain of custody), analysis (findings and conclusions) and style (technical, objective writing).",
+                "Screenshots must always be contextualized with date and explanation, not left alone.",
+                "A clean and professional format reinforces the credibility of the document."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "La sección del checklist menciona explícitamente estos elementos como puntos de verificación.",
+                "Cubren estructura (encabezado, resumen, metodología), integridad (hashes, cadena de custodia), análisis (hallazgos y conclusiones) y estilo (redacción técnica y objetiva).",
+                "Las capturas siempre deben ir contextualizadas con fecha y explicación, no colocarse aisladas.",
+                "Un formato limpio y profesional refuerza la credibilidad del documento."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Reflexión final",
+        "Question Text": {
+          "en-US": [
+            "In the reflection of the class, why is the forensic report described as a ‘bridge’ between the technical and legal domains?"
+          ],
+          "es-MX": [
+            "En la reflexión de la clase, ¿por qué se describe al informe forense como un ‘puente’ entre lo técnico y lo jurídico?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it transforms technical procedures and digital evidence into clear, structured information that legal decision-makers (management, legal department, judges) can use to make informed decisions.",
+            "Because it replaces the work of lawyers and judges, making courts unnecessary.",
+            "Because it is written only in legal language and cannot be understood by technical staff.",
+            "Because it contains personal opinions that help decide who is guilty, without the need for evidence."
+          ],
+          "es-MX": [
+            "Porque transforma procedimientos técnicos y evidencia digital en información clara y estructurada que los tomadores de decisiones legales (dirección, área jurídica, jueces) pueden utilizar para decidir de forma informada.",
+            "Porque sustituye el trabajo de abogados y jueces, haciendo innecesarios los tribunales.",
+            "Porque se redacta únicamente en lenguaje jurídico y no puede ser entendido por personal técnico.",
+            "Porque contiene opiniones personales que ayudan a decidir quién es culpable, sin necesidad de evidencia."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it transforms technical procedures and digital evidence into clear, structured information that legal decision-makers (management, legal department, judges) can use to make informed decisions.",
+          "es-MX": "Porque transforma procedimientos técnicos y evidencia digital en información clara y estructurada que los tomadores de decisiones legales (dirección, área jurídica, jueces) pueden utilizar para decidir de forma informada."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The reflection emphasizes that the forensic report connects the technical work of the analyst with the legal and institutional decision-making process."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Technical tasks (hashing, acquisition, analysis) by themselves are not enough; they must be explained in a report.",
+                "The report translates those tasks into a narrative that non-technical audiences can understand.",
+                "Legal and managerial actors rely on this document to make sanctions, policy changes or legal actions.",
+                "This is why clarity, structure and neutrality are crucial in this final product."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La reflexión destaca que el informe forense conecta el trabajo técnico del analista con la toma de decisiones legales e institucionales."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Las tareas técnicas (hashes, adquisición, análisis) por sí solas no bastan; deben explicarse en un informe.",
+                "El informe traduce esas tareas a una narrativa que audiencias no técnicas puedan comprender.",
+                "Los actores jurídicos y directivos se apoyan en este documento para aplicar sanciones, cambiar políticas o emprender acciones legales.",
+                "Por ello, la claridad, la estructura y la neutralidad son críticas en este producto final."
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

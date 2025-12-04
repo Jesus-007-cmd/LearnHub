@@ -1,0 +1,961 @@
+{
+    "meta": {
+      "slug": "forense-apps70",
+      "title": "Simulación de exposición pública del caso forense",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 5,
+      "classNo": 70,
+      "description": "Defensa grupal del caso forense ante un jurado académico, reproduciendo un entorno profesional de presentación pública con énfasis en claridad, estructura, trabajo en equipo y rigor técnico.",
+      "tags": [
+        "exposición pública",
+        "defensa grupal",
+        "jurado académico",
+        "presentación profesional",
+        "trabajo en equipo",
+        "unidad V"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "Naturaleza de la exposición pública",
+        "Question Text": {
+          "en-US": [
+            "What mainly characterizes the public presentation of the forensic case in Class 70 compared to previous classes?"
+          ],
+          "es-MX": [
+            "¿Qué caracteriza principalmente la exposición pública del caso forense en la Clase 70 en comparación con las clases anteriores?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It simulates a professional forum (conference, evaluation committee, corporate presentation) where the whole case is defended as a team.",
+            "It focuses only on individual written work without any oral presentation.",
+            "It is limited to practicing tools without explaining the case.",
+            "It is only a rehearsal of reading the report line by line."
+          ],
+          "es-MX": [
+            "Simula un foro profesional (congreso, comité evaluador, presentación corporativa) donde se defiende todo el caso en equipo.",
+            "Se centra solo en trabajo escrito individual sin exposición oral.",
+            "Se limita a practicar herramientas sin explicar el caso.",
+            "Es solo un ensayo de lectura del informe línea por línea."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It simulates a professional forum (conference, evaluation committee, corporate presentation) where the whole case is defended as a team.",
+          "es-MX": "Simula un foro profesional (congreso, comité evaluador, presentación corporativa) donde se defiende todo el caso en equipo."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Class 70 goes beyond individual defense and visual design: it recreates a real-world scenario where the full case is presented by a team to a demanding audience."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La Clase 70 va más allá de la defensa individual y del diseño visual: recrea un escenario real donde el caso completo se presenta en equipo ante una audiencia exigente."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Objetivo grupal",
+        "Question Text": {
+          "en-US": [
+            "What is evaluated mainly in the public group presentation of the forensic case?"
+          ],
+          "es-MX": [
+            "¿Qué se evalúa principalmente en la exposición pública grupal del caso forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Teamwork, cohesion of the analysis and the ability to present the complete case, not just individual parts.",
+            "Only the visual quality of the slides, ignoring the content.",
+            "Exclusively the speed at which the group finishes the presentation.",
+            "Only the performance of the best speaker in the team."
+          ],
+          "es-MX": [
+            "El trabajo en equipo, la cohesión del análisis y la capacidad de presentar el caso completo, no solo partes individuales.",
+            "Solo la calidad visual de las diapositivas, ignorando el contenido.",
+            "Exclusivamente la rapidez con la que el grupo termina la exposición.",
+            "Solo el desempeño del mejor orador del equipo."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Teamwork, cohesion of the analysis and the ability to present the complete case, not just individual parts.",
+          "es-MX": "El trabajo en equipo, la cohesión del análisis y la capacidad de presentar el caso completo, no solo partes individuales."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "The focus is on the integrated case, not isolated sections.",
+                "The group must show coherence between all parts of the report.",
+                "Collaboration and coordination are key professional skills."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "El enfoque está en el caso integrado, no en secciones aisladas.",
+                "El grupo debe mostrar coherencia entre todas las partes del informe.",
+                "La colaboración y la coordinación son habilidades profesionales clave."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Introducción del equipo",
+        "Question Text": {
+          "en-US": [
+            "What should each member say in the team introduction during the public presentation?"
+          ],
+          "es-MX": [
+            "¿Qué debe decir cada integrante en la presentación del equipo durante la exposición pública?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Name, role in the analysis and section of the report they will present.",
+            "Only their name and favorite forensic tool.",
+            "A personal anecdote unrelated to the case.",
+            "A detailed description of their entire academic history."
+          ],
+          "es-MX": [
+            "Su nombre, rol en el análisis y la sección del informe que expondrá.",
+            "Solo su nombre y su herramienta forense favorita.",
+            "Una anécdota personal sin relación con el caso.",
+            "Una descripción detallada de toda su trayectoria académica."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Name, role in the analysis and section of the report they will present.",
+          "es-MX": "Su nombre, rol en el análisis y la sección del informe que expondrá."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "It clarifies who is responsible for each part.",
+                "It imitates how corporate forensic teams introduce themselves.",
+                "It helps the jury follow the structure of the presentation."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Aclara quién es responsable de cada parte.",
+                "Imita cómo se presentan los equipos forenses corporativos.",
+                "Ayuda al jurado a seguir la estructura de la exposición."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Contexto del caso",
+        "Question Text": {
+          "en-US": [
+            "Which elements must be included when presenting the context of the case?"
+          ],
+          "es-MX": [
+            "¿Qué elementos deben incluirse al presentar el contexto del caso?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Type of incident, devices involved, scope of the investigation, detected risks and initial hypothesis.",
+            "Only the name of the suspect and their personal history.",
+            "A detailed explanation of all tools, without mentioning the incident.",
+            "Only the dates of the report submission."
+          ],
+          "es-MX": [
+            "Tipo de incidente, equipos involucrados, alcance de la investigación, riesgos detectados e hipótesis inicial.",
+            "Solo el nombre del sospechoso y su historial personal.",
+            "Una explicación detallada de todas las herramientas sin mencionar el incidente.",
+            "Solo las fechas de entrega del informe."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Type of incident, devices involved, scope of the investigation, detected risks and initial hypothesis.",
+          "es-MX": "Tipo de incidente, equipos involucrados, alcance de la investigación, riesgos detectados e hipótesis inicial."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "A clear context allows both experts and non-experts to understand what problem is being analyzed from the beginning."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Un contexto claro permite que tanto expertos como no expertos entiendan qué problema se analiza desde el inicio."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Metodología general",
+        "Question Text": {
+          "en-US": [
+            "How should the general methodology be presented in the public exposition?"
+          ],
+          "es-MX": [
+            "¿Cómo debe presentarse la metodología general en la exposición pública?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Summarizing how evidence was acquired, how the chain of custody was preserved, which tools were used and what main processes were followed.",
+            "Reading in detail every command and log used during the analysis.",
+            "Omitting methodology to focus only on results.",
+            "Talking only about theory without mentioning what was actually done in the case."
+          ],
+          "es-MX": [
+            "Resumiendo cómo se obtuvo la evidencia, cómo se preservó la cadena de custodia, qué herramientas se usaron y qué procesos principales se siguieron.",
+            "Leyendo en detalle cada comando y log usado durante el análisis.",
+            "Omitiendo la metodología para centrarse solo en resultados.",
+            "Hablando solo de teoría sin mencionar lo que realmente se hizo en el caso."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Summarizing how evidence was acquired, how the chain of custody was preserved, which tools were used and what main processes were followed.",
+          "es-MX": "Resumiendo cómo se obtuvo la evidencia, cómo se preservó la cadena de custodia, qué herramientas se usaron y qué procesos principales se siguieron."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "The objective is to give a global view, not technical overload.",
+                "It shows that the case was treated with forensic rigor.",
+                "It connects the later findings with a solid procedure."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "El objetivo es dar una visión global, no saturar con tecnicismos.",
+                "Muestra que el caso se trató con rigor forense.",
+                "Conecta los hallazgos posteriores con un procedimiento sólido."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Hallazgos principales",
+        "Question Text": {
+          "en-US": [
+            "What should the team highlight when presenting the main findings?"
+          ],
+          "es-MX": [
+            "¿Qué debe destacar el equipo al presentar los hallazgos principales?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Key events, most relevant evidence, forensic artifacts, timeline of the incident and its impact, supported by visual elements.",
+            "Only technical configuration details of the tools.",
+            "Personal comments on the behavior of the people involved.",
+            "A complete reading of all logs without summarizing."
+          ],
+          "es-MX": [
+            "Eventos clave, evidencia más relevante, artefactos forenses, línea de tiempo del incidente y su impacto, apoyados con elementos visuales.",
+            "Solo detalles de configuración técnica de las herramientas.",
+            "Comentarios personales sobre el comportamiento de las personas involucradas.",
+            "Lectura completa de todos los registros sin resumir."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Key events, most relevant evidence, forensic artifacts, timeline of the incident and its impact, supported by visual elements.",
+          "es-MX": "Eventos clave, evidencia más relevante, artefactos forenses, línea de tiempo del incidente y su impacto, apoyados con elementos visuales."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Findings must answer clearly what happened, when, how and with what evidence it can be proven."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los hallazgos deben responder con claridad qué pasó, cuándo, cómo y con qué evidencia puede demostrarse."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Uso de recursos visuales",
+        "Question Text": {
+          "en-US": [
+            "Which visual resources are especially recommended for the findings section in the public presentation?"
+          ],
+          "es-MX": [
+            "¿Qué recursos visuales se recomiendan especialmente para la sección de hallazgos en la exposición pública?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Graphs, tables, diagrams and annotated screenshots that support and clarify the explanation.",
+            "Only decorative images with no technical value.",
+            "Long text paragraphs copied directly from the report.",
+            "Animations and colors that distract from the content."
+          ],
+          "es-MX": [
+            "Gráficas, tablas, diagramas y capturas de pantalla anotadas que respalden y aclaren la explicación.",
+            "Solo imágenes decorativas sin valor técnico.",
+            "Párrafos largos de texto copiados directamente del informe.",
+            "Animaciones y colores que distraigan del contenido."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Graphs, tables, diagrams and annotated screenshots that support and clarify the explanation.",
+          "es-MX": "Gráficas, tablas, diagramas y capturas de pantalla anotadas que respalden y aclaren la explicación."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Visuals must help the jury understand the case faster.",
+                "Annotated screenshots give context to what is shown.",
+                "Graphs and tables summarize complex data."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Los recursos visuales deben ayudar al jurado a entender el caso más rápido.",
+                "Las capturas anotadas dan contexto a lo que se muestra.",
+                "Las gráficas y tablas resumen datos complejos."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Conclusiones grupales",
+        "Question Text": {
+          "en-US": [
+            "What should group conclusions in the public presentation include?"
+          ],
+          "es-MX": [
+            "¿Qué deben incluir las conclusiones grupales en la exposición pública?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A technical conclusion based on evidence, the scope and limitations, what was confirmed, what could not be determined and the implications of the incident.",
+            "Personal judgments about the moral behavior of the people involved.",
+            "Speculative theories without evidence.",
+            "Only a brief thank-you message without technical content."
+          ],
+          "es-MX": [
+            "Una conclusión técnica basada en la evidencia, el alcance y las limitaciones, lo que se confirmó, lo que no se pudo determinar y las implicaciones del incidente.",
+            "Juicios personales sobre el comportamiento moral de los involucrados.",
+            "Teorías especulativas sin evidencia.",
+            "Solo un breve mensaje de agradecimiento sin contenido técnico."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A technical conclusion based on evidence, the scope and limitations, what was confirmed, what could not be determined and the implications of the incident.",
+          "es-MX": "Una conclusión técnica basada en la evidencia, el alcance y las limitaciones, lo que se confirmó, lo que no se pudo determinar y las implicaciones del incidente."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Conclusions close the logical narrative of the case.",
+                "They must be strictly supported by findings and methodology.",
+                "They clarify what the case demonstrates and what remains uncertain."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Las conclusiones cierran la narrativa lógica del caso.",
+                "Deben estar estrictamente sustentadas en hallazgos y metodología.",
+                "Aclaran qué demuestra el caso y qué permanece incierto."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Recomendaciones",
+        "Question Text": {
+          "en-US": [
+            "When are recommendations appropriate in the public exposition of the case?"
+          ],
+          "es-MX": [
+            "¿Cuándo son apropiadas las recomendaciones en la exposición pública del caso?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "When the case allows it, suggesting cybersecurity measures, configuration corrections or policies to prevent similar incidents.",
+            "Always, even inventing recommendations unrelated to the case.",
+            "Never, because recommendations are forbidden in forensic work.",
+            "Only if the jury writes the recommendations instead of the team."
+          ],
+          "es-MX": [
+            "Cuando el caso lo permite, sugiriendo medidas de ciberseguridad, correcciones de configuración o políticas para prevenir incidentes similares.",
+            "Siempre, incluso inventando recomendaciones sin relación con el caso.",
+            "Nunca, porque las recomendaciones están prohibidas en el trabajo forense.",
+            "Solo si el jurado redacta las recomendaciones en lugar del equipo."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "When the case allows it, suggesting cybersecurity measures, configuration corrections or policies to prevent similar incidents.",
+          "es-MX": "Cuando el caso lo permite, sugiriendo medidas de ciberseguridad, correcciones de configuración o políticas para prevenir incidentes similares."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Recommendations add a professional layer by connecting the analysis with practical improvements for the organization."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las recomendaciones añaden una capa profesional al conectar el análisis con mejoras prácticas para la organización."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Cierre y turno de preguntas",
+        "Question Text": {
+          "en-US": [
+            "How should the closing and question period be handled in the public presentation?"
+          ],
+          "es-MX": [
+            "¿Cómo debe manejarse el cierre y el turno de preguntas en la exposición pública?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "With a brief, professional and confident closing, followed by a space for questions from the jury.",
+            "By ending abruptly without any closing or questions.",
+            "By using the time only to thank friends and family.",
+            "By allowing only classmates to ask questions, but not the jury."
+          ],
+          "es-MX": [
+            "Con un cierre breve, profesional y seguro, seguido de un espacio para preguntas del jurado.",
+            "Terminando de forma abrupta sin cierre ni preguntas.",
+            "Usando el tiempo solo para agradecer a amigos y familiares.",
+            "Permitiendo que solo los compañeros pregunten, pero no el jurado."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "With a brief, professional and confident closing, followed by a space for questions from the jury.",
+          "es-MX": "Con un cierre breve, profesional y seguro, seguido de un espacio para preguntas del jurado."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "The closing reinforces the key message of the case.",
+                "Questions simulate real interaction with judges or directors.",
+                "Handling questions well demonstrates mastery of the case."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "El cierre refuerza el mensaje clave del caso.",
+                "Las preguntas simulan la interacción real con jueces o directivos.",
+                "Responder bien demuestra dominio del caso."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Rol del expositor principal",
+        "Question Text": {
+          "en-US": [
+            "What are the main tasks of the main presenter role?"
+          ],
+          "es-MX": [
+            "¿Cuáles son las tareas principales del rol de expositor principal?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To welcome, introduce the case and guide the overall presentation.",
+            "Only to manage the slides in silence.",
+            "To speak only at the end without knowing the rest of the content.",
+            "To answer all technical questions without help from the team."
+          ],
+          "es-MX": [
+            "Dar la bienvenida, introducir el caso y conducir la presentación general.",
+            "Solo manejar las diapositivas en silencio.",
+            "Hablar solo al final sin conocer el resto del contenido.",
+            "Responder todas las preguntas técnicas sin ayuda del equipo."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To welcome, introduce the case and guide the overall presentation.",
+          "es-MX": "Dar la bienvenida, introducir el caso y conducir la presentación general."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The main presenter is the visible leader of the exposition and sets the tone for the whole session."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El expositor principal es el líder visible de la exposición y marca el tono de toda la sesión."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Responsable de metodología",
+        "Question Text": {
+          "en-US": [
+            "What should the methodology responsible person mainly explain?"
+          ],
+          "es-MX": [
+            "¿Qué debe explicar principalmente la persona responsable de la metodología?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "How evidence was obtained and analyzed, including chain of custody and key tools used.",
+            "Only the biography of the tool developers.",
+            "Exclusively legal theory without mentioning the case.",
+            "Personal opinions about the organizations involved."
+          ],
+          "es-MX": [
+            "Cómo se obtuvo y analizó la evidencia, incluyendo cadena de custodia y herramientas clave usadas.",
+            "Solo la biografía de los desarrolladores de las herramientas.",
+            "Exclusivamente teoría legal sin mencionar el caso.",
+            "Opiniones personales sobre las organizaciones involucradas."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "How evidence was obtained and analyzed, including chain of custody and key tools used.",
+          "es-MX": "Cómo se obtuvo y analizó la evidencia, incluyendo cadena de custodia y herramientas clave usadas."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "This role gives technical credibility to the procedure followed in the case."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Este rol aporta credibilidad técnica al procedimiento seguido en el caso."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Responsable de hallazgos",
+        "Question Text": {
+          "en-US": [
+            "What is the main responsibility of the findings responsible team member?"
+          ],
+          "es-MX": [
+            "¿Cuál es la responsabilidad principal del integrante responsable de los hallazgos?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To present the key discoveries, artifacts and evidence that support the case narrative.",
+            "To focus only on decorative images.",
+            "To read the whole report from start to finish.",
+            "To talk only about future research topics."
+          ],
+          "es-MX": [
+            "Presentar los descubrimientos clave, artefactos y evidencias que sustentan la narrativa del caso.",
+            "Centrarse solo en imágenes decorativas.",
+            "Leer todo el informe de principio a fin.",
+            "Hablar solo de temas de investigación futura."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To present the key discoveries, artifacts and evidence that support the case narrative.",
+          "es-MX": "Presentar los descubrimientos clave, artefactos y evidencias que sustentan la narrativa del caso."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "This role shows what the evidence actually reveals.",
+                "It connects the technical analysis with the story of the incident.",
+                "It is central for convincing the jury."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Este rol muestra lo que realmente revela la evidencia.",
+                "Conecta el análisis técnico con la historia del incidente.",
+                "Es clave para convencer al jurado."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Encargado visual",
+        "Question Text": {
+          "en-US": [
+            "What is the main function of the visual manager in the team?"
+          ],
+          "es-MX": [
+            "¿Cuál es la función principal del encargado visual en el equipo?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To manage slides, diagrams, timelines and graphs so that visuals match what is being explained.",
+            "To add as many animations as possible without coordination.",
+            "To change slide design during the presentation without warning.",
+            "To create unrelated visual effects to entertain the audience."
+          ],
+          "es-MX": [
+            "Manejar diapositivas, diagramas, líneas de tiempo y gráficas para que lo visual coincida con lo que se explica.",
+            "Agregar todas las animaciones posibles sin coordinación.",
+            "Cambiar el diseño de las diapositivas durante la exposición sin avisar.",
+            "Crear efectos visuales sin relación para entretener al público."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To manage slides, diagrams, timelines and graphs so that visuals match what is being explained.",
+          "es-MX": "Manejar diapositivas, diagramas, líneas de tiempo y gráficas para que lo visual coincida con lo que se explica."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Good visual support reinforces understanding; poor coordination can distract and confuse."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Un buen apoyo visual refuerza la comprensión; una mala coordinación puede distraer y confundir."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Interlocutor de preguntas",
+        "Question Text": {
+          "en-US": [
+            "What characterizes the question interlocutor role in the team?"
+          ],
+          "es-MX": [
+            "¿Qué caracteriza el rol de interlocutor de preguntas en el equipo?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It is the member who mainly answers questions from the jury, similar to the most experienced expert in real life.",
+            "It is the person who remains silent throughout the presentation.",
+            "It is the member who only reads the slides without understanding them.",
+            "It is a purely symbolic role without responsibilities."
+          ],
+          "es-MX": [
+            "Es el integrante que responde principalmente las preguntas del jurado, similar al perito más experimentado en la vida real.",
+            "Es la persona que guarda silencio durante toda la exposición.",
+            "Es el integrante que solo lee diapositivas sin entenderlas.",
+            "Es un rol puramente simbólico sin responsabilidades."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It is the member who mainly answers questions from the jury, similar to the most experienced expert in real life.",
+          "es-MX": "Es el integrante que responde principalmente las preguntas del jurado, similar al perito más experimentado en la vida real."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "This role requires global mastery of the case.",
+                "It represents the expert voice of the team.",
+                "It is crucial in the evaluation of the defense before questions."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Este rol requiere dominio global del caso.",
+                "Representa la voz experta del equipo.",
+                "Es clave en la evaluación de la defensa ante preguntas."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Claridad y comunicación",
+        "Question Text": {
+          "en-US": [
+            "According to the evaluation criteria, what is looked for in clarity and communication?"
+          ],
+          "es-MX": [
+            "Según los criterios de evaluación, ¿qué se busca en claridad y comunicación?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "That the incident is understandable, there is a clear narrative from beginning to end and the team speaks with confidence.",
+            "That the language is as technical and complicated as possible.",
+            "That they speak very fast even if no one understands.",
+            "That they only read the report without explaining it."
+          ],
+          "es-MX": [
+            "Que el incidente sea entendible, haya una narrativa clara de inicio a fin y el equipo hable con seguridad.",
+            "Que el lenguaje sea lo más técnico y complicado posible.",
+            "Que hablen muy rápido aunque nadie entienda.",
+            "Que solo lean el informe sin explicar nada."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "That the incident is understandable, there is a clear narrative from beginning to end and the team speaks with confidence.",
+          "es-MX": "Que el incidente sea entendible, haya una narrativa clara de inicio a fin y el equipo hable con seguridad."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Effective forensic communication makes complex cases understandable for different types of audiences."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La comunicación forense efectiva hace comprensibles casos complejos para distintos tipos de audiencia."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Trabajo en equipo",
+        "Question Text": {
+          "en-US": [
+            "What indicates good teamwork during the public exposition?"
+          ],
+          "es-MX": [
+            "¿Qué indica un buen trabajo en equipo durante la exposición pública?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Coordinated roles, smooth flow of the exposition and each member mastering their section.",
+            "Only one member speaking while the others remain passive.",
+            "Members interrupting each other constantly.",
+            "Each person presenting without knowing what the others are saying."
+          ],
+          "es-MX": [
+            "Roles coordinados, fluidez en la exposición y que cada integrante domine su sección.",
+            "Que solo hable una persona mientras los demás permanecen pasivos.",
+            "Que los integrantes se interrumpan constantemente.",
+            "Que cada quien exponga sin saber qué dicen los demás."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Coordinated roles, smooth flow of the exposition and each member mastering their section.",
+          "es-MX": "Roles coordinados, fluidez en la exposición y que cada integrante domine su sección."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Teamwork reflects real professional environments.",
+                "Good coordination increases the credibility of the group.",
+                "It shows that the case was built collaboratively."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "El trabajo en equipo refleja entornos profesionales reales.",
+                "Una buena coordinación aumenta la credibilidad del grupo.",
+                "Muestra que el caso se construyó de forma colaborativa."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Defensa ante preguntas",
+        "Question Text": {
+          "en-US": [
+            "What is valued in the defense before questions from the academic jury?"
+          ],
+          "es-MX": [
+            "¿Qué se valora en la defensa ante las preguntas del jurado académico?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "That answers are secure, focused, justified with evidence and do not wander.",
+            "That they avoid answering and change the subject.",
+            "That they respond with jokes instead of technical arguments.",
+            "That they contradict each other to show different opinions."
+          ],
+          "es-MX": [
+            "Que respondan con seguridad, sin divagar, justificando con evidencia.",
+            "Que eviten responder y cambien de tema.",
+            "Que respondan con chistes en lugar de argumentos técnicos.",
+            "Que se contradigan entre sí para mostrar opiniones distintas."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "That answers are secure, focused, justified with evidence and do not wander.",
+          "es-MX": "Que respondan con seguridad, sin divagar, justificando con evidencia."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Questions test the real mastery of the case.",
+                "Good answers reinforce the credibility of the report.",
+                "They simulate pressure conditions of real professional contexts."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Las preguntas ponen a prueba el dominio real del caso.",
+                "Las buenas respuestas refuerzan la credibilidad del informe.",
+                "Simulan condiciones de presión de contextos profesionales reales."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Duración y manejo del tiempo",
+        "Question Text": {
+          "en-US": [
+            "What is the recommended time structure for the group exposition according to the class?"
+          ],
+          "es-MX": [
+            "¿Cuál es la estructura de tiempo recomendada para la exposición grupal según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "10 to 12 minutes of presentation plus 3 to 5 minutes of questions from the jury.",
+            "3 minutes of presentation and 20 minutes of questions.",
+            "30 minutes of uninterrupted monologue with no questions.",
+            "Only 2 minutes for the entire case."
+          ],
+          "es-MX": [
+            "De 10 a 12 minutos de exposición y de 3 a 5 minutos de preguntas del jurado.",
+            "3 minutos de exposición y 20 minutos de preguntas.",
+            "30 minutos de monólogo sin preguntas.",
+            "Solo 2 minutos para todo el caso."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "10 to 12 minutes of presentation plus 3 to 5 minutes of questions from the jury.",
+          "es-MX": "De 10 a 12 minutos de exposición y de 3 a 5 minutos de preguntas del jurado."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Managing time is part of professional discipline and respects the dynamics of real forums and committees."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El manejo del tiempo forma parte de la disciplina profesional y respeta la dinámica de foros y comités reales."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Reflexión final",
+        "Question Text": {
+          "en-US": [
+            "According to the final reflection, what does the public exposition of the forensic case evaluate beyond technical knowledge?"
+          ],
+          "es-MX": [
+            "Según la reflexión final, ¿qué evalúa la exposición pública del caso forense además del conocimiento técnico?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Professional communication, confidence, methodological rigor, mastery of the case and collaborative work.",
+            "Only the ability to memorize text.",
+            "Exclusively the design of the slides.",
+            "Only the individual grade of each student."
+          ],
+          "es-MX": [
+            "La comunicación profesional, la confianza, el rigor metodológico, el dominio del caso y el trabajo colaborativo.",
+            "Solo la capacidad de memorizar texto.",
+            "Exclusivamente el diseño de las diapositivas.",
+            "Solo la calificación individual de cada alumno."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Professional communication, confidence, methodological rigor, mastery of the case and collaborative work.",
+          "es-MX": "La comunicación profesional, la confianza, el rigor metodológico, el dominio del caso y el trabajo colaborativo."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "This class prepares students for real scenarios where experts present their work to audits, directors, prosecutors and judges."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Esta clase prepara a los estudiantes para escenarios reales donde los peritos presentan su trabajo ante auditorías, directivos, fiscalías y jueces."
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

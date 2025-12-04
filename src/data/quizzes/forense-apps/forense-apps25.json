@@ -1,0 +1,530 @@
+{
+    "meta": {
+      "slug": "forense-apps25",
+      "title": "Clase 25 – Manejo seguro del entorno de análisis",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 2,
+      "classNo": 25,
+      "description": "Configuración de un entorno aislado mediante máquinas virtuales o sandboxes para analizar evidencia digital sin alterar datos ni exponer el sistema a malware o fugas de información.",
+      "tags": [
+        "entorno aislado",
+        "máquina virtual",
+        "sandbox",
+        "análisis forense",
+        "seguridad del analista",
+        "NIST",
+        "buenas prácticas"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "importancia-entorno-seguro",
+        "Question Text": {
+          "en-US": [
+            "Why is it essential to use a secure and isolated environment for digital forensic analysis?",
+            "According to the class, why should digital evidence never be analyzed directly on the main operating system?"
+          ],
+          "es-MX": [
+            "¿Por qué es esencial utilizar un entorno seguro y aislado para el análisis forense digital?",
+            "Según la clase, ¿por qué nunca se debe analizar evidencia digital directamente en el sistema operativo principal?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To avoid contamination of evidence, malware execution, data leaks and damage to the analyst’s machine",
+            "To make the analysis faster by disabling all security controls",
+            "Because the main operating system cannot open forensic tools",
+            "So that the analyst does not have to document the chain of custody"
+          ],
+          "es-MX": [
+            "Para evitar contaminación de la evidencia, ejecución de malware, fugas de datos y daños al equipo del analista",
+            "Para que el análisis sea más rápido desactivando todos los controles de seguridad",
+            "Porque el sistema operativo principal no puede abrir herramientas forenses",
+            "Para que el analista no tenga que documentar la cadena de custodia"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To avoid contamination of evidence, malware execution, data leaks and damage to the analyst’s machine",
+          "es-MX": "Para evitar contaminación de la evidencia, ejecución de malware, fugas de datos y daños al equipo del analista"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Protecting both evidence and analyst"
+            },
+            {
+              "type": "text",
+              "content": "The class emphasizes that forensic analysis must be performed in a controlled and isolated environment. Working directly on the host system increases the risk of altering files, spreading malware or leaking sensitive information."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Prevents accidental modification or corruption of case files",
+                "Reduces the chance of executing malicious code on the host",
+                "Limits the exposure of confidential data stored on the analyst’s computer",
+                "Protects the integrity of the investigation and the safety of the equipment"
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Proteger la evidencia y al analista"
+            },
+            {
+              "type": "text",
+              "content": "La clase recalca que el análisis forense debe hacerse en un entorno controlado y aislado. Trabajar directamente sobre el sistema principal aumenta el riesgo de alterar archivos, propagar malware o filtrar información sensible."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Evita la modificación accidental o corrupción de archivos del caso",
+                "Reduce la probabilidad de ejecutar código malicioso en el host",
+                "Limita la exposición de datos confidenciales del equipo del analista",
+                "Protege la integridad de la investigación y la seguridad del equipo"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "definicion-entorno-aislado",
+        "Question Text": {
+          "en-US": [
+            "What is an isolated environment in the context of digital forensics?",
+            "How does the class define an isolated environment for evidence analysis?"
+          ],
+          "es-MX": [
+            "¿Qué es un entorno aislado en el contexto del análisis forense digital?",
+            "¿Cómo define la clase un entorno aislado para el análisis de evidencia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A controlled space where evidence can be opened and analyzed without affecting the main system",
+            "Any computer connected to the internet with an antivirus installed",
+            "A shared folder where all users can freely edit case files",
+            "The personal laptop of the analyst with social media and email open"
+          ],
+          "es-MX": [
+            "Un espacio controlado donde la evidencia puede abrirse y analizarse sin afectar el sistema principal",
+            "Cualquier equipo conectado a internet con un antivirus instalado",
+            "Una carpeta compartida donde todos los usuarios pueden editar libremente los archivos del caso",
+            "La laptop personal del analista con redes sociales y correo abiertos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A controlled space where evidence can be opened and analyzed without affecting the main system",
+          "es-MX": "Un espacio controlado donde la evidencia puede abrirse y analizarse sin afectar el sistema principal"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "An isolated environment is not just another computer; it is a deliberately configured space (VM or sandbox) where every interaction with the evidence is contained and cannot impact the host system."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "The host operating system remains protected",
+                "Evidence and tools are confined to a virtual boundary",
+                "This setup is essential for safe testing of suspicious files"
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Un entorno aislado no es simplemente otra computadora; es un espacio configurado de forma deliberada (VM o sandbox) donde cada interacción con la evidencia está contenida y no puede afectar al sistema anfitrión."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "El sistema operativo anfitrión permanece protegido",
+                "La evidencia y las herramientas se confinan en un límite virtual",
+                "Este esquema es clave para probar archivos sospechosos con seguridad"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "vm-vs-sandbox",
+        "Question Text": {
+          "en-US": [
+            "Which statement BEST compares a virtual machine (VM) and a sandbox according to the class?",
+            "How does the class differentiate between a VM and a sandbox?"
+          ],
+          "es-MX": [
+            "¿Qué afirmación compara MEJOR una máquina virtual (VM) y un sandbox según la clase?",
+            "¿Cómo diferencia la clase una VM de un sandbox?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A VM simulates a full independent OS, while a sandbox is a restricted space inside the same OS",
+            "A VM is only for gaming and a sandbox only for databases",
+            "A VM always runs on mobile phones, while a sandbox only runs on servers",
+            "There is no difference, both terms mean exactly the same thing"
+          ],
+          "es-MX": [
+            "Una VM simula un sistema operativo completo e independiente, mientras que un sandbox es un espacio restringido dentro del mismo sistema operativo",
+            "Una VM es solo para videojuegos y un sandbox solo para bases de datos",
+            "Una VM siempre se ejecuta en teléfonos móviles y un sandbox solo en servidores",
+            "No hay diferencia, ambos términos significan exactamente lo mismo"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A VM simulates a full independent OS, while a sandbox is a restricted space inside the same OS",
+          "es-MX": "Una VM simula un sistema operativo completo e independiente, mientras que un sandbox es un espacio restringido dentro del mismo sistema operativo"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Virtual Machine vs Sandbox"
+            },
+            {
+              "type": "text",
+              "content": "The class explains two major isolation options: virtual machines and sandboxes."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Virtual Machine (VM): full OS running inside software like VirtualBox, VMware or Hyper-V",
+                "Sandbox: limited, controlled space inside the same OS (e.g., Windows Sandbox, Cuckoo Sandbox, Sandboxie Plus)",
+                "Both can reproduce realistic environments to study evidence without compromising the host"
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Máquina virtual vs Sandbox"
+            },
+            {
+              "type": "text",
+              "content": "La clase presenta dos grandes opciones de aislamiento: las máquinas virtuales y los sandboxes."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Máquina virtual (VM): sistema operativo completo dentro de software como VirtualBox, VMware o Hyper-V",
+                "Sandbox: espacio limitado y controlado dentro del mismo sistema operativo (por ejemplo, Windows Sandbox, Cuckoo Sandbox, Sandboxie Plus)",
+                "Ambas opciones permiten reproducir entornos reales sin comprometer el host"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "beneficios-aislamiento",
+        "Question Text": {
+          "en-US": [
+            "Which of the following is a key benefit of using an isolated environment for forensic analysis?",
+            "What advantage does isolation provide during the examination of potentially malicious evidence?"
+          ],
+          "es-MX": [
+            "¿Cuál de los siguientes es un beneficio clave de usar un entorno aislado para el análisis forense?",
+            "¿Qué ventaja ofrece el aislamiento durante el examen de evidencia potencialmente maliciosa?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It allows restoring snapshots, repeating tests safely and containing malware without affecting the host",
+            "It makes it unnecessary to calculate hashes or keep documentation",
+            "It guarantees that malware will not execute even if run on the host",
+            "It replaces the need to follow any incident response procedure"
+          ],
+          "es-MX": [
+            "Permite restaurar instantáneas, repetir pruebas con seguridad y contener malware sin afectar al host",
+            "Hace innecesario calcular hashes o llevar documentación",
+            "Garantiza que el malware no se ejecutará aunque se ejecute en el host",
+            "Sustituye la necesidad de seguir cualquier procedimiento de respuesta a incidentes"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It allows restoring snapshots, repeating tests safely and containing malware without affecting the host",
+          "es-MX": "Permite restaurar instantáneas, repetir pruebas con seguridad y contener malware sin afectar al host"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Isolation enables analysts to experiment with suspicious files, revert to clean states and avoid compromising the physical machine."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Snapshots and restore points create safe checkpoints",
+                "Malware remains contained inside the VM or sandbox",
+                "Repeated tests can be performed without damaging the host or the evidence"
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El aislamiento permite al analista experimentar con archivos sospechosos, regresar a estados limpios y evitar comprometer la máquina física."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Las instantáneas y puntos de restauración crean puntos de control seguros",
+                "El malware se mantiene contenido dentro de la VM o sandbox",
+                "Se pueden repetir pruebas sin dañar el host ni la evidencia"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "componentes-entorno",
+        "Question Text": {
+          "en-US": [
+            "Which set BEST represents essential components of a secure forensic environment mentioned in the class?",
+            "What combination of elements should a forensic VM or sandbox include to be considered properly prepared?"
+          ],
+          "es-MX": [
+            "¿Qué conjunto representa MEJOR los componentes esenciales de un entorno forense seguro mencionados en la clase?",
+            "¿Qué combinación de elementos debe incluir una VM o sandbox forense para considerarse bien preparada?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Clean OS, forensic tools, security controls, restoration functions and documentation",
+            "Games, video-editing software, social networks and automatic cloud sync",
+            "Random software, unrestricted internet and shared folders with all users",
+            "Only an antivirus and a web browser"
+          ],
+          "es-MX": [
+            "Sistema operativo limpio, herramientas forenses, controles de seguridad, funciones de restauración y documentación",
+            "Videojuegos, software de edición de video, redes sociales y sincronización en la nube automática",
+            "Software al azar, internet sin restricciones y carpetas compartidas con todos los usuarios",
+            "Solo un antivirus y un navegador web"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Clean OS, forensic tools, security controls, restoration functions and documentation",
+          "es-MX": "Sistema operativo limpio, herramientas forenses, controles de seguridad, funciones de restauración y documentación"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Key components of a secure environment"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Clean and updated operating system as a base image",
+                "Forensic tools such as Autopsy, FTK Imager, Magnet AXIOM, Cellebrite, HxD, SQLite Browser, Wireshark",
+                "Security controls: limited or no internet, USB restrictions, protected evidence folder, no auto-sync",
+                "Restoration mechanisms: snapshots, restore points, backups",
+                "Initial state logbook: OS version, installed software, virtual hardware configuration"
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Componentes clave del entorno seguro"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Sistema operativo limpio y actualizado como imagen base",
+                "Herramientas forenses como Autopsy, FTK Imager, Magnet AXIOM, Cellebrite, HxD, SQLite Browser, Wireshark",
+                "Controles de seguridad: internet limitado o sin conexión, bloqueo de USB, carpeta protegida para evidencia, sin sincronización automática",
+                "Mecanismos de restauración: snapshots, puntos de restauración, copias de seguridad",
+                "Bitácora del estado inicial: versión de SO, software instalado, configuración de hardware virtual"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "procedimiento-preparacion",
+        "Question Text": {
+          "en-US": [
+            "Which sequence BEST describes the procedure to prepare a secure forensic virtual machine according to the class?",
+            "What is the recommended order to set up a safe environment before loading evidence?"
+          ],
+          "es-MX": [
+            "¿Qué secuencia describe MEJOR el procedimiento para preparar una máquina virtual forense segura según la clase?",
+            "¿Cuál es el orden recomendado para configurar un entorno seguro antes de cargar evidencia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Create VM → configure isolation (network, sharing) → create evidence folder → install forensic tools → create initial snapshot → then load evidence",
+            "Load evidence on the host → connect the VM to full internet → install games → then think about snapshots",
+            "Create VM → give full access to host disks and USBs → disable all restrictions → analyze directly on original media",
+            "Install random software → share the VM with other users → skip snapshots and documentation"
+          ],
+          "es-MX": [
+            "Crear la VM → configurar el aislamiento (red, recursos compartidos) → crear carpeta de evidencia → instalar herramientas forenses → crear instantánea inicial → luego cargar evidencia",
+            "Cargar la evidencia en el host → conectar la VM a internet completo → instalar juegos → después pensar en snapshots",
+            "Crear la VM → dar acceso total a discos y USBs del host → desactivar todas las restricciones → analizar directamente sobre el medio original",
+            "Instalar software al azar → compartir la VM con otros usuarios → omitir snapshots y documentación"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Create VM → configure isolation (network, sharing) → create evidence folder → install forensic tools → create initial snapshot → then load evidence",
+          "es-MX": "Crear la VM → configurar el aislamiento (red, recursos compartidos) → crear carpeta de evidencia → instalar herramientas forenses → crear instantánea inicial → luego cargar evidencia"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The class proposes a logical order: first build and isolate the environment, then equip it with tools, freeze a clean state and only afterwards introduce the evidence."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "VM creation with an ISO of Windows or Linux",
+                "Isolation: no internet or host-only network, no shared folders, no drag-and-drop",
+                "Dedicated evidence folder for images, exports, hashes and logs",
+                "Centralized installation of forensic tools (e.g., C:\\\\ForensicsTools\\\\)",
+                "Initial snapshot to return to a 100% clean baseline after each case"
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La clase propone un orden lógico: primero construir y aislar el entorno, luego equiparlo con herramientas, congelar un estado limpio y solo después introducir la evidencia."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Creación de la VM a partir de una ISO de Windows o Linux",
+                "Aislamiento: sin internet o red host-only, sin carpetas compartidas, sin arrastrar y soltar",
+                "Carpeta dedicada para evidencia: imágenes, exportaciones, hashes y bitácoras",
+                "Instalación centralizada de las herramientas forenses (por ejemplo, C:\\\\ForensicsTools\\\\)",
+                "Instantánea inicial para volver a una base 100% limpia después de cada caso"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "buenas-practicas",
+        "Question Text": {
+          "en-US": [
+            "Which of the following is a GOOD practice for secure handling of a forensic environment as described in the class?",
+            "According to the class, what behavior is recommended when working with a forensic VM?"
+          ],
+          "es-MX": [
+            "¿Cuál de las siguientes es una BUENA práctica para el manejo seguro del entorno forense según la clase?",
+            "De acuerdo con la clase, ¿qué comportamiento se recomienda al trabajar con una VM forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Avoid internet unless strictly necessary, do not mix cases, and restore snapshots after important analyses",
+            "Connect the VM to public Wi-Fi for faster updates and share credentials",
+            "Use the VM for personal email, social networks and unrelated browsing",
+            "Work directly on original evidence files to save disk space"
+          ],
+          "es-MX": [
+            "Evitar internet salvo que sea estrictamente necesario, no mezclar casos y restaurar snapshots tras análisis importantes",
+            "Conectar la VM a Wi-Fi público para actualizar más rápido y compartir credenciales",
+            "Usar la VM para correo personal, redes sociales y navegación no relacionada",
+            "Trabajar directamente sobre archivos originales de evidencia para ahorrar espacio"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Avoid internet unless strictly necessary, do not mix cases, and restore snapshots after important analyses",
+          "es-MX": "Evitar internet salvo que sea estrictamente necesario, no mezclar casos y restaurar snapshots tras análisis importantes"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Minimize internet exposure to reduce risk of infection or data exfiltration",
+                "Keep each case separated to avoid cross-contamination of evidence",
+                "Use snapshots to revert changes and maintain a clean, repeatable environment",
+                "Log all relevant changes in a forensic logbook"
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Minimizar el uso de internet para reducir riesgo de infección o fuga de datos",
+                "Mantener cada caso separado para evitar contaminación cruzada de evidencia",
+                "Usar snapshots para revertir cambios y conservar un entorno limpio y repetible",
+                "Registrar los cambios relevantes en una bitácora forense"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "ejemplo-aplicado-entorno",
+        "Question Text": {
+          "en-US": [
+            "In the applied example from the class, which actions show correct use of the secure environment before and after analysis?",
+            "What does the example with evidence01.E01 illustrate about using snapshots and isolation?"
+          ],
+          "es-MX": [
+            "En el ejemplo aplicado de la clase, ¿qué acciones muestran un uso correcto del entorno seguro antes y después del análisis?",
+            "¿Qué ilustra el ejemplo con evidencia01.E01 sobre el uso de snapshots y aislamiento?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Configuring host-only network, installing forensic tools, copying the evidence into the VM, calculating hashes and restoring the snapshot at the end",
+            "Opening the E01 file directly on the host OS, sharing it by email and deleting the VM afterwards",
+            "Connecting the VM to unrestricted internet, installing random apps and ignoring hash calculations",
+            "Running the analysis on the host and using the VM only for entertainment"
+          ],
+          "es-MX": [
+            "Configurar red host-only, instalar herramientas forenses, copiar la evidencia a la VM, calcular hashes y restaurar la instantánea al final",
+            "Abrir el archivo E01 directamente en el sistema anfitrión, compartirlo por correo y borrar la VM después",
+            "Conectar la VM a internet sin restricciones, instalar apps al azar e ignorar el cálculo de hashes",
+            "Realizar el análisis en el host y usar la VM solo para entretenimiento"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Configuring host-only network, installing forensic tools, copying the evidence into the VM, calculating hashes and restoring the snapshot at the end",
+          "es-MX": "Configurar red host-only, instalar herramientas forenses, copiar la evidencia a la VM, calcular hashes y restaurar la instantánea al final"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The example summarizes the complete workflow: use an isolated network mode, install specialized tools, introduce the evidence in a controlled way, validate it with hashes and finally return the VM to a clean state using snapshots."
+            },
+            {
+              "type": "divider",
+              "content": ""
+            },
+            {
+              "type": "text",
+              "content": "This ensures integrity, privacy and full isolation of the analysis process, in line with NIST and ISO/IEC recommendations."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El ejemplo resume el flujo completo: usar un modo de red aislado, instalar herramientas especializadas, introducir la evidencia de forma controlada, validarla con hashes y finalmente regresar la VM a un estado limpio mediante snapshots."
+            },
+            {
+              "type": "divider",
+              "content": ""
+            },
+            {
+              "type": "text",
+              "content": "Con ello se garantiza integridad, privacidad y aislamiento total del proceso de análisis, en línea con las recomendaciones de NIST e ISO/IEC."
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

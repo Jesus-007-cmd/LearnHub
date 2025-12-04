@@ -1,0 +1,490 @@
+{
+    "meta": {
+      "slug": "forense-apps61",
+      "title": "Elaboración de anexos y evidencia visual",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 5,
+      "classNo": 61,
+      "description": "Uso de anexos, capturas de pantalla, valores hash y diagramas explicativos para respaldar técnicamente un informe forense digital, asegurando claridad, trazabilidad e integridad de la evidencia.",
+      "tags": [
+        "anexos",
+        "evidencia visual",
+        "hash",
+        "capturas de pantalla",
+        "diagramas",
+        "trazabilidad",
+        "unidad V"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "Importancia de los anexos",
+        "Question Text": {
+          "en-US": [
+            "According to the class, why are annexes and visual evidence considered essential components of a digital forensic report?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿por qué los anexos y la evidencia visual se consideran componentes esenciales de un informe forense digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because they technically support each finding with verifiable evidence, allow the reader to see what the analyst observed, strengthen legal and methodological validity and facilitate audits or review by other experts.",
+            "Because they serve mainly to decorate the report with images and colors so it looks more attractive.",
+            "Because they replace the need to describe procedures and findings in the main body of the report.",
+            "Because they allow the analyst to include jokes, memes and informal illustrations to make the document less formal."
+          ],
+          "es-MX": [
+            "Porque respaldan técnicamente cada hallazgo con evidencia verificable, permiten que el lector vea lo que el analista observó, fortalecen la validez jurídica y metodológica y facilitan auditorías o revisiones por otros peritos.",
+            "Porque sirven principalmente para decorar el informe con imágenes y colores para que se vea más atractivo.",
+            "Porque sustituyen la necesidad de describir procedimientos y hallazgos en el cuerpo principal del informe.",
+            "Porque permiten al analista incluir chistes, memes e ilustraciones informales para que el documento sea menos serio."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because they technically support each finding with verifiable evidence, allow the reader to see what the analyst observed, strengthen legal and methodological validity and facilitate audits or review by other experts.",
+          "es-MX": "Porque respaldan técnicamente cada hallazgo con evidencia verificable, permiten que el lector vea lo que el analista observó, fortalecen la validez jurídica y metodológica y facilitan auditorías o revisiones por otros peritos."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "The class states that annexes support each finding with technical, verifiable evidence.",
+                "Visual elements make it possible to verify what the analyst actually saw in the tools.",
+                "This increases the legal and methodological robustness of the report.",
+                "Annexes also make future audits or reviews by other experts easier."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "La clase explica que los anexos respaldan cada hallazgo con evidencia técnica verificable.",
+                "Los elementos visuales permiten comprobar qué fue exactamente lo que el analista observó en las herramientas.",
+                "Esto incrementa la solidez jurídica y metodológica del informe.",
+                "Además, los anexos facilitan auditorías posteriores o revisiones por otros peritos."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Capturas de pantalla",
+        "Question Text": {
+          "en-US": [
+            "Which option correctly describes the minimum requirements that a screenshot should meet to be used as visual evidence in a forensic annex?"
+          ],
+          "es-MX": [
+            "¿Qué opción describe correctamente los requisitos mínimos que debe cumplir una captura de pantalla para usarse como evidencia visual en un anexo forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "High resolution, visible date and time when applicable, tool used, exact path of the file being analyzed and a reference number within the report.",
+            "Low resolution so that sensitive data cannot be read, without any indication of tool or path and without numbering.",
+            "Only the visible content of the window, without showing where the file comes from or what tool generated the view.",
+            "Any image found on the internet that looks similar to the case, even if it does not come from the real analysis."
+          ],
+          "es-MX": [
+            "Alta resolución, fecha y hora visibles cuando aplique, herramienta utilizada, ruta exacta del archivo analizado y un número de referencia dentro del informe.",
+            "Baja resolución para que los datos sensibles no se lean, sin indicar herramienta ni ruta y sin numeración.",
+            "Solo el contenido visible de la ventana, sin mostrar de dónde proviene el archivo ni qué herramienta generó la vista.",
+            "Cualquier imagen tomada de internet que se parezca al caso, aunque no provenga del análisis real."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "High resolution, visible date and time when applicable, tool used, exact path of the file being analyzed and a reference number within the report.",
+          "es-MX": "Alta resolución, fecha y hora visibles cuando aplique, herramienta utilizada, ruta exacta del archivo analizado y un número de referencia dentro del informe."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Screenshots must faithfully represent what the forensic tool showed and be fully traceable."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "High resolution avoids loss of details such as fields, routes or identifiers.",
+                "The date/time and tool used give context to the evidence.",
+                "The exact path and reference number allow cross-checking with other parts of the report.",
+                "Using unrelated or low-quality images weakens the technical value of the annex."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las capturas deben representar fielmente lo que mostró la herramienta forense y ser completamente trazables."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "La alta resolución evita perder detalles como campos, rutas o identificadores.",
+                "La fecha/hora y la herramienta utilizada dan contexto a la evidencia.",
+                "La ruta exacta y el número de referencia permiten cruzar la información con otras partes del informe.",
+                "Usar imágenes ajenas o de baja calidad debilita el valor técnico del anexo."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Hashes de integridad",
+        "Question Text": {
+          "en-US": [
+            "According to the class, which elements MUST be documented when including integrity hashes in a forensic annex?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿qué elementos se DEBEN documentar al incluir hashes de integridad en un anexo forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Hash algorithm type (MD5, SHA-1, SHA-256), hash of the original evidence, hash of the analyzed copy, date of hash calculation and tool used.",
+            "Only the hash value, without indicating to which file it belongs or how it was calculated.",
+            "The approximate day when the hash may have been generated and the approximate size of the file.",
+            "Just the file name and a short comment like “hash verified”, without numeric values."
+          ],
+          "es-MX": [
+            "Tipo de algoritmo (MD5, SHA-1, SHA-256), hash de la evidencia original, hash de la copia analizada, fecha de cálculo del hash y herramienta utilizada.",
+            "Solo el valor del hash, sin indicar a qué archivo pertenece ni cómo se calculó.",
+            "El día aproximado en que quizá se generó el hash y el tamaño aproximado del archivo.",
+            "Solo el nombre del archivo y un comentario breve como “hash verificado”, sin valores numéricos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Hash algorithm type (MD5, SHA-1, SHA-256), hash of the original evidence, hash of the analyzed copy, date of hash calculation and tool used.",
+          "es-MX": "Tipo de algoritmo (MD5, SHA-1, SHA-256), hash de la evidencia original, hash de la copia analizada, fecha de cálculo del hash y herramienta utilizada."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "divider"
+            },
+            {
+              "type": "text",
+              "content": "Integrity hashes are central to demonstrating that the evidence was not altered between acquisition and analysis."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Specifying the algorithm avoids confusion between different hash lengths and properties.",
+                "Recording both original and copy hash allows comparison and verification.",
+                "The date of calculation and the tool used add traceability and reproducibility.",
+                "Without these elements, the hash loses much of its legal and technical value."
+              ]
+            },
+            {
+              "type": "divider"
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "divider"
+            },
+            {
+              "type": "text",
+              "content": "Los hashes de integridad son centrales para demostrar que la evidencia no se alteró entre la adquisición y el análisis."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Especificar el algoritmo evita confusiones entre hashes de diferente longitud y propiedades.",
+                "Registrar el hash del original y de la copia permite la comparación y verificación.",
+                "La fecha de cálculo y la herramienta utilizada aportan trazabilidad y reproducibilidad.",
+                "Sin estos elementos, el hash pierde gran parte de su valor técnico y jurídico."
+              ]
+            },
+            {
+              "type": "divider"
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Diagramas explicativos",
+        "Question Text": {
+          "en-US": [
+            "What is the main function of explanatory diagrams in forensic reports, according to the class material?"
+          ],
+          "es-MX": [
+            "¿Cuál es la función principal de los diagramas explicativos en los informes forenses, según el material de la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To visualize complex relationships or processes (timelines, flows, folder structures, access routes, relationships between users and devices) in a simpler and more understandable way.",
+            "To replace the need for any written explanation in the report.",
+            "To add artistic content that has no direct relation to the evidence.",
+            "To avoid showing technical details so that the report is less demanding for the reader."
+          ],
+          "es-MX": [
+            "Visualizar relaciones o procesos complejos (líneas de tiempo, flujos, estructuras de carpetas, rutas de acceso, relaciones entre usuarios y dispositivos) de forma más simple y comprensible.",
+            "Sustituir la necesidad de cualquier explicación escrita en el informe.",
+            "Agregar contenido artístico que no tenga relación directa con la evidencia.",
+            "Evitar mostrar detalles técnicos para que el informe sea menos exigente para el lector."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To visualize complex relationships or processes (timelines, flows, folder structures, access routes, relationships between users and devices) in a simpler and more understandable way.",
+          "es-MX": "Visualizar relaciones o procesos complejos (líneas de tiempo, flujos, estructuras de carpetas, rutas de acceso, relaciones entre usuarios y dispositivos) de forma más simple y comprensible."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Many forensic concepts (timelines, access paths, user relationships) are easier to understand visually.",
+                "Diagrams complement, but do not replace, written explanations.",
+                "They help non-technical readers follow the logic of the case.",
+                "Used correctly, they increase clarity and reduce ambiguity in the report."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Muchos conceptos forenses (líneas de tiempo, rutas de acceso, relaciones entre usuarios) se comprenden mejor de forma visual.",
+                "Los diagramas complementan, pero no sustituyen, las explicaciones escritas.",
+                "Ayudan a que lectores no técnicos sigan la lógica del caso.",
+                "Usados correctamente, aumentan la claridad y reducen la ambigüedad del informe."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Buenas prácticas de anexos",
+        "Question Text": {
+          "en-US": [
+            "Which option correctly combines good practices for integrating annexes into a forensic report?"
+          ],
+          "es-MX": [
+            "¿Qué opción combina correctamente buenas prácticas para integrar anexos en un informe forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Number each annex consecutively, provide a brief but precise context before each image or element and maintain a consistent graphic style throughout the report.",
+            "Insert images without numbering, without explanation and mixing random styles, fonts and resolutions.",
+            "Include only raw screenshots in a separate folder, without mentioning them in the report.",
+            "Use different numbering formats for each section so that the annexes are difficult to follow."
+          ],
+          "es-MX": [
+            "Numerar cada anexo de forma consecutiva, incluir un contexto breve pero preciso antes de cada imagen o elemento y mantener un estilo gráfico consistente en todo el informe.",
+            "Insertar imágenes sin numeración, sin explicación y mezclando estilos, fuentes y resoluciones aleatorias.",
+            "Incluir solo capturas sueltas en una carpeta aparte, sin mencionarlas en el informe.",
+            "Usar formatos de numeración distintos en cada sección para que los anexos sean difíciles de seguir."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Number each annex consecutively, provide a brief but precise context before each image or element and maintain a consistent graphic style throughout the report.",
+          "es-MX": "Numerar cada anexo de forma consecutiva, incluir un contexto breve pero preciso antes de cada imagen o elemento y mantener un estilo gráfico consistente en todo el informe."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The class highlights numbering, contextualization and graphic consistency as key aspects of professional annexes."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Consecutive numbering (Annex 1, Annex 2, etc.) allows quick referencing.",
+                "A short description before each figure explains what the reader is about to see and why it matters.",
+                "Using the same title style, arrow types and formats avoids visual noise and confusion.",
+                "These practices make the report easier to navigate and audit."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La clase resalta la numeración, el contexto y la consistencia gráfica como aspectos clave de anexos profesionales."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "La numeración consecutiva (Anexo 1, Anexo 2, etc.) permite referencias rápidas.",
+                "Una breve descripción antes de cada figura explica qué verá el lector y por qué es relevante.",
+                "Usar el mismo estilo de títulos, tipos de flechas y formatos evita ruido visual y confusión.",
+                "Estas prácticas facilitan la navegación y la auditoría del informe."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "No modificar la evidencia visual",
+        "Question Text": {
+          "en-US": [
+            "Which of the following actions is acceptable when preparing visual evidence for annexes, without altering the underlying content?"
+          ],
+          "es-MX": [
+            "¿Cuál de las siguientes acciones es aceptable al preparar evidencia visual para anexos, sin alterar el contenido subyacente?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Blurring extremely sensitive data when it is mandatory and highlighting relevant fragments with boxes or arrows, without modifying the original information.",
+            "Editing the screenshot to change dates, paths or values so that they match the hypothesis.",
+            "Recreating the screen in a drawing program instead of using the actual tool’s output.",
+            "Cropping the image in a way that hides important context and makes the evidence ambiguous."
+          ],
+          "es-MX": [
+            "Difuminar datos extremadamente sensibles cuando sea obligatorio y resaltar fragmentos relevantes con cuadros o flechas, sin modificar la información original.",
+            "Editar la captura para cambiar fechas, rutas o valores y que coincidan con la hipótesis.",
+            "Recrear la pantalla en un programa de dibujo en lugar de usar la salida real de la herramienta.",
+            "Recortar la imagen de forma que oculte contexto importante y vuelva la evidencia ambigua."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Blurring extremely sensitive data when it is mandatory and highlighting relevant fragments with boxes or arrows, without modifying the original information.",
+          "es-MX": "Difuminar datos extremadamente sensibles cuando sea obligatorio y resaltar fragmentos relevantes con cuadros o flechas, sin modificar la información original."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "The class allows only minimal, controlled modifications that do not change the meaning of the evidence.",
+                "Blurring is acceptable when it is necessary to protect highly sensitive information (e.g., personal identifiers).",
+                "Highlighting with boxes or arrows is allowed as long as the underlying data remains intact.",
+                "Any modification that alters dates, values or context compromises the evidential value of the annex."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "La clase solo permite modificaciones mínimas y controladas que no cambien el significado de la evidencia.",
+                "El difuminado es aceptable cuando se requiere proteger información altamente sensible (por ejemplo, identificadores personales).",
+                "Resaltar con cuadros o flechas es válido siempre que los datos subyacentes permanezcan intactos.",
+                "Cualquier modificación que altere fechas, valores o contexto compromete el valor probatorio del anexo."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Procedimiento general de anexos",
+        "Question Text": {
+          "en-US": [
+            "Which sequence best summarizes the general procedure for integrating annexes into a forensic report, as described in the class?"
+          ],
+          "es-MX": [
+            "¿Qué secuencia resume mejor el procedimiento general para integrar anexos en un informe forense, según lo descrito en la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Capture visual evidence from the tool, export or copy relevant data without altering content, calculate and document hashes, generate diagrams, number and describe each visual element, store annexes in a controlled folder with integrity log and cross-reference them in the report.",
+            "Place all screenshots in a random folder, without hashes, without diagrams and without referencing them in the report.",
+            "First write the conclusions and then fabricate screenshots and hashes that match them.",
+            "Use only diagrams without screenshots or hashes, because visual aesthetics are more important than technical traceability."
+          ],
+          "es-MX": [
+            "Capturar la evidencia visual desde la herramienta, exportar o copiar los datos relevantes sin alterar el contenido, calcular y documentar hashes, generar diagramas, numerar y describir cada elemento visual, guardar los anexos en una carpeta controlada con bitácora de integridad y referenciarlos en el informe.",
+            "Colocar todas las capturas en una carpeta al azar, sin hashes, sin diagramas y sin referenciarlas en el informe.",
+            "Primero escribir las conclusiones y después fabricar capturas y hashes que coincidan con ellas.",
+            "Usar solo diagramas sin capturas ni hashes, porque la estética visual es más importante que la trazabilidad técnica."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Capture visual evidence from the tool, export or copy relevant data without altering content, calculate and document hashes, generate diagrams, number and describe each visual element, store annexes in a controlled folder with integrity log and cross-reference them in the report.",
+          "es-MX": "Capturar la evidencia visual desde la herramienta, exportar o copiar los datos relevantes sin alterar el contenido, calcular y documentar hashes, generar diagramas, numerar y describir cada elemento visual, guardar los anexos en una carpeta controlada con bitácora de integridad y referenciarlos en el informe."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "The class proposes a complete workflow for handling annexes.",
+                "It starts with capturing evidence directly from forensic tools without altering the content.",
+                "Hashes and diagrams are used to document integrity and clarify processes.",
+                "Finally, annexes are numbered, described, stored with integrity control and referenced from the main text."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "La clase plantea un flujo completo para el manejo de anexos.",
+                "Comienza con la captura de evidencia directamente desde las herramientas forenses sin alterar el contenido.",
+                "Se utilizan hashes y diagramas para documentar la integridad y aclarar procesos.",
+                "Al final, los anexos se numeran, describen, guardan con control de integridad y se referencian desde el texto principal."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Conclusiones de la clase",
+        "Question Text": {
+          "en-US": [
+            "What is one of the main conclusions of Class 61 regarding annexes and visual evidence in forensic reports?"
+          ],
+          "es-MX": [
+            "¿Cuál es una de las conclusiones principales de la Clase 61 sobre los anexos y la evidencia visual en informes forenses?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Annexes strengthen the credibility of the report, and visual evidence (screenshots, hashes, diagrams) must be precise, ordered, traceable and unaltered to allow verification of each finding.",
+            "Annexes are optional and have no real impact on the perceived credibility of the report.",
+            "Visual elements are mainly aesthetic and can be modified freely to better fit the narrative.",
+            "The use of annexes is discouraged because it makes the report longer and harder to read."
+          ],
+          "es-MX": [
+            "Los anexos fortalecen la credibilidad del informe, y la evidencia visual (capturas, hashes, diagramas) debe ser precisa, ordenada, trazable y no alterada para permitir la verificación de cada hallazgo.",
+            "Los anexos son opcionales y no tienen impacto real en la credibilidad del informe.",
+            "Los elementos visuales son principalmente estéticos y se pueden modificar libremente para que encajen mejor con la narrativa.",
+            "El uso de anexos se desaconseja porque hace el informe más extenso y difícil de leer."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Annexes strengthen the credibility of the report, and visual evidence (screenshots, hashes, diagrams) must be precise, ordered, traceable and unaltered to allow verification of each finding.",
+          "es-MX": "Los anexos fortalecen la credibilidad del informe, y la evidencia visual (capturas, hashes, diagramas) debe ser precisa, ordenada, trazable y no alterada para permitir la verificación de cada hallazgo."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The final section of the class underlines the role of annexes in credibility and verification."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Annexes convert the report from a purely textual description to a verifiable technical document.",
+                "Visual evidence allows any reviewer to check each step and each conclusion.",
+                "Precision, order and traceability are fundamental so that the annexes have legal value.",
+                "If visual evidence is altered or disorganized, it can be questioned or discarded in judicial or corporate contexts."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La parte final de la clase enfatiza el papel de los anexos en la credibilidad y la verificación."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Los anexos convierten el informe de una descripción puramente textual a un documento técnico verificable.",
+                "La evidencia visual permite que cualquier revisor compruebe cada paso y cada conclusión.",
+                "La precisión, el orden y la trazabilidad son fundamentales para que los anexos tengan valor jurídico.",
+                "Si la evidencia visual está alterada o desorganizada, puede ser cuestionada o descartada en contextos judiciales o corporativos."
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

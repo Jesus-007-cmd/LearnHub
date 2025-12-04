@@ -1,0 +1,734 @@
+{
+    "meta": {
+      "slug": "forense-apps17",
+      "title": "Preservación de evidencia e integridad mediante valores hash",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 2,
+      "classNo": 17,
+      "description": "Uso de funciones hash (MD5 y SHA-256) para garantizar la integridad, autenticidad y trazabilidad de la evidencia digital dentro del proceso forense.",
+      "tags": [
+        "hash",
+        "MD5",
+        "SHA-256",
+        "integridad",
+        "preservación",
+        "cadena de custodia"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "Importancia de la preservación",
+        "Question Text": {
+          "en-US": [
+            "Which group of characteristics best describes what proper preservation of digital evidence must guarantee?",
+            "When preserving digital evidence, which set of properties must be maintained at all times?"
+          ],
+          "es-MX": [
+            "¿Qué grupo de características describe mejor lo que debe garantizar una preservación adecuada de evidencia digital?",
+            "Al preservar evidencia digital, ¿qué conjunto de propiedades debe mantenerse en todo momento?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Integrity, authenticity, non-alteration and traceability of the evidence",
+            "Only confidentiality of the evidence, even if it is modified",
+            "Maximum compression of files, even if some bits are lost",
+            "An easy-to-read format, even if original timestamps are removed"
+          ],
+          "es-MX": [
+            "Integridad, autenticidad, no alteración y trazabilidad de la evidencia",
+            "Solo la confidencialidad de la evidencia, aunque se modifique",
+            "Máxima compresión de archivos, aunque se pierdan algunos bits",
+            "Un formato fácil de leer, aunque se eliminen las marcas de tiempo originales"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Integrity, authenticity, non-alteration and traceability of the evidence",
+          "es-MX": "Integridad, autenticidad, no alteración y trazabilidad de la evidencia"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Preservation as the basis of forensic work"
+            },
+            {
+              "type": "text",
+              "content": "Digital evidence must remain exactly in the same state from acquisition to final analysis, and every action must be traceable."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Integrity: the content of the evidence must not change.",
+                "Authenticity: it must be demonstrable that the evidence is the same as originally collected.",
+                "Non-alteration: forensic procedures must avoid modifying data.",
+                "Traceability: each action, copy and person involved must be documented."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Hash values such as MD5 and SHA-256 are a fundamental tool to prove that these properties have been respected."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "La preservación como base del trabajo forense"
+            },
+            {
+              "type": "text",
+              "content": "La evidencia digital debe mantenerse exactamente en el mismo estado desde su adquisición hasta el análisis final, y cada acción debe ser trazable."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Integridad: el contenido de la evidencia no debe cambiar.",
+                "Autenticidad: se debe demostrar que la evidencia es la misma que se recolectó.",
+                "No alteración: los procedimientos forenses deben evitar modificar los datos.",
+                "Trazabilidad: cada acción, copia y persona involucrada debe quedar documentada."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Los valores hash como MD5 y SHA-256 son una herramienta fundamental para demostrar que estas propiedades se han respetado."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Definición de hash forense",
+        "Question Text": {
+          "en-US": [
+            "In a forensic context, what is a hash value mainly used for?",
+            "What is the primary purpose of a forensic hash calculated over a digital file?"
+          ],
+          "es-MX": [
+            "En un contexto forense, ¿para qué se utiliza principalmente un valor hash?",
+            "¿Cuál es el propósito principal de un hash forense calculado sobre un archivo digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To act as a unique digital fingerprint that allows verifying whether a file has been altered",
+            "To compress the file so that it occupies less space on the evidence disk",
+            "To encrypt the file so that nobody can read it during the investigation",
+            "To convert the file into an executable that can be analyzed more easily"
+          ],
+          "es-MX": [
+            "Actuar como una huella digital única que permite verificar si un archivo ha sido alterado",
+            "Comprimir el archivo para que ocupe menos espacio en el disco de evidencia",
+            "Cifrar el archivo para que nadie pueda leerlo durante la investigación",
+            "Convertir el archivo en un ejecutable que se pueda analizar más fácilmente"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To act as a unique digital fingerprint that allows verifying whether a file has been altered",
+          "es-MX": "Actuar como una huella digital única que permite verificar si un archivo ha sido alterado"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "A hash is a fixed-length alphanumeric value obtained by applying a mathematical algorithm to a file or data set."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "If the content changes, the hash changes completely.",
+                "If the content is identical, the hash should be identical.",
+                "This behavior allows detecting any alteration, even of a single bit."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "For this reason, the hash is considered the 'digital fingerprint' of the evidence and is used as proof of integrity."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Un hash es un valor alfanumérico de longitud fija obtenido al aplicar un algoritmo matemático a un archivo o conjunto de datos."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Si el contenido cambia, el hash cambia por completo.",
+                "Si el contenido es idéntico, el hash debe ser idéntico.",
+                "Este comportamiento permite detectar cualquier alteración, incluso de un solo bit."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Por ello, el hash se considera la 'huella digital' de la evidencia y se utiliza como prueba de integridad."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Propiedades del hash",
+        "Question Text": {
+          "en-US": [
+            "Which set of properties correctly describes a cryptographic hash used in digital forensics?",
+            "From a forensic perspective, which characteristics should a hash function such as MD5 or SHA-256 have?"
+          ],
+          "es-MX": [
+            "¿Qué conjunto de propiedades describe correctamente a un hash criptográfico usado en informática forense?",
+            "Desde la perspectiva forense, ¿qué características debe tener una función hash como MD5 o SHA-256?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Uniqueness, sensitivity to minimal changes, non-reversibility and efficient computation",
+            "Reversibility, so that the original file can be reconstructed from the hash",
+            "Randomness, so that the same file produces different hashes every time",
+            "Ability to reduce any file to a fixed 8-bit value to save space"
+          ],
+          "es-MX": [
+            "Unicidad, sensibilidad a cambios mínimos, no reversibilidad y cálculo eficiente",
+            "Reversibilidad, para que se pueda reconstruir el archivo original desde el hash",
+            "Aleatoriedad, para que el mismo archivo produzca hashes diferentes cada vez",
+            "Capacidad de reducir cualquier archivo a un valor fijo de 8 bits para ahorrar espacio"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Uniqueness, sensitivity to minimal changes, non-reversibility and efficient computation",
+          "es-MX": "Unicidad, sensibilidad a cambios mínimos, no reversibilidad y cálculo eficiente"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Uniqueness: different files should produce different hash values.",
+                "Sensitivity: a minimal change in the file must completely alter the hash.",
+                "Non-reversibility: it must not be possible to reconstruct the original file from the hash.",
+                "Efficiency: it must be fast to calculate over large volumes of data."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "These properties make hash functions suitable to control integrity in forensic processes where many files and images are handled."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Unicidad: archivos distintos deben producir valores hash distintos.",
+                "Sensibilidad: un cambio mínimo en el archivo debe alterar completamente el hash.",
+                "No reversibilidad: no debe ser posible reconstruir el archivo original desde el hash.",
+                "Eficiencia: debe poder calcularse rápidamente sobre grandes volúmenes de datos."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Estas propiedades hacen que las funciones hash sean adecuadas para controlar la integridad en procesos forenses donde se manejan muchos archivos e imágenes."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "MD5 vs SHA-256",
+        "Question Text": {
+          "en-US": [
+            "Which statement correctly compares MD5 and SHA-256 in a forensic validation context?",
+            "From a forensic point of view, what is a correct way to describe MD5 and SHA-256?"
+          ],
+          "es-MX": [
+            "¿Qué afirmación compara correctamente MD5 y SHA-256 en un contexto de validación forense?",
+            "Desde el punto de vista forense, ¿cuál es una forma correcta de describir MD5 y SHA-256?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "MD5 is 128-bit and useful for basic checks, while SHA-256 produces a longer, more robust 256-bit value recommended as a forensic standard",
+            "Both MD5 and SHA-256 always produce identical values for any file",
+            "MD5 is more secure than SHA-256 and therefore SHA-256 is no longer used",
+            "SHA-256 is used only to compress files, whereas MD5 is used only to encrypt them"
+          ],
+          "es-MX": [
+            "MD5 es de 128 bits y útil para verificaciones básicas, mientras que SHA-256 genera un valor más largo y robusto de 256 bits recomendado como estándar forense",
+            "MD5 y SHA-256 siempre producen valores idénticos para cualquier archivo",
+            "MD5 es más seguro que SHA-256 y por ello SHA-256 ya no se utiliza",
+            "SHA-256 se usa únicamente para comprimir archivos y MD5 solo para cifrarlos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "MD5 is 128-bit and useful for basic checks, while SHA-256 produces a longer, more robust 256-bit value recommended as a forensic standard",
+          "es-MX": "MD5 es de 128 bits y útil para verificaciones básicas, mientras que SHA-256 genera un valor más largo y robusto de 256 bits recomendado como estándar forense"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "MD5 is fast and widely used, but it has known collision weaknesses in extreme scenarios."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "MD5: 128-bit hash, still used in many tools for operational checks.",
+                "SHA-256: 256-bit hash, recommended in standards and forensic guidelines.",
+                "Using both together increases confidence in the integrity verification."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "MD5 es rápido y muy extendido, pero tiene debilidades de colisión conocidas en escenarios extremos."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "MD5: hash de 128 bits, aún usado en muchas herramientas para verificaciones operativas.",
+                "SHA-256: hash de 256 bits, recomendado en estándares y guías forenses.",
+                "Usar ambos en conjunto incrementa la confianza en la verificación de integridad."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Momentos del cálculo de hash",
+        "Question Text": {
+          "en-US": [
+            "At which stages of the forensic process should hash values be calculated to properly control integrity?",
+            "According to good forensic practice, when should hashes be computed over the evidence?"
+          ],
+          "es-MX": [
+            "¿En qué etapas del proceso forense se deben calcular valores hash para controlar adecuadamente la integridad?",
+            "Según la buena práctica forense, ¿cuándo deben calcularse hashes sobre la evidencia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Before acquisition, after acquisition and at the end of the analysis",
+            "Only once, when the case report is printed",
+            "Only when the evidence is destroyed at the end of the investigation",
+            "Never during the process, only if a judge explicitly requests it"
+          ],
+          "es-MX": [
+            "Antes de la adquisición, después de la adquisición y al finalizar el análisis",
+            "Solo una vez, cuando se imprime el informe del caso",
+            "Solo cuando la evidencia se destruye al final de la investigación",
+            "Nunca durante el proceso, solo si un juez lo solicita expresamente"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Before acquisition, after acquisition and at the end of the analysis",
+          "es-MX": "Antes de la adquisición, después de la adquisición y al finalizar el análisis"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Before acquisition: hash of the original file or device, representing its initial integrity.",
+                "After acquisition: hash of the copy or forensic image, which must match the original value.",
+                "End of analysis: hash again to prove that the evidence was not modified during examination."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "If the hashes match at each stage, the examiner can demonstrate that the evidence remained intact throughout the entire process."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Antes de la adquisición: hash del archivo o dispositivo original, que representa su integridad inicial.",
+                "Después de la adquisición: hash de la copia o imagen forense, que debe coincidir con el valor original.",
+                "Al final del análisis: nuevo hash para demostrar que la evidencia no se modificó durante el examen."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Si los hashes coinciden en cada etapa, el examinador puede demostrar que la evidencia se mantuvo intacta durante todo el proceso."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Procedimiento integrado de hash",
+        "Question Text": {
+          "en-US": [
+            "Which ordered sequence best describes an integrated procedure to generate and verify hash values over a forensic file?",
+            "In a controlled environment, what is the correct order of steps to calculate and verify hashes as part of evidence preservation?"
+          ],
+          "es-MX": [
+            "¿Qué secuencia ordenada describe mejor un procedimiento integrado para generar y verificar hash sobre un archivo forense?",
+            "En un entorno controlado, ¿cuál es el orden correcto de pasos para calcular y verificar hashes como parte de la preservación de evidencia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Select the file, generate the initial hash, make a controlled copy, calculate the final hash on the copy and document tools, dates and results",
+            "Copy the file, edit its content to make it easier to read, and then calculate a single hash",
+            "Compress the file into a ZIP archive, delete the original and calculate a hash only on the compressed file",
+            "Rename the file several times and calculate a new hash after each rename"
+          ],
+          "es-MX": [
+            "Seleccionar el archivo, generar el hash inicial, hacer una copia controlada, calcular el hash final sobre la copia y documentar herramientas, fechas y resultados",
+            "Copiar el archivo, editar su contenido para que sea más fácil de leer y luego calcular un solo hash",
+            "Comprimir el archivo en un ZIP, borrar el original y calcular un hash solo sobre el archivo comprimido",
+            "Cambiar el nombre del archivo varias veces y calcular un nuevo hash tras cada cambio de nombre"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Select the file, generate the initial hash, make a controlled copy, calculate the final hash on the copy and document tools, dates and results",
+          "es-MX": "Seleccionar el archivo, generar el hash inicial, hacer una copia controlada, calcular el hash final sobre la copia y documentar herramientas, fechas y resultados"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Identify the file or set of files to be preserved.",
+                "Generate the initial hash (MD5, SHA-256 or both) with a reliable tool.",
+                "Create a controlled copy to an evidence directory or external medium.",
+                "Generate the final hash on the copy and compare it with the original value.",
+                "Document everything: dates, times, tool used, algorithm, hashes and responsible person."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "This complete procedure not only proves integrity, but also strengthens the chain of custody of the digital evidence."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Identificar el archivo o conjunto de archivos que se desea preservar.",
+                "Generar el hash inicial (MD5, SHA-256 o ambos) con una herramienta confiable.",
+                "Realizar una copia controlada hacia un directorio de evidencia o medio externo.",
+                "Generar el hash final sobre la copia y compararlo con el valor original.",
+                "Documentar todo: fechas, horas, herramienta usada, algoritmo, hashes y responsable."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Este procedimiento completo no solo demuestra la integridad, sino que también fortalece la cadena de custodia de la evidencia digital."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Herramientas gratuitas para hashes",
+        "Question Text": {
+          "en-US": [
+            "Which of the following tools can be used in Windows to calculate hash values such as MD5 or SHA-256 according to the lesson?",
+            "In the context of this class, which program or command is mentioned as an option to generate forensic hash values?"
+          ],
+          "es-MX": [
+            "¿Cuál de las siguientes herramientas puede utilizarse en Windows para calcular valores hash como MD5 o SHA-256 según la lección?",
+            "En el contexto de esta clase, ¿qué programa o comando se menciona como opción para generar valores hash forenses?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "HashCalc, WinMD5Free, HashMyFiles and the CertUtil command",
+            "Only the Notepad text editor",
+            "The Paint application drawing tool",
+            "The Windows Calculator application in standard mode"
+          ],
+          "es-MX": [
+            "HashCalc, WinMD5Free, HashMyFiles y el comando CertUtil",
+            "Solo el editor de texto Bloc de notas",
+            "La herramienta de dibujo Paint",
+            "La calculadora de Windows en modo estándar"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "HashCalc, WinMD5Free, HashMyFiles and the CertUtil command",
+          "es-MX": "HashCalc, WinMD5Free, HashMyFiles y el comando CertUtil"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The class presents several free tools for calculating hash values over digital evidence."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "HashCalc, WinMD5Free and HashMyFiles provide graphical interfaces.",
+                "CertUtil is a built-in Windows command that can be used from the console.",
+                "All of them can generate MD5 and SHA-256 values that are then documented."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "En la clase se presentan varias herramientas gratuitas para calcular valores hash sobre la evidencia digital."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "HashCalc, WinMD5Free y HashMyFiles ofrecen interfaces gráficas.",
+                "CertUtil es un comando integrado en Windows que puede usarse desde la consola.",
+                "Todas permiten generar valores MD5 y SHA-256 que luego se documentan."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Ejemplo usando CertUtil",
+        "Question Text": {
+          "en-US": [
+            "According to the class, which is a correct example of using CertUtil to calculate a SHA-256 hash in Windows?",
+            "Which command line correctly shows how to obtain a SHA-256 hash with CertUtil as described in the lesson?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿cuál es un ejemplo correcto de uso de CertUtil para calcular un hash SHA-256 en Windows?",
+            "¿Qué línea de comando muestra correctamente cómo obtener un hash SHA-256 con CertUtil según lo descrito en la lección?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "certutil -hashfile archivo.db SHA256",
+            "certutil archivo.db /compress SHA256",
+            "certutil -encrypt archivo.db SHA256",
+            "certutil -hashdir C:\\ SHA1, SHA2, SHA3"
+          ],
+          "es-MX": [
+            "certutil -hashfile archivo.db SHA256",
+            "certutil archivo.db /compress SHA256",
+            "certutil -encrypt archivo.db SHA256",
+            "certutil -hashdir C:\\ SHA1, SHA2, SHA3"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "certutil -hashfile archivo.db SHA256",
+          "es-MX": "certutil -hashfile archivo.db SHA256"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The syntax 'certutil -hashfile <file> <algorithm>' is used to calculate hashes with CertUtil."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "The parameter -hashfile indicates that a hash will be calculated for a specific file.",
+                "The last argument specifies the algorithm: MD5, SHA1, SHA256, etc.",
+                "The output includes the resulting hash and can be copied into the forensic documentation."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La sintaxis 'certutil -hashfile <archivo> <algoritmo>' se utiliza para calcular hashes con CertUtil."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "El parámetro -hashfile indica que se calculará un hash para un archivo concreto.",
+                "El último argumento especifica el algoritmo: MD5, SHA1, SHA256, etc.",
+                "La salida muestra el hash resultante y puede copiarse en la documentación forense."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Tipos de evidencia validables",
+        "Question Text": {
+          "en-US": [
+            "Which of the following sets correctly lists types of digital evidence that can be validated using hashes according to the class?",
+            "In the lesson, which examples are explicitly mentioned as elements whose integrity can be checked with MD5 or SHA-256?"
+          ],
+          "es-MX": [
+            "¿Cuál de los siguientes conjuntos enumera correctamente tipos de evidencia digital que pueden validarse usando hashes según la clase?",
+            "En la lección, ¿qué ejemplos se mencionan explícitamente como elementos cuya integridad puede comprobarse con MD5 o SHA-256?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Full forensic images, mobile extractions, browser histories (SQLite), PST/OST email files, logs, documents and RAM captures",
+            "Only images in .jpg format, because hashes do not work with databases or logs",
+            "Only text documents, since binaries cannot be hashed",
+            "Exclusively audio files and videos, but not any type of log or database"
+          ],
+          "es-MX": [
+            "Imágenes forenses completas, extracciones móviles, historiales de navegadores (SQLite), archivos de correo PST/OST, logs, documentos y capturas de RAM",
+            "Solo imágenes en formato .jpg, porque los hashes no funcionan con bases de datos ni logs",
+            "Solo documentos de texto, ya que no se pueden hacer hashes de binarios",
+            "Exclusivamente audios y videos, pero ningún tipo de log o base de datos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Full forensic images, mobile extractions, browser histories (SQLite), PST/OST email files, logs, documents and RAM captures",
+          "es-MX": "Imágenes forenses completas, extracciones móviles, historiales de navegadores (SQLite), archivos de correo PST/OST, logs, documentos y capturas de RAM"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Any digital file or data set can be hashed, regardless of its internal format."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Disk images (.dd, .E01) and mobile extractions.",
+                "Browser histories in SQLite, PST/OST email containers and system logs.",
+                "Documents, databases and even memory dumps.",
+                "All of them can be validated with MD5 and SHA-256 within the forensic workflow."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Cualquier archivo digital o conjunto de datos puede someterse a una función hash, sin importar su formato interno."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Imágenes de disco (.dd, .E01) y extracciones móviles.",
+                "Historiales de navegadores en SQLite, contenedores PST/OST y logs del sistema.",
+                "Documentos, bases de datos e incluso volcados de memoria.",
+                "Todos pueden validarse con MD5 y SHA-256 dentro del flujo forense."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Ejemplo integrado de preservación",
+        "Question Text": {
+          "en-US": [
+            "In the integrated example of the class, what sequence is followed to preserve a browser history SQLite database using hashes?",
+            "According to the scenario described in the lesson, how is a browser history database preserved and validated with SHA-256?"
+          ],
+          "es-MX": [
+            "En el ejemplo integrado de la clase, ¿qué secuencia se sigue para preservar una base de datos SQLite de historial de navegación usando hashes?",
+            "Según el escenario descrito en la lección, ¿cómo se preserva y valida con SHA-256 una base de datos de historial de navegación?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The SHA-256 hash of the original database is calculated, the file is copied to an evidence directory, the hash of the copy is calculated again and both values are documented",
+            "The original database is edited to remove irrelevant entries and then a single hash is calculated at the end",
+            "The database is converted to a Word document to make it easier to read and then the Word file is hashed",
+            "Only a screenshot of the browser is taken, without calculating any hash on the database file"
+          ],
+          "es-MX": [
+            "Se calcula el hash SHA-256 de la base de datos original, se copia el archivo a un directorio de evidencia, se vuelve a calcular el hash de la copia y se documentan ambos valores",
+            "Se edita la base de datos original para eliminar entradas irrelevantes y luego se calcula un único hash al final",
+            "La base de datos se convierte a un documento de Word para que sea más fácil de leer y después se hace el hash del archivo Word",
+            "Solo se toma una captura de pantalla del navegador, sin calcular ningún hash sobre el archivo de base de datos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The SHA-256 hash of the original database is calculated, the file is copied to an evidence directory, the hash of the copy is calculated again and both values are documented",
+          "es-MX": "Se calcula el hash SHA-256 de la base de datos original, se copia el archivo a un directorio de evidencia, se vuelve a calcular el hash de la copia y se documentan ambos valores"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The example shows the complete cycle of preservation using hashes."
+            },
+            {
+              "type": "ol",
+              "items": [
+                "Obtain the original browser history database (for example, history.db or places.sqlite).",
+                "Calculate the SHA-256 hash of the original file and record it.",
+                "Copy the database to the evidence directory in a controlled way.",
+                "Calculate the SHA-256 hash of the copy and verify that it matches the original.",
+                "Include both hashes and the procedure in the final report."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El ejemplo muestra el ciclo completo de preservación utilizando hashes."
+            },
+            {
+              "type": "ol",
+              "items": [
+                "Obtener la base de datos original del historial de navegación (por ejemplo, history.db o places.sqlite).",
+                "Calcular el hash SHA-256 del archivo original y registrarlo.",
+                "Copiar la base de datos al directorio de evidencia de forma controlada.",
+                "Calcular el hash SHA-256 de la copia y verificar que coincida con el original.",
+                "Incluir ambos hashes y el procedimiento en el informe final."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Documentación y cadena de custodia",
+        "Question Text": {
+          "en-US": [
+            "According to the lesson, which elements must be documented when recording hash values as part of evidence preservation?",
+            "When documenting a hashing process in a forensic report, which information should be included?"
+          ],
+          "es-MX": [
+            "Según la lección, ¿qué elementos deben documentarse al registrar valores hash como parte de la preservación de evidencia?",
+            "Al documentar un proceso de hash en un informe forense, ¿qué información se debe incluir?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Date and time, tool used, algorithm, original and final hash, file name and responsible person",
+            "Only the hash value, without indicating which file it belongs to",
+            "Only the algorithm name, without showing the resulting hash",
+            "The color of the computer case and the examiner’s favorite editor"
+          ],
+          "es-MX": [
+            "Fecha y hora, herramienta utilizada, algoritmo, hash original y final, nombre del archivo y responsable",
+            "Solo el valor del hash, sin indicar a qué archivo pertenece",
+            "Solo el nombre del algoritmo, sin mostrar el hash resultante",
+            "El color del gabinete de la computadora y el editor favorito del perito"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Date and time, tool used, algorithm, original and final hash, file name and responsible person",
+          "es-MX": "Fecha y hora, herramienta utilizada, algoritmo, hash original y final, nombre del archivo y responsable"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Date and time of the hashing operation.",
+                "Tool and version used to generate the hashes.",
+                "Algorithm applied (e.g. MD5, SHA-256).",
+                "Original and final hash values when copies are involved.",
+                "Exact file name and path, plus the person responsible."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "All this information supports the chain of custody and allows another expert to repeat and verify the procedure."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Fecha y hora en que se realizó el cálculo.",
+                "Herramienta y versión utilizadas para generar los hashes.",
+                "Algoritmo aplicado (por ejemplo, MD5, SHA-256).",
+                "Valores de hash original y final cuando hay copias involucradas.",
+                "Nombre y ruta exacta del archivo, además de la persona responsable."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Toda esta información respalda la cadena de custodia y permite que otro perito repita y verifique el procedimiento."
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

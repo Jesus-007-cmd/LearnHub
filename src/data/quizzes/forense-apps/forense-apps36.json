@@ -1,0 +1,569 @@
+{
+    "meta": {
+      "slug": "forense-apps36",
+      "title": "Clase 36 – Identificación de mensajes eliminados o alterados",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 3,
+      "classNo": 36,
+      "description": "Detección de mensajes eliminados, modificados o inconsistentes mediante la comparación de bases actuales, copias de seguridad, multimedia residual y registros de notificaciones, para evidenciar borrados y manipulaciones en historiales digitales.",
+      "tags": [
+        "mensajes eliminados",
+        "whatsapp",
+        "backups",
+        "sqlite",
+        "notificaciones",
+        "borrado selectivo",
+        "manipulación",
+        "msgstore.db",
+        "forense digital",
+        "timeline"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "importancia-borrados",
+        "Question Text": {
+          "en-US": [
+            "Why is detecting deleted or altered messages considered a critical task in forensic analysis of messaging apps?"
+          ],
+          "es-MX": [
+            "¿Por qué la detección de mensajes eliminados o alterados se considera una tarea crítica en el análisis forense de aplicaciones de mensajería?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it reveals attempts to hide information, shows manipulation of conversations and helps prove what is missing, not only what is visible in the current chat",
+            "Because it allows the examiner to automatically restore all deleted content to its original state without any limitation",
+            "Because once a message is deleted in an app, it disappears from all backups, logs and systems with no trace at all",
+            "Because courts only accept deleted messages as evidence and ignore all messages that are still visible"
+          ],
+          "es-MX": [
+            "Porque revela intentos de ocultar información, evidencia la manipulación de conversaciones y ayuda a demostrar lo que falta, no solo lo que es visible en el chat actual",
+            "Porque permite al perito restaurar automáticamente todo el contenido borrado a su estado original sin ninguna limitación",
+            "Porque cuando un mensaje se elimina en una app, desaparece de todos los respaldos, logs y sistemas sin dejar rastro alguno",
+            "Porque los tribunales solo aceptan mensajes borrados como evidencia y descartan todos los mensajes que siguen visibles"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it reveals attempts to hide information, shows manipulation of conversations and helps prove what is missing, not only what is visible in the current chat",
+          "es-MX": "Porque revela intentos de ocultar información, evidencia la manipulación de conversaciones y ayuda a demostrar lo que falta, no solo lo que es visible en el chat actual"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class stresses that many cases depend on showing that content was removed or altered. Proving selective or massive deletion can be as important as the messages that remain in the conversation.",
+              "es-MX": "La clase enfatiza que muchos casos dependen de demostrar que se eliminó o alteró contenido. Probar borrado selectivo o masivo puede ser tan importante como los mensajes que permanecen en la conversación."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "fuentes-rastro",
+        "Question Text": {
+          "en-US": [
+            "According to the class, which combination BEST represents the main sources where traces of deleted messages can still be found?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿qué combinación representa MEJOR las fuentes principales donde aún pueden encontrarse rastros de mensajes eliminados?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Backups (msgstore.db.crypt14 or similar), the current database, residual multimedia (Media/ and thumbs) and system notification logs",
+            "Only the visible chat on the phone screen, since no other internal record is ever created",
+            "The device wallpaper, the ringtone folder and the battery statistics screen",
+            "Exclusively in social network copies of the screenshots taken by the user"
+          ],
+          "es-MX": [
+            "Respaldos (msgstore.db.crypt14 o similares), la base de datos actual, multimedia residual (Media/ y miniaturas) y registros de notificaciones del sistema",
+            "Únicamente en el chat visible en la pantalla del teléfono, ya que nunca se crea ningún otro registro interno",
+            "En el fondo de pantalla del dispositivo, la carpeta de tonos y la pantalla de estadísticas de batería",
+            "Exclusivamente en las copias de redes sociales de las capturas de pantalla tomadas por el usuario"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Backups (msgstore.db.crypt14 or similar), the current database, residual multimedia (Media/ and thumbs) and system notification logs",
+          "es-MX": "Respaldos (msgstore.db.crypt14 o similares), la base de datos actual, multimedia residual (Media/ y miniaturas) y registros de notificaciones del sistema"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Backups preserve older states of conversations.",
+                "The current database can keep empty or orphan records.",
+                "Media folders and thumbnails reveal content whose message was removed.",
+                "Notification logs may still hold previews of deleted messages."
+              ],
+              "es-MX": [
+                "Los respaldos conservan estados anteriores de las conversaciones.",
+                "La base de datos actual puede mantener registros vacíos u huérfanos.",
+                "Las carpetas de media y miniaturas revelan contenido cuyo mensaje fue eliminado.",
+                "Los logs de notificaciones pueden conservar previsualizaciones de mensajes borrados."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "comparacion-backup-actual",
+        "Question Text": {
+          "en-US": [
+            "What is the MAIN forensic value of comparing an older backup database with the current messaging database?"
+          ],
+          "es-MX": [
+            "¿Cuál es el valor forense PRINCIPAL de comparar una base de datos de respaldo antigua con la base de datos actual de mensajería?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It allows the examiner to identify messages that existed in the backup but are absent in the current database, revealing deletions or modifications performed after the backup date",
+            "It guarantees that all deleted messages will be automatically restored into the current app",
+            "It serves only to verify that both files have identical size, without analyzing their content",
+            "It is used to overwrite the current database with the backup to simplify the investigation"
+          ],
+          "es-MX": [
+            "Permite al perito identificar mensajes que existían en el respaldo pero están ausentes en la base actual, revelando eliminaciones o modificaciones realizadas después de la fecha del backup",
+            "Garantiza que todos los mensajes borrados se restauren automáticamente dentro de la aplicación actual",
+            "Sirve únicamente para verificar que ambos archivos tengan el mismo tamaño, sin analizar su contenido",
+            "Se utiliza para sobrescribir la base actual con el respaldo y así simplificar la investigación"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It allows the examiner to identify messages that existed in the backup but are absent in the current database, revealing deletions or modifications performed after the backup date",
+          "es-MX": "Permite al perito identificar mensajes que existían en el respaldo pero están ausentes en la base actual, revelando eliminaciones o modificaciones realizadas después de la fecha del backup"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class shows a simple comparison table (ID / Backup / Current) to mark which messages were deleted or changed after the last backup, exposing selective cleaning of the conversation.",
+              "es-MX": "La clase muestra una tabla de comparación sencilla (ID / Backup / Actual) para marcar qué mensajes se borraron o cambiaron después del último respaldo, evidenciando limpiezas selectivas de la conversación."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "indice-sqlite-nulos",
+        "Question Text": {
+          "en-US": [
+            "In the context of the current SQLite database (for example msgstore.db), which record pattern is a STRONG indicator of a deleted message?"
+          ],
+          "es-MX": [
+            "En el contexto de la base SQLite actual (por ejemplo msgstore.db), ¿qué patrón de registro es un indicador FUERTE de un mensaje eliminado?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Rows where the main text field (data) is NULL or empty, but the message ID, timestamps or media references still exist in the record",
+            "Rows where data contains long, detailed text and multiple emojis",
+            "Rows with a valid text message and fully consistent attachments",
+            "Rows that appear twice with exactly the same content and timestamps"
+          ],
+          "es-MX": [
+            "Filas donde el campo principal de texto (data) está en NULL o vacío, pero el ID de mensaje, timestamps o referencias de media siguen existiendo en el registro",
+            "Filas donde data contiene texto largo y detallado con muchos emojis",
+            "Filas con un mensaje de texto válido y adjuntos totalmente consistentes",
+            "Filas que aparecen dos veces con exactamente el mismo contenido y timestamps"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Rows where the main text field (data) is NULL or empty, but the message ID, timestamps or media references still exist in the record",
+          "es-MX": "Filas donde el campo principal de texto (data) está en NULL o vacío, pero el ID de mensaje, timestamps o referencias de media siguen existiendo en el registro"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Some apps blank out message content but keep the record structure.",
+                "NULL or empty data with preserved metadata is a classic sign of deletion.",
+                "These records can still reveal timing and sometimes attachments."
+              ],
+              "es-MX": [
+                "Algunas apps vacían el contenido del mensaje pero mantienen la estructura del registro.",
+                "Data en NULL o vacío con metadatos conservados es un signo clásico de eliminación.",
+                "Estos registros aún pueden revelar tiempos y a veces adjuntos."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "saltos-secuencia",
+        "Question Text": {
+          "en-US": [
+            "What can GAPS in the sequence of message IDs (for example _id 5023, 5024, 5027) suggest in a forensic review?"
+          ],
+          "es-MX": [
+            "¿Qué pueden sugerir los HUECOS en la secuencia de IDs de mensajes (por ejemplo _id 5023, 5024, 5027) en una revisión forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "That messages with the missing IDs likely existed at some point and were deleted or became inaccessible, requiring further correlation with backups and other artifacts",
+            "That the database engine always skips numbers randomly and it has no forensic meaning",
+            "That the device has a hardware failure that automatically removes all even IDs",
+            "That the user never sent any messages between those numbers, so the IDs were simply reserved"
+          ],
+          "es-MX": [
+            "Que los mensajes con los IDs faltantes probablemente existieron en algún momento y fueron borrados o quedaron inaccesibles, lo que requiere más correlación con respaldos y otros artefactos",
+            "Que el motor de base de datos siempre se salta números al azar y no tiene significado forense",
+            "Que el dispositivo tiene una falla de hardware que elimina automáticamente todos los IDs pares",
+            "Que el usuario nunca envió mensajes entre esos números, de modo que los IDs solo quedaron reservados"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "That messages with the missing IDs likely existed at some point and were deleted or became inaccessible, requiring further correlation with backups and other artifacts",
+          "es-MX": "Que los mensajes con los IDs faltantes probablemente existieron en algún momento y fueron borrados o quedaron inaccesibles, lo que requiere más correlación con respaldos y otros artefactos"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class highlights that sequences with missing IDs are a red flag: they suggest prior records that were removed logically or physically and must be investigated together with backups, caches and logs.",
+              "es-MX": "La clase señala que las secuencias con IDs faltantes son una bandera roja: sugieren registros previos que fueron removidos lógica o físicamente y deben investigarse junto con respaldos, cachés y logs."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "multimedia-residual",
+        "Question Text": {
+          "en-US": [
+            "How can residual multimedia files (such as photos and thumbnails) help detect deleted messages according to the class?"
+          ],
+          "es-MX": [
+            "¿Cómo pueden ayudar los archivos multimedia residuales (como fotos y miniaturas) a detectar mensajes eliminados según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "If images or thumbnails remain in Media/ or thumbs folders but the associated message is missing from the conversation, this strongly suggests that the message was deleted while the file survived",
+            "They are never relevant because multimedia is always deleted at the same time as the chat message",
+            "Their presence only indicates that the user opened the gallery once, with no link to the conversation",
+            "Residual media always belongs to other apps and should not be considered in the analysis"
+          ],
+          "es-MX": [
+            "Si hay imágenes o miniaturas en carpetas Media/ o thumbs pero el mensaje asociado ya no aparece en la conversación, esto sugiere fuertemente que el mensaje fue eliminado mientras el archivo sobrevivió",
+            "Nunca son relevantes porque la multimedia siempre se elimina al mismo tiempo que el mensaje de chat",
+            "Su presencia solo indica que el usuario abrió la galería alguna vez, sin relación con la conversación",
+            "La multimedia residual siempre pertenece a otras apps y no debe considerarse en el análisis"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "If images or thumbnails remain in Media/ or thumbs folders but the associated message is missing from the conversation, this strongly suggests that the message was deleted while the file survived",
+          "es-MX": "Si hay imágenes o miniaturas en carpetas Media/ o thumbs pero el mensaje asociado ya no aparece en la conversación, esto sugiere fuertemente que el mensaje fue eliminado mientras el archivo sobrevivió"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Apps often manage message records and file storage separately.",
+                "Deleting a message does not always remove the associated file.",
+                "Finding ‘orphan’ media is a classic sign of prior content now missing from the chat."
+              ],
+              "es-MX": [
+                "Las apps suelen gestionar por separado los registros de mensajes y el almacenamiento de archivos.",
+                "Eliminar un mensaje no siempre borra el archivo asociado.",
+                "Encontrar multimedia ‘huérfana’ es un signo clásico de contenido previo que ya no está en el chat."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "notificaciones-sistema",
+        "Question Text": {
+          "en-US": [
+            "What role do system notification logs play in the identification of deleted messages, as described in the class?"
+          ],
+          "es-MX": [
+            "¿Qué papel desempeñan los registros de notificaciones del sistema en la identificación de mensajes eliminados, según lo descrito en la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They can store previews or full text of messages that were received and shown as notifications, even if the user later deleted the message inside the app",
+            "They only record battery status and signal strength, without any message content",
+            "They are always encrypted by the OS in a way that makes them completely unusable for forensics",
+            "They automatically delete themselves whenever any message is removed in the app"
+          ],
+          "es-MX": [
+            "Pueden almacenar previsualizaciones o texto completo de mensajes que fueron recibidos y mostrados como notificaciones, aunque después el usuario haya borrado el mensaje dentro de la app",
+            "Solo registran el estado de la batería y la intensidad de la señal, sin contenido de mensajes",
+            "Siempre están cifrados por el sistema operativo de forma que sean totalmente inutilizables para forense",
+            "Se borran automáticamente cada vez que se elimina un mensaje en la aplicación"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They can store previews or full text of messages that were received and shown as notifications, even if the user later deleted the message inside the app",
+          "es-MX": "Pueden almacenar previsualizaciones o texto completo de mensajes que fueron recibidos y mostrados como notificaciones, aunque después el usuario haya borrado el mensaje dentro de la app"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class mentions that databases such as notification_log.db can preserve content that was visible in the status bar, providing an alternative source for recovering messages that no longer appear in the chat.",
+              "es-MX": "La clase menciona que bases como notification_log.db pueden conservar contenido que se mostró en la barra de notificaciones, ofreciendo una fuente alternativa para recuperar mensajes que ya no aparecen en el chat."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "consulta-sql-borrados",
+        "Question Text": {
+          "en-US": [
+            "Which SQL-style query example from the class is commonly used to identify potentially deleted messages in the messages table?"
+          ],
+          "es-MX": [
+            "¿Qué ejemplo de consulta SQL de la clase se usa comúnmente para identificar posibles mensajes eliminados en la tabla messages?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "SELECT * FROM messages WHERE data IS NULL OR data = '';",
+            "SELECT * FROM messages WHERE media_wa_type = 1;",
+            "SELECT * FROM messages WHERE key_from_me = 1;",
+            "SELECT * FROM messages WHERE timestamp > 0;"
+          ],
+          "es-MX": [
+            "SELECT * FROM messages WHERE data IS NULL OR data = '';",
+            "SELECT * FROM messages WHERE media_wa_type = 1;",
+            "SELECT * FROM messages WHERE key_from_me = 1;",
+            "SELECT * FROM messages WHERE timestamp > 0;"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "SELECT * FROM messages WHERE data IS NULL OR data = '';",
+          "es-MX": "SELECT * FROM messages WHERE data IS NULL OR data = '';"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Filtering for NULL or empty content highlights records where the text has been removed.",
+                "Other fields in those rows can still reveal time and context.",
+                "It is a starting point for deeper analysis and correlation."
+              ],
+              "es-MX": [
+                "Filtrar por contenido NULL o vacío resalta registros donde se ha eliminado el texto.",
+                "Otros campos de esas filas aún pueden revelar tiempo y contexto.",
+                "Es un punto de partida para análisis y correlación más profunda."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "inconsistencias-timeline",
+        "Question Text": {
+          "en-US": [
+            "Which of the following is an example of a suspicious timeline inconsistency mentioned in the class that may indicate manipulation or alteration?"
+          ],
+          "es-MX": [
+            "¿Cuál de los siguientes es un ejemplo de inconsistencia sospechosa en la línea de tiempo mencionada en la clase que puede indicar manipulación o alteración?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A message appears to have been sent before the existence of its associated multimedia file or with a timestamp clearly out of sync with the device’s normal time configuration",
+            "All messages show timestamps that match the device’s configured timezone and log events",
+            "A backup and the current database show identical records and hashes",
+            "The user sends several consecutive messages with the same emoji reacting to a joke"
+          ],
+          "es-MX": [
+            "Un mensaje parece haberse enviado antes de la existencia de su archivo multimedia asociado o con un timestamp claramente desfasado respecto a la configuración normal de hora del dispositivo",
+            "Todos los mensajes muestran timestamps que coinciden con la zona horaria configurada y los eventos de log",
+            "Un respaldo y la base de datos actual muestran registros e hashes idénticos",
+            "El usuario envía varios mensajes seguidos con el mismo emoji reaccionando a un chiste"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A message appears to have been sent before the existence of its associated multimedia file or with a timestamp clearly out of sync with the device’s normal time configuration",
+          "es-MX": "Un mensaje parece haberse enviado antes de la existencia de su archivo multimedia asociado o con un timestamp claramente desfasado respecto a la configuración normal de hora del dispositivo"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class indicates that temporal contradictions (for example, a message referencing a file that did not yet exist, or abnormal timezone shifts) can reveal edits, restorations or clock tampering.",
+              "es-MX": "La clase indica que las contradicciones temporales (por ejemplo, un mensaje que hace referencia a un archivo que aún no existía o cambios de zona horaria anómalos) pueden revelar ediciones, restauraciones o manipulación del reloj."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "ejemplo-integrado",
+        "Question Text": {
+          "en-US": [
+            "In the integrated example from the class, what combined findings supported the conclusion of selective deletion in a WhatsApp conversation?"
+          ],
+          "es-MX": [
+            "En el ejemplo integrado de la clase, ¿qué hallazgos combinados respaldaron la conclusión de borrado selectivo en una conversación de WhatsApp?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Messages present in a 7-day-old backup but missing in the current database, orphan thumbnails, notification entries of messages not seen in the app and gaps in message IDs around the incident time",
+            "A perfect match between backup and current database with no missing IDs",
+            "No media files at all in the device, indicating the user never used WhatsApp",
+            "Only a high battery drain at the time of the incident, without any database or media anomalies"
+          ],
+          "es-MX": [
+            "Mensajes presentes en un respaldo de hace 7 días pero ausentes en la base actual, miniaturas huérfanas, entradas de notificaciones de mensajes que no aparecen en la app y huecos en IDs de mensajes alrededor del momento del incidente",
+            "Coincidencia perfecta entre respaldo y base actual sin IDs faltantes",
+            "Ausencia total de archivos multimedia en el dispositivo, lo que indica que el usuario nunca usó WhatsApp",
+            "Solo un alto consumo de batería en el momento del incidente, sin anomalías en base de datos ni multimedia"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Messages present in a 7-day-old backup but missing in the current database, orphan thumbnails, notification entries of messages not seen in the app and gaps in message IDs around the incident time",
+          "es-MX": "Mensajes presentes en un respaldo de hace 7 días pero ausentes en la base actual, miniaturas huérfanas, entradas de notificaciones de mensajes que no aparecen en la app y huecos en IDs de mensajes alrededor del momento del incidente"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "No single artifact proves manipulation by itself.",
+                "Combining backup differences, media remnants, notifications and ID gaps builds a strong case.",
+                "The pattern points to deliberate, selective deletion rather than normal use."
+              ],
+              "es-MX": [
+                "Ningún artefacto por sí solo prueba manipulación.",
+                "Combinar diferencias de respaldos, restos de media, notificaciones y huecos de IDs construye un caso sólido.",
+                "El patrón apunta a un borrado selectivo deliberado más que a un uso normal."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "herramientas-identificacion",
+        "Question Text": {
+          "en-US": [
+            "Which tools are mentioned in the class as helpful for identifying deleted messages and inconsistencies in messaging databases?"
+          ],
+          "es-MX": [
+            "¿Qué herramientas se mencionan en la clase como útiles para identificar mensajes eliminados e inconsistencias en bases de datos de mensajería?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "DB Browser for SQLite, Magnet AXIOM, Cellebrite Physical Analyzer, WhatsApp Viewer, ExifTool and Notification Log Analyzer",
+            "Only the default file explorer of the phone, since specialized tools are not needed",
+            "Video editors and photo filters, because they can change the appearance of the messages",
+            "Antivirus software exclusively, as it automatically reconstructs all deleted conversations"
+          ],
+          "es-MX": [
+            "DB Browser for SQLite, Magnet AXIOM, Cellebrite Physical Analyzer, WhatsApp Viewer, ExifTool y Notification Log Analyzer",
+            "Solo el explorador de archivos por defecto del teléfono, ya que no se necesitan herramientas especializadas",
+            "Editores de video y filtros de fotos, porque pueden cambiar la apariencia de los mensajes",
+            "Software antivirus exclusivamente, ya que reconstruye automáticamente todas las conversaciones eliminadas"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "DB Browser for SQLite, Magnet AXIOM, Cellebrite Physical Analyzer, WhatsApp Viewer, ExifTool and Notification Log Analyzer",
+          "es-MX": "DB Browser for SQLite, Magnet AXIOM, Cellebrite Physical Analyzer, WhatsApp Viewer, ExifTool y Notification Log Analyzer"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class lists both manual (DB Browser, WhatsApp Viewer) and automated suites (AXIOM, Cellebrite) along with metadata tools (ExifTool) and notification analyzers, showing that deleted-message detection is a multi-tool process.",
+              "es-MX": "La clase enumera herramientas manuales (DB Browser, WhatsApp Viewer) y suites automatizadas (AXIOM, Cellebrite) junto con analizadores de metadatos (ExifTool) y de notificaciones, mostrando que la detección de mensajes borrados es un proceso multi-herramienta."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "buenas-practicas",
+        "Question Text": {
+          "en-US": [
+            "Which statement BEST reflects a good forensic practice when investigating possible deleted or altered messages?"
+          ],
+          "es-MX": [
+            "¿Qué afirmación refleja MEJOR una buena práctica forense al investigar posibles mensajes eliminados o alterados?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Correlate multiple sources (backups, current DB, media, notifications, timelines) before concluding that manipulation occurred, and document every step clearly in the logbook",
+            "Base the entire conclusion on a single suspicious screenshot sent by one of the parties involved",
+            "Immediately accuse the user of manipulation as soon as any missing ID is found, without further checks",
+            "Edit the database manually to ‘fix’ inconsistencies before taking screenshots for the report"
+          ],
+          "es-MX": [
+            "Correlacionar múltiples fuentes (respaldos, base actual, media, notificaciones, líneas de tiempo) antes de concluir que hubo manipulación y documentar cada paso con claridad en la bitácora",
+            "Basar toda la conclusión en una sola captura de pantalla sospechosa enviada por alguna de las partes",
+            "Acusar de inmediato al usuario de manipulación en cuanto se encuentre cualquier ID faltante, sin más verificaciones",
+            "Editar la base de datos manualmente para ‘arreglar’ inconsistencias antes de tomar capturas para el informe"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Correlate multiple sources (backups, current DB, media, notifications, timelines) before concluding that manipulation occurred, and document every step clearly in the logbook",
+          "es-MX": "Correlacionar múltiples fuentes (respaldos, base actual, media, notificaciones, líneas de tiempo) antes de concluir que hubo manipulación y documentar cada paso con claridad en la bitácora"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Forensic conclusions must be based on converging evidence.",
+                "Overreliance on a single artifact increases the risk of error.",
+                "Documentation in the logbook is essential for transparency and legal validity."
+              ],
+              "es-MX": [
+                "Las conclusiones forenses deben basarse en evidencia convergente.",
+                "Confiar en un solo artefacto incrementa el riesgo de error.",
+                "La documentación en la bitácora es esencial para transparencia y validez legal."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "limitaciones-recuperacion",
+        "Question Text": {
+          "en-US": [
+            "What limitation does the class implicitly highlight regarding the recovery of deleted messages?"
+          ],
+          "es-MX": [
+            "¿Qué limitación destaca implícitamente la clase respecto a la recuperación de mensajes eliminados?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Not all deleted messages can be fully recovered; sometimes only traces, fragments, metadata or indirect evidence (like thumbnails and notifications) remain available",
+            "All deleted messages can always be fully restored with 100% certainty if the right tool is used",
+            "Deletion only affects the visual interface, while the database always keeps an unaltered copy of every message forever",
+            "Once a backup is created, the user can never alter or delete any messages without being detected"
+          ],
+          "es-MX": [
+            "No todos los mensajes eliminados pueden recuperarse por completo; en ocasiones solo quedan rastros, fragmentos, metadatos o evidencia indirecta (como miniaturas y notificaciones)",
+            "Todos los mensajes borrados se pueden restaurar siempre al 100% si se usa la herramienta adecuada",
+            "El borrado solo afecta la interfaz visual, mientras que la base de datos conserva para siempre una copia intacta de cada mensaje",
+            "Una vez creado un respaldo, el usuario nunca puede alterar o eliminar mensajes sin ser detectado"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Not all deleted messages can be fully recovered; sometimes only traces, fragments, metadata or indirect evidence (like thumbnails and notifications) remain available",
+          "es-MX": "No todos los mensajes eliminados pueden recuperarse por completo; en ocasiones solo quedan rastros, fragmentos, metadatos o evidencia indirecta (como miniaturas y notificaciones)"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class shows that forensic work often deals with partial evidence: gaps in IDs, empty data fields, orphan media and logs that point to prior content, even if the full text or attachment cannot be restored.",
+              "es-MX": "La clase muestra que el trabajo forense a menudo trata con evidencia parcial: huecos en IDs, campos data vacíos, multimedia huérfana y logs que apuntan a contenido previo, aunque el texto completo o el adjunto ya no pueda recuperarse."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

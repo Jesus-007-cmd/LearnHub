@@ -1,0 +1,770 @@
+{
+    "meta": {
+      "slug": "forense-apps48",
+      "title": "Recuperación de archivos multimedia eliminados",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 4,
+      "classNo": 48,
+      "description": "Técnicas forenses para recuperar imágenes, videos y audios eliminados mediante análisis de fragmentos, sectores libres, miniaturas, bases SQLite y file carving con herramientas especializadas.",
+      "tags": [
+        "recuperación",
+        "file carving",
+        "miniaturas",
+        "Autopsy",
+        "Magnet AXIOM",
+        "FTK Imager",
+        "SQLite",
+        "espacio no asignado"
+      ]
+    },
+    "Questions": [
+  
+      {
+        "Category": "Conceptos básicos",
+        "Question Text": {
+          "en-US": [
+            "What usually happens at the storage level when a multimedia file (image, video or audio) is deleted from a device?"
+          ],
+          "es-MX": [
+            "¿Qué ocurre normalmente a nivel de almacenamiento cuando se elimina un archivo multimedia (imagen, video o audio) de un dispositivo?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The system only marks the space as free, and the content remains until it is overwritten.",
+            "The file is physically destroyed sector by sector immediately.",
+            "All copies, miniatures and metadata are securely erased automatically.",
+            "The file is uploaded to the cloud and removed from local storage forever."
+          ],
+          "es-MX": [
+            "El sistema solo marca el espacio como libre y el contenido permanece hasta que se sobrescribe.",
+            "El archivo se destruye físicamente sector por sector de inmediato.",
+            "Todas las copias, miniaturas y metadatos se borran de forma segura automáticamente.",
+            "El archivo se sube a la nube y se elimina del almacenamiento local para siempre."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The system only marks the space as free, and the content remains until it is overwritten.",
+          "es-MX": "El sistema solo marca el espacio como libre y el contenido permanece hasta que se sobrescribe."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Logical deletion usually modifies file system metadata, marking the blocks as available without erasing the underlying bytes. This is why forensic tools can still recover fragments or complete files."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El borrado lógico normalmente modifica la metadata del sistema de archivos, marcando los bloques como disponibles sin borrar los bytes subyacentes. Por eso las herramientas forenses aún pueden recuperar fragmentos o archivos completos."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Restos recuperables",
+        "Question Text": {
+          "en-US": [
+            "According to this class, which elements can still be recovered after a multimedia file has been deleted?"
+          ],
+          "es-MX": [
+            "Según esta clase, ¿qué elementos pueden recuperarse incluso después de que se haya eliminado un archivo multimedia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Partial images or videos, internal thumbnails, file fragments (JPG, MP4, PNG, AMR, M4A) and previous names, paths and metadata.",
+            "Only the file name but never the content.",
+            "Only text documents, but not images or videos.",
+            "Nothing at all; delete always means full erasure."
+          ],
+          "es-MX": [
+            "Imágenes o videos parciales, miniaturas internas, fragmentos de archivos (JPG, MP4, PNG, AMR, M4A) y nombres, rutas y metadatos previos.",
+            "Solo el nombre del archivo pero nunca el contenido.",
+            "Solo documentos de texto, pero no imágenes ni videos.",
+            "Nada; eliminar siempre significa borrado total."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Partial images or videos, internal thumbnails, file fragments (JPG, MP4, PNG, AMR, M4A) and previous names, paths and metadata.",
+          "es-MX": "Imágenes o videos parciales, miniaturas internas, fragmentos de archivos (JPG, MP4, PNG, AMR, M4A) y nombres, rutas y metadatos previos."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Deleted content may survive as raw bytes in unallocated space.",
+                "Thumbnails and caches often persist much longer than originals.",
+                "SQLite databases and previous app copies can hold remnants of metadata."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "El contenido borrado puede sobrevivir como bytes crudos en espacio no asignado.",
+                "Las miniaturas y cachés suelen persistir mucho más que los originales.",
+                "Las bases SQLite y copias previas de apps pueden conservar restos de metadatos."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Ubicación de restos",
+        "Question Text": {
+          "en-US": [
+            "Which locations are mentioned as typical places to find remnants of deleted multimedia files?"
+          ],
+          "es-MX": [
+            "¿Qué ubicaciones se mencionan como lugares típicos para encontrar restos de archivos multimedia eliminados?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Unallocated space, cache folders like .thumbs/.thumbnails/.cache/.Shared, SQLite databases and previous app copies such as /WhatsApp/Media/.Trash/.",
+            "Only the user’s desktop and the recycle bin.",
+            "Exclusively in the device’s RAM memory.",
+            "Only on external SD cards, never in internal storage."
+          ],
+          "es-MX": [
+            "Espacio no asignado, carpetas de caché como .thumbs/.thumbnails/.cache/.Shared, bases SQLite y copias previas de apps como /WhatsApp/Media/.Trash/.",
+            "Únicamente en el escritorio del usuario y en la papelera de reciclaje.",
+            "Exclusivamente en la memoria RAM del dispositivo.",
+            "Solo en tarjetas SD externas, nunca en el almacenamiento interno."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Unallocated space, cache folders like .thumbs/.thumbnails/.cache/.Shared, SQLite databases and previous app copies such as /WhatsApp/Media/.Trash/.",
+          "es-MX": "Espacio no asignado, carpetas de caché como .thumbs/.thumbnails/.cache/.Shared, bases SQLite y copias previas de apps como /WhatsApp/Media/.Trash/."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Deleted multimedia data can remain in physical sectors that are no longer mapped to active files, in cache directories used by apps and in internal databases that stored thumbnails or metadata."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los datos multimedia eliminados pueden quedar en sectores físicos que ya no están asignados a archivos activos, en directorios de caché usados por las apps y en bases internas que guardaban miniaturas o metadatos."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Espacio no asignado",
+        "Question Text": {
+          "en-US": [
+            "What is \"unallocated space\" in the context of forensic multimedia recovery?"
+          ],
+          "es-MX": [
+            "¿Qué es el \"espacio no asignado\" en el contexto de la recuperación forense de multimedia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Storage areas not currently assigned to any active file, but which may still contain residual data from deleted files.",
+            "A part of the disk reserved for the operating system that never changes.",
+            "The cloud storage associated with the device.",
+            "A temporary folder where screenshots are saved."
+          ],
+          "es-MX": [
+            "Áreas de almacenamiento que no están asignadas a ningún archivo activo, pero que aún pueden contener datos residuales de archivos eliminados.",
+            "Una parte del disco reservada al sistema operativo que nunca cambia.",
+            "El almacenamiento en la nube asociado al dispositivo.",
+            "Una carpeta temporal donde se guardan las capturas de pantalla."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Storage areas not currently assigned to any active file, but which may still contain residual data from deleted files.",
+          "es-MX": "Áreas de almacenamiento que no están asignadas a ningún archivo activo, pero que aún pueden contener datos residuales de archivos eliminados."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Unallocated space is a key target for carving because the file system has \"forgotten\" what lived there, but the underlying bytes often remain until overwritten by new data."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El espacio no asignado es un objetivo clave para el carving porque el sistema de archivos ha \"olvidado\" qué vivía allí, pero los bytes subyacentes suelen permanecer hasta que otra información los sobrescribe."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Miniaturas",
+        "Question Text": {
+          "en-US": [
+            "Why are thumbnails (.thumbs, .thumbnails and similar folders) so important in the recovery of deleted multimedia?"
+          ],
+          "es-MX": [
+            "¿Por qué son tan importantes las miniaturas (.thumbs, .thumbnails y carpetas similares) en la recuperación de multimedia eliminada?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because they often survive after the original file is deleted and can reveal people, objects, locations and prior activity.",
+            "Because they always have higher quality than the original file.",
+            "Because they store the complete uncompressed version of the video.",
+            "Because they automatically reconstruct the full audio track."
+          ],
+          "es-MX": [
+            "Porque a menudo sobreviven después de que el archivo original se elimina y pueden revelar personas, objetos, ubicaciones y actividad previa.",
+            "Porque siempre tienen mayor calidad que el archivo original.",
+            "Porque almacenan la versión completa sin comprimir del video.",
+            "Porque reconstruyen automáticamente toda la pista de audio."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because they often survive after the original file is deleted and can reveal people, objects, locations and prior activity.",
+          "es-MX": "Porque a menudo sobreviven después de que el archivo original se elimina y pueden revelar personas, objetos, ubicaciones y actividad previa."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Apps create thumbnails for fast previews.",
+                "Deleting the main file does not always delete its preview.",
+                "These small images can corroborate that certain content existed and show what it depicted."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Las apps crean miniaturas para previsualizaciones rápidas.",
+                "Al eliminar el archivo principal no siempre se borra su previsualización.",
+                "Estas imágenes pequeñas pueden corroborar que cierto contenido existió y mostrar qué representaba."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "SQLite y BLOBs",
+        "Question Text": {
+          "en-US": [
+            "What type of information related to deleted multimedia can be found inside SQLite databases according to this class?"
+          ],
+          "es-MX": [
+            "¿Qué tipo de información relacionada con multimedia eliminada puede encontrarse dentro de bases SQLite según esta clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Thumbnails stored as BLOBs, metadata of deleted files (old paths, creation dates, sizes) and records of messages with removed attachments.",
+            "Only user passwords and encryption keys.",
+            "Only application configuration preferences unrelated to media.",
+            "A full disk image of the device."
+          ],
+          "es-MX": [
+            "Miniaturas guardadas como BLOB, metadatos de archivos eliminados (rutas antiguas, fechas de creación, tamaños) y registros de mensajes con adjuntos borrados.",
+            "Solo contraseñas de usuario y claves de cifrado.",
+            "Solo preferencias de configuración de la app sin relación con multimedia.",
+            "Una imagen completa del disco del dispositivo."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Thumbnails stored as BLOBs, metadata of deleted files (old paths, creation dates, sizes) and records of messages with removed attachments.",
+          "es-MX": "Miniaturas guardadas como BLOB, metadatos de archivos eliminados (rutas antiguas, fechas de creación, tamaños) y registros de mensajes con adjuntos borrados."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "SQLite tables often keep historical rows and blobs. Even if the original file is gone, its thumbnail and metadata may persist, helping to prove existence, context and approximate content."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las tablas SQLite suelen conservar filas históricas y BLOBs. Aunque el archivo original ya no esté, su miniatura y metadatos pueden permanecer, ayudando a probar existencia, contexto y contenido aproximado."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "File carving - concepto",
+        "Question Text": {
+          "en-US": [
+            "What is \"file carving\" in digital forensics?"
+          ],
+          "es-MX": [
+            "¿Qué es el \"file carving\" en informática forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A technique that searches for known file signatures in raw storage to reconstruct files without relying on the file system.",
+            "A method to compress files to save space.",
+            "A process to encrypt multimedia files for privacy.",
+            "A way to automatically upload all files to the cloud."
+          ],
+          "es-MX": [
+            "Una técnica que busca firmas conocidas de archivos en el almacenamiento crudo para reconstruirlos sin depender del sistema de archivos.",
+            "Un método para comprimir archivos y ahorrar espacio.",
+            "Un proceso para cifrar archivos multimedia y proteger la privacidad.",
+            "Una manera de subir automáticamente todos los archivos a la nube."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A technique that searches for known file signatures in raw storage to reconstruct files without relying on the file system.",
+          "es-MX": "Una técnica que busca firmas conocidas de archivos en el almacenamiento crudo para reconstruirlos sin depender del sistema de archivos."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Carving scans sectors bit by bit, looking for headers and footers that identify formats (JPEG, MP4, PNG, AMR, etc.). It works even when the file table has been damaged or cleared."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El carving recorre los sectores bit a bit buscando encabezados y finales que identifican formatos (JPEG, MP4, PNG, AMR, etc.). Funciona incluso cuando la tabla de archivos se dañó o se vació."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Firmas de archivos",
+        "Question Text": {
+          "en-US": [
+            "Which pairing between file type and signature is correctly described in this class?"
+          ],
+          "es-MX": [
+            "¿Qué combinación entre tipo de archivo y firma está descrita correctamente en esta clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "JPEG starts with FFD8 and ends with FFD9; PNG starts with 89504E470D0A1A0A; AMR begins with #!AMR.",
+            "JPEG always starts with 0000 and never has an ending marker.",
+            "PNG files start with the text \"PNGFILE\".",
+            "AMR files have no recognizable header."
+          ],
+          "es-MX": [
+            "JPEG inicia con FFD8 y termina con FFD9; PNG inicia con 89504E470D0A1A0A; AMR comienza con #!AMR.",
+            "JPEG siempre inicia con 0000 y nunca tiene marcador de fin.",
+            "Los archivos PNG inician con el texto \"PNGFILE\".",
+            "Los archivos AMR no tienen encabezado reconocible."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "JPEG starts with FFD8 and ends with FFD9; PNG starts with 89504E470D0A1A0A; AMR begins with #!AMR.",
+          "es-MX": "JPEG inicia con FFD8 y termina con FFD9; PNG inicia con 89504E470D0A1A0A; AMR comienza con #!AMR."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Carving relies on magic numbers or signatures. Recognizing valid headers and footers is essential to extract and rebuild multimedia files from raw data."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El carving se basa en números mágicos o firmas. Reconocer encabezados y finales válidos es esencial para extraer y reconstruir archivos multimedia desde datos crudos."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Herramientas para carving",
+        "Question Text": {
+          "en-US": [
+            "Which tools mentioned in this class can automatically detect signatures and reconstruct multimedia files through carving?"
+          ],
+          "es-MX": [
+            "¿Qué herramientas mencionadas en esta clase pueden detectar firmas automáticamente y reconstruir archivos multimedia mediante carving?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Autopsy and Magnet AXIOM, using their \"Carved Files\" or \"Carved Artifacts\" modules.",
+            "Only Microsoft Word and Excel.",
+            "Web browsers like Chrome and Firefox.",
+            "Any generic music player."
+          ],
+          "es-MX": [
+            "Autopsy y Magnet AXIOM, usando sus módulos de \"Carved Files\" o \"Carved Artifacts\".",
+            "Solo Microsoft Word y Excel.",
+            "Navegadores web como Chrome y Firefox.",
+            "Cualquier reproductor de música genérico."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Autopsy and Magnet AXIOM, using their \"Carved Files\" or \"Carved Artifacts\" modules.",
+          "es-MX": "Autopsy y Magnet AXIOM, usando sus módulos de \"Carved Files\" o \"Carved Artifacts\"."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Autopsy: provides a section for \"Carved Files\" filtered by media type.",
+                "AXIOM: offers \"Carved Artifacts\" and file system views that group recovered multimedia."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Autopsy: ofrece una sección de \"Carved Files\" filtrable por tipo de medio.",
+                "AXIOM: incluye \"Carved Artifacts\" y vistas de sistema de archivos que agrupan multimedia recuperada."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Recuperación desde particiones",
+        "Question Text": {
+          "en-US": [
+            "What is the role of tools like FTK Imager or Magnet AXIOM when working with logical partitions for deleted multimedia recovery?"
+          ],
+          "es-MX": [
+            "¿Cuál es el papel de herramientas como FTK Imager o Magnet AXIOM al trabajar con particiones lógicas para recuperar multimedia eliminada?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They allow navigating partitions, previewing sectors, identifying recently deleted items and manually extracting fragments.",
+            "They can only open text documents, not multimedia.",
+            "They permanently erase unallocated space by default.",
+            "They only work on live devices and cannot use forensic images."
+          ],
+          "es-MX": [
+            "Permiten navegar particiones, previsualizar sectores, identificar elementos borrados recientemente y extraer fragmentos manualmente.",
+            "Solo pueden abrir documentos de texto, no multimedia.",
+            "Borran permanentemente el espacio no asignado por defecto.",
+            "Solo funcionan en dispositivos en vivo y no pueden usar imágenes forenses."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They allow navigating partitions, previewing sectors, identifying recently deleted items and manually extracting fragments.",
+          "es-MX": "Permiten navegar particiones, previsualizar sectores, identificar elementos borrados recientemente y extraer fragmentos manualmente."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "FTK Imager and AXIOM are used to inspect logical and physical structures, marking files as deleted and enabling the export of both full items and partial pieces from the disk image."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "FTK Imager y AXIOM se usan para revisar estructuras lógicas y físicas, marcando archivos como borrados y permitiendo exportar tanto elementos completos como partes parciales de la imagen de disco."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Procedimiento general",
+        "Question Text": {
+          "en-US": [
+            "Which sequence best represents the general procedure for recovering deleted multimedia files described in this class?"
+          ],
+          "es-MX": [
+            "¿Qué secuencia representa mejor el procedimiento general para recuperar archivos multimedia eliminados descrito en esta clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Analyze device or image → search for file signatures (carving) → recover thumbnails → review SQLite databases → manually reconstruct complex cases → validate and document.",
+            "Delete all carved files → compress the image → change timestamps → calculate hash.",
+            "Start by editing recovered files to improve their quality and then calculate hash.",
+            "Only review thumbnails and ignore all other sources."
+          ],
+          "es-MX": [
+            "Analizar el dispositivo o imagen → buscar firmas de archivos (carving) → recuperar miniaturas → revisar bases SQLite → reconstruir manualmente casos complejos → validar y documentar.",
+            "Borrar todos los archivos carved → comprimir la imagen → cambiar las marcas de tiempo → calcular hash.",
+            "Empezar editando los archivos recuperados para mejorar su calidad y luego hacer el hash.",
+            "Revisar solo las miniaturas e ignorar todas las demás fuentes."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Analyze device or image → search for file signatures (carving) → recover thumbnails → review SQLite databases → manually reconstruct complex cases → validate and document.",
+          "es-MX": "Analizar el dispositivo o imagen → buscar firmas de archivos (carving) → recuperar miniaturas → revisar bases SQLite → reconstruir manualmente casos complejos → validar y documentar."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "First, open the forensic image and identify partitions and relevant folders.",
+                "Then, carve unallocated space to locate raw multimedia.",
+                "After that, extract thumbnails and check SQLite for remnants.",
+                "Finally, perform manual repair if needed, hash the results and document the methodology."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Primero, abrir la imagen forense e identificar particiones y carpetas relevantes.",
+                "Luego, hacer carving en espacio no asignado para localizar multimedia crudo.",
+                "Después, extraer miniaturas y revisar SQLite en busca de restos.",
+                "Por último, reparar manualmente si hace falta, hashear los resultados y documentar la metodología."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Ejemplo de video MP4",
+        "Question Text": {
+          "en-US": [
+            "In the example from this class, a deleted MP4 video is partially recovered: a 12 MB fragment is carved from unallocated space, the header is repaired with FFmpeg and a thumbnail appears in /DCIM/.thumbnails/. What does this combination of evidence suggest?"
+          ],
+          "es-MX": [
+            "En el ejemplo de esta clase, se recupera parcialmente un video MP4 eliminado: se extrae un fragmento de 12 MB desde espacio no asignado, se repara la cabecera con FFmpeg y aparece una miniatura en /DCIM/.thumbnails/. ¿Qué sugiere esta combinación de evidencias?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "That the file really existed, was recently deleted and can be partially reconstructed, with the thumbnail confirming the original content.",
+            "That the video never existed on the device and the data is random noise.",
+            "That the thumbnail is unrelated and carving always creates fake files.",
+            "That partial fragments have no evidentiary value in any context."
+          ],
+          "es-MX": [
+            "Que el archivo realmente existió, fue eliminado recientemente y puede reconstruirse parcialmente, usando la miniatura para confirmar el contenido original.",
+            "Que el video nunca existió en el dispositivo y los datos son ruido aleatorio.",
+            "Que la miniatura no está relacionada y el carving siempre genera archivos falsos.",
+            "Que los fragmentos parciales no tienen ningún valor probatorio en ningún contexto."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "That the file really existed, was recently deleted and can be partially reconstructed, with the thumbnail confirming the original content.",
+          "es-MX": "Que el archivo realmente existió, fue eliminado recientemente y puede reconstruirse parcialmente, usando la miniatura para confirmar el contenido original."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The convergence of carved data, repaired structure and matching thumbnail provides strong support that a specific video once existed and was deleted, even if only a partial reconstruction is possible."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La convergencia de datos carved, estructura reparada y miniatura coincidente respalda fuertemente que existió un video concreto que fue eliminado, aunque solo se logre una reconstrucción parcial."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Uso de FFmpeg",
+        "Question Text": {
+          "en-US": [
+            "What is the purpose of using a command such as \"ffmpeg -i fragment.mp4 -c copy repaired_video.mp4\" in the context of this class?"
+          ],
+          "es-MX": [
+            "¿Cuál es el propósito de usar un comando como \"ffmpeg -i fragment.mp4 -c copy video_reparado.mp4\" en el contexto de esta clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To repair headers, rebuild indices or repackage the recovered fragment into a playable MP4 container without re-encoding the content.",
+            "To automatically erase all traces of editing from the file.",
+            "To translate the spoken language inside the video.",
+            "To encrypt the recovered video to prevent access."
+          ],
+          "es-MX": [
+            "Reparar cabeceras, reconstruir índices o reempaquetar el fragmento recuperado en un contenedor MP4 reproducible sin recodificar el contenido.",
+            "Borrar automáticamente todo rastro de edición del archivo.",
+            "Traducir el idioma hablado dentro del video.",
+            "Cifrar el video recuperado para impedir el acceso."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To repair headers, rebuild indices or repackage the recovered fragment into a playable MP4 container without re-encoding the content.",
+          "es-MX": "Reparar cabeceras, reconstruir índices o reempaquetar el fragmento recuperado en un contenedor MP4 reproducible sin recodificar el contenido."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "FFmpeg can fix structural issues in partially recovered files so that players and forensic tools can open them, while keeping the original encoded stream intact for evidentiary purposes."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "FFmpeg puede solucionar problemas estructurales en archivos recuperados parcialmente para que reproductores y herramientas forenses puedan abrirlos, manteniendo intacto el flujo codificado original para fines probatorios."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Valor probatorio de archivos incompletos",
+        "Question Text": {
+          "en-US": [
+            "How does this class evaluate the evidentiary value of incomplete or partially recovered multimedia files?"
+          ],
+          "es-MX": [
+            "¿Cómo evalúa esta clase el valor probatorio de archivos multimedia incompletos o recuperados parcialmente?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They can still be useful as evidence, especially when corroborated by thumbnails, metadata and database records.",
+            "They must always be discarded because they are invalid.",
+            "They automatically prove the entire narrative of the case.",
+            "They are only used to test tools, not in real investigations."
+          ],
+          "es-MX": [
+            "Pueden seguir siendo útiles como evidencia, especialmente cuando se corroboran con miniaturas, metadatos y registros en bases de datos.",
+            "Deben descartarse siempre porque son inválidos.",
+            "Prueban automáticamente toda la narrativa del caso.",
+            "Solo se usan para probar herramientas, no en investigaciones reales."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They can still be useful as evidence, especially when corroborated by thumbnails, metadata and database records.",
+          "es-MX": "Pueden seguir siendo útiles como evidencia, especialmente cuando se corroboran con miniaturas, metadatos y registros en bases de datos."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Even partial content can prove that a file existed, show who or what appeared in it and support timelines. Its weight depends on how well it is documented and corroborated with other artifacts."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Incluso el contenido parcial puede probar que un archivo existió, mostrar quién o qué aparecía en él y reforzar líneas de tiempo. Su peso depende de qué tan bien se documente y se corrobore con otros artefactos."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Documentación forense",
+        "Question Text": {
+          "en-US": [
+            "What elements must be documented when recovering deleted multimedia files according to this class?"
+          ],
+          "es-MX": [
+            "¿Qué elementos deben documentarse al recuperar archivos multimedia eliminados según esta clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Hashes of recovered files, methods used, original paths, extraction dates and results of technical analysis.",
+            "Only the names of the tools, without any technical detail.",
+            "Just a screenshot of the recovered file.",
+            "Nothing; documentation is optional."
+          ],
+          "es-MX": [
+            "Hashes de los archivos recuperados, métodos utilizados, rutas originales, fechas de extracción y resultados del análisis técnico.",
+            "Solo los nombres de las herramientas, sin ningún detalle técnico.",
+            "Únicamente una captura de pantalla del archivo recuperado.",
+            "Nada; la documentación es opcional."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Hashes of recovered files, methods used, original paths, extraction dates and results of technical analysis.",
+          "es-MX": "Hashes de los archivos recuperados, métodos utilizados, rutas originales, fechas de extracción y resultados del análisis técnico."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Hash (e.g., SHA-256) to prove integrity.",
+                "Chain-of-methodology to show how the file was recovered.",
+                "Original logical location and timestamps for context.",
+                "Technical findings that support or limit interpretation."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Hash (por ejemplo, SHA-256) para demostrar integridad.",
+                "Cadena de metodología que muestre cómo se recuperó el archivo.",
+                "Ubicación lógica original y fechas para dar contexto.",
+                "Hallazgos técnicos que respaldan o limitan la interpretación."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Importancia de la recuperación",
+        "Question Text": {
+          "en-US": [
+            "Why does this class state that recovering deleted multimedia is crucial in forensic work?"
+          ],
+          "es-MX": [
+            "¿Por qué esta clase señala que la recuperación de multimedia eliminada es crucial en el trabajo forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because deleted multimedia may contain key evidence that contradicts or confirms testimonies and narratives, and would otherwise be lost.",
+            "Because it replaces the need to collect any other type of evidence.",
+            "Because it automatically guarantees a conviction in court.",
+            "Because recovering files is required only for training, not real cases."
+          ],
+          "es-MX": [
+            "Porque la multimedia eliminada puede contener evidencia clave que contradiga o confirme testimonios y narrativas, y que de otro modo se perdería.",
+            "Porque sustituye la necesidad de recolectar cualquier otro tipo de evidencia.",
+            "Porque garantiza automáticamente una condena en juicio.",
+            "Porque recuperar archivos solo se exige para prácticas, no para casos reales."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because deleted multimedia may contain key evidence that contradicts or confirms testimonies and narratives, and would otherwise be lost.",
+          "es-MX": "Porque la multimedia eliminada puede contener evidencia clave que contradiga o confirme testimonios y narrativas, y que de otro modo se perdería."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Recovery techniques help to bring back deleted photos, videos and audios that can show what really happened, who participated and in what context, adding depth and robustness to the digital evidence."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las técnicas de recuperación permiten traer de vuelta fotos, videos y audios borrados que pueden mostrar qué ocurrió realmente, quién participó y en qué contexto, dando mayor profundidad y solidez a la evidencia digital."
+            }
+          ]
+        }
+      }
+  
+    ]
+  }
+      

@@ -1,0 +1,747 @@
+{
+    "meta": {
+      "slug": "forense-apps50",
+      "title": "Detección de edición digital y falsificación",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 4,
+      "classNo": 50,
+      "description": "Técnicas forenses para identificar manipulación, edición, alteración o falsificación en imágenes y videos mediante análisis de compresión, capas, metadatos, software y análisis visual avanzado.",
+      "tags": [
+        "falsificación",
+        "manipulación",
+        "imágenes",
+        "videos",
+        "EXIF",
+        "ELA",
+        "deepfake",
+        "Amped FIVE",
+        "Forensically"
+      ]
+    },
+    "Questions": [
+  
+      {
+        "Category": "Introducción a la falsificación digital",
+        "Question Text": {
+          "en-US": [
+            "According to this class, why is digital forgery detection increasingly important in multimedia forensics?"
+          ],
+          "es-MX": [
+            "Según esta clase, ¿por qué la detección de falsificación digital es cada vez más importante en la informática forense multimedia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because manipulation of faces, objects, texts, locations, timestamps and even environmental audio is becoming more common and can distort the narrative of a case.",
+            "Only because files are now larger and harder to store.",
+            "Because modern devices no longer generate any metadata.",
+            "Because all videos on the internet are fake by default."
+          ],
+          "es-MX": [
+            "Porque la manipulación de rostros, objetos, textos, ubicaciones, timestamps e incluso audio ambiental es cada vez más común y puede distorsionar la narrativa de un caso.",
+            "Solo porque ahora los archivos son más grandes y difíciles de almacenar.",
+            "Porque los dispositivos modernos ya no generan metadatos.",
+            "Porque todos los videos de Internet son falsos por defecto."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because manipulation of faces, objects, texts, locations, timestamps and even environmental audio is becoming more common and can distort the narrative of a case.",
+          "es-MX": "Porque la manipulación de rostros, objetos, textos, ubicaciones, timestamps e incluso audio ambiental es cada vez más común y puede distorsionar la narrativa de un caso."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Current tools allow non-experts to alter multimedia easily.",
+                "These changes can affect how events, people or places appear.",
+                "Forensic detection is needed to protect the integrity of digital evidence."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Las herramientas actuales permiten que incluso no expertos alteren multimedia con facilidad.",
+                "Estos cambios pueden afectar cómo se perciben eventos, personas o lugares.",
+                "La detección forense es necesaria para proteger la integridad de la evidencia digital."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Tipos de manipulación - Edición con software",
+        "Question Text": {
+          "en-US": [
+            "Which indicators are associated with editing using software like Photoshop, GIMP, Snapseed or CapCut?"
+          ],
+          "es-MX": [
+            "¿Qué indicadores se asocian a la edición con software como Photoshop, GIMP, Snapseed o CapCut?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Changes in lighting, irregular borders, altered timestamps and metadata fields such as Software or ModifyDate showing external editors.",
+            "Only a smaller file size with no other changes.",
+            "The EXIF being completely perfect and untouched.",
+            "The file automatically becoming read-only."
+          ],
+          "es-MX": [
+            "Cambios en iluminación, bordes irregulares, timestamps alterados y campos de metadatos como Software o ModifyDate que muestran editores externos.",
+            "Solo un tamaño de archivo más pequeño sin otros cambios.",
+            "Que el EXIF sea completamente perfecto y sin tocar.",
+            "Que el archivo se vuelva automáticamente de solo lectura."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Changes in lighting, irregular borders, altered timestamps and metadata fields such as Software or ModifyDate showing external editors.",
+          "es-MX": "Cambios en iluminación, bordes irregulares, timestamps alterados y campos de metadatos como Software o ModifyDate que muestran editores externos."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Software-based edits often leave visual traces and metadata signatures, especially in fields that register the last application and date of modification."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las ediciones con software suelen dejar huellas visuales y de metadatos, sobre todo en campos que registran la última aplicación utilizada y la fecha de modificación."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Tipos de manipulación - Compresión",
+        "Question Text": {
+          "en-US": [
+            "What is the main idea behind compression-based manipulation detection, such as Error Level Analysis (ELA) and double JPEG compression?"
+          ],
+          "es-MX": [
+            "¿Cuál es la idea principal detrás de la detección de manipulación basada en compresión, como ELA y doble compresión JPEG?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Different regions of an edited image may show different compression levels or blocks, revealing areas that have been re-written or modified.",
+            "Compressing a file always proves it is authentic.",
+            "Compression completely removes any trace of editing.",
+            "ELA is used only to improve image quality, not for forensics."
+          ],
+          "es-MX": [
+            "Diferentes regiones de una imagen editada pueden mostrar niveles o bloques de compresión distintos, revelando zonas que han sido reescritas o modificadas.",
+            "Comprimir un archivo siempre demuestra que es auténtico.",
+            "La compresión elimina por completo cualquier rastro de edición.",
+            "ELA se usa solo para mejorar la calidad de la imagen, no para forense."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Different regions of an edited image may show different compression levels or blocks, revealing areas that have been re-written or modified.",
+          "es-MX": "Diferentes regiones de una imagen editada pueden mostrar niveles o bloques de compresión distintos, revelando zonas que han sido reescritas o modificadas."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "JPEG compression works in blocks (for example 8x8).",
+                "Edits typically re-encode only certain regions.",
+                "ELA highlights these inconsistencies as “hot” or anomalous areas."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "La compresión JPEG trabaja en bloques (por ejemplo 8x8).",
+                "Las ediciones suelen recodificar solo ciertas regiones.",
+                "ELA resalta estas inconsistencias como zonas “calientes” o anómalas."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Inserción o eliminación de elementos",
+        "Question Text": {
+          "en-US": [
+            "Which visual signs may indicate insertion or deletion of elements in an image?"
+          ],
+          "es-MX": [
+            "¿Qué signos visuales pueden indicar inserción o eliminación de elementos en una imagen?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Inconsistent borders, unexpected object sizes, incorrect perspective and differences in brightness and contrast around edited regions.",
+            "Only the presence of very vibrant colors.",
+            "Any image with a low resolution.",
+            "The absence of any visible object in the picture."
+          ],
+          "es-MX": [
+            "Bordes inconsistentes, tamaños inesperados de objetos, perspectiva incorrecta y diferencias de brillo y contraste alrededor de las zonas editadas.",
+            "Solo la presencia de colores muy vibrantes.",
+            "Cualquier imagen con resolución baja.",
+            "La ausencia total de objetos visibles en la foto."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Inconsistent borders, unexpected object sizes, incorrect perspective and differences in brightness and contrast around edited regions.",
+          "es-MX": "Bordes inconsistentes, tamaños inesperados de objetos, perspectiva incorrecta y diferencias de brillo y contraste alrededor de las zonas editadas."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "When elements are cloned, inserted or erased, they often break the natural geometry and lighting of the scene, producing subtle but detectable inconsistencies."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Cuando se clonan, insertan o borran elementos, a menudo se rompe la geometría y la iluminación natural de la escena, generando inconsistencias sutiles pero detectables."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Falsificación de videos",
+        "Question Text": {
+          "en-US": [
+            "Which characteristics are mentioned as typical signs of video falsification?"
+          ],
+          "es-MX": [
+            "¿Qué características se mencionan como signos típicos de falsificación de videos?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Altered frame rate, irregular GOP size, inconsistencies between keyframes, abrupt audio changes and encoders that do not match the original device.",
+            "Only having a short video duration.",
+            "The video being recorded in horizontal orientation.",
+            "The presence of subtitles in a different language."
+          ],
+          "es-MX": [
+            "Frame rate alterado, tamaño de GOP irregular, inconsistencias entre keyframes, cambios bruscos en audio y encoders que no corresponden al dispositivo original.",
+            "Solo que el video tenga una duración corta.",
+            "Que el video esté grabado en orientación horizontal.",
+            "La presencia de subtítulos en otro idioma."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Altered frame rate, irregular GOP size, inconsistencies between keyframes, abrupt audio changes and encoders that do not match the original device.",
+          "es-MX": "Frame rate alterado, tamaño de GOP irregular, inconsistencias entre keyframes, cambios bruscos en audio y encoders que no corresponden al dispositivo original."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Edits may re-encode segments with different parameters.",
+                "Audio and video may lose synchronization or continuity.",
+                "Analyzing encoder and GOP structure helps reveal hidden cuts."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Las ediciones pueden recodificar segmentos con parámetros distintos.",
+                "El audio y el video pueden perder sincronía o continuidad.",
+                "Analizar el codificador y la estructura GOP ayuda a evidenciar cortes ocultos."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Deepfakes e IA",
+        "Question Text": {
+          "en-US": [
+            "Which features are mentioned as possible indicators of AI-based forgery or deepfake content?"
+          ],
+          "es-MX": [
+            "¿Qué características se mencionan como posibles indicadores de falsificación con IA o contenido deepfake?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Irregular blinking, artifacts around the face, color changes between frames and unnatural movements.",
+            "Any video with high resolution and good audio.",
+            "All videos where the subject smiles.",
+            "Only low-light videos recorded at night."
+          ],
+          "es-MX": [
+            "Parpadeo irregular, artefactos alrededor del rostro, cambios de color entre frames y movimientos no naturales.",
+            "Cualquier video con alta resolución y buen audio.",
+            "Todos los videos donde la persona sonría.",
+            "Solo videos con poca luz grabados de noche."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Irregular blinking, artifacts around the face, color changes between frames and unnatural movements.",
+          "es-MX": "Parpadeo irregular, artefactos alrededor del rostro, cambios de color entre frames y movimientos no naturales."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Deepfakes may fail to reproduce natural micro-expressions and consistent lighting, leaving visual artifacts and temporal inconsistencies in facial regions."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los deepfakes pueden fallar al reproducir microexpresiones naturales y una iluminación consistente, dejando artefactos visuales e inconsistencias temporales en las zonas del rostro."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Metadatos y firmas",
+        "Question Text": {
+          "en-US": [
+            "Which metadata fields does the class highlight as particularly important when looking for manipulation?"
+          ],
+          "es-MX": [
+            "¿Qué campos de metadatos destaca la clase como especialmente importantes al buscar manipulación?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "DateTimeOriginal, ModifyDate, CreateDate, Software, registered device and internal thumbnails.",
+            "Only the file icon and the operating system language.",
+            "The desktop wallpaper used by the user.",
+            "The battery level at the time of capture."
+          ],
+          "es-MX": [
+            "DateTimeOriginal, ModifyDate, CreateDate, Software, dispositivo registrado y miniaturas internas.",
+            "Solo el ícono del archivo y el idioma del sistema operativo.",
+            "El fondo de pantalla del escritorio del usuario.",
+            "El nivel de batería al momento de la captura."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "DateTimeOriginal, ModifyDate, CreateDate, Software, registered device and internal thumbnails.",
+          "es-MX": "DateTimeOriginal, ModifyDate, CreateDate, Software, dispositivo registrado y miniaturas internas."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "These fields reveal when and how the file was created and modified.",
+                "External software and inconsistent dates are classic red flags.",
+                "Thumbnails may preserve older, pre-edited content."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Estos campos revelan cuándo y cómo se creó y modificó el archivo.",
+                "Software externo y fechas inconsistentes son banderas rojas clásicas.",
+                "Las miniaturas pueden conservar contenido previo a la edición."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "ELA y compresión",
+        "Question Text": {
+          "en-US": [
+            "What does Error Level Analysis (ELA) help detect in an image?"
+          ],
+          "es-MX": [
+            "¿Qué ayuda a detectar el Error Level Analysis (ELA) en una imagen?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Regions with different compression levels, re-written blocks and cloned or edited elements that stand out compared to the rest of the image.",
+            "Only the exact GPS coordinate of the photographer.",
+            "The phone number of the device owner.",
+            "The Wi-Fi password used at the moment of capture."
+          ],
+          "es-MX": [
+            "Regiones con niveles de compresión distintos, bloques reescritos y elementos clonados o editados que resaltan respecto al resto de la imagen.",
+            "Solo la coordenada GPS exacta del fotógrafo.",
+            "El número telefónico del dueño del dispositivo.",
+            "La contraseña de Wi-Fi usada en el momento de la captura."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Regions with different compression levels, re-written blocks and cloned or edited elements that stand out compared to the rest of the image.",
+          "es-MX": "Regiones con niveles de compresión distintos, bloques reescritos y elementos clonados o editados que resaltan respecto al resto de la imagen."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "ELA re-saves the image and visualizes error levels; edited zones often react differently to recompression than untouched areas, appearing as brighter or anomalous regions."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "ELA vuelve a guardar la imagen y visualiza los niveles de error; las zonas editadas suelen reaccionar distinto a la recompresión que las áreas intactas, apareciendo como regiones más brillantes o anómalas."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Capas y contenido oculto",
+        "Question Text": {
+          "en-US": [
+            "What can specialized tools like Photoshop Forensic Plugin or Amped FIVE reveal regarding layers and hidden content?"
+          ],
+          "es-MX": [
+            "¿Qué pueden revelar herramientas especializadas como Photoshop Forensic Plugin o Amped FIVE respecto a capas y contenido oculto?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They can show editing layers, applied adjustments, crops, filters and inserted elements that are not evident in the final flattened image.",
+            "They only change the image to black and white.",
+            "They automatically delete the EXIF data.",
+            "They convert any image into a video file."
+          ],
+          "es-MX": [
+            "Pueden mostrar capas de edición, ajustes aplicados, recortes, filtros y elementos insertados que no son evidentes en la imagen final aplanada.",
+            "Solo cambian la imagen a blanco y negro.",
+            "Eliminan automáticamente los datos EXIF.",
+            "Convierten cualquier imagen en un archivo de video."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They can show editing layers, applied adjustments, crops, filters and inserted elements that are not evident in the final flattened image.",
+          "es-MX": "Pueden mostrar capas de edición, ajustes aplicados, recortes, filtros y elementos insertados que no son evidentes en la imagen final aplanada."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Some formats preserve layer or adjustment information.",
+                "These tools inspect beyond the visible final composition.",
+                "They help understand the editing history of the file."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Algunos formatos conservan información de capas o ajustes.",
+                "Estas herramientas inspeccionan más allá de la composición final visible.",
+                "Ayudan a entender el historial de edición del archivo."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Estructura de video",
+        "Question Text": {
+          "en-US": [
+            "When reviewing video structure with FFmpeg, VLC Forensics or Amped FIVE, which aspects are especially relevant to detect hidden edits?"
+          ],
+          "es-MX": [
+            "Al revisar la estructura de un video con FFmpeg, VLC Forensics o Amped FIVE, ¿qué aspectos son especialmente relevantes para detectar ediciones ocultas?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Keyframe sequence, time jumps, bitrate variations and irregularities in timebase or internal metadata (encoder, version).",
+            "Only the color of the player’s interface.",
+            "The Wi-Fi network name used during recording.",
+            "The brightness level of the examiner’s screen."
+          ],
+          "es-MX": [
+            "Secuencia de keyframes, saltos temporales, variaciones de bitrate e irregularidades en timebase o metadatos internos (encoder, versión).",
+            "Solo el color de la interfaz del reproductor.",
+            "El nombre de la red Wi-Fi usada durante la grabación.",
+            "El nivel de brillo de la pantalla del perito."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Keyframe sequence, time jumps, bitrate variations and irregularities in timebase or internal metadata (encoder, version).",
+          "es-MX": "Secuencia de keyframes, saltos temporales, variaciones de bitrate e irregularidades en timebase o metadatos internos (encoder, versión)."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Edits may insert or delete segments, creating discontinuities in keyframes and timing; analyzing bitrate and encoder information helps spot segments processed differently than the original recording."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las ediciones pueden insertar o eliminar segmentos, creando discontinuidades en keyframes y tiempos; analizar bitrate e información del encoder ayuda a detectar segmentos procesados diferente de la grabación original."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Procedimiento - Paso 1 y 2",
+        "Question Text": {
+          "en-US": [
+            "In the general procedure, what should be done in the first two steps (initial review and metadata extraction)?"
+          ],
+          "es-MX": [
+            "En el procedimiento general, ¿qué debe hacerse en los dos primeros pasos (revisión inicial y extracción de metadatos)?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Visually examine colors, perspectives, borders and contrast to find suspicious elements, and then run ExifTool on images/videos to identify software, contradictory dates, intermediate edits or EXIF deletion.",
+            "Skip visual inspection and go directly to deleting metadata.",
+            "Only ask the user if they edited the file and trust the answer.",
+            "Immediately convert everything to another format before analyzing."
+          ],
+          "es-MX": [
+            "Examinar visualmente colores, perspectivas, bordes y contraste para encontrar elementos sospechosos, y luego ejecutar ExifTool sobre imágenes/videos para identificar software, fechas contradictorias, ediciones intermedias o borrado de EXIF.",
+            "Saltarse la inspección visual e ir directo a borrar metadatos.",
+            "Solo preguntar al usuario si editó el archivo y confiar en su respuesta.",
+            "Convertir todo de inmediato a otro formato antes de analizar."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Visually examine colors, perspectives, borders and contrast to find suspicious elements, and then run ExifTool on images/videos to identify software, contradictory dates, intermediate edits or EXIF deletion.",
+          "es-MX": "Examinar visualmente colores, perspectivas, bordes y contraste para encontrar elementos sospechosos, y luego ejecutar ExifTool sobre imágenes/videos para identificar software, fechas contradictorias, ediciones intermedias o borrado de EXIF."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "First build a visual hypothesis: what looks strange in the file?",
+                "Then confirm or refute this with metadata: dates, software, EXIF integrity.",
+                "Both layers (visual + technical) complement each other from the start."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Primero se construye una hipótesis visual: ¿qué se ve extraño en el archivo?",
+                "Luego se confirma o refuta con metadatos: fechas, software, integridad del EXIF.",
+                "Ambas capas (visual + técnica) se complementan desde el inicio."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Procedimiento - Paso 3, 4 y 5",
+        "Question Text": {
+          "en-US": [
+            "What is the focus of steps 3, 4 and 5 in the manipulation detection procedure?"
+          ],
+          "es-MX": [
+            "¿En qué se enfocan los pasos 3, 4 y 5 del procedimiento de detección de manipulación?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Compression analysis (ELA and block maps), video structure review (keyframes, bitrate, time jumps) and hash comparison to confirm whether files have been modified.",
+            "Only renaming the files and changing their icons.",
+            "Encrypting the files so nobody can open them.",
+            "Deleting any file that looks suspicious."
+          ],
+          "es-MX": [
+            "Análisis de compresión (ELA y mapas de bloques), revisión de estructura de video (keyframes, bitrate, saltos de tiempo) y comparación de hashes para confirmar si los archivos han sido modificados.",
+            "Solo cambiar el nombre de los archivos y sus íconos.",
+            "Encriptar los archivos para que nadie pueda abrirlos.",
+            "Borrar cualquier archivo que parezca sospechoso."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Compression analysis (ELA and block maps), video structure review (keyframes, bitrate, time jumps) and hash comparison to confirm whether files have been modified.",
+          "es-MX": "Análisis de compresión (ELA y mapas de bloques), revisión de estructura de video (keyframes, bitrate, saltos de tiempo) y comparación de hashes para confirmar si los archivos han sido modificados."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Step 3 focuses on compression anomalies in images.",
+                "Step 4 focuses on structural anomalies in videos.",
+                "Step 5 mathematically checks integrity via SHA-256 hashes."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "El Paso 3 se centra en anomalías de compresión en imágenes.",
+                "El Paso 4 se centra en anomalías estructurales en videos.",
+                "El Paso 5 verifica matemáticamente la integridad con hashes SHA-256."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Ejemplo ilustrativo",
+        "Question Text": {
+          "en-US": [
+            "In the class example, which combination of findings leads to the conclusion that the WhatsApp photo was explicitly manipulated?"
+          ],
+          "es-MX": [
+            "En el ejemplo de la clase, ¿qué combinación de hallazgos lleva a concluir que la fotografía de WhatsApp fue manipulada explícitamente?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "ExifTool shows Software: Photoshop, ELA reveals a hot zone around the face, the internal thumbnail does not match the main image, the hash differs from the original file and borders show compression differences.",
+            "The image has high resolution and good lighting only.",
+            "The image was taken during the day instead of at night.",
+            "The user does not remember when the photo was taken."
+          ],
+          "es-MX": [
+            "ExifTool muestra Software: Photoshop, ELA revela una zona caliente alrededor del rostro, la miniatura interna no coincide con la imagen principal, el hash difiere del archivo original y los bordes muestran diferencias de compresión.",
+            "La imagen tiene solo alta resolución y buena iluminación.",
+            "La imagen fue tomada de día en lugar de noche.",
+            "El usuario no recuerda cuándo fue tomada la foto."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "ExifTool shows Software: Photoshop, ELA reveals a hot zone around the face, the internal thumbnail does not match the main image, the hash differs from the original file and borders show compression differences.",
+          "es-MX": "ExifTool muestra Software: Photoshop, ELA revela una zona caliente alrededor del rostro, la miniatura interna no coincide con la imagen principal, el hash difiere del archivo original y los bordes muestran diferencias de compresión."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Multiple independent indicators converge: editing software in metadata, ELA anomalies, thumbnail mismatch, hash difference and uneven compression, all pointing to deliberate content alteration."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Varios indicadores independientes convergen: software de edición en metadatos, anomalías en ELA, miniatura distinta, hash diferente y compresión desigual, todo apunta a una alteración deliberada del contenido."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Herramientas Unidad IV",
+        "Question Text": {
+          "en-US": [
+            "Which tools does this class recommend for falsification detection within Unit IV?"
+          ],
+          "es-MX": [
+            "¿Qué herramientas recomienda esta clase para la detección de falsificación dentro de la Unidad IV?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "ExifTool, Forensically, Amped FIVE, Photoshop Forensic Plugin, VLC Forensics, Magnet AXIOM, FFmpeg/FFprobe and Autopsy.",
+            "Only a generic media player and a screenshot app.",
+            "Office software like Word and PowerPoint, without any forensic tool.",
+            "Games and entertainment apps."
+          ],
+          "es-MX": [
+            "ExifTool, Forensically, Amped FIVE, Photoshop Forensic Plugin, VLC Forensics, Magnet AXIOM, FFmpeg/FFprobe y Autopsy.",
+            "Solo un reproductor genérico y una app de capturas de pantalla.",
+            "Software de oficina como Word y PowerPoint, sin herramienta forense.",
+            "Juegos y aplicaciones de entretenimiento."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "ExifTool, Forensically, Amped FIVE, Photoshop Forensic Plugin, VLC Forensics, Magnet AXIOM, FFmpeg/FFprobe and Autopsy.",
+          "es-MX": "ExifTool, Forensically, Amped FIVE, Photoshop Forensic Plugin, VLC Forensics, Magnet AXIOM, FFmpeg/FFprobe y Autopsy."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Each tool covers a different layer: metadata, compression, video, audio, layers or case management.",
+                "Using them together increases reliability and depth of the analysis."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Cada herramienta cubre una capa distinta: metadatos, compresión, video, audio, capas o gestión de casos.",
+                "Usarlas en conjunto aumenta la fiabilidad y profundidad del análisis."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Conclusiones clave",
+        "Question Text": {
+          "en-US": [
+            "Which statement best summarizes the key conclusions of this class about falsification detection?"
+          ],
+          "es-MX": [
+            "¿Qué enunciado resume mejor las conclusiones clave de esta clase sobre detección de falsificación?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Forgery detection requires combining visual, technical and contextual techniques; layers, compression and software signatures are essential indicators, no single proof is enough and exhaustive documentation is mandatory for legal validity.",
+            "If an image looks real to the naked eye, no forensic analysis is necessary.",
+            "With a single tool it is always possible to declare a file authentic or fake without further checks.",
+            "Documentation can be skipped as long as the examiner is convinced of the result."
+          ],
+          "es-MX": [
+            "La detección de falsificación requiere combinar técnicas visuales, técnicas y contextuales; las capas, la compresión y las firmas de software son indicadores esenciales, ninguna prueba aislada es suficiente y la documentación exhaustiva es obligatoria para la validez legal.",
+            "Si una imagen se ve real a simple vista, no se necesita análisis forense.",
+            "Con una sola herramienta siempre es posible declarar un archivo auténtico o falso sin más revisiones.",
+            "La documentación se puede omitir mientras el perito esté convencido del resultado."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Forgery detection requires combining visual, technical and contextual techniques; layers, compression and software signatures are essential indicators, no single proof is enough and exhaustive documentation is mandatory for legal validity.",
+          "es-MX": "La detección de falsificación requiere combinar técnicas visuales, técnicas y contextuales; las capas, la compresión y las firmas de software son indicadores esenciales, ninguna prueba aislada es suficiente y la documentación exhaustiva es obligatoria para la validez legal."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The class emphasizes an integral approach: conclusions must be supported by converging evidence from different tools and methods, properly documented to withstand legal and technical scrutiny."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La clase enfatiza un enfoque integral: las conclusiones deben sostenerse en evidencias convergentes de distintas herramientas y métodos, documentadas adecuadamente para resistir el escrutinio legal y técnico."
+            }
+          ]
+        }
+      }
+  
+    ]
+  }
+  

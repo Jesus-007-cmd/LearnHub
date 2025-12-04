@@ -1,0 +1,749 @@
+{
+    "meta": {
+      "slug": "forense-apps51",
+      "title": "Análisis de documentos PDF, DOCX y TXT",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 4,
+      "classNo": 51,
+      "description": "Técnicas forenses para analizar documentos PDF, DOCX y TXT: metadatos, propiedades internas, historial, autores, software y evidencias ocultas.",
+      "tags": [
+        "PDF",
+        "DOCX",
+        "TXT",
+        "metadatos",
+        "documentos digitales",
+        "ExifTool",
+        "FTK Imager",
+        "Autopsy",
+        "Magnet AXIOM"
+      ]
+    },
+    "Questions": [
+  
+      {
+        "Category": "Importancia del análisis de documentos",
+        "Question Text": {
+          "en-US": [
+            "Why are digital documents (PDF, DOCX, TXT) considered such an important source of evidence in forensic investigations?"
+          ],
+          "es-MX": [
+            "¿Por qué los documentos digitales (PDF, DOCX, TXT) se consideran una fuente tan importante de evidencia en las investigaciones forenses?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because they may contain real authors, change history, system paths, original creation/modification dates and hidden information not visible to the user.",
+            "Only because they are easy to print and share.",
+            "Because they never store any metadata, which guarantees privacy.",
+            "Because every document PDF automatically includes a digital signature."
+          ],
+          "es-MX": [
+            "Porque pueden contener autores reales, historial de cambios, rutas del sistema, fechas originales de creación/modificación e información oculta no visible para el usuario.",
+            "Solo porque son fáciles de imprimir y compartir.",
+            "Porque nunca almacenan metadatos, lo que garantiza la privacidad.",
+            "Porque todo documento PDF incluye automáticamente una firma digital."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because they may contain real authors, change history, system paths, original creation/modification dates and hidden information not visible to the user.",
+          "es-MX": "Porque pueden contener autores reales, historial de cambios, rutas del sistema, fechas originales de creación/modificación e información oculta no visible para el usuario."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Digital documents embed technical and contextual information.",
+                "This information helps link a file to a person, device or timeline.",
+                "Hidden data can contradict or confirm the declared story about a document."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Los documentos digitales incluyen información técnica y contextual.",
+                "Esa información ayuda a vincular un archivo con una persona, dispositivo o línea temporal.",
+                "Los datos ocultos pueden contradecir o confirmar la historia declarada sobre un documento."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Qué permite identificar el análisis",
+        "Question Text": {
+          "en-US": [
+            "According to this class, what kinds of questions can a proper document analysis help answer?"
+          ],
+          "es-MX": [
+            "Según esta clase, ¿qué tipo de preguntas puede ayudar a responder un análisis adecuado de documentos?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Whether the document was altered, who likely created it, if content was added later and whether dates or versions were manipulated.",
+            "Only whether the document has a colorful design or not.",
+            "Only if the file can be opened with the latest version of Word.",
+            "Whether the document was printed in color or black and white."
+          ],
+          "es-MX": [
+            "Si el documento fue alterado, quién probablemente lo creó, si se agregó contenido posteriormente y si se manipularon fechas o versiones.",
+            "Solo si el documento tiene un diseño colorido o no.",
+            "Solo si el archivo se puede abrir con la última versión de Word.",
+            "Si el documento fue impreso a color o en blanco y negro."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Whether the document was altered, who likely created it, if content was added later and whether dates or versions were manipulated.",
+          "es-MX": "Si el documento fue alterado, quién probablemente lo creó, si se agregó contenido posteriormente y si se manipularon fechas o versiones."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "By examining authors, software, timestamps and hidden history, forensic analysis can reveal alterations and inconsistencies between what the file claims to be and how it was actually created or modified."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Al revisar autores, software, marcas de tiempo e historial oculto, el análisis forense puede revelar alteraciones e inconsistencias entre lo que el archivo dice ser y cómo fue realmente creado o modificado."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Metadatos en PDF",
+        "Question Text": {
+          "en-US": [
+            "Which metadata fields are commonly found in PDF files and are relevant for forensic analysis?"
+          ],
+          "es-MX": [
+            "¿Qué campos de metadatos se encuentran comúnmente en archivos PDF y son relevantes para el análisis forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "/Author, /Creator, /Producer, /CreationDate and /ModDate.",
+            "Only the screen resolution of the examiner’s monitor.",
+            "The Wi-Fi password used when the file was opened.",
+            "Only the printer model used to print the file."
+          ],
+          "es-MX": [
+            "/Author, /Creator, /Producer, /CreationDate y /ModDate.",
+            "Solo la resolución de pantalla del monitor del perito.",
+            "La contraseña Wi-Fi usada cuando se abrió el archivo.",
+            "Solo el modelo de impresora usado para imprimir el archivo."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "/Author, /Creator, /Producer, /CreationDate and /ModDate.",
+          "es-MX": "/Author, /Creator, /Producer, /CreationDate y /ModDate."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "These fields describe who authored the PDF and which software created or produced it.",
+                "Creation and modification dates are key to reconstructing the document’s timeline.",
+                "Inconsistencies between these values and the narrative may indicate manipulation."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Estos campos describen quién creó el PDF y qué software lo generó o produjo.",
+                "Las fechas de creación y modificación son clave para reconstruir la línea temporal del documento.",
+                "Inconsistencias entre estos valores y la narrativa pueden indicar manipulación."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "PDF - Información adicional",
+        "Question Text": {
+          "en-US": [
+            "Beyond basic metadata, what additional elements can PDFs store that are useful for forensic analysis?"
+          ],
+          "es-MX": [
+            "Además de los metadatos básicos, ¿qué elementos adicionales pueden almacenar los PDFs que son útiles para el análisis forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Embedded attachments, comments/annotations, internal layers (OCG) and page thumbnails.",
+            "Only the RGB values of each pixel of the examiner’s screen.",
+            "The list of all programs installed on the computer.",
+            "The browsing history of the user."
+          ],
+          "es-MX": [
+            "Archivos adjuntos incrustados, comentarios/anotaciones, capas internas (OCG) y miniaturas de páginas.",
+            "Solo los valores RGB de cada píxel de la pantalla del perito.",
+            "La lista de todos los programas instalados en la computadora.",
+            "El historial de navegación del usuario."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Embedded attachments, comments/annotations, internal layers (OCG) and page thumbnails.",
+          "es-MX": "Archivos adjuntos incrustados, comentarios/anotaciones, capas internas (OCG) y miniaturas de páginas."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "PDFs can act as containers: they may hide attached files, comments, layered content and thumbnails that reveal prior versions or additional information not obvious in the main view."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los PDFs pueden actuar como contenedores: pueden ocultar archivos adjuntos, comentarios, contenido por capas y miniaturas que revelan versiones previas o información adicional no evidente en la vista principal."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Estructura de DOCX",
+        "Question Text": {
+          "en-US": [
+            "Why is it useful in forensics to remember that DOCX files are actually ZIP containers?"
+          ],
+          "es-MX": [
+            "¿Por qué es útil en forense recordar que los archivos DOCX en realidad son contenedores ZIP?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because you can rename .docx to .zip and inspect internal XML files like docProps/core.xml, docProps/app.xml and word/document.xml to access hidden metadata and structure.",
+            "Because renaming to .zip automatically deletes all metadata.",
+            "Because it prevents the file from being opened in Word again.",
+            "Because it converts the document into a video file."
+          ],
+          "es-MX": [
+            "Porque se puede renombrar .docx a .zip e inspeccionar archivos XML internos como docProps/core.xml, docProps/app.xml y word/document.xml para acceder a metadatos y estructura ocultos.",
+            "Porque al renombrar a .zip se borran automáticamente todos los metadatos.",
+            "Porque impide que el archivo se pueda volver a abrir en Word.",
+            "Porque convierte el documento en un archivo de video."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because you can rename .docx to .zip and inspect internal XML files like docProps/core.xml, docProps/app.xml and word/document.xml to access hidden metadata and structure.",
+          "es-MX": "Porque se puede renombrar .docx a .zip e inspeccionar archivos XML internos como docProps/core.xml, docProps/app.xml y word/document.xml para acceder a metadatos y estructura ocultos."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "A DOCX is a package of XML files.",
+                "Core properties (author, dates) live in core.xml; app.xml stores software info; document.xml holds the main content.",
+                "Reading these files reveals internal history that Word’s interface may hide."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Un DOCX es un paquete de archivos XML.",
+                "Las propiedades centrales (autor, fechas) están en core.xml; app.xml guarda información de software; document.xml contiene el contenido principal.",
+                "Leer estos archivos revela historial interno que la interfaz de Word puede ocultar."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "DOCX - Qué pueden revelar",
+        "Question Text": {
+          "en-US": [
+            "Which types of information can DOCX documents reveal about their origin, according to the class?"
+          ],
+          "es-MX": [
+            "¿Qué tipo de información pueden revelar los documentos DOCX sobre su origen, según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Windows user who created the file, associated company, previous file paths and editing indicators.",
+            "Only the color of the Word theme chosen by the user.",
+            "The complete browsing history of the machine.",
+            "The list of all emails ever sent from that computer."
+          ],
+          "es-MX": [
+            "Usuario de Windows que creó el archivo, empresa asociada, rutas previas de archivos e indicadores de edición.",
+            "Solo el color del tema de Word elegido por el usuario.",
+            "El historial completo de navegación de la máquina.",
+            "La lista de todos los correos enviados desde esa computadora."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Windows user who created the file, associated company, previous file paths and editing indicators.",
+          "es-MX": "Usuario de Windows que creó el archivo, empresa asociada, rutas previas de archivos e indicadores de edición."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "DOCX metadata and XML properties can expose the environment where the document was authored, linking it to a user, organization and even prior locations on disk."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los metadatos y propiedades XML de un DOCX pueden exponer el entorno donde se redactó el documento, vinculándolo con un usuario, una organización e incluso con rutas previas en el disco."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Archivos TXT",
+        "Question Text": {
+          "en-US": [
+            "Even though TXT files are simple, what kind of forensic information can they still provide?"
+          ],
+          "es-MX": [
+            "Aunque los archivos TXT son simples, ¿qué tipo de información forense pueden aportar?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Creation timestamps in the file system, encoding type (UTF-8, ANSI), size and suspicious change patterns.",
+            "Only the color of the text shown on the screen.",
+            "The list of all devices connected to the network.",
+            "The complete list of installed applications."
+          ],
+          "es-MX": [
+            "Timestamps de creación en el sistema de archivos, tipo de codificación (UTF-8, ANSI), tamaño y patrones de cambios sospechosos.",
+            "Solo el color del texto que se ve en pantalla.",
+            "La lista de todos los dispositivos conectados a la red.",
+            "La lista completa de aplicaciones instaladas."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Creation timestamps in the file system, encoding type (UTF-8, ANSI), size and suspicious change patterns.",
+          "es-MX": "Timestamps de creación en el sistema de archivos, tipo de codificación (UTF-8, ANSI), tamaño y patrones de cambios sospechosos."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "The text itself may be critical (threats, notes, logs).",
+                "System timestamps and encoding reveal when and how it was created or modified.",
+                "Unexpected changes in size or dates can suggest tampering."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "El propio texto puede ser crítico (amenazas, notas, registros).",
+                "Los timestamps del sistema y la codificación revelan cuándo y cómo se creó o modificó.",
+                "Cambios inesperados en tamaño o fechas pueden sugerir manipulación."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Herramientas forenses",
+        "Question Text": {
+          "en-US": [
+            "Which tools does the class mention as useful for forensic analysis of documents (within Unit IV)?"
+          ],
+          "es-MX": [
+            "¿Qué herramientas menciona la clase como útiles para el análisis forense de documentos (dentro de la Unidad IV)?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "FTK Imager, ExifTool, Autopsy, Magnet AXIOM, Metadata2Go, Forensically and ZIP tools to inspect DOCX containers.",
+            "Only a standard PDF reader with no extra capabilities.",
+            "Video games and entertainment apps.",
+            "Any random web browser without plugins."
+          ],
+          "es-MX": [
+            "FTK Imager, ExifTool, Autopsy, Magnet AXIOM, Metadata2Go, Forensically y herramientas ZIP para inspeccionar contenedores DOCX.",
+            "Solo un lector de PDF estándar sin capacidades extra.",
+            "Videojuegos y aplicaciones de entretenimiento.",
+            "Cualquier navegador web sin complementos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "FTK Imager, ExifTool, Autopsy, Magnet AXIOM, Metadata2Go, Forensically and ZIP tools to inspect DOCX containers.",
+          "es-MX": "FTK Imager, ExifTool, Autopsy, Magnet AXIOM, Metadata2Go, Forensically y herramientas ZIP para inspeccionar contenedores DOCX."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "These tools cover different layers: disk-level imaging, metadata extraction, case management, online metadata reading, container inspection and more, giving a complete view of the document’s history."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Estas herramientas cubren distintas capas: imagen forense de disco, extracción de metadatos, gestión del caso, lectura de metadatos en línea, inspección de contenedores, etc., dando una visión completa del historial del documento."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Procedimiento - Paso 1",
+        "Question Text": {
+          "en-US": [
+            "What should be done in Step 1 (initial preview) of the general procedure for document analysis?"
+          ],
+          "es-MX": [
+            "¿Qué se debe hacer en el Paso 1 (previsualización inicial) del procedimiento general para análisis de documentos?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Observe visible content, file size and document structure, count pages and register name, date, extension and hash of the file.",
+            "Immediately edit the document to make it easier to read.",
+            "Print the document and discard the original file.",
+            "Rename the document to hide its original extension."
+          ],
+          "es-MX": [
+            "Observar contenido visible, tamaño de archivo y estructura del documento, contar páginas y registrar nombre, fecha, extensión y hash del archivo.",
+            "Editar inmediatamente el documento para que sea más fácil de leer.",
+            "Imprimir el documento y desechar el archivo original.",
+            "Renombrar el documento para ocultar su extensión original."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Observe visible content, file size and document structure, count pages and register name, date, extension and hash of the file.",
+          "es-MX": "Observar contenido visible, tamaño de archivo y estructura del documento, contar páginas y registrar nombre, fecha, extensión y hash del archivo."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "First you understand what the document appears to be (content and structure).",
+                "Then you document technical basics: name, extension, dates and a hash.",
+                "This ensures chain of custody from the very beginning of the analysis."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Primero se entiende qué parece ser el documento (contenido y estructura).",
+                "Luego se documentan los datos técnicos básicos: nombre, extensión, fechas y un hash.",
+                "Esto asegura la cadena de custodia desde el inicio del análisis."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Procedimiento - Paso 2",
+        "Question Text": {
+          "en-US": [
+            "In Step 2 (metadata extraction), which actions are recommended for each type of document?"
+          ],
+          "es-MX": [
+            "En el Paso 2 (extracción de metadatos), ¿qué acciones se recomiendan para cada tipo de documento?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Run ExifTool on PDF, DOCX and TXT; for DOCX you can also inspect core.xml and app.xml; for TXT you review file system timestamps, encoding and size.",
+            "Only open the files and read them without any tool.",
+            "Convert everything to images and ignore the original documents.",
+            "Delete metadata so no one else can see it."
+          ],
+          "es-MX": [
+            "Ejecutar ExifTool sobre PDF, DOCX y TXT; en DOCX también se pueden inspeccionar core.xml y app.xml; en TXT revisar timestamps del sistema, codificación y tamaño.",
+            "Solo abrir los archivos y leerlos sin ninguna herramienta.",
+            "Convertir todo a imágenes e ignorar los documentos originales.",
+            "Borrar los metadatos para que nadie más los vea."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Run ExifTool on PDF, DOCX and TXT; for DOCX you can also inspect core.xml and app.xml; for TXT you review file system timestamps, encoding and size.",
+          "es-MX": "Ejecutar ExifTool sobre PDF, DOCX y TXT; en DOCX también se pueden inspeccionar core.xml y app.xml; en TXT revisar timestamps del sistema, codificación y tamaño."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Metadata is central to document forensics.",
+                "Different formats store metadata in different places (PDF dictionaries, XML in DOCX, file system for TXT).",
+                "Using ExifTool and XML inspection gives a deeper view than what the user interface shows."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Los metadatos son centrales en el forense de documentos.",
+                "Cada formato almacena metadatos en lugares distintos (diccionarios PDF, XML en DOCX, sistema de archivos para TXT).",
+                "Usar ExifTool y revisar XML da una vista más profunda que la interfaz de usuario."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Procedimiento - Revisión profunda",
+        "Question Text": {
+          "en-US": [
+            "What is the focus of Step 3 (deep review) for document analysis?"
+          ],
+          "es-MX": [
+            "¿En qué se enfoca el Paso 3 (revisión profunda) para el análisis de documentos?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Searching for embedded objects or attachments, examining PDF layers (OCG), revision tables in DOCX and hidden XML properties, and comparing these with the case narrative.",
+            "Changing the font size to make the text easier to read.",
+            "Translating the document into another language without keeping the original.",
+            "Compressing the file as much as possible."
+          ],
+          "es-MX": [
+            "Buscar objetos o adjuntos incrustados, examinar capas (OCG) en PDF, tablas de revisión en DOCX y propiedades XML ocultas, y comparar todo con la narrativa del caso.",
+            "Cambiar el tamaño de la fuente para que el texto sea más fácil de leer.",
+            "Traducir el documento a otro idioma sin conservar el original.",
+            "Comprimir el archivo lo más posible."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Searching for embedded objects or attachments, examining PDF layers (OCG), revision tables in DOCX and hidden XML properties, and comparing these with the case narrative.",
+          "es-MX": "Buscar objetos o adjuntos incrustados, examinar capas (OCG) en PDF, tablas de revisión en DOCX y propiedades XML ocultas, y comparar todo con la narrativa del caso."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The deep review step looks beyond the visible text, exploring all internal structures (attachments, layers, revisions) that can reveal previous versions, hidden content or inconsistencies with the story presented."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La revisión profunda va más allá del texto visible, explorando las estructuras internas (adjuntos, capas, revisiones) que pueden revelar versiones previas, contenido oculto o inconsistencias con la historia presentada."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Validación de fechas",
+        "Question Text": {
+          "en-US": [
+            "In Step 4 (date validation), which comparisons are suggested to detect possible manipulation?"
+          ],
+          "es-MX": [
+            "En el Paso 4 (validación de fechas), ¿qué comparaciones se sugieren para detectar posible manipulación?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Compare the document’s real creation and modification dates with the operating system dates, with dates in emails or chats where it was sent and with hashes before and after.",
+            "Only compare the hour with the current local time.",
+            "Compare the dates with the user’s birthday.",
+            "Ignore all dates because they are always unreliable."
+          ],
+          "es-MX": [
+            "Comparar las fechas reales de creación y modificación del documento con las fechas del sistema operativo, con fechas en correos o chats donde se envió y con hashes antes y después.",
+            "Comparar solo la hora con la hora local actual.",
+            "Comparar las fechas con la fecha de cumpleaños del usuario.",
+            "Ignorar todas las fechas porque siempre son poco fiables."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Compare the document’s real creation and modification dates with the operating system dates, with dates in emails or chats where it was sent and with hashes before and after.",
+          "es-MX": "Comparar las fechas reales de creación y modificación del documento con las fechas del sistema operativo, con fechas en correos o chats donde se envió y con hashes antes y después."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Dates must align with the story of when and how the document was created and shared.",
+                "Contradictions (e.g., document created after it was supposedly sent) suggest manipulation.",
+                "Hashes help ensure that the file did not change during the analysis."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Las fechas deben alinearse con la historia de cuándo y cómo se creó y compartió el documento.",
+                "Las contradicciones (por ejemplo, documento creado después de que supuestamente se envió) sugieren manipulación.",
+                "Los hashes ayudan a asegurar que el archivo no cambió durante el análisis."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Integridad y hash",
+        "Question Text": {
+          "en-US": [
+            "What is the purpose of calculating a SHA-256 hash (Step 5) for a document in forensic analysis?"
+          ],
+          "es-MX": [
+            "¿Cuál es el propósito de calcular un hash SHA-256 (Paso 5) para un documento en el análisis forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To verify the integrity of the file, proving that it has not been modified between acquisition and analysis.",
+            "To compress the file and make it smaller.",
+            "To remove the document’s password.",
+            "To change the author field in the metadata."
+          ],
+          "es-MX": [
+            "Verificar la integridad del archivo, demostrando que no ha sido modificado entre la adquisición y el análisis.",
+            "Comprimir el archivo y hacerlo más pequeño.",
+            "Quitar la contraseña del documento.",
+            "Cambiar el campo de autor en los metadatos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To verify the integrity of the file, proving that it has not been modified between acquisition and analysis.",
+          "es-MX": "Verificar la integridad del archivo, demostrando que no ha sido modificado entre la adquisición y el análisis."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "A cryptographic hash uniquely represents the exact bit pattern of the file; if the hash remains identical, it is strong evidence that the document has not changed during the forensic process."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Un hash criptográfico representa de forma única el patrón de bits del archivo; si el hash permanece idéntico, es una evidencia fuerte de que el documento no cambió durante el proceso forense."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Ejemplo ilustrativo",
+        "Question Text": {
+          "en-US": [
+            "In the class example, a PDF is presented with metadata Author: JuanPC, Producer: Microsoft Word, CreationDate and ModDate 5 minutes apart, but the user claims it was generated with Adobe Acrobat. What is the most reasonable forensic conclusion?"
+          ],
+          "es-MX": [
+            "En el ejemplo de la clase, se presenta un PDF con metadatos Author: JuanPC, Producer: Microsoft Word, CreationDate y ModDate separados por 5 minutos, pero el usuario afirma que se generó con Adobe Acrobat. ¿Cuál es la conclusión forense más razonable?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The document was created and exported from Microsoft Word, edited shortly after creation and does not match the claimed tool, so the user’s statement is inconsistent with the technical evidence.",
+            "The document must be ignored because the user remembers using Acrobat.",
+            "The metadata is always wrong and should be discarded.",
+            "The file is definitely a TXT document, not a PDF."
+          ],
+          "es-MX": [
+            "El documento fue creado y exportado desde Microsoft Word, se editó poco después de su creación y no coincide con la herramienta declarada, por lo que la declaración del usuario es inconsistente con la evidencia técnica.",
+            "El documento debe ignorarse porque el usuario recuerda haber usado Acrobat.",
+            "Los metadatos siempre están mal y deben descartarse.",
+            "El archivo definitivamente es un documento TXT, no un PDF."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The document was created and exported from Microsoft Word, edited shortly after creation and does not match the claimed tool, so the user’s statement is inconsistent with the technical evidence.",
+          "es-MX": "El documento fue creado y exportado desde Microsoft Word, se editó poco después de su creación y no coincide con la herramienta declarada, por lo que la declaración del usuario es inconsistente con la evidencia técnica."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Producer and Software fields indicate Microsoft Word, not Acrobat.",
+                "Creation and modification dates close in time show a quick edit.",
+                "The mismatch between user claim and metadata is important evidence of possible manipulation or false testimony."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Los campos Producer y Software indican Microsoft Word, no Acrobat.",
+                "Las fechas de creación y modificación cercanas muestran una edición rápida.",
+                "La discrepancia entre lo que afirma el usuario y los metadatos es una evidencia importante de posible manipulación o falso testimonio."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Conclusiones clave",
+        "Question Text": {
+          "en-US": [
+            "Which statement best summarizes the key conclusions of this class about forensic analysis of PDF, DOCX and TXT documents?"
+          ],
+          "es-MX": [
+            "¿Qué enunciado resume mejor las conclusiones clave de esta clase sobre análisis forense de documentos PDF, DOCX y TXT?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "These documents can reveal hidden critical information; metadata helps identify software, author and real dates; XML analysis in DOCX exposes origin and manipulation; comparing dates and hashes helps demonstrate alterations and tools like FTK Imager, ExifTool and Autopsy are essential.",
+            "Documents never contain useful metadata and should be ignored in digital investigations.",
+            "Only printed documents are valid as evidence, never digital versions.",
+            "If the user says the document is authentic, there is no need for any technical verification."
+          ],
+          "es-MX": [
+            "Estos documentos pueden revelar información oculta crítica; los metadatos ayudan a identificar software, autor y fechas reales; el análisis XML en DOCX expone origen y manipulación; comparar fechas y hashes ayuda a demostrar alteraciones y herramientas como FTK Imager, ExifTool y Autopsy son esenciales.",
+            "Los documentos nunca contienen metadatos útiles y deben ignorarse en las investigaciones digitales.",
+            "Solo los documentos impresos son válidos como evidencia, nunca las versiones digitales.",
+            "Si el usuario dice que el documento es auténtico, no hay necesidad de verificación técnica."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "These documents can reveal hidden critical information; metadata helps identify software, author and real dates; XML analysis in DOCX exposes origin and manipulation; comparing dates and hashes helps demonstrate alterations and tools like FTK Imager, ExifTool and Autopsy are essential.",
+          "es-MX": "Estos documentos pueden revelar información oculta crítica; los metadatos ayudan a identificar software, autor y fechas reales; el análisis XML en DOCX expone origen y manipulación; comparar fechas y hashes ayuda a demostrar alteraciones y herramientas como FTK Imager, ExifTool y Autopsy son esenciales."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The class highlights that document forensics is not just about reading the visible text, but about exploring all internal layers (metadata, XML, timestamps, hashes) to validate authenticity and detect any hidden manipulation."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La clase destaca que el forense de documentos no se trata solo de leer el texto visible, sino de explorar todas las capas internas (metadatos, XML, fechas, hashes) para validar autenticidad y detectar cualquier manipulación oculta."
+            }
+          ]
+        }
+      }
+  
+    ]
+  }
+  

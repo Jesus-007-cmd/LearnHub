@@ -1,0 +1,652 @@
+{
+    "meta": {
+      "slug": "forense-apps53",
+      "title": "Validación de integridad multimedia con hashes",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 4,
+      "classNo": 53,
+      "description": "Procedimientos técnicos para verificar la autenticidad de archivos multimedia mediante funciones hash como SHA-256, MD5 y SHA-1, usando herramientas forenses y verificación cruzada.",
+      "tags": [
+        "hash",
+        "integridad",
+        "SHA-256",
+        "MD5",
+        "SHA-1",
+        "cadena de custodia",
+        "evidencia multimedia",
+        "forense digital"
+      ]
+    },
+    "Questions": [
+  
+      {
+        "Category": "Importancia de la validación de integridad",
+        "Question Text": {
+          "en-US": [
+            "Why is validating the integrity of multimedia evidence with hashes considered essential in a forensic investigation?"
+          ],
+          "es-MX": [
+            "¿Por qué se considera esencial validar la integridad de la evidencia multimedia con hashes en una investigación forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it ensures that files (photos, videos, audios, documents) have not been altered from acquisition to presentation, supporting chain of custody and judicial admissibility.",
+            "Because it automatically improves the visual and audio quality of the evidence.",
+            "Because it hides the content of the evidence from the judge.",
+            "Because it allows you to edit the file without leaving any trace."
+          ],
+          "es-MX": [
+            "Porque garantiza que los archivos (fotos, videos, audios, documentos) no han sido alterados desde la adquisición hasta la presentación, respaldando la cadena de custodia y la admisibilidad judicial.",
+            "Porque mejora automáticamente la calidad visual y de audio de la evidencia.",
+            "Porque oculta el contenido de la evidencia al juez.",
+            "Porque permite editar el archivo sin dejar rastro alguno."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it ensures that files (photos, videos, audios, documents) have not been altered from acquisition to presentation, supporting chain of custody and judicial admissibility.",
+          "es-MX": "Porque garantiza que los archivos (fotos, videos, audios, documentos) no han sido alterados desde la adquisición hasta la presentación, respaldando la cadena de custodia y la admisibilidad judicial."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Integrity validation is a requirement in international guidelines such as ISO/IEC 27037 and NIST SP 800-101.",
+                "Hashes allow you to prove that the file analyzed is the same as the one originally acquired.",
+                "Without hash control, any later modification can be alleged and the evidence may lose value."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "La validación de integridad es un requisito en guías internacionales como ISO/IEC 27037 y NIST SP 800-101.",
+                "Los hashes permiten demostrar que el archivo analizado es el mismo que el originalmente adquirido.",
+                "Sin control de hash, se puede alegar cualquier modificación posterior y la evidencia puede perder valor."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Definición de hash forense",
+        "Question Text": {
+          "en-US": [
+            "In the context of digital forensics, what is a hash and how does it behave when a single bit of the file changes?"
+          ],
+          "es-MX": [
+            "En el contexto de la informática forense, ¿qué es un hash y cómo se comporta cuando cambia un solo bit del archivo?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It is a digital fingerprint of the file, and even a one-bit change produces a totally different final hash.",
+            "It is a compressed copy of the file that changes very little when the file is edited.",
+            "It is an image preview of the file that remains identical if the content changes.",
+            "It is a password used to encrypt the file, unaffected by content changes."
+          ],
+          "es-MX": [
+            "Es una huella digital del archivo, y un cambio de un solo bit produce un hash final totalmente diferente.",
+            "Es una copia comprimida del archivo que cambia muy poco cuando se edita el archivo.",
+            "Es una vista previa en imagen del archivo que permanece igual aunque cambie el contenido.",
+            "Es una contraseña usada para cifrar el archivo, que no se ve afectada por los cambios de contenido."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It is a digital fingerprint of the file, and even a one-bit change produces a totally different final hash.",
+          "es-MX": "Es una huella digital del archivo, y un cambio de un solo bit produce un hash final totalmente diferente."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Cryptographic hash functions are designed so that minimal modifications in the input produce completely different outputs, which is why they are so useful for integrity verification."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las funciones hash criptográficas están diseñadas para que modificaciones mínimas en la entrada produzcan salidas completamente distintas, por eso son tan útiles para verificar integridad."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Funciones hash comunes",
+        "Question Text": {
+          "en-US": [
+            "Which statement best describes SHA-256, SHA-1 and MD5 in forensic use according to this class?"
+          ],
+          "es-MX": [
+            "¿Qué enunciado describe mejor a SHA-256, SHA-1 y MD5 en el uso forense según esta clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "SHA-256 is the currently recommended standard; SHA-1 is still used but less secure; MD5 is traditional and useful for quick comparisons but not as robust.",
+            "MD5 is the only recommended standard and SHA-256 is obsolete.",
+            "SHA-1 and MD5 are more secure than SHA-256 and should always be preferred.",
+            "All three are considered identical in security and use; there is no difference between them."
+          ],
+          "es-MX": [
+            "SHA-256 es el estándar recomendado actualmente; SHA-1 todavía se usa pero es menos seguro; MD5 es tradicional y útil para comparaciones rápidas pero no tan robusto.",
+            "MD5 es el único estándar recomendado y SHA-256 está obsoleto.",
+            "SHA-1 y MD5 son más seguros que SHA-256 y siempre deben preferirse.",
+            "Los tres se consideran idénticos en seguridad y uso; no hay diferencia entre ellos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "SHA-256 is the currently recommended standard; SHA-1 is still used but less secure; MD5 is traditional and useful for quick comparisons but not as robust.",
+          "es-MX": "SHA-256 es el estándar recomendado actualmente; SHA-1 todavía se usa pero es menos seguro; MD5 es tradicional y útil para comparaciones rápidas pero no tan robusto."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "For modern forensic work, SHA-256 offers a better security margin.",
+                "SHA-1 and MD5 have known weaknesses, but they can still be useful as secondary references.",
+                "Many tools calculate several hashes at the same time for compatibility and correlation with legacy databases."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Para trabajo forense moderno, SHA-256 ofrece un mejor margen de seguridad.",
+                "SHA-1 y MD5 tienen debilidades conocidas, pero aún pueden ser útiles como referencia secundaria.",
+                "Muchas herramientas calculan varios hashes a la vez para compatibilidad y correlación con bases de datos heredadas."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Archivos que requieren hash",
+        "Question Text": {
+          "en-US": [
+            "According to the class, which of the following sets correctly lists multimedia and related files that should have their hash calculated?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿cuál de los siguientes conjuntos lista correctamente los archivos multimedia y relacionados que deben tener hash calculado?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Photos, videos, audios, documents, database copies (e.g. msgstore.db, tdata, SQLite) and full device backups (ZIP, TAR, UFDR).",
+            "Only photos and text messages, but never databases.",
+            "Only videos in MP4 format, ignoring the rest.",
+            "Exclusively temporary files and cache folders."
+          ],
+          "es-MX": [
+            "Fotografías, videos, audios, documentos, copias de bases de datos (por ejemplo msgstore.db, tdata, SQLite) y respaldos completos de dispositivo (ZIP, TAR, UFDR).",
+            "Solo fotografías y mensajes de texto, pero nunca bases de datos.",
+            "Solo videos en formato MP4, ignorando el resto.",
+            "Exclusivamente archivos temporales y carpetas de caché."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Photos, videos, audios, documents, database copies (e.g. msgstore.db, tdata, SQLite) and full device backups (ZIP, TAR, UFDR).",
+          "es-MX": "Fotografías, videos, audios, documentos, copias de bases de datos (por ejemplo msgstore.db, tdata, SQLite) y respaldos completos de dispositivo (ZIP, TAR, UFDR)."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Any file that may be used as digital evidence, including backups and databases that store chats or routes to multimedia, should have its hash documented before and after analysis."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Cualquier archivo que pueda usarse como evidencia digital, incluidos respaldos y bases de datos que almacenan chats o rutas a multimedia, debe tener su hash documentado antes y después del análisis."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Registro inicial",
+        "Question Text": {
+          "en-US": [
+            "What elements does the class recommend documenting in the initial registration before calculating the hash of a multimedia file?"
+          ],
+          "es-MX": [
+            "¿Qué elementos recomienda la clase documentar en el registro inicial antes de calcular el hash de un archivo multimedia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "File name, size in bytes, original location and then the SHA-256 hash stored in a forensic log.",
+            "Only the file extension and the color of the desktop wallpaper.",
+            "Just the user password of the device.",
+            "Only the operating system version, without mentioning the file."
+          ],
+          "es-MX": [
+            "Nombre del archivo, tamaño en bytes, ubicación de origen y después el hash SHA-256 almacenado en una bitácora forense.",
+            "Solo la extensión del archivo y el color del fondo de pantalla.",
+            "Únicamente la contraseña del usuario del dispositivo.",
+            "Solo la versión del sistema operativo, sin mencionar el archivo."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "File name, size in bytes, original location and then the SHA-256 hash stored in a forensic log.",
+          "es-MX": "Nombre del archivo, tamaño en bytes, ubicación de origen y después el hash SHA-256 almacenado en una bitácora forense."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Identify the file precisely (name and location).",
+                "Document its physical size, which may be useful for later comparisons.",
+                "Calculate and record the hash as part of the chain of custody."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Identificar el archivo con precisión (nombre y ubicación).",
+                "Documentar su tamaño físico, que puede servir para comparaciones posteriores.",
+                "Calcular y registrar el hash como parte de la cadena de custodia."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Cálculo de hash en distintas plataformas",
+        "Question Text": {
+          "en-US": [
+            "Which commands and tools does the class mention for obtaining a SHA-256 hash on different platforms?"
+          ],
+          "es-MX": [
+            "¿Qué comandos y herramientas menciona la clase para obtener un hash SHA-256 en distintas plataformas?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "PowerShell command Get-FileHash evidencia.mp4 -Algorithm SHA256; Linux/Mac command sha256sum evidencia.mp4; FTK Imager, Autopsy and Magnet AXIOM with built-in hash calculation.",
+            "Only printing the file and checking it visually, without any command.",
+            "Using the calculator app and manually adding numbers from the file.",
+            "Exclusively changing the file extension to .hash."
+          ],
+          "es-MX": [
+            "Comando de PowerShell Get-FileHash evidencia.mp4 -Algorithm SHA256; comando de Linux/Mac sha256sum evidencia.mp4; FTK Imager, Autopsy y Magnet AXIOM con cálculo de hash integrado.",
+            "Solo imprimiendo el archivo y revisándolo visualmente, sin ningún comando.",
+            "Usando la calculadora y sumando manualmente números del archivo.",
+            "Exclusivamente cambiando la extensión del archivo a .hash."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "PowerShell command Get-FileHash evidencia.mp4 -Algorithm SHA256; Linux/Mac command sha256sum evidencia.mp4; FTK Imager, Autopsy and Magnet AXIOM with built-in hash calculation.",
+          "es-MX": "Comando de PowerShell Get-FileHash evidencia.mp4 -Algorithm SHA256; comando de Linux/Mac sha256sum evidencia.mp4; FTK Imager, Autopsy y Magnet AXIOM con cálculo de hash integrado."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "The class emphasizes both command-line tools and forensic suites.",
+                "Using standardized commands simplifies repeatability and documentation.",
+                "Forensic tools usually generate reports that include hashes automatically."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "La clase enfatiza tanto herramientas de línea de comandos como suites forenses.",
+                "Usar comandos estandarizados facilita la repetibilidad y la documentación.",
+                "Las herramientas forenses suelen generar reportes que incluyen los hashes automáticamente."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Interpretación de coincidencia de hashes",
+        "Question Text": {
+          "en-US": [
+            "If the hash calculated after analysis is exactly the same as the original hash of a multimedia file, what is the correct interpretation?"
+          ],
+          "es-MX": [
+            "Si el hash calculado después del análisis es exactamente el mismo que el hash original de un archivo multimedia, ¿cuál es la interpretación correcta?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The evidence has preserved its integrity and there is no indication of modification between both measurements.",
+            "The file was edited but the hash remained unchanged.",
+            "The hash function failed and therefore is useless.",
+            "The file must be deleted immediately."
+          ],
+          "es-MX": [
+            "La evidencia ha conservado su integridad y no hay indicios de modificación entre ambas mediciones.",
+            "El archivo fue editado pero el hash se mantuvo igual.",
+            "La función hash falló y por lo tanto no sirve para nada.",
+            "El archivo debe eliminarse de inmediato."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The evidence has preserved its integrity and there is no indication of modification between both measurements.",
+          "es-MX": "La evidencia ha conservado su integridad y no hay indicios de modificación entre ambas mediciones."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "One of the core properties of cryptographic hashes is that the same input always produces the same output, so matching hashes strongly support that the file has not changed."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Una de las propiedades centrales de los hashes criptográficos es que la misma entrada siempre produce la misma salida, por lo que hashes coincidentes respaldan fuertemente que el archivo no ha cambiado."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Interpretación de hashes diferentes",
+        "Question Text": {
+          "en-US": [
+            "According to the class, what can a non-matching hash between the original and a later copy of a multimedia file indicate?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿qué puede indicar un hash que no coincide entre el archivo original y una copia posterior de un archivo multimedia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Possible manipulation, unauthorized conversion or compression, storage/copy error or alteration of the container such as metadata editing.",
+            "That the hash algorithm is always unreliable and should never be used again.",
+            "That the file has improved its quality automatically.",
+            "That the evidence is automatically more credible."
+          ],
+          "es-MX": [
+            "Posible manipulación, conversión o compresión no autorizada, error de almacenamiento/copias o alteración del contenedor como edición de metadatos.",
+            "Que el algoritmo hash es siempre poco fiable y nunca debe volver a usarse.",
+            "Que el archivo ha mejorado su calidad automáticamente.",
+            "Que la evidencia es automáticamente más creíble."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Possible manipulation, unauthorized conversion or compression, storage/copy error or alteration of the container such as metadata editing.",
+          "es-MX": "Posible manipulación, conversión o compresión no autorizada, error de almacenamiento/copias o alteración del contenedor como edición de metadatos."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "A different hash means the file's bits are not the same as in the original.",
+                "This may come from intentional editing or from unintended transformations.",
+                "It is the examiner's job to investigate and document what happened."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Un hash diferente significa que los bits del archivo ya no son los mismos que en el original.",
+                "Esto puede deberse a ediciones intencionales o a transformaciones no deseadas.",
+                "Es tarea del perito investigar y documentar qué ocurrió."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Hash y cambios mínimos en multimedia",
+        "Question Text": {
+          "en-US": [
+            "What effect do minimal edits (such as a small crop or filter) usually have on the hash of a photo or video?"
+          ],
+          "es-MX": [
+            "¿Qué efecto suelen tener las ediciones mínimas (como un pequeño recorte o filtro) sobre el hash de una foto o video?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They change the hash completely, because any modification to the file alters its digital fingerprint.",
+            "They do not affect the hash at all; small changes are ignored.",
+            "They only modify the first two characters of the hash.",
+            "They keep the hash the same if the user is an administrator."
+          ],
+          "es-MX": [
+            "Cambian completamente el hash, porque cualquier modificación del archivo altera su huella digital.",
+            "No afectan en nada al hash; los cambios pequeños se ignoran.",
+            "Solo modifican los dos primeros caracteres del hash.",
+            "Mantienen el hash igual si el usuario es administrador."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They change the hash completely, because any modification to the file alters its digital fingerprint.",
+          "es-MX": "Cambian completamente el hash, porque cualquier modificación del archivo altera su huella digital."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Even \"minor\" visual changes correspond to different binary content, which leads to a radically different hash and is precisely what allows the examiner to detect that the file was processed."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Incluso los cambios \"mínimos\" visualmente corresponden a contenido binario distinto, lo que genera un hash radicalmente diferente y permite al perito detectar que el archivo fue procesado."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Formato de registro de validación",
+        "Question Text": {
+          "en-US": [
+            "Which fields does the class recommend including in the validation log for a multimedia file?"
+          ],
+          "es-MX": [
+            "¿Qué campos recomienda la clase incluir en el registro de validación para un archivo multimedia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "File name, SHA-256 hash value, date and time, analyst, tool used and observations.",
+            "Only the file name without any hash or date.",
+            "Just the hash, without any context.",
+            "Only the name of the judge and the court."
+          ],
+          "es-MX": [
+            "Nombre del archivo, valor de hash SHA-256, fecha y hora, analista, herramienta usada y observaciones.",
+            "Solo el nombre del archivo sin hash ni fecha.",
+            "Solo el hash, sin ningún contexto.",
+            "Únicamente el nombre del juez y el tribunal."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "File name, SHA-256 hash value, date and time, analyst, tool used and observations.",
+          "es-MX": "Nombre del archivo, valor de hash SHA-256, fecha y hora, analista, herramienta usada y observaciones."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Identify exactly which file was validated.",
+                "Document the technical fingerprint (hash) and when it was obtained.",
+                "Record who did the process, with what tool and any relevant notes for chain of custody."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Identificar exactamente qué archivo se validó.",
+                "Documentar la huella técnica (hash) y cuándo se obtuvo.",
+                "Registrar quién realizó el proceso, con qué herramienta y cualquier nota relevante para la cadena de custodia."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Ejemplo de integridad conservada",
+        "Question Text": {
+          "en-US": [
+            "In the class example of the file 'audio_nota_01.opus', both the original hash and the later hash are identical. What conclusion is stated?"
+          ],
+          "es-MX": [
+            "En el ejemplo de la clase del archivo 'audio_nota_01.opus', el hash original y el posterior son idénticos. ¿Qué conclusión se establece?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The file maintains its integrity and no modifications are detected.",
+            "The file has been edited multiple times.",
+            "The hash is meaningless and must be ignored.",
+            "The audio must be discarded as evidence."
+          ],
+          "es-MX": [
+            "El archivo conserva su integridad y no se detectan modificaciones.",
+            "El archivo ha sido editado múltiples veces.",
+            "El hash no tiene significado y debe ignorarse.",
+            "El audio debe descartarse como evidencia."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The file maintains its integrity and no modifications are detected.",
+          "es-MX": "El archivo conserva su integridad y no se detectan modificaciones."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The example illustrates the ideal scenario: the same hash before and after confirms that the acquisition, storage and analysis did not alter the evidence."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El ejemplo ilustra el escenario ideal: el mismo hash antes y después confirma que la adquisición, el almacenamiento y el análisis no alteraron la evidencia."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Herramientas sugeridas",
+        "Question Text": {
+          "en-US": [
+            "Which tools does this class highlight as suggested for calculating and managing hashes in multimedia integrity validation?"
+          ],
+          "es-MX": [
+            "¿Qué herramientas destaca esta clase como sugeridas para calcular y gestionar hashes en validación de integridad multimedia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "FTK Imager, Autopsy, Magnet AXIOM, HashTab, OpenHashTab, PowerShell and sha256sum.",
+            "Only image editors and video players.",
+            "Exclusively social networks and web browsers.",
+            "Any mobile game that can play sounds."
+          ],
+          "es-MX": [
+            "FTK Imager, Autopsy, Magnet AXIOM, HashTab, OpenHashTab, PowerShell y sha256sum.",
+            "Solo editores de imagen y reproductores de video.",
+            "Exclusivamente redes sociales y navegadores web.",
+            "Cualquier juego de celular que pueda reproducir sonidos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "FTK Imager, Autopsy, Magnet AXIOM, HashTab, OpenHashTab, PowerShell and sha256sum.",
+          "es-MX": "FTK Imager, Autopsy, Magnet AXIOM, HashTab, OpenHashTab, PowerShell y sha256sum."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "FTK Imager, Autopsy and AXIOM are forensic suites that integrate hash calculation into their workflows.",
+                "HashTab/OpenHashTab and command-line tools allow quick verification from the operating system.",
+                "Using multiple tools can help cross-check results when needed."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "FTK Imager, Autopsy y AXIOM son suites forenses que integran el cálculo de hashes en sus flujos de trabajo.",
+                "HashTab/OpenHashTab y las herramientas de línea de comandos permiten una verificación rápida desde el sistema operativo.",
+                "Usar varias herramientas puede ayudar a contrastar resultados cuando sea necesario."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Conclusiones principales",
+        "Question Text": {
+          "en-US": [
+            "Which option best summarizes the main conclusions of this class about multimedia integrity validation with hashes?"
+          ],
+          "es-MX": [
+            "¿Qué opción resume mejor las conclusiones principales de esta clase sobre validación de integridad multimedia con hashes?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The hash is the most reliable method to verify authenticity; SHA-256 is the recommended standard; all evidence must have hashes before and after any manipulation; and the chain of custody for judicial use must include these hashes.",
+            "Hashes are optional and only used when there is free time.",
+            "It is enough to visually inspect files; hashes are not needed.",
+            "Only printed documents require hash; multimedia files never do."
+          ],
+          "es-MX": [
+            "El hash es el método más confiable para verificar autenticidad; SHA-256 es el estándar recomendado; toda evidencia debe tener hashes antes y después de cualquier manipulación; y la cadena de custodia para uso judicial debe incluir esos hashes.",
+            "Los hashes son opcionales y solo se usan cuando hay tiempo libre.",
+            "Basta con inspeccionar visualmente los archivos; los hashes no son necesarios.",
+            "Solo los documentos impresos requieren hash; los archivos multimedia nunca."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The hash is the most reliable method to verify authenticity; SHA-256 is the recommended standard; all evidence must have hashes before and after any manipulation; and the chain of custody for judicial use must include these hashes.",
+          "es-MX": "El hash es el método más confiable para verificar autenticidad; SHA-256 es el estándar recomendado; toda evidencia debe tener hashes antes y después de cualquier manipulación; y la cadena de custodia para uso judicial debe incluir esos hashes."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The class reinforces that integrity validation with hashes is not an optional extra but a central pillar of forensic methodology and legal defensibility of digital evidence."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La clase refuerza que la validación de integridad con hashes no es un extra opcional, sino un pilar central de la metodología forense y de la defensa legal de la evidencia digital."
+            }
+          ]
+        }
+      }
+  
+    ]
+  }
+  

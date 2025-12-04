@@ -1,0 +1,714 @@
+{
+    "meta": {
+      "slug": "forense-apps71",
+      "title": "Cierre reflexivo y conclusiones generales: rol forense en la sociedad digital",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 5,
+      "classNo": 71,
+      "description": "Reflexión final sobre el rol del analista forense digital, sus responsabilidades éticas y el impacto social de su trabajo, integrando los aprendizajes técnicos, legales y humanos del curso.",
+      "tags": [
+        "rol forense",
+        "ética profesional",
+        "impacto social",
+        "responsabilidad",
+        "reflexión final",
+        "unidad V"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "Rol del analista forense en la era digital",
+        "Question Text": {
+          "en-US": [
+            "In the context of Class 71, how is the role of the digital forensic analyst mainly described in today's society?"
+          ],
+          "es-MX": [
+            "Según la Clase 71, ¿cómo se describe principalmente el rol del analista forense digital en la sociedad actual?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "As an agent of truth who reconstructs events using digital evidence, without prejudice or speculation.",
+            "As a purely technical operator who only runs tools without considering ethical or social impact.",
+            "As a professional dedicated only to corporate image and marketing campaigns.",
+            "As someone whose work is secondary and has little impact on justice or society."
+          ],
+          "es-MX": [
+            "Como un agente de verdad que reconstruye hechos con evidencia digital, sin prejuicios ni especulaciones.",
+            "Como un operador puramente técnico que solo ejecuta herramientas sin considerar el impacto ético o social.",
+            "Como un profesional dedicado únicamente a la imagen corporativa y campañas de marketing.",
+            "Como alguien cuyo trabajo es secundario y con poco impacto en la justicia o la sociedad."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "As an agent of truth who reconstructs events using digital evidence, without prejudice or speculation.",
+          "es-MX": "Como un agente de verdad que reconstruye hechos con evidencia digital, sin prejuicios ni especulaciones."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The class emphasizes that the analyst is not just a technician, but a key figure who helps reveal what really happened based on verifiable evidence."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La clase resalta que el analista no es solo un técnico, sino una figura clave que ayuda a mostrar qué ocurrió realmente con base en evidencia verificable."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Aportes del perito a la sociedad",
+        "Question Text": {
+          "en-US": [
+            "Which option best summarizes what the forensic expert contributes to society according to the material?"
+          ],
+          "es-MX": [
+            "¿Qué opción resume mejor lo que aporta el perito forense a la sociedad según el material?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Clarity in investigations, protection of rights, support for judicial decisions based on evidence and contribution to digital security.",
+            "Mainly entertainment and creation of viral content for social networks.",
+            "Exclusive support to one of the parties, regardless of the evidence.",
+            "Only internal reports for companies, without any legal or social relevance."
+          ],
+          "es-MX": [
+            "Claridad en las investigaciones, protección de derechos, soporte a decisiones judiciales basadas en evidencia y contribución a la seguridad digital.",
+            "Principalmente entretenimiento y creación de contenidos virales para redes sociales.",
+            "Apoyo exclusivo a una de las partes, sin importar la evidencia.",
+            "Solo informes internos para empresas, sin relevancia legal ni social."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Clarity in investigations, protection of rights, support for judicial decisions based on evidence and contribution to digital security.",
+          "es-MX": "Claridad en las investigaciones, protección de derechos, soporte a decisiones judiciales basadas en evidencia y contribución a la seguridad digital."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "The expert clarifies complex digital facts.",
+                "They protect both victims and accused.",
+                "They strengthen justice and trust in institutions."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "El perito aclara hechos digitales complejos.",
+                "Protege tanto a víctimas como a acusados.",
+                "Fortalece la justicia y la confianza en las instituciones."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Responsabilidad ética y datos sensibles",
+        "Question Text": {
+          "en-US": [
+            "Why is ethical responsibility especially critical for the forensic analyst when handling digital evidence?"
+          ],
+          "es-MX": [
+            "¿Por qué la responsabilidad ética es especialmente crítica para el analista forense al manejar evidencia digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because they have access to highly sensitive information (personal conversations, locations, private photos, financial data) that can deeply affect people's lives.",
+            "Because they never see any personal data and only work with anonymous numbers.",
+            "Because ethics matters only in written reports, not in practical work.",
+            "Because the analyst is allowed to use the information for personal benefit as long as no one finds out."
+          ],
+          "es-MX": [
+            "Porque tiene acceso a información altamente sensible (conversaciones personales, ubicaciones, fotos privadas, datos financieros) que puede afectar profundamente la vida de las personas.",
+            "Porque nunca ve datos personales y solo trabaja con números anónimos.",
+            "Porque la ética solo importa en los informes escritos, no en el trabajo práctico.",
+            "Porque el analista puede usar la información para beneficio personal mientras nadie se dé cuenta."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because they have access to highly sensitive information (personal conversations, locations, private photos, financial data) that can deeply affect people's lives.",
+          "es-MX": "Porque tiene acceso a información altamente sensible (conversaciones personales, ubicaciones, fotos privadas, datos financieros) que puede afectar profundamente la vida de las personas."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The material stresses that a single ethical error or misuse of information can damage a person's reputation, future or safety."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El material enfatiza que un solo error ético o uso indebido de la información puede dañar la reputación, el futuro o la seguridad de una persona."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Errores y consecuencias",
+        "Question Text": {
+          "en-US": [
+            "According to the class, what can be a consequence of an error or misuse of information by the forensic expert?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿qué puede ser una consecuencia de un error o uso indebido de la información por parte del perito forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It can affect the life, reputation or future of a person involved in the case.",
+            "It only produces a small administrative note with no impact.",
+            "It has no effect because digital evidence is always reversible.",
+            "It only delays the work but does not affect people."
+          ],
+          "es-MX": [
+            "Puede afectar la vida, la reputación o el futuro de una persona involucrada en el caso.",
+            "Solo produce una pequeña nota administrativa sin impacto.",
+            "No tiene efecto porque la evidencia digital siempre es reversible.",
+            "Solo retrasa el trabajo pero no afecta a las personas."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It can affect the life, reputation or future of a person involved in the case.",
+          "es-MX": "Puede afectar la vida, la reputación o el futuro de una persona involucrada en el caso."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "A forensic mistake can influence judicial decisions.",
+                "It can harm innocent people or distort the truth.",
+                "That is why rigor and ethics are non-negotiable."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Un error forense puede influir en decisiones judiciales.",
+                "Puede perjudicar a personas inocentes o distorsionar la verdad.",
+                "Por eso el rigor y la ética no son negociables."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Dimensiones del perfil forense",
+        "Question Text": {
+          "en-US": [
+            "Which combination best reflects the dimensions that define a competent forensic analyst according to the course?"
+          ],
+          "es-MX": [
+            "¿Qué combinación refleja mejor las dimensiones que definen a un analista forense competente según el curso?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Technical knowledge, practical skills, critical thinking, communication skills, legal foundations and ethical formation.",
+            "Only advanced programming knowledge, without communication or ethics.",
+            "Exclusively experience in social networks and digital marketing.",
+            "Only legal knowledge, without understanding tools or procedures."
+          ],
+          "es-MX": [
+            "Conocimientos técnicos, habilidades prácticas, pensamiento crítico, competencias comunicativas, fundamentos legales y formación ética.",
+            "Solo conocimientos avanzados de programación, sin comunicación ni ética.",
+            "Exclusivamente experiencia en redes sociales y marketing digital.",
+            "Solo conocimientos legales, sin entender herramientas ni procedimientos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Technical knowledge, practical skills, critical thinking, communication skills, legal foundations and ethical formation.",
+          "es-MX": "Conocimientos técnicos, habilidades prácticas, pensamiento crítico, competencias comunicativas, fundamentos legales y formación ética."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "The course insists on an integral profile, not only technical.",
+                "The expert must understand tools, law, ethics and communication.",
+                "All these dimensions support the quality of their work."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "El curso insiste en un perfil integral, no solo técnico.",
+                "El perito debe entender herramientas, derecho, ética y comunicación.",
+                "Todas estas dimensiones sostienen la calidad de su trabajo."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Dinámica Área 1 – Lo más valioso que aprendí",
+        "Question Text": {
+          "en-US": [
+            "What is the main purpose of Area 1: “The most valuable thing I learned” in the closing activity?"
+          ],
+          "es-MX": [
+            "¿Cuál es el propósito principal del Área 1: “Lo más valioso que aprendí” en la dinámica de cierre?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To help students identify and recognize a significant learning from the course, such as evidence handling or chain of custody.",
+            "To criticize the course content anonymously without constructive reflection.",
+            "To list only the topics that were the easiest or least demanding.",
+            "To write jokes about the subject without any link to learning."
+          ],
+          "es-MX": [
+            "Ayudar a los estudiantes a identificar y reconocer un aprendizaje significativo del curso, como manejo de evidencia o cadena de custodia.",
+            "Criticar anónimamente el contenido del curso sin reflexión constructiva.",
+            "Enumerar solo los temas que fueron más fáciles o menos exigentes.",
+            "Escribir chistes sobre la materia sin vínculo con el aprendizaje."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To help students identify and recognize a significant learning from the course, such as evidence handling or chain of custody.",
+          "es-MX": "Ayudar a los estudiantes a identificar y reconocer un aprendizaje significativo del curso, como manejo de evidencia o cadena de custodia."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "This area reinforces self-awareness about what each student has really gained from the course."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Esta área refuerza la toma de conciencia sobre lo que cada estudiante realmente ha ganado con el curso."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Dinámica Área 2 – Cambio de visión",
+        "Question Text": {
+          "en-US": [
+            "What reflection is sought in Area 2: “How my view of digital forensics changed”?"
+          ],
+          "es-MX": [
+            "¿Qué reflexión se busca en el Área 2: “Cómo cambió mi forma de ver la informática forense”?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To think about how their technical vision, ethical responsibility and perception of social impact have evolved.",
+            "To decide whether they like another subject more than digital forensics.",
+            "To discuss only salary expectations in the job market.",
+            "To compare the course with unrelated subjects such as sports or art."
+          ],
+          "es-MX": [
+            "Reflexionar sobre cómo han evolucionado su visión técnica, su responsabilidad ética y su percepción del impacto social.",
+            "Decidir si les gusta más otra materia que la informática forense.",
+            "Hablar únicamente de expectativas salariales en el mercado laboral.",
+            "Comparar el curso con materias sin relación, como deportes o artes."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To think about how their technical vision, ethical responsibility and perception of social impact have evolved.",
+          "es-MX": "Reflexionar sobre cómo han evolucionado su visión técnica, su responsabilidad ética y su percepción del impacto social."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "It connects learning with personal and professional growth.",
+                "It shows that forensics is not only about tools but also about ethics and society."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Conecta el aprendizaje con el crecimiento personal y profesional.",
+                "Muestra que la forense no solo trata de herramientas, sino también de ética y sociedad."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Dinámica Área 3 – Mejoras futuras",
+        "Question Text": {
+          "en-US": [
+            "In Area 3: “What I want to keep improving”, what is the main goal for the student?"
+          ],
+          "es-MX": [
+            "En el Área 3: “Qué quiero seguir mejorando”, ¿cuál es el objetivo principal para el alumno?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To identify technical, communicative or ethical aspects they still need to strengthen, such as tools, reports or handling sensitive information.",
+            "To list everything they dislike about the subject without any plan for improvement.",
+            "To choose another career unrelated to the topic.",
+            "To write only the topics they already dominate perfectly."
+          ],
+          "es-MX": [
+            "Identificar aspectos técnicos, comunicativos o éticos que aún necesita fortalecer, como herramientas, informes o manejo de información sensible.",
+            "Enumerar todo lo que no le gustó de la materia sin ningún plan de mejora.",
+            "Elegir otra carrera sin relación con el tema.",
+            "Escribir únicamente los temas que ya domina perfectamente."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To identify technical, communicative or ethical aspects they still need to strengthen, such as tools, reports or handling sensitive information.",
+          "es-MX": "Identificar aspectos técnicos, comunicativos o éticos que aún necesita fortalecer, como herramientas, informes o manejo de información sensible."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "This area promotes a realistic and constructive view of continuous improvement in the forensic career."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Esta área promueve una visión realista y constructiva de mejora continua en la carrera forense."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Discusión grupal de cierre",
+        "Question Text": {
+          "en-US": [
+            "What is the main purpose of the group discussion after gathering the contributions from the three areas?"
+          ],
+          "es-MX": [
+            "¿Cuál es el propósito principal de la discusión grupal después de recopilar los aportes de las tres áreas?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To share coincidences, challenges and strengthened competencies, and to visualize how students see their future work as analysts.",
+            "To assign final grades publicly to each student.",
+            "To compare students to determine who knows the least.",
+            "To discuss topics unrelated to the course."
+          ],
+          "es-MX": [
+            "Compartir coincidencias, retos y competencias fortalecidas, y visualizar cómo los estudiantes ven su trabajo futuro como analistas.",
+            "Asignar calificaciones finales en público a cada alumno.",
+            "Comparar a los estudiantes para ver quién sabe menos.",
+            "Hablar de temas sin relación con el curso."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To share coincidences, challenges and strengthened competencies, and to visualize how students see their future work as analysts.",
+          "es-MX": "Compartir coincidencias, retos y competencias fortalecidas, y visualizar cómo los estudiantes ven su trabajo futuro como analistas."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "The discussion underlines that forensic learning is both technical and human.",
+                "It helps students recognize themselves as future professionals."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "La discusión subraya que el aprendizaje forense es técnico y humano.",
+                "Ayuda a que los estudiantes se reconozcan como futuros profesionales."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Mensaje final del curso",
+        "Question Text": {
+          "en-US": [
+            "According to the final message of the course, what would happen in society without digital forensic analysts?"
+          ],
+          "es-MX": [
+            "Según el mensaje final del curso, ¿qué ocurriría en la sociedad sin analistas forenses digitales?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Technological truth would be difficult to see, investigations would lack rigor and digital crimes could grow without control.",
+            "Nothing would change, because digital evidence is not important in real cases.",
+            "Only the aesthetic design of reports would be affected, but not justice.",
+            "There would be fewer legal problems and less need for evidence."
+          ],
+          "es-MX": [
+            "La verdad tecnológica sería difícil de ver, las investigaciones carecerían de rigor y los delitos digitales podrían crecer sin control.",
+            "No cambiaría nada, porque la evidencia digital no es importante en los casos reales.",
+            "Solo se afectaría el diseño estético de los informes, pero no la justicia.",
+            "Habría menos problemas legales y menos necesidad de evidencias."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Technological truth would be difficult to see, investigations would lack rigor and digital crimes could grow without control.",
+          "es-MX": "La verdad tecnológica sería difícil de ver, las investigaciones carecerían de rigor y los delitos digitales podrían crecer sin control."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The message reinforces that the forensic analyst is essential for protecting people, organizations and digital systems."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El mensaje refuerza que el analista forense es esencial para proteger a las personas, organizaciones y sistemas digitales."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Reflexión en casa – Papel ético del analista",
+        "Question Text": {
+          "en-US": [
+            "What is the main objective of the at-home reflection “My role as an ethical forensic analyst”?"
+          ],
+          "es-MX": [
+            "¿Cuál es el objetivo principal de la reflexión en casa “Mi papel como analista forense ético”?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "For the student to define what it means to act with ethics, protect privacy, remain objective and commit to the correct handling of evidence and chain of custody.",
+            "To write a creative story unrelated to digital forensics.",
+            "To describe only technical tools without mentioning ethics.",
+            "To justify why ethics is not important in their professional practice."
+          ],
+          "es-MX": [
+            "Que el alumno defina qué significa actuar con ética, proteger la privacidad, mantener objetividad y comprometerse con el manejo correcto de la evidencia y la cadena de custodia.",
+            "Escribir un relato creativo sin relación con la informática forense.",
+            "Describir solo herramientas técnicas sin mencionar la ética.",
+            "Justificar por qué la ética no es importante en su práctica profesional."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "For the student to define what it means to act with ethics, protect privacy, remain objective and commit to the correct handling of evidence and chain of custody.",
+          "es-MX": "Que el alumno defina qué significa actuar con ética, proteger la privacidad, mantener objetividad y comprometerse con el manejo correcto de la evidencia y la cadena de custodia."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "The reflection invites the student to assume a personal and professional commitment.",
+                "It links ethical values directly with daily forensic practice."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "La reflexión invita al estudiante a asumir un compromiso personal y profesional.",
+                "Vincula los valores éticos directamente con la práctica forense diaria."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Protección de la privacidad",
+        "Question Text": {
+          "en-US": [
+            "Which behavior best reflects the commitment to privacy that the forensic analyst must assume?"
+          ],
+          "es-MX": [
+            "¿Qué comportamiento refleja mejor el compromiso con la privacidad que debe asumir el analista forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Handling personal and sensitive information with confidentiality, limiting its use strictly to the investigation and not sharing it with unauthorized persons.",
+            "Sharing interesting conversations or photos with friends as long as names are omitted.",
+            "Publishing technical fragments of evidence on social networks to “educate” the public.",
+            "Saving copies of private data for future personal projects."
+          ],
+          "es-MX": [
+            "Manejar la información personal y sensible con confidencialidad, limitando su uso estrictamente a la investigación y no compartiéndola con personas no autorizadas.",
+            "Compartir conversaciones o fotos interesantes con amigos mientras se omitan los nombres.",
+            "Publicar fragmentos técnicos de evidencia en redes sociales para “educar” al público.",
+            "Guardar copias de datos privados para proyectos personales futuros."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Handling personal and sensitive information with confidentiality, limiting its use strictly to the investigation and not sharing it with unauthorized persons.",
+          "es-MX": "Manejar la información personal y sensible con confidencialidad, limitando su uso estrictamente a la investigación y no compartiéndola con personas no autorizadas."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Respect for privacy is a central ethical pillar in forensic work and essential for maintaining trust in the profession."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El respeto a la privacidad es un pilar ético central en el trabajo forense y esencial para mantener la confianza en la profesión."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Objetividad y pensamiento crítico",
+        "Question Text": {
+          "en-US": [
+            "According to the class, what does it mean to maintain objectivity in digital forensic analysis?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿qué significa mantener objetividad en el análisis forense digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Basing conclusions on evidence and verifiable facts, avoiding personal prejudices or unsupported assumptions.",
+            "Letting personal sympathy or antipathy toward the people involved influence the report.",
+            "Favoring the side that pays the most or is more powerful.",
+            "Assuming that initial hypotheses are always correct without reviewing the data."
+          ],
+          "es-MX": [
+            "Sustentar las conclusiones en la evidencia y en hechos verificables, evitando prejuicios personales o suposiciones sin respaldo.",
+            "Permitir que la simpatía o antipatía personal hacia los involucrados influya en el informe.",
+            "Favorecer a la parte que paga más o que es más poderosa.",
+            "Asumir que las hipótesis iniciales siempre son correctas sin revisar los datos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Basing conclusions on evidence and verifiable facts, avoiding personal prejudices or unsupported assumptions.",
+          "es-MX": "Sustentar las conclusiones en la evidencia y en hechos verificables, evitando prejuicios personales o suposiciones sin respaldo."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Objectivity protects the integrity of the process.",
+                "It ensures that the expert serves the truth, not particular interests."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "La objetividad protege la integridad del proceso.",
+                "Garantiza que el perito sirva a la verdad y no a intereses particulares."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Compromiso de formación continua",
+        "Question Text": {
+          "en-US": [
+            "What commitment does the class propose for students at the end of the course regarding their future as forensic analysts?"
+          ],
+          "es-MX": [
+            "¿Qué compromiso propone la clase a los estudiantes al final del curso respecto a su futuro como analistas forenses?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To continue practicing, updating, researching and acting with ethics, becoming defenders of digital integrity.",
+            "To stop studying because they have already learned everything necessary.",
+            "To dedicate themselves only to technical practice, forgetting ethical aspects.",
+            "To avoid participating in real cases because they are too complex."
+          ],
+          "es-MX": [
+            "Seguir practicando, actualizándose, investigando y actuando con ética, convirtiéndose en defensores de la integridad digital.",
+            "Dejar de estudiar porque ya aprendieron todo lo necesario.",
+            "Dedicarse solo a la práctica técnica, olvidando los aspectos éticos.",
+            "Evitar participar en casos reales porque son demasiado complejos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To continue practicing, updating, researching and acting with ethics, becoming defenders of digital integrity.",
+          "es-MX": "Seguir practicando, actualizándose, investigando y actuando con ética, convirtiéndose en defensores de la integridad digital."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The end of the course is presented as the beginning of a professional path that requires continuous learning and ethical commitment."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El final del curso se presenta como el inicio de un camino profesional que exige aprendizaje continuo y compromiso ético."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Visión integral de la informática forense",
+        "Question Text": {
+          "en-US": [
+            "According to the conclusion of the class, how is digital forensics defined beyond being a technical discipline?"
+          ],
+          "es-MX": [
+            "Según la conclusión de la clase, ¿cómo se define la informática forense más allá de ser una disciplina técnica?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "As a commitment to truth, justice and society, supported by technique, law and ethics.",
+            "As a set of isolated tools without connection to justice.",
+            "As a hobby for technology enthusiasts with no social impact.",
+            "As a temporary trend that will soon disappear."
+          ],
+          "es-MX": [
+            "Como un compromiso con la verdad, la justicia y la sociedad, sostenido por la técnica, el derecho y la ética.",
+            "Como un conjunto de herramientas aisladas sin conexión con la justicia.",
+            "Como un pasatiempo para aficionados a la tecnología sin impacto social.",
+            "Como una moda temporal que pronto desaparecerá."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "As a commitment to truth, justice and society, supported by technique, law and ethics.",
+          "es-MX": "Como un compromiso con la verdad, la justicia y la sociedad, sostenido por la técnica, el derecho y la ética."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "This vision summarizes the ultimate goal of the course: to form analysts who are technically solid and socially responsible."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Esta visión resume el propósito final del curso: formar analistas técnicamente sólidos y socialmente responsables."
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

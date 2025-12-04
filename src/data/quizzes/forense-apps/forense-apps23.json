@@ -1,0 +1,394 @@
+{
+    "meta": {
+      "slug": "forense-apps18",
+      "title": "Clase 18 – Taller de extracción de datos desde una imagen forense",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 2,
+      "classNo": 18,
+      "description": "Aplicación práctica: análisis de una imagen forense para extraer mensajes, archivos multimedia y metadatos en un entorno de laboratorio.",
+      "tags": [
+        "imagen forense",
+        "extracción de datos",
+        "sqlite",
+        "mensajería",
+        "multimedia"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "imagen-forense-concepto",
+        "Question Text": {
+          "en-US": [
+            "In a mobile forensics lab exercise, what is the main reason to work on a forensic image instead of the original device?"
+          ],
+          "es-MX": [
+            "En un ejercicio de laboratorio forense móvil, ¿cuál es la razón principal para trabajar sobre una imagen forense y no sobre el dispositivo original?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To preserve the original device unmodified while allowing repeated analysis on an exact copy",
+            "Because the image forense is always faster even if it modifies the original device",
+            "So that the investigator can freely change data on the device during the analysis",
+            "To avoid having to document the chain of custody of the evidence"
+          ],
+          "es-MX": [
+            "Para preservar el dispositivo original sin modificarlo y poder repetir el análisis sobre una copia exacta",
+            "Porque la imagen forense siempre es más rápida aunque modifique el dispositivo original",
+            "Para que el investigador pueda cambiar libremente los datos del dispositivo durante el análisis",
+            "Para no tener que documentar la cadena de custodia de la evidencia"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To preserve the original device unmodified while allowing repeated analysis on an exact copy",
+          "es-MX": "Para preservar el dispositivo original sin modificarlo y poder repetir el análisis sobre una copia exacta"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The forensic image is a bit-by-bit copy that allows analysts to trabajar siempre sobre la copia, protecting the original evidence from any accidental alteration.",
+              "es-MX": "La imagen forense es una copia bit a bit que permite trabajar siempre sobre la copia, protegiendo el dispositivo original de cualquier alteración accidental."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "preparacion-entorno",
+        "Question Text": {
+          "en-US": [
+            "Which option best describes a proper controlled environment for analyzing a forensic image in the lab?"
+          ],
+          "es-MX": [
+            "¿Qué opción describe mejor un entorno controlado adecuado para analizar una imagen forense en el laboratorio?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A dedicated analysis machine, the forensic image (.E01, .dd or .bin), an output folder and the tool running in lab mode/read-only",
+            "Any office computer with internet, the original phone connected and automatic updates enabled",
+            "A shared PC where multiple users can edit the evidence image at the same time",
+            "A cloud drive where the image can be edited online without any documentation"
+          ],
+          "es-MX": [
+            "Un equipo de análisis dedicado, la imagen forense (.E01, .dd o .bin), una carpeta de salida y la herramienta ejecutándose en modo laboratorio/sólo lectura",
+            "Cualquier computadora de oficina con internet, el teléfono original conectado y actualizaciones automáticas activadas",
+            "Una PC compartida donde varios usuarios puedan editar la imagen de evidencia al mismo tiempo",
+            "Un disco en la nube donde se pueda editar la imagen en línea sin documentación"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A dedicated analysis machine, the forensic image (.E01, .dd or .bin), an output folder and the tool running in lab mode/read-only",
+          "es-MX": "Un equipo de análisis dedicado, la imagen forense (.E01, .dd o .bin), una carpeta de salida y la herramienta ejecutándose en modo laboratorio/sólo lectura"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "The lab machine isolates the analysis from day-to-day use.",
+                "The forensic image is mounted in read-only mode.",
+                "The output folder collects exports, reports and hashes with full traceability."
+              ],
+              "es-MX": [
+                "El equipo de laboratorio aísla el análisis del uso cotidiano.",
+                "La imagen forense se monta en modo sólo lectura.",
+                "La carpeta de salida concentra exportaciones, reportes y hashes con trazabilidad completa."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "ingesta-imagen",
+        "Question Text": {
+          "en-US": [
+            "When the forensic tool ingests a device image in lab mode, which of the following tasks does it typically perform automatically?"
+          ],
+          "es-MX": [
+            "Cuando la herramienta forense ingesta una imagen de dispositivo en modo laboratorio, ¿cuál de las siguientes tareas realiza normalmente de forma automática?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It reads partition structure, file systems and internal directories of the image in read-only mode",
+            "It wipes the original device storage to free space before analysis",
+            "It encrypts the image again with a random password so no one can read it",
+            "It automatically answers all user messages found in the image"
+          ],
+          "es-MX": [
+            "Lee la estructura de particiones, los sistemas de archivos y los directorios internos de la imagen en modo sólo lectura",
+            "Borra el almacenamiento original del dispositivo para liberar espacio antes del análisis",
+            "Vuelve a encriptar la imagen con una contraseña aleatoria para que nadie la pueda leer",
+            "Responde automáticamente todos los mensajes de usuario encontrados en la imagen"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It reads partition structure, file systems and internal directories of the image in read-only mode",
+          "es-MX": "Lee la estructura de particiones, los sistemas de archivos y los directorios internos de la imagen en modo sólo lectura"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "During ingestion, the tool mounts the image and parses partitions and file systems without writing to the evidence. This is the base to later search for apps, databases and multimedia.",
+              "es-MX": "Durante la ingesta, la herramienta monta la imagen y analiza particiones y sistemas de archivos sin escribir sobre la evidencia. Esa es la base para después localizar apps, bases de datos y multimedia."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "mensajes-sqlite",
+        "Question Text": {
+          "en-US": [
+            "In the workshop scenario, which databases are TYPICAL targets when extracting messages from a mobile device image?"
+          ],
+          "es-MX": [
+            "En el taller, ¿qué bases de datos son OBJETIVOS típicos al extraer mensajes desde la imagen de un dispositivo móvil?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "msgstore.db for WhatsApp, mmssms.db for SMS/MMS, chatStorage.sqlite for iMessage, cache4.db for Telegram (depending on version)",
+            "Only the Windows Registry and BIOS settings, regardless of the device",
+            "A random .txt file created by the analyst during the lab",
+            "The system log from the air conditioner of the lab"
+          ],
+          "es-MX": [
+            "msgstore.db para WhatsApp, mmssms.db para SMS/MMS, chatStorage.sqlite para iMessage, cache4.db para Telegram (según versión)",
+            "Únicamente el Registro de Windows y la configuración del BIOS, sin importar el dispositivo",
+            "Un archivo .txt cualquiera creado por el analista durante la práctica",
+            "El registro del sistema del aire acondicionado del laboratorio"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "msgstore.db for WhatsApp, mmssms.db for SMS/MMS, chatStorage.sqlite for iMessage, cache4.db for Telegram (depending on version)",
+          "es-MX": "msgstore.db para WhatsApp, mmssms.db para SMS/MMS, chatStorage.sqlite para iMessage, cache4.db para Telegram (según versión)"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Many messaging apps store conversations in SQLite databases.",
+                "Knowing the typical filenames speeds up the search inside the image.",
+                "These databases allow the tool to reconstruct threads and timelines."
+              ],
+              "es-MX": [
+                "Muchas apps de mensajería guardan conversaciones en bases SQLite.",
+                "Conocer los nombres típicos acelera la búsqueda dentro de la imagen.",
+                "Estas bases permiten a la herramienta reconstruir hilos y líneas de tiempo."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "multimedia-metadatos",
+        "Question Text": {
+          "en-US": [
+            "Why are EXIF metadata from recovered photos especially valuable in the data extraction workshop?"
+          ],
+          "es-MX": [
+            "¿Por qué los metadatos EXIF de las fotos recuperadas son especialmente valiosos en el taller de extracción de datos?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because they can reveal real capture date, device model and sometimes GPS location, supporting the reconstruction of events",
+            "Because they always contain the full password of the device in plain text",
+            "Because they automatically delete messages from the suspect’s phone",
+            "Because they convert all images to text-only format"
+          ],
+          "es-MX": [
+            "Porque pueden revelar la fecha real de captura, el modelo del dispositivo y a veces la ubicación GPS, apoyando la reconstrucción de eventos",
+            "Porque siempre contienen la contraseña completa del dispositivo en texto plano",
+            "Porque borran automáticamente mensajes del teléfono del sospechoso",
+            "Porque convierten todas las imágenes a formato sólo texto"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because they can reveal real capture date, device model and sometimes GPS location, supporting the reconstruction of events",
+          "es-MX": "Porque pueden revelar la fecha real de captura, el modelo del dispositivo y a veces la ubicación GPS, apoyando la reconstrucción de eventos"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "EXIF fields allow the examiner to align photos with messages, routes and alibis. Fecha real + dispositivo + ubicación pueden ser críticos para la narrativa forense.",
+              "es-MX": "Los campos EXIF permiten al perito alinear fotos con mensajes, recorridos y coartadas. Fecha real + dispositivo + ubicación pueden ser críticos para la narrativa forense."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "eliminados-unallocated",
+        "Question Text": {
+          "en-US": [
+            "In the context of a full device image, what is the main advantage of analyzing unallocated space and deleted items sections?"
+          ],
+          "es-MX": [
+            "En el contexto de una imagen completa de dispositivo, ¿cuál es la principal ventaja de analizar el espacio no asignado y las secciones de elementos eliminados?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They may still contain residual fragments of SQLite databases, photos or documents that the user tried to delete",
+            "They only store temporary operating system themes with no evidential value",
+            "They are always empty because any deletion overwrites the sectors instantly",
+            "They keep a backup copy of the examiner’s notes inside the image"
+          ],
+          "es-MX": [
+            "Pueden contener aún fragmentos residuales de bases SQLite, fotos o documentos que el usuario intentó borrar",
+            "Sólo almacenan temas temporales del sistema operativo sin valor probatorio",
+            "Siempre están vacíos porque cualquier eliminación sobrescribe los sectores de inmediato",
+            "Guardan una copia de respaldo de las notas del perito dentro de la imagen"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They may still contain residual fragments of SQLite databases, photos or documents that the user tried to delete",
+          "es-MX": "Pueden contener aún fragmentos residuales de bases SQLite, fotos o documentos que el usuario intentó borrar"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Unallocated space may hold data that is no longer linked by the file system.",
+                "Tools can carve photos, documents and fragments of databases from this area.",
+                "This is key to recovering messages and files that the user wanted to remove."
+              ],
+              "es-MX": [
+                "El espacio no asignado puede contener datos que ya no están enlazados por el sistema de archivos.",
+                "Las herramientas pueden extraer fotos, documentos y fragmentos de bases desde esta zona.",
+                "Esto es clave para recuperar mensajes y archivos que el usuario quiso eliminar."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "correlacion-evidencia",
+        "Question Text": {
+          "en-US": [
+            "In the integrated workshop example, what does “correlated analysis of evidence” mainly involve?"
+          ],
+          "es-MX": [
+            "En el ejemplo integrado del taller, ¿qué implica principalmente el “análisis correlacionado de evidencia”?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Linking messages, timestamps, multimedia files and system records to reconstruct what happened and when",
+            "Editing message contents so they match the investigator’s hypothesis",
+            "Deleting all irrelevant files so that only photos remain in the report",
+            "Translating every message to a different language automatically"
+          ],
+          "es-MX": [
+            "Vincular mensajes, marcas de tiempo, archivos multimedia y registros del sistema para reconstruir qué pasó y cuándo",
+            "Editar el contenido de los mensajes para que coincidan con la hipótesis del investigador",
+            "Borrar todos los archivos irrelevantes para que sólo queden fotos en el reporte",
+            "Traducir automáticamente todos los mensajes a otro idioma"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Linking messages, timestamps, multimedia files and system records to reconstruct what happened and when",
+          "es-MX": "Vincular mensajes, marcas de tiempo, archivos multimedia y registros del sistema para reconstruir qué pasó y cuándo"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "Correlation means building a coherent timeline: a message sent, a photo captured, a file downloaded and a log entry can describe a single event when analyzed together.",
+              "es-MX": "Correlacionar significa construir una línea de tiempo coherente: un mensaje enviado, una foto capturada, un archivo descargado y un registro de sistema pueden describir un mismo evento al analizarlos en conjunto."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "exportacion-reportes",
+        "Question Text": {
+          "en-US": [
+            "At the end of the workshop, what should a proper export of recovered messages and files include to be ready for reporting?"
+          ],
+          "es-MX": [
+            "Al final del taller, ¿qué debe incluir una exportación adecuada de mensajes y archivos recuperados para estar lista para el reporte?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Structured folders, HTML/PDF reports, conversations ordered by user and date, classified multimedia and SHA-256 hashes for each exported file",
+            "Only screenshots of the phone screen without any hashes or structure",
+            "A single compressed file with no description and no integrity information",
+            "Just a handwritten note saying “evidence recovered correctly”"
+          ],
+          "es-MX": [
+            "Carpetas estructuradas, reportes HTML/PDF, conversaciones ordenadas por usuario y fecha, multimedia clasificada y hashes SHA-256 de cada archivo exportado",
+            "Sólo capturas de pantalla del teléfono sin hashes ni estructura",
+            "Un único archivo comprimido sin descripción ni información de integridad",
+            "Sólo una nota escrita a mano que diga “evidencia recuperada correctamente”"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Structured folders, HTML/PDF reports, conversations ordered by user and date, classified multimedia and SHA-256 hashes for each exported file",
+          "es-MX": "Carpetas estructuradas, reportes HTML/PDF, conversaciones ordenadas por usuario y fecha, multimedia clasificada y hashes SHA-256 de cada archivo exportado"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Structure and labeling make later review and testimony easier.",
+                "Hashes prove that exported files remain identical over time.",
+                "Reports synthesize findings for the final technical document."
+              ],
+              "es-MX": [
+                "La estructura y el etiquetado facilitan la revisión y la presentación en juicio.",
+                "Los hashes prueban que los archivos exportados se mantienen idénticos con el tiempo.",
+                "Los reportes sintetizan los hallazgos para el informe técnico final."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "flujo-completo",
+        "Question Text": {
+          "en-US": [
+            "Which sequence best represents the COMPLETE workflow of the data extraction workshop using a forensic image?"
+          ],
+          "es-MX": [
+            "¿Qué secuencia representa mejor el flujo COMPLETO del taller de extracción de datos usando una imagen forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Load the forensic image → detect messaging databases → extract messages and attachments → recover deleted items → correlate messages with multimedia and system data → export results with hashes and reports",
+            "Connect the original phone → delete old chats → install new apps → create random screenshots → close the case",
+            "Open the image → modify evidence files directly → save over the original → send the device back",
+            "Only run an antivirus scan on the device and ignore any messages or databases"
+          ],
+          "es-MX": [
+            "Cargar la imagen forense → detectar bases de mensajería → extraer mensajes y adjuntos → recuperar elementos eliminados → correlacionar mensajes con multimedia y datos del sistema → exportar resultados con hashes y reportes",
+            "Conectar el teléfono original → borrar chats viejos → instalar apps nuevas → crear capturas de pantalla al azar → cerrar el caso",
+            "Abrir la imagen → modificar directamente los archivos de evidencia → guardar sobre el original → devolver el dispositivo",
+            "Sólo ejecutar un antivirus en el dispositivo e ignorar cualquier mensaje o base de datos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Load the forensic image → detect messaging databases → extract messages and attachments → recover deleted items → correlate messages with multimedia and system data → export results with hashes and reports",
+          "es-MX": "Cargar la imagen forense → detectar bases de mensajería → extraer mensajes y adjuntos → recuperar elementos eliminados → correlacionar mensajes con multimedia y datos del sistema → exportar resultados con hashes y reportes"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class describes a complete pipeline: from ingestion of the image to extraction, recovery, correlation and final documentation of the evidence with integrity guarantees.",
+              "es-MX": "La clase describe una cadena completa: desde la ingesta de la imagen hasta la extracción, recuperación, correlación y documentación final de la evidencia con garantías de integridad."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

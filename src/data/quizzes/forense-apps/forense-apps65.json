@@ -1,0 +1,628 @@
+{
+    "meta": {
+      "slug": "forense-apps65",
+      "title": "Ética profesional y responsabilidad legal del perito digital",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 5,
+      "classNo": 65,
+      "description": "Principios éticos, deberes profesionales y responsabilidades legales del perito digital al manejar evidencia, redactar informes y participar en procesos judiciales o corporativos.",
+      "tags": [
+        "ética profesional",
+        "responsabilidad legal",
+        "perito digital",
+        "imparcialidad",
+        "confidencialidad",
+        "negligencia",
+        "unidad V"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "Rol del perito",
+        "Question Text": {
+          "en-US": [
+            "What is the fundamental role of a digital forensic expert in a judicial or corporate context?"
+          ],
+          "es-MX": [
+            "¿Cuál es el papel fundamental de un perito en informática forense en un contexto judicial o corporativo?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To act as a technical bridge between technology and the law, providing objective, evidence-based analysis that supports the search for the truth.",
+            "To defend the interests of the party that hired them, even if this contradicts the technical evidence.",
+            "To decide who is guilty or innocent and dictate the final legal resolution of the case.",
+            "To collect as much private information as possible, regardless of its relevance to the case."
+          ],
+          "es-MX": [
+            "Actuar como un puente técnico entre la tecnología y la ley, ofreciendo análisis objetivos basados en evidencia que apoyen la búsqueda de la verdad.",
+            "Defender los intereses de la parte que lo contrató, aunque esto contradiga la evidencia técnica.",
+            "Determinar quién es culpable o inocente y dictar la resolución legal final del caso.",
+            "Recolectar la mayor cantidad posible de información privada, sin importar su relevancia para el caso."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To act as a technical bridge between technology and the law, providing objective, evidence-based analysis that supports the search for the truth.",
+          "es-MX": "Actuar como un puente técnico entre la tecnología y la ley, ofreciendo análisis objetivos basados en evidencia que apoyen la búsqueda de la verdad."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The expert does not replace the judge or the lawyers; the expert explains what the digital evidence technically shows, in a way that can be understood and used in legal or institutional decisions."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Transforms complex technical data into clear conclusions.",
+                "Helps the court or institution understand how evidence was obtained and analyzed.",
+                "Must remain neutral and focused on verifiable facts, not on personal interests.",
+                "Supports the protection of rights by contributing reliable and understandable information."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El perito no sustituye al juez ni a los abogados; el perito explica lo que la evidencia digital muestra técnicamente, de forma que pueda ser comprendida y utilizada en decisiones legales o institucionales."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Traduce datos técnicos complejos en conclusiones claras.",
+                "Ayuda al juzgador o a la institución a entender cómo se obtuvo y analizó la evidencia.",
+                "Debe mantenerse neutral y enfocado en hechos verificables, no en intereses personales.",
+                "Contribuye a proteger los derechos al aportar información confiable y comprensible."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Imparcialidad",
+        "Question Text": {
+          "en-US": [
+            "What best describes the principle of impartiality for a digital forensic expert?"
+          ],
+          "es-MX": [
+            "¿Qué descripción corresponde mejor al principio de imparcialidad para un perito digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Basing the analysis and conclusions exclusively on technical evidence, without favoring any party, regardless of who hired or pays the expert.",
+            "Adapting the report to benefit the party that hired the expert, as long as nobody notices.",
+            "Avoiding negative findings about the institution that employs the expert to protect their image.",
+            "Writing the report according to what the majority opinion suggests, even if the data does not fully support it."
+          ],
+          "es-MX": [
+            "Fundamentar el análisis y las conclusiones únicamente en la evidencia técnica, sin favorecer a ninguna de las partes, independientemente de quién contrate o pague al perito.",
+            "Ajustar el informe para beneficiar a la parte que contrató al perito, siempre que nadie se dé cuenta.",
+            "Evitar hallazgos negativos sobre la institución que emplea al perito para proteger su imagen.",
+            "Redactar el informe de acuerdo con lo que sugiere la opinión mayoritaria, aunque los datos no lo respalden del todo."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Basing the analysis and conclusions exclusively on technical evidence, without favoring any party, regardless of who hired or pays the expert.",
+          "es-MX": "Fundamentar el análisis y las conclusiones únicamente en la evidencia técnica, sin favorecer a ninguna de las partes, independientemente de quién contrate o pague al perito."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Impartiality means serving the truth, not a specific party.",
+                "The expert’s credibility depends on being consistent even when the results are uncomfortable for one side.",
+                "Any attempt to bias conclusions in favor of a party can be considered unethical and even criminal.",
+                "Courts and institutions rely on experts precisely because they are expected to be independent and objective."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "La imparcialidad implica servir a la verdad, no a una parte específica.",
+                "La credibilidad del perito depende de ser coherente incluso cuando los resultados son incómodos para un lado.",
+                "Cualquier intento de sesgar las conclusiones a favor de una parte puede considerarse antiético e incluso delictivo.",
+                "Los tribunales y las instituciones confían en los peritos justamente porque se espera que sean independientes y objetivos."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Integridad profesional",
+        "Question Text": {
+          "en-US": [
+            "Which action is a direct violation of professional integrity in digital forensics?"
+          ],
+          "es-MX": [
+            "¿Qué acción representa una violación directa de la integridad profesional en informática forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Altering evidence or results to make them fit a desired narrative, even if the original data does not support it.",
+            "Documenting all procedures honestly, even when limitations or errors occurred.",
+            "Reporting technical limitations clearly when some data could not be recovered.",
+            "Refusing to perform tasks that exceed the expert’s competence and recommending a specialist instead."
+          ],
+          "es-MX": [
+            "Alterar la evidencia o los resultados para que encajen con una narrativa deseada, aunque los datos originales no la respalden.",
+            "Documentar todos los procedimientos de manera honesta, incluso cuando hubo limitaciones o errores.",
+            "Informar claramente las limitaciones técnicas cuando ciertos datos no pudieron recuperarse.",
+            "Negarse a realizar tareas que exceden la competencia del perito y recomendar a un especialista."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Altering evidence or results to make them fit a desired narrative, even if the original data does not support it.",
+          "es-MX": "Alterar la evidencia o los resultados para que encajen con una narrativa deseada, aunque los datos originales no la respalden."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Professional integrity is built on honesty and respect for the original data, not on satisfying expectations."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Changing evidence or results constitutes falsification.",
+                "Falsification can invalidate the entire report and damage the process.",
+                "It may lead to criminal, civil and professional sanctions for the expert.",
+                "Recognizing limitations is a sign of integrity, not of weakness."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La integridad profesional se basa en la honestidad y el respeto por los datos originales, no en satisfacer expectativas."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Alterar evidencia o resultados constituye falsificación.",
+                "La falsificación puede invalidar todo el informe y dañar el proceso.",
+                "Puede implicar sanciones penales, civiles y profesionales para el perito.",
+                "Reconocer limitaciones es una muestra de integridad, no de debilidad."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Confidencialidad",
+        "Question Text": {
+          "en-US": [
+            "What is an ethically correct way to handle highly sensitive personal information discovered during a forensic analysis?"
+          ],
+          "es-MX": [
+            "¿Cuál es una forma éticamente correcta de manejar información personal altamente sensible descubierta durante un análisis forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Restricting its use and disclosure strictly to what is relevant for the case and to authorized persons, avoiding any unnecessary exposure or sharing.",
+            "Showing the images or messages to colleagues out of curiosity, as long as they also work in technology.",
+            "Saving copies of sensitive files for personal use, in case they could be useful in the future.",
+            "Commenting informally about the content with friends or on social networks, without mentioning the names."
+          ],
+          "es-MX": [
+            "Restringir su uso y divulgación estrictamente a lo que sea relevante para el caso y a las personas autorizadas, evitando cualquier exposición o compartición innecesaria.",
+            "Mostrar las imágenes o mensajes a compañeros por curiosidad, siempre que también trabajen en tecnología.",
+            "Guardar copias de archivos sensibles para uso personal, por si pudieran servir en el futuro.",
+            "Comentar informalmente el contenido con amigos o en redes sociales, sin mencionar los nombres."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Restricting its use and disclosure strictly to what is relevant for the case and to authorized persons, avoiding any unnecessary exposure or sharing.",
+          "es-MX": "Restringir su uso y divulgación estrictamente a lo que sea relevante para el caso y a las personas autorizadas, evitando cualquier exposición o compartición innecesaria."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Confidentiality protects the privacy and dignity of individuals whose data are examined during an investigation."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "The expert often accesses extremely private information.",
+                "Using that information outside the case is a serious ethical and legal violation.",
+                "Leaking or exposing sensitive data can cause irreparable damage.",
+                "Maintaining confidentiality is a core element of trust in the expert’s work."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La confidencialidad protege la privacidad y la dignidad de las personas cuyos datos se examinan durante una investigación."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "El perito accede con frecuencia a información sumamente privada.",
+                "Usar esa información fuera del caso es una violación ética y legal grave.",
+                "Filtrar o exponer datos sensibles puede causar daños irreparables.",
+                "Mantener la confidencialidad es un elemento central de la confianza en el trabajo pericial."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Competencia técnica",
+        "Question Text": {
+          "en-US": [
+            "How should a digital forensic expert act when faced with a task that exceeds their current technical competence?"
+          ],
+          "es-MX": [
+            "¿Cómo debe actuar un perito en informática forense cuando se enfrenta a una tarea que excede su competencia técnica actual?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Openly acknowledge the limitation, request support or recommend a specialist, and avoid improvising procedures without solid knowledge.",
+            "Attempt the task anyway, even without training, to avoid appearing inexperienced.",
+            "Hide the limitation in the report and attribute possible errors to the tools used.",
+            "Accept the task, but skip complex steps and only document the parts that are easy to execute."
+          ],
+          "es-MX": [
+            "Reconocer abiertamente la limitación, solicitar apoyo o recomendar a un especialista y evitar improvisar procedimientos sin conocimiento sólido.",
+            "Intentar la tarea de todos modos, aunque no tenga capacitación, para no parecer inexperto.",
+            "Ocultar la limitación en el informe y atribuir posibles errores a las herramientas usadas.",
+            "Aceptar el trabajo, pero omitir pasos complejos y documentar solo las partes fáciles de ejecutar."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Openly acknowledge the limitation, request support or recommend a specialist, and avoid improvising procedures without solid knowledge.",
+          "es-MX": "Reconocer abiertamente la limitación, solicitar apoyo o recomendar a un especialista y evitar improvisar procedimientos sin conocimiento sólido."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Competence includes knowing what one can do and what one cannot safely execute.",
+                "Improvising technical procedures without training increases the risk of irreversible errors.",
+                "Admitting limitations protects the case, the evidence and the expert’s reputation.",
+                "Professional practice values responsibility and honesty more than pretending to know everything."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "La competencia incluye saber qué se puede hacer y qué no se puede ejecutar con seguridad.",
+                "Improvisar procedimientos técnicos sin capacitación aumenta el riesgo de errores irreversibles.",
+                "Reconocer limitaciones protege el caso, la evidencia y la reputación del propio perito.",
+                "La práctica profesional valora más la responsabilidad y la honestidad que aparentar saberlo todo."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Responsabilidad penal",
+        "Question Text": {
+          "en-US": [
+            "Which situation can lead to criminal (penal) responsibility for a digital forensic expert?"
+          ],
+          "es-MX": [
+            "¿Cuál de las siguientes situaciones puede generar responsabilidad penal para un perito digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Intentionally falsifying results, altering evidence, or revealing secrets obtained during the investigation to unauthorized third parties.",
+            "Reporting in the document that certain files could not be recovered due to technical limitations.",
+            "Requesting additional time to complete a detailed and careful analysis.",
+            "Recommending improvements in internal security policies after finishing the investigation."
+          ],
+          "es-MX": [
+            "Falsear intencionalmente resultados, alterar evidencia o revelar secretos obtenidos durante la investigación a terceros no autorizados.",
+            "Informar en el documento que ciertos archivos no pudieron recuperarse por limitaciones técnicas.",
+            "Solicitar tiempo adicional para terminar un análisis detallado y cuidadoso.",
+            "Recomendar mejoras en las políticas internas de seguridad al concluir la investigación."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Intentionally falsifying results, altering evidence, or revealing secrets obtained during the investigation to unauthorized third parties.",
+          "es-MX": "Falsear intencionalmente resultados, alterar evidencia o revelar secretos obtenidos durante la investigación a terceros no autorizados."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "divider"
+            },
+            {
+              "type": "text",
+              "content": "Criminal responsibility arises when the expert commits actions classified as crimes in the applicable laws."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Altering evidence can be considered falsification or obstruction of justice.",
+                "Revealing secrets can violate confidentiality and data protection laws.",
+                "Such conduct can lead to imprisonment, fines and criminal records.",
+                "These behaviors also destroy the expert’s professional credibility."
+              ]
+            },
+            {
+              "type": "divider"
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "divider"
+            },
+            {
+              "type": "text",
+              "content": "La responsabilidad penal aparece cuando el perito realiza acciones tipificadas como delitos en las leyes aplicables."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Alterar evidencia puede considerarse falsificación o entorpecimiento de la justicia.",
+                "Revelar secretos puede violar normas de confidencialidad y protección de datos.",
+                "Estas conductas pueden llevar a prisión, multas y antecedentes penales.",
+                "Además, destruyen la credibilidad profesional del perito."
+              ]
+            },
+            {
+              "type": "divider"
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Responsabilidad civil y administrativa",
+        "Question Text": {
+          "en-US": [
+            "What is a possible civil or administrative consequence of negligent work by a digital forensic expert?"
+          ],
+          "es-MX": [
+            "¿Cuál es una posible consecuencia civil o administrativa derivada de un trabajo negligente por parte de un perito digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Being sued for damages, facing professional negligence claims, or receiving sanctions such as suspension or dismissal in the institution.",
+            "Receiving a public recognition for having closed the case quickly, even if the analysis was incomplete.",
+            "Automatically obtaining more expert appointments because the report was finished in record time.",
+            "Being exempt from any responsibility because all errors are assumed to be technical and not human."
+          ],
+          "es-MX": [
+            "Ser demandado por daños y perjuicios, enfrentar reclamos por negligencia profesional o recibir sanciones como suspensión o despido en la institución.",
+            "Recibir un reconocimiento público por haber cerrado el caso rápidamente, aunque el análisis fuera incompleto.",
+            "Obtener automáticamente más nombramientos periciales por haber terminado el informe en tiempo récord.",
+            "Quedar exento de toda responsabilidad porque se asume que todos los errores son técnicos y no humanos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Being sued for damages, facing professional negligence claims, or receiving sanctions such as suspension or dismissal in the institution.",
+          "es-MX": "Ser demandado por daños y perjuicios, enfrentar reclamos por negligencia profesional o recibir sanciones como suspensión o despido en la institución."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Civil and administrative responsibilities are related to the damage caused and the breach of institutional duties."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "An incorrect analysis can cause economic and reputational damage.",
+                "Affected parties may file lawsuits for negligence or malpractice.",
+                "Institutions can apply disciplinary measures such as suspension or dismissal.",
+                "These consequences are independent from possible criminal responsibility."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las responsabilidades civil y administrativa se relacionan con el daño causado y el incumplimiento de deberes institucionales."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Un análisis incorrecto puede generar daños económicos y de reputación.",
+                "Las personas afectadas pueden interponer demandas por negligencia o mala práctica.",
+                "Las instituciones pueden imponer sanciones disciplinarias como suspensión o despido.",
+                "Estas consecuencias son independientes de una posible responsabilidad penal."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Malas prácticas",
+        "Question Text": {
+          "en-US": [
+            "Which of the following scenarios is an example of unethical and high-risk behavior by a digital forensic expert?"
+          ],
+          "es-MX": [
+            "¿Cuál de los siguientes escenarios es un ejemplo de comportamiento antiético y de alto riesgo por parte de un perito digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Leaving a hard drive with evidence on an open desk without locks, accessible to anyone who enters the office.",
+            "Storing evidence in labeled, sealed containers with access restricted to authorized personnel.",
+            "Using detailed logs and chain-of-custody forms to record every access to the evidence.",
+            "Informing the court when a requested analysis cannot be completed with the available tools."
+          ],
+          "es-MX": [
+            "Dejar un disco duro con evidencia sobre un escritorio sin llave, accesible para cualquiera que entre a la oficina.",
+            "Guardar la evidencia en contenedores etiquetados y sellados, con acceso restringido a personal autorizado.",
+            "Utilizar bitácoras detalladas y formatos de cadena de custodia para registrar cada acceso a la evidencia.",
+            "Informar al juzgador cuando un análisis solicitado no puede completarse con las herramientas disponibles."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Leaving a hard drive with evidence on an open desk without locks, accessible to anyone who enters the office.",
+          "es-MX": "Dejar un disco duro con evidencia sobre un escritorio sin llave, accesible para cualquiera que entre a la oficina."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Poor custody and storage of evidence can break the chain of custody and compromise the entire investigation."
+            },
+            {
+              "type": "ol",
+              "items": [
+                "An unprotected device can be accessed, copied, altered or stolen.",
+                "If someone manipulates the evidence, its authenticity can no longer be guaranteed.",
+                "This situation weakens or destroys the legal value of the findings.",
+                "The expert can be held responsible for failing to safeguard the evidence properly."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Una mala custodia y almacenamiento de la evidencia puede romper la cadena de custodia y comprometer toda la investigación."
+            },
+            {
+              "type": "ol",
+              "items": [
+                "Un dispositivo sin protección puede ser accedido, copiado, alterado o robado.",
+                "Si alguien manipula la evidencia, ya no se puede garantizar su autenticidad.",
+                "Esta situación debilita o destruye el valor legal de los hallazgos.",
+                "El perito puede ser responsable por no resguardar adecuadamente la evidencia."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Influencia externa y presión",
+        "Question Text": {
+          "en-US": [
+            "How should a digital forensic expert respond if a party asks to ‘soften’ or hide certain findings in the report to improve its position in the case?"
+          ],
+          "es-MX": [
+            "¿Cómo debe responder un perito digital si una de las partes le pide ‘suavizar’ u ocultar ciertos hallazgos en el informe para mejorar su posición en el caso?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Firmly refuse to alter the findings, maintain the report based on the actual evidence and, if necessary, document or inform the attempt to exert undue influence.",
+            "Accept the request as long as the changes are small and unlikely to be detected.",
+            "Modify only the wording of the conclusions so that they appear less unfavorable, even if this changes the meaning.",
+            "Delay the delivery of the report until the party is satisfied, adapting the content to their expectations."
+          ],
+          "es-MX": [
+            "Negarse firmemente a alterar los hallazgos, mantener el informe basado en la evidencia real y, si es necesario, documentar o informar el intento de influencia indebida.",
+            "Aceptar la petición siempre que los cambios sean pequeños y no sea probable que se detecten.",
+            "Modificar solo la redacción de las conclusiones para que parezcan menos desfavorables, aunque esto cambie el sentido.",
+            "Retrasar la entrega del informe hasta que la parte quede conforme, adaptando el contenido a sus expectativas."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Firmly refuse to alter the findings, maintain the report based on the actual evidence and, if necessary, document or inform the attempt to exert undue influence.",
+          "es-MX": "Negarse firmemente a alterar los hallazgos, mantener el informe basado en la evidencia real y, si es necesario, documentar o informar el intento de influencia indebida."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "External pressure is one of the most delicate ethical challenges in expert work."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Accepting such pressure destroys impartiality and integrity.",
+                "Altering the report can have criminal and disciplinary consequences.",
+                "Maintaining independence is essential so that the expert’s word remains credible.",
+                "Documenting the attempt can help protect the expert if there is a future dispute."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La presión externa es uno de los desafíos éticos más delicados en el trabajo pericial."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Aceptar esa presión destruye la imparcialidad y la integridad.",
+                "Alterar el informe puede tener consecuencias penales y disciplinarias.",
+                "Mantener la independencia es esencial para que la palabra del perito siga siendo creíble.",
+                "Documentar el intento puede ayudar a proteger al perito ante una disputa futura."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Checklist del perito ético",
+        "Question Text": {
+          "en-US": [
+            "Which option best summarizes the ethical checklist for a professional digital forensic expert?"
+          ],
+          "es-MX": [
+            "¿Qué opción resume mejor el checklist ético de un perito profesional en informática forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Acts without bias, maintains confidentiality, respects legal limits, documents procedures, protects evidence integrity, avoids personal opinions and uses tools correctly within a clear due process.",
+            "Focuses mainly on closing cases quickly, without paying much attention to documentation or legal details.",
+            "Shares interesting evidence informally with colleagues to obtain their personal opinions, even if they are not part of the case.",
+            "Keeps the technical part correct but adapts conclusions to what each party expects to read."
+          ],
+          "es-MX": [
+            "Actúa sin sesgos, mantiene la confidencialidad, respeta los límites legales, documenta procedimientos, protege la integridad de la evidencia, evita opiniones personales y usa correctamente las herramientas dentro de un debido proceso claro.",
+            "Se enfoca principalmente en cerrar casos rápido, sin prestar mucha atención a la documentación ni a los detalles legales.",
+            "Comparte evidencia interesante de forma informal con compañeros para conocer su opinión personal, aunque no formen parte del caso.",
+            "Mantiene la parte técnica correcta pero adapta las conclusiones a lo que cada parte espera leer."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Acts without bias, maintains confidentiality, respects legal limits, documents procedures, protects evidence integrity, avoids personal opinions and uses tools correctly within a clear due process.",
+          "es-MX": "Actúa sin sesgos, mantiene la confidencialidad, respeta los límites legales, documenta procedimientos, protege la integridad de la evidencia, evita opiniones personales y usa correctamente las herramientas dentro de un debido proceso claro."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Ethical practice is not limited to a single rule; it is a combination of attitudes and behaviors that consistently protect the process and the people involved."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Neutrality and confidentiality protect the rights of the parties.",
+                "Documentation and integrity reinforce the legal value of the evidence.",
+                "Respect for legal limits avoids abuses and illegal access.",
+                "Technical correctness and clear due process give solidity to the expert’s work."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La práctica ética no se reduce a una sola regla; es un conjunto de actitudes y conductas que protegen de forma consistente el proceso y a las personas involucradas."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "La neutralidad y la confidencialidad protegen los derechos de las partes.",
+                "La documentación y la integridad refuerzan el valor legal de la evidencia.",
+                "El respeto a los límites legales evita abusos y accesos ilícitos.",
+                "La corrección técnica y el debido proceso claro dan solidez al trabajo pericial."
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

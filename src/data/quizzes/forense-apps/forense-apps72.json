@@ -1,0 +1,677 @@
+{
+    "meta": {
+      "slug": "forense-apps72",
+      "title": "Tendencias actuales y futuro de la informática forense",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 5,
+      "classNo": 72,
+      "description": "Exploración de las tecnologías emergentes (IA, nube, IoT, blockchain, memoria, DFIR) y los retos futuros del análisis forense digital, así como el papel del perito en la evolución de la disciplina.",
+      "tags": [
+        "tendencias forenses",
+        "inteligencia artificial",
+        "forense en la nube",
+        "IoT",
+        "blockchain",
+        "DFIR",
+        "futuro profesional",
+        "unidad V"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "Evolución de la informática forense",
+        "Question Text": {
+          "en-US": [
+            "According to Class 72, why is it essential for the digital forensic analyst to know current and future trends in the field?"
+          ],
+          "es-MX": [
+            "Según la Clase 72, ¿por qué es esencial que el analista forense digital conozca las tendencias actuales y futuras del campo?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it allows them to stay updated, prepare for new challenges, understand emerging tools and avoid becoming obsolete in the job market.",
+            "Because it is only useful for passing academic exams, but not for real cases.",
+            "Because trends replace the need to know fundamental forensic principles.",
+            "Because it allows them to ignore legal and ethical aspects and focus only on technology."
+          ],
+          "es-MX": [
+            "Porque le permite mantenerse actualizado, prepararse para nuevos desafíos, comprender herramientas emergentes y evitar quedar obsoleto en el mercado laboral.",
+            "Porque solo sirve para aprobar exámenes académicos, pero no para casos reales.",
+            "Porque las tendencias sustituyen la necesidad de conocer los principios forenses fundamentales.",
+            "Porque le permite ignorar los aspectos legales y éticos y enfocarse solo en la tecnología."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it allows them to stay updated, prepare for new challenges, understand emerging tools and avoid becoming obsolete in the job market.",
+          "es-MX": "Porque le permite mantenerse actualizado, prepararse para nuevos desafíos, comprender herramientas emergentes y evitar quedar obsoleto en el mercado laboral."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The class emphasizes that forensics changes rapidly and that knowing trends is part of the analyst's long-term professional survival."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La clase enfatiza que la forense cambia rápidamente y que conocer las tendencias forma parte de la supervivencia profesional a largo plazo del analista."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "IA y automatización – Rol perito + IA",
+        "Question Text": {
+          "en-US": [
+            "How does Class 72 describe the correct relationship between artificial intelligence (AI) and the forensic analyst?"
+          ],
+          "es-MX": [
+            "¿Cómo describe la Clase 72 la relación correcta entre la inteligencia artificial (IA) y el analista forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The future will be analyst + AI, where AI supports the work but does not replace human judgment.",
+            "AI will completely replace the forensic analyst and no human review will be needed.",
+            "The analyst must ignore AI because it is incompatible with forensic work.",
+            "AI should be used only to generate visual effects and not for evidence analysis."
+          ],
+          "es-MX": [
+            "El futuro será perito + IA, donde la IA apoya el trabajo pero no sustituye el juicio humano.",
+            "La IA sustituirá por completo al analista forense y ya no se necesitará revisión humana.",
+            "El analista debe ignorar la IA porque es incompatible con el trabajo forense.",
+            "La IA solo debe usarse para generar efectos visuales y no para análisis de evidencia."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The future will be analyst + AI, where AI supports the work but does not replace human judgment.",
+          "es-MX": "El futuro será perito + IA, donde la IA apoya el trabajo pero no sustituye el juicio humano."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "AI can automate pattern recognition and filtering.",
+                "However, ethical responsibility and final decisions remain human.",
+                "Supervision by the analyst is essential to avoid errors and abuses."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "La IA puede automatizar el reconocimiento de patrones y el filtrado.",
+                "Sin embargo, la responsabilidad ética y las decisiones finales siguen siendo humanas.",
+                "La supervisión del analista es esencial para evitar errores y abusos."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "IA – Identificación de patrones",
+        "Question Text": {
+          "en-US": [
+            "Which of the following is a key advantage of using AI for pattern identification in digital forensics?"
+          ],
+          "es-MX": [
+            "¿Cuál de las siguientes es una ventaja clave de usar IA para la identificación de patrones en informática forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It can analyze millions of activity records, detect anomalies in real time and correlate events automatically.",
+            "It eliminates the need to preserve the chain of custody.",
+            "It allows the analyst to ignore logs and focus only on screenshots.",
+            "It guarantees that there will never be false positives or errors."
+          ],
+          "es-MX": [
+            "Puede analizar millones de registros de actividad, detectar anomalías en tiempo real y correlacionar eventos automáticamente.",
+            "Elimina la necesidad de preservar la cadena de custodia.",
+            "Permite al analista ignorar logs y enfocarse solo en capturas de pantalla.",
+            "Garantiza que nunca habrá falsos positivos ni errores."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It can analyze millions of activity records, detect anomalies in real time and correlate events automatically.",
+          "es-MX": "Puede analizar millones de registros de actividad, detectar anomalías en tiempo real y correlacionar eventos automáticamente."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "AI enhances the analyst's capacity to handle large volumes of data, but it does not replace critical analysis or validation."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La IA potencia la capacidad del analista para manejar grandes volúmenes de datos, pero no sustituye el análisis crítico ni la validación."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "IA – Riesgos éticos y falsos positivos",
+        "Question Text": {
+          "en-US": [
+            "Why does the class insist that AI must be used with caution in forensic analysis?"
+          ],
+          "es-MX": [
+            "¿Por qué la clase insiste en que la IA debe utilizarse con precaución en el análisis forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because AI can make mistakes, generate false positives and always requires human supervision and validation.",
+            "Because AI is illegal in all forensic investigations.",
+            "Because AI only serves to decorate reports and has no analytical value.",
+            "Because AI automatically guarantees 100% accuracy in all cases."
+          ],
+          "es-MX": [
+            "Porque la IA puede cometer errores, generar falsos positivos y siempre requiere supervisión y validación humana.",
+            "Porque la IA es ilegal en todas las investigaciones forenses.",
+            "Porque la IA solo sirve para decorar informes y no tiene valor analítico.",
+            "Porque la IA garantiza automáticamente un 100% de exactitud en todos los casos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because AI can make mistakes, generate false positives and always requires human supervision and validation.",
+          "es-MX": "Porque la IA puede cometer errores, generar falsos positivos y siempre requiere supervisión y validación humana."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "AI models can misinterpret data or context.",
+                "Blind trust in AI could lead to unjust decisions.",
+                "The analyst must review, question and confirm AI results."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Los modelos de IA pueden malinterpretar datos o contextos.",
+                "La confianza ciega en la IA podría llevar a decisiones injustas.",
+                "El analista debe revisar, cuestionar y confirmar los resultados de la IA."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Forense en la nube – Retos técnicos",
+        "Question Text": {
+          "en-US": [
+            "Which combination describes key technical challenges of cloud forensics mentioned in the class?"
+          ],
+          "es-MX": [
+            "¿Qué combinación describe desafíos técnicos clave de la forensia en la nube mencionados en la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Obtaining distributed logs, identifying users in shared environments, extracting evidence without altering instances and recovering volatile information.",
+            "Having physical access to a single local hard drive in all cases.",
+            "Working only with printed screenshots instead of logs.",
+            "Avoiding any interaction with providers such as AWS, Azure or Google."
+          ],
+          "es-MX": [
+            "Obtener logs distribuidos, identificar usuarios en entornos compartidos, extraer evidencia sin alterar instancias y recuperar información volátil.",
+            "Tener acceso físico a un solo disco duro local en todos los casos.",
+            "Trabajar solo con capturas de pantalla impresas en lugar de logs.",
+            "Evitar cualquier interacción con proveedores como AWS, Azure o Google."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Obtaining distributed logs, identifying users in shared environments, extracting evidence without altering instances and recovering volatile information.",
+          "es-MX": "Obtener logs distribuidos, identificar usuarios en entornos compartidos, extraer evidencia sin alterar instancias y recuperar información volátil."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Cloud forensics requires new strategies because data is distributed, virtualized and subject to complex architectures."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La forensia en la nube exige nuevas estrategias porque los datos están distribuidos, virtualizados y sujetos a arquitecturas complejas."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Forense en la nube – Retos legales",
+        "Question Text": {
+          "en-US": [
+            "Which legal aspects become especially relevant in cloud forensics according to the material?"
+          ],
+          "es-MX": [
+            "¿Qué aspectos legales se vuelven especialmente relevantes en la forensia en la nube según el material?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "International regulations, data ownership and contracts with cloud providers.",
+            "Only the physical location of the office where the analyst works.",
+            "Exclusively the internal policy of the IT department, without laws.",
+            "The color of the user interface of cloud tools."
+          ],
+          "es-MX": [
+            "Normativas internacionales, propiedad de los datos y contratos con proveedores de nube.",
+            "Solo la ubicación física de la oficina donde trabaja el analista.",
+            "Exclusivamente la política interna del departamento de TI, sin leyes.",
+            "El color de la interfaz de usuario de las herramientas en la nube."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "International regulations, data ownership and contracts with cloud providers.",
+          "es-MX": "Normativas internacionales, propiedad de los datos y contratos con proveedores de nube."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Data may be stored in multiple countries.",
+                "Contracts and regulations define what can be accessed and how.",
+                "The analyst must respect legal frameworks in every action."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Los datos pueden estar almacenados en varios países.",
+                "Los contratos y las leyes definen qué se puede acceder y cómo.",
+                "El analista debe respetar los marcos legales en cada acción."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "IoT Forensics – Desafíos y oportunidades",
+        "Question Text": {
+          "en-US": [
+            "Why does IoT (Internet of Things) represent both a challenge and an opportunity for future forensic investigations?"
+          ],
+          "es-MX": [
+            "¿Por qué el IoT (Internet de las Cosas) representa a la vez un desafío y una oportunidad para las investigaciones forenses futuras?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because there is diverse hardware, proprietary protocols and storage limits, but also new sources of evidence such as locations, times and interactions with smart objects.",
+            "Because IoT devices never store any relevant information for investigations.",
+            "Because IoT simplifies all forensic processes to a single step.",
+            "Because IoT eliminates the need to analyze computers and networks."
+          ],
+          "es-MX": [
+            "Porque hay hardware diverso, protocolos propietarios y límites de almacenamiento, pero también nuevas fuentes de evidencia como ubicaciones, tiempos e interacciones con objetos inteligentes.",
+            "Porque los dispositivos IoT nunca almacenan información relevante para las investigaciones.",
+            "Porque el IoT simplifica todos los procesos forenses a un solo paso.",
+            "Porque el IoT elimina la necesidad de analizar computadoras y redes."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because there is diverse hardware, proprietary protocols and storage limits, but also new sources of evidence such as locations, times and interactions with smart objects.",
+          "es-MX": "Porque hay hardware diverso, protocolos propietarios y límites de almacenamiento, pero también nuevas fuentes de evidencia como ubicaciones, tiempos e interacciones con objetos inteligentes."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "IoT expands the investigative field but forces the analyst to learn about new devices, protocols and forms of digital traces."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El IoT amplía el campo de investigación, pero obliga al analista a aprender sobre nuevos dispositivos, protocolos y formas de rastro digital."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Criptomonedas y blockchain forensics",
+        "Question Text": {
+          "en-US": [
+            "What is a central reason why the future forensic analyst should understand cryptocurrencies and blockchain?"
+          ],
+          "es-MX": [
+            "¿Cuál es una razón central por la que el analista forense del futuro debe comprender criptomonedas y blockchain?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because digital financial crimes are increasing and investigations require tracing transactions, wallets and movements between exchanges.",
+            "Because blockchain replaces all traditional forensic methods.",
+            "Because cryptocurrencies are only used in video games and not in real crimes.",
+            "Because knowing blockchain allows the analyst to avoid documenting evidence."
+          ],
+          "es-MX": [
+            "Porque los delitos financieros digitales van en aumento y las investigaciones requieren rastrear transacciones, wallets y movimientos entre exchanges.",
+            "Porque la blockchain sustituye todos los métodos forenses tradicionales.",
+            "Porque las criptomonedas solo se usan en videojuegos y no en delitos reales.",
+            "Porque conocer blockchain permite al analista evitar documentar evidencia."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because digital financial crimes are increasing and investigations require tracing transactions, wallets and movements between exchanges.",
+          "es-MX": "Porque los delitos financieros digitales van en aumento y las investigaciones requieren rastrear transacciones, wallets y movimientos entre exchanges."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Many frauds and attacks involve crypto assets.",
+                "Blockchain analysis helps follow the money trail.",
+                "This area is already a specialization within digital forensics."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Muchos fraudes y ataques involucran criptoactivos.",
+                "El análisis de blockchain ayuda a seguir la ruta del dinero.",
+                "Esta área ya es una especialidad dentro de la forense digital."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Privacidad, cifrado y retos legales",
+        "Question Text": {
+          "en-US": [
+            "Why does the expansion of encryption represent a major challenge for future forensic work?"
+          ],
+          "es-MX": [
+            "¿Por qué la expansión del cifrado representa un reto mayor para el trabajo forense futuro?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because almost everything is encrypted (messages, disks, communications, servers), forcing the analyst to justify each access, respect rights and document processes rigorously.",
+            "Because encryption eliminates the need to preserve the chain of custody.",
+            "Because encryption makes all investigations unnecessary.",
+            "Because encrypted data can be modified freely without consequences."
+          ],
+          "es-MX": [
+            "Porque casi todo está cifrado (mensajes, discos, comunicaciones, servidores), lo que obliga al analista a justificar cada acceso, respetar derechos y documentar procesos con rigor.",
+            "Porque el cifrado elimina la necesidad de preservar la cadena de custodia.",
+            "Porque el cifrado hace que todas las investigaciones sean innecesarias.",
+            "Porque los datos cifrados pueden modificarse libremente sin consecuencias."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because almost everything is encrypted (messages, disks, communications, servers), forcing the analyst to justify each access, respect rights and document processes rigorously.",
+          "es-MX": "Porque casi todo está cifrado (mensajes, discos, comunicaciones, servidores), lo que obliga al analista a justificar cada acceso, respetar derechos y documentar procesos con rigor."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The future analyst must balance investigative needs with privacy, human rights and increasingly strict data protection laws."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El analista del futuro deberá equilibrar las necesidades de investigación con la privacidad, los derechos humanos y leyes de protección de datos cada vez más estrictas."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Análisis de memoria RAM y Volatility",
+        "Question Text": {
+          "en-US": [
+            "What is one of the main reasons why memory (RAM) analysis is gaining importance in digital forensics?"
+          ],
+          "es-MX": [
+            "¿Cuál es una de las razones principales por las que el análisis de memoria (RAM) está ganando importancia en la informática forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because many incidents involve processes in execution, open connections, volatile artifacts and malware that only reside in memory.",
+            "Because disk analysis is no longer valid in any case.",
+            "Because RAM contains only decorative information without evidential value.",
+            "Because memory analysis allows skipping the documentation of procedures."
+          ],
+          "es-MX": [
+            "Porque muchos incidentes implican procesos en ejecución, conexiones abiertas, artefactos volátiles y malware que solo residen en memoria.",
+            "Porque el análisis de disco ya no es válido en ningún caso.",
+            "Porque la RAM solo contiene información decorativa sin valor probatorio.",
+            "Porque el análisis de memoria permite omitir la documentación de procedimientos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because many incidents involve processes in execution, open connections, volatile artifacts and malware that only reside in memory.",
+          "es-MX": "Porque muchos incidentes implican procesos en ejecución, conexiones abiertas, artefactos volátiles y malware que solo residen en memoria."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Memory captures the state of the system at a specific moment.",
+                "It reveals activity that may not be visible on disk.",
+                "The future will be a hybrid view: disk + network + memory + cloud."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "La memoria captura el estado del sistema en un momento específico.",
+                "Permite ver actividad que quizá no quede reflejada en disco.",
+                "El futuro será una visión híbrida: disco + red + memoria + nube."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "DFIR y respuesta a incidentes",
+        "Question Text": {
+          "en-US": [
+            "What change in approach does Class 72 highlight regarding DFIR (Digital Forensics and Incident Response)?"
+          ],
+          "es-MX": [
+            "¿Qué cambio de enfoque destaca la Clase 72 respecto a DFIR (Digital Forensics and Incident Response)?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Moving from a model focused only on post-incident analysis to one that requires real-time, automated analysis integrated with SIEM and SOC.",
+            "Eliminating any coordination with Blue Team or Red Team.",
+            "Focusing only on historical reports without monitoring current activity.",
+            "Avoiding automation in order to keep all processes manual."
+          ],
+          "es-MX": [
+            "Pasar de un modelo centrado solo en el análisis posterior al incidente a uno que requiere análisis en tiempo real, automatizado e integrado con SIEM y SOC.",
+            "Eliminar cualquier coordinación con Blue Team o Red Team.",
+            "Enfocarse únicamente en reportes históricos sin monitorear la actividad actual.",
+            "Evitar la automatización para mantener todos los procesos manuales."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Moving from a model focused only on post-incident analysis to one that requires real-time, automated analysis integrated with SIEM and SOC.",
+          "es-MX": "Pasar de un modelo centrado solo en el análisis posterior al incidente a uno que requiere análisis en tiempo real, automatizado e integrado con SIEM y SOC."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The future analyst must understand incident response, threat intelligence and automated playbooks, not just isolated offline analysis."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El analista del futuro debe entender respuesta a incidentes, threat intelligence y playbooks automatizados, no solo análisis aislados fuera de línea."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Conversatorio guiado – Visión profesional",
+        "Question Text": {
+          "en-US": [
+            "What is the main objective of the guided conversation proposed in Class 72?"
+          ],
+          "es-MX": [
+            "¿Cuál es el objetivo principal del conversatorio guiado que se propone en la Clase 72?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To close the course with a professional and strategic vision, discussing trends, future tools, ethical risks and areas of specialization.",
+            "To assign final grades in front of the class.",
+            "To debate unrelated topics such as sports or entertainment.",
+            "To decide which students will abandon the forensic field."
+          ],
+          "es-MX": [
+            "Cerrar el curso con una visión profesional y estratégica, discutiendo tendencias, herramientas futuras, riesgos éticos y áreas de especialización.",
+            "Asignar calificaciones finales frente al grupo.",
+            "Debatir temas sin relación, como deportes o entretenimiento.",
+            "Decidir qué estudiantes van a abandonar el campo forense."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To close the course with a professional and strategic vision, discussing trends, future tools, ethical risks and areas of specialization.",
+          "es-MX": "Cerrar el curso con una visión profesional y estratégica, discutiendo tendencias, herramientas futuras, riesgos éticos y áreas de especialización."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "The conversation connects course content with real career decisions.",
+                "It helps students imagine where they want to position themselves in the future."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "El conversatorio conecta los contenidos del curso con decisiones reales de carrera.",
+                "Ayuda a que los estudiantes imaginen dónde quieren posicionarse en el futuro."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Reflexión independiente – Futuro y rol personal",
+        "Question Text": {
+          "en-US": [
+            "What should the independent reflection “How I imagine the future of forensic analysis and my role in it” mainly include?"
+          ],
+          "es-MX": [
+            "¿Qué debe incluir principalmente la reflexión independiente “¿Cómo imagino el futuro del análisis forense y mi papel en él?”?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Areas where the student wants to specialize, key technologies, skills to improve, ethical risks considered and how they plan to stay professionally updated.",
+            "Only a description of their favorite hobbies unrelated to forensics.",
+            "A list of movies and series about hackers without any reflection.",
+            "A summary of the course without mentioning their personal projection."
+          ],
+          "es-MX": [
+            "Áreas donde el alumno quiere especializarse, tecnologías clave, habilidades a mejorar, riesgos éticos que considera y cómo piensa mantenerse actualizado profesionalmente.",
+            "Solo una descripción de sus pasatiempos favoritos sin relación con la forense.",
+            "Una lista de películas y series de hackers sin ninguna reflexión.",
+            "Un resumen del curso sin mencionar su proyección personal."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Areas where the student wants to specialize, key technologies, skills to improve, ethical risks considered and how they plan to stay professionally updated.",
+          "es-MX": "Áreas donde el alumno quiere especializarse, tecnologías clave, habilidades a mejorar, riesgos éticos que considera y cómo piensa mantenerse actualizado profesionalmente."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "The reflection links trends with personal career planning.",
+                "It invites students to consciously design their next steps as analysts."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "La reflexión vincula las tendencias con la planeación personal de carrera.",
+                "Invita al estudiante a diseñar conscientemente sus siguientes pasos como analista."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Aprendizaje continuo y perfil del futuro perito",
+        "Question Text": {
+          "en-US": [
+            "How does Class 72 describe the professional profile that the digital forensic analyst of the future should have?"
+          ],
+          "es-MX": [
+            "¿Cómo describe la Clase 72 el perfil profesional que debe tener el analista forense digital del futuro?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Ethical, critical, analytical, adaptable, multidisciplinary and technologically updated.",
+            "Focused only on a single tool, without ethics or critical thinking.",
+            "Interested exclusively in salary, without caring about justice or society.",
+            "Unwilling to study again after finishing the course."
+          ],
+          "es-MX": [
+            "Ético, crítico, analítico, adaptable, multidisciplinario y tecnológicamente actualizado.",
+            "Enfocado solo en una herramienta, sin ética ni pensamiento crítico.",
+            "Interesado exclusivamente en el salario, sin importar la justicia o la sociedad.",
+            "Sin disposición a volver a estudiar después de terminar el curso."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Ethical, critical, analytical, adaptable, multidisciplinary and technologically updated.",
+          "es-MX": "Ético, crítico, analítico, adaptable, multidisciplinario y tecnológicamente actualizado."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The class closes emphasizing that the end of formal training is the beginning of a career of continuous learning and ethical responsibility."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La clase cierra enfatizando que el final de la formación formal es el inicio de una carrera de aprendizaje continuo y responsabilidad ética."
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

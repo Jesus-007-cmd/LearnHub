@@ -1,0 +1,550 @@
+{
+    "meta": {
+      "slug": "forense-apps63",
+      "title": "Cadena de custodia: conceptos y formatos",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 5,
+      "classNo": 63,
+      "description": "Introducción a la cadena de custodia en evidencia digital: conceptos clave, principios, consecuencias legales y estructura general de formatos oficiales, con simulación de llenado en clase.",
+      "tags": [
+        "cadena de custodia",
+        "evidencia digital",
+        "integridad",
+        "trazabilidad",
+        "formatos oficiales",
+        "unidad V"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "Propósito de la cadena de custodia",
+        "Question Text": {
+          "en-US": [
+            "According to the class, what is the main purpose of the chain of custody in digital forensics?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿cuál es el propósito principal de la cadena de custodia en forense digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To document step by step everything that happens to the evidence from the moment it is found until it is presented or the case is closed, guaranteeing its integrity and legal admissibility.",
+            "To speed up the investigation by allowing any person to manipulate the evidence without registration.",
+            "To store the evidence in any available place, without worrying about who accesses it or when.",
+            "To replace the need for technical analysis by focusing only on legal arguments."
+          ],
+          "es-MX": [
+            "Documentar paso a paso todo lo que ocurre con la evidencia desde que se localiza hasta su presentación o cierre del caso, garantizando su integridad y su admisibilidad legal.",
+            "Acelerar la investigación permitiendo que cualquier persona manipule la evidencia sin registro.",
+            "Guardar la evidencia en cualquier lugar disponible, sin importar quién accede ni cuándo.",
+            "Sustituir la necesidad de análisis técnico y enfocarse solo en argumentos legales."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To document step by step everything that happens to the evidence from the moment it is found until it is presented or the case is closed, guaranteeing its integrity and legal admissibility.",
+          "es-MX": "Documentar paso a paso todo lo que ocurre con la evidencia desde que se localiza hasta su presentación o cierre del caso, garantizando su integridad y su admisibilidad legal."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "The chain of custody records every stage: location, collection, transfers, analysis and closure.",
+                "Its central function is to show that the evidence was not altered, contaminated or handled by unauthorized persons.",
+                "A correctly documented chain supports the authenticity and legal value of digital evidence.",
+                "Without it, the judge may reject the evidence even if it is technically relevant."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "La cadena de custodia registra cada etapa: localización, recolección, traslados, análisis y cierre.",
+                "Su función central es demostrar que la evidencia no fue alterada, contaminada ni manipulada por personas no autorizadas.",
+                "Una cadena correctamente documentada respalda la autenticidad y el valor legal de la evidencia digital.",
+                "Sin ella, el juez puede desechar la evidencia aunque sea técnicamente relevante."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Conceptos clave",
+        "Question Text": {
+          "en-US": [
+            "Which of the following best describes the concept of ‘initial identification’ of digital evidence as presented in the class?"
+          ],
+          "es-MX": [
+            "¿Cuál de las siguientes opciones describe mejor el concepto de ‘identificación inicial’ de la evidencia digital según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A detailed description of the evidence at the moment it is located, including device type, brand/model, serial number, physical condition, date and time, who found it, where it was found and environmental conditions.",
+            "A brief note that simply says “one device was found” without any technical or contextual detail.",
+            "The moment when the analyst finishes the report and decides what evidence to include.",
+            "A legal summary written by a judge after the trial has ended."
+          ],
+          "es-MX": [
+            "Una descripción detallada de la evidencia en el momento en que se localiza, incluyendo tipo de dispositivo, marca/modelo, número de serie, estado físico, fecha y hora, quién la encontró, dónde fue encontrada y condiciones ambientales.",
+            "Una nota breve que solo dice “se encontró un dispositivo” sin ningún dato técnico ni contextual.",
+            "El momento en que el analista termina el informe y decide qué evidencia incluir.",
+            "Un resumen legal redactado por un juez después de que el juicio ha terminado."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A detailed description of the evidence at the moment it is located, including device type, brand/model, serial number, physical condition, date and time, who found it, where it was found and environmental conditions.",
+          "es-MX": "Una descripción detallada de la evidencia en el momento en que se localiza, incluyendo tipo de dispositivo, marca/modelo, número de serie, estado físico, fecha y hora, quién la encontró, dónde fue encontrada y condiciones ambientales."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "The class emphasizes that poor or incomplete identification generates doubts in the process.",
+                "Initial identification anchors the evidence to a specific context (who, when, where, how it was found).",
+                "Details such as brand, model and serial number help distinguish one item from another.",
+                "This step is the first link in a solid chain of custody."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "La clase señala que una identificación pobre o incompleta genera dudas en el proceso.",
+                "La identificación inicial ancla la evidencia a un contexto específico (quién, cuándo, dónde, en qué condiciones).",
+                "Datos como marca, modelo y número de serie ayudan a diferenciar un ítem de otro.",
+                "Este paso es el primer eslabón de una cadena de custodia sólida."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Adquisición y hash inicial",
+        "Question Text": {
+          "en-US": [
+            "In the ‘acquisition or collection’ phase, what element is highlighted as mandatory for digital evidence according to the class?"
+          ],
+          "es-MX": [
+            "En la fase de ‘adquisición o recolección’, ¿qué elemento se destaca como obligatorio para la evidencia digital según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The calculation and registration of the initial hash to be compared at the end of the process.",
+            "Only taking a photograph of the device without any technical measurement.",
+            "Shutting down the device and returning it immediately to its owner without documentation.",
+            "Performing tests directly on the original device without creating any forensic copy."
+          ],
+          "es-MX": [
+            "El cálculo y registro del hash inicial para compararlo al final del proceso.",
+            "Tomar únicamente una fotografía del dispositivo sin ninguna medida técnica.",
+            "Apagar el dispositivo y devolverlo de inmediato a su dueño sin documentación.",
+            "Realizar pruebas directamente sobre el dispositivo original sin generar ninguna copia forense."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The calculation and registration of the initial hash to be compared at the end of the process.",
+          "es-MX": "El cálculo y registro del hash inicial para compararlo al final del proceso."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "divider"
+            },
+            {
+              "type": "text",
+              "content": "The class explicitly states that the initial hash is mandatory in digital evidence acquisition."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "A hash function summarizes the content in a unique digital fingerprint.",
+                "If the initial and final hashes differ, it means the evidence was altered.",
+                "Recording the hash from the beginning protects integrity and supports authenticity.",
+                "This is a critical control point in any digital chain of custody."
+              ]
+            },
+            {
+              "type": "divider"
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "divider"
+            },
+            {
+              "type": "text",
+              "content": "La clase indica explícitamente que el hash inicial es obligatorio en la adquisición de evidencia digital."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "La función hash resume el contenido en una huella digital única.",
+                "Si el hash inicial y el final no coinciden, significa que la evidencia fue alterada.",
+                "Registrar el hash desde el inicio protege la integridad y respalda la autenticidad.",
+                "Es un punto de control crítico en cualquier cadena de custodia digital."
+              ]
+            },
+            {
+              "type": "divider"
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Traslado y almacenamiento",
+        "Question Text": {
+          "en-US": [
+            "Which option describes good practice for documenting transfers, storage and custody of digital evidence?"
+          ],
+          "es-MX": [
+            "¿Qué opción describe una buena práctica para documentar traslados, almacenamiento y custodia de evidencia digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Registering for each movement who delivers, who receives, reason for transfer, exact date and time, signatures and storage conditions (e.g., antistatic box, evidence bag, safe), without leaving gaps.",
+            "Only informing verbally that the device was moved to the lab, without any written record.",
+            "Allowing multiple people to access the evidence without noting names, times or storage conditions.",
+            "Storing the device in any drawer or backpack and filling the chain of custody at the end of the case."
+          ],
+          "es-MX": [
+            "Registrar en cada movimiento quién entrega, quién recibe, motivo del traslado, fecha y hora exacta, firmas y condiciones de almacenamiento (ej. caja antiestática, bolsa de evidencia, caja fuerte), sin dejar vacíos.",
+            "Informar solo de manera verbal que el dispositivo fue llevado al laboratorio, sin ningún registro escrito.",
+            "Permitir que varias personas accedan a la evidencia sin anotar nombres, horarios ni condiciones de almacenamiento.",
+            "Guardar el dispositivo en cualquier cajón o mochila y llenar la cadena de custodia hasta el final del caso."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Registering for each movement who delivers, who receives, reason for transfer, exact date and time, signatures and storage conditions (e.g., antistatic box, evidence bag, safe), without leaving gaps.",
+          "es-MX": "Registrar en cada movimiento quién entrega, quién recibe, motivo del traslado, fecha y hora exacta, firmas y condiciones de almacenamiento (ej. caja antiestática, bolsa de evidencia, caja fuerte), sin dejar vacíos."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The class underlines that each movement must be justified and recorded; “nothing is written” is equivalent to “nothing officially happened”."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Every transfer adds a new line to the chain of custody log.",
+                "Signatures and exact timestamps ensure individual responsibility for each handover.",
+                "Documenting storage conditions protects against claims of contamination or mishandling.",
+                "Gaps or missing records weaken the continuity and legal validity of the chain."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La clase subraya que cada movimiento debe justificarse y registrarse; “no se anota nada” equivale a “no ocurrió de forma oficial”."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Cada traslado agrega una nueva línea al registro de cadena de custodia.",
+                "Las firmas y las marcas de tiempo exactas aseguran responsabilidad individual por cada entrega.",
+                "Documentar las condiciones de almacenamiento protege frente a alegatos de contaminación o mal manejo.",
+                "Los vacíos o registros faltantes debilitan la continuidad y la validez legal de la cadena."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Principios esenciales",
+        "Question Text": {
+          "en-US": [
+            "Which group of principles corresponds to a valid digital chain of custody as described in the class?"
+          ],
+          "es-MX": [
+            "¿Cuál de los siguientes grupos de principios corresponde a una cadena de custodia digital válida según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Continuity (no gaps), complete traceability, integrity (initial hash = final hash), physical and logical security, confidentiality, clarity/precision and authenticity.",
+            "Speed, informality, anonymity of handlers and absence of documentation so that the process is more flexible.",
+            "Only technical complexity and use of very advanced tools, regardless of documentation quality.",
+            "Focus exclusively on legal texts, ignoring any physical or logical security of the devices."
+          ],
+          "es-MX": [
+            "Continuidad (sin vacíos), trazabilidad completa, integridad (hash inicial = hash final), seguridad física y lógica, confidencialidad, claridad/precisión y autenticidad.",
+            "Rapidez, informalidad, anonimato de quienes manipulan la evidencia y ausencia de documentación para que el proceso sea más flexible.",
+            "Solo complejidad técnica y uso de herramientas muy avanzadas, sin importar la calidad de la documentación.",
+            "Enfocarse exclusivamente en textos legales, ignorando cualquier seguridad física o lógica de los dispositivos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Continuity (no gaps), complete traceability, integrity (initial hash = final hash), physical and logical security, confidentiality, clarity/precision and authenticity.",
+          "es-MX": "Continuidad (sin vacíos), trazabilidad completa, integridad (hash inicial = hash final), seguridad física y lógica, confidencialidad, claridad/precisión y autenticidad."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Continuity ensures that there are no unrecorded periods in the life of the evidence.",
+                "Traceability and integrity allow any step to be reconstructed and verified (hashes, dates, handlers).",
+                "Physical and logical security plus confidentiality limit access to authorized personnel.",
+                "Clarity and authenticity make the document understandable and legally defendable."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "La continuidad asegura que no existan periodos sin registrar en la vida de la evidencia.",
+                "La trazabilidad e integridad permiten reconstruir y verificar cada paso (hashes, fechas, responsables).",
+                "La seguridad física y lógica, junto con la confidencialidad, limitan el acceso a personal autorizado.",
+                "La claridad y la autenticidad hacen que el documento sea comprensible y defendible legalmente."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Consecuencias legales",
+        "Question Text": {
+          "en-US": [
+            "What is one of the serious consequences of an incorrect or poorly documented chain of custody, according to the class?"
+          ],
+          "es-MX": [
+            "¿Cuál es una de las consecuencias graves de una cadena de custodia incorrecta o mal documentada, según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Total invalidation of the evidence, even if it is technically relevant, and possible exclusion of the findings from the final report.",
+            "Improvement of the analyst’s reputation because they work faster and with less paperwork.",
+            "Automatic acceptance of all evidence by the court, regardless of how it was handled.",
+            "The chain of custody has no impact on the judicial process; only the technical report matters."
+          ],
+          "es-MX": [
+            "Invalidez total de la evidencia, aunque sea técnicamente relevante, y posible exclusión de los hallazgos del informe final.",
+            "Mejora de la reputación del analista porque trabaja más rápido y con menos papeleo.",
+            "Aceptación automática de toda la evidencia por parte del juez, sin importar cómo se manejó.",
+            "La cadena de custodia no tiene impacto en el proceso judicial; solo importa el informe técnico."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Total invalidation of the evidence, even if it is technically relevant, and possible exclusion of the findings from the final report.",
+          "es-MX": "Invalidez total de la evidencia, aunque sea técnicamente relevante, y posible exclusión de los hallazgos del informe final."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The class warns that even small errors (like an incorrect time) can destroy the value of the evidence."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Courts require both technical reliability and procedural correctness.",
+                "If the chain is weak, the opposing party can question authenticity and demand exclusion.",
+                "This may cause delays, sanctions and loss of credibility for the analyst or institution.",
+                "For this reason, chain of custody is treated as a core topic in the course."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La clase advierte que incluso errores mínimos (como una hora mal registrada) pueden destruir el valor de la evidencia."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Los tribunales exigen confiabilidad técnica y corrección procedimental.",
+                "Si la cadena es débil, la parte contraria puede cuestionar la autenticidad y pedir la exclusión.",
+                "Esto puede provocar retrasos, sanciones y pérdida de credibilidad para el analista o la institución.",
+                "Por ello, la cadena de custodia se trata como un tema central en el curso."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Formato oficial",
+        "Question Text": {
+          "en-US": [
+            "Which set of sections is typically found in an official chain of custody form, according to the class material?"
+          ],
+          "es-MX": [
+            "¿Qué conjunto de secciones se encuentra normalmente en un formato oficial de cadena de custodia, según el material de la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Case data, detailed evidence description (including initial hash), transfer and delivery log, analysis log and release/closure of custody.",
+            "Only the case number and a generic phrase like “evidence was handled properly”, without details.",
+            "A summary of the company’s mission and vision, plus a list of the IT department staff.",
+            "A list of laws and regulations, without any mention of devices, handlers, dates or hashes."
+          ],
+          "es-MX": [
+            "Datos del caso, descripción detallada de la evidencia (incluyendo hash inicial), registro de traslados y entregas, registro de análisis y sección de liberación/cierre de custodia.",
+            "Solo el número de expediente y una frase genérica como “la evidencia fue manejada correctamente”, sin detalles.",
+            "Un resumen de la misión y visión de la empresa, junto con un listado del personal del área de TI.",
+            "Un listado de leyes y reglamentos, sin mencionar dispositivos, responsables, fechas ni hashes."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Case data, detailed evidence description (including initial hash), transfer and delivery log, analysis log and release/closure of custody.",
+          "es-MX": "Datos del caso, descripción detallada de la evidencia (incluyendo hash inicial), registro de traslados y entregas, registro de análisis y sección de liberación/cierre de custodia."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "The class lists typical sections: general case data, detailed description, transfer records, analysis records and closure.",
+                "This structure supports continuity and traceability throughout the life of the evidence.",
+                "The presence of the hash in the description connects the form to integrity controls.",
+                "Closure records indicate the final destination and who authorized the end of custody."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "La clase enumera secciones típicas: datos generales del caso, descripción detallada, registros de traslados, registros de análisis y cierre.",
+                "Esta estructura respalda la continuidad y la trazabilidad a lo largo de la vida de la evidencia.",
+                "La presencia del hash en la descripción vincula el formato con los controles de integridad.",
+                "Los registros de cierre indican el destino final y quién autorizó el fin de la custodia."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Actividad en clase",
+        "Question Text": {
+          "en-US": [
+            "What is the main goal of the in-class activity where students simulate filling an official chain of custody form?"
+          ],
+          "es-MX": [
+            "¿Cuál es el objetivo principal de la actividad en clase donde los alumnos simulan el llenado de un formato oficial de cadena de custodia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To practice correctly recording initial identification, acquisition, transfers to the lab, analysis records and final delivery/closure for a fictitious piece of evidence, identifying common errors such as missing signatures or incorrect times.",
+            "To learn how to design a new chain of custody law from scratch.",
+            "To test only the students’ artistic ability to decorate the form with colors and drawings.",
+            "To practice turning devices on and off repeatedly without writing anything down."
+          ],
+          "es-MX": [
+            "Practicar el registro correcto de la identificación inicial, adquisición, traslados al laboratorio, registros de análisis y entrega/cierre final para una evidencia ficticia, identificando errores comunes como firmas faltantes u horas incorrectas.",
+            "Aprender a diseñar desde cero una nueva ley de cadena de custodia.",
+            "Evaluar únicamente la habilidad artística del alumno para decorar el formato con colores y dibujos.",
+            "Practicar encender y apagar dispositivos muchas veces sin escribir nada."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To practice correctly recording initial identification, acquisition, transfers to the lab, analysis records and final delivery/closure for a fictitious piece of evidence, identifying common errors such as missing signatures or incorrect times.",
+          "es-MX": "Practicar el registro correcto de la identificación inicial, adquisición, traslados al laboratorio, registros de análisis y entrega/cierre final para una evidencia ficticia, identificando errores comunes como firmas faltantes u horas incorrectas."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The exercise is designed as a practical simulation of real-world procedures."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Students work with fictitious evidence (USB, disk, simulated image).",
+                "They fill identification, acquisition, transfer, analysis and closure sections.",
+                "The teacher reviews common mistakes: missing signatures, incomplete description, wrong times, wrong hash copying.",
+                "This training builds habits needed in real investigations."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El ejercicio está diseñado como una simulación práctica de los procedimientos reales."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Los estudiantes trabajan con evidencia ficticia (USB, disco, imagen simulada).",
+                "Llenan las secciones de identificación, adquisición, traslados, análisis y cierre.",
+                "El docente revisa errores comunes: faltan firmas, descripción incompleta, horas mal registradas, hash copiado incorrectamente.",
+                "Este entrenamiento forma los hábitos necesarios para investigaciones reales."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Reflexión final",
+        "Question Text": {
+          "en-US": [
+            "In the final reflection, why is the chain of custody described as the ‘legal shield’ of digital evidence?"
+          ],
+          "es-MX": [
+            "En la reflexión final, ¿por qué se describe la cadena de custodia como el ‘escudo legal’ de la evidencia digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it protects the authenticity of the data and the analyst’s credibility, ensuring that strong technical findings are also legally defensible.",
+            "Because it replaces the need for technical analysis, making reports unnecessary.",
+            "Because it allows evidence to be modified freely as long as the chain is written nicely.",
+            "Because it is only a bureaucratic requirement with no impact on legal decisions."
+          ],
+          "es-MX": [
+            "Porque protege la autenticidad de los datos y la credibilidad del analista, asegurando que los hallazgos técnicos sólidos también sean defendibles legalmente.",
+            "Porque sustituye la necesidad de análisis técnico, haciendo innecesarios los informes.",
+            "Porque permite modificar libremente la evidencia siempre que la cadena esté escrita de forma bonita.",
+            "Porque es solo un requisito burocrático sin impacto en las decisiones legales."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it protects the authenticity of the data and the analyst’s credibility, ensuring that strong technical findings are also legally defensible.",
+          "es-MX": "Porque protege la autenticidad de los datos y la credibilidad del analista, asegurando que los hallazgos técnicos sólidos también sean defendibles legalmente."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The final section of the class states that if the chain is solid, the evidence is strong; if the chain is weak, the evidence collapses."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "The chain of custody connects technical work with legal trust.",
+                "A well-documented chain shows that the same evidence has been preserved from origin to final delivery.",
+                "This protects both the case and the professional reputation of the analyst.",
+                "For this reason, mastering chain of custody is essential for any forensic or cybersecurity specialist."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La parte final de la clase indica que si la cadena es sólida, la evidencia es fuerte; si la cadena es débil, la evidencia se derrumba."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "La cadena de custodia conecta el trabajo técnico con la confianza jurídica.",
+                "Una cadena bien documentada demuestra que la misma evidencia se ha preservado desde el origen hasta la entrega final.",
+                "Esto protege tanto el caso como la reputación profesional del analista.",
+                "Por ello, dominar la cadena de custodia es esencial para cualquier perito o especialista en ciberseguridad."
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

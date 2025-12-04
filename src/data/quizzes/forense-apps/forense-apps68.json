@@ -1,0 +1,1196 @@
+{
+    "meta": {
+      "slug": "forense-apps68",
+      "title": "Comunicación efectiva y presentación visual de resultados",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 5,
+      "classNo": 68,
+      "description": "Principios de claridad, diseño visual profesional y uso de recursos gráficos para mejorar la comunicación de hallazgos forenses. Incluye líneas de tiempo, diagramas, tablas, gráficas, mapas y buenas prácticas en Canva/PowerPoint.",
+      "tags": [
+        "comunicación visual",
+        "informes forenses",
+        "diseño técnico",
+        "líneas de tiempo",
+        "diagramas",
+        "tablas",
+        "gráficas",
+        "Canva",
+        "PowerPoint",
+        "unidad V"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "Importancia de la comunicación visual",
+        "Question Text": {
+          "en-US": [
+            "Why is visual communication essential in a forensic report?"
+          ],
+          "es-MX": [
+            "¿Por qué es esencial la comunicación visual en un informe forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because visual elements simplify complex findings and help non-technical audiences understand the case quickly.",
+            "Because visuals eliminate the need for written explanations.",
+            "Because decorative images make the report more attractive.",
+            "Because visual overload always increases credibility."
+          ],
+          "es-MX": [
+            "Porque los elementos visuales simplifican hallazgos complejos y ayudan a audiencias no técnicas a entender el caso rápidamente.",
+            "Porque los visuales eliminan la necesidad de explicaciones escritas.",
+            "Porque las imágenes decorativas hacen más atractivo el informe.",
+            "Porque la saturación visual siempre aumenta la credibilidad."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because visual elements simplify complex findings and help non-technical audiences understand the case quickly.",
+          "es-MX": "Porque los elementos visuales simplifican hallazgos complejos y ayudan a audiencias no técnicas a entender el caso rápidamente."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Visuals allow key information to be absorbed in seconds."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "They reduce cognitive effort.",
+                "They summarize technical processes.",
+                "They highlight cause-effect relationships.",
+                "They increase the clarity of the narrative."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los visuales permiten que la información clave se comprenda en segundos."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Reducen el esfuerzo cognitivo.",
+                "Resumen procesos técnicos.",
+                "Destacan relaciones causa-efecto.",
+                "Aumentan la claridad de la narrativa."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Claridad",
+        "Question Text": {
+          "en-US": [
+            "Which practice best supports clarity in forensic visual communication?"
+          ],
+          "es-MX": [
+            "¿Qué práctica favorece mejor la claridad en la comunicación visual forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Using short sentences, simple labels and visuals that reinforce content.",
+            "Using long paragraphs to show expertise.",
+            "Using excessive technical jargon.",
+            "Adding many icons so the slide feels full."
+          ],
+          "es-MX": [
+            "Usar oraciones cortas, etiquetas simples y visuales que refuercen el contenido.",
+            "Usar párrafos largos para demostrar experiencia.",
+            "Usar jerga técnica excesiva.",
+            "Agregar muchos íconos para que la diapositiva se vea llena."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Using short sentences, simple labels and visuals that reinforce content.",
+          "es-MX": "Usar oraciones cortas, etiquetas simples y visuales que refuercen el contenido."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Short statements reduce fatigue.",
+                "Simple visuals guide the eye.",
+                "Removing jargon improves comprehension.",
+                "Clarity ensures accurate interpretation."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Las oraciones breves reducen la fatiga.",
+                "Los visuales simples guían la mirada.",
+                "Eliminar jerga mejora la comprensión.",
+                "La claridad asegura una interpretación correcta."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Organización",
+        "Question Text": {
+          "en-US": [
+            "Which element contributes most to an organized forensic report?"
+          ],
+          "es-MX": [
+            "¿Qué elemento contribuye más a un informe forense organizado?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Clear titles, sections, lists and white space.",
+            "Large blocks of uninterrupted text.",
+            "Randomly mixed fonts and colors.",
+            "Slides without headings or structure."
+          ],
+          "es-MX": [
+            "Títulos claros, secciones, listas y espacios en blanco.",
+            "Bloques grandes de texto ininterrumpido.",
+            "Fuentes y colores mezclados aleatoriamente.",
+            "Diapositivas sin encabezados ni estructura."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Clear titles, sections, lists and white space.",
+          "es-MX": "Títulos claros, secciones, listas y espacios en blanco."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "White space improves readability.",
+                "Titles guide the sequence of ideas.",
+                "Lists summarize large concepts.",
+                "Organization reduces cognitive load."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "El espacio en blanco mejora la legibilidad.",
+                "Los títulos guían la secuencia de ideas.",
+                "Las listas resumen conceptos amplios.",
+                "La organización reduce la carga cognitiva."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Consistencia visual",
+        "Question Text": {
+          "en-US": [
+            "Why is visual consistency important in forensic reporting?"
+          ],
+          "es-MX": [
+            "¿Por qué es importante la consistencia visual en informes forenses?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it keeps the reader focused on the content instead of the style.",
+            "Because variety of styles proves creativity.",
+            "Because inconsistent designs highlight irrelevant details.",
+            "Because using random colors speeds up reading."
+          ],
+          "es-MX": [
+            "Porque mantiene al lector enfocado en el contenido en lugar del estilo.",
+            "Porque la variedad de estilos demuestra creatividad.",
+            "Porque los diseños inconsistentes resaltan detalles irrelevantes.",
+            "Porque usar colores aleatorios acelera la lectura."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it keeps the reader focused on the content instead of the style.",
+          "es-MX": "Porque mantiene al lector enfocado en el contenido en lugar del estilo."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Consistency builds a professional and trustworthy report."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Same colors = visual identity.",
+                "Same fonts = structured document.",
+                "Same icon style = easier interpretation.",
+                "Predictable layout = faster comprehension."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La consistencia construye un informe profesional y confiable."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Mismos colores = identidad visual.",
+                "Mismas fuentes = documento estructurado.",
+                "Mismo estilo de íconos = interpretación más fácil.",
+                "Distribución predecible = comprensión más rápida."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Relevancia visual",
+        "Question Text": {
+          "en-US": [
+            "What defines a relevant visual element in a forensic report?"
+          ],
+          "es-MX": [
+            "¿Qué define a un elemento visual relevante en un informe forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It directly supports the case narrative and clarifies evidence.",
+            "It decorates the slide to make it more attractive.",
+            "It fills empty space with colorful shapes.",
+            "It confuses the audience intentionally to hide technical details."
+          ],
+          "es-MX": [
+            "Que apoye directamente la narrativa del caso y aclare la evidencia.",
+            "Que adorne la diapositiva para hacerla más atractiva.",
+            "Que llene espacios vacíos con figuras coloridas.",
+            "Que confunda al público para ocultar detalles técnicos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It directly supports the case narrative and clarifies evidence.",
+          "es-MX": "Que apoye directamente la narrativa del caso y aclare la evidencia."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Relevance ensures visuals add value, not noise."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La relevancia asegura que los visuales aporten valor, no ruido."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Profesionalismo visual",
+        "Question Text": {
+          "en-US": [
+            "Which characteristic reflects professionalism in visual forensic communication?"
+          ],
+          "es-MX": [
+            "¿Qué característica refleja profesionalismo en la comunicación visual forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Using sober colors, clean layouts and technical accuracy.",
+            "Using Comic Sans and bright neon colors.",
+            "Adding animations to every slide.",
+            "Using clipart to fill space."
+          ],
+          "es-MX": [
+            "Usar colores sobrios, distribuciones limpias y precisión técnica.",
+            "Usar Comic Sans y colores neón brillantes.",
+            "Agregar animaciones a cada diapositiva.",
+            "Usar clipart para llenar espacio."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Using sober colors, clean layouts and technical accuracy.",
+          "es-MX": "Usar colores sobrios, distribuciones limpias y precisión técnica."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Professional design increases credibility.",
+                "Neutral tones communicate seriousness.",
+                "Technical accuracy is essential in forensic contexts."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "El diseño profesional aumenta la credibilidad.",
+                "Los tonos neutros comunican seriedad.",
+                "La precisión técnica es esencial en contextos forenses."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Líneas de tiempo",
+        "Question Text": {
+          "en-US": [
+            "What makes a forensic timeline effective?"
+          ],
+          "es-MX": [
+            "¿Qué hace efectiva a una línea de tiempo forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Clear chronological sequence with key actions and evidence.",
+            "Decorative icons replacing timestamps.",
+            "Listing thousands of events without filtering.",
+            "Using random colors that distract."
+          ],
+          "es-MX": [
+            "Secuencia cronológica clara con acciones clave y evidencia.",
+            "Íconos decorativos sustituyendo marcas de tiempo.",
+            "Enumerar miles de eventos sin filtrar.",
+            "Usar colores aleatorios que distraen."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Clear chronological sequence with key actions and evidence.",
+          "es-MX": "Secuencia cronológica clara con acciones clave y evidencia."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Timelines simplify cause-effect interpretation."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las líneas de tiempo simplifican la interpretación causa-efecto."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Diagramas de flujo",
+        "Question Text": {
+          "en-US": [
+            "What is the purpose of using a flowchart in a forensic report?"
+          ],
+          "es-MX": [
+            "¿Cuál es el propósito de usar un diagrama de flujo en un informe forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To explain processes, attack sequences or analytical procedures visually.",
+            "To decorate the report with shapes.",
+            "To replace written conclusions.",
+            "To confuse the reader."
+          ],
+          "es-MX": [
+            "Explicar procesos, secuencias de ataque o procedimientos analíticos de manera visual.",
+            "Adornar el informe con figuras.",
+            "Reemplazar conclusiones escritas.",
+            "Confundir al lector."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To explain processes, attack sequences or analytical procedures visually.",
+          "es-MX": "Explicar procesos, secuencias de ataque o procedimientos analíticos de manera visual."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Flowcharts reduce explanation time.",
+                "They clarify complex sequences.",
+                "They support judicial understanding."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Los diagramas reducen el tiempo de explicación.",
+                "Aclaran secuencias complejas.",
+                "Apoyan la comprensión judicial."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Tablas comparativas",
+        "Question Text": {
+          "en-US": [
+            "Which information is most appropriate for a comparative table in forensic reporting?"
+          ],
+          "es-MX": [
+            "¿Qué información es la más adecuada para una tabla comparativa en un informe forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Hashes, timestamps, discrepancies and contrasts between legitimate and suspicious activity.",
+            "Random decorative icons.",
+            "Long paragraphs of text.",
+            "Emojis to identify files."
+          ],
+          "es-MX": [
+            "Hashes, marcas de tiempo, discrepancias y comparaciones entre actividad legítima y sospechosa.",
+            "Íconos decorativos aleatorios.",
+            "Párrafos largos de texto.",
+            "Emojis para identificar archivos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Hashes, timestamps, discrepancies and contrasts between legitimate and suspicious activity.",
+          "es-MX": "Hashes, marcas de tiempo, discrepancias y comparaciones entre actividad legítima y sospechosa."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Tables summarize large datasets efficiently."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las tablas resumen grandes conjuntos de datos de forma eficiente."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Gráficas",
+        "Question Text": {
+          "en-US": [
+            "When should bar or line charts be used in forensic reporting?"
+          ],
+          "es-MX": [
+            "¿Cuándo deben usarse gráficas de barras o líneas en informes forenses?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "When showing trends, peaks of activity or distribution of events.",
+            "When needing decoration without meaning.",
+            "When replacing evidence with color.",
+            "When data does not require visualization."
+          ],
+          "es-MX": [
+            "Cuando se muestran tendencias, picos de actividad o distribución de eventos.",
+            "Cuando se necesita decoración sin significado.",
+            "Cuando se reemplaza evidencia con color.",
+            "Cuando los datos no requieren visualización."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "When showing trends, peaks of activity or distribution of events.",
+          "es-MX": "Cuando se muestran tendencias, picos de actividad o distribución de eventos."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Charts reveal behavioral patterns.",
+                "Trends help interpret timelines.",
+                "Peaks may indicate anomalies or intrusions."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Las gráficas revelan patrones de conducta.",
+                "Las tendencias ayudan a interpretar líneas de tiempo.",
+                "Los picos pueden indicar anomalías o intrusiones."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Mapas de red",
+        "Question Text": {
+          "en-US": [
+            "What is the purpose of a network diagram in forensic reporting?"
+          ],
+          "es-MX": [
+            "¿Cuál es el propósito de un diagrama de red en un informe forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To visualize connections, devices involved and data flow paths.",
+            "To replace written conclusions.",
+            "To decorate slides.",
+            "To hide technical evidence."
+          ],
+          "es-MX": [
+            "Visualizar conexiones, dispositivos involucrados y rutas de flujo de datos.",
+            "Reemplazar conclusiones escritas.",
+            "Adornar diapositivas.",
+            "Ocultar evidencia técnica."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To visualize connections, devices involved and data flow paths.",
+          "es-MX": "Visualizar conexiones, dispositivos involucrados y rutas de flujo de datos."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Network diagrams reveal attack routes or unauthorized access."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los diagramas de red revelan rutas de ataque o accesos no autorizados."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Capturas anotadas",
+        "Question Text": {
+          "en-US": [
+            "What characterizes an effective annotated screenshot in forensic work?"
+          ],
+          "es-MX": [
+            "¿Qué caracteriza a una captura de pantalla anotada efectiva en trabajo forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Clear arrows, boxes and short explanations pointing directly to relevant evidence.",
+            "Large paragraphs covering the image.",
+            "Random decorations unrelated to the content.",
+            "Screenshots without context."
+          ],
+          "es-MX": [
+            "Flechas claras, recuadros y explicaciones breves que señalan evidencia relevante.",
+            "Párrafos largos que cubren la imagen.",
+            "Decoraciones aleatorias sin relación con el contenido.",
+            "Capturas sin contexto."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Clear arrows, boxes and short explanations pointing directly to relevant evidence.",
+          "es-MX": "Flechas claras, recuadros y explicaciones breves que señalan evidencia relevante."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Annotated screenshots highlight what matters most for investigators."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las capturas anotadas destacan lo que más importa al análisis forense."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Diseño visual - Menos es más",
+        "Question Text": {
+          "en-US": [
+            "Which principle reflects the 'less is more' approach in slide design?"
+          ],
+          "es-MX": [
+            "¿Qué principio refleja el enfoque 'menos es más' en diseño de diapositivas?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Each slide should contain one idea and one key visual element.",
+            "Slides should contain multiple paragraphs of text.",
+            "Slides should have at least 10 images for impact.",
+            "Slides should mix colors and fonts for variety."
+          ],
+          "es-MX": [
+            "Cada diapositiva debe contener una idea y un elemento visual clave.",
+            "Las diapositivas deben contener varios párrafos de texto.",
+            "Las diapositivas deben tener al menos 10 imágenes para causar impacto.",
+            "Las diapositivas deben mezclar colores y fuentes para dar variedad."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Each slide should contain one idea and one key visual element.",
+          "es-MX": "Cada diapositiva debe contener una idea y un elemento visual clave."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Simple slides are easier to understand quickly.",
+                "Visual focus increases retention.",
+                "Minimalism prevents cognitive overload."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Las diapositivas simples se entienden más rápido.",
+                "El enfoque visual aumenta la retención.",
+                "El minimalismo evita la sobrecarga cognitiva."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Colores profesionales",
+        "Question Text": {
+          "en-US": [
+            "Which color palette is most appropriate for a professional forensic presentation?"
+          ],
+          "es-MX": [
+            "¿Qué paleta de colores es más apropiada para una presentación forense profesional?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Navy blue, gray, black and dark green.",
+            "Neon pink, bright yellow and cartoon colors.",
+            "Random rainbow gradients.",
+            "Any color as long as it is extremely saturated."
+          ],
+          "es-MX": [
+            "Azul marino, gris, negro y verde oscuro.",
+            "Rosa neón, amarillo brillante y colores tipo caricatura.",
+            "Gradientes arcoíris aleatorios.",
+            "Cualquier color siempre que sea extremadamente saturado."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Navy blue, gray, black and dark green.",
+          "es-MX": "Azul marino, gris, negro y verde oscuro."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Professional colors convey seriousness and trustworthiness."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los colores profesionales transmiten seriedad y confiabilidad."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Tipografías claras",
+        "Question Text": {
+          "en-US": [
+            "Which typography is most appropriate for forensic reporting?"
+          ],
+          "es-MX": [
+            "¿Qué tipografía es más apropiada para informes forenses?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Arial, Roboto, Open Sans or Calibri.",
+            "Comic Sans or overly decorative fonts.",
+            "Fonts with heavy ornaments.",
+            "Fonts designed for children's books."
+          ],
+          "es-MX": [
+            "Arial, Roboto, Open Sans o Calibri.",
+            "Comic Sans o fuentes demasiado decorativas.",
+            "Fuentes con adornos excesivos.",
+            "Fuentes diseñadas para libros infantiles."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Arial, Roboto, Open Sans or Calibri.",
+          "es-MX": "Arial, Roboto, Open Sans o Calibri."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Simple fonts improve readability and professionalism."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las fuentes simples mejoran la legibilidad y profesionalismo."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Uso de iconos",
+        "Question Text": {
+          "en-US": [
+            "How should icons be used in a forensic presentation?"
+          ],
+          "es-MX": [
+            "¿Cómo deben usarse los iconos en una presentación forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To reinforce key ideas using simple and consistent icon styles.",
+            "To decorate slides with random symbols.",
+            "To replace all text entirely.",
+            "To fill space even if they have no meaning."
+          ],
+          "es-MX": [
+            "Para reforzar ideas clave usando estilos simples y consistentes.",
+            "Para decorar diapositivas con símbolos aleatorios.",
+            "Para reemplazar todo el texto por completo.",
+            "Para llenar espacio aunque no tengan significado."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To reinforce key ideas using simple and consistent icon styles.",
+          "es-MX": "Para reforzar ideas clave usando estilos simples y consistentes."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Icons should clarify meaning.",
+                "Consistency avoids distraction.",
+                "Simplicity supports clarity."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Los iconos deben clarificar significado.",
+                "La consistencia evita distracciones.",
+                "La simplicidad apoya la claridad."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Proporción visual",
+        "Question Text": {
+          "en-US": [
+            "What is a common error in slide proportion when presenting forensic findings?"
+          ],
+          "es-MX": [
+            "¿Cuál es un error común de proporción en diapositivas al presentar hallazgos forenses?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Using too many images or paragraphs that saturate the slide.",
+            "Leaving white space for clean organization.",
+            "Using one key graphic per slide.",
+            "Balancing text and visuals correctly."
+          ],
+          "es-MX": [
+            "Usar demasiadas imágenes o párrafos que saturan la diapositiva.",
+            "Dejar espacio en blanco para una organización limpia.",
+            "Usar un gráfico clave por diapositiva.",
+            "Equilibrar texto y visuales correctamente."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Using too many images or paragraphs that saturate the slide.",
+          "es-MX": "Usar demasiadas imágenes o párrafos que saturan la diapositiva."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Saturation overwhelms the user and hides the message."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La saturación abruma al usuario y oculta el mensaje."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Producto del taller: Timeline",
+        "Question Text": {
+          "en-US": [
+            "What is a required product in the class workshop?"
+          ],
+          "es-MX": [
+            "¿Cuál es un producto obligatorio en el taller de clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A timeline summarizing key forensic events.",
+            "A comic strip unrelated to the case.",
+            "A collage of random images.",
+            "A personal reflection unrelated to evidence."
+          ],
+          "es-MX": [
+            "Una línea de tiempo que resuma los eventos clave del caso forense.",
+            "Una historieta sin relación con el caso.",
+            "Un collage de imágenes aleatorias.",
+            "Una reflexión personal sin relación con la evidencia."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A timeline summarizing key forensic events.",
+          "es-MX": "Una línea de tiempo que resuma los eventos clave del caso forense."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Timelines help structure the narrative visually."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las líneas de tiempo estructuran la narrativa visualmente."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Producto del taller: Diagrama",
+        "Question Text": {
+          "en-US": [
+            "Which diagram must be produced during the workshop?"
+          ],
+          "es-MX": [
+            "¿Qué diagrama debe elaborarse obligatoriamente en el taller?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A diagram explaining the forensic analysis process.",
+            "A mindmap of personal goals.",
+            "A cartoon illustration.",
+            "An unrelated artistic composition."
+          ],
+          "es-MX": [
+            "Un diagrama que explique el proceso de análisis forense.",
+            "Un mapa mental de metas personales.",
+            "Una ilustración tipo caricatura.",
+            "Una composición artística sin relación."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A diagram explaining the forensic analysis process.",
+          "es-MX": "Un diagrama que explique el proceso de análisis forense."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "This helps clarify how evidence was examined."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Esto ayuda a aclarar cómo se examinó la evidencia."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Producto del taller: Tabla comparativa",
+        "Question Text": {
+          "en-US": [
+            "Which table is required in the workshop products?"
+          ],
+          "es-MX": [
+            "¿Qué tabla es requerida como producto del taller?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A table summarizing key forensic findings.",
+            "A table listing participants in the class.",
+            "A table of random images.",
+            "A table of inspirational quotes."
+          ],
+          "es-MX": [
+            "Una tabla que resuma los hallazgos forenses principales.",
+            "Una tabla con los participantes de la clase.",
+            "Una tabla de imágenes aleatorias.",
+            "Una tabla de frases inspiradoras."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A table summarizing key forensic findings.",
+          "es-MX": "Una tabla que resuma los hallazgos forenses principales."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "This organizes evidence clearly for decision-makers."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Organiza la evidencia de forma clara para los tomadores de decisiones."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Producto del taller: Diapositiva resumen",
+        "Question Text": {
+          "en-US": [
+            "Which characteristic should a summary slide have?"
+          ],
+          "es-MX": [
+            "¿Qué característica debe tener una diapositiva resumen?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It must explain what happened, the evidence, dates and conclusions clearly.",
+            "It should include decorative animations.",
+            "It can omit evidence if needed.",
+            "It should be written as a long essay."
+          ],
+          "es-MX": [
+            "Debe explicar qué ocurrió, la evidencia, las fechas y las conclusiones de forma clara.",
+            "Debe incluir animaciones decorativas.",
+            "Puede omitir evidencia si es necesario.",
+            "Debe escribirse como un ensayo largo."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It must explain what happened, the evidence, dates and conclusions clearly.",
+          "es-MX": "Debe explicar qué ocurrió, la evidencia, las fechas y las conclusiones de forma clara."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "A summary slide condenses the case into a quick visual briefing."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Una diapositiva resumen condensa el caso en un breve visual rápido."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Actividad independiente",
+        "Question Text": {
+          "en-US": [
+            "What is the purpose of preparing official slides for future classes (69, 70, 72)?"
+          ],
+          "es-MX": [
+            "¿Cuál es el propósito de preparar diapositivas oficiales para las clases futuras (69, 70, 72)?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To maintain visual and narrative consistency throughout the final project.",
+            "To create unrelated slides for each class.",
+            "To experiment with random colors each time.",
+            "To discard previous work and start over."
+          ],
+          "es-MX": [
+            "Mantener consistencia visual y narrativa a lo largo del proyecto final.",
+            "Crear diapositivas sin relación en cada clase.",
+            "Experimentar con colores aleatorios cada vez.",
+            "Descartar trabajos previos y comenzar de nuevo."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To maintain visual and narrative consistency throughout the final project.",
+          "es-MX": "Mantener consistencia visual y narrativa a lo largo del proyecto final."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Consistency strengthens credibility and coherence."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La consistencia refuerza la credibilidad y coherencia del proyecto final."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Reflexión final",
+        "Question Text": {
+          "en-US": [
+            "According to the course, what is a core responsibility of a modern forensic expert?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿cuál es una responsabilidad central del perito forense moderno?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To analyze evidence and communicate it clearly and visually.",
+            "To analyze evidence but avoid explaining it.",
+            "To rely solely on technical jargon.",
+            "To ignore non-technical audiences."
+          ],
+          "es-MX": [
+            "Analizar la evidencia y comunicarla de forma clara y visual.",
+            "Analizar la evidencia pero evitar explicarla.",
+            "Depender únicamente de jerga técnica.",
+            "Ignorar a las audiencias no técnicas."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To analyze evidence and communicate it clearly and visually.",
+          "es-MX": "Analizar la evidencia y comunicarla de forma clara y visual."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Communication is as important as analysis in forensic work."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La comunicación es tan importante como el análisis en el trabajo forense."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Aplicación en caso real",
+        "Question Text": {
+          "en-US": [
+            "If a director needs to understand what happened in 10 seconds, which visual should be prioritized?"
+          ],
+          "es-MX": [
+            "Si un directivo necesita entender qué ocurrió en 10 segundos, ¿qué visual debe priorizarse?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A timeline summarizing the key events.",
+            "A long paragraph describing the incident.",
+            "A decorative image unrelated to the case.",
+            "A chart with no labels."
+          ],
+          "es-MX": [
+            "Una línea de tiempo que resuma los eventos clave.",
+            "Un párrafo largo describiendo el incidente.",
+            "Una imagen decorativa sin relación con el caso.",
+            "Una gráfica sin etiquetas."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A timeline summarizing the key events.",
+          "es-MX": "Una línea de tiempo que resuma los eventos clave."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Timelines are the fastest way to communicate sequence and impact."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las líneas de tiempo son la forma más rápida de comunicar secuencia e impacto."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Errores comunes",
+        "Question Text": {
+          "en-US": [
+            "Which is a common mistake when creating forensic slides?"
+          ],
+          "es-MX": [
+            "¿Cuál es un error común al crear diapositivas forenses?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Using excessive decorative elements that do not support the evidence.",
+            "Keeping information concise and visual.",
+            "Using a consistent color palette.",
+            "Highlighting only the most important data."
+          ],
+          "es-MX": [
+            "Usar elementos decorativos excesivos que no apoyan la evidencia.",
+            "Mantener la información concisa y visual.",
+            "Usar una paleta de colores consistente.",
+            "Resaltar solo los datos más importantes."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Using excessive decorative elements that do not support the evidence.",
+          "es-MX": "Usar elementos decorativos excesivos que no apoyan la evidencia."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Decorations distract and reduce professionalism."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las decoraciones distraen y reducen el profesionalismo."
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

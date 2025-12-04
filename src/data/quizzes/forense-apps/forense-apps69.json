@@ -1,0 +1,1019 @@
+{
+    "meta": {
+      "slug": "forense-apps69",
+      "title": "Integración final de informe y anexos",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 5,
+      "classNo": 69,
+      "description": "Ensamblaje profesional del informe forense, integración de anexos técnicos, evidencias visuales y documentación complementaria para obtener un documento completo, coherente y defendible.",
+      "tags": [
+        "informe forense",
+        "integración final",
+        "anexos técnicos",
+        "evidencia digital",
+        "peer review",
+        "unidad V"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "Importancia de la integración final",
+        "Question Text": {
+          "en-US": [
+            "Why is the final integration phase critical in a forensic report?"
+          ],
+          "es-MX": [
+            "¿Por qué es crítica la fase de integración final en un informe forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it organizes content, annexes and evidence into a clear, coherent and professional document.",
+            "Because it replaces the need for evidence and methodology.",
+            "Because it focuses only on design and ignores technical content.",
+            "Because it allows the analyst to omit incomplete sections."
+          ],
+          "es-MX": [
+            "Porque organiza contenidos, anexos y evidencia en un documento claro, coherente y profesional.",
+            "Porque sustituye la necesidad de evidencia y metodología.",
+            "Porque se enfoca solo en el diseño e ignora el contenido técnico.",
+            "Porque permite que el analista omita secciones incompletas."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it organizes content, annexes and evidence into a clear, coherent and professional document.",
+          "es-MX": "Porque organiza contenidos, anexos y evidencia en un documento claro, coherente y profesional."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Final integration transforms partial work into a complete forensic report."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Avoids contradictions and gaps.",
+                "Ensures traceability from evidence to conclusions.",
+                "Improves readability for judges and directors.",
+                "Gives the report technical and formal validity."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La integración final convierte trabajos parciales en un informe forense completo."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Evita contradicciones y vacíos.",
+                "Garantiza trazabilidad de la evidencia a las conclusiones.",
+                "Mejora la lectura para jueces y directivos.",
+                "Da al informe validez técnica y formal."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Encabezado formal",
+        "Question Text": {
+          "en-US": [
+            "Which elements should a formal forensic report header contain?"
+          ],
+          "es-MX": [
+            "¿Qué elementos debe contener el encabezado formal de un informe forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Analyst name, institution, case number, date, incident type and device/system data.",
+            "Only the analyst's nickname and a generic title.",
+            "A motivational quote and an image.",
+            "Just the case number without any context."
+          ],
+          "es-MX": [
+            "Nombre del analista, institución, número de caso, fecha, tipo de incidente y datos del dispositivo/sistema.",
+            "Solo el apodo del analista y un título genérico.",
+            "Una frase motivacional y una imagen.",
+            "Solo el número de caso sin contexto."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Analyst name, institution, case number, date, incident type and device/system data.",
+          "es-MX": "Nombre del analista, institución, número de caso, fecha, tipo de incidente y datos del dispositivo/sistema."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "The header identifies who signs the report.",
+                "It links the document to a specific case.",
+                "It records when and on what systems the analysis was performed.",
+                "It creates a professional first impression."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "El encabezado identifica quién firma el informe.",
+                "Vincula el documento a un caso específico.",
+                "Registra cuándo y sobre qué sistemas se realizó el análisis.",
+                "Crea una primera impresión profesional."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Resumen ejecutivo",
+        "Question Text": {
+          "en-US": [
+            "What is the main function of the executive summary in a forensic report?"
+          ],
+          "es-MX": [
+            "¿Cuál es la función principal del resumen ejecutivo en un informe forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To briefly answer what happened, what was discovered and what is concluded.",
+            "To list all the tools used in detail.",
+            "To include personal opinions about the people involved.",
+            "To replace the need for reading the rest of the report."
+          ],
+          "es-MX": [
+            "Responder de forma breve qué ocurrió, qué se descubrió y qué se concluye.",
+            "Enumerar con detalle todas las herramientas usadas.",
+            "Incluir opiniones personales sobre las personas involucradas.",
+            "Sustituir la necesidad de leer el resto del informe."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To briefly answer what happened, what was discovered and what is concluded.",
+          "es-MX": "Responder de forma breve qué ocurrió, qué se descubrió y qué se concluye."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The executive summary is written at the end but placed at the beginning for decision-makers."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Helps judges and directors understand the case in minutes.",
+                "Condenses the essence of the investigation.",
+                "Guides the reading of the full report."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El resumen ejecutivo se redacta al final pero se coloca al inicio para los tomadores de decisión."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Ayuda a jueces y directivos a entender el caso en minutos.",
+                "Condensa la esencia de la investigación.",
+                "Guía la lectura del informe completo."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Alcance del análisis",
+        "Question Text": {
+          "en-US": [
+            "Why is it essential to clearly define the scope of the forensic analysis?"
+          ],
+          "es-MX": [
+            "¿Por qué es esencial definir con claridad el alcance del análisis forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it specifies what was analyzed, what was not and the limits of the case, preventing misinterpretations.",
+            "Because it allows the analyst to hide gaps in the investigation.",
+            "Because it replaces the need for methodology.",
+            "Because it is only a decorative section."
+          ],
+          "es-MX": [
+            "Porque especifica qué se analizó, qué no se analizó y los límites del caso, evitando malas interpretaciones.",
+            "Porque permite que el analista oculte vacíos en la investigación.",
+            "Porque sustituye la necesidad de metodología.",
+            "Porque es solo una sección decorativa."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it specifies what was analyzed, what was not and the limits of the case, preventing misinterpretations.",
+          "es-MX": "Porque especifica qué se analizó, qué no se analizó y los límites del caso, evitando malas interpretaciones."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Clarifies the boundaries of responsibility.",
+                "Avoids assumptions about data that was never examined.",
+                "Helps readers understand the context of the conclusions.",
+                "Is fundamental to professional transparency."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Aclara los límites de responsabilidad.",
+                "Evita suposiciones sobre datos que nunca se revisaron.",
+                "Ayuda a entender el contexto de las conclusiones.",
+                "Es fundamental para la transparencia profesional."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Metodología forense",
+        "Question Text": {
+          "en-US": [
+            "What is a key requirement for the forensic methodology section?"
+          ],
+          "es-MX": [
+            "¿Cuál es un requisito clave de la sección de metodología forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It must be clear enough so another analyst can replicate the process.",
+            "It should hide the tools and procedures used.",
+            "It can be omitted if results are already listed.",
+            "It should consist only of general theoretical concepts."
+          ],
+          "es-MX": [
+            "Debe ser lo suficientemente clara para que otro analista pueda replicar el proceso.",
+            "Debe ocultar las herramientas y procedimientos utilizados.",
+            "Puede omitirse si ya se listan los resultados.",
+            "Debe consistir solo en conceptos teóricos generales."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It must be clear enough so another analyst can replicate the process.",
+          "es-MX": "Debe ser lo suficientemente clara para que otro analista pueda replicar el proceso."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Methodology is the backbone of the report's technical reliability."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Includes acquisition and preservation steps.",
+                "Documents integrity verification (hashes).",
+                "Lists tools and procedures used.",
+                "Supports repeatability and auditability."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La metodología es la columna vertebral de la confiabilidad técnica del informe."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Incluye pasos de adquisición y preservación.",
+                "Documenta la verificación de integridad (hashes).",
+                "Enumera herramientas y procedimientos usados.",
+                "Permite repetibilidad y auditoría."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Hallazgos",
+        "Question Text": {
+          "en-US": [
+            "What best describes the 'Findings' section in a forensic report?"
+          ],
+          "es-MX": [
+            "¿Qué descripción define mejor la sección de 'Hallazgos' en un informe forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The central part where key evidence, dates, relevant files and suspicious activities are presented, supported by visuals.",
+            "A section where personal opinions about users are expressed.",
+            "A list of all files on the system without filtering.",
+            "A purely theoretical explanation without evidence."
+          ],
+          "es-MX": [
+            "La parte central donde se presentan evidencia clave, fechas, archivos relevantes y actividades sospechosas, con apoyo visual.",
+            "Una sección donde se expresan opiniones personales sobre los usuarios.",
+            "Una lista de todos los archivos del sistema sin filtrar.",
+            "Una explicación únicamente teórica sin evidencia."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The central part where key evidence, dates, relevant files and suspicious activities are presented, supported by visuals.",
+          "es-MX": "La parte central donde se presentan evidencia clave, fechas, archivos relevantes y actividades sospechosas, con apoyo visual."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Findings show what the evidence actually reveals.",
+                "They connect artifacts with user actions.",
+                "They are usually supported by tables, timelines and screenshots."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Los hallazgos muestran lo que realmente revela la evidencia.",
+                "Conectan artefactos con acciones de usuario.",
+                "Suelen apoyarse en tablas, líneas de tiempo y capturas."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Análisis y correlación de eventos",
+        "Question Text": {
+          "en-US": [
+            "What is the goal of the technical analysis and event correlation section?"
+          ],
+          "es-MX": [
+            "¿Cuál es el objetivo de la sección de análisis técnico y correlación de eventos?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To explain relationships between findings, timelines, actions, files, users and incident impact.",
+            "To repeat the raw logs without interpretation.",
+            "To focus only on design aspects of the report.",
+            "To describe general cybersecurity theory."
+          ],
+          "es-MX": [
+            "Explicar la relación entre hallazgos, líneas de tiempo, acciones, archivos, usuarios y el impacto del incidente.",
+            "Repetir los registros en bruto sin interpretación.",
+            "Centrarse solo en aspectos de diseño del informe.",
+            "Describir teoría general de ciberseguridad."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To explain relationships between findings, timelines, actions, files, users and incident impact.",
+          "es-MX": "Explicar la relación entre hallazgos, líneas de tiempo, acciones, archivos, usuarios y el impacto del incidente."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Correlation gives meaning to isolated data points."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La correlación da sentido a datos aislados."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Conclusiones",
+        "Question Text": {
+          "en-US": [
+            "Which statement best describes proper forensic conclusions?"
+          ],
+          "es-MX": [
+            "¿Qué enunciado describe mejor unas conclusiones forenses adecuadas?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They must be objective, state what can be affirmed, what limitations existed and whether evidence supports or refutes the initial hypothesis.",
+            "They should include moral judgments about the people involved.",
+            "They should speculate beyond the evidence.",
+            "They must hide limitations to make the report appear stronger."
+          ],
+          "es-MX": [
+            "Deben ser objetivas, indicar qué se puede afirmar, qué limitaciones hubo y si la evidencia respalda o descarta la hipótesis inicial.",
+            "Deben incluir juicios morales sobre las personas involucradas.",
+            "Deben especular más allá de la evidencia.",
+            "Deben ocultar limitaciones para que el informe parezca más sólido."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They must be objective, state what can be affirmed, what limitations existed and whether evidence supports or refutes the initial hypothesis.",
+          "es-MX": "Deben ser objetivas, indicar qué se puede afirmar, qué limitaciones hubo y si la evidencia respalda o descarta la hipótesis inicial."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Conclusions are derived from evidence, not opinions.",
+                "Mentioning limitations shows professional honesty.",
+                "They connect findings to the case hypothesis.",
+                "They avoid emotional or personal language."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Las conclusiones se derivan de la evidencia, no de opiniones.",
+                "Mencionar limitaciones muestra honestidad profesional.",
+                "Conectan los hallazgos con la hipótesis del caso.",
+                "Evitan lenguaje emocional o personal."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Recomendaciones",
+        "Question Text": {
+          "en-US": [
+            "In which context are recommendations usually included in the forensic report?"
+          ],
+          "es-MX": [
+            "¿En qué contexto suelen incluirse recomendaciones dentro del informe forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Mainly in corporate or academic reports where improvements or preventive measures are suggested.",
+            "Only in criminal reports to replace conclusions.",
+            "In every report as mandatory legal requirements.",
+            "Never, because recommendations are not part of forensic practice."
+          ],
+          "es-MX": [
+            "Principalmente en informes corporativos o académicos donde se sugieren mejoras o medidas preventivas.",
+            "Solo en informes penales para reemplazar las conclusiones.",
+            "En todos los informes como requisitos legales obligatorios.",
+            "Nunca, porque las recomendaciones no forman parte de la práctica forense."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Mainly in corporate or academic reports where improvements or preventive measures are suggested.",
+          "es-MX": "Principalmente en informes corporativos o académicos donde se sugieren mejoras o medidas preventivas."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Recommendations look to the future: they propose actions derived from the analysis."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las recomendaciones miran hacia el futuro: proponen acciones derivadas del análisis."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Rol de los anexos",
+        "Question Text": {
+          "en-US": [
+            "What is the main role of annexes in a forensic report?"
+          ],
+          "es-MX": [
+            "¿Cuál es el papel principal de los anexos en un informe forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To include complete evidence (hashes, logs, screenshots, exports) without overloading the main sections.",
+            "To replace the findings and conclusions sections.",
+            "To add decorative content that has no evidential value.",
+            "To hide technical details from external reviewers."
+          ],
+          "es-MX": [
+            "Incluir evidencia completa (hashes, logs, capturas, exportaciones) sin saturar las secciones principales.",
+            "Sustituir las secciones de hallazgos y conclusiones.",
+            "Agregar contenido decorativo sin valor probatorio.",
+            "Ocultar detalles técnicos a revisores externos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To include complete evidence (hashes, logs, screenshots, exports) without overloading the main sections.",
+          "es-MX": "Incluir evidencia completa (hashes, logs, capturas, exportaciones) sin saturar las secciones principales."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Annexes support every key statement.",
+                "They allow full validation of the analysis.",
+                "They keep the main body readable and focused."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Los anexos respaldan cada afirmación clave.",
+                "Permiten validar por completo el análisis.",
+                "Mantienen el cuerpo principal legible y enfocado."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Contenido de anexos",
+        "Question Text": {
+          "en-US": [
+            "Which of the following sets corresponds to content that should go into annexes?"
+          ],
+          "es-MX": [
+            "¿Cuál de los siguientes conjuntos corresponde a contenido que debe ir en anexos?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Full hash tables, raw logs, complete timelines, tool exports and annotated screenshots.",
+            "Short executive summary and conclusions.",
+            "Personal biography of the analyst.",
+            "Motivational phrases and unrelated images."
+          ],
+          "es-MX": [
+            "Tablas completas de hashes, logs en bruto, líneas de tiempo completas, exportaciones de herramientas y capturas anotadas.",
+            "Breve resumen ejecutivo y conclusiones.",
+            "Biografía personal del analista.",
+            "Frases motivacionales e imágenes sin relación."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Full hash tables, raw logs, complete timelines, tool exports and annotated screenshots.",
+          "es-MX": "Tablas completas de hashes, logs en bruto, líneas de tiempo completas, exportaciones de herramientas y capturas anotadas."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Annexes store detailed technical evidence that supports the summarized narrative."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los anexos guardan evidencia técnica detallada que respalda la narrativa resumida."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Organización de anexos",
+        "Question Text": {
+          "en-US": [
+            "What is a good way to organize annexes in a forensic report?"
+          ],
+          "es-MX": [
+            "¿Cuál es una buena forma de organizar los anexos en un informe forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Using labels such as Annex A (hash table), Annex B (original timeline), Annex C (screenshots), each with title, number and short description.",
+            "Placing all files in a single unlabelled appendix.",
+            "Ordering annexes randomly without titles.",
+            "Listing annexes only in oral explanation, but not in the document."
+          ],
+          "es-MX": [
+            "Usar etiquetas como Anexo A (tabla de hashes), Anexo B (línea de tiempo original), Anexo C (capturas), cada uno con título, número y breve descripción.",
+            "Poner todos los archivos en un solo apéndice sin etiquetas.",
+            "Ordenar anexos al azar sin títulos.",
+            "Mencionar los anexos solo de forma oral, pero no en el documento."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Using labels such as Annex A (hash table), Annex B (original timeline), Annex C (screenshots), each with title, number and short description.",
+          "es-MX": "Usar etiquetas como Anexo A (tabla de hashes), Anexo B (línea de tiempo original), Anexo C (capturas), cada uno con título, número y breve descripción."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Numbered annexes make navigation easier.",
+                "Titles and descriptions explain their content.",
+                "Structured annexes increase the report's professionalism."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Los anexos numerados facilitan la navegación.",
+                "Los títulos y descripciones explican su contenido.",
+                "Los anexos estructurados aumentan el profesionalismo del informe."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Errores comunes en anexos",
+        "Question Text": {
+          "en-US": [
+            "Which of the following is a common error when integrating annexes?"
+          ],
+          "es-MX": [
+            "¿Cuál de las siguientes es un error común al integrar anexos?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Screenshots without context or explanation.",
+            "Annexes ordered, numbered and described.",
+            "Logs clearly dated and labelled.",
+            "Avoiding duplicated information."
+          ],
+          "es-MX": [
+            "Capturas de pantalla sin contexto ni explicación.",
+            "Anexos ordenados, numerados y descritos.",
+            "Logs claramente fechados y etiquetados.",
+            "Evitar información duplicada."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Screenshots without context or explanation.",
+          "es-MX": "Capturas de pantalla sin contexto ni explicación."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Evidence without context loses value and can confuse readers."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La evidencia sin contexto pierde valor y puede confundir al lector."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Revisión de coherencia interna",
+        "Question Text": {
+          "en-US": [
+            "Which question belongs to the internal coherence review step?"
+          ],
+          "es-MX": [
+            "¿Qué pregunta forma parte de la revisión de coherencia interna?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Do the findings match the conclusions and is the timeline logical?",
+            "Are the slides colorful enough?",
+            "Is the report longer than other students' work?",
+            "Are personal opinions clearly highlighted?"
+          ],
+          "es-MX": [
+            "¿Los hallazgos coinciden con las conclusiones y la línea de tiempo es lógica?",
+            "¿Las diapositivas son lo suficientemente coloridas?",
+            "¿El informe es más largo que el de otros alumnos?",
+            "¿Están resaltadas claramente las opiniones personales?"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Do the findings match the conclusions and is the timeline logical?",
+          "es-MX": "¿Los hallazgos coinciden con las conclusiones y la línea de tiempo es lógica?"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Coherence ensures the story of the case is consistent.",
+                "Contradictions weaken credibility.",
+                "Timelines must support the narrative."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "La coherencia asegura que la historia del caso sea consistente.",
+                "Las contradicciones debilitan la credibilidad.",
+                "Las líneas de tiempo deben respaldar la narrativa."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Verificación de integridad",
+        "Question Text": {
+          "en-US": [
+            "What should be checked during the integrity verification step of the report?"
+          ],
+          "es-MX": [
+            "¿Qué debe verificarse en la fase de verificación de integridad del informe?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Correct hashes, documented processes and reproducible methodology.",
+            "Only spelling and font size.",
+            "Whether the report has many images.",
+            "If the report can be summarized in one sentence."
+          ],
+          "es-MX": [
+            "Hashes correctos, procesos documentados y metodología reproducible.",
+            "Solo ortografía y tamaño de fuente.",
+            "Si el informe tiene muchas imágenes.",
+            "Si el informe puede resumirse en una sola oración."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Correct hashes, documented processes and reproducible methodology.",
+          "es-MX": "Hashes correctos, procesos documentados y metodología reproducible."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Integrity verification ensures that evidence and procedures can be trusted."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La verificación de integridad asegura que la evidencia y los procedimientos sean confiables."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Unificación de estilo",
+        "Question Text": {
+          "en-US": [
+            "Which aspect belongs to the style unification step?"
+          ],
+          "es-MX": [
+            "¿Qué aspecto forma parte de la unificación de estilo?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Checking fonts, headings, numbering, tables, colors and margins for a homogeneous professional look.",
+            "Randomly changing styles to show creativity.",
+            "Using different formatting in each section.",
+            "Ignoring visual consistency and focusing only on content."
+          ],
+          "es-MX": [
+            "Revisar fuentes, encabezados, numeración, tablas, colores y márgenes para un aspecto profesional homogéneo.",
+            "Cambiar estilos al azar para mostrar creatividad.",
+            "Usar un formato distinto en cada sección.",
+            "Ignorar la consistencia visual y centrarse solo en el contenido."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Checking fonts, headings, numbering, tables, colors and margins for a homogeneous professional look.",
+          "es-MX": "Revisar fuentes, encabezados, numeración, tablas, colores y márgenes para un aspecto profesional homogéneo."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Consistent style communicates order and care.",
+                "It helps readers navigate the document.",
+                "It reinforces the professional image of the expert."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "El estilo consistente comunica orden y cuidado.",
+                "Ayuda al lector a navegar el documento.",
+                "Refuerza la imagen profesional del perito."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Revisión por pares",
+        "Question Text": {
+          "en-US": [
+            "What is the main purpose of the peer review activity in class?"
+          ],
+          "es-MX": [
+            "¿Cuál es el propósito principal de la actividad de revisión por pares en clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To receive structured feedback on evidence, clarity, methodology, annexes and style from another student.",
+            "To compare grades and compete.",
+            "To allow others to rewrite the report completely.",
+            "To focus only on design and ignore technical content."
+          ],
+          "es-MX": [
+            "Recibir retroalimentación estructurada sobre evidencia, claridad, metodología, anexos y estilo de otro compañero.",
+            "Comparar calificaciones y competir.",
+            "Permitir que otros reescriban por completo el informe.",
+            "Centrarse solo en el diseño e ignorar el contenido técnico."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To receive structured feedback on evidence, clarity, methodology, annexes and style from another student.",
+          "es-MX": "Recibir retroalimentación estructurada sobre evidencia, claridad, metodología, anexos y estilo de otro compañero."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Peer review reveals issues the author did not see.",
+                "It simulates external review in real forensic work.",
+                "It improves both technical and communication quality."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "La revisión por pares revela problemas que el autor no vio.",
+                "Simula la revisión externa en el trabajo forense real.",
+                "Mejora tanto la calidad técnica como la comunicativa."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Retroalimentación escrita",
+        "Question Text": {
+          "en-US": [
+            "What elements should written peer feedback include according to the class?"
+          ],
+          "es-MX": [
+            "¿Qué elementos debe incluir la retroalimentación escrita según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Three strengths, three areas for improvement, specific recommendations and technical observations.",
+            "Only a numeric grade.",
+            "General comments like 'good' or 'bad' with no detail.",
+            "Personal opinions unrelated to the report."
+          ],
+          "es-MX": [
+            "Tres puntos fuertes, tres áreas de mejora, recomendaciones específicas y observaciones técnicas.",
+            "Solo una calificación numérica.",
+            "Comentarios generales como 'bien' o 'mal' sin detalle.",
+            "Opiniones personales sin relación con el informe."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Three strengths, three areas for improvement, specific recommendations and technical observations.",
+          "es-MX": "Tres puntos fuertes, tres áreas de mejora, recomendaciones específicas y observaciones técnicas."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Structured feedback turns review into a concrete improvement tool."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La retroalimentación estructurada convierte la revisión en una herramienta concreta de mejora."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Corrección posterior a la revisión",
+        "Question Text": {
+          "en-US": [
+            "What is expected from the student after receiving peer review?"
+          ],
+          "es-MX": [
+            "¿Qué se espera del alumno después de recibir la revisión por pares?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To correct the report, reorganize annexes, adjust visual style, improve clarity and fix inconsistencies.",
+            "To ignore the feedback and submit the original version.",
+            "To shorten the report without checking content.",
+            "To focus only on changing colors."
+          ],
+          "es-MX": [
+            "Corregir el informe, reorganizar anexos, ajustar el estilo visual, mejorar la claridad y reparar inconsistencias.",
+            "Ignorar la retroalimentación y entregar la versión original.",
+            "Acortar el informe sin revisar el contenido.",
+            "Centrarse solo en cambiar colores."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To correct the report, reorganize annexes, adjust visual style, improve clarity and fix inconsistencies.",
+          "es-MX": "Corregir el informe, reorganizar anexos, ajustar el estilo visual, mejorar la claridad y reparar inconsistencias."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Review is followed by concrete corrections.",
+                "The result is a stronger version for classes 70 and 72.",
+                "This simulates iterative refinement in real expert work."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "La revisión va seguida de correcciones concretas.",
+                "El resultado es una versión más sólida para las clases 70 y 72.",
+                "Simula el refinamiento iterativo del trabajo pericial real."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Reflexión final sobre integración",
+        "Question Text": {
+          "en-US": [
+            "According to the final reflection, what does integrating a forensic report really mean?"
+          ],
+          "es-MX": [
+            "Según la reflexión final, ¿qué significa realmente integrar un informe forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Converting technical analyses into a structured, professional and verifiable document.",
+            "Simply joining all files in a single folder.",
+            "Writing conclusions without reading the findings.",
+            "Adding annexes without linking them to the main text."
+          ],
+          "es-MX": [
+            "Convertir análisis técnicos en un documento estructurado, profesional y verificable.",
+            "Solo juntar todos los archivos en una misma carpeta.",
+            "Redactar conclusiones sin leer los hallazgos.",
+            "Agregar anexos sin vincularlos al texto principal."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Converting technical analyses into a structured, professional and verifiable document.",
+          "es-MX": "Convertir análisis técnicos en un documento estructurado, profesional y verificable."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Integration marks the transition from an academic draft to a professional report ready for public defense."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La integración marca el paso de un borrador académico a un informe profesional listo para ser defendido públicamente."
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

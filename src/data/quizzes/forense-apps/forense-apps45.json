@@ -1,0 +1,815 @@
+{
+    "meta": {
+      "slug": "forense-apps45",
+      "title": "Análisis forense de imágenes y metadatos EXIF",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 4,
+      "classNo": 45,
+      "description": "Técnicas forenses para analizar fotografías y capturas de pantalla, interpretando EXIF, GPS, modelo de dispositivo y señales de edición para evaluar autenticidad.",
+      "tags": [
+        "imágenes",
+        "EXIF",
+        "GPS",
+        "fotografía forense",
+        "autenticidad",
+        "Forensically",
+        "ExifTool"
+      ]
+    },
+    "Questions": [
+  
+      {
+        "Category": "Importancia de las imágenes",
+        "Question Text": {
+          "en-US": [
+            "Why are images often more valuable than the text message they are attached to in a forensic investigation?"
+          ],
+          "es-MX": [
+            "¿Por qué en una investigación forense las imágenes suelen ser más valiosas que el mensaje de texto al que están adjuntas?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because they can store EXIF data, GPS, device model and visual details that the text does not include.",
+            "Because images are easier to read than text for investigators.",
+            "Because images are never modified by applications.",
+            "Because messages are automatically deleted, but images never are."
+          ],
+          "es-MX": [
+            "Porque pueden almacenar EXIF, GPS, modelo de dispositivo y detalles visuales que el texto no incluye.",
+            "Porque las imágenes son más fáciles de leer que el texto para los investigadores.",
+            "Porque las imágenes nunca son modificadas por las aplicaciones.",
+            "Porque los mensajes se borran siempre y las imágenes nunca."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because they can store EXIF data, GPS, device model and visual details that the text does not include.",
+          "es-MX": "Porque pueden almacenar EXIF, GPS, modelo de dispositivo y detalles visuales que el texto no incluye."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Images may contain EXIF metadata with timestamps, GPS coordinates, camera model, software used and compression patterns, which allow investigators to locate people, validate timelines and detect manipulation beyond what the message text reveals."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las imágenes pueden incluir metadatos EXIF con fechas, coordenadas GPS, modelo de cámara, software y patrones de compresión, lo que permite ubicar personas, validar cronologías y detectar manipulaciones más allá de lo que dice el texto del mensaje."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Tipos de imágenes",
+        "Question Text": {
+          "en-US": [
+            "Which statement best describes the difference between an original photograph and a screenshot from a forensic point of view?"
+          ],
+          "es-MX": [
+            "¿Qué enunciado describe mejor la diferencia entre una fotografía original y una captura de pantalla desde el punto de vista forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Original photos usually contain full EXIF (DateTimeOriginal, GPS, model), while screenshots often lack detailed EXIF but include on-screen context such as notifications and clock.",
+            "Screenshots always contain more EXIF data than original photos.",
+            "Original photos never contain GPS, only screenshots do.",
+            "There is no forensic difference; both have identical metadata."
+          ],
+          "es-MX": [
+            "Las fotos originales suelen contener EXIF completo (DateTimeOriginal, GPS, modelo), mientras que las capturas suelen carecer de EXIF detallado pero incluyen contexto en pantalla como notificaciones y reloj.",
+            "Las capturas siempre tienen más EXIF que las fotos originales.",
+            "Las fotos originales nunca traen GPS, solo las capturas.",
+            "No hay diferencia forense; ambas tienen metadatos idénticos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Original photos usually contain full EXIF (DateTimeOriginal, GPS, model), while screenshots often lack detailed EXIF but include on-screen context such as notifications and clock.",
+          "es-MX": "Las fotos originales suelen contener EXIF completo (DateTimeOriginal, GPS, modelo), mientras que las capturas suelen carecer de EXIF detallado pero incluyen contexto en pantalla como notificaciones y reloj."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Original camera photos provide rich EXIF fields, while screenshots are generated by the operating system and typically include only basic file system timestamps but show UI elements (status bar, apps, clock) that also have evidential value."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las fotos tomadas con cámara guardan EXIF completo, mientras que las capturas las genera el sistema operativo y suelen tener solo marcas de tiempo de archivo pero muestran elementos de la interfaz (barra de estado, apps, reloj) que también aportan evidencia."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "EXIF básico",
+        "Question Text": {
+          "en-US": [
+            "Which EXIF field is considered the most reliable indicator of the real capture time of a photograph?"
+          ],
+          "es-MX": [
+            "¿Qué campo EXIF se considera el indicador más confiable de la hora real de captura de una fotografía?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "DateTimeOriginal",
+            "FileName",
+            "FileSize",
+            "ImageWidth"
+          ],
+          "es-MX": [
+            "DateTimeOriginal",
+            "FileName",
+            "FileSize",
+            "ImageWidth"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "DateTimeOriginal",
+          "es-MX": "DateTimeOriginal"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "DateTimeOriginal is written when the camera sensor captures the image, making it the key reference for the real moment of capture, unlike file system timestamps that can change when copying or editing the file."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "DateTimeOriginal se genera en el momento en que el sensor captura la foto, por lo que es la referencia principal para la hora real de captura, a diferencia de los timestamps del sistema de archivos que pueden cambiar al copiar o editar."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "GPS en EXIF",
+        "Question Text": {
+          "en-US": [
+            "Which EXIF tags provide the geographic location where a photograph was taken?"
+          ],
+          "es-MX": [
+            "¿Qué etiquetas EXIF proporcionan la ubicación geográfica donde se tomó una fotografía?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "GPSLatitude and GPSLongitude",
+            "ImageWidth and ImageHeight",
+            "Orientation and ColorSpace",
+            "ISO and ShutterSpeed"
+          ],
+          "es-MX": [
+            "GPSLatitude y GPSLongitude",
+            "ImageWidth e ImageHeight",
+            "Orientation y ColorSpace",
+            "ISO y ShutterSpeed"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "GPSLatitude and GPSLongitude",
+          "es-MX": "GPSLatitude y GPSLongitude"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "GPSLatitude and GPSLongitude store coordinates that can be plotted on a map, allowing investigators to locate the exact or approximate place where the photo was taken, which is critical for reconstructing events."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "GPSLatitude y GPSLongitude almacenan coordenadas que pueden representarse en un mapa, permitiendo ubicar el lugar exacto o aproximado de la captura, clave para reconstruir hechos."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Modelo de dispositivo",
+        "Question Text": {
+          "en-US": [
+            "Which EXIF fields help identify the brand and model of the device that captured an image?"
+          ],
+          "es-MX": [
+            "¿Qué campos EXIF ayudan a identificar la marca y el modelo del dispositivo que capturó una imagen?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Make and Model",
+            "ISO and Aperture",
+            "ResolutionX and ResolutionY",
+            "ThumbnailOffset and ThumbnailLength"
+          ],
+          "es-MX": [
+            "Make y Model",
+            "ISO y Aperture",
+            "ResolutionX y ResolutionY",
+            "ThumbnailOffset y ThumbnailLength"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Make and Model",
+          "es-MX": "Make y Model"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Make typically stores the manufacturer (for example Apple, Samsung, Huawei), and Model stores the exact device model, allowing correlation with seized devices in a case."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Make suele indicar el fabricante (por ejemplo Apple, Samsung, Huawei) y Model el modelo exacto, lo que permite correlacionar la imagen con dispositivos asegurados en un caso."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Software de edición",
+        "Question Text": {
+          "en-US": [
+            "Why is the EXIF Software field important in detecting image manipulation?"
+          ],
+          "es-MX": [
+            "¿Por qué es importante el campo EXIF Software para detectar manipulación de imágenes?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it can reveal that the image passed through editing tools such as Photoshop, Lightroom or Snapseed.",
+            "Because it encrypts the image content.",
+            "Because it automatically deletes all other EXIF fields.",
+            "Because it hides GPS information."
+          ],
+          "es-MX": [
+            "Porque puede revelar que la imagen pasó por herramientas de edición como Photoshop, Lightroom o Snapseed.",
+            "Porque cifra el contenido de la imagen.",
+            "Porque borra automáticamente todos los demás EXIF.",
+            "Porque oculta la información GPS."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it can reveal that the image passed through editing tools such as Photoshop, Lightroom or Snapseed.",
+          "es-MX": "Porque puede revelar que la imagen pasó por herramientas de edición como Photoshop, Lightroom o Snapseed."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "If Software indicates applications like Adobe Lightroom or Snapseed, it suggests the image was processed or edited, which may affect its authenticity and must be documented in the forensic report."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Si Software indica aplicaciones como Adobe Lightroom o Snapseed, sugiere que la imagen fue procesada o editada, lo cual impacta su autenticidad y debe documentarse en el informe forense."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Eliminación de EXIF",
+        "Question Text": {
+          "en-US": [
+            "What can the complete removal of EXIF metadata from an image indicate in a forensic context?"
+          ],
+          "es-MX": [
+            "¿Qué puede indicar en contexto forense la eliminación completa de los metadatos EXIF de una imagen?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "That someone may have intentionally tried to hide capture, location or device information.",
+            "That the image is always more authentic.",
+            "That the device is too old to generate EXIF.",
+            "That the file cannot be opened anymore."
+          ],
+          "es-MX": [
+            "Que alguien pudo haber intentado ocultar información de captura, ubicación o dispositivo.",
+            "Que la imagen siempre es más auténtica.",
+            "Que el dispositivo es demasiado antiguo para generar EXIF.",
+            "Que el archivo ya no se puede abrir."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "That someone may have intentionally tried to hide capture, location or device information.",
+          "es-MX": "Que alguien pudo haber intentado ocultar información de captura, ubicación o dispositivo."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Removing all EXIF does not prove manipulation by itself, but it is a red flag because it erases evidence about time, place and device that could be relevant for the case."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Eliminar todo el EXIF no prueba por sí solo una manipulación, pero es una señal de alerta porque borra evidencia sobre tiempo, lugar y dispositivo que podría ser relevante en el caso."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Capturas de pantalla",
+        "Question Text": {
+          "en-US": [
+            "Even if a screenshot has little or no EXIF, which elements on the image can still provide strong evidential value?"
+          ],
+          "es-MX": [
+            "Aunque una captura de pantalla tenga poco o nada de EXIF, ¿qué elementos visibles pueden seguir aportando un gran valor probatorio?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Status bar clock, notifications, app layout and visible conversation content.",
+            "Only the file size.",
+            "Only the file name extension.",
+            "Only the device battery percentage."
+          ],
+          "es-MX": [
+            "El reloj de la barra de estado, notificaciones, diseño de la app y contenido visible de la conversación.",
+            "Solo el tamaño del archivo.",
+            "Solo la extensión del nombre del archivo.",
+            "Solo el porcentaje de batería."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Status bar clock, notifications, app layout and visible conversation content.",
+          "es-MX": "El reloj de la barra de estado, notificaciones, diseño de la app y contenido visible de la conversación."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Screenshots can show the exact time visible on the phone, incoming notifications, participants in a chat and app UI, which helps reconstruct user activity and timelines even without full EXIF."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las capturas permiten ver la hora mostrada en pantalla, notificaciones, participantes de un chat y la interfaz de la app, lo que ayuda a reconstruir actividad y cronología aunque no haya EXIF completo."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Imágenes en apps de mensajería",
+        "Question Text": {
+          "en-US": [
+            "What typically happens to EXIF data when an image is sent through messaging apps such as WhatsApp or Telegram?"
+          ],
+          "es-MX": [
+            "¿Qué suele ocurrir con los datos EXIF cuando una imagen se envía por apps de mensajería como WhatsApp o Telegram?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Part of the EXIF is removed or altered, but resolution, compression patterns and app-level metadata are preserved.",
+            "EXIF becomes more complete and detailed.",
+            "EXIF is fully duplicated and stored twice.",
+            "The file is converted into plain text."
+          ],
+          "es-MX": [
+            "Se elimina o altera parte del EXIF, pero se conservan la resolución, patrones de compresión y metadatos a nivel de aplicación.",
+            "El EXIF se vuelve más completo y detallado.",
+            "El EXIF se duplica y se guarda dos veces.",
+            "El archivo se convierte en texto plano."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Part of the EXIF is removed or altered, but resolution, compression patterns and app-level metadata are preserved.",
+          "es-MX": "Se elimina o altera parte del EXIF, pero se conservan la resolución, patrones de compresión y metadatos a nivel de aplicación."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Messaging platforms often strip GPS or device identifiers to save space and protect privacy, but leave traces in compression, resolution and internal structures that still allow forensic analysis."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las plataformas de mensajería suelen eliminar GPS o identificadores de dispositivo para ahorrar espacio y proteger privacidad, pero dejan rastros en la compresión, resolución y estructuras internas útiles para el análisis forense."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Herramientas EXIF",
+        "Question Text": {
+          "en-US": [
+            "Which tool is primarily used for deep EXIF extraction and analysis of image metadata?"
+          ],
+          "es-MX": [
+            "¿Qué herramienta se utiliza principalmente para la extracción profunda y análisis de metadatos EXIF en imágenes?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "ExifTool",
+            "Excel",
+            "PowerPoint",
+            "Discord"
+          ],
+          "es-MX": [
+            "ExifTool",
+            "Excel",
+            "PowerPoint",
+            "Discord"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "ExifTool",
+          "es-MX": "ExifTool"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "ExifTool is a command-line utility specialized in reading and writing metadata from many image formats, including EXIF, XMP and IPTC, and is a standard in digital forensics."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "ExifTool es una herramienta de línea de comandos especializada en leer y escribir metadatos en múltiples formatos de imagen (EXIF, XMP, IPTC) y es un estándar en informática forense."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Detección de edición visual",
+        "Question Text": {
+          "en-US": [
+            "Which online tool can help detect visual manipulation using techniques such as Error Level Analysis (ELA)?"
+          ],
+          "es-MX": [
+            "¿Qué herramienta en línea puede ayudar a detectar manipulación visual usando técnicas como Error Level Analysis (ELA)?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Forensically",
+            "DB Browser for SQLite",
+            "VLC Player",
+            "WinRAR"
+          ],
+          "es-MX": [
+            "Forensically",
+            "DB Browser for SQLite",
+            "VLC Player",
+            "WinRAR"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Forensically",
+          "es-MX": "Forensically"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Forensically offers ELA and other analysis modules (noise analysis, clone detection) that highlight regions with different compression levels, which can indicate splicing or local edits."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Forensically ofrece ELA y otros módulos (análisis de ruido, detección de clonados) que resaltan zonas con niveles de compresión distintos, lo que puede indicar montajes o ediciones locales."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Procedimiento forense",
+        "Question Text": {
+          "en-US": [
+            "According to the recommended procedure, what is the correct order of the first three steps when analyzing an image?"
+          ],
+          "es-MX": [
+            "Según el procedimiento recomendado, ¿cuál es el orden correcto de los tres primeros pasos al analizar una imagen?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Initial visual preview, EXIF extraction, hash calculation.",
+            "Hash calculation, delete EXIF, resize image.",
+            "EXIF extraction, heavy editing, social media upload.",
+            "File renaming, format conversion, color correction."
+          ],
+          "es-MX": [
+            "Previsualización inicial, extracción de EXIF, cálculo de hash.",
+            "Cálculo de hash, borrar EXIF, redimensionar la imagen.",
+            "Extracción de EXIF, edición fuerte, subir a redes sociales.",
+            "Cambiar nombre de archivo, convertir formato, corregir color."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Initial visual preview, EXIF extraction, hash calculation.",
+          "es-MX": "Previsualización inicial, extracción de EXIF, cálculo de hash."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The examiner first inspects the image visually and documents its basic properties, then extracts EXIF with tools like ExifTool, and finally computes a hash to preserve integrity before deeper analysis."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El perito primero revisa visualmente la imagen y documenta sus propiedades básicas, después extrae EXIF con herramientas como ExifTool y finalmente calcula un hash para preservar la integridad antes del análisis profundo."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Hash e integridad",
+        "Question Text": {
+          "en-US": [
+            "Why is calculating a SHA-256 hash of the image file essential in forensic practice?"
+          ],
+          "es-MX": [
+            "¿Por qué es esencial calcular un hash SHA-256 del archivo de imagen en la práctica forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it allows proving that the file has not been modified after acquisition.",
+            "Because it improves the image resolution.",
+            "Because it automatically restores deleted EXIF metadata.",
+            "Because it hides sensitive content from the judge."
+          ],
+          "es-MX": [
+            "Porque permite demostrar que el archivo no se modificó después de la adquisición.",
+            "Porque mejora la resolución de la imagen.",
+            "Porque restaura automáticamente el EXIF eliminado.",
+            "Porque oculta el contenido sensible al juez."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it allows proving that the file has not been modified after acquisition.",
+          "es-MX": "Porque permite demostrar que el archivo no se modificó después de la adquisición."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "A cryptographic hash acts as a digital fingerprint. If the hash remains the same, the court can be confident that the image presented is identical to the one originally extracted."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Un hash criptográfico funciona como huella digital. Si el hash se mantiene igual, el tribunal puede confiar en que la imagen presentada es idéntica a la extraída originalmente."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Inconsistencias temporales",
+        "Question Text": {
+          "en-US": [
+            "What may a large discrepancy between DateTimeOriginal and the file's ModifyDate suggest?"
+          ],
+          "es-MX": [
+            "¿Qué puede sugerir una gran discrepancia entre DateTimeOriginal y el ModifyDate del archivo?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "That the image might have been edited, exported or copied at a later time.",
+            "That the device never had a correct clock.",
+            "That EXIF is always unreliable.",
+            "That the file system is corrupted beyond analysis."
+          ],
+          "es-MX": [
+            "Que la imagen pudo haber sido editada, exportada o copiada en un momento posterior.",
+            "Que el dispositivo nunca tuvo reloj correcto.",
+            "Que el EXIF siempre es poco confiable.",
+            "Que el sistema de archivos está tan dañado que no se puede analizar."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "That the image might have been edited, exported or copied at a later time.",
+          "es-MX": "Que la imagen pudo haber sido editada, exportada o copiada en un momento posterior."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "DateTimeOriginal usually reflects the capture, while ModifyDate and file system timestamps change when the file is edited or moved, so differences help detect post-processing."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "DateTimeOriginal suele reflejar la captura, mientras que ModifyDate y los timestamps del sistema de archivos cambian al editar o mover el archivo, por lo que las diferencias ayudan a detectar posprocesado."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Miniaturas internas",
+        "Question Text": {
+          "en-US": [
+            "Why can the ThumbnailImage stored in EXIF be useful in an investigation?"
+          ],
+          "es-MX": [
+            "¿Por qué la miniatura interna (ThumbnailImage) almacenada en el EXIF puede ser útil en una investigación?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it may show an earlier or uncropped version of the image, revealing elements removed in the main picture.",
+            "Because it always has higher resolution than the main image.",
+            "Because it replaces the need for hashing.",
+            "Because it automatically decrypts the photo."
+          ],
+          "es-MX": [
+            "Porque puede mostrar una versión anterior o sin recorte de la imagen, revelando elementos que se quitaron en la foto principal.",
+            "Porque siempre tiene más resolución que la imagen principal.",
+            "Porque sustituye la necesidad de calcular hash.",
+            "Porque descifra automáticamente la foto."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it may show an earlier or uncropped version of the image, revealing elements removed in the main picture.",
+          "es-MX": "Porque puede mostrar una versión anterior o sin recorte de la imagen, revelando elementos que se quitaron en la foto principal."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The embedded thumbnail is sometimes not updated after editing, keeping a small copy of the original frame that may include objects, people or regions that were later cropped or blurred."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La miniatura embebida a veces no se actualiza tras la edición y conserva una copia pequeña del encuadre original, donde pueden aparecer objetos, personas o zonas que luego fueron recortadas o difuminadas."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Orientación",
+        "Question Text": {
+          "en-US": [
+            "What information does the EXIF Orientation field provide to a forensic analyst?"
+          ],
+          "es-MX": [
+            "¿Qué información aporta el campo EXIF Orientation al analista forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Whether the image was taken in portrait or landscape and if it was rotated by the device or software.",
+            "The number of people in the photo.",
+            "The zoom level used in the shot.",
+            "The brightness of each pixel."
+          ],
+          "es-MX": [
+            "Si la imagen fue tomada en vertical u horizontal y si fue rotada por el dispositivo o algún software.",
+            "El número de personas en la foto.",
+            "El nivel de zoom usado en la toma.",
+            "El brillo de cada píxel."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Whether the image was taken in portrait or landscape and if it was rotated by the device or software.",
+          "es-MX": "Si la imagen fue tomada en vertical u horizontal y si fue rotada por el dispositivo o algún software."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Orientation flags indicate how the image should be displayed and can show if it has been rotated after capture, which might correlate with user behavior or editing steps."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las banderas de Orientation indican cómo debe mostrarse la imagen y pueden evidenciar si fue girada después de capturarla, lo que se correlaciona con el comportamiento del usuario o pasos de edición."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Correlación contextual",
+        "Question Text": {
+          "en-US": [
+            "Why must EXIF timestamps be correlated with the messaging timeline and other events in the case?"
+          ],
+          "es-MX": [
+            "¿Por qué los timestamps EXIF deben correlacionarse con la línea temporal de mensajería y otros eventos del caso?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To confirm whether the image truly matches the narrative, messages and reported moments.",
+            "To replace the need to analyze chat logs.",
+            "To avoid having to calculate any hashes.",
+            "To automatically anonymize all participants."
+          ],
+          "es-MX": [
+            "Para confirmar si la imagen realmente coincide con la narración, los mensajes y los momentos reportados.",
+            "Para sustituir la necesidad de analizar los chats.",
+            "Para evitar calcular cualquier hash.",
+            "Para anonimizar automáticamente a todos los participantes."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To confirm whether the image truly matches the narrative, messages and reported moments.",
+          "es-MX": "Para confirmar si la imagen realmente coincide con la narración, los mensajes y los momentos reportados."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "EXIF alone is not enough. Investigators must compare capture times, message timestamps, GPS location and witness statements to validate or refute the version of events."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El EXIF por sí solo no basta. Se deben comparar horas de captura, timestamps de mensajes, ubicación GPS y declaraciones para validar o refutar la versión de los hechos."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Herramientas integradas",
+        "Question Text": {
+          "en-US": [
+            "Which tools mentioned in this unit can provide a unified view of images and their metadata within broader digital evidence?"
+          ],
+          "es-MX": [
+            "¿Qué herramientas mencionadas en esta unidad pueden ofrecer una vista unificada de imágenes y sus metadatos dentro de la evidencia digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Autopsy and Magnet AXIOM",
+            "Paint and Notepad",
+            "Telegram and WhatsApp",
+            "Chrome and Firefox"
+          ],
+          "es-MX": [
+            "Autopsy y Magnet AXIOM",
+            "Paint y Bloc de notas",
+            "Telegram y WhatsApp",
+            "Chrome y Firefox"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Autopsy and Magnet AXIOM",
+          "es-MX": "Autopsy y Magnet AXIOM"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Both Autopsy and Magnet AXIOM can ingest full images of devices, parse EXIF and other metadata, and link pictures to chats, timelines and other artifacts, giving a complete context to each photo."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Autopsy y Magnet AXIOM permiten cargar imágenes forenses de dispositivos, interpretar EXIF y otros metadatos, y vincular fotografías con chats, líneas de tiempo y artefactos, dando contexto completo a cada imagen."
+            }
+          ]
+        }
+      }
+  
+    ]
+  }
+  

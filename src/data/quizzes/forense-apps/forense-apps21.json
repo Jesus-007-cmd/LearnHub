@@ -1,0 +1,668 @@
+{
+    "meta": {
+      "slug": "forense-apps21",
+      "title": "Extracción de datos de Telegram (Android y Desktop)",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 2,
+      "classNo": 21,
+      "description": "Análisis de la estructura interna de Telegram en Android y escritorio, identificando archivos TDB, MAP, TDATA y carpetas de multimedia para la extracción forense.",
+      "tags": [
+        "telegram",
+        "android",
+        "desktop",
+        "tdb",
+        "map",
+        "tdata",
+        "multimedia",
+        "forense"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "Complejidad forense de Telegram",
+        "Question Text": {
+          "en-US": [
+            "Why is Telegram considered a complex application from a forensic analysis perspective?",
+            "What main characteristics of Telegram increase the difficulty of digital forensic investigations?"
+          ],
+          "es-MX": [
+            "¿Por qué se considera a Telegram una aplicación compleja desde el punto de vista del análisis forense?",
+            "¿Qué características principales de Telegram aumentan la dificultad de las investigaciones forenses digitales?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it includes secret chats with self-destruct, client–server encryption, multi-device sync, mixed local+cloud storage and on-demand downloads",
+            "Because it stores all data only in plain text files without any encryption or sync",
+            "Because it can only be used on one device and never syncs with the cloud",
+            "Because it automatically saves all messages permanently on the SIM card with no cloud component"
+          ],
+          "es-MX": [
+            "Porque incluye chats secretos con autodestrucción, cifrado cliente–servidor, sincronización multi-dispositivo, almacenamiento mixto local+nube y descargas bajo demanda",
+            "Porque guarda todos los datos sólo en archivos de texto plano sin ningún tipo de cifrado ni sincronización",
+            "Porque sólo puede usarse en un solo dispositivo y nunca se sincroniza con la nube",
+            "Porque guarda todos los mensajes de forma permanente sólo en la tarjeta SIM sin componente en la nube"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it includes secret chats with self-destruct, client–server encryption, multi-device sync, mixed local+cloud storage and on-demand downloads",
+          "es-MX": "Porque incluye chats secretos con autodestrucción, cifrado cliente–servidor, sincronización multi-dispositivo, almacenamiento mixto local+nube y descargas bajo demanda"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Secret chats and self-destruct make some content disappear from the device after a period of time.",
+                "Client–server encryption and cloud-based storage limit what is stored locally in readable form.",
+                "Multi-device synchronization means data can be split across phone and desktop.",
+                "On-demand download implies that not all media is stored locally at all times."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "All these factors combined make Telegram more challenging to examine than traditional apps that store everything in simple local databases."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Los chats secretos y la autodestrucción hacen que parte del contenido desaparezca del dispositivo tras cierto tiempo.",
+                "El cifrado cliente–servidor y el uso intensivo de la nube limitan lo que queda en el dispositivo en forma legible.",
+                "La sincronización entre varios dispositivos reparte la información entre móvil y escritorio.",
+                "Las descargas bajo demanda implican que no todo el contenido multimedia está siempre almacenado localmente."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "En conjunto, estos elementos hacen que Telegram sea más difícil de analizar que aplicaciones que guardan todo en bases locales simples."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Rutas clave en Android",
+        "Question Text": {
+          "en-US": [
+            "Which option correctly identifies the two main storage locations used by Telegram on Android for forensic purposes?",
+            "On Android, where are Telegram’s internal app files and main databases typically stored?"
+          ],
+          "es-MX": [
+            "¿Qué opción identifica correctamente las dos ubicaciones principales de almacenamiento usadas por Telegram en Android con interés forense?",
+            "En Android, ¿dónde se almacenan normalmente los archivos internos de la app y las bases de datos principales de Telegram?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "/Android/data/org.telegram.messenger/files/ and /data/data/org.telegram.messenger/",
+            "/System/boot/telegram/ and /sdcard/bootloader/",
+            "/Windows/System32/Telegram/ and /Program Files/Telegram/",
+            "/Android/media/system/ and /data/data/com.whatsapp/"
+          ],
+          "es-MX": [
+            "/Android/data/org.telegram.messenger/files/ y /data/data/org.telegram.messenger/",
+            "/System/boot/telegram/ y /sdcard/bootloader/",
+            "/Windows/System32/Telegram/ y /Program Files/Telegram/",
+            "/Android/media/system/ y /data/data/com.whatsapp/"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "/Android/data/org.telegram.messenger/files/ and /data/data/org.telegram.messenger/",
+          "es-MX": "/Android/data/org.telegram.messenger/files/ y /data/data/org.telegram.messenger/"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "The external-like app folder (/Android/data/...) holds downloads, media, thumbnails and some configuration files.",
+                "The internal data folder (/data/data/...) holds core databases (.tdb), WAL/SHM files, caches and account configuration.",
+                "Access to /data/data requires root or forensic extraction, but it is where the most valuable structured data resides."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "La carpeta de la app en /Android/data/... contiene descargas, multimedia, miniaturas y algunos archivos de configuración.",
+                "La carpeta interna /data/data/... almacena las bases TDB, archivos WAL/SHM, cachés y configuración de cuentas.",
+                "El acceso a /data/data requiere root o extracción forense, pero ahí se concentra la información estructurada más valiosa."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Contenido de las bases TDB",
+        "Question Text": {
+          "en-US": [
+            "What kind of information is typically stored inside Telegram’s .tdb databases on Android?",
+            "From a forensic point of view, what do TDB files in Telegram Android usually contain?"
+          ],
+          "es-MX": [
+            "¿Qué tipo de información se almacena normalmente dentro de las bases .tdb de Telegram en Android?",
+            "Desde el punto de vista forense, ¿qué suelen contener los archivos TDB en Telegram Android?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Chat IDs, message IDs, text fragments, filenames, UNIX timestamps, status flags and references to local attachments",
+            "Only the phone’s bootloader configuration and SIM PIN codes",
+            "Exclusively GPS data from all apps installed on the device",
+            "Only the wallpaper images of the Android home screen"
+          ],
+          "es-MX": [
+            "IDs de chat, IDs de mensaje, fragmentos de texto, nombres de archivo, timestamps UNIX, flags de estado y referencias a adjuntos locales",
+            "Sólo la configuración del bootloader del teléfono y los PIN de la SIM",
+            "Exclusivamente datos GPS de todas las apps instaladas en el dispositivo",
+            "Únicamente las imágenes de fondo de la pantalla principal de Android"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Chat IDs, message IDs, text fragments, filenames, UNIX timestamps, status flags and references to local attachments",
+          "es-MX": "IDs de chat, IDs de mensaje, fragmentos de texto, nombres de archivo, timestamps UNIX, flags de estado y referencias a adjuntos locales"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The lesson describes TDB as Telegram’s internal database format, where recent activity is tracked."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "It keeps identifiers for chats and messages.",
+                "It may store text fragments and filenames.",
+                "It records timestamps and state flags (sent, read, deleted).",
+                "It keeps references to media files stored in local folders."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La lección describe TDB como el formato interno de base de datos de Telegram, donde se registra actividad reciente."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Conserva identificadores de chats y mensajes.",
+                "Puede almacenar fragmentos de texto y nombres de archivo.",
+                "Registra timestamps y flags de estado (enviado, leído, borrado).",
+                "Mantiene referencias a archivos multimedia almacenados en carpetas locales."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Archivos WAL y SHM en Telegram",
+        "Question Text": {
+          "en-US": [
+            "Why are .tdb-wal and .tdb-shm files relevant in a Telegram Android forensic examination?",
+            "What is the forensic importance of the WAL and SHM companion files associated with TDB databases?"
+          ],
+          "es-MX": [
+            "¿Por qué son relevantes los archivos .tdb-wal y .tdb-shm en un análisis forense de Telegram en Android?",
+            "¿Cuál es la importancia forense de los archivos WAL y SHM asociados a las bases TDB?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They can contain recent transactions and message fragments not yet fully consolidated into the main TDB, revealing activity that may no longer appear visibly in the app",
+            "They only store the phone’s battery level history with no relation to messages",
+            "They contain only the list of installed Android updates",
+            "They are used only for temporary graphics data and are always empty"
+          ],
+          "es-MX": [
+            "Porque pueden contener transacciones recientes y fragmentos de mensajes aún no consolidados en la TDB principal, revelando actividad que ya no aparece visible en la app",
+            "Porque sólo almacenan el historial de nivel de batería del teléfono sin relación con mensajes",
+            "Porque contienen sólo la lista de actualizaciones de Android instaladas",
+            "Porque se usan sólo para datos gráficos temporales y siempre están vacíos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They can contain recent transactions and message fragments not yet fully consolidated into the main TDB, revealing activity that may no longer appear visibly in the app",
+          "es-MX": "Porque pueden contener transacciones recientes y fragmentos de mensajes aún no consolidados en la TDB principal, revelando actividad que ya no aparece visible en la app"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "WAL (Write-Ahead Log) and SHM files capture recent changes before they are merged into the main database."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "They may preserve records for a short time even after deletion in the interface.",
+                "They often contain transitional states or partial messages.",
+                "Analyzing them can reveal evidence that seems to have ‘disappeared’ from the main TDB."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los archivos WAL (Write-Ahead Log) y SHM registran cambios recientes antes de integrarse a la base principal."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Pueden conservar registros durante un tiempo incluso después de la eliminación en la interfaz.",
+                "Suelen contener estados transitorios o mensajes parciales.",
+                "Analizarlos permite recuperar evidencia que parece haber ‘desaparecido’ de la TDB principal."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Archivos MAP en Telegram",
+        "Question Text": {
+          "en-US": [
+            "What is the main forensic role of Telegram’s .map files on Android?",
+            "How do .map files help in correlating information inside Telegram’s internal storage?"
+          ],
+          "es-MX": [
+            "¿Cuál es el papel forense principal de los archivos .map de Telegram en Android?",
+            "¿Cómo ayudan los archivos .map a correlacionar información dentro del almacenamiento interno de Telegram?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They act as index and mapping structures that link messages with multimedia, internal paths, chat IDs and downloaded vs. non-downloaded content",
+            "They store only the user’s keyboard language preferences",
+            "They are used exclusively to configure the app’s color theme",
+            "They contain only the Android kernel log unrelated to Telegram"
+          ],
+          "es-MX": [
+            "Funcionan como estructuras de índice y mapeo que enlazan mensajes con multimedia, rutas internas, IDs de chat y contenido descargado vs. no descargado",
+            "Guardan únicamente las preferencias de idioma del teclado del usuario",
+            "Se utilizan exclusivamente para configurar el color del tema de la app",
+            "Contienen sólo el log del kernel de Android sin relación con Telegram"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They act as index and mapping structures that link messages with multimedia, internal paths, chat IDs and downloaded vs. non-downloaded content",
+          "es-MX": "Funcionan como estructuras de índice y mapeo que enlazan mensajes con multimedia, rutas internas, IDs de chat y contenido descargado vs. no descargado"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The lesson describes .map files as auxiliary elements used by Telegram to map relationships inside its data."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "They link messages to media files and internal folders.",
+                "They help distinguish which content was actually downloaded.",
+                "They assist in reconstructing partially deleted information when combined with TDB and media folders."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La clase describe los archivos .map como elementos auxiliares usados por Telegram para mapear relaciones internas en sus datos."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Enlazan mensajes con archivos multimedia y carpetas internas.",
+                "Ayudan a distinguir qué contenido fue realmente descargado.",
+                "Apoyan la reconstrucción de información parcialmente eliminada al combinarse con TDB y carpetas de multimedia."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Carpetas de multimedia en Android",
+        "Question Text": {
+          "en-US": [
+            "Which option correctly lists typical Telegram multimedia folders on Android that are relevant for forensic evidence?",
+            "On Android, where can an examiner usually find downloaded Telegram images, videos, audio and documents?"
+          ],
+          "es-MX": [
+            "¿Qué opción enumera correctamente carpetas típicas de multimedia de Telegram en Android relevantes para la evidencia forense?",
+            "En Android, ¿dónde puede encontrar normalmente el perito las imágenes, videos, audios y documentos descargados de Telegram?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Telegram/Telegram Images/, Telegram/Telegram Video/, Telegram/Telegram Audio/, Telegram/Telegram Documents/, Telegram/Telegram Voice/, Telegram/Telegram Cache/",
+            "WhatsApp/Media/WhatsApp Images/ and WhatsApp/Media/WhatsApp Video/",
+            "DCIM/CameraOnly/ and /System/Android/Kernel/",
+            "Program Files/Telegram/Images/ and Windows/System32/Telegram/"
+          ],
+          "es-MX": [
+            "Telegram/Telegram Images/, Telegram/Telegram Video/, Telegram/Telegram Audio/, Telegram/Telegram Documents/, Telegram/Telegram Voice/, Telegram/Telegram Cache/",
+            "WhatsApp/Media/WhatsApp Images/ y WhatsApp/Media/WhatsApp Video/",
+            "DCIM/CameraOnly/ y /System/Android/Kernel/",
+            "Program Files/Telegram/Images/ y Windows/System32/Telegram/"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Telegram/Telegram Images/, Telegram/Telegram Video/, Telegram/Telegram Audio/, Telegram/Telegram Documents/, Telegram/Telegram Voice/, Telegram/Telegram Cache/",
+          "es-MX": "Telegram/Telegram Images/, Telegram/Telegram Video/, Telegram/Telegram Audio/, Telegram/Telegram Documents/, Telegram/Telegram Voice/, Telegram/Telegram Cache/"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "These folders hold downloaded photos, videos, audio messages, documents and cached content.",
+                "Thumbnails and partially downloaded files can remain even if the user later deletes them.",
+                "EXIF and file properties provide creation dates, original names, sizes and sometimes device information."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Estas carpetas contienen fotos, videos, audios de chat, documentos y contenido en caché descargado.",
+                "Las miniaturas y archivos parcialmente descargados pueden permanecer incluso si el usuario luego los borra.",
+                "Los metadatos EXIF y propiedades del archivo aportan fechas de creación, nombres originales, tamaños e incluso información del dispositivo."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Telegram Desktop en Windows",
+        "Question Text": {
+          "en-US": [
+            "Where does Telegram Desktop typically store its main data folder on Windows for the current user?",
+            "Which path is most relevant for locating Telegram Desktop artifacts on a Windows machine?"
+          ],
+          "es-MX": [
+            "¿Dónde almacena normalmente Telegram Desktop su carpeta principal de datos en Windows para el usuario actual?",
+            "¿Qué ruta es más relevante para localizar artefactos de Telegram Desktop en una máquina con Windows?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "C:\\\\Users\\\\<user>\\\\AppData\\\\Roaming\\\\Telegram Desktop\\\\",
+            "C:\\\\Windows\\\\System32\\\\Telegram\\\\",
+            "C:\\\\Program Files (x86)\\\\Internet Explorer\\\\",
+            "C:\\\\Android\\\\data\\\\org.telegram.messenger\\\\files\\\\"
+          ],
+          "es-MX": [
+            "C:\\\\Users\\\\<usuario>\\\\AppData\\\\Roaming\\\\Telegram Desktop\\\\",
+            "C:\\\\Windows\\\\System32\\\\Telegram\\\\",
+            "C:\\\\Program Files (x86)\\\\Internet Explorer\\\\",
+            "C:\\\\Android\\\\data\\\\org.telegram.messenger\\\\files\\\\"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "C:\\\\Users\\\\<user>\\\\AppData\\\\Roaming\\\\Telegram Desktop\\\\",
+          "es-MX": "C:\\\\Users\\\\<usuario>\\\\AppData\\\\Roaming\\\\Telegram Desktop\\\\"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The lesson specifies that Telegram Desktop stores its session, cache and fragment data under the user’s Roaming profile."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "The path is typically within AppData\\Roaming\\Telegram Desktop.",
+                "Inside, subfolders such as tdata and numeric directories contain sessions, thumbnails and file fragments."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La clase indica que Telegram Desktop guarda sesiones, cachés y fragmentos dentro del perfil Roaming del usuario."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "La ruta típica es AppData\\\\Roaming\\\\Telegram Desktop.",
+                "En su interior, subcarpetas como tdata y directorios numéricos almacenan sesiones, miniaturas y fragmentos de archivos."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Carpeta TDATA y directorios numéricos",
+        "Question Text": {
+          "en-US": [
+            "What is stored inside the tdata folder and numeric subfolders in Telegram Desktop, and why are they important?",
+            "From a forensic viewpoint, what is the relevance of the tdata folder with small numeric files (1 KB, 4 KB, 8 KB) in Telegram Desktop?"
+          ],
+          "es-MX": [
+            "¿Qué se almacena dentro de la carpeta tdata y las subcarpetas numéricas en Telegram Desktop, y por qué son importantes?",
+            "Desde el punto de vista forense, ¿cuál es la relevancia de la carpeta tdata con archivos numéricos pequeños (1 KB, 4 KB, 8 KB) en Telegram Desktop?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They hold session data, authentication information, cache fragments, thumbnails and small data chunks that must be reconstructed to understand recent messages and media",
+            "They only store Windows desktop wallpapers with no forensic value",
+            "They contain exclusively the list of installed printers on the system",
+            "They are used only to cache web browser cookies unrelated to Telegram"
+          ],
+          "es-MX": [
+            "Almacenan datos de sesión, información de autenticación, fragmentos de caché, miniaturas y pequeños bloques de datos que deben reconstruirse para entender mensajes y multimedia recientes",
+            "Guardan únicamente fondos de escritorio de Windows sin valor forense",
+            "Contienen exclusivamente la lista de impresoras instaladas en el sistema",
+            "Se usan únicamente para cachear cookies del navegador web sin relación con Telegram"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They hold session data, authentication information, cache fragments, thumbnails and small data chunks that must be reconstructed to understand recent messages and media",
+          "es-MX": "Almacenan datos de sesión, información de autenticación, fragmentos de caché, miniaturas y pequeños bloques de datos que deben reconstruirse para entender mensajes y multimedia recientes"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "tdata keeps encrypted session and authentication details.",
+                "Numeric folders contain small fragments that represent pieces of messages, media and cache.",
+                "Reconstructing these fragments can reveal recent activity and downloaded content in Telegram Desktop."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "tdata conserva detalles de sesión y autenticación cifrados.",
+                "Las carpetas numéricas contienen pequeños fragmentos que representan partes de mensajes, multimedia y caché.",
+                "Reconstruir estos fragmentos permite revelar actividad reciente y contenido descargado en Telegram Desktop."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Procedimiento integrado de extracción",
+        "Question Text": {
+          "en-US": [
+            "Which ordered sequence best represents the integrated forensic extraction process for Telegram described in the lesson?",
+            "What is a correct high-level workflow to extract and analyze Telegram data on Android and Desktop?"
+          ],
+          "es-MX": [
+            "¿Qué secuencia ordenada representa mejor el proceso integrado de extracción forense de Telegram descrito en la clase?",
+            "¿Cuál es un flujo de trabajo general correcto para extraer y analizar datos de Telegram en Android y Desktop?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Locate folders (Android and Desktop), identify .tdb/.tdb-wal/.tdb-shm and .map plus media folders, copy everything preserving structure, compute SHA-256 hashes, analyze TDB and MAP with suitable tools, correlate with multimedia and rebuild timeline and messages",
+            "Delete all TDB and MAP files to free space, then try to guess conversations from memory",
+            "Export only the Android system logs and ignore any Telegram-specific folders",
+            "Copy only the program executable without any data folders"
+          ],
+          "es-MX": [
+            "Localizar carpetas (Android y Desktop), identificar .tdb/.tdb-wal/.tdb-shm y .map más las carpetas de multimedia, copiar todo preservando estructura, calcular hashes SHA-256, analizar TDB y MAP con herramientas adecuadas, correlacionar con multimedia y reconstruir línea temporal y mensajes",
+            "Borrar todos los archivos TDB y MAP para liberar espacio y luego tratar de adivinar las conversaciones de memoria",
+            "Exportar sólo los logs del sistema Android e ignorar cualquier carpeta específica de Telegram",
+            "Copiar únicamente el ejecutable del programa sin ninguna carpeta de datos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Locate folders (Android and Desktop), identify .tdb/.tdb-wal/.tdb-shm and .map plus media folders, copy everything preserving structure, compute SHA-256 hashes, analyze TDB and MAP with suitable tools, correlate with multimedia and rebuild timeline and messages",
+          "es-MX": "Localizar carpetas (Android y Desktop), identificar .tdb/.tdb-wal/.tdb-shm y .map más las carpetas de multimedia, copiar todo preservando estructura, calcular hashes SHA-256, analizar TDB y MAP con herramientas adecuadas, correlacionar con multimedia y reconstruir línea temporal y mensajes"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Locate relevant folders in Android and Desktop (org.telegram.messenger and Telegram Desktop).",
+                "Identify TDB, WAL, SHM, MAP and multimedia directories.",
+                "Copy them preserving original structure and calculate integrity hashes (e.g., SHA-256).",
+                "Analyze TDB and MAP with parsers or forensic tools.",
+                "Correlate database records with media folders to rebuild messages, attachments and timeline."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Localizar las carpetas relevantes en Android y Desktop (org.telegram.messenger y Telegram Desktop).",
+                "Identificar TDB, WAL, SHM, MAP y directorios de multimedia.",
+                "Copiarlos preservando la estructura original y calcular hashes de integridad (por ejemplo, SHA-256).",
+                "Analizar TDB y MAP con parsers o herramientas forenses.",
+                "Correlacionar registros de base de datos con carpetas de media para reconstruir mensajes, adjuntos y línea temporal."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Recuperación de datos borrados",
+        "Question Text": {
+          "en-US": [
+            "How can Telegram’s TDB and WAL files contribute to recovering deleted or partially removed messages?",
+            "What is a realistic example of recovering a deleted message using Telegram’s internal database structure?"
+          ],
+          "es-MX": [
+            "¿Cómo pueden contribuir los archivos TDB y WAL de Telegram a recuperar mensajes borrados o parcialmente eliminados?",
+            "¿Cuál es un ejemplo realista de recuperación de un mensaje eliminado usando la estructura interna de bases de Telegram?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A message that no longer appears in the app can still be found as a fragment in .tdb or .tdb-wal, with its ID and timestamp, allowing the examiner to prove that it existed and when it was sent",
+            "Once a message is deleted in Telegram, it is instantly erased from all TDB and WAL files with no possibility of recovery",
+            "Deleted messages are always stored only on the SIM card and never in databases",
+            "The only way to know a deleted message is to ask the user to write it again manually"
+          ],
+          "es-MX": [
+            "Un mensaje que ya no aparece en la app puede seguir encontrarse como fragmento en .tdb o .tdb-wal, con su ID y timestamp, permitiendo al perito demostrar que existió y cuándo se envió",
+            "Una vez que se borra un mensaje en Telegram, se elimina al instante de todas las TDB y WAL sin posibilidad de recuperación",
+            "Los mensajes borrados siempre se guardan sólo en la tarjeta SIM y nunca en bases de datos",
+            "La única forma de saber un mensaje borrado es pedirle al usuario que lo escriba de nuevo manualmente"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A message that no longer appears in the app can still be found as a fragment in .tdb or .tdb-wal, with its ID and timestamp, allowing the examiner to prove that it existed and when it was sent",
+          "es-MX": "Un mensaje que ya no aparece en la app puede seguir encontrarse como fragmento en .tdb o .tdb-wal, con su ID y timestamp, permitiendo al perito demostrar que existió y cuándo se envió"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The example in the lesson shows that a deleted message can still be detected thanks to residual data."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "The examiner finds a record or fragment in TDB/WAL with message ID and timestamp.",
+                "Even if the text is partial, the existence and timing of the message can be demonstrated.",
+                "Combined with media and MAP data, more context may be reconstructed."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El ejemplo de la clase muestra que un mensaje eliminado puede detectarse gracias a datos residuales."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "El perito encuentra un registro o fragmento en TDB/WAL con ID de mensaje y timestamp.",
+                "Aunque el texto sea parcial, se puede demostrar la existencia y el momento del envío.",
+                "Combinado con datos de media y MAP, puede reconstruirse mayor contexto."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Comparación Android vs. Desktop",
+        "Question Text": {
+          "en-US": [
+            "What is a key difference between Telegram’s local storage on Android and on Desktop from a forensic standpoint?",
+            "Which statement correctly compares how much information is usually stored locally by Telegram on Android versus Desktop?"
+          ],
+          "es-MX": [
+            "¿Cuál es una diferencia clave entre el almacenamiento local de Telegram en Android y en Desktop desde el punto de vista forense?",
+            "¿Qué afirmación compara correctamente la cantidad de información que Telegram suele almacenar localmente en Android frente a Desktop?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Android can hold extensive TDB databases and media folders, while Desktop often keeps partial message sets and fragments because much content is pulled directly from the cloud",
+            "Desktop always stores 100% of all messages and media locally, while Android never stores anything",
+            "Both Android and Desktop store zero messages locally and rely only on SIM card storage",
+            "Android uses only plain text files, while Desktop never saves any data to disk"
+          ],
+          "es-MX": [
+            "Android puede contener bases TDB extensas y carpetas completas de multimedia, mientras que Desktop suele conservar conjuntos parciales de mensajes y fragmentos porque mucho contenido se consulta directamente desde la nube",
+            "Desktop guarda siempre el 100% de todos los mensajes y multimedia en local, mientras que Android nunca guarda nada",
+            "Tanto Android como Desktop almacenan cero mensajes en local y dependen sólo de la tarjeta SIM",
+            "Android usa sólo archivos de texto plano, mientras que Desktop nunca guarda datos en disco"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Android can hold extensive TDB databases and media folders, while Desktop often keeps partial message sets and fragments because much content is pulled directly from the cloud",
+          "es-MX": "Android puede contener bases TDB extensas y carpetas completas de multimedia, mientras que Desktop suele conservar conjuntos parciales de mensajes y fragmentos porque mucho contenido se consulta directamente desde la nube"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The class notes that Telegram Desktop does not always store full histories."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Android keeps TDB databases plus well-defined media folders.",
+                "Desktop often caches only recent messages and downloaded attachments.",
+                "Many messages are fetched on demand from the cloud in Desktop."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La clase señala que Telegram Desktop no siempre guarda historiales completos."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "En Android se encuentran bases TDB y carpetas claras de multimedia.",
+                "En Desktop habitualmente se cachean sólo mensajes recientes y adjuntos descargados.",
+                "Muchos mensajes se consultan bajo demanda desde la nube en Desktop."
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

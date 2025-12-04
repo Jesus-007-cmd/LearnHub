@@ -1,0 +1,593 @@
+{
+    "meta": {
+      "slug": "forense-apps67",
+      "title": "Testimonio pericial y defensa del informe técnico",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 5,
+      "classNo": 67,
+      "description": "Defensa oral breve y profesional del informe forense digital ante un público académico, enfatizando claridad, estructura, dominio del caso y autoevaluación del testimonio.",
+      "tags": [
+        "testimonio pericial",
+        "defensa del informe",
+        "comunicación técnica",
+        "presentaciones orales",
+        "auto-evaluación",
+        "unidad V"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "Objetivo de la defensa oral",
+        "Question Text": {
+          "en-US": [
+            "What is the main purpose of a brief oral defense of a digital forensic report in an academic setting?"
+          ],
+          "es-MX": [
+            "¿Cuál es el propósito principal de una defensa oral breve de un informe forense digital en un entorno académico?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To demonstrate clear technical communication, mastery of the case and coherence between the written report and the oral explanation.",
+            "To repeat the report word for word without any adaptation for the audience.",
+            "To persuade classmates to agree with a personal opinion about who is responsible.",
+            "To show as many tools and screenshots as possible, even if they are not directly related to the case."
+          ],
+          "es-MX": [
+            "Demostrar comunicación técnica clara, dominio del caso y coherencia entre el informe escrito y la explicación oral.",
+            "Repetir el informe palabra por palabra sin ninguna adaptación para el público.",
+            "Convencer a los compañeros de estar de acuerdo con una opinión personal sobre quién es responsable.",
+            "Mostrar la mayor cantidad posible de herramientas y capturas, aunque no estén directamente relacionadas con el caso."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To demonstrate clear technical communication, mastery of the case and coherence between the written report and the oral explanation.",
+          "es-MX": "Demostrar comunicación técnica clara, dominio del caso y coherencia entre el informe escrito y la explicación oral."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The oral defense is an exercise to show that the student understands the report, can explain it clearly and maintains consistency between what is written and what is presented."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "It is not about reading the document but about summarizing it in a professional way.",
+                "The audience must understand the key ideas of the case and the analysis.",
+                "Coherence between written and oral versions increases credibility.",
+                "Mastery of the case is reflected in how confidently and clearly it is explained."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La defensa oral es un ejercicio para demostrar que el estudiante comprende el informe, puede explicarlo con claridad y mantiene coherencia entre lo escrito y lo presentado."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "No se trata de leer el documento, sino de resumirlo de forma profesional.",
+                "El público debe entender las ideas clave del caso y del análisis.",
+                "La coherencia entre la versión escrita y la oral aumenta la credibilidad.",
+                "El dominio del caso se refleja en la seguridad y claridad al explicarlo."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Estructura de 5 minutos",
+        "Question Text": {
+          "en-US": [
+            "Which sequence represents a clear and efficient structure for a 5-minute technical defense of a forensic report?"
+          ],
+          "es-MX": [
+            "¿Qué secuencia representa una estructura clara y eficiente para una defensa técnica de informe forense de 5 minutos?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Professional introduction → Methodology → Main findings → Technical conclusions → Professional closing.",
+            "Professional introduction → Detailed reading of every page → Closing without conclusions.",
+            "Methodology only → Screenshots only → No conclusions.",
+            "Closing first → Findings later → Methodology at the end."
+          ],
+          "es-MX": [
+            "Presentación profesional → Metodología → Hallazgos principales → Conclusiones técnicas → Cierre profesional.",
+            "Presentación profesional → Lectura detallada de cada página → Cierre sin conclusiones.",
+            "Solo metodología → Solo capturas de pantalla → Sin conclusiones.",
+            "Cierre al inicio → Hallazgos después → Metodología al final."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Professional introduction → Methodology → Main findings → Technical conclusions → Professional closing.",
+          "es-MX": "Presentación profesional → Metodología → Hallazgos principales → Conclusiones técnicas → Cierre profesional."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "The introduction situates who is speaking and what case is being presented.",
+                "The methodology explains how the analysis was performed.",
+                "The main findings show what the evidence actually reveals.",
+                "The conclusions summarize what can be affirmed and the limits of the analysis.",
+                "The closing ends the presentation and opens space for questions."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "La presentación inicial ubica quién habla y qué caso se expone.",
+                "La metodología explica cómo se realizó el análisis.",
+                "Los hallazgos principales muestran lo que realmente revela la evidencia.",
+                "Las conclusiones resumen lo que se puede afirmar y los límites del análisis.",
+                "El cierre da por terminada la exposición y abre espacio a preguntas."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Duración y control del tiempo",
+        "Question Text": {
+          "en-US": [
+            "Why is strict time control important in a 5-minute academic defense of a forensic report?"
+          ],
+          "es-MX": [
+            "¿Por qué es importante controlar estrictamente el tiempo en una defensa académica de informe forense de 5 minutos?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because respecting the allotted time reflects planning, professionalism and the ability to prioritize the most relevant information.",
+            "Because speaking as fast as possible always causes a better impression than clarity.",
+            "Because going over time means that the report automatically has more technical value.",
+            "Because time control is only a formality and does not affect the perception of the presentation."
+          ],
+          "es-MX": [
+            "Porque respetar el tiempo asignado refleja planificación, profesionalismo y capacidad de priorizar la información más relevante.",
+            "Porque hablar lo más rápido posible siempre causa mejor impresión que la claridad.",
+            "Porque excederse en el tiempo significa que el informe automáticamente tiene más valor técnico.",
+            "Porque el control del tiempo es solo una formalidad y no afecta la percepción de la presentación."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because respecting the allotted time reflects planning, professionalism and the ability to prioritize the most relevant information.",
+          "es-MX": "Porque respetar el tiempo asignado refleja planificación, profesionalismo y capacidad de priorizar la información más relevante."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "A key skill for experts is to explain complex work in a limited time without losing clarity."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Planning what to say shows respect for the audience and the schedule.",
+                "Prioritizing the essential parts of the report is a professional competence.",
+                "Going over time often indicates lack of preparation or focus.",
+                "In real contexts, experts frequently have restricted time to present."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Una habilidad clave del perito es explicar un trabajo complejo en un tiempo limitado sin perder claridad."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Planificar lo que se va a decir muestra respeto por el público y el horario.",
+                "Priorizar las partes esenciales del informe es una competencia profesional.",
+                "Excederse en el tiempo suele indicar falta de preparación o de enfoque.",
+                "En contextos reales, los peritos frecuentemente tienen tiempos restringidos para exponer."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Presentación profesional",
+        "Question Text": {
+          "en-US": [
+            "Which elements should be included in the brief professional introduction at the beginning of a technical oral defense?"
+          ],
+          "es-MX": [
+            "¿Qué elementos deben incluirse en la breve presentación profesional al inicio de una defensa oral técnica?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Full name, role as a forensic analyst or student, name of the case and scope of the analysis performed.",
+            "Only the name of the tool used, without explaining who is speaking or what the case is about.",
+            "A personal opinion about the accused person and their behavior.",
+            "A detailed description of all the courses the student has taken since high school."
+          ],
+          "es-MX": [
+            "Nombre completo, rol como analista forense o estudiante, nombre del caso y alcance del análisis realizado.",
+            "Solo el nombre de la herramienta utilizada, sin explicar quién habla ni de qué trata el caso.",
+            "Una opinión personal sobre la persona acusada y su comportamiento.",
+            "Una descripción detallada de todos los cursos que el alumno ha tomado desde la preparatoria."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Full name, role as a forensic analyst or student, name of the case and scope of the analysis performed.",
+          "es-MX": "Nombre completo, rol como analista forense o estudiante, nombre del caso y alcance del análisis realizado."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "The audience needs to know who is speaking and in what capacity.",
+                "Mentioning the case gives immediate context to the presentation.",
+                "Clarifying the scope helps to understand what was and was not analyzed.",
+                "This introduction should be brief but complete and professional."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "El público necesita saber quién habla y en qué calidad.",
+                "Mencionar el caso da contexto inmediato a la exposición.",
+                "Aclarar el alcance ayuda a entender qué se analizó y qué no.",
+                "Esta introducción debe ser breve, pero completa y profesional."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Selección de hallazgos",
+        "Question Text": {
+          "en-US": [
+            "How should the main findings be selected and presented in a 5-minute defense?"
+          ],
+          "es-MX": [
+            "¿Cómo deben seleccionarse y presentarse los hallazgos principales en una defensa de 5 minutos?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "By choosing only the most relevant findings that connect directly to the incident, mentioning dates, key actions and concrete evidence that support the conclusions.",
+            "By listing every single file reviewed, even if it is not related to the incident.",
+            "By focusing mainly on visually attractive elements, even if they are not technically important.",
+            "By describing only technical errors found in tools without relating them to the case."
+          ],
+          "es-MX": [
+            "Eligiendo solo los hallazgos más relevantes que se conectan directamente con el incidente, mencionando fechas, acciones clave y evidencias concretas que respalden las conclusiones.",
+            "Enumerando absolutamente todos los archivos revisados, aunque no se relacionen con el incidente.",
+            "Centrando la exposición principalmente en elementos visualmente llamativos, aunque no sean técnicamente importantes.",
+            "Describiendo únicamente errores técnicos encontrados en las herramientas sin relacionarlos con el caso."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "By choosing only the most relevant findings that connect directly to the incident, mentioning dates, key actions and concrete evidence that support the conclusions.",
+          "es-MX": "Eligiendo solo los hallazgos más relevantes que se conectan directamente con el incidente, mencionando fechas, acciones clave y evidencias concretas que respalden las conclusiones."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "In a short defense, the selection of findings is crucial to keep the focus on what truly impacts the case."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Not all details can be presented in 5 minutes.",
+                "Prioritizing key findings helps the audience understand the core of the analysis.",
+                "Concrete data (dates, actions, files) add strength to the explanation.",
+                "Excessive detail can distract from the central message."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "En una defensa breve, la selección de hallazgos es clave para mantener el enfoque en lo que realmente impacta al caso."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "No se pueden presentar todos los detalles en 5 minutos.",
+                "Priorizar los hallazgos clave ayuda al público a entender el núcleo del análisis.",
+                "Los datos concretos (fechas, acciones, archivos) dan fuerza a la explicación.",
+                "El exceso de detalle puede distraer del mensaje central."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Conclusiones técnicas objetivas",
+        "Question Text": {
+          "en-US": [
+            "What is the most appropriate way to express technical conclusions in a brief defense of a forensic report?"
+          ],
+          "es-MX": [
+            "¿Cuál es la forma más adecuada de expresar conclusiones técnicas en una defensa breve de informe forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Clearly indicate what the evidence supports, what cannot be affirmed and what limitations affected the analysis, using neutral and objective language.",
+            "Express personal beliefs about the intentions or moral character of the people involved.",
+            "Avoid talking about limitations so that the work looks stronger and unquestionable.",
+            "Use vague phrases such as ‘it seems’ or ‘probably’ without referring to specific data."
+          ],
+          "es-MX": [
+            "Indicar con claridad qué respalda la evidencia, qué no se puede afirmar y qué limitaciones afectaron el análisis, usando un lenguaje neutral y objetivo.",
+            "Expresar creencias personales sobre las intenciones o el carácter moral de las personas involucradas.",
+            "Evitar mencionar las limitaciones para que el trabajo se vea más sólido e incuestionable.",
+            "Usar frases vagas como ‘parece’ o ‘probablemente’ sin remitir a datos específicos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Clearly indicate what the evidence supports, what cannot be affirmed and what limitations affected the analysis, using neutral and objective language.",
+          "es-MX": "Indicar con claridad qué respalda la evidencia, qué no se puede afirmar y qué limitaciones afectaron el análisis, usando un lenguaje neutral y objetivo."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Objective conclusions are based on verifiable facts, not personal opinions.",
+                "Mentioning limitations demonstrates honesty and professional maturity.",
+                "Neutral language avoids unnecessary conflicts and maintains credibility.",
+                "The audience must understand both what the evidence shows and what remains uncertain."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Las conclusiones objetivas se basan en hechos verificables, no en opiniones personales.",
+                "Mencionar las limitaciones demuestra honestidad y madurez profesional.",
+                "El lenguaje neutral evita conflictos innecesarios y mantiene la credibilidad.",
+                "El público debe entender tanto lo que muestra la evidencia como lo que sigue siendo incierto."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Uso de apoyos visuales",
+        "Question Text": {
+          "en-US": [
+            "How should visual aids (such as slides) be used in a 5-minute academic defense of a forensic report?"
+          ],
+          "es-MX": [
+            "¿Cómo deben utilizarse los apoyos visuales (como diapositivas) en una defensa académica de informe forense de 5 minutos?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "As simple, clear support for the explanation, with few slides that highlight key points or diagrams without overloading text.",
+            "As the main content, reading every text on the slides word for word.",
+            "As a place to include long paragraphs so that it is not necessary to speak much.",
+            "As decoration, adding many animations and images that do not relate to the case."
+          ],
+          "es-MX": [
+            "Como apoyo simple y claro a la explicación, con pocas diapositivas que resalten puntos clave o diagramas sin sobrecargar de texto.",
+            "Como contenido principal, leyendo en voz alta todo el texto de las diapositivas.",
+            "Como espacio para incluir párrafos largos y así no tener que hablar demasiado.",
+            "Como decoración, añadiendo muchas animaciones e imágenes que no se relacionan con el caso."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "As simple, clear support for the explanation, with few slides that highlight key points or diagrams without overloading text.",
+          "es-MX": "Como apoyo simple y claro a la explicación, con pocas diapositivas que resalten puntos clave o diagramas sin sobrecargar de texto."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Visual aids should reinforce the spoken message, not replace it or distract from it."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Few slides help maintain focus.",
+                "Short phrases and diagrams are easier to understand quickly.",
+                "Reading slides literally usually makes the presentation monotonous.",
+                "Visual support must always be aligned with the central narrative of the case."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los apoyos visuales deben reforzar el mensaje hablado, no sustituirlo ni distraer de él."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Pocas diapositivas ayudan a mantener el enfoque.",
+                "Frases cortas y diagramas se comprenden más rápido.",
+                "Leer las diapositivas literalmente suele hacer la presentación monótona.",
+                "El apoyo visual debe estar siempre alineado con la narrativa central del caso."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Autoevaluación del testimonio",
+        "Question Text": {
+          "en-US": [
+            "What is a key benefit of performing a self-evaluation after giving an academic defense of a forensic report?"
+          ],
+          "es-MX": [
+            "¿Cuál es un beneficio clave de realizar una autoevaluación después de presentar una defensa académica de informe forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Identifying strengths and areas for improvement in communication, time management and mastery of the case for future presentations.",
+            "Confirming that there is nothing to improve and that all future presentations can be done in the same way.",
+            "Focusing only on technical errors in the tools, ignoring communication aspects.",
+            "Replacing feedback from the teacher and classmates so that external opinions are not considered."
+          ],
+          "es-MX": [
+            "Identificar fortalezas y áreas de mejora en comunicación, manejo del tiempo y dominio del caso para futuras presentaciones.",
+            "Confirmar que no hay nada que mejorar y que todas las presentaciones futuras pueden hacerse de la misma forma.",
+            "Centrarse únicamente en errores técnicos de las herramientas, ignorando los aspectos de comunicación.",
+            "Sustituir la retroalimentación del docente y compañeros para no considerar opiniones externas."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Identifying strengths and areas for improvement in communication, time management and mastery of the case for future presentations.",
+          "es-MX": "Identificar fortalezas y áreas de mejora en comunicación, manejo del tiempo y dominio del caso para futuras presentaciones."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Self-evaluation helps transform each presentation into a learning opportunity.",
+                "Recognizing strengths reinforces what should be maintained.",
+                "Detecting weaknesses allows specific improvements to be planned.",
+                "This habit prepares the student for more demanding professional and judicial scenarios."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "La autoevaluación ayuda a convertir cada presentación en una oportunidad de aprendizaje.",
+                "Reconocer las fortalezas refuerza lo que se debe mantener.",
+                "Detectar debilidades permite planear mejoras específicas.",
+                "Este hábito prepara al estudiante para escenarios profesionales y judiciales más exigentes."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Manejo de nervios y lenguaje corporal",
+        "Question Text": {
+          "en-US": [
+            "Which behavior contributes most to a professional image during the oral defense of a forensic report?"
+          ],
+          "es-MX": [
+            "¿Qué comportamiento contribuye más a una imagen profesional durante la defensa oral de un informe forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Maintaining an upright posture, speaking in a calm and clear tone, making brief eye contact with the audience and avoiding constant filler words.",
+            "Looking only at the floor or the slides without ever facing the audience.",
+            "Speaking very quickly to finish as soon as possible, even if the audience does not understand.",
+            "Crossing arms, showing visible annoyance with questions and using an informal or sarcastic tone."
+          ],
+          "es-MX": [
+            "Mantener una postura erguida, hablar con un tono calmado y claro, hacer contacto visual breve con el público y evitar muletillas constantes.",
+            "Mirar únicamente al piso o a las diapositivas sin voltear a ver al público.",
+            "Hablar muy rápido para terminar lo antes posible, aunque el público no entienda.",
+            "Cruzar los brazos, mostrar molestia evidente ante las preguntas y usar un tono informal o sarcástico."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Maintaining an upright posture, speaking in a calm and clear tone, making brief eye contact with the audience and avoiding constant filler words.",
+          "es-MX": "Mantener una postura erguida, hablar con un tono calmado y claro, hacer contacto visual breve con el público y evitar muletillas constantes."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Non-verbal communication is part of the technical credibility of the expert."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Posture and tone of voice transmit security or insecurity.",
+                "Eye contact shows respect and connection with the audience.",
+                "Avoiding filler words improves clarity and precision.",
+                "A professional attitude helps the content of the report be taken seriously."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La comunicación no verbal forma parte de la credibilidad técnica del perito."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "La postura y el tono de voz transmiten seguridad o inseguridad.",
+                "El contacto visual muestra respeto y conexión con el público.",
+                "Evitar muletillas mejora la claridad y la precisión.",
+                "Una actitud profesional ayuda a que el contenido del informe sea tomado en serio."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Diferencia con presentación judicial",
+        "Question Text": {
+          "en-US": [
+            "What is a distinctive characteristic of the academic defense of a forensic report compared to a judicial presentation?"
+          ],
+          "es-MX": [
+            "¿Cuál es una característica distintiva de la defensa académica de un informe forense en comparación con una presentación judicial?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The main objective is training: practicing clear, structured and objective communication in a safe environment before facing real legal contexts.",
+            "The academic defense has no need for technical rigor or objectivity in the explanations.",
+            "In the academic defense the student must take sides and defend one of the parties involved in the case.",
+            "The academic presentation always replaces the need for any future judicial testimony."
+          ],
+          "es-MX": [
+            "El objetivo principal es formativo: practicar una comunicación clara, estructurada y objetiva en un entorno seguro antes de enfrentar contextos legales reales.",
+            "En la defensa académica no es necesario el rigor técnico ni la objetividad en las explicaciones.",
+            "En la defensa académica el alumno debe tomar partido y defender a una de las partes del caso.",
+            "La presentación académica sustituye siempre la necesidad de cualquier futuro testimonio judicial."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The main objective is training: practicing clear, structured and objective communication in a safe environment before facing real legal contexts.",
+          "es-MX": "El objetivo principal es formativo: practicar una comunicación clara, estructurada y objetiva en un entorno seguro antes de enfrentar contextos legales reales."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "The academic exercise allows mistakes and corrections without legal consequences.",
+                "The same principles of clarity, objectivity and structure are practiced.",
+                "The goal is to develop skills that will later be applied in real judicial environments.",
+                "This space is ideal for receiving feedback and improving future testimonies."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "El ejercicio académico permite errores y correcciones sin consecuencias legales.",
+                "Se practican los mismos principios de claridad, objetividad y estructura.",
+                "El objetivo es desarrollar habilidades que después se aplicarán en entornos judiciales reales.",
+                "Este espacio es ideal para recibir retroalimentación y mejorar testimonios futuros."
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

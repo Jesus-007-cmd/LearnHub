@@ -1,0 +1,548 @@
+{
+    "meta": {
+      "slug": "forense-apps54",
+      "title": "Relevancia probatoria de archivos multimedia",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 4,
+      "classNo": 54,
+      "description": "Relevancia probatoria y criterios de admisibilidad de fotografías, videos, audios y documentos digitales en procesos judiciales, considerando autenticidad, integridad, relevancia y cadena de custodia.",
+      "tags": [
+        "relevancia probatoria",
+        "evidencia multimedia",
+        "cadena de custodia",
+        "hash",
+        "autenticidad",
+        "integridad",
+        "admisibilidad",
+        "forense legal"
+      ]
+    },
+    "Questions": [
+  
+      {
+        "Category": "Conceptos básicos de relevancia probatoria",
+        "Question Text": {
+          "en-US": [
+            "According to this class, which three fundamental factors determine the probative value of a multimedia file (photo, video, audio, screenshot, document) in court?"
+          ],
+          "es-MX": [
+            "Según esta clase, ¿cuáles son los tres factores fundamentales que determinan el valor probatorio de un archivo multimedia (foto, video, audio, captura de pantalla, documento) en juicio?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Authenticity, integrity and relevance of the file in relation to the investigated facts.",
+            "File size, screen resolution and the brand of the device.",
+            "The popularity of the social network where it was obtained, the number of likes and comments.",
+            "Only the visual impact of the image, regardless of how it was obtained."
+          ],
+          "es-MX": [
+            "Autenticidad, integridad y relevancia del archivo en relación con los hechos investigados.",
+            "Tamaño del archivo, resolución de pantalla y marca del dispositivo.",
+            "La popularidad de la red social donde se obtuvo, número de likes y comentarios.",
+            "Solo el impacto visual de la imagen, sin importar cómo se obtuvo."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Authenticity, integrity and relevance of the file in relation to the investigated facts.",
+          "es-MX": "Autenticidad, integridad y relevancia del archivo en relación con los hechos investigados."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Authenticity: the file must be original or verifiably genuine.",
+                "Integrity: there must be no unauthorized alterations or manipulations.",
+                "Relevance: it must contribute clear, useful information connected directly to the case."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Autenticidad: el archivo debe ser original o demostrablemente genuino.",
+                "Integridad: no debe presentar alteraciones o manipulaciones no autorizadas.",
+                "Relevancia: debe aportar información clara y útil, relacionada directamente con el caso."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Uso de evidencia multimedia en tribunales",
+        "Question Text": {
+          "en-US": [
+            "How do courts typically use multimedia evidence (photos, videos, audios, documents) in judicial processes?"
+          ],
+          "es-MX": [
+            "¿Cómo utilizan normalmente los tribunales la evidencia multimedia (fotos, videos, audios, documentos) en los procesos judiciales?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To reconstruct events, verify statements, identify people or devices and confirm the temporal sequence of facts.",
+            "Only as decoration for the case file, without real evidentiary value.",
+            "Exclusively to replace witness testimony in all cases.",
+            "Only to decide the sentence without considering any other evidence."
+          ],
+          "es-MX": [
+            "Para reconstruir eventos, verificar declaraciones, identificar personas o dispositivos y confirmar la secuencia temporal de los hechos.",
+            "Solo como decoración del expediente, sin valor probatorio real.",
+            "Exclusivamente para sustituir la declaración de testigos en todos los casos.",
+            "Únicamente para decidir la sentencia sin considerar ninguna otra prueba."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To reconstruct events, verify statements, identify people or devices and confirm the temporal sequence of facts.",
+          "es-MX": "Para reconstruir eventos, verificar declaraciones, identificar personas o dispositivos y confirmar la secuencia temporal de los hechos."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The class emphasizes that multimedia is central evidence because it visually and technically supports or contradicts narratives, instead of being a mere illustration."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La clase enfatiza que la multimedia es evidencia central porque respalda o contradice narrativas de forma visual y técnica, y no solo como ilustración."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Origen verificable",
+        "Question Text": {
+          "en-US": [
+            "When courts analyze the \"verifiable origin\" of a multimedia file, what aspects are they interested in according to this class?"
+          ],
+          "es-MX": [
+            "Cuando los tribunales analizan el \"origen verificable\" de un archivo multimedia, ¿en qué aspectos se interesan según esta clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Which device, user, application, camera or microphone generated the file.",
+            "Only which social network the file was posted on.",
+            "Exclusively the brand and color of the phone.",
+            "Only if the file has been shared many times in messaging apps."
+          ],
+          "es-MX": [
+            "Qué dispositivo, usuario, aplicación, cámara o micrófono generó el archivo.",
+            "Solo en qué red social se publicó el archivo.",
+            "Exclusivamente en la marca y el color del teléfono.",
+            "Únicamente si el archivo ha sido reenviado muchas veces en mensajería."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Which device, user, application, camera or microphone generated the file.",
+          "es-MX": "Qué dispositivo, usuario, aplicación, cámara o micrófono generó el archivo."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Verifiable origin links the file to a concrete source.",
+                "This can be demonstrated through metadata, logs or acquisition procedures.",
+                "If origin cannot be established, the file may lose credibility in court."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "El origen verificable vincula el archivo con una fuente concreta.",
+                "Puede demostrarse por metadatos, registros o procedimientos de adquisición.",
+                "Si no se establece origen, el archivo puede perder credibilidad en juicio."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Cadena de custodia",
+        "Question Text": {
+          "en-US": [
+            "Which of the following best describes the role of the chain of custody for multimedia files in judicial processes?"
+          ],
+          "es-MX": [
+            "¿Cuál de las siguientes opciones describe mejor el papel de la cadena de custodia para archivos multimedia en los procesos judiciales?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It documents who obtained the file, when, with which procedures and tools, where it was stored and what hash it had at the beginning and at the end.",
+            "It is a list of social networks where the evidence was shared.",
+            "It only indicates the color of the USB drive where the file was saved.",
+            "It is a purely optional form that has no legal impact."
+          ],
+          "es-MX": [
+            "Documenta quién obtuvo el archivo, cuándo, con qué procedimientos y herramientas, dónde se almacenó y qué hash tenía al inicio y al final.",
+            "Es una lista de redes sociales donde se compartió la evidencia.",
+            "Solo indica el color de la memoria USB donde se guardó el archivo.",
+            "Es un formato meramente opcional que no tiene impacto legal."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It documents who obtained the file, when, with which procedures and tools, where it was stored and what hash it had at the beginning and at the end.",
+          "es-MX": "Documenta quién obtuvo el archivo, cuándo, con qué procedimientos y herramientas, dónde se almacenó y qué hash tenía al inicio y al final."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The class states that lack of chain of custody can invalidate the evidence, because it becomes impossible to guarantee that the file was not manipulated during handling."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La clase indica que la ausencia de cadena de custodia puede invalidar la evidencia, porque ya no es posible garantizar que el archivo no fue manipulado durante su manejo."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Integridad técnica y hashes",
+        "Question Text": {
+          "en-US": [
+            "When courts request the original hash and the hash after analysis of a multimedia file, what is the main purpose of this requirement?"
+          ],
+          "es-MX": [
+            "Cuando los tribunales solicitan el hash original y el hash posterior al análisis de un archivo multimedia, ¿cuál es el propósito principal de este requisito?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To prove that there were no modifications to the file between capture/acquisition and presentation as evidence.",
+            "To improve the visual quality of the file automatically.",
+            "To compress the file and make it easier to send by email.",
+            "To hide the content of the evidence from the parties."
+          ],
+          "es-MX": [
+            "Demostrar que no hubo modificaciones al archivo entre la captura/adquisición y la presentación como evidencia.",
+            "Mejorar automáticamente la calidad visual del archivo.",
+            "Comprimir el archivo y facilitar su envío por correo electrónico.",
+            "Ocultar el contenido de la evidencia a las partes."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To prove that there were no modifications to the file between capture/acquisition and presentation as evidence.",
+          "es-MX": "Demostrar que no hubo modificaciones al archivo entre la captura/adquisición y la presentación como evidencia."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Hash–hash comparison is a core mechanism for integrity verification.",
+                "Identical hashes support that the file remained unchanged.",
+                "Different hashes suggest possible manipulation or transformation that must be explained."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "La comparación hash–hash es un mecanismo central de verificación de integridad.",
+                "Hashes idénticos respaldan que el archivo se mantuvo sin cambios.",
+                "Hashes distintos sugieren posible manipulación o transformación que debe explicarse."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Autenticidad del contenido",
+        "Question Text": {
+          "en-US": [
+            "Which elements does the class mention as part of demonstrating the authenticity of the content of a multimedia file?"
+          ],
+          "es-MX": [
+            "¿Qué elementos menciona la clase como parte de demostrar la autenticidad del contenido de un archivo multimedia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Consistency of metadata, temporal coherence, verifiable context and absence of edits or suspicious cuts.",
+            "Only the aesthetic quality and artistic composition of the image or video.",
+            "The number of times the file has gone viral on social networks.",
+            "Only that the file was sent by someone known to one of the parties."
+          ],
+          "es-MX": [
+            "Consistencia de metadatos, coherencia temporal, contexto verificable y ausencia de ediciones o cortes sospechosos.",
+            "Solo la calidad estética y la composición artística de la imagen o video.",
+            "La cantidad de veces que el archivo se hizo viral en redes sociales.",
+            "Únicamente que el archivo lo haya enviado alguien conocido de una de las partes."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Consistency of metadata, temporal coherence, verifiable context and absence of edits or suspicious cuts.",
+          "es-MX": "Consistencia de metadatos, coherencia temporal, contexto verificable y ausencia de ediciones o cortes sospechosos."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Authenticity is not only about the file \"looking real\" but about its technical properties and context matching the narrative of the case without unexplained anomalies."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La autenticidad no es solo que el archivo \"se vea real\", sino que sus propiedades técnicas y su contexto coincidan con la narrativa del caso sin anomalías inexplicadas."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Obtención legal de la evidencia",
+        "Question Text": {
+          "en-US": [
+            "What can happen to a multimedia file if it was obtained illegally (for example, violating privacy or without proper authorization)?"
+          ],
+          "es-MX": [
+            "¿Qué puede suceder con un archivo multimedia si fue obtenido de forma ilegal (por ejemplo, violando la privacidad o sin la debida autorización)?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The evidence may be excluded or rejected, regardless of its technical quality.",
+            "It automatically becomes more powerful and unquestionable in court.",
+            "It is always accepted as long as it is a video.",
+            "It is converted to text and anonymized to avoid any legal consequence."
+          ],
+          "es-MX": [
+            "La evidencia puede ser excluida o rechazada, independientemente de su calidad técnica.",
+            "Automáticamente se vuelve más poderosa e incuestionable en juicio.",
+            "Siempre se acepta mientras sea un video.",
+            "Se convierte a texto y se anonimiza para evitar cualquier consecuencia legal."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The evidence may be excluded or rejected, regardless of its technical quality.",
+          "es-MX": "La evidencia puede ser excluida o rechazada, independientemente de su calidad técnica."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "The class emphasizes that legality of acquisition is as important as technical integrity.",
+                "Evidence obtained in violation of rights can be considered inadmissible.",
+                "The forensic analyst must respect local norms and legal procedures."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "La clase enfatiza que la legalidad en la obtención es tan importante como la integridad técnica.",
+                "La evidencia obtenida violando derechos puede considerarse inadmisible.",
+                "El perito debe respetar las normas y procedimientos legales locales."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Evaluación en juicio y contexto",
+        "Question Text": {
+          "en-US": [
+            "Why does the class state that multimedia evidence loses value if it is evaluated in isolation, without context?"
+          ],
+          "es-MX": [
+            "¿Por qué la clase señala que la evidencia multimedia pierde valor si se evalúa de forma aislada, sin contexto?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because its probative strength increases when it is correlated with statements, logs, messages, time events and GPS locations.",
+            "Because judges only accept handwritten notes, not digital evidence.",
+            "Because photos and videos cannot be correlated with any other data.",
+            "Because multimedia is always secondary and never relevant."
+          ],
+          "es-MX": [
+            "Porque su fuerza probatoria aumenta cuando se correlaciona con declaraciones, logs, mensajes, eventos temporales y ubicaciones GPS.",
+            "Porque los jueces solo aceptan notas escritas a mano, no evidencia digital.",
+            "Porque las fotos y los videos no se pueden correlacionar con ningún otro dato.",
+            "Porque la multimedia siempre es secundaria y nunca relevante."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because its probative strength increases when it is correlated with statements, logs, messages, time events and GPS locations.",
+          "es-MX": "Porque su fuerza probatoria aumenta cuando se correlaciona con declaraciones, logs, mensajes, eventos temporales y ubicaciones GPS."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The class explains that multimedia gains probative weight when it fits coherently into the global narrative of the case and is supported by other types of evidence."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La clase explica que la multimedia gana peso probatorio cuando encaja coherentemente en la narrativa global del caso y se ve respaldada por otros tipos de evidencia."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Riesgos comunes y rechazo de evidencia",
+        "Question Text": {
+          "en-US": [
+            "Which of the following situations are mentioned in the class as common reasons for which courts may reject or question multimedia evidence?"
+          ],
+          "es-MX": [
+            "¿Cuáles de las siguientes situaciones se mencionan en la clase como razones comunes por las que los tribunales pueden rechazar o cuestionar la evidencia multimedia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Lack of original hash, presence of edits or recomposed video, internal dates that do not match the narrative, suspicious cuts in audio, erased or modified metadata and unvalidated screenshots.",
+            "Only using standard formats like MP4 or JPG.",
+            "Having too detailed a forensic report.",
+            "Using recognized forensic tools like Autopsy or Magnet AXIOM."
+          ],
+          "es-MX": [
+            "Ausencia de hash original, existencia de ediciones o video recompuesto, fechas internas que no coinciden con la narrativa, cortes sospechosos en audio, metadatos borrados o modificados y capturas de pantalla no validadas.",
+            "Solo usar formatos estándar como MP4 o JPG.",
+            "Tener un reporte forense demasiado detallado.",
+            "Usar herramientas forenses reconocidas como Autopsy o Magnet AXIOM."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Lack of original hash, presence of edits or recomposed video, internal dates that do not match the narrative, suspicious cuts in audio, erased or modified metadata and unvalidated screenshots.",
+          "es-MX": "Ausencia de hash original, existencia de ediciones o video recompuesto, fechas internas que no coinciden con la narrativa, cortes sospechosos en audio, metadatos borrados o modificados y capturas de pantalla no validadas."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "These are red flags that can seriously damage the credibility of the evidence.",
+                "The analyst must anticipate and mitigate these risks from the acquisition stage.",
+                "Transparent documentation and technical explanation are essential if any anomaly exists."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Son focos rojos que pueden dañar seriamente la credibilidad de la evidencia.",
+                "El analista debe anticipar y mitigar estos riesgos desde la etapa de adquisición.",
+                "La documentación transparente y la explicación técnica son esenciales si existe alguna anomalía."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Estándares aplicables",
+        "Question Text": {
+          "en-US": [
+            "Which international standards and groups does the class mention as references that strengthen the probative validity of multimedia evidence?"
+          ],
+          "es-MX": [
+            "¿Qué estándares y grupos internacionales menciona la clase como referencia que fortalece la validez probatoria de la evidencia multimedia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "ISO/IEC 27037, NIST SP 800-101 and SWGDE guidelines for digital evidence.",
+            "Only fashion magazines and photography blogs.",
+            "Exclusively the terms of service of social networks.",
+            "Any random internet forum without technical criteria."
+          ],
+          "es-MX": [
+            "ISO/IEC 27037, NIST SP 800-101 y las guías de SWGDE sobre evidencia digital.",
+            "Solo revistas de moda y blogs de fotografía.",
+            "Exclusivamente los términos de servicio de las redes sociales.",
+            "Cualquier foro de internet sin criterios técnicos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "ISO/IEC 27037, NIST SP 800-101 and SWGDE guidelines for digital evidence.",
+          "es-MX": "ISO/IEC 27037, NIST SP 800-101 y las guías de SWGDE sobre evidencia digital."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Following recognized standards shows that the acquisition, preservation and analysis of multimedia evidence were conducted under accepted best practices, increasing its credibility in court."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Seguir estándares reconocidos demuestra que la adquisición, preservación y análisis de la evidencia multimedia se realizaron bajo buenas prácticas aceptadas, aumentando su credibilidad en juicio."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Conclusiones de la clase",
+        "Question Text": {
+          "en-US": [
+            "Which option best summarizes the main conclusions of this class regarding the probative relevance of multimedia files?"
+          ],
+          "es-MX": [
+            "¿Qué opción resume mejor las conclusiones principales de esta clase sobre la relevancia probatoria de archivos multimedia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Multimedia evidence is a pillar of digital investigations; its acceptance depends on authenticity, integrity, relevance and legal collection; chain of custody and hashes are essential; and it must be contextualized with other elements of the case.",
+            "Multimedia evidence is only decorative and rarely influences the outcome of a case.",
+            "Any photo or video is always accepted automatically, without needing technical analysis.",
+            "Only printed documents are truly relevant; digital files are always secondary."
+          ],
+          "es-MX": [
+            "La evidencia multimedia es un pilar de las investigaciones digitales; su aceptación depende de autenticidad, integridad, relevancia y obtención legal; la cadena de custodia y los hashes son esenciales; y debe contextualizarse con otros elementos del caso.",
+            "La evidencia multimedia es solo decorativa y rara vez influye en el resultado de un caso.",
+            "Cualquier foto o video se acepta siempre de forma automática, sin necesitar análisis técnico.",
+            "Solo los documentos impresos son realmente relevantes; los archivos digitales siempre son secundarios."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Multimedia evidence is a pillar of digital investigations; its acceptance depends on authenticity, integrity, relevance and legal collection; chain of custody and hashes are essential; and it must be contextualized with other elements of the case.",
+          "es-MX": "La evidencia multimedia es un pilar de las investigaciones digitales; su aceptación depende de autenticidad, integridad, relevancia y obtención legal; la cadena de custodia y los hashes son esenciales; y debe contextualizarse con otros elementos del caso."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The class closes by reinforcing that technical work, legal procedures and contextual analysis must go together for multimedia to have strong probative value in court."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La clase cierra reforzando que el trabajo técnico, los procedimientos legales y el análisis contextual deben ir juntos para que la multimedia tenga un fuerte valor probatorio en juicio."
+            }
+          ]
+        }
+      }
+  
+    ]
+  }
+  

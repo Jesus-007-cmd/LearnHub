@@ -1,0 +1,772 @@
+{
+    "meta": {
+      "slug": "forense-apps46",
+      "title": "Análisis forense de videos y autenticidad de grabaciones",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 4,
+      "classNo": 46,
+      "description": "Técnicas forenses para analizar videos, detectar alteraciones, revisar estructura técnica (codec, frame rate, MOOV) y evaluar su autenticidad e integración con el caso.",
+      "tags": [
+        "videos",
+        "video forensics",
+        "Amped FIVE",
+        "VLC Forensics",
+        "Magnet AXIOM",
+        "FFmpeg",
+        "ffprobe",
+        "autenticidad"
+      ]
+    },
+    "Questions": [
+  
+      {
+        "Category": "Importancia del video",
+        "Question Text": {
+          "en-US": [
+            "Why are videos considered one of the most valuable types of digital evidence in forensic investigations?"
+          ],
+          "es-MX": [
+            "¿Por qué los videos se consideran uno de los tipos de evidencia digital más valiosos en las investigaciones forenses?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because they capture sequences of events, movements, voices and ambient sounds that help reconstruct what really happened.",
+            "Because videos cannot be edited or manipulated by any software.",
+            "Because videos always include perfect GPS information.",
+            "Because videos automatically replace the need for witness statements."
+          ],
+          "es-MX": [
+            "Porque capturan secuencias de eventos, movimientos, voces y sonidos ambientales que ayudan a reconstruir lo que realmente ocurrió.",
+            "Porque los videos no pueden ser editados ni manipulados por ningún software.",
+            "Porque los videos siempre incluyen información GPS perfecta.",
+            "Porque los videos reemplazan automáticamente la necesidad de testigos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because they capture sequences of events, movements, voices and ambient sounds that help reconstruct what really happened.",
+          "es-MX": "Porque capturan secuencias de eventos, movimientos, voces y sonidos ambientales que ayudan a reconstruir lo que realmente ocurrió."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Video recordings combine image and sound, showing the dynamics of a scene: who was present, what they did and what was heard. This makes them extremely useful for validating or refuting narratives in a case."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las grabaciones de video combinan imagen y sonido, mostrando la dinámica de una escena: quién estuvo presente, qué hizo y qué se escuchó. Esto las vuelve muy útiles para validar o refutar narraciones en un caso."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Riesgos de manipulación",
+        "Question Text": {
+          "en-US": [
+            "Why is a technical analysis of videos necessary before accepting them as authentic evidence?"
+          ],
+          "es-MX": [
+            "¿Por qué es necesario realizar un análisis técnico de los videos antes de aceptarlos como evidencia auténtica?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because videos can be cut, edited, recompressed or have metadata altered without obvious visual signs.",
+            "Because the court always asks for at least three different formats of the same video.",
+            "Because high definition videos are incompatible with forensic tools.",
+            "Because videos lose all information when copied once."
+          ],
+          "es-MX": [
+            "Porque los videos pueden ser cortados, editados, recomprimidos o tener metadatos alterados sin signos visuales evidentes.",
+            "Porque el juez siempre exige al menos tres formatos distintos del mismo video.",
+            "Porque los videos en alta definición son incompatibles con las herramientas forenses.",
+            "Porque los videos pierden toda información al copiarse una sola vez."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because videos can be cut, edited, recompressed or have metadata altered without obvious visual signs.",
+          "es-MX": "Porque los videos pueden ser cortados, editados, recomprimidos o tener metadatos alterados sin signos visuales evidentes."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "A video can appear continuous but hide cuts, re-encoded segments or modified metadata. Forensic tools reveal these alterations by examining structure, frame rate, codecs and headers."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Un video puede verse continuo pero ocultar cortes, segmentos recodificados o metadatos modificados. Las herramientas forenses revelan estas alteraciones al revisar estructura, frame rate, códecs y cabeceras."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Tipos de manipulación",
+        "Question Text": {
+          "en-US": [
+            "Which of the following is an example of an undetected cut or edit in a video?"
+          ],
+          "es-MX": [
+            "¿Cuál de los siguientes es un ejemplo de corte o edición no evidente en un video?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A sudden jump in the sequence where some seconds disappear but the scene visually looks similar.",
+            "A normal, smooth camera pan with continuous audio.",
+            "A change from day to night in a long surveillance recording.",
+            "An automatic brightness adjustment of the camera."
+          ],
+          "es-MX": [
+            "Un salto repentino en la secuencia donde desaparecen algunos segundos pero la escena luce similar.",
+            "Un paneo normal de cámara con audio continuo.",
+            "Un cambio de día a noche en una grabación de vigilancia larga.",
+            "Un ajuste automático de brillo de la cámara."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A sudden jump in the sequence where some seconds disappear but the scene visually looks similar.",
+          "es-MX": "Un salto repentino en la secuencia donde desaparecen algunos segundos pero la escena luce similar."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Invisible edits often remove short segments while keeping a similar scene before and after, making the cut hard to detect without frame-by-frame and audio waveform analysis."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las ediciones invisibles suelen quitar fragmentos cortos manteniendo una escena similar antes y después, lo que dificulta detectarlas sin un análisis cuadro a cuadro y de la forma de onda del audio."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Alteración de fotogramas",
+        "Question Text": {
+          "en-US": [
+            "What can inserting artificial frames or editing objects in specific frames cause in the video structure?"
+          ],
+          "es-MX": [
+            "¿Qué puede provocar en la estructura del video la inserción de fotogramas artificiales o la edición de objetos en fotogramas específicos?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Irregular patterns in keyframes (I-frames) and compression artifacts inconsistent with neighboring frames.",
+            "An automatic restoration of lost EXIF metadata.",
+            "A reduction in the duration to exactly half.",
+            "The video becoming unreadable in all players."
+          ],
+          "es-MX": [
+            "Patrones irregulares en keyframes (I-frames) y artefactos de compresión incoherentes con los fotogramas vecinos.",
+            "Una restauración automática de los metadatos EXIF perdidos.",
+            "Una reducción de la duración exactamente a la mitad.",
+            "Que el video se vuelva ilegible en todos los reproductores."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Irregular patterns in keyframes (I-frames) and compression artifacts inconsistent with neighboring frames.",
+          "es-MX": "Patrones irregulares en keyframes (I-frames) y artefactos de compresión incoherentes con los fotogramas vecinos."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "When a segment is edited or synthetic frames are inserted, the distribution of keyframes and compression residue can change, producing anomalies that tools like Amped FIVE can highlight."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Cuando se edita un segmento o se insertan fotogramas sintéticos, la distribución de keyframes y los residuos de compresión cambian, generando anomalías que herramientas como Amped FIVE pueden resaltar."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Recompresión sospechosa",
+        "Question Text": {
+          "en-US": [
+            "Which combination of changes can suggest that a video has been re-encoded or suspiciously converted?"
+          ],
+          "es-MX": [
+            "¿Qué combinación de cambios puede sugerir que un video fue recodificado o convertido de forma sospechosa?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A new codec, different resolution and a lower bitrate than expected from the original device.",
+            "The same codec, same resolution and same bitrate as the original camera.",
+            "Only a change in file name with no technical differences.",
+            "A larger file size but identical technical parameters."
+          ],
+          "es-MX": [
+            "Un códec nuevo, resolución distinta y un bitrate más bajo de lo esperado para el dispositivo original.",
+            "El mismo códec, misma resolución y mismo bitrate que la cámara original.",
+            "Solo un cambio de nombre de archivo sin diferencias técnicas.",
+            "Un tamaño mayor de archivo pero parámetros técnicos idénticos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A new codec, different resolution and a lower bitrate than expected from the original device.",
+          "es-MX": "Un códec nuevo, resolución distinta y un bitrate más bajo de lo esperado para el dispositivo original."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "When a video is exported from an editor or re-encoded, it often changes codec, resolution and bitrate. These differences must be compared against what the original device normally produces."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Cuando un video se exporta desde un editor o se recodifica, suele cambiar de códec, resolución y bitrate. Estas diferencias se comparan con lo que normalmente genera el dispositivo original."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Metadatos del video",
+        "Question Text": {
+          "en-US": [
+            "Which set of properties are typically part of the technical metadata of a video file?"
+          ],
+          "es-MX": [
+            "¿Cuál de los siguientes conjuntos de propiedades forma parte típica de los metadatos técnicos de un video?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Duration, resolution, frame rate, video and audio bitrate, codec and number of internal tracks.",
+            "Username, password, operating system license and antivirus used.",
+            "List of installed applications and browser history.",
+            "Battery level, Wi-Fi password and SMS contacts."
+          ],
+          "es-MX": [
+            "Duración, resolución, frame rate, bitrate de video y audio, códec y número de pistas internas.",
+            "Usuario, contraseña, licencia del sistema operativo y antivirus usado.",
+            "Lista de aplicaciones instaladas e historial del navegador.",
+            "Nivel de batería, contraseña de Wi-Fi y contactos de SMS."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Duration, resolution, frame rate, video and audio bitrate, codec and number of internal tracks.",
+          "es-MX": "Duración, resolución, frame rate, bitrate de video y audio, códec y número de pistas internas."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The container of a video file stores technical metadata describing how audio and video streams are encoded, which is essential for detecting anomalies in encoding and structure."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El contenedor de un archivo de video almacena metadatos técnicos que describen cómo se codifican las pistas de audio y video, lo cual es esencial para detectar anomalías de codificación y estructura."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Formatos y códecs",
+        "Question Text": {
+          "en-US": [
+            "Which option correctly relates common video containers and codecs?"
+          ],
+          "es-MX": [
+            "¿Cuál opción relaciona correctamente contenedores de video y códecs comunes?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "MP4 or MOV containers frequently use H.264 or H.265 as video codecs.",
+            "TXT files are typical video containers used for H.264.",
+            "MP3 is a video codec used inside the MP4 container.",
+            "ZIP is the standard container for H.265 videos."
+          ],
+          "es-MX": [
+            "Los contenedores MP4 o MOV suelen usar H.264 o H.265 como códecs de video.",
+            "Los archivos TXT son contenedores de video típicos para H.264.",
+            "MP3 es un códec de video que se usa dentro de MP4.",
+            "ZIP es el contenedor estándar para videos H.265."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "MP4 or MOV containers frequently use H.264 or H.265 as video codecs.",
+          "es-MX": "Los contenedores MP4 o MOV suelen usar H.264 o H.265 como códecs de video."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "MP4 and MOV are containers, while H.264 and H.265 are compression codecs for the video track. Distinguishing container vs. codec is important in forensic analysis."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "MP4 y MOV son contenedores, mientras que H.264 y H.265 son códecs de compresión de la pista de video. Distinguir contenedor y códec es importante en el análisis forense."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Herramientas Unidad IV",
+        "Question Text": {
+          "en-US": [
+            "Which tools are explicitly recommended in this unit for video analysis and structure inspection?"
+          ],
+          "es-MX": [
+            "¿Qué herramientas se recomiendan explícitamente en esta unidad para análisis de video e inspección de estructura?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Amped FIVE, VLC Forensics, Magnet AXIOM and FFmpeg/ffprobe.",
+            "Excel, Word and PowerPoint.",
+            "Only Chrome and Firefox.",
+            "Telegram, WhatsApp and Instagram."
+          ],
+          "es-MX": [
+            "Amped FIVE, VLC Forensics, Magnet AXIOM y FFmpeg/ffprobe.",
+            "Excel, Word y PowerPoint.",
+            "Solo Chrome y Firefox.",
+            "Telegram, WhatsApp e Instagram."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Amped FIVE, VLC Forensics, Magnet AXIOM and FFmpeg/ffprobe.",
+          "es-MX": "Amped FIVE, VLC Forensics, Magnet AXIOM y FFmpeg/ffprobe."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "These tools allow viewing, analyzing compression, inspecting MP4 structure, extracting metadata and correlating videos with other artifacts in a forensic case."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Estas herramientas permiten visualizar, analizar compresión, revisar la estructura MP4, extraer metadatos y correlacionar videos con otros artefactos de un caso forense."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "ffprobe / ExifTool",
+        "Question Text": {
+          "en-US": [
+            "What is the purpose of using commands such as \"exiftool file.mp4\" or \"ffprobe file.mp4\" in video forensics?"
+          ],
+          "es-MX": [
+            "¿Cuál es el propósito de usar comandos como \"exiftool archivo.mp4\" o \"ffprobe archivo.mp4\" en análisis forense de video?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To extract detailed metadata such as creation dates, codecs, frame rate and internal track information.",
+            "To automatically blur all faces in the video.",
+            "To encrypt the video so nobody can view it.",
+            "To delete all audio tracks from the file."
+          ],
+          "es-MX": [
+            "Extraer metadatos detallados como fechas de creación, códecs, frame rate e información de pistas internas.",
+            "Desenfocar automáticamente todas las caras del video.",
+            "Cifrar el video para que nadie pueda verlo.",
+            "Eliminar todas las pistas de audio del archivo."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To extract detailed metadata such as creation dates, codecs, frame rate and internal track information.",
+          "es-MX": "Extraer metadatos detallados como fechas de creación, códecs, frame rate e información de pistas internas."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "ExifTool and ffprobe parse video containers to list technical parameters and timestamps, helping the analyst detect inconsistencies or traces of editing."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "ExifTool y ffprobe interpretan el contenedor de video para listar parámetros técnicos y marcas de tiempo, ayudando al analista a detectar inconsistencias o rastros de edición."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Estructura MOOV",
+        "Question Text": {
+          "en-US": [
+            "Why is the MOOV atom important in MP4 video files?"
+          ],
+          "es-MX": [
+            "¿Por qué es importante el átomo MOOV en archivos de video MP4?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it contains structural and indexing information about the video, and abnormal placement or changes can indicate editing or recompression.",
+            "Because it stores the entire audio track of the video.",
+            "Because it is responsible for the subtitles only.",
+            "Because it always hides GPS coordinates inside."
+          ],
+          "es-MX": [
+            "Porque contiene información estructural e índices del video, y ubicaciones o cambios anormales pueden indicar edición o recomprensión.",
+            "Porque almacena toda la pista de audio del video.",
+            "Porque solo se encarga de los subtítulos.",
+            "Porque siempre oculta coordenadas GPS."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it contains structural and indexing information about the video, and abnormal placement or changes can indicate editing or recompression.",
+          "es-MX": "Porque contiene información estructural e índices del video, y ubicaciones o cambios anormales pueden indicar edición o recomprensión."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "In MP4 files, the MOOV atom stores metadata about tracks and timing. When an editor re-encodes the file, the position or content of MOOV may change, leaving forensic traces."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "En archivos MP4, el átomo MOOV guarda metadatos sobre pistas y tiempos. Cuando un editor recodifica el archivo, la posición o contenido de MOOV puede cambiar, dejando rastros forenses."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Análisis de audio",
+        "Question Text": {
+          "en-US": [
+            "What kind of issues in the audio track can suggest hidden cuts or edits in a video?"
+          ],
+          "es-MX": [
+            "¿Qué tipo de problemas en la pista de audio pueden sugerir cortes o ediciones ocultas en un video?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Sudden silences, abrupt changes in background noise or unnatural jumps in voices.",
+            "A constant background noise throughout the entire video.",
+            "Only the presence of music in the background.",
+            "A low volume level from start to finish without changes."
+          ],
+          "es-MX": [
+            "Silencios repentinos, cambios bruscos en el ruido ambiente o saltos poco naturales en las voces.",
+            "Un ruido de fondo constante en todo el video.",
+            "Solo la presencia de música de fondo.",
+            "Un volumen bajo de inicio a fin sin cambios."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Sudden silences, abrupt changes in background noise or unnatural jumps in voices.",
+          "es-MX": "Silencios repentinos, cambios bruscos en el ruido ambiente o saltos poco naturales en las voces."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The audio track is often more sensitive to edits than the image. Anomalies in continuity of ambient sounds or speech may reveal cuts that are visually subtle."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La pista de audio suele ser más sensible a las ediciones que la imagen. Anomalías en la continuidad de sonidos ambientales o de la voz pueden evidenciar cortes visualmente sutiles."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "VLC Forensics",
+        "Question Text": {
+          "en-US": [
+            "How can VLC Forensics help in the audio analysis of a video?"
+          ],
+          "es-MX": [
+            "¿Cómo puede ayudar VLC Forensics en el análisis de audio de un video?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "By allowing channel-by-channel review, detecting unusual variations in volume, noise and synchronization.",
+            "By automatically translating the spoken language in the video.",
+            "By removing the background noise without leaving any trace.",
+            "By encrypting the audio track to protect privacy."
+          ],
+          "es-MX": [
+            "Permitiendo revisar canal por canal, detectar variaciones inusuales de volumen, ruido y sincronía.",
+            "Traduciendo automáticamente el idioma hablado en el video.",
+            "Eliminando el ruido de fondo sin dejar rastros.",
+            "Cifrando la pista de audio para proteger la privacidad."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "By allowing channel-by-channel review, detecting unusual variations in volume, noise and synchronization.",
+          "es-MX": "Permitiendo revisar canal por canal, detectar variaciones inusuales de volumen, ruido y sincronía."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Forensic-oriented versions of VLC allow detailed inspection of audio channels, making it easier to spot artificial insertions, muted segments or poorly aligned edits."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las variantes forenses de VLC permiten una inspección detallada de los canales de audio, facilitando detectar inserciones artificiales, segmentos silenciados o ediciones mal alineadas."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Análisis visual técnico",
+        "Question Text": {
+          "en-US": [
+            "What is the purpose of reviewing a video frame by frame with tools like Amped FIVE or Forensically?"
+          ],
+          "es-MX": [
+            "¿Cuál es el propósito de revisar un video cuadro a cuadro con herramientas como Amped FIVE o Forensically?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To detect subtle changes in edges, compression artifacts, cloned regions or splices between segments.",
+            "To automatically improve the artistic quality of the video.",
+            "To compress the video as much as possible.",
+            "To remove all timestamps from the video."
+          ],
+          "es-MX": [
+            "Detectar cambios sutiles en bordes, artefactos de compresión, regiones clonadas o empalmes entre segmentos.",
+            "Mejorar automáticamente la calidad artística del video.",
+            "Comprimir el video lo máximo posible.",
+            "Eliminar todas las marcas de tiempo del video."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To detect subtle changes in edges, compression artifacts, cloned regions or splices between segments.",
+          "es-MX": "Detectar cambios sutiles en bordes, artefactos de compresión, regiones clonadas o empalmes entre segmentos."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Frame-by-frame inspection combined with error level analysis and other tools helps reveal tampering that may be hidden at normal playback speed."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La revisión cuadro a cuadro, junto con análisis de nivel de error y otras técnicas, ayuda a revelar manipulaciones que pasan desapercibidas a velocidad de reproducción normal."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Procedimiento general",
+        "Question Text": {
+          "en-US": [
+            "Which sequence best reflects the basic forensic procedure for video analysis described in this class?"
+          ],
+          "es-MX": [
+            "¿Qué secuencia refleja mejor el procedimiento básico de análisis forense de video descrito en esta clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Initial viewing, metadata extraction, structure analysis, audio review, visual technical analysis, hash calculation.",
+            "Hash calculation, delete metadata, upload the video to social networks, then analyze.",
+            "Random frame skipping, compress to smaller size, then watch once.",
+            "Only extract one frame and ignore the rest."
+          ],
+          "es-MX": [
+            "Visualización inicial, extracción de metadatos, análisis de estructura, revisión de audio, análisis visual técnico, cálculo de hash.",
+            "Cálculo de hash, borrar metadatos, subir el video a redes y luego analizar.",
+            "Saltar fotogramas al azar, comprimir a menor tamaño y ver una vez.",
+            "Extraer solo un fotograma e ignorar el resto."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Initial viewing, metadata extraction, structure analysis, audio review, visual technical analysis, hash calculation.",
+          "es-MX": "Visualización inicial, extracción de metadatos, análisis de estructura, revisión de audio, análisis visual técnico, cálculo de hash."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The procedure moves from a general inspection to increasingly technical layers, finishing with hashing to ensure integrity after the acquisition and analysis steps."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El procedimiento va de una inspección general a capas técnicas más profundas, terminando con el hash para garantizar la integridad tras la adquisición y el análisis."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Hash e integridad",
+        "Question Text": {
+          "en-US": [
+            "Why is calculating a SHA-256 hash of the video file mandatory for legal admissibility?"
+          ],
+          "es-MX": [
+            "¿Por qué es obligatorio calcular un hash SHA-256 del archivo de video para su aceptabilidad legal?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it creates a unique digital fingerprint that proves the file has not changed since acquisition.",
+            "Because it automatically repairs corrupted segments of the video.",
+            "Because it improves the visual quality of the video.",
+            "Because it hides incriminating scenes from the defense."
+          ],
+          "es-MX": [
+            "Porque genera una huella digital única que demuestra que el archivo no ha cambiado desde su adquisición.",
+            "Porque repara automáticamente los segmentos dañados del video.",
+            "Porque mejora la calidad visual del video.",
+            "Porque oculta escenas incriminatorias a la defensa."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it creates a unique digital fingerprint that proves the file has not changed since acquisition.",
+          "es-MX": "Porque genera una huella digital única que demuestra que el archivo no ha cambiado desde su adquisición."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Courts require proof that evidence has remained intact. Matching hash values show that the video presented is the same as the one originally extracted from the device or source."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los tribunales exigen demostrar que la evidencia se mantuvo intacta. Hashes coincidentes indican que el video presentado es el mismo que se extrajo originalmente del dispositivo o fuente."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Análisis contextual",
+        "Question Text": {
+          "en-US": [
+            "After the technical analysis of a video, why is contextual correlation with other evidence necessary?"
+          ],
+          "es-MX": [
+            "Después del análisis técnico de un video, ¿por qué es necesaria la correlación contextual con otras evidencias?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To verify if the video’s time, apparent location and content match chats, GPS data and the narrative of the case.",
+            "To avoid having to present witness statements in court.",
+            "To be able to delete all other digital evidence.",
+            "To ensure that only one piece of evidence is kept in the case."
+          ],
+          "es-MX": [
+            "Para verificar si la hora, la ubicación aparente y el contenido del video coinciden con chats, datos GPS y la narrativa del caso.",
+            "Para evitar presentar testigos en el juicio.",
+            "Para poder eliminar todas las demás evidencias digitales.",
+            "Para garantizar que solo se conserve una evidencia en el caso."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To verify if the video’s time, apparent location and content match chats, GPS data and the narrative of the case.",
+          "es-MX": "Para verificar si la hora, la ubicación aparente y el contenido del video coinciden con chats, datos GPS y la narrativa del caso."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Technical consistency alone does not prove truthfulness. Investigators must align the video with other timelines and artifacts to confirm whether it supports or contradicts the alleged events."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La consistencia técnica por sí sola no prueba la veracidad. El perito debe alinear el video con otras líneas de tiempo y artefactos para confirmar si refuerza o contradice los hechos alegados."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Ejemplo Adobe Premiere",
+        "Question Text": {
+          "en-US": [
+            "In the example from this class, a Telegram video shows Encoder: Adobe Premiere. What is the most reasonable conclusion?"
+          ],
+          "es-MX": [
+            "En el ejemplo de esta clase, un video de Telegram muestra Encoder: Adobe Premiere. ¿Cuál es la conclusión más razonable?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The video has been edited or processed in Adobe Premiere and is not a raw original from the recording device.",
+            "The device used was necessarily a professional cinema camera.",
+            "The video is automatically invalid and must be discarded.",
+            "The video cannot contain any relevant information for the case."
+          ],
+          "es-MX": [
+            "El video fue editado o procesado en Adobe Premiere y no es un original crudo del dispositivo de grabación.",
+            "El dispositivo usado fue necesariamente una cámara de cine profesional.",
+            "El video es automáticamente inválido y debe descartarse.",
+            "El video no puede contener información relevante para el caso."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The video has been edited or processed in Adobe Premiere and is not a raw original from the recording device.",
+          "es-MX": "El video fue editado o procesado en Adobe Premiere y no es un original crudo del dispositivo de grabación."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "When the encoder field shows software like Adobe Premiere, it indicates the file was exported from an editing program. This does not automatically make it invalid, but it must be interpreted as an edited version, not a direct capture."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Cuando el campo encoder muestra software como Adobe Premiere, indica que el archivo fue exportado desde un programa de edición. Esto no lo invalida automáticamente, pero debe interpretarse como una versión editada, no como una captura directa."
+            }
+          ]
+        }
+      }
+  
+    ]
+  }
+  

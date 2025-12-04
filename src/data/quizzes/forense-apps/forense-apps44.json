@@ -1,0 +1,904 @@
+{
+    "meta": {
+      "slug": "forense-apps44",
+      "title": "Extracción forense de archivos adjuntos desde bases SQLite",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 4,
+      "classNo": 44,
+      "description": "Métodos profesionales para extraer imágenes, audios, videos y documentos desde bases SQLite de mensajería y estructuras de almacenamiento.",
+      "tags": [
+        "SQLite",
+        "WhatsApp",
+        "msgstore.db",
+        "extracción de adjuntos",
+        "multimedia forense",
+        "Android forensics"
+      ]
+    },
+    "Questions": [
+  
+      {
+        "Category": "Relación base–archivo",
+        "Question Text": {
+          "en-US": [
+            "Why can multimedia files from messaging apps not always be found inside the SQLite database?"
+          ],
+          "es-MX": [
+            "¿Por qué los archivos multimedia de apps de mensajería no siempre están dentro de la base SQLite?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because the database only stores references or paths, while the file is saved in the device’s storage.",
+            "Because SQLite cannot store any kind of metadata.",
+            "Because messaging apps only save PDFs in databases.",
+            "Because multimedia is always encrypted and cannot be stored anywhere."
+          ],
+          "es-MX": [
+            "Porque la base solo guarda referencias o rutas, mientras el archivo está en el almacenamiento del dispositivo.",
+            "Porque SQLite no puede almacenar ningún tipo de metadatos.",
+            "Porque las apps de mensajería solo guardan PDFs en bases de datos.",
+            "Porque los multimedia siempre están cifrados y no pueden almacenarse en ningún lado."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because the database only stores references or paths, while the file is saved in the device’s storage.",
+          "es-MX": "Porque la base solo guarda referencias o rutas, mientras el archivo está en el almacenamiento del dispositivo."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "SQLite databases such as msgstore.db usually contain message metadata and pointers (local_path, media_url, mime_type). The multimedia files themselves are stored physically in WhatsApp/Media folders."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Bases como msgstore.db contienen metadatos y rutas (local_path, media_url, mime_type). El archivo real siempre se almacena en carpetas como WhatsApp/Media, no dentro de la base."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "msgstore.db estructura",
+        "Question Text": {
+          "en-US": [
+            "Which WhatsApp table contains the relationship between messages and their associated multimedia?"
+          ],
+          "es-MX": [
+            "¿Qué tabla de WhatsApp contiene la relación entre mensajes y sus archivos multimedia asociados?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "messages",
+            "android_settings",
+            "chat_list",
+            "call_log"
+          ],
+          "es-MX": [
+            "messages",
+            "android_settings",
+            "chat_list",
+            "call_log"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "messages",
+          "es-MX": "messages"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The messages table stores message metadata, including media_wa_type, mime types, URLs, and local_path, allowing forensic analysts to find the associated file."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La tabla messages almacena metadatos como media_wa_type, MIME, URLs y local_path, lo que permite identificar el archivo multimedia vinculado."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Tipos de multimedia",
+        "Question Text": {
+          "en-US": [
+            "Which media_wa_type value indicates that a WhatsApp message contains an image?"
+          ],
+          "es-MX": [
+            "¿Qué valor de media_wa_type indica que un mensaje de WhatsApp contiene una imagen?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "1",
+            "2",
+            "0",
+            "10"
+          ],
+          "es-MX": [
+            "1",
+            "2",
+            "0",
+            "10"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "1",
+          "es-MX": "1"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "In WhatsApp SQLite, media_wa_type = 1 corresponds to images, while other values correspond to videos, audio, documents, or stickers."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "En SQLite de WhatsApp, media_wa_type = 1 corresponde a imágenes; otros valores representan videos, audios o documentos."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Rutas físicas",
+        "Question Text": {
+          "en-US": [
+            "Where are WhatsApp images usually stored on Android devices?"
+          ],
+          "es-MX": [
+            "¿Dónde se almacenan normalmente las imágenes de WhatsApp en dispositivos Android?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "/WhatsApp/Media/WhatsApp Images/",
+            "/Android/system/",
+            "/Documents/Temp/",
+            "/cache/tmp/media/"
+          ],
+          "es-MX": [
+            "/WhatsApp/Media/WhatsApp Images/",
+            "/Android/system/",
+            "/Documents/Temp/",
+            "/cache/tmp/media/"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "/WhatsApp/Media/WhatsApp Images/",
+          "es-MX": "/WhatsApp/Media/WhatsApp Images/"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "WhatsApp stores images in WhatsApp/Media/WhatsApp Images, where attachments referenced in msgstore.db can be physically located."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "WhatsApp guarda las imágenes en WhatsApp/Media/WhatsApp Images, donde se encuentran físicamente los adjuntos referenciados en msgstore.db."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Herramientas SQLite",
+        "Question Text": {
+          "en-US": [
+            "Which tool is commonly used to manually inspect SQLite databases such as msgstore.db?"
+          ],
+          "es-MX": [
+            "¿Qué herramienta se usa comúnmente para inspeccionar manualmente bases SQLite como msgstore.db?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "DB Browser for SQLite",
+            "WinRAR",
+            "VLC",
+            "Photoshop"
+          ],
+          "es-MX": [
+            "DB Browser for SQLite",
+            "WinRAR",
+            "VLC",
+            "Photoshop"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "DB Browser for SQLite",
+          "es-MX": "DB Browser for SQLite"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "DB Browser for SQLite allows analysts to open msgstore.db, explore tables, view rows, extract raw_data and export content."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "DB Browser for SQLite permite abrir msgstore.db, explorar tablas, revisar filas, extraer raw_data y exportar contenido."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Localización de adjuntos",
+        "Question Text": {
+          "en-US": [
+            "Which field in WhatsApp databases typically contains the real storage path of an attachment?"
+          ],
+          "es-MX": [
+            "¿Qué campo en las bases de WhatsApp suele contener la ruta real de almacenamiento del archivo adjunto?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "local_path",
+            "chat_row_id",
+            "media_key",
+            "sender_jid"
+          ],
+          "es-MX": [
+            "local_path",
+            "chat_row_id",
+            "media_key",
+            "sender_jid"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "local_path",
+          "es-MX": "local_path"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The local_path field is one of the most relevant forensic indicators because it matches the physical folder structure of WhatsApp/Media."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El campo local_path es clave porque coincide con la estructura real en WhatsApp/Media, facilitando ubicar el archivo exportado."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Multimedia MIME",
+        "Question Text": {
+          "en-US": [
+            "Which MIME prefix allows an analyst to quickly identify that a message contains an image?"
+          ],
+          "es-MX": [
+            "¿Qué prefijo MIME permite identificar rápidamente que un mensaje contiene una imagen?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "image/",
+            "video/",
+            "audio/",
+            "application/"
+          ],
+          "es-MX": [
+            "image/",
+            "video/",
+            "audio/",
+            "application/"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "image/",
+          "es-MX": "image/"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "MIME types beginning with image/, such as image/jpeg or image/png, indicate that the attachment is a picture and help filter relevant rows in SQLite."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los MIME que inician con image/, como image/jpeg o image/png, indican que el adjunto es una fotografía y permiten filtrar registros relevantes."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Extracción",
+        "Question Text": {
+          "en-US": [
+            "Which forensic tool automatically correlates SQLite data with physical multimedia files during analysis?"
+          ],
+          "es-MX": [
+            "¿Qué herramienta forense correlaciona automáticamente datos SQLite con archivos multimedia físicos durante el análisis?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Magnet AXIOM",
+            "WinZip",
+            "Excel",
+            "Blender"
+          ],
+          "es-MX": [
+            "Magnet AXIOM",
+            "WinZip",
+            "Excel",
+            "Blender"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Magnet AXIOM",
+          "es-MX": "Magnet AXIOM"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "AXIOM reads SQLite artifacts, maps media_wa_type, and links them with the files found in device extractions, simplifying forensic workflows."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "AXIOM interpreta artefactos SQLite, mapea media_wa_type y vincula archivos físicos encontrados en la extracción del dispositivo, facilitando el proceso."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Validación",
+        "Question Text": {
+          "en-US": [
+            "Why is hashing mandatory after exporting a multimedia file from a device?"
+          ],
+          "es-MX": [
+            "¿Por qué es obligatorio calcular un hash después de exportar un archivo multimedia del dispositivo?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To prove the file was not modified after extraction.",
+            "Because the hash replaces the need for metadata.",
+            "Because hashing changes the content of the file.",
+            "Because it compresses the file for storage."
+          ],
+          "es-MX": [
+            "Para demostrar que el archivo no fue modificado tras la extracción.",
+            "Porque el hash sustituye la necesidad de metadatos.",
+            "Porque el hash cambia el contenido del archivo.",
+            "Porque sirve para comprimir el archivo."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To prove the file was not modified after extraction.",
+          "es-MX": "Para demostrar que el archivo no fue modificado tras la extracción."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Hashes such as SHA-256 provide integrity validation, allowing the file to be presented in court with confidence that it remains unchanged."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Hashes como SHA-256 validan integridad, permitiendo presentar el archivo en un proceso legal con garantía de que no ha sido alterado."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Reconstrucción",
+        "Question Text": {
+          "en-US": [
+            "What can an analyst do if a multimedia file referenced in msgstore.db has been deleted from the device?"
+          ],
+          "es-MX": [
+            "¿Qué puede hacer un analista si un archivo multimedia referenciado en msgstore.db ha sido eliminado del dispositivo?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Attempt recovery from thumbnails, cache folders, or raw_data fields.",
+            "Delete all SQLite references.",
+            "Ignore the missing file because it cannot be recovered.",
+            "Recreate the media manually with editing software."
+          ],
+          "es-MX": [
+            "Intentar recuperarlo desde miniaturas, carpetas de caché o campos raw_data.",
+            "Borrar todas las referencias SQLite.",
+            "Ignorar el archivo faltante porque no puede recuperarse.",
+            "Recrear el archivo manualmente con software de edición."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Attempt recovery from thumbnails, cache folders, or raw_data fields.",
+          "es-MX": "Intentar recuperarlo desde miniaturas, carpetas de caché o campos raw_data."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Even if deleted, small previews or thumbnails often survive in .thumbs or raw_data fields, allowing partial reconstruction."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Aunque el archivo se elimine, miniaturas o raw_data pueden persistir, permitiendo reconstrucciones parciales."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Bases de datos y adjuntos",
+        "Question Text": {
+          "en-US": [
+            "Which table helps link WhatsApp attachments with the sender’s identity?"
+          ],
+          "es-MX": [
+            "¿Qué tabla ayuda a vincular adjuntos de WhatsApp con la identidad del remitente?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "wa_contacts",
+            "settings",
+            "stickers",
+            "media_previews"
+          ],
+          "es-MX": [
+            "wa_contacts",
+            "settings",
+            "stickers",
+            "media_previews"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "wa_contacts",
+          "es-MX": "wa_contacts"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "wa_contacts contains sender JIDs, names, and phone numbers, enabling analysts to attribute attachments to a specific person."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "wa_contacts contiene JIDs, nombres y números, permitiendo atribuir archivos adjuntos a un usuario concreto."
+            }
+          ]
+        }
+      }
+  
+      , 
+  
+      {
+        "Category": "Data carving",
+        "Question Text": {
+          "en-US": [
+            "Which technique can be used to recover fragments of deleted multimedia files within free space?"
+          ],
+          "es-MX": [
+            "¿Qué técnica puede utilizarse para recuperar fragmentos de archivos multimedia eliminados en espacio libre?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "File carving",
+            "SQL filtering",
+            "Network sniffing",
+            "Log redirection"
+          ],
+          "es-MX": [
+            "File carving",
+            "Filtrado SQL",
+            "Captura de red",
+            "Redirección de logs"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "File carving",
+          "es-MX": "File carving"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Carving tools search for file headers (JPEG, MP4, PNG) in raw storage to reconstruct deleted media independently of SQLite references."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las técnicas de carving buscan encabezados (JPEG, MP4, PNG) en el almacenamiento bruto para reconstruir archivos eliminados sin depender de SQLite."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "msgstore.db análisis",
+        "Question Text": {
+          "en-US": [
+            "Which SQLite field often stores embedded thumbnails or small previews of images?"
+          ],
+          "es-MX": [
+            "¿Qué campo SQLite suele almacenar miniaturas o previsualizaciones pequeñas incrustadas en imágenes?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "raw_data",
+            "jid_row_id",
+            "starred",
+            "message_sort_id"
+          ],
+          "es-MX": [
+            "raw_data",
+            "jid_row_id",
+            "starred",
+            "message_sort_id"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "raw_data",
+          "es-MX": "raw_data"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "raw_data frequently contains small BLOBs such as thumbnails or cached previews that can be extracted and analyzed."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "raw_data contiene con frecuencia BLOBs pequeños como miniaturas o previsualizaciones, útiles para reconstrucciones parciales."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Procedimiento forense",
+        "Question Text": {
+          "en-US": [
+            "What is the first recommended step when analyzing msgstore.db for attachments?"
+          ],
+          "es-MX": [
+            "¿Cuál es el primer paso recomendado al analizar msgstore.db para adjuntos?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Open the SQLite database with a forensic tool and inspect relevant tables.",
+            "Export all files without looking at the database.",
+            "Rename msgstore.db to media.db.",
+            "Modify the database to remove invalid rows."
+          ],
+          "es-MX": [
+            "Abrir la base SQLite con una herramienta forense e inspeccionar las tablas relevantes.",
+            "Exportar todos los archivos sin revisar la base.",
+            "Renombrar msgstore.db a media.db.",
+            "Modificar la base para eliminar filas no válidas."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Open the SQLite database with a forensic tool and inspect relevant tables.",
+          "es-MX": "Abrir la base SQLite con una herramienta forense e inspeccionar las tablas relevantes."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The analysis begins by understanding how messages and attachments are linked, reviewing fields such as media_mime_type and local_path."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El análisis inicia revisando la estructura de mensajes y adjuntos, observando campos como media_mime_type y local_path."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "AXIOM",
+        "Question Text": {
+          "en-US": [
+            "Which AXIOM module automatically extracts WhatsApp attachments?"
+          ],
+          "es-MX": [
+            "¿Qué módulo de AXIOM extrae automáticamente los adjuntos de WhatsApp?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Artifacts → Chats → WhatsApp → Attachments",
+            "Network Forensics",
+            "Password Recovery",
+            "Browser History"
+          ],
+          "es-MX": [
+            "Artifacts → Chats → WhatsApp → Attachments",
+            "Forense de red",
+            "Recuperación de contraseñas",
+            "Historial del navegador"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Artifacts → Chats → WhatsApp → Attachments",
+          "es-MX": "Artifacts → Chats → WhatsApp → Attachments"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "AXIOM organizes WhatsApp artifacts into modules that show each media file with its metadata, hashes, sender, timestamps and location."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "AXIOM organiza artefactos de WhatsApp permitiendo ver archivos adjuntos con metadatos, hashes, remitente y ubicación."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "EXIF",
+        "Question Text": {
+          "en-US": [
+            "After extracting an image referenced in SQLite, which tool is most suitable to analyze EXIF metadata?"
+          ],
+          "es-MX": [
+            "Después de extraer una imagen referenciada en SQLite, ¿qué herramienta es más adecuada para analizar sus metadatos EXIF?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "ExifTool",
+            "Notepad",
+            "Telegram",
+            "Chrome Developer Tools"
+          ],
+          "es-MX": [
+            "ExifTool",
+            "Bloc de notas",
+            "Telegram",
+            "Herramientas de desarrollador de Chrome"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "ExifTool",
+          "es-MX": "ExifTool"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "ExifTool extracts deep metadata such as DateTimeOriginal, GPS coordinates, device model and editing history, essential for reconstruction."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "ExifTool extrae metadatos profundos como DateTimeOriginal, GPS, modelo del dispositivo e historial de edición, clave para la reconstrucción."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Timestamps",
+        "Question Text": {
+          "en-US": [
+            "Which timestamps must be compared to reconstruct the true timeline of a multimedia file?"
+          ],
+          "es-MX": [
+            "¿Qué timestamps deben compararse para reconstruir la línea temporal real de un archivo multimedia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Database message timestamp, file modification time, and EXIF capture time.",
+            "Only EXIF DateTimeOriginal.",
+            "Only the message text timestamp.",
+            "Only device boot time."
+          ],
+          "es-MX": [
+            "Timestamp del mensaje, fecha de modificación del archivo y EXIF de captura.",
+            "Solo DateTimeOriginal de EXIF.",
+            "Solo el timestamp del texto del mensaje.",
+            "Solo la hora de arranque del dispositivo."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Database message timestamp, file modification time, and EXIF capture time.",
+          "es-MX": "Timestamp del mensaje, fecha de modificación del archivo y EXIF de captura."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Comparing these timestamps reveals inconsistencies, manipulation attempts, timezone errors or delayed sending of attachments."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Comparar estos timestamps revela inconsistencias, manipulación, errores de zona horaria o envíos diferidos."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Carpetas ocultas",
+        "Question Text": {
+          "en-US": [
+            "Which folder is known to contain WhatsApp thumbnail data that can help recover deleted images?"
+          ],
+          "es-MX": [
+            "¿Qué carpeta es conocida por contener miniaturas de WhatsApp que ayudan a recuperar imágenes eliminadas?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "/WhatsApp/Media/.thumbs",
+            "/Android/cache/wallpapers",
+            "/Downloads/temp",
+            "/system/bin"
+          ],
+          "es-MX": [
+            "/WhatsApp/Media/.thumbs",
+            "/Android/cache/wallpapers",
+            "/Downloads/temp",
+            "/system/bin"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "/WhatsApp/Media/.thumbs",
+          "es-MX": "/WhatsApp/Media/.thumbs"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Thumbnail folders can preserve low-resolution previews even when original images are deleted, making them crucial for reconstruction."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las carpetas de miniaturas preservan previsualizaciones incluso cuando la imagen original se elimina, útiles para la reconstrucción."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Integridad",
+        "Question Text": {
+          "en-US": [
+            "What does a matching SHA-256 hash indicate when exporting multimedia evidence?"
+          ],
+          "es-MX": [
+            "¿Qué indica un hash SHA-256 coincidente al exportar evidencia multimedia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "That the file has remained unchanged and retains forensic integrity.",
+            "That the file has been modified recently.",
+            "That the file size was reduced by hashing.",
+            "That metadata was rewritten."
+          ],
+          "es-MX": [
+            "Que el archivo se mantuvo intacto y conserva integridad forense.",
+            "Que el archivo fue modificado recientemente.",
+            "Que el hashing reduce el tamaño del archivo.",
+            "Que los metadatos fueron reescritos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "That the file has remained unchanged and retains forensic integrity.",
+          "es-MX": "Que el archivo se mantuvo intacto y conserva integridad forense."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Matching hashes confirm that the exported file is identical to the original, supporting chain of custody requirements."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Hashes coincidentes confirman que el archivo exportado es idéntico al original, cumpliendo requisitos de cadena de custodia."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Recuperación avanzada",
+        "Question Text": {
+          "en-US": [
+            "Which application can perform media carving and deep multimedia reconstruction in forensic investigations?"
+          ],
+          "es-MX": [
+            "¿Qué aplicación puede realizar media carving y reconstrucción profunda de multimedia en investigaciones forenses?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Autopsy",
+            "YouTube",
+            "PowerPoint",
+            "Discord"
+          ],
+          "es-MX": [
+            "Autopsy",
+            "YouTube",
+            "PowerPoint",
+            "Discord"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Autopsy",
+          "es-MX": "Autopsy"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Autopsy contains carving modules capable of recovering deleted or fragmented multimedia files using header-based file reconstruction."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Autopsy posee módulos de carving capaces de recuperar multimedia eliminada o fragmentada mediante reconstrucción basada en encabezados."
+            }
+          ]
+        }
+      }
+  
+    ]
+  }
+  

@@ -1,0 +1,611 @@
+{
+    "meta": {
+      "slug": "forense-apps64",
+      "title": "Preservación y almacenamiento seguro de evidencia digital",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 5,
+      "classNo": 64,
+      "description": "Buenas prácticas, riesgos, principios y técnicas de preservación, respaldo, cifrado y almacenamiento seguro de evidencia digital en contextos forenses.",
+      "tags": [
+        "preservación de evidencia",
+        "almacenamiento seguro",
+        "cifrado",
+        "respaldos",
+        "controles de acceso",
+        "unidad V"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "Definición de preservación",
+        "Question Text": {
+          "en-US": [
+            "According to the class, what does it mean to preserve digital evidence?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿qué significa preservar la evidencia digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To ensure that data remains intact, accessible, confidential and unaltered from acquisition until it is presented in a report or before an authority.",
+            "To keep the device turned on and connected to the internet so the evidence can be updated in real time.",
+            "To freely modify metadata and filenames so that the evidence is more comfortable to review.",
+            "To delete unnecessary files to save space, without documenting the changes."
+          ],
+          "es-MX": [
+            "Garantizar que los datos permanezcan íntegros, accesibles, confidenciales y sin alteraciones desde que se adquieren hasta que se presentan en un informe o ante una autoridad.",
+            "Mantener el dispositivo encendido y conectado a internet para que la evidencia se actualice en tiempo real.",
+            "Modificar libremente metadatos y nombres de archivos para que la evidencia sea más cómoda de revisar.",
+            "Eliminar archivos que parezcan innecesarios para ahorrar espacio, sin documentar los cambios."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To ensure that data remains intact, accessible, confidential and unaltered from acquisition until it is presented in a report or before an authority.",
+          "es-MX": "Garantizar que los datos permanezcan íntegros, accesibles, confidenciales y sin alteraciones desde que se adquieren hasta que se presentan en un informe o ante una autoridad."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Preservation is not just storing files; it is maintaining integrity, confidentiality and controlled access over time.",
+                "The class emphasizes that even a single metadata change can compromise the evidentiary value.",
+                "Preserving includes using forensic copies instead of originals and documenting every step.",
+                "Proper preservation ensures that the evidence can be defended in legal or institutional contexts."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Preservar no es solo guardar archivos; es mantener integridad, confidencialidad y acceso controlado a lo largo del tiempo.",
+                "La clase enfatiza que incluso un solo cambio de metadatos puede comprometer el valor probatorio.",
+                "Preservar implica usar copias forenses en lugar de originales y documentar cada paso.",
+                "Una buena preservación permite defender la evidencia en contextos legales o institucionales."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Riesgos para la evidencia",
+        "Question Text": {
+          "en-US": [
+            "Which of the following correctly groups the types of risks that affect digital evidence as described in the class?"
+          ],
+          "es-MX": [
+            "¿Cuál de las siguientes opciones agrupa correctamente los tipos de riesgos que afectan a la evidencia digital según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Physical, logical, human and organizational risks (such as impacts, malware, unauthorized access and lack of internal policies).",
+            "Only physical risks, like dropping the device, while logical and human factors are irrelevant.",
+            "Only logical risks, like corruption of data, ignoring physical, human and organizational aspects.",
+            "Only legal risks, related to how judges interpret the report, without considering how devices are stored or managed."
+          ],
+          "es-MX": [
+            "Riesgos físicos, lógicos, humanos y organizacionales (como golpes, malware, accesos no autorizados y falta de políticas internas).",
+            "Solo riesgos físicos, como que se caiga el dispositivo, mientras que los factores lógicos y humanos son irrelevantes.",
+            "Solo riesgos lógicos, como la corrupción de datos, ignorando aspectos físicos, humanos y organizacionales.",
+            "Solo riesgos legales, relacionados con cómo interpretan el informe los jueces, sin considerar cómo se almacenan o gestionan los dispositivos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Physical, logical, human and organizational risks (such as impacts, malware, unauthorized access and lack of internal policies).",
+          "es-MX": "Riesgos físicos, lógicos, humanos y organizacionales (como golpes, malware, accesos no autorizados y falta de políticas internas)."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Physical risks include impacts, humidity, high temperatures and electrostatic discharges.",
+                "Logical risks include data corruption, accidental formatting, malware and overwriting.",
+                "Human risks include unauthorized access, errors, theft and unintentional deletion.",
+                "Organizational risks arise from poor policies, lack of backups and insufficient training."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Los riesgos físicos incluyen golpes, humedad, temperaturas altas y descargas electrostáticas.",
+                "Los riesgos lógicos incluyen corrupción de datos, formateos accidentales, malware y sobrescrituras.",
+                "Los riesgos humanos abarcan accesos no autorizados, errores, robo y eliminación involuntaria.",
+                "Los riesgos organizacionales se originan en malas políticas, falta de respaldos y escaso entrenamiento."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Duplicados forenses",
+        "Question Text": {
+          "en-US": [
+            "What best practice related to forensic duplicates is highlighted in the class?"
+          ],
+          "es-MX": [
+            "¿Qué buena práctica relacionada con los duplicados forenses se destaca en la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Analysis must never be performed directly on the original device; instead, a forensic image (E01, dd, RAW) should be created and analyzed.",
+            "It is recommended to modify the original device so that the tools run faster and produce smaller reports.",
+            "To save time, the analyst should work directly on the original evidence and avoid making copies.",
+            "The original device and the forensic copy should be used interchangeably, without recording hashes."
+          ],
+          "es-MX": [
+            "El análisis nunca debe hacerse directamente sobre el dispositivo original; en su lugar, debe generarse una imagen forense (E01, dd, RAW) y analizar esa copia.",
+            "Se recomienda modificar el dispositivo original para que las herramientas trabajen más rápido y generen reportes más pequeños.",
+            "Para ahorrar tiempo, el analista debe trabajar directamente sobre la evidencia original y evitar hacer copias.",
+            "El dispositivo original y la copia forense pueden usarse indistintamente, sin registrar hashes."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Analysis must never be performed directly on the original device; instead, a forensic image (E01, dd, RAW) should be created and analyzed.",
+          "es-MX": "El análisis nunca debe hacerse directamente sobre el dispositivo original; en su lugar, debe generarse una imagen forense (E01, dd, RAW) y analizar esa copia."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "divider"
+            },
+            {
+              "type": "text",
+              "content": "The class insists that the original must be preserved and the work must be done on a forensic duplicate."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "The forensic image captures the device content at a specific point in time.",
+                "The hash of the image is recorded and verified before and after analysis.",
+                "Working on the copy protects the original from accidental changes or damage.",
+                "This is a core principle in digital forensics and directly supports preservation."
+              ]
+            },
+            {
+              "type": "divider"
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "divider"
+            },
+            {
+              "type": "text",
+              "content": "La clase insiste en que el original debe preservarse y el trabajo debe realizarse sobre un duplicado forense."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "La imagen forense captura el contenido del dispositivo en un momento específico.",
+                "El hash de la imagen se registra y verifica antes y después del análisis.",
+                "Trabajar sobre la copia protege al original de cambios o daños accidentales.",
+                "Este principio es central en forense digital y respalda directamente la preservación."
+              ]
+            },
+            {
+              "type": "divider"
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Contenedores y seguridad física",
+        "Question Text": {
+          "en-US": [
+            "Which of the following options describes appropriate physical storage for digital evidence, according to the class?"
+          ],
+          "es-MX": [
+            "¿Cuál de las siguientes opciones describe un almacenamiento físico adecuado para la evidencia digital, según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Using evidence bags, antistatic containers, labeled boxes for hard drives and locked shelves or safes, and Faraday bags for mobile devices when needed.",
+            "Leaving devices stacked on any desk, without labels, in a room that is always open.",
+            "Storing all devices in a single plastic bag without identification to save space.",
+            "Keeping devices in the analyst’s personal backpack to have them ‘always at hand’."
+          ],
+          "es-MX": [
+            "Utilizar bolsas de evidencia, contenedores antiestáticos, cajas etiquetadas para discos duros y estantería cerrada con llave o caja fuerte, y bolsas tipo Faraday para móviles cuando sea necesario.",
+            "Dejar los dispositivos apilados en cualquier escritorio, sin etiquetas, en un cuarto que siempre está abierto.",
+            "Guardar todos los dispositivos en una sola bolsa de plástico sin identificación para ahorrar espacio.",
+            "Mantener los dispositivos en la mochila personal del analista para tenerlos ‘siempre a la mano’."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Using evidence bags, antistatic containers, labeled boxes for hard drives and locked shelves or safes, and Faraday bags for mobile devices when needed.",
+          "es-MX": "Utilizar bolsas de evidencia, contenedores antiestáticos, cajas etiquetadas para discos duros y estantería cerrada con llave o caja fuerte, y bolsas tipo Faraday para móviles cuando sea necesario."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The class describes several protective elements for physical conservation of devices and media."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Evidence bags and antistatic containers reduce physical and electrostatic damage.",
+                "Labels with chain-of-custody numbers link the device to documentation.",
+                "Locked shelves or safes restrict access to authorized personnel.",
+                "Faraday bags protect mobile devices from wireless communications that could alter data."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La clase describe varios elementos de protección para la conservación física de dispositivos y medios."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Las bolsas de evidencia y contenedores antiestáticos reducen daños físicos y electrostáticos.",
+                "Las etiquetas con número de cadena de custodia vinculan el dispositivo con la documentación.",
+                "Las estanterías cerradas o cajas fuertes limitan el acceso a personal autorizado.",
+                "Las bolsas Faraday protegen a los móviles de comunicaciones inalámbricas que podrían alterar datos."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Cifrado y confidencialidad",
+        "Question Text": {
+          "en-US": [
+            "What is the main role of encryption in the secure storage of digital evidence, according to the guided discussion in class?"
+          ],
+          "es-MX": [
+            "¿Cuál es el papel principal del cifrado en el almacenamiento seguro de evidencia digital, según la discusión guiada en clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To protect evidence, forensic copies and reports against theft, unauthorized access or loss of media, using strong methods such as AES-256 and encrypted volumes (e.g., VeraCrypt or BitLocker).",
+            "To compress the evidence so that reports are smaller and faster to send by email, regardless of security.",
+            "To modify the content of the evidence so that it is more readable for non-technical personnel.",
+            "To eliminate the need for physical security, since encryption alone is enough to protect everything."
+          ],
+          "es-MX": [
+            "Proteger la evidencia, las copias forenses y los informes frente a robo, accesos no autorizados o pérdida de medios, usando métodos fuertes como AES-256 y volúmenes cifrados (por ejemplo, VeraCrypt o BitLocker).",
+            "Comprimir la evidencia para que los reportes sean más pequeños y rápidos de enviar por correo, sin importar la seguridad.",
+            "Modificar el contenido de la evidencia para que sea más legible para personal no técnico.",
+            "Eliminar la necesidad de seguridad física, ya que el cifrado por sí solo basta para proteger todo."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To protect evidence, forensic copies and reports against theft, unauthorized access or loss of media, using strong methods such as AES-256 and encrypted volumes (e.g., VeraCrypt or BitLocker).",
+          "es-MX": "Proteger la evidencia, las copias forenses y los informes frente a robo, accesos no autorizados o pérdida de medios, usando métodos fuertes como AES-256 y volúmenes cifrados (por ejemplo, VeraCrypt o BitLocker)."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Encryption adds a logical security layer: data is unreadable without the key.",
+                "The class suggests using robust algorithms like AES-256 in encrypted containers or volumes.",
+                "Both evidence and reports and backups should be encrypted when stored on mobile or external media.",
+                "Losing the encryption key is also a risk discussed in class, so key management must be controlled."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "El cifrado añade una capa de seguridad lógica: los datos son ilegibles sin la llave.",
+                "La clase sugiere usar algoritmos robustos como AES-256 en contenedores o volúmenes cifrados.",
+                "Tanto la evidencia como los informes y respaldos deben cifrarse cuando se almacenan en medios móviles o externos.",
+                "La pérdida de la llave de cifrado también se menciona como riesgo, por lo que la gestión de llaves debe estar controlada."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Respaldos y redundancia",
+        "Question Text": {
+          "en-US": [
+            "What principle about backups and redundancy is explicitly emphasized in the class?"
+          ],
+          "es-MX": [
+            "¿Qué principio sobre respaldos y redundancia se enfatiza explícitamente en la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "If there is only one copy, there is no safe evidence; at least original, forensic copy and backup should exist, preferably stored in separate and, when possible, offline locations.",
+            "One single copy of the evidence on a USB drive is enough, as long as the analyst keeps it in their pocket.",
+            "Backups are optional in digital forensics because the original device is always available.",
+            "It is advisable to overwrite old evidence with new cases to optimize disk usage."
+          ],
+          "es-MX": [
+            "Si solo existe una copia, no hay evidencia segura; deben existir al menos el original, la copia forense y un respaldo, preferentemente en ubicaciones separadas y, cuando sea posible, sin conexión.",
+            "Una sola copia de la evidencia en una USB es suficiente, siempre que el analista la lleve en el bolsillo.",
+            "Los respaldos son opcionales en forense digital porque el dispositivo original siempre estará disponible.",
+            "Es recomendable sobrescribir evidencia antigua con casos nuevos para optimizar el uso del disco."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "If there is only one copy, there is no safe evidence; at least original, forensic copy and backup should exist, preferably stored in separate and, when possible, offline locations.",
+          "es-MX": "Si solo existe una copia, no hay evidencia segura; deben existir al menos el original, la copia forense y un respaldo, preferentemente en ubicaciones separadas y, cuando sea posible, sin conexión."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The class summarizes this with the key idea: a single copy is not safe evidence."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Redundancy protects against hardware failure, loss, theft and corruption.",
+                "Separating copies in different locations avoids a single point of failure (e.g., fire, flooding, ransomware).",
+                "Offline or isolated storage reduces exposure to remote attacks.",
+                "Backups must also respect integrity and confidentiality requirements."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La clase resume esta idea con la frase clave: una sola copia no es evidencia segura."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "La redundancia protege frente a fallos de hardware, pérdida, robo y corrupción.",
+                "Separar las copias en distintas ubicaciones evita un punto único de falla (incendio, inundación, ransomware).",
+                "El almacenamiento desconectado o aislado reduce la exposición a ataques remotos.",
+                "Los respaldos también deben cumplir con requisitos de integridad y confidencialidad."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Formato forense y metadatos",
+        "Question Text": {
+          "en-US": [
+            "Why does the class recommend generating forensic images in structured digital formats instead of only copying and pasting files?"
+          ],
+          "es-MX": [
+            "¿Por qué la clase recomienda generar imágenes forenses en formatos digitales estructurados en lugar de solo copiar y pegar archivos?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because structured forensic formats include metadata such as hash, creation date, tool used, responsible analyst and notes, which support integrity and traceability.",
+            "Because simple copy-paste always improves the evidentiary value of the files.",
+            "Because structured formats completely remove the need for chain of custody or documentation.",
+            "Because copy-paste is forbidden by all forensic tools and cannot be used under any circumstances."
+          ],
+          "es-MX": [
+            "Porque los formatos forenses estructurados incluyen metadatos como hash, fecha de creación, herramienta usada, analista responsable y notas, lo que respalda integridad y trazabilidad.",
+            "Porque el simple copiar-pegar siempre mejora el valor probatorio de los archivos.",
+            "Porque los formatos estructurados eliminan por completo la necesidad de cadena de custodia o documentación.",
+            "Porque el copiar-pegar está prohibido por todas las herramientas forenses y no puede usarse bajo ninguna circunstancia."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because structured forensic formats include metadata such as hash, creation date, tool used, responsible analyst and notes, which support integrity and traceability.",
+          "es-MX": "Porque los formatos forenses estructurados incluyen metadatos como hash, fecha de creación, herramienta usada, analista responsable y notas, lo que respalda integridad y trazabilidad."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Copy-paste only moves or duplicates visible files and may lose low-level information.",
+                "Forensic formats keep technical metadata that proves how and when the image was created.",
+                "These metadata elements support auditability and the reconstruction of the analysis process.",
+                "The class explicitly warns against using only copy-paste as a preservation method."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "El copiar-pegar solo mueve o duplica archivos visibles y puede perder información de bajo nivel.",
+                "Los formatos forenses conservan metadatos técnicos que prueban cómo y cuándo se creó la imagen.",
+                "Estos metadatos permiten auditorías y la reconstrucción del proceso de análisis.",
+                "La clase advierte explícitamente que no debe usarse solo el copiar-pegar como método de preservación."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Checklist de preservación",
+        "Question Text": {
+          "en-US": [
+            "Which of the following scenarios best matches the checklist for correctly preserving digital evidence presented in the class?"
+          ],
+          "es-MX": [
+            "¿Cuál de los siguientes escenarios coincide mejor con el checklist para preservar correctamente la evidencia digital presentado en la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The original is not manipulated directly, initial hash is recorded, forensic duplicates exist, strong encryption is used, physical containers are adequate, accesses are documented, backups are stored in different locations, systems are not exposed to the internet and chain of custody is followed.",
+            "The analyst works only on the original device, does not calculate hashes, saves a single copy on their laptop and does not use any encryption or documentation.",
+            "The evidence is left connected to a production server so that multiple administrators can access it freely and ‘help’ the investigation.",
+            "The only control is a written note saying “evidence in drawer”, without hashes, backups, encryption or chain of custody."
+          ],
+          "es-MX": [
+            "No se manipula directamente el original, se registra el hash inicial, existen duplicados forenses, se usa cifrado fuerte, los contenedores físicos son adecuados, los accesos se documentan, hay respaldos en distintas ubicaciones, los sistemas no están expuestos a internet y se cumple con la cadena de custodia.",
+            "El analista trabaja únicamente sobre el dispositivo original, no calcula hashes, guarda una sola copia en su laptop y no usa ningún tipo de cifrado ni documentación.",
+            "La evidencia se deja conectada a un servidor de producción para que varios administradores accedan libremente y ‘ayuden’ a la investigación.",
+            "El único control es una nota escrita que dice “evidencia en cajón”, sin hashes, respaldos, cifrado ni cadena de custodia."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The original is not manipulated directly, initial hash is recorded, forensic duplicates exist, strong encryption is used, physical containers are adequate, accesses are documented, backups are stored in different locations, systems are not exposed to the internet and chain of custody is followed.",
+          "es-MX": "No se manipula directamente el original, se registra el hash inicial, existen duplicados forenses, se usa cifrado fuerte, los contenedores físicos son adecuados, los accesos se documentan, hay respaldos en distintas ubicaciones, los sistemas no están expuestos a internet y se cumple con la cadena de custodia."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The class provides a checklist that integrates technical, physical and procedural controls."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "It combines non-manipulation of the original with hashing and duplication.",
+                "It adds encryption, adequate physical storage and documented access control.",
+                "It requires backups in different locations and avoiding unnecessary exposure to the internet.",
+                "It explicitly links preservation with an intact chain of custody."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La clase ofrece un checklist que integra controles técnicos, físicos y procedimentales."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Combina la no manipulación del original con el uso de hash y duplicados.",
+                "Añade cifrado, almacenamiento físico adecuado y control de accesos documentado.",
+                "Exige respaldos en distintas ubicaciones y evitar exposición innecesaria a internet.",
+                "Vincula explícitamente la preservación con una cadena de custodia intacta."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Errores comunes",
+        "Question Text": {
+          "en-US": [
+            "Which of the following is presented in the class as a common error that must be avoided in the preservation and storage of digital evidence?"
+          ],
+          "es-MX": [
+            "¿Cuál de las siguientes se presenta en la clase como un error común que debe evitarse en la preservación y almacenamiento de evidencia digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Analyzing the original evidence, not generating or verifying hashes, storing the only copy in an unprotected drawer or USB, allowing unauthorized access and mixing evidence from different cases.",
+            "Carefully documenting all steps, generating forensic images and verifying hashes at each stage.",
+            "Using encrypted, labeled containers and maintaining separate backups in secure locations.",
+            "Restricting access to authorized analysts and logging every entry into the evidence room."
+          ],
+          "es-MX": [
+            "Analizar la evidencia original, no generar ni verificar hashes, guardar la única copia en un cajón o USB sin protección, permitir acceso a personas no autorizadas y mezclar evidencia de distintos casos.",
+            "Documentar cuidadosamente todos los pasos, generar imágenes forenses y verificar hashes en cada etapa.",
+            "Usar contenedores cifrados y etiquetados y mantener respaldos separados en sitios seguros.",
+            "Restringir el acceso a analistas autorizados y registrar cada ingreso al área de evidencia."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Analyzing the original evidence, not generating or verifying hashes, storing the only copy in an unprotected drawer or USB, allowing unauthorized access and mixing evidence from different cases.",
+          "es-MX": "Analizar la evidencia original, no generar ni verificar hashes, guardar la única copia en un cajón o USB sin protección, permitir acceso a personas no autorizadas y mezclar evidencia de distintos casos."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The class lists several mistakes that directly threaten the integrity and legal value of evidence."
+            },
+            {
+              "type": "ol",
+              "items": [
+                "Working on the original device increases the risk of accidental modification or damage.",
+                "Ignoring hash calculation and verification makes it impossible to prove integrity.",
+                "Keeping a single, unprotected copy increases the probability of loss or compromise.",
+                "Mixing evidence from different cases generates confusion and serious procedural problems."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La clase enumera varios errores que amenazan directamente la integridad y el valor legal de la evidencia."
+            },
+            {
+              "type": "ol",
+              "items": [
+                "Trabajar sobre el dispositivo original aumenta el riesgo de modificación o daño accidental.",
+                "No calcular ni verificar hashes imposibilita demostrar la integridad.",
+                "Conservar una sola copia sin protección incrementa la probabilidad de pérdida o compromiso.",
+                "Mezclar evidencia de distintos casos genera confusión y problemas procesales graves."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Reflexión final",
+        "Question Text": {
+          "en-US": [
+            "In the final reflection of the class, why is preservation and secure storage described as a legal and technical obligation rather than an optional practice?"
+          ],
+          "es-MX": [
+            "En la reflexión final de la clase, ¿por qué la preservación y el almacenamiento seguro se describen como una obligación legal y técnica y no como una práctica opcional?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because improperly preserved evidence can lose integrity, be challenged in court, suffer irreparable damage and invalidate the entire forensic analysis, affecting the rights of the parties and the analyst’s credibility.",
+            "Because good preservation only improves the aesthetics of the report, without affecting legal or technical aspects.",
+            "Because preservation is only important in academic exercises but not in real investigations.",
+            "Because if preservation fails, the analyst can simply recreate the evidence from memory."
+          ],
+          "es-MX": [
+            "Porque una evidencia mal preservada puede perder integridad, ser impugnada en juicio, sufrir daños irreparables e invalidar todo el análisis forense, afectando los derechos de las partes y la credibilidad del analista.",
+            "Porque una buena preservación solo mejora la estética del informe, sin impactar en lo legal o técnico.",
+            "Porque la preservación solo es importante en ejercicios escolares y no en investigaciones reales.",
+            "Porque si la preservación falla, el analista puede simplemente recrear la evidencia de memoria."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because improperly preserved evidence can lose integrity, be challenged in court, suffer irreparable damage and invalidate the entire forensic analysis, affecting the rights of the parties and the analyst’s credibility.",
+          "es-MX": "Porque una evidencia mal preservada puede perder integridad, ser impugnada en juicio, sufrir daños irreparables e invalidar todo el análisis forense, afectando los derechos de las partes y la credibilidad del analista."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The final reflection connects technical preservation with legal validity and professional responsibility."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Poor preservation can nullify even the best technical analysis.",
+                "Rights of the involved parties (accused, victims, institutions) depend on reliable evidence.",
+                "The analyst’s professional reputation is directly tied to how they protect and document evidence.",
+                "Therefore, preservation, backup and access control are presented as pillars of serious forensic work, not as optional extras."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La reflexión final vincula la preservación técnica con la validez legal y la responsabilidad profesional."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Una mala preservación puede anular incluso el mejor análisis técnico.",
+                "Los derechos de las partes involucradas (acusados, víctimas, instituciones) dependen de evidencia confiable.",
+                "La reputación profesional del analista está ligada a cómo protege y documenta la evidencia.",
+                "Por ello, la preservación, el respaldo y el control de acceso se presentan como pilares del trabajo forense serio, no como extras opcionales."
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

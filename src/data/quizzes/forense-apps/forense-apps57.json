@@ -1,0 +1,691 @@
+{
+  "meta": {
+    "slug": "forense-apps57",
+    "title": "Introducción a los informes forenses digitales",
+    "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+    "unit": 5,
+    "classNo": 57,
+    "description": "Conceptos fundamentales, propósito e importancia de los informes forenses digitales, así como su estructura general y principios para garantizar claridad, validez y utilidad en contextos judiciales o institucionales.",
+    "tags": [
+      "informes forenses digitales",
+      "unidad V",
+      "estructura del informe",
+      "metodología",
+      "integridad",
+      "cadena de custodia",
+      "ISO/IEC 27037",
+      "NIST"
+    ]
+  },
+  "Questions": [
+    {
+      "Category": "Definición del informe",
+      "Question Text": {
+        "en-US": [
+          "What best describes a digital forensic report according to the class?"
+        ],
+        "es-MX": [
+          "¿Qué descripción representa mejor un informe forense digital según la clase?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "A formal technical and legal document where the expert describes the analyzed evidence, explains how it was obtained and preserved, details the procedures, presents the findings and exposes technical conclusions for technical and non-technical readers.",
+          "A short informal email summarizing what the expert thinks happened in the case.",
+          "A simple unordered list of files found during the analysis, without explanation.",
+          "A slide presentation used only for internal training, without legal value."
+        ],
+        "es-MX": [
+          "Un documento técnico y legal formal en el que el perito describe la evidencia analizada, explica cómo se obtuvo y preservó, detalla los procedimientos, presenta los hallazgos y expone conclusiones técnicas para lectores técnicos y no técnicos.",
+          "Un correo electrónico breve e informal donde el perito resume lo que cree que pasó en el caso.",
+          "Una lista simple y desordenada de archivos encontrados durante el análisis, sin explicación.",
+          "Una presentación de diapositivas usada solo para capacitación interna, sin valor legal."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "A formal technical and legal document where the expert describes the analyzed evidence, explains how it was obtained and preserved, details the procedures, presents the findings and exposes technical conclusions for technical and non-technical readers.",
+        "es-MX": "Un documento técnico y legal formal en el que el perito describe la evidencia analizada, explica cómo se obtuvo y preservó, detalla los procedimientos, presenta los hallazgos y expone conclusiones técnicas para lectores técnicos y no técnicos."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The digital forensic report is not just a summary or a casual note. It is the formal product of the expert’s work and can be read by judges, lawyers, auditors, security staff and managers."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "It describes the analyzed evidence and how it was obtained and preserved.",
+              "It documents the technical procedures applied step by step.",
+              "It presents organized findings and technical conclusions based on evidence.",
+              "It must be understandable to non-technical readers, without losing technical depth."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El informe forense digital no es solo un resumen ni una nota casual. Es el producto formal del trabajo del perito y puede ser leído por jueces, abogados, auditores, personal de seguridad y directivos."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Describe la evidencia analizada y cómo se obtuvo y preservó.",
+              "Documenta los procedimientos técnicos aplicados paso a paso.",
+              "Presenta hallazgos organizados y conclusiones técnicas basadas en evidencia.",
+              "Debe ser entendible para lectores no técnicos, sin perder profundidad técnica."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Importancia del informe",
+      "Question Text": {
+        "en-US": [
+          "Why is the digital forensic report considered a key element in an investigation?"
+        ],
+        "es-MX": [
+          "¿Por qué se considera al informe forense digital un elemento clave dentro de una investigación?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Because it connects the technical work with the legal and institutional dimension, documents the methodology, allows reproducibility, supports decisions and protects the expert’s work.",
+          "Because it replaces the need to preserve original evidence, making chain of custody unnecessary.",
+          "Because it serves only as an internal checklist for the forensic lab.",
+          "Because it is used only to count how many tools were executed during the analysis."
+        ],
+        "es-MX": [
+          "Porque conecta el trabajo técnico con la dimensión legal e institucional, documenta la metodología, permite la reproducibilidad, sustenta decisiones y protege el trabajo del perito.",
+          "Porque reemplaza la necesidad de preservar la evidencia original, haciendo innecesaria la cadena de custodia.",
+          "Porque solo sirve como una lista interna de verificación del laboratorio forense.",
+          "Porque se utiliza únicamente para contar cuántas herramientas se ejecutaron durante el análisis."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Because it connects the technical work with the legal and institutional dimension, documents the methodology, allows reproducibility, supports decisions and protects the expert’s work.",
+        "es-MX": "Porque conecta el trabajo técnico con la dimensión legal e institucional, documenta la metodología, permite la reproducibilidad, sustenta decisiones y protege el trabajo del perito."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "ol",
+            "items": [
+              "The report makes the technical analysis understandable and usable in legal, corporate or academic contexts.",
+              "By documenting methodology and tools (ISO/IEC 27037, NIST, etc.), it shows that good practices were followed.",
+              "It enables reproducibility: another analyst can repeat the process and verify the results.",
+              "It supports decisions such as sanctions, dismissals, judicial resolutions or policy changes.",
+              "It protects the expert by showing that they acted with rigor, objectivity and within their competence."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "ol",
+            "items": [
+              "El informe vuelve el análisis técnico comprensible y utilizable en contextos legales, corporativos o académicos.",
+              "Al documentar metodología y herramientas (ISO/IEC 27037, NIST, etc.), demuestra que se siguieron buenas prácticas.",
+              "Permite la reproducibilidad: otro analista puede repetir el proceso y verificar resultados.",
+              "Sustenta decisiones como sanciones, despidos, resoluciones judiciales o cambios de políticas.",
+              "Protege al perito al mostrar que actuó con rigor, objetividad y dentro de su competencia."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Principios del informe",
+      "Question Text": {
+        "en-US": [
+          "Which option lists only fundamental principles that a professional forensic report must follow?"
+        ],
+        "es-MX": [
+          "¿Qué opción enumera únicamente principios fundamentales que debe seguir un informe forense profesional?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Objectivity, clarity, precision, traceability, consistency, integrity and confidentiality.",
+          "Speed, creativity, marketing impact and personal style.",
+          "Obscurity, use of technical jargon and withholding of procedures.",
+          "Subjectivity, exaggeration of findings and omission of hashes to simplify."
+        ],
+        "es-MX": [
+          "Objetividad, claridad, precisión, trazabilidad, consistencia, integridad y confidencialidad.",
+          "Rapidez, creatividad, impacto de marketing y estilo personal.",
+          "Obscuridad, uso de jerga técnica y ocultamiento de procedimientos.",
+          "Subjetividad, exageración de hallazgos y omisión de hashes para simplificar."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Objectivity, clarity, precision, traceability, consistency, integrity and confidentiality.",
+        "es-MX": "Objetividad, claridad, precisión, trazabilidad, consistencia, integridad y confidencialidad."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "ul",
+            "items": [
+              "Objectivity: describe facts, not personal opinions or speculations.",
+              "Clarity: uses understandable language and explains technical terms.",
+              "Precision: neither exaggerates nor minimizes results; states exactly what was found.",
+              "Traceability: every finding must be traceable to original evidence and documented steps.",
+              "Consistency: uses a uniform structure and style to present data throughout the document.",
+              "Integrity: respects chain of custody and records hashes of files.",
+              "Confidentiality: protects sensitive or private information included in the report."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "ul",
+            "items": [
+              "Objetividad: describe hechos, no opiniones personales ni especulaciones.",
+              "Claridad: usa lenguaje comprensible y explica los términos técnicos.",
+              "Precisión: no exagera ni minimiza los resultados; indica exactamente lo encontrado.",
+              "Trazabilidad: cada hallazgo debe poder rastrearse a la evidencia original y a los pasos documentados.",
+              "Consistencia: mantiene una estructura y estilo uniforme para presentar datos en todo el documento.",
+              "Integridad: respeta la cadena de custodia y registra los hashes de los archivos.",
+              "Confidencialidad: protege la información sensible o privada que aparece en el informe."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Resumen ejecutivo",
+      "Question Text": {
+        "en-US": [
+          "What is the main purpose of the executive summary in a digital forensic report?"
+        ],
+        "es-MX": [
+          "¿Cuál es el propósito principal del resumen ejecutivo en un informe forense digital?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "To provide a brief, high-level synthesis of the case, analyzed evidence, main tools, key findings and conclusions for non-technical readers.",
+          "To list every technical step in detail, including all commands and logs.",
+          "To describe the personal impressions and emotions of the forensic analyst.",
+          "To include screenshots only, without any explanatory text."
+        ],
+        "es-MX": [
+          "Ofrecer una síntesis breve y de alto nivel sobre el caso, la evidencia analizada, las principales herramientas, los hallazgos clave y las conclusiones, pensada para lectores no técnicos.",
+          "Enumerar cada paso técnico en detalle, incluyendo todos los comandos y registros.",
+          "Describir las impresiones personales y emociones del analista forense.",
+          "Incluir únicamente capturas de pantalla, sin texto explicativo."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To provide a brief, high-level synthesis of the case, analyzed evidence, main tools, key findings and conclusions for non-technical readers.",
+        "es-MX": "Ofrecer una síntesis breve y de alto nivel sobre el caso, la evidencia analizada, las principales herramientas, los hallazgos clave y las conclusiones, pensada para lectores no técnicos."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The executive summary is designed so that managers, lawyers or other non-technical readers can quickly understand what the case is about and what was found."
+          },
+          {
+            "type": "ol",
+            "items": [
+              "It focuses on context, evidence types, main tools and key findings.",
+              "It avoids low-level technical detail, which appears in later sections.",
+              "It is usually one or two paragraphs, up to half a page.",
+              "It must be coherent with the detailed content of the report."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El resumen ejecutivo está pensado para que directivos, abogados u otros lectores no técnicos entiendan rápidamente de qué trata el caso y qué se encontró."
+          },
+          {
+            "type": "ol",
+            "items": [
+              "Se centra en el contexto, tipos de evidencia, herramientas principales y hallazgos clave.",
+              "Evita el detalle técnico de bajo nivel, que aparecerá en secciones posteriores.",
+              "Normalmente ocupa uno o dos párrafos, máximo media página.",
+              "Debe ser coherente con el contenido detallado del informe."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Descripción de la evidencia",
+      "Question Text": {
+        "en-US": [
+          "In the section on identification and description of evidence, what information is recommended for each item?"
+        ],
+        "es-MX": [
+          "En la sección de identificación y descripción de la evidencia, ¿qué información se recomienda registrar para cada elemento?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "File or item name, type and format, size in bytes, original location, initial hash (MD5/SHA-1/SHA-256) and date/time of reception.",
+          "Only the file name and a very general comment like “important file”.",
+          "Just the device brand and model, without any reference to files or hashes.",
+          "Only the user’s name who delivered the device, without technical details."
+        ],
+        "es-MX": [
+          "Nombre o identificador del archivo, tipo y formato, tamaño en bytes, ubicación original, hash inicial (MD5/SHA-1/SHA-256) y fecha/hora de recepción.",
+          "Solo el nombre del archivo y un comentario muy general como “archivo importante”.",
+          "Solo la marca y modelo del dispositivo, sin referencia a archivos ni hashes.",
+          "Únicamente el nombre del usuario que entregó el dispositivo, sin detalles técnicos."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "File or item name, type and format, size in bytes, original location, initial hash (MD5/SHA-1/SHA-256) and date/time of reception.",
+        "es-MX": "Nombre o identificador del archivo, tipo y formato, tamaño en bytes, ubicación original, hash inicial (MD5/SHA-1/SHA-256) y fecha/hora de recepción."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "ul",
+            "items": [
+              "The evidence section must clearly list all devices, images and files that were received and analyzed.",
+              "Technical attributes like format, size and origin help to uniquely identify each element.",
+              "Recording an initial hash at reception is essential to guarantee integrity from the beginning.",
+              "Date and time of reception help to align the report with chain-of-custody records."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "ul",
+            "items": [
+              "La sección de evidencia debe listar claramente todos los dispositivos, imágenes y archivos recibidos y analizados.",
+              "Atributos técnicos como formato, tamaño y origen ayudan a identificar de forma única cada elemento.",
+              "Registrar un hash inicial al momento de la recepción es esencial para garantizar la integridad desde el inicio.",
+              "La fecha y hora de recepción ayudan a alinear el informe con los registros de cadena de custodia."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Metodología y herramientas",
+      "Question Text": {
+        "en-US": [
+          "What should be documented in the methodology and tools section of the report?"
+        ],
+        "es-MX": [
+          "¿Qué se debe documentar en la sección de metodología y herramientas del informe?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "The tools used (for example Autopsy, Magnet AXIOM, FTK Imager, ExifTool), the working environment, the general steps (acquisition, preservation, analysis, reporting) and a brief justification of why those tools were appropriate.",
+          "Only the names of the people who participated in the analysis, without technical details.",
+          "Just a generic phrase such as “standard forensic procedures were followed”, without explaining anything.",
+          "Only the operating system version, without mentioning tools or procedures."
+        ],
+        "es-MX": [
+          "Las herramientas utilizadas (por ejemplo Autopsy, Magnet AXIOM, FTK Imager, ExifTool), el entorno de trabajo, los pasos generales (adquisición, preservación, análisis, reporte) y una breve justificación de por qué esas herramientas fueron adecuadas.",
+          "Solo los nombres de las personas que participaron en el análisis, sin detalles técnicos.",
+          "Únicamente una frase genérica como “se siguieron procedimientos forenses estándar”, sin explicar nada.",
+          "Solo la versión del sistema operativo, sin mencionar herramientas ni procedimientos."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "The tools used (for example Autopsy, Magnet AXIOM, FTK Imager, ExifTool), the working environment, the general steps (acquisition, preservation, analysis, reporting) and a brief justification of why those tools were appropriate.",
+        "es-MX": "Las herramientas utilizadas (por ejemplo Autopsy, Magnet AXIOM, FTK Imager, ExifTool), el entorno de trabajo, los pasos generales (adquisición, preservación, análisis, reporte) y una breve justificación de por qué esas herramientas fueron adecuadas."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The methodology section explains HOW the analysis was performed and WITH WHAT tools, so that another analyst can understand and replicate the process."
+          },
+          {
+            "type": "ol",
+            "items": [
+              "It specifies software, versions and relevant configuration of the working environment.",
+              "It describes the general phases: acquisition, preservation, detailed analysis and reporting.",
+              "It briefly justifies the choice of tools, linking them to good practices (ISO/IEC 27037, NIST, etc.).",
+              "It contributes directly to reproducibility and transparency of the work."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La sección de metodología explica CÓMO se realizó el análisis y CON QUÉ herramientas, de modo que otro analista pueda entender y replicar el proceso."
+          },
+          {
+            "type": "ol",
+            "items": [
+              "Especifica el software, versiones y configuración relevante del entorno de trabajo.",
+              "Describe las fases generales: adquisición, preservación, análisis detallado y elaboración del informe.",
+              "Justifica brevemente la elección de las herramientas, vinculándolas con buenas prácticas (ISO/IEC 27037, NIST, etc.).",
+              "Aporta directamente a la reproducibilidad y transparencia del trabajo."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Verificación de integridad",
+      "Question Text": {
+        "en-US": [
+          "In the integrity verification section, what should the report document regarding hashes?"
+        ],
+        "es-MX": [
+          "En la sección de verificación de integridad, ¿qué debe documentar el informe respecto a los hashes?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "The initial hash when the evidence was received, the final hash after analysis, the hash function used (such as SHA-256 or MD5) and confirmation that the values match.",
+          "Only the hash of the operating system installer, ignoring the evidence hashes.",
+          "No hashes at all, to avoid confusing non-technical readers.",
+          "Just a phrase like “the evidence remained intact”, without any numerical value."
+        ],
+        "es-MX": [
+          "El hash inicial al recibir la evidencia, el hash final tras el análisis, la función hash utilizada (como SHA-256 o MD5) y la confirmación de que los valores coinciden.",
+          "Solo el hash del instalador del sistema operativo, ignorando los hashes de la evidencia.",
+          "Ningún hash, para no confundir a los lectores no técnicos.",
+          "Solo una frase como “la evidencia se mantuvo intacta”, sin ningún valor numérico."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "The initial hash when the evidence was received, the final hash after analysis, the hash function used (such as SHA-256 or MD5) and confirmation that the values match.",
+        "es-MX": "El hash inicial al recibir la evidencia, el hash final tras el análisis, la función hash utilizada (como SHA-256 o MD5) y la confirmación de que los valores coinciden."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "divider"
+          },
+          {
+            "type": "text",
+            "content": "Hashes are central to digital forensic integrity: if a single bit changes, the hash changes and trust in the evidence is affected."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "The report must show initial and final hashes for each relevant element.",
+              "It must indicate which hash algorithm was used (e.g., SHA-256, MD5).",
+              "If initial and final hashes match, integrity is supported.",
+              "If they do not match, this must be clearly reported and investigated."
+            ]
+          },
+          {
+            "type": "divider"
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "divider"
+          },
+          {
+            "type": "text",
+            "content": "Los hashes son el núcleo de la integridad forense: si cambia un solo bit, cambia el hash y se ve afectada la confianza en la evidencia."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "El informe debe mostrar hashes iniciales y finales para cada elemento relevante.",
+              "Debe indicar qué algoritmo hash se utilizó (por ejemplo, SHA-256, MD5).",
+              "Si los hashes inicial y final coinciden, se respalda la integridad.",
+              "Si no coinciden, esto debe reportarse claramente e investigarse."
+            ]
+          },
+          {
+            "type": "divider"
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Conclusiones técnicas",
+      "Question Text": {
+        "en-US": [
+          "According to the class, how should technical conclusions be written in a digital forensic report?"
+        ],
+        "es-MX": [
+          "Según la clase, ¿cómo deben redactarse las conclusiones técnicas en un informe forense digital?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "They must be based strictly on documented evidence and analysis, answering the case questions, avoiding personal opinions and clearly indicating what can and cannot be concluded.",
+          "They should mainly reflect the expert’s personal beliefs, even if the evidence does not fully support them.",
+          "They should be vague and generic, so that they apply to any case.",
+          "They should focus on blaming or defending people, without referencing technical findings."
+        ],
+        "es-MX": [
+          "Deben basarse estrictamente en la evidencia documentada y el análisis, responder a las preguntas del caso, evitar opiniones personales e indicar claramente qué se puede y qué no se puede concluir.",
+          "Deben reflejar principalmente las creencias personales del perito, aunque la evidencia no las respalde por completo.",
+          "Deben ser vagas y genéricas, para que apliquen a cualquier caso.",
+          "Deben centrarse en culpar o defender personas, sin hacer referencia a hallazgos técnicos."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "They must be based strictly on documented evidence and analysis, answering the case questions, avoiding personal opinions and clearly indicating what can and cannot be concluded.",
+        "es-MX": "Deben basarse estrictamente en la evidencia documentada y el análisis, responder a las preguntas del caso, evitar opiniones personales e indicar claramente qué se puede y qué no se puede concluir."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Technical conclusions are one of the most sensitive parts of the report because they directly influence decisions."
+          },
+          {
+            "type": "ol",
+            "items": [
+              "They must be anchored in the evidence and in the documented methodology.",
+              "They should answer the questions posed in the case (for example, existence of manipulation, consistency of dates, recovery of deleted data).",
+              "They must avoid personal opinions or emotional judgments.",
+              "They should explicitly state the limits: what could be demonstrated and what could not."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las conclusiones técnicas son una de las partes más sensibles del informe porque influyen directamente en las decisiones."
+          },
+          {
+            "type": "ol",
+            "items": [
+              "Deben estar ancladas en la evidencia y en la metodología documentada.",
+              "Deben responder a las preguntas planteadas en el caso (por ejemplo, existencia de manipulación, consistencia de fechas, recuperación de datos eliminados).",
+              "Deben evitar opiniones personales o juicios emocionales.",
+              "Deben indicar explícitamente los límites: qué se pudo demostrar y qué no."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Revisión de un informe real",
+      "Question Text": {
+        "en-US": [
+          "When reviewing a real (anonymized) forensic report as a learning exercise, which sequence of checks is recommended in the class?"
+        ],
+        "es-MX": [
+          "Al revisar un informe forense real (anonimizado) como ejercicio de aprendizaje, ¿qué secuencia de revisión se recomienda en la clase?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Identify the structure (cover, summary, background, evidence, methodology, results, conclusions), verify clarity and order, check tools and procedures, look for integrity references (hashes) and evaluate the objectivity of the conclusions.",
+          "Only look at the cover and the signatures to see who participated.",
+          "Focus exclusively on design aspects such as colors, fonts and logos.",
+          "Read only the conclusions, ignoring the rest of the report."
+        ],
+        "es-MX": [
+          "Identificar la estructura (portada, resumen, antecedentes, evidencia, metodología, resultados, conclusiones), verificar claridad y orden, revisar herramientas y procedimientos, buscar referencias a integridad (hashes) y evaluar la objetividad de las conclusiones.",
+          "Revisar únicamente la portada y las firmas para ver quién participó.",
+          "Centrarse exclusivamente en aspectos de diseño como colores, fuentes y logotipos.",
+          "Leer solo las conclusiones, ignorando el resto del informe."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Identify the structure (cover, summary, background, evidence, methodology, results, conclusions), verify clarity and order, check tools and procedures, look for integrity references (hashes) and evaluate the objectivity of the conclusions.",
+        "es-MX": "Identificar la estructura (portada, resumen, antecedentes, evidencia, metodología, resultados, conclusiones), verificar claridad y orden, revisar herramientas y procedimientos, buscar referencias a integridad (hashes) y evaluar la objetividad de las conclusiones."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Reviewing real reports trains the student to recognize what a professional document looks like and what errors to avoid."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "First, identify whether the structure follows the typical sections taught in class.",
+              "Then, check if the narrative is clear and ordered, so that the case can be understood just by reading.",
+              "Verify that tools and procedures are documented, not just named.",
+              "Look for explicit references to integrity (hashes) and chain of custody.",
+              "Finally, evaluate whether the conclusions are objective and based on the presented facts."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Revisar informes reales entrena al alumno para reconocer cómo se ve un documento profesional y qué errores debe evitar."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Primero, identificar si la estructura sigue las secciones típicas vistas en clase.",
+              "Después, verificar si la narrativa es clara y ordenada, de modo que el caso se entienda al leerlo.",
+              "Revisar que se documenten herramientas y procedimientos, y no solo se mencionen por nombre.",
+              "Buscar referencias explícitas a la integridad (hashes) y a la cadena de custodia.",
+              "Finalmente, evaluar si las conclusiones son objetivas y están basadas en los hechos presentados."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Herramientas sugeridas",
+      "Question Text": {
+        "en-US": [
+          "Which of the following groups includes tools and resources suggested in the class for this unit on forensic reports?"
+        ],
+        "es-MX": [
+          "¿Cuál de los siguientes grupos incluye herramientas y recursos sugeridos en la clase para esta unidad sobre informes forenses?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Microsoft Word, Magnet AXIOM report generation, Oxygen Forensics Report Tool, Autopsy Report Generator, Canva or PowerPoint and templates based on ISO/IEC 27037.",
+          "Only instant messaging apps and social networks to communicate the results.",
+          "Exclusive use of a spreadsheet without any word processor or specialized report tools.",
+          "Video game software and photo filters to make the report more attractive."
+        ],
+        "es-MX": [
+          "Microsoft Word, generación de reportes con Magnet AXIOM, Oxygen Forensics Report Tool, Autopsy Report Generator, Canva o PowerPoint y plantillas basadas en ISO/IEC 27037.",
+          "Solo aplicaciones de mensajería instantánea y redes sociales para comunicar los resultados.",
+          "Uso exclusivo de una hoja de cálculo, sin procesadores de texto ni herramientas especializadas de reporte.",
+          "Software de videojuegos y filtros de fotografía para hacer el informe más llamativo."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Microsoft Word, Magnet AXIOM report generation, Oxygen Forensics Report Tool, Autopsy Report Generator, Canva or PowerPoint and templates based on ISO/IEC 27037.",
+        "es-MX": "Microsoft Word, generación de reportes con Magnet AXIOM, Oxygen Forensics Report Tool, Autopsy Report Generator, Canva o PowerPoint y plantillas basadas en ISO/IEC 27037."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The class highlights both general-purpose tools (Word, PowerPoint, Canva) and specialized forensic report generators as part of the workflow."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Word is used to structure and write the report with proper formatting.",
+              "Magnet AXIOM, Oxygen and Autopsy can generate semi-automatic technical reports.",
+              "Presentation tools like PowerPoint or Canva help communicate results to non-technical audiences.",
+              "Templates based on ISO/IEC 27037 guide structure and good practices."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La clase resalta tanto herramientas de propósito general (Word, PowerPoint, Canva) como generadores de reportes forenses especializados dentro del flujo de trabajo."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Word se utiliza para estructurar y redactar el informe con el formato adecuado.",
+              "Magnet AXIOM, Oxygen y Autopsy pueden generar reportes técnicos semiautomáticos.",
+              "Herramientas de presentación como PowerPoint o Canva ayudan a comunicar resultados a audiencias no técnicas.",
+              "Las plantillas basadas en ISO/IEC 27037 guían la estructura y las buenas prácticas."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Conclusión global de la clase",
+      "Question Text": {
+        "en-US": [
+          "Which statement best summarizes the main conclusions of this introductory class on digital forensic reports?"
+        ],
+        "es-MX": [
+          "¿Qué afirmación resume mejor las conclusiones principales de esta clase introductoria sobre informes forenses digitales?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "The forensic report is the final product of the expert’s technical work; it must integrate context, methodology, evidence, results and conclusions in a structured way and reviewing real reports helps to understand what a professional document should look like.",
+          "The forensic report is optional if the expert has already spoken informally with the manager.",
+          "The forensic report only matters in academic environments and has no impact on legal or corporate processes.",
+          "The most important thing in the report is the visual design; the technical content is secondary."
+        ],
+        "es-MX": [
+          "El informe forense es el producto final del trabajo técnico del perito; debe integrar contexto, metodología, evidencia, resultados y conclusiones de forma estructurada, y revisar informes reales ayuda a comprender cómo debe verse un documento profesional.",
+          "El informe forense es opcional si el perito ya habló informalmente con el gerente.",
+          "El informe forense solo importa en entornos académicos y no tiene impacto en procesos legales o corporativos.",
+          "Lo más importante del informe es el diseño visual; el contenido técnico es secundario."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "The forensic report is the final product of the expert’s technical work; it must integrate context, methodology, evidence, results and conclusions in a structured way and reviewing real reports helps to understand what a professional document should look like.",
+        "es-MX": "El informe forense es el producto final del trabajo técnico del perito; debe integrar contexto, metodología, evidencia, resultados y conclusiones de forma estructurada, y revisar informes reales ayuda a comprender cómo debe verse un documento profesional."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The class closes by reinforcing that the report is not a minor administrative step, but the central deliverable of digital forensic work."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "It integrates context, methodology, evidence, results and conclusions into a single coherent document.",
+              "Its quality directly affects the legal or institutional value of the technical analysis.",
+              "Studying real professional reports (with anonymized data) helps students recognize good practices and typical mistakes.",
+              "Future units will deepen in structure, style and evaluation criteria of forensic reports."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La clase cierra reforzando que el informe no es un trámite administrativo menor, sino el entregable central del trabajo forense digital."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Integra contexto, metodología, evidencia, resultados y conclusiones en un solo documento coherente.",
+              "Su calidad afecta directamente el valor legal o institucional del análisis técnico.",
+              "Estudiar informes profesionales reales (con datos anonimizados) ayuda a los estudiantes a reconocer buenas prácticas y errores típicos.",
+              "En unidades posteriores se profundizará en la estructura, estilo y criterios de evaluación de los informes forenses."
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

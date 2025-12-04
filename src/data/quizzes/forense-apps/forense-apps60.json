@@ -1,0 +1,553 @@
+{
+    "meta": {
+      "slug": "forense-apps60",
+      "title": "Redacción técnica y lenguaje pericial",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 5,
+      "classNo": 60,
+      "description": "Uso de un lenguaje claro, preciso, objetivo y neutral en informes forenses digitales, evitando juicios personales y manteniendo rigor metodológico y validez jurídica.",
+      "tags": [
+        "redacción técnica",
+        "lenguaje pericial",
+        "informes forenses",
+        "objetividad",
+        "precisión",
+        "neutralidad",
+        "unidad V"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "Importancia del lenguaje pericial",
+        "Question Text": {
+          "en-US": [
+            "According to the class, why is technical and expert language so important in digital forensic reports?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿por qué es tan importante el lenguaje técnico y pericial en los informes forenses digitales?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because clarity, objectivity, technical precision, neutrality and rigor prevent confusion, preserve credibility and support the legal validity of the report.",
+            "Because using many complex words always guarantees that the report will be accepted in court.",
+            "Because emotional and opinionated language helps the judge understand who is guilty.",
+            "Because the language of the report is irrelevant as long as the tools used are recognized."
+          ],
+          "es-MX": [
+            "Porque la claridad, objetividad, precisión técnica, neutralidad y rigurosidad evitan confusiones, preservan la credibilidad y apoyan la validez jurídica del informe.",
+            "Porque usar muchas palabras complejas garantiza siempre que el informe será aceptado en juicio.",
+            "Porque el lenguaje emotivo y lleno de opiniones ayuda al juez a entender quién es culpable.",
+            "Porque el lenguaje del informe es irrelevante siempre que las herramientas usadas sean reconocidas."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because clarity, objectivity, technical precision, neutrality and rigor prevent confusion, preserve credibility and support the legal validity of the report.",
+          "es-MX": "Porque la claridad, objetividad, precisión técnica, neutralidad y rigurosidad evitan confusiones, preservan la credibilidad y apoyan la validez jurídica del informe."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "A poorly written report can cause confusion, loss of credibility and misinterpretation of the evidence.",
+                "If the language is subjective or confusing, the report may even be invalidated as legal evidence.",
+                "Expert language must be clear for judges, lawyers, auditors and technical staff.",
+                "Neutral, precise wording protects both the chain of custody and the expert’s professional reputation."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Un informe mal redactado puede generar confusión, pérdida de credibilidad e interpretaciones erróneas de la evidencia.",
+                "Si el lenguaje es subjetivo o confuso, el informe incluso puede invalidarse como evidencia jurídica.",
+                "El lenguaje pericial debe ser comprensible para jueces, abogados, auditores y personal técnico.",
+                "Una redacción neutral y precisa protege tanto la cadena de custodia como la reputación profesional del perito."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Principio de claridad",
+        "Question Text": {
+          "en-US": [
+            "Which sentence best represents the principle of clarity in forensic writing, as explained in the class?"
+          ],
+          "es-MX": [
+            "¿Qué oración representa mejor el principio de claridad en la redacción forense, según lo explicado en la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "“154 messages were extracted from the file msgstore.db.”",
+            "“A significant amount of messages was identified, whose analysis suggests multiple implications.”",
+            "“It seems that many things happened in the chats based on what can be seen.”",
+            "“Several issues related to various message situations were noticed.”"
+          ],
+          "es-MX": [
+            "“Se extrajeron 154 mensajes del archivo msgstore.db.”",
+            "“Se identificó una cantidad significativa de mensajes cuyo análisis sugiere múltiples implicaciones.”",
+            "“Parece que pasaron muchas cosas en los chats según lo que se ve.”",
+            "“Se detectaron varias cuestiones relacionadas con distintas situaciones de mensajes.”"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "“154 messages were extracted from the file msgstore.db.”",
+          "es-MX": "“Se extrajeron 154 mensajes del archivo msgstore.db.”"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Clarity means using short, direct sentences that state exactly what was done and what was obtained."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "The correct sentence specifies a concrete action (extraction) and an exact quantity (154 messages).",
+                "It avoids vague terms such as “significant amount” or “multiple implications”.",
+                "It does not introduce subjective interpretations or emotional language.",
+                "This style helps any reader quickly understand the result of the procedure."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La claridad implica usar oraciones cortas y directas que indiquen con exactitud qué se hizo y qué se obtuvo."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "La oración correcta especifica una acción concreta (extracción) y una cantidad exacta (154 mensajes).",
+                "Evita expresiones vagas como “cantidad significativa” o “múltiples implicaciones”.",
+                "No introduce interpretaciones subjetivas ni lenguaje emocional.",
+                "Este estilo ayuda a que cualquier lector comprenda rápidamente el resultado del procedimiento."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Objetividad y adjetivos valorativos",
+        "Question Text": {
+          "en-US": [
+            "Which option correctly applies the principle of objectivity by avoiding value judgments and opinions?"
+          ],
+          "es-MX": [
+            "¿Qué opción aplica correctamente el principio de objetividad evitando juicios de valor y opiniones?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "“The file was deleted according to the ‘deleted = 1’ flag recorded in the database.”",
+            "“The user clearly attempted to delete evidence in a suspicious way.”",
+            "“It is evident that something very serious happened with the files.”",
+            "“In my opinion, the behavior of the user is doubtful and strange.”"
+          ],
+          "es-MX": [
+            "“El archivo fue eliminado según la marca ‘deleted = 1’ registrada en la base de datos.”",
+            "“El usuario claramente intentó borrar evidencia de forma sospechosa.”",
+            "“Es evidente que ocurrió algo muy grave con los archivos.”",
+            "“A mi parecer, el comportamiento del usuario es dudoso y extraño.”"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "“The file was deleted according to the ‘deleted = 1’ flag recorded in the database.”",
+          "es-MX": "“El archivo fue eliminado según la marca ‘deleted = 1’ registrada en la base de datos.”"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Objectivity means reporting verifiable facts instead of personal opinions, adjectives or intentions."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "The correct sentence refers directly to a technical indicator (database flag ‘deleted = 1’).",
+                "It does not speculate about what the user wanted to do or whether the behavior is “suspicious”.",
+                "It avoids value adjectives like “serious”, “doubtful” or “strange”.",
+                "This style focuses on observable data rather than psychological interpretations."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La objetividad consiste en reportar hechos verificables en lugar de opiniones personales, adjetivos o intenciones."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "La oración correcta se refiere directamente a un indicador técnico (marca ‘deleted = 1’ en la base de datos).",
+                "No especula sobre lo que el usuario quiso hacer ni sobre si el comportamiento es “sospechoso”.",
+                "Evita adjetivos valorativos como “grave”, “dudoso” o “extraño”.",
+                "Este estilo se centra en datos observables, no en interpretaciones psicológicas."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Precisión técnica",
+        "Question Text": {
+          "en-US": [
+            "Which sentence best demonstrates the principle of technical precision described in the class?"
+          ],
+          "es-MX": [
+            "¿Qué oración demuestra mejor el principio de precisión técnica descrito en la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "“According to the EXIF metadata, the file was created on 2025-03-04 at 14:57 (local time).”",
+            "“It seems that the file was created in March.”",
+            "“Apparently the file is from some time ago, maybe this year.”",
+            "“The file is kind of recent according to what can be seen.”"
+          ],
+          "es-MX": [
+            "“Según los metadatos EXIF, el archivo se creó el 04/03/2025 a las 14:57 horas (hora local).”",
+            "“Al parecer el archivo se creó en marzo.”",
+            "“Aparentemente el archivo es de hace tiempo, quizá de este año.”",
+            "“El archivo es como reciente según lo que se ve.”"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "“According to the EXIF metadata, the file was created on 2025-03-04 at 14:57 (local time).”",
+          "es-MX": "“Según los metadatos EXIF, el archivo se creó el 04/03/2025 a las 14:57 horas (hora local).”"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Technical precision requires explicitly mentioning dates, times, sources (EXIF, logs, database fields) and, when relevant, time zone.",
+                "The correct option names the metadata source and gives the exact date and time.",
+                "Vague expressions like “some time ago”, “seems” or “maybe” weaken the technical value of the report.",
+                "Precise data supports reproducibility and reduces room for interpretation in legal contexts."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "La precisión técnica exige mencionar de forma explícita fechas, horas, fuentes (EXIF, logs, campos de base de datos) y, cuando sea relevante, zona horaria.",
+                "La opción correcta nombra la fuente de metadatos y proporciona fecha y hora exactas.",
+                "Expresiones vagas como “hace tiempo”, “al parecer” o “quizá” debilitan el valor técnico del informe.",
+                "Los datos precisos favorecen la reproducibilidad y reducen el margen de interpretación en contextos legales."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Neutralidad y descripción de hechos",
+        "Question Text": {
+          "en-US": [
+            "Which sentence correctly applies neutrality by describing only verifiable facts, without accusing or interpreting intentions?"
+          ],
+          "es-MX": [
+            "¿Qué oración aplica correctamente la neutralidad describiendo solo hechos verificables, sin acusar ni interpretar intenciones?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "“42 messages were deleted between March 10 and March 12, according to the database records.”",
+            "“The suspect knew they were being investigated and therefore deleted the messages.”",
+            "“The user obviously tried to hide something by deleting multiple messages.”",
+            "“It is clear that the person acted with bad intentions based on the deletions.”"
+          ],
+          "es-MX": [
+            "“Se identificó la eliminación de 42 mensajes durante el periodo del 10 al 12 de marzo, según los registros de la base de datos.”",
+            "“El sospechoso sabía que lo estaban investigando y por eso borró los mensajes.”",
+            "“El usuario obviamente trató de ocultar algo al eliminar varios mensajes.”",
+            "“Es claro que la persona actuó con mala intención basándonos en las eliminaciones.”"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "“42 messages were deleted between March 10 and March 12, according to the database records.”",
+          "es-MX": "“Se identificó la eliminación de 42 mensajes durante el periodo del 10 al 12 de marzo, según los registros de la base de datos.”"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Neutrality means not accusing or attributing intentions, but limiting the report to data that can be verified."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "The correct option only states a measurable fact (42 deletions in a defined period) and the source (database records).",
+                "It does not claim that the user “knew” they were under investigation or that they had “bad intentions”.",
+                "Phrases such as “obviously” or “clearly” usually hide value judgments or assumptions.",
+                "In forensic context, intentions belong to legal interpretation, not to the technical wording of the report."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La neutralidad implica no acusar ni atribuir intenciones, sino limitar el informe a datos que puedan verificarse."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "La opción correcta enuncia solo un hecho medible (42 eliminaciones en un periodo definido) y la fuente (registros de base de datos).",
+                "No afirma que el usuario “sabía” que lo investigaban ni que actuó con “mala intención”.",
+                "Expresiones como “obviamente” o “es claro que” suelen encubrir juicios de valor o suposiciones.",
+                "En el contexto forense, las intenciones corresponden a la interpretación jurídica, no a la redacción técnica del informe."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Frases recomendadas y frases a evitar",
+        "Question Text": {
+          "en-US": [
+            "Which pair correctly matches recommended forensic phrases with phrases that should be avoided, as taught in the class?"
+          ],
+          "es-MX": [
+            "¿Qué par relaciona correctamente frases recomendadas en informes forenses con frases que deben evitarse, según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Recommended: “The analysis allowed identifying…”, “The evidence shows that…”; To avoid: “I think that…”, “It seems that…”.",
+            "Recommended: “Surely the user tried…”, “In my opinion…”; To avoid: “The hash value obtained was…”.",
+            "Recommended: “Probably something happened…”; To avoid: “The tool reported…”.",
+            "Recommended: “I suspect that…”; To avoid: “The data indicate that…”."
+          ],
+          "es-MX": [
+            "Recomendadas: “El análisis permitió identificar…”, “La evidencia muestra que…”; A evitar: “Creo que…”, “Parece que…”.",
+            "Recomendadas: “Seguramente el usuario intentó…”, “A mi parecer…”; A evitar: “El valor hash obtenido fue…”.",
+            "Recomendadas: “Probablemente ocurrió algo…”; A evitar: “La herramienta reportó…”.",
+            "Recomendadas: “Sospecho que…”; A evitar: “Los datos indican que…”."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Recommended: “The analysis allowed identifying…”, “The evidence shows that…”; To avoid: “I think that…”, “It seems that…”.",
+          "es-MX": "Recomendadas: “El análisis permitió identificar…”, “La evidencia muestra que…”; A evitar: “Creo que…”, “Parece que…”."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "The class recommends formulas such as “The analysis allowed identifying…”, “The tool reported…”, “The hash value obtained was…”.",
+                "These expressions focus on procedures, evidence and measurable results.",
+                "Phrases like “I think”, “I suspect”, “It seems” introduce opinions and uncertainty that weaken the technical character of the report.",
+                "Expert writing must reflect what the data show, not personal beliefs."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "La clase recomienda fórmulas como “El análisis permitió identificar…”, “La herramienta reportó…”, “El valor hash obtenido fue…”.",
+                "Estas expresiones se centran en procedimientos, evidencia y resultados medibles.",
+                "Frases como “creo”, “sospecho”, “parece” introducen opiniones y dudas que debilitan el carácter técnico del informe.",
+                "La redacción pericial debe reflejar lo que muestran los datos, no las creencias personales."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Estructura de párrafos técnicos",
+        "Question Text": {
+          "en-US": [
+            "Which option best follows the recommended structure for a technical paragraph (action, procedure, result, relevant data and technical closure)?"
+          ],
+          "es-MX": [
+            "¿Qué opción sigue mejor la estructura recomendada para un párrafo técnico (acción, procedimiento, resultado, dato relevante y cierre técnico)?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "“A logical extraction of the Android device was performed. Autopsy version 4.20 was used with the Android Analyzer module. 43 conversations stored in msgstore.db were identified. Three of them contained recoverable deleted multimedia files. The evidence was exported in HTML format for subsequent analysis.”",
+            "“The device was very suspicious and many strange things were seen. It seems that a lot happened in the chats.”",
+            "“I decided to use Autopsy because it is the tool I like the most and I think it is the best option.”",
+            "“Some tests were done on the device and some files were found, but they are not described.”"
+          ],
+          "es-MX": [
+            "“Se efectuó la extracción lógica del dispositivo Android. Para ello se utilizó Autopsy versión 4.20, empleando el módulo de Android Analyzer. Se identificaron 43 conversaciones almacenadas en el archivo msgstore.db. Tres de ellas contenían archivos multimedia eliminados recuperables. La evidencia fue exportada en formato HTML para su posterior análisis.”",
+            "“El dispositivo se veía muy sospechoso y se vieron muchas cosas raras. Parece que pasó mucho en los chats.”",
+            "“Decidí usar Autopsy porque es la herramienta que más me gusta y creo que es la mejor opción.”",
+            "“Se hicieron algunas pruebas al dispositivo y se encontraron algunos archivos, pero no se describen.”"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "“A logical extraction of the Android device was performed. Autopsy version 4.20 was used with the Android Analyzer module. 43 conversations stored in msgstore.db were identified. Three of them contained recoverable deleted multimedia files. The evidence was exported in HTML format for subsequent analysis.”",
+          "es-MX": "“Se efectuó la extracción lógica del dispositivo Android. Para ello se utilizó Autopsy versión 4.20, empleando el módulo de Android Analyzer. Se identificaron 43 conversaciones almacenadas en el archivo msgstore.db. Tres de ellas contenían archivos multimedia eliminados recuperables. La evidencia fue exportada en formato HTML para su posterior análisis.”"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Action: describes what was done (“A logical extraction of the Android device was performed.”).",
+                "Procedure: explains how it was done and with which tool/version (“Autopsy 4.20 with Android Analyzer module”).",
+                "Result: indicates what was found (“43 conversations stored in msgstore.db were identified.”).",
+                "Relevant data: adds a concrete detail with forensic value (recoverable deleted multimedia files).",
+                "Technical closure: explains how the evidence was exported for subsequent steps (“HTML format for later analysis”)."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Acción: describe qué se hizo (“Se efectuó la extracción lógica del dispositivo Android.”).",
+                "Procedimiento: explica cómo se hizo y con qué herramienta/versión (“Autopsy 4.20 con el módulo Android Analyzer”).",
+                "Resultado: indica qué se encontró (“Se identificaron 43 conversaciones en msgstore.db.”).",
+                "Dato relevante: agrega un detalle concreto con valor forense (archivos multimedia eliminados recuperables).",
+                "Cierre técnico: explica cómo se exportó la evidencia para pasos posteriores (“en formato HTML para su posterior análisis”)."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Estandarización del estilo",
+        "Question Text": {
+          "en-US": [
+            "Which option correctly describes the recommended standardization of style for forensic report writing in this class?"
+          ],
+          "es-MX": [
+            "¿Qué opción describe correctamente la estandarización de estilo recomendada para la redacción de informes forenses en esta clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Using third person (“it was performed”, “it was identified”), past tense, exact numeric formats for dates, times and sizes, and appropriate capitalization for tools and databases.",
+            "Using first person singular (“I did…”, “I think…”), present tense and approximate dates (“around March”).",
+            "Mixing informal language, emojis and abbreviations to make the report friendlier.",
+            "Writing sometimes in first person, sometimes in second person and sometimes in third person, without following any pattern."
+          ],
+          "es-MX": [
+            "Usar siempre tercera persona (“se realizó”, “se identificó”), tiempo pasado, formatos numéricos exactos para fechas, horas y tamaños, y mayúsculas solo cuando corresponda (herramientas, bases de datos).",
+            "Usar primera persona del singular (“yo hice…”, “yo pienso…”), tiempo presente y fechas aproximadas (“como en marzo”).",
+            "Mezclar lenguaje informal, emojis y abreviaturas para hacer el informe más amigable.",
+            "Escribir a veces en primera persona, a veces en segunda y a veces en tercera, sin seguir ningún patrón."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Using third person (“it was performed”, “it was identified”), past tense, exact numeric formats for dates, times and sizes, and appropriate capitalization for tools and databases.",
+          "es-MX": "Usar siempre tercera persona (“se realizó”, “se identificó”), tiempo pasado, formatos numéricos exactos para fechas, horas y tamaños, y mayúsculas solo cuando corresponda (herramientas, bases de datos)."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "divider"
+            },
+            {
+              "type": "text",
+              "content": "Standardizing style makes the report uniform and easier to read and audit."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Third person and past tense reflect that the work is already completed and focus on actions, not on the expert’s ego.",
+                "Exact numeric formats (full dates, times, sizes, paths) avoid ambiguity.",
+                "Consistent capitalization (for tools, databases, tables) gives a professional and ordered appearance.",
+                "This style also helps different experts in the same lab to produce reports that look and “sound” coherent."
+              ]
+            },
+            {
+              "type": "divider"
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "divider"
+            },
+            {
+              "type": "text",
+              "content": "Estandarizar el estilo hace que el informe sea uniforme y más fácil de leer y auditar."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "La tercera persona y el tiempo pasado reflejan que el trabajo ya se realizó y centran la atención en las acciones, no en el ego del perito.",
+                "Los formatos numéricos exactos (fechas completas, horas, tamaños, rutas) evitan ambigüedades.",
+                "El uso coherente de mayúsculas (para herramientas, bases de datos, tablas) da una apariencia profesional y ordenada.",
+                "Este estilo también ayuda a que distintos peritos del mismo laboratorio generen informes que se vean y “suenen” coherentes."
+              ]
+            },
+            {
+              "type": "divider"
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Regla de oro de la redacción pericial",
+        "Question Text": {
+          "en-US": [
+            "What is the ‘golden rule’ of forensic writing summarized at the end of the class?"
+          ],
+          "es-MX": [
+            "¿Cuál es la ‘regla de oro’ de la redacción pericial resumida al final de la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Do not write what you think; write what you see and what you can verify.",
+            "Always write what you think or suspect, even if the data does not support it yet.",
+            "Focus on explaining who is guilty and why, based on your personal impression.",
+            "Use the most complex vocabulary possible so that only experts can understand the report."
+          ],
+          "es-MX": [
+            "No escribas lo que piensas. Escribe lo que ves y lo que puedes comprobar.",
+            "Escribe siempre lo que piensas o sospechas, aunque los datos todavía no lo respalden.",
+            "Céntrate en explicar quién es culpable y por qué, según tu impresión personal.",
+            "Usa el vocabulario más complejo posible para que solo expertos entiendan el informe."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Do not write what you think; write what you see and what you can verify.",
+          "es-MX": "No escribas lo que piensas. Escribe lo que ves y lo que puedes comprobar."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "This rule condenses all the principles of clarity, objectivity, precision, neutrality and rigor into a single idea."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Forensic reports must be based on observable evidence and measurable data.",
+                "Personal beliefs, suspicions or hypotheses must not appear as facts in the document.",
+                "The role of the expert is to describe procedures and findings, not to act as judge or investigator of intentions.",
+                "Following this rule protects the legal validity of the report and the impartiality of the expert."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Esta regla resume en una sola idea los principios de claridad, objetividad, precisión, neutralidad y rigor."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Los informes forenses deben basarse en evidencia observable y datos medibles.",
+                "Las creencias personales, sospechas o hipótesis no deben aparecer como hechos en el documento.",
+                "El papel del perito es describir procedimientos y hallazgos, no fungir como juez ni interpretar intenciones.",
+                "Seguir esta regla protege la validez jurídica del informe y la imparcialidad del perito."
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

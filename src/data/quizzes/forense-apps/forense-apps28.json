@@ -1,0 +1,694 @@
+{
+    "meta": {
+      "slug": "forense-apps28",
+      "title": "Clase 28 – Proyecto práctico: extracción completa simulada",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 2,
+      "classNo": 28,
+      "description": "Proyecto práctico integral que combina adquisición, análisis, recuperación de datos eliminados, validación con hash, bitácora y reporte final, simulando el flujo real de un laboratorio forense.",
+      "tags": [
+        "proyecto práctico",
+        "extracción simulada",
+        "adquisición",
+        "análisis forense",
+        "validación con hash",
+        "bitácora forense",
+        "línea de tiempo"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "proposito-proyecto",
+        "Question Text": {
+          "en-US": [
+            "What is the MAIN purpose of the simulated full extraction project described in Class 28?"
+          ],
+          "es-MX": [
+            "¿Cuál es el propósito PRINCIPAL del proyecto de extracción completa simulada descrito en la Clase 28?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To apply in an integrated way acquisition, analysis, recovery, validation and documentation techniques in a controlled environment",
+            "To test only the speed of the laboratory computers without any forensic objective",
+            "To simulate a social media marketing campaign for the forensic lab",
+            "To replace all classes with a single theoretical exam"
+          ],
+          "es-MX": [
+            "Aplicar de forma integrada técnicas de adquisición, análisis, recuperación, validación y documentación en un entorno controlado",
+            "Probar únicamente la velocidad de las computadoras del laboratorio sin objetivo forense",
+            "Simular una campaña de marketing en redes sociales para el laboratorio forense",
+            "Sustituir todas las clases por un único examen teórico"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To apply in an integrated way acquisition, analysis, recovery, validation and documentation techniques in a controlled environment",
+          "es-MX": "Aplicar de forma integrada técnicas de adquisición, análisis, recuperación, validación y documentación en un entorno controlado"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The simulated project is not an isolated exercise; it brings together everything from Unit II so that the student reproduces the workflow of a real forensic lab: from receiving evidence to writing the final report.",
+              "es-MX": "El proyecto simulado no es un ejercicio aislado; reúne todo lo visto en la Unidad II para que el estudiante reproduzca el flujo de un laboratorio forense real: desde la recepción de la evidencia hasta la elaboración del informe final."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "etapas-proceso-general",
+        "Question Text": {
+          "en-US": [
+            "According to the material, which set BEST represents the stages of the simulated project process?"
+          ],
+          "es-MX": [
+            "Según el material, ¿qué conjunto representa MEJOR las etapas del proceso del proyecto simulado?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Preparation of the environment, reception and verification of evidence, acquisition, analysis, recovery, validation, timeline reconstruction, logbook and final report",
+            "Only acquisition and final report, skipping analysis and documentation",
+            "Creation of social networks, lab logo design and press conference",
+            "Installing games on the lab computers to test performance"
+          ],
+          "es-MX": [
+            "Preparación del entorno, recepción y verificación de evidencia, adquisición, análisis, recuperación, validación, reconstrucción de línea de tiempo, bitácora e informe final",
+            "Solo adquisición e informe final, omitiendo análisis y documentación",
+            "Creación de redes sociales, diseño de logotipo del laboratorio y rueda de prensa",
+            "Instalar juegos en las computadoras del laboratorio para probar el rendimiento"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Preparation of the environment, reception and verification of evidence, acquisition, analysis, recovery, validation, timeline reconstruction, logbook and final report",
+          "es-MX": "Preparación del entorno, recepción y verificación de evidencia, adquisición, análisis, recuperación, validación, reconstrucción de línea de tiempo, bitácora e informe final"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "The class explicitly breaks the project into stages from 1 to 9.",
+                "Each stage simulates a real step in professional methodology.",
+                "Skipping any of these stages would break the completeness of the exercise."
+              ],
+              "es-MX": [
+                "La clase desglosa explícitamente el proyecto en etapas de la 1 a la 9.",
+                "Cada etapa simula un paso real de la metodología profesional.",
+                "Omitir alguna de estas etapas rompería la integralidad del ejercicio."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "etapa1-entorno",
+        "Question Text": {
+          "en-US": [
+            "In Stage 1 (Environment Preparation), which action is ESSENTIAL according to the material?"
+          ],
+          "es-MX": [
+            "En la Etapa 1 (Preparación del entorno), ¿qué acción es ESENCIAL según el material?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Configuring a secure virtual machine or isolated environment and recording initial data in the logbook",
+            "Analyzing the evidence directly on the examiner's personal laptop without any isolation",
+            "Connecting the device directly to the internet for faster downloads",
+            "Sharing the evidence image by email with all classmates"
+          ],
+          "es-MX": [
+            "Configurar una máquina virtual o entorno aislado seguro y registrar datos iniciales en la bitácora",
+            "Analizar la evidencia directamente en la laptop personal del perito sin ningún aislamiento",
+            "Conectar el dispositivo directamente a internet para descargas más rápidas",
+            "Compartir la imagen de evidencia por correo con todos los compañeros"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Configuring a secure virtual machine or isolated environment and recording initial data in the logbook",
+          "es-MX": "Configurar una máquina virtual o entorno aislado seguro y registrar datos iniciales en la bitácora"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The project starts by ensuring a safe lab context: VM or sandbox, tools installed and a protected evidence folder, all documented from the beginning in the logbook.",
+              "es-MX": "El proyecto comienza asegurando un contexto de laboratorio seguro: VM o sandbox, herramientas instaladas y carpeta protegida de evidencia, todo documentado desde el inicio en la bitácora."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "etapa2-recepcion-evidencia",
+        "Question Text": {
+          "en-US": [
+            "Which sequence BEST represents the correct handling of the simulated evidence in Stage 2 (Reception and Verification)?"
+          ],
+          "es-MX": [
+            "¿Qué secuencia representa MEJOR el manejo correcto de la evidencia simulada en la Etapa 2 (Recepción y Verificación)?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Identify the evidence → describe the received file → calculate initial SHA-256 hash → record hash in the logbook → create a controlled copy for analysis",
+            "Open the image directly in any tool without calculating a hash → delete the original file → take no notes",
+            "Rename the file to something shorter → compress it → upload it to a public cloud",
+            "Calculate the hash after modifying the evidence and ignore any previous state"
+          ],
+          "es-MX": [
+            "Identificar la evidencia → describir el archivo recibido → calcular hash SHA-256 inicial → registrar el hash en la bitácora → crear copia controlada para análisis",
+            "Abrir la imagen directamente en cualquier herramienta sin calcular hash → borrar el archivo original → no tomar notas",
+            "Renombrar el archivo a algo más corto → comprimirlo → subirlo a una nube pública",
+            "Calcular el hash después de modificar la evidencia e ignorar cualquier estado previo"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Identify the evidence → describe the received file → calculate initial SHA-256 hash → record hash in the logbook → create a controlled copy for analysis",
+          "es-MX": "Identificar la evidencia → describir el archivo recibido → calcular hash SHA-256 inicial → registrar el hash en la bitácora → crear copia controlada para análisis"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "The hash of the received image is the integrity reference point.",
+                "The working copy is used for analysis to keep the original untouched.",
+                "All these steps must be recorded to maintain traceability."
+              ],
+              "es-MX": [
+                "El hash de la imagen recibida es el punto de referencia de integridad.",
+                "La copia de trabajo se usa para el análisis para mantener intacto el original.",
+                "Todos estos pasos deben registrarse para conservar la trazabilidad."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "tipos-adquisicion",
+        "Question Text": {
+          "en-US": [
+            "In the context of the project, which statement about physical, logical and selective acquisition is MOST accurate?"
+          ],
+          "es-MX": [
+            "En el contexto del proyecto, ¿qué afirmación sobre adquisición física, lógica y selectiva es la MÁS acertada?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Physical acquisition aims to capture raw partitions and unallocated sectors, while logical and selective focus on file systems, directories or specific apps",
+            "Logical acquisition always includes all unallocated sectors by default",
+            "Selective acquisition cannot be used to extract data from messaging apps like WhatsApp or Telegram",
+            "Physical acquisition is only used to copy the operating system of the examiner’s computer"
+          ],
+          "es-MX": [
+            "La adquisición física busca capturar particiones crudas y sectores no asignados, mientras que la lógica y la selectiva se enfocan en sistemas de archivos, directorios o apps específicas",
+            "La adquisición lógica siempre incluye todos los sectores no asignados por defecto",
+            "La adquisición selectiva no puede usarse para extraer datos de apps de mensajería como WhatsApp o Telegram",
+            "La adquisición física solo se usa para copiar el sistema operativo del equipo del perito"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Physical acquisition aims to capture raw partitions and unallocated sectors, while logical and selective focus on file systems, directories or specific apps",
+          "es-MX": "La adquisición física busca capturar particiones crudas y sectores no asignados, mientras que la lógica y la selectiva se enfocan en sistemas de archivos, directorios o apps específicas"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The project allows practicing different acquisition scopes: entire raw images versus focused extractions of directories or applications, simulating decisions made in real cases.",
+              "es-MX": "El proyecto permite practicar distintos alcances de adquisición: imágenes crudas completas frente a extracciones focalizadas de directorios o aplicaciones, simulando las decisiones que se toman en casos reales."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "registro-adquisicion-proyecto",
+        "Question Text": {
+          "en-US": [
+            "When documenting acquisitions in the project, what should ALWAYS be recorded?"
+          ],
+          "es-MX": [
+            "Al documentar las adquisiciones en el proyecto, ¿qué se debe registrar SIEMPRE?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Tool used, acquisition type, path of extracted data and result of the operation",
+            "Only the final size of the folder without indicating source or method",
+            "The examiner's personal opinion about the usefulness of the evidence",
+            "A description of the office decoration where the analysis was performed"
+          ],
+          "es-MX": [
+            "Herramienta utilizada, tipo de adquisición, ruta de los datos extraídos y resultado de la operación",
+            "Solo el tamaño final de la carpeta sin indicar origen ni método",
+            "La opinión personal del perito sobre la utilidad de la evidencia",
+            "Una descripción de la decoración de la oficina donde se hizo el análisis"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Tool used, acquisition type, path of extracted data and result of the operation",
+          "es-MX": "Herramienta utilizada, tipo de adquisición, ruta de los datos extraídos y resultado de la operación"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Documentation must allow others to know WHERE the data came from.",
+                "It must show HOW it was obtained and WHICH tool was used.",
+                "The result (success, error, partial extraction) is also relevant."
+              ],
+              "es-MX": [
+                "La documentación debe permitir que otros sepan DE DÓNDE salieron los datos.",
+                "Debe mostrar CÓMO se obtuvieron y QUÉ herramienta se utilizó.",
+                "El resultado (éxito, error, extracción parcial) también es relevante."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "analisis-aplicaciones",
+        "Question Text": {
+          "en-US": [
+            "According to Stage 4, which group of artifacts is MOST representative of the analysis of messaging applications in the project?"
+          ],
+          "es-MX": [
+            "Según la Etapa 4, ¿qué grupo de artefactos es MÁS representativo del análisis de aplicaciones de mensajería en el proyecto?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "WhatsApp databases (msgstore.db, wa.db), Telegram files (.tdb, .map), and messaging-related artifacts from Messenger, Instagram or Signal",
+            "Only the device’s wallpaper and ringtones",
+            "System BIOS configuration and printer drivers",
+            "Temporary files of the operating system installer"
+          ],
+          "es-MX": [
+            "Bases de WhatsApp (msgstore.db, wa.db), archivos de Telegram (.tdb, .map) y artefactos de mensajería de Messenger, Instagram o Signal",
+            "Solo el fondo de pantalla y los tonos del dispositivo",
+            "Configuración de la BIOS del sistema y drivers de impresora",
+            "Archivos temporales del instalador del sistema operativo"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "WhatsApp databases (msgstore.db, wa.db), Telegram files (.tdb, .map), and messaging-related artifacts from Messenger, Instagram or Signal",
+          "es-MX": "Bases de WhatsApp (msgstore.db, wa.db), archivos de Telegram (.tdb, .map) y artefactos de mensajería de Messenger, Instagram o Signal"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The project emphasizes the analysis of messaging data because they usually contain conversations, media and metadata that are crucial in communication-focused investigations.",
+              "es-MX": "El proyecto enfatiza el análisis de datos de mensajería porque suelen contener conversaciones, multimedia y metadatos que son cruciales en investigaciones centradas en comunicaciones."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "multimedia-navegador-sistema",
+        "Question Text": {
+          "en-US": [
+            "Besides messaging apps, which additional areas MUST be examined according to Stage 4?"
+          ],
+          "es-MX": [
+            "Además de las apps de mensajería, ¿qué áreas adicionales se DEBEN examinar según la Etapa 4?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Multimedia (photos, videos, EXIF, cache previews), browsers (history, cookies, local files, sessions) and system artifacts (logs, temporary files, last access records)",
+            "Only the device’s battery status history",
+            "Only the user’s contact list without any other context",
+            "Only configuration files of the mobile operator network"
+          ],
+          "es-MX": [
+            "Multimedia (fotos, videos, EXIF, caché de previsualizaciones), navegadores (historial, cookies, archivos locales, sesiones) y artefactos del sistema (logs, archivos temporales, registros de últimos accesos)",
+            "Solo el historial de estado de la batería del dispositivo",
+            "Solo la lista de contactos del usuario sin ningún otro contexto",
+            "Solo los archivos de configuración de la red del operador móvil"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Multimedia (photos, videos, EXIF, cache previews), browsers (history, cookies, local files, sessions) and system artifacts (logs, temporary files, last access records)",
+          "es-MX": "Multimedia (fotos, videos, EXIF, caché de previsualizaciones), navegadores (historial, cookies, archivos locales, sesiones) y artefactos del sistema (logs, archivos temporales, registros de últimos accesos)"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Multimedia can show places, people and times.",
+                "Browser artifacts reveal navigation patterns and downloads.",
+                "System logs and temporary files connect user actions with the OS."
+              ],
+              "es-MX": [
+                "La multimedia puede mostrar lugares, personas y momentos.",
+                "Los artefactos del navegador revelan patrones de navegación y descargas.",
+                "Los logs del sistema y archivos temporales conectan acciones del usuario con el sistema operativo."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "recuperacion-datos-eliminados",
+        "Question Text": {
+          "en-US": [
+            "Which techniques are highlighted in Stage 5 for recovering deleted data in the project?"
+          ],
+          "es-MX": [
+            "¿Qué técnicas se destacan en la Etapa 5 para recuperar datos eliminados en el proyecto?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Analysis of unallocated SQLite pages, carving of images and videos, recovery of cache thumbnails and hex searches for residual strings",
+            "Only checking the recycle bin of the operating system",
+            "Restarting the device several times hoping that the data will reappear by itself",
+            "Using disk defragmentation to \"recover\" messages"
+          ],
+          "es-MX": [
+            "Análisis de páginas no asignadas en SQLite, carving de imágenes y videos, recuperación de miniaturas de caché y búsquedas hex de cadenas residuales",
+            "Revisar únicamente la papelera de reciclaje del sistema operativo",
+            "Reiniciar varias veces el dispositivo esperando que los datos reaparezcan solos",
+            "Usar desfragmentación de disco para \"recuperar\" mensajes"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Analysis of unallocated SQLite pages, carving of images and videos, recovery of cache thumbnails and hex searches for residual strings",
+          "es-MX": "Análisis de páginas no asignadas en SQLite, carving de imágenes y videos, recuperación de miniaturas de caché y búsquedas hex de cadenas residuales"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The project connects the previous theory on deleted messages and cache analysis with hands-on practice: not only reading active data, but also exploring residual fragments.",
+              "es-MX": "El proyecto vincula la teoría previa sobre mensajes eliminados y análisis de caché con práctica directa: no solo leer datos activos, sino también explorar fragmentos residuales."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "validacion-hash-etapa6",
+        "Question Text": {
+          "en-US": [
+            "In Stage 6, how is integrity of the analyzed evidence confirmed using hash values?"
+          ],
+          "es-MX": [
+            "En la Etapa 6, ¿cómo se confirma la integridad de la evidencia analizada utilizando valores hash?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "By comparing the initial hash, the working copy hash and the final hash after analysis, ensuring that they match",
+            "By calculating only one hash at the end and ignoring previous states",
+            "By trusting that the operating system will not modify files during analysis",
+            "By writing the word \"OK\" in the logbook without any hash calculation"
+          ],
+          "es-MX": [
+            "Comparando el hash inicial, el hash de la copia de trabajo y el hash final tras el análisis, verificando que coincidan",
+            "Calculando un solo hash al final e ignorando estados previos",
+            "Confiando en que el sistema operativo no modificará archivos durante el análisis",
+            "Escribiendo la palabra \"OK\" en la bitácora sin hacer ningún cálculo de hash"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "By comparing the initial hash, the working copy hash and the final hash after analysis, ensuring that they match",
+          "es-MX": "Comparando el hash inicial, el hash de la copia de trabajo y el hash final tras el análisis, verificando que coincidan"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Matching hashes show that the working set did not change unexpectedly.",
+                "The documentation includes algorithm, tool, date and result.",
+                "This reinforces the legal defensibility of the analysis."
+              ],
+              "es-MX": [
+                "Que los hashes coincidan muestra que el conjunto de trabajo no cambió de forma inesperada.",
+                "La documentación incluye algoritmo, herramienta, fecha y resultado.",
+                "Esto refuerza la defendibilidad legal del análisis."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "reconstruccion-linea-tiempo",
+        "Question Text": {
+          "en-US": [
+            "According to Stage 7, which set of events is MOST typical to include in the reconstructed timeline?"
+          ],
+          "es-MX": [
+            "Según la Etapa 7, ¿qué conjunto de eventos es MÁS típico de incluir en la línea de tiempo reconstruida?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Sending and receiving messages, creation and deletion of files, downloads, folder movements, app usage and browser records",
+            "Only the times when the device battery was charged",
+            "Only the device’s screen brightness changes",
+            "Only incoming calls of unknown numbers without any other context"
+          ],
+          "es-MX": [
+            "Envío y recepción de mensajes, creación y eliminación de archivos, descargas, movimientos de carpetas, uso de apps y registros de navegador",
+            "Solo las veces en que se cargó la batería del dispositivo",
+            "Solo los cambios de brillo de pantalla del dispositivo",
+            "Solo las llamadas entrantes de números desconocidos sin ningún otro contexto"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Sending and receiving messages, creation and deletion of files, downloads, folder movements, app usage and browser records",
+          "es-MX": "Envío y recepción de mensajes, creación y eliminación de archivos, descargas, movimientos de carpetas, uso de apps y registros de navegador"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The timeline is not just a list of dates: it correlates different types of events to understand the behavior and actions of the device user over time.",
+              "es-MX": "La línea de tiempo no es solo una lista de fechas: correlaciona distintos tipos de eventos para comprender el comportamiento y las acciones del usuario del dispositivo a lo largo del tiempo."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "bitacora-etapa8",
+        "Question Text": {
+          "en-US": [
+            "What is the role of the complete logbook (Stage 8) in the project?"
+          ],
+          "es-MX": [
+            "¿Cuál es el papel de la bitácora completa (Etapa 8) en el proyecto?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To register every action performed (date, time, evidence, tool, result, path and observations) throughout the project",
+            "To note only the examiner’s feelings and personal reflections",
+            "To replace the need for hash calculation and chain-of-custody forms",
+            "To store the device’s PIN code and unlock pattern in plain text"
+          ],
+          "es-MX": [
+            "Registrar cada acción realizada (fecha, hora, evidencia, herramienta, resultado, ruta y observaciones) a lo largo de todo el proyecto",
+            "Anotar únicamente los sentimientos y reflexiones personales del perito",
+            "Sustituir la necesidad de cálculo de hash y formatos de cadena de custodia",
+            "Guardar el PIN y patrón de desbloqueo del dispositivo en texto plano"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To register every action performed (date, time, evidence, tool, result, path and observations) throughout the project",
+          "es-MX": "Registrar cada acción realizada (fecha, hora, evidencia, herramienta, resultado, ruta y observaciones) a lo largo de todo el proyecto"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "The logbook is the narrative backbone of the project.",
+                "It connects technical evidence with human actions and decisions.",
+                "It supports transparency and reproducibility of the exercise."
+              ],
+              "es-MX": [
+                "La bitácora es la columna vertebral narrativa del proyecto.",
+                "Conecta evidencia técnica con acciones y decisiones humanas.",
+                "Sostiene la transparencia y la reproducibilidad del ejercicio."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "informe-final-etapa9",
+        "Question Text": {
+          "en-US": [
+            "Which components MUST be included in the final report (Stage 9) according to the material?"
+          ],
+          "es-MX": [
+            "¿Qué componentes DEBEN incluirse en el informe final (Etapa 9) según el material?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Technical description of the process, recovered evidence (databases, conversations, multimedia, deleted messages), validation hashes, technical conclusions and annexes with screenshots",
+            "Only a verbal summary without any written record or hashes",
+            "A motivational letter addressed to the suspect",
+            "Only the list of tools installed in the virtual machine"
+          ],
+          "es-MX": [
+            "Descripción técnica del proceso, evidencia recuperada (bases de datos, conversaciones, multimedia, mensajes eliminados), hashes de validación, conclusiones técnicas y anexos con capturas",
+            "Solo un resumen verbal sin ningún registro escrito ni hashes",
+            "Una carta motivacional dirigida al sospechoso",
+            "Solo la lista de herramientas instaladas en la máquina virtual"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Technical description of the process, recovered evidence (databases, conversations, multimedia, deleted messages), validation hashes, technical conclusions and annexes with screenshots",
+          "es-MX": "Descripción técnica del proceso, evidencia recuperada (bases de datos, conversaciones, multimedia, mensajes eliminados), hashes de validación, conclusiones técnicas y anexos con capturas"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The final report is the visible result of the entire project. It must explain the methodology, present the key findings and show that the evidence was handled with integrity.",
+              "es-MX": "El informe final es el resultado visible de todo el proyecto. Debe explicar la metodología, presentar los hallazgos clave y demostrar que la evidencia se manejó con integridad."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "reglas-buenas-practicas",
+        "Question Text": {
+          "en-US": [
+            "Which rule listed in the material is ESSENTIAL for the practical project?"
+          ],
+          "es-MX": [
+            "¿Qué regla mencionada en el material es ESENCIAL para el proyecto práctico?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Not modifying the original evidence, documenting every action and working in an isolated environment",
+            "Allowing free edits on the original evidence as long as the final report is clear",
+            "Including personal opinions and emotional interpretations in the analysis",
+            "Sharing partial results on social networks during the project"
+          ],
+          "es-MX": [
+            "No modificar la evidencia original, documentar cada acción y trabajar en un entorno aislado",
+            "Permitir ediciones libres sobre la evidencia original mientras el informe final sea claro",
+            "Incluir opiniones personales e interpretaciones emocionales en el análisis",
+            "Compartir resultados parciales en redes sociales durante el proyecto"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Not modifying the original evidence, documenting every action and working in an isolated environment",
+          "es-MX": "No modificar la evidencia original, documentar cada acción y trabajar en un entorno aislado"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "These rules mirror real-world professional standards.",
+                "They protect both the case and the analyst.",
+                "Breaking them can invalidate the results, even in a simulated project."
+              ],
+              "es-MX": [
+                "Estas reglas reflejan estándares profesionales del mundo real.",
+                "Protegen tanto al caso como al perito.",
+                "Romperlas puede invalidar los resultados, incluso en un proyecto simulado."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "resultado-esperado",
+        "Question Text": {
+          "en-US": [
+            "According to the 'Expected Result' section, what should the student be able to do after completing the project?"
+          ],
+          "es-MX": [
+            "Según la sección de 'Resultado esperado', ¿qué debe ser capaz de hacer el estudiante al concluir el proyecto?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Perform a simulated extraction, analyze messaging databases, recover deleted information, verify integrity with hashes, document the process and create a technical forensic report",
+            "Design new hardware devices for mobile networks without any forensic component",
+            "Develop a video game unrelated to evidence handling",
+            "Memorize all NIST and ISO documents without applying them"
+          ],
+          "es-MX": [
+            "Realizar una extracción simulada, analizar bases de mensajería, recuperar información eliminada, verificar integridad con hashes, documentar el proceso y crear un reporte forense técnico",
+            "Diseñar nuevos dispositivos de hardware para redes móviles sin componente forense",
+            "Desarrollar un videojuego sin relación con el manejo de evidencia",
+            "Memorizar todos los documentos NIST e ISO sin aplicarlos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Perform a simulated extraction, analyze messaging databases, recover deleted information, verify integrity with hashes, document the process and create a technical forensic report",
+          "es-MX": "Realizar una extracción simulada, analizar bases de mensajería, recuperar información eliminada, verificar integridad con hashes, documentar el proceso y crear un reporte forense técnico"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The project is the practical closure of Unit II. It ensures that the student not only knows the concepts, but also can execute them in a coherent forensic workflow.",
+              "es-MX": "El proyecto es el cierre práctico de la Unidad II. Asegura que el estudiante no solo conozca los conceptos, sino que también pueda ejecutarlos dentro de un flujo forense coherente."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "simulacion-vs-caso-real",
+        "Question Text": {
+          "en-US": [
+            "Why is a simulated extraction still valuable even if it is not a real legal case?"
+          ],
+          "es-MX": [
+            "¿Por qué una extracción simulada sigue siendo valiosa aunque no sea un caso legal real?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it allows practicing the complete methodology (acquisition, analysis, recovery, validation and reporting) in a safe environment before facing real evidence",
+            "Because simulated data does not require any documentation or rigor",
+            "Because in simulated projects, integrity and hashes are not relevant",
+            "Because it is used only to test the aesthetic design of the reports"
+          ],
+          "es-MX": [
+            "Porque permite practicar la metodología completa (adquisición, análisis, recuperación, validación y reporte) en un entorno seguro antes de enfrentar evidencia real",
+            "Porque los datos simulados no requieren documentación ni rigor",
+            "Porque en proyectos simulados la integridad y los hashes no son relevantes",
+            "Porque se usa solo para probar el diseño estético de los informes"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it allows practicing the complete methodology (acquisition, analysis, recovery, validation and reporting) in a safe environment before facing real evidence",
+          "es-MX": "Porque permite practicar la metodología completa (adquisición, análisis, recuperación, validación y reporte) en un entorno seguro antes de enfrentar evidencia real"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Simulation reduces the risk of damaging real evidence.",
+                "It builds procedural muscle memory in the student.",
+                "It prepares the student to later adapt the same flow to real-world cases."
+              ],
+              "es-MX": [
+                "La simulación reduce el riesgo de dañar evidencia real.",
+                "Genera memoria procedimental en el estudiante.",
+                "Prepara al estudiante para adaptar después el mismo flujo a casos reales."
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

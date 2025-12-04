@@ -1,0 +1,394 @@
+{
+    "meta": {
+      "slug": "forense-apps23",
+      "title": "Clase 23 – Integridad y validación de evidencia digital",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 2,
+      "classNo": 23,
+      "description": "Validación integral de evidencia digital mediante funciones hash, bitácoras y documentación forense para garantizar autenticidad, trazabilidad y no alteración de los datos.",
+      "tags": [
+        "integridad digital",
+        "hash",
+        "bitácora forense",
+        "validación de evidencia",
+        "trazabilidad"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "importancia-validacion",
+        "Question Text": {
+          "en-US": [
+            "Why is validation of digital evidence considered a critical step in a forensic investigation?"
+          ],
+          "es-MX": [
+            "¿Por qué la validación de la evidencia digital se considera un paso crítico en una investigación forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it demonstrates that the evidence analyzed is identical to the original, ruling out manipulation or corruption",
+            "Because it allows the examiner to freely edit the evidence without being detected",
+            "Because it replaces the need for chain-of-custody documentation",
+            "Because it automatically translates all evidence to the language of the court"
+          ],
+          "es-MX": [
+            "Porque demuestra que la evidencia analizada es idéntica a la original, descartando manipulación o corrupción",
+            "Porque permite que el perito edite libremente la evidencia sin ser detectado",
+            "Porque sustituye la necesidad de documentar la cadena de custodia",
+            "Porque traduce automáticamente toda la evidencia al idioma del tribunal"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it demonstrates that the evidence analyzed is identical to the original, ruling out manipulation or corruption",
+          "es-MX": "Porque demuestra que la evidencia analizada es idéntica a la original, descartando manipulación o corrupción"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "Validation gives confidence that the file, folder or forensic image used in the analysis is the same as the one collected, which is essential to avoid challenges about tampering or alteration.",
+              "es-MX": "La validación da certeza de que el archivo, carpeta o imagen forense utilizada en el análisis es la misma que se recolectó, lo cual es esencial para evitar impugnaciones por manipulación o alteración."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "concepto-integridad",
+        "Question Text": {
+          "en-US": [
+            "Which option BEST describes digital integrity in the context of forensic evidence?"
+          ],
+          "es-MX": [
+            "¿Cuál opción describe MEJOR la integridad digital en el contexto de la evidencia forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The guarantee that the content, structure, metadata and size of the evidence have not been modified",
+            "The possibility of modifying the evidence as long as the final report is clear",
+            "The ability to compress files to save disk space during analysis",
+            "The practice of renaming all evidence files to shorter names"
+          ],
+          "es-MX": [
+            "La garantía de que el contenido, la estructura, los metadatos y el tamaño de la evidencia no han sido modificados",
+            "La posibilidad de modificar la evidencia siempre que el informe final sea claro",
+            "La capacidad de comprimir archivos para ahorrar espacio en disco durante el análisis",
+            "La práctica de renombrar todos los archivos de evidencia a nombres más cortos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The guarantee that the content, structure, metadata and size of the evidence have not been modified",
+          "es-MX": "La garantía de que el contenido, la estructura, los metadatos y el tamaño de la evidencia no han sido modificados"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Integrity is not only about the visible content.",
+                "Changes in structure, timestamps or internal signatures can also break integrity.",
+                "Forensic validation must protect all these dimensions."
+              ],
+              "es-MX": [
+                "La integridad no se refiere sólo al contenido visible.",
+                "Cambios en estructura, fechas o firmas internas también rompen la integridad.",
+                "La validación forense debe proteger todas estas dimensiones."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "hash-algoritmos",
+        "Question Text": {
+          "en-US": [
+            "According to the class, which statement about hash algorithms for forensic validation is MOST accurate?"
+          ],
+          "es-MX": [
+            "De acuerdo con la clase, ¿qué afirmación sobre los algoritmos hash para validación forense es la MÁS acertada?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "MD5 is widely used in operations, but SHA-256 is the current high-security standard recommended for validation",
+            "SHA-1 and SHA-512 are obsolete and can no longer be used under any circumstances",
+            "Any hash algorithm always produces the same output length, so choosing one or another makes no difference",
+            "MD5, SHA-1, SHA-256 and SHA-512 are only used to compress evidence files"
+          ],
+          "es-MX": [
+            "MD5 se usa ampliamente en la operación, pero SHA-256 es el estándar actual de alta seguridad recomendado para validación",
+            "SHA-1 y SHA-512 son obsoletos y ya no pueden usarse bajo ninguna circunstancia",
+            "Cualquier algoritmo hash produce siempre la misma longitud de salida, por lo que da igual elegir uno u otro",
+            "MD5, SHA-1, SHA-256 y SHA-512 sólo se usan para comprimir archivos de evidencia"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "MD5 is widely used in operations, but SHA-256 is the current high-security standard recommended for validation",
+          "es-MX": "MD5 se usa ampliamente en la operación, pero SHA-256 es el estándar actual de alta seguridad recomendado para validación"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The material explains that MD5 continues to be used for operational checks, but SHA-256 is the recommended standard for robust forensic validation, and SHA-512 can be used in more demanding scenarios.",
+              "es-MX": "El material indica que MD5 se sigue utilizando para verificaciones operativas, pero SHA-256 es el estándar recomendado para validación forense robusta, y SHA-512 puede emplearse en escenarios de validación más exigentes."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "flujo-validacion-hash",
+        "Question Text": {
+          "en-US": [
+            "Which sequence BEST represents the correct hash-based validation workflow for a single evidence file?"
+          ],
+          "es-MX": [
+            "¿Qué secuencia representa MEJOR el flujo correcto de validación con hash para un archivo de evidencia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Calculate hash of original → make controlled copy → calculate hash of the copy → compare values → record results in the logbook",
+            "Make copy of the evidence → edit the copy → calculate hash only at the end → delete the original",
+            "Calculate hash of the copy → compress both files → compare disk free space",
+            "Rename the files → calculate hash only of the smallest file → skip documentation"
+          ],
+          "es-MX": [
+            "Calcular hash del original → hacer copia controlada → calcular hash de la copia → comparar valores → registrar resultados en la bitácora",
+            "Hacer copia de la evidencia → editar la copia → calcular hash sólo al final → borrar el original",
+            "Calcular hash de la copia → comprimir ambos archivos → comparar espacio libre en disco",
+            "Renombrar los archivos → calcular hash sólo del archivo más pequeño → omitir documentación"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Calculate hash of original → make controlled copy → calculate hash of the copy → compare values → record results in the logbook",
+          "es-MX": "Calcular hash del original → hacer copia controlada → calcular hash de la copia → comparar valores → registrar resultados en la bitácora"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "First, the integrity of the original is captured with a hash.",
+                "Then, the copy is generated and validated against the original hash.",
+                "Finally, all steps and values are documented in the forensic logbook."
+              ],
+              "es-MX": [
+                "Primero se captura la integridad del original mediante un hash.",
+                "Después se genera la copia y se valida contra el hash original.",
+                "Por último, todos los pasos y valores se documentan en la bitácora forense."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "bitacora-validacion",
+        "Question Text": {
+          "en-US": [
+            "Which option BEST describes the role of the forensic validation logbook (bitácora) described in the class?"
+          ],
+          "es-MX": [
+            "¿Qué opción describe MEJOR el papel de la bitácora de validación forense mencionado en la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It documents dates, evidence, analyst, tools, hash values and storage details, ensuring transparency and traceability",
+            "It is only a personal notebook of the examiner and has no formal value in a case",
+            "It replaces the need to calculate hashes, since everything is written by hand",
+            "It is used only to write passwords and informal comments unrelated to the evidence"
+          ],
+          "es-MX": [
+            "Documenta fechas, evidencia, analista, herramientas, valores hash y detalles de resguardo, asegurando transparencia y trazabilidad",
+            "Es sólo una libreta personal del perito y no tiene valor formal en un caso",
+            "Sustituye la necesidad de calcular hashes, porque todo se escribe a mano",
+            "Se utiliza únicamente para anotar contraseñas y comentarios informales sin relación con la evidencia"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It documents dates, evidence, analyst, tools, hash values and storage details, ensuring transparency and traceability",
+          "es-MX": "Documenta fechas, evidencia, analista, herramientas, valores hash y detalles de resguardo, asegurando transparencia y trazabilidad"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The logbook is part of the formal forensic documentation. It connects technical operations (hashes, copies, tools) with who did what, when and how, which is fundamental for chain-of-custody and court review.",
+              "es-MX": "La bitácora forma parte de la documentación forense formal. Conecta las operaciones técnicas (hashes, copias, herramientas) con quién hizo qué, cuándo y cómo, lo cual es fundamental para la cadena de custodia y la revisión en juicio."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "tipos-evidencia-validar",
+        "Question Text": {
+          "en-US": [
+            "According to the class, which set of items is an example of evidence that should be validated with hash and documented?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿qué conjunto de elementos es un ejemplo de evidencia que debe validarse con hash y documentarse?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Forensic images of disks or phones, PST/OST email files, SQLite databases, system logs, multimedia files and exported artifacts",
+            "Only printed screenshots and handwritten notes, since digital files are not considered evidence",
+            "Only the operating system installation files of the examiner’s computer",
+            "Just temporary browser cache that will be deleted after the case"
+          ],
+          "es-MX": [
+            "Imágenes forenses de discos o teléfonos, archivos PST/OST de correo, bases SQLite, logs del sistema, archivos multimedia y artefactos exportados",
+            "Sólo capturas de pantalla impresas y notas a mano, porque los archivos digitales no se consideran evidencia",
+            "Únicamente los archivos de instalación del sistema operativo del equipo del perito",
+            "Sólo la caché temporal del navegador que se borrará al terminar el caso"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Forensic images of disks or phones, PST/OST email files, SQLite databases, system logs, multimedia files and exported artifacts",
+          "es-MX": "Imágenes forenses de discos o teléfonos, archivos PST/OST de correo, bases SQLite, logs del sistema, archivos multimedia y artefactos exportados"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Any digital object used as evidence must be hash-validated.",
+                "This includes both raw images and derived exports.",
+                "Each item must keep its hash, date and responsible person linked in the documentation."
+              ],
+              "es-MX": [
+                "Cualquier objeto digital utilizado como evidencia debe ser validado con hash.",
+                "Esto incluye tanto las imágenes crudas como las exportaciones derivadas.",
+                "Cada elemento debe conservar su hash, fecha y responsable asociado en la documentación."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "ejemplo-integrado",
+        "Question Text": {
+          "en-US": [
+            "In the integrated example with dispositivo01.E01, what conclusion can be drawn when the SHA-256 hash of the original image and the working copy are identical?"
+          ],
+          "es-MX": [
+            "En el ejemplo integrado con dispositivo01.E01, ¿qué conclusión se puede extraer cuando el hash SHA-256 de la imagen original y el de la copia de trabajo son idénticos?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The copy is an exact replica of the original at the bit level and can be used safely for analysis",
+            "The copy has been modified and must be discarded immediately",
+            "The hash result is irrelevant and does not affect the integrity",
+            "It means that the evidence is no longer valid because both hashes match"
+          ],
+          "es-MX": [
+            "La copia es una réplica exacta del original a nivel de bits y puede usarse con seguridad para el análisis",
+            "La copia ha sido modificada y debe descartarse de inmediato",
+            "El resultado del hash es irrelevante y no afecta la integridad",
+            "Significa que la evidencia ya no es válida porque ambos hashes coinciden"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The copy is an exact replica of the original at the bit level and can be used safely for analysis",
+          "es-MX": "La copia es una réplica exacta del original a nivel de bits y puede usarse con seguridad para el análisis"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "Matching hashes indicate that the evidence used in the lab has not changed with respect to the originally acquired image. This allows the examiner to analyze the copy while preserving the original untouched.",
+              "es-MX": "Que los hashes coincidan indica que la evidencia utilizada en laboratorio no ha cambiado respecto a la imagen originalmente adquirida. Esto permite al perito analizar la copia mientras mantiene intacto el original."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "hash-no-suficiente",
+        "Question Text": {
+          "en-US": [
+            "Why does the class emphasize that validation is NOT limited to calculating a hash, but requires a complete process with documentation and control?"
+          ],
+          "es-MX": [
+            "¿Por qué la clase enfatiza que la validación NO se limita a calcular un hash, sino que requiere un proceso completo con documentación y control?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because a hash without context, dates, tools and responsible persons does not fully prove how the evidence was handled",
+            "Because documentation can completely replace hash values",
+            "Because the court only accepts handwritten notes and rejects any hash calculation",
+            "Because hashes are used only for internal IT maintenance and not for forensic purposes"
+          ],
+          "es-MX": [
+            "Porque un hash sin contexto, fechas, herramientas y responsables no demuestra por completo cómo se manejó la evidencia",
+            "Porque la documentación puede sustituir por completo los valores hash",
+            "Porque el tribunal sólo acepta notas manuscritas y rechaza cualquier cálculo de hash",
+            "Porque los hashes se usan sólo para mantenimiento interno de TI y no para fines forenses"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because a hash without context, dates, tools and responsible persons does not fully prove how the evidence was handled",
+          "es-MX": "Porque un hash sin contexto, fechas, herramientas y responsables no demuestra por completo cómo se manejó la evidencia"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "The hash is a mathematical fingerprint, but it must be tied to a documented procedure.",
+                "The logbook, chain of custody and storage records complete the story of the evidence.",
+                "Together they protect both the investigator and the case in front of the court."
+              ],
+              "es-MX": [
+                "El hash es una huella matemática, pero debe vincularse a un procedimiento documentado.",
+                "La bitácora, la cadena de custodia y los registros de resguardo completan la historia de la evidencia.",
+                "En conjunto protegen tanto al investigador como al caso frente al tribunal."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "momentos-calculo-hash",
+        "Question Text": {
+          "en-US": [
+            "In a complete validation workflow, at which moments should hash values typically be calculated for a forensic image or key file?"
+          ],
+          "es-MX": [
+            "En un flujo completo de validación, ¿en qué momentos se deben calcular normalmente los valores hash para una imagen forense o archivo clave?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Before acquisition (original), after creating the copy and again after finishing the analysis, to confirm no alteration occurred",
+            "Only once at the beginning, because later changes are not relevant",
+            "Only after editing the evidence, to document the final modified state",
+            "Never, because hashing can damage the original file"
+          ],
+          "es-MX": [
+            "Antes de la adquisición (original), después de crear la copia y nuevamente al finalizar el análisis, para confirmar que no hubo alteración",
+            "Sólo una vez al inicio, porque los cambios posteriores no son relevantes",
+            "Sólo después de editar la evidencia, para documentar el estado modificado final",
+            "Nunca, porque el cálculo de hash puede dañar el archivo original"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Before acquisition (original), after creating the copy and again after finishing the analysis, to confirm no alteration occurred",
+          "es-MX": "Antes de la adquisición (original), después de crear la copia y nuevamente al finalizar el análisis, para confirmar que no hubo alteración"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class explains that hashes should be used at key milestones: when evidence is acquired, when the working copy is created and when the analysis is completed. Matching values across these stages prove that the evidence remained intact.",
+              "es-MX": "La clase explica que los hashes deben usarse en hitos clave: al adquirir la evidencia, al crear la copia de trabajo y al concluir el análisis. Que los valores coincidan en estas etapas prueba que la evidencia se mantuvo intacta."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,529 @@
+{
+    "meta": {
+      "slug": "forense-apps37",
+      "title": "Clase 37 – Patrones, hábitos de uso y comportamiento comunicacional",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 3,
+      "classNo": 37,
+      "description": "Identificación de patrones de frecuencia, horarios de actividad y cambios de comportamiento en conversaciones digitales para apoyar la reconstrucción forense de hechos.",
+      "tags": [
+        "patrones de comunicación",
+        "frecuencia de mensajes",
+        "timeline",
+        "whatsapp",
+        "sqlite",
+        "análisis de hábitos",
+        "dfir",
+        "power bi",
+        "axioM",
+        "comportamiento digital"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "importancia-frecuencia",
+        "Question Text": {
+          "en-US": [
+            "According to the class, why is the analysis of message frequency and timing important in forensic investigations, even if the exact content is not read?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿por qué es importante el análisis de la frecuencia y los horarios de los mensajes en una investigación forense, incluso si no se lee el contenido exacto?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because patterns of interaction reveal habits, routines, anomalous periods and key time windows that may be related to an incident or coordination, even without reading the actual text",
+            "Because frequency analysis can automatically decrypt all encrypted messages based solely on the timestamps",
+            "Because courts accept only graphs and charts, and they never consider the content of the messages",
+            "Because counting messages replaces the need to acquire the device or preserve the evidence chain of custody"
+          ],
+          "es-MX": [
+            "Porque los patrones de interacción revelan hábitos, rutinas, periodos anómalos y ventanas de tiempo clave que pueden relacionarse con un incidente o una coordinación, incluso sin leer el texto",
+            "Porque el análisis de frecuencia puede descifrar automáticamente todos los mensajes cifrados solo a partir de los timestamps",
+            "Porque los tribunales solo aceptan gráficas y nunca toman en cuenta el contenido de los mensajes",
+            "Porque contar mensajes sustituye la necesidad de adquirir el dispositivo o preservar la cadena de custodia"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because patterns of interaction reveal habits, routines, anomalous periods and key time windows that may be related to an incident or coordination, even without reading the actual text",
+          "es-MX": "Porque los patrones de interacción revelan hábitos, rutinas, periodos anómalos y ventanas de tiempo clave que pueden relacionarse con un incidente o una coordinación, incluso sin leer el texto"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class explains that frequency, schedules and volume of messages pueden mostrar rutinas diarias, silencios sospechosos y picos de actividad que orientan la investigación hacia momentos críticos, aunque el contenido esté limitado o cifrado.",
+              "es-MX": "La clase explica que la frecuencia, los horarios y el volumen de mensajes pueden mostrar rutinas diarias, silencios sospechosos y picos de actividad que orientan la investigación hacia momentos críticos, aunque el contenido esté limitado o cifrado."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "tipos-patrones",
+        "Question Text": {
+          "en-US": [
+            "Which of the following BEST describes the difference between daily and weekly patterns in communication analysis?"
+          ],
+          "es-MX": [
+            "¿Cuál de las siguientes opciones describe MEJOR la diferencia entre patrones diarios y semanales en el análisis de comunicación?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Daily patterns focus on peak hours within a day (for example, 20:00–23:00), while weekly patterns compare behavior between weekdays and weekends or specific days of the week",
+            "Daily patterns only analyze multimedia messages, while weekly patterns only analyze text messages",
+            "Daily patterns ignore timestamps, while weekly patterns ignore dates",
+            "Daily patterns are only used in corporate cases and weekly patterns only in personal investigations"
+          ],
+          "es-MX": [
+            "Los patrones diarios se centran en las horas pico dentro de un mismo día (por ejemplo, 20:00–23:00), mientras que los patrones semanales comparan el comportamiento entre días laborables y fines de semana o días concretos de la semana",
+            "Los patrones diarios analizan únicamente mensajes multimedia, mientras que los patrones semanales solo analizan mensajes de texto",
+            "Los patrones diarios ignoran los timestamps y los patrones semanales ignoran las fechas",
+            "Los patrones diarios se usan solo en casos corporativos y los semanales únicamente en investigaciones personales"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Daily patterns focus on peak hours within a day (for example, 20:00–23:00), while weekly patterns compare behavior between weekdays and weekends or specific days of the week",
+          "es-MX": "Los patrones diarios se centran en las horas pico dentro de un mismo día (por ejemplo, 20:00–23:00), mientras que los patrones semanales comparan el comportamiento entre días laborables y fines de semana o días concretos de la semana"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Daily patterns answer: ‘At what times of day does this user usually communicate?’",
+                "Weekly patterns answer: ‘How does communication change between weekdays and weekends or on certain days?’",
+                "Both help detect anomalies near an incident."
+              ],
+              "es-MX": [
+                "Los patrones diarios responden: ‘¿A qué horas del día suele comunicarse este usuario?’",
+                "Los patrones semanales responden: ‘¿Cómo cambia la comunicación entre días laborables y fines de semana o ciertos días?’",
+                "Ambos ayudan a detectar anomalías cercanas a un incidente."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "picos-inusuales",
+        "Question Text": {
+          "en-US": [
+            "According to the class, which situation is a typical example of an ‘unexpected or unusual peak’ that deserves special attention?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿cuál de las siguientes situaciones es un ejemplo típico de ‘pico inesperado o inusual’ que merece atención especial?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A sudden and very high increase in the number of messages shortly before a relevant incident compared with the usual communication volume",
+            "A perfectly stable number of messages every single day for years with no variation at all",
+            "A complete absence of multimedia usage in a social media account created only for reading news",
+            "A normal increase of greetings during holidays in a family group"
+          ],
+          "es-MX": [
+            "Un incremento súbito y muy alto en la cantidad de mensajes poco antes de un incidente relevante en comparación con el volumen normal de comunicación",
+            "Un número perfectamente estable de mensajes todos los días durante años sin ninguna variación",
+            "La ausencia total de multimedia en una cuenta de red social creada solo para leer noticias",
+            "Un aumento normal de felicitaciones en días festivos dentro de un grupo familiar"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A sudden and very high increase in the number of messages shortly before a relevant incident compared with the usual communication volume",
+          "es-MX": "Un incremento súbito y muy alto en la cantidad de mensajes poco antes de un incidente relevante en comparación con el volumen normal de comunicación"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class mentions that unusual peaks (for example, hundreds of messages in a short period near the incident date) can indicate coordination, conflict, or key exchanges that must be examined in more detail.",
+              "es-MX": "La clase menciona que los picos inusuales (por ejemplo, cientos de mensajes en poco tiempo cerca de la fecha del incidente) pueden indicar coordinación, conflicto o intercambios clave que deben revisarse con mayor detalle."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "silencios-prolongados",
+        "Question Text": {
+          "en-US": [
+            "What can long periods of silence (no messages) in a conversation suggest in the context of forensic pattern analysis?"
+          ],
+          "es-MX": [
+            "¿Qué pueden sugerir los periodos largos de silencio (sin mensajes) en una conversación, en el contexto del análisis forense de patrones?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They may indicate possible deletion of data, an emotional reaction to an event, loss of contact or a change in communication channel that needs further correlation",
+            "They always prove that the device was physically turned off during the entire silence period",
+            "They are irrelevant because only the content of the messages matters, not the gaps between them",
+            "They show that the app stopped working permanently, making the conversation unusable for forensics"
+          ],
+          "es-MX": [
+            "Pueden indicar posible eliminación de datos, reacción emocional a un evento, pérdida de contacto o cambio de canal de comunicación que requiere mayor correlación",
+            "Siempre prueban que el dispositivo estuvo físicamente apagado durante todo el periodo de silencio",
+            "Son irrelevantes porque solo importa el contenido de los mensajes y no los vacíos entre ellos",
+            "Muestran que la aplicación dejó de funcionar definitivamente, haciendo la conversación inútil para forense"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They may indicate possible deletion of data, an emotional reaction to an event, loss of contact or a change in communication channel that needs further correlation",
+          "es-MX": "Pueden indicar posible eliminación de datos, reacción emocional a un evento, pérdida de contacto o cambio de canal de comunicación que requiere mayor correlación"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Silences must be interpreted with other artifacts (logs, other apps, device events).",
+                "The class example shows 72 hours of silence after a conflict, which may be significant.",
+                "Silence is itself a pattern that can have forensic meaning."
+              ],
+              "es-MX": [
+                "Los silencios deben interpretarse junto con otros artefactos (logs, otras apps, eventos del dispositivo).",
+                "El ejemplo de la clase muestra 72 horas de silencio tras un conflicto, lo cual puede ser significativo.",
+                "El silencio es en sí mismo un patrón que puede tener sentido forense."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "campos-clave-sqlite",
+        "Question Text": {
+          "en-US": [
+            "Which fields in a messages table are especially useful to build frequency and behavior patterns, according to the class?"
+          ],
+          "es-MX": [
+            "¿Qué campos de una tabla de mensajes son especialmente útiles para construir patrones de frecuencia y comportamiento, según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "timestamp, key_from_me, media_wa_type, remote_resource and message_type",
+            "screen_brightness, battery_level, ringtone_volume and wallpaper_name",
+            "wifi_password, sim_pin, encryption_key and lockscreen_pattern",
+            "gps_latitude, gps_longitude and cpu_temperature exclusively"
+          ],
+          "es-MX": [
+            "timestamp, key_from_me, media_wa_type, remote_resource y message_type",
+            "screen_brightness, battery_level, ringtone_volume y wallpaper_name",
+            "wifi_password, sim_pin, encryption_key y lockscreen_pattern",
+            "gps_latitude, gps_longitude y cpu_temperature exclusivamente"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "timestamp, key_from_me, media_wa_type, remote_resource and message_type",
+          "es-MX": "timestamp, key_from_me, media_wa_type, remote_resource y message_type"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class highlights these fields because they allow the examiner to know when the message was sent, who sent it, whether it was multimedia or text and who participated, which is crucial for building timelines and behavior profiles.",
+              "es-MX": "La clase destaca estos campos porque permiten saber cuándo se envió el mensaje, quién lo envió, si fue multimedia o texto y quién participó, lo cual es clave para construir líneas de tiempo y perfiles de comportamiento."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "sql-conteo-dia",
+        "Question Text": {
+          "en-US": [
+            "Which SQL query from the class is used to count how many messages were sent per day in order to observe daily activity patterns?"
+          ],
+          "es-MX": [
+            "¿Qué consulta SQL de la clase se utiliza para contar cuántos mensajes se enviaron por día y así observar patrones de actividad diaria?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "SELECT DATE(timestamp/1000,'unixepoch') AS fecha, COUNT(*) AS total FROM messages GROUP BY fecha;",
+            "SELECT * FROM messages WHERE data IS NULL OR data = '';",
+            "SELECT STRFTIME('%H', timestamp/1000,'unixepoch') AS hora, COUNT(*) AS total FROM messages GROUP BY hora;",
+            "SELECT key_from_me, COUNT(*) FROM messages GROUP BY key_from_me;"
+          ],
+          "es-MX": [
+            "SELECT DATE(timestamp/1000,'unixepoch') AS fecha, COUNT(*) AS total FROM messages GROUP BY fecha;",
+            "SELECT * FROM messages WHERE data IS NULL OR data = '';",
+            "SELECT STRFTIME('%H', timestamp/1000,'unixepoch') AS hora, COUNT(*) AS total FROM messages GROUP BY hora;",
+            "SELECT key_from_me, COUNT(*) FROM messages GROUP BY key_from_me;"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "SELECT DATE(timestamp/1000,'unixepoch') AS fecha, COUNT(*) AS total FROM messages GROUP BY fecha;",
+          "es-MX": "SELECT DATE(timestamp/1000,'unixepoch') AS fecha, COUNT(*) AS total FROM messages GROUP BY fecha;"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "This query transforms the timestamp into a calendar date.",
+                "It counts all messages for each date, revealing high and low activity days.",
+                "It is a starting point for spotting anomalies around the incident date."
+              ],
+              "es-MX": [
+                "Esta consulta transforma el timestamp en una fecha de calendario.",
+                "Cuenta todos los mensajes por fecha, revelando días de alta o baja actividad.",
+                "Es un punto de partida para detectar anomalías alrededor de la fecha del incidente."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "sql-conteo-hora",
+        "Question Text": {
+          "en-US": [
+            "What is the purpose of the SQL query that groups messages by hour of the day using STRFTIME('%H', timestamp/1000,'unixepoch')?"
+          ],
+          "es-MX": [
+            "¿Cuál es el propósito de la consulta SQL que agrupa los mensajes por hora del día usando STRFTIME('%H', timestamp/1000,'unixepoch')?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To identify preferred communication hours, detect unusual nighttime activity and understand daily rhythms of messaging",
+            "To change permanently the system time of the device from the database",
+            "To remove all messages that do not occur during working hours",
+            "To encrypt the hour information so that no one else can read it"
+          ],
+          "es-MX": [
+            "Identificar las horas preferidas de comunicación, detectar actividad nocturna inusual y entender los ritmos diarios de mensajería",
+            "Cambiar de forma permanente la hora del sistema del dispositivo desde la base de datos",
+            "Eliminar todos los mensajes que no ocurran en horario laboral",
+            "Cifrar la información de la hora para que nadie más pueda leerla"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To identify preferred communication hours, detect unusual nighttime activity and understand daily rhythms of messaging",
+          "es-MX": "Identificar las horas preferidas de comunicación, detectar actividad nocturna inusual y entender los ritmos diarios de mensajería"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "By grouping counts by hour, the examiner can build histograms or heat maps that show when the user is most active and highlight odd activity during unusual hours relative to their normal pattern.",
+              "es-MX": "Al agrupar conteos por hora, el perito puede construir histogramas o mapas de calor que muestran cuándo el usuario está más activo y resaltar actividad extraña en horas inusuales respecto a su patrón normal."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "enviados-vs-recibidos",
+        "Question Text": {
+          "en-US": [
+            "What forensic value does the query that groups messages by key_from_me (sent vs received) provide?"
+          ],
+          "es-MX": [
+            "¿Qué valor forense aporta la consulta que agrupa los mensajes por key_from_me (enviados vs recibidos)?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It shows whether the user tends to send more messages than they receive or vice versa, helping to identify unilateral communication patterns or balanced exchanges",
+            "It is only used to delete all messages sent by the user and keep only the received ones",
+            "It serves to change the author of the messages after the investigation has started",
+            "It is used exclusively to calculate the total internet data consumption of the device"
+          ],
+          "es-MX": [
+            "Muestra si el usuario tiende a enviar más mensajes de los que recibe o viceversa, ayudando a identificar patrones de comunicación unilateral o intercambios equilibrados",
+            "Se usa solo para borrar todos los mensajes enviados por el usuario y conservar únicamente los recibidos",
+            "Sirve para cambiar el autor de los mensajes después de que la investigación ya comenzó",
+            "Se utiliza exclusivamente para calcular el consumo total de datos de internet del dispositivo"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It shows whether the user tends to send more messages than they receive or vice versa, helping to identify unilateral communication patterns or balanced exchanges",
+          "es-MX": "Muestra si el usuario tiende a enviar más mensajes de los que recibe o viceversa, ayudando a identificar patrones de comunicación unilateral o intercambios equilibrados"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "key_from_me distinguishes sender (1) vs receiver (0).",
+                "A strong imbalance can suggest dominance, harassment, pressure or passive behavior.",
+                "Combined with time and content, it enriches the behavioral profile."
+              ],
+              "es-MX": [
+                "key_from_me distingue entre remitente (1) y receptor (0).",
+                "Un desequilibrio fuerte puede sugerir dominancia, hostigamiento, presión o comportamiento pasivo.",
+                "Combinado con tiempo y contenido, enriquece el perfil de comportamiento."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "multimedia-patrones",
+        "Question Text": {
+          "en-US": [
+            "Why does the class recommend specifically counting messages where media_wa_type != 0 (multimedia) by date?"
+          ],
+          "es-MX": [
+            "¿Por qué la clase recomienda contar específicamente los mensajes donde media_wa_type != 0 (multimedia) por fecha?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because spikes in multimedia exchange (photos, videos, audios) may coincide with important events, visual evidence or key discussions that differ from normal text-only communication",
+            "Because text messages are always irrelevant in forensic investigations and only media matters",
+            "Because counting multimedia automatically tells the examiner the exact emotional state of the user",
+            "Because multimedia messages are the only ones that have valid timestamps"
+          ],
+          "es-MX": [
+            "Porque los picos en el intercambio de multimedia (fotos, videos, audios) pueden coincidir con eventos importantes, evidencia visual o discusiones clave que se diferencian de la comunicación solo de texto",
+            "Porque los mensajes de texto siempre son irrelevantes en las investigaciones forenses y solo importa la multimedia",
+            "Porque contar multimedia le indica automáticamente al perito el estado emocional exacto del usuario",
+            "Porque los mensajes multimedia son los únicos que tienen timestamps válidos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because spikes in multimedia exchange (photos, videos, audios) may coincide with important events, visual evidence or key discussions that differ from normal text-only communication",
+          "es-MX": "Porque los picos en el intercambio de multimedia (fotos, videos, audios) pueden coincidir con eventos importantes, evidencia visual o discusiones clave que se diferencian de la comunicación solo de texto"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "Multimedia often carries direct evidence (photos of places, documents, screenshots). Observing days with unusually high media traffic can guide the examiner to the most relevant segments of the conversation.",
+              "es-MX": "La multimedia suele portar evidencia directa (fotos de lugares, documentos, capturas). Observar días con tráfico inusualmente alto de media puede guiar al perito hacia los segmentos más relevantes de la conversación."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "ejemplo-aplicado",
+        "Question Text": {
+          "en-US": [
+            "In the class example with a 12,000-message conversation across one year, which combined observations helped highlight the critical periods for deeper analysis?"
+          ],
+          "es-MX": [
+            "En el ejemplo de la clase con una conversación de 12,000 mensajes a lo largo de un año, ¿qué observaciones combinadas ayudaron a resaltar los periodos críticos para un análisis más profundo?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A stable daily routine of evening messages, an unusual peak of 413 messages on the incident day, 72 hours of silence afterward, an increase in multimedia before the conflict and changes in message length",
+            "Only the total number of messages per year, without looking at dates or content type",
+            "The fact that there was exactly one message per day at the same hour without any variation",
+            "Exclusively the number of emojis used in the conversation, ignoring dates and media"
+          ],
+          "es-MX": [
+            "Una rutina diaria estable de mensajes nocturnos, un pico inusual de 413 mensajes el día del incidente, 72 horas de silencio posterior, un aumento de multimedia previo al conflicto y cambios en la longitud de los mensajes",
+            "Solo el número total de mensajes por año, sin revisar fechas ni tipo de contenido",
+            "El hecho de que hubiera exactamente un mensaje al día a la misma hora sin ninguna variación",
+            "Exclusivamente la cantidad de emojis usados en la conversación, sin considerar fechas ni multimedia"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A stable daily routine of evening messages, an unusual peak of 413 messages on the incident day, 72 hours of silence afterward, an increase in multimedia before the conflict and changes in message length",
+          "es-MX": "Una rutina diaria estable de mensajes nocturnos, un pico inusual de 413 mensajes el día del incidente, 72 horas de silencio posterior, un aumento de multimedia previo al conflicto y cambios en la longitud de los mensajes"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "The example shows how combining several pattern types points directly to critical time windows.",
+                "Each element (peak, silence, media, length) reinforces the narrative of the incident.",
+                "This is more powerful than looking at a simple total count."
+              ],
+              "es-MX": [
+                "El ejemplo muestra cómo combinar varios tipos de patrones apunta directamente a ventanas de tiempo críticas.",
+                "Cada elemento (pico, silencio, media, longitud) refuerza la narrativa del incidente.",
+                "Esto es más potente que mirar solo el conteo total."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "herramientas-patrones",
+        "Question Text": {
+          "en-US": [
+            "Which tools are mentioned as particularly useful for visualizing and analyzing communication patterns and frequencies?"
+          ],
+          "es-MX": [
+            "¿Qué herramientas se mencionan como especialmente útiles para visualizar y analizar patrones y frecuencias de comunicación?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Excel, Power BI, Magnet AXIOM and Cellebrite Physical Analyzer",
+            "Only the phone’s default messaging app with no exports or external analysis",
+            "Video editing software and image filters",
+            "Games and entertainment apps installed on the phone"
+          ],
+          "es-MX": [
+            "Excel, Power BI, Magnet AXIOM y Cellebrite Physical Analyzer",
+            "Solo la aplicación de mensajería por defecto del teléfono sin exportar datos ni usar análisis externo",
+            "Software de edición de video y filtros de imagen",
+            "Juegos y aplicaciones de entretenimiento instaladas en el teléfono"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Excel, Power BI, Magnet AXIOM and Cellebrite Physical Analyzer",
+          "es-MX": "Excel, Power BI, Magnet AXIOM y Cellebrite Physical Analyzer"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class notes that Excel and Power BI allow dynamic tables, charts and time series, while AXIOM and Cellebrite provide forensic timelines, heat maps and anomaly detection tailored to digital evidence.",
+              "es-MX": "La clase indica que Excel y Power BI permiten tablas dinámicas, gráficas y series temporales, mientras que AXIOM y Cellebrite ofrecen timelines forenses, mapas de calor y detección de anomalías adaptadas a evidencia digital."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "interpretacion-cuidadosa",
+        "Question Text": {
+          "en-US": [
+            "Which statement BEST represents a good forensic practice when interpreting communication patterns and behavior?"
+          ],
+          "es-MX": [
+            "¿Qué afirmación representa MEJOR una buena práctica forense al interpretar patrones de comunicación y comportamiento?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Patterns (peaks, silences, hours, multimedia) must be correlated with other evidence (content, logs, GPS, events) before drawing conclusions, and all steps should be clearly documented",
+            "Any unusual peak of messages automatically proves criminal activity, with no need for further evidence",
+            "The examiner should adjust the timestamps in the database to make the charts look more ‘interesting’ before generating the report",
+            "If the graphs look complex, it is better to ignore them and base the entire analysis on a few screenshots from the chat"
+          ],
+          "es-MX": [
+            "Los patrones (picos, silencios, horarios, multimedia) deben correlacionarse con otras evidencias (contenido, logs, GPS, eventos) antes de concluir, y todos los pasos deben documentarse con claridad",
+            "Cualquier pico inusual de mensajes prueba automáticamente actividad delictiva, sin necesidad de más evidencia",
+            "El perito debe ajustar los timestamps en la base de datos para que las gráficas se vean más ‘interesantes’ antes de generar el informe",
+            "Si las gráficas se ven complejas, es mejor ignorarlas y basar todo el análisis en unas pocas capturas de pantalla del chat"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Patterns (peaks, silences, hours, multimedia) must be correlated with other evidence (content, logs, GPS, events) before drawing conclusions, and all steps should be clearly documented",
+          "es-MX": "Los patrones (picos, silencios, horarios, multimedia) deben correlacionarse con otras evidencias (contenido, logs, GPS, eventos) antes de concluir, y todos los pasos deben documentarse con claridad"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Forensic conclusions must be based on multiple converging data points.",
+                "Patterns alone may be ambiguous; correlation adds context and meaning.",
+                "Documentation in the logbook ensures transparency and legal robustness."
+              ],
+              "es-MX": [
+                "Las conclusiones forenses deben apoyarse en múltiples datos convergentes.",
+                "Los patrones por sí solos pueden ser ambiguos; la correlación añade contexto y significado.",
+                "La documentación en la bitácora asegura transparencia y solidez legal."
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

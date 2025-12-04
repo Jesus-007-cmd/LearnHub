@@ -1,0 +1,608 @@
+{
+    "meta": {
+      "slug": "forense-apps39",
+      "title": "Clase 39 – Correlación entre contactos, horarios y ubicaciones",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 3,
+      "classNo": 39,
+      "description": "Construcción de relaciones entre contactos, horarios de actividad y ubicaciones GPS para identificar patrones de interacción y fortalecer el análisis forense.",
+      "tags": [
+        "correlación de contactos",
+        "horarios de mensajes",
+        "ubicaciones GPS",
+        "patrones de interacción",
+        "análisis forense digital"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "concepto-correlacion",
+        "Question Text": {
+          "en-US": [
+            "According to the class, why is correlating contacts, time patterns and GPS locations considered a powerful technique in digital forensics?"
+          ],
+          "es-MX": [
+            "De acuerdo con la clase, ¿por qué se considera una técnica poderosa en forense digital la correlación entre contactos, patrones de tiempo y ubicaciones GPS?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it reveals how users relate to each other, when they communicate and from where, allowing investigators to detect coordination, presence at key locations and suspicious behavior",
+            "Because it replaces the need to review the actual content of the messages, making content analysis unnecessary",
+            "Because it allows the examiner to modify timestamps and locations to fit any desired narrative",
+            "Because modern apps always hide GPS and time information, so correlation is purely theoretical and has no practical impact"
+          ],
+          "es-MX": [
+            "Porque revela cómo se relacionan los usuarios entre sí, cuándo se comunican y desde dónde, permitiendo al investigador detectar coordinación, presencia en lugares clave y comportamientos sospechosos",
+            "Porque sustituye la necesidad de revisar el contenido real de los mensajes, haciendo innecesario el análisis de contenido",
+            "Porque permite que el perito modifique timestamps y ubicaciones para ajustar cualquier narrativa deseada",
+            "Porque las apps modernas siempre ocultan la información de GPS y tiempo, así que la correlación es solo teórica y sin impacto práctico"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it reveals how users relate to each other, when they communicate and from where, allowing investigators to detect coordination, presence at key locations and suspicious behavior",
+          "es-MX": "Porque revela cómo se relacionan los usuarios entre sí, cuándo se comunican y desde dónde, permitiendo al investigador detectar coordinación, presencia en lugares clave y comportamientos sospechosos"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class explains that the real strength of correlation is combining who (contact), when (time pattern) and where (GPS), turning isolated messages into a coherent behavioral picture.",
+              "es-MX": "La clase explica que la fuerza de la correlación está en combinar quién (contacto), cuándo (patrón de tiempo) y desde dónde (GPS), convirtiendo mensajes aislados en un panorama de comportamiento coherente."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "fuentes-datos",
+        "Question Text": {
+          "en-US": [
+            "Which combination BEST represents the types of sources used to correlate contacts, time and location as described in the class?"
+          ],
+          "es-MX": [
+            "¿Qué combinación representa MEJOR los tipos de fuentes que se usan para correlacionar contactos, tiempo y ubicación según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Messaging SQLite databases, multimedia EXIF data and system logs with network or location records",
+            "Only screenshots of chats printed on paper without any technical metadata",
+            "Exclusively the user’s verbal testimony and their social media profile biography",
+            "Just the battery level logs from the device, without any message or location information"
+          ],
+          "es-MX": [
+            "Bases SQLite de mensajería, metadatos EXIF de multimedia y logs del sistema con registros de red o ubicación",
+            "Solo capturas de pantalla de chats impresas en papel sin ningún metadato técnico",
+            "Exclusivamente el testimonio verbal del usuario y la biografía de su perfil en redes sociales",
+            "Únicamente los registros del nivel de batería del dispositivo, sin información de mensajes ni ubicación"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Messaging SQLite databases, multimedia EXIF data and system logs with network or location records",
+          "es-MX": "Bases SQLite de mensajería, metadatos EXIF de multimedia y logs del sistema con registros de red o ubicación"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "SQLite holds contacts and timestamps for messages.",
+                "EXIF contributes GPS and capture time.",
+                "System/network logs add device presence and connectivity context."
+              ],
+              "es-MX": [
+                "SQLite contiene contactos y timestamps de los mensajes.",
+                "EXIF aporta GPS y hora de captura.",
+                "Los logs de sistema/red añaden contexto de presencia y conectividad del dispositivo."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "frecuencia-por-contacto",
+        "Question Text": {
+          "en-US": [
+            "What is the main forensic purpose of a query like: SELECT key_remote_jid, COUNT(*) FROM messages GROUP BY key_remote_jid; ?"
+          ],
+          "es-MX": [
+            "¿Cuál es el propósito forense principal de una consulta como: SELECT key_remote_jid, COUNT(*) FROM messages GROUP BY key_remote_jid; ?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To identify which contacts show the highest message volume and may be most relevant to the case or to specific periods",
+            "To permanently delete all messages from low-frequency contacts in order to simplify the database",
+            "To convert all contact identifiers into phone numbers automatically without any analysis",
+            "To change the timestamps of the messages so that they appear grouped only by days and not by contacts"
+          ],
+          "es-MX": [
+            "Identificar qué contactos presentan mayor volumen de mensajes y pueden ser más relevantes para el caso o para periodos específicos",
+            "Borrar permanentemente todos los mensajes de contactos de baja frecuencia para simplificar la base de datos",
+            "Convertir automáticamente todos los identificadores de contacto en números telefónicos sin ningún análisis",
+            "Cambiar los timestamps de los mensajes para que aparezcan agrupados solo por días y no por contactos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To identify which contacts show the highest message volume and may be most relevant to the case or to specific periods",
+          "es-MX": "Identificar qué contactos presentan mayor volumen de mensajes y pueden ser más relevantes para el caso o para periodos específicos"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class emphasizes that counting messages per contact helps prioritize which relationships or conversations deserve deeper analysis in a large dataset.",
+              "es-MX": "La clase enfatiza que contar mensajes por contacto ayuda a priorizar qué relaciones o conversaciones merecen análisis más profundo dentro de un conjunto grande de datos."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "horarios-contacto",
+        "Question Text": {
+          "en-US": [
+            "Why is grouping messages by contact and hour (for example using STRFTIME('%H', timestamp/1000,'unixepoch')) useful in correlation analysis?"
+          ],
+          "es-MX": [
+            "¿Por qué es útil agrupar mensajes por contacto y hora (por ejemplo usando STRFTIME('%H', timestamp/1000,'unixepoch')) en el análisis de correlación?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it reveals time-of-day patterns, such as contacts that only appear late at night or during work hours, which can be important for behavioral and incident-related analysis",
+            "Because it automatically reveals the exact content of encrypted messages, bypassing any cryptography",
+            "Because it forces all messages to appear as if they were sent at the same hour, which simplifies, but distorts, the analysis",
+            "Because it deletes all messages outside of the selected hour range to reduce the size of the database"
+          ],
+          "es-MX": [
+            "Porque revela patrones de hora del día, como contactos que solo aparecen de madrugada o en horario laboral, lo cual puede ser importante para el análisis conductual y de incidentes",
+            "Porque revela automáticamente el contenido exacto de mensajes cifrados, eludiendo cualquier criptografía",
+            "Porque obliga a que todos los mensajes parezcan enviados a la misma hora, lo que simplifica, pero distorsiona, el análisis",
+            "Porque borra todos los mensajes que están fuera del rango horario seleccionado para reducir el tamaño de la base"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it reveals time-of-day patterns, such as contacts that only appear late at night or during work hours, which can be important for behavioral and incident-related analysis",
+          "es-MX": "Porque revela patrones de hora del día, como contactos que solo aparecen de madrugada o en horario laboral, lo cual puede ser importante para el análisis conductual y de incidentes"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Time grouping exposes daily, weekly or unusual activity windows.",
+                "Contacts with recurring late-night activity may be linked to sensitive events.",
+                "These patterns support hypotheses about routines and critical time frames."
+              ],
+              "es-MX": [
+                "El agrupamiento por hora expone ventanas diarias, semanales o inusuales de actividad.",
+                "Contactos con actividad recurrente nocturna pueden vincularse a eventos sensibles.",
+                "Estos patrones respaldan hipótesis sobre rutinas y periodos de tiempo críticos."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "ventanas-tiempo-clave",
+        "Question Text": {
+          "en-US": [
+            "What can it indicate if, for a specific contact, there is a sudden spike of messages between 23:00 and 01:00 that does not match their usual communication pattern?"
+          ],
+          "es-MX": [
+            "¿Qué puede indicar que, para un contacto específico, exista un pico repentino de mensajes entre las 23:00 y la 01:00 que no coincide con su patrón de comunicación habitual?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A potentially relevant or extraordinary event, which may coincide with an incident or with hidden coordination that needs closer examination",
+            "Only that the database is corrupted and must be discarded, since unusual peaks are always a sign of damage",
+            "That the users definitively changed their personalities and this has no forensic importance",
+            "That the time zone was automatically converted to UTC and therefore all peaks must be ignored"
+          ],
+          "es-MX": [
+            "Un evento potencialmente relevante o extraordinario, que puede coincidir con un incidente o con coordinación oculta que requiere examinación detallada",
+            "Solo que la base de datos está dañada y debe desecharse, ya que los picos inusuales siempre son señal de corrupción",
+            "Que los usuarios cambiaron definitivamente de personalidad y esto no tiene importancia forense",
+            "Que la zona horaria se convirtió automáticamente a UTC y por ello todos los picos deben ignorarse"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A potentially relevant or extraordinary event, which may coincide with an incident or with hidden coordination that needs closer examination",
+          "es-MX": "Un evento potencialmente relevante o extraordinario, que puede coincidir con un incidente o con coordinación oculta que requiere examinación detallada"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class stresses that anomalous peaks or silent periods around key times are red flags that may signal incidents, planning or attempts to hide activity.",
+              "es-MX": "La clase recalca que picos anómalos o periodos de silencio alrededor de momentos clave son banderas rojas que pueden señalar incidentes, planeación o intentos de ocultar actividad."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "gps-y-mensajes",
+        "Question Text": {
+          "en-US": [
+            "According to the class, how can GPS data embedded in a photo help correlate messages and physical presence of the user?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿cómo puede ayudar el GPS incrustado en una foto a correlacionar mensajes con la presencia física del usuario?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "By showing where the user actually was when the photo was captured, and allowing comparison with the time and contact to whom that photo was later sent",
+            "By automatically replacing the need for any other evidence, making logs and chats irrelevant",
+            "By hiding the true location and replacing it with a random coordinate to preserve privacy",
+            "By forcing the device to send all photos only from the user’s home, regardless of the real capture place"
+          ],
+          "es-MX": [
+            "Mostrando dónde estaba realmente el usuario cuando se capturó la foto y permitiendo comparar con la hora y el contacto al que después se envió esa foto",
+            "Reemplazando automáticamente la necesidad de cualquier otra evidencia, haciendo irrelevantes los logs y los chats",
+            "Ocultando la ubicación real y sustituyéndola por una coordenada aleatoria para preservar la privacidad",
+            "Obligando al dispositivo a enviar todas las fotos solo desde la casa del usuario, sin importar el lugar real de captura"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "By showing where the user actually was when the photo was captured, and allowing comparison with the time and contact to whom that photo was later sent",
+          "es-MX": "Mostrando dónde estaba realmente el usuario cuando se capturó la foto y permitiendo comparar con la hora y el contacto al que después se envió esa foto"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "EXIF GPS indicates capture location and time.",
+                "When matched with chat timestamps and contacts, it confirms presence at a scene.",
+                "This strengthens or challenges the user’s story about where they were."
+              ],
+              "es-MX": [
+                "El GPS en EXIF indica lugar y momento de captura.",
+                "Al combinarlo con timestamps de chat y contactos, confirma la presencia en una escena.",
+                "Esto refuerza o cuestiona la versión del usuario sobre dónde estaba."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "ubicacion-contacto",
+        "Question Text": {
+          "en-US": [
+            "Which scenario BEST illustrates a strong correlation between contact, time and location described in the class?"
+          ],
+          "es-MX": [
+            "¿Cuál escenario ilustra MEJOR una correlación fuerte entre contacto, tiempo y ubicación como la descrita en la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A user who only chats with a specific contact during evening hours, and photos sent to that contact repeatedly show GPS coordinates of the same private address",
+            "A user who randomly receives spam emails from unknown senders at different times with no associated location data",
+            "A device that only contains a single offline text file with no timestamps or GPS, unrelated to any contact",
+            "A user that has many contacts in their phonebook but no messages, no timestamps and no multimedia"
+          ],
+          "es-MX": [
+            "Un usuario que solo conversa con un contacto específico en horario nocturno, y las fotos enviadas a ese contacto muestran de forma repetida coordenadas GPS de la misma dirección privada",
+            "Un usuario que recibe correos spam aleatorios de remitentes desconocidos en distintos horarios sin datos de ubicación asociados",
+            "Un dispositivo que solo contiene un archivo de texto sin conexión, sin timestamps ni GPS, sin relación con ningún contacto",
+            "Un usuario que tiene muchos contactos en la agenda pero ningún mensaje, sin timestamps ni multimedia"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A user who only chats with a specific contact during evening hours, and photos sent to that contact repeatedly show GPS coordinates of the same private address",
+          "es-MX": "Un usuario que solo conversa con un contacto específico en horario nocturno, y las fotos enviadas a ese contacto muestran de forma repetida coordenadas GPS de la misma dirección privada"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "This scenario clearly links a particular contact, specific time windows and a stable physical location, which is exactly the type of correlation described as most valuable in the class.",
+              "es-MX": "Este escenario vincula claramente un contacto particular, ventanas horarias específicas y una ubicación física estable, justo el tipo de correlación descrito como más valioso en la clase."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "analisis-en-red",
+        "Question Text": {
+          "en-US": [
+            "In the context of the class, what is the purpose of building an interaction network between contacts, times and locations?"
+          ],
+          "es-MX": [
+            "En el contexto de la clase, ¿cuál es el propósito de construir una red de interacción entre contactos, horarios y ubicaciones?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To visualize how different users (nodes) are related through their communication (links), frequency (weights) and associated GPS points, revealing hidden structures and group coordination",
+            "To automatically anonymize all contacts and remove any link between users and physical locations",
+            "To replace all forensic analysis with a single graph that does not require interpretation",
+            "To delete all evidence of minor contacts so that only the main suspect remains visible in the data"
+          ],
+          "es-MX": [
+            "Visualizar cómo diferentes usuarios (nodos) se relacionan a través de su comunicación (enlaces), frecuencia (pesos) y puntos GPS asociados, revelando estructuras ocultas y coordinación entre grupos",
+            "Anonimizar automáticamente a todos los contactos y eliminar cualquier vínculo entre usuarios y ubicaciones físicas",
+            "Sustituir todo el análisis forense por un solo gráfico que no requiere interpretación",
+            "Borrar toda evidencia de contactos menores para que solo el principal sospechoso quede visible en los datos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To visualize how different users (nodes) are related through their communication (links), frequency (weights) and associated GPS points, revealing hidden structures and group coordination",
+          "es-MX": "Visualizar cómo diferentes usuarios (nodos) se relacionan a través de su comunicación (enlaces), frecuencia (pesos) y puntos GPS asociados, revelando estructuras ocultas y coordinación entre grupos"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Network views help see beyond isolated chats.",
+                "They can reveal group clusters, central actors and indirect links.",
+                "Adding time and location turns it into a powerful behavioral map."
+              ],
+              "es-MX": [
+                "Las vistas de red ayudan a ver más allá de chats aislados.",
+                "Pueden revelar clústeres de grupo, actores centrales y vínculos indirectos.",
+                "Al añadir tiempo y ubicación se convierte en un mapa de comportamiento muy potente."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "ejemplo-integrado",
+        "Question Text": {
+          "en-US": [
+            "In the integrated example of the class, what was the main conclusion when messages, EXIF data and Android location logs all pointed to the same address at the same time frame?"
+          ],
+          "es-MX": [
+            "En el ejemplo integrado de la clase, ¿cuál fue la conclusión principal cuando los mensajes, los datos EXIF y los logs de ubicación de Android apuntaban todos a la misma dirección en el mismo intervalo de tiempo?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "That there was strong technical support to conclude that the user was physically present at that location while communicating with specific contacts",
+            "That GPS and logs were unreliable and therefore had to be discarded in favor of testimony only",
+            "That the presence of multiple sources always implies that evidence is corrupted and contradicts itself",
+            "That the user must have used a VPN, so no correlation was possible"
+          ],
+          "es-MX": [
+            "Que existía un respaldo técnico sólido para concluir que el usuario estuvo físicamente en esa ubicación mientras se comunicaba con contactos específicos",
+            "Que el GPS y los logs eran poco confiables y por ello debían desecharse en favor del testimonio únicamente",
+            "Que la presencia de múltiples fuentes siempre implica que la evidencia está dañada y se contradice a sí misma",
+            "Que el usuario debió haber usado una VPN, por lo que no era posible ninguna correlación"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "That there was strong technical support to conclude that the user was physically present at that location while communicating with specific contacts",
+          "es-MX": "Que existía un respaldo técnico sólido para concluir que el usuario estuvo físicamente en esa ubicación mientras se comunicaba con contactos específicos"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The example shows how consistent convergence of chats, EXIF and logs is a powerful indicator that supports a robust forensic conclusion about presence and communication.",
+              "es-MX": "El ejemplo muestra cómo la convergencia consistente de chats, EXIF y logs es un indicador poderoso que respalda una conclusión forense sólida sobre presencia y comunicación."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "uso-herramientas",
+        "Question Text": {
+          "en-US": [
+            "Why does the class suggest using tools like Power BI or Magnet AXIOM when correlating contacts, time and locations?"
+          ],
+          "es-MX": [
+            "¿Por qué la clase sugiere usar herramientas como Power BI o Magnet AXIOM al correlacionar contactos, horarios y ubicaciones?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because they can generate visual timelines, interaction graphs and maps that make complex patterns easier to detect and explain in reports",
+            "Because they automatically invent missing evidence when data is incomplete",
+            "Because they replace the need to understand SQLite, EXIF or logs at a technical level",
+            "Because they modify original evidence to make it more aesthetically pleasing for court"
+          ],
+          "es-MX": [
+            "Porque pueden generar líneas de tiempo visuales, gráficos de interacción y mapas que facilitan detectar patrones complejos y explicarlos en los informes",
+            "Porque inventan automáticamente evidencia faltante cuando los datos están incompletos",
+            "Porque sustituyen la necesidad de entender SQLite, EXIF o logs a nivel técnico",
+            "Porque modifican la evidencia original para que se vea más estética ante el tribunal"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because they can generate visual timelines, interaction graphs and maps that make complex patterns easier to detect and explain in reports",
+          "es-MX": "Porque pueden generar líneas de tiempo visuales, gráficos de interacción y mapas que facilitan detectar patrones complejos y explicarlos en los informes"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Visualization tools turn raw data into readable patterns.",
+                "They help communicate technical findings to non-technical audiences.",
+                "They support the narrative of how contacts, time and location are linked."
+              ],
+              "es-MX": [
+                "Las herramientas de visualización convierten datos crudos en patrones legibles.",
+                "Ayudan a comunicar hallazgos técnicos a audiencias no técnicas.",
+                "Apoyan la narrativa de cómo se vinculan contactos, tiempo y ubicación."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "interpretacion-cautelosa",
+        "Question Text": {
+          "en-US": [
+            "Which option reflects a CAUTIOUS and correct approach when interpreting correlated patterns between a user and a contact at a specific location?"
+          ],
+          "es-MX": [
+            "¿Cuál opción refleja un enfoque CAUTELOSO y correcto al interpretar patrones correlacionados entre un usuario y un contacto en una ubicación específica?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Recognize that strong correlation (same time, location and recurring contact) supports certain hypotheses, but still document limitations and alternative explanations in the forensic report",
+            "Assume immediately and without doubt that the users committed a crime together, without checking other sources",
+            "Ignore any correlation and focus only on manually reading messages, since patterns can be misleading",
+            "Change the timestamps in the database until the correlation perfectly matches the initial hypothesis"
+          ],
+          "es-MX": [
+            "Reconocer que una correlación fuerte (misma hora, ubicación y contacto recurrente) respalda ciertas hipótesis, pero aún así documentar limitaciones y explicaciones alternativas en el informe pericial",
+            "Asumir de inmediato y sin duda que los usuarios cometieron un delito juntos, sin revisar otras fuentes",
+            "Ignorar cualquier correlación y centrarse solo en leer mensajes manualmente, ya que los patrones pueden engañar",
+            "Cambiar los timestamps en la base de datos hasta que la correlación coincida perfectamente con la hipótesis inicial"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Recognize that strong correlation (same time, location and recurring contact) supports certain hypotheses, but still document limitations and alternative explanations in the forensic report",
+          "es-MX": "Reconocer que una correlación fuerte (misma hora, ubicación y contacto recurrente) respalda ciertas hipótesis, pero aún así documentar limitaciones y explicaciones alternativas en el informe pericial"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class underlines that correlation is powerful but must be interpreted professionally, acknowledging its strength and its limits within a transparent forensic report.",
+              "es-MX": "La clase subraya que la correlación es poderosa pero debe interpretarse de forma profesional, reconociendo su fuerza y sus límites dentro de un informe pericial transparente."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "caso-desplazamiento",
+        "Question Text": {
+          "en-US": [
+            "In the example where a user sends messages to one contact from a first address and, half an hour later, messages another contact from a different GPS location, what does this pattern primarily show?"
+          ],
+          "es-MX": [
+            "En el ejemplo donde un usuario envía mensajes a un contacto desde una primera dirección y, media hora después, envía mensajes a otro contacto desde una ubicación GPS distinta, ¿qué muestra principalmente este patrón?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A physical displacement between two points that can be temporally linked to communication with different contacts",
+            "That GPS data is always wrong and should never be considered in forensic work",
+            "That the device was duplicated and both locations are necessarily fake",
+            "That the user cannot possibly have moved in only thirty minutes, so the data must be corrupt"
+          ],
+          "es-MX": [
+            "Un desplazamiento físico entre dos puntos que puede vincularse temporalmente con la comunicación con distintos contactos",
+            "Que los datos GPS siempre son erróneos y nunca deben considerarse en el trabajo forense",
+            "Que el dispositivo fue duplicado y ambas ubicaciones son necesariamente falsas",
+            "Que el usuario no pudo haberse movido en solo treinta minutos, por lo que los datos deben estar corruptos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A physical displacement between two points that can be temporally linked to communication with different contacts",
+          "es-MX": "Un desplazamiento físico entre dos puntos que puede vincularse temporalmente con la comunicación con distintos contactos"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Time + location + different contacts reveal movement and changing interactions.",
+                "This can relate to meetings, visits or transitions relevant to the case.",
+                "The pattern supports a dynamic timeline rather than a static snapshot."
+              ],
+              "es-MX": [
+                "Tiempo + ubicación + contactos distintos revelan movimiento y cambios en la interacción.",
+                "Esto puede relacionarse con reuniones, visitas o transiciones relevantes al caso.",
+                "El patrón respalda una línea de tiempo dinámica, no una foto estática."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "riesgos-mala-interpretacion",
+        "Question Text": {
+          "en-US": [
+            "Which of the following is a RISK of misinterpreting time-contact-location correlations if the examiner does not properly normalize time zones or check the context?"
+          ],
+          "es-MX": [
+            "¿Cuál de las siguientes es un RIESGO de interpretar mal las correlaciones tiempo-contacto-ubicación si el perito no normaliza correctamente las zonas horarias ni revisa el contexto?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Concluding that two events are simultaneous or causally related when in reality they happened at different local times",
+            "Always strengthening the evidence because any mismatch automatically proves manipulation",
+            "Automatically converting all times to the correct local time without any need for verification",
+            "Ensuring that all events appear perfectly aligned with the user’s statement, even if this contradicts the data"
+          ],
+          "es-MX": [
+            "Concluir que dos eventos son simultáneos o están causalmente relacionados cuando en realidad ocurrieron a diferentes horas locales",
+            "Fortalecer siempre la evidencia, porque cualquier desajuste prueba automáticamente manipulación",
+            "Convertir automáticamente todas las horas a la zona local correcta sin necesidad de verificación",
+            "Asegurar que todos los eventos se alineen perfectamente con la declaración del usuario, aunque esto contradiga los datos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Concluding that two events are simultaneous or causally related when in reality they happened at different local times",
+          "es-MX": "Concluir que dos eventos son simultáneos o están causalmente relacionados cuando en realidad ocurrieron a diferentes horas locales"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class warns that timestamps must be normalized; otherwise, false simultaneity or causality can be inferred, leading to serious forensic errors.",
+              "es-MX": "La clase advierte que los timestamps deben normalizarse; de lo contrario, se puede inferir una simultaneidad o causalidad falsa, provocando errores forenses graves."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "casos-uso-prioritario",
+        "Question Text": {
+          "en-US": [
+            "In which situation would correlation between contacts, time and GPS locations be MOST relevant as a priority technique?"
+          ],
+          "es-MX": [
+            "¿En qué situación sería MÁS relevante usar como técnica prioritaria la correlación entre contactos, tiempo y ubicaciones GPS?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "When the case involves verifying whether a suspect was physically present at certain locations while coordinating with specific contacts around the time of an incident",
+            "When the only evidence is a single offline PDF with no timestamps, no contacts and no metadata",
+            "When the investigation is purely about the performance of the device’s battery over several months",
+            "When messages come only from an old feature phone with no logs, no GPS and no structured contacts"
+          ],
+          "es-MX": [
+            "Cuando el caso implica verificar si un sospechoso estuvo físicamente en ciertas ubicaciones mientras se coordinaba con contactos específicos alrededor del momento de un incidente",
+            "Cuando la única evidencia es un solo PDF sin conexión, sin timestamps, sin contactos ni metadatos",
+            "Cuando la investigación trata únicamente sobre el rendimiento de la batería del dispositivo durante varios meses",
+            "Cuando los mensajes provienen solo de un teléfono básico antiguo sin logs, sin GPS y sin contactos estructurados"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "When the case involves verifying whether a suspect was physically present at certain locations while coordinating with specific contacts around the time of an incident",
+          "es-MX": "Cuando el caso implica verificar si un sospechoso estuvo físicamente en ciertas ubicaciones mientras se coordinaba con contactos específicos alrededor del momento de un incidente"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "This scenario directly requires linking presence, communication and time.",
+                "It matches the core objective of the class.",
+                "Other scenarios either lack data or are unrelated to communication analysis."
+              ],
+              "es-MX": [
+                "Este escenario requiere directamente vincular presencia, comunicación y tiempo.",
+                "Coincide con el objetivo central de la clase.",
+                "Los otros escenarios carecen de datos o no están relacionados con análisis de comunicación."
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

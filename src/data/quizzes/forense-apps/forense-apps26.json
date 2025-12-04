@@ -1,0 +1,843 @@
+{
+    "meta": {
+      "slug": "forense-apps26",
+      "title": "Clase 26 – Extracción de conversaciones eliminadas y análisis de caché",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 2,
+      "classNo": 26,
+      "description": "Técnicas para reconstruir mensajes eliminados y recuperar datos residuales mediante análisis de SQLite, caché, backups y espacio no asignado en aplicaciones de mensajería.",
+      "tags": [
+        "recuperación de mensajes",
+        "SQLite",
+        "caché forense",
+        "carving",
+        "WhatsApp forensics",
+        "Oxygen Forensics",
+        "AXIOM",
+        "Cellebrite"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "concepto-recuperacion",
+        "Question Text": {
+          "en-US": [
+            "According to the class, what typically happens to deleted messages in messaging apps?",
+            "When a user deletes a message, does it really disappear from the device?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿qué suele ocurrir con los mensajes eliminados en aplicaciones de mensajería?",
+            "Cuando un usuario borra un mensaje, ¿realmente desaparece del dispositivo?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Information remains in SQLite, cache files, thumbnails, backups and unallocated space",
+            "Messages are permanently erased immediately from all storage areas",
+            "Messages become encrypted and impossible to recover under any circumstance",
+            "The system rewrites all deleted sectors instantly to protect privacy"
+          ],
+          "es-MX": [
+            "Queda información en SQLite, archivos de caché, miniaturas, respaldos y espacio no asignado",
+            "Los mensajes se eliminan permanentemente de inmediato en todas las áreas",
+            "Los mensajes se encriptan y son imposibles de recuperar bajo cualquier circunstancia",
+            "El sistema sobrescribe todos los sectores eliminados al instante para proteger la privacidad"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Information remains in SQLite, cache files, thumbnails, backups and unallocated space",
+          "es-MX": "Queda información en SQLite, archivos de caché, miniaturas, respaldos y espacio no asignado"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Deleted messages are not truly removed"
+            },
+            {
+              "type": "text",
+              "content": "The class explains that most messaging apps do not physically delete message data. Instead, they update metadata and leave the real content behind."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "SQLite keeps deleted rows in unallocated pages",
+                "Cache files store thumbnails and temporary media",
+                "Cloud or local backups maintain previous versions",
+                "Fragments of old conversations remain recoverable"
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Los mensajes eliminados no desaparecen por completo"
+            },
+            {
+              "type": "text",
+              "content": "La clase explica que la mayoría de las apps no eliminan físicamente los datos. Solo actualizan el registro, pero el contenido permanece almacenado."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "SQLite conserva filas borradas en páginas no asignadas",
+                "La caché almacena miniaturas y archivos temporales",
+                "Respaldo local o en la nube mantiene versiones previas",
+                "Fragmentos de conversaciones pueden recuperarse"
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "sqlite-eliminacion",
+        "Question Text": {
+          "en-US": [
+            "What does SQLite actually do when a record is deleted?",
+            "How does SQLite handle deleted rows internally?"
+          ],
+          "es-MX": [
+            "¿Qué hace realmente SQLite cuando se elimina un registro?",
+            "¿Cómo maneja SQLite internamente las filas eliminadas?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It marks the row as deleted but keeps the data until overwritten",
+            "It immediately wipes and zero-fills all deleted content",
+            "It encrypts deleted rows automatically",
+            "It moves deleted content to a hidden folder for security"
+          ],
+          "es-MX": [
+            "Marca la fila como eliminada pero conserva los datos hasta que sean sobrescritos",
+            "Borra de inmediato y rellena con ceros todo el contenido eliminado",
+            "Encripta automáticamente las filas borradas",
+            "Traslada el contenido eliminado a una carpeta oculta por seguridad"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It marks the row as deleted but keeps the data until overwritten",
+          "es-MX": "Marca la fila como eliminada pero conserva los datos hasta que sean sobrescritos"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Logical deletion in SQLite"
+            },
+            {
+              "type": "text",
+              "content": "SQLite does not remove data instantly. It only flags it as deleted, leaving the bytes available for recovery."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Old data remains in freelist pages",
+                "Unallocated space keeps text fragments",
+                "Carving tools can extract historical data"
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Eliminación lógica en SQLite"
+            },
+            {
+              "type": "text",
+              "content": "SQLite no elimina los datos de inmediato. Solo marca el registro como borrado, pero los bytes siguen existiendo físicamente."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Los datos antiguos quedan en freelist pages",
+                "El espacio no asignado conserva fragmentos de texto",
+                "Herramientas de carving pueden extraer datos históricos"
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "bases-mensajeria",
+        "Question Text": {
+          "en-US": [
+            "Which are the main WhatsApp databases used in forensic analysis?",
+            "What files store messages and contacts in WhatsApp?"
+          ],
+          "es-MX": [
+            "¿Cuáles son las bases principales de WhatsApp usadas en análisis forense?",
+            "¿Qué archivos almacenan mensajes y contactos en WhatsApp?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "msgstore.db and wa.db",
+            "messages.db and telegram.db",
+            "whatsapp.sqlite and userstore.db",
+            "chatindex.dat and usermeta.sql"
+          ],
+          "es-MX": [
+            "msgstore.db y wa.db",
+            "messages.db y telegram.db",
+            "whatsapp.sqlite y userstore.db",
+            "chatindex.dat y usermeta.sql"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "msgstore.db and wa.db",
+          "es-MX": "msgstore.db y wa.db"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "WhatsApp stores its main data in two SQLite structures: msgstore.db for messages and wa.db for contacts and chat metadata."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "WhatsApp almacena su información principal en dos estructuras SQLite: msgstore.db para mensajes y wa.db para contactos y metadatos de chats."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "deletion-behavior",
+        "Question Text": {
+          "en-US": [
+            "When a messaging app 'deletes' a message, what typically happens internally in a SQLite database?"
+          ],
+          "es-MX": [
+            "Cuando una app de mensajería 'elimina' un mensaje, ¿qué ocurre típicamente dentro de una base SQLite?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The record is marked as deleted but remains in unallocated space",
+            "The message is instantly overwritten with random data",
+            "All related media and metadata are securely wiped",
+            "The entire database resets automatically"
+          ],
+          "es-MX": [
+            "El registro se marca como eliminado pero permanece en espacio no asignado",
+            "El mensaje se sobrescribe instantáneamente con datos aleatorios",
+            "Todos los metadatos y archivos relacionados se borran de forma segura",
+            "La base de datos completa se reinicia automáticamente"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The record is marked as deleted but remains in unallocated space",
+          "es-MX": "El registro se marca como eliminado pero permanece en espacio no asignado"
+        },
+        "Explanation": [
+          {
+            "type": "text",
+            "content": {
+              "en-US": "SQLite rarely erases data immediately. Instead, deleted rows stay temporarily in unused pages.",
+              "es-MX": "SQLite rara vez borra datos de inmediato. Las filas eliminadas permanecen temporalmente en páginas no asignadas."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "cache-importance",
+        "Question Text": {
+          "en-US": [
+            "Why are thumbnail folders and cache directories essential in recovering deleted conversations?"
+          ],
+          "es-MX": [
+            "¿Por qué las carpetas de miniaturas y la caché son esenciales para recuperar conversaciones eliminadas?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They often contain previews or compressed copies of deleted media",
+            "They only store temporary advertising files",
+            "They replace the main database completely",
+            "They always encrypt all stored elements"
+          ],
+          "es-MX": [
+            "Frecuentemente contienen previsualizaciones o copias comprimidas de medios eliminados",
+            "Solo almacenan archivos temporales de publicidad",
+            "Sustituyen completamente a la base de datos principal",
+            "Siempre cifran todos los elementos almacenados"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They often contain previews or compressed copies of deleted media",
+          "es-MX": "Frecuentemente contienen previsualizaciones o copias comprimidas de medios eliminados"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Apps save thumbnails automatically.",
+                "These thumbnails remain even when the user deletes the main file.",
+                "They help confirm media existence and conversation context."
+              ],
+              "es-MX": [
+                "Las apps guardan miniaturas automáticamente.",
+                "Estas miniaturas permanecen aun cuando se borra el archivo principal.",
+                "Ayudan a confirmar la existencia del medio y el contexto de la conversación."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "forensic-carving",
+        "Question Text": {
+          "en-US": ["What is the purpose of 'carving' in SQLite forensic analysis?"],
+          "es-MX": ["¿Cuál es el propósito del 'carving' en el análisis forense de SQLite?"]
+        },
+        "Options": {
+          "en-US": [
+            "To extract fragmented or partial deleted records",
+            "To compress the database",
+            "To rewrite indexes in alphabetical order",
+            "To remove all traces of unallocated pages"
+          ],
+          "es-MX": [
+            "Extraer registros eliminados que están fragmentados o parcialmente disponibles",
+            "Comprimir la base de datos",
+            "Reescribir índices en orden alfabético",
+            "Eliminar todas las páginas no asignadas"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To extract fragmented or partial deleted records",
+          "es-MX": "Extraer registros eliminados que están fragmentados o parcialmente disponibles"
+        },
+        "Explanation": [
+          {
+            "type": "text",
+            "content": {
+              "en-US": "Carving scans raw database pages searching for leftover structures or text that no longer appears in active tables.",
+              "es-MX": "El carving examina páginas crudas buscando estructuras o textos residuales que ya no aparecen en las tablas activas."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "telegram-artifacts",
+        "Question Text": {
+          "en-US": ["Which artifact is especially useful for recovering deleted Telegram chats?"],
+          "es-MX": ["¿Qué artefacto es especialmente útil para recuperar chats eliminados de Telegram?"]
+        },
+        "Options": {
+          "en-US": [
+            ".tdb and .map local files",
+            "sms.db from the device",
+            "Browser history logs",
+            "System registry keys"
+          ],
+          "es-MX": [
+            "Archivos locales .tdb y .map",
+            "sms.db del dispositivo",
+            "Historial del navegador",
+            "Claves del registro del sistema"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": ".tdb and .map local files",
+          "es-MX": "Archivos locales .tdb y .map"
+        },
+        "Explanation": [
+          {
+            "type": "text",
+            "content": {
+              "en-US": "Telegram stores local session data in proprietary formats that preserve fragments even after deletion.",
+              "es-MX": "Telegram guarda datos de sesión en formatos propietarios que conservan fragmentos incluso después de eliminarlos."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "whatsapp-evidence",
+        "Question Text": {
+          "en-US": [
+            "Which WhatsApp database often contains metadata and thumbnails that survive message deletion?"
+          ],
+          "es-MX": [
+            "¿Qué base de datos de WhatsApp suele contener metadatos y miniaturas que sobreviven al borrado de mensajes?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "wa.db and message_thumbnails",
+            "cookies.sqlite",
+            "sms.db-shm",
+            "AndroidManifest.xml"
+          ],
+          "es-MX": [
+            "wa.db y message_thumbnails",
+            "cookies.sqlite",
+            "sms.db-shm",
+            "AndroidManifest.xml"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "wa.db and message_thumbnails",
+          "es-MX": "wa.db y message_thumbnails"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "wa.db stores contact metadata and message structure.",
+                "message_thumbnails keeps preview images.",
+                "These persist after user deletion."
+              ],
+              "es-MX": [
+                "wa.db almacena metadatos de contactos y estructura de mensajes.",
+                "message_thumbnails conserva imágenes previas.",
+                "Estas persisten después del borrado por el usuario."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "gmail-recovery",
+        "Question Text": {
+          "en-US": ["What type of information can Gmail SQLite caches reveal even after email deletion?"],
+          "es-MX": ["¿Qué tipo de información pueden revelar las cachés SQLite de Gmail incluso después de borrar correos?"]
+        },
+        "Options": {
+          "en-US": [
+            "Headers, labels and thread metadata",
+            "Full password hashes",
+            "WiFi networks stored on the phone",
+            "Encrypted WhatsApp backups"
+          ],
+          "es-MX": [
+            "Encabezados, etiquetas y metadatos de hilos",
+            "Hashes completos de contraseñas",
+            "Redes WiFi almacenadas en el teléfono",
+            "Backups cifrados de WhatsApp"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Headers, labels and thread metadata",
+          "es-MX": "Encabezados, etiquetas y metadatos de hilos"
+        },
+        "Explanation": [
+          {
+            "type": "text",
+            "content": {
+              "en-US": "Mail clients store structured metadata in local caches to speed up sync operations.",
+              "es-MX": "Los clientes de correo almacenan metadatos estructurados en cachés locales para acelerar las sincronizaciones."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "unallocated-analysis",
+        "Question Text": {
+          "en-US": [
+            "Why is examining unallocated pages in SQLite crucial during message recovery?"
+          ],
+          "es-MX": [
+            "¿Por qué examinar las páginas no asignadas de SQLite es crucial durante la recuperación de mensajes?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Deleted content often remains there until overwritten",
+            "SQLite encrypts all unallocated pages by default",
+            "They only contain binary padding",
+            "They are irrelevant in modern apps"
+          ],
+          "es-MX": [
+            "El contenido eliminado suele permanecer ahí hasta ser sobrescrito",
+            "SQLite cifra todas las páginas no asignadas por defecto",
+            "Solo contienen relleno binario",
+            "Son irrelevantes en apps modernas"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Deleted content often remains there until overwritten",
+          "es-MX": "El contenido eliminado suele permanecer ahí hasta ser sobrescrito"
+        },
+        "Explanation": [
+          {
+            "type": "ol",
+            "items": {
+              "en-US": [
+                "Unallocated pages hold residual data.",
+                "They are not part of active tables.",
+                "They preserve strings, IDs and fragments."
+              ],
+              "es-MX": [
+                "Las páginas no asignadas contienen datos residuales.",
+                "No forman parte de las tablas activas.",
+                "Conservan textos, IDs y fragmentos."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "deleted-media",
+        "Question Text": {
+          "en-US": ["Which artifact can reveal a photo that the user deleted before sending it?"],
+          "es-MX": ["¿Qué artefacto puede revelar una foto que el usuario borró antes de enviarla?"]
+        },
+        "Options": {
+          "en-US": [
+            "Cache folders containing pre-upload versions",
+            "The Android bootloader logs",
+            "The device's IMEI configuration",
+            "Bluetooth pairing databases"
+          ],
+          "es-MX": [
+            "Carpetas de caché con versiones previas al envío",
+            "Los logs del bootloader de Android",
+            "La configuración IMEI del dispositivo",
+            "Bases de datos de emparejamiento Bluetooth"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Cache folders containing pre-upload versions",
+          "es-MX": "Carpetas de caché con versiones previas al envío"
+        },
+        "Explanation": [
+          {
+            "type": "text",
+            "content": {
+              "en-US": "Messaging apps prepare compressed copies of images before they are transmitted.",
+              "es-MX": "Las apps de mensajería preparan copias comprimidas de imágenes antes de enviarlas."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "signal-encryption",
+        "Question Text": {
+          "en-US": [
+            "Why is recovering deleted messages from Signal generally more difficult than other apps?"
+          ],
+          "es-MX": [
+            "¿Por qué recuperar mensajes eliminados de Signal es generalmente más difícil que en otras apps?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because the local databases are encrypted and require the profile key",
+            "Because Signal automatically uploads deleted content to the cloud",
+            "Because Signal stores all deleted chats in plain text",
+            "Because Signal disables SQLite use"
+          ],
+          "es-MX": [
+            "Porque las bases locales están cifradas y requieren la clave del perfil",
+            "Porque Signal sube automáticamente contenido eliminado a la nube",
+            "Porque Signal almacena los chats eliminados en texto plano",
+            "Porque Signal no usa SQLite"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because the local databases are encrypted and require the profile key",
+          "es-MX": "Porque las bases locales están cifradas y requieren la clave del perfil"
+        },
+        "Explanation": [
+          {
+            "type": "text",
+            "content": {
+              "en-US": "Signal protects its databases using the user's master encryption key, making carving limited.",
+              "es-MX": "Signal protege sus bases con la clave maestra del usuario, lo que limita el carving."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "ios-backups",
+        "Question Text": {
+          "en-US": [
+            "Which iPhone backup artifact often contains remnants of deleted SMS/iMessage conversations?"
+          ],
+          "es-MX": [
+            "¿Qué artefacto de un respaldo de iPhone suele contener restos de conversaciones SMS/iMessage eliminadas?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "sms.db inside HomeDomain",
+            "The device's EFI partition",
+            "The iCloud keychain export",
+            "The kernelcache image"
+          ],
+          "es-MX": [
+            "sms.db dentro de HomeDomain",
+            "La partición EFI del dispositivo",
+            "La exportación del llavero iCloud",
+            "La imagen kernelcache"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "sms.db inside HomeDomain",
+          "es-MX": "sms.db dentro de HomeDomain"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "iOS backups include SQLite messages.",
+                "Deleted records can remain in unallocated pages.",
+                "This makes partial reconstruction possible."
+              ],
+              "es-MX": [
+                "Los respaldos iOS incluyen mensajes en SQLite.",
+                "Los registros eliminados pueden permanecer en páginas no asignadas.",
+                "Esto permite una reconstrucción parcial."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "hex-analysis",
+        "Question Text": {
+          "en-US": ["Why is hex analysis (HxD, 010 Editor) valuable when reconstructing deleted chats?"],
+          "es-MX": ["¿Por qué el análisis hex (HxD, 010 Editor) es valioso para reconstruir chats eliminados?"]
+        },
+        "Options": {
+          "en-US": [
+            "It allows locating raw text strings that no longer appear in structured tables",
+            "It automatically repairs databases",
+            "It bypasses app encryption",
+            "It converts all messages to JSON format"
+          ],
+          "es-MX": [
+            "Permite ubicar cadenas de texto crudo que ya no aparecen en tablas estructuradas",
+            "Repara automáticamente las bases de datos",
+            "Elimina el cifrado de las apps",
+            "Convierte todos los mensajes a formato JSON"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It allows locating raw text strings that no longer appear in structured tables",
+          "es-MX": "Permite ubicar cadenas de texto crudo que ya no aparecen en tablas estructuradas"
+        },
+        "Explanation": [
+          {
+            "type": "text",
+            "content": {
+              "en-US": "Deleted conversational text may still exist as UTF-8 or UTF-16 fragments.",
+              "es-MX": "Texto de conversaciones eliminadas puede seguir existiendo como fragmentos UTF-8 o UTF-16."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "deleted-threads",
+        "Question Text": {
+          "en-US": ["Which element helps reconstruct a deleted conversation thread structure?"],
+          "es-MX": ["¿Qué elemento ayuda a reconstruir la estructura de un hilo de conversación eliminado?"]
+        },
+        "Options": {
+          "en-US": [
+            "Conversation IDs preserved in metadata",
+            "CPU temperature logs",
+            "Bluetooth MAC addresses",
+            "Wallpaper configuration files"
+          ],
+          "es-MX": [
+            "IDs de conversación preservados en metadatos",
+            "Registros de temperatura del CPU",
+            "Direcciones MAC de Bluetooth",
+            "Archivos de configuración del fondo de pantalla"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Conversation IDs preserved in metadata",
+          "es-MX": "IDs de conversación preservados en metadatos"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Even when content is deleted, IDs remain in multiple tables.",
+                "These IDs help sequence fragments.",
+                "They allow grouping messages correctly."
+              ],
+              "es-MX": [
+                "Incluso cuando se elimina contenido, los IDs quedan en varias tablas.",
+                "Estos IDs ayudan a secuenciar fragmentos.",
+                "Permiten agrupar mensajes correctamente."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "metadata-value",
+        "Question Text": {
+          "en-US": [
+            "Which metadata element is most useful for confirming whether a recovered fragment belongs to a specific deleted message?"
+          ],
+          "es-MX": [
+            "¿Qué metadato es más útil para confirmar si un fragmento recuperado pertenece a un mensaje eliminado específico?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Timestamp alignment",
+            "Battery history",
+            "Screen brightness",
+            "Last-used app"
+          ],
+          "es-MX": [
+            "Alineación de timestamp",
+            "Historial de batería",
+            "Brillo de pantalla",
+            "Última app utilizada"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Timestamp alignment",
+          "es-MX": "Alineación de timestamp"
+        },
+        "Explanation": [
+          {
+            "type": "text",
+            "content": {
+              "en-US": "Timestamps correlate fragments with conversation events.",
+              "es-MX": "Los timestamps correlacionan fragmentos con eventos de la conversación."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "cloud-backups",
+        "Question Text": {
+          "en-US": [
+            "Why can cloud backups complicate deleted message recovery during analysis?"
+          ],
+          "es-MX": [
+            "¿Por qué los respaldos en la nube pueden complicar la recuperación de mensajes eliminados?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because cloud sync may restore old metadata, mixing deleted and active content",
+            "Because they erase all local caches",
+            "Because they replace the SQLite engine",
+            "Because they encrypt the entire phone automatically"
+          ],
+          "es-MX": [
+            "Porque la sincronización puede restaurar metadatos antiguos, mezclando contenido eliminado y activo",
+            "Porque borran todas las cachés locales",
+            "Porque sustituyen el motor SQLite",
+            "Porque cifran automáticamente todo el teléfono"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because cloud sync may restore old metadata, mixing deleted and active content",
+          "es-MX": "Porque la sincronización puede restaurar metadatos antiguos, mezclando contenido eliminado y activo"
+        },
+        "Explanation": [
+          {
+            "type": "text",
+            "content": {
+              "en-US": "Cloud versions sometimes reintroduce previously deleted items, generating noise in the analysis.",
+              "es-MX": "Las versiones en la nube a veces reintroducen elementos eliminados, generando ruido en el análisis."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "media-exif",
+        "Question Text": {
+          "en-US": [
+            "Which EXIF attribute can help link a deleted media file to a specific conversation?"
+          ],
+          "es-MX": [
+            "¿Qué atributo EXIF puede ayudar a vincular un archivo multimedia eliminado a una conversación específica?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Time and creation metadata",
+            "The device wallpaper",
+            "Available RAM",
+            "Recent notifications"
+          ],
+          "es-MX": [
+            "Metadatos de creación y hora",
+            "El fondo de pantalla del dispositivo",
+            "La RAM disponible",
+            "Notificaciones recientes"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Time and creation metadata",
+          "es-MX": "Metadatos de creación y hora"
+        },
+        "Explanation": [
+          {
+            "type": "text",
+            "content": {
+              "en-US": "EXIF timestamps can correlate images with conversation timelines.",
+              "es-MX": "Los timestamps EXIF pueden correlacionar imágenes con las líneas de tiempo de conversaciones."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "backup-reconstruction",
+        "Question Text": {
+          "en-US": [
+            "Which combination of artifacts most effectively reconstructs a deleted conversation?"
+          ],
+          "es-MX": [
+            "¿Qué combinación de artefactos reconstruye más efectivamente una conversación eliminada?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Fragments from SQLite unallocated pages + cache thumbnails + backup metadata",
+            "Only RAM dumps",
+            "Only Chrome browsing history",
+            "Only call logs"
+          ],
+          "es-MX": [
+            "Fragmentos de páginas no asignadas de SQLite + miniaturas de caché + metadatos de respaldos",
+            "Solo volcados de RAM",
+            "Solo historial de Chrome",
+            "Solo registros de llamadas"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Fragments from SQLite unallocated pages + cache thumbnails + backup metadata",
+          "es-MX": "Fragmentos de páginas no asignadas de SQLite + miniaturas de caché + metadatos de respaldos"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Each artifact adds partial information.",
+                "Together they allow reconstructing sequences.",
+                "This is the core of forensic conversation recovery."
+              ],
+              "es-MX": [
+                "Cada artefacto aporta información parcial.",
+                "En conjunto permiten reconstruir secuencias.",
+                "Esta es la esencia de la recuperación de conversaciones forenses."
+              ]
+            }
+          }
+        ]
+      }
+      
+    ]
+  }
+  

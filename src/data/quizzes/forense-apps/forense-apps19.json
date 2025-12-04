@@ -1,0 +1,778 @@
+{
+    "meta": {
+      "slug": "forense-apps19",
+      "title": "Recuperación de mensajes, adjuntos y metadatos desde bases internas",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 2,
+      "classNo": 19,
+      "description": "Recuperación de mensajes, archivos adjuntos y metadatos desde bases SQLite y sectores no asignados, correlando artefactos visibles, archivados y eliminados.",
+      "tags": [
+        "sqlite",
+        "mensajes",
+        "adjuntos",
+        "metadatos",
+        "sectores no asignados",
+        "recuperación avanzada"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "Concepto general de recuperación avanzada",
+        "Question Text": {
+          "en-US": [
+            "What is the main goal of advanced recovery of messages and attachments from internal databases and artifacts?",
+            "In mobile forensics, what is the primary objective when performing advanced recovery over SQLite databases and internal files?"
+          ],
+          "es-MX": [
+            "¿Cuál es el objetivo principal de la recuperación avanzada de mensajes y adjuntos desde bases internas y artefactos?",
+            "En la informática forense móvil, ¿cuál es la meta principal al realizar recuperación avanzada sobre bases SQLite y archivos internos?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To reconstruct messages, attachments and metadata, even when they have been deleted, archived or partially overwritten",
+            "To speed up the phone by deleting all the caches and temporary files",
+            "To change the content of the messages so they look clearer in court",
+            "To compress the entire device into a single ZIP file, without analyzing tables or artifacts"
+          ],
+          "es-MX": [
+            "Reconstruir mensajes, adjuntos y metadatos, incluso cuando han sido eliminados, archivados o parcialmente sobrescritos",
+            "Acelerar el teléfono borrando todas las cachés y archivos temporales",
+            "Modificar el contenido de los mensajes para que se vean más claros en juicio",
+            "Comprimir todo el dispositivo en un solo archivo ZIP, sin analizar tablas ni artefactos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To reconstruct messages, attachments and metadata, even when they have been deleted, archived or partially overwritten",
+          "es-MX": "Reconstruir mensajes, adjuntos y metadatos, incluso cuando han sido eliminados, archivados o parcialmente sobrescritos"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Goal of advanced recovery in digital forensics"
+            },
+            {
+              "type": "text",
+              "content": "Advanced recovery focuses on going beyond what the user sees in the app interface, using internal structures and residual data."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "SQLite databases may keep records of messages marked as deleted or archived.",
+                "Unallocated sectors can store fragments of previous databases or multimedia files.",
+                "Internal folders and caches may contain thumbnails or previous versions of attachments."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "The examiner’s job is to use these sources to reconstruct conversations, attachments and timelines, even if the user tried to erase them from the application."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Meta de la recuperación avanzada en informática forense"
+            },
+            {
+              "type": "text",
+              "content": "La recuperación avanzada busca ir más allá de lo que el usuario ve en la interfaz de la app, aprovechando estructuras internas y datos residuales."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Las bases SQLite pueden conservar registros de mensajes marcados como eliminados o archivados.",
+                "Los sectores no asignados pueden almacenar fragmentos de bases de datos anteriores o archivos multimedia.",
+                "Carpetas internas y cachés pueden contener miniaturas o versiones previas de adjuntos."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "La tarea del perito es usar estas fuentes para reconstruir conversaciones, adjuntos y líneas de tiempo, incluso si el usuario intentó borrarlos desde la aplicación."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Bases SQLite y nombres típicos",
+        "Question Text": {
+          "en-US": [
+            "Which option correctly associates common SQLite database filenames with the messaging or system they belong to?",
+            "From a forensic perspective, which pairing of SQLite filename and application is correct?"
+          ],
+          "es-MX": [
+            "¿Qué opción asocia correctamente nombres típicos de bases SQLite con la mensajería o sistema al que pertenecen?",
+            "Desde la perspectiva forense, ¿qué par de nombre de base SQLite y aplicación es correcto?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "WhatsApp → msgstore.db / wa.db; SMS/MMS → mmssms.db; iMessage → chat.db",
+            "WhatsApp → outlook.pst; SMS/MMS → events.evtx; iMessage → system32.dll",
+            "WhatsApp → history.db; SMS/MMS → cookies.sqlite; iMessage → cache4.db",
+            "WhatsApp → registry.hive; SMS/MMS → winlogon.exe; iMessage → hosts"
+          ],
+          "es-MX": [
+            "WhatsApp → msgstore.db / wa.db; SMS/MMS → mmssms.db; iMessage → chat.db",
+            "WhatsApp → outlook.pst; SMS/MMS → events.evtx; iMessage → system32.dll",
+            "WhatsApp → history.db; SMS/MMS → cookies.sqlite; iMessage → cache4.db",
+            "WhatsApp → registry.hive; SMS/MMS → winlogon.exe; iMessage → hosts"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "WhatsApp → msgstore.db / wa.db; SMS/MMS → mmssms.db; iMessage → chat.db",
+          "es-MX": "WhatsApp → msgstore.db / wa.db; SMS/MMS → mmssms.db; iMessage → chat.db"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The lesson describes several SQLite databases that are commonly analyzed in mobile forensics:"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "WhatsApp: msgstore.db and wa.db store messages, chats and contacts.",
+                "SMS/MMS: mmssms.db is typically used to store text and multimedia messages.",
+                "iMessage: chat.db contains iMessage conversations in Apple devices."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Knowing these filenames helps the examiner quickly locate the databases that concentrate the main messaging artifacts."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La clase menciona varias bases SQLite que se analizan con frecuencia en forense móvil:"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "WhatsApp: msgstore.db y wa.db almacenan mensajes, chats y contactos.",
+                "SMS/MMS: mmssms.db suele almacenar mensajes de texto y multimedia.",
+                "iMessage: chat.db contiene conversaciones de iMessage en dispositivos Apple."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Conocer estos nombres permite al perito ubicar rápidamente las bases donde se concentran los principales artefactos de mensajería."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Tablas clave en SQLite",
+        "Question Text": {
+          "en-US": [
+            "Which group of SQLite tables is most directly related to message content and attachments in messaging apps?",
+            "For recovering messages and multimedia from SQLite, which set of tables is especially important?"
+          ],
+          "es-MX": [
+            "¿Qué grupo de tablas SQLite está más directamente relacionado con contenido de mensajes y adjuntos en apps de mensajería?",
+            "Para recuperar mensajes y multimedia desde SQLite, ¿qué conjunto de tablas es especialmente importante?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "messages, media, attachment, chat_list and thumbnail",
+            "system32, drivers, tempfiles and registry",
+            "config, updates, antivirus and firewall",
+            "desktop, downloads, recycle_bin and programs"
+          ],
+          "es-MX": [
+            "messages, media, attachment, chat_list y thumbnail",
+            "system32, drivers, tempfiles y registry",
+            "config, updates, antivirus y firewall",
+            "desktop, downloads, recycle_bin y programs"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "messages, media, attachment, chat_list and thumbnail",
+          "es-MX": "messages, media, attachment, chat_list y thumbnail"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The lesson highlights typical tables used during analysis of messaging databases:"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "messages: stores the text and main metadata of each message.",
+                "media / attachment: link messages with files such as images, audio and documents.",
+                "chat_list: organizes conversations and their identifiers.",
+                "thumbnail: keeps previews and small versions of multimedia."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "By correlating these tables, the examiner can rebuild conversations, associated files and their context."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La clase resalta tablas típicas utilizadas durante el análisis de bases de mensajería:"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "messages: almacena el texto y metadatos principales de cada mensaje.",
+                "media / attachment: enlazan mensajes con archivos como imágenes, audio y documentos.",
+                "chat_list: organiza las conversaciones y sus identificadores.",
+                "thumbnail: conserva vistas previas y versiones pequeñas de la multimedia."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Al correlacionar estas tablas, el perito puede reconstruir conversaciones, archivos asociados y su contexto."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Mensajes visibles, archivados y eliminados",
+        "Question Text": {
+          "en-US": [
+            "From a forensic point of view, which option best describes how visible, archived and deleted messages may appear inside a SQLite database?",
+            "How are different message states usually reflected in messaging databases according to the lesson?"
+          ],
+          "es-MX": [
+            "Desde el punto de vista forense, ¿qué opción describe mejor cómo pueden aparecer mensajes visibles, archivados y eliminados dentro de una base SQLite?",
+            "Según la lección, ¿cómo suelen reflejarse los diferentes estados de mensajes en las bases de mensajería?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Visible, archived and deleted messages can coexist in the same tables, distinguished by flags, relations and residual records",
+            "Only visible messages are stored; archived and deleted messages are never written to the database",
+            "Archived messages are always stored in image files, never in tables",
+            "Deleted messages are immediately wiped from all tables and cannot leave any residual trace"
+          ],
+          "es-MX": [
+            "Mensajes visibles, archivados y eliminados pueden coexistir en las mismas tablas, diferenciados por flags, relaciones y registros residuales",
+            "Solo se almacenan mensajes visibles; los archivados y eliminados nunca se escriben en la base de datos",
+            "Los mensajes archivados siempre se guardan en archivos de imagen, nunca en tablas",
+            "Los mensajes eliminados se borran de inmediato de todas las tablas y no dejan rastros residuales"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Visible, archived and deleted messages can coexist in the same tables, distinguished by flags, relations and residual records",
+          "es-MX": "Mensajes visibles, archivados y eliminados pueden coexistir en las mismas tablas, diferenciados por flags, relaciones y registros residuales"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "SQLite databases do not necessarily erase rows physically when a message is deleted in the app interface."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Visible messages appear with normal flags and relationships.",
+                "Archived messages may have a specific flag or belong to a different list or status.",
+                "Deleted messages can remain as residual rows, with flags like deleted = 1 or as orphaned entries without a valid conversation reference."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "By reading these fields and relationships, the examiner can infer the state of each message and sometimes recover content that is no longer visible to the user."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las bases SQLite no necesariamente eliminan físicamente las filas cuando un mensaje se borra en la interfaz de la app."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Los mensajes visibles aparecen con flags y relaciones normales.",
+                "Los mensajes archivados pueden tener un flag específico o pertenecer a otra lista o estado.",
+                "Los mensajes eliminados pueden permanecer como filas residuales, con campos como deleted = 1 o como registros huérfanos sin referencia válida de conversación."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Leyendo estos campos y relaciones, el perito puede inferir el estado de cada mensaje y en ocasiones recuperar contenido que ya no es visible para el usuario."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Recuperación de adjuntos y rutas internas",
+        "Question Text": {
+          "en-US": [
+            "Which sequence best describes the methodology to recover attachments from a messaging app according to the lesson?",
+            "When recovering multimedia attachments, what is the correct order of steps to correlate database records and internal folders?"
+          ],
+          "es-MX": [
+            "¿Qué secuencia describe mejor la metodología para recuperar adjuntos de una app de mensajería según la lección?",
+            "Al recuperar adjuntos multimedia, ¿cuál es el orden correcto de pasos para correlacionar registros de base de datos y carpetas internas?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Identify the attachment ID in SQLite, obtain the internal path, check if the file or its thumbnail exists in internal folders or cache and then extract file and metadata",
+            "Delete all media folders to free space and then look for missing files in the database",
+            "Rename all multimedia folders to 'evidence' and then hash them without correlating anything",
+            "Export only the thumbnails and ignore any route or ID information in the database"
+          ],
+          "es-MX": [
+            "Identificar el ID del adjunto en SQLite, obtener la ruta interna, verificar si el archivo o su miniatura existe en carpetas internas o caché y después extraer archivo y metadatos",
+            "Borrar todas las carpetas de multimedia para liberar espacio y luego buscar archivos faltantes en la base de datos",
+            "Renombrar todas las carpetas de multimedia a 'evidence' y después hacer hash sin correlacionar nada",
+            "Exportar solo las miniaturas e ignorar cualquier información de ruta o ID en la base de datos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Identify the attachment ID in SQLite, obtain the internal path, check if the file or its thumbnail exists in internal folders or cache and then extract file and metadata",
+          "es-MX": "Identificar el ID del adjunto en SQLite, obtener la ruta interna, verificar si el archivo o su miniatura existe en carpetas internas o caché y después extraer archivo y metadatos"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Locate the record of the attachment in the media or attachment table.",
+                "Read the internal path or filename associated with that attachment.",
+                "Check whether the file still exists in the internal folders (e.g. WhatsApp/Media/...).",
+                "If the original file is gone, look for thumbnails or cached versions.",
+                "Extract the existing file or thumbnail and its metadata (EXIF, timestamps, size, type)."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "This method allows the examiner to recover not only the multimedia file, but also contextual information that is highly valuable in court."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Ubicar el registro del adjunto en la tabla media o attachment.",
+                "Leer la ruta interna o nombre de archivo asociado a ese adjunto.",
+                "Verificar si el archivo aún existe en las carpetas internas (por ejemplo, WhatsApp/Media/...).",
+                "Si el archivo original ya no está, buscar miniaturas o versiones en caché.",
+                "Extraer el archivo o miniatura disponible y sus metadatos (EXIF, marcas de tiempo, tamaño, tipo)."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Este método permite al perito recuperar no solo el archivo multimedia, sino también información contextual de gran valor probatorio."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Metadatos y reconstrucción temporal",
+        "Question Text": {
+          "en-US": [
+            "Which combination correctly describes how metadata helps reconstruct the communication timeline?",
+            "How do metadata such as timestamps, IDs and flags assist in building a complete picture of user activity?"
+          ],
+          "es-MX": [
+            "¿Qué combinación describe correctamente cómo ayudan los metadatos a reconstruir la línea de tiempo de la comunicación?",
+            "¿De qué forma metadatos como timestamps, IDs y flags apoyan la construcción de una visión completa de la actividad del usuario?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They allow determining dates, sender, read status, type of action (deleted, forwarded, archived) and linking messages with attachments and conversations",
+            "They only indicate the color of the chat background and the user’s screen brightness",
+            "They serve only to choose the app icon on the home screen",
+            "They are used exclusively for compressing the database to save space"
+          ],
+          "es-MX": [
+            "Permiten determinar fechas, remitente, estado de lectura, tipo de acción (eliminado, reenviado, archivado) y enlazar mensajes con adjuntos y conversaciones",
+            "Solo indican el color del fondo del chat y el brillo de la pantalla del usuario",
+            "Sirven únicamente para elegir el ícono de la app en la pantalla de inicio",
+            "Se utilizan exclusivamente para comprimir la base de datos y ahorrar espacio"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They allow determining dates, sender, read status, type of action (deleted, forwarded, archived) and linking messages with attachments and conversations",
+          "es-MX": "Permiten determinar fechas, remitente, estado de lectura, tipo de acción (eliminado, reenviado, archivado) y enlazar mensajes con adjuntos y conversaciones"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Timestamps: show when a message was sent, received or read (after conversion from UNIX, epoch or Apple NSTime).",
+                "IDs and foreign keys: relate messages with chats, contacts and attachments.",
+                "Flags: indicate whether a message was deleted, forwarded, archived or modified.",
+                "Paths and thumbnails: connect multimedia with specific messages and moments."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "By combining these elements, the examiner reconstructs not only the text, but also the sequence and context of the communication."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Timestamps: indican cuándo se envió, recibió o leyó un mensaje (tras convertir UNIX, epoch o Apple NSTime).",
+                "IDs y claves foráneas: relacionan mensajes con chats, contactos y adjuntos.",
+                "Flags: señalan si un mensaje fue eliminado, reenviado, archivado o modificado.",
+                "Rutas y miniaturas: vinculan multimedia con mensajes y momentos concretos."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Al combinar estos elementos, el perito reconstruye no solo el texto, sino también la secuencia y el contexto de la comunicación."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Procedimiento integrado con SQLite",
+        "Question Text": {
+          "en-US": [
+            "According to the class, which ordered sequence best represents an integrated procedure for analyzing a SQLite database to recover messages and attachments?",
+            "In a structured workflow, what is the correct order of steps for advanced analysis of a messaging SQLite database?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿qué secuencia ordenada representa mejor un procedimiento integrado para analizar una base SQLite y recuperar mensajes y adjuntos?",
+            "En un flujo de trabajo estructurado, ¿cuál es el orden correcto de pasos para un análisis avanzado de una base SQLite de mensajería?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Open the database, review main tables, identify visible/deleted messages, recover attachments via internal routes, search cache and temporals, convert timestamps, correlate messages and files, and finally export conversations, files, metadata and hashes",
+            "Open the database, delete all tables to simplify, and only keep the contacts table",
+            "Convert the database to a text file and manually retype each message in a Word document",
+            "Open the database, change all timestamps to the current date to make the report look updated"
+          ],
+          "es-MX": [
+            "Abrir la base, revisar tablas principales, identificar mensajes visibles/eliminados, recuperar adjuntos mediante rutas internas, buscar en caché y temporales, convertir timestamps, correlacionar mensajes y archivos y finalmente exportar conversaciones, archivos, metadatos y hashes",
+            "Abrir la base, borrar todas las tablas para simplificar y conservar solo la tabla de contactos",
+            "Convertir la base a un archivo de texto y volver a escribir manualmente cada mensaje en un documento de Word",
+            "Abrir la base, cambiar todas las marcas de tiempo a la fecha actual para que el informe se vea actualizado"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Open the database, review main tables, identify visible/deleted messages, recover attachments via internal routes, search cache and temporals, convert timestamps, correlate messages and files, and finally export conversations, files, metadata and hashes",
+          "es-MX": "Abrir la base, revisar tablas principales, identificar mensajes visibles/eliminados, recuperar adjuntos mediante rutas internas, buscar en caché y temporales, convertir timestamps, correlacionar mensajes y archivos y finalmente exportar conversaciones, archivos, metadatos y hashes"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Open the SQLite database with a forensic or database viewer.",
+                "Review main tables (messages, media, attachment, chat_list, etc.).",
+                "Identify visible, archived and deleted messages by fields and flags.",
+                "Locate attachments through internal IDs and paths.",
+                "Search cache and temporary folders for thumbnails or residual files.",
+                "Convert timestamps to human-readable formats.",
+                "Correlate messages, attachments and metadata to reconstruct conversations.",
+                "Export conversations, recovered files and relevant metadata, calculating hashes for integrity."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Abrir la base SQLite con un visor forense o de bases de datos.",
+                "Revisar tablas principales (messages, media, attachment, chat_list, etc.).",
+                "Identificar mensajes visibles, archivados y eliminados mediante campos y flags.",
+                "Localizar adjuntos a través de IDs internos y rutas.",
+                "Buscar en carpetas de caché y temporales miniaturas o archivos residuales.",
+                "Convertir timestamps a formatos legibles.",
+                "Correlacionar mensajes, adjuntos y metadatos para reconstruir conversaciones.",
+                "Exportar conversaciones, archivos recuperados y metadatos relevantes, calculando hashes para integridad."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Sectores no asignados y restos de evidencia",
+        "Question Text": {
+          "en-US": [
+            "What is the main importance of unallocated sectors in the context of recovering messages and attachments?",
+            "According to the lesson, why should a forensic examiner analyze unallocated space when dealing with messaging artifacts?"
+          ],
+          "es-MX": [
+            "¿Cuál es la importancia principal de los sectores no asignados en el contexto de la recuperación de mensajes y adjuntos?",
+            "Según la lección, ¿por qué debe un perito analizar el espacio no asignado cuando trabaja con artefactos de mensajería?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because they can contain fragments of previous SQLite databases, images and documents, even after the user has deleted them",
+            "Because they only store icons and wallpapers, which are irrelevant to investigations",
+            "Because they are automatically cleaned and therefore cannot contain any useful data",
+            "Because they include only the operating system code and never application data"
+          ],
+          "es-MX": [
+            "Porque pueden contener fragmentos de bases SQLite anteriores, imágenes y documentos, incluso después de que el usuario los haya eliminado",
+            "Porque solo almacenan íconos y fondos de pantalla, irrelevantes para las investigaciones",
+            "Porque se limpian automáticamente y por tanto no pueden contener datos útiles",
+            "Porque solo incluyen código del sistema operativo y nunca datos de aplicaciones"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because they can contain fragments of previous SQLite databases, images and documents, even after the user has deleted them",
+          "es-MX": "Porque pueden contener fragmentos de bases SQLite anteriores, imágenes y documentos, incluso después de que el usuario los haya eliminado"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Unallocated sectors are areas of the disk or memory that are not currently assigned to a file, but may contain remnants of previous data."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Fragments of old SQLite databases related to messaging.",
+                "Pieces of images, videos or documents that were deleted.",
+                "Partial structures that can still reveal text or patterns."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Analyzing this space allows recovering evidence that is no longer visible in the file system or the application database."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los sectores no asignados son áreas del disco o de la memoria que no están asignadas actualmente a un archivo, pero pueden contener restos de datos anteriores."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Fragmentos de bases SQLite antiguas relacionadas con mensajería.",
+                "Porciones de imágenes, videos o documentos que fueron eliminados.",
+                "Estructuras parciales que aún revelan texto o patrones."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Analizar este espacio permite recuperar evidencia que ya no es visible en el sistema de archivos ni en la base de datos de la aplicación."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Firmas de archivo y patrones de recuperación",
+        "Question Text": {
+          "en-US": [
+            "Which option correctly describes how forensic tools use file signatures and patterns to recover data from unallocated space?",
+            "How do file signatures help in the recovery of deleted images and documents according to the lesson?"
+          ],
+          "es-MX": [
+            "¿Qué opción describe correctamente cómo utilizan las herramientas forenses firmas de archivo y patrones para recuperar datos en espacio no asignado?",
+            "¿De qué manera ayudan las firmas de archivo a recuperar imágenes y documentos eliminados según la lección?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They search for known byte patterns (e.g. JPEG, PNG, MP4, PDF) and reconstruct files or fragments based on these signatures and structures",
+            "They change the file type to make all data look like text documents",
+            "They automatically encrypt all unallocated space so it cannot be read",
+            "They delete all unallocated sectors to speed up the analysis"
+          ],
+          "es-MX": [
+            "Buscan patrones de bytes conocidos (por ejemplo, JPEG, PNG, MP4, PDF) y reconstruyen archivos o fragmentos a partir de estas firmas y estructuras",
+            "Cambian el tipo de archivo para que todos los datos parezcan documentos de texto",
+            "Cifran automáticamente todo el espacio no asignado para que no pueda leerse",
+            "Eliminan todos los sectores no asignados para acelerar el análisis"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They search for known byte patterns (e.g. JPEG, PNG, MP4, PDF) and reconstruct files or fragments based on these signatures and structures",
+          "es-MX": "Buscan patrones de bytes conocidos (por ejemplo, JPEG, PNG, MP4, PDF) y reconstruyen archivos o fragmentos a partir de estas firmas y estructuras"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Forensic tools scan unallocated space looking for byte sequences that identify file types."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "JPEG and PNG headers to locate images.",
+                "MP4 headers for videos.",
+                "PDF or DOCX signatures for documents.",
+                "Fragments of SQLite structures or plain text."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "This technique allows recovering files or partial content even when the file system no longer has a reference to them."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las herramientas forenses escanean el espacio no asignado buscando secuencias de bytes que identifican tipos de archivo."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Cabeceras JPEG y PNG para localizar imágenes.",
+                "Cabeceras MP4 para videos.",
+                "Firmas PDF o DOCX para documentos.",
+                "Fragmentos de estructuras SQLite o texto plano."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Esta técnica permite recuperar archivos o contenido parcial incluso cuando el sistema de archivos ya no tiene una referencia hacia ellos."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Ejemplo integrado de recuperación",
+        "Question Text": {
+          "en-US": [
+            "In the integrated example of the lesson, which scenario best summarizes the type of recovery achieved from msgstore.db and related artifacts?",
+            "According to the described example, what kind of evidence was the examiner able to reconstruct from the database and internal folders?"
+          ],
+          "es-MX": [
+            "En el ejemplo integrado de la lección, ¿qué escenario resume mejor el tipo de recuperación lograda desde msgstore.db y artefactos relacionados?",
+            "Según el ejemplo descrito, ¿qué tipo de evidencia pudo reconstruir el perito a partir de la base de datos y carpetas internas?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Active messages, messages with deletion flags, photos whose original file was deleted but with remaining thumbnails, and a deleted message with a valid timestamp and partial text",
+            "Only the app’s background color and the last emoji used by the user",
+            "Exclusively the phone’s battery level history, with no messages or attachments",
+            "Only the list of installed apps, without any content from conversations"
+          ],
+          "es-MX": [
+            "Mensajes activos, mensajes con flags de eliminación, fotos cuyo archivo original se eliminó pero con miniaturas restantes y un mensaje borrado con timestamp válido y texto parcial",
+            "Solo el color de fondo de la app y el último emoji usado por el usuario",
+            "Exclusivamente el historial de nivel de batería del teléfono, sin mensajes ni adjuntos",
+            "Solo la lista de aplicaciones instaladas, sin contenido de conversaciones"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Active messages, messages with deletion flags, photos whose original file was deleted but with remaining thumbnails, and a deleted message with a valid timestamp and partial text",
+          "es-MX": "Mensajes activos, mensajes con flags de eliminación, fotos cuyo archivo original se eliminó pero con miniaturas restantes y un mensaje borrado con timestamp válido y texto parcial"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The example in the lesson shows how different layers of evidence can be combined:"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Active messages and those marked as deleted.",
+                "Photos linked to messages where the original is gone but the thumbnail persists.",
+                "A deleted message with a valid timestamp and partial text still readable.",
+                "Correlation between conversations, documents and residual artifacts."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "This demonstrates that an app ‘deletion’ does not necessarily eliminate all forensic traces of the communication."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El ejemplo de la lección muestra cómo se combinan distintas capas de evidencia:"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Mensajes activos y mensajes marcados como eliminados.",
+                "Fotografías vinculadas a mensajes donde el archivo original ya no existe, pero la miniatura persiste.",
+                "Un mensaje borrado con una marca de tiempo válida y texto parcial aún legible.",
+                "Correlación entre conversaciones, documentos y artefactos residuales."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Esto demuestra que el 'borrado' en la app no elimina necesariamente todos los rastros forenses de la comunicación."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Visión global de la actividad del usuario",
+        "Question Text": {
+          "en-US": [
+            "Which option best summarizes the global result that a systematic analysis of SQLite databases, internal folders and unallocated sectors can provide?",
+            "From the lesson’s perspective, what is the main advantage of combining database analysis, attachment recovery and residual artifacts?"
+          ],
+          "es-MX": [
+            "¿Qué opción resume mejor el resultado global que puede aportar un análisis sistemático de bases SQLite, carpetas internas y sectores no asignados?",
+            "Desde la perspectiva de la lección, ¿cuál es la ventaja principal de combinar análisis de bases, recuperación de adjuntos y artefactos residuales?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Obtaining a complete and detailed view of user activity, including visible, archived, deleted and residual communications",
+            "Only knowing the device brand, without any content of messages",
+            "Automatically replacing all messages with generic templates for the report",
+            "Limiting the analysis to a single message per chat to save time"
+          ],
+          "es-MX": [
+            "Obtener una visión completa y detallada de la actividad del usuario, incluyendo comunicaciones visibles, archivadas, eliminadas y residuales",
+            "Conocer únicamente la marca del dispositivo, sin ningún contenido de mensajes",
+            "Reemplazar automáticamente todos los mensajes por plantillas genéricas para el informe",
+            "Limitar el análisis a un solo mensaje por chat para ahorrar tiempo"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Obtaining a complete and detailed view of user activity, including visible, archived, deleted and residual communications",
+          "es-MX": "Obtener una visión completa y detallada de la actividad del usuario, incluyendo comunicaciones visibles, archivadas, eliminadas y residuales"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The lesson emphasizes that no single artifact tells the whole story by itself."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "SQLite databases provide structured information about messages and chats.",
+                "Internal folders and caches store attachments, thumbnails and temporary files.",
+                "Unallocated space and residual artifacts reveal previous or partially deleted content."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "By integrating all these sources, the examiner can reconstruct a much richer and more accurate picture of the user’s real activity."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La lección destaca que ningún artefacto aislado cuenta toda la historia por sí mismo."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Las bases SQLite aportan información estructurada sobre mensajes y chats.",
+                "Carpetas internas y cachés guardan adjuntos, miniaturas y archivos temporales.",
+                "Espacio no asignado y artefactos residuales revelan contenido previo o parcialmente eliminado."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Al integrar todas estas fuentes, el perito reconstruye una imagen mucho más rica y precisa de la actividad real del usuario."
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

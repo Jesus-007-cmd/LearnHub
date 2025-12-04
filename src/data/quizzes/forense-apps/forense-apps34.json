@@ -1,0 +1,615 @@
+{
+    "meta": {
+      "slug": "forense-apps34",
+      "title": "Clase 34 – Correlación temporal y reconstrucción de eventos",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 3,
+      "classNo": 34,
+      "description": "Correlación de timestamps, ubicaciones, metadatos y registros de sistema para reconstruir cronologías precisas de eventos digitales dentro de una investigación forense.",
+      "tags": [
+        "correlación temporal",
+        "línea de tiempo",
+        "whatsapp",
+        "gps",
+        "exif",
+        "logs de sistema",
+        "timeline",
+        "magnet axiom",
+        "autopsy",
+        "cellebrite"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "importancia-correlacion",
+        "Question Text": {
+          "en-US": [
+            "Why is temporal correlation considered a central skill in modern digital forensic analysis?"
+          ],
+          "es-MX": [
+            "¿Por qué la correlación temporal se considera una habilidad central en el análisis forense digital moderno?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it allows the examiner to integrate messages, GPS, multimedia and logs into a coherent timeline that explains what happened, when and who was involved",
+            "Because it automatically repairs damaged databases without any manual work",
+            "Because it eliminates the need to acquire the original evidence if the timeline looks consistent",
+            "Because it allows the analyst to ignore differences between devices and focus only on a single artifact"
+          ],
+          "es-MX": [
+            "Porque permite que el perito integre mensajes, GPS, multimedia y logs en una línea de tiempo coherente que explique qué ocurrió, cuándo y quién estuvo involucrado",
+            "Porque repara automáticamente bases de datos dañadas sin necesidad de trabajo manual",
+            "Porque elimina la necesidad de adquirir la evidencia original si la línea de tiempo se ve consistente",
+            "Porque permite que el analista ignore las diferencias entre dispositivos y se concentre solo en un artefacto"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it allows the examiner to integrate messages, GPS, multimedia and logs into a coherent timeline that explains what happened, when and who was involved",
+          "es-MX": "Porque permite que el perito integre mensajes, GPS, multimedia y logs en una línea de tiempo coherente que explique qué ocurrió, cuándo y quién estuvo involucrado"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class emphasizes that isolated artifacts rarely tell the full story. By correlating timestamps from different sources, the examiner can reconstruct the sequence of actions and verify or refute testimonies with technical evidence.",
+              "es-MX": "La clase enfatiza que los artefactos aislados rara vez cuentan la historia completa. Al correlacionar timestamps de distintas fuentes, el perito puede reconstruir la secuencia de acciones y verificar o refutar testimonios con evidencia técnica."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "fuentes-tiempo",
+        "Question Text": {
+          "en-US": [
+            "Which of the following is the BEST description of the main time sources that must be considered when reconstructing events from a mobile device?"
+          ],
+          "es-MX": [
+            "¿Cuál de las siguientes describe MEJOR las principales fuentes de tiempo que deben considerarse al reconstruir eventos desde un dispositivo móvil?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "UNIX timestamps, device local time, EXIF timestamps, GPS records, system logs and cloud synchronization times",
+            "Only the time shown on the device’s lock screen wallpaper",
+            "Time zone of the examiner’s computer and date of writing the report",
+            "The last time the battery was charged and the wallpaper change history"
+          ],
+          "es-MX": [
+            "Timestamps UNIX, hora local del dispositivo, timestamps EXIF, registros GPS, logs del sistema y fechas de sincronización en la nube",
+            "Solo la hora mostrada en el fondo de pantalla de bloqueo del dispositivo",
+            "Zona horaria de la computadora del perito y fecha de redacción del informe",
+            "La última vez que se cargó la batería y el historial de cambio de fondo de pantalla"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "UNIX timestamps, device local time, EXIF timestamps, GPS records, system logs and cloud synchronization times",
+          "es-MX": "Timestamps UNIX, hora local del dispositivo, timestamps EXIF, registros GPS, logs del sistema y fechas de sincronización en la nube"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "UNIX timestamps are used by many apps such as WhatsApp and Android.",
+                "EXIF and GPS embed time directly in media files.",
+                "System logs and cloud sync times show when the device communicated with external services.",
+                "All of them must be aligned to avoid misinterpretation."
+              ],
+              "es-MX": [
+                "Los timestamps UNIX son usados por muchas apps como WhatsApp y Android.",
+                "EXIF y GPS incrustan la hora directamente en archivos multimedia.",
+                "Los logs del sistema y las sincronizaciones en la nube muestran cuándo el dispositivo se comunicó con servicios externos.",
+                "Todos deben alinearse para evitar interpretaciones erróneas."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "normalizacion-horaria",
+        "Question Text": {
+          "en-US": [
+            "According to the class, what is the FIRST step before correlating timestamps from different sources?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿cuál es el PRIMER paso antes de correlacionar timestamps de diferentes fuentes?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Normalizing all timestamps to a common reference (e.g., UTC and a standardized format) to avoid confusion due to time zones and different representations",
+            "Deleting all timestamps and relying only on the examiner’s memory",
+            "Converting every timestamp to the time zone of the court, ignoring the device configuration",
+            "Assuming that all devices always share the exact same time and skipping any adjustment"
+          ],
+          "es-MX": [
+            "Normalizar todos los timestamps a una referencia común (por ejemplo, UTC y un formato estandarizado) para evitar confusiones por zonas horarias y representaciones distintas",
+            "Borrar todos los timestamps y confiar solo en la memoria del perito",
+            "Convertir todos los timestamps a la zona horaria del juzgado, ignorando la configuración del dispositivo",
+            "Suponer que todos los dispositivos siempre comparten la misma hora y omitir cualquier ajuste"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Normalizing all timestamps to a common reference (e.g., UTC and a standardized format) to avoid confusion due to time zones and different representations",
+          "es-MX": "Normalizar todos los timestamps a una referencia común (por ejemplo, UTC y un formato estandarizado) para evitar confusiones por zonas horarias y representaciones distintas"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "If timestamps are not normalized, a valid event can appear as if it happened earlier or later than another, simply due to time zone or format differences. Normalization is the foundation of any reliable timeline.",
+              "es-MX": "Si los timestamps no se normalizan, un evento válido puede parecer que ocurrió antes o después que otro, solo por diferencias de zona horaria o formato. La normalización es la base de cualquier línea de tiempo confiable."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "orden-cronologico",
+        "Question Text": {
+          "en-US": [
+            "What is the MAIN goal of building a single integrated chronological list with all events from different sources?"
+          ],
+          "es-MX": [
+            "¿Cuál es el objetivo PRINCIPAL de construir una sola lista cronológica integrada con todos los eventos de diferentes fuentes?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To visualize the real order in which messages, photos, GPS points, logs and uploads occurred, and detect contradictions or manipulations",
+            "To reduce the number of artifacts by deleting all events outside business hours",
+            "To automatically assign legal responsibility without human review",
+            "To replace the original evidence with a simplified text document"
+          ],
+          "es-MX": [
+            "Visualizar el orden real en el que ocurrieron mensajes, fotos, puntos GPS, logs y cargas a la nube, y detectar contradicciones o manipulaciones",
+            "Reducir el número de artefactos borrando todos los eventos fuera del horario laboral",
+            "Asignar automáticamente responsabilidad legal sin revisión humana",
+            "Sustituir la evidencia original por un documento de texto simplificado"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To visualize the real order in which messages, photos, GPS points, logs and uploads occurred, and detect contradictions or manipulations",
+          "es-MX": "Visualizar el orden real en el que ocurrieron mensajes, fotos, puntos GPS, logs y cargas a la nube, y detectar contradicciones o manipulaciones"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "The timeline acts as a narrative backbone of the case.",
+                "It reveals how digital events interleave and influence each other.",
+                "It allows spotting events that appear impossible or out of sequence."
+              ],
+              "es-MX": [
+                "La línea de tiempo funciona como columna vertebral narrativa del caso.",
+                "Muestra cómo se entrelazan e influyen entre sí los eventos digitales.",
+                "Permite detectar eventos que parecen imposibles o fuera de secuencia."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "correlacion-mensajes-gps",
+        "Question Text": {
+          "en-US": [
+            "In the class example, why is correlating WhatsApp messages with GPS locations particularly powerful?"
+          ],
+          "es-MX": [
+            "En el ejemplo de la clase, ¿por qué es especialmente poderosa la correlación de mensajes de WhatsApp con ubicaciones GPS?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it allows verifying whether the user was physically in the place they claim when sending or receiving certain messages or photos",
+            "Because GPS automatically translates the conversation into a map-based summary",
+            "Because correlating with GPS deletes all messages that lack coordinates",
+            "Because GPS replaces the need to look at EXIF or logs"
+          ],
+          "es-MX": [
+            "Porque permite verificar si el usuario estaba físicamente en el lugar que afirma al enviar o recibir determinados mensajes o fotografías",
+            "Porque el GPS traduce automáticamente la conversación a un resumen sobre mapa",
+            "Porque al correlacionar con GPS se eliminan todos los mensajes sin coordenadas",
+            "Porque el GPS sustituye la necesidad de revisar EXIF o logs"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it allows verifying whether the user was physically in the place they claim when sending or receiving certain messages or photos",
+          "es-MX": "Porque permite verificar si el usuario estaba físicamente en el lugar que afirma al enviar o recibir determinados mensajes o fotografías"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "When message timestamps match GPS coordinates, the examiner can confirm or challenge alibis and claimed movements. A mismatch between claimed location and GPS data is a strong indicator of inconsistency.",
+              "es-MX": "Cuando los timestamps de mensajes coinciden con coordenadas GPS, el perito puede confirmar o cuestionar coartadas y desplazamientos declarados. Una discrepancia entre la ubicación alegada y el GPS es un indicador fuerte de inconsistencia."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "exif-tiempo",
+        "Question Text": {
+          "en-US": [
+            "What forensic question can EXIF timestamps help answer when correlated with chat messages?"
+          ],
+          "es-MX": [
+            "¿Qué pregunta forense puede ayudar a responder un timestamp EXIF al correlacionarse con mensajes de chat?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Whether a photo or video was really captured at the time the user claims, or if it was reused from another moment",
+            "Whether the device battery was fully charged during the chat",
+            "Whether the user changed their wallpaper before taking the photo",
+            "Whether the device model supports 4K video recording"
+          ],
+          "es-MX": [
+            "Si una foto o video fue realmente capturado en el momento que el usuario afirma, o si se reutilizó de otro momento",
+            "Si la batería del dispositivo estaba totalmente cargada durante el chat",
+            "Si el usuario cambió su fondo de pantalla antes de tomar la foto",
+            "Si el modelo de dispositivo soporta grabación en 4K"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Whether a photo or video was really captured at the time the user claims, or if it was reused from another moment",
+          "es-MX": "Si una foto o video fue realmente capturado en el momento que el usuario afirma, o si se reutilizó de otro momento"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "EXIF stores capture time independent of chat timestamps.",
+                "If EXIF time and message time diverge significantly, the media may have been taken earlier or manipulated.",
+                "This is crucial to test narratives such as “I took this photo right then.”"
+              ],
+              "es-MX": [
+                "EXIF guarda la hora de captura de forma independiente al timestamp del chat.",
+                "Si la hora EXIF y la hora del mensaje difieren mucho, la media pudo tomarse antes o ser manipulada.",
+                "Esto es clave para verificar narrativas como “tomé esta foto justo en ese momento”."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "inconsistencias-tiempo",
+        "Question Text": {
+          "en-US": [
+            "Which of the following is the BEST example of a temporal inconsistency that might indicate manipulation or error?"
+          ],
+          "es-MX": [
+            "¿Cuál de los siguientes es el MEJOR ejemplo de inconsistencia temporal que podría indicar manipulación o error?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A file appears as sent in WhatsApp 2 minutes BEFORE its creation time shown in EXIF and file system metadata",
+            "A user sends messages during business hours every weekday",
+            "Daily automatic backups occur around 03:00 AM as configured",
+            "The device switches between Wi-Fi and mobile data during a long call"
+          ],
+          "es-MX": [
+            "Un archivo aparece como enviado en WhatsApp 2 minutos ANTES de su hora de creación según EXIF y metadatos del sistema de archivos",
+            "Un usuario envía mensajes en horario laboral de lunes a viernes",
+            "Respaldos automáticos diarios ocurren alrededor de las 03:00 AM según la configuración",
+            "El dispositivo cambia entre Wi-Fi y datos móviles durante una llamada larga"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A file appears as sent in WhatsApp 2 minutes BEFORE its creation time shown in EXIF and file system metadata",
+          "es-MX": "Un archivo aparece como enviado en WhatsApp 2 minutos ANTES de su hora de creación según EXIF y metadatos del sistema de archivos"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "If a message supposedly sends a file before that file even exists on the device, something is wrong: time settings, metadata or the narrative. Such contradictions are red flags that require deeper analysis.",
+              "es-MX": "Si un mensaje supuestamente envía un archivo antes de que el archivo exista en el dispositivo, algo está mal: la configuración horaria, los metadatos o la narrativa. Estas contradicciones son focos rojos que requieren análisis más profundo."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "huecos-sospechosos",
+        "Question Text": {
+          "en-US": [
+            "What can long periods of silence or gaps in a normally active conversation suggest when analyzing a timeline?"
+          ],
+          "es-MX": [
+            "¿Qué pueden sugerir los periodos largos de silencio o huecos en una conversación normalmente activa al analizar una línea de tiempo?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Possible deletion of messages, restoration of backups, device resets or attempts to hide activity during critical moments",
+            "That the messaging app stopped being used forever and has no forensic relevance",
+            "That the device clock always resets to factory settings at night",
+            "Only normal user behavior that should never be examined in a forensic context"
+          ],
+          "es-MX": [
+            "Posible eliminación de mensajes, restauración de respaldos, reinicios de dispositivo o intentos de ocultar actividad durante momentos críticos",
+            "Que la aplicación de mensajería dejó de usarse para siempre y no tiene relevancia forense",
+            "Que el reloj del dispositivo siempre se reinicia a valores de fábrica por la noche",
+            "Solo comportamiento normal de usuario que nunca debe analizarse en contexto forense"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Possible deletion of messages, restoration of backups, device resets or attempts to hide activity during critical moments",
+          "es-MX": "Posible eliminación de mensajes, restauración de respaldos, reinicios de dispositivo o intentos de ocultar actividad durante momentos críticos"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "The class explains that gaps can be as informative as explicit activity.",
+                "Sudden silence around key events may indicate content removal or device issues.",
+                "Such gaps must be evaluated alongside logs and backup records."
+              ],
+              "es-MX": [
+                "La clase explica que los huecos pueden ser tan informativos como la actividad explícita.",
+                "Un silencio repentino alrededor de eventos clave puede indicar eliminación de contenido o problemas con el dispositivo.",
+                "Estos huecos deben evaluarse junto con logs y registros de respaldos."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "patrones-comportamiento",
+        "Question Text": {
+          "en-US": [
+            "Which example BEST illustrates a behavioral pattern discovered through temporal correlation?"
+          ],
+          "es-MX": [
+            "¿Qué ejemplo ilustra MEJOR un patrón de comportamiento descubierto mediante correlación temporal?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The user consistently sends status updates and photos only when connected to a specific Wi-Fi network associated with a particular location",
+            "The user once turned off the phone due to low battery",
+            "The device received system updates at night following vendor defaults",
+            "The user changed the wallpaper once every three months"
+          ],
+          "es-MX": [
+            "El usuario envía constantemente actualizaciones de estado y fotos solo cuando se conecta a una red Wi-Fi específica asociada a cierta ubicación",
+            "El usuario apagó el teléfono una vez por batería baja",
+            "El dispositivo recibió actualizaciones del sistema por la noche siguiendo los valores predeterminados del fabricante",
+            "El usuario cambió el fondo de pantalla una vez cada tres meses"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The user consistently sends status updates and photos only when connected to a specific Wi-Fi network associated with a particular location",
+          "es-MX": "El usuario envía constantemente actualizaciones de estado y fotos solo cuando se conecta a una red Wi-Fi específica asociada a cierta ubicación"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "Repeated correlations between actions (sending media) and conditions (specific Wi-Fi, location) reveal habits and routines. These patterns can connect people, places and times in a way that supports or challenges investigative hypotheses.",
+              "es-MX": "Las correlaciones repetidas entre acciones (envío de multimedia) y condiciones (Wi-Fi específica, ubicación) revelan hábitos y rutinas. Estos patrones pueden conectar personas, lugares y momentos de forma que apoye o cuestione las hipótesis de la investigación."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "zona-horaria-manipulada",
+        "Question Text": {
+          "en-US": [
+            "If the device’s time zone was intentionally changed before an incident, what is the MOST appropriate forensic response according to the class?"
+          ],
+          "es-MX": [
+            "Si la zona horaria del dispositivo fue cambiada intencionalmente antes de un incidente, ¿cuál es la respuesta forense MÁS adecuada según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Document the change, reconstruct the real UTC time using logs, EXIF and network records, and explain the adjustment clearly in the timeline and report",
+            "Ignore the time zone change and work only with the local time shown in the user interface",
+            "Reset all evidence timestamps to the examiner’s local time without documentation",
+            "Discard all evidence from that device because a time zone change makes it unusable"
+          ],
+          "es-MX": [
+            "Documentar el cambio, reconstruir la hora real en UTC usando logs, EXIF y registros de red, y explicar el ajuste claramente en la línea de tiempo y el informe",
+            "Ignorar el cambio de zona horaria y trabajar solo con la hora local que muestra la interfaz",
+            "Reiniciar todos los timestamps de la evidencia a la hora local del perito sin documentar",
+            "Descartar toda la evidencia de ese dispositivo porque un cambio de zona horaria la vuelve inutilizable"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Document the change, reconstruct the real UTC time using logs, EXIF and network records, and explain the adjustment clearly in the timeline and report",
+          "es-MX": "Documentar el cambio, reconstruir la hora real en UTC usando logs, EXIF y registros de red, y explicar el ajuste claramente en la línea de tiempo y el informe"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Time manipulation itself can be evidentially relevant.",
+                "The examiner must show how the real time was estimated.",
+                "Clear documentation protects the integrity of the analysis before the court."
+              ],
+              "es-MX": [
+                "La manipulación horaria en sí puede ser relevante como evidencia.",
+                "El perito debe mostrar cómo se estimó la hora real.",
+                "Una documentación clara protege la integridad del análisis frente al tribunal."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "eventos-red",
+        "Question Text": {
+          "en-US": [
+            "How can network events (such as connections to mobile networks or Wi-Fi) be used in temporal correlation?"
+          ],
+          "es-MX": [
+            "¿Cómo pueden utilizarse los eventos de red (como conexiones a redes móviles o Wi-Fi) en la correlación temporal?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To confirm when the device was online, correlate message sending or uploads with connection moments, and support or refute claims about being disconnected",
+            "To automatically recover deleted messages from the network provider without any legal process",
+            "To determine the exact content of each encrypted message by reading the network traffic",
+            "To permanently block the device from accessing the internet after the acquisition"
+          ],
+          "es-MX": [
+            "Para confirmar cuándo el dispositivo estuvo en línea, correlacionar envíos de mensajes o cargas con momentos de conexión, y apoyar o refutar alegatos sobre estar desconectado",
+            "Para recuperar automáticamente mensajes borrados desde el proveedor de red sin ningún proceso legal",
+            "Para determinar el contenido exacto de cada mensaje cifrado leyendo el tráfico de red",
+            "Para bloquear permanentemente el acceso a internet del dispositivo después de la adquisición"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To confirm when the device was online, correlate message sending or uploads with connection moments, and support or refute claims about being disconnected",
+          "es-MX": "Para confirmar cuándo el dispositivo estuvo en línea, correlacionar envíos de mensajes o cargas con momentos de conexión, y apoyar o refutar alegatos sobre estar desconectado"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "If someone claims they had no internet at a specific time, but logs show active connections and message traffic, the temporal correlation between network activity and app events becomes a key piece of evidence.",
+              "es-MX": "Si alguien afirma que no tenía internet en cierto momento, pero los logs muestran conexiones activas y tráfico de mensajes, la correlación temporal entre actividad de red y eventos de apps se convierte en una pieza de evidencia clave."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "logs-sistema",
+        "Question Text": {
+          "en-US": [
+            "What kind of information from system logs is especially useful for building a timeline according to the class?"
+          ],
+          "es-MX": [
+            "¿Qué tipo de información de los logs del sistema es especialmente útil para construir una línea de tiempo según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Events like device power on/off, screen lock/unlock, app installation or removal, Wi-Fi connection and significant configuration changes",
+            "The history of wallpaper images and theme colors only",
+            "The list of music tracks played while using headphones",
+            "The daily battery temperature averages stored in the firmware"
+          ],
+          "es-MX": [
+            "Eventos como encendido/apagado del dispositivo, bloqueo/desbloqueo de pantalla, instalación o borrado de apps, conexión Wi-Fi y cambios de configuración relevantes",
+            "Solo el historial de imágenes de fondo de pantalla y colores de tema",
+            "La lista de pistas de música reproducidas con audífonos",
+            "Los promedios diarios de temperatura de la batería guardados en el firmware"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Events like device power on/off, screen lock/unlock, app installation or removal, Wi-Fi connection and significant configuration changes",
+          "es-MX": "Eventos como encendido/apagado del dispositivo, bloqueo/desbloqueo de pantalla, instalación o borrado de apps, conexión Wi-Fi y cambios de configuración relevantes"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "These events show when the device was usable and under active interaction.",
+                "They can corroborate or contradict claimed usage times.",
+                "They also indicate moments when data might have been added, removed or exfiltrated."
+              ],
+              "es-MX": [
+                "Estos eventos muestran cuándo el dispositivo era utilizable y estaba bajo interacción activa.",
+                "Pueden corroborar o contradecir los tiempos de uso declarados.",
+                "También indican momentos en que pudo agregarse, eliminarse o extraerse información."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "herramientas-timeline",
+        "Question Text": {
+          "en-US": [
+            "Which statement BEST describes the role of tools like Magnet AXIOM Timeline and Autopsy’s timeline module in temporal correlation?"
+          ],
+          "es-MX": [
+            "¿Cuál afirmación describe MEJOR el papel de herramientas como Magnet AXIOM Timeline y el módulo de timeline de Autopsy en la correlación temporal?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They automatically aggregate events from multiple sources into visual timelines, allowing filtering by date, type of event and artifact, which greatly accelerates correlation and pattern detection",
+            "They replace the need to understand timestamps or zones, making time-related knowledge unnecessary",
+            "They permanently modify the timestamps in the original evidence to make them easier to read",
+            "They are used only at the very end, after the report is finished, to decorate the document with graphics"
+          ],
+          "es-MX": [
+            "Agregan automáticamente eventos de múltiples fuentes en líneas de tiempo visuales, permitiendo filtrar por fecha, tipo de evento y artefacto, lo que acelera mucho la correlación y la detección de patrones",
+            "Sustituyen la necesidad de entender timestamps o zonas horarias, haciendo innecesario el conocimiento sobre tiempo",
+            "Modifican permanentemente los timestamps en la evidencia original para hacerlos más fáciles de leer",
+            "Solo se usan al final, cuando el informe ya está terminado, para decorar el documento con gráficas"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They automatically aggregate events from multiple sources into visual timelines, allowing filtering by date, type of event and artifact, which greatly accelerates correlation and pattern detection",
+          "es-MX": "Agregan automáticamente eventos de múltiples fuentes en líneas de tiempo visuales, permitiendo filtrar por fecha, tipo de evento y artefacto, lo que acelera mucho la correlación y la detección de patrones"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class presents these tools as accelerators: instead of manually joining logs, chats and EXIF in spreadsheets, the examiner can use built-in timelines to explore, then document the final correlation in the report.",
+              "es-MX": "La clase presenta estas herramientas como aceleradores: en lugar de unir manualmente logs, chats y EXIF en hojas de cálculo, el perito puede usar timelines integrados para explorar y luego documentar la correlación final en el informe."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "ejemplo-integrado",
+        "Question Text": {
+          "en-US": [
+            "In the integrated example provided (photo, WhatsApp message, network and GPS), what is the MOST important conclusion the class highlights?"
+          ],
+          "es-MX": [
+            "En el ejemplo integrado proporcionado (foto, mensaje de WhatsApp, red y GPS), ¿cuál es la conclusión MÁS importante que resalta la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "That the photo was taken seconds before it was sent, at the same place indicated by GPS, with active network connection, which supports a coherent and technically validated narrative of the event",
+            "That the photo must be fake because all timestamps match perfectly",
+            "That GPS is always more reliable than any other artifact and the rest can be ignored",
+            "That only the network log matters and multimedia or chat content are irrelevant"
+          ],
+          "es-MX": [
+            "Que la foto fue tomada segundos antes de ser enviada, en el mismo lugar indicado por el GPS, con conexión de red activa, lo que respalda una narrativa coherente y técnicamente validada del hecho",
+            "Que la foto debe ser falsa porque todos los timestamps coinciden perfectamente",
+            "Que el GPS es siempre más confiable que cualquier otro artefacto y lo demás puede ignorarse",
+            "Que solo importa el log de red y la multimedia o el contenido del chat son irrelevantes"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "That the photo was taken seconds before it was sent, at the same place indicated by GPS, with active network connection, which supports a coherent and technically validated narrative of the event",
+          "es-MX": "Que la foto fue tomada segundos antes de ser enviada, en el mismo lugar indicado por el GPS, con conexión de red activa, lo que respalda una narrativa coherente y técnicamente validada del hecho"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Multiple artifacts converge on a consistent story.",
+                "Such convergence increases the probative strength of the evidence.",
+                "If one of the artifacts contradicted the others, that would require further investigation."
+              ],
+              "es-MX": [
+                "Varios artefactos convergen en una misma historia consistente.",
+                "Esa convergencia aumenta la fuerza probatoria de la evidencia.",
+                "Si uno de los artefactos contradijera a los demás, haría falta una investigación adicional."
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

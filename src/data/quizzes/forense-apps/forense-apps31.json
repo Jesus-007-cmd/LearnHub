@@ -1,0 +1,695 @@
+{
+    "meta": {
+      "slug": "forense-apps31",
+      "title": "Clase 31 – Extracción de registros de chat en WhatsApp",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 3,
+      "classNo": 31,
+      "description": "Análisis forense de WhatsApp a partir de la base msgstore.db, interpretando tablas y campos clave para extraer mensajes, metadatos, adjuntos y rastros de conversaciones eliminadas, correlacionándolos con wa.db y la carpeta de multimedia.",
+      "tags": [
+        "whatsapp forense",
+        "msgstore.db",
+        "wa.db",
+        "sqlite",
+        "mensajes eliminados",
+        "multimedia",
+        "metadatos",
+        "chat forense"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "whatsapp-evidencia",
+        "Question Text": {
+          "en-US": [
+            "Why is WhatsApp considered one of the most important sources of digital evidence in modern forensic investigations?"
+          ],
+          "es-MX": [
+            "¿Por qué se considera a WhatsApp una de las fuentes de evidencia digital más importantes en las investigaciones forenses modernas?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it concentrates personal, work and multimedia communications, allowing reconstruction of events, participants and timelines",
+            "Because it automatically deletes all conversations every 24 hours",
+            "Because it only stores anonymous system messages without identifiable users",
+            "Because it cannot store multimedia, only plain text"
+          ],
+          "es-MX": [
+            "Porque concentra comunicaciones personales, de trabajo y multimedia, permitiendo reconstruir eventos, participantes y líneas de tiempo",
+            "Porque borra automáticamente todas las conversaciones cada 24 horas",
+            "Porque solo almacena mensajes de sistema anónimos sin usuarios identificables",
+            "Porque no puede almacenar multimedia, solo texto plano"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it concentrates personal, work and multimedia communications, allowing reconstruction of events, participants and timelines",
+          "es-MX": "Porque concentra comunicaciones personales, de trabajo y multimedia, permitiendo reconstruir eventos, participantes y líneas de tiempo"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "WhatsApp is massively used for personal, work and even criminal coordination.",
+                "It combines text, calls, locations, documents and photos in the same channel.",
+                "Its internal database preserves messages and metadata that describe who, when and how they communicated."
+              ],
+              "es-MX": [
+                "WhatsApp se usa de forma masiva para comunicación personal, laboral e incluso coordinación delictiva.",
+                "Combina texto, llamadas, ubicaciones, documentos y fotos en el mismo canal.",
+                "Su base de datos interna conserva mensajes y metadatos que describen quién, cuándo y cómo se comunicó."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "archivos-principales",
+        "Question Text": {
+          "en-US": [
+            "According to the class, which statement BEST describes the roles of msgstore.db and wa.db in WhatsApp forensic analysis?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿qué afirmación describe MEJOR los roles de msgstore.db y wa.db en el análisis forense de WhatsApp?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "msgstore.db stores messages and chat content, while wa.db stores contacts, phone numbers and chat configuration",
+            "msgstore.db stores only application logs, and wa.db stores only images and videos",
+            "msgstore.db stores contacts and wa.db exclusively stores the operating system files",
+            "Both files are identical copies and there is no functional difference between them"
+          ],
+          "es-MX": [
+            "msgstore.db almacena mensajes y contenido de chats, mientras que wa.db almacena contactos, números telefónicos y configuración de chats",
+            "msgstore.db almacena únicamente logs de la aplicación y wa.db solo imágenes y videos",
+            "msgstore.db almacena contactos y wa.db almacena exclusivamente los archivos del sistema operativo",
+            "Ambos archivos son copias idénticas y no hay diferencia funcional entre ellos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "msgstore.db stores messages and chat content, while wa.db stores contacts, phone numbers and chat configuration",
+          "es-MX": "msgstore.db almacena mensajes y contenido de chats, mientras que wa.db almacena contactos, números telefónicos y configuración de chats"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class explains that msgstore.db is focused on conversations (messages, metadata, attachments), whereas wa.db focuses on who participates (contacts, numbers and chat parameters). Together they let the examiner link messages to specific people.",
+              "es-MX": "La clase explica que msgstore.db se enfoca en las conversaciones (mensajes, metadatos, adjuntos), mientras que wa.db se enfoca en quién participa (contactos, números y parámetros de chat). En conjunto permiten vincular mensajes con personas concretas."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "ubicacion-archivos",
+        "Question Text": {
+          "en-US": [
+            "Which option correctly matches common locations of WhatsApp databases mentioned in the class?"
+          ],
+          "es-MX": [
+            "¿Qué opción relaciona correctamente las ubicaciones comunes de las bases de datos de WhatsApp mencionadas en la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "/data/data/com.whatsapp/databases/msgstore.db for advanced Android extraction and /sdcard/WhatsApp/Databases/msgstore.db.crypt12 for accessible storage",
+            "C:\\\\Windows\\\\System32\\\\whatsapp\\\\msgstore.db for all devices",
+            "/usr/local/whatsapp/msgstore.dat for any Android installation",
+            "Only in the cloud, since WhatsApp never stores local databases on the device"
+          ],
+          "es-MX": [
+            "/data/data/com.whatsapp/databases/msgstore.db para extracción avanzada en Android y /sdcard/WhatsApp/Databases/msgstore.db.crypt12 para almacenamiento accesible",
+            "C:\\\\Windows\\\\System32\\\\whatsapp\\\\msgstore.db para todos los dispositivos",
+            "/usr/local/whatsapp/msgstore.dat para cualquier instalación de Android",
+            "Solo en la nube, ya que WhatsApp nunca almacena bases de datos locales en el dispositivo"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "/data/data/com.whatsapp/databases/msgstore.db for advanced Android extraction and /sdcard/WhatsApp/Databases/msgstore.db.crypt12 for accessible storage",
+          "es-MX": "/data/data/com.whatsapp/databases/msgstore.db para extracción avanzada en Android y /sdcard/WhatsApp/Databases/msgstore.db.crypt12 para almacenamiento accesible"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "On Android, the internal SQLite database is usually under /data/data, accessible only with advanced extraction.",
+                "The .crypt12 files on /sdcard/WhatsApp/Databases are encrypted backups.",
+                "On iPhone, similar content appears in ChatStorage.sqlite inside the app group path from a backup."
+              ],
+              "es-MX": [
+                "En Android, la base SQLite interna suele estar en /data/data, accesible solo con extracción avanzada.",
+                "Los archivos .crypt12 en /sdcard/WhatsApp/Databases son respaldos cifrados.",
+                "En iPhone, contenido similar aparece en ChatStorage.sqlite dentro de la ruta del grupo de apps obtenida desde un respaldo."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "tabla-principal-messages",
+        "Question Text": {
+          "en-US": [
+            "Which statement about the messages table in msgstore.db is MOST accurate according to the class?"
+          ],
+          "es-MX": [
+            "¿Qué afirmación sobre la tabla messages en msgstore.db es MÁS acertada según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It is the main table, storing message texts, metadata, media references and status information used to reconstruct chats",
+            "It only stores application error logs and is not useful for forensic analysis",
+            "It contains only contact names without any message content",
+            "It exists only in backups, not in the live database on the device"
+          ],
+          "es-MX": [
+            "Es la tabla principal, donde se almacenan textos de mensajes, metadatos, referencias a multimedia e información de estado para reconstruir chats",
+            "Solo almacena registros de errores de la aplicación y no es útil para el análisis forense",
+            "Contiene únicamente nombres de contactos sin ningún contenido de mensaje",
+            "Existe solo en los respaldos y no en la base activa del dispositivo"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It is the main table, storing message texts, metadata, media references and status information used to reconstruct chats",
+          "es-MX": "Es la tabla principal, donde se almacenan textos de mensajes, metadatos, referencias a multimedia e información de estado para reconstruir chats"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class highlights messages as the central table: each row represents a message with its text, timestamps, direction (sent/received) and links to attachments, making it the starting point of any analysis.",
+              "es-MX": "La clase resalta a messages como la tabla central: cada fila representa un mensaje con su texto, timestamps, dirección (enviado/recibido) y vínculos a adjuntos, por lo que es el punto de partida del análisis."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "campo-key-from-me",
+        "Question Text": {
+          "en-US": [
+            "How should the field key_from_me in the messages table be interpreted during forensic analysis?"
+          ],
+          "es-MX": [
+            "¿Cómo debe interpretarse el campo key_from_me en la tabla messages durante el análisis forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "1 means the message was sent from the user’s device; 0 means it was received by the user",
+            "1 means the message is corrupted and cannot be used; 0 means it is valid",
+            "1 means the message was edited after sending; 0 means it was never edited",
+            "1 means the message belongs to a group chat; 0 means it belongs to an individual chat"
+          ],
+          "es-MX": [
+            "1 significa que el mensaje fue enviado desde el dispositivo del usuario; 0 significa que fue recibido por el usuario",
+            "1 significa que el mensaje está corrupto y no se puede usar; 0 significa que es válido",
+            "1 significa que el mensaje fue editado tras enviarse; 0 significa que nunca fue editado",
+            "1 significa que el mensaje pertenece a un chat grupal; 0 significa que pertenece a un chat individual"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "1 means the message was sent from the user’s device; 0 means it was received by the user",
+          "es-MX": "1 significa que el mensaje fue enviado desde el dispositivo del usuario; 0 significa que fue recibido por el usuario"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "key_from_me is a direction flag for each message.",
+                "It helps distinguish the user’s own messages from those coming from other contacts.",
+                "This is crucial for attributing authorship and reconstructing conversations objectively."
+              ],
+              "es-MX": [
+                "key_from_me es una bandera de dirección para cada mensaje.",
+                "Permite distinguir los mensajes propios de los que provienen de otros contactos.",
+                "Esto es clave para atribuir autoría y reconstruir conversaciones de forma objetiva."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "campo-key-remote-jid",
+        "Question Text": {
+          "en-US": [
+            "What does the field key_remote_jid represent in msgstore.db according to the class?"
+          ],
+          "es-MX": [
+            "¿Qué representa el campo key_remote_jid en msgstore.db según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The chat identifier, which can correspond to an individual contact or a group",
+            "The internal identifier of the database engine only",
+            "The local file path of each media attachment",
+            "The IMEI number of the device used to send the message"
+          ],
+          "es-MX": [
+            "El identificador del chat, que puede corresponder a un contacto individual o a un grupo",
+            "El identificador interno únicamente del motor de base de datos",
+            "La ruta local de cada archivo adjunto",
+            "El número IMEI del dispositivo utilizado para enviar el mensaje"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The chat identifier, which can correspond to an individual contact or a group",
+          "es-MX": "El identificador del chat, que puede corresponder a un contacto individual o a un grupo"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "key_remote_jid groups messages by conversation. It usually contains the phone number or group ID, allowing the examiner to associate each row in messages with a specific chat in chat_list and wa.db.",
+              "es-MX": "key_remote_jid agrupa los mensajes por conversación. Suele contener el número de teléfono o el ID de grupo, permitiendo asociar cada fila de messages a un chat específico en chat_list y wa.db."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "remote-resource-grupos",
+        "Question Text": {
+          "en-US": [
+            "In group chats, what is the forensic use of the remote_resource field in the messages table?"
+          ],
+          "es-MX": [
+            "En los chats grupales, ¿cuál es la utilidad forense del campo remote_resource en la tabla messages?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It identifies which participant in the group sent a specific message",
+            "It stores the Wi-Fi network name used during the message sending",
+            "It indicates the country where the phone was manufactured",
+            "It stores the hash of the entire group conversation"
+          ],
+          "es-MX": [
+            "Permite identificar qué participante del grupo envió un mensaje concreto",
+            "Almacena el nombre de la red Wi-Fi usada al enviar el mensaje",
+            "Indica el país donde se fabricó el teléfono",
+            "Almacena el hash de toda la conversación del grupo"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It identifies which participant in the group sent a specific message",
+          "es-MX": "Permite identificar qué participante del grupo envió un mensaje concreto"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "In group conversations, key_remote_jid identifies the group itself.",
+                "remote_resource stores the identifier (usually the number) of the member who authored each message.",
+                "This enables precise attribution of statements to specific people inside a group."
+              ],
+              "es-MX": [
+                "En conversaciones grupales, key_remote_jid identifica al grupo como tal.",
+                "remote_resource almacena el identificador (normalmente número) del miembro que fue autor del mensaje.",
+                "Esto permite atribuir con precisión cada mensaje a una persona concreta dentro del grupo."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "media-wa-type",
+        "Question Text": {
+          "en-US": [
+            "How does the media_wa_type field help classify message content in msgstore.db?"
+          ],
+          "es-MX": [
+            "¿Cómo ayuda el campo media_wa_type a clasificar el contenido de los mensajes en msgstore.db?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "By using codes such as 0 for text, 1 for image, 2 for audio, 3 for video and 9 for location, among others",
+            "By storing only the file extension of the attachment",
+            "By storing the color of the chat background used when sending the message",
+            "By indicating only whether the message belongs to a backup or not"
+          ],
+          "es-MX": [
+            "Mediante códigos como 0 para texto, 1 para imagen, 2 para audio, 3 para video y 9 para ubicación, entre otros",
+            "Almacena únicamente la extensión del archivo adjunto",
+            "Almacena el color del fondo de chat usado al enviar el mensaje",
+            "Indica únicamente si el mensaje pertenece a un respaldo o no"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "By using codes such as 0 for text, 1 for image, 2 for audio, 3 for video and 9 for location, among others",
+          "es-MX": "Mediante códigos como 0 para texto, 1 para imagen, 2 para audio, 3 para video y 9 para ubicación, entre otros"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "media_wa_type is a classification field that indicates the nature of the message (text-only, image, voice note, video, location, etc.), which helps filter and focus on specific types of evidence.",
+              "es-MX": "media_wa_type es un campo de clasificación que indica la naturaleza del mensaje (solo texto, imagen, nota de voz, video, ubicación, etc.), ayudando a filtrar y focalizar tipos concretos de evidencia."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "tabla-chat-list",
+        "Question Text": {
+          "en-US": [
+            "What is the MAIN purpose of the chat_list table in WhatsApp’s msgstore.db according to the material?"
+          ],
+          "es-MX": [
+            "¿Cuál es el propósito PRINCIPAL de la tabla chat_list en msgstore.db de WhatsApp según el material?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To store summary information for each chat (ID, name, number, last message, type and creation time)",
+            "To store only the thumbnails of all images sent",
+            "To manage the operating system logs unrelated to WhatsApp",
+            "To store the IMEI history of all devices that have used this account"
+          ],
+          "es-MX": [
+            "Almacenar información de resumen para cada chat (ID, nombre, número, último mensaje, tipo y tiempo de creación)",
+            "Almacenar únicamente las miniaturas de todas las imágenes enviadas",
+            "Gestionar registros del sistema operativo no relacionados con WhatsApp",
+            "Almacenar el historial de IMEI de todos los dispositivos que han usado esta cuenta"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To store summary information for each chat (ID, name, number, last message, type and creation time)",
+          "es-MX": "Almacenar información de resumen para cada chat (ID, nombre, número, último mensaje, tipo y tiempo de creación)"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "chat_list works as an index of conversations.",
+                "It allows linking the internal IDs with human-readable names and phone numbers.",
+                "This is useful for presenting results in a clearer way in reports and tools."
+              ],
+              "es-MX": [
+                "chat_list funciona como un índice de conversaciones.",
+                "Permite vincular los IDs internos con nombres y números legibles por humanos.",
+                "Esto facilita presentar resultados de forma más clara en informes y herramientas."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "tabla-message-thumbnails",
+        "Question Text": {
+          "en-US": [
+            "From a forensic perspective, what is the MOST relevant role of the message_thumbnails table?"
+          ],
+          "es-MX": [
+            "Desde la perspectiva forense, ¿cuál es el papel MÁS relevante de la tabla message_thumbnails?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It preserves thumbnails of photos and videos that may remain even when the main media has been deleted from the device",
+            "It stores only configuration settings for the language of the app",
+            "It contains temporary files that are always securely wiped after closing WhatsApp",
+            "It stores only the user’s profile photo"
+          ],
+          "es-MX": [
+            "Conserva miniaturas de fotos y videos que pueden permanecer aunque el archivo principal se haya borrado del dispositivo",
+            "Almacena solo configuraciones de idioma de la aplicación",
+            "Contiene archivos temporales que siempre se eliminan de forma segura al cerrar WhatsApp",
+            "Almacena únicamente la foto de perfil del usuario"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It preserves thumbnails of photos and videos that may remain even when the main media has been deleted from the device",
+          "es-MX": "Conserva miniaturas de fotos y videos que pueden permanecer aunque el archivo principal se haya borrado del dispositivo"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class emphasizes that thumbnails are valuable residual artifacts: they can show that a certain image or video existed and was associated with a conversation, even if the full file is gone.",
+              "es-MX": "La clase enfatiza que las miniaturas son artefactos residuales valiosos: permiten demostrar que existió cierta imagen o video y que estuvo asociado a una conversación, incluso si el archivo completo ya no está."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "mensajes-eliminados",
+        "Question Text": {
+          "en-US": [
+            "Which pattern BEST indicates a potentially deleted message inside msgstore.db as described in the class?"
+          ],
+          "es-MX": [
+            "¿Qué patrón indica MEJOR un mensaje potencialmente eliminado dentro de msgstore.db, según lo descrito en la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Records where data and media_* fields appear empty or NULL, but timestamps and other metadata remain",
+            "Records with duplicated IMEI values in wa.db",
+            "Records whose ID (_id) is always equal to zero",
+            "Records that only contain emojis and no text"
+          ],
+          "es-MX": [
+            "Registros donde data y campos media_* aparecen vacíos o en NULL, pero permanecen los timestamps y otros metadatos",
+            "Registros con IMEI duplicados en wa.db",
+            "Registros cuyo ID (_id) es siempre igual a cero",
+            "Registros que solo contienen emojis y ningún texto"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Records where data and media_* fields appear empty or NULL, but timestamps and other metadata remain",
+          "es-MX": "Registros donde data y campos media_* aparecen vacíos o en NULL, pero permanecen los timestamps y otros metadatos"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "When a message is deleted, WhatsApp may remove the visible content but keep structural traces.",
+                "Timestamps, chat IDs and status fields can survive even without text or media.",
+                "These remnants, plus unallocated pages, help reconstruct deleted communications."
+              ],
+              "es-MX": [
+                "Cuando se elimina un mensaje, WhatsApp puede borrar el contenido visible pero dejar rastros estructurales.",
+                "Timestamps, IDs de chat y campos de estado pueden sobrevivir aun sin texto ni multimedia.",
+                "Estos restos, junto con páginas no asignadas, ayudan a reconstruir comunicaciones borradas."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "rutas-multimedia",
+        "Question Text": {
+          "en-US": [
+            "How are media attachments typically correlated between msgstore.db and the file system according to the class?"
+          ],
+          "es-MX": [
+            "¿Cómo se correlacionan típicamente los adjuntos multimedia entre msgstore.db y el sistema de archivos según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "By matching media_name and related fields with files in folders such as /WhatsApp/Media/WhatsApp Images/ or /WhatsApp/Media/WhatsApp Video/",
+            "By inspecting only the device’s recycle bin and ignoring the database",
+            "By comparing the operating system version with the file size of each attachment",
+            "By using only the phone’s IMEI without any reference to file names"
+          ],
+          "es-MX": [
+            "Haciendo coincidir media_name y campos relacionados con archivos en carpetas como /WhatsApp/Media/WhatsApp Images/ o /WhatsApp/Media/WhatsApp Video/",
+            "Inspeccionando solo la papelera de reciclaje del dispositivo e ignorando la base de datos",
+            "Comparando la versión del sistema operativo con el tamaño de archivo de cada adjunto",
+            "Usando únicamente el IMEI del teléfono sin referencia a nombres de archivo"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "By matching media_name and related fields with files in folders such as /WhatsApp/Media/WhatsApp Images/ or /WhatsApp/Media/WhatsApp Video/",
+          "es-MX": "Haciendo coincidir media_name y campos relacionados con archivos en carpetas como /WhatsApp/Media/WhatsApp Images/ o /WhatsApp/Media/WhatsApp Video/"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The database stores references (names, hashes, sizes) that act as pointers to physical files in the /WhatsApp/Media/ directory tree, allowing the examiner to tie each attachment to its conversation.",
+              "es-MX": "La base almacena referencias (nombres, hashes, tamaños) que actúan como punteros a archivos físicos en el árbol de directorios /WhatsApp/Media/, permitiendo vincular cada adjunto con su conversación."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "timestamps-envio-lectura",
+        "Question Text": {
+          "en-US": [
+            "Which set of fields is MOST useful to reconstruct send, delivery and read times of a WhatsApp message?"
+          ],
+          "es-MX": [
+            "¿Qué conjunto de campos es MÁS útil para reconstruir los tiempos de envío, entrega y lectura de un mensaje de WhatsApp?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "timestamp, receipt_server_timestamp and receipt_device_timestamp",
+            "Only the message text and the media_wa_type value",
+            "The phone’s battery level and free storage space at the time of sending",
+            "The IMEI and Android ID of the device"
+          ],
+          "es-MX": [
+            "timestamp, receipt_server_timestamp y receipt_device_timestamp",
+            "Solo el texto del mensaje y el valor de media_wa_type",
+            "El nivel de batería y el espacio libre de almacenamiento al momento de enviar",
+            "El IMEI y el Android ID del dispositivo"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "timestamp, receipt_server_timestamp and receipt_device_timestamp",
+          "es-MX": "timestamp, receipt_server_timestamp y receipt_device_timestamp"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "timestamp usually corresponds to the send time from the device.",
+                "receipt_server_timestamp indicates when the server confirmed delivery.",
+                "receipt_device_timestamp approximates when the message was seen on the recipient device."
+              ],
+              "es-MX": [
+                "timestamp suele corresponder al tiempo de envío desde el dispositivo.",
+                "receipt_server_timestamp indica cuándo el servidor confirmó la entrega.",
+                "receipt_device_timestamp aproxima cuándo se vio el mensaje en el dispositivo receptor."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "proceso-analisis-msgstore",
+        "Question Text": {
+          "en-US": [
+            "Which sequence BEST represents the general process for analyzing msgstore.db described in the class?"
+          ],
+          "es-MX": [
+            "¿Qué secuencia representa MEJOR el proceso general para analizar msgstore.db descrito en la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Open the database → locate messages table → filter by date/chat/type → interpret text and metadata → correlate media with file system → search for deleted messages → reconstruct conversations",
+            "Open the database → delete old records → compress the file → reinstall WhatsApp",
+            "Only open wa.db and ignore msgstore.db because it contains no relevant information",
+            "Export the database to a different format and then immediately destroy the original without documentation"
+          ],
+          "es-MX": [
+            "Abrir la base → localizar la tabla messages → filtrar por fecha/chat/tipo → interpretar texto y metadatos → correlacionar multimedia con el sistema de archivos → buscar mensajes eliminados → reconstruir conversaciones",
+            "Abrir la base → borrar registros antiguos → comprimir el archivo → reinstalar WhatsApp",
+            "Abrir solo wa.db e ignorar msgstore.db porque no contiene información relevante",
+            "Exportar la base a otro formato y destruir de inmediato el original sin documentación"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Open the database → locate messages table → filter by date/chat/type → interpret text and metadata → correlate media with file system → search for deleted messages → reconstruct conversations",
+          "es-MX": "Abrir la base → localizar la tabla messages → filtrar por fecha/chat/tipo → interpretar texto y metadatos → correlacionar multimedia con el sistema de archivos → buscar mensajes eliminados → reconstruir conversaciones"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class proposes a structured workflow that starts from the raw database and gradually adds context: messages, attachments, deleted remnants and finally a coherent narrative of the chat.",
+              "es-MX": "La clase propone un flujo estructurado que parte de la base cruda y va añadiendo contexto: mensajes, adjuntos, restos de eliminados y finalmente una narrativa coherente del chat."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "indicadores-forenses-interes",
+        "Question Text": {
+          "en-US": [
+            "Which combination includes EXAMPLES of forensic indicators of interest in WhatsApp databases mentioned in the material?"
+          ],
+          "es-MX": [
+            "¿Qué combinación incluye EJEMPLOS de indicadores forenses de interés en bases de datos de WhatsApp mencionados en el material?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Null content with remaining timestamps, orphan thumbnails, repeated media hashes, abrupt timestamp changes and duplicated chats after restorations",
+            "Color changes in the chat wallpaper, preferred emoji style and font size",
+            "The exact battery percentage at the time of each message and the ringtone used",
+            "The user’s preferred language for the interface and the number of installed apps"
+          ],
+          "es-MX": [
+            "Contenido nulo con timestamps presentes, miniaturas huérfanas, hashes de media repetidos, cambios bruscos en timestamps y chats duplicados tras restauraciones",
+            "Cambios de color en el fondo del chat, estilo de emojis preferidos y tamaño de letra",
+            "El porcentaje exacto de batería al momento de cada mensaje y el tono de llamada usado",
+            "El idioma preferido de la interfaz y el número de aplicaciones instaladas"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Null content with remaining timestamps, orphan thumbnails, repeated media hashes, abrupt timestamp changes and duplicated chats after restorations",
+          "es-MX": "Contenido nulo con timestamps presentes, miniaturas huérfanas, hashes de media repetidos, cambios bruscos en timestamps y chats duplicados tras restauraciones"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Null content with metadata suggests deletions.",
+                "Orphan thumbnails and repeated hashes show reused or removed attachments.",
+                "Abrupt timestamp shifts and duplicated chats can indicate restorations or manipulation."
+              ],
+              "es-MX": [
+                "Contenido nulo con metadatos sugiere eliminaciones.",
+                "Miniaturas huérfanas y hashes repetidos muestran adjuntos reutilizados o borrados.",
+                "Saltos bruscos de tiempo y chats duplicados pueden indicar restauraciones o manipulación."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "ejemplo-interpretacion-mensaje",
+        "Question Text": {
+          "en-US": [
+            "Given a record where key_from_me = 0, media_wa_type = 3 and media_name points to a file under /WhatsApp/Media/WhatsApp Video/, which interpretation BEST matches the class explanation?"
+          ],
+          "es-MX": [
+            "Dado un registro donde key_from_me = 0, media_wa_type = 3 y media_name apunta a un archivo en /WhatsApp/Media/WhatsApp Video/, ¿qué interpretación coincide MEJOR con la explicación de la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It is a video message received by the user, stored under the WhatsApp Video folder",
+            "It is a text-only message sent by the user without any attachment",
+            "It is an internal system log that does not correspond to any chat",
+            "It is a deleted contact record in wa.db"
+          ],
+          "es-MX": [
+            "Se trata de un mensaje de video recibido por el usuario, almacenado en la carpeta WhatsApp Video",
+            "Se trata de un mensaje solo de texto enviado por el usuario sin adjunto",
+            "Es un registro interno del sistema que no corresponde a ningún chat",
+            "Es un contacto eliminado en wa.db"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It is a video message received by the user, stored under the WhatsApp Video folder",
+          "es-MX": "Se trata de un mensaje de video recibido por el usuario, almacenado en la carpeta WhatsApp Video"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "key_from_me = 0 indicates the device owner received the message, media_wa_type = 3 classifies the content as video and the path in media_name shows the expected folder for that attachment.",
+              "es-MX": "key_from_me = 0 indica que el propietario del dispositivo recibió el mensaje, media_wa_type = 3 clasifica el contenido como video y la ruta de media_name muestra la carpeta esperada para ese adjunto."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

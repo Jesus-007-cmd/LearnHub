@@ -1,0 +1,602 @@
+{
+    "meta": {
+      "slug": "forense-apps66",
+      "title": "Presentación judicial de la evidencia forense digital",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 5,
+      "classNo": 66,
+      "description": "Presentación de evidencia forense digital ante jueces y abogados, desarrollando habilidades de comunicación técnica, claridad, control emocional y defensa del informe pericial en un entorno judicial.",
+      "tags": [
+        "presentación judicial",
+        "testimonio pericial",
+        "comunicación técnica",
+        "juicio",
+        "cadena de custodia",
+        "imparcialidad",
+        "unidad V"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "Rol del perito en juicio",
+        "Question Text": {
+          "en-US": [
+            "What is the main objective of a digital forensic expert when presenting evidence in a judicial setting?"
+          ],
+          "es-MX": [
+            "¿Cuál es el objetivo principal de un perito en informática forense al presentar evidencia en un entorno judicial?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To explain the digital evidence in a clear, objective and technically justified way so that the judge and the parties understand what the data truly shows.",
+            "To convince the court to support the side that hired the expert, even if the data is not entirely conclusive.",
+            "To use as many technical terms as possible to demonstrate superior knowledge over the lawyers and the judge.",
+            "To decide who is guilty or innocent based on personal interpretation of the case."
+          ],
+          "es-MX": [
+            "Explicar la evidencia digital de forma clara, objetiva y técnicamente fundamentada para que el juez y las partes comprendan lo que realmente muestran los datos.",
+            "Convencer al tribunal de apoyar a la parte que contrató al perito, aunque los datos no sean del todo concluyentes.",
+            "Usar la mayor cantidad posible de tecnicismos para demostrar un conocimiento superior al de los abogados y el juez.",
+            "Determinar quién es culpable o inocente con base en la interpretación personal del caso."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To explain the digital evidence in a clear, objective and technically justified way so that the judge and the parties understand what the data truly shows.",
+          "es-MX": "Explicar la evidencia digital de forma clara, objetiva y técnicamente fundamentada para que el juez y las partes comprendan lo que realmente muestran los datos."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The expert’s role is not to replace the judge but to translate complex technical analysis into understandable, verifiable information that can support legal decision-making."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "The expert presents facts, not personal opinions about guilt or innocence.",
+                "Clarity and objectivity are essential for the judge to correctly interpret digital evidence.",
+                "Technical justification shows how the expert obtained, preserved and analyzed the data.",
+                "The testimony must help the court understand what the evidence really supports and what it does not."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El papel del perito no es sustituir al juez, sino traducir un análisis técnico complejo en información comprensible y verificable que pueda apoyar la toma de decisiones legales."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "El perito presenta hechos, no opiniones personales sobre culpabilidad o inocencia.",
+                "La claridad y la objetividad son esenciales para que el juez interprete correctamente la evidencia digital.",
+                "La fundamentación técnica muestra cómo se obtuvo, preservó y analizó la información.",
+                "El testimonio debe ayudar al tribunal a entender qué respalda realmente la evidencia y qué no."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Explicación de metodología",
+        "Question Text": {
+          "en-US": [
+            "Which aspect is essential when a digital forensic expert explains the methodology used to obtain and analyze the evidence?"
+          ],
+          "es-MX": [
+            "¿Qué aspecto es esencial cuando un perito en informática forense explica la metodología utilizada para obtener y analizar la evidencia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Describing the steps followed (identification, acquisition, preservation, analysis and documentation) in a logical order and in language that non-technical people can understand.",
+            "Limiting the explanation to the name of the tool used, without detailing the steps or justifications.",
+            "Stating that the analysis was done ‘as it is always done’ and that there is no need to explain technical details.",
+            "Refusing to explain the methodology to avoid revealing how the analysis was performed."
+          ],
+          "es-MX": [
+            "Describir los pasos seguidos (identificación, adquisición, preservación, análisis y documentación) en un orden lógico y con un lenguaje que personas no técnicas puedan comprender.",
+            "Limitar la explicación al nombre de la herramienta utilizada, sin detallar los pasos ni las justificaciones.",
+            "Afirmar que el análisis se hizo ‘como siempre se hace’ y que no es necesario explicar detalles técnicos.",
+            "Negarse a explicar la metodología para evitar revelar cómo se realizó el análisis."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Describing the steps followed (identification, acquisition, preservation, analysis and documentation) in a logical order and in language that non-technical people can understand.",
+          "es-MX": "Describir los pasos seguidos (identificación, adquisición, preservación, análisis y documentación) en un orden lógico y con un lenguaje que personas no técnicas puedan comprender."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "The court must be able to see that the methodology followed accepted forensic standards.",
+                "Explaining the steps shows that the process was controlled, traceable and replicable.",
+                "Using understandable language allows judges and lawyers to evaluate whether the procedure is reliable.",
+                "A clear explanation of the methodology strengthens the credibility of both the report and the expert."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "El tribunal debe poder comprobar que la metodología siguió estándares forenses aceptados.",
+                "Describir los pasos demuestra que el proceso fue controlado, trazable y replicable.",
+                "Usar un lenguaje comprensible permite a jueces y abogados evaluar si el procedimiento es confiable.",
+                "Una explicación clara de la metodología fortalece la credibilidad del informe y del perito."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Claridad y lenguaje técnico",
+        "Question Text": {
+          "en-US": [
+            "What is the most appropriate communication style for a digital forensic expert when testifying in court?"
+          ],
+          "es-MX": [
+            "¿Cuál es el estilo de comunicación más adecuado para un perito en informática forense al declarar en juicio?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Using simple, structured explanations, avoiding unnecessary jargon and clarifying technical terms with practical examples when needed.",
+            "Using as many acronyms and highly specialized terms as possible to demonstrate advanced knowledge.",
+            "Answering questions with very brief phrases such as ‘yes’ or ‘no’ without giving any technical context.",
+            "Speaking in a casual, informal tone, assuming that the judge will ask for details only if something is not understood."
+          ],
+          "es-MX": [
+            "Utilizar explicaciones simples y estructuradas, evitando jerga innecesaria y aclarando los términos técnicos con ejemplos prácticos cuando sea necesario.",
+            "Usar la mayor cantidad posible de siglas y términos altamente especializados para demostrar conocimiento avanzado.",
+            "Responder con frases muy breves como ‘sí’ o ‘no’ sin aportar contexto técnico.",
+            "Hablar en un tono casual e informal, suponiendo que el juez pedirá detalles solo si algo no se entiende."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Using simple, structured explanations, avoiding unnecessary jargon and clarifying technical terms with practical examples when needed.",
+          "es-MX": "Utilizar explicaciones simples y estructuradas, evitando jerga innecesaria y aclarando los términos técnicos con ejemplos prácticos cuando sea necesario."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Clear communication allows the court to understand both the process and the meaning of the digital evidence."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Excessive jargon can confuse and weaken the impact of the evidence.",
+                "Structured explanations help maintain a logical thread during testimony.",
+                "Practical examples connect technical concepts to real situations.",
+                "The goal is to be precise and understandable at the same time."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Una comunicación clara permite que el tribunal entienda tanto el proceso como el significado de la evidencia digital."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "El exceso de jerga puede confundir y debilitar el impacto de la evidencia.",
+                "Las explicaciones estructuradas ayudan a mantener un hilo lógico en la declaración.",
+                "Los ejemplos prácticos conectan los conceptos técnicos con situaciones reales.",
+                "El objetivo es ser preciso y comprensible al mismo tiempo."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Neutralidad del testimonio",
+        "Question Text": {
+          "en-US": [
+            "How should a digital forensic expert express conclusions during judicial testimony to maintain neutrality?"
+          ],
+          "es-MX": [
+            "¿Cómo debe expresar sus conclusiones un perito en informática forense durante la declaración judicial para mantener la neutralidad?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Using formulations such as ‘The evidence shows that…’ or ‘According to the verified records…’ and avoiding personal opinions about the intentions of the people involved.",
+            "Stating clearly which person is ‘definitely guilty’ based on personal interpretation of the messages or files.",
+            "Adapting the language of the conclusions to favor the narrative of the party that hired the expert.",
+            "Using emotional expressions such as ‘clearly suspicious’ or ‘obviously malicious’ to emphasize the seriousness of the facts."
+          ],
+          "es-MX": [
+            "Utilizar formulaciones como ‘La evidencia muestra que…’ o ‘Según los registros verificados…’ y evitar opiniones personales sobre las intenciones de las personas involucradas.",
+            "Afirmar de forma expresa qué persona es ‘definitivamente culpable’ con base en la interpretación personal de los mensajes o archivos.",
+            "Ajustar el lenguaje de las conclusiones para favorecer la narrativa de la parte que contrató al perito.",
+            "Utilizar expresiones emocionales como ‘claramente sospechoso’ u ‘obviamente malicioso’ para resaltar la gravedad de los hechos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Using formulations such as ‘The evidence shows that…’ or ‘According to the verified records…’ and avoiding personal opinions about the intentions of the people involved.",
+          "es-MX": "Utilizar formulaciones como ‘La evidencia muestra que…’ o ‘Según los registros verificados…’ y evitar opiniones personales sobre las intenciones de las personas involucradas."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Neutral testimony is focused on what can be technically proven.",
+                "The expert must not attribute intentions or motivations; that is the task of the court.",
+                "Phrases anchored in evidence strengthen the objectivity of the testimony.",
+                "Emotional or accusatory language can be questioned and reduces credibility."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "El testimonio neutral se centra en lo que puede probarse técnicamente.",
+                "El perito no debe atribuir intenciones o motivaciones; esa es tarea del tribunal.",
+                "Las frases ancladas en la evidencia refuerzan la objetividad de la declaración.",
+                "El lenguaje emocional o acusatorio puede ser cuestionado y disminuye la credibilidad."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Congruencia informe-testimonio",
+        "Question Text": {
+          "en-US": [
+            "What is the main risk if a digital forensic expert gives oral testimony that contradicts what is written in the forensic report?"
+          ],
+          "es-MX": [
+            "¿Cuál es el riesgo principal si un perito en informática forense ofrece un testimonio oral que contradice lo que está escrito en el informe pericial?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The credibility of the expert and the reliability of the entire report can be seriously questioned by the judge and the parties.",
+            "The court will automatically assume that the oral version is always more valid than any written report.",
+            "No relevant consequence, because contradictions are considered normal in complex cases.",
+            "The contradiction only affects the style of the presentation, not the legal value of the evidence."
+          ],
+          "es-MX": [
+            "La credibilidad del perito y la confiabilidad de todo el informe pueden ser seriamente cuestionadas por el juez y las partes.",
+            "El tribunal asumirá automáticamente que la versión oral siempre es más válida que cualquier informe escrito.",
+            "No hay consecuencia relevante, porque las contradicciones se consideran normales en casos complejos.",
+            "La contradicción solo afecta el estilo de la presentación, pero no el valor legal de la evidencia."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The credibility of the expert and the reliability of the entire report can be seriously questioned by the judge and the parties.",
+          "es-MX": "La credibilidad del perito y la confiabilidad de todo el informe pueden ser seriamente cuestionadas por el juez y las partes."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Consistency between the written report and oral testimony is a key element in evaluating the reliability of expert work."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Contradictions generate doubt about which version is correct.",
+                "Lawyers may use inconsistencies to discredit the expert.",
+                "The judge may question the accuracy of the analysis and the conclusions.",
+                "Reviewing and mastering the report before testifying helps prevent these problems."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La congruencia entre el informe escrito y la declaración oral es un elemento clave para evaluar la confiabilidad del trabajo pericial."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Las contradicciones generan dudas sobre cuál versión es correcta.",
+                "Los abogados pueden usar las inconsistencias para desacreditar al perito.",
+                "El juez puede cuestionar la precisión del análisis y de las conclusiones.",
+                "Revisar y dominar el informe antes de declarar ayuda a prevenir estos problemas."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Control emocional y presión",
+        "Question Text": {
+          "en-US": [
+            "How should a digital forensic expert respond when facing aggressive or provocative questioning from a lawyer during cross-examination?"
+          ],
+          "es-MX": [
+            "¿Cómo debe responder un perito en informática forense cuando enfrenta preguntas agresivas o provocadoras de un abogado durante el contrainterrogatorio?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Maintain calm, answer in a brief, precise and respectful way, always referring back to the evidence and the documented methodology.",
+            "Respond with the same aggressive tone to demonstrate authority and avoid appearing weak.",
+            "Refuse to answer any difficult questions, stating that they are a ‘lack of respect’ toward the expert.",
+            "Change the subject to less compromising topics whenever a question becomes uncomfortable."
+          ],
+          "es-MX": [
+            "Mantener la calma y responder de forma breve, precisa y respetuosa, remitiéndose siempre a la evidencia y a la metodología documentada.",
+            "Responder con el mismo tono agresivo para demostrar autoridad y evitar parecer débil.",
+            "Negarse a contestar cualquier pregunta difícil, señalando que son una ‘falta de respeto’ hacia el perito.",
+            "Cambiar de tema hacia cuestiones menos comprometedoras cuando una pregunta resulte incómoda."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Maintain calm, answer in a brief, precise and respectful way, always referring back to the evidence and the documented methodology.",
+          "es-MX": "Mantener la calma y responder de forma breve, precisa y respetuosa, remitiéndose siempre a la evidencia y a la metodología documentada."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Emotional control is part of professional behavior in court.",
+                "Aggressive answers can damage the expert’s image and help the opposing party.",
+                "Referring to the evidence and methodology reinforces objectivity.",
+                "Calm, precise answers show that the expert dominates the case and is not easily manipulated."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "El control emocional forma parte de la conducta profesional en sala.",
+                "Las respuestas agresivas dañan la imagen del perito y pueden favorecer a la contraparte.",
+                "Remitirse a la evidencia y a la metodología refuerza la objetividad.",
+                "Las respuestas tranquilas y precisas demuestran dominio del caso y resistencia a la manipulación."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Cadena de custodia e integridad",
+        "Question Text": {
+          "en-US": [
+            "If a judge asks how the integrity of digital evidence was preserved, what is the most appropriate type of answer?"
+          ],
+          "es-MX": [
+            "Si un juez pregunta cómo se preservó la integridad de la evidencia digital, ¿cuál es el tipo de respuesta más adecuado?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Explain that hash values were calculated (for example, SHA-256) at acquisition and before the report, that the values match, and that access was controlled and documented in the chain of custody.",
+            "Answer that there is no need to worry because the expert ‘never makes mistakes’ handling devices.",
+            "Indicate that the evidence was moved several times without documentation but that nothing important should have changed.",
+            "State that the integrity cannot be guaranteed, but that the analysis should still be considered valid."
+          ],
+          "es-MX": [
+            "Explicar que se calcularon valores hash (por ejemplo, SHA-256) en la adquisición y antes del informe, que los valores coinciden y que el acceso se controló y documentó en la cadena de custodia.",
+            "Responder que no hay de qué preocuparse porque el perito ‘nunca se equivoca’ al manipular dispositivos.",
+            "Indicar que la evidencia se trasladó varias veces sin documentación, pero que no debió cambiar nada importante.",
+            "Señalar que la integridad no puede garantizarse, pero que el análisis debería considerarse válido de todos modos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Explain that hash values were calculated (for example, SHA-256) at acquisition and before the report, that the values match, and that access was controlled and documented in the chain of custody.",
+          "es-MX": "Explicar que se calcularon valores hash (por ejemplo, SHA-256) en la adquisición y antes del informe, que los valores coinciden y que el acceso se controló y documentó en la cadena de custodia."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The court needs concrete and verifiable elements to trust that the evidence was not altered."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Hash comparison is a recognized method to demonstrate integrity.",
+                "The chain of custody records who had access and when.",
+                "Controlled access reduces the risk of manipulation or contamination.",
+                "An answer based on procedures and records is more solid than personal assurances."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El tribunal necesita elementos concretos y verificables para confiar en que la evidencia no fue alterada."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "La comparación de hashes es un método reconocido para demostrar integridad.",
+                "La cadena de custodia registra quién tuvo acceso y en qué momento.",
+                "El acceso controlado reduce el riesgo de manipulación o contaminación.",
+                "Una respuesta basada en procedimientos y registros es más sólida que las garantías personales."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Errores frecuentes en sala",
+        "Question Text": {
+          "en-US": [
+            "Which of the following is a frequent mistake that can seriously undermine a digital forensic expert’s credibility during judicial presentation?"
+          ],
+          "es-MX": [
+            "¿Cuál de las siguientes es una equivocación frecuente que puede debilitar seriamente la credibilidad de un perito digital durante la presentación judicial?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Using technical jargon without explaining it, contradicting the written report or giving personal opinions beyond what the evidence supports.",
+            "Reviewing the report carefully before the hearing and preparing clear explanations.",
+            "Requesting that a complex question be repeated or clarified before answering.",
+            "Admitting honestly when a specific technical question is outside the expert’s area and explaining the limits of the analysis."
+          ],
+          "es-MX": [
+            "Utilizar jerga técnica sin explicarla, contradecir el informe escrito o emitir opiniones personales más allá de lo que la evidencia respalda.",
+            "Revisar cuidadosamente el informe antes de la audiencia y preparar explicaciones claras.",
+            "Pedir que una pregunta compleja se repita o aclare antes de responder.",
+            "Reconocer con honestidad cuando una pregunta técnica específica está fuera de su área y explicar los límites del análisis."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Using technical jargon without explaining it, contradicting the written report or giving personal opinions beyond what the evidence supports.",
+          "es-MX": "Utilizar jerga técnica sin explicarla, contradecir el informe escrito o emitir opiniones personales más allá de lo que la evidencia respalda."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Unexplained jargon creates distance and confusion in the courtroom.",
+                "Contradictions between oral testimony and the report generate suspicion.",
+                "Personal opinions not supported by evidence open the door to strong questioning.",
+                "Avoiding these errors is essential to preserve trust in the expert’s work."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "La jerga sin explicación crea distancia y confusión en la sala.",
+                "Las contradicciones entre la declaración y el informe generan sospecha.",
+                "Las opiniones personales sin respaldo en la evidencia abren la puerta a cuestionamientos fuertes.",
+                "Evitar estos errores es esencial para conservar la confianza en el trabajo del perito."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Estructura de la exposición",
+        "Question Text": {
+          "en-US": [
+            "Which sequence best represents a clear structure for a digital forensic expert’s presentation during trial?"
+          ],
+          "es-MX": [
+            "¿Qué secuencia representa mejor una estructura clara para la exposición de un perito digital durante el juicio?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Professional identification → Case summary → Methodology → Presentation of findings → Technical conclusions → Questions from the parties.",
+            "Methodology → Questions from lawyers → Professional identification → Case summary → Conclusions.",
+            "Starting directly with conclusions → Presenting only screenshots → Giving a brief summary of professional experience at the end.",
+            "Case summary → Reading the entire report verbatim without pauses → Leaving the courtroom before questions are asked."
+          ],
+          "es-MX": [
+            "Identificación profesional → Resumen del caso → Metodología → Presentación de hallazgos → Conclusiones técnicas → Preguntas de las partes.",
+            "Metodología → Preguntas de los abogados → Identificación profesional → Resumen del caso → Conclusiones.",
+            "Iniciar directamente con las conclusiones → Presentar solo capturas de pantalla → Dar un breve resumen de la experiencia profesional al final.",
+            "Resumen del caso → Leer el informe completo de forma literal sin pausas → Salir de la sala antes de que se formulen preguntas."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Professional identification → Case summary → Methodology → Presentation of findings → Technical conclusions → Questions from the parties.",
+          "es-MX": "Identificación profesional → Resumen del caso → Metodología → Presentación de hallazgos → Conclusiones técnicas → Preguntas de las partes."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "A structured order helps the court follow the logical path from the expert’s background to the evidence and conclusions."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Identification shows who the expert is and why they are qualified.",
+                "The case summary provides context for the analysis.",
+                "Methodology explains how the evidence was obtained and evaluated.",
+                "Findings and conclusions present what the data supports.",
+                "Questions from the parties allow clarification and contrast of the testimony."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Un orden estructurado ayuda al tribunal a seguir el camino lógico desde el perfil del perito hasta la evidencia y las conclusiones."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "La identificación muestra quién es el perito y por qué está calificado.",
+                "El resumen del caso brinda contexto para el análisis.",
+                "La metodología explica cómo se obtuvo y evaluó la evidencia.",
+                "Los hallazgos y conclusiones presentan lo que los datos respaldan.",
+                "Las preguntas de las partes permiten aclarar y contrastar el testimonio."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Límites del análisis pericial",
+        "Question Text": {
+          "en-US": [
+            "How should a digital forensic expert respond when asked in court about an aspect that goes beyond the scope of their analysis or the data obtained?"
+          ],
+          "es-MX": [
+            "¿Cómo debe responder un perito en informática forense cuando, en juicio, se le pregunta sobre un aspecto que va más allá del alcance de su análisis o de los datos obtenidos?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Clearly state that the question exceeds the scope of the analysis or the available data and explain what can and cannot be affirmed based on the evidence.",
+            "Provide a speculative answer to avoid appearing unprepared, even if there is no direct support in the data.",
+            "Change the subject to another topic where the expert feels more comfortable, without answering the question directly.",
+            "Affirm that the requested conclusion is valid simply because it ‘fits’ the general theory of the case."
+          ],
+          "es-MX": [
+            "Indicar con claridad que la pregunta excede el alcance del análisis o de los datos disponibles y explicar qué se puede y qué no se puede afirmar con base en la evidencia.",
+            "Dar una respuesta especulativa para no parecer poco preparado, aunque no exista respaldo directo en los datos.",
+            "Cambiar de tema hacia otro punto donde el perito se sienta más cómodo, sin responder directamente la pregunta.",
+            "Afirmar que la conclusión solicitada es válida solo porque ‘encaja’ con la teoría general del caso."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Clearly state that the question exceeds the scope of the analysis or the available data and explain what can and cannot be affirmed based on the evidence.",
+          "es-MX": "Indicar con claridad que la pregunta excede el alcance del análisis o de los datos disponibles y explicar qué se puede y qué no se puede afirmar con base en la evidencia."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Recognizing the limits of the analysis is part of ethical and professional behavior in expert testimony."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Speculation can be attacked and discredits the expert.",
+                "The court must know exactly what the evidence supports and what remains uncertain.",
+                "Clarifying the scope protects both the case and the expert’s reputation.",
+                "Professional testimony is based on data, not on the desire to answer everything."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Reconocer los límites del análisis forma parte de la conducta ética y profesional en la declaración pericial."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "La especulación puede ser atacada y desacredita al perito.",
+                "El tribunal debe saber exactamente qué respalda la evidencia y qué permanece incierto.",
+                "Aclarar el alcance protege tanto al caso como a la reputación del perito.",
+                "La declaración profesional se basa en datos, no en el deseo de responderlo todo."
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

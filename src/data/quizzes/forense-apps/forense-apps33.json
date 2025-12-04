@@ -1,0 +1,652 @@
+{
+    "meta": {
+      "slug": "forense-apps33",
+      "title": "Clase 33 – Identificación de mensajes relevantes en una conversación extensa",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 3,
+      "classNo": 33,
+      "description": "Uso de filtros, búsquedas avanzadas en bases SQLite y criterios forenses para localizar mensajes clave, adjuntos y patrones de comunicación dentro de conversaciones extensas en apps de mensajería.",
+      "tags": [
+        "sqlite",
+        "whatsapp",
+        "telegram",
+        "filtrado",
+        "palabras clave",
+        "mensajes eliminados",
+        "patrones temporales",
+        "multimedia",
+        "forensia digital"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "importancia-filtrado",
+        "Question Text": {
+          "en-US": [
+            "Why is filtering and searching considered essential when working with very large chat histories in forensic analysis?"
+          ],
+          "es-MX": [
+            "¿Por qué el filtrado y la búsqueda se consideran esenciales al trabajar con historiales de chat muy extensos en el análisis forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because they allow the examiner to quickly locate key messages, suspicious events and relevant time windows without manually reading thousands of records",
+            "Because they automatically translate all messages to the language of the court",
+            "Because they permanently delete irrelevant messages from the database to save disk space",
+            "Because they replace the need to understand how SQLite or the messaging app works"
+          ],
+          "es-MX": [
+            "Porque permiten que el perito localice rápidamente mensajes clave, eventos sospechosos y ventanas de tiempo relevantes sin leer manualmente miles de registros",
+            "Porque traducen automáticamente todos los mensajes al idioma del tribunal",
+            "Porque eliminan permanentemente los mensajes irrelevantes de la base de datos para ahorrar espacio en disco",
+            "Porque sustituyen la necesidad de entender cómo funciona SQLite o la aplicación de mensajería"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because they allow the examiner to quickly locate key messages, suspicious events and relevant time windows without manually reading thousands of records",
+          "es-MX": "Porque permiten que el perito localice rápidamente mensajes clave, eventos sospechosos y ventanas de tiempo relevantes sin leer manualmente miles de registros"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "Long conversations can contain tens of thousands of records. Without structured filters (keywords, dates, senders, media types), the examiner would waste time and might overlook critical evidence. Filtering turns a massive dataset into a manageable subset focused on the case hypotheses.",
+              "es-MX": "Las conversaciones largas pueden contener decenas de miles de registros. Sin filtros estructurados (palabras clave, fechas, remitentes, tipos de media), el perito perdería tiempo y podría pasar por alto evidencias críticas. El filtrado convierte un conjunto masivo de datos en un subconjunto manejable enfocado en las hipótesis del caso."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "campos-sqlite-clave",
+        "Question Text": {
+          "en-US": [
+            "According to the class, which set of SQLite fields is MOST useful as a starting point for filtering relevant messages in WhatsApp’s msgstore.db?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿qué conjunto de campos de SQLite es MÁS útil como punto de partida para filtrar mensajes relevantes en msgstore.db de WhatsApp?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "data, timestamp, media_wa_type, key_remote_jid and remote_resource",
+            "username, password, gpu_speed and battery_level",
+            "printer_name, wallpaper_color, keyboard_layout and wifi_password",
+            "only the device’s IMEI without any textual or temporal fields"
+          ],
+          "es-MX": [
+            "data, timestamp, media_wa_type, key_remote_jid y remote_resource",
+            "username, password, gpu_speed y battery_level",
+            "printer_name, wallpaper_color, keyboard_layout y wifi_password",
+            "solo el IMEI del dispositivo sin ningún campo textual o temporal"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "data, timestamp, media_wa_type, key_remote_jid and remote_resource",
+          "es-MX": "data, timestamp, media_wa_type, key_remote_jid y remote_resource"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "data stores the message text when it is available.",
+                "timestamp defines when the message was sent or received.",
+                "media_wa_type and media fields indicate if there are attachments.",
+                "key_remote_jid and remote_resource help identify chats and group participants."
+              ],
+              "es-MX": [
+                "data almacena el texto del mensaje cuando está disponible.",
+                "timestamp define cuándo se envió o recibió el mensaje.",
+                "media_wa_type y campos de media indican si hay adjuntos.",
+                "key_remote_jid y remote_resource ayudan a identificar chats y participantes en grupos."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "busqueda-palabras-clave",
+        "Question Text": {
+          "en-US": [
+            "What is the MAIN forensic purpose of keyword searches (LIKE '%word%') in chat databases?"
+          ],
+          "es-MX": [
+            "¿Cuál es el propósito forense PRINCIPAL de las búsquedas por palabras clave (LIKE '%palabra%') en bases de chats?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To locate messages that mention specific names, locations, amounts or terms related to the incident under investigation",
+            "To automatically correct spelling mistakes in all messages",
+            "To compress the database and reduce its physical size on disk",
+            "To anonymize all participants by replacing their names with hashes"
+          ],
+          "es-MX": [
+            "Localizar mensajes que mencionan nombres, ubicaciones, montos o términos específicos relacionados con el incidente investigado",
+            "Corregir automáticamente las faltas de ortografía en todos los mensajes",
+            "Comprimir la base de datos y reducir su tamaño físico en disco",
+            "Anonimizar a todos los participantes sustituyendo sus nombres por hashes"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To locate messages that mention specific names, locations, amounts or terms related to the incident under investigation",
+          "es-MX": "Localizar mensajes que mencionan nombres, ubicaciones, montos o términos específicos relacionados con el incidente investigado"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "Keyword searches help map the narrative of the case into the database: if the hypothesis involves a meeting, payment or place, the examiner searches those words to jump directly to potentially relevant fragments of the conversation.",
+              "es-MX": "Las búsquedas por palabras clave permiten mapear la narrativa del caso dentro de la base de datos: si la hipótesis implica una reunión, un pago o un lugar, el perito busca esas palabras para saltar directamente a fragmentos potencialmente relevantes de la conversación."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "filtro-fechas",
+        "Question Text": {
+          "en-US": [
+            "Why is filtering by timestamp range (BETWEEN ... AND ...) especially useful in forensic chat analysis?"
+          ],
+          "es-MX": [
+            "¿Por qué el filtrado por rango de timestamp (BETWEEN ... AND ...) es especialmente útil en el análisis forense de chats?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it allows the examiner to focus on messages sent near the date and time of the incident, reducing noise from years of unrelated history",
+            "Because it automatically translates old messages into modern language",
+            "Because it permanently deletes messages outside the selected range from the evidence",
+            "Because it merges multiple conversations into a single chat to simplify the database"
+          ],
+          "es-MX": [
+            "Porque permite que el perito se concentre en mensajes enviados cerca de la fecha y hora del incidente, reduciendo el ruido de años de historial no relacionado",
+            "Porque traduce automáticamente los mensajes antiguos a lenguaje moderno",
+            "Porque elimina permanentemente de la evidencia los mensajes fuera del rango elegido",
+            "Porque fusiona múltiples conversaciones en un solo chat para simplificar la base de datos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it allows the examiner to focus on messages sent near the date and time of the incident, reducing noise from years of unrelated history",
+          "es-MX": "Porque permite que el perito se concentre en mensajes enviados cerca de la fecha y hora del incidente, reduciendo el ruido de años de historial no relacionado"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Many cases have a known time window (day of the incident, hours before and after).",
+                "Restricting to that window makes the review manageable.",
+                "It also facilitates correlation with other artifacts such as logs, GPS and photos."
+              ],
+              "es-MX": [
+                "Muchos casos tienen una ventana temporal conocida (día del incidente, horas antes y después).",
+                "Restringir a esa ventana vuelve la revisión manejable.",
+                "También facilita correlacionar con otros artefactos como logs, GPS y fotografías."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "tipo-contenido-media_wa_type",
+        "Question Text": {
+          "en-US": [
+            "What is the MAIN advantage of filtering by media_wa_type or equivalent content-type fields in chat databases?"
+          ],
+          "es-MX": [
+            "¿Cuál es la ventaja PRINCIPAL de filtrar por media_wa_type u otros campos de tipo de contenido en bases de chats?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It allows focusing only on messages that contain images, videos, audios, documents or locations, which are often rich in evidential value",
+            "It automatically enhances the quality of all multimedia files to 4K resolution",
+            "It removes all media files from the case to simplify reporting",
+            "It converts documents into plain text without preserving any metadata"
+          ],
+          "es-MX": [
+            "Permite centrarse solo en mensajes que contienen imágenes, videos, audios, documentos o ubicaciones, que suelen aportar un alto valor probatorio",
+            "Mejora automáticamente la calidad de todos los archivos multimedia a resolución 4K",
+            "Elimina del caso todos los archivos multimedia para simplificar el reporte",
+            "Convierte los documentos a texto plano sin conservar metadatos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It allows focusing only on messages that contain images, videos, audios, documents or locations, which are often rich in evidential value",
+          "es-MX": "Permite centrarse solo en mensajes que contienen imágenes, videos, audios, documentos o ubicaciones, que suelen aportar un alto valor probatorio"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "Multimedia messages may show faces, places, objects or documents directly related to the incident. Filtering by type helps isolate these messages from pure text noise and quickly identify candidate files for deeper EXIF or content analysis.",
+              "es-MX": "Los mensajes con multimedia pueden mostrar rostros, lugares, objetos o documentos directamente relacionados con el incidente. Filtrar por tipo ayuda a aislar estos mensajes del ruido de texto y a identificar rápidamente archivos candidatos para un análisis más profundo de EXIF o contenido."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "key-from-me",
+        "Question Text": {
+          "en-US": [
+            "How is the field key_from_me typically used to distinguish message direction in WhatsApp-style databases?"
+          ],
+          "es-MX": [
+            "¿Cómo se utiliza típicamente el campo key_from_me para distinguir la dirección del mensaje en bases de tipo WhatsApp?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "key_from_me = 1 usually indicates messages sent by the user of the device, while key_from_me = 0 indicates received messages",
+            "key_from_me = 1 means the message was always deleted and key_from_me = 0 means it was archived",
+            "key_from_me is only used to store the device’s battery level at the time of sending",
+            "key_from_me defines whether a message is stored in msgstore.db or wa.db"
+          ],
+          "es-MX": [
+            "key_from_me = 1 normalmente indica mensajes enviados por el usuario del dispositivo, mientras que key_from_me = 0 indica mensajes recibidos",
+            "key_from_me = 1 significa que el mensaje siempre fue borrado y key_from_me = 0 que fue archivado",
+            "key_from_me solo se usa para guardar el nivel de batería del dispositivo al enviar",
+            "key_from_me define si un mensaje se almacena en msgstore.db o en wa.db"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "key_from_me = 1 usually indicates messages sent by the user of the device, while key_from_me = 0 indicates received messages",
+          "es-MX": "key_from_me = 1 normalmente indica mensajes enviados por el usuario del dispositivo, mientras que key_from_me = 0 indica mensajes recibidos"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Direction is crucial to determine the role of the user in the conversation.",
+                "Separating sent vs. received messages helps answer who initiated or confirmed certain actions.",
+                "It also supports identifying possible self-sent or manipulated communications."
+              ],
+              "es-MX": [
+                "La dirección es clave para determinar el rol del usuario en la conversación.",
+                "Separar mensajes enviados y recibidos ayuda a responder quién inició o confirmó determinadas acciones.",
+                "También permite identificar posibles mensajes autoenviados o comunicaciones manipuladas."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "mensajes-eliminados",
+        "Question Text": {
+          "en-US": [
+            "Why are filters targeting messages with data IS NULL or empty strings especially important in forensic chat analysis?"
+          ],
+          "es-MX": [
+            "¿Por qué son especialmente importantes en el análisis forense los filtros que buscan mensajes con data IS NULL o cadenas vacías?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because they often indicate logically deleted messages, which may reveal attempts to hide information or alter the narrative of events",
+            "Because they identify only harmless system messages that can be ignored safely",
+            "Because they correspond to automatic backups that are irrelevant for the case",
+            "Because they prove that the database is corrupted and must be discarded immediately"
+          ],
+          "es-MX": [
+            "Porque a menudo indican mensajes borrados lógicamente, lo que puede revelar intentos de ocultar información o alterar la narrativa de los hechos",
+            "Porque identifican solo mensajes de sistema inofensivos que pueden ignorarse sin problema",
+            "Porque corresponden a respaldos automáticos que no aportan nada al caso",
+            "Porque demuestran que la base está corrupta y debe desecharse de inmediato"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because they often indicate logically deleted messages, which may reveal attempts to hide information or alter the narrative of events",
+          "es-MX": "Porque a menudo indican mensajes borrados lógicamente, lo que puede revelar intentos de ocultar información o alterar la narrativa de los hechos"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class explains that many apps do not physically erase records immediately; instead they blank out the text or certain fields. These ‘empty’ records can show where something existed and was later removed, which is highly relevant to intent and concealment.",
+              "es-MX": "La clase explica que muchas apps no eliminan físicamente los registros de inmediato, sino que vacían el texto o ciertos campos. Estos registros ‘vacíos’ pueden mostrar dónde existió algo que después fue eliminado, lo cual es muy relevante para la intención y el encubrimiento."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "participante-grupos",
+        "Question Text": {
+          "en-US": [
+            "How can the field remote_resource be used when analyzing group conversations?"
+          ],
+          "es-MX": [
+            "¿Cómo puede utilizarse el campo remote_resource al analizar conversaciones de grupo?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To identify which specific participant sent each message inside a group chat, based on their number or internal ID",
+            "To store the device temperature at the moment of the message",
+            "To indicate whether the device was connected to Wi-Fi or mobile data",
+            "To record which emoji pack was installed when the group was created"
+          ],
+          "es-MX": [
+            "Para identificar qué participante específico envió cada mensaje dentro de un chat grupal, a partir de su número o ID interno",
+            "Para guardar la temperatura del dispositivo al momento del mensaje",
+            "Para indicar si el dispositivo estaba conectado por Wi-Fi o datos móviles",
+            "Para registrar qué paquete de emojis estaba instalado cuando se creó el grupo"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To identify which specific participant sent each message inside a group chat, based on their number or internal ID",
+          "es-MX": "Para identificar qué participante específico envió cada mensaje dentro de un chat grupal, a partir de su número o ID interno"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Group chats aggregate messages from many people.",
+                "remote_resource links each message to an individual sender inside that group.",
+                "This is essential to assign responsibility for specific statements or actions."
+              ],
+              "es-MX": [
+                "Los chats grupales agrupan mensajes de muchas personas.",
+                "remote_resource enlaza cada mensaje con un remitente individual dentro del grupo.",
+                "Esto es esencial para asignar responsabilidad sobre afirmaciones o acciones concretas."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "multimedia-asociada",
+        "Question Text": {
+          "en-US": [
+            "What is the MAIN goal of queries that focus on messages with media_wa_type != 0 and fields like media_name or media_caption?"
+          ],
+          "es-MX": [
+            "¿Cuál es el objetivo PRINCIPAL de consultas que se enfocan en mensajes con media_wa_type != 0 y campos como media_name o media_caption?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To identify messages that have associated media files or captions, so they can be correlated with images, videos or documents stored in the Media folders",
+            "To automatically delete all media files from the evidence",
+            "To change all file names to random values and break the chain of custody",
+            "To convert media files into audio transcripts without any quality control"
+          ],
+          "es-MX": [
+            "Identificar mensajes que tienen archivos multimedia o captions asociados, para correlacionarlos con imágenes, videos o documentos almacenados en las carpetas Media",
+            "Eliminar automáticamente todos los archivos multimedia de la evidencia",
+            "Cambiar todos los nombres de archivo a valores aleatorios y romper la cadena de custodia",
+            "Convertir los archivos multimedia en transcripciones de audio sin control de calidad"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To identify messages that have associated media files or captions, so they can be correlated with images, videos or documents stored in the Media folders",
+          "es-MX": "Identificar mensajes que tienen archivos multimedia o captions asociados, para correlacionarlos con imágenes, videos o documentos almacenados en las carpetas Media"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class shows that many cases hinge on a specific photo, document or recording. By focusing on media-related fields, the examiner can link database records to physical files and then analyze EXIF, content and timestamps in context.",
+              "es-MX": "La clase muestra que muchos casos se apoyan en una foto, documento o grabación específica. Al centrarse en los campos relacionados con multimedia, el perito puede enlazar los registros de la base de datos con los archivos físicos y luego analizar EXIF, contenido y timestamps en contexto."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "patrones-temporales",
+        "Question Text": {
+          "en-US": [
+            "What kind of insights can be obtained by grouping messages by date or time (for example, using COUNT(*) and DATE(timestamp/1000,'unixepoch'))?"
+          ],
+          "es-MX": [
+            "¿Qué tipo de información se puede obtener al agrupar mensajes por fecha u hora (por ejemplo, usando COUNT(*) y DATE(timestamp/1000,'unixepoch'))?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Detection of temporal patterns such as sudden increases in activity, long periods of silence or unusual communication peaks around the incident",
+            "Automatic translation of conversations into chronological diagrams without timestamps",
+            "Precise recovery of deleted messages without any additional analysis",
+            "Direct identification of the real identity of anonymous users only from message counts"
+          ],
+          "es-MX": [
+            "Detección de patrones temporales como aumentos bruscos de actividad, largos periodos de silencio o picos de comunicación inusuales alrededor del incidente",
+            "Traducción automática de las conversaciones a diagramas cronológicos sin timestamps",
+            "Recuperación precisa de mensajes borrados sin ningún análisis adicional",
+            "Identificación directa de la identidad real de usuarios anónimos solo a partir del conteo de mensajes"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Detection of temporal patterns such as sudden increases in activity, long periods of silence or unusual communication peaks around the incident",
+          "es-MX": "Detección de patrones temporales como aumentos bruscos de actividad, largos periodos de silencio o picos de comunicación inusuales alrededor del incidente"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Temporal aggregation helps see behavior that is invisible at the single-message level.",
+                "It can reveal coordination bursts or silence after critical events.",
+                "These patterns support hypotheses about planning, panic or attempted cover-up."
+              ],
+              "es-MX": [
+                "La agregación temporal ayuda a ver comportamientos invisibles a nivel de mensaje individual.",
+                "Puede revelar ráfagas de coordinación o silencios tras eventos críticos.",
+                "Estos patrones apoyan hipótesis sobre planeación, pánico o intentos de encubrimiento."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "mensajes-huerfanos",
+        "Question Text": {
+          "en-US": [
+            "What are “orphan messages” in the context of the class, and why are they relevant?"
+          ],
+          "es-MX": [
+            "¿Qué son los “mensajes huérfanos” en el contexto de la clase y por qué son relevantes?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Messages that have references to attachments, replies or miniatures but where the main text or parent message is missing, often indicating deletions or partial restorations",
+            "Messages sent by underage users, regardless of content",
+            "Messages that contain only emojis and no text, which are always irrelevant",
+            "Messages that appear in the log file but not in the database, proving a hardware error"
+          ],
+          "es-MX": [
+            "Mensajes que tienen referencias a adjuntos, respuestas o miniaturas pero cuyo texto principal o mensaje padre falta, indicando a menudo eliminaciones o restauraciones parciales",
+            "Mensajes enviados por usuarios menores de edad, sin importar el contenido",
+            "Mensajes que contienen solo emojis y nada de texto, que siempre son irrelevantes",
+            "Mensajes que aparecen en el archivo de log pero no en la base de datos, lo que prueba un error de hardware"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Messages that have references to attachments, replies or miniatures but where the main text or parent message is missing, often indicating deletions or partial restorations",
+          "es-MX": "Mensajes que tienen referencias a adjuntos, respuestas o miniaturas pero cuyo texto principal o mensaje padre falta, indicando a menudo eliminaciones o restauraciones parciales"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "Orphan messages point to inconsistencies in the conversation structure. They can reveal that some parts were deleted, that a backup was only partially restored or that a device migration left gaps in the history.",
+              "es-MX": "Los mensajes huérfanos señalan inconsistencias en la estructura de la conversación. Pueden revelar que se eliminaron partes, que un respaldo se restauró solo parcialmente o que una migración de dispositivo dejó huecos en el historial."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "metadatos-caption",
+        "Question Text": {
+          "en-US": [
+            "Why does the class highlight the importance of filtering by media_caption or similar metadata fields?"
+          ],
+          "es-MX": [
+            "¿Por qué la clase resalta la importancia de filtrar por media_caption u otros campos similares de metadatos?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because captions may describe the context, purpose or content of an image or video even when the main text field is empty or deleted",
+            "Because captions are purely decorative and never contain useful information",
+            "Because filtering by captions automatically recovers high-resolution copies of deleted files",
+            "Because captions replace the need to examine EXIF or other file-level metadata"
+          ],
+          "es-MX": [
+            "Porque los captions pueden describir el contexto, propósito o contenido de una imagen o video incluso cuando el campo de texto principal está vacío o ha sido borrado",
+            "Porque los captions son puramente decorativos y nunca contienen información útil",
+            "Porque filtrar por captions recupera automáticamente copias en alta resolución de archivos eliminados",
+            "Porque los captions sustituyen la necesidad de revisar EXIF u otros metadatos a nivel de archivo"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because captions may describe the context, purpose or content of an image or video even when the main text field is empty or deleted",
+          "es-MX": "Porque los captions pueden describir el contexto, propósito o contenido de una imagen o video incluso cuando el campo de texto principal está vacío o ha sido borrado"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Some users write explanations only in the caption, not in the message text.",
+                "Even if data is NULL, captions can remain and still reference the event.",
+                "Captions can contain names, places or instructions tied to the media."
+              ],
+              "es-MX": [
+                "Algunos usuarios escriben explicaciones solo en el caption, no en el texto del mensaje.",
+                "Aunque data sea NULL, el caption puede permanecer y seguir referenciando el evento.",
+                "Los captions pueden contener nombres, lugares o instrucciones asociadas a la multimedia."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "actividad-sospechosa",
+        "Question Text": {
+          "en-US": [
+            "Which pattern would MOST LIKELY be considered suspicious according to the class’s examples of activity analysis?"
+          ],
+          "es-MX": [
+            "¿Qué patrón sería MÁS PROBABLEMENTE considerado sospechoso según los ejemplos de análisis de actividad de la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A sudden mass deletion of messages and media shortly after the time of the incident, combined with gaps in the timeline",
+            "A stable volume of routine greetings at normal hours over several months",
+            "Regular system notifications about battery level unrelated to communication",
+            "Automatic backups happening once per day as configured by the user"
+          ],
+          "es-MX": [
+            "Una eliminación masiva repentina de mensajes y multimedia poco después de la hora del incidente, combinada con huecos en la línea de tiempo",
+            "Un volumen estable de saludos rutinarios en horarios normales durante varios meses",
+            "Notificaciones de sistema regulares sobre nivel de batería sin relación con la comunicación",
+            "Respaldos automáticos que ocurren una vez al día según la configuración del usuario"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A sudden mass deletion of messages and media shortly after the time of the incident, combined with gaps in the timeline",
+          "es-MX": "Una eliminación masiva repentina de mensajes y multimedia poco después de la hora del incidente, combinada con huecos en la línea de tiempo"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class emphasizes that changes in behavior—such as clusters of deletions or unusual silences—around key events can indicate attempts to hide information or rewrite the narrative.",
+              "es-MX": "La clase enfatiza que cambios en el comportamiento, como cúmulos de borrados o silencios inusuales alrededor de eventos clave, pueden indicar intentos de ocultar información o reescribir la narrativa."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "herramientas-sin-sql",
+        "Question Text": {
+          "en-US": [
+            "Why are tools like Magnet AXIOM, Cellebrite Physical Analyzer, Autopsy and DB Browser for SQLite highlighted as helpful for filtering without manual SQL?"
+          ],
+          "es-MX": [
+            "¿Por qué herramientas como Magnet AXIOM, Cellebrite Physical Analyzer, Autopsy y DB Browser for SQLite se destacan como útiles para filtrar sin escribir SQL manualmente?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because they provide graphical filters (by date, participant, keyword, media type, deleted status) and timelines, making complex searches accessible even to examiners who are not SQL experts",
+            "Because they automatically write the final legal report without human intervention",
+            "Because they replace the need to validate hashes or preserve the chain of custody",
+            "Because they completely hide the database structure so it can never be examined directly"
+          ],
+          "es-MX": [
+            "Porque ofrecen filtros gráficos (por fecha, participante, palabra clave, tipo de media, estado de borrado) y timelines, haciendo accesibles búsquedas complejas incluso a peritos que no son expertos en SQL",
+            "Porque redactan automáticamente el informe legal final sin intervención humana",
+            "Porque sustituyen la necesidad de validar hashes o preservar la cadena de custodia",
+            "Porque ocultan por completo la estructura de la base de datos para que nunca pueda examinarse directamente"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because they provide graphical filters (by date, participant, keyword, media type, deleted status) and timelines, making complex searches accessible even to examiners who are not SQL experts",
+          "es-MX": "Porque ofrecen filtros gráficos (por fecha, participante, palabra clave, tipo de media, estado de borrado) y timelines, haciendo accesibles búsquedas complejas incluso a peritos que no son expertos en SQL"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "GUI-based tools accelerate triage and exploration.",
+                "They often include prebuilt artifacts for WhatsApp, Telegram, etc.",
+                "Examiners can still export data for deeper manual or SQL analysis if needed."
+              ],
+              "es-MX": [
+                "Las herramientas con interfaz gráfica aceleran el triage y la exploración.",
+                "Suelen incluir artefactos preconfigurados para WhatsApp, Telegram, etc.",
+                "El perito puede exportar datos para análisis manual o con SQL más profundo si es necesario."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "ejemplo-integrado-conversacion",
+        "Question Text": {
+          "en-US": [
+            "In the integrated example with a 15,000-message conversation, which sequence BEST represents a logical workflow to identify relevant messages?"
+          ],
+          "es-MX": [
+            "En el ejemplo integrado con una conversación de 15,000 mensajes, ¿qué secuencia representa MEJOR un flujo de trabajo lógico para identificar mensajes relevantes?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Filter by keywords related to the case → filter by incident time window → isolate media messages between key participants → identify deleted messages → check file paths and EXIF to correlate with the incident",
+            "Randomly read messages from the beginning → stop after 200 messages → write a report based on partial impressions",
+            "Delete all messages older than one week → analyze only what remains → skip any mention of multimedia",
+            "Focus only on system notifications and ignore any user-generated messages"
+          ],
+          "es-MX": [
+            "Filtrar por palabras clave relacionadas con el caso → filtrar por ventana temporal del incidente → aislar mensajes con multimedia entre participantes clave → identificar mensajes borrados → revisar rutas de archivos y EXIF para correlacionar con el hecho",
+            "Leer mensajes al azar desde el inicio → detenerse después de 200 mensajes → redactar un informe con impresiones parciales",
+            "Borrar todos los mensajes anteriores a una semana → analizar solo lo que queda → omitir cualquier mención de multimedia",
+            "Centrarse únicamente en notificaciones del sistema e ignorar mensajes generados por usuarios"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Filter by keywords related to the case → filter by incident time window → isolate media messages between key participants → identify deleted messages → check file paths and EXIF to correlate with the incident",
+          "es-MX": "Filtrar por palabras clave relacionadas con el caso → filtrar por ventana temporal del incidente → aislar mensajes con multimedia entre participantes clave → identificar mensajes borrados → revisar rutas de archivos y EXIF para correlacionar con el hecho"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "This workflow reflects the methodology described: progressively narrowing the dataset (by keywords, time, media, participants) and then correlating content, deletions and file-level metadata to reconstruct what really happened.",
+              "es-MX": "Este flujo de trabajo refleja la metodología descrita: ir estrechando progresivamente el conjunto de datos (por palabras, tiempo, multimedia, participantes) y después correlacionar contenido, borrados y metadatos a nivel de archivo para reconstruir lo que realmente ocurrió."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

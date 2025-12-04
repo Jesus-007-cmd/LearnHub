@@ -1,0 +1,482 @@
+{
+    "meta": {
+      "slug": "forense-apps41",
+      "title": "Clase 41 – Documentación de análisis de metadatos y conversaciones",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 3,
+      "classNo": 41,
+      "description": "Elaboración profesional de registros, tablas de hallazgos y documentación técnica del análisis forense de metadatos y conversaciones.",
+      "tags": [
+        "documentación forense",
+        "metadatos",
+        "tabla de hallazgos",
+        "hashes",
+        "trazabilidad"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "importancia-documentacion",
+        "Question Text": {
+          "en-US": [
+            "According to the class, why is professional documentation considered a critical task in digital forensic analysis?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿por qué la documentación profesional se considera una tarea crítica en el análisis forense digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because poor documentation can cause evidence to be rejected, misinterpreted or considered unreliable in legal contexts",
+            "Because documentation replaces the need to preserve original evidence or calculate hashes",
+            "Because documentation is optional and only used for internal notes, not for court or clients",
+            "Because once screenshots are taken, no more documentation is necessary"
+          ],
+          "es-MX": [
+            "Porque una mala documentación puede provocar que la evidencia sea rechazada, mal interpretada o considerada poco confiable en contextos legales",
+            "Porque la documentación reemplaza la necesidad de preservar la evidencia original o calcular hashes",
+            "Porque la documentación es opcional y solo se usa como notas internas, no para el juicio o el cliente",
+            "Porque una vez tomadas capturas de pantalla ya no es necesaria más documentación"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because poor documentation can cause evidence to be rejected, misinterpreted or considered unreliable in legal contexts",
+          "es-MX": "Porque una mala documentación puede provocar que la evidencia sea rechazada, mal interpretada o considerada poco confiable en contextos legales"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class explains that good documentation guarantees transparency, reproducibility, authenticity and traceability of the evidence, all of which are essential for legal acceptance.",
+              "es-MX": "La clase explica que una buena documentación garantiza transparencia, reproducibilidad, autenticidad y trazabilidad de la evidencia, elementos esenciales para su aceptación legal."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "elementos-clave",
+        "Question Text": {
+          "en-US": [
+            "Which option lists elements that MUST be included in a complete forensic documentation according to the class?"
+          ],
+          "es-MX": [
+            "¿Qué opción enumera elementos que DEBEN incluirse en una documentación forense completa según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Case identification, evidence source, integrity hashes, analyzed metadata, relevant findings and observations",
+            "Only the final conclusion and a short summary of what the examiner thinks happened",
+            "Brand of the examiner’s computer, favorite tools and personal comments about the case",
+            "A list of installed apps on the examiner’s phone and screenshots of social media"
+          ],
+          "es-MX": [
+            "Identificación del caso, fuente de la evidencia, hashes de integridad, metadatos analizados, hallazgos relevantes y observaciones",
+            "Solo la conclusión final y un breve resumen de lo que el perito cree que ocurrió",
+            "Marca de la computadora del perito, herramientas favoritas y comentarios personales sobre el caso",
+            "Una lista de apps instaladas en el teléfono del perito y capturas de redes sociales"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Case identification, evidence source, integrity hashes, analyzed metadata, relevant findings and observations",
+          "es-MX": "Identificación del caso, fuente de la evidencia, hashes de integridad, metadatos analizados, hallazgos relevantes y observaciones"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Case identification ties the work to a specific incident.",
+                "Evidence source describes device, app, path and backups used.",
+                "Hashes prove integrity.",
+                "Metadata, findings and observations document the technical analysis."
+              ],
+              "es-MX": [
+                "La identificación del caso vincula el trabajo con un incidente específico.",
+                "La fuente de evidencia describe dispositivo, app, ruta y respaldos usados.",
+                "Los hashes prueban integridad.",
+                "Metadatos, hallazgos y observaciones documentan el análisis técnico."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "identificacion-caso",
+        "Question Text": {
+          "en-US": [
+            "What information should be part of the case identification section in a professional forensic record?"
+          ],
+          "es-MX": [
+            "¿Qué información debe formar parte de la sección de identificación del caso en un registro forense profesional?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Case or file number, start date, brief description of the incident and analyst responsible",
+            "Only the analyst’s name and the name of the suspect",
+            "The analyst’s personal opinion about the suspect’s behavior",
+            "A list of all tools installed on the analyst’s computer"
+          ],
+          "es-MX": [
+            "Número de expediente o caso, fecha de inicio, breve descripción del incidente y responsable del análisis",
+            "Solo el nombre del perito y el nombre del sospechoso",
+            "La opinión personal del perito sobre el comportamiento del sospechoso",
+            "Una lista de todas las herramientas instaladas en la computadora del perito"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Case or file number, start date, brief description of the incident and analyst responsible",
+          "es-MX": "Número de expediente o caso, fecha de inicio, breve descripción del incidente y responsable del análisis"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class specifies that case identification must anchor the analysis with objective administrative data, not with subjective commentary.",
+              "es-MX": "La clase especifica que la identificación del caso debe anclar el análisis con datos administrativos objetivos, no con comentarios subjetivos."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "fuente-evidencia",
+        "Question Text": {
+          "en-US": [
+            "When documenting the source of the evidence, which details are recommended in the class?"
+          ],
+          "es-MX": [
+            "Al documentar la fuente de la evidencia, ¿qué detalles recomienda la clase incluir?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Device model and serial/IMEI, analyzed application, file path and backup used, and if possible, app version",
+            "Only the device brand, without any serial number, path or backup information",
+            "A general phrase like “data extracted from a phone”, without specifying anything else",
+            "The examiner’s phone number and email, instead of device details"
+          ],
+          "es-MX": [
+            "Modelo del dispositivo y número de serie/IMEI, aplicación analizada, ruta del archivo y respaldo utilizado, y si es posible, versión de la app",
+            "Solo la marca del dispositivo, sin número de serie, ruta ni información de respaldos",
+            "Una frase general como “datos extraídos de un teléfono”, sin especificar nada más",
+            "El número de teléfono y correo del perito, en lugar de los datos del dispositivo"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Device model and serial/IMEI, analyzed application, file path and backup used, and if possible, app version",
+          "es-MX": "Modelo del dispositivo y número de serie/IMEI, aplicación analizada, ruta del archivo y respaldo utilizado, y si es posible, versión de la app"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "These details tie the evidence to a specific physical and logical origin.",
+                "They enable other analysts to reproduce or verify the acquisition.",
+                "They support chain-of-custody and traceability."
+              ],
+              "es-MX": [
+                "Estos detalles vinculan la evidencia a un origen físico y lógico específico.",
+                "Permiten que otros analistas reproduzcan o verifiquen la adquisición.",
+                "Apoyan la cadena de custodia y la trazabilidad."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "hashes-integridad",
+        "Question Text": {
+          "en-US": [
+            "What is the main function of integrity hashes (MD5, SHA-1, SHA-256) in the documentation of forensic analysis?"
+          ],
+          "es-MX": [
+            "¿Cuál es la función principal de los hashes de integridad (MD5, SHA-1, SHA-256) en la documentación del análisis forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To validate that the evidence has not been altered and to allow comparison of files at different times",
+            "To compress the evidence files and reduce their size before sending them",
+            "To encrypt the evidence so that no judge can review it directly",
+            "To replace the need for chain-of-custody records"
+          ],
+          "es-MX": [
+            "Validar que la evidencia no ha sido alterada y permitir comparar archivos en distintos momentos",
+            "Comprimir los archivos de evidencia y reducir su tamaño antes de enviarlos",
+            "Cifrar la evidencia para que ningún juez pueda revisarla directamente",
+            "Reemplazar la necesidad de llevar registros de cadena de custodia"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To validate that the evidence has not been altered and to allow comparison of files at different times",
+          "es-MX": "Validar que la evidencia no ha sido alterada y permitir comparar archivos en distintos momentos"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class emphasizes that hashes are digital fingerprints: if hashes match, the content is considered unchanged; if they differ, integrity is compromised.",
+              "es-MX": "La clase enfatiza que los hashes son huellas digitales: si los hashes coinciden, se considera que el contenido no cambió; si difieren, la integridad está comprometida."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "metadatos-analizados",
+        "Question Text": {
+          "en-US": [
+            "Which option correctly matches the type of evidence with typical metadata that should be documented according to the class?"
+          ],
+          "es-MX": [
+            "¿Qué opción relaciona correctamente el tipo de evidencia con metadatos típicos que deben documentarse según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Photos: EXIF date/time and GPS; messages: timestamp, sender, recipient, _id and state; videos: duration, resolution and creation date",
+            "Photos: only file size; messages: only the color of the chat background; videos: only the volume level",
+            "Photos: battery percentage of the phone; messages: weather of the day; videos: screen brightness of the device",
+            "Photos: the examiner’s favorite camera; messages: the examiner’s mood; videos: how many times the examiner watched them"
+          ],
+          "es-MX": [
+            "Fotos: fecha/hora EXIF y GPS; mensajes: timestamp, remitente, destinatario, _id y estado; videos: duración, resolución y fecha de creación",
+            "Fotos: solo el tamaño del archivo; mensajes: solo el color de fondo del chat; videos: solo el nivel de volumen",
+            "Fotos: porcentaje de batería del teléfono; mensajes: clima del día; videos: brillo de la pantalla del dispositivo",
+            "Fotos: la cámara favorita del perito; mensajes: el estado de ánimo del perito; videos: cuántas veces los vio el perito"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Photos: EXIF date/time and GPS; messages: timestamp, sender, recipient, _id and state; videos: duration, resolution and creation date",
+          "es-MX": "Fotos: fecha/hora EXIF y GPS; mensajes: timestamp, remitente, destinatario, _id y estado; videos: duración, resolución y fecha de creación"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Each evidence type has specific, relevant metadata that must be captured.",
+                "Photos: EXIF and GPS link content to time and place.",
+                "Messages: timestamps and IDs support timeline reconstruction.",
+                "Videos: duration and resolution support authenticity and correlation."
+              ],
+              "es-MX": [
+                "Cada tipo de evidencia tiene metadatos específicos y relevantes que deben capturarse.",
+                "Fotos: EXIF y GPS vinculan el contenido con tiempo y lugar.",
+                "Mensajes: timestamps e IDs apoyan la reconstrucción temporal.",
+                "Videos: duración y resolución apoyan autenticidad y correlación."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "tabla-hallazgos",
+        "Question Text": {
+          "en-US": [
+            "In the example of the professional evidence record table, which fields are included to document each finding?"
+          ],
+          "es-MX": [
+            "En el ejemplo de la tabla de registro profesional de evidencia, ¿qué campos se incluyen para documentar cada hallazgo?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "ID, description of the finding, origin/path, tool used, hash (if applicable), technical interpretation and observations",
+            "Only ID and a short note saying “relevant” or “not relevant”",
+            "Username and password of the suspect, without any technical details",
+            "Only the screenshot of the finding, without any explanation"
+          ],
+          "es-MX": [
+            "ID, descripción del hallazgo, origen/ruta, herramienta usada, hash (si aplica), interpretación técnica y observaciones",
+            "Solo el ID y una breve nota que diga “relevante” o “no relevante”",
+            "Usuario y contraseña del sospechoso, sin ningún detalle técnico",
+            "Solo la captura de pantalla del hallazgo, sin explicación"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "ID, description of the finding, origin/path, tool used, hash (if applicable), technical interpretation and observations",
+          "es-MX": "ID, descripción del hallazgo, origen/ruta, herramienta usada, hash (si aplica), interpretación técnica y observaciones"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class proposes a structured table where each row clearly shows what was found, where it came from, how it was verified and how it should be interpreted technically.",
+              "es-MX": "La clase propone una tabla estructurada donde cada fila muestra claramente qué se encontró, de dónde proviene, cómo se verificó y cómo debe interpretarse técnicamente."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "hallazgo-vs-observaciones",
+        "Question Text": {
+          "en-US": [
+            "Why does the class recommend separating the “technical finding” from the “observations” section in the documentation?"
+          ],
+          "es-MX": [
+            "¿Por qué la clase recomienda separar el “hallazgo técnico” de la sección de “observaciones” en la documentación?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because the technical finding should state objective data, while observations record inconsistencies, time zone changes or doubts to be considered separately",
+            "Because observations are secret notes that must never be shared with anyone",
+            "Because observations replace the need to document hashes or paths",
+            "Because the finding must include emotions and personal opinions, while observations are purely legal text"
+          ],
+          "es-MX": [
+            "Porque el hallazgo técnico debe exponer datos objetivos, mientras que las observaciones registran inconsistencias, cambios de zona horaria o dudas que se consideran por separado",
+            "Porque las observaciones son notas secretas que nunca deben compartirse con nadie",
+            "Porque las observaciones sustituyen la necesidad de documentar hashes o rutas",
+            "Porque el hallazgo debe incluir emociones y opiniones personales, mientras que las observaciones son texto puramente legal"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because the technical finding should state objective data, while observations record inconsistencies, time zone changes or doubts to be considered separately",
+          "es-MX": "Porque el hallazgo técnico debe exponer datos objetivos, mientras que las observaciones registran inconsistencias, cambios de zona horaria o dudas que se consideran por separado"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Technical finding = what the data objectively shows.",
+                "Observations = context, anomalies and caveats for interpretation.",
+                "Separating them keeps the report clearer and more defensible."
+              ],
+              "es-MX": [
+                "Hallazgo técnico = lo que muestran objetivamente los datos.",
+                "Observaciones = contexto, anomalías y advertencias para la interpretación.",
+                "Separarlos mantiene el informe más claro y defendible."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "proceso-metadatos",
+        "Question Text": {
+          "en-US": [
+            "Which sequence BEST reflects the steps recommended in the class for professionally documenting metadata of a file?"
+          ],
+          "es-MX": [
+            "¿Qué secuencia refleja MEJOR los pasos recomendados en la clase para documentar profesionalmente los metadatos de un archivo?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Extract full metadata, normalize timestamps (e.g., to UTC), save screenshots, record the file hash and relate metadata to messages or events, then write a technical conclusion",
+            "Read the file quickly, trust the app’s display and skip hashes or screenshots",
+            "Only look at the file name and assume all other metadata is irrelevant",
+            "Directly write a narrative story without any technical data or correlation"
+          ],
+          "es-MX": [
+            "Extraer metadatos completos, normalizar timestamps (ej. a UTC), guardar capturas, registrar el hash del archivo y relacionar metadatos con mensajes o eventos, para finalmente redactar una conclusión técnica",
+            "Leer el archivo rápidamente, confiar en la vista de la app y omitir hashes o capturas",
+            "Ver solo el nombre del archivo y asumir que el resto de metadatos es irrelevante",
+            "Redactar directamente una historia narrativa sin datos técnicos ni correlación"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Extract full metadata, normalize timestamps (e.g., to UTC), save screenshots, record the file hash and relate metadata to messages or events, then write a technical conclusion",
+          "es-MX": "Extraer metadatos completos, normalizar timestamps (ej. a UTC), guardar capturas, registrar el hash del archivo y relacionar metadatos con mensajes o eventos, para finalmente redactar una conclusión técnica"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class presents a systematic workflow to ensure that metadata is complete, verifiable, correlated and clearly interpreted in the report.",
+              "es-MX": "La clase presenta un flujo de trabajo sistemático para asegurar que los metadatos sean completos, verificables, correlacionados y claramente interpretados en el informe."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "ejemplo-integrado",
+        "Question Text": {
+          "en-US": [
+            "In the integrated example of a photo sent by WhatsApp on 12/02/2025, which conclusion is drawn from correlating EXIF metadata and the associated message?"
+          ],
+          "es-MX": [
+            "En el ejemplo integrado de la foto enviada por WhatsApp el 12/02/2025, ¿qué conclusión se obtiene al correlacionar los metadatos EXIF con el mensaje asociado?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "That the photo was taken two seconds before sending, and its GPS location matches where the user was according to system records",
+            "That the photo has no time or location information and cannot be used",
+            "That the photo was clearly edited many times with different software tools",
+            "That the EXIF contradicts the timestamp of the message in all aspects"
+          ],
+          "es-MX": [
+            "Que la foto fue tomada dos segundos antes del envío y que su ubicación GPS coincide con el lugar donde se encontraba el usuario según registros del sistema",
+            "Que la foto no tiene información de tiempo ni ubicación y no puede usarse",
+            "Que la foto fue claramente editada muchas veces con distintas herramientas de software",
+            "Que el EXIF contradice por completo el timestamp del mensaje en todos los aspectos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "That the photo was taken two seconds before sending, and its GPS location matches where the user was according to system records",
+          "es-MX": "Que la foto fue tomada dos segundos antes del envío y que su ubicación GPS coincide con el lugar donde se encontraba el usuario según registros del sistema"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "This example shows how precise correlation supports the narrative.",
+                "Time and location from EXIF and system logs reinforce authenticity.",
+                "It is a model of how to write a clear, technical micro-conclusion."
+              ],
+              "es-MX": [
+                "Este ejemplo muestra cómo la correlación precisa respalda la narrativa.",
+                "La hora y ubicación de EXIF y registros del sistema refuerzan la autenticidad.",
+                "Es un modelo de cómo redactar una microconclusión técnica clara."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "valor-documentacion",
+        "Question Text": {
+          "en-US": [
+            "Which statement BEST captures the key message of the class about the role of documentation in forensic analysis?"
+          ],
+          "es-MX": [
+            "¿Qué afirmación refleja MEJOR el mensaje clave de la clase sobre el papel de la documentación en el análisis forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Documenting evidence is as important as extracting and analyzing it, because it gives technical and legal validity to the results",
+            "If the analysis was well done, documentation is optional and only for decoration",
+            "Documentation should mainly include personal opinions to make the report more interesting to read",
+            "Screenshots alone are always enough to replace structured tables and written conclusions"
+          ],
+          "es-MX": [
+            "Documentar la evidencia es tan importante como extraerla y analizarla, porque da validez técnica y legal a los resultados",
+            "Si el análisis estuvo bien hecho, la documentación es opcional y solo sirve de adorno",
+            "La documentación debe incluir principalmente opiniones personales para hacer el informe más interesante de leer",
+            "Las capturas de pantalla por sí solas siempre son suficientes para reemplazar tablas estructuradas y conclusiones escritas"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Documenting evidence is as important as extracting and analyzing it, because it gives technical and legal validity to the results",
+          "es-MX": "Documentar la evidencia es tan importante como extraerla y analizarla, porque da validez técnica y legal a los resultados"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class closes by stressing that without solid documentation, even excellent technical work can lose probative value or be rejected in court.",
+              "es-MX": "La clase cierra subrayando que, sin una documentación sólida, incluso un trabajo técnico excelente puede perder valor probatorio o ser rechazado en juicio."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,770 @@
+{
+    "meta": {
+      "slug": "forense-apps20",
+      "title": "Estructura de bases de datos en WhatsApp: msgstore.db y wa.db",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 2,
+      "classNo": 20,
+      "description": "Análisis de la estructura interna de msgstore.db y wa.db en WhatsApp, identificando tablas clave para reconstruir conversaciones, contactos, adjuntos y metadatos.",
+      "tags": [
+        "whatsapp",
+        "sqlite",
+        "msgstore.db",
+        "wa.db",
+        "mensajes",
+        "contactos",
+        "adjuntos",
+        "forense"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "Rol general de msgstore.db y wa.db",
+        "Question Text": {
+          "en-US": [
+            "In WhatsApp forensic analysis, what is the main difference between msgstore.db and wa.db?",
+            "From a forensic perspective, how do msgstore.db and wa.db complement each other?"
+          ],
+          "es-MX": [
+            "En el análisis forense de WhatsApp, ¿cuál es la diferencia principal entre msgstore.db y wa.db?",
+            "Desde la perspectiva forense, ¿cómo se complementan msgstore.db y wa.db?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "msgstore.db focuses on messages, chats and attachments, while wa.db stores contacts and user-related data",
+            "msgstore.db stores only images and videos, and wa.db stores only the operating system files",
+            "msgstore.db keeps the list of installed apps, and wa.db stores Wi-Fi passwords",
+            "msgstore.db is used only for backups in the cloud, and wa.db only for emojis and stickers"
+          ],
+          "es-MX": [
+            "msgstore.db se centra en mensajes, chats y adjuntos, mientras que wa.db almacena contactos y datos asociados al usuario",
+            "msgstore.db guarda únicamente imágenes y videos, y wa.db guarda solo archivos del sistema operativo",
+            "msgstore.db conserva la lista de apps instaladas, y wa.db almacena contraseñas de Wi-Fi",
+            "msgstore.db se usa solo para respaldos en la nube y wa.db solo para emojis y stickers"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "msgstore.db focuses on messages, chats and attachments, while wa.db stores contacts and user-related data",
+          "es-MX": "msgstore.db se centra en mensajes, chats y adjuntos, mientras que wa.db almacena contactos y datos asociados al usuario"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The class explains that WhatsApp relies mainly on two SQLite databases:"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "msgstore.db: contains messages, chat structure, attachments and temporal metadata.",
+                "wa.db: holds contact information and user-related data synced with the phone’s address book."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Together they allow the examiner to reconstruct not only what was said and when, but also who was involved, under which names and with which associated media."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La clase explica que WhatsApp se apoya principalmente en dos bases SQLite:"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "msgstore.db: contiene mensajes, estructura de chats, adjuntos y metadatos temporales.",
+                "wa.db: almacena información de contactos y datos asociados al usuario sincronizados con la agenda del teléfono."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "En conjunto permiten al perito reconstruir no solo qué se dijo y cuándo, sino también quiénes participaron, con qué nombres aparecen y con qué archivos multimedia se relacionan."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Tabla messages en msgstore.db",
+        "Question Text": {
+          "en-US": [
+            "What is the primary forensic importance of the messages table inside msgstore.db?",
+            "Why is the messages table considered the base table for reconstructing WhatsApp conversations?"
+          ],
+          "es-MX": [
+            "¿Cuál es la importancia forense principal de la tabla messages dentro de msgstore.db?",
+            "¿Por qué la tabla messages se considera la tabla base para reconstruir conversaciones de WhatsApp?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It stores the text, sender/receiver identifiers, message type, timestamps, status and links to attachments",
+            "It stores only the app configuration and theme colors, not actual messages",
+            "It contains only cache information used to speed up the app, without evidentiary value",
+            "It stores exclusively the user’s profile picture, without any text or metadata"
+          ],
+          "es-MX": [
+            "Porque almacena el texto, los identificadores de remitente/destinatario, el tipo de mensaje, las marcas de tiempo, el estado y los enlaces a adjuntos",
+            "Porque sólo guarda la configuración de la app y los colores del tema, no mensajes reales",
+            "Porque contiene únicamente información de caché para acelerar la app, sin valor probatorio",
+            "Porque almacena exclusivamente la foto de perfil del usuario, sin texto ni metadatos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It stores the text, sender/receiver identifiers, message type, timestamps, status and links to attachments",
+          "es-MX": "Porque almacena el texto, los identificadores de remitente/destinatario, el tipo de mensaje, las marcas de tiempo, el estado y los enlaces a adjuntos"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "messages as the core of msgstore.db"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "It contains the actual content of each message (text).",
+                "It records who sent and who received the message through internal IDs.",
+                "It stores the message type (text, image, video, audio, document, location, etc.).",
+                "It keeps timestamps in UNIX format and message state (sent, delivered, read).",
+                "It includes fields that link each message to attachments and other tables."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Because of this, practically any conversation reconstruction will start by querying the messages table and then correlating it with other structures."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "messages como núcleo de msgstore.db"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Contiene el contenido real de cada mensaje (texto).",
+                "Registra quién envía y quién recibe mediante IDs internos.",
+                "Guarda el tipo de mensaje (texto, imagen, video, audio, documento, ubicación, etc.).",
+                "Conserva marcas de tiempo en formato UNIX y el estado (enviado, entregado, leído).",
+                "Incluye campos que enlazan cada mensaje con adjuntos y otras tablas."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Por ello, prácticamente cualquier reconstrucción de conversación inicia consultando la tabla messages y después correlándola con otras estructuras."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Tabla chat_list y organización de chats",
+        "Question Text": {
+          "en-US": [
+            "What is the main function of the chat_list table in msgstore.db?",
+            "How does chat_list help the examiner understand the global structure of WhatsApp conversations?"
+          ],
+          "es-MX": [
+            "¿Cuál es la función principal de la tabla chat_list en msgstore.db?",
+            "¿Cómo ayuda chat_list al perito a entender la estructura global de las conversaciones en WhatsApp?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It stores information about active chats, last visible message, last activity date, unread count and chat state (archived or pinned)",
+            "It stores only multimedia files without any relation to chats",
+            "It contains exclusively the phone’s system logs, unrelated to WhatsApp",
+            "It is used only to store emojis and stickers categories"
+          ],
+          "es-MX": [
+            "Almacena información sobre los chats activos, el último mensaje visible, la fecha de última actividad, el número de mensajes no leídos y el estado del chat (archivado o fijado)",
+            "Almacena únicamente archivos multimedia sin relación con los chats",
+            "Contiene exclusivamente logs del sistema del teléfono, sin relación con WhatsApp",
+            "Se utiliza sólo para guardar categorías de emojis y stickers"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It stores information about active chats, last visible message, last activity date, unread count and chat state (archived or pinned)",
+          "es-MX": "Almacena información sobre los chats activos, el último mensaje visible, la fecha de última actividad, el número de mensajes no leídos y el estado del chat (archivado o fijado)"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "chat_list works like a summary of each conversation in the device:"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Shows which contacts or groups have ongoing chats.",
+                "Records the last visible message and the last time the chat was active.",
+                "Includes counters of unread messages.",
+                "Indicates whether the chat is archived or pinned at the top of the list."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "This helps the examiner see the big picture of activity and prioritize which chats may be most relevant."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "chat_list funciona como un resumen de cada conversación en el dispositivo:"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Muestra con qué contactos o grupos existen chats activos.",
+                "Registra el último mensaje visible y la última fecha de actividad del chat.",
+                "Incluye contadores de mensajes no leídos.",
+                "Indica si el chat está archivado o fijado en la parte superior de la lista."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Esto ayuda al perito a ver el panorama general de la actividad y priorizar qué chats pueden ser más relevantes."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Tabla media / message_media",
+        "Question Text": {
+          "en-US": [
+            "Why is the media (or message_media) table fundamental for recovering attachments in WhatsApp?",
+            "What type of information does media store that is crucial for reconstructing multimedia evidence?"
+          ],
+          "es-MX": [
+            "¿Por qué la tabla media (o message_media) es fundamental para recuperar adjuntos en WhatsApp?",
+            "¿Qué tipo de información almacena media que resulta crucial para reconstruir evidencia multimedia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It records file types, internal paths, download status, file size, thumbnails and the message ID that the attachment belongs to",
+            "It only stores the app’s language settings and notification tones",
+            "It contains exclusively the list of Wi-Fi networks used by the phone",
+            "It is used only to store temporary logs that are always erased on exit"
+          ],
+          "es-MX": [
+            "Porque registra tipos de archivo, rutas internas, estado de descarga, tamaño del archivo, miniaturas y el ID del mensaje al que pertenece el adjunto",
+            "Porque sólo guarda el idioma de la app y los tonos de notificación",
+            "Porque contiene exclusivamente la lista de redes Wi-Fi usadas por el teléfono",
+            "Porque se usa sólo para almacenar logs temporales que siempre se borran al salir"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It records file types, internal paths, download status, file size, thumbnails and the message ID that the attachment belongs to",
+          "es-MX": "Porque registra tipos de archivo, rutas internas, estado de descarga, tamaño del archivo, miniaturas y el ID del mensaje al que pertenece el adjunto"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "The media table acts as the bridge between messages and physical files stored in the device.",
+                "It tells the examiner what type of media was sent (image, audio, video, document, etc.).",
+                "It provides the internal path, size and download status, plus thumbnails if available.",
+                "It links each media record to a specific message through an ID."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Thanks to this structure, the examiner can locate, validate and export attachments even if the original files are missing but thumbnails or paths remain."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "La tabla media actúa como puente entre los mensajes y los archivos físicos almacenados en el dispositivo.",
+                "Indica qué tipo de archivo se envió (imagen, audio, video, documento, etc.).",
+                "Proporciona la ruta interna, tamaño y estado de descarga, además de miniaturas si existen.",
+                "Vincula cada registro de media con un mensaje concreto mediante un ID."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Gracias a esta estructura, el perito puede localizar, validar y exportar adjuntos incluso si el archivo original ya no está, pero persisten miniaturas o rutas."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Tablas complementarias en msgstore.db",
+        "Question Text": {
+          "en-US": [
+            "Which option correctly matches each auxiliary table in msgstore.db with the type of artifact it mainly represents?",
+            "How are messages_quotes, messages_links, messages_thumbnails and group_participants described in the lesson?"
+          ],
+          "es-MX": [
+            "¿Qué opción relaciona correctamente cada tabla auxiliar de msgstore.db con el tipo de artefacto que representa principalmente?",
+            "¿Cómo se describen en la clase messages_quotes, messages_links, messages_thumbnails y group_participants?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "messages_quotes → quoted messages; messages_links → URLs and previews; messages_thumbnails → small previews of media; group_participants → members in groups",
+            "messages_quotes → system logs; messages_links → Wi-Fi keys; messages_thumbnails → emoji packs; group_participants → list of installed apps",
+            "messages_quotes → battery usage; messages_links → camera settings; messages_thumbnails → keyboard language; group_participants → wallpaper history",
+            "messages_quotes → GPS history; messages_links → Bluetooth devices; messages_thumbnails → ringtone list; group_participants → VPN profiles"
+          ],
+          "es-MX": [
+            "messages_quotes → mensajes citados; messages_links → URLs y previsualizaciones; messages_thumbnails → miniaturas de media; group_participants → miembros en grupos",
+            "messages_quotes → logs del sistema; messages_links → claves de Wi-Fi; messages_thumbnails → paquetes de emojis; group_participants → lista de apps instaladas",
+            "messages_quotes → uso de batería; messages_links → ajustes de cámara; messages_thumbnails → idioma del teclado; group_participants → historial de wallpapers",
+            "messages_quotes → historial de GPS; messages_links → dispositivos Bluetooth; messages_thumbnails → lista de tonos; group_participants → perfiles de VPN"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "messages_quotes → quoted messages; messages_links → URLs and previews; messages_thumbnails → small previews of media; group_participants → members in groups",
+          "es-MX": "messages_quotes → mensajes citados; messages_links → URLs y previsualizaciones; messages_thumbnails → miniaturas de media; group_participants → miembros en grupos"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The lesson lists several auxiliary tables that enrich the analysis:"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "messages_quotes: relates messages that quote or reply to previous ones.",
+                "messages_links: stores URLs and metadata used to build link previews.",
+                "messages_thumbnails: keeps small previews of images or videos.",
+                "group_participants: records which users belong to each group and when."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Together, these tables allow the examiner to see context such as replies, shared links, visual previews and group composition."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La lección enumera varias tablas auxiliares que enriquecen el análisis:"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "messages_quotes: relaciona mensajes que citan o responden a otros previos.",
+                "messages_links: almacena URLs y metadatos usados para las previsualizaciones.",
+                "messages_thumbnails: conserva miniaturas de imágenes o videos.",
+                "group_participants: registra qué usuarios pertenecen a cada grupo y en qué momentos."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "En conjunto, estas tablas permiten al perito ver contexto como respuestas, enlaces compartidos, previsualizaciones visuales y composición de grupos."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Tablas principales en wa.db",
+        "Question Text": {
+          "en-US": [
+            "Which set of tables belongs to wa.db and is especially useful for linking identifiers with real contacts and chat summaries?",
+            "According to the lesson, which tables in wa.db help correlate JIDs with visible names and chat information?"
+          ],
+          "es-MX": [
+            "¿Qué conjunto de tablas pertenece a wa.db y es especialmente útil para vincular identificadores con contactos reales y resúmenes de chats?",
+            "Según la clase, ¿qué tablas en wa.db ayudan a correlacionar JIDs con nombres visibles e información de chats?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "wa_contacts, wa_chatlist and pending_messages",
+            "messages, chat_list and media",
+            "system_logs, browser_history and wifi_profiles",
+            "notifications, wallpapers and call_recordings"
+          ],
+          "es-MX": [
+            "wa_contacts, wa_chatlist y pending_messages",
+            "messages, chat_list y media",
+            "system_logs, browser_history y wifi_profiles",
+            "notifications, wallpapers y call_recordings"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "wa_contacts, wa_chatlist and pending_messages",
+          "es-MX": "wa_contacts, wa_chatlist y pending_messages"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "wa_contacts: contains phone numbers, display names, status and unique identifiers.",
+                "wa_chatlist (depending on the version): summarizes chat and user information and links contacts with conversations.",
+                "pending_messages: keeps track of messages pending processing or in queue (e.g. failed or delayed sends)."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "These tables are crucial to translate internal JIDs from msgstore.db into human-readable names and to understand pending or failed communications."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "wa_contacts: contiene números telefónicos, nombres visibles, estados y un identificador único.",
+                "wa_chatlist (según la versión): resume información de chats y usuarios y enlaza contactos con conversaciones.",
+                "pending_messages: registra mensajes pendientes de procesamiento o en cola (por ejemplo, envíos fallidos o retrasados)."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Estas tablas son clave para traducir los JIDs internos de msgstore.db a nombres legibles y para comprender comunicaciones pendientes o fallidas."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Correlación msgstore.db ↔ wa.db",
+        "Question Text": {
+          "en-US": [
+            "Which sequence best describes the correlation process between msgstore.db and wa.db to reconstruct a conversation with contact names?",
+            "How does an examiner typically link a message in messages with a human-readable contact name in wa.db?"
+          ],
+          "es-MX": [
+            "¿Qué secuencia describe mejor el proceso de correlación entre msgstore.db y wa.db para reconstruir una conversación con nombres de contacto?",
+            "¿Cómo vincula normalmente el perito un mensaje en messages con un nombre legible de contacto en wa.db?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Take key_remote_jid (or similar ID) from messages in msgstore.db, look for that JID in wa_contacts in wa.db, obtain the contact name and combine it with chat_list and media to reconstruct the conversation with attachments",
+            "Delete wa.db because it has no evidentiary value and work only with msgstore.db",
+            "Change all JIDs manually to random names to anonymize the report",
+            "Use only the phone’s call logs without consulting any WhatsApp database"
+          ],
+          "es-MX": [
+            "Tomar key_remote_jid (u otro ID similar) de messages en msgstore.db, buscar ese JID en wa_contacts de wa.db, obtener el nombre del contacto y combinarlo con chat_list y media para reconstruir la conversación con adjuntos",
+            "Borrar wa.db porque no tiene valor probatorio y trabajar sólo con msgstore.db",
+            "Cambiar todos los JIDs manualmente a nombres aleatorios para anonimizar el informe",
+            "Usar sólo los registros de llamadas del teléfono sin consultar ninguna base de WhatsApp"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Take key_remote_jid (or similar ID) from messages in msgstore.db, look for that JID in wa_contacts in wa.db, obtain the contact name and combine it with chat_list and media to reconstruct the conversation with attachments",
+          "es-MX": "Tomar key_remote_jid (u otro ID similar) de messages en msgstore.db, buscar ese JID en wa_contacts de wa.db, obtener el nombre del contacto y combinarlo con chat_list y media para reconstruir la conversación con adjuntos"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Identify the conversation and messages in msgstore.db (messages and chat_list).",
+                "Extract the JID field (such as key_remote_jid) that identifies the peer.",
+                "Search that JID in wa_contacts inside wa.db to obtain phone number and display name.",
+                "Use media and related tables to attach multimedia files and thumbnails.",
+                "Present the reconstructed chat showing real names, numbers, timestamps and attachments."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "This correlation step is what turns internal IDs into human-understandable narratives in the report."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Identificar la conversación y los mensajes en msgstore.db (messages y chat_list).",
+                "Extraer el campo JID (como key_remote_jid) que identifica al interlocutor.",
+                "Buscar ese JID en wa_contacts dentro de wa.db para obtener número y nombre visible.",
+                "Utilizar media y tablas relacionadas para vincular archivos multimedia y miniaturas.",
+                "Presentar el chat reconstruido mostrando nombres reales, números, marcas de tiempo y adjuntos."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Este paso de correlación es el que convierte IDs internos en narrativas comprensibles para el informe."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Tipos de mensaje (media_wa_type)",
+        "Question Text": {
+          "en-US": [
+            "According to the class, which mapping between media_wa_type code and content type is correct for WhatsApp messages?",
+            "Which option correctly pairs media_wa_type values with the corresponding type of message or attachment?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿qué mapeo entre el código media_wa_type y el tipo de contenido es correcto para los mensajes de WhatsApp?",
+            "¿Qué opción empareja correctamente los valores de media_wa_type con el tipo de mensaje o adjunto correspondiente?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "1 → Image; 2 → Audio; 3 → Video; 4 → Document; 5 → Contact; 16 → Location",
+            "1 → Battery level; 2 → Screen brightness; 3 → Wallpaper; 4 → System update; 5 → Bluetooth; 16 → Wi-Fi",
+            "1 → Operating system; 2 → Kernel; 3 → Driver; 4 → Firmware; 5 → BIOS; 16 → RAM",
+            "1 → Browser history; 2 → Cookies; 3 → Cache; 4 → Passwords; 5 → Bookmarks; 16 → Extensions"
+          ],
+          "es-MX": [
+            "1 → Imagen; 2 → Audio; 3 → Video; 4 → Documento; 5 → Contacto; 16 → Ubicación",
+            "1 → Nivel de batería; 2 → Brillo de pantalla; 3 → Fondo de pantalla; 4 → Actualización del sistema; 5 → Bluetooth; 16 → Wi-Fi",
+            "1 → Sistema operativo; 2 → Kernel; 3 → Driver; 4 → Firmware; 5 → BIOS; 16 → RAM",
+            "1 → Historial del navegador; 2 → Cookies; 3 → Caché; 4 → Contraseñas; 5 → Marcadores; 16 → Extensiones"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "1 → Image; 2 → Audio; 3 → Video; 4 → Document; 5 → Contact; 16 → Location",
+          "es-MX": "1 → Imagen; 2 → Audio; 3 → Video; 4 → Documento; 5 → Contacto; 16 → Ubicación"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The class mentions that in msgstore.db, certain fields (like media_wa_type) categorize the type of content associated with a message."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "1 = image sent or received.",
+                "2 = audio (voice notes or audio files).",
+                "3 = video.",
+                "4 = document (PDF, DOC, etc.).",
+                "5 = contact card.",
+                "16 = location."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Understanding these codes allows the examiner to filter and classify messages by type quickly during analysis."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La clase indica que en msgstore.db, ciertos campos (como media_wa_type) categorizan el tipo de contenido asociado al mensaje."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "1 = imagen enviada o recibida.",
+                "2 = audio (notas de voz o archivos de audio).",
+                "3 = video.",
+                "4 = documento (PDF, DOC, etc.).",
+                "5 = tarjeta de contacto.",
+                "16 = ubicación."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Entender estos códigos permite al perito filtrar y clasificar mensajes por tipo de forma rápida durante el análisis."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Contenido eliminado o archivado en msgstore.db",
+        "Question Text": {
+          "en-US": [
+            "How does msgstore.db help the examiner find evidence of deleted or archived content according to the class?",
+            "Which option best describes the kind of residual information that can remain in msgstore.db after a user deletes chats or media?"
+          ],
+          "es-MX": [
+            "¿Cómo ayuda msgstore.db al perito a encontrar evidencia de contenido eliminado o archivado según la clase?",
+            "¿Qué opción describe mejor el tipo de información residual que puede permanecer en msgstore.db después de que un usuario borra chats o multimedia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It may still contain deleted messages with text or metadata, chat_list records of removed chats, paths of attachments no longer present and thumbnails or archived conversations with valid timestamps",
+            "It automatically wipes all messages and chats as soon as the user presses delete, leaving no trace at all",
+            "It retains only CPU temperature logs and battery statistics",
+            "It keeps only the last login time to the operating system, unrelated to WhatsApp"
+          ],
+          "es-MX": [
+            "Puede seguir conteniendo mensajes eliminados con texto o metadatos, registros de chat_list de chats eliminados, rutas de adjuntos ya no presentes y miniaturas o conversaciones archivadas con timestamps válidos",
+            "Borra automáticamente todos los mensajes y chats en cuanto el usuario presiona eliminar, sin dejar ningún rastro",
+            "Conserva únicamente logs de temperatura del CPU y estadísticas de batería",
+            "Guarda sólo la última hora de inicio de sesión del sistema operativo, sin relación con WhatsApp"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It may still contain deleted messages with text or metadata, chat_list records of removed chats, paths of attachments no longer present and thumbnails or archived conversations with valid timestamps",
+          "es-MX": "Puede seguir conteniendo mensajes eliminados con texto o metadatos, registros de chat_list de chats eliminados, rutas de adjuntos ya no presentes y miniaturas o conversaciones archivadas con timestamps válidos"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The class explains that msgstore.db often keeps traces of content even after deletion in the app interface:"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Messages marked as deleted but still present with text or partial metadata.",
+                "chat_list entries of conversations that no longer appear to the user.",
+                "Internal paths of attachments whose physical file was removed.",
+                "Thumbnails and archived chats where timestamps remain valid."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "These residual elements are extremely valuable for reconstructing user actions that they tried to hide."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La clase explica que msgstore.db suele conservar rastros de contenido incluso después de que se borra desde la interfaz de la app:"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Mensajes marcados como eliminados pero aún presentes con texto o metadatos parciales.",
+                "Entradas de chat_list de conversaciones que ya no ve el usuario.",
+                "Rutas internas de adjuntos cuyo archivo físico fue eliminado.",
+                "Miniaturas y chats archivados donde las marcas de tiempo siguen vigentes."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Estos elementos residuales son muy valiosos para reconstruir acciones que el usuario intentó ocultar."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Procedimiento integrado de análisis en WhatsApp",
+        "Question Text": {
+          "en-US": [
+            "Which ordered sequence best represents the integrated forensic analysis process of WhatsApp described in the class?",
+            "What is the correct order of steps to reconstruct WhatsApp activity using msgstore.db, wa.db and related artifacts?"
+          ],
+          "es-MX": [
+            "¿Qué secuencia ordenada representa mejor el proceso integrado de análisis forense de WhatsApp descrito en la clase?",
+            "¿Cuál es el orden correcto de pasos para reconstruir la actividad de WhatsApp usando msgstore.db, wa.db y artefactos relacionados?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Open msgstore.db, extract messages ordered by timestamp, identify messages with attachments via media, correlate JIDs with wa_contacts to get names, review deletion records and hidden messages, recover thumbnails and finally export full conversations, attachments and metadata with SHA-256 hashes",
+            "Delete both databases to ‘clean’ the phone and then try to reconstruct the chats only from screenshots",
+            "Open wa.db, change all contact names to ‘Anonymous’ and skip any correlation with messages",
+            "Export only the list of contacts without reviewing any messages or attachments"
+          ],
+          "es-MX": [
+            "Abrir msgstore.db, extraer mensajes ordenados por timestamp, identificar mensajes con adjuntos mediante media, correlacionar JIDs con wa_contacts para obtener nombres, revisar registros de eliminación y mensajes ocultos, recuperar miniaturas y finalmente exportar conversaciones completas, adjuntos y metadatos con hashes SHA-256",
+            "Borrar ambas bases para ‘limpiar’ el teléfono y luego intentar reconstruir los chats solo con capturas de pantalla",
+            "Abrir wa.db, cambiar todos los nombres de contacto a ‘Anonymous’ y omitir correlación con mensajes",
+            "Exportar sólo la lista de contactos sin revisar mensajes ni adjuntos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Open msgstore.db, extract messages ordered by timestamp, identify messages with attachments via media, correlate JIDs with wa_contacts to get names, review deletion records and hidden messages, recover thumbnails and finally export full conversations, attachments and metadata with SHA-256 hashes",
+          "es-MX": "Abrir msgstore.db, extraer mensajes ordenados por timestamp, identificar mensajes con adjuntos mediante media, correlacionar JIDs con wa_contacts para obtener nombres, revisar registros de eliminación y mensajes ocultos, recuperar miniaturas y finalmente exportar conversaciones completas, adjuntos y metadatos con hashes SHA-256"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Open msgstore.db and review messages and chat_list, ordering by timestamp.",
+                "Use media/message_media to locate attachments and their internal paths.",
+                "Open wa.db and correlate JIDs with wa_contacts to resolve real names and numbers.",
+                "Review flags for deleted or archived messages and check supporting tables (thumbnails, quotes, links, groups).",
+                "Recover thumbnails and any residual artifacts related to deleted content.",
+                "Export conversations, attachments and metadata, calculating hashes (e.g. SHA-256) to guarantee integrity."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Abrir msgstore.db y revisar messages y chat_list, ordenando por timestamp.",
+                "Usar media/message_media para localizar adjuntos y sus rutas internas.",
+                "Abrir wa.db y correlacionar JIDs con wa_contacts para resolver nombres y números reales.",
+                "Revisar flags de mensajes eliminados o archivados y consultar tablas de apoyo (thumbnails, quotes, links, grupos).",
+                "Recuperar miniaturas y artefactos residuales relacionados con contenido borrado.",
+                "Exportar conversaciones, adjuntos y metadatos, calculando hashes (por ejemplo, SHA-256) para garantizar integridad."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Razones de riqueza forense en WhatsApp",
+        "Question Text": {
+          "en-US": [
+            "Why does the lesson state that WhatsApp is one of the most analyzed apps in forensic environments?",
+            "Which option best summarizes why WhatsApp is considered forensically rich according to the class?"
+          ],
+          "es-MX": [
+            "¿Por qué la lección indica que WhatsApp es una de las aplicaciones más analizadas en entornos forenses?",
+            "¿Qué opción resume mejor por qué WhatsApp se considera forensemente rica según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because its SQLite databases have a clear organization that allows reconstructing conversations, senders, recipients, attachments and temporal metadata in detail",
+            "Because it stores only system diagnostics with no messages or attachments",
+            "Because it automatically deletes all artifacts every 24 hours, so there is nothing to analyze",
+            "Because it is the only app that does not use databases and therefore needs no forensic work"
+          ],
+          "es-MX": [
+            "Porque sus bases SQLite tienen una organización clara que permite reconstruir en detalle conversaciones, remitentes, destinatarios, adjuntos y metadatos temporales",
+            "Porque solo almacena diagnósticos del sistema sin mensajes ni adjuntos",
+            "Porque borra automáticamente todos los artefactos cada 24 horas, de modo que no hay nada que analizar",
+            "Porque es la única app que no usa bases de datos y por eso no requiere trabajo forense"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because its SQLite databases have a clear organization that allows reconstructing conversations, senders, recipients, attachments and temporal metadata in detail",
+          "es-MX": "Porque sus bases SQLite tienen una organización clara que permite reconstruir en detalle conversaciones, remitentes, destinatarios, adjuntos y metadatos temporales"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The class highlights that WhatsApp’s databases are well structured from a forensic point of view:"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "msgstore.db centralizes messages, chats and attachments.",
+                "wa.db centralizes contacts and identification data.",
+                "Auxiliary tables record links, quotes, thumbnails, groups and edits.",
+                "Together they allow detailed reconstruction of what happened, when and with whom."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "This combination makes WhatsApp a frequent and extremely valuable source of digital evidence."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La clase subraya que las bases de WhatsApp están bien estructuradas desde el punto de vista forense:"
+            },
+            {
+              "type": "ul",
+              "items": [
+                "msgstore.db centraliza mensajes, chats y adjuntos.",
+                "wa.db centraliza contactos y datos de identificación.",
+                "Tablas auxiliares registran enlaces, citas, miniaturas, grupos y ediciones.",
+                "En conjunto permiten reconstruir en detalle qué ocurrió, cuándo y con quién."
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Esta combinación convierte a WhatsApp en una fuente frecuente y sumamente valiosa de evidencia digital."
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

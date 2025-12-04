@@ -1,0 +1,740 @@
+{
+    "meta": {
+      "slug": "forense-apps49",
+      "title": "Taller de análisis de imágenes y videos",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 4,
+      "classNo": 49,
+      "description": "Taller integrado para evaluar autenticidad, manipulación y coherencia entre imágenes y videos usando metadatos, estructura interna, huellas de edición, hashes y análisis visual-técnico.",
+      "tags": [
+        "taller",
+        "imágenes",
+        "videos",
+        "EXIF",
+        "hashes",
+        "autenticidad",
+        "manipulación",
+        "Autopsy",
+        "Magnet AXIOM",
+        "Amped FIVE"
+      ]
+    },
+    "Questions": [
+  
+      {
+        "Category": "Propósito del taller",
+        "Question Text": {
+          "en-US": [
+            "What is the main purpose of the workshop described in this class?"
+          ],
+          "es-MX": [
+            "¿Cuál es el propósito principal del taller descrito en esta clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To integrate all previous techniques to simulate a complete multimedia authenticity examination combining images and videos.",
+            "To focus only on basic theory without using any tools.",
+            "To practice exclusively file recovery, ignoring authenticity.",
+            "To learn how to erase all multimedia traces from a device."
+          ],
+          "es-MX": [
+            "Integrar todas las técnicas previas para simular un peritaje completo de autenticidad multimedia combinando imágenes y videos.",
+            "Enfocarse solo en teoría básica sin usar ninguna herramienta.",
+            "Practicar exclusivamente recuperación de archivos, ignorando la autenticidad.",
+            "Aprender a borrar todas las huellas multimedia de un dispositivo."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To integrate all previous techniques to simulate a complete multimedia authenticity examination combining images and videos.",
+          "es-MX": "Integrar todas las técnicas previas para simular un peritaje completo de autenticidad multimedia combinando imágenes y videos."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The workshop combines EXIF analysis, video structure review, metadata, hashes and visual–technical inspection to perform an end-to-end authenticity assessment."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El taller combina análisis EXIF, revisión de estructura de video, metadatos, hashes y análisis visual–técnico para realizar una evaluación de autenticidad de principio a fin."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Alcance del taller",
+        "Question Text": {
+          "en-US": [
+            "Which aspects are explicitly mentioned as part of the workshop’s scope?"
+          ],
+          "es-MX": [
+            "¿Qué aspectos se mencionan explícitamente como parte del alcance del taller?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Image analysis (EXIF/GPS/edits), video analysis (codec/structure/frames), multimedia metadata, hash validation and comparison of original vs modified files.",
+            "Only password cracking and network traffic interception.",
+            "Exclusive focus on chat text without multimedia.",
+            "Hardware repair of mobile devices."
+          ],
+          "es-MX": [
+            "Análisis de imágenes (EXIF/GPS/edición), análisis de videos (codec/estructura/fotogramas), metadatos multimedia, validación de integridad con hashes y comparación entre archivos originales y modificados.",
+            "Solo rompimiento de contraseñas e interceptación de tráfico de red.",
+            "Enfoque exclusivo en texto de chats sin multimedia.",
+            "Reparación de hardware de dispositivos móviles."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Image analysis (EXIF/GPS/edits), video analysis (codec/structure/frames), multimedia metadata, hash validation and comparison of original vs modified files.",
+          "es-MX": "Análisis de imágenes (EXIF/GPS/edición), análisis de videos (codec/estructura/fotogramas), metadatos multimedia, validación de integridad con hashes y comparación entre archivos originales y modificados."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "The workshop is integrative: image + video.",
+                "It emphasizes both technical metadata and visual inspection.",
+                "It explicitly includes hash comparison between versions."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "El taller es integrador: imagen + video.",
+                "Enfatiza tanto metadatos técnicos como inspección visual.",
+                "Incluye explícitamente comparación de hashes entre versiones."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Metodología general",
+        "Question Text": {
+          "en-US": [
+            "According to this class, how should the analysis of images and videos be structured methodologically?"
+          ],
+          "es-MX": [
+            "Según esta clase, ¿cómo debe estructurarse metodológicamente el análisis de imágenes y videos?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Following an ordered flow that validates each element both technically and contextually.",
+            "By improvising steps depending on the examiner’s preference, without any fixed order.",
+            "Only by checking hashes, ignoring visual content and context.",
+            "By relying exclusively on automated reports without human review."
+          ],
+          "es-MX": [
+            "Siguiendo un flujo ordenado que valide cada elemento tanto técnica como contextualmente.",
+            "Improvisando pasos según la preferencia del perito, sin orden fijo.",
+            "Solo revisando hashes, ignorando contenido visual y contexto.",
+            "Confiando exclusivamente en reportes automáticos sin revisión humana."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Following an ordered flow that validates each element both technically and contextually.",
+          "es-MX": "Siguiendo un flujo ordenado que valide cada elemento tanto técnica como contextualmente."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The class insists on a structured workflow: initial review, metadata, technical structure, manipulation detection, hash comparison and contextual integration."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La clase insiste en un flujo estructurado: revisión inicial, metadatos, estructura técnica, detección de manipulación, comparación de hashes e integración contextual."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Paso 1 - Revisión inicial",
+        "Question Text": {
+          "en-US": [
+            "Which elements should be reviewed during the initial multimedia inspection (Paso 1) in this workshop?"
+          ],
+          "es-MX": [
+            "¿Qué elementos deben revisarse durante la inspección multimedia inicial (Paso 1) en este taller?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "General quality, anomalous elements, visual inconsistencies, and recording basic data such as file name, size, resolution and duration.",
+            "Only checking the file icon and the operating system version.",
+            "Just verifying that the file opens in a media player.",
+            "Only the user’s opinion about whether the file looks real."
+          ],
+          "es-MX": [
+            "Calidad general, elementos anómalos, inconsistencias visuales, y registrar datos básicos como nombre de archivo, peso, resolución y duración.",
+            "Solo revisar el ícono del archivo y la versión del sistema operativo.",
+            "Únicamente verificar que el archivo abra en un reproductor.",
+            "Solo la opinión del usuario sobre si el archivo “se ve real”."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "General quality, anomalous elements, visual inconsistencies, and recording basic data such as file name, size, resolution and duration.",
+          "es-MX": "Calidad general, elementos anómalos, inconsistencias visuales, y registrar datos básicos como nombre de archivo, peso, resolución y duración."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Observe visual anomalies or artifacts.",
+                "Record technical basics (name, size, resolution, duration).",
+                "This creates a baseline before deeper metadata and structural analysis."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Observar anomalías o artefactos visuales.",
+                "Registrar datos técnicos básicos (nombre, tamaño, resolución, duración).",
+                "Esto crea una línea base antes del análisis de metadatos y estructura."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Paso 2 - Metadatos",
+        "Question Text": {
+          "en-US": [
+            "Which tools and metadata fields are highlighted in Paso 2 for images and videos?"
+          ],
+          "es-MX": [
+            "¿Qué herramientas y campos de metadatos se destacan en el Paso 2 para imágenes y videos?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "ExifTool for images and videos, plus ffprobe for videos; fields include real date/time, device model, editing software, GPS, resolution and frame rate.",
+            "Only the file manager of the operating system and the wallpaper settings.",
+            "Any text editor showing random bytes, without focusing on EXIF or MP4 atoms.",
+            "A photo filter app unrelated to forensics."
+          ],
+          "es-MX": [
+            "ExifTool para imágenes y videos, además de ffprobe para videos; campos como fecha/hora real, modelo de dispositivo, software de edición, GPS, resolución y frame rate.",
+            "Solo el explorador de archivos del sistema operativo y los ajustes del fondo de pantalla.",
+            "Cualquier editor de texto que muestre bytes aleatorios, sin enfocarse en EXIF o átomos MP4.",
+            "Una app de filtros de fotos sin relación con forense."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "ExifTool for images and videos, plus ffprobe for videos; fields include real date/time, device model, editing software, GPS, resolution and frame rate.",
+          "es-MX": "ExifTool para imágenes y videos, además de ffprobe para videos; campos como fecha/hora real, modelo de dispositivo, software de edición, GPS, resolución y frame rate."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The class explicitly recommends ExifTool and ffprobe to extract EXIF, XMP and MP4 atom information that reveals origin and possible manipulation."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La clase recomienda explícitamente ExifTool y ffprobe para extraer información EXIF, XMP y átomos MP4 que revelan origen y posible manipulación."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Paso 3 - Estructura técnica",
+        "Question Text": {
+          "en-US": [
+            "In Paso 3, what is meant by analyzing the \"technical structure\" of images and videos?"
+          ],
+          "es-MX": [
+            "En el Paso 3, ¿a qué se refiere analizar la \"estructura técnica\" de imágenes y videos?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "For images: comparing internal thumbnail vs main image, compression and edit data; for videos: frame sequence, unnatural cuts, audio inconsistencies and MOOV atom structure.",
+            "Only checking if the file name has spaces or special characters.",
+            "Verifying that the file can be attached to an email.",
+            "Looking only at the color of the player’s interface."
+          ],
+          "es-MX": [
+            "En imágenes: comparar miniatura interna vs imagen principal, compresión y datos de edición; en videos: secuencia de fotogramas, cortes no naturales, inconsistencias de audio y estructura del átomo MOOV.",
+            "Solo comprobar si el nombre de archivo tiene espacios o caracteres especiales.",
+            "Verificar que el archivo pueda adjuntarse en un correo.",
+            "Revisar únicamente el color de la interfaz del reproductor."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "For images: comparing internal thumbnail vs main image, compression and edit data; for videos: frame sequence, unnatural cuts, audio inconsistencies and MOOV atom structure.",
+          "es-MX": "En imágenes: comparar miniatura interna vs imagen principal, compresión y datos de edición; en videos: secuencia de fotogramas, cortes no naturales, inconsistencias de audio y estructura del átomo MOOV."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Technical structure goes beyond simple viewing.",
+                "It focuses on how the file is internally organized and encoded.",
+                "Differences between thumbnail and main image, or irregular frame jumps, can expose edits."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "La estructura técnica va más allá de solo visualizar.",
+                "Se centra en cómo está organizado y codificado internamente el archivo.",
+                "Diferencias entre miniatura e imagen principal, o saltos irregulares de fotogramas, pueden evidenciar ediciones."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Indicadores de manipulación",
+        "Question Text": {
+          "en-US": [
+            "Which of the following are listed as common indicators of alteration or manipulation in this workshop?"
+          ],
+          "es-MX": [
+            "¿Cuál de los siguientes se menciona como indicador común de alteración o manipulación en este taller?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Contradictory metadata, detected editing software, inconsistent shadows, cropped borders, sudden changes in audio spectrum, altered frame rate and recompression traces.",
+            "The file being too large in size.",
+            "The file being in MP4 format instead of AVI.",
+            "Any file that has GPS coordinates."
+          ],
+          "es-MX": [
+            "Metadatos contradictorios, software de edición detectado, sombras inconsistentes, bordes recortados, cambios bruscos en el espectro de audio, frame rate alterado y huellas de recompresión.",
+            "Que el archivo sea demasiado pesado.",
+            "Que el archivo esté en formato MP4 en lugar de AVI.",
+            "Cualquier archivo que tenga coordenadas GPS."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Contradictory metadata, detected editing software, inconsistent shadows, cropped borders, sudden changes in audio spectrum, altered frame rate and recompression traces.",
+          "es-MX": "Metadatos contradictorios, software de edición detectado, sombras inconsistentes, bordes recortados, cambios bruscos en el espectro de audio, frame rate alterado y huellas de recompresión."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The class groups visual, audio and metadata clues that, together, strongly suggest manipulation even when it is not obvious at first glance."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La clase agrupa indicios visuales, de audio y metadatos que, en conjunto, sugieren fuertemente manipulación aunque no sea evidente a primera vista."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Uso de hashes",
+        "Question Text": {
+          "en-US": [
+            "What role do SHA-256 hashes play in this workshop’s integrated procedure?"
+          ],
+          "es-MX": [
+            "¿Qué papel juegan los hashes SHA-256 en el procedimiento integrado de este taller?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They allow verifying integrity and demonstrating whether two versions of a file are identical or if one has been modified.",
+            "They are used only to compress videos.",
+            "They replace the need to analyze EXIF and video structure.",
+            "They serve only as passwords to open the files."
+          ],
+          "es-MX": [
+            "Permiten verificar integridad y demostrar si dos versiones de un archivo son idénticas o si una ha sido modificada.",
+            "Se usan solo para comprimir videos.",
+            "Sustituyen la necesidad de analizar EXIF y estructura de video.",
+            "Sirven únicamente como contraseñas para abrir los archivos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They allow verifying integrity and demonstrating whether two versions of a file are identical or if one has been modified.",
+          "es-MX": "Permiten verificar integridad y demostrar si dos versiones de un archivo son idénticas o si una ha sido modificada."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Equal hash → same content bit by bit.",
+                "Different hash → some change occurred, even if subtle.",
+                "This is key when comparing original vs suspect copies."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Hash igual → mismo contenido bit a bit.",
+                "Hash diferente → hubo algún cambio, aunque sea sutil.",
+                "Es clave al comparar copias originales vs sospechosas."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Comparación de versiones",
+        "Question Text": {
+          "en-US": [
+            "Besides hash comparison, what other comparisons does the class recommend between original and suspect multimedia files?"
+          ],
+          "es-MX": [
+            "Además de la comparación de hashes, ¿qué otras comparaciones recomienda la clase entre archivos multimedia originales y sospechosos?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Direct comparison between internal thumbnails, between different copies of the file and with versions sent through messaging apps.",
+            "Only comparing file names alphabetically.",
+            "Comparing the color of the media player’s background.",
+            "Comparing the user’s personal opinion about each file."
+          ],
+          "es-MX": [
+            "Comparación directa entre miniaturas internas, entre distintas copias del archivo y con versiones enviadas por mensajería.",
+            "Solo comparar los nombres de archivo alfabéticamente.",
+            "Comparar el color del fondo del reproductor.",
+            "Comparar la opinión personal del usuario sobre cada archivo."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Direct comparison between internal thumbnails, between different copies of the file and with versions sent through messaging apps.",
+          "es-MX": "Comparación directa entre miniaturas internas, entre distintas copias del archivo y con versiones enviadas por mensajería."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Thumbnails and messaging copies may preserve older or less-edited versions, revealing discrepancies in content and structure when compared to the suspect file."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las miniaturas y las copias de mensajería pueden conservar versiones más antiguas o menos editadas, revelando discrepancias de contenido y estructura al compararlas con el archivo sospechoso."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Integración contextual",
+        "Question Text": {
+          "en-US": [
+            "What does the class mean by \"integrated contextual analysis\" in Paso 6?"
+          ],
+          "es-MX": [
+            "¿A qué se refiere la clase con \"análisis contextual integrado\" en el Paso 6?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Relating real file times, chat send times, detected location, user narratives and the temporal sequence between photos and videos.",
+            "Ignoring all chat information and focusing only on pixel colors.",
+            "Checking only the battery level of the device.",
+            "Comparing the device model with current market prices."
+          ],
+          "es-MX": [
+            "Relacionar horas reales de los archivos, horas de envío en chats, ubicación detectada, narrativa de los usuarios y secuencia temporal entre fotos y videos.",
+            "Ignorar toda la información de chats y centrarse solo en colores de pixeles.",
+            "Revisar únicamente el nivel de batería del dispositivo.",
+            "Comparar el modelo del dispositivo con los precios actuales del mercado."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Relating real file times, chat send times, detected location, user narratives and the temporal sequence between photos and videos.",
+          "es-MX": "Relacionar horas reales de los archivos, horas de envío en chats, ubicación detectada, narrativa de los usuarios y secuencia temporal entre fotos y videos."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "First, establish a technical timeline.",
+                "Then, align it with messages, locations and statements.",
+                "This integrated view helps reconstruct events more reliably."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Primero, se establece una línea de tiempo técnica.",
+                "Después, se alinea con mensajes, ubicaciones y declaraciones.",
+                "Esta visión integrada ayuda a reconstruir los hechos con más confiabilidad."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Ejemplo - Foto 1",
+        "Question Text": {
+          "en-US": [
+            "In the workshop example, which factors support considering Photo 1 as reliable evidence?"
+          ],
+          "es-MX": [
+            "En el ejemplo del taller, ¿qué factores respaldan considerar la Foto 1 como evidencia confiable?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It has valid hash, GPS included, DateTimeOriginal present and no signs of editing.",
+            "It has no metadata and was obviously drawn by hand.",
+            "It was received as a meme, with text overlaid and multiple stickers.",
+            "It is a random image downloaded from the internet with no relation to the case."
+          ],
+          "es-MX": [
+            "Tiene hash válido, GPS incluido, DateTimeOriginal presente y sin indicios de edición.",
+            "No tiene metadatos y fue claramente dibujada a mano.",
+            "Se recibió como meme, con texto sobrepuesto y múltiples stickers.",
+            "Es una imagen aleatoria descargada de Internet sin relación con el caso."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It has valid hash, GPS included, DateTimeOriginal present and no signs of editing.",
+          "es-MX": "Tiene hash válido, GPS incluido, DateTimeOriginal presente y sin indicios de edición."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Consistent metadata, intact EXIF and absence of editing traces make Photo 1 a strong candidate as authentic evidence in the example."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Metadatos coherentes, EXIF intacto y ausencia de huellas de edición convierten a la Foto 1 en una candidata fuerte a evidencia auténtica en el ejemplo."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Ejemplo - Foto 2 manipulada",
+        "Question Text": {
+          "en-US": [
+            "Which combination of findings led the workshop to conclude that Photo 2 is not authentic?"
+          ],
+          "es-MX": [
+            "¿Qué combinación de hallazgos llevó al taller a concluir que la Foto 2 no es auténtica?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The internal thumbnail does not match the main image, Photoshop appears as software and the hash differs from the version sent via WhatsApp.",
+            "The image is too sharp and high-resolution.",
+            "The image uses the JPG format instead of PNG.",
+            "The EXIF is completely empty, which always proves authenticity."
+          ],
+          "es-MX": [
+            "La miniatura interna no coincide con la imagen principal, aparece Photoshop como software y el hash difiere de la versión enviada por WhatsApp.",
+            "La imagen es demasiado nítida y de alta resolución.",
+            "La imagen usa formato JPG en vez de PNG.",
+            "El EXIF está completamente vacío, lo cual siempre prueba autenticidad."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The internal thumbnail does not match the main image, Photoshop appears as software and the hash differs from the version sent via WhatsApp.",
+          "es-MX": "La miniatura interna no coincide con la imagen principal, aparece Photoshop como software y el hash difiere de la versión enviada por WhatsApp."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Mismatch between thumbnail and main content → possible replacement or heavy edit.",
+                "Photoshop in metadata → clear sign of editing.",
+                "Different hash → file changed compared to messaging version."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Desajuste entre miniatura y contenido principal → posible sustitución o edición fuerte.",
+                "Photoshop en metadatos → señal clara de edición.",
+                "Hash diferente → archivo cambiado respecto a la versión de mensajería."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Ejemplo - Video MP4",
+        "Question Text": {
+          "en-US": [
+            "In the workshop’s MP4 video example, which technical signs support the conclusion that the video was edited?"
+          ],
+          "es-MX": [
+            "En el ejemplo del video MP4 del taller, ¿qué signos técnicos respaldan la conclusión de que el video fue editado?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Irregular cuts between keyframes, an audio jump at 7.2 seconds and metadata indicating external processing.",
+            "The video plays without sound on the examiner’s laptop.",
+            "The file has a .mp4 extension but very small size.",
+            "The video has subtitles in a foreign language."
+          ],
+          "es-MX": [
+            "Cortes irregulares entre keyframes, un salto de audio a los 7.2 segundos y metadatos que muestran procesamiento externo.",
+            "El video se reproduce sin sonido en la laptop del perito.",
+            "El archivo tiene extensión .mp4 pero tamaño muy pequeño.",
+            "El video tiene subtítulos en otro idioma."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Irregular cuts between keyframes, an audio jump at 7.2 seconds and metadata indicating external processing.",
+          "es-MX": "Cortes irregulares entre keyframes, un salto de audio a los 7.2 segundos y metadatos que muestran procesamiento externo."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Structural anomalies in frame and audio continuity, combined with encoding metadata pointing to an editing tool, strongly suggest that the video is not original."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Anomalías estructurales en la continuidad de fotogramas y audio, combinadas con metadatos de codificación que apuntan a una herramienta de edición, sugieren fuertemente que el video no es original."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Herramientas de la Unidad IV",
+        "Question Text": {
+          "en-US": [
+            "Which set of tools is recommended in this class for the integrated multimedia analysis in Unit IV?"
+          ],
+          "es-MX": [
+            "¿Qué conjunto de herramientas se recomienda en esta clase para el análisis multimedia integrado de la Unidad IV?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Autopsy, Magnet AXIOM, ExifTool, FFmpeg/FFprobe, VLC Forensics, Amped FIVE, Forensically and Photoshop Forensic Plugin.",
+            "Only a generic media player and a web browser.",
+            "Text editors and social media apps.",
+            "Office suites (Word, PowerPoint) without any forensic tools."
+          ],
+          "es-MX": [
+            "Autopsy, Magnet AXIOM, ExifTool, FFmpeg/FFprobe, VLC Forensics, Amped FIVE, Forensically y Photoshop Forensic Plugin.",
+            "Solo un reproductor genérico y un navegador web.",
+            "Editores de texto y apps de redes sociales.",
+            "Suites de oficina (Word, PowerPoint) sin herramientas forenses."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Autopsy, Magnet AXIOM, ExifTool, FFmpeg/FFprobe, VLC Forensics, Amped FIVE, Forensically and Photoshop Forensic Plugin.",
+          "es-MX": "Autopsy, Magnet AXIOM, ExifTool, FFmpeg/FFprobe, VLC Forensics, Amped FIVE, Forensically y Photoshop Forensic Plugin."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Each tool focuses on different layers: metadata, structure, visual anomalies, audio, etc.",
+                "Together they give a more complete and cross-validated view of authenticity."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Cada herramienta se enfoca en capas distintas: metadatos, estructura, anomalías visuales, audio, etc.",
+                "En conjunto dan una visión más completa y cruzada de la autenticidad."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Conclusiones del taller",
+        "Question Text": {
+          "en-US": [
+            "Which statement best summarizes the key conclusions of this workshop?"
+          ],
+          "es-MX": [
+            "¿Qué enunciado resume mejor las conclusiones clave de este taller?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Multimedia authenticity requires technical and contextual analysis; metadata and hashes are fundamental, tools must be combined and the examination must be thoroughly documented.",
+            "If a file looks real to the naked eye, no technical analysis is needed.",
+            "Only one tool is enough to declare a file authentic or fake.",
+            "Documentation is optional as long as the examiner remembers what was done."
+          ],
+          "es-MX": [
+            "La autenticidad multimedia exige análisis técnico y contextual; metadatos y hashes son fundamentales, las herramientas deben combinarse y el peritaje debe documentarse detalladamente.",
+            "Si un archivo se ve real a simple vista, no se requiere análisis técnico.",
+            "Con una sola herramienta basta para declarar un archivo auténtico o falso.",
+            "La documentación es opcional mientras el perito recuerde lo que hizo."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Multimedia authenticity requires technical and contextual analysis; metadata and hashes are fundamental, tools must be combined and the examination must be thoroughly documented.",
+          "es-MX": "La autenticidad multimedia exige análisis técnico y contextual; metadatos y hashes son fundamentales, las herramientas deben combinarse y el peritaje debe documentarse detalladamente."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The class closes by reinforcing that no single indicator or tool is enough. Authenticity emerges from a convergent, well-documented analysis of structure, metadata, content and context."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La clase cierra enfatizando que ningún indicador ni herramienta por sí sola basta. La autenticidad surge de un análisis convergente y bien documentado de estructura, metadatos, contenido y contexto."
+            }
+          ]
+        }
+      }
+  
+    ]
+  }
+  

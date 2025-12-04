@@ -1,0 +1,417 @@
+{
+    "meta": {
+      "slug": "forense-apps22",
+      "title": "Clase 22 – Análisis de cabeceras de correo en Gmail (SPF/DKIM/DMARC)",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 2,
+      "classNo": 22,
+      "description": "Cabeceras de correo en Gmail: campos From, Return-Path, Received, Message-ID, autenticación SPF/DKIM/DMARC y trazabilidad forense.",
+      "tags": [
+        "gmail",
+        "email forensics",
+        "cabeceras",
+        "spf",
+        "dkim",
+        "dmarc"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "cabeceras-definicion",
+        "Question Text": {
+          "en-US": [
+            "In the forensic analysis of email, what is an email header?"
+          ],
+          "es-MX": [
+            "En el análisis forense de correo electrónico, ¿qué es una cabecera de correo?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A block of metadata added by mail servers that records routing, sender, authentication and technical details of the message",
+            "A decorative banner that appears at the top of the email body with the company logo",
+            "A local file on the hard drive that stores email attachments only",
+            "A password-protected ZIP file that contains the full raw message"
+          ],
+          "es-MX": [
+            "Un bloque de metadatos añadido por los servidores de correo que registra el enrutamiento, el remitente, la autenticación y detalles técnicos del mensaje",
+            "Una imagen decorativa que aparece arriba del cuerpo del correo con el logotipo de la empresa",
+            "Un archivo local en el disco duro que guarda únicamente los adjuntos del correo",
+            "Un archivo ZIP con contraseña que contiene el mensaje crudo completo"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A block of metadata added by mail servers that records routing, sender, authentication and technical details of the message",
+          "es-MX": "Un bloque de metadatos añadido por los servidores de correo que registra el enrutamiento, el remitente, la autenticación y detalles técnicos del mensaje"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "An email header is the technical section of the message where servers add metadata such as From, To, Date, Message-ID, Received and Authentication-Results. It is invisible in normal view but essential in forensic analysis.",
+              "es-MX": "La cabecera es la sección técnica del mensaje donde los servidores agregan metadatos como From, To, Date, Message-ID, Received y Authentication-Results. No se ve en la vista normal, pero es esencial en el análisis forense."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "campos-basicos",
+        "Question Text": {
+          "en-US": [
+            "Which pair of header fields normally shows the declared sender and the address that actually receives bounces or errors?"
+          ],
+          "es-MX": [
+            "¿Qué par de campos de cabecera muestra normalmente el remitente declarado y la dirección que realmente recibe rebotes o errores?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "From: (declared sender) and Return-Path: (bounce/error address)",
+            "To: (declared sender) and Cc: (bounce/error address)",
+            "Subject: (declared sender) and Date: (bounce/error address)",
+            "Content-Type: (declared sender) and MIME-Version: (bounce/error address)"
+          ],
+          "es-MX": [
+            "From: (remitente declarado) y Return-Path: (dirección de rebotes y errores)",
+            "To: (remitente declarado) y Cc: (dirección de rebotes y errores)",
+            "Subject: (remitente declarado) y Date: (dirección de rebotes y errores)",
+            "Content-Type: (remitente declarado) y MIME-Version: (dirección de rebotes y errores)"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "From: (declared sender) and Return-Path: (bounce/error address)",
+          "es-MX": "From: (remitente declarado) y Return-Path: (dirección de rebotes y errores)"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "From: is the sender that the user sees and can be spoofed. Return-Path: is used by mail systems to deliver bounces and often reveals the real sending infrastructure or campaign domain.",
+              "es-MX": "From: es el remitente que ve el usuario y puede ser suplantado. Return-Path: lo utilizan los sistemas de correo para entregar rebotes y a menudo revela la infraestructura real de envío o el dominio de la campaña."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "received-ip",
+        "Question Text": {
+          "en-US": [
+            "When analyzing the Received: lines in an email header, which one usually contains the IP address closest to the original sender?"
+          ],
+          "es-MX": [
+            "Al analizar las líneas Received: en una cabecera, ¿cuál suele contener la dirección IP más cercana al remitente original?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The lowest (oldest) Received: line, added first in the delivery chain",
+            "The topmost (newest) Received: line, added by the last server",
+            "Any Received: line with the word localhost only",
+            "The Received: line that contains the biggest IP number"
+          ],
+          "es-MX": [
+            "La línea Received: más baja (la más antigua), añadida primero en la cadena de entrega",
+            "La línea Received: más alta (la más reciente), añadida por el último servidor",
+            "Cualquier línea Received: que contenga únicamente la palabra localhost",
+            "La línea Received: que tenga el número de IP más grande"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The lowest (oldest) Received: line, added first in the delivery chain",
+          "es-MX": "La línea Received: más baja (la más antigua), añadida primero en la cadena de entrega"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "Each server prepends its own Received: line. The first server that accepted the message is recorded at the bottom, so its Received: entry usually shows the IP closest to the original sender.",
+              "es-MX": "Cada servidor antepone su propia línea Received:. El primer servidor que aceptó el mensaje queda al final, por lo que esa entrada suele mostrar la IP más cercana al remitente original."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "ruta-entrega",
+        "Question Text": {
+          "en-US": [
+            "What kind of information can be reconstructed by reading all the Received: lines together in an email header?"
+          ],
+          "es-MX": [
+            "¿Qué tipo de información puede reconstruirse al leer en conjunto todas las líneas Received: de una cabecera de correo?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The complete delivery path of the message: servers involved, order, timestamps and intermediate hops",
+            "Only the subject and size of the email body",
+            "The exact geographic coordinates of the sender’s home address",
+            "The password used to log into the sender’s email account"
+          ],
+          "es-MX": [
+            "La ruta completa de entrega del mensaje: servidores involucrados, orden, marcas de tiempo y saltos intermedios",
+            "Únicamente el asunto y el tamaño del cuerpo del correo",
+            "Las coordenadas geográficas exactas del domicilio del remitente",
+            "La contraseña usada para iniciar sesión en la cuenta del remitente"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The complete delivery path of the message: servers involved, order, timestamps and intermediate hops",
+          "es-MX": "La ruta completa de entrega del mensaje: servidores involucrados, orden, marcas de tiempo y saltos intermedios"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "Received: lines record how the message travels from server to server, including hostnames, IPs and timestamps. Together they form a timeline and path for the email, key for tracing its origin.",
+              "es-MX": "Las líneas Received: registran cómo viaja el mensaje de servidor en servidor, incluyendo nombres de host, IP y marcas de tiempo. En conjunto forman una línea temporal y una ruta del correo, clave para rastrear el origen."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "spf-concepto",
+        "Question Text": {
+          "en-US": [
+            "In email authentication, what is the main purpose of SPF (Sender Policy Framework)?"
+          ],
+          "es-MX": [
+            "En autenticación de correo, ¿cuál es el objetivo principal de SPF (Sender Policy Framework)?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To check whether the sending server’s IP is authorized to send email on behalf of the domain",
+            "To encrypt the body of the message end-to-end between sender and receiver",
+            "To compress all attachments before sending the email",
+            "To automatically translate the email into the recipient’s language"
+          ],
+          "es-MX": [
+            "Verificar si la IP del servidor emisor está autorizada para enviar correo en nombre del dominio",
+            "Encriptar de extremo a extremo el cuerpo del mensaje entre remitente y destinatario",
+            "Comprimir todos los archivos adjuntos antes de enviar el correo",
+            "Traducir automáticamente el correo al idioma del destinatario"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To check whether the sending server’s IP is authorized to send email on behalf of the domain",
+          "es-MX": "Verificar si la IP del servidor emisor está autorizada para enviar correo en nombre del dominio"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "SPF compares the sending server’s IP against a list of allowed servers published in the domain’s DNS. If the IP is not authorized, SPF may fail and the message can be flagged as suspicious.",
+              "es-MX": "SPF compara la IP del servidor emisor con una lista de servidores permitidos publicada en el DNS del dominio. Si la IP no está autorizada, SPF puede fallar y el mensaje se marca como sospechoso."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "dkim-dmarc",
+        "Question Text": {
+          "en-US": [
+            "How do DKIM and DMARC complement SPF in the forensic validation of email headers?"
+          ],
+          "es-MX": [
+            "¿Cómo complementan DKIM y DMARC a SPF en la validación forense de cabeceras de correo?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "DKIM adds a cryptographic signature to the message contents, and DMARC defines how the domain combines SPF/DKIM results and what policy to apply",
+            "DKIM compresses large attachments, and DMARC translates subjects into multiple languages",
+            "DKIM hides the sender’s IP, and DMARC erases all Received: lines to protect privacy",
+            "DKIM changes the Message-ID in transit, and DMARC deletes the Return-Path field"
+          ],
+          "es-MX": [
+            "DKIM añade una firma criptográfica al contenido del mensaje y DMARC define cómo combina el dominio los resultados de SPF/DKIM y qué política aplicar",
+            "DKIM comprime adjuntos grandes y DMARC traduce los asuntos a varios idiomas",
+            "DKIM oculta la IP del remitente y DMARC borra todas las líneas Received: para proteger la privacidad",
+            "DKIM cambia el Message-ID en tránsito y DMARC elimina el campo Return-Path"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "DKIM adds a cryptographic signature to the message contents, and DMARC defines how the domain combines SPF/DKIM results and what policy to apply",
+          "es-MX": "DKIM añade una firma criptográfica al contenido del mensaje y DMARC define cómo combina el dominio los resultados de SPF/DKIM y qué política aplicar"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "DKIM signs headers and body so changes can be detected.",
+                "DMARC sets domain policy: what to do if SPF/DKIM fail (none, quarantine, reject).",
+                "Together with SPF, they help determine whether a message is legitimate or spoofed."
+              ],
+              "es-MX": [
+                "DKIM firma cabeceras y cuerpo para que se detecten cambios.",
+                "DMARC fija la política del dominio: qué hacer si SPF/DKIM fallan (none, quarantine, reject).",
+                "Junto con SPF, ayudan a determinar si un mensaje es legítimo o suplantado."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "gmail-original",
+        "Question Text": {
+          "en-US": [
+            "In Gmail, which action allows you to see the full raw headers for forensic analysis?"
+          ],
+          "es-MX": [
+            "En Gmail, ¿qué acción te permite ver las cabeceras completas en crudo para realizar análisis forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Open the email, click the three dots (More), then choose “Show original”",
+            "Double-click the subject line to open the header editor",
+            "Right-click the inbox and select “Download headers only”",
+            "Press Ctrl+Alt+Delete inside the message window"
+          ],
+          "es-MX": [
+            "Abrir el correo, hacer clic en los tres puntos (Más) y elegir “Mostrar original”",
+            "Dar doble clic al asunto para abrir el editor de cabeceras",
+            "Dar clic derecho en la bandeja de entrada y seleccionar “Descargar solo cabeceras”",
+            "Presionar Ctrl+Alt+Delete dentro de la ventana del mensaje"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Open the email, click the three dots (More), then choose “Show original”",
+          "es-MX": "Abrir el correo, hacer clic en los tres puntos (Más) y elegir “Mostrar original”"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "Gmail’s “Show original” view displays the full header, authentication results and raw source of the email, which is exactly what an analyst needs for technical examination.",
+              "es-MX": "La opción “Mostrar original” de Gmail muestra la cabecera completa, los resultados de autenticación y el código crudo del correo, justo lo que necesita un analista para el examen técnico."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "interpretacion-cabecera",
+        "Question Text": {
+          "en-US": [
+            "A header shows: Authentication-Results: spf=fail dkim=fail dmarc=fail. From: bank@secure-bank.com but Return-Path: bulk@mailer-random.biz. Forensically, what is the best conclusion?"
+          ],
+          "es-MX": [
+            "Una cabecera muestra: Authentication-Results: spf=fail dkim=fail dmarc=fail. From: bank@secure-bank.com pero Return-Path: bulk@mailer-random.biz. Forensemente, ¿cuál es la mejor conclusión?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It is very likely a spoofed or phishing email that pretends to be from the bank but was sent from another domain",
+            "It is definitely a safe and official notification from the real bank",
+            "It must be an internal test email and can be ignored in investigations",
+            "It is a normal error because all legitimate emails should show SPF and DKIM as fail"
+          ],
+          "es-MX": [
+            "Es muy probable que sea un correo suplantado o de phishing que finge ser del banco pero fue enviado desde otro dominio",
+            "Definitivamente es una notificación segura y oficial del banco real",
+            "Debe ser un correo de prueba interno y puede ignorarse en la investigación",
+            "Es un error normal porque todos los correos legítimos deben mostrar SPF y DKIM en fail"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It is very likely a spoofed or phishing email that pretends to be from the bank but was sent from another domain",
+          "es-MX": "Es muy probable que sea un correo suplantado o de phishing que finge ser del banco pero fue enviado desde otro dominio"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "Failed SPF, DKIM and DMARC combined with a mismatch between From: and Return-Path strongly indicate impersonation or fraud. In a case, this message would be treated as suspicious phishing.",
+              "es-MX": "SPF, DKIM y DMARC en fail, junto con la diferencia entre From: y Return-Path, son un indicio fuerte de suplantación o fraude. En un caso real, este correo se trataría como phishing sospechoso."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "message-id-uso",
+        "Question Text": {
+          "en-US": [
+            "Why is the Message-ID field relevant in the forensic analysis of email headers?"
+          ],
+          "es-MX": [
+            "¿Por qué es relevante el campo Message-ID en el análisis forense de cabeceras de correo?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it provides a unique identifier that often contains the real sending domain and can be used to correlate related messages",
+            "Because it stores the full text of the email body in encrypted form",
+            "Because it always hides the IP address of the sender from investigators",
+            "Because it controls the auto-translation of the message subject"
+          ],
+          "es-MX": [
+            "Porque aporta un identificador único que a menudo contiene el dominio real de envío y puede usarse para correlacionar mensajes relacionados",
+            "Porque guarda todo el texto del cuerpo del correo en forma cifrada",
+            "Porque siempre oculta la dirección IP del remitente a los investigadores",
+            "Porque controla la traducción automática del asunto del mensaje"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it provides a unique identifier that often contains the real sending domain and can be used to correlate related messages",
+          "es-MX": "Porque aporta un identificador único que a menudo contiene el dominio real de envío y puede usarse para correlacionar mensajes relacionados"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Message-ID is supposed to be globally unique.",
+                "Its domain part often reflects the server that generated the message.",
+                "It helps link replies, threads and bulk campaigns in an investigation."
+              ],
+              "es-MX": [
+                "Message-ID se supone que es globalmente único.",
+                "Su parte de dominio suele reflejar el servidor que generó el mensaje.",
+                "Ayuda a vincular respuestas, hilos y campañas masivas en una investigación."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "evidencia-util",
+        "Question Text": {
+          "en-US": [
+            "Which combination lists ONLY elements that can be obtained from email headers and are useful as digital evidence?"
+          ],
+          "es-MX": [
+            "¿Qué combinación enumera ÚNICAMENTE elementos que pueden obtenerse de las cabeceras de correo y son útiles como evidencia digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Sender domain, first-hop IP, delivery timestamps, authentication results (SPF/DKIM/DMARC)",
+            "User’s operating system license key, BIOS serial number, full disk image",
+            "Wi-Fi password, physical location of the router, exact GPS track of the sender",
+            "Complete browser history, all local documents, full RAM dump"
+          ],
+          "es-MX": [
+            "Dominio del remitente, IP del primer salto, marcas de tiempo de entrega, resultados de autenticación (SPF/DKIM/DMARC)",
+            "Clave de licencia del sistema operativo del usuario, número de serie del BIOS, imagen completa del disco",
+            "Contraseña del Wi-Fi, ubicación física del router, traza GPS exacta del remitente",
+            "Historial completo del navegador, todos los documentos locales, volcado completo de RAM"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Sender domain, first-hop IP, delivery timestamps, authentication results (SPF/DKIM/DMARC)",
+          "es-MX": "Dominio del remitente, IP del primer salto, marcas de tiempo de entrega, resultados de autenticación (SPF/DKIM/DMARC)"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "Headers expose network- and message-level metadata: domains, IPs, times and authentication status, which are directly usable as digital evidence. They do not provide OS license keys, Wi-Fi passwords or full disk contents.",
+              "es-MX": "Las cabeceras exponen metadatos a nivel de red y mensaje: dominios, IP, tiempos y estado de autenticación, que sí son evidencia digital útil. No entregan claves de licencia, contraseñas Wi-Fi ni contenido completo de discos."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

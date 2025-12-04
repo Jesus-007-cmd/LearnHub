@@ -1,0 +1,567 @@
+{
+    "meta": {
+      "slug": "forense-apps35",
+      "title": "Clase 35 – Análisis de ubicaciones GPS en mensajes multimedia",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 3,
+      "classNo": 35,
+      "description": "Uso de metadatos GPS en fotos, videos y audios para ubicar geográficamente evidencia digital, verificar coartadas y correlacionar multimedia con mensajes y registros de sistema.",
+      "tags": [
+        "gps",
+        "exif",
+        "whatsapp",
+        "ubicación",
+        "coordenadas",
+        "multimedia",
+        "fotografías",
+        "videos",
+        "notas de voz",
+        "exiftool"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "importancia-gps",
+        "Question Text": {
+          "en-US": [
+            "Why are GPS coordinates in photos and videos considered so valuable in digital forensic investigations?"
+          ],
+          "es-MX": [
+            "¿Por qué las coordenadas GPS en fotos y videos se consideran tan valiosas en investigaciones forenses digitales?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because they allow the examiner to determine the exact location where the media was captured and compare it with testimonies, routes and alleged scenes of the incident",
+            "Because they automatically reveal the full identity of every person appearing in the image without any additional analysis",
+            "Because they always prove that a file is authentic and has never been edited or manipulated",
+            "Because they replace the need to analyze chats, logs or any other digital artifact"
+          ],
+          "es-MX": [
+            "Porque permiten que el perito determine el lugar exacto donde se capturó la multimedia y lo compare con testimonios, rutas y escenas alegadas del incidente",
+            "Porque revelan automáticamente la identidad completa de cada persona que aparece en la imagen sin análisis adicional",
+            "Porque siempre prueban que un archivo es auténtico y nunca ha sido editado o manipulado",
+            "Porque sustituyen la necesidad de analizar chats, logs o cualquier otro artefacto digital"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because they allow the examiner to determine the exact location where the media was captured and compare it with testimonies, routes and alleged scenes of the incident",
+          "es-MX": "Porque permiten que el perito determine el lugar exacto donde se capturó la multimedia y lo compare con testimonios, rutas y escenas alegadas del incidente"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class explains that GPS coordinates embedded in multimedia make it possible to link a person, a device and a specific location at a given time. This strengthens or weakens coartadas and connects digital evidence with the physical world.",
+              "es-MX": "La clase explica que las coordenadas GPS incrustadas en la multimedia permiten vincular a una persona, un dispositivo y un lugar concreto en un momento determinado. Esto refuerza o debilita coartadas y conecta la evidencia digital con el mundo físico."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "tipos-archivos-gps",
+        "Question Text": {
+          "en-US": [
+            "According to the class, which set of multimedia files is MOST LIKELY to contain GPS or geolocation-related information useful for forensics?"
+          ],
+          "es-MX": [
+            "De acuerdo con la clase, ¿qué conjunto de archivos multimedia es MÁS probable que contenga información GPS o de geolocalización útil para forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Photos captured by the native camera app, videos in MP4/MOV containers and some audio recordings from mobile apps that store creation time and device context",
+            "Only text messages in plain TXT files with no attachments",
+            "Compressed ZIP archives that never include any metadata information",
+            "Screenshots saved on desktop computers with GPS always disabled by default"
+          ],
+          "es-MX": [
+            "Fotografías capturadas por la app de cámara nativa, videos en contenedores MP4/MOV y algunas grabaciones de audio desde apps móviles que almacenan hora de creación y contexto del dispositivo",
+            "Solo mensajes de texto en archivos TXT sin adjuntos",
+            "Archivos ZIP comprimidos que nunca incluyen ningún tipo de metadatos",
+            "Capturas de pantalla guardadas en computadoras de escritorio, donde el GPS siempre está deshabilitado por defecto"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Photos captured by the native camera app, videos in MP4/MOV containers and some audio recordings from mobile apps that store creation time and device context",
+          "es-MX": "Fotografías capturadas por la app de cámara nativa, videos en contenedores MP4/MOV y algunas grabaciones de audio desde apps móviles que almacenan hora de creación y contexto del dispositivo"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Photos are the most common carriers of EXIF GPS.",
+                "Some videos embed GPS tags in the container.",
+                "Audio created by mobile apps may include timestamps and context that can be correlated with location logs."
+              ],
+              "es-MX": [
+                "Las fotos son los contenedores más habituales de GPS en EXIF.",
+                "Algunos videos incrustan etiquetas GPS dentro del contenedor.",
+                "Ciertos audios creados por apps móviles incluyen tiempos y contexto que se pueden correlacionar con registros de ubicación."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "etiquetas-exif-gps",
+        "Question Text": {
+          "en-US": [
+            "Which EXIF tags are MOST directly related to geolocation in a photo according to the class?"
+          ],
+          "es-MX": [
+            "¿Qué etiquetas EXIF están MÁS directamente relacionadas con la geolocalización en una foto según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "GPSLatitude, GPSLatitudeRef, GPSLongitude, GPSLongitudeRef and GPSAltitude",
+            "ImageWidth, ImageHeight, ColorProfile and WhiteBalance",
+            "CameraOwnerName, LensModel and FlashMode only",
+            "FileSize, MD5Hash and CompressionRate"
+          ],
+          "es-MX": [
+            "GPSLatitude, GPSLatitudeRef, GPSLongitude, GPSLongitudeRef y GPSAltitude",
+            "ImageWidth, ImageHeight, ColorProfile y WhiteBalance",
+            "CameraOwnerName, LensModel y FlashMode solamente",
+            "FileSize, MD5Hash y CompressionRate"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "GPSLatitude, GPSLatitudeRef, GPSLongitude, GPSLongitudeRef and GPSAltitude",
+          "es-MX": "GPSLatitude, GPSLatitudeRef, GPSLongitude, GPSLongitudeRef y GPSAltitude"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The GPS* EXIF tags store the latitude, longitude and altitude along with their hemisphere references, which allows the examiner to accurately place the capture point on a map.",
+              "es-MX": "Las etiquetas EXIF GPS* almacenan la latitud, longitud y altitud junto con sus referencias de hemisferio, lo que permite ubicar con precisión el punto de captura en un mapa."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "gps-timestamp",
+        "Question Text": {
+          "en-US": [
+            "What is the forensic relevance of the EXIF fields GPSTimeStamp and GPSDateStamp mentioned in the class?"
+          ],
+          "es-MX": [
+            "¿Cuál es la relevancia forense de los campos EXIF GPSTimeStamp y GPSDateStamp mencionados en la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They record the date and time associated with the GPS fix, which can be correlated with chat messages, logs and other events to build a precise timeline",
+            "They only store the time when the phone battery was last replaced, which has no relation to the photo",
+            "They are decorative fields that do not reflect any real temporal information",
+            "They store the time when the image was downloaded from social networks, not when it was captured"
+          ],
+          "es-MX": [
+            "Registran la fecha y hora asociadas al fijado GPS, que puede correlacionarse con mensajes de chat, logs y otros eventos para construir una línea de tiempo precisa",
+            "Solo guardan la hora en que se cambió la batería del teléfono por última vez, sin relación con la foto",
+            "Son campos decorativos que no reflejan información temporal real",
+            "Guardan la hora en que la imagen fue descargada de redes sociales, no cuando fue capturada"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They record the date and time associated with the GPS fix, which can be correlated with chat messages, logs and other events to build a precise timeline",
+          "es-MX": "Registran la fecha y hora asociadas al fijado GPS, que puede correlacionarse con mensajes de chat, logs y otros eventos para construir una línea de tiempo precisa"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "GPSDateStamp and GPSTimeStamp give temporal context to the location.",
+                "They are essential to align GPS evidence with conversations and system activity.",
+                "They help confirm whether the media was created when the user claims."
+              ],
+              "es-MX": [
+                "GPSDateStamp y GPSTimeStamp dan contexto temporal a la ubicación.",
+                "Son esenciales para alinear la evidencia de GPS con conversaciones y actividad del sistema.",
+                "Ayudan a confirmar si la multimedia se creó cuando el usuario afirma."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "exiftool-funcion",
+        "Question Text": {
+          "en-US": [
+            "According to the class, what is the MAIN advantage of using ExifTool when analyzing GPS in multimedia files?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿cuál es la ventaja PRINCIPAL de utilizar ExifTool al analizar GPS en archivos multimedia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It can extract complete metadata (including GPS) from many file types via a simple command, allowing the examiner to see coordinates, timestamps and device information in one place",
+            "It automatically edits EXIF to hide any traces of manipulation and protect the suspect",
+            "It converts any photo into a 3D model of the scene without additional data",
+            "It deletes GPS and EXIF metadata by default to reduce file size for forensic reports"
+          ],
+          "es-MX": [
+            "Puede extraer metadatos completos (incluyendo GPS) de muchos tipos de archivo mediante un comando sencillo, permitiendo ver coordenadas, timestamps e información del dispositivo en un solo lugar",
+            "Edita automáticamente el EXIF para ocultar cualquier rastro de manipulación y proteger al sospechoso",
+            "Convierte cualquier fotografía en un modelo 3D de la escena sin datos adicionales",
+            "Elimina por defecto los metadatos GPS y EXIF para reducir el tamaño de los archivos en los reportes forenses"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It can extract complete metadata (including GPS) from many file types via a simple command, allowing the examiner to see coordinates, timestamps and device information in one place",
+          "es-MX": "Puede extraer metadatos completos (incluyendo GPS) de muchos tipos de archivo mediante un comando sencillo, permitiendo ver coordenadas, timestamps e información del dispositivo en un solo lugar"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class presents ExifTool as a robust command-line utility that reads EXIF, XMP and other metadata, making it ideal to extract GPSLatitude, GPSLongitude, device model, dates and many other fields in a single step.",
+              "es-MX": "La clase presenta ExifTool como una herramienta robusta de línea de comandos que lee EXIF, XMP y otros metadatos, lo que la hace ideal para extraer GPSLatitude, GPSLongitude, modelo de dispositivo, fechas y muchos otros campos en un solo paso."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "whatsapp-rutas-gps",
+        "Question Text": {
+          "en-US": [
+            "How does the class suggest using WhatsApp media folders and SQLite databases together when analyzing GPS-related evidence?"
+          ],
+          "es-MX": [
+            "¿Cómo sugiere la clase utilizar las carpetas de multimedia de WhatsApp y las bases SQLite en conjunto al analizar evidencia relacionada con GPS?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "By correlating file paths such as WhatsApp/Media/WhatsApp Images/ with records in msgstore.db (media_name, timestamp) and then extracting EXIF GPS from the referenced files",
+            "By ignoring msgstore.db entirely and working only with random photos found on the SD card",
+            "By editing msgstore.db to insert new GPS data into old messages so they become easier to map",
+            "By deleting all media folders to prevent contamination of the SQLite database"
+          ],
+          "es-MX": [
+            "Correlacionando rutas de archivo como WhatsApp/Media/WhatsApp Images/ con registros en msgstore.db (media_name, timestamp) y luego extrayendo GPS EXIF de los archivos referenciados",
+            "Ignorando por completo msgstore.db y trabajando solo con fotos aleatorias encontradas en la SD",
+            "Editando msgstore.db para insertar nuevos datos GPS en mensajes antiguos y que sea más fácil mapearlos",
+            "Eliminando todas las carpetas de media para evitar contaminación de la base SQLite"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "By correlating file paths such as WhatsApp/Media/WhatsApp Images/ with records in msgstore.db (media_name, timestamp) and then extracting EXIF GPS from the referenced files",
+          "es-MX": "Correlacionando rutas de archivo como WhatsApp/Media/WhatsApp Images/ con registros en msgstore.db (media_name, timestamp) y luego extrayendo GPS EXIF de los archivos referenciados"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "The database tells you which media file belongs to which message and when it was sent.",
+                "The EXIF inside the file can reveal where it was captured.",
+                "Together they link location, time and conversation context."
+              ],
+              "es-MX": [
+                "La base de datos indica qué archivo multimedia pertenece a qué mensaje y cuándo se envió.",
+                "El EXIF dentro del archivo permite saber dónde fue capturado.",
+                "En conjunto vinculan ubicación, tiempo y contexto de la conversación."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "notas-voz-correlacion",
+        "Question Text": {
+          "en-US": [
+            "What does the class recommend doing when a voice note or audio file does NOT contain explicit GPS EXIF data but is still relevant to location analysis?"
+          ],
+          "es-MX": [
+            "¿Qué recomienda la clase cuando una nota de voz o archivo de audio NO contiene datos GPS EXIF explícitos pero sigue siendo relevante para el análisis de ubicación?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Correlate the creation time and message timestamp with other GPS sources (such as photos, device location logs or network records) around the same time window",
+            "Conclude that the file has no forensic value and discard it immediately",
+            "Change the EXIF manually to add the suspected location and use it as if it were original",
+            "Assume the audio was always recorded at the user’s home unless proven otherwise"
+          ],
+          "es-MX": [
+            "Correlacionar la hora de creación y el timestamp del mensaje con otras fuentes de GPS (como fotos, registros de ubicación del dispositivo o registros de red) en la misma ventana de tiempo",
+            "Concluir que el archivo no tiene valor forense y descartarlo de inmediato",
+            "Modificar el EXIF manualmente para añadir la ubicación sospechada y usarlo como si fuera original",
+            "Suponer que el audio siempre se grabó en la casa del usuario salvo que se demuestre lo contrario"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Correlate the creation time and message timestamp with other GPS sources (such as photos, device location logs or network records) around the same time window",
+          "es-MX": "Correlacionar la hora de creación y el timestamp del mensaje con otras fuentes de GPS (como fotos, registros de ubicación del dispositivo o registros de red) en la misma ventana de tiempo"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class clarifies that even when a file lacks GPS tags, its timestamps can be cross-referenced with other artifacts that do contain location data, allowing the examiner to infer where the device likely was.",
+              "es-MX": "La clase aclara que, aun cuando un archivo no tiene etiquetas GPS, sus timestamps pueden cruzarse con otros artefactos que sí contienen ubicación, permitiendo inferir dónde se encontraba probablemente el dispositivo."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "gps-visualizer-uso",
+        "Question Text": {
+          "en-US": [
+            "What is the MAIN purpose of using tools like GPS Visualizer in the workflow described by the class?"
+          ],
+          "es-MX": [
+            "¿Cuál es el propósito PRINCIPAL de utilizar herramientas como GPS Visualizer en el flujo de trabajo descrito en la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To plot extracted coordinates on an interactive map and visually inspect locations and routes related to the case",
+            "To erase all GPS evidence from the files once the map has been generated",
+            "To automatically generate a final legal report without any human review",
+            "To encrypt EXIF metadata so that no other examiner can read it later"
+          ],
+          "es-MX": [
+            "Trazar las coordenadas extraídas sobre un mapa interactivo e inspeccionar visualmente ubicaciones y rutas relacionadas con el caso",
+            "Borrar toda la evidencia GPS de los archivos una vez generado el mapa",
+            "Generar automáticamente un informe legal final sin revisión humana",
+            "Cifrar los metadatos EXIF para que ningún otro perito pueda leerlos después"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To plot extracted coordinates on an interactive map and visually inspect locations and routes related to the case",
+          "es-MX": "Trazar las coordenadas extraídas sobre un mapa interactivo e inspeccionar visualmente ubicaciones y rutas relacionadas con el caso"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Seeing coordinates on a map helps understand distances and movement.",
+                "It allows comparing claimed locations with actual GPS points.",
+                "Routes and clusters can reveal patterns or contradictions."
+              ],
+              "es-MX": [
+                "Ver las coordenadas en un mapa ayuda a entender distancias y desplazamientos.",
+                "Permite comparar ubicaciones alegadas con puntos GPS reales.",
+                "Las rutas y agrupaciones pueden revelar patrones o contradicciones."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "flujo-integrado-gps",
+        "Question Text": {
+          "en-US": [
+            "Which sequence BEST represents the integrated workflow for analyzing GPS location in a WhatsApp photo according to the class?"
+          ],
+          "es-MX": [
+            "¿Qué secuencia representa MEJOR el flujo integrado para analizar la ubicación GPS en una foto de WhatsApp según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Locate the media file from WhatsApp folders → extract EXIF with ExifTool → identify GPSLatitude and GPSLongitude → convert to decimal if needed → plot on a map → correlate with message timestamp and device logs",
+            "Send the photo to a personal email → download it from a social network → rely only on the new version for all forensic work",
+            "Rename the file, compress it repeatedly and then try to recover GPS data from the compressed version",
+            "Delete the original photo to avoid contamination and work only from the msgstore.db textual records"
+          ],
+          "es-MX": [
+            "Localizar el archivo multimedia en las carpetas de WhatsApp → extraer EXIF con ExifTool → identificar GPSLatitude y GPSLongitude → convertir a decimal si es necesario → trazar en un mapa → correlacionar con el timestamp del mensaje y los logs del dispositivo",
+            "Enviarse la foto por correo personal → descargarla desde una red social → trabajar solo con esta nueva versión para todo el análisis forense",
+            "Renombrar el archivo, comprimirlo varias veces y luego intentar recuperar los datos GPS de la versión comprimida",
+            "Borrar la foto original para evitar contaminación y trabajar solo con los registros de texto en msgstore.db"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Locate the media file from WhatsApp folders → extract EXIF with ExifTool → identify GPSLatitude and GPSLongitude → convert to decimal if needed → plot on a map → correlate with message timestamp and device logs",
+          "es-MX": "Localizar el archivo multimedia en las carpetas de WhatsApp → extraer EXIF con ExifTool → identificar GPSLatitude y GPSLongitude → convertir a decimal si es necesario → trazar en un mapa → correlacionar con el timestamp del mensaje y los logs del dispositivo"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class proposes a step-by-step method that goes from file location to map visualization and temporal correlation, ensuring that location, time and conversation context are all documented clearly.",
+              "es-MX": "La clase propone un método paso a paso que va desde la localización del archivo hasta la visualización en mapa y la correlación temporal, asegurando que ubicación, tiempo y contexto de la conversación queden documentados con claridad."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "conversion-grados-decimal",
+        "Question Text": {
+          "en-US": [
+            "When EXIF stores GPS coordinates in degrees, minutes and seconds (DMS), what is the recommended approach according to the class?"
+          ],
+          "es-MX": [
+            "Cuando el EXIF guarda coordenadas GPS en grados, minutos y segundos (DMS), ¿cuál es el enfoque recomendado según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Convert the DMS values to decimal degrees (for example using ExifTool output or a calculator) before entering them into mapping tools",
+            "Round each coordinate to the nearest whole degree to simplify, ignoring precision",
+            "Replace the coordinates manually with an approximate city name",
+            "Use only the degrees and ignore minutes and seconds because they are irrelevant for forensics"
+          ],
+          "es-MX": [
+            "Convertir los valores DMS a grados decimales (por ejemplo utilizando la salida de ExifTool o una calculadora) antes de ingresarlos en herramientas de mapeo",
+            "Redondear cada coordenada al grado entero más cercano para simplificar, ignorando la precisión",
+            "Sustituir manualmente las coordenadas por el nombre aproximado de la ciudad",
+            "Usar solo los grados e ignorar minutos y segundos porque son irrelevantes para el análisis forense"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Convert the DMS values to decimal degrees (for example using ExifTool output or a calculator) before entering them into mapping tools",
+          "es-MX": "Convertir los valores DMS a grados decimales (por ejemplo utilizando la salida de ExifTool o una calculadora) antes de ingresarlos en herramientas de mapeo"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Most mapping tools expect decimal coordinates.",
+                "Conversion preserves precision while making map input easier.",
+                "Precision can be critical in urban or dense environments."
+              ],
+              "es-MX": [
+                "La mayoría de las herramientas de mapas esperan coordenadas decimales.",
+                "La conversión conserva la precisión y facilita la entrada en el mapa.",
+                "La precisión puede ser crítica en entornos urbanos o muy densos."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "advertencias-gps",
+        "Question Text": {
+          "en-US": [
+            "Which statement BEST summarizes the cautions that the class mentions about relying on GPS data in multimedia?"
+          ],
+          "es-MX": [
+            "¿Qué afirmación resume MEJOR las advertencias que menciona la clase sobre confiar en datos GPS en multimedia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "GPS can be missing, stripped by editing apps or social networks, or even falsified, so it must always be corroborated with logs, timestamps and other artifacts",
+            "GPS is always present, impossible to edit and therefore unquestionable in court",
+            "If GPS is missing, the examiner should always fabricate plausible coordinates to complete the report",
+            "GPS data can be ignored because chat content alone is enough for any investigation"
+          ],
+          "es-MX": [
+            "El GPS puede faltar, ser eliminado por apps de edición o redes sociales, o incluso estar falsificado, por lo que siempre debe corroborarse con logs, timestamps y otros artefactos",
+            "El GPS siempre está presente, es imposible de editar y por tanto incuestionable en juicio",
+            "Si falta GPS, el perito debe inventar siempre coordenadas plausibles para completar el informe",
+            "Los datos de GPS se pueden ignorar porque el contenido del chat por sí solo basta para cualquier investigación"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "GPS can be missing, stripped by editing apps or social networks, or even falsified, so it must always be corroborated with logs, timestamps and other artifacts",
+          "es-MX": "El GPS puede faltar, ser eliminado por apps de edición o redes sociales, o incluso estar falsificado, por lo que siempre debe corroborarse con logs, timestamps y otros artefactos"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class warns that location metadata is powerful but not infallible. Privacy settings, editing software and malicious manipulation can alter or remove GPS tags, so corroboration is essential before drawing conclusions.",
+              "es-MX": "La clase advierte que los metadatos de ubicación son poderosos pero no infalibles. Configuraciones de privacidad, programas de edición y manipulación maliciosa pueden alterar o eliminar etiquetas GPS, por lo que la corroboración es esencial antes de sacar conclusiones."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "redes-sociales-gps",
+        "Question Text": {
+          "en-US": [
+            "What is a common effect of uploading and downloading photos through social networks on GPS EXIF data, as mentioned in the class?"
+          ],
+          "es-MX": [
+            "¿Cuál es un efecto común de subir y descargar fotos a través de redes sociales sobre los datos GPS EXIF, según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Many platforms strip or compress EXIF (including GPS), so the downloaded copy often no longer contains original location metadata",
+            "Social networks always enhance and correct GPS coordinates to make them more accurate for forensic use",
+            "Uploading to social networks automatically adds the current location even if the original file had no GPS",
+            "Social networks never modify any metadata and keep EXIF intact by design"
+          ],
+          "es-MX": [
+            "Muchas plataformas eliminan o comprimen el EXIF (incluyendo GPS), por lo que la copia descargada a menudo ya no contiene los metadatos originales de ubicación",
+            "Las redes sociales siempre mejoran y corrigen las coordenadas GPS para hacerlas más precisas para uso forense",
+            "Al subir a redes sociales se añade automáticamente la ubicación actual aunque el archivo original no tuviera GPS",
+            "Las redes sociales nunca modifican metadatos y mantienen el EXIF intacto por diseño"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Many platforms strip or compress EXIF (including GPS), so the downloaded copy often no longer contains original location metadata",
+          "es-MX": "Muchas plataformas eliminan o comprimen el EXIF (incluyendo GPS), por lo que la copia descargada a menudo ya no contiene los metadatos originales de ubicación"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "This is a privacy and optimization measure by many services.",
+                "It means investigators should prioritize original files from the device, not social media copies.",
+                "Loss of EXIF can hide crucial GPS information."
+              ],
+              "es-MX": [
+                "Es una medida de privacidad y optimización de muchos servicios.",
+                "Implica que los investigadores deben priorizar los archivos originales del dispositivo, no las copias de redes sociales.",
+                "La pérdida de EXIF puede ocultar información GPS crucial."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "herramientas-mapa-timeline",
+        "Question Text": {
+          "en-US": [
+            "How do tools like Magnet AXIOM or Cellebrite contribute to GPS analysis according to the class?"
+          ],
+          "es-MX": [
+            "¿Cómo contribuyen herramientas como Magnet AXIOM o Cellebrite al análisis GPS según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They automatically extract EXIF, plot GPS points on integrated maps and link them to chats and timelines, making it easier to visualize movement and correlate locations with messages",
+            "They remove all maps and GPS data from the case to keep only text evidence",
+            "They are used only to generate decoration maps that are unrelated to the actual evidence",
+            "They replace the need to understand EXIF or GPS concepts because they hide all technical details"
+          ],
+          "es-MX": [
+            "Extraen automáticamente EXIF, trazan puntos GPS en mapas integrados y los vinculan con chats y líneas de tiempo, facilitando visualizar movimientos y correlacionar ubicaciones con mensajes",
+            "Eliminan todos los mapas y datos GPS del caso para conservar únicamente evidencia de texto",
+            "Solo se usan para generar mapas decorativos sin relación con la evidencia real",
+            "Sustituyen la necesidad de entender conceptos de EXIF o GPS porque ocultan todos los detalles técnicos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They automatically extract EXIF, plot GPS points on integrated maps and link them to chats and timelines, making it easier to visualize movement and correlate locations with messages",
+          "es-MX": "Extraen automáticamente EXIF, trazan puntos GPS en mapas integrados y los vinculan con chats y líneas de tiempo, facilitando visualizar movimientos y correlacionar ubicaciones con mensajes"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "These forensic suites act as visualization and correlation platforms. They collect GPS from many artifacts, display it on maps, and integrate it into timelines that connect movement with communication events.",
+              "es-MX": "Estos paquetes forenses funcionan como plataformas de visualización y correlación. Recogen GPS de muchos artefactos, lo muestran en mapas e integran todo en líneas de tiempo que conectan movimientos con eventos de comunicación."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

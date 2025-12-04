@@ -1,0 +1,505 @@
+{
+    "meta": {
+      "slug": "forense-apps56",
+      "title": "Proyecto integrador: análisis multimedia forense",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 4,
+      "classNo": 56,
+      "description": "Aplicación completa de técnicas de análisis multimedia forense en un caso real o simulado, integrando imágenes, videos, audios, metadatos, hashes y correlación contextual.",
+      "tags": [
+        "proyecto integrador",
+        "análisis multimedia",
+        "hash",
+        "metadatos",
+        "correlación contextual",
+        "informe forense",
+        "unidad IV"
+      ]
+    },
+    "Questions": [
+  
+      {
+        "Category": "Naturaleza del proyecto",
+        "Question Text": {
+          "en-US": [
+            "What is the main purpose of the integrative multimedia forensic project in Unit IV?"
+          ],
+          "es-MX": [
+            "¿Cuál es el propósito principal del proyecto integrador de análisis multimedia forense en la Unidad IV?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To apply all learned techniques (images, videos, audios, metadata, hashes and reporting) in a complete case, real or simulated.",
+            "To analyze only one isolated image without context.",
+            "To practice only theoretical concepts without handling real files.",
+            "To design a user interface without any forensic analysis."
+          ],
+          "es-MX": [
+            "Aplicar todas las técnicas aprendidas (imágenes, videos, audios, metadatos, hashes e informe) en un caso completo, real o simulado.",
+            "Analizar solo una imagen aislada sin contexto.",
+            "Practicar únicamente conceptos teóricos sin manejar archivos reales.",
+            "Diseñar una interfaz de usuario sin realizar análisis forense."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To apply all learned techniques (images, videos, audios, metadata, hashes and reporting) in a complete case, real or simulated.",
+          "es-MX": "Aplicar todas las técnicas aprendidas (imágenes, videos, audios, metadatos, hashes e informe) en un caso completo, real o simulado."
+        },
+        "Explanation": {
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El proyecto integrador es la culminación de la Unidad IV y busca demostrar que el estudiante puede aplicar de forma práctica y conjunta todos los conocimientos adquiridos."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Alcance del análisis",
+        "Question Text": {
+          "en-US": [
+            "According to the class, which types of evidence can be included in the integrative multimedia project?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿qué tipos de evidencia pueden incluirse en el proyecto integrador multimedia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Photos, videos, audios, screenshots, documents (PDF/TXT) and associated metadata.",
+            "Only printed paper documents.",
+            "Exclusively social media text messages without attachments.",
+            "Only configuration files of the operating system."
+          ],
+          "es-MX": [
+            "Fotografías, videos, audios, capturas de pantalla, documentos (PDF/TXT) y metadatos asociados.",
+            "Solo documentos impresos en papel.",
+            "Exclusivamente mensajes de texto de redes sociales sin adjuntos.",
+            "Solo archivos de configuración del sistema operativo."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Photos, videos, audios, screenshots, documents (PDF/TXT) and associated metadata.",
+          "es-MX": "Fotografías, videos, audios, capturas de pantalla, documentos (PDF/TXT) y metadatos asociados."
+        },
+        "Explanation": {
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "El proyecto no se limita a un solo tipo de archivo.",
+                "Busca integrar múltiples fuentes multimedia.",
+                "Incluye también los metadatos como parte de la evidencia."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Registro de evidencia",
+        "Question Text": {
+          "en-US": [
+            "What must be done in the first stage of the project when identifying and registering the evidence?"
+          ],
+          "es-MX": [
+            "¿Qué se debe hacer en la primera etapa del proyecto al identificar y registrar la evidencia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "List all files, record name, size, format, dates and origin, and calculate the initial hash.",
+            "Open the files and edit them to improve their quality.",
+            "Rename the files to shorter names without documenting the change.",
+            "Delete irrelevant files without leaving any record."
+          ],
+          "es-MX": [
+            "Listar todos los archivos, registrar nombre, tamaño, formato, fechas y origen, y calcular el hash inicial.",
+            "Abrir los archivos y editarlos para mejorar su calidad.",
+            "Renombrar los archivos a nombres más cortos sin documentar el cambio.",
+            "Eliminar archivos que parezcan irrelevantes sin dejar registro."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "List all files, record name, size, format, dates and origin, and calculate the initial hash.",
+          "es-MX": "Listar todos los archivos, registrar nombre, tamaño, formato, fechas y origen, y calcular el hash inicial."
+        },
+        "Explanation": {
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "Primero se identifica y documenta toda la evidencia disponible.",
+                "Se registran atributos técnicos básicos del archivo.",
+                "Se calcula el hash inicial para asegurar la integridad desde el comienzo."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Carpeta de trabajo aislada",
+        "Question Text": {
+          "en-US": [
+            "Why is it recommended to prepare an isolated working folder for the project?"
+          ],
+          "es-MX": [
+            "¿Por qué se recomienda preparar una carpeta de trabajo aislada para el proyecto?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To avoid altering the original evidence and keep a controlled environment for analysis.",
+            "To hide the files from the rest of the team.",
+            "So that the operating system can freely modify dates and attributes.",
+            "To make it easier to delete everything without trace."
+          ],
+          "es-MX": [
+            "Para evitar alterar la evidencia original y mantener un entorno controlado de análisis.",
+            "Para ocultar los archivos del resto del equipo.",
+            "Para que el sistema operativo pueda modificar libremente fechas y atributos.",
+            "Para facilitar borrar todo sin dejar rastro."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To avoid altering the original evidence and keep a controlled environment for analysis.",
+          "es-MX": "Para evitar alterar la evidencia original y mantener un entorno controlado de análisis."
+        },
+        "Explanation": {
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Trabajar en una copia en carpeta aislada reduce el riesgo de modificar accidentalmente la evidencia original y mejora la trazabilidad."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Análisis de imágenes",
+        "Question Text": {
+          "en-US": [
+            "Which tasks are specifically mentioned for the image analysis phase in the project?"
+          ],
+          "es-MX": [
+            "¿Qué tareas se mencionan específicamente para la fase de análisis de imágenes en el proyecto?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Recover EXIF metadata, identify GPS coordinates, verify camera/model and detect possible editing or manipulation.",
+            "Only resize the images for better visualization.",
+            "Convert all images to black and white.",
+            "Remove all metadata to protect privacy."
+          ],
+          "es-MX": [
+            "Recuperar metadatos EXIF, identificar coordenadas GPS, verificar cámara/modelo y detectar posible edición o manipulación.",
+            "Solo redimensionar las imágenes para verlas mejor.",
+            "Convertir todas las imágenes a blanco y negro.",
+            "Eliminar todos los metadatos para proteger la privacidad."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Recover EXIF metadata, identify GPS coordinates, verify camera/model and detect possible editing or manipulation.",
+          "es-MX": "Recuperar metadatos EXIF, identificar coordenadas GPS, verificar cámara/modelo y detectar posible edición o manipulación."
+        },
+        "Explanation": {
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "El análisis de imágenes se basa en metadatos y señales de edición.",
+                "Las coordenadas GPS ayudan a correlacionar lugar y tiempo.",
+                "Verificar la cámara refuerza la autenticidad de la evidencia."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Análisis de videos",
+        "Question Text": {
+          "en-US": [
+            "What elements must be checked during the video analysis phase of the project?"
+          ],
+          "es-MX": [
+            "¿Qué elementos deben revisarse en la fase de análisis de videos del proyecto?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Internal metadata, key frames, integrated audio, cuts or jumps and compression characteristics.",
+            "Only the visual quality and brightness.",
+            "Just the duration shown in the media player.",
+            "Only whether the file can be opened without errors."
+          ],
+          "es-MX": [
+            "Metadatos internos, fotogramas clave, audio integrado, cortes o saltos y características de compresión.",
+            "Solo la calidad visual y el brillo.",
+            "Solo la duración mostrada por el reproductor.",
+            "Únicamente si el archivo se puede abrir sin errores."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Internal metadata, key frames, integrated audio, cuts or jumps and compression characteristics.",
+          "es-MX": "Metadatos internos, fotogramas clave, audio integrado, cortes o saltos y características de compresión."
+        },
+        "Explanation": {
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Un análisis forense de video debe ser técnico: incluye estructura, fotogramas clave, audio y posibles ediciones no visibles."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Análisis de audios",
+        "Question Text": {
+          "en-US": [
+            "In the audio analysis stage, which aspects are highlighted in the class?"
+          ],
+          "es-MX": [
+            "En la etapa de análisis de audios, ¿qué aspectos se destacan en la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Exact duration, waveform review, detection of interruptions or atypical noise and identification of possible edits.",
+            "Only listening once to see if it sounds clear.",
+            "Transcribing the audio without looking at its technical properties.",
+            "Changing the audio format to reduce file size."
+          ],
+          "es-MX": [
+            "Duración exacta, revisión de la forma de onda, detección de interrupciones o ruido atípico e identificación de posibles ediciones.",
+            "Solo escucharlo una vez para ver si se oye claro.",
+            "Transcribir el audio sin revisar sus propiedades técnicas.",
+            "Cambiar el formato del audio para reducir el tamaño."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Exact duration, waveform review, detection of interruptions or atypical noise and identification of possible edits.",
+          "es-MX": "Duración exacta, revisión de la forma de onda, detección de interrupciones o ruido atípico e identificación de posibles ediciones."
+        },
+        "Explanation": {
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "El análisis espectral y de forma de onda ayuda a ver cortes ocultos.",
+                "El ruido de fondo es una “huella acústica” importante.",
+                "Las ediciones dejan rastros técnicos en el archivo."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Validación de integridad",
+        "Question Text": {
+          "en-US": [
+            "What is the role of hash functions (such as SHA-256) in the integrative multimedia project?"
+          ],
+          "es-MX": [
+            "¿Cuál es el papel de las funciones hash (como SHA-256) en el proyecto integrador multimedia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They verify that the files have not been modified between acquisition and final analysis.",
+            "They compress the files to save disk space.",
+            "They improve image and audio quality.",
+            "They anonymize the user who generated the evidence."
+          ],
+          "es-MX": [
+            "Verificar que los archivos no hayan sido modificados entre la adquisición y el análisis final.",
+            "Comprimir los archivos para ahorrar espacio en disco.",
+            "Mejorar la calidad de imagen y audio.",
+            "Anonimizar al usuario que generó la evidencia."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They verify that the files have not been modified between acquisition and final analysis.",
+          "es-MX": "Verificar que los archivos no hayan sido modificados entre la adquisición y el análisis final."
+        },
+        "Explanation": {
+          "es-MX": [
+            {
+              "type": "divider"
+            },
+            {
+              "type": "text",
+              "content": "El hash es la base de la integridad forense: si cambia un bit, cambia el hash y se rompe la confianza en la evidencia."
+            },
+            {
+              "type": "divider"
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Correlación contextual",
+        "Question Text": {
+          "en-US": [
+            "What does ‘correlation between evidences’ mean in the context of the project?"
+          ],
+          "es-MX": [
+            "¿Qué significa ‘correlación entre evidencias’ en el contexto del proyecto?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Comparing dates, times, GPS locations, events and relationships between images, videos, audios and documents to build a coherent sequence.",
+            "Mixing files randomly to see if something matches.",
+            "Deleting evidence that does not support the hypothesis.",
+            "Renaming all files with the same pattern to simplify."
+          ],
+          "es-MX": [
+            "Comparar fechas, horas, ubicaciones GPS, eventos y relaciones entre imágenes, videos, audios y documentos para construir una secuencia coherente.",
+            "Mezclar los archivos al azar para ver si algo coincide.",
+            "Eliminar la evidencia que no apoye la hipótesis.",
+            "Renombrar todos los archivos con el mismo patrón para simplificar."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Comparing dates, times, GPS locations, events and relationships between images, videos, audios and documents to build a coherent sequence.",
+          "es-MX": "Comparar fechas, horas, ubicaciones GPS, eventos y relaciones entre imágenes, videos, audios y documentos para construir una secuencia coherente."
+        },
+        "Explanation": {
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La correlación contextual convierte archivos aislados en una narrativa técnica sólida que puede sostenerse en un proceso judicial."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Informe final",
+        "Question Text": {
+          "en-US": [
+            "Which elements must be included in the final report of the integrative multimedia project according to the class?"
+          ],
+          "es-MX": [
+            "¿Qué elementos debe incluir el informe final del proyecto integrador multimedia según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Technical narrative of the case, description of evidence, detailed analysis, metadata tables, hash results, technical conclusions and visual annexes.",
+            "Only screenshots without explanation.",
+            "A short personal opinion about the suspect.",
+            "A list of tools installed on the computer without mentioning how they were used."
+          ],
+          "es-MX": [
+            "Narrativa técnica del caso, descripción de evidencia, análisis detallado, tablas de metadatos, resultados de hash, conclusiones técnicas y anexos visuales.",
+            "Solo capturas de pantalla sin explicación.",
+            "Una breve opinión personal sobre el sospechoso.",
+            "Una lista de herramientas instaladas en la computadora sin mencionar cómo se usaron."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Technical narrative of the case, description of evidence, detailed analysis, metadata tables, hash results, technical conclusions and visual annexes.",
+          "es-MX": "Narrativa técnica del caso, descripción de evidencia, análisis detallado, tablas de metadatos, resultados de hash, conclusiones técnicas y anexos visuales."
+        },
+        "Explanation": {
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "El informe final sigue la estructura profesional de la Clase 55.",
+                "Integra análisis técnico + integridad + contexto.",
+                "Debe ser claro, verificable y útil para terceros."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Criterios de evaluación",
+        "Question Text": {
+          "en-US": [
+            "Which of the following is a formal evaluation criterion for the integrative project mentioned in the class?"
+          ],
+          "es-MX": [
+            "¿Cuál de los siguientes es un criterio formal de evaluación del proyecto integrador mencionado en la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Ordered structure, clear technical language, replicable procedures, justified use of tools and evidence-based conclusions.",
+            "Personal creativity without technical basis.",
+            "Number of pages regardless of content quality.",
+            "Use of as many colors and fonts as possible in the report."
+          ],
+          "es-MX": [
+            "Estructura ordenada, lenguaje técnico claro, procedimientos replicables, uso justificado de herramientas y conclusiones basadas en evidencia.",
+            "Creatividad personal sin base técnica.",
+            "Número de páginas sin importar la calidad del contenido.",
+            "Uso de la mayor cantidad posible de colores y fuentes en el informe."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Ordered structure, clear technical language, replicable procedures, justified use of tools and evidence-based conclusions.",
+          "es-MX": "Estructura ordenada, lenguaje técnico claro, procedimientos replicables, uso justificado de herramientas y conclusiones basadas en evidencia."
+        },
+        "Explanation": {
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El proyecto se evalúa como un trabajo profesional: importa la metodología, la claridad y la capacidad de otros para verificar lo que hiciste."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Escenario real o simulado",
+        "Question Text": {
+          "en-US": [
+            "What condition must be met even if the case used in the project is simulated?"
+          ],
+          "es-MX": [
+            "¿Qué condición debe cumplirse aunque el caso utilizado en el proyecto sea simulado?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It must follow valid forensic technical standards, including acquisition, analysis, integrity and reporting.",
+            "It can ignore all forensic standards because it is not a real case.",
+            "It should focus only on aesthetics and design of the report.",
+            "It must be completely invented without any technical logic."
+          ],
+          "es-MX": [
+            "Debe seguir estándares técnicos forenses válidos, incluyendo adquisición, análisis, integridad e informe.",
+            "Puede ignorar todos los estándares forenses porque no es un caso real.",
+            "Debe centrarse solo en la estética y diseño del informe.",
+            "Debe ser completamente inventado sin ninguna lógica técnica."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It must follow valid forensic technical standards, including acquisition, analysis, integrity and reporting.",
+          "es-MX": "Debe seguir estándares técnicos forenses válidos, incluyendo adquisición, análisis, integridad e informe."
+        },
+        "Explanation": {
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Aunque el caso sea simulado, el objetivo es que el estudiante practique el flujo real de un peritaje multimedia profesional."
+            }
+          ]
+        }
+      }
+  
+    ]
+  }
+  

@@ -1,0 +1,656 @@
+{
+    "meta": {
+      "slug": "forense-apps29",
+      "title": "Clase 29 – Introducción al análisis de conversaciones digitales",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 3,
+      "classNo": 29,
+      "description": "Introducción a la estructura interna de los chats en aplicaciones de mensajería (SQLite, JSON y formatos propietarios) y a su valor como evidencia digital en investigaciones forenses.",
+      "tags": [
+        "conversaciones digitales",
+        "chats",
+        "SQLite",
+        "JSON",
+        "mensajería",
+        "evidencia digital",
+        "metadatos"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "importancia-conversaciones",
+        "Question Text": {
+          "en-US": [
+            "Why are digital conversations considered one of the most valuable sources of evidence in modern forensic investigations?"
+          ],
+          "es-MX": [
+            "¿Por qué las conversaciones digitales se consideran una de las fuentes de evidencia más valiosas en las investigaciones forenses modernas?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because they concentrate communications, media, timestamps and user interactions that can reveal intentions, chronology and participation",
+            "Because they are always stored in plain text and can be modified without leaving any trace",
+            "Because they replace the need for any other type of digital or physical evidence",
+            "Because only chats determine guilt or innocence by themselves, without context"
+          ],
+          "es-MX": [
+            "Porque concentran comunicaciones, multimedia, marcas de tiempo e interacciones de usuarios que pueden revelar intenciones, cronología y participación",
+            "Porque siempre se almacenan en texto plano y pueden modificarse sin dejar rastro",
+            "Porque sustituyen la necesidad de cualquier otro tipo de evidencia digital o física",
+            "Porque por sí solos determinan la culpabilidad o inocencia, sin necesidad de contexto"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because they concentrate communications, media, timestamps and user interactions that can reveal intentions, chronology and participation",
+          "es-MX": "Porque concentran comunicaciones, multimedia, marcas de tiempo e interacciones de usuarios que pueden revelar intenciones, cronología y participación"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Chats include text, media, locations and more.",
+                "They provide a timeline of how and when people communicated.",
+                "They allow analysis of who participated, what was said and in which context."
+              ],
+              "es-MX": [
+                "Los chats incluyen texto, multimedia, ubicaciones y más.",
+                "Aportan una línea de tiempo de cómo y cuándo se comunicaron las personas.",
+                "Permiten analizar quién participó, qué se dijo y en qué contexto."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "plataformas-conversaciones",
+        "Question Text": {
+          "en-US": [
+            "Which group BEST represents platforms where relevant digital conversations can be found according to the material?"
+          ],
+          "es-MX": [
+            "¿Qué grupo representa MEJOR las plataformas donde pueden encontrarse conversaciones digitales relevantes según el material?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "WhatsApp, Telegram, Facebook Messenger, Instagram, Signal, Gmail and corporate messaging platforms",
+            "Only SMS and traditional voice calls",
+            "Only public posts on social networks with no private messages",
+            "Only local text files created manually by the user"
+          ],
+          "es-MX": [
+            "WhatsApp, Telegram, Facebook Messenger, Instagram, Signal, Gmail y plataformas corporativas de mensajería",
+            "Solo SMS y llamadas de voz tradicionales",
+            "Solo publicaciones públicas en redes sociales sin mensajes privados",
+            "Solo archivos de texto locales creados manualmente por el usuario"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "WhatsApp, Telegram, Facebook Messenger, Instagram, Signal, Gmail and corporate messaging platforms",
+          "es-MX": "WhatsApp, Telegram, Facebook Messenger, Instagram, Signal, Gmail y plataformas corporativas de mensajería"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class explicitly highlights multiple messaging apps and email services because investigators must consider all communication channels where chats may exist.",
+              "es-MX": "La clase destaca explícitamente múltiples apps de mensajería y servicios de correo porque el investigador debe considerar todos los canales de comunicación donde puedan existir chats."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "elementos-chat",
+        "Question Text": {
+          "en-US": [
+            "According to the material, which set of items is MOST representative of what a conversation can contain?"
+          ],
+          "es-MX": [
+            "Según el material, ¿qué conjunto de elementos es MÁS representativo de lo que puede contener una conversación?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Text messages, multimedia files, locations, documents, calls, reactions and activity metadata",
+            "Only emojis and stickers without any text or metadata",
+            "Only device configuration parameters and system logs",
+            "Only the contact list of the device owner"
+          ],
+          "es-MX": [
+            "Mensajes de texto, archivos multimedia, ubicaciones, documentos, llamadas, reacciones y metadatos de actividad",
+            "Solo emojis y stickers sin texto ni metadatos",
+            "Solo parámetros de configuración del dispositivo y registros del sistema",
+            "Solo la lista de contactos del propietario del dispositivo"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Text messages, multimedia files, locations, documents, calls, reactions and activity metadata",
+          "es-MX": "Mensajes de texto, archivos multimedia, ubicaciones, documentos, llamadas, reacciones y metadatos de actividad"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Chats are not just text; they integrate multiple data types.",
+                "Metadata and reactions can show user behavior beyond the message body.",
+                "This combination increases the evidential richness of conversations."
+              ],
+              "es-MX": [
+                "Los chats no son solo texto; integran múltiples tipos de datos.",
+                "Los metadatos y las reacciones muestran comportamiento del usuario más allá del cuerpo del mensaje.",
+                "Esta combinación aumenta la riqueza probatoria de las conversaciones."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "formatos-almacenamiento",
+        "Question Text": {
+          "en-US": [
+            "Which statement BEST describes how messaging applications store conversations internally according to the class?"
+          ],
+          "es-MX": [
+            "¿Qué afirmación describe MEJOR cómo almacenan internamente las conversaciones las aplicaciones de mensajería según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They generally use SQLite databases, JSON files or proprietary formats to store chats and metadata",
+            "They always print all chats on paper and delete the digital copy",
+            "They only store messages in temporary RAM memory that is lost when the device turns off",
+            "They store everything only in the SIM card of the phone"
+          ],
+          "es-MX": [
+            "En general utilizan bases de datos SQLite, archivos JSON o formatos propietarios para guardar chats y metadatos",
+            "Siempre imprimen todos los chats en papel y borran la copia digital",
+            "Guardan los mensajes solo en memoria RAM temporal que se pierde al apagar el dispositivo",
+            "Almacenan todo únicamente en la tarjeta SIM del teléfono"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They generally use SQLite databases, JSON files or proprietary formats to store chats and metadata",
+          "es-MX": "En general utilizan bases de datos SQLite, archivos JSON o formatos propietarios para guardar chats y metadatos"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The material emphasizes that, although each app has its own structure, most rely on SQLite, JSON exports or proprietary binary formats to persist conversations.",
+              "es-MX": "El material enfatiza que, aunque cada app tiene su propia estructura, la mayoría se apoya en SQLite, exportaciones JSON o formatos binarios propietarios para persistir las conversaciones."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "ejemplos-sqlite-json",
+        "Question Text": {
+          "en-US": [
+            "Which pairing between format and example is MOST accurate according to the text?"
+          ],
+          "es-MX": [
+            "¿Qué combinación entre formato y ejemplo es la MÁS acertada según el texto?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "SQLite: WhatsApp msgstore.db; JSON: exported chats from WhatsApp or Messenger",
+            "SQLite: image files .jpg; JSON: low-level disk sectors",
+            "SQLite: Bluetooth configuration; JSON: screen brightness profiles",
+            "SQLite: printer drivers; JSON: Wi-Fi hardware firmware"
+          ],
+          "es-MX": [
+            "SQLite: msgstore.db de WhatsApp; JSON: chats exportados de WhatsApp o Messenger",
+            "SQLite: archivos de imagen .jpg; JSON: sectores de disco de bajo nivel",
+            "SQLite: configuración de Bluetooth; JSON: perfiles de brillo de pantalla",
+            "SQLite: drivers de impresora; JSON: firmware de hardware Wi-Fi"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "SQLite: WhatsApp msgstore.db; JSON: exported chats from WhatsApp or Messenger",
+          "es-MX": "SQLite: msgstore.db de WhatsApp; JSON: chats exportados de WhatsApp o Messenger"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "WhatsApp’s live chats are typically in SQLite databases like msgstore.db.",
+                "Exports for backup or review are often in JSON format.",
+                "The class explicitly shows this difference between internal storage and export formats."
+              ],
+              "es-MX": [
+                "Los chats activos de WhatsApp suelen estar en bases SQLite como msgstore.db.",
+                "Las exportaciones para respaldo o revisión suelen ir en formato JSON.",
+                "La clase muestra explícitamente esta diferencia entre almacenamiento interno y formatos de exportación."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "estructura-mensaje-campos",
+        "Question Text": {
+          "en-US": [
+            "Which set BEST represents the typical internal elements of a digital message described in the class?"
+          ],
+          "es-MX": [
+            "¿Qué conjunto representa MEJOR los elementos internos típicos de un mensaje digital descritos en la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Identifiers (message ID, chat ID, user ID), content (text, emojis, replies), metadata (timestamps, status, type, media info) and structural info (deletion/edit flags, ordering, conversation link)",
+            "Only the visible text, without any IDs or timestamps",
+            "Only the profile picture of the sender",
+            "Only information about the device’s battery percentage"
+          ],
+          "es-MX": [
+            "Identificadores (ID de mensaje, ID de chat, ID de usuario), contenido (texto, emojis, respuestas), metadatos (marcas de tiempo, estado, tipo, info de multimedia) e información estructural (flags de borrado/edición, orden, conversación asociada)",
+            "Solo el texto visible, sin IDs ni marcas de tiempo",
+            "Solo la foto de perfil del remitente",
+            "Solo información sobre el porcentaje de batería del dispositivo"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Identifiers (message ID, chat ID, user ID), content (text, emojis, replies), metadata (timestamps, status, type, media info) and structural info (deletion/edit flags, ordering, conversation link)",
+          "es-MX": "Identificadores (ID de mensaje, ID de chat, ID de usuario), contenido (texto, emojis, respuestas), metadatos (marcas de tiempo, estado, tipo, info de multimedia) e información estructural (flags de borrado/edición, orden, conversación asociada)"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The class shows that a message is a structured object: not only what is seen on the screen, but also IDs, timestamps, states and internal links that allow reconstruction and filtering.",
+              "es-MX": "La clase muestra que un mensaje es un objeto estructurado: no solo lo que se ve en pantalla, sino también IDs, marcas de tiempo, estados y enlaces internos que permiten reconstruir y filtrar."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "adjuntos-ubicacion",
+        "Question Text": {
+          "en-US": [
+            "How are attachments (photos, videos, audios, documents, locations) typically handled according to the material?"
+          ],
+          "es-MX": [
+            "¿Cómo se manejan típicamente los adjuntos (fotos, videos, audios, documentos, ubicaciones) según el material?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They are usually stored as separate files in the file system, while the message record contains paths and metadata linking to them",
+            "They are always embedded directly inside the text field of the message as plain text",
+            "They are never stored and only appear temporarily on the screen",
+            "They are stored only in the SIM card and cannot be referenced from the database"
+          ],
+          "es-MX": [
+            "Usualmente se almacenan como archivos separados en el sistema de archivos, mientras que el registro del mensaje contiene rutas y metadatos que los enlazan",
+            "Siempre se incrustan directamente dentro del campo de texto del mensaje como texto plano",
+            "Nunca se almacenan y solo aparecen temporalmente en pantalla",
+            "Se guardan solo en la tarjeta SIM y no pueden referenciarse desde la base de datos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They are usually stored as separate files in the file system, while the message record contains paths and metadata linking to them",
+          "es-MX": "Usualmente se almacenan como archivos separados en el sistema de archivos, mientras que el registro del mensaje contiene rutas y metadatos que los enlazan"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "The database keeps the logical relationship between the message and the attachment.",
+                "The actual multimedia file resides in folders controlled by the app or OS.",
+                "Forensic analysis must combine both: DB records and file paths."
+              ],
+              "es-MX": [
+                "La base de datos conserva la relación lógica entre el mensaje y el adjunto.",
+                "El archivo multimedia real reside en carpetas controladas por la app o el sistema.",
+                "El análisis forense debe combinar ambos: registros de BD y rutas de archivos."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "campos-comunes-whatsapp",
+        "Question Text": {
+          "en-US": [
+            "In the WhatsApp msgstore.db structure shown, what is the role of fields like _id, timestamp, key_from_me, data and media_wa_type?"
+          ],
+          "es-MX": [
+            "En la estructura de msgstore.db de WhatsApp mostrada, ¿cuál es el papel de campos como _id, timestamp, key_from_me, data y media_wa_type?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They form a key set of columns that identify each message, its time, whether it was sent by the user, its text content and the type of media involved",
+            "They are fields used only for app performance metrics and are irrelevant to chats",
+            "They store only the device’s hardware information and not messages",
+            "They are random values generated only for visual decoration in the interface"
+          ],
+          "es-MX": [
+            "Forman un conjunto clave de columnas que identifican cada mensaje, su momento temporal, si lo envió el usuario, su contenido de texto y el tipo de multimedia involucrado",
+            "Son campos usados solo para métricas de rendimiento de la app e irrelevantes para los chats",
+            "Almacenan únicamente información de hardware del dispositivo y no mensajes",
+            "Son valores aleatorios generados solo para decoración visual en la interfaz"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They form a key set of columns that identify each message, its time, whether it was sent by the user, its text content and the type of media involved",
+          "es-MX": "Forman un conjunto clave de columnas que identifican cada mensaje, su momento temporal, si lo envió el usuario, su contenido de texto y el tipo de multimedia involucrado"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "These columns allow the examiner to know exactly which message is being analyzed, who sent it, when it was sent and what type of content it carries.",
+              "es-MX": "Estas columnas permiten al perito saber exactamente qué mensaje se está analizando, quién lo envió, cuándo lo envió y qué tipo de contenido transporta."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "is_deleted-y-eliminaciones",
+        "Question Text": {
+          "en-US": [
+            "What is the forensic relevance of fields like is_deleted or deletion flags in chat databases?"
+          ],
+          "es-MX": [
+            "¿Cuál es la relevancia forense de campos como is_deleted o flags de borrado en las bases de datos de chats?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They indicate that a message has been marked as deleted, which helps identify conversations where content was removed",
+            "They automatically erase all evidence of the message from the device hardware",
+            "They are used only for graphic effects and have no link to deletion",
+            "They only affect how emojis are displayed in the chat"
+          ],
+          "es-MX": [
+            "Indican que un mensaje ha sido marcado como eliminado, lo que ayuda a identificar conversaciones donde se ha retirado contenido",
+            "Eliminan automáticamente toda evidencia del mensaje del hardware del dispositivo",
+            "Se usan solo para efectos gráficos y no tienen relación con borrados",
+            "Solo afectan cómo se muestran los emojis en el chat"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They indicate that a message has been marked as deleted, which helps identify conversations where content was removed",
+          "es-MX": "Indican que un mensaje ha sido marcado como eliminado, lo que ayuda a identificar conversaciones donde se ha retirado contenido"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "A deletion flag does not necessarily erase all underlying data immediately.",
+                "It signals that the user or app decided to remove the message.",
+                "This is crucial to detect manipulation attempts or missing content."
+              ],
+              "es-MX": [
+                "Un flag de borrado no implica necesariamente borrar al instante todos los datos subyacentes.",
+                "Señala que el usuario o la app decidieron eliminar el mensaje.",
+                "Esto es clave para detectar intentos de manipulación o contenido faltante."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "interpretar-chat-sqlite",
+        "Question Text": {
+          "en-US": [
+            "According to the class, what is the correct way to interpret a WhatsApp chat stored in msgstore.db?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿cuál es la manera correcta de interpretar un chat de WhatsApp almacenado en msgstore.db?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Review the messages table, correlate each message with chat_list to identify the conversation, use timestamps and IDs, and analyze media paths and deletion indicators",
+            "Only read the first and last message and ignore IDs and timestamps",
+            "Export the database to a text editor and delete all rows that look complex",
+            "Modify the database directly to reorganize the conversation manually"
+          ],
+          "es-MX": [
+            "Revisar la tabla messages, correlacionar cada mensaje con chat_list para identificar la conversación, usar timestamps e IDs y analizar rutas de multimedia e indicadores de borrado",
+            "Leer solo el primer y último mensaje e ignorar IDs y marcas de tiempo",
+            "Exportar la base a un editor de texto y borrar todas las filas que se vean complejas",
+            "Modificar directamente la base de datos para reorganizar la conversación a mano"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Review the messages table, correlate each message with chat_list to identify the conversation, use timestamps and IDs, and analyze media paths and deletion indicators",
+          "es-MX": "Revisar la tabla messages, correlacionar cada mensaje con chat_list para identificar la conversación, usar timestamps e IDs y analizar rutas de multimedia e indicadores de borrado"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The example integrated in the material shows exactly this flow: open messages, use chat_list to label chats, analyze media and order messages chronologically.",
+              "es-MX": "El ejemplo integrado del material muestra justamente este flujo: abrir messages, usar chat_list para etiquetar los chats, analizar multimedia y ordenar cronológicamente los mensajes."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "valor-probatorio-tipos",
+        "Question Text": {
+          "en-US": [
+            "Which pairing between type of chat evidence and example is MOST accurate?"
+          ],
+          "es-MX": [
+            "¿Qué combinación entre tipo de evidencia de chat y ejemplo es la MÁS acertada?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Direct evidence: explicit instructions or threats in messages; circumstantial evidence: routines, schedules and patterns seen in timestamps",
+            "Direct evidence: wallpaper color; circumstantial evidence: ringtone melody",
+            "Direct evidence: phone brand; circumstantial evidence: battery level variations",
+            "Direct evidence: font style; circumstantial evidence: theme color selected"
+          ],
+          "es-MX": [
+            "Evidencia directa: instrucciones o amenazas explícitas en mensajes; evidencia circunstancial: rutinas, horarios y patrones observados en las marcas de tiempo",
+            "Evidencia directa: color del fondo de pantalla; evidencia circunstancial: melodía del tono de llamada",
+            "Evidencia directa: marca del teléfono; evidencia circunstancial: variaciones del nivel de batería",
+            "Evidencia directa: tipo de letra; evidencia circunstancial: color del tema visual seleccionado"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Direct evidence: explicit instructions or threats in messages; circumstantial evidence: routines, schedules and patterns seen in timestamps",
+          "es-MX": "Evidencia directa: instrucciones o amenazas explícitas en mensajes; evidencia circunstancial: rutinas, horarios y patrones observados en las marcas de tiempo"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Direct evidence comes from the explicit content of the messages.",
+                "Circumstantial evidence arises from context such as timing, frequency and patterns.",
+                "Chats can provide both types in the same dataset."
+              ],
+              "es-MX": [
+                "La evidencia directa proviene del contenido explícito de los mensajes.",
+                "La evidencia circunstancial surge del contexto como horarios, frecuencia y patrones.",
+                "Un mismo conjunto de chats puede aportar ambos tipos."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "metadatos-relevantes",
+        "Question Text": {
+          "en-US": [
+            "Which set of metadata is highlighted as particularly relevant for the probative value of chats?"
+          ],
+          "es-MX": [
+            "¿Qué conjunto de metadatos se destaca como especialmente relevante para el valor probatorio de los chats?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Locations, exact dates and times, and user actions such as sending, receiving or deleting messages",
+            "Only the color of the chat background and the default font size",
+            "Only the phone battery status and screen brightness at the time of the message",
+            "Only the model of the headphones connected during the chat"
+          ],
+          "es-MX": [
+            "Ubicaciones, fechas y horas exactas y acciones del usuario como envío, recepción o borrado de mensajes",
+            "Solo el color del fondo de chat y el tamaño de letra por defecto",
+            "Solo el estado de batería del teléfono y el brillo de pantalla al momento del mensaje",
+            "Solo el modelo de audífonos conectados durante el chat"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Locations, exact dates and times, and user actions such as sending, receiving or deleting messages",
+          "es-MX": "Ubicaciones, fechas y horas exactas y acciones del usuario como envío, recepción o borrado de mensajes"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "These metadata elements allow the examiner to correlate chats with places, events and user decisions, strengthening the evidential narrative.",
+              "es-MX": "Estos metadatos permiten al perito correlacionar chats con lugares, eventos y decisiones del usuario, reforzando la narrativa probatoria."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "correlacion-artefactos",
+        "Question Text": {
+          "en-US": [
+            "According to the material, why is correlating chats with other artifacts (photos, calls, downloads) so important?"
+          ],
+          "es-MX": [
+            "Según el material, ¿por qué es tan importante correlacionar los chats con otros artefactos (fotos, llamadas, descargas)?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it connects messages with supporting evidence such as images, call records and file creation or download events, reinforcing the overall interpretation",
+            "Because it allows the examiner to ignore timestamps and rely only on screenshots",
+            "Because correlation is only needed when the chats are very short",
+            "Because it replaces the need to calculate hashes or document the process"
+          ],
+          "es-MX": [
+            "Porque conecta mensajes con evidencias de apoyo como imágenes, registros de llamadas y eventos de creación o descarga de archivos, reforzando la interpretación global",
+            "Porque permite al perito ignorar las marcas de tiempo y basarse solo en capturas de pantalla",
+            "Porque la correlación solo es necesaria cuando los chats son muy cortos",
+            "Porque sustituye la necesidad de calcular hashes o documentar el proceso"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it connects messages with supporting evidence such as images, call records and file creation or download events, reinforcing the overall interpretation",
+          "es-MX": "Porque conecta mensajes con evidencias de apoyo como imágenes, registros de llamadas y eventos de creación o descarga de archivos, reforzando la interpretación global"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Chats are one piece of the puzzle, not the whole picture.",
+                "Photos, calls and downloads can confirm or refute what is said in messages.",
+                "Correlation increases the robustness and credibility of conclusions."
+              ],
+              "es-MX": [
+                "Los chats son solo una pieza del rompecabezas, no toda la historia.",
+                "Fotos, llamadas y descargas pueden confirmar o refutar lo que se dice en los mensajes.",
+                "La correlación incrementa la solidez y credibilidad de las conclusiones."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "validacion-chats-hash",
+        "Question Text": {
+          "en-US": [
+            "In the context of chat evidence, why are hashes, proper documentation and extraction traceability emphasized?"
+          ],
+          "es-MX": [
+            "En el contexto de la evidencia de chats, ¿por qué se enfatizan los hashes, la documentación adecuada y la trazabilidad de la extracción?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because they demonstrate that the chat data analyzed is identical to what was extracted, and that each step of handling was controlled and can be verified",
+            "Because they make it possible to modify the chats freely without being detected",
+            "Because courts only accept evidence that has no documentation and no hash",
+            "Because hashes are used exclusively for file compression and not for integrity"
+          ],
+          "es-MX": [
+            "Porque demuestran que los datos de chat analizados son idénticos a los extraídos y que cada paso de manipulación estuvo controlado y puede verificarse",
+            "Porque permiten modificar los chats libremente sin ser detectado",
+            "Porque los tribunales solo aceptan evidencia que no tenga documentación ni hash",
+            "Porque los hashes se usan exclusivamente para comprimir archivos y no para integridad"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because they demonstrate that the chat data analyzed is identical to what was extracted, and that each step of handling was controlled and can be verified",
+          "es-MX": "Porque demuestran que los datos de chat analizados son idénticos a los extraídos y que cada paso de manipulación estuvo controlado y puede verificarse"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "Without integrity control and documentation, the opposing party can question whether the chats were altered, incomplete or misinterpreted.",
+              "es-MX": "Sin control de integridad y documentación, la contraparte puede cuestionar si los chats fueron alterados, están incompletos o se interpretan de forma incorrecta."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "ejemplo-integrado-chat",
+        "Question Text": {
+          "en-US": [
+            "In the integrated example with msgstore.db, what is the MAIN outcome of ordering messages chronologically and correlating them with chat_list and media paths?"
+          ],
+          "es-MX": [
+            "En el ejemplo integrado con msgstore.db, ¿cuál es el resultado PRINCIPAL de ordenar los mensajes cronológicamente y correlacionarlos con chat_list y rutas de multimedia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Reconstructing the conversation in a way that reveals who said what, when they said it and which media or deleted messages are associated",
+            "Improving the visual design of the WhatsApp interface for the user",
+            "Reducing the size of the database file for better performance",
+            "Automatically translating all messages into the language of the court"
+          ],
+          "es-MX": [
+            "Reconstruir la conversación de forma que se vea quién dijo qué, cuándo lo dijo y qué multimedia o mensajes borrados están asociados",
+            "Mejorar el diseño visual de la interfaz de WhatsApp para el usuario",
+            "Reducir el tamaño del archivo de base de datos para mayor rendimiento",
+            "Traducir automáticamente todos los mensajes al idioma del tribunal"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Reconstructing the conversation in a way that reveals who said what, when they said it and which media or deleted messages are associated",
+          "es-MX": "Reconstruir la conversación de forma que se vea quién dijo qué, cuándo lo dijo y qué multimedia o mensajes borrados están asociados"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Chronological order is essential to understand the sequence of events.",
+                "Linking to chat_list identifies the context or group where messages occurred.",
+                "Media paths and deletion flags complete the story with attachments and missing content."
+              ],
+              "es-MX": [
+                "El orden cronológico es esencial para entender la secuencia de eventos.",
+                "Vincular con chat_list identifica el contexto o grupo en el que ocurrieron los mensajes.",
+                "Las rutas de multimedia y flags de borrado completan la historia con adjuntos y contenido faltante."
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

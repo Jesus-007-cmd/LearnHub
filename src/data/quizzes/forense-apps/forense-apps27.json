@@ -1,0 +1,732 @@
+{
+    "meta": {
+      "slug": "forense-apps27",
+      "title": "Clase 27 – Documentación de procesos forenses",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 2,
+      "classNo": 27,
+      "description": "Uso de bitácoras, formatos de cadena de custodia, registros técnicos y reportes finales para documentar cada paso del análisis forense con trazabilidad y validez legal.",
+      "tags": [
+        "bitácora forense",
+        "documentación",
+        "cadena de custodia",
+        "registro de análisis",
+        "reporte final",
+        "trazabilidad",
+        "validez legal"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "importancia-documentacion",
+        "Question Text": {
+          "en-US": [
+            "Why is documentation considered as important as data extraction in a digital forensic investigation?"
+          ],
+          "es-MX": [
+            "¿Por qué la documentación se considera tan importante como la extracción de datos en una investigación forense digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it provides complete traceability of the evidence and supports legal validity of the process",
+            "Because it allows the examiner to work without any time limits",
+            "Because it replaces the need for forensic tools",
+            "Because it automatically translates evidence into the language of the court"
+          ],
+          "es-MX": [
+            "Porque proporciona trazabilidad completa de la evidencia y respalda la validez legal del proceso",
+            "Porque permite que el perito trabaje sin ningún límite de tiempo",
+            "Porque sustituye la necesidad de usar herramientas forenses",
+            "Porque traduce automáticamente la evidencia al idioma del tribunal"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it provides complete traceability of the evidence and supports legal validity of the process",
+          "es-MX": "Porque proporciona trazabilidad completa de la evidencia y respalda la validez legal del proceso"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "Documentation shows what was done, when, how and by whom. Without this record, the defense can argue manipulation, errors or lack of control, even if the technical analysis was correct.",
+              "es-MX": "La documentación muestra qué se hizo, cuándo, cómo y quién lo hizo. Sin ese registro, la defensa puede argumentar manipulación, errores o falta de control, aun cuando el análisis técnico haya sido correcto."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "bitacora-definicion",
+        "Question Text": {
+          "en-US": [
+            "Which option BEST describes a forensic analysis logbook (bitácora) as presented in the class?"
+          ],
+          "es-MX": [
+            "¿Qué opción describe MEJOR la bitácora de análisis forense según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A chronological document where each action, tool, evidence and result is recorded during the analysis",
+            "A personal notebook where the examiner writes informal thoughts and ideas",
+            "A file used only to store hashes without dates or context",
+            "A marketing document summarizing the advantages of the lab"
+          ],
+          "es-MX": [
+            "Un documento cronológico donde se registra cada acción, herramienta, evidencia y resultado durante el análisis",
+            "Una libreta personal donde el perito escribe pensamientos e ideas informales",
+            "Un archivo usado solo para guardar hashes sin fechas ni contexto",
+            "Un documento de mercadotecnia que resume las ventajas del laboratorio"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A chronological document where each action, tool, evidence and result is recorded during the analysis",
+          "es-MX": "Un documento cronológico donde se registra cada acción, herramienta, evidencia y resultado durante el análisis"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "The logbook is not personal or informal, it is an official record.",
+                "It connects technical actions with dates, times, tools and evidence.",
+                "It is key to explaining the methodology in court."
+              ],
+              "es-MX": [
+                "La bitácora no es personal ni informal, es un registro oficial.",
+                "Conecta acciones técnicas con fechas, horas, herramientas y evidencias.",
+                "Es clave para explicar la metodología en juicio."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "cadena-custodia-rol",
+        "Question Text": {
+          "en-US": [
+            "According to the class, what is the MAIN function of the chain-of-custody form?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿cuál es la función PRINCIPAL del formato de cadena de custodia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To document who is responsible for the evidence at each moment, from collection to storage",
+            "To store technical details of hash algorithms and block sizes",
+            "To manage lab employee wages",
+            "To replace the final report when time is limited"
+          ],
+          "es-MX": [
+            "Documentar quién es responsable de la evidencia en cada momento, desde la recolección hasta el resguardo",
+            "Almacenar detalles técnicos de algoritmos hash y tamaños de bloque",
+            "Administrar los salarios de los empleados del laboratorio",
+            "Sustituir el informe final cuando el tiempo es limitado"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To document who is responsible for the evidence at each moment, from collection to storage",
+          "es-MX": "Documentar quién es responsable de la evidencia en cada momento, desde la recolección hasta el resguardo"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The chain-of-custody form is focused on legal control and responsibility of the physical or digital evidence, not on the technical analysis itself.",
+              "es-MX": "El formato de cadena de custodia se enfoca en el control legal y la responsabilidad de la evidencia física o digital, no en el análisis técnico en sí."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "registro-adquisicion",
+        "Question Text": {
+          "en-US": [
+            "Which element MUST appear in a proper acquisition record according to the material?"
+          ],
+          "es-MX": [
+            "¿Qué elemento DEBE aparecer en un registro de adquisición adecuado según el material?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Method and tool used to extract the image, including start and end date/time",
+            "Personal opinion of the examiner about the suspect",
+            "Average network speed during the acquisition",
+            "A list of future cases the lab wants to work on"
+          ],
+          "es-MX": [
+            "El método y la herramienta usados para extraer la imagen, incluyendo fecha y hora de inicio y fin",
+            "La opinión personal del perito sobre el sospechoso",
+            "La velocidad promedio de la red durante la adquisición",
+            "Una lista de casos futuros que el laboratorio quiere atender"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Method and tool used to extract the image, including start and end date/time",
+          "es-MX": "El método y la herramienta usados para extraer la imagen, incluyendo fecha y hora de inicio y fin"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "The acquisition record describes HOW and WHEN the image was created.",
+                "This includes tools, configuration, timing and source device.",
+                "It allows another analyst to repeat or verify the acquisition process."
+              ],
+              "es-MX": [
+                "El registro de adquisición describe CÓMO y CUÁNDO se creó la imagen.",
+                "Incluye herramientas, configuración, tiempos y dispositivo fuente.",
+                "Permite que otro analista repita o verifique el proceso de adquisición."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "registro-analisis-tecnico",
+        "Question Text": {
+          "en-US": [
+            "What is the main purpose of the technical analysis record mentioned in the class?"
+          ],
+          "es-MX": [
+            "¿Cuál es el propósito principal del registro de análisis técnico mencionado en la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To document file structures, key tables, artifacts and relevant findings during the examination",
+            "To store the office’s cleaning schedule",
+            "To keep passwords of all devices in plain text",
+            "To summarize only non-technical opinions of the examiner"
+          ],
+          "es-MX": [
+            "Documentar estructuras de archivos, tablas clave, artefactos y hallazgos relevantes durante el análisis",
+            "Guardar el calendario de limpieza de la oficina",
+            "Mantener las contraseñas de todos los dispositivos en texto plano",
+            "Resumir solo opiniones no técnicas del perito"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To document file structures, key tables, artifacts and relevant findings during the examination",
+          "es-MX": "Documentar estructuras de archivos, tablas clave, artefactos y hallazgos relevantes durante el análisis"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The technical analysis record acts as a detailed map of what was inspected in the data source: which tables, logs, databases and artifacts were reviewed and what was found.",
+              "es-MX": "El registro de análisis técnico funciona como un mapa detallado de lo que se inspeccionó en la fuente de datos: qué tablas, logs, bases de datos y artefactos se revisaron y qué se encontró."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "reporte-final-rol",
+        "Question Text": {
+          "en-US": [
+            "Which statement BEST describes the role of the final report in the forensic documentation chain?"
+          ],
+          "es-MX": [
+            "¿Qué afirmación describe MEJOR el papel del reporte final dentro de la cadena de documentación forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It is the formal document that presents findings, evidence, screenshots and conclusions to the requesting authority",
+            "It is a private draft that never leaves the laboratory",
+            "It replaces the need for logbooks and chain-of-custody records",
+            "It is an informal email summarized in one paragraph"
+          ],
+          "es-MX": [
+            "Es el documento formal que presenta hallazgos, evidencias, capturas y conclusiones a la autoridad solicitante",
+            "Es un borrador privado que nunca sale del laboratorio",
+            "Sustituye la necesidad de bitácoras y cadenas de custodia",
+            "Es un correo informal resumido en un solo párrafo"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It is the formal document that presents findings, evidence, screenshots and conclusions to the requesting authority",
+          "es-MX": "Es el documento formal que presenta hallazgos, evidencias, capturas y conclusiones a la autoridad solicitante"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The final report translates technical work into a structured, understandable and defendable document for judges, lawyers and managers.",
+              "es-MX": "El reporte final traduce el trabajo técnico en un documento estructurado, comprensible y defendible para jueces, abogados y directivos."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "estructura-bitacora",
+        "Question Text": {
+          "en-US": [
+            "According to the example in the material, which set belongs to the HEADER of a professional logbook?"
+          ],
+          "es-MX": [
+            "De acuerdo con el ejemplo del material, ¿qué conjunto pertenece al ENCABEZADO de una bitácora profesional?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Case number, analyst, start date, equipment and initial hash of received evidence",
+            "Name of the judge, name of the suspect’s family and approximate cost of the trial",
+            "Daily menu of the lab cafeteria and list of holidays",
+            "Only the final conclusion without dates or evidence"
+          ],
+          "es-MX": [
+            "Número de caso, analista, fecha de inicio, equipo y hash inicial de la evidencia recibida",
+            "Nombre del juez, nombre de la familia del sospechoso y costo aproximado del juicio",
+            "Menú diario de la cafetería del laboratorio y lista de días festivos",
+            "Solo la conclusión final sin fechas ni evidencias"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Case number, analyst, start date, equipment and initial hash of received evidence",
+          "es-MX": "Número de caso, analista, fecha de inicio, equipo y hash inicial de la evidencia recibida"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "The header identifies the case and the context of the work.",
+                "It includes who analyzes, when it starts and what evidence arrives.",
+                "The initial hash links the logbook to a specific data set."
+              ],
+              "es-MX": [
+                "El encabezado identifica el caso y el contexto del trabajo.",
+                "Incluye quién analiza, cuándo comienza y qué evidencia llega.",
+                "El hash inicial vincula la bitácora a un conjunto de datos específico."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "principio-exactitud",
+        "Question Text": {
+          "en-US": [
+            "What does the principle of accuracy mean in forensic documentation?"
+          ],
+          "es-MX": [
+            "¿Qué significa el principio de exactitud en la documentación forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Each action must be recorded as it occurred, without adding opinions or premature conclusions",
+            "The examiner can modify times and details to make the narrative simpler",
+            "It is enough to write only the most important actions at the end of the case",
+            "Accuracy refers only to spelling, not to the technical content"
+          ],
+          "es-MX": [
+            "Cada acción debe registrarse tal como ocurrió, sin añadir opiniones ni conclusiones prematuras",
+            "El perito puede modificar tiempos y detalles para hacer la narrativa más simple",
+            "Basta con escribir solo las acciones más importantes al finalizar el caso",
+            "La exactitud se refiere solo a la ortografía, no al contenido técnico"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Each action must be recorded as it occurred, without adding opinions or premature conclusions",
+          "es-MX": "Cada acción debe registrarse tal como ocurrió, sin añadir opiniones ni conclusiones prematuras"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "Accuracy avoids exaggerations or distortions. The logbook must describe facts, not interpretations; conclusions belong in the final report and must be supported by evidence.",
+              "es-MX": "La exactitud evita exageraciones o distorsiones. La bitácora debe describir hechos, no interpretaciones; las conclusiones van en el reporte final y deben estar respaldadas por evidencia."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "principio-inmutabilidad",
+        "Question Text": {
+          "en-US": [
+            "How is the principle of immutability applied to forensic records according to the class?"
+          ],
+          "es-MX": [
+            "¿Cómo se aplica el principio de inmutabilidad a los registros forenses según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Records must be preserved without alterations and can be sealed in signed PDFs or secure repositories",
+            "Records can be edited freely to fix any mistake without leaving a trace",
+            "It is recommended to keep only handwritten notes with erasable pencil",
+            "Immutability is optional and applies only to criminal cases"
+          ],
+          "es-MX": [
+            "Los registros deben conservarse sin alteraciones y pueden sellarse en PDFs firmados o repositorios seguros",
+            "Los registros pueden editarse libremente para corregir errores sin dejar rastro",
+            "Se recomienda conservar solo notas manuscritas con lápiz borrable",
+            "La inmutabilidad es opcional y solo aplica en casos penales"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Records must be preserved without alterations and can be sealed in signed PDFs or secure repositories",
+          "es-MX": "Los registros deben conservarse sin alteraciones y pueden sellarse en PDFs firmados o repositorios seguros"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Immutability protects the integrity of the documentation itself.",
+                "Digital signatures and hashing help detect any change.",
+                "This increases confidence in front of auditors and courts."
+              ],
+              "es-MX": [
+                "La inmutabilidad protege la integridad de la propia documentación.",
+                "Las firmas digitales y el hash ayudan a detectar cualquier cambio.",
+                "Esto aumenta la confianza frente a auditorías y tribunales."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "principio-neutralidad",
+        "Question Text": {
+          "en-US": [
+            "What does clarity and neutrality imply in the context of forensic documentation?"
+          ],
+          "es-MX": [
+            "¿Qué implican la claridad y la neutralidad en el contexto de la documentación forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Using technical but understandable language, avoiding personal judgments or emotional expressions",
+            "Adding opinions about the suspect’s personality to make the report more complete",
+            "Writing only in legal jargon so that only lawyers can read it",
+            "Including jokes and informal comments to humanize the case"
+          ],
+          "es-MX": [
+            "Usar un lenguaje técnico pero comprensible, evitando juicios personales o expresiones emocionales",
+            "Añadir opiniones sobre la personalidad del sospechoso para que el informe sea más completo",
+            "Escribir solo con jerga legal para que solo los abogados puedan leerlo",
+            "Incluir chistes y comentarios informales para humanizar el caso"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Using technical but understandable language, avoiding personal judgments or emotional expressions",
+          "es-MX": "Usar un lenguaje técnico pero comprensible, evitando juicios personales o expresiones emocionales"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "Neutral documentation focuses on facts and evidence. Personal attacks, sarcasm or emotional comments can damage the credibility of the report and of the examiner.",
+              "es-MX": "La documentación neutral se centra en hechos y evidencias. Ataques personales, sarcasmos o comentarios emocionales pueden dañar la credibilidad del informe y del propio perito."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "orden-cronologico",
+        "Question Text": {
+          "en-US": [
+            "Why is chronological order a requirement for a reliable forensic logbook?"
+          ],
+          "es-MX": [
+            "¿Por qué el orden cronológico es un requisito para una bitácora forense confiable?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it shows the exact sequence of actions, making it easier to understand and reproduce the analysis",
+            "Because it allows the examiner to hide actions by placing them out of order",
+            "Because the court only reads the last page of the logbook",
+            "Because it is required only in criminal cases and not in internal investigations"
+          ],
+          "es-MX": [
+            "Porque muestra la secuencia exacta de acciones, facilitando entender y reproducir el análisis",
+            "Porque permite al perito ocultar acciones colocándolas fuera de orden",
+            "Porque el tribunal solo lee la última página de la bitácora",
+            "Porque solo se exige en casos penales y no en investigaciones internas"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it shows the exact sequence of actions, making it easier to understand and reproduce the analysis",
+          "es-MX": "Porque muestra la secuencia exacta de acciones, facilitando entender y reproducir el análisis"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Chronology avoids confusion about what was done first.",
+                "It helps correlating actions with system logs and timestamps.",
+                "It is essential for incident reconstruction."
+              ],
+              "es-MX": [
+                "La cronología evita confusiones sobre qué se hizo primero.",
+                "Ayuda a correlacionar acciones con logs del sistema y timestamps.",
+                "Es esencial para reconstruir incidentes."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "evidencia-adjunta",
+        "Question Text": {
+          "en-US": [
+            "Which combination BEST represents 'attached evidence' that should accompany forensic documentation?"
+          ],
+          "es-MX": [
+            "¿Qué combinación representa MEJOR la 'evidencia adjunta' que debe acompañar la documentación forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Screenshots, hashes, code fragments, database extracts and exact file paths",
+            "Only oral explanations of the examiner in a meeting",
+            "A single photo of the suspect without context",
+            "A list of social media links unrelated to the case"
+          ],
+          "es-MX": [
+            "Capturas de pantalla, hashes, fragmentos de código, extractos de bases de datos y rutas exactas de archivos",
+            "Solo explicaciones orales del perito en una junta",
+            "Una sola foto del sospechoso sin contexto",
+            "Una lista de enlaces a redes sociales sin relación con el caso"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Screenshots, hashes, code fragments, database extracts and exact file paths",
+          "es-MX": "Capturas de pantalla, hashes, fragmentos de código, extractos de bases de datos y rutas exactas de archivos"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "Attached evidence connects the narrative with concrete artifacts. It allows others to verify that the described findings really exist in the data.",
+              "es-MX": "La evidencia adjunta conecta la narrativa con artefactos concretos. Permite que otros verifiquen que los hallazgos descritos realmente existen en los datos."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "replicabilidad",
+        "Question Text": {
+          "en-US": [
+            "What does the replicability principle demand from forensic documentation?"
+          ],
+          "es-MX": [
+            "¿Qué exige el principio de replicabilidad a la documentación forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "That another competent analyst can repeat the procedure and obtain equivalent results following the records",
+            "That only the original examiner can understand the steps performed",
+            "That the documentation remains secret and is not shared with anyone",
+            "That the analysis is done without any written record"
+          ],
+          "es-MX": [
+            "Que otro analista competente pueda repetir el procedimiento y obtener resultados equivalentes siguiendo los registros",
+            "Que solo el perito original pueda entender los pasos realizados",
+            "Que la documentación permanezca en secreto y no se comparta con nadie",
+            "Que el análisis se haga sin ningún registro escrito"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "That another competent analyst can repeat the procedure and obtain equivalent results following the records",
+          "es-MX": "Que otro analista competente pueda repetir el procedimiento y obtener resultados equivalentes siguiendo los registros"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Replicability reduces dependence on one person.",
+                "It strengthens the scientific and legal weight of the analysis.",
+                "It allows peer review and external audits."
+              ],
+              "es-MX": [
+                "La replicabilidad reduce la dependencia de una sola persona.",
+                "Refuerza el peso científico y legal del análisis.",
+                "Permite la revisión entre pares y auditorías externas."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "mala-documentacion",
+        "Question Text": {
+          "en-US": [
+            "According to the material, what is a possible consequence of poor or incomplete documentation?"
+          ],
+          "es-MX": [
+            "Según el material, ¿cuál es una posible consecuencia de una documentación deficiente o incompleta?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The evidence may be challenged or even excluded due to doubts about manipulation or errors",
+            "The court will automatically trust the examiner's memory",
+            "The judge will complete the missing information",
+            "The documentation will be ignored and the case will continue normally"
+          ],
+          "es-MX": [
+            "La evidencia puede ser impugnada o incluso excluida por dudas sobre manipulación o errores",
+            "El tribunal confiará automáticamente en la memoria del perito",
+            "El juez completará la información faltante",
+            "La documentación se ignorará y el caso seguirá con normalidad"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The evidence may be challenged or even excluded due to doubts about manipulation or errors",
+          "es-MX": "La evidencia puede ser impugnada o incluso excluida por dudas sobre manipulación o errores"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "Courts require not only correct technical results but also a documented and controllable process. If the process is unclear, the results lose credibility.",
+              "es-MX": "Los tribunales exigen no solo resultados técnicos correctos, sino también un proceso documentado y controlable. Si el proceso es poco claro, los resultados pierden credibilidad."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "formatos-recomendados",
+        "Question Text": {
+          "en-US": [
+            "Which set of formats is recommended in the class for professional forensic documentation?"
+          ],
+          "es-MX": [
+            "¿Qué conjunto de formatos se recomienda en la clase para la documentación forense profesional?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Digitally signed PDFs, CSV for logbooks, Word templates for chain-of-custody and PNG screenshots",
+            "Editable social media posts, audio-only notes and GIF screenshots",
+            "Only handwritten notes without any digital backup",
+            "Encrypted ZIP files without any index or description"
+          ],
+          "es-MX": [
+            "PDF firmados digitalmente, CSV para bitácoras, plantillas Word para cadena de custodia y capturas en PNG",
+            "Publicaciones editables en redes sociales, notas solo de audio y capturas en GIF",
+            "Solo notas manuscritas sin ningún respaldo digital",
+            "Archivos ZIP cifrados sin ningún índice o descripción"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Digitally signed PDFs, CSV for logbooks, Word templates for chain-of-custody and PNG screenshots",
+          "es-MX": "PDF firmados digitalmente, CSV para bitácoras, plantillas Word para cadena de custodia y capturas en PNG"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "PDF and Word templates give structure and legal formality.",
+                "CSV allows flexible analysis of logbook entries.",
+                "PNG preserves image quality without lossy compression."
+              ],
+              "es-MX": [
+                "Los PDF y plantillas Word dan estructura y formalidad legal.",
+                "El CSV permite analizar con flexibilidad las entradas de bitácora.",
+                "El PNG preserva la calidad de imagen sin compresión con pérdida."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Category": "ejemplo-integrado-whatsapp",
+        "Question Text": {
+          "en-US": [
+            "In the integrated WhatsApp example, what is the role of the logbook when recovering active and deleted conversations?"
+          ],
+          "es-MX": [
+            "En el ejemplo integrado de WhatsApp, ¿cuál es el papel de la bitácora al recuperar conversaciones activas y eliminadas?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To register each step: tools used, databases opened, tables consulted and number of conversations recovered",
+            "To store only the suspect’s phone number",
+            "To record jokes and informal comments about the case",
+            "To hide the number of deleted conversations found"
+          ],
+          "es-MX": [
+            "Registrar cada paso: herramientas usadas, bases abiertas, tablas consultadas y número de conversaciones recuperadas",
+            "Guardar únicamente el número telefónico del sospechoso",
+            "Registrar chistes y comentarios informales sobre el caso",
+            "Ocultar la cantidad de conversaciones eliminadas encontradas"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To register each step: tools used, databases opened, tables consulted and number of conversations recovered",
+          "es-MX": "Registrar cada paso: herramientas usadas, bases abiertas, tablas consultadas y número de conversaciones recuperadas"
+        },
+        "Explanation": [
+          {
+            "type": "p",
+            "content": {
+              "en-US": "The example shows that documentation accompanies the technical process: from opening msgstore.db to linking cache thumbnails with deleted messages.",
+              "es-MX": "El ejemplo muestra que la documentación acompaña al proceso técnico: desde abrir msgstore.db hasta vincular miniaturas de caché con mensajes eliminados."
+            }
+          }
+        ]
+      },
+      {
+        "Category": "hash-y-documentacion",
+        "Question Text": {
+          "en-US": [
+            "How do hash values relate to the documentation described in this class?"
+          ],
+          "es-MX": [
+            "¿Cómo se relacionan los valores hash con la documentación descrita en esta clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They must be recorded in acquisition records, logbooks and final reports to prove that the analyzed data matches the original evidence",
+            "They are calculated only once and never written down",
+            "They are used only as internal IT maintenance and not documented",
+            "They are optional and only needed when there is video evidence"
+          ],
+          "es-MX": [
+            "Deben registrarse en los registros de adquisición, bitácoras y reportes finales para demostrar que los datos analizados coinciden con la evidencia original",
+            "Se calculan solo una vez y nunca se anotan",
+            "Se usan solo para mantenimiento interno de TI y no se documentan",
+            "Son opcionales y solo se requieren cuando hay evidencia en video"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They must be recorded in acquisition records, logbooks and final reports to prove that the analyzed data matches the original evidence",
+          "es-MX": "Deben registrarse en los registros de adquisición, bitácoras y reportes finales para demostrar que los datos analizados coinciden con la evidencia original"
+        },
+        "Explanation": [
+          {
+            "type": "ul",
+            "items": {
+              "en-US": [
+                "Hashes tie the documentation to specific files and images.",
+                "Recording them at different stages proves integrity over time.",
+                "They are a bridge between technical integrity and legal documentation."
+              ],
+              "es-MX": [
+                "Los hashes vinculan la documentación con archivos e imágenes específicos.",
+                "Registrarlos en distintas etapas demuestra integridad a lo largo del tiempo.",
+                "Son un puente entre la integridad técnica y la documentación legal."
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

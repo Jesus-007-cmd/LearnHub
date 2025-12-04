@@ -1,0 +1,432 @@
+{
+    "meta": {
+      "slug": "forense-apps55",
+      "title": "Elaboración de informe de evidencia multimedia",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 4,
+      "classNo": 55,
+      "description": "Estructura, metodología y redacción del informe final de análisis multimedia para procesos judiciales.",
+      "tags": [
+        "informe forense",
+        "evidencia multimedia",
+        "cadena de custodia",
+        "metadatos",
+        "integridad digital",
+        "hash",
+        "documentación profesional"
+      ]
+    },
+    "Questions": [
+  
+      {
+        "Category": "Importancia del informe",
+        "Question Text": {
+          "en-US": [
+            "Why is the multimedia forensic report considered the most important document in a digital investigation?"
+          ],
+          "es-MX": [
+            "¿Por qué el informe forense multimedia es considerado el documento más importante en una investigación digital?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it explains what was analyzed, how it was obtained, which tools were used, what findings were discovered and what conclusions can be drawn.",
+            "Because it replaces all other evidence and makes them unnecessary.",
+            "Because it is mainly decorative and is rarely read by authorities.",
+            "Because it only contains screenshots without context."
+          ],
+          "es-MX": [
+            "Porque explica qué se analizó, cómo se obtuvo, qué herramientas se usaron, qué hallazgos fueron encontrados y qué conclusiones pueden derivarse.",
+            "Porque sustituye a toda la demás evidencia y las hace innecesarias.",
+            "Porque es meramente decorativo y rara vez lo leen las autoridades.",
+            "Porque solo contiene capturas de pantalla sin contexto."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it explains what was analyzed, how it was obtained, which tools were used, what findings were discovered and what conclusions can be drawn.",
+          "es-MX": "Porque explica qué se analizó, cómo se obtuvo, qué herramientas se usaron, qué hallazgos fueron encontrados y qué conclusiones pueden derivarse."
+        },
+        "Explanation": {
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El informe es la parte fundamental del proceso forense porque transforma los datos técnicos en información comprensible para jueces, autoridades y no expertos."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Garantiza transparencia del proceso.",
+                "Deja constancia verificable del análisis.",
+                "Permite replicar resultados.",
+                "Integra todos los hallazgos técnicos."
+              ]
+            }
+          ],
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The report consolidates the entire forensic process and presents it clearly so that non-experts can understand the technical reasoning behind the conclusions."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Componentes del informe",
+        "Question Text": {
+          "en-US": [
+            "Which section of the multimedia forensic report should contain file name, size, format, origin location, timestamps and relevant metadata?"
+          ],
+          "es-MX": [
+            "¿Qué sección del informe forense debe contener nombre del archivo, tamaño, formato, ubicación de origen, fechas y metadatos relevantes?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Description of the received evidence",
+            "General case data",
+            "Technical interpretation",
+            "Annexes"
+          ],
+          "es-MX": [
+            "Descripción de la evidencia recibida",
+            "Datos generales del caso",
+            "Interpretación técnica",
+            "Anexos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Description of the received evidence",
+          "es-MX": "Descripción de la evidencia recibida"
+        },
+        "Explanation": {
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La descripción de la evidencia recibida documenta todo lo necesario para identificar técnica y legalmente cada archivo, garantizando trazabilidad."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Procedimiento forense",
+        "Question Text": {
+          "en-US": [
+            "What is the recommended way to describe the steps performed during the multimedia forensic analysis?"
+          ],
+          "es-MX": [
+            "¿Cuál es la forma recomendada de describir los pasos realizados durante el análisis forense multimedia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "In clear and chronological order, specifying tools and exact actions.",
+            "Only mentioning the name of the tool without explaining the process.",
+            "Using vague descriptions to simplify the report.",
+            "Skipping steps that are too technical."
+          ],
+          "es-MX": [
+            "En orden claro y cronológico, especificando herramientas y acciones exactas.",
+            "Solo mencionando el nombre de la herramienta sin explicar el proceso.",
+            "Usando descripciones vagas para simplificar el reporte.",
+            "Saltando pasos que son demasiado técnicos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "In clear and chronological order, specifying tools and exact actions.",
+          "es-MX": "En orden claro y cronológico, especificando herramientas y acciones exactas."
+        },
+        "Explanation": {
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "La claridad permite replicar el análisis.",
+                "El orden cronológico facilita seguimiento.",
+                "La precisión elimina dudas sobre manipulación accidental."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Resultados del análisis",
+        "Question Text": {
+          "en-US": [
+            "According to the class, what should be included in the ‘results’ section when analyzing *images*?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿qué debe incluirse en la sección de ‘resultados’ cuando se analizan *imágenes*?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "EXIF metadata, GPS coordinates, capture time, camera model and possible editing indicators.",
+            "Only the resolution of the image.",
+            "A subjective opinion of whether the photo looks real.",
+            "Aesthetic comments about the photograph."
+          ],
+          "es-MX": [
+            "Metadatos EXIF, coordenadas GPS, hora de captura, modelo de cámara e indicios de edición.",
+            "Solo la resolución de la imagen.",
+            "Una opinión subjetiva sobre si la foto parece real.",
+            "Comentarios estéticos sobre la fotografía."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "EXIF metadata, GPS coordinates, capture time, camera model and possible editing indicators.",
+          "es-MX": "Metadatos EXIF, coordenadas GPS, hora de captura, modelo de cámara e indicios de edición."
+        },
+        "Explanation": {
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El análisis de imágenes se basa en datos técnicos verificables, no en percepciones visuales subjetivas."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Integridad del archivo",
+        "Question Text": {
+          "en-US": [
+            "Which elements form the integrity validation table mentioned in the class?"
+          ],
+          "es-MX": [
+            "¿Qué elementos conforman la tabla de validación de integridad mencionada en la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Original hash, final hash, file name and match status.",
+            "Color palette, brightness and contrast.",
+            "User comments about the file.",
+            "Only the file size."
+          ],
+          "es-MX": [
+            "Hash original, hash final, nombre del archivo y estado de coincidencia.",
+            "Paleta de colores, brillo y contraste.",
+            "Comentarios del usuario sobre el archivo.",
+            "Solo el tamaño del archivo."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Original hash, final hash, file name and match status.",
+          "es-MX": "Hash original, hash final, nombre del archivo y estado de coincidencia."
+        },
+        "Explanation": {
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "La tabla de integridad es obligatoria en informes profesionales.",
+                "Permite demostrar que no hubo cambios entre la adquisición y el análisis.",
+                "Es uno de los elementos más revisados en tribunal."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Interpretación técnica",
+        "Question Text": {
+          "en-US": [
+            "What is the purpose of the ‘technical interpretation’ section in the multimedia forensic report?"
+          ],
+          "es-MX": [
+            "¿Cuál es el propósito de la sección de ‘interpretación técnica’ en el informe forense multimedia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To explain the meaning of the findings, their coherence and how they relate to the narrative of the case.",
+            "To provide personal opinions or emotional commentary.",
+            "To rewrite the entire analysis in a subjective way.",
+            "To summarize the report in a non-technical, informal tone."
+          ],
+          "es-MX": [
+            "Explicar el significado de los hallazgos, su coherencia y cómo se relacionan con la narrativa del caso.",
+            "Proporcionar opiniones personales o comentarios emocionales.",
+            "Reescribir todo el análisis de forma subjetiva.",
+            "Resumir el reporte en un tono informal y no técnico."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To explain the meaning of the findings, their coherence and how they relate to the narrative of the case.",
+          "es-MX": "Explicar el significado de los hallazgos, su coherencia y cómo se relacionan con la narrativa del caso."
+        },
+        "Explanation": {
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La interpretación técnica NO es opinión personal; es explicación objetiva basada en hallazgos verificables."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Conclusiones del informe",
+        "Question Text": {
+          "en-US": [
+            "Which of the following is an example of an acceptable conclusion in a multimedia forensic report?"
+          ],
+          "es-MX": [
+            "¿Cuál de los siguientes es un ejemplo de conclusión aceptable en un informe forense multimedia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "“The SHA-256 hash matches the original, therefore the file preserves its integrity.”",
+            "“I believe the file seems trustworthy because it looks natural to me.”",
+            "“The video is probably edited because I feel something is strange.”",
+            "“I think the suspect is guilty because the video appears incriminating.”"
+          ],
+          "es-MX": [
+            "“El hash SHA-256 coincide con el original, por lo que el archivo conserva su integridad.”",
+            "“Creo que el archivo parece confiable porque se ve natural para mí.”",
+            "“El video probablemente está editado porque siento algo raro.”",
+            "“Creo que el sospechoso es culpable porque el video parece incriminatorio.”"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "“The SHA-256 hash matches the original, therefore the file preserves its integrity.”",
+          "es-MX": "“El hash SHA-256 coincide con el original, por lo que el archivo conserva su integridad.”"
+        },
+        "Explanation": {
+          "es-MX": [
+            {
+              "type": "divider"
+            },
+            {
+              "type": "text",
+              "content": "Las conclusiones deben basarse en hechos técnicos demostrables, no en opiniones subjetivas."
+            },
+            {
+              "type": "divider"
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Anexos",
+        "Question Text": {
+          "en-US": [
+            "Which of the following items should be included in the annexes of a multimedia forensic report?"
+          ],
+          "es-MX": [
+            "¿Cuál de los siguientes elementos debe incluirse en los anexos de un informe forense multimedia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Screenshots of metadata analysis, hash tables, logs, diagrams and technical graphics.",
+            "Memes or images unrelated to the case.",
+            "Personal opinions about the suspect.",
+            "Blank pages to make the document longer."
+          ],
+          "es-MX": [
+            "Capturas del análisis de metadatos, tablas de hash, bitácoras, diagramas y gráficos técnicos.",
+            "Memes o imágenes no relacionadas con el caso.",
+            "Opiniones personales sobre el sospechoso.",
+            "Hojas en blanco para hacer más largo el documento."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Screenshots of metadata analysis, hash tables, logs, diagrams and technical graphics.",
+          "es-MX": "Capturas del análisis de metadatos, tablas de hash, bitácoras, diagramas y gráficos técnicos."
+        },
+        "Explanation": {
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los anexos refuerzan la transparencia del análisis permitiendo que otros revisen las pruebas gráficas o técnicas usadas."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Redacción profesional",
+        "Question Text": {
+          "en-US": [
+            "What writing style is recommended for the multimedia forensic report?"
+          ],
+          "es-MX": [
+            "¿Qué estilo de redacción se recomienda para el informe forense multimedia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Clear, technical, objective, precise and verifiable by third parties.",
+            "Subjective, emotional and based on personal beliefs.",
+            "Informal and conversational so it is entertaining to read.",
+            "Filled with technical jargon to confuse non-experts."
+          ],
+          "es-MX": [
+            "Claro, técnico, objetivo, preciso y verificable por terceros.",
+            "Subjetivo, emocional y basado en creencias personales.",
+            "Informal y conversacional para que sea entretenido.",
+            "Lleno de jerga técnica para confundir a los no expertos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Clear, technical, objective, precise and verifiable by third parties.",
+          "es-MX": "Claro, técnico, objetivo, preciso y verificable por terceros."
+        },
+        "Explanation": {
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El informe forense debe ser comprensible para jueces, abogados y personal no técnico, sin perder rigor científico."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Conclusiones finales de la clase",
+        "Question Text": {
+          "en-US": [
+            "Which option best summarizes the principles of the multimedia forensic report according to the class?"
+          ],
+          "es-MX": [
+            "¿Qué opción resume mejor los principios del informe forense multimedia según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The report must integrate technical findings, hash validation, contextual analysis, clear writing and full traceability.",
+            "The report must be short and rely only on screenshots.",
+            "The report may omit integrity validation if the analyst trusts the file.",
+            "The report should be written based on intuition rather than technical process."
+          ],
+          "es-MX": [
+            "El informe debe integrar hallazgos técnicos, validación de hash, análisis contextual, redacción clara y trazabilidad completa.",
+            "El informe debe ser corto y basarse solo en capturas.",
+            "El informe puede omitir la validación de integridad si el analista confía en el archivo.",
+            "El informe debe redactarse con intuición más que con proceso técnico."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The report must integrate technical findings, hash validation, contextual analysis, clear writing and full traceability.",
+          "es-MX": "El informe debe integrar hallazgos técnicos, validación de hash, análisis contextual, redacción clara y trazabilidad completa."
+        },
+        "Explanation": {
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Esta clase concluye que el informe es el producto final del peritaje y debe ser replicable, verificable y técnicamente sólido."
+            }
+          ]
+        }
+      }
+  
+    ]
+  }
+  

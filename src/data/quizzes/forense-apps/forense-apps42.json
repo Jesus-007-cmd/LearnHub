@@ -1,0 +1,848 @@
+{
+  "meta": {
+    "slug": "forense-apps42",
+    "title": "Clase 42 – Proyecto integrador: reconstrucción de conversación forense",
+    "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+    "unit": 3,
+    "classNo": 42,
+    "description": "Integración de técnicas de bases de datos, metadatos, tiempos, multimedia y documentación profesional para reconstruir una conversación forense a partir de una base simulada.",
+    "tags": [
+      "reconstrucción de conversación",
+      "proyecto integrador",
+      "sqlite",
+      "metadatos",
+      "exif",
+      "patrones temporales"
+    ]
+  },
+  "Questions": [
+    {
+      "Category": "proposito-proyecto",
+      "Question Text": {
+        "en-US": [
+          "According to the class, what is the MAIN purpose of the integrative forensic conversation reconstruction project?"
+        ],
+        "es-MX": [
+          "Según la clase, ¿cuál es el propósito PRINCIPAL del proyecto integrador de reconstrucción de conversación forense?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "To unify theoretical and practical knowledge by reconstructing a complete conversation using SQLite data, metadata, timestamps and associated evidence",
+          "Only to learn how to export chats from WhatsApp without analyzing metadata or inconsistencies",
+          "To practice writing creative stories based on chats, without verifying anything technically",
+          "To focus exclusively on EXIF metadata without considering messages or timestamps"
+        ],
+        "es-MX": [
+          "Unificar conocimientos teóricos y prácticos reconstruyendo una conversación completa usando datos SQLite, metadatos, timestamps y evidencia asociada",
+          "Solo aprender a exportar chats de WhatsApp sin analizar metadatos ni inconsistencias",
+          "Practicar la redacción de historias creativas basadas en chats, sin verificar nada técnicamente",
+          "Enfocarse exclusivamente en metadatos EXIF sin considerar mensajes ni timestamps"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To unify theoretical and practical knowledge by reconstructing a complete conversation using SQLite data, metadata, timestamps and associated evidence",
+        "es-MX": "Unificar conocimientos teóricos y prácticos reconstruyendo una conversación completa usando datos SQLite, metadatos, timestamps y evidencia asociada"
+      },
+      "Explanation": [
+        {
+          "type": "p",
+          "content": {
+            "en-US": "The project is designed to integrate all techniques from the unit: database analysis, metadata, EXIF, timestamps, locations and professional documentation in a simulated real case.",
+            "es-MX": "El proyecto está diseñado para integrar todas las técnicas de la unidad: análisis de bases de datos, metadatos, EXIF, timestamps, ubicaciones y documentación profesional en un caso simulado realista."
+          }
+        }
+      ]
+    },
+    {
+      "Category": "escenario-caso",
+      "Question Text": {
+        "en-US": [
+          "Which elements are explicitly mentioned as part of the simulated forensic case database that the student receives?"
+        ],
+        "es-MX": [
+          "¿Qué elementos se mencionan explícitamente como parte de la base de datos de caso forense simulado que recibe el alumno?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Partial conversations, deleted or null messages, multimedia with EXIF, associated contacts, irregular schedules, incomplete sequences and mixed timestamps in different time zones",
+          "Only a clean and perfectly ordered chat with no deleted messages and no multimedia",
+          "Only anonymized statistics with no access to raw messages, media or metadata",
+          "A random selection of memes with no timestamps or sender information"
+        ],
+        "es-MX": [
+          "Conversaciones parciales, mensajes eliminados o nulos, multimedia con EXIF, contactos asociados, horarios irregulares, secuencias incompletas y timestamps mezclados en distintas zonas horarias",
+          "Solo un chat limpio y perfectamente ordenado sin mensajes eliminados ni multimedia",
+          "Solo estadísticas anonimizadas sin acceso a mensajes crudos, ni medios ni metadatos",
+          "Una selección aleatoria de memes sin timestamps ni información de remitente"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Partial conversations, deleted or null messages, multimedia with EXIF, associated contacts, irregular schedules, incomplete sequences and mixed timestamps in different time zones",
+        "es-MX": "Conversaciones parciales, mensajes eliminados o nulos, multimedia con EXIF, contactos asociados, horarios irregulares, secuencias incompletas y timestamps mezclados en distintas zonas horarias"
+      },
+      "Explanation": [
+        {
+          "type": "ul",
+          "items": {
+            "en-US": [
+              "The scenario simulates realistic complications: deletions, gaps and time zone issues.",
+              "It forces the student to detect inconsistencies rather than analyze a perfect dataset."
+            ],
+            "es-MX": [
+              "El escenario simula complicaciones realistas: borrados, huecos y problemas de zonas horarias.",
+              "Obliga al alumno a detectar inconsistencias en lugar de analizar un conjunto perfecto."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "Category": "secuencia-mensajes",
+      "Question Text": {
+        "en-US": [
+          "What is one of the FIRST recommended actions when reconstructing the message sequence from the simulated database?"
+        ],
+        "es-MX": [
+          "¿Cuál es una de las PRIMERAS acciones recomendadas al reconstruir la secuencia de mensajes desde la base simulada?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Order all messages by timestamp using a query such as: SELECT * FROM messages ORDER BY timestamp;",
+          "Manually read the messages in random order without using SQL or sorting",
+          "Delete all records with null data to simplify the analysis",
+          "Ignore timestamps and focus only on the most recent messages"
+        ],
+        "es-MX": [
+          "Ordenar todos los mensajes por timestamp con una consulta como: SELECT * FROM messages ORDER BY timestamp;",
+          "Leer manualmente los mensajes en orden aleatorio sin usar SQL ni ordenamiento",
+          "Borrar todos los registros con data nula para simplificar el análisis",
+          "Ignorar los timestamps y enfocarse solo en los mensajes más recientes"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Order all messages by timestamp using a query such as: SELECT * FROM messages ORDER BY timestamp;",
+        "es-MX": "Ordenar todos los mensajes por timestamp con una consulta como: SELECT * FROM messages ORDER BY timestamp;"
+      },
+      "Explanation": [
+        {
+          "type": "p",
+          "content": {
+            "en-US": "The class explicitly proposes an initial query to sort by timestamp, which is essential for building a coherent timeline.",
+            "es-MX": "La clase propone explícitamente una consulta inicial para ordenar por timestamp, lo cual es esencial para construir una línea de tiempo coherente."
+          }
+        }
+      ]
+    },
+    {
+      "Category": "mensajes-eliminados",
+      "Question Text": {
+        "en-US": [
+          "How does the class recommend identifying potentially deleted messages within the simulated SQLite database?"
+        ],
+        "es-MX": [
+          "¿Cómo recomienda la clase identificar mensajes potencialmente eliminados dentro de la base SQLite simulada?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "By searching for null or empty data fields and examining missing _id values or inconsistent sequences",
+          "By assuming that no messages are ever deleted from SQLite databases",
+          "By filtering only messages with emojis and ignoring the rest",
+          "By editing the database to fill all null fields with placeholder text"
+        ],
+        "es-MX": [
+          "Buscando campos data nulos o vacíos y revisando _id faltantes o secuencias inconsistentes",
+          "Asumiendo que nunca se eliminan mensajes de las bases SQLite",
+          "Filtrando solo los mensajes con emojis e ignorando el resto",
+          "Editando la base para rellenar todos los campos nulos con texto de relleno"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "By searching for null or empty data fields and examining missing _id values or inconsistent sequences",
+        "es-MX": "Buscando campos data nulos o vacíos y revisando _id faltantes o secuencias inconsistentes"
+      },
+      "Explanation": [
+        {
+          "type": "ul",
+          "items": {
+            "en-US": [
+              "The class suggests queries like: WHERE data IS NULL OR data = ''.",
+              "It also stresses the importance of detecting gaps in the _id sequence as signs of deletions."
+            ],
+            "es-MX": [
+              "La clase sugiere consultas como: WHERE data IS NULL OR data = ''.",
+              "También enfatiza la importancia de detectar huecos en la secuencia de _id como señales de borrados."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "Category": "multimedia-exif",
+      "Question Text": {
+        "en-US": [
+          "In the project workflow, what is the role of EXIF analysis of multimedia (photos/videos) during the reconstruction?"
+        ],
+        "es-MX": [
+          "En el flujo de trabajo del proyecto, ¿cuál es el papel del análisis EXIF de la multimedia (fotos/videos) durante la reconstrucción?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "To extract capture time, GPS and device information and then correlate it with the sending time and conversation context",
+          "Only to check the file size without relating it to messages",
+          "To automatically overwrite timestamps in the database with EXIF values",
+          "To remove all metadata in order to protect user privacy during the analysis"
+        ],
+        "es-MX": [
+          "Extraer hora de captura, GPS e información del dispositivo y luego correlacionarla con la hora de envío y el contexto de la conversación",
+          "Solo revisar el tamaño del archivo sin relacionarlo con los mensajes",
+          "Sobrescribir automáticamente los timestamps de la base con los valores EXIF",
+          "Eliminar todos los metadatos para proteger la privacidad del usuario durante el análisis"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To extract capture time, GPS and device information and then correlate it with the sending time and conversation context",
+        "es-MX": "Extraer hora de captura, GPS e información del dispositivo y luego correlacionarla con la hora de envío y el contexto de la conversación"
+      },
+      "Explanation": [
+        {
+          "type": "p",
+          "content": {
+            "en-US": "The class highlights that EXIF metadata allows detection of out-of-sequence media, possible manipulation and alignment between capture and sending times.",
+            "es-MX": "La clase destaca que los metadatos EXIF permiten detectar multimedia fuera de secuencia, posible manipulación y la alineación entre momento de captura y de envío."
+          }
+        }
+      ]
+    },
+    {
+      "Category": "analisis-ubicacion",
+      "Question Text": {
+        "en-US": [
+          "When the project includes GPS coordinates in photos, what tasks should the student perform with those coordinates according to the class?"
+        ],
+        "es-MX": [
+          "Cuando el proyecto incluye coordenadas GPS en las fotos, ¿qué tareas debe realizar el alumno con esas coordenadas según la clase?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Convert them to decimal format, verify if they match the locations mentioned in messages and plot them on a map to analyze movements or key locations",
+          "Ignore them because GPS data is always unreliable in forensic investigations",
+          "Replace them with approximate city names instead of using exact coordinates",
+          "Use them only to calculate the distance from the examiner’s home"
+        ],
+        "es-MX": [
+          "Convertirlas a formato decimal, verificar si coinciden con las ubicaciones mencionadas en mensajes y plasmarlas en un mapa para analizar movimientos o puntos clave",
+          "Ignorarlas porque los datos GPS siempre son poco confiables en investigaciones forenses",
+          "Reemplazarlas con nombres aproximados de ciudades en lugar de usar coordenadas exactas",
+          "Usarlas solo para calcular la distancia desde la casa del perito"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Convert them to decimal format, verify if they match the locations mentioned in messages and plot them on a map to analyze movements or key locations",
+        "es-MX": "Convertirlas a formato decimal, verificar si coinciden con las ubicaciones mencionadas en mensajes y plasmarlas en un mapa para analizar movimientos o puntos clave"
+      },
+      "Explanation": [
+        {
+          "type": "ul",
+          "items": {
+            "en-US": [
+              "The class suggests tools like Google Maps or GPS Visualizer for visualization.",
+              "This allows checking coartadas, routes and spatial consistency with the conversation."
+            ],
+            "es-MX": [
+              "La clase sugiere herramientas como Google Maps o GPS Visualizer para visualizar.",
+              "Esto permite revisar coartadas, rutas y consistencia espacial con la conversación."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "Category": "patrones-temporales",
+      "Question Text": {
+        "en-US": [
+          "What is the objective of analyzing temporal patterns (frequency, silences, behavior changes) in the context of this project?"
+        ],
+        "es-MX": [
+          "¿Cuál es el objetivo de analizar patrones temporales (frecuencia, silencios, cambios de comportamiento) en el contexto de este proyecto?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "To detect specific moments such as unusual silences, changes in behavior or spikes in communication that may be linked to key events",
+          "To count how many emojis each user sends and assign them a personality type",
+          "To decide which messages can be deleted to simplify the database",
+          "To modify the timestamps to make the conversation look more aesthetic in charts"
+        ],
+        "es-MX": [
+          "Detectar momentos específicos como silencios inusuales, cambios de comportamiento o picos de comunicación que puedan vincularse a eventos clave",
+          "Contar cuántos emojis manda cada usuario y asignarle un tipo de personalidad",
+          "Decidir qué mensajes se pueden borrar para simplificar la base de datos",
+          "Modificar los timestamps para que la conversación se vea más estética en gráficas"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To detect specific moments such as unusual silences, changes in behavior or spikes in communication that may be linked to key events",
+        "es-MX": "Detectar momentos específicos como silencios inusuales, cambios de comportamiento o picos de comunicación que puedan vincularse a eventos clave"
+      },
+      "Explanation": [
+        {
+          "type": "p",
+          "content": {
+            "en-US": "Temporal patterns help the analyst focus on critical windows around the incident, rather than treating all messages as equally relevant.",
+            "es-MX": "Los patrones temporales ayudan al analista a concentrarse en ventanas críticas alrededor del incidente, en lugar de tratar todos los mensajes como igual de relevantes."
+          }
+        }
+      ]
+    },
+    {
+      "Category": "inconsistencias-tecnicas",
+      "Question Text": {
+        "en-US": [
+          "Which of the following is an example of a technical inconsistency that the student should identify and document in this project?"
+        ],
+        "es-MX": [
+          "¿Cuál de los siguientes es un ejemplo de inconsistencia técnica que el alumno debe identificar y documentar en este proyecto?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "A photo whose EXIF capture time is later than the time it appears as sent in the conversation",
+          "A message that contains spelling mistakes in the text",
+          "A contact that uses many different emojis in a single message",
+          "A chat background color that changes between light and dark mode"
+        ],
+        "es-MX": [
+          "Una foto cuyo tiempo de captura en EXIF es posterior a la hora en que aparece como enviada en la conversación",
+          "Un mensaje que contiene errores ortográficos en el texto",
+          "Un contacto que usa muchos emojis diferentes en un solo mensaje",
+          "Un fondo de chat que cambia entre modo claro y oscuro"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "A photo whose EXIF capture time is later than the time it appears as sent in the conversation",
+        "es-MX": "Una foto cuyo tiempo de captura en EXIF es posterior a la hora en que aparece como enviada en la conversación"
+      },
+      "Explanation": [
+        {
+          "type": "ul",
+          "items": {
+            "en-US": [
+              "Such a discrepancy may indicate manipulation, device time issues or an altered sequence.",
+              "The class stresses documenting these anomalies as possible signs of tampering."
+            ],
+            "es-MX": [
+              "Una discrepancia así puede indicar manipulación, problemas de hora del dispositivo o una secuencia alterada.",
+              "La clase enfatiza documentar estas anomalías como posibles indicios de alteración."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "Category": "documentacion-tabla",
+      "Question Text": {
+        "en-US": [
+          "In the recommended documentation step, what kind of information should appear in the professional table of findings for this project?"
+        ],
+        "es-MX": [
+          "En el paso de documentación recomendado, ¿qué tipo de información debe aparecer en la tabla profesional de hallazgos para este proyecto?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "An ID, description of the evidence, origin (e.g. msgstore_simulada or EXIF), hash if applicable, technical interpretation and observations about inconsistencies or context",
+          "Only the name of the app used and the examiner’s personal opinion of the case",
+          "A list of memes and jokes found during the analysis, without technical details",
+          "Only screenshots of messages, without any explanation of where they came from or how they were validated"
+        ],
+        "es-MX": [
+          "Un ID, descripción de la evidencia, origen (por ejemplo msgstore_simulada o EXIF), hash si aplica, interpretación técnica y observaciones sobre inconsistencias o contexto",
+          "Solo el nombre de la app usada y la opinión personal del perito sobre el caso",
+          "Una lista de memes y chistes encontrados durante el análisis, sin detalles técnicos",
+          "Solo capturas de pantalla de mensajes, sin explicar de dónde salieron ni cómo se validaron"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "An ID, description of the evidence, origin (e.g. msgstore_simulada or EXIF), hash if applicable, technical interpretation and observations about inconsistencies or context",
+        "es-MX": "Un ID, descripción de la evidencia, origen (por ejemplo msgstore_simulada o EXIF), hash si aplica, interpretación técnica y observaciones sobre inconsistencias o contexto"
+      },
+      "Explanation": [
+        {
+          "type": "p",
+          "content": {
+            "en-US": "The class provides a model table where each row ties a specific piece of evidence to its origin, integrity and technical meaning, plus comments on anomalies.",
+            "es-MX": "La clase proporciona una tabla modelo donde cada fila vincula una evidencia específica con su origen, integridad y significado técnico, más comentarios sobre anomalías."
+          }
+        }
+      ]
+    },
+    {
+      "Category": "ejemplo-secuencia",
+      "Question Text": {
+        "en-US": [
+          "In the partial reconstruction example given in the class, what is the correct chronological order of the four key events involving a photo and a deleted message?"
+        ],
+        "es-MX": [
+          "En el ejemplo de reconstrucción parcial presentado en la clase, ¿cuál es el orden cronológico correcto de los cuatro eventos clave que involucran una foto y un mensaje eliminado?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Photo taken → Photo sent → Deleted message (gap in _id) → Related message sent to another contact",
+          "Photo sent → Photo taken → Deleted message → Related message sent",
+          "Deleted message → Photo taken → Photo sent → Related message sent",
+          "Related message sent → Photo taken → Deleted message → Photo sent"
+        ],
+        "es-MX": [
+          "Foto tomada → Foto enviada → Mensaje eliminado (hueco en _id) → Mensaje relacionado enviado a otro contacto",
+          "Foto enviada → Foto tomada → Mensaje eliminado → Mensaje relacionado enviado",
+          "Mensaje eliminado → Foto tomada → Foto enviada → Mensaje relacionado enviado",
+          "Mensaje relacionado enviado → Foto tomada → Mensaje eliminado → Foto enviada"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Photo taken → Photo sent → Deleted message (gap in _id) → Related message sent to another contact",
+        "es-MX": "Foto tomada → Foto enviada → Mensaje eliminado (hueco en _id) → Mensaje relacionado enviado a otro contacto"
+      },
+      "Explanation": [
+        {
+          "type": "ul",
+          "items": {
+            "en-US": [
+              "The example shows a photo taken at 19:14:05, sent at 19:14:08, a deleted message detected between those times and then a related message at 19:20.",
+              "This micro-timeline illustrates how to infer missing content and its possible significance."
+            ],
+            "es-MX": [
+              "El ejemplo muestra una foto tomada a las 19:14:05, enviada a las 19:14:08, un mensaje eliminado detectado entre esas horas y luego un mensaje relacionado a las 19:20.",
+              "Esta micro-línea de tiempo ilustra cómo inferir contenido faltante y su posible relevancia."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "Category": "conclusion-global",
+      "Question Text": {
+        "en-US": [
+          "Which statement BEST summarizes the core learning outcome of this integrative project according to the class?"
+        ],
+        "es-MX": [
+          "¿Qué afirmación resume MEJOR el aprendizaje central de este proyecto integrador según la clase?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "The student must be able to integrate databases, metadata, EXIF, patterns and professional documentation to reconstruct a conversation technically and explain inconsistencies in a realistic forensic scenario",
+          "The student must learn to rely exclusively on screenshots without using any forensic tools",
+          "The student must focus only on reading literal text, ignoring timestamps and metadata",
+          "The student must memorize all SQLite table names without applying them to real cases"
+        ],
+        "es-MX": [
+          "El alumno debe ser capaz de integrar bases de datos, metadatos, EXIF, patrones y documentación profesional para reconstruir una conversación técnicamente y explicar inconsistencias en un escenario forense realista",
+          "El alumno debe aprender a confiar exclusivamente en capturas de pantalla sin usar herramientas forenses",
+          "El alumno debe enfocarse solo en leer texto literal, ignorando timestamps y metadatos",
+          "El alumno debe memorizar todos los nombres de tablas SQLite sin aplicarlos a casos reales"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "The student must be able to integrate databases, metadata, EXIF, patterns and professional documentation to reconstruct a conversation technically and explain inconsistencies in a realistic forensic scenario",
+        "es-MX": "El alumno debe ser capaz de integrar bases de datos, metadatos, EXIF, patrones y documentación profesional para reconstruir una conversación técnicamente y explicar inconsistencias en un escenario forense realista"
+      },
+      "Explanation": [
+        {
+          "type": "p",
+          "content": {
+            "en-US": "The class emphasizes that this project simulates how professional analysts work: correlating multiple technical sources and documenting them clearly, not just reading chat text.",
+            "es-MX": "La clase enfatiza que este proyecto simula cómo trabajan los analistas profesionales: correlacionando múltiples fuentes técnicas y documentándolas con claridad, no solo leyendo texto del chat."
+          }
+        }
+      ]
+    },
+    {
+      "Category": "normalizacion-tiempo",
+      "Question Text": {
+        "en-US": [
+          "Why is it necessary to normalize timestamps (for example, to UTC or a unified local time) before reconstructing the conversation in the project?"
+        ],
+        "es-MX": [
+          "¿Por qué es necesario normalizar los timestamps (por ejemplo, a UTC o a una hora local unificada) antes de reconstruir la conversación en el proyecto?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Because different sources (SQLite, EXIF, logs) may use different time formats and time zones, and a unified scale avoids misinterpretations in the timeline",
+          "Only because UTC looks more professional in reports, even if times are wrong",
+          "To hide inconsistencies in the evidence by changing all times to the same hour",
+          "So that all events appear to have occurred exactly at midnight"
+        ],
+        "es-MX": [
+          "Porque distintas fuentes (SQLite, EXIF, logs) pueden usar formatos y zonas horarias diferentes, y una escala unificada evita malas interpretaciones en la línea de tiempo",
+          "Solo porque UTC se ve más profesional en los informes, aunque las horas estén mal",
+          "Para ocultar inconsistencias en la evidencia cambiando todas las horas a la misma",
+          "Para que todos los eventos parezcan ocurridos exactamente a la medianoche"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Because different sources (SQLite, EXIF, logs) may use different time formats and time zones, and a unified scale avoids misinterpretations in the timeline",
+        "es-MX": "Porque distintas fuentes (SQLite, EXIF, logs) pueden usar formatos y zonas horarias diferentes, y una escala unificada evita malas interpretaciones en la línea de tiempo"
+      },
+      "Explanation": [
+        {
+          "type": "p",
+          "content": {
+            "en-US": "Without normalization, the same real-world event could appear as multiple inconsistent events just because of time zone differences.",
+            "es-MX": "Sin normalización, el mismo evento real podría verse como varios eventos inconsistentes solo por diferencias de zona horaria."
+          }
+        }
+      ]
+    },
+    {
+      "Category": "huecos-secuencia",
+      "Question Text": {
+        "en-US": [
+          "In the context of the integrative project, what does a gap in the _id sequence of messages usually suggest?"
+        ],
+        "es-MX": [
+          "En el contexto del proyecto integrador, ¿qué suele sugerir un hueco en la secuencia de _id de los mensajes?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "That one or more messages existed and may have been deleted or are no longer directly visible in the main table",
+          "That the database is corrupt and must be discarded immediately without analysis",
+          "That SQLite always skips numbers randomly and it has no forensic value",
+          "That the application renumbers all messages every time it is opened"
+        ],
+        "es-MX": [
+          "Que uno o más mensajes existieron y pudieron ser eliminados o ya no son visibles directamente en la tabla principal",
+          "Que la base de datos está corrupta y debe desecharse de inmediato sin análisis",
+          "Que SQLite siempre brinca números al azar y no tiene valor forense",
+          "Que la aplicación renumera todos los mensajes cada vez que se abre"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "That one or more messages existed and may have been deleted or are no longer directly visible in the main table",
+        "es-MX": "Que uno o más mensajes existieron y pudieron ser eliminados o ya no son visibles directamente en la tabla principal"
+      },
+      "Explanation": [
+        {
+          "type": "p",
+          "content": {
+            "en-US": "Gaps in sequential IDs are classic indicators that a record existed and was removed or is only accessible through residual or unallocated space.",
+            "es-MX": "Los huecos en IDs secuenciales son indicadores clásicos de que un registro existió y fue eliminado o solo es accesible en espacio residual o no asignado."
+          }
+        }
+      ]
+    },
+    {
+      "Category": "rol-hallazgos",
+      "Question Text": {
+        "en-US": [
+          "According to the class, how should the student treat each finding during the reconstruction project?"
+        ],
+        "es-MX": [
+          "De acuerdo con la clase, ¿cómo debe tratar el alumno cada hallazgo durante el proyecto de reconstrucción?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "As an individual, clearly described item with source, validation method and a separate technical interpretation",
+          "As a casual comment inside the report without specifying where it came from",
+          "As an opinion based on intuition rather than on technical evidence",
+          "As a temporary note that can be deleted once the report is finished"
+        ],
+        "es-MX": [
+          "Como un elemento individual claramente descrito con origen, método de validación y una interpretación técnica separada",
+          "Como un comentario casual dentro del informe sin especificar de dónde salió",
+          "Como una opinión basada en intuición y no en evidencia técnica",
+          "Como una nota temporal que puede borrarse cuando se termine el informe"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "As an individual, clearly described item with source, validation method and a separate technical interpretation",
+        "es-MX": "Como un elemento individual claramente descrito con origen, método de validación y una interpretación técnica separada"
+      },
+      "Explanation": [
+        {
+          "type": "p",
+          "content": {
+            "en-US": "The project emphasizes professional documentation where each finding can be traced, verified and understood independently.",
+            "es-MX": "El proyecto enfatiza una documentación profesional donde cada hallazgo pueda rastrearse, verificarse y entenderse de forma independiente."
+          }
+        }
+      ]
+    },
+    {
+      "Category": "herramientas-sqlite",
+      "Question Text": {
+        "en-US": [
+          "Which of the following tools is explicitly suitable for opening the simulated msgstore-like database and running SQL queries in this project?"
+        ],
+        "es-MX": [
+          "¿Cuál de las siguientes herramientas es explícitamente adecuada para abrir la base tipo msgstore simulada y ejecutar consultas SQL en este proyecto?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "DB Browser for SQLite or similar SQLite analysis tools",
+          "A generic text editor with no understanding of SQLite structure",
+          "Only a web browser without any forensic plugins",
+          "A simple image viewer application"
+        ],
+        "es-MX": [
+          "DB Browser for SQLite u otras herramientas de análisis de SQLite",
+          "Un editor de texto genérico sin soporte para estructura SQLite",
+          "Solo un navegador web sin complementos forenses",
+          "Un visor de imágenes sencillo"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "DB Browser for SQLite or similar SQLite analysis tools",
+        "es-MX": "DB Browser for SQLite u otras herramientas de análisis de SQLite"
+      },
+      "Explanation": [
+        {
+          "type": "p",
+          "content": {
+            "en-US": "The class mentions SQLite-oriented tools as the correct environment to inspect tables, run filters and export data.",
+            "es-MX": "La clase menciona herramientas orientadas a SQLite como el entorno correcto para inspeccionar tablas, ejecutar filtros y exportar datos."
+          }
+        }
+      ]
+    },
+    {
+      "Category": "relacion-mensajes-multimedia",
+      "Question Text": {
+        "en-US": [
+          "When reconstructing the conversation, what is the recommended way to relate multimedia files (photos, videos) with their corresponding messages?"
+        ],
+        "es-MX": [
+          "Al reconstruir la conversación, ¿cuál es la forma recomendada de relacionar archivos multimedia (fotos, videos) con sus mensajes correspondientes?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "By correlating file names, media fields in the database, timestamps and EXIF capture time with the send time in the chat",
+          "By assigning each image to the first message found in the database, regardless of timestamps",
+          "By ignoring the database and assuming all media belongs to the last chat opened",
+          "By renaming all files to generic names so they cannot be traced to messages"
+        ],
+        "es-MX": [
+          "Correlacionando nombres de archivo, campos de media en la base, timestamps y hora de captura EXIF con la hora de envío en el chat",
+          "Asignando cada imagen al primer mensaje encontrado en la base, sin importar los timestamps",
+          "Ignorando la base de datos y asumiendo que toda la media pertenece al último chat abierto",
+          "Renombrando todos los archivos con nombres genéricos para que no puedan rastrearse a los mensajes"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "By correlating file names, media fields in the database, timestamps and EXIF capture time with the send time in the chat",
+        "es-MX": "Correlacionando nombres de archivo, campos de media en la base, timestamps y hora de captura EXIF con la hora de envío en el chat"
+      },
+      "Explanation": [
+        {
+          "type": "p",
+          "content": {
+            "en-US": "Reconstruction requires technical linkage between database records and physical files, not guesswork.",
+            "es-MX": "La reconstrucción requiere un vínculo técnico entre registros de la base y archivos físicos, no suposiciones."
+          }
+        }
+      ]
+    },
+    {
+      "Category": "rol-inconsistencias",
+      "Question Text": {
+        "en-US": [
+          "In the integrative project, how should the student handle technical inconsistencies discovered during the reconstruction?"
+        ],
+        "es-MX": [
+          "En el proyecto integrador, ¿cómo debe manejar el alumno las inconsistencias técnicas que descubra durante la reconstrucción?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "They must be explicitly documented, explained technically and highlighted as possible signs of manipulation or limitations of the data",
+          "They should be ignored to avoid complicating the report",
+          "They should be corrected directly in the database so everything looks consistent",
+          "They should be mentioned only verbally and never written in the report"
+        ],
+        "es-MX": [
+          "Deben documentarse explícitamente, explicarse técnicamente y marcarse como posibles indicios de manipulación o limitaciones de los datos",
+          "Deben ignorarse para no complicar el informe",
+          "Deben corregirse directamente en la base para que todo se vea consistente",
+          "Deben mencionarse solo de forma verbal y nunca por escrito en el informe"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "They must be explicitly documented, explained technically and highlighted as possible signs of manipulation or limitations of the data",
+        "es-MX": "Deben documentarse explícitamente, explicarse técnicamente y marcarse como posibles indicios de manipulación o limitaciones de los datos"
+      },
+      "Explanation": [
+        {
+          "type": "p",
+          "content": {
+            "en-US": "The project trains the student to treat inconsistencies as important forensic clues, not as noise to be hidden.",
+            "es-MX": "El proyecto entrena al alumno para tratar las inconsistencias como pistas forenses importantes, no como ruido que deba ocultarse."
+          }
+        }
+      ]
+    },
+    {
+      "Category": "uso-hash",
+      "Question Text": {
+        "en-US": [
+          "What is the main reason for calculating and recording hashes (e.g., SHA-256) of multimedia files used in the reconstruction project?"
+        ],
+        "es-MX": [
+          "¿Cuál es la razón principal para calcular y registrar hashes (por ejemplo, SHA-256) de los archivos multimedia usados en el proyecto de reconstrucción?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "To prove integrity and demonstrate that the files analyzed in the report are identical to those originally extracted",
+          "To compress the files and make the database smaller",
+          "To hide the real filenames from the court by only showing hashes",
+          "To replace the need for any other kind of metadata"
+        ],
+        "es-MX": [
+          "Probar la integridad y demostrar que los archivos analizados en el informe son idénticos a los originalmente extraídos",
+          "Comprimir los archivos y hacer la base de datos más pequeña",
+          "Ocultar los nombres reales de archivo ante el juzgado mostrando solo hashes",
+          "Sustituir la necesidad de cualquier otro tipo de metadato"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To prove integrity and demonstrate that the files analyzed in the report are identical to those originally extracted",
+        "es-MX": "Probar la integridad y demostrar que los archivos analizados en el informe son idénticos a los originalmente extraídos"
+      },
+      "Explanation": [
+        {
+          "type": "p",
+          "content": {
+            "en-US": "Hashes are a cryptographic fingerprint that allows anyone to verify that the evidence has not changed.",
+            "es-MX": "Los hashes son una huella criptográfica que permite a cualquiera verificar que la evidencia no ha cambiado."
+          }
+        }
+      ]
+    },
+    {
+      "Category": "alcance-proyecto",
+      "Question Text": {
+        "en-US": [
+          "Which of the following tasks is explicitly within the scope of the integrative reconstruction project?"
+        ],
+        "es-MX": [
+          "¿Cuál de las siguientes tareas está explícitamente dentro del alcance del proyecto integrador de reconstrucción?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Reconstructing the conversation technically, including visible messages, deleted messages, associated multimedia and detected inconsistencies",
+          "Developing a new messaging app from scratch to replace WhatsApp and Telegram",
+          "Designing a user interface for a chat app without any forensic analysis",
+          "Writing a fictional story loosely inspired by the database, without using technical evidence"
+        ],
+        "es-MX": [
+          "Reconstruir técnicamente la conversación, incluyendo mensajes visibles, mensajes eliminados, multimedia asociada e inconsistencias detectadas",
+          "Desarrollar una nueva app de mensajería desde cero para reemplazar WhatsApp y Telegram",
+          "Diseñar una interfaz de usuario para una app de chat sin análisis forense",
+          "Escribir una historia ficticia inspirada vagamente en la base, sin usar evidencia técnica"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Reconstructing the conversation technically, including visible messages, deleted messages, associated multimedia and detected inconsistencies",
+        "es-MX": "Reconstruir técnicamente la conversación, incluyendo mensajes visibles, mensajes eliminados, multimedia asociada e inconsistencias detectadas"
+      },
+      "Explanation": [
+        {
+          "type": "p",
+          "content": {
+            "en-US": "The project simulates a real lab case where the analyst must rebuild the conversation using evidence, not invent a narrative.",
+            "es-MX": "El proyecto simula un caso real de laboratorio donde el analista debe reconstruir la conversación usando evidencia, no inventar una narrativa."
+          }
+        }
+      ]
+    },
+    {
+      "Category": "uso-ejemplo-parcial",
+      "Question Text": {
+        "en-US": [
+          "What is the pedagogical purpose of the partial reconstruction example (photo + deleted message + later message) included in the class?"
+        ],
+        "es-MX": [
+          "¿Cuál es el propósito pedagógico del ejemplo de reconstrucción parcial (foto + mensaje eliminado + mensaje posterior) incluido en la clase?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "To show how small fragments (a few timestamps and one deleted record) can already reveal meaningful sequences and possible intent",
+          "Only to demonstrate SQL syntax without any forensic interpretation",
+          "To suggest that one deleted message always proves guilt by itself",
+          "To show that EXIF data is irrelevant compared to chat text"
+        ],
+        "es-MX": [
+          "Mostrar cómo pequeños fragmentos (unos cuantos timestamps y un registro eliminado) ya pueden revelar secuencias significativas y posible intención",
+          "Solo demostrar sintaxis SQL sin ninguna interpretación forense",
+          "Sugerir que un solo mensaje eliminado siempre prueba culpabilidad por sí mismo",
+          "Mostrar que los datos EXIF son irrelevantes comparados con el texto del chat"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To show how small fragments (a few timestamps and one deleted record) can already reveal meaningful sequences and possible intent",
+        "es-MX": "Mostrar cómo pequeños fragmentos (unos cuantos timestamps y un registro eliminado) ya pueden revelar secuencias significativas y posible intención"
+      },
+      "Explanation": [
+        {
+          "type": "p",
+          "content": {
+            "en-US": "The example illustrates that even partial evidence can help infer missing steps when analyzed with a forensic mindset.",
+            "es-MX": "El ejemplo ilustra que incluso evidencia parcial ayuda a inferir pasos faltantes cuando se analiza con mentalidad forense."
+          }
+        }
+      ]
+    },
+    {
+      "Category": "rol-del-informe",
+      "Question Text": {
+        "en-US": [
+          "According to the class, what is the expected role of the final report in this integrative project?"
+        ],
+        "es-MX": [
+          "Según la clase, ¿cuál es el papel esperado del informe final en este proyecto integrador?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "To clearly present the reconstruction, the technical findings, the correlations and the inconsistencies in a neutral and reproducible way",
+          "To persuade the reader using emotional language, without focusing on technical details",
+          "To hide any limitations of the data so the case looks stronger",
+          "To include only screenshots of chats without explanations or methodology"
+        ],
+        "es-MX": [
+          "Presentar con claridad la reconstrucción, los hallazgos técnicos, las correlaciones y las inconsistencias de forma neutral y reproducible",
+          "Persuadir al lector usando lenguaje emocional, sin enfocarse en detalles técnicos",
+          "Ocultar cualquier limitación de los datos para que el caso se vea más fuerte",
+          "Incluir solo capturas de pantalla de chats sin explicaciones ni metodología"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To clearly present the reconstruction, the technical findings, the correlations and the inconsistencies in a neutral and reproducible way",
+        "es-MX": "Presentar con claridad la reconstrucción, los hallazgos técnicos, las correlaciones y las inconsistencias de forma neutral y reproducible"
+      },
+      "Explanation": [
+        {
+          "type": "p",
+          "content": {
+            "en-US": "The report is the professional output of the whole workflow and must allow others to understand and verify what was done.",
+            "es-MX": "El informe es el producto profesional de todo el flujo de trabajo y debe permitir que otros entiendan y verifiquen lo que se hizo."
+          }
+        }
+      ]
+    }
+  ]
+}

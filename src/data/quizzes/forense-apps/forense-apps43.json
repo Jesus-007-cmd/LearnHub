@@ -1,0 +1,674 @@
+{
+    "meta": {
+      "slug": "forense-apps43",
+      "title": "Análisis forense de archivos adjuntos y multimedia",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 4,
+      "classNo": 43,
+      "description": "Introducción al análisis técnico de imágenes, videos, audios y documentos, así como el rol de los metadatos en la evidencia digital.",
+      "tags": [
+        "multimedia forense",
+        "EXIF",
+        "metadatos",
+        "videos",
+        "audios",
+        "documentos adjuntos",
+        "validación de evidencia",
+        "línea temporal"
+      ]
+    },
+    "Questions": [
+  
+      {
+        "Category": "Importancia del análisis multimedia",
+        "Question Text": {
+          "en-US": [
+            "Why are attached multimedia files considered essential evidence in modern forensic investigations?"
+          ],
+          "es-MX": [
+            "¿Por qué los archivos multimedia adjuntos se consideran evidencia esencial en las investigaciones forenses actuales?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because text messages always contain complete information.",
+            "Because multimedia can reveal location, capture time, manipulation, device identity and contextual clues.",
+            "Because videos automatically prove guilt without analysis.",
+            "Because audio files cannot be edited or manipulated."
+          ],
+          "es-MX": [
+            "Porque los mensajes de texto siempre contienen información completa.",
+            "Porque los multimedia pueden revelar ubicación, hora real de captura, manipulación, identidad del dispositivo y pistas contextuales.",
+            "Porque los videos automáticamente prueban la culpabilidad sin análisis.",
+            "Porque los audios no pueden editarse ni manipularse."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because multimedia can reveal location, capture time, manipulation, device identity and contextual clues.",
+          "es-MX": "Porque los multimedia pueden revelar ubicación, hora real de captura, manipulación, identidad del dispositivo y pistas contextuales."
+        },
+        "Explanation": {
+          "en-US": [
+            { "type": "text", "content": "Unlike plain messages, multimedia files provide technical information such as GPS data, timestamps, device models, editing traces and environmental clues." }
+          ],
+          "es-MX": [
+            { "type": "text", "content": "A diferencia de los mensajes simples, los archivos multimedia aportan datos técnicos como GPS, fechas reales, modelo del dispositivo y rastros de edición." }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Imágenes y EXIF",
+        "Question Text": {
+          "en-US": ["Which of the following elements can EXIF metadata in an image reveal?"],
+          "es-MX": ["¿Cuál de los siguientes elementos pueden revelar los metadatos EXIF en una imagen?"]
+        },
+        "Options": {
+          "en-US": [
+            "Exact capture time, GPS coordinates and device model.",
+            "Only the file name assigned by WhatsApp.",
+            "The identity of all people appearing in the photo.",
+            "An automatic conclusion of guilt."
+          ],
+          "es-MX": [
+            "La hora exacta de captura, coordenadas GPS y modelo del dispositivo.",
+            "Solo el nombre del archivo asignado por WhatsApp.",
+            "La identidad de todas las personas que aparecen en la foto.",
+            "Una conclusión automática de culpabilidad."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Exact capture time, GPS coordinates and device model.",
+          "es-MX": "La hora exacta de captura, coordenadas GPS y modelo del dispositivo."
+        },
+        "Explanation": {
+          "en-US": [
+            { "type": "text", "content": "EXIF metadata stores DateTimeOriginal, GPS location, device model and editing traces." }
+          ],
+          "es-MX": [
+            { "type": "text", "content": "Los metadatos EXIF almacenan DateTimeOriginal, ubicación GPS, modelo del dispositivo y rastros de edición." }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Videos y análisis forense",
+        "Question Text": {
+          "en-US": ["Which of the following is a key forensic use of video analysis?"],
+          "es-MX": ["¿Cuál de los siguientes es un uso forense clave del análisis de videos?"]
+        },
+        "Options": {
+          "en-US": [
+            "Determining the exact sequence of events and detecting edits or missing frames.",
+            "Automatically identifying all faces without tools.",
+            "Increasing video resolution beyond its limits.",
+            "Replacing testimony with artificial evidence."
+          ],
+          "es-MX": [
+            "Determinar la secuencia exacta de acontecimientos y detectar ediciones o frames faltantes.",
+            "Identificar automáticamente todos los rostros sin herramientas.",
+            "Aumentar la resolución del video por encima de sus límites.",
+            "Reemplazar testimonios con evidencia artificial."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Determining the exact sequence of events and detecting edits or missing frames.",
+          "es-MX": "Determinar la secuencia exacta de acontecimientos y detectar ediciones o frames faltantes."
+        },
+        "Explanation": {
+          "en-US": [
+            { "type": "text", "content": "Keyframe analysis can reveal cuts, timeline inconsistencies and missing sequences." }
+          ],
+          "es-MX": [
+            { "type": "text", "content": "El análisis de keyframes permite detectar cortes, inconsistencias temporales y secuencias faltantes." }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Audios",
+        "Question Text": {
+          "en-US": ["What can forensic audio analysis reveal?"],
+          "es-MX": ["¿Qué puede revelar un análisis forense de audio?"]
+        },
+        "Options": {
+          "en-US": [
+            "Noise patterns, possible cuts, altered frequencies and voice identification.",
+            "Only the name of the sender.",
+            "That audio files can never be edited.",
+            "The exact thoughts of the speaker."
+          ],
+          "es-MX": [
+            "Patrones de ruido, posibles cortes, frecuencias alteradas e identificación de voces.",
+            "Solo el nombre del remitente.",
+            "Que los audios nunca pueden editarse.",
+            "Los pensamientos exactos de quien habla."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Noise patterns, possible cuts, altered frequencies and voice identification.",
+          "es-MX": "Patrones de ruido, posibles cortes, frecuencias alteradas e identificación de voces."
+        },
+        "Explanation": {
+          "en-US": [
+            { "type": "text", "content": "Audio forensics identifies splices, anomalies and voice characteristics." }
+          ],
+          "es-MX": [
+            { "type": "text", "content": "La forensia de audio identifica empalmes, anomalías y características de voz." }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Documentos adjuntos",
+        "Question Text": {
+          "en-US": ["What type of information can be found in document metadata such as PDF or DOCX?"],
+          "es-MX": ["¿Qué tipo de información puede encontrarse en los metadatos de documentos PDF o DOCX?"]
+        },
+        "Options": {
+          "en-US": [
+            "Author, software used, file versions and modification timestamps.",
+            "Only visual decorations.",
+            "Contents unrelated to the file.",
+            "Automatic confirmation of authorship."
+          ],
+          "es-MX": [
+            "Autor, software utilizado, versiones del archivo y marcas de modificación.",
+            "Solo decoraciones visuales.",
+            "Contenido no relacionado con el archivo.",
+            "Confirmación automática de autoría."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Author, software used, file versions and modification timestamps.",
+          "es-MX": "Autor, software utilizado, versiones del archivo y marcas de modificación."
+        },
+        "Explanation": {
+          "en-US": [
+            { "type": "text", "content": "Document metadata often contains XML properties with authorship and history." }
+          ],
+          "es-MX": [
+            { "type": "text", "content": "Los documentos incluyen propiedades XML con autoría e historial." }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Metadatos",
+        "Question Text": {
+          "en-US": ["Why are metadata considered the key element of multimedia forensic analysis?"],
+          "es-MX": ["¿Por qué los metadatos se consideran clave en el análisis multimedia?"]
+        },
+        "Options": {
+          "en-US": [
+            "Because they provide hidden technical information that helps detect manipulation.",
+            "Because they replace human analysis.",
+            "Because they include personal opinions.",
+            "Because they cannot be altered."
+          ],
+          "es-MX": [
+            "Porque aportan información técnica oculta que ayuda a detectar manipulación.",
+            "Porque reemplazan el análisis humano.",
+            "Porque incluyen opiniones personales.",
+            "Porque no pueden alterarse."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because they provide hidden technical information that helps detect manipulation.",
+          "es-MX": "Porque aportan información técnica oculta que ayuda a detectar manipulación."
+        },
+        "Explanation": {
+          "en-US": [
+            { "type": "text", "content": "Metadata reveal timestamps, GPS, device data and editing traces." }
+          ],
+          "es-MX": [
+            { "type": "text", "content": "Los metadatos revelan horas, GPS, datos del dispositivo y rastros de edición." }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Procedimiento forense",
+        "Question Text": {
+          "en-US": ["What is the correct basic sequence for analyzing a multimedia file?"],
+          "es-MX": ["¿Cuál es la secuencia básica correcta para analizar un archivo multimedia?"]
+        },
+        "Options": {
+          "en-US": [
+            "Visual review → Metadata extraction → Hash calculation → Contextual analysis → Extended analysis.",
+            "Hash → Modify → Share.",
+            "Context → Delete → Edit.",
+            "Guess → Screenshot → Conclusion."
+          ],
+          "es-MX": [
+            "Revisión visual → Extracción de metadatos → Cálculo de hash → Análisis contextual → Análisis ampliado.",
+            "Hash → Modificar → Compartir.",
+            "Contexto → Borrar → Editar.",
+            "Adivinar → Captura → Conclusión."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Visual review → Metadata extraction → Hash calculation → Contextual analysis → Extended analysis.",
+          "es-MX": "Revisión visual → Extracción de metadatos → Cálculo de hash → Análisis contextual → Análisis ampliado."
+        },
+        "Explanation": {
+          "en-US": [
+            { "type": "text", "content": "Forensic process requires observation, metadata, hashing and context correlation." }
+          ],
+          "es-MX": [
+            { "type": "text", "content": "El proceso forense requiere observar, extraer metadatos, calcular hash y correlacionar contexto." }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Herramientas",
+        "Question Text": {
+          "en-US": ["Which tool is used to extract metadata from images or videos?"],
+          "es-MX": ["¿Qué herramienta se usa para extraer metadatos de imágenes o videos?"]
+        },
+        "Options": {
+          "en-US": ["ExifTool", "Calculator", "Messenger app", "Paint"],
+          "es-MX": ["ExifTool", "Calculadora", "App de mensajería", "Paint"]
+        },
+        "Correct Answer": {
+          "en-US": "ExifTool",
+          "es-MX": "ExifTool"
+        },
+        "Explanation": {
+          "en-US": [
+            { "type": "text", "content": "ExifTool reads metadata from thousands of formats." }
+          ],
+          "es-MX": [
+            { "type": "text", "content": "ExifTool lee metadatos de miles de formatos." }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Ejemplo de caso",
+        "Question Text": {
+          "en-US": [
+            "In the sample case, what does a mismatch between EXIF time and claimed message time suggest?"
+          ],
+          "es-MX": [
+            "En el caso mostrado, ¿qué sugiere una diferencia entre la hora EXIF y la hora mencionada?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Possible manipulation or trimming of the video.",
+            "Normal behavior.",
+            "A harmless WhatsApp bug.",
+            "A defective phone."
+          ],
+          "es-MX": [
+            "Posible manipulación o recorte del video.",
+            "Un comportamiento normal.",
+            "Un error inofensivo de WhatsApp.",
+            "Un teléfono defectuoso."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Possible manipulation or trimming of the video.",
+          "es-MX": "Posible manipulación o recorte del video."
+        },
+        "Explanation": {
+          "en-US": [
+            { "type": "text", "content": "Timestamp mismatches often indicate edits or trimming." }
+          ],
+          "es-MX": [
+            { "type": "text", "content": "Las diferencias de hora suelen indicar ediciones o recortes." }
+          ]
+        }
+      },
+  
+  
+  
+  
+      /* -------------------------------
+         AQUI INICIAN LAS 10 PREGUNTAS NUEVAS
+         ------------------------------- */
+  
+  
+      {
+        "Category": "Imágenes",
+        "Question Text": {
+          "en-US": [
+            "What can a forensic examiner determine by comparing shadows, colors and compression artifacts in an image?"
+          ],
+          "es-MX": [
+            "¿Qué puede determinar un perito al comparar sombras, colores y artefactos de compresión en una imagen?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Signs of editing or manipulation.",
+            "The exact identity of the photographer.",
+            "Battery level of the device.",
+            "If it was intended for social media."
+          ],
+          "es-MX": [
+            "Indicios de edición o manipulación.",
+            "La identidad exacta del fotógrafo.",
+            "El nivel de batería del dispositivo.",
+            "Si era para redes sociales."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Signs of editing or manipulation.",
+          "es-MX": "Indicios de edición o manipulación."
+        },
+        "Explanation": {
+          "en-US": [
+            { "type": "text", "content": "Lighting or compression inconsistencies may indicate tampering." }
+          ],
+          "es-MX": [
+            { "type": "text", "content": "Inconsistencias de iluminación o compresión pueden indicar alteración." }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Imágenes",
+        "Question Text": {
+          "en-US": ["Why are internal thumbnails useful in image analysis?"],
+          "es-MX": ["¿Por qué son útiles las miniaturas internas en el análisis de imágenes?"]
+        },
+        "Options": {
+          "en-US": [
+            "They may preserve original content before editing.",
+            "They delete metadata.",
+            "They increase image resolution.",
+            "They prevent edits."
+          ],
+          "es-MX": [
+            "Pueden conservar contenido original antes de la edición.",
+            "Eliminan metadatos.",
+            "Aumentan la resolución.",
+            "Impiden ediciones."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They may preserve original content before editing.",
+          "es-MX": "Pueden conservar contenido original antes de la edición."
+        },
+        "Explanation": {
+          "en-US": [
+            { "type": "text", "content": "Thumbnails often remain unmodified after editing." }
+          ],
+          "es-MX": [
+            { "type": "text", "content": "Las miniaturas suelen mantenerse sin cambios tras la edición." }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Videos",
+        "Question Text": {
+          "en-US": [
+            "What does the analysis of audio tracks inside a video help determine?"
+          ],
+          "es-MX": [
+            "¿Qué ayuda a determinar el análisis de la pista de audio dentro de un video?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Environmental clues, background voices and possible edits.",
+            "The color of the user's phone case.",
+            "Exact battery percentage.",
+            "If the user was happy during recording."
+          ],
+          "es-MX": [
+            "Pistas ambientales, voces de fondo y posibles ediciones.",
+            "El color de la funda del teléfono.",
+            "El porcentaje exacto de batería.",
+            "Si el usuario estaba feliz al grabar."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Environmental clues, background voices and possible edits.",
+          "es-MX": "Pistas ambientales, voces de fondo y posibles ediciones."
+        },
+        "Explanation": {
+          "en-US": [
+            { "type": "text", "content": "Audio can reveal location changes, cuts or hidden information." }
+          ],
+          "es-MX": [
+            { "type": "text", "content": "El audio revela cambios de ambiente, cortes o información oculta." }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Audios",
+        "Question Text": {
+          "en-US": [
+            "What does the presence of abrupt cuts in an audio spectrogram suggest?"
+          ],
+          "es-MX": [
+            "¿Qué sugiere la presencia de cortes bruscos en un espectrograma de audio?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Possible editing or removal of parts of the recording.",
+            "A slow network connection.",
+            "The microphone was dirty.",
+            "A normal audio fluctuation."
+          ],
+          "es-MX": [
+            "Posible edición o eliminación de partes de la grabación.",
+            "Una conexión lenta.",
+            "Un micrófono sucio.",
+            "Una fluctuación normal del audio."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Possible editing or removal of parts of the recording.",
+          "es-MX": "Posible edición o eliminación de partes de la grabación."
+        },
+        "Explanation": {
+          "en-US": [
+            { "type": "text", "content": "Spectrogram cuts indicate unnatural interruptions in frequencies." }
+          ],
+          "es-MX": [
+            { "type": "text", "content": "Los cortes indican interrupciones no naturales en las frecuencias." }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Documentos",
+        "Question Text": {
+          "en-US": [
+            "Why is it important to review the internal XML properties of a DOCX file?"
+          ],
+          "es-MX": [
+            "¿Por qué es importante revisar las propiedades XML internas de un archivo DOCX?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because they reveal authorship, software and edit history.",
+            "To increase document size.",
+            "To automatically correct spelling.",
+            "To remove evidence."
+          ],
+          "es-MX": [
+            "Porque revelan autoría, software y el historial de ediciones.",
+            "Para aumentar el tamaño del documento.",
+            "Para corregir ortografía automáticamente.",
+            "Para eliminar evidencia."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because they reveal authorship, software and edit history.",
+          "es-MX": "Porque revelan autoría, software y el historial de ediciones."
+        },
+        "Explanation": {
+          "en-US": [
+            { "type": "text", "content": "XML metadata exposes changes, original author and creation tools." }
+          ],
+          "es-MX": [
+            { "type": "text", "content": "Los metadatos XML muestran cambios, autor original y herramientas usadas." }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Metadatos",
+        "Question Text": {
+          "en-US": [
+            "What does the MOOV atom in a video file contain?"
+          ],
+          "es-MX": [
+            "¿Qué contiene el átomo MOOV en un archivo de video?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Metadata about structure, timing and tracks of the video.",
+            "Only the thumbnail.",
+            "Only audio frequencies.",
+            "GPS data exclusively."
+          ],
+          "es-MX": [
+            "Metadatos de estructura, tiempos y pistas del video.",
+            "Solo la miniatura.",
+            "Solo frecuencias de audio.",
+            "Exclusivamente datos GPS."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Metadata about structure, timing and tracks of the video.",
+          "es-MX": "Metadatos de estructura, tiempos y pistas del video."
+        },
+        "Explanation": {
+          "en-US": [
+            { "type": "text", "content": "MOOV controls how the video is played and contains essential metadata." }
+          ],
+          "es-MX": [
+            { "type": "text", "content": "MOOV controla la reproducción del video y almacena metadatos esenciales." }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Herramientas",
+        "Question Text": {
+          "en-US": [
+            "Which tool helps visualize hidden edits or artifacts in images?"
+          ],
+          "es-MX": [
+            "¿Qué herramienta ayuda a visualizar ediciones ocultas o artefactos en imágenes?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Forensically.",
+            "Calculator.",
+            "Spotify.",
+            "Notepad."
+          ],
+          "es-MX": [
+            "Forensically.",
+            "Calculadora.",
+            "Spotify.",
+            "Bloc de notas."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Forensically.",
+          "es-MX": "Forensically."
+        },
+        "Explanation": {
+          "en-US": [
+            { "type": "text", "content": "Forensically offers ELA, noise analysis and cloning detection." }
+          ],
+          "es-MX": [
+            { "type": "text", "content": "Forensically ofrece ELA, análisis de ruido y detección de clonación." }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Análisis contextual",
+        "Question Text": {
+          "en-US": [
+            "What does comparing message time and file metadata help determine?"
+          ],
+          "es-MX": [
+            "¿Qué ayuda a determinar comparar la hora del mensaje con los metadatos del archivo?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "If the file aligns with the narrative or was manipulated.",
+            "Battery temperature.",
+            "Network speed.",
+            "If the device is new."
+          ],
+          "es-MX": [
+            "Si el archivo coincide con la narrativa o fue manipulado.",
+            "Temperatura de batería.",
+            "Velocidad de red.",
+            "Si el dispositivo es nuevo."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "If the file aligns with the narrative or was manipulated.",
+          "es-MX": "Si el archivo coincide con la narrativa o fue manipulado."
+        },
+        "Explanation": {
+          "en-US": [
+            { "type": "text", "content": "Time discrepancies often expose edits or misleading sequences." }
+          ],
+          "es-MX": [
+            { "type": "text", "content": "Las discrepancias de tiempo suelen exponer ediciones o secuencias falsas." }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Integridad",
+        "Question Text": {
+          "en-US": [
+            "Why is calculating a hash such as SHA-256 important before and after analysis?"
+          ],
+          "es-MX": [
+            "¿Por qué es importante calcular un hash como SHA-256 antes y después del análisis?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To ensure the file was not altered during examination.",
+            "To compress the file.",
+            "To change its format.",
+            "To improve image quality."
+          ],
+          "es-MX": [
+            "Para asegurar que el archivo no fue alterado durante el examen.",
+            "Para comprimir el archivo.",
+            "Para cambiar su formato.",
+            "Para mejorar su calidad."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To ensure the file was not altered during examination.",
+          "es-MX": "Para asegurar que el archivo no fue alterado durante el examen."
+        },
+        "Explanation": {
+          "en-US": [
+            { "type": "text", "content": "Hash integrity validates authenticity throughout the process." }
+          ],
+          "es-MX": [
+            { "type": "text", "content": "El hash garantiza autenticidad durante todo el proceso." }
+          ]
+        }
+      }
+  
+    ]
+  }
+  

@@ -1,0 +1,636 @@
+{
+  "meta": {
+    "slug": "forense-apps58",
+    "title": "Estructura profesional del informe forense",
+    "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+    "unit": 5,
+    "classNo": 58,
+    "description": "Componentes esenciales que conforman un informe forense digital profesional, con estructura basada en lineamientos ISO/IEC 27037 y prácticas aceptadas por peritos para garantizar claridad, trazabilidad e integridad.",
+    "tags": [
+      "informes forenses",
+      "estructura profesional",
+      "ISO/IEC 27037",
+      "metodología",
+      "hallazgos",
+      "integridad",
+      "anexos",
+      "unidad V"
+    ]
+  },
+  "Questions": [
+    {
+      "Category": "Importancia de la estructura",
+      "Question Text": {
+        "en-US": [
+          "Why is the structure of a digital forensic report considered critical according to the class?"
+        ],
+        "es-MX": [
+          "¿Por qué se considera crítica la estructura de un informe forense digital según la clase?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Because its order and organization determine the technical value of the analysis and its clarity for judges, lawyers, auditors, companies and other technical areas.",
+          "Because it only affects the graphic design of the document, not its legal value.",
+          "Because a complex structure helps to hide limitations of the analysis.",
+          "Because a disordered report is always stronger in court than a very structured one."
+        ],
+        "es-MX": [
+          "Porque su orden y organización determinan el valor técnico del análisis y su claridad para jueces, abogados, auditores, empresas y otras áreas técnicas.",
+          "Porque solo afecta el diseño gráfico del documento, no su valor legal.",
+          "Porque una estructura compleja ayuda a ocultar las limitaciones del análisis.",
+          "Porque un informe desordenado siempre es más fuerte en juicio que uno muy estructurado."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Because its order and organization determine the technical value of the analysis and its clarity for judges, lawyers, auditors, companies and other technical areas.",
+        "es-MX": "Porque su orden y organización determinan el valor técnico del análisis y su claridad para jueces, abogados, auditores, empresas y otras áreas técnicas."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "A professional structure is what makes the forensic work understandable, auditable and defensible in legal or corporate contexts."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "It ensures transparency of the forensic process from evidence reception to conclusions.",
+              "It allows traceability of each finding back to its source and methodology.",
+              "It facilitates standardization for future audits and reviews.",
+              "It helps non-technical readers understand what was done and what was found."
+            ]
+          },
+          {
+            "type": "text",
+            "content": "A messy report can weaken even a technically correct analysis, because it becomes hard to follow, verify or defend."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La estructura profesional es lo que vuelve el trabajo forense entendible, auditable y defendible en contextos legales o corporativos."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Garantiza la transparencia del proceso forense desde la recepción de evidencia hasta las conclusiones.",
+              "Permite la trazabilidad de cada hallazgo hacia su origen y su metodología.",
+              "Facilita la estandarización para futuras auditorías y revisiones.",
+              "Ayuda a que lectores no técnicos comprendan qué se hizo y qué se encontró."
+            ]
+          },
+          {
+            "type": "text",
+            "content": "Un informe desordenado puede debilitar incluso un análisis técnicamente correcto, porque se vuelve difícil de seguir, verificar o defender."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Encabezado del informe",
+      "Question Text": {
+        "en-US": [
+          "Which option correctly lists key elements that should appear in the header of a professional forensic report?"
+        ],
+        "es-MX": [
+          "¿Cuál opción enumera correctamente elementos clave que deben aparecer en el encabezado de un informe forense profesional?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Report title, expert or technical area name, requesting institution, case or file number, issue date and security classification if applicable.",
+          "Only the expert’s name and a brief informal description of the case.",
+          "Only the device model and the operating system version.",
+          "Only the logo of the company and a marketing slogan."
+        ],
+        "es-MX": [
+          "Título del informe, nombre del perito o área técnica, institución solicitante, número de expediente o caso, fecha de emisión y clasificación de seguridad si aplica.",
+          "Solo el nombre del perito y una breve descripción informal del caso.",
+          "Solo el modelo del dispositivo y la versión del sistema operativo.",
+          "Únicamente el logotipo de la empresa y un eslogan de marketing."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Report title, expert or technical area name, requesting institution, case or file number, issue date and security classification if applicable.",
+        "es-MX": "Título del informe, nombre del perito o área técnica, institución solicitante, número de expediente o caso, fecha de emisión y clasificación de seguridad si aplica."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The header formally identifies the document within the institution and in legal proceedings."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "The title states the nature of the report (for example, \"Digital Forensic Analysis Report of Mobile Device\").",
+              "The expert or technical area shows who is responsible for the analysis.",
+              "The requesting institution and case number link the report to a specific procedure.",
+              "The issue date and security classification help control distribution and versioning."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El encabezado identifica formalmente el documento dentro de la institución y en los procedimientos legales."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "El título indica la naturaleza del informe (por ejemplo, “Informe Técnico de Análisis Forense Digital de Dispositivo Móvil”).",
+              "El nombre del perito o área técnica muestra quién es responsable del análisis.",
+              "La institución solicitante y el número de expediente vinculan el informe a un procedimiento concreto.",
+              "La fecha de emisión y la clasificación de seguridad ayudan a controlar la distribución y el versionado."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Resumen ejecutivo",
+      "Question Text": {
+        "en-US": [
+          "According to the class, what information should the executive summary of a forensic report mainly include?"
+        ],
+        "es-MX": [
+          "Según la clase, ¿qué información debe incluir principalmente el resumen ejecutivo de un informe forense?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Reason for the analysis, what was reviewed, main methods applied, key findings and general conclusions in a brief and clear format.",
+          "Only the expert’s curriculum vitae and certifications.",
+          "A detailed step-by-step description of every technical command used.",
+          "Only images and diagrams without explanatory text."
+        ],
+        "es-MX": [
+          "Motivo del análisis, qué se revisó, métodos principales aplicados, hallazgos clave y conclusiones generales en un formato breve y claro.",
+          "Solo el currículum y las certificaciones del perito.",
+          "Una descripción detallada paso a paso de cada comando técnico utilizado.",
+          "Solo imágenes y diagramas sin texto explicativo."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Reason for the analysis, what was reviewed, main methods applied, key findings and general conclusions in a brief and clear format.",
+        "es-MX": "Motivo del análisis, qué se revisó, métodos principales aplicados, hallazgos clave y conclusiones generales en un formato breve y claro."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The executive summary is written for non-technical readers and must give them a quick, accurate view of the case."
+          },
+          {
+            "type": "ol",
+            "items": [
+              "It explains why the analysis was requested and what type of incident is involved.",
+              "It indicates what devices or data sources were reviewed.",
+              "It mentions main methods or tools used, without going into deep technical detail.",
+              "It highlights key findings and provides general conclusions aligned with the rest of the report."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El resumen ejecutivo está dirigido a lectores no técnicos y debe ofrecerles una visión rápida y fiel del caso."
+          },
+          {
+            "type": "ol",
+            "items": [
+              "Explica por qué se solicitó el análisis y qué tipo de incidente está involucrado.",
+              "Indica qué dispositivos o fuentes de datos se revisaron.",
+              "Menciona los métodos o herramientas principales, sin entrar en detalle técnico profundo.",
+              "Resalta los hallazgos clave y expone conclusiones generales coherentes con el resto del informe."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Antecedentes del caso",
+      "Question Text": {
+        "en-US": [
+          "What is the main function of the background or context section in a professional forensic report?"
+        ],
+        "es-MX": [
+          "¿Cuál es la función principal de la sección de antecedentes o contexto en un informe forense profesional?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "To explain why the analysis was requested, describe the incident and specify the questions that the forensic work should answer.",
+          "To list all the software installed on the expert’s computer.",
+          "To include personal opinions about the people involved in the case.",
+          "To describe the history of the forensic laboratory since it was created."
+        ],
+        "es-MX": [
+          "Explicar por qué se solicitó el análisis, describir el incidente y precisar las preguntas que el trabajo forense debe responder.",
+          "Enlistar todo el software instalado en la computadora del perito.",
+          "Incluir opiniones personales sobre las personas involucradas en el caso.",
+          "Describir la historia del laboratorio forense desde su creación."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To explain why the analysis was requested, describe the incident and specify the questions that the forensic work should answer.",
+        "es-MX": "Explicar por qué se solicitó el análisis, describir el incidente y precisar las preguntas que el trabajo forense debe responder."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The background section connects the technical work with the real incident or investigation that motivated it."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "It summarizes the initial information provided by the institution or client.",
+              "It describes the type of incident (fraud, harassment, data leak, etc.).",
+              "It defines the key questions that the forensic analysis must attempt to answer.",
+              "It frames the scope and limitations of the report from the beginning."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La sección de antecedentes conecta el trabajo técnico con el incidente real o la investigación que lo motivó."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Resume la información inicial aportada por la institución o el cliente.",
+              "Describe el tipo de incidente (fraude, acoso, filtración de datos, etc.).",
+              "Define las preguntas clave que el análisis forense debe intentar responder.",
+              "Enmarca el alcance y las limitaciones del informe desde el inicio."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Identificación de evidencia",
+      "Question Text": {
+        "en-US": [
+          "Which of the following best represents good practice for the evidence identification section?"
+        ],
+        "es-MX": [
+          "¿Cuál de las siguientes opciones representa mejor una buena práctica para la sección de identificación de la evidencia?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Listing devices, forensic images, multimedia files and databases, including name, format, size, original location, initial hash and date/time of reception.",
+          "Mentioning only that “some devices were received” without giving details.",
+          "Describing only the brand of the phone, ignoring the rest of the evidence.",
+          "Including only a photo of the device without any technical information."
+        ],
+        "es-MX": [
+          "Enlistar dispositivos, imágenes forenses, archivos multimedia y bases de datos, incluyendo nombre, formato, tamaño, ubicación original, hash inicial y fecha/hora de recepción.",
+          "Mencionar solo que “se recibieron algunos dispositivos” sin dar detalles.",
+          "Describir únicamente la marca del teléfono, ignorando el resto de la evidencia.",
+          "Incluir solo una foto del dispositivo sin información técnica."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Listing devices, forensic images, multimedia files and databases, including name, format, size, original location, initial hash and date/time of reception.",
+        "es-MX": "Enlistar dispositivos, imágenes forenses, archivos multimedia y bases de datos, incluyendo nombre, formato, tamaño, ubicación original, hash inicial y fecha/hora de recepción."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "ul",
+            "items": [
+              "Each piece of evidence must be uniquely and clearly identified.",
+              "Technical attributes like format, size and location help to avoid confusion between similar items.",
+              "Recording the initial hash at reception is essential for chain of custody and integrity.",
+              "Date and time of reception link the report to custody logs and institutional procedures."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "ul",
+            "items": [
+              "Cada elemento de evidencia debe identificarse de forma única y clara.",
+              "Atributos técnicos como formato, tamaño y ubicación ayudan a evitar confusiones entre elementos similares.",
+              "Registrar el hash inicial al momento de la recepción es esencial para la cadena de custodia y la integridad.",
+              "La fecha y hora de recepción vinculan el informe con las bitácoras de custodia y los procedimientos institucionales."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Metodología vs desarrollo del análisis",
+      "Question Text": {
+        "en-US": [
+          "What is the main difference between the methodology section and the development of the analysis section?"
+        ],
+        "es-MX": [
+          "¿Cuál es la principal diferencia entre la sección de metodología y la sección de desarrollo del análisis?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Methodology describes tools, environments and general procedures, while development of the analysis explains step by step what was actually done with the specific evidence.",
+          "There is no difference; both sections are exactly the same and can be merged without any impact.",
+          "Methodology is only decorative and is not relevant for reproducibility.",
+          "Development of the analysis is optional if the executive summary is very detailed."
+        ],
+        "es-MX": [
+          "La metodología describe herramientas, entornos y procedimientos generales, mientras que el desarrollo del análisis explica paso a paso lo que realmente se hizo con la evidencia concreta.",
+          "No hay diferencia; ambas secciones son exactamente iguales y pueden unirse sin afectar nada.",
+          "La metodología es solo decorativa y no es relevante para la reproducibilidad.",
+          "El desarrollo del análisis es opcional si el resumen ejecutivo es muy detallado."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Methodology describes tools, environments and general procedures, while development of the analysis explains step by step what was actually done with the specific evidence.",
+        "es-MX": "La metodología describe herramientas, entornos y procedimientos generales, mientras que el desarrollo del análisis explica paso a paso lo que realmente se hizo con la evidencia concreta."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The class clearly separates the global method from the detailed narrative of actions executed on the evidence."
+          },
+          {
+            "type": "ol",
+            "items": [
+              "Methodology: names tools (Autopsy, Magnet AXIOM, ExifTool, etc.), OS, acquisition technique (physical, logical, selective) and validation methods (hashes).",
+              "Development of the analysis: describes in detail how the tools were applied, which folders, databases, chats and multimedia were reviewed and in what sequence.",
+              "Together, they allow another expert to understand both the overall design and the concrete steps of the investigation.",
+              "This separation is consistent with ISO/IEC 27037 and good forensic practice."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La clase separa claramente el método global de la narrativa detallada de acciones ejecutadas sobre la evidencia."
+          },
+          {
+            "type": "ol",
+            "items": [
+              "Metodología: nombra herramientas (Autopsy, Magnet AXIOM, ExifTool, etc.), sistema operativo, técnica de adquisición (física, lógica, selectiva) y métodos de validación (hashes).",
+              "Desarrollo del análisis: describe con detalle cómo se aplicaron las herramientas, qué carpetas, bases de datos, chats y multimedia se revisaron y en qué secuencia.",
+              "En conjunto, permiten que otro perito entienda tanto el diseño general como los pasos concretos de la investigación.",
+              "Esta separación es coherente con ISO/IEC 27037 y las buenas prácticas forenses."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Hallazgos y presentación de resultados",
+      "Question Text": {
+        "en-US": [
+          "How should the findings section present the main results of the forensic analysis?"
+        ],
+        "es-MX": [
+          "¿Cómo debe presentar la sección de hallazgos los resultados principales del análisis forense?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "By highlighting relevant results such as recovered messages, multimedia, metadata and detected edits, using tables, screenshots, timelines and metadata lists.",
+          "By hiding all details and only writing that “relevant information was found”.",
+          "By focusing on personal opinions about the behavior of the users involved.",
+          "By presenting random screenshots without context or explanation."
+        ],
+        "es-MX": [
+          "Resaltando resultados relevantes como mensajes recuperados, archivos multimedia, metadatos y ediciones detectadas, usando tablas, capturas de pantalla, cronologías y listados de metadatos.",
+          "Ocultando todos los detalles y escribiendo únicamente que “se encontró información relevante”.",
+          "Centrando la sección en opiniones personales sobre la conducta de los usuarios involucrados.",
+          "Mostrando capturas de pantalla aleatorias sin contexto ni explicación."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "By highlighting relevant results such as recovered messages, multimedia, metadata and detected edits, using tables, screenshots, timelines and metadata lists.",
+        "es-MX": "Resaltando resultados relevantes como mensajes recuperados, archivos multimedia, metadatos y ediciones detectadas, usando tablas, capturas de pantalla, cronologías y listados de metadatos."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "ul",
+            "items": [
+              "The findings section focuses on what was discovered, not on how it was technically executed.",
+              "Examples include consistency between screenshots and databases, recovered deleted photos or audios, EXIF metadata, video cut indicators and conversation sequences.",
+              "Visual elements (tables, screenshots, timelines) help both technical and non-technical readers grasp the evidence.",
+              "Every finding should be clearly referenced to its source and related evidence."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "ul",
+            "items": [
+              "La sección de hallazgos se centra en lo que se descubrió, no en cómo se ejecutó técnicamente.",
+              "Ejemplos: coincidencia entre capturas de pantalla y bases de datos, fotos o audios recuperados, metadatos EXIF, indicios de cortes en video y secuencias de conversación.",
+              "Los elementos visuales (tablas, capturas, cronologías) ayudan a que lectores técnicos y no técnicos comprendan la evidencia.",
+              "Cada hallazgo debe estar claramente referenciado a su origen y a la evidencia relacionada."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Verificación de integridad",
+      "Question Text": {
+        "en-US": [
+          "Which description best reflects how integrity verification should appear in a professional forensic report?"
+        ],
+        "es-MX": [
+          "¿Qué descripción refleja mejor cómo debe aparecer la verificación de integridad en un informe forense profesional?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "It must show initial and final hash values for each piece of evidence, the hash function used (preferably SHA-256) and a comparative table confirming authenticity.",
+          "It should be omitted to avoid confusing the reader with numbers.",
+          "It should only mention that “integrity was verified” without any details.",
+          "It should include a random hash not associated with any file, just as an example."
+        ],
+        "es-MX": [
+          "Debe mostrar los valores de hash inicial y final de cada evidencia, la función hash utilizada (preferentemente SHA-256) y una tabla comparativa que confirme la autenticidad.",
+          "Debe omitirse para no confundir al lector con números.",
+          "Solo debe mencionar que “se verificó la integridad” sin ningún detalle.",
+          "Debe incluir un hash aleatorio no asociado a ningún archivo, solo como ejemplo."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "It must show initial and final hash values for each piece of evidence, the hash function used (preferably SHA-256) and a comparative table confirming authenticity.",
+        "es-MX": "Debe mostrar los valores de hash inicial y final de cada evidencia, la función hash utilizada (preferentemente SHA-256) y una tabla comparativa que confirme la autenticidad."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "divider"
+          },
+          {
+            "type": "text",
+            "content": "Integrity verification is one of the most reviewed elements in legal contexts."
+          },
+          {
+            "type": "ol",
+            "items": [
+              "Initial hash: calculated when the evidence is received to register its original state.",
+              "Final hash: calculated after the analysis to prove that the file was not altered.",
+              "Hash function: should be clearly stated (e.g., SHA-256) following accepted standards.",
+              "Comparative table: shows initial and final values and states explicitly whether they match."
+            ]
+          },
+          {
+            "type": "divider"
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "divider"
+          },
+          {
+            "type": "text",
+            "content": "La verificación de integridad es uno de los elementos más revisados en contextos legales."
+          },
+          {
+            "type": "ol",
+            "items": [
+              "Hash inicial: se calcula al recibir la evidencia para registrar su estado original.",
+              "Hash final: se calcula tras el análisis para demostrar que el archivo no fue alterado.",
+              "Función hash: debe indicarse claramente (por ejemplo, SHA-256) siguiendo estándares aceptados.",
+              "Tabla comparativa: muestra valores iniciales y finales y señala explícitamente si coinciden."
+            ]
+          },
+          {
+            "type": "divider"
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Anexos y soporte",
+      "Question Text": {
+        "en-US": [
+          "What is the main purpose of annexes in a digital forensic report?"
+        ],
+        "es-MX": [
+          "¿Cuál es el propósito principal de los anexos en un informe forense digital?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "To provide detailed supporting material such as screenshots, automatic reports, complete hashes, logs and data fragments that strengthen the credibility and traceability of the findings.",
+          "To store decorative images that have no relation to the case.",
+          "To repeat exactly the same text that already appears in the main sections.",
+          "To include jokes and informal comments that make the report more entertaining."
+        ],
+        "es-MX": [
+          "Aportar material de soporte detallado como capturas de pantalla, reportes automáticos, hashes completos, bitácoras y fragmentos de datos que refuercen la credibilidad y trazabilidad de los hallazgos.",
+          "Almacenar imágenes decorativas que no tienen relación con el caso.",
+          "Repetir exactamente el mismo texto que ya aparece en las secciones principales.",
+          "Incluir chistes y comentarios informales para hacer el informe más entretenido."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To provide detailed supporting material such as screenshots, automatic reports, complete hashes, logs and data fragments that strengthen the credibility and traceability of the findings.",
+        "es-MX": "Aportar material de soporte detallado como capturas de pantalla, reportes automáticos, hashes completos, bitácoras y fragmentos de datos que refuercen la credibilidad y trazabilidad de los hallazgos."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Annexes keep the main body of the report readable while preserving all technical detail for those who need to verify or audit the work."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "They include screenshots that illustrate key findings.",
+              "They contain automatic reports from tools such as Autopsy, Magnet AXIOM or Oxygen.",
+              "They store full hash lists, logs and significant data fragments.",
+              "They allow courts, auditors and other experts to review the evidence in depth without overloading the main narrative."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los anexos mantienen legible el cuerpo principal del informe, a la vez que conservan todo el detalle técnico para quienes deban verificar o auditar el trabajo."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Incluyen capturas de pantalla que ilustran hallazgos clave.",
+              "Contienen reportes automáticos de herramientas como Autopsy, Magnet AXIOM u Oxygen.",
+              "Almacenan listas completas de hashes, bitácoras y fragmentos de datos significativos.",
+              "Permiten que tribunales, auditores y otros peritos revisen a fondo la evidencia sin sobrecargar la narrativa principal."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Estructura ISO/IEC 27037 y conclusiones",
+      "Question Text": {
+        "en-US": [
+          "Which option best summarizes a structure inspired by ISO/IEC 27037 and the main conclusions of this class?"
+        ],
+        "es-MX": [
+          "¿Qué opción resume mejor una estructura inspirada en ISO/IEC 27037 y las conclusiones principales de esta clase?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Case identification, analysis team, evidence description, chain of custody, forensic methodology, detailed technical analysis, results, integrity verification, conclusions and annexes; the structure determines the legal and technical value of the report.",
+          "Only a short paragraph with the expert’s opinion, without any formal sections.",
+          "A random order of sections that changes in each case, without any reference to standards.",
+          "A structure that only includes an executive summary and nothing else, to save time."
+        ],
+        "es-MX": [
+          "Identificación del caso, equipo de análisis, descripción de la evidencia, cadena de custodia, metodología forense, análisis técnico detallado, resultados, verificación de integridad, conclusiones y anexos; la estructura determina el valor jurídico y técnico del informe.",
+          "Solo un párrafo corto con la opinión del perito, sin secciones formales.",
+          "Un orden aleatorio de secciones que cambia en cada caso, sin referencia a normas.",
+          "Una estructura que solo incluya un resumen ejecutivo y nada más, para ahorrar tiempo."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Case identification, analysis team, evidence description, chain of custody, forensic methodology, detailed technical analysis, results, integrity verification, conclusions and annexes; the structure determines the legal and technical value of the report.",
+        "es-MX": "Identificación del caso, equipo de análisis, descripción de la evidencia, cadena de custodia, metodología forense, análisis técnico detallado, resultados, verificación de integridad, conclusiones y anexos; la estructura determina el valor jurídico y técnico del informe."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The class emphasizes that following a structured model aligned with ISO/IEC 27037 and related guides makes the report complete, traceable and professional."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "A clear structure helps courts and organizations understand the analysis with no ambiguities.",
+              "Including chain of custody, methodology, results and integrity verification is essential for legal validity.",
+              "Annexes provide the technical depth that supports each conclusion.",
+              "Ultimately, a good structure is as important as the technical analysis itself, because it gives it legal and institutional value."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La clase destaca que seguir un modelo estructurado alineado con ISO/IEC 27037 y guías relacionadas hace que el informe sea completo, trazable y profesional."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Una estructura clara ayuda a que tribunales y organizaciones entiendan el análisis sin ambigüedades.",
+              "Incluir cadena de custodia, metodología, resultados y verificación de integridad es esencial para la validez jurídica.",
+              "Los anexos aportan la profundidad técnica que respalda cada conclusión.",
+              "En última instancia, una buena estructura es tan importante como el análisis técnico, porque le da valor legal e institucional."
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

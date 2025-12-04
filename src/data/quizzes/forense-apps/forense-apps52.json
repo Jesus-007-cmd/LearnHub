@@ -1,0 +1,742 @@
+{
+    "meta": {
+      "slug": "forense-apps52",
+      "title": "Análisis forense de grabaciones de voz",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 4,
+      "classNo": 52,
+      "description": "Técnicas forenses para examinar grabaciones de voz: origen, cortes, manipulación, ruido, formato y metadatos usando herramientas especializadas.",
+      "tags": [
+        "audio forense",
+        "grabaciones de voz",
+        "metadatos",
+        "espectrograma",
+        "manipulación de audio",
+        "AudioCleaner",
+        "Audacity",
+        "VLC Forensics",
+        "Magnet AXIOM",
+        "ExifTool"
+      ]
+    },
+    "Questions": [
+  
+      {
+        "Category": "Importancia del análisis de voz",
+        "Question Text": {
+          "en-US": [
+            "Why are voice recordings considered so valuable as digital evidence in forensic investigations?"
+          ],
+          "es-MX": [
+            "¿Por qué las grabaciones de voz se consideran tan valiosas como evidencia digital en las investigaciones forenses?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because they can prove or refute statements by revealing what was said, when it was said, how it was said (tone) and under which acoustic environment, as long as integrity and authenticity are verified.",
+            "Only because they are easy to share by WhatsApp.",
+            "Because audio files never contain any metadata and are therefore anonymous.",
+            "Because every audio file automatically includes a certified digital signature."
+          ],
+          "es-MX": [
+            "Porque pueden confirmar o refutar declaraciones al revelar qué se dijo, cuándo se dijo, cómo se dijo (tono) y en qué entorno acústico, siempre que se verifiquen integridad y autenticidad.",
+            "Solo porque son fáciles de compartir por WhatsApp.",
+            "Porque los archivos de audio nunca contienen metadatos y por eso son anónimos.",
+            "Porque todo archivo de audio incluye automáticamente una firma digital certificada."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because they can prove or refute statements by revealing what was said, when it was said, how it was said (tone) and under which acoustic environment, as long as integrity and authenticity are verified.",
+          "es-MX": "Porque pueden confirmar o refutar declaraciones al revelar qué se dijo, cuándo se dijo, cómo se dijo (tono) y en qué entorno acústico, siempre que se verifiquen integridad y autenticidad."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Voice recordings link content (speech) with a specific time and context.",
+                "Tone, pauses and background noise provide extra clues about the situation.",
+                "Forensic analysis focuses on checking that the recording has not been altered."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Las grabaciones de voz enlazan el contenido (lo dicho) con un momento y contexto específicos.",
+                "El tono, las pausas y el ruido de fondo aportan pistas adicionales sobre la situación.",
+                "El análisis forense se centra en comprobar que la grabación no haya sido alterada."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Preguntas que responde el análisis forense",
+        "Question Text": {
+          "en-US": [
+            "According to the class, which key questions can forensic voice analysis help answer?"
+          ],
+          "es-MX": [
+            "Según la clase, ¿qué preguntas clave puede ayudar a responder el análisis forense de voz?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Whether the recording was manipulated, if there are hidden cuts, which device or app generated it, whether time/compression/volume were altered, if ambient noise matches the context and whether the voice matches the indicated person.",
+            "Only whether the audio is pleasant to listen to.",
+            "Only if the file can be opened on any smartphone.",
+            "Whether the audio can be used as a ringtone or not."
+          ],
+          "es-MX": [
+            "Si la grabación fue manipulada, si hay cortes ocultos, qué dispositivo o aplicación la generó, si se alteraron tiempo/compresión/volumen, si el ruido ambiente concuerda con el contexto y si la voz corresponde a la persona señalada.",
+            "Solo si el audio es agradable de escuchar.",
+            "Solo si el archivo se puede abrir en cualquier celular.",
+            "Si el audio se puede usar como tono de llamada o no."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Whether the recording was manipulated, if there are hidden cuts, which device or app generated it, whether time/compression/volume were altered, if ambient noise matches the context and whether the voice matches the indicated person.",
+          "es-MX": "Si la grabación fue manipulada, si hay cortes ocultos, qué dispositivo o aplicación la generó, si se alteraron tiempo/compresión/volumen, si el ruido ambiente concuerda con el contexto y si la voz corresponde a la persona señalada."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Forensic audio is not only about listening; it is about technically verifying authenticity, origin and coherence of the recording with the rest of the digital evidence."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El audio forense no se trata solo de escuchar; se trata de verificar técnica y contextualmente la autenticidad, el origen y la coherencia de la grabación con el resto de la evidencia digital."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Tipos de evidencias de audio",
+        "Question Text": {
+          "en-US": [
+            "Which of the following lists best matches the types of audio evidence mentioned in the class?"
+          ],
+          "es-MX": [
+            "¿Cuál de las siguientes listas coincide mejor con los tipos de evidencias de audio mencionados en la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Files .amr, .m4a, .aac, .3gp, .wav, .ogg; WhatsApp voice notes; call recordings; Telegram audios (opus); OS internal recordings; audios from cameras or video calls.",
+            "Only music files downloaded from streaming platforms.",
+            "Exclusively MP3 songs and radio recordings.",
+            "Only voice notes from gaming consoles."
+          ],
+          "es-MX": [
+            "Archivos .amr, .m4a, .aac, .3gp, .wav, .ogg; notas de voz de WhatsApp; grabaciones de llamadas; audios de Telegram (opus); grabaciones internas del sistema operativo; audios de cámaras o videollamadas.",
+            "Solo archivos de música descargados de plataformas de streaming.",
+            "Exclusivamente canciones MP3 y grabaciones de radio.",
+            "Solo notas de voz de consolas de videojuegos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Files .amr, .m4a, .aac, .3gp, .wav, .ogg; WhatsApp voice notes; call recordings; Telegram audios (opus); OS internal recordings; audios from cameras or video calls.",
+          "es-MX": "Archivos .amr, .m4a, .aac, .3gp, .wav, .ogg; notas de voz de WhatsApp; grabaciones de llamadas; audios de Telegram (opus); grabaciones internas del sistema operativo; audios de cámaras o videollamadas."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "The class emphasizes real-world sources: messaging apps, phone calls and device recorders.",
+                "Each source encodes audio with different formats and compression levels.",
+                "Recognizing the type of evidence helps to interpret its technical limitations."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "La clase enfatiza fuentes reales: apps de mensajería, llamadas telefónicas y grabadoras del dispositivo.",
+                "Cada fuente codifica el audio con formatos y niveles de compresión distintos.",
+                "Reconocer el tipo de evidencia ayuda a interpretar sus limitaciones técnicas."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Metadatos de audio",
+        "Question Text": {
+          "en-US": [
+            "Which technical metadata are especially relevant in forensic analysis of audio files?"
+          ],
+          "es-MX": [
+            "¿Qué metadatos técnicos son especialmente relevantes en el análisis forense de archivos de audio?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Exact duration, sample rate, bits per sample, channel type (mono/stereo), software used, original creation date, device or app, codec and bitrate.",
+            "Only the title of the song and the album cover.",
+            "Just the volume level set by the listener.",
+            "Only the Wi-Fi network name used when the audio was played."
+          ],
+          "es-MX": [
+            "Duración exacta, frecuencia de muestreo, bits por muestra, tipo de canal (mono/estéreo), software utilizado, fecha original de creación, dispositivo o app, códec y bitrate.",
+            "Solo el título de la canción y la portada del álbum.",
+            "Solo el nivel de volumen configurado por quien escucha.",
+            "Solo el nombre de la red Wi-Fi usada cuando se reprodujo el audio."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Exact duration, sample rate, bits per sample, channel type (mono/stereo), software used, original creation date, device or app, codec and bitrate.",
+          "es-MX": "Duración exacta, frecuencia de muestreo, bits por muestra, tipo de canal (mono/estéreo), software utilizado, fecha original de creación, dispositivo o app, códec y bitrate."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "These values allow the examiner to understand the technical quality of the recording, its probable origin and whether there are anomalies or re-encodings that suggest edition."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Estos valores permiten al perito entender la calidad técnica de la grabación, su origen probable y si hay anomalías o recodificaciones que sugieran edición."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Uso de ExifTool en audio",
+        "Question Text": {
+          "en-US": [
+            "When you run 'exiftool archivo.m4a', which types of information can you typically obtain for forensic purposes?"
+          ],
+          "es-MX": [
+            "Cuando se ejecuta 'exiftool archivo.m4a', ¿qué tipos de información se pueden obtener típicamente con fines forenses?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Format, encoder, average bitrate, sample rate, create date and modify date, among other fields.",
+            "Only the battery level of the device when it was played.",
+            "Just the current system volume of the examiner.",
+            "Only the brand of the headphones used to listen."
+          ],
+          "es-MX": [
+            "Formato, encoder, bitrate promedio, frecuencia de muestreo, fecha de creación y fecha de modificación, entre otros campos.",
+            "Solo el nivel de batería del dispositivo cuando se reprodujo.",
+            "Solo el volumen actual del sistema del perito.",
+            "Solo la marca de los audífonos usados para escuchar."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Format, encoder, average bitrate, sample rate, create date and modify date, among other fields.",
+          "es-MX": "Formato, encoder, bitrate promedio, frecuencia de muestreo, fecha de creación y fecha de modificación, entre otros campos."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "ExifTool reads embedded metadata from many audio formats.",
+                "It helps detect the tool that encoded the file and possible re-exports.",
+                "Differences between CreateDate and ModifyDate may indicate post-processing."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "ExifTool lee metadatos embebidos de muchos formatos de audio.",
+                "Ayuda a detectar la herramienta que codificó el archivo y posibles reexportaciones.",
+                "Diferencias entre CreateDate y ModifyDate pueden indicar posprocesamiento."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Indicadores de manipulación - Forma de onda",
+        "Question Text": {
+          "en-US": [
+            "Which waveform characteristics may indicate that an audio recording has been edited or cut?"
+          ],
+          "es-MX": [
+            "¿Qué características en la forma de onda pueden indicar que una grabación de audio ha sido editada o cortada?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Abrupt jumps in the waveform, suddenly cut noise, amplitude gaps and anomalous transitions between segments.",
+            "A perfectly smooth and continuous waveform with no content.",
+            "Only the presence of very loud music.",
+            "The waveform always indicates editing, regardless of its shape."
+          ],
+          "es-MX": [
+            "Saltos bruscos en la forma de onda, ruido cortado de forma repentina, vacíos de amplitud y transiciones anómalas entre segmentos.",
+            "Una forma de onda perfectamente lisa y continua pero sin contenido.",
+            "Solo la presencia de música muy fuerte.",
+            "La forma de onda siempre indica edición, sin importar su forma."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Abrupt jumps in the waveform, suddenly cut noise, amplitude gaps and anomalous transitions between segments.",
+          "es-MX": "Saltos bruscos en la forma de onda, ruido cortado de forma repentina, vacíos de amplitud y transiciones anómalas entre segmentos."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "A natural recording usually has continuous background noise and smooth changes; sharp discontinuities often reveal copy–paste, cuts or removed fragments."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Una grabación natural suele tener ruido de fondo continuo y cambios suaves; las discontinuidades marcadas suelen revelar copias, cortes o fragmentos eliminados."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Indicadores de manipulación - Espectrograma",
+        "Question Text": {
+          "en-US": [
+            "In the spectrogram, what patterns can suggest that an audio has been manipulated or spliced?"
+          ],
+          "es-MX": [
+            "En el espectrograma, ¿qué patrones pueden sugerir que un audio ha sido manipulado o montado?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Sudden loss of continuity, changes in the noise “fingerprint” between segments and inconsistent frequency patterns.",
+            "Perfectly identical vertical stripes across the entire file.",
+            "Only the presence of bass frequencies.",
+            "A spectrogram always proves that the audio is original, regardless of what it shows."
+          ],
+          "es-MX": [
+            "Pérdida repentina de continuidad, cambios en la “huella” de ruido entre segmentos y patrones de frecuencia inconsistentes.",
+            "Franjas verticales perfectamente idénticas en todo el archivo.",
+            "Solo la presencia de frecuencias graves.",
+            "Un espectrograma siempre demuestra que el audio es original, sin importar lo que muestre."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Sudden loss of continuity, changes in the noise “fingerprint” between segments and inconsistent frequency patterns.",
+          "es-MX": "Pérdida repentina de continuidad, cambios en la “huella” de ruido entre segmentos y patrones de frecuencia inconsistentes."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Background noise tends to be stable in time when the recording environment does not change.",
+                "Different segments pasted together often bring different noise fingerprints.",
+                "The spectrogram visualizes these differences in the frequency domain."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "El ruido de fondo tiende a ser estable en el tiempo cuando el entorno de grabación no cambia.",
+                "Segmentos pegados de diferentes grabaciones suelen traer huellas de ruido distintas.",
+                "El espectrograma visualiza estas diferencias en el dominio de frecuencia."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Bitrate, duración y metadatos",
+        "Question Text": {
+          "en-US": [
+            "Which combination of clues can indicate possible editing or inconsistency in an audio recording?"
+          ],
+          "es-MX": [
+            "¿Qué combinación de indicios puede señalar posible edición o inconsistencia en una grabación de audio?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Segments with different bitrate, incoherent duration compared to call logs, and conflicting CreateDate/ModifyDate values.",
+            "Only a long file name and a large file size.",
+            "The fact that the audio is in mono instead of stereo, by itself.",
+            "Any difference of one second between two clocks automatically invalidates the evidence."
+          ],
+          "es-MX": [
+            "Segmentos con diferente bitrate, duración incoherente respecto al registro de llamadas y valores de CreateDate/ModifyDate contradictorios.",
+            "Solo un nombre de archivo muy largo y un tamaño de archivo grande.",
+            "El hecho de que el audio sea mono en lugar de estéreo, por sí solo.",
+            "Cualquier diferencia de un segundo entre dos relojes invalida automáticamente la evidencia."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Segments with different bitrate, incoherent duration compared to call logs, and conflicting CreateDate/ModifyDate values.",
+          "es-MX": "Segmentos con diferente bitrate, duración incoherente respecto al registro de llamadas y valores de CreateDate/ModifyDate contradictorios."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "When bitrate changes mid-file, durations do not match logs and metadata dates conflict, the examiner has strong signs that the audio may have been edited or exported multiple times."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Cuando el bitrate cambia a mitad del archivo, las duraciones no coinciden con los logs y las fechas de metadatos se contradicen, el perito tiene indicios fuertes de que el audio pudo ser editado o reexportado varias veces."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Identificación de origen - WhatsApp",
+        "Question Text": {
+          "en-US": [
+            "Which characteristics are typical of WhatsApp voice notes, according to the class?"
+          ],
+          "es-MX": [
+            "¿Qué características son típicas de las notas de voz de WhatsApp, según la clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "OPUS format, aggressive compression, sample rates typically between 16 kHz and 48 kHz and a characteristic tone at the start.",
+            "Lossless WAV at 96 kHz with no compression.",
+            "Always stereo, 7.1 surround sound.",
+            "Only uncompressed PCM with extremely high bitrate."
+          ],
+          "es-MX": [
+            "Formato OPUS, compresión agresiva, frecuencias de muestreo típicamente entre 16 kHz y 48 kHz y un tono característico al inicio.",
+            "WAV sin compresión a 96 kHz sin ningún tipo de compresión.",
+            "Siempre estéreo, sonido envolvente 7.1.",
+            "Solo PCM sin comprimir con bitrate extremadamente alto."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "OPUS format, aggressive compression, sample rates typically between 16 kHz and 48 kHz and a characteristic tone at the start.",
+          "es-MX": "Formato OPUS, compresión agresiva, frecuencias de muestreo típicamente entre 16 kHz y 48 kHz y un tono característico al inicio."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "WhatsApp prioritizes bandwidth savings, so it uses OPUS with strong compression.",
+                "The characteristic notification tone and sampling patterns help identify its origin.",
+                "Recognizing this helps distinguish native WhatsApp audios from externally edited files."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "WhatsApp prioriza ahorrar ancho de banda, por eso usa OPUS con fuerte compresión.",
+                "El tono característico de la app y los patrones de muestreo ayudan a identificar su origen.",
+                "Reconocer esto ayuda a distinguir audios nativos de WhatsApp de archivos editados externamente."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Grabadora vs llamada telefónica",
+        "Question Text": {
+          "en-US": [
+            "Which difference often helps distinguish native phone recorder audios from call recordings?"
+          ],
+          "es-MX": [
+            "¿Qué diferencia suele ayudar a distinguir audios de la grabadora del teléfono de grabaciones de llamada?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Recorder audios tend to be WAV or M4A with higher and more constant quality, while call recordings are usually mono, around 8 kHz and more heavily compressed.",
+            "Recorder audios always include background music; call recordings never do.",
+            "Call recordings are always in stereo with studio quality.",
+            "There is never any technical difference between them."
+          ],
+          "es-MX": [
+            "Los audios de grabadora suelen ser WAV o M4A con calidad más alta y constante, mientras que las grabaciones de llamada suelen ser mono, alrededor de 8 kHz y con mayor compresión.",
+            "Los audios de grabadora siempre incluyen música de fondo; las grabaciones de llamada nunca.",
+            "Las grabaciones de llamada siempre son estéreo con calidad de estudio.",
+            "Nunca existe diferencia técnica entre ellas."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Recorder audios tend to be WAV or M4A with higher and more constant quality, while call recordings are usually mono, around 8 kHz and more heavily compressed.",
+          "es-MX": "Los audios de grabadora suelen ser WAV o M4A con calidad más alta y constante, mientras que las grabaciones de llamada suelen ser mono, alrededor de 8 kHz y con mayor compresión."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Telephony is optimized for voice bandwidth, not high fidelity, so call recordings reflect that limitation; native recorder apps preserve more detail and metadata."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La telefonía está optimizada para voz, no para alta fidelidad, por lo que las grabaciones de llamada reflejan esa limitación; las apps de grabadora nativa conservan más detalle y metadatos."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Procedimiento A-B-C",
+        "Question Text": {
+          "en-US": [
+            "In the complete forensic audio procedure described in the class, what is the focus of steps A (initial review), B (spectral and visual analysis) and C (manipulation identification)?"
+          ],
+          "es-MX": [
+            "En el procedimiento completo de audio forense descrito en la clase, ¿en qué se enfocan los pasos A (revisión inicial), B (análisis espectral y visual) y C (identificación de manipulación)?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A: note duration, hash, format, codec and probable origin; B: inspect waveform and spectrogram, zoom on noise and silences; C: search for irregular peaks, abrupt drops, perfect segment alignments and desynchronizations that indicate editing.",
+            "A: immediately normalize volume; B: delete silent parts; C: export to MP3.",
+            "A: translate the audio; B: add background music; C: compress the file.",
+            "A: print the waveform; B: change the file name; C: upload it to social media."
+          ],
+          "es-MX": [
+            "A: anotar duración, hash, formato, códec y origen probable; B: inspeccionar forma de onda y espectrograma, hacer zoom en ruido y silencios; C: buscar picos irregulares, caídas bruscas, alineaciones perfectas de segmentos y desincronizaciones que indiquen edición.",
+            "A: normalizar inmediatamente el volumen; B: borrar las partes silenciosas; C: exportar a MP3.",
+            "A: traducir el audio; B: añadir música de fondo; C: comprimir el archivo.",
+            "A: imprimir la forma de onda; B: cambiar el nombre del archivo; C: subirlo a redes sociales."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A: note duration, hash, format, codec and probable origin; B: inspect waveform and spectrogram, zoom on noise and silences; C: search for irregular peaks, abrupt drops, perfect segment alignments and desynchronizations that indicate editing.",
+          "es-MX": "A: anotar duración, hash, formato, códec y origen probable; B: inspeccionar forma de onda y espectrograma, hacer zoom en ruido y silencios; C: buscar picos irregulares, caídas bruscas, alineaciones perfectas de segmentos y desincronizaciones que indiquen edición."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ol",
+              "items": [
+                "Step A documents the file and secures chain of custody.",
+                "Step B exposes the internal structure of the sound in time and frequency.",
+                "Step C interprets anomalies as potential signs of cuts or montage."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ol",
+              "items": [
+                "El paso A documenta el archivo y asegura la cadena de custodia.",
+                "El paso B expone la estructura interna del sonido en tiempo y frecuencia.",
+                "El paso C interpreta anomalías como posibles signos de cortes o montaje."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Ruido ambiente como huella",
+        "Question Text": {
+          "en-US": [
+            "Why does the class consider ambient noise a kind of \"acoustic fingerprint\" in audio forensics?"
+          ],
+          "es-MX": [
+            "¿Por qué la clase considera al ruido ambiente como una especie de \"huella acústica\" en el audio forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because stable background noise helps determine if all segments were recorded in the same place, reveal abrupt changes of environment or detect artificial mixing of different recordings.",
+            "Because noise is always random and never useful.",
+            "Because ambient noise automatically cleans the audio.",
+            "Because only the noise, and not the voice, matters in a forensic analysis."
+          ],
+          "es-MX": [
+            "Porque un ruido de fondo estable ayuda a determinar si todos los segmentos se grabaron en el mismo lugar, revelar cambios bruscos de entorno o detectar mezclas artificiales de distintas grabaciones.",
+            "Porque el ruido siempre es aleatorio y nunca sirve.",
+            "Porque el ruido ambiente limpia automáticamente el audio.",
+            "Porque solo el ruido, y no la voz, importa en un análisis forense."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because stable background noise helps determine if all segments were recorded in the same place, reveal abrupt changes of environment or detect artificial mixing of different recordings.",
+          "es-MX": "Porque un ruido de fondo estable ayuda a determinar si todos los segmentos se grabaron en el mismo lugar, revelar cambios bruscos de entorno o detectar mezclas artificiales de distintas grabaciones."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Ambient noise carries information about space (room, street, vehicle) and equipment; sudden changes suggest that parts may have been recorded at different times or places and later combined."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El ruido ambiente lleva información sobre el espacio (cuarto, calle, vehículo) y el equipo; cambios súbitos sugieren que partes pudieron grabarse en momentos o lugares distintos y luego combinarse."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Ejemplo de WhatsApp editado",
+        "Question Text": {
+          "en-US": [
+            "In the class example, an audio sent via WhatsApp (OPUS, 16 kbps, 32 seconds) shows two abrupt cuts (seconds 10 and 22) and changes in background noise. What is the most appropriate forensic conclusion?"
+          ],
+          "es-MX": [
+            "En el ejemplo de la clase, un audio enviado por WhatsApp (OPUS, 16 kbps, 32 segundos) muestra dos cortes abruptos (segundos 10 y 22) y cambios de ruido de fondo. ¿Cuál es la conclusión forense más adecuada?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The recording presents multiple signs of edition and does not meet basic forensic integrity criteria.",
+            "The audio is undoubtedly original and unedited.",
+            "The cuts are irrelevant and always occur in any WhatsApp audio.",
+            "It is impossible to reach any conclusion from these observations."
+          ],
+          "es-MX": [
+            "La grabación presenta múltiples indicios de edición y no cumple con criterios básicos de integridad forense.",
+            "El audio es sin duda original y no editado.",
+            "Los cortes son irrelevantes y siempre ocurren en cualquier audio de WhatsApp.",
+            "Es imposible llegar a cualquier conclusión a partir de esas observaciones."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The recording presents multiple signs of edition and does not meet basic forensic integrity criteria.",
+          "es-MX": "La grabación presenta múltiples indicios de edición y no cumple con criterios básicos de integridad forense."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "Abrupt cuts plus noise changes are classic indicators of montage.",
+                "When integrity is compromised, the evidential value of the audio is strongly reduced.",
+                "The examiner should document these findings and avoid treating the recording as an intact, continuous event."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "Los cortes abruptos junto con cambios de ruido son indicadores clásicos de montaje.",
+                "Cuando la integridad se ve comprometida, el valor probatorio del audio se reduce fuertemente.",
+                "El perito debe documentar estos hallazgos y evitar tratar la grabación como un evento intacto y continuo."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Herramientas recomendadas",
+        "Question Text": {
+          "en-US": [
+            "Which tools does the class highlight as recommended for forensic analysis of voice recordings within Unit IV?"
+          ],
+          "es-MX": [
+            "¿Qué herramientas destaca la clase como recomendadas para el análisis forense de grabaciones de voz dentro de la Unidad IV?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "AudioCleaner, Audacity, Magnet AXIOM, FTK Imager, Autopsy, ExifTool, VLC Forensics and Amped FIVE.",
+            "Only a generic media player with no analysis features.",
+            "Video games and music streaming apps.",
+            "Any random smartphone app without technical information."
+          ],
+          "es-MX": [
+            "AudioCleaner, Audacity, Magnet AXIOM, FTK Imager, Autopsy, ExifTool, VLC Forensics y Amped FIVE.",
+            "Solo un reproductor multimedia genérico sin funciones de análisis.",
+            "Videojuegos y apps de música en streaming.",
+            "Cualquier app de celular sin información técnica."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "AudioCleaner, Audacity, Magnet AXIOM, FTK Imager, Autopsy, ExifTool, VLC Forensics and Amped FIVE.",
+          "es-MX": "AudioCleaner, Audacity, Magnet AXIOM, FTK Imager, Autopsy, ExifTool, VLC Forensics y Amped FIVE."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Each tool contributes a different piece: spectral cleaning, waveform/spectrogram visualization, metadata/context, disk-level extraction and advanced authentication, together forming a complete forensic workflow."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Cada herramienta aporta una pieza distinta: limpieza espectral, visualización de forma de onda/espectrograma, metadatos/contexto, extracción a nivel disco y autenticación avanzada, formando en conjunto un flujo forense completo."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Conclusiones clave",
+        "Question Text": {
+          "en-US": [
+            "Which statement best summarizes the key conclusions of this class about forensic analysis of voice recordings?"
+          ],
+          "es-MX": [
+            "¿Qué enunciado resume mejor las conclusiones clave de esta clase sobre el análisis forense de grabaciones de voz?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Audios can reveal manipulation even if they sound natural; spectral analysis is one of the strongest techniques to identify cuts; metadata plus ambient noise help evaluate authenticity; and comparison with chats, logs and calls is essential.",
+            "If an audio sounds natural to the ear, it is always authentic and needs no further analysis.",
+            "Only the written transcript matters; the audio file itself is irrelevant.",
+            "Once an audio is obtained, it is never necessary to calculate hashes or document the process."
+          ],
+          "es-MX": [
+            "Los audios pueden revelar manipulación incluso si suenan naturales; el análisis espectral es una de las técnicas más fuertes para identificar cortes; los metadatos junto con el ruido ambiente ayudan a evaluar autenticidad; y la comparación con chats, logs y llamadas es esencial.",
+            "Si un audio suena natural al oído, siempre es auténtico y no necesita más análisis.",
+            "Solo importa la transcripción escrita; el archivo de audio en sí es irrelevante.",
+            "Una vez obtenido un audio, nunca es necesario calcular hashes ni documentar el proceso."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Audios can reveal manipulation even if they sound natural; spectral analysis is one of the strongest techniques to identify cuts; metadata plus ambient noise help evaluate authenticity; and comparison with chats, logs and calls is essential.",
+          "es-MX": "Los audios pueden revelar manipulación incluso si suenan naturales; el análisis espectral es una de las técnicas más fuertes para identificar cortes; los metadatos junto con el ruido ambiente ayudan a evaluar autenticidad; y la comparación con chats, logs y llamadas es esencial."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The class insists that forensic audio analysis must combine technical inspection (spectrogram, metadata, hashes) with contextual correlation (other digital traces) to reach solid conclusions about integrity and authenticity."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La clase insiste en que el análisis de audio forense debe combinar la inspección técnica (espectrograma, metadatos, hashes) con la correlación contextual (otras huellas digitales) para llegar a conclusiones sólidas sobre integridad y autenticidad."
+            }
+          ]
+        }
+      }
+  
+    ]
+  }
+  

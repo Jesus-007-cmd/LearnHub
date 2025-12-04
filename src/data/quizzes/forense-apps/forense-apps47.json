@@ -1,0 +1,738 @@
+{
+    "meta": {
+      "slug": "forense-apps47",
+      "title": "Análisis de registros de llamadas y audios",
+      "subject": "ANÁLISIS FORENSE DE APPS DE COMUNICACIÓN",
+      "unit": 4,
+      "classNo": 47,
+      "description": "Técnicas forenses para examinar registros de llamadas, estructura técnica de audios y detección de manipulaciones mediante herramientas especializadas.",
+      "tags": [
+        "llamadas",
+        "audios",
+        "audio forensics",
+        "Magnet AXIOM",
+        "VLC Forensics",
+        "ExifTool",
+        "FFmpeg",
+        "call logs"
+      ]
+    },
+    "Questions": [
+  
+      {
+        "Category": "Importancia de llamadas y audios",
+        "Question Text": {
+          "en-US": [
+            "Why are call records and voice messages considered key evidence in digital investigations?"
+          ],
+          "es-MX": [
+            "¿Por qué los registros de llamadas y los mensajes de voz se consideran evidencia clave en las investigaciones digitales?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because they show direct communication between users, exact interaction times and behavioral patterns over time.",
+            "Because they automatically replace all other types of digital evidence.",
+            "Because audio files can never be edited or converted.",
+            "Because they always include exact GPS coordinates in the metadata."
+          ],
+          "es-MX": [
+            "Porque muestran comunicación directa entre usuarios, tiempos exactos de interacción y patrones de comportamiento a lo largo del tiempo.",
+            "Porque reemplazan automáticamente a todos los demás tipos de evidencia digital.",
+            "Porque los archivos de audio nunca pueden ser editados o convertidos.",
+            "Porque siempre incluyen coordenadas GPS exactas en los metadatos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because they show direct communication between users, exact interaction times and behavioral patterns over time.",
+          "es-MX": "Porque muestran comunicación directa entre usuarios, tiempos exactos de interacción y patrones de comportamiento a lo largo del tiempo."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Call logs and voice messages help prove who talked to whom, when, for how long and how often. This information is crucial to connect suspects, victims and events in a case."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los registros de llamadas y los mensajes de voz ayudan a probar quién habló con quién, cuándo, por cuánto tiempo y con qué frecuencia. Esta información es crítica para vincular sospechosos, víctimas y eventos en un caso."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Elementos del registro de llamadas",
+        "Question Text": {
+          "en-US": [
+            "Which data are typically included in a telephone call log on a mobile device?"
+          ],
+          "es-MX": [
+            "¿Qué datos suelen incluirse en un registro de llamadas telefónicas en un dispositivo móvil?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Start date and time, total duration, caller and callee numbers, call type (incoming, outgoing, missed) and answer indicators.",
+            "Email password, Wi-Fi password and installed applications list.",
+            "Only the caller’s name without date or time.",
+            "Only GPS coordinates of the base station."
+          ],
+          "es-MX": [
+            "Fecha y hora de inicio, duración total, números de emisor y receptor, tipo de llamada (entrante, saliente, perdida) e indicadores de contestación.",
+            "Contraseña de correo, contraseña de Wi-Fi y lista de aplicaciones instaladas.",
+            "Solo el nombre del emisor sin fecha ni hora.",
+            "Solo coordenadas GPS de la antena base."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Start date and time, total duration, caller and callee numbers, call type (incoming, outgoing, missed) and answer indicators.",
+          "es-MX": "Fecha y hora de inicio, duración total, números de emisor y receptor, tipo de llamada (entrante, saliente, perdida) e indicadores de contestación."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Call logs focus on communication events: when they occurred, how long they lasted and whether the call was answered, rejected or missed, plus the numbers involved."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los registros de llamadas se centran en los eventos de comunicación: cuándo ocurrieron, cuánto duraron y si la llamada fue contestada, rechazada o perdida, además de los números involucrados."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Ubicación de bases de llamadas",
+        "Question Text": {
+          "en-US": [
+            "Where are call logs usually stored on an Android device according to this class?"
+          ],
+          "es-MX": [
+            "¿Dónde se almacenan normalmente los registros de llamadas en un dispositivo Android según esta clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "In internal databases such as calllog.db under paths like /data/data/com.android.providers.contacts/databases/",
+            "In the DCIM camera folder next to photos.",
+            "Only in the cloud, without any local copy.",
+            "Inside the SIM card as audio recordings."
+          ],
+          "es-MX": [
+            "En bases de datos internas como calllog.db bajo rutas como /data/data/com.android.providers.contacts/databases/",
+            "En la carpeta DCIM de la cámara junto a las fotos.",
+            "Solo en la nube, sin ninguna copia local.",
+            "Dentro de la tarjeta SIM como grabaciones de audio."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "In internal databases such as calllog.db under paths like /data/data/com.android.providers.contacts/databases/",
+          "es-MX": "En bases de datos internas como calllog.db bajo rutas como /data/data/com.android.providers.contacts/databases/"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Android typically stores call events in SQLite databases managed by the contacts/content provider. The examiner extracts and analyzes these databases to reconstruct call history."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Android suele guardar los eventos de llamadas en bases de datos SQLite gestionadas por el proveedor de contactos/contenido. El perito extrae y analiza estas bases para reconstruir el historial."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Formatos de audio en mensajería",
+        "Question Text": {
+          "en-US": [
+            "Which audio formats are commonly used by messaging apps like WhatsApp or Telegram for voice messages?"
+          ],
+          "es-MX": [
+            "¿Qué formatos de audio se usan comúnmente en apps de mensajería como WhatsApp o Telegram para notas de voz?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "AMR, M4A, OGG and OPUS.",
+            "TXT, DOCX and XLSX.",
+            "Only uncompressed WAV at 1 GB per second.",
+            "PNG and JPG."
+          ],
+          "es-MX": [
+            "AMR, M4A, OGG y OPUS.",
+            "TXT, DOCX y XLSX.",
+            "Solo WAV sin comprimir a 1 GB por segundo.",
+            "PNG y JPG."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "AMR, M4A, OGG and OPUS.",
+          "es-MX": "AMR, M4A, OGG y OPUS."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Messaging apps use compressed formats such as AMR or OPUS to optimize bandwidth and storage while maintaining acceptable speech quality for conversations."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las apps de mensajería usan formatos comprimidos como AMR u OPUS para optimizar ancho de banda y almacenamiento, manteniendo una calidad de voz aceptable para conversaciones."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Indicadores en registros de llamadas",
+        "Question Text": {
+          "en-US": [
+            "Which of the following may indicate anomalies in call logs during a forensic review?"
+          ],
+          "es-MX": [
+            "¿Cuál de las siguientes situaciones puede indicar anomalías en los registros de llamadas durante una revisión forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Suspicious changes in duration, duplicated records or missing calls that should exist according to chats.",
+            "All calls with exactly the same duration because of a flat-fee plan.",
+            "Only long calls above one hour.",
+            "Calls with a normal duration and consistent timestamps."
+          ],
+          "es-MX": [
+            "Cambios sospechosos en la duración, registros duplicados o ausencia de llamadas que deberían existir según los chats.",
+            "Todas las llamadas con exactamente la misma duración por un plan de tarifa plana.",
+            "Solo las llamadas largas de más de una hora.",
+            "Llamadas con duración normal y marcas de tiempo coherentes."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Suspicious changes in duration, duplicated records or missing calls that should exist according to chats.",
+          "es-MX": "Cambios sospechosos en la duración, registros duplicados o ausencia de llamadas que deberían existir según los chats."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "When call logs do not correspond to the communication pattern observed in messages or when entries are duplicated or truncated, it may suggest manipulation or partial deletion."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Cuando los registros de llamadas no corresponden al patrón de comunicación observado en los mensajes, o hay entradas duplicadas o recortadas, puede sugerir manipulación o eliminación parcial."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Anomalías en audios",
+        "Question Text": {
+          "en-US": [
+            "Which characteristics in an audio file may indicate that it has been edited or manipulated?"
+          ],
+          "es-MX": [
+            "¿Qué características en un archivo de audio pueden indicar que ha sido editado o manipulado?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Abrupt cuts, artificial silences, irregular drops in volume or sudden changes in background noise.",
+            "Constant volume and continuous ambient sound without interruptions.",
+            "Use of a common codec such as AMR.",
+            "The fact that the audio was sent via a messaging app."
+          ],
+          "es-MX": [
+            "Cortes abruptos, silencios artificiales, caídas irregulares de volumen o cambios repentinos en el ruido de fondo.",
+            "Volumen constante y sonido ambiente continuo sin interrupciones.",
+            "Uso de un códec común como AMR.",
+            "El simple hecho de que el audio se haya enviado por mensajería."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Abrupt cuts, artificial silences, irregular drops in volume or sudden changes in background noise.",
+          "es-MX": "Cortes abruptos, silencios artificiales, caídas irregulares de volumen o cambios repentinos en el ruido de fondo."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Editing often leaves traces in the continuity of the sound: unnatural silences, sudden changes in environment or volume and inconsistent noise profiles in the spectrogram."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las ediciones suelen dejar huellas en la continuidad del sonido: silencios poco naturales, cambios bruscos de ambiente o volumen y perfiles de ruido incoherentes en el espectrograma."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Conversión de formatos",
+        "Question Text": {
+          "en-US": [
+            "Why can an unnecessary conversion of audio format be a sign of possible manipulation?"
+          ],
+          "es-MX": [
+            "¿Por qué una conversión innecesaria de formato de audio puede ser señal de posible manipulación?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because converting from one format to another (for example, AMR to M4A) often implies that software was used to process or edit the original file.",
+            "Because conversion always increases the duration of the audio.",
+            "Because conversion automatically deletes all previous edits.",
+            "Because conversion is required by law before presenting audio evidence."
+          ],
+          "es-MX": [
+            "Porque pasar de un formato a otro (por ejemplo, de AMR a M4A) suele implicar que se usó software para procesar o editar el archivo original.",
+            "Porque la conversión siempre aumenta la duración del audio.",
+            "Porque la conversión elimina automáticamente todas las ediciones previas.",
+            "Porque la conversión es obligatoria por ley antes de presentar un audio como evidencia."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because converting from one format to another (for example, AMR to M4A) often implies that software was used to process or edit the original file.",
+          "es-MX": "Porque pasar de un formato a otro (por ejemplo, de AMR a M4A) suele implicar que se usó software para procesar o editar el archivo original."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "A change of codec or container that is not explained by the app’s normal behavior suggests that the audio passed through an external tool, which may have modified its content or structure."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Un cambio de códec o contenedor que no se explica por el comportamiento normal de la app sugiere que el audio pasó por una herramienta externa, que pudo modificar su contenido o estructura."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Herramientas Unidad IV",
+        "Question Text": {
+          "en-US": [
+            "Which tools are highlighted in this unit for analyzing call logs and audio files?"
+          ],
+          "es-MX": [
+            "¿Qué herramientas se destacan en esta unidad para analizar registros de llamadas y archivos de audio?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Magnet AXIOM, Autopsy, VLC Forensics, ExifTool, AudioCleaner, FFmpeg and Forensically.",
+            "Only Excel and PowerPoint.",
+            "Google Translate and social networks.",
+            "Photo editors only."
+          ],
+          "es-MX": [
+            "Magnet AXIOM, Autopsy, VLC Forensics, ExifTool, AudioCleaner, FFmpeg y Forensically.",
+            "Solo Excel y PowerPoint.",
+            "Google Translate y redes sociales.",
+            "Solo editores de fotografía."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Magnet AXIOM, Autopsy, VLC Forensics, ExifTool, AudioCleaner, FFmpeg and Forensically.",
+          "es-MX": "Magnet AXIOM, Autopsy, VLC Forensics, ExifTool, AudioCleaner, FFmpeg y Forensically."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "ul",
+              "items": [
+                "AXIOM and Autopsy: read call databases and associate artifacts.",
+                "VLC Forensics and AudioCleaner: analyze waveform and noise, view spectrograms.",
+                "ExifTool and FFmpeg/ffprobe: extract technical metadata.",
+                "Forensically: visualize simple spectrograms and anomalies."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "ul",
+              "items": [
+                "AXIOM y Autopsy: leen bases de llamadas y asocian artefactos.",
+                "VLC Forensics y AudioCleaner: analizan forma de onda y ruido, muestran espectrogramas.",
+                "ExifTool y FFmpeg/ffprobe: extraen metadatos técnicos.",
+                "Forensically: visualiza espectrogramas simples y anomalías."
+              ]
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Extracción de audios",
+        "Question Text": {
+          "en-US": [
+            "According to this class, where can voice notes from apps like WhatsApp or Telegram usually be found in a forensic extraction?"
+          ],
+          "es-MX": [
+            "Según esta clase, ¿dónde se pueden encontrar normalmente las notas de voz de apps como WhatsApp o Telegram en una extracción forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "In folders such as /WhatsApp/Media/WhatsApp Voice Notes/, /Telegram/Audio/ or /Android/media/com.whatsapp/files/",
+            "Only inside the browser cache.",
+            "Exclusively on the SIM card.",
+            "Hidden in image thumbnails only."
+          ],
+          "es-MX": [
+            "En carpetas como /WhatsApp/Media/WhatsApp Voice Notes/, /Telegram/Audio/ o /Android/media/com.whatsapp/files/",
+            "Solo dentro de la caché del navegador.",
+            "Exclusivamente en la tarjeta SIM.",
+            "Ocultas solo en las miniaturas de imágenes."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "In folders such as /WhatsApp/Media/WhatsApp Voice Notes/, /Telegram/Audio/ or /Android/media/com.whatsapp/files/",
+          "es-MX": "En carpetas como /WhatsApp/Media/WhatsApp Voice Notes/, /Telegram/Audio/ o /Android/media/com.whatsapp/files/"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Messaging apps store audio attachments in specific media directories. Locating these folders is a key step before exporting files with tools like AXIOM or Autopsy."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las apps de mensajería guardan los audios adjuntos en directorios de medios específicos. Localizar estas carpetas es un paso clave antes de exportar los archivos con herramientas como AXIOM o Autopsy."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Uso de ExifTool y ffprobe",
+        "Question Text": {
+          "en-US": [
+            "What information can be obtained by running commands such as \"exiftool audio.amr\" or \"ffprobe audio.m4a\"?"
+          ],
+          "es-MX": [
+            "¿Qué información se puede obtener al ejecutar comandos como \"exiftool audio.amr\" o \"ffprobe audio.m4a\"?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Creation date and time, real duration, sampling frequency, bitrate, codec and encoding software.",
+            "The full transcript of the conversation in the audio.",
+            "The list of contacts stored on the phone.",
+            "Only the file name without any technical details."
+          ],
+          "es-MX": [
+            "Fecha y hora de creación, duración real, frecuencia de muestreo, bitrate, códec y software utilizado para la codificación.",
+            "La transcripción completa de la conversación del audio.",
+            "La lista de contactos guardados en el teléfono.",
+            "Solo el nombre del archivo sin detalles técnicos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Creation date and time, real duration, sampling frequency, bitrate, codec and encoding software.",
+          "es-MX": "Fecha y hora de creación, duración real, frecuencia de muestreo, bitrate, códec y software utilizado para la codificación."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "ExifTool and ffprobe allow the examiner to see how the audio was encoded, when it was created and which tool processed it, which is essential to detect re-encoding or editing."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "ExifTool y ffprobe permiten al perito ver cómo se codificó el audio, cuándo se creó y con qué herramienta se procesó, lo cual es esencial para detectar recodificaciones o ediciones."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Espectrograma y cortes",
+        "Question Text": {
+          "en-US": [
+            "How does spectrogram analysis in VLC Forensics or AudioCleaner help detect possible edits in audio files?"
+          ],
+          "es-MX": [
+            "¿Cómo ayuda el análisis de espectrogramas en VLC Forensics o AudioCleaner a detectar posibles ediciones en archivos de audio?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "By visualizing changes in frequency patterns and energy, making abrupt cuts, artificial noise or inconsistent sections clearly visible.",
+            "By automatically translating the audio into another language.",
+            "By removing all background noise without leaving any trace.",
+            "By encrypting the audio to protect its content."
+          ],
+          "es-MX": [
+            "Visualizando cambios en patrones de frecuencia y energía, haciendo visibles cortes abruptos, ruidos artificiales o secciones inconsistentes.",
+            "Traduciendo automáticamente el audio a otro idioma.",
+            "Eliminando todo el ruido de fondo sin dejar rastros.",
+            "Cifrando el audio para proteger su contenido."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "By visualizing changes in frequency patterns and energy, making abrupt cuts, artificial noise or inconsistent sections clearly visible.",
+          "es-MX": "Visualizando cambios en patrones de frecuencia y energía, haciendo visibles cortes abruptos, ruidos artificiales o secciones inconsistentes."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The spectrogram is a time–frequency map. When editing occurs, the natural continuity of speech and ambient sound is broken, leaving visible gaps or sudden changes in the spectral image."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El espectrograma es un mapa tiempo–frecuencia. Cuando hay ediciones, se rompe la continuidad natural del habla y del ambiente, dejando huecos o cambios bruscos visibles en la imagen espectral."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Validación de integridad",
+        "Question Text": {
+          "en-US": [
+            "Why is calculating a SHA-256 hash of an audio file mandatory in forensic workflows?"
+          ],
+          "es-MX": [
+            "¿Por qué el cálculo de un hash SHA-256 de un archivo de audio es obligatorio en los flujos de trabajo forense?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it provides a unique digital fingerprint that proves the file has not been altered since extraction.",
+            "Because it automatically improves the audio quality.",
+            "Because it removes background noise from the recording.",
+            "Because it hides incriminating segments from the defense."
+          ],
+          "es-MX": [
+            "Porque proporciona una huella digital única que demuestra que el archivo no ha sido alterado desde su extracción.",
+            "Porque mejora automáticamente la calidad del audio.",
+            "Porque elimina el ruido de fondo de la grabación.",
+            "Porque oculta segmentos incriminatorios a la defensa."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it provides a unique digital fingerprint that proves the file has not been altered since extraction.",
+          "es-MX": "Porque proporciona una huella digital única que demuestra que el archivo no ha sido alterado desde su extracción."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Hashing is the basis of integrity. If the SHA-256 of the file at trial matches the hash recorded in the forensic log, the examiner can testify that the evidence is identical to the one originally acquired."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El hash es la base de la integridad. Si el SHA-256 del archivo presentado en juicio coincide con el registrado en la bitácora forense, el perito puede afirmar que la evidencia es idéntica a la que se obtuvo originalmente."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Correlación con chats",
+        "Question Text": {
+          "en-US": [
+            "Why should call logs and audios be compared with chat messages during an investigation?"
+          ],
+          "es-MX": [
+            "¿Por qué se deben comparar los registros de llamadas y audios con los mensajes de chat durante una investigación?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To verify whether the times and durations of calls and audios are consistent with the content and sequence of the conversations.",
+            "To be able to delete all other types of digital evidence.",
+            "To avoid presenting any additional documentation in court.",
+            "To replace the need for expert analysis."
+          ],
+          "es-MX": [
+            "Para verificar si los horarios y duraciones de llamadas y audios son coherentes con el contenido y la secuencia de las conversaciones.",
+            "Para poder eliminar todos los demás tipos de evidencia digital.",
+            "Para evitar presentar documentación adicional en el juicio.",
+            "Para sustituir la necesidad del análisis pericial."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To verify whether the times and durations of calls and audios are consistent with the content and sequence of the conversations.",
+          "es-MX": "Para verificar si los horarios y duraciones de llamadas y audios son coherentes con el contenido y la secuencia de las conversaciones."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Contextual correlation helps detect omissions or inconsistencies, such as a conversation referring to a call that does not appear in the log or an audio whose timestamp does not match the chat timeline."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La correlación contextual ayuda a detectar omisiones o incoherencias, como una conversación que menciona una llamada que no aparece en el registro o un audio cuya marca de tiempo no coincide con la línea de chat."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Caso Lavf / FFmpeg",
+        "Question Text": {
+          "en-US": [
+            "In the example from this class, ExifTool shows an audio with Software: Lavf58.45.100 (FFmpeg). What is the most reasonable interpretation?"
+          ],
+          "es-MX": [
+            "En el ejemplo de esta clase, ExifTool muestra un audio con Software: Lavf58.45.100 (FFmpeg). ¿Cuál es la interpretación más razonable?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The audio was re-encoded using FFmpeg or a related tool, so it is likely not a raw file directly created by the messaging app.",
+            "The audio is necessarily original from the phone with no edits.",
+            "The audio has become legally invalid and must be discarded.",
+            "The software field is irrelevant in audio forensics."
+          ],
+          "es-MX": [
+            "El audio fue recodificado usando FFmpeg o una herramienta relacionada, por lo que probablemente no es un archivo crudo creado directamente por la app de mensajería.",
+            "El audio es necesariamente original del teléfono sin ediciones.",
+            "El audio se vuelve legalmente inválido y debe descartarse.",
+            "El campo de software es irrelevante en el análisis forense de audio."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The audio was re-encoded using FFmpeg or a related tool, so it is likely not a raw file directly created by the messaging app.",
+          "es-MX": "El audio fue recodificado usando FFmpeg o una herramienta relacionada, por lo que probablemente no es un archivo crudo creado directamente por la app de mensajería."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "When the encoding software is FFmpeg/Lavf instead of the native application, this indicates that the file passed through an external process, which may have cut, converted or otherwise modified the original recording."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Cuando el software de codificación es FFmpeg/Lavf en lugar de la aplicación nativa, indica que el archivo pasó por un proceso externo, que pudo recortar, convertir o modificar la grabación original."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Patrones de comportamiento",
+        "Question Text": {
+          "en-US": [
+            "How can repeated call patterns between two contacts support an investigation?"
+          ],
+          "es-MX": [
+            "¿Cómo pueden apoyar una investigación los patrones repetidos de llamadas entre dos contactos?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They can show frequency, time of day and sequence of communications, reinforcing the existence and intensity of the relationship between the users.",
+            "They automatically reveal the exact content of each call.",
+            "They eliminate the need to analyze any other devices.",
+            "They always indicate a criminal agreement."
+          ],
+          "es-MX": [
+            "Pueden mostrar frecuencia, horario y secuencia de las comunicaciones, reforzando la existencia e intensidad de la relación entre los usuarios.",
+            "Revelan automáticamente el contenido exacto de cada llamada.",
+            "Eliminan la necesidad de analizar otros dispositivos.",
+            "Siempre indican un acuerdo delictivo."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They can show frequency, time of day and sequence of communications, reinforcing the existence and intensity of the relationship between the users.",
+          "es-MX": "Pueden mostrar frecuencia, horario y secuencia de las comunicaciones, reforzando la existencia e intensidad de la relación entre los usuarios."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Even without audio content, call patterns demonstrate how often and when people communicate. This helps corroborate testimonies about coordination, threats, or support among participants."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Aunque no se tenga el contenido del audio, los patrones de llamadas demuestran cada cuándo y en qué momentos se comunican las personas. Esto ayuda a corroborar testimonios sobre coordinación, amenazas o apoyo entre participantes."
+            }
+          ]
+        }
+      },
+  
+      {
+        "Category": "Procedimiento general",
+        "Question Text": {
+          "en-US": [
+            "Which sequence best represents the general procedure for analyzing call logs and audio files described in this class?"
+          ],
+          "es-MX": [
+            "¿Qué secuencia representa mejor el procedimiento general para analizar registros de llamadas y archivos de audio descrito en esta clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Review call log → extract audio files → analyze technical metadata → analyze audio spectrum → calculate hash and document.",
+            "Delete call logs → convert all audios to MP3 → upload to the cloud → calculate hash.",
+            "Only review one random audio → assume the rest are identical.",
+            "Start by editing the audio to improve its quality before hashing."
+          ],
+          "es-MX": [
+            "Revisar registro de llamadas → extraer archivos de audio → analizar metadatos técnicos → analizar espectro de audio → calcular hash y documentar.",
+            "Borrar los registros de llamadas → convertir todos los audios a MP3 → subirlos a la nube → calcular hash.",
+            "Revisar solo un audio al azar → asumir que el resto es igual.",
+            "Empezar editando el audio para mejorar su calidad antes de hacer el hash."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Review call log → extract audio files → analyze technical metadata → analyze audio spectrum → calculate hash and document.",
+          "es-MX": "Revisar registro de llamadas → extraer archivos de audio → analizar metadatos técnicos → analizar espectro de audio → calcular hash y documentar."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The process moves from logical reconstruction of communication (call log) to analysis of the physical files (metadata and spectrum), ending with integrity verification and proper documentation in the forensic log."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El proceso va desde la reconstrucción lógica de la comunicación (registro de llamadas) hasta el análisis de los archivos físicos (metadatos y espectro), finalizando con la verificación de integridad y la documentación en la bitácora forense."
+            }
+          ]
+        }
+      }
+  
+    ]
+  }
+  
