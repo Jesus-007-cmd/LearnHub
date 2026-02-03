@@ -19,10 +19,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 
-import {
-  getAllQuizMeta,
-  loadQuizJsonBySlug,
-} from "@/data/quizzes/registry";
+import { getAllQuizMeta, loadQuizJsonBySlug } from "@/data/quizzes/registry";
 
 const QUIZ_META = getAllQuizMeta();
 
@@ -78,7 +75,9 @@ export default function InterviewQuiz({
   hideQuizSelector,
 }: InterviewQuizProps = {}) {
   const [questions, setQuestions] = useState<AdaptedQ[]>([]);
-  const [currentSlug, setCurrentSlug] = useState<string | null>(initialQuizSlug ?? null);
+  const [currentSlug, setCurrentSlug] = useState<string | null>(
+    initialQuizSlug ?? null
+  );
   const [loadingQuiz, setLoadingQuiz] = useState(false);
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -95,7 +94,9 @@ export default function InterviewQuiz({
 
   // Lenguaje activo de las preguntas
   const [questionLanguage, setQuestionLanguage] = useState<ForceLang | "">("");
-  const [selectedLanguage, setSelectedLanguage] = useState<ForceLang | null>(null);
+  const [selectedLanguage, setSelectedLanguage] = useState<ForceLang | null>(
+    null
+  );
 
   // Voces
   const [selectedQuestionVoice, setSelectedQuestionVoice] =
@@ -107,7 +108,7 @@ export default function InterviewQuiz({
   const [showAnswer, setShowAnswer] = useState(false);
   const [showExplanation, setShowExplanation] = useState(false);
   const [showTranslation, setShowTranslation] = useState(false);
-  const [readQuestionsAloud, setReadQuestionsAloud] = useState(true);
+  const [readQuestionsAloud, setReadQuestionsAloud] = useState(false);
   const [showLogo, setShowLogo] = useState(true);
 
   // Calificación
@@ -135,7 +136,12 @@ export default function InterviewQuiz({
   }, []);
 
   const speakNow = useCallback(
-    (text?: string, voice?: SpeechSynthesisVoice | null, lang?: string, rate = 1) => {
+    (
+      text?: string,
+      voice?: SpeechSynthesisVoice | null,
+      lang?: string,
+      rate = 1
+    ) => {
       if (!text || !voice) return;
       stopSpeaking();
       const u = new SpeechSynthesisUtterance(text);
@@ -186,7 +192,8 @@ export default function InterviewQuiz({
   }, [questionLanguage]);
 
   // ===================== Helpers =====================
-  const shuffleArray = <T,>(array: T[]) => array.slice().sort(() => Math.random() - 0.5);
+  const shuffleArray = <T,>(array: T[]) =>
+    array.slice().sort(() => Math.random() - 0.5);
 
   const handleJsonSelection = (jsonFile: any, language: ForceLang) => {
     const adapted: AdaptedQ[] = jsonFile.Questions.map((q: any) => {
@@ -244,7 +251,99 @@ export default function InterviewQuiz({
       setLoadingQuiz(false);
     }
   };
-  
+
+  // ✅ Helper global: convierte "\n" a saltos de línea SIN romper JSON viejos
+  //    (Si no hay "\n", se ve normal)
+  const renderWithBreaks = useCallback((text: string) => {
+    const parts = text.split("\n");
+    return parts.map((line, i) => (
+      <React.Fragment key={i}>
+        {line}
+        {i < parts.length - 1 && <br />}
+      </React.Fragment>
+    ));
+  }, []);
+
+  // ✅ Render centralizado para Explanation items (lo usamos en Panel 2 y Panel 3)
+  const renderExplItem = useCallback(
+    (item: ExplItem, index: number) => {
+      if (item.type === "text")
+        return (
+          <p key={index} className="whitespace-pre-line">
+            {renderWithBreaks(item.content)}
+          </p>
+        );
+
+      if (item.type === "title-h2")
+        return (
+          <h2 key={index} className="text-xl font-bold text-white whitespace-pre-line">
+            {renderWithBreaks(item.content)}
+          </h2>
+        );
+
+      if (item.type === "link")
+        return (
+          <a
+            key={index}
+            href={item.content}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-cyan-300 underline"
+          >
+            {item.content}
+          </a>
+        );
+
+      if (item.type === "code")
+        return (
+          <pre
+            key={index}
+            className="bg-black/60 text-emerald-300 p-3 rounded-lg overflow-x-auto text-sm"
+          >
+            <code>{item.content}</code>
+          </pre>
+        );
+
+      if (item.type === "ul")
+        return (
+          <ul key={index} className="list-disc list-inside space-y-1">
+            {item.items.map((li, i) => (
+              <li key={i} className="whitespace-pre-line">
+                {renderWithBreaks(li)}
+              </li>
+            ))}
+          </ul>
+        );
+
+      if (item.type === "ol")
+        return (
+          <ol key={index} className="list-decimal list-inside space-y-1">
+            {item.items.map((li, i) => (
+              <li key={i} className="whitespace-pre-line">
+                {renderWithBreaks(li)}
+              </li>
+            ))}
+          </ol>
+        );
+
+      if (item.type === "image")
+        return (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            key={index}
+            src={item.src}
+            alt={item.alt || "image"}
+            className="rounded-xl border border-white/10 shadow-md max-w-full"
+          />
+        );
+
+      if (item.type === "divider")
+        return <hr key={index} className="border-white/10 my-4" />;
+
+      return null;
+    },
+    [renderWithBreaks]
+  );
 
   const speakExplanation = (arr?: ExplItem[], lang?: ForceLang) => {
     if (!arr || !selectedAnswerVoice) return;
@@ -258,7 +357,8 @@ export default function InterviewQuiz({
   // ===================== Carga inicial =====================
   useEffect(() => {
     // Si ya cargamos un JSON, o todavía no hay idioma ni slug, salimos
-    if (isJsonSelected || (!initialJson && !initialQuizSlug && !selectedLanguage)) return;
+    if (isJsonSelected || (!initialJson && !initialQuizSlug && !selectedLanguage))
+      return;
 
     const langToUse = (forceLanguage ?? selectedLanguage ?? "es-MX") as ForceLang;
 
@@ -443,7 +543,11 @@ export default function InterviewQuiz({
   // ===== Layout =====
   const activePanels = 1 + (showExplanation ? 1 : 0) + (showTranslation ? 1 : 0);
   const gridColsClass =
-    activePanels === 1 ? "md:grid-cols-1" : activePanels === 2 ? "md:grid-cols-2" : "md:grid-cols-3";
+    activePanels === 1
+      ? "md:grid-cols-1"
+      : activePanels === 2
+      ? "md:grid-cols-2"
+      : "md:grid-cols-3";
 
   const totalQuestions = questions.length || 1;
   const progressPct = Math.round(((currentQuestionIndex + 1) / totalQuestions) * 100);
@@ -521,7 +625,8 @@ export default function InterviewQuiz({
         </div>
         <div className="mt-2 text-[11px] md:text-xs text-white/70 flex items-center justify-between">
           <span>
-            Pregunta {Math.min(currentQuestionIndex + 1, totalQuestions)} / {totalQuestions}
+            Pregunta {Math.min(currentQuestionIndex + 1, totalQuestions)} /{" "}
+            {totalQuestions}
           </span>
           <span>
             ✔ {correctCount} · ✖ {incorrectCount} · Calificación: {grade}%
@@ -529,8 +634,8 @@ export default function InterviewQuiz({
         </div>
       </div>
 
-         {/* Selección de idioma inicial */}
-         {!selectedLanguage && !initialQuizSlug ? (
+      {/* Selección de idioma inicial */}
+      {!selectedLanguage && !initialQuizSlug ? (
         <section className="mx-auto max-w-3xl mt-6 md:mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4">
           {(["en-US", "es-MX"] as const).map((lng) => (
             <button
@@ -540,7 +645,8 @@ export default function InterviewQuiz({
             >
               <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition" />
               <h3 className="text-xl font-semibold flex items-center gap-2">
-                <Languages className="h-5 w-5" /> {lng === "en-US" ? "Inglés" : "Español"}
+                <Languages className="h-5 w-5" />{" "}
+                {lng === "en-US" ? "Inglés" : "Español"}
               </h3>
               <p className="mt-2 text-white/70 text-sm">Elegir idioma del quiz</p>
             </button>
@@ -574,7 +680,8 @@ export default function InterviewQuiz({
 
               {showCorrect && (
                 <div className="mt-4 inline-flex items-center gap-2 text-emerald-300 text-sm font-semibold">
-                  <CheckCircle2 className="h-5 w-5" /> {isES ? "¡Correcto!" : "Correct!"}
+                  <CheckCircle2 className="h-5 w-5" />{" "}
+                  {isES ? "¡Correcto!" : "Correct!"}
                 </div>
               )}
 
@@ -609,7 +716,8 @@ export default function InterviewQuiz({
               <section className="rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-5 md:p-6 shadow-xl shadow-black/20">
                 <div className="flex items-center justify-between">
                   <h3 className="font-semibold text-lg flex items-center gap-2">
-                    <Info className="h-5 w-5" /> {isES ? "Explicación" : "Explanation"}
+                    <Info className="h-5 w-5" />{" "}
+                    {isES ? "Explicación" : "Explanation"}
                   </h3>
                   <button
                     onClick={() =>
@@ -625,69 +733,12 @@ export default function InterviewQuiz({
                     <Volume2 className="h-4 w-4" /> {isES ? "Leer" : "Read"}
                   </button>
                 </div>
+
                 <div className="mt-3 space-y-3 text-left text-white/90">
                   {(isES
                     ? questions[currentQuestionIndex].explanation_es
                     : questions[currentQuestionIndex].explanation_en
-                  )?.map((item, index) => {
-                    if (item.type === "text") return <p key={index}>{item.content}</p>;
-                    if (item.type === "title-h2")
-                      return (
-                        <h2 key={index} className="text-xl font-bold text-white">
-                          {item.content}
-                        </h2>
-                      );
-                    if (item.type === "link")
-                      return (
-                        <a
-                          key={index}
-                          href={item.content}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-cyan-300 underline"
-                        >
-                          {item.content}
-                        </a>
-                      );
-                    if (item.type === "code")
-                      return (
-                        <pre
-                          key={index}
-                          className="bg-black/60 text-emerald-300 p-3 rounded-lg overflow-x-auto text-sm"
-                        >
-                          <code>{item.content}</code>
-                        </pre>
-                      );
-                    if (item.type === "ul")
-                      return (
-                        <ul key={index} className="list-disc list-inside space-y-1">
-                          {item.items.map((li, i) => (
-                            <li key={i}>{li}</li>
-                          ))}
-                        </ul>
-                      );
-                    if (item.type === "ol")
-                      return (
-                        <ol key={index} className="list-decimal list-inside space-y-1">
-                          {item.items.map((li, i) => (
-                            <li key={i}>{li}</li>
-                          ))}
-                        </ol>
-                      );
-                    if (item.type === "image")
-                      return (
-                        // eslint-disable-next-line @next/next/no-img-element
-                        <img
-                          key={index}
-                          src={item.src}
-                          alt={item.alt || "image"}
-                          className="rounded-xl border border-white/10 shadow-md max-w-full"
-                        />
-                      );
-                    if (item.type === "divider")
-                      return <hr key={index} className="border-white/10 my-4" />;
-                    return null;
-                  })}
+                  )?.map((item, index) => renderExplItem(item, index))}
                 </div>
               </section>
             )}
@@ -700,7 +751,7 @@ export default function InterviewQuiz({
                   {isES ? "Pregunta en Inglés" : "Question in Spanish"}
                 </h3>
 
-                <p className="mt-2 text-white/90">
+                <p className="mt-2 text-white/90 whitespace-pre-line">
                   {isES
                     ? questions[currentQuestionIndex].word_en
                     : questions[currentQuestionIndex].word_es}
@@ -712,76 +763,21 @@ export default function InterviewQuiz({
                     ? questions[currentQuestionIndex].options_en
                     : questions[currentQuestionIndex].options_es
                   ).map((opt, idx) => (
-                    <li key={idx}>{opt}</li>
+                    <li key={idx} className="whitespace-pre-line">
+                      {renderWithBreaks(opt)}
+                    </li>
                   ))}
                 </ul>
 
                 <h4 className="mt-4 font-semibold">
                   {isES ? "Explanation" : "Explicación"}
                 </h4>
+
                 <div className="mt-1 space-y-3 text-white/90">
                   {(isES
                     ? questions[currentQuestionIndex].explanation_en
                     : questions[currentQuestionIndex].explanation_es
-                  )?.map((item, index) => {
-                    if (item.type === "text") return <p key={index}>{item.content}</p>;
-                    if (item.type === "title-h2")
-                      return (
-                        <h2 key={index} className="text-xl font-bold text-white">
-                          {item.content}
-                        </h2>
-                      );
-                    if (item.type === "link")
-                      return (
-                        <a
-                          key={index}
-                          href={item.content}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-cyan-300 underline"
-                        >
-                          {item.content}
-                        </a>
-                      );
-                    if (item.type === "code")
-                      return (
-                        <pre
-                          key={index}
-                          className="bg-black/60 text-emerald-300 p-3 rounded-lg overflow-x-auto text-sm"
-                        >
-                          <code>{item.content}</code>
-                        </pre>
-                      );
-                    if (item.type === "ul")
-                      return (
-                        <ul key={index} className="list-disc list-inside space-y-1">
-                          {item.items.map((li, i) => (
-                            <li key={i}>{li}</li>
-                          ))}
-                        </ul>
-                      );
-                    if (item.type === "ol")
-                      return (
-                        <ol key={index} className="list-decimal list-inside space-y-1">
-                          {item.items.map((li, i) => (
-                            <li key={i}>{li}</li>
-                          ))}
-                        </ol>
-                      );
-                    if (item.type === "image")
-                      return (
-                        // eslint-disable-next-line @next/next/no-img-element
-                        <img
-                          key={index}
-                          src={item.src}
-                          alt={item.alt || "image"}
-                          className="rounded-xl border border-white/10 shadow-md max-w-full"
-                        />
-                      );
-                    if (item.type === "divider")
-                      return <hr key={index} className="border-white/10 my-4" />;
-                    return null;
-                  })}
+                  )?.map((item, index) => renderExplItem(item, index))}
                 </div>
 
                 <button
@@ -837,7 +833,11 @@ export default function InterviewQuiz({
             </ActionButton>
 
             <ActionButton onClick={() => setShowAnswer((v) => !v)}>
-              {showAnswer ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}{" "}
+              {showAnswer ? (
+                <EyeOff className="h-4 w-4" />
+              ) : (
+                <Eye className="h-4 w-4" />
+              )}{" "}
               {showAnswer
                 ? isES
                   ? "Ocultar respuesta"
@@ -975,7 +975,9 @@ export default function InterviewQuiz({
 
           <ul className="grid gap-1.5 md:gap-2 text-white/80 text-xs md:text-sm md:grid-cols-2">
             <li className="inline-flex items-center gap-2">
-              <kbd className="px-1.5 py-0.5 rounded bg-white/10 text-[11px]">Enter</kbd>
+              <kbd className="px-1.5 py-0.5 rounded bg-white/10 text-[11px]">
+                Enter
+              </kbd>
               {isES ? "Repetir pregunta" : "Repeat question"}
             </li>
             <li className="inline-flex items-center gap-2">
@@ -1002,7 +1004,9 @@ export default function InterviewQuiz({
         <form
           onSubmit={(e) => {
             e.preventDefault();
-            const form = e.currentTarget as HTMLFormElement & { pregunta: { value: string } };
+            const form = e.currentTarget as HTMLFormElement & {
+              pregunta: { value: string };
+            };
             const value = form.pregunta.value;
             const index = parseInt(value);
             if (!isNaN(index) && index >= 1 && index <= questions.length) {
@@ -1055,7 +1059,11 @@ function QuizSelectCard({
       onClick={onClick}
       disabled={disabled}
       className={`group relative overflow-hidden rounded-2xl p-6 text-left shadow-xl shadow-black/20 ring-1 transition
-      ${disabled ? "bg-white/5 ring-white/5 opacity-60 cursor-not-allowed" : "bg-white/5 ring-white/10 hover:ring-white/20"}`}
+      ${
+        disabled
+          ? "bg-white/5 ring-white/5 opacity-60 cursor-not-allowed"
+          : "bg-white/5 ring-white/10 hover:ring-white/20"
+      }`}
     >
       <div className="absolute -top-16 -right-16 h-40 w-40 rounded-full bg-cyan-500/10 blur-2xl group-hover:bg-indigo-500/10 transition" />
       <h3 className="text-xl font-semibold">{title}</h3>

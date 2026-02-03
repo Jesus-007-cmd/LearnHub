@@ -1,0 +1,243 @@
+{
+    "meta": {
+      "slug": "modam-investigacion-ui",
+      "title": "MODAM · Investigación Centrada en la Interfaz de Usuario (Cuestionario general)",
+      "subject": "Investigación Centrada en la Interfaz de Usuario",
+      "unit": 1,
+      "classNo": 1,
+      "description": "Cuestionario general de la materia MODAM: investigación centrada en la interfaz de usuario.",
+      "tags": ["MODAM", "UX", "UI", "investigación", "HCI"]
+    },
+    "Questions": [
+      {
+        "Category": "Investigación (Fundamentos)",
+        "Question Text": {
+          "en-US": [
+            "In design research, what does quantitative research mainly focus on?",
+            "Quantitative research is primarily about..."
+          ],
+          "es-MX": [
+            "En investigación de diseño, ¿en qué se enfoca principalmente la investigación cuantitativa?",
+            "La investigación cuantitativa se centra principalmente en..."
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "How much and when (measurable data and timing)",
+            "How and why (motivations and context)",
+            "Only interviews and observations",
+            "Only visual design preferences"
+          ],
+          "es-MX": [
+            "Cuánto y cuándo (datos medibles y tiempos)",
+            "Cómo y por qué (motivaciones y contexto)",
+            "Solo entrevistas y observaciones",
+            "Solo preferencias de diseño visual"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "How much and when (measurable data and timing)",
+          "es-MX": "Cuánto y cuándo (datos medibles y tiempos)"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Quantitative research focuses on measuring phenomena through numerical and measurable data. Its main goal is to answer questions such as how much, how many, how often, and when something happens. This type of research relies on statistics like counts, percentages, averages, time measurements, and performance metrics. In UX and UI research, quantitative methods are commonly used to compare different design versions, evaluate efficiency, measure conversion or completion rates, and detect patterns across large groups of users. Quantitative research is especially useful for validating changes and measuring impact after a design decision, but it does not explain the underlying reasons or motivations behind user behavior."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La investigación cuantitativa se centra en medir fenómenos mediante datos numéricos y variables medibles. Su objetivo principal es responder preguntas como cuánto, cuántos, con qué frecuencia y en qué momento ocurre algo. Este tipo de investigación se apoya en estadísticas como conteos, porcentajes, promedios, mediciones de tiempo y métricas de desempeño. En la investigación UX y UI, los métodos cuantitativos se utilizan para comparar distintas versiones de un diseño, evaluar su eficiencia, medir tasas de conversión o finalización y detectar patrones en grandes grupos de usuarios. La investigación cuantitativa es especialmente útil para validar cambios y medir el impacto de decisiones de diseño, pero no explica las razones o motivaciones detrás del comportamiento del usuario."
+            }
+          ]
+        }
+        
+      },
+      {
+        "Category": "Investigación (Fundamentos)",
+        "Question Text": {
+          "en-US": [
+            "What is the main goal of qualitative research in design?",
+            "Qualitative research aims to understand..."
+          ],
+          "es-MX": [
+            "¿Cuál es el objetivo principal de la investigación cualitativa en diseño?",
+            "La investigación cualitativa busca entender..."
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "How and why users behave the way they do",
+            "Only how many users clicked a button",
+            "Only the release date of a product",
+            "Only the size of a dataset"
+          ],
+          "es-MX": [
+            "Cómo y por qué los usuarios se comportan como lo hacen",
+            "Solo cuántos usuarios dieron clic a un botón",
+            "Solo la fecha de lanzamiento de un producto",
+            "Solo el tamaño de un dataset"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "How and why users behave the way they do",
+          "es-MX": "Cómo y por qué los usuarios se comportan como lo hacen"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Qualitative research aims to understand how and why users behave in certain ways. Instead of focusing on numerical data, it explores motivations, thoughts, emotions, expectations, and the context in which interactions occur. Qualitative research seeks deep understanding rather than statistical measurement. Common methods include interviews, usability testing, direct observation, field studies, and contextual inquiry. In UX and UI design, qualitative research is particularly valuable for identifying usability problems, understanding user needs, discovering pain points, and improving user experience, especially during early design stages or when unexpected issues arise."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La investigación cualitativa tiene como objetivo comprender cómo y por qué los usuarios se comportan de determinada manera. En lugar de enfocarse en datos numéricos, explora motivaciones, pensamientos, emociones, expectativas y el contexto en el que ocurren las interacciones. La investigación cualitativa busca una comprensión profunda más que una medición estadística. Entre sus métodos más comunes se encuentran las entrevistas, las pruebas de usabilidad, la observación directa, los estudios de campo y la investigación contextual. En el diseño UX y UI, la investigación cualitativa es especialmente valiosa para identificar problemas de usabilidad, entender las necesidades del usuario, descubrir puntos de dolor y mejorar la experiencia, sobre todo en etapas tempranas del diseño o cuando surgen problemas inesperados."
+            }
+          ]
+        }
+        
+      }
+      ,
+      {
+        "Category": "Evolución histórica del diseño",
+        "Question Text": {
+          "en-US": [
+            "Which stage was part of the historical process toward a user-centered perspective?",
+            "In the evolution toward user-centered design, which stage played a role?"
+          ],
+          "es-MX": [
+            "¿Cuál fue una de las etapas del proceso histórico hacia una perspectiva centrada en el usuario?",
+            "Dentro del proceso histórico del diseño, ¿qué etapa contribuyó al enfoque centrado en el usuario?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Stage 4: production-centered focus",
+            "Stage 2: product-centered focus",
+            "Stage 5: advertising-centered focus",
+            "Stage 3: competition-centered focus"
+          ],
+          "es-MX": [
+            "Etapa 4: enfoque centrado en la producción",
+            "Etapa 2: enfoque centrado en el producto",
+            "Etapa 5: enfoque centrado en la publicidad",
+            "Etapa 3: enfoque centrado en la competencia"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Stage 2: product-centered focus",
+          "es-MX": "Etapa 2: enfoque centrado en el producto"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The product-centered stage represents a transition point before design evolved toward understanding user needs and experiences."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La etapa centrada en el producto representa un punto de transición antes de evolucionar hacia la comprensión del usuario."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Enfoque centrado en el usuario",
+        "Question Text": {
+          "en-US": [
+            "What does a user-centered approach imply in the digital era?",
+            "In the digital age, user-centered design means..."
+          ],
+          "es-MX": [
+            "¿Qué implica el enfoque centrado en el usuario en la era digital?",
+            "En la era digital, el enfoque centrado en el usuario significa..."
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Shifting focus from the user to the product",
+            "Increasing mass production of goods",
+            "Expanding production offshoring",
+            "Shifting focus from the product to the user"
+          ],
+          "es-MX": [
+            "Desplazar el foco del usuario hacia el producto",
+            "Incrementar la producción masiva de bienes",
+            "Aumentar la deslocalización de la producción",
+            "Desplazar el foco del producto hacia el usuario"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Shifting focus from the product to the user",
+          "es-MX": "Desplazar el foco del producto hacia el usuario"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "User-centered design prioritizes user needs, behaviors, and experiences over purely product-driven decisions."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El diseño centrado en el usuario prioriza necesidades, comportamientos y experiencias del usuario."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Investigación centrada en el usuario",
+        "Question Text": {
+          "en-US": [
+            "Which is a key characteristic of user-centered research in modern society?",
+            "User-centered research today is mainly characterized by..."
+          ],
+          "es-MX": [
+            "¿Cuál es una característica principal de la investigación centrada en el usuario en la sociedad actual?",
+            "La investigación centrada en el usuario se caracteriza principalmente por..."
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Satisfying users only through demanded products and services",
+            "Controlling user experience only through physical products",
+            "Inability to establish direct dialogue with producers",
+            "Understanding and managing the user experience across multiple dimensions"
+          ],
+          "es-MX": [
+            "Satisfacer al usuario solo mediante productos y servicios demandados",
+            "Controlar la experiencia solo a través de productos físicos",
+            "Imposibilidad de establecer diálogo directo con los productores",
+            "Conocer y controlar la experiencia de uso en sus múltiples dimensiones"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Understanding and managing the user experience across multiple dimensions",
+          "es-MX": "Conocer y controlar la experiencia de uso en sus múltiples dimensiones"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Modern user research considers emotional, cognitive, contextual, and digital dimensions of the experience."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La investigación actual analiza dimensiones emocionales, cognitivas, contextuales y digitales de la experiencia."
+            }
+          ]
+        }
+      }
+      
+    ]
+  }
+  
