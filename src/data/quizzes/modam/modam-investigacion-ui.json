@@ -236,7 +236,329 @@
             }
           ]
         }
+      },
+      {
+  "Category": "Investigación centrada en el usuario",
+  "Question Text": {
+    "en-US": [
+      "What is a key characteristic of orientation in user-centered research?",
+      "A key feature of user-centered research orientation is..."
+    ],
+    "es-MX": [
+      "¿Cuál es una característica clave de la orientación en la investigación centrada en el usuario?",
+      "Una característica clave de la orientación en la investigación centrada en el usuario es..."
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Exclusive focus on production",
+      "Multidisciplinarity and response to diverse professional needs",
+      "Limitation to traditional academic domains",
+      "A single focus on marketing"
+    ],
+    "es-MX": [
+      "Enfoque exclusivo en la producción.",
+      "Multidisciplinariedad y respuesta a diversas necesidades profesionales.",
+      "Limitación a ámbitos académicos tradicionales.",
+      "Enfoque único en el marketing."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Multidisciplinarity and response to diverse professional needs",
+    "es-MX": "Multidisciplinariedad y respuesta a diversas necesidades profesionales."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "User-centered research (UCD/UX Research) is oriented toward solving real human problems in real contexts of use. Because human experience is complex, this research cannot belong to a single discipline. Its defining characteristic is multidisciplinarity: it integrates methods and knowledge from multiple fields to understand people and guide design decisions."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Psychology: explains perception, attention, memory, learning, motivation, and decision-making during interaction.",
+          "Design (UI/UX): translates findings into information architecture, interaction flows, visual hierarchy, and accessible interfaces.",
+          "Engineering: ensures feasibility, constraints, performance, and technical implementation.",
+          "Sociology/anthropology: analyzes context, culture, social practices, and environmental factors that shape usage.",
+          "Ergonomics/HCI: evaluates physical and cognitive fit, effort, errors, fatigue, and accessibility.",
+          "Business: aligns solutions with value, risk, adoption, and sustainable implementation."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "This is why user-centered research responds to diverse professional needs: it produces evidence that supports design, development, product decisions, service processes, training, and even organizational change. It is not 'only production', not 'only marketing', and not confined to academia—its purpose is to improve usability, usefulness, and experience."
       }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "La investigación centrada en el usuario (UCD/UX Research) se orienta a resolver problemas humanos reales en contextos reales de uso. Como la experiencia humana es compleja, esta investigación no puede pertenecer a una sola disciplina. Su rasgo definitorio es la multidisciplinariedad: integra métodos y conocimiento de varias áreas para comprender a las personas y fundamentar decisiones de diseño."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Psicología: explica percepción, atención, memoria, aprendizaje, motivación y toma de decisiones durante la interacción.",
+          "Diseño (UI/UX): convierte hallazgos en arquitectura de información, flujos, jerarquía visual y accesibilidad.",
+          "Ingeniería: valida factibilidad, restricciones, rendimiento y ejecución técnica.",
+          "Sociología/antropología: analiza contexto, cultura, prácticas sociales y condiciones que influyen el uso.",
+          "Ergonomía/HCI: evalúa ajuste físico y cognitivo, esfuerzo, errores, fatiga y accesibilidad.",
+          "Negocio: conecta la solución con valor, adopción, riesgos, costos y sostenibilidad."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Por eso se dice que responde a diversas necesidades profesionales: genera evidencia útil para diseño, desarrollo, producto, servicio, capacitación y toma de decisiones organizacionales. No es 'solo producción', no es 'solo marketing' y no se limita al ámbito académico: su fin es mejorar usabilidad, utilidad y experiencia."
+      }
+    ]
+  }
+},
+{
+  "Category": "Investigación centrada en el usuario",
+  "Question Text": {
+    "en-US": [
+      "How does a user-centered researcher differ from a market researcher according to the roles of the people studied?"
+    ],
+    "es-MX": [
+      "¿Cómo se diferencia el investigador centrado en el usuario del investigador de mercados según los roles de las personas sujetas a estudio?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "The market researcher considers people as user-prosumers.",
+      "The user-centered researcher considers them as stakeholders.",
+      "The market researcher observes them from their dimension as a user.",
+      "The user-centered researcher sees them as mere consumers."
+    ],
+    "es-MX": [
+      "El investigador de mercados considera a las personas como usuarios-prosumidores.",
+      "El investigador centrado en el usuario los contempla como stakeholders.",
+      "El investigador de mercados los observa desde su dimensión como usuario.",
+      "El investigador centrado en el usuario los ve como meros consumidores."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "The market researcher observes them from their dimension as a user.",
+    "es-MX": "El investigador de mercados los observa desde su dimensión como usuario."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "According to the exam’s phrasing, the distinction is expressed in terms of perspective: market research approaches the studied people primarily through the lens of the user role (how they behave as users in relation to consumption, preference, and decision patterns). In other words, it frames the participant mainly in a single dominant role used for measurement and comparison (often linked to market behavior). The alternative UCD/UX framing in the options is broader (e.g., stakeholders), but for this item the expected correct choice is the statement that explicitly assigns that 'user-dimension' viewpoint to market research. The key is to answer exactly as the test defines the difference, not as a broader theoretical discussion."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "De acuerdo con la redacción del examen, la diferencia se expresa como una cuestión de enfoque o perspectiva: la investigación de mercados observa a las personas principalmente desde su dimensión como usuario (es decir, cómo actúan como usuarios en relación con preferencias, uso ligado al consumo y patrones de decisión que pueden medirse y compararse). En otras palabras, tiende a encuadrar al participante en un rol dominante (el de usuario) para poder analizarlo con instrumentos típicos de mercado. Aunque otras opciones (como stakeholders) pueden sonar más amplias en teoría, en este reactivo el sistema espera exactamente la opción que asigna explícitamente a 'mercados' esa mirada desde el rol de usuario. La clave aquí es contestar conforme a cómo el examen define la diferencia, no conforme a interpretaciones más generales."
+      }
+    ]
+  }
+}
+
+,
+{
+  "Category": "Investigación (UX vs Mercados)",
+  "Question Text": {
+    "en-US": [
+      "What is one highlighted difference in the predominant techniques between user-centered research and market research?",
+      "A key difference is that market research mainly uses..."
+    ],
+    "es-MX": [
+      "¿Cuál es una de las diferencias destacadas de las técnicas predominantes entre la investigación centrada en el usuario y la investigación de mercados?",
+      "Una diferencia clave es que la investigación de mercados utiliza principalmente..."
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "In market research, quantitative techniques predominate",
+      "Both exclusively use qualitative techniques",
+      "User-centered research uses traditional market techniques",
+      "Market research mainly uses qualitative techniques"
+    ],
+    "es-MX": [
+      "En la investigación de mercados predominan las técnicas cuantitativas.",
+      "Ambas utilizan exclusivamente técnicas cualitativas.",
+      "La investigación centrada en el usuario utiliza técnicas tradicionales de mercados.",
+      "La investigación de mercados utiliza principalmente técnicas cualitativas."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "In market research, quantitative techniques predominate",
+    "es-MX": "En la investigación de mercados predominan las técnicas cuantitativas."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "Market research predominantly relies on quantitative methods because its goals often require measurement, comparison across large groups, and statistical generalization. Typical outputs are percentages, segment profiles, correlations, and demand estimates. This fits questions such as 'how many', 'how often', 'which segment', or 'what is the purchase intent'."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Examples in market research: mass surveys, large samples, rating scales, brand preference metrics, market segmentation, statistical dashboards.",
+          "Typical quantitative outcomes: frequency, conversion, awareness, intention-to-buy, share-of-preference, and measurable trends."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "User-centered research can also use quantitative data, but it often emphasizes qualitative or mixed techniques to understand interaction problems and meanings: observation, interviews, usability tests, task analysis, and contextual inquiry. In short: market research prioritizes quantification of demand; user-centered research prioritizes understanding and improving real use."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "La investigación de mercados recurre predominantemente a métodos cuantitativos porque suele necesitar medición, comparación en grupos grandes y generalización estadística. Sus productos típicos son porcentajes, segmentaciones, correlaciones y estimaciones de demanda. Esto encaja con preguntas como 'cuántos', 'con qué frecuencia', 'qué segmento' o 'cuál es la intención de compra'."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Ejemplos en mercados: encuestas masivas, grandes muestras, escalas de valoración, métricas de preferencia de marca, segmentación, tableros estadísticos.",
+          "Resultados cuantitativos típicos: frecuencia, conversión, reconocimiento, intención de compra, preferencia y tendencias medibles."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "La investigación centrada en el usuario también puede usar datos cuantitativos, pero suele enfatizar técnicas cualitativas o mixtas para comprender problemas de interacción y significado: observación, entrevistas, pruebas de usabilidad, análisis de tareas e investigación contextual. En resumen: mercados prioriza cuantificar demanda; UX/UCD prioriza entender y mejorar el uso real."
+      }
+    ]
+  }
+},
+{
+  "Category": "Plan de investigación",
+  "Question Text": {
+    "en-US": [
+      "Which of the following aspects must the designer consider when designing the research plan for a project?"
+    ],
+    "es-MX": [
+      "¿Cuál es uno de los aspectos que el diseñador debe considerar a la hora de diseñar el plan de investigación para un proyecto?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "The number of competitors in the market.",
+      "The geographical location of the project.",
+      "The available resources and deadlines.",
+      "The product popularity on social media."
+    ],
+    "es-MX": [
+      "El número de competidores en el mercado.",
+      "La ubicación geográfica del proyecto.",
+      "Los recursos y los plazos disponibles.",
+      "La popularidad del producto en redes sociales."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "The available resources and deadlines.",
+    "es-MX": "Los recursos y los plazos disponibles."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "A research plan in user-centered design must be realistic and executable. Therefore, it depends directly on constraints such as available time, budget, team size, access to users, and technical capabilities. Unlike theoretical research, UX research is applied and must adapt to project conditions. Selecting methods (interviews, usability tests, surveys, field studies) depends on how much time exists, how many participants can be recruited, and how complex the evaluation will be. A short deadline may require rapid tests or guerrilla research, while a longer schedule allows contextual inquiry or longitudinal studies. For this reason, resources and deadlines are the foundation that determines the scope, depth, and reliability of the research."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "Un plan de investigación en diseño centrado en el usuario debe ser realista y ejecutable. Por ello depende directamente de restricciones como tiempo disponible, presupuesto, tamaño del equipo, acceso a usuarios y capacidades técnicas. A diferencia de la investigación teórica, la investigación UX es aplicada y debe adaptarse a las condiciones del proyecto. La selección de métodos (entrevistas, pruebas de usabilidad, encuestas o estudios de campo) depende de cuánto tiempo existe, cuántos participantes pueden reclutarse y qué tan compleja será la evaluación. Un plazo corto obliga a pruebas rápidas o investigación guerrilla, mientras que un calendario amplio permite estudios contextuales o longitudinales. Por esta razón, los recursos y plazos determinan el alcance, profundidad y confiabilidad de la investigación."
+      }
+    ]
+  }
+},
+{
+  "Category": "Modelos Lean en UX",
+  "Question Text": {
+    "en-US": [
+      "What objective do Lean models pursue in the user-centered design process?"
+    ],
+    "es-MX": [
+      "¿Qué objetivo persiguen los modelos Lean en el proceso de diseño centrado en el usuario?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Increase development costs and time.",
+      "Minimize user participation in the design process.",
+      "Increase experimentation and rapid iteration.",
+      "Establish isolated compartments between professionals."
+    ],
+    "es-MX": [
+      "Aumentar los costos y tiempos de desarrollo.",
+      "Minimizar la participación del usuario en el proceso de diseño.",
+      "Incrementar la experimentación y la iteración rápida.",
+      "Establecer compartimentos estancos entre los profesionales involucrados."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Increase experimentation and rapid iteration.",
+    "es-MX": "Incrementar la experimentación y la iteración rápida."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "Lean models in UX design aim to reduce uncertainty through continuous experimentation. Instead of designing large solutions and validating them at the end, Lean promotes small cycles of hypothesis, prototype, test, and learning. Each iteration produces evidence that guides the next design decision. Rapid iteration allows teams to detect usability problems early, avoid large failures, and adapt the product to real user behavior. The core idea is learning fast and correcting fast, not designing perfectly from the beginning."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "Los modelos Lean en diseño UX buscan reducir la incertidumbre mediante experimentación continua. En lugar de diseñar soluciones completas y validarlas al final, Lean promueve ciclos pequeños de hipótesis, prototipo, prueba y aprendizaje. Cada iteración genera evidencia que guía la siguiente decisión de diseño. La iteración rápida permite detectar problemas de usabilidad temprano, evitar grandes fallas y adaptar el producto al comportamiento real del usuario. La idea central es aprender rápido y corregir rápido, no diseñar perfecto desde el inicio."
+      }
+    ]
+  }
+},
+{
+  "Category": "Lean Startup",
+  "Question Text": {
+    "en-US": [
+      "What is one of the main objectives of the Lean Startup methodology in product and business design?"
+    ],
+    "es-MX": [
+      "¿Cuál es uno de los objetivos principales de la metodología Lean Startup en el diseño de productos y negocios?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Increase development costs.",
+      "Reduce user participation in the design process.",
+      "Validate learning through constant experimentation.",
+      "Encourage communication between team roles."
+    ],
+    "es-MX": [
+      "Aumentar los costos de desarrollo.",
+      "Reducir la participación del usuario en el proceso de diseño.",
+      "Validar el aprendizaje mediante la experimentación constante.",
+      "Fomentar la comunicación entre los distintos roles del equipo."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Validate learning through constant experimentation.",
+    "es-MX": "Validar el aprendizaje mediante la experimentación constante."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "Lean Startup focuses on validated learning: knowledge obtained through real evidence rather than assumptions. Teams create hypotheses about the product, build minimum viable products (MVPs), test them with users, and measure behavior. The objective is not to build quickly for its own sake, but to learn what truly works before investing large resources. This approach prevents building products nobody needs and allows gradual adaptation to real user needs and market conditions."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "Lean Startup se basa en el aprendizaje validado: conocimiento obtenido mediante evidencia real y no suposiciones. Los equipos formulan hipótesis sobre el producto, construyen productos mínimos viables (MVP), los prueban con usuarios y miden el comportamiento. El objetivo no es construir rápido por sí mismo, sino aprender qué funciona realmente antes de invertir grandes recursos. Este enfoque evita desarrollar productos que nadie necesita y permite adaptarse progresivamente a las necesidades reales del usuario y del mercado."
+      }
+    ]
+  }
+}
+
+
+
+
+
+
       
     ]
   }
