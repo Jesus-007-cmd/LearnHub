@@ -1,0 +1,1715 @@
+{
+    "meta": {
+      "slug": "ux-etnografia-investigacion-contextual",
+      "title": "Etnografía y Métodos Contextuales · Fundamentos",
+      "subject": "Investigación Centrada en la Interfaz de Usuario",
+      "unit": 5,
+      "classNo": 1,
+      "description": "Fundamentos de la observación etnográfica, contextual inquiry y técnicas de investigación cualitativa aplicadas al diseño centrado en el usuario.",
+      "tags": [
+        "UX",
+        "Etnografía",
+        "Investigación Cualitativa",
+        "Contextual Inquiry",
+        "Observación Contextual",
+        "DCU",
+        "Modelos Mentales"
+      ]
+    },
+    "Questions": [
+  
+      {
+        "Category": "Fundamentos históricos",
+        "Question Text": {
+          "en-US": [
+            "Who is considered the pioneer of naturalistic observation in anthropology that influenced ethnography as a qualitative research approach?"
+          ],
+          "es-MX": [
+            "¿Quién es considerado el pionero de la observación naturalista en antropología que influyó en la etnografía como enfoque cualitativo de la investigación?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Clifford Geertz",
+            "Franz Boas",
+            "Bronisław Kasper Malinowski",
+            "Margaret Mead"
+          ],
+          "es-MX": [
+            "Clifford Geertz",
+            "Franz Boas",
+            "Bronisław Kasper Malinowski",
+            "Margaret Mead"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Bronisław Kasper Malinowski",
+          "es-MX": "Bronisław Kasper Malinowski"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Malinowski revolutionized anthropology by living among the communities he studied instead of observing them from a distance. He emphasized direct observation in natural contexts. In UX, this approach inspires researchers to observe users in real environments (for example, watching how nurses use hospital software during real shifts rather than in a lab)."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Malinowski transformó la antropología al convivir con las comunidades que estudiaba en lugar de analizarlas desde lejos. Impulsó la observación directa en contextos reales. En UX, esto inspira a observar a los usuarios en su entorno natural (por ejemplo, ver cómo una enfermera usa un sistema hospitalario durante su turno real y no solo en laboratorio)."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Virtudes en diseño temprano",
+        "Question Text": {
+          "en-US": [
+            "What is one of the main virtues of ethnographic techniques in early design phases?"
+          ],
+          "es-MX": [
+            "¿Cuál es una de las principales virtudes de las técnicas etnográficas en las primeras fases del proceso de diseño?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Providing quantitative user data",
+            "Discovering hidden motivations and unmet needs",
+            "Guaranteeing the technical implementation of the project",
+            "Evaluating final product performance"
+          ],
+          "es-MX": [
+            "Proporcionar datos cuantitativos sobre los usuarios",
+            "Descubrir motivaciones y necesidades desconocidas",
+            "Garantizar la implementación técnica del proyecto",
+            "Evaluar el rendimiento final del producto"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Discovering hidden motivations and unmet needs",
+          "es-MX": "Descubrir motivaciones y necesidades desconocidas"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "For example, when observing shoppers in a supermarket, researchers might notice they compare prices using their phone even if they never mention it in interviews. Ethnography uncovers behaviors and motivations users may not consciously articulate, revealing opportunities for innovation."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Por ejemplo, al observar compradores en un supermercado, se puede detectar que comparan precios con su celular aunque nunca lo mencionen en entrevistas. La etnografía revela comportamientos y motivaciones que el usuario no expresa conscientemente, permitiendo detectar oportunidades de mejora."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Aportes en UX",
+        "Question Text": {
+          "en-US": [
+            "In user experience research, what key information does ethnography provide?"
+          ],
+          "es-MX": [
+            "En la investigación de experiencia de usuario, ¿qué información clave aporta la etnografía?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Product aesthetics",
+            "Project budget requirements",
+            "Users' goals and tasks",
+            "Marketing strategy"
+          ],
+          "es-MX": [
+            "La estética del producto",
+            "El presupuesto necesario para el proyecto",
+            "Los objetivos y tareas de los usuarios",
+            "La estrategia de marketing adecuada para el producto"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Users' goals and tasks",
+          "es-MX": "Los objetivos y tareas de los usuarios"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Ethnography helps understand what users are actually trying to accomplish in their daily lives. For example, a banking app user might not just want to 'transfer money'—their deeper goal could be 'avoid late fees' or 'manage family expenses efficiently.' Observing real-life contexts helps uncover these true objectives."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La etnografía permite comprender qué intentan lograr realmente los usuarios en su vida cotidiana. Por ejemplo, un usuario de banca móvil no solo quiere 'transferir dinero', sino evitar cargos por atraso o administrar gastos familiares. La observación en contexto revela estos objetivos reales."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Concepto de observación etnográfica",
+        "Question Text": {
+          "en-US": [
+            "What is ethnographic observation in user experience research?"
+          ],
+          "es-MX": [
+            "¿Qué es la observación etnográfica en la investigación de experiencia de usuario?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A laboratory-based experiment to measure task efficiency",
+            "A method of observing users in their natural context to understand real behaviors",
+            "A quantitative survey conducted online",
+            "A usability test focused only on interface errors"
+          ],
+          "es-MX": [
+            "Un experimento de laboratorio para medir eficiencia",
+            "Un método de observar a los usuarios en su contexto natural para comprender comportamientos reales",
+            "Una encuesta cuantitativa realizada en línea",
+            "Una prueba de usabilidad enfocada solo en errores de interfaz"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A method of observing users in their natural context to understand real behaviors",
+          "es-MX": "Un método de observar a los usuarios en su contexto natural para comprender comportamientos reales"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "For example, instead of asking restaurant staff how they use a reservation system, a researcher spends time observing them during peak hours. This reveals real constraints such as multitasking, interruptions, and informal workarounds that would not appear in controlled lab settings."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Por ejemplo, en lugar de preguntar a los empleados de un restaurante cómo usan el sistema de reservas, el investigador los observa durante horas pico. Así descubre interrupciones constantes, multitareas y soluciones improvisadas que no aparecerían en un entorno de laboratorio."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Técnicas etnográficas",
+        "Question Text": {
+          "en-US": [
+            "What are ethnographic techniques in UX research?"
+          ],
+          "es-MX": [
+            "¿Qué son las técnicas etnográficas en investigación UX?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Statistical models for measuring user satisfaction",
+            "Qualitative methods such as observation, shadowing, and contextual inquiry to understand user behavior",
+            "Automated tools for collecting performance data",
+            "Marketing segmentation strategies"
+          ],
+          "es-MX": [
+            "Modelos estadísticos para medir satisfacción",
+            "Métodos cualitativos como observación, acompañamiento y entrevistas contextuales para comprender el comportamiento del usuario",
+            "Herramientas automáticas para recolectar métricas",
+            "Estrategias de segmentación de marketing"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Qualitative methods such as observation, shadowing, and contextual inquiry to understand user behavior",
+          "es-MX": "Métodos cualitativos como observación, acompañamiento y entrevistas contextuales para comprender el comportamiento del usuario"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Examples include shadowing a delivery driver during a full workday, conducting contextual interviews inside a hospital ward, or observing how customers navigate a supermarket. These techniques focus on real-life interactions rather than artificial test conditions."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Algunos ejemplos son acompañar a un repartidor durante toda su jornada, realizar entrevistas contextuales dentro de un hospital o observar cómo los clientes recorren un supermercado. Estas técnicas se centran en interacciones reales y no en escenarios simulados."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Aplicación práctica de la etnografía",
+        "Question Text": {
+          "en-US": [
+            "How can ethnographic research be applied in a real UX project?"
+          ],
+          "es-MX": [
+            "¿Cómo puede aplicarse la investigación etnográfica en un proyecto real de UX?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "By analyzing only interface color schemes",
+            "By observing users in real environments to detect unspoken needs and workflow patterns",
+            "By measuring loading speed in controlled conditions",
+            "By conducting post-launch satisfaction surveys"
+          ],
+          "es-MX": [
+            "Analizando únicamente los colores de la interfaz",
+            "Observando a los usuarios en entornos reales para detectar necesidades implícitas y patrones de trabajo",
+            "Midiendo la velocidad de carga en laboratorio",
+            "Aplicando encuestas después del lanzamiento"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "By observing users in real environments to detect unspoken needs and workflow patterns",
+          "es-MX": "Observando a los usuarios en entornos reales para detectar necesidades implícitas y patrones de trabajo"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Imagine designing software for warehouse workers. Instead of only interviewing them, researchers observe how they scan products, move through aisles, and handle interruptions. They may discover that workers operate with gloves, under time pressure, and often rely on shortcuts. These insights influence interface size, navigation speed, and error tolerance."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Imagina que diseñas un sistema para trabajadores de almacén. En lugar de solo entrevistarlos, se les observa mientras escanean productos, se desplazan entre estantes y manejan interrupciones. Puede descubrirse que usan guantes, trabajan bajo presión y recurren a atajos. Estos hallazgos influyen en el tamaño de botones, rapidez del sistema y tolerancia a errores."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Contextual Inquiry",
+        "Question Text": {
+          "en-US": [
+            "What characterizes the contextual inquiry technique in UX research?"
+          ],
+          "es-MX": [
+            "¿Qué caracteriza la técnica de contextual inquiry en investigación UX?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It consists of observing users without interacting with them",
+            "It combines observation and interview while the user performs real tasks",
+            "It focuses only on post-task questionnaires",
+            "It measures quantitative performance metrics"
+          ],
+          "es-MX": [
+            "Consiste en observar sin interactuar con el usuario",
+            "Combina observación y entrevista mientras el usuario realiza tareas reales",
+            "Se enfoca solo en cuestionarios posteriores a la tarea",
+            "Mide métricas cuantitativas de desempeño"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It combines observation and interview while the user performs real tasks",
+          "es-MX": "Combina observación y entrevista mientras el usuario realiza tareas reales"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "For example, while a nurse uses hospital software during her shift, the researcher observes her actions and asks questions like: 'Why did you skip that field?' or 'What are you expecting to see next?' The user continues working naturally, and the researcher gains insight into reasoning and decision-making in real time."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Por ejemplo, mientras una enfermera usa un sistema hospitalario durante su turno, el investigador observa y al mismo tiempo pregunta: '¿Por qué omitiste ese campo?' o '¿Qué esperabas ver ahora?'. La persona sigue trabajando normalmente y el investigador comprende su razonamiento en tiempo real."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Observación contextual",
+        "Question Text": {
+          "en-US": [
+            "What defines contextual observation in UX research?"
+          ],
+          "es-MX": [
+            "¿Qué define la técnica de observación contextual en investigación UX?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The researcher actively guides the user through predefined tasks",
+            "The researcher observes users in their natural environment without intervening",
+            "The researcher conducts surveys after product launch",
+            "The method focuses on statistical benchmarking"
+          ],
+          "es-MX": [
+            "El investigador guía activamente al usuario en tareas predefinidas",
+            "El investigador observa a los usuarios en su entorno natural sin intervenir",
+            "El investigador aplica encuestas después del lanzamiento",
+            "El método se enfoca en métricas estadísticas"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The researcher observes users in their natural environment without intervening",
+          "es-MX": "El investigador observa a los usuarios en su entorno natural sin intervenir"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "For example, a researcher observes how supermarket customers navigate aisles and compare prices without asking questions during the activity. The goal is to capture authentic behavior without influencing decisions. Unlike contextual inquiry, here the researcher does not interrupt the task flow."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Por ejemplo, un investigador observa cómo los clientes recorren un supermercado y comparan precios sin hacer preguntas durante la actividad. El objetivo es registrar comportamientos auténticos sin influir en las decisiones. A diferencia del contextual inquiry, aquí no se interrumpe el flujo de la tarea."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Indagación en contexto",
+        "Question Text": {
+          "en-US": [
+            "What is a key characteristic of contextual inquiry compared to a laboratory interview?"
+          ],
+          "es-MX": [
+            "¿Cuál es una característica clave de la indagación en el contexto frente a una entrevista en laboratorio?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It is conducted in a controlled laboratory setting",
+            "It takes place in the user's real environment while tasks are being performed",
+            "It focuses only on theoretical questions",
+            "It relies mainly on post-task surveys"
+          ],
+          "es-MX": [
+            "Se realiza en un entorno controlado de laboratorio",
+            "Se lleva a cabo en el entorno real del usuario mientras realiza tareas",
+            "Se enfoca solo en preguntas teóricas",
+            "Se basa principalmente en encuestas posteriores"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It takes place in the user's real environment while tasks are being performed",
+          "es-MX": "Se lleva a cabo en el entorno real del usuario mientras realiza tareas"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "For example, if you are studying how factory workers use inventory software, contextual inquiry involves observing them directly on the factory floor during their shift. You may ask brief questions while they work, capturing real interruptions, noise, and workflow constraints that would not appear in a lab."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Por ejemplo, si estudias cómo operarios usan un sistema de inventario, la indagación contextual implica observarlos directamente en la fábrica durante su turno. Se pueden hacer preguntas breves mientras trabajan, detectando interrupciones reales, ruido y presión que no aparecerían en un laboratorio."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Entrevista en laboratorio",
+        "Question Text": {
+          "en-US": [
+            "What defines a laboratory interview in UX research?"
+          ],
+          "es-MX": [
+            "¿Qué define una entrevista en laboratorio en investigación UX?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It observes users in their natural environment",
+            "It involves structured questioning in a controlled setting",
+            "It eliminates researcher bias",
+            "It measures real-time environmental constraints"
+          ],
+          "es-MX": [
+            "Observa a los usuarios en su entorno natural",
+            "Implica preguntas estructuradas en un entorno controlado",
+            "Elimina el sesgo del investigador",
+            "Mide restricciones ambientales en tiempo real"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It involves structured questioning in a controlled setting",
+          "es-MX": "Implica preguntas estructuradas en un entorno controlado"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "For example, participants may be invited to a usability lab and asked structured questions about how they usually use a banking app. While the environment is controlled and distractions are minimized, it does not fully replicate real-life pressures such as time constraints or multitasking."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Por ejemplo, los participantes pueden acudir a un laboratorio y responder preguntas estructuradas sobre cómo usan una aplicación bancaria. Aunque el entorno es controlado y sin distracciones, no reproduce presiones reales como prisa, interrupciones o multitarea."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Comparación metodológica",
+        "Question Text": {
+          "en-US": [
+            "What is the main difference between contextual inquiry and a laboratory interview?"
+          ],
+          "es-MX": [
+            "¿Cuál es la principal diferencia entre la indagación en contexto y la entrevista en laboratorio?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Contextual inquiry focuses on surveys, while laboratory interviews focus on observation",
+            "Contextual inquiry occurs in real environments with ongoing tasks, while laboratory interviews occur in controlled settings",
+            "Laboratory interviews are more qualitative",
+            "Contextual inquiry requires fewer participants"
+          ],
+          "es-MX": [
+            "La indagación contextual se basa en encuestas, mientras la entrevista en laboratorio en observación",
+            "La indagación contextual ocurre en entornos reales con tareas en curso, mientras la entrevista en laboratorio ocurre en entornos controlados",
+            "La entrevista en laboratorio es más cualitativa",
+            "La indagación contextual requiere menos participantes"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Contextual inquiry occurs in real environments with ongoing tasks, while laboratory interviews occur in controlled settings",
+          "es-MX": "La indagación contextual ocurre en entornos reales con tareas en curso, mientras la entrevista en laboratorio ocurre en entornos controlados"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Imagine researching how teachers use educational platforms. In contextual inquiry, you observe them during real classes, noticing interruptions, student questions, and time pressure. In a laboratory interview, you would ask them how they think they use the platform, but without real classroom dynamics. The key difference is exposure to authentic context versus simulated discussion."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Imagina que investigas cómo los profesores usan una plataforma educativa. En indagación contextual los observas durante una clase real, donde hay interrupciones, preguntas de alumnos y presión de tiempo. En una entrevista en laboratorio solo describen cómo creen que la usan, sin las dinámicas reales. La diferencia clave es contexto auténtico frente a entorno controlado."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Contextual Inquiry",
+        "Question Text": {
+          "en-US": [
+            "What best describes the contextual inquiry technique?"
+          ],
+          "es-MX": [
+            "¿Qué describe mejor la técnica de contextual inquiry (indagación en el contexto)?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A structured interview conducted in a laboratory",
+            "An online survey about usage habits",
+            "An extended interview combined with observation in the user's environment",
+            "A quantitative data analysis of user behavior"
+          ],
+          "es-MX": [
+            "Una entrevista estructurada realizada en un laboratorio",
+            "Una encuesta online sobre hábitos de uso",
+            "Una entrevista ampliada con observación en el entorno de uso del usuario",
+            "Un análisis de datos cuantitativos sobre el comportamiento del usuario"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "An extended interview combined with observation in the user's environment",
+          "es-MX": "Una entrevista ampliada con observación en el entorno de uso del usuario"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "For example, if you study how a nurse uses hospital software, you observe her during a real shift and ask questions while she performs tasks. This allows you to detect interruptions, time pressure, and real constraints that would not appear in a laboratory interview."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Por ejemplo, si investigas cómo una enfermera usa un sistema hospitalario, la observas durante un turno real y haces preguntas mientras realiza sus tareas. Así detectas interrupciones, presión de tiempo y limitaciones reales que no aparecerían en un laboratorio."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Contextual Inquiry",
+        "Question Text": {
+          "en-US": [
+            "What is one of the main advantages of contextual inquiry compared to a laboratory interview?"
+          ],
+          "es-MX": [
+            "¿Cuál es una de las principales ventajas de la indagación en el contexto frente a una entrevista en laboratorio?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Faster data collection",
+            "More realistic data analysis by observing users in their own environment",
+            "Lower implementation cost",
+            "Avoiding data interpretation"
+          ],
+          "es-MX": [
+            "La rapidez en la recolección de datos",
+            "Un análisis más realista al observar al usuario en su propio entorno",
+            "El bajo costo de implementación",
+            "La posibilidad de evitar la interpretación de los datos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "More realistic data analysis by observing users in their own environment",
+          "es-MX": "Un análisis más realista al observar al usuario en su propio entorno"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "For example, a teacher might describe in a lab how they use an educational platform, but in a real classroom you may observe interruptions, multitasking, and time pressure. Contextual inquiry reveals hidden behaviors that users may forget or omit in interviews."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Por ejemplo, un profesor puede explicar en laboratorio cómo usa una plataforma educativa, pero en el aula real aparecen interrupciones, multitarea y presión de tiempo. La indagación contextual revela comportamientos ocultos que el usuario puede olvidar mencionar."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Validación en Contextual Inquiry",
+        "Question Text": {
+          "en-US": [
+            "Why is it important for the researcher to validate information during contextual inquiry?"
+          ],
+          "es-MX": [
+            "¿Por qué es importante que el investigador valide la información durante el contextual inquiry?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because users do not always do what they say and contradictions may appear",
+            "Because interview data is always insufficient",
+            "To save time during analysis",
+            "To standardize results across environments"
+          ],
+          "es-MX": [
+            "Porque el usuario no siempre hace lo que dice y pueden surgir contradicciones",
+            "Porque los datos de la entrevista suelen ser insuficientes",
+            "Para ahorrar tiempo durante el análisis",
+            "Para estandarizar los resultados obtenidos en diferentes entornos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because users do not always do what they say and contradictions may appear",
+          "es-MX": "Porque el usuario no siempre hace lo que dice y pueden surgir contradicciones"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "For example, a participant might claim that they always follow a specific process when using a system. However, when observed in real context, they may skip steps or use shortcuts. Validating information ensures that findings are based on actual behavior rather than memory or perception."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Por ejemplo, un participante puede afirmar que siempre sigue un proceso específico al usar un sistema. Sin embargo, al observarlo en contexto real, puede omitir pasos o usar atajos. Validar la información permite basar los hallazgos en el comportamiento real y no solo en lo que el usuario recuerda o cree hacer."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Técnicas Contextuales",
+        "Question Text": {
+          "en-US": [
+            "Which technique involves observing users in their real environment while asking questions during task performance?"
+          ],
+          "es-MX": [
+            "¿Qué técnica implica observar al usuario en su entorno real mientras se le hacen preguntas durante la ejecución de tareas?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Laboratory interview",
+            "Diary study",
+            "Contextual inquiry",
+            "Survey research"
+          ],
+          "es-MX": [
+            "Entrevista en laboratorio",
+            "Estudio de diario",
+            "Contextual inquiry (indagación en contexto)",
+            "Encuesta"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Contextual inquiry",
+          "es-MX": "Contextual inquiry (indagación en contexto)"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "For example, if you observe a bank employee processing transactions while asking clarifying questions about each step, you are applying contextual inquiry. The key is combining observation and interview in real time."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Por ejemplo, si observas a un empleado bancario procesando transacciones y le haces preguntas mientras trabaja, estás aplicando contextual inquiry. La clave es combinar observación y entrevista en tiempo real."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Técnicas Contextuales",
+        "Question Text": {
+          "en-US": [
+            "Which technique is most appropriate when you need to understand a user's complete daily workflow?"
+          ],
+          "es-MX": [
+            "¿Qué técnica es más adecuada cuando necesitas comprender el flujo completo de trabajo diario de un usuario?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Shadowing",
+            "Online survey",
+            "Usability testing",
+            "Heuristic evaluation"
+          ],
+          "es-MX": [
+            "Shadowing (acompañamiento)",
+            "Encuesta online",
+            "Prueba de usabilidad",
+            "Evaluación heurística"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Shadowing",
+          "es-MX": "Shadowing (acompañamiento)"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "In shadowing, the researcher follows the participant throughout their day. For example, accompanying a doctor during a full hospital shift allows you to understand interruptions, multitasking, and real constraints that short observations might miss."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "En shadowing, el investigador acompaña al participante durante toda su jornada. Por ejemplo, seguir a un médico durante un turno completo permite comprender interrupciones, multitarea y limitaciones reales que una observación breve no detectaría."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Técnicas Contextuales",
+        "Question Text": {
+          "en-US": [
+            "Which method is most suitable for collecting long-term behavioral data without constant researcher presence?"
+          ],
+          "es-MX": [
+            "¿Qué método es más adecuado para recopilar datos de comportamiento a largo plazo sin presencia constante del investigador?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Contextual inquiry",
+            "Diary study",
+            "Laboratory interview",
+            "Card sorting"
+          ],
+          "es-MX": [
+            "Contextual inquiry",
+            "Estudio de diario",
+            "Entrevista en laboratorio",
+            "Card sorting"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Diary study",
+          "es-MX": "Estudio de diario"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "In a diary study, users record their experiences over days or weeks. For example, users might document when and why they use a budgeting app. This captures patterns that single-session observations cannot detect."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "En un estudio de diario, los usuarios registran sus experiencias durante días o semanas. Por ejemplo, pueden anotar cuándo y por qué usan una aplicación financiera. Esto permite detectar patrones que una sola sesión no revelaría."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Comparación Metodológica",
+        "Question Text": {
+          "en-US": [
+            "What differentiates contextual inquiry from pure observational research?"
+          ],
+          "es-MX": [
+            "¿Qué diferencia la indagación contextual de la observación pura?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Contextual inquiry includes structured questioning during observation",
+            "Observation requires laboratory conditions",
+            "Contextual inquiry uses only quantitative data",
+            "Observation includes surveys"
+          ],
+          "es-MX": [
+            "La indagación contextual incluye preguntas estructuradas durante la observación",
+            "La observación requiere condiciones de laboratorio",
+            "La indagación contextual usa solo datos cuantitativos",
+            "La observación incluye encuestas"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Contextual inquiry includes structured questioning during observation",
+          "es-MX": "La indagación contextual incluye preguntas estructuradas durante la observación"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "In pure observation, the researcher mainly watches and records behavior. In contextual inquiry, the researcher actively asks questions during task execution. For example, asking 'Why did you choose that option?' while the user performs the task adds interpretative depth."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "En la observación pura, el investigador principalmente observa y registra el comportamiento. En la indagación contextual, el investigador realiza preguntas mientras el usuario ejecuta la tarea. Por ejemplo, preguntar '¿Por qué elegiste esa opción?' agrega profundidad interpretativa."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Aplicación Práctica",
+        "Question Text": {
+          "en-US": [
+            "Which technique would be most appropriate to study how students use an educational app during real classroom conditions?"
+          ],
+          "es-MX": [
+            "¿Qué técnica sería más adecuada para estudiar cómo los estudiantes usan una app educativa durante condiciones reales de clase?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Heuristic evaluation",
+            "Laboratory interview",
+            "Contextual inquiry",
+            "A/B testing"
+          ],
+          "es-MX": [
+            "Evaluación heurística",
+            "Entrevista en laboratorio",
+            "Contextual inquiry",
+            "Prueba A/B"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Contextual inquiry",
+          "es-MX": "Contextual inquiry"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Studying students in a real classroom allows researchers to observe distractions, peer interaction, and time constraints. This context cannot be replicated in a laboratory, making contextual inquiry the most appropriate method."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Estudiar a los estudiantes en un aula real permite observar distracciones, interacción con compañeros y presión de tiempo. Este contexto no puede replicarse completamente en laboratorio, por eso la indagación contextual es la técnica más adecuada."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Observación Contextual",
+        "Question Text": {
+          "en-US": [
+            "What best describes the contextual observation technique?"
+          ],
+          "es-MX": [
+            "¿Qué describe mejor la técnica de observación contextual?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A structured interview conducted in the user's workplace",
+            "Non-participant observation of users in their natural environment",
+            "Active participation of the researcher in the user's activity",
+            "A survey about user behavior"
+          ],
+          "es-MX": [
+            "Una entrevista estructurada en el lugar de trabajo del usuario",
+            "La observación no participativa de usuarios en su entorno natural",
+            "La participación activa del investigador en la actividad del usuario",
+            "Una encuesta a usuarios sobre su comportamiento"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Non-participant observation of users in their natural environment",
+          "es-MX": "La observación no participativa de usuarios en su entorno natural"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "For example, observing customers interacting with self-checkout machines in a supermarket without intervening allows the researcher to detect hesitation, confusion, or repeated errors. The key is that the researcher does not actively participate but records real behavior."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Por ejemplo, observar cómo los clientes usan cajas de autopago en un supermercado sin intervenir permite detectar dudas, errores repetidos o confusión. La clave es que el investigador no participa activamente, sino que registra el comportamiento real."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Observación Contextual",
+        "Question Text": {
+          "en-US": [
+            "What is one of the main limitations of contextual observation?"
+          ],
+          "es-MX": [
+            "¿Cuál es una de las principales limitaciones de la observación contextual?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It does not allow observation in real situations",
+            "It does not provide direct explanations for observed behaviors",
+            "It is only used in early design phases",
+            "Users must answer constant questions"
+          ],
+          "es-MX": [
+            "No permite observar situaciones reales",
+            "No ofrece información directa sobre el porqué de las conductas observadas",
+            "Se utiliza solo en fases iniciales del diseño",
+            "Los usuarios deben responder preguntas constantes"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It does not provide direct explanations for observed behaviors",
+          "es-MX": "No ofrece información directa sobre el porqué de las conductas observadas"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "For instance, you might observe that a user repeatedly abandons a form, but observation alone cannot explain whether the reason is confusion, lack of trust, or time pressure. Additional techniques such as interviews or contextual inquiry are needed to interpret motivations."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Por ejemplo, puedes observar que un usuario abandona repetidamente un formulario, pero la observación por sí sola no explica si se debe a confusión, desconfianza o falta de tiempo. Se requieren técnicas complementarias para entender las motivaciones."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Observación Contextual",
+        "Question Text": {
+          "en-US": [
+            "What should a researcher do before conducting contextual observation?"
+          ],
+          "es-MX": [
+            "¿Qué debe hacer el investigador antes de realizar una observación contextual?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Wait for spontaneous behaviors to appear",
+            "Define what to observe and the purpose of the observation",
+            "Conduct interviews beforehand",
+            "Actively participate in user tasks"
+          ],
+          "es-MX": [
+            "Esperar a que surjan comportamientos espontáneos",
+            "Tener claro qué observar y cuál es el propósito de la observación",
+            "Realizar entrevistas previas obligatoriamente",
+            "Participar activamente en las tareas del usuario"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Define what to observe and the purpose of the observation",
+          "es-MX": "Tener claro qué observar y cuál es el propósito de la observación"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "For example, if the goal is to improve a mobile banking app, the researcher must define whether they are observing navigation patterns, error frequency, or environmental distractions. Without a defined objective, the observation may generate large amounts of unfocused data."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Por ejemplo, si el objetivo es mejorar una app bancaria, el investigador debe definir si observará patrones de navegación, frecuencia de errores o distracciones del entorno. Sin un propósito claro, la observación puede generar datos abundantes pero poco útiles."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Diary Studies",
+        "Question Text": {
+          "en-US": [
+            "What is one of the main characteristics of diary studies?"
+          ],
+          "es-MX": [
+            "¿Cuál es una de las principales características de los estudios basados en diarios?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The researcher is present during the entire process",
+            "The user records their experiences in real time without researcher intervention",
+            "The user must strictly follow a predefined script",
+            "They are only used for market research"
+          ],
+          "es-MX": [
+            "El investigador está presente durante todo el proceso",
+            "El usuario registra sus experiencias en tiempo real sin intervención del investigador",
+            "El usuario debe seguir un guion previamente establecido",
+            "Solo se utilizan para estudios de mercado"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The user records their experiences in real time without researcher intervention",
+          "es-MX": "El usuario registra sus experiencias en tiempo real sin intervención del investigador"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "For example, users may record each time they use a fitness app over two weeks, noting why they opened it and how they felt. The researcher does not observe directly but later analyzes the documented experiences to detect patterns."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Por ejemplo, los usuarios pueden registrar cada vez que usan una app de ejercicio durante dos semanas, anotando por qué la abrieron y cómo se sintieron. El investigador no observa directamente, sino que analiza posteriormente las experiencias documentadas."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Diary Studies",
+        "Question Text": {
+          "en-US": [
+            "Why are diary studies useful for obtaining rich and detailed information?"
+          ],
+          "es-MX": [
+            "¿Por qué los estudios basados en diarios son útiles para obtener información rica y detallada?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because they are conducted in controlled environments",
+            "Because users record experiences long after they occur",
+            "Because the researcher selects what information to include",
+            "Because users document experiences at the moment they occur"
+          ],
+          "es-MX": [
+            "Porque se realizan en un entorno controlado por el investigador",
+            "Porque los usuarios registran sus experiencias mucho tiempo después",
+            "Porque el investigador decide qué información incluir",
+            "Porque el usuario registra sus experiencias en el momento en que ocurren"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because users document experiences at the moment they occur",
+          "es-MX": "Porque el usuario registra sus experiencias en el momento en que ocurren"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Immediate documentation reduces memory bias. For example, if a user notes frustration right after a failed payment attempt in an app, that emotional detail is more accurate than recalling it days later during an interview."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El registro inmediato reduce el sesgo de memoria. Por ejemplo, si un usuario anota su frustración justo después de fallar un pago en una app, ese detalle emocional es más preciso que si lo recordara días después en una entrevista."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Diary Studies",
+        "Question Text": {
+          "en-US": [
+            "What is one advantage of using technology in diary studies?"
+          ],
+          "es-MX": [
+            "¿Cuál es una ventaja de utilizar tecnología en los estudios basados en diarios?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It allows the researcher to intervene in real time",
+            "It facilitates recording experiences through photos and videos",
+            "It eliminates the need for written entries",
+            "It is only useful for digital product analysis"
+          ],
+          "es-MX": [
+            "Permite al investigador intervenir en tiempo real",
+            "Facilita el registro de experiencias a través de fotografías y videos",
+            "Elimina la necesidad de que los usuarios escriban sus experiencias",
+            "Se usa únicamente para analizar productos digitales"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It facilitates recording experiences through photos and videos",
+          "es-MX": "Facilita el registro de experiencias a través de fotografías y videos"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "For instance, a participant might upload a screenshot when encountering an error or record a short video explaining a confusing interaction. These multimedia records provide richer context than text alone."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Por ejemplo, un participante puede subir una captura de pantalla cuando encuentra un error o grabar un video explicando una interacción confusa. Estos registros multimedia aportan más contexto que solo texto."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Experiencias de Inmersión",
+        "Question Text": {
+          "en-US": [
+            "What does an immersion experience imply in research?"
+          ],
+          "es-MX": [
+            "¿Qué implica una experiencia de inmersión en la investigación?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The researcher observes users from a distance",
+            "The researcher organizes focus groups and interviews",
+            "The researcher becomes part of the user environment and experiences their reality",
+            "The researcher analyzes data from a laboratory without interacting with users"
+          ],
+          "es-MX": [
+            "El investigador observa a los usuarios desde la distancia",
+            "El investigador organiza focus groups y entrevistas",
+            "El investigador se convierte en parte del entorno del usuario y experimenta su realidad",
+            "El investigador analiza datos desde un laboratorio sin interactuar con los usuarios"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The researcher becomes part of the user environment and experiences their reality",
+          "es-MX": "El investigador se convierte en parte del entorno del usuario y experimenta su realidad"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "For example, if designing a delivery app, the researcher might work temporarily as a delivery driver to understand time pressure, navigation issues, and real-world constraints. Immersion allows deeper empathy and insight than external observation."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Por ejemplo, si se diseña una app de repartidores, el investigador podría trabajar temporalmente como repartidor para comprender presión de tiempo, problemas de navegación y limitaciones reales. La inmersión genera mayor empatía y comprensión profunda."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Experiencias de Inmersión",
+        "Question Text": {
+          "en-US": [
+            "When is it recommended to use an immersion experience in UX research?"
+          ],
+          "es-MX": [
+            "¿Cuándo es recomendable usar una experiencia de inmersión en investigación UX?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "When conclusive quantitative data is needed",
+            "At the beginning of a project to uncover hidden motivations",
+            "When verifying predefined hypotheses",
+            "When testing final products in controlled conditions"
+          ],
+          "es-MX": [
+            "Cuando se necesitan datos concluyentes cuantitativos",
+            "Al inicio de un proyecto para descubrir motivaciones ocultas",
+            "Cuando se verifican hipótesis predefinidas",
+            "Para probar productos finales en condiciones controladas"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "At the beginning of a project to uncover hidden motivations",
+          "es-MX": "Al inicio de un proyecto para descubrir motivaciones ocultas"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Immersion is especially useful in exploratory phases. For example, before redesigning a hospital interface, spending time inside the hospital environment may reveal workflow tensions and emotional stress that interviews alone might not uncover."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La inmersión es especialmente útil en fases exploratorias. Por ejemplo, antes de rediseñar un sistema hospitalario, convivir dentro del hospital puede revelar tensiones operativas y estrés emocional que una entrevista no detectaría."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Experiencias de Inmersión",
+        "Question Text": {
+          "en-US": [
+            "What is one disadvantage of immersion experiences in research?"
+          ],
+          "es-MX": [
+            "¿Cuál es una desventaja de las experiencias de inmersión en investigación?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It is quick and easy to implement",
+            "It produces results that need no validation",
+            "The researcher cannot fully immerse in context",
+            "It requires significant time and findings may not be immediately conclusive"
+          ],
+          "es-MX": [
+            "Es una técnica rápida y fácil de aplicar",
+            "Produce resultados que no necesitan validación",
+            "El investigador no puede sumergirse completamente en el contexto",
+            "Requiere mucho tiempo y la información puede no ser concluyente"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It requires significant time and findings may not be immediately conclusive",
+          "es-MX": "Requiere mucho tiempo y la información puede no ser concluyente"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Immersion often involves prolonged exposure to real contexts. For example, spending weeks embedded in a company may generate qualitative insights, but these findings may require triangulation with other methods before guiding final design decisions."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La inmersión implica exposición prolongada al contexto real. Por ejemplo, pasar semanas dentro de una organización puede generar hallazgos cualitativos valiosos, pero estos deben complementarse con otras técnicas antes de tomar decisiones finales de diseño."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Proceso de Preparación",
+        "Question Text": {
+          "en-US": [
+            "Which of the following is NOT a typical phase of the research preparation process?"
+          ],
+          "es-MX": [
+            "¿Cuál de las siguientes NO es una fase típica del proceso de preparación de investigación?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Defining research objectives",
+            "Recruiting participants",
+            "Designing data collection instruments",
+            "Ideation"
+          ],
+          "es-MX": [
+            "Definir los objetivos de investigación",
+            "Reclutar participantes",
+            "Diseñar instrumentos de recolección de datos",
+            "Ideación"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Ideation",
+          "es-MX": "Ideación"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The preparation phase in UX research typically includes defining objectives, selecting participants, designing protocols, and organizing logistics. Ideation belongs to the design phase, where solutions are generated based on insights. For example, before conducting contextual inquiry, researchers prepare scripts and recruitment plans—but they do not yet generate design solutions."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La fase de preparación en investigación UX incluye definir objetivos, seleccionar participantes, diseñar guiones o instrumentos y organizar aspectos logísticos. La ideación pertenece a la fase de diseño, donde se generan soluciones a partir de los hallazgos. Por ejemplo, antes de una indagación contextual se prepara el protocolo y el reclutamiento, pero aún no se proponen soluciones de diseño."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Context Mapping",
+        "Question Text": {
+          "en-US": [
+            "What is context mapping?"
+          ],
+          "es-MX": [
+            "¿Qué es el context mapping?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A technique that classifies data into logical groups",
+            "A group dynamics exercise to collaboratively design products",
+            "A design technique where users visually express their lived context as experts of their own experience",
+            "A method to validate solutions before applying them to design"
+          ],
+          "es-MX": [
+            "Una técnica que consiste en la clasificación de datos en grupos lógicos",
+            "Un enfoque que integra dinámicas de grupo para que los participantes diseñen nuevos productos de forma colaborativa",
+            "Una técnica de diseño que involucra al usuario como experto de su propia experiencia para expresar su contexto de manera visual",
+            "Un método para validar soluciones antes de aplicarlas al proceso de diseño"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A design technique where users visually express their lived context as experts of their own experience",
+          "es-MX": "Una técnica de diseño que involucra al usuario como experto de su propia experiencia para expresar su contexto de manera visual"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "In context mapping, participants create visual artifacts such as drawings, timelines, or collages to express their daily experiences. For example, patients might visually map their emotional journey through a hospital visit. The goal is to uncover tacit knowledge that traditional interviews may not reveal."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "En context mapping, los participantes crean representaciones visuales como dibujos, mapas o líneas de tiempo para expresar sus experiencias cotidianas. Por ejemplo, pacientes pueden representar visualmente su recorrido emocional durante una visita hospitalaria. La técnica busca descubrir conocimiento implícito que no siempre emerge en entrevistas tradicionales."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Proceso de Preparación",
+        "Question Text": {
+          "en-US": [
+            "Which of the following is NOT a phase of the typical preparation process?"
+          ],
+          "es-MX": [
+            "¿Cuál de las siguientes NO es una fase del proceso típico de preparación?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Preparation",
+            "Ideation",
+            "Group sessions",
+            "Analysis"
+          ],
+          "es-MX": [
+            "Preparación",
+            "Ideación",
+            "Sesiones de grupo",
+            "Análisis"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Ideation",
+          "es-MX": "Ideación"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The preparation process in research typically includes planning activities, organizing group sessions, and later analyzing findings. Ideation belongs to the design phase, where solutions are generated after insights are synthesized. For example, after context mapping and analysis, designers move into ideation to propose concepts."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El proceso de preparación incluye planificar actividades, organizar sesiones y posteriormente analizar la información obtenida. La ideación pertenece a la fase de diseño, donde se generan soluciones después de sintetizar los hallazgos. Por ejemplo, tras realizar context mapping y análisis, se pasa a idear propuestas de diseño."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Context Mapping",
+        "Question Text": {
+          "en-US": [
+            "What is one disadvantage of context mapping according to the text?"
+          ],
+          "es-MX": [
+            "¿Cuál es una de las desventajas del context mapping según el texto?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It requires participants to make immediate design decisions",
+            "It is too rigid for innovation",
+            "The data generated is always validated for decision-making",
+            "It is a generative technique that does not directly provide validated data"
+          ],
+          "es-MX": [
+            "Requiere que los participantes tomen decisiones de diseño inmediatamente",
+            "Es una técnica demasiado rígida para la innovación",
+            "Los datos que genera son información validada para la toma de decisiones",
+            "Es una técnica generativa que no aporta información validada directamente"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It is a generative technique that does not directly provide validated data",
+          "es-MX": "Es una técnica generativa que no aporta información validada directamente"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Context mapping generates rich qualitative insights and creative input, but its results often require further validation through usability testing or additional research. For example, a participant may express emotional frustration visually, but designers must later verify whether proposed solutions truly solve that problem."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El context mapping genera información cualitativa rica y creativa, pero sus resultados necesitan validarse posteriormente mediante pruebas de usabilidad u otras investigaciones. Por ejemplo, un usuario puede representar frustración en un mapa visual, pero las soluciones propuestas deben verificarse antes de implementarse."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Riesgos en Técnicas Etnográficas",
+        "Question Text": {
+          "en-US": [
+            "What is one of the main risks researchers face when using ethnographic techniques?"
+          ],
+          "es-MX": [
+            "¿Cuál es uno de los principales riesgos que enfrenta el investigador al usar técnicas etnográficas?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Collecting too much information in a short time",
+            "Failing to understand the user's perspective due to personal biases",
+            "Making participants feel too comfortable",
+            "Being too objective and not emotionally involved"
+          ],
+          "es-MX": [
+            "Recolectar demasiada información en poco tiempo",
+            "No lograr comprender la perspectiva del usuario debido a prejuicios propios",
+            "Hacer que los participantes se sientan demasiado cómodos",
+            "Ser demasiado objetivo y no involucrarse emocionalmente"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Failing to understand the user's perspective due to personal biases",
+          "es-MX": "No lograr comprender la perspectiva del usuario debido a prejuicios propios"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "In ethnographic research, the investigator must suspend assumptions. For example, a researcher might interpret a user's hesitation as incompetence, when in reality it may be caused by system design flaws. Bias can distort interpretation and lead to incorrect conclusions."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "En investigación etnográfica el investigador debe suspender sus suposiciones. Por ejemplo, puede interpretar la duda de un usuario como falta de habilidad, cuando en realidad se debe a un problema de diseño. Los prejuicios pueden distorsionar los hallazgos."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Validez en Investigación Contextual",
+        "Question Text": {
+          "en-US": [
+            "Which strategy helps reduce the risk that participants modify their behavior due to the researcher's presence?"
+          ],
+          "es-MX": [
+            "¿Qué estrategia ayuda a reducir el riesgo de que los participantes modifiquen su comportamiento frente al investigador?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Using closed-ended questions",
+            "Prolonged contact so participants become accustomed to the researcher's presence",
+            "Asking quick questions with minimal intervention",
+            "Maintaining constant dialogue to build trust quickly"
+          ],
+          "es-MX": [
+            "Uso de preguntas cerradas",
+            "Contacto prolongado para que los participantes se acostumbren a la presencia del investigador",
+            "Hacer preguntas rápidas sin intervenir mucho",
+            "Mantener un diálogo constante para generar confianza rápidamente"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Prolonged contact so participants become accustomed to the researcher's presence",
+          "es-MX": "Contacto prolongado para que los participantes se acostumbren a la presencia del investigador"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "This relates to the observer effect. For example, at first employees may behave differently when observed, but after extended presence they return to natural routines. Long-term immersion reduces artificial behavior caused by observation."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Esto se relaciona con el efecto del observador. Al inicio, los participantes pueden modificar su conducta, pero con el tiempo vuelven a actuar de forma natural. La presencia prolongada reduce comportamientos artificiales."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Modelo Maestro-Aprendiz",
+        "Question Text": {
+          "en-US": [
+            "What is the advantage of the master-apprentice strategy in contextual research?"
+          ],
+          "es-MX": [
+            "¿Cuál es la ventaja de la estrategia maestro-aprendiz en investigación contextual?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The researcher learns quickly without prolonged observation",
+            "It empowers the participant and generates richer, more detailed information",
+            "The researcher directs and controls the conversation",
+            "It produces more precise quantitative results"
+          ],
+          "es-MX": [
+            "El investigador aprende rápidamente sin observación prolongada",
+            "Facilita que el participante se sienta en control y proporcione información más rica y detallada",
+            "El investigador dirige la conversación y guía las respuestas",
+            "Ayuda a obtener resultados cuantitativos más precisos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It empowers the participant and generates richer, more detailed information",
+          "es-MX": "Facilita que el participante se sienta en control y proporcione información más rica y detallada"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "In the master-apprentice model, the participant is treated as the expert and the researcher as the learner. For example, a technician explains their workflow step by step while performing tasks. This dynamic reduces hierarchy and reveals tacit knowledge."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "En el modelo maestro-aprendiz, el participante es el experto y el investigador el aprendiz. Por ejemplo, un técnico explica su proceso mientras trabaja. Esta dinámica reduce jerarquías y permite revelar conocimiento implícito."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Fundamentos de la Etnografía",
+        "Question Text": {
+          "es-MX": [
+            "¿Quién es considerado el «padre» de la etnografía moderna y en qué periodo desarrolló su enfoque metodológico?"
+          ],
+          "en-US": [
+            "Who is considered the father of modern ethnography and in which period did he develop his methodological approach?"
+          ]
+        },
+        "Options": {
+          "es-MX": [
+            "Clifford Geertz, en la década de 1990.",
+            "Robert Kozinets, a partir de 2010.",
+            "Edward T. Hall, en 2005.",
+            "Bronislaw Malinowski, a inicios del siglo XX."
+          ],
+          "en-US": [
+            "Clifford Geertz, in the 1990s.",
+            "Robert Kozinets, from 2010 onward.",
+            "Edward T. Hall, in 2005.",
+            "Bronislaw Malinowski, in the early 20th century."
+          ]
+        },
+        "Correct Answer": {
+          "es-MX": "Bronislaw Malinowski, a inicios del siglo XX.",
+          "en-US": "Bronislaw Malinowski, in the early 20th century."
+        },
+        "Explanation": {
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Malinowski introdujo la observación participante viviendo largos periodos con las comunidades estudiadas. Por ejemplo, convivió con los habitantes de las Islas Trobriand para comprender sus prácticas culturales desde dentro, no solo mediante entrevistas."
+            }
+          ],
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Malinowski introduced participant observation by living for extended periods with studied communities. For example, he lived in the Trobriand Islands to understand cultural practices from within, not just through interviews."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Método Etnográfico",
+        "Question Text": {
+          "es-MX": [
+            "¿Cuál es uno de los aspectos clave que diferencia el método etnográfico de otros enfoques de investigación?"
+          ],
+          "en-US": [
+            "What is one key aspect that differentiates the ethnographic method from other research approaches?"
+          ]
+        },
+        "Options": {
+          "es-MX": [
+            "El enfoque en encuestas cuantitativas.",
+            "El análisis exclusivo de datos estadísticos.",
+            "La búsqueda de key source persons dentro de la comunidad.",
+            "La investigación únicamente presencial."
+          ],
+          "en-US": [
+            "A focus on quantitative surveys.",
+            "Exclusive statistical data analysis.",
+            "The identification of key source persons within the community.",
+            "Research conducted only in person."
+          ]
+        },
+        "Correct Answer": {
+          "es-MX": "La búsqueda de key source persons dentro de la comunidad.",
+          "en-US": "The identification of key source persons within the community."
+        },
+        "Explanation": {
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las key source persons son informantes clave que ayudan al investigador a comprender dinámicas internas. Por ejemplo, en una empresa, puede ser un empleado veterano que explica normas no escritas y prácticas informales."
+            }
+          ],
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Key source persons are insiders who help researchers understand internal dynamics. For example, in a company, a senior employee may explain unwritten rules and informal practices."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Netnografía",
+        "Question Text": {
+          "es-MX": [
+            "¿Qué tipo de datos se utilizan en la netnografía para identificar patrones culturales y emocionales en comunidades digitales?"
+          ],
+          "en-US": [
+            "What type of data is used in netnography to identify cultural and emotional patterns in digital communities?"
+          ]
+        },
+        "Options": {
+          "es-MX": [
+            "Únicamente encuestas y entrevistas online.",
+            "Contenido digital como textos, imágenes, audios y videos publicados en comunidades online.",
+            "Solo análisis estadístico de métricas digitales.",
+            "Observación presencial en espacios físicos."
+          ],
+          "en-US": [
+            "Only online surveys and interviews.",
+            "Digital content such as texts, images, audio, and videos shared in online communities.",
+            "Only statistical metric analysis.",
+            "In-person observation in physical spaces."
+          ]
+        },
+        "Correct Answer": {
+          "es-MX": "Contenido digital como textos, imágenes, audios y videos publicados en comunidades online.",
+          "en-US": "Digital content such as texts, images, audio, and videos shared in online communities."
+        },
+        "Explanation": {
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Por ejemplo, analizar conversaciones en foros de Reddit, comentarios en Instagram o reseñas en Amazon permite comprender emociones, motivaciones y patrones culturales sin interacción presencial."
+            }
+          ],
+          "en-US": [
+            {
+              "type": "text",
+              "content": "For example, analyzing Reddit threads, Instagram comments, or Amazon reviews helps uncover emotions, motivations, and cultural patterns without physical interaction."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Comparación Etnografía vs Netnografía",
+        "Question Text": {
+          "es-MX": [
+            "¿Cuál es la principal diferencia entre etnografía y netnografía?"
+          ],
+          "en-US": [
+            "What is the main difference between ethnography and netnography?"
+          ]
+        },
+        "Options": {
+          "es-MX": [
+            "La etnografía analiza únicamente datos cuantitativos.",
+            "La netnografía se realiza en entornos digitales, mientras que la etnografía tradicional se desarrolla en contextos físicos y presenciales.",
+            "La netnografía no utiliza observación.",
+            "La etnografía solo se aplica en estudios empresariales."
+          ],
+          "en-US": [
+            "Ethnography analyzes only quantitative data.",
+            "Netnography is conducted in digital environments, while traditional ethnography takes place in physical, in-person contexts.",
+            "Netnography does not use observation.",
+            "Ethnography applies only to business studies."
+          ]
+        },
+        "Correct Answer": {
+          "es-MX": "La netnografía se realiza en entornos digitales, mientras que la etnografía tradicional se desarrolla en contextos físicos y presenciales.",
+          "en-US": "Netnography is conducted in digital environments, while traditional ethnography takes place in physical, in-person contexts."
+        },
+        "Explanation": {
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Por ejemplo, un investigador etnográfico puede convivir con trabajadores en una fábrica para observar su rutina diaria. En cambio, un investigador netnográfico analizaría foros digitales donde esos trabajadores discuten problemas laborales. Ambos estudian cultura y comportamiento, pero el entorno cambia."
+            }
+          ],
+          "en-US": [
+            {
+              "type": "text",
+              "content": "For example, an ethnographer may observe workers inside a factory to understand daily routines. A netnographer would analyze online forums where those workers discuss workplace issues. Both study culture and behavior, but the environment differs."
+            }
+          ]
+        }
+      }
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+
+      
+    ]
+  }
+  

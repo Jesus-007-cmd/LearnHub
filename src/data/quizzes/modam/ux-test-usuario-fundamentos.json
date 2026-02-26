@@ -1,0 +1,403 @@
+{
+    "meta": {
+      "slug": "ux-test-usuario-fundamentos",
+      "title": "Pruebas con Usuarios · Fundamentos",
+      "subject": "Investigación Centrada en la Interfaz de Usuario",
+      "unit": 3,
+      "classNo": 1,
+      "description": "Conceptos básicos del test de usuario: tareas, metas y detección de problemas de usabilidad.",
+      "tags": ["UX", "Usabilidad", "User Testing", "Evaluación", "DCU"]
+    },
+    "Questions": [
+      {
+        "Category": "Concepto de test de usuario",
+        "Question Text": {
+          "en-US": [
+            "What is a user test?"
+          ],
+          "es-MX": [
+            "¿Qué es el test de usuario?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A quantitative method to measure web traffic",
+            "A qualitative technique that detects usability errors and design inconsistencies",
+            "A statistical analysis of usage data",
+            "A survey to collect user opinions"
+          ],
+          "es-MX": [
+            "Un método cuantitativo para medir el tráfico web",
+            "Una técnica cualitativa que detecta errores de usabilidad e inconsistencias en el diseño",
+            "Un análisis estadístico de datos de uso",
+            "Una encuesta para recoger opiniones de los usuarios"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A qualitative technique that detects usability errors and design inconsistencies",
+          "es-MX": "Una técnica cualitativa que detecta errores de usabilidad e inconsistencias en el diseño"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "User testing observes real users interacting with the system to identify usability problems. It focuses on behavior and difficulties, not only on numerical metrics."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El test de usuario observa a personas reales interactuando con el sistema para identificar problemas de uso. Se centra en el comportamiento y dificultades, no solo en métricas numéricas."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Diseño de tareas",
+        "Question Text": {
+          "en-US": [
+            "What is an essential characteristic of a task in user testing?"
+          ],
+          "es-MX": [
+            "¿Cuál es una característica esencial de una tarea en el test de usuario?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It can be vague and unrelated to the system",
+            "It must be linked to a usage scenario and have an achievable goal",
+            "It is only performed once by any user",
+            "It does not need to solve a user need"
+          ],
+          "es-MX": [
+            "Puede ser vaga y no relacionada con el sistema",
+            "Debe estar vinculada a un escenario de uso y tener una meta alcanzable",
+            "Solo necesita ser realizada una vez por cualquier usuario",
+            "No es necesario que resuelva una necesidad del usuario"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It must be linked to a usage scenario and have an achievable goal",
+          "es-MX": "Debe estar vinculada a un escenario de uso y tener una meta alcanzable"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Tasks represent realistic situations the user wants to accomplish. Without a clear goal, the test cannot evaluate success or failure."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las tareas representan situaciones reales que el usuario desea completar. Sin una meta clara no es posible evaluar éxito o fracaso."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Meta en la prueba",
+        "Question Text": {
+          "en-US": [
+            "What does 'goal' mean in user testing?"
+          ],
+          "es-MX": [
+            "¿Qué significa 'meta' en el test de usuario?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The developer objective",
+            "The completion of the design project",
+            "The moment when the user successfully achieves the objective",
+            "The system launch moment"
+          ],
+          "es-MX": [
+            "El objetivo del desarrollador",
+            "La finalización del proyecto de diseño",
+            "El momento en que el usuario logra satisfactoriamente el objetivo",
+            "El momento en que se lanza el sistema"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The moment when the user successfully achieves the objective",
+          "es-MX": "El momento en que el usuario logra satisfactoriamente el objetivo"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "In usability testing, success is defined by task completion. The goal is reached when the user completes the intended action correctly."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "En pruebas de usabilidad el éxito se define por completar la tarea. La meta se alcanza cuando el usuario logra realizar correctamente la acción esperada."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Proceso del test",
+        "Question Text": {
+          "en-US": [
+            "What is the first phase in the design and execution process of a usability test?"
+          ],
+          "es-MX": [
+            "¿Cuál es la primera fase en el proceso de diseño y ejecución de un test de usabilidad?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Test development",
+            "Recruitment",
+            "Briefing",
+            "Results evaluation"
+          ],
+          "es-MX": [
+            "Desarrollo de la prueba",
+            "Reclutamiento",
+            "Briefing",
+            "Evaluación de resultados"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Briefing",
+          "es-MX": "Briefing"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The briefing is the initial explanation given to participants before starting the usability test. It establishes context, rules, and expectations."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El briefing es la explicación inicial que se da al participante antes de comenzar la prueba. Establece el contexto, reglas y expectativas."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Neutralidad en la prueba",
+        "Question Text": {
+          "en-US": [
+            "What information should be avoided to prevent influencing user behavior during usability testing?"
+          ],
+          "es-MX": [
+            "¿Qué información se debe evitar para no influir en el comportamiento del usuario durante el test de usabilidad?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The test location",
+            "The time limit for each task",
+            "The general objective of the test",
+            "The facilitators' theoretical roles"
+          ],
+          "es-MX": [
+            "La ubicación del test",
+            "La duración límite de cada tarea",
+            "El objetivo general del test",
+            "Los roles teóricos de los facilitadores"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The time limit for each task",
+          "es-MX": "La duración límite de cada tarea"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Providing strict time limits may pressure participants and alter natural behavior, reducing the validity of test results."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Informar límites estrictos de tiempo puede generar presión y alterar el comportamiento natural del usuario, afectando la validez de la prueba."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Número de participantes",
+        "Question Text": {
+          "en-US": [
+            "According to Jakob Nielsen, what is the recommended number of users for a usability test?"
+          ],
+          "es-MX": [
+            "Según Jakob Nielsen, ¿cuál es el número recomendado de usuarios para un test de usabilidad?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Between one and five",
+            "Between five and ten",
+            "Between five and fifteen",
+            "Between ten and twenty"
+          ],
+          "es-MX": [
+            "Entre uno y cinco",
+            "Entre cinco y diez",
+            "Entre cinco y quince",
+            "Entre diez y veinte"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Between five and fifteen",
+          "es-MX": "Entre cinco y quince"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Nielsen suggests that around five users can reveal the majority of usability problems per iteration, and practical ranges often extend up to fifteen participants depending on the study scope."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Nielsen sugiere que aproximadamente cinco usuarios pueden revelar la mayoría de problemas de usabilidad por iteración, y en la práctica el rango puede extenderse hasta quince dependiendo del alcance del estudio."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Errores críticos",
+        "Question Text": {
+          "en-US": [
+            "What is considered a critical error in a usability test?"
+          ],
+          "es-MX": [
+            "¿Qué se considera un error crítico en un test de usabilidad?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "When the user completes the task slower than expected",
+            "When the user experiences a minor problem that does not block completion",
+            "When a task cannot be completed by the user",
+            "When the user reports low satisfaction after completing the task"
+          ],
+          "es-MX": [
+            "Cuando el usuario completa la tarea en más tiempo del esperado",
+            "Cuando el usuario experimenta un problema menor que no impide completar la tarea",
+            "Cuando una tarea no puede ser completada por el usuario",
+            "Cuando el usuario reporta baja satisfacción tras completar la tarea"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "When a task cannot be completed by the user",
+          "es-MX": "Cuando una tarea no puede ser completada por el usuario"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "A critical error prevents the user from completing the task successfully. It represents a severe usability breakdown that requires immediate attention."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Un error crítico impide que el usuario complete la tarea. Representa una falla grave de usabilidad que requiere atención inmediata."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Rol del facilitador",
+        "Question Text": {
+          "en-US": [
+            "What should the facilitator do if the participant believes they completed a task but actually did not?"
+          ],
+          "es-MX": [
+            "¿Qué debe hacer el facilitador si el participante cree haber completado una tarea pero en realidad no lo ha hecho?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Tell them they have not finished and ask them to continue",
+            "Mark the task as completed and move to the next one",
+            "Give them a hint to finish correctly",
+            "Interrupt the test and explain their mistake"
+          ],
+          "es-MX": [
+            "Informarle que no ha terminado y pedirle que continúe",
+            "Considerar la tarea como completada y seguir con la siguiente",
+            "Darle una pista para finalizarla correctamente",
+            "Interrumpir la prueba y explicar su error"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Mark the task as completed and move to the next one",
+          "es-MX": "Considerar la tarea como completada y seguir con la siguiente"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The facilitator must avoid influencing the participant. Intervening would alter natural behavior and compromise the validity of the test."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El facilitador debe evitar influir en el participante. Intervenir modificaría el comportamiento natural y afectaría la validez del test."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Clasificación de errores",
+        "Question Text": {
+          "en-US": [
+            "How should non-critical usability errors be classified during result evaluation?"
+          ],
+          "es-MX": [
+            "¿Cómo deben clasificarse los errores no críticos durante la evaluación de resultados?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "According to participant age",
+            "Based on subjective satisfaction level",
+            "Based on impact, frequency, and persistence",
+            "According to total task time"
+          ],
+          "es-MX": [
+            "En función de la edad del participante",
+            "Según el nivel de satisfacción subjetivo",
+            "Basados en su impacto, frecuencia y persistencia",
+            "Según el tiempo total empleado"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Based on impact, frequency, and persistence",
+          "es-MX": "Basados en su impacto, frecuencia y persistencia"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Severity classification considers how serious the issue is (impact), how often it occurs (frequency), and whether it continues over time (persistence)."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La clasificación de severidad considera qué tan grave es el problema (impacto), qué tan frecuente ocurre y si se mantiene en el tiempo (persistencia)."
+            }
+          ]
+        }
+      }
+      
+      
+    ]
+  }
+  

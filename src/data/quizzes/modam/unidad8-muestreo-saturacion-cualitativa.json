@@ -1,0 +1,1095 @@
+{
+    "meta": {
+      "slug": "ux-muestreo-saturacion-investigacion-cualitativa",
+      "title": "Muestreo y Saturación en Investigación Cualitativa",
+      "subject": "Investigación Centrada en la Interfaz de Usuario",
+      "unit": 8,
+      "classNo": 1,
+      "description": "Fundamentos del muestreo no probabilístico en investigación cualitativa, criterio de saturación teórica y diferencias metodológicas entre muestreo por conveniencia y muestreo consecutivo en estudios centrados en el usuario.",
+      "tags": ["UX", "Investigación Cualitativa", "Muestreo", "Saturación", "Reclutamiento", "Metodología"]
+    },
+    "Questions": [
+      {
+        "Category": "Muestreo no probabilístico",
+        "Question Text": {
+          "en-US": [
+            "What is a key characteristic of non-probabilistic sampling in qualitative research?"
+          ],
+          "es-MX": [
+            "¿Cuál es una de las características principales del muestreo no probabilístico en la investigación cualitativa?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It allows statistical generalizations",
+            "Participants are selected randomly",
+            "It seeks statistical representativeness",
+            "Participants are selected based on accessibility and researcher criteria"
+          ],
+          "es-MX": [
+            "Permite hacer generalizaciones estadísticas.",
+            "Se seleccionan los sujetos de forma aleatoria.",
+            "Busca representatividad estadística.",
+            "Selecciona sujetos en función de su accesibilidad y criterios del investigador."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Participants are selected based on accessibility and researcher criteria",
+          "es-MX": "Selecciona sujetos en función de su accesibilidad y criterios del investigador."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "In qualitative studies, the goal is depth and understanding, so participants are chosen because they can provide rich information about the phenomenon. For example, if you are researching why small-business owners struggle with invoicing apps, you recruit people who actually invoice regularly, even if that group is not statistically representative of the entire population."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "En estudios cualitativos se busca profundidad y comprensión, por eso se eligen participantes que aporten información rica sobre el fenómeno. Por ejemplo, si investigas por qué dueños de pequeños negocios batallan con apps de facturación, reclutas a quienes realmente facturan seguido, aunque ese grupo no represente estadísticamente a toda la población."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Muestreo no probabilístico",
+        "Question Text": {
+          "en-US": [
+            "Why is non-probabilistic sampling often preferred in qualitative UX research?"
+          ],
+          "es-MX": [
+            "¿Por qué suele preferirse el muestreo no probabilístico en investigación cualitativa UX?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it guarantees statistical representativeness",
+            "Because it focuses on selecting participants with relevant experience for deeper insights",
+            "Because it always requires large sample sizes",
+            "Because it eliminates the need for researcher judgment"
+          ],
+          "es-MX": [
+            "Porque garantiza representatividad estadística.",
+            "Porque se enfoca en seleccionar participantes con experiencia relevante para obtener mayor profundidad.",
+            "Porque siempre requiere muestras grandes.",
+            "Porque elimina la necesidad de criterio del investigador."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it focuses on selecting participants with relevant experience for deeper insights",
+          "es-MX": "Porque se enfoca en seleccionar participantes con experiencia relevante para obtener mayor profundidad."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Qualitative UX research needs people who can speak from real usage contexts. For example, if you are improving a delivery-driver workflow, interviewing random people would be wasteful. You need drivers who work in peak hours, deal with cancellations, and navigate real delivery constraints—those experiences generate the most actionable design insights."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La investigación cualitativa UX necesita personas que hablen desde un contexto real de uso. Por ejemplo, si vas a mejorar el flujo de repartidores, entrevistar gente al azar no sirve mucho. Necesitas repartidores que trabajen en horas pico, sufran cancelaciones y enfrenten problemas reales de entrega, porque esas experiencias producen hallazgos accionables."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Criterio de saturación",
+        "Question Text": {
+          "en-US": [
+            "Which option best describes the saturation criterion in qualitative research?"
+          ],
+          "es-MX": [
+            "¿Cuál de las siguientes opciones describe el criterio de saturación en la investigación cualitativa?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Selecting participants randomly until statistical representativeness is reached",
+            "Conducting interviews until the information becomes repetitive",
+            "Accumulating data until reaching a minimum sample of 100 people",
+            "Avoiding interviews with participants who have common experiences"
+          ],
+          "es-MX": [
+            "Seleccionar sujetos de manera aleatoria hasta alcanzar representatividad estadística.",
+            "Realizar entrevistas hasta que la información recogida sea redundante.",
+            "Acumular datos hasta que se alcance una muestra mínima de 100 personas.",
+            "Evitar entrevistas a sujetos con experiencias comunes."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Conducting interviews until the information becomes repetitive",
+          "es-MX": "Realizar entrevistas hasta que la información recogida sea redundante."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Saturation is reached when additional interviews stop producing new themes or insights. For example, if after several sessions users keep repeating the same checkout pain points—hidden shipping costs, unclear totals, and limited payment options—then continuing to interview similar users adds little value compared to moving into synthesis and design changes."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La saturación se alcanza cuando entrevistar a más personas ya no aporta ideas nuevas. Por ejemplo, si después de varias sesiones los usuarios repiten los mismos problemas del checkout—costos de envío ocultos, total poco claro y pocas formas de pago—seguir entrevistando perfiles similares aporta poco, y conviene pasar a sintetizar y proponer mejoras."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Criterio de saturación",
+        "Question Text": {
+          "en-US": [
+            "Which sign most clearly indicates that a study is approaching saturation?"
+          ],
+          "es-MX": [
+            "¿Qué señal indica más claramente que un estudio se está acercando a la saturación?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The sample reaches a fixed number like 50 or 100 participants",
+            "New interviews confirm existing themes but rarely add new ones",
+            "Participants become tired of answering questions",
+            "The researcher stops recording sessions"
+          ],
+          "es-MX": [
+            "La muestra llega a un número fijo como 50 o 100 participantes.",
+            "Las nuevas entrevistas confirman temas existentes y casi no agregan temas nuevos.",
+            "Los participantes se cansan de responder.",
+            "El investigador deja de grabar sesiones."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "New interviews confirm existing themes but rarely add new ones",
+          "es-MX": "Las nuevas entrevistas confirman temas existentes y casi no agregan temas nuevos."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "A practical clue is when new participants mostly reinforce what you already heard. For example, if every new user repeats the same confusion about a navigation label and no one introduces a new pain point, your effort is better spent organizing findings, prioritizing issues, and validating solutions rather than extending data collection."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Una señal práctica es que los nuevos participantes solo refuerzan lo ya encontrado. Por ejemplo, si cada usuario nuevo repite la misma confusión con una etiqueta del menú y nadie aporta un problema distinto, conviene invertir el esfuerzo en organizar hallazgos, priorizar y validar soluciones en lugar de seguir recolectando datos."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Tipos de muestreo",
+        "Question Text": {
+          "en-US": [
+            "What is the main difference between convenience sampling and consecutive sampling?"
+          ],
+          "es-MX": [
+            "¿En qué se diferencia principalmente el muestreo por conveniencia del muestreo consecutivo?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Consecutive sampling selects all participants randomly",
+            "Convenience sampling avoids participants with homogeneous experiences",
+            "In consecutive sampling, participants are selected as they become available over time",
+            "Convenience sampling limits access to representative participants"
+          ],
+          "es-MX": [
+            "El muestreo consecutivo selecciona a todos los sujetos de forma aleatoria.",
+            "El muestreo por conveniencia evita sujetos con experiencias homogéneas.",
+            "En el muestreo consecutivo, los sujetos se seleccionan conforme están accesibles en el tiempo.",
+            "En el muestreo por conveniencia se limita el acceso a sujetos representativos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "In consecutive sampling, participants are selected as they become available over time",
+          "es-MX": "En el muestreo consecutivo, los sujetos se seleccionan conforme están accesibles en el tiempo."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Consecutive sampling follows a rule like “include every eligible participant that appears during a period,” while convenience sampling is more opportunistic. For example, in a clinic UX study, consecutive sampling might include every patient who meets criteria during two weeks. Convenience sampling might instead recruit whoever happens to be easiest to reach, like friends or people already in your network."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El muestreo consecutivo sigue una regla como “incluir a todo participante elegible que vaya apareciendo durante un periodo”, mientras que el de conveniencia es más oportunista. Por ejemplo, en un estudio UX de una clínica, el consecutivo incluiría a cada paciente que cumpla criterios durante dos semanas. En conveniencia, podrías reclutar a quienes sea más fácil contactar, como conocidos o gente ya cercana al proyecto."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Tipos de muestreo",
+        "Question Text": {
+          "en-US": [
+            "Which scenario is a clear example of consecutive sampling?"
+          ],
+          "es-MX": [
+            "¿Qué escenario es un ejemplo claro de muestreo consecutivo?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Recruiting only coworkers because they are easy to contact",
+            "Selecting every eligible user who signs up during a defined time window",
+            "Randomly selecting participants from a national database",
+            "Choosing only participants with the highest satisfaction scores"
+          ],
+          "es-MX": [
+            "Reclutar solo compañeros de trabajo porque es fácil contactarlos.",
+            "Seleccionar a cada usuario elegible que se registre durante un periodo definido.",
+            "Seleccionar participantes aleatoriamente de una base nacional.",
+            "Elegir solo participantes con los puntajes de satisfacción más altos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Selecting every eligible user who signs up during a defined time window",
+          "es-MX": "Seleccionar a cada usuario elegible que se registre durante un periodo definido."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Consecutive sampling is about inclusion over time with consistent criteria. For example, if you are studying onboarding friction, you could include every new user who creates an account this week and matches your profile (first-time users, specific region). This avoids “cherry-picking” participants and makes your collection process more systematic than convenience recruiting."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El muestreo consecutivo se basa en incluir participantes conforme van apareciendo, bajo criterios consistentes. Por ejemplo, si estudias fricción en el onboarding, puedes incluir a cada usuario nuevo que se registre esta semana y cumpla tu perfil (primerizos, región específica). Esto evita seleccionar “a conveniencia” y hace la recolección más sistemática."
+            }
+          ]
+        }
+      }    ,
+      {
+        "Category": "Entrevista cognitiva",
+        "Question Text": {
+          "en-US": [
+            "What is the main objective of cognitive interviewing in quantitative research?"
+          ],
+          "es-MX": [
+            "¿Cuál es el principal objetivo de la entrevista cognitiva en la investigación cuantitativa?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To collect large-scale quantitative data",
+            "To understand how respondents interpret and perceive survey questions",
+            "To evaluate a product’s market impact",
+            "To confirm previously established hypotheses"
+          ],
+          "es-MX": [
+            "Recolectar datos cuantitativos de gran tamaño.",
+            "Obtener información sobre cómo percibe el encuestado las preguntas.",
+            "Evaluar el impacto de un producto en el mercado.",
+            "Confirmar hipótesis ya establecidas."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To understand how respondents interpret and perceive survey questions",
+          "es-MX": "Obtener información sobre cómo percibe el encuestado las preguntas."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Cognitive interviewing focuses on detecting whether participants understand questions as intended. For example, if a survey asks about “digital literacy,” respondents might interpret it differently—some may think of basic smartphone use, others of advanced software skills. Identifying these differences before large-scale deployment improves measurement accuracy."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La entrevista cognitiva busca detectar si los participantes comprenden las preguntas como el investigador espera. Por ejemplo, si un cuestionario menciona “alfabetización digital”, algunas personas pueden pensar en uso básico del celular y otras en programación avanzada. Detectar estas diferencias antes de aplicar la encuesta masivamente mejora la precisión del instrumento."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Metodología de Willis",
+        "Question Text": {
+          "en-US": [
+            "Which technique is associated with Gordon B. Willis' methodology for cognitive interviewing?"
+          ],
+          "es-MX": [
+            "¿Cuál de las siguientes técnicas describe Gordon B. Willis en su metodología para realizar entrevistas cognitivas?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Using online surveys for faster data collection",
+            "Observing open responses to see if they align with closed options",
+            "Evaluating participant reactions in a simulated environment",
+            "Conducting anonymous product testing"
+          ],
+          "es-MX": [
+            "Utilizar encuestas en línea para recolectar datos rápidamente.",
+            "Observar las respuestas abiertas y ver si se alinean con las opciones cerradas.",
+            "Evaluar la reacción de los participantes en un ambiente simulado.",
+            "Realizar pruebas de producto de manera anónima."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Observing open responses to see if they align with closed options",
+          "es-MX": "Observar las respuestas abiertas y ver si se alinean con las opciones cerradas."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Willis emphasizes comparing how participants explain their answers with the response options provided. For instance, if respondents choose 'agree' in a satisfaction survey but verbally describe frustration during probing, this mismatch reveals a potential problem in wording or scale interpretation."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Willis propone contrastar lo que el participante explica con las opciones de respuesta disponibles. Por ejemplo, si alguien marca “de acuerdo” en una escala de satisfacción pero al profundizar describe molestias o dificultades, esa discrepancia puede indicar que la redacción o la escala no están siendo interpretadas correctamente."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Control de calidad del cuestionario",
+        "Question Text": {
+          "en-US": [
+            "How does cognitive interviewing improve questionnaire quality control?"
+          ],
+          "es-MX": [
+            "¿Cómo ayuda la entrevista cognitiva en el control de calidad de un cuestionario?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It replaces pilot testing",
+            "It eliminates the need for questionnaire revision",
+            "It identifies and corrects potential misunderstandings in questions",
+            "It ensures all respondents answer uniformly"
+          ],
+          "es-MX": [
+            "Reemplaza la fase de prueba del cuestionario.",
+            "Evita la necesidad de revisar el cuestionario después de aplicarlo.",
+            "Permite identificar y corregir posibles malentendidos en las preguntas.",
+            "Asegura que todos los encuestados respondan de manera uniforme."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It identifies and corrects potential misunderstandings in questions",
+          "es-MX": "Permite identificar y corregir posibles malentendidos en las preguntas."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "By asking respondents to explain what a question means to them, researchers can detect ambiguous wording, unclear concepts, or confusing scales. For example, a question about 'regular use' may be interpreted as daily by some participants and weekly by others, leading to inconsistent data if not clarified."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Al pedir al participante que explique cómo entiende una pregunta, el investigador puede detectar ambigüedades, conceptos poco claros o escalas confusas. Por ejemplo, una pregunta sobre “uso regular” puede interpretarse como diario para algunos y semanal para otros, generando datos inconsistentes si no se aclara previamente."
+            }
+          ]
+        }
+      }    ,
+      {
+        "Category": "Conceptos fundamentales",
+        "Question Text": {
+          "en-US": [
+            "What best defines non-probabilistic sampling in qualitative research?"
+          ],
+          "es-MX": [
+            "¿Qué define mejor el muestreo no probabilístico en la investigación cualitativa?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Selecting participants randomly to ensure representativeness",
+            "Choosing participants based on relevance and research criteria",
+            "Using large samples to reduce bias",
+            "Ensuring statistical generalization"
+          ],
+          "es-MX": [
+            "Seleccionar participantes de forma aleatoria para garantizar representatividad.",
+            "Elegir participantes en función de su relevancia y criterios del estudio.",
+            "Utilizar muestras grandes para reducir sesgo.",
+            "Garantizar generalización estadística."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Choosing participants based on relevance and research criteria",
+          "es-MX": "Elegir participantes en función de su relevancia y criterios del estudio."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Qualitative research prioritizes depth over statistical representation. For example, when studying frustrations in delivery apps, researchers select active delivery drivers rather than random citizens, because their lived experience generates meaningful insights."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La investigación cualitativa prioriza profundidad sobre representatividad estadística. Por ejemplo, si se estudian problemas en apps de reparto, se seleccionan repartidores activos y no ciudadanos al azar, porque su experiencia real aporta información valiosa."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Saturación teórica",
+        "Question Text": {
+          "en-US": [
+            "What indicates that theoretical saturation has been reached?"
+          ],
+          "es-MX": [
+            "¿Qué indica que se ha alcanzado la saturación teórica?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Reaching a predetermined number of participants",
+            "When new interviews no longer add new themes",
+            "When participants agree with each other",
+            "When the questionnaire is fully completed"
+          ],
+          "es-MX": [
+            "Al alcanzar un número predeterminado de participantes.",
+            "Cuando las nuevas entrevistas ya no aportan temas nuevos.",
+            "Cuando los participantes coinciden entre sí.",
+            "Cuando el cuestionario está completamente aplicado."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "When new interviews no longer add new themes",
+          "es-MX": "Cuando las nuevas entrevistas ya no aportan temas nuevos."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Saturation is reached when additional participants mainly confirm existing findings. For example, if repeated interviews continue revealing the same navigation issue in an app without uncovering new problems, data collection may reasonably stop."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La saturación se alcanza cuando las entrevistas adicionales solo confirman lo ya detectado. Por ejemplo, si los usuarios siguen señalando el mismo problema de navegación sin aportar nuevos hallazgos, puede considerarse suficiente evidencia."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Entrevista cognitiva",
+        "Question Text": {
+          "en-US": [
+            "What are the four main cognitive processes respondents go through when answering a survey?"
+          ],
+          "es-MX": [
+            "¿Cuáles son los cuatro procesos cognitivos principales que atraviesa un encuestado al responder un cuestionario?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Attention, speed, agreement, submission",
+            "Comprehension, retrieval, judgment, response",
+            "Observation, reaction, opinion, decision",
+            "Reading, memorizing, answering, validating"
+          ],
+          "es-MX": [
+            "Atención, velocidad, acuerdo, envío.",
+            "Comprensión, recuperación, juicio y respuesta.",
+            "Observación, reacción, opinión y decisión.",
+            "Lectura, memorización, respuesta y validación."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Comprehension, retrieval, judgment, response",
+          "es-MX": "Comprensión, recuperación, juicio y respuesta."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "When answering a survey, individuals first interpret the question, then recall relevant information, evaluate their answer, and finally select a response. For instance, when asked about 'frequent use,' a participant must interpret what 'frequent' means, remember their behavior, evaluate it, and choose an option on the scale."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Al responder una encuesta, la persona primero entiende la pregunta, luego recuerda información relevante, evalúa su situación y finalmente selecciona una opción. Por ejemplo, ante 'uso frecuente', debe interpretar qué significa 'frecuente', recordar su comportamiento real y decidir qué opción representa mejor su experiencia."
+            }
+          ]
+        }
+      }    ,
+      {
+        "Category": "Entrevista semiestructurada",
+        "Question Text": {
+          "en-US": [
+            "What is one of the first considerations when designing a semi-structured interview?"
+          ],
+          "es-MX": [
+            "¿Cuál es una de las primeras consideraciones que debe tener un investigador al diseñar una entrevista semiestructurada?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Collecting experts’ personal experiences",
+            "Obtaining objective information on varied topics",
+            "Analyzing participants’ subjective experience in a shared situation",
+            "Studying technical aspects in an impartial way"
+          ],
+          "es-MX": [
+            "Recoger experiencias personales de los expertos.",
+            "Obtener información objetiva sobre temas variados.",
+            "Analizar la experiencia subjetiva de los participantes sobre una situación compartida.",
+            "Estudiar aspectos técnicos de forma imparcial."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Analyzing participants’ subjective experience in a shared situation",
+          "es-MX": "Analizar la experiencia subjetiva de los participantes sobre una situación compartida."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Semi-structured interviews aim to explore how individuals perceive and interpret specific experiences. For example, when studying user frustration during checkout, the goal is not to measure technical performance but to understand how users felt, what confused them, and how they interpreted the process."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las entrevistas semiestructuradas buscan comprender cómo las personas interpretan una experiencia concreta. Por ejemplo, al analizar problemas en un proceso de pago, el objetivo no es evaluar el sistema técnicamente, sino entender cómo el usuario vivió la experiencia, qué le generó duda o incomodidad."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Entrevista a expertos",
+        "Question Text": {
+          "en-US": [
+            "What is a common drawback of expert interviews in market research?"
+          ],
+          "es-MX": [
+            "¿Cuál es un inconveniente común de la entrevista a expertos en el ámbito de la investigación de mercados?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Interviewers may confuse expert knowledge with personal experience",
+            "Experts usually participate spontaneously and for free",
+            "It is impossible to structure the interview",
+            "It requires constant observation of experts"
+          ],
+          "es-MX": [
+            "Es fácil para el entrevistador confundir conocimientos con vivencias personales.",
+            "Los expertos suelen participar de manera espontánea y gratuita.",
+            "Es imposible estructurar la entrevista.",
+            "Requiere de observación constante de los expertos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Interviewers may confuse expert knowledge with personal experience",
+          "es-MX": "Es fácil para el entrevistador confundir conocimientos con vivencias personales."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Experts often provide opinions based on accumulated experience, but these perspectives may not always represent broader user behavior. For example, a marketing consultant may describe trends from professional insight, yet those views might differ from real consumer motivations. Distinguishing between expert interpretation and empirical evidence is essential."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los expertos aportan opiniones fundamentadas en su trayectoria profesional, pero esas perspectivas no siempre reflejan el comportamiento real del mercado. Por ejemplo, un consultor puede hablar desde su experiencia estratégica, aunque las motivaciones reales de los usuarios puedan ser distintas. Es importante diferenciar interpretación experta de evidencia empírica."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Entrevista etnográfica",
+        "Question Text": {
+          "en-US": [
+            "In what context is ethnographic interviewing particularly useful?"
+          ],
+          "es-MX": [
+            "¿En qué contexto suele ser útil la entrevista etnográfica?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To obtain a graphical representation of subjective theory",
+            "Within a broader observation process of participants",
+            "To compare participants from different contexts statistically",
+            "To avoid the influence of personal experiences"
+          ],
+          "es-MX": [
+            "Para obtener una representación gráfica de la teoría subjetiva de un entrevistado.",
+            "Dentro de un proceso de observación participante más amplio.",
+            "Para obtener comparabilidad entre entrevistados de distintos contextos.",
+            "Para evitar la influencia de experiencias personales de los participantes."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Within a broader observation process of participants",
+          "es-MX": "Dentro de un proceso de observación participante más amplio."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Ethnographic interviews are typically integrated into field observation to understand behavior in natural contexts. For example, studying how shoppers navigate a supermarket requires not only asking questions but also observing routines, decision patterns, and environmental influences in real time."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La entrevista etnográfica suele integrarse dentro de un proceso de observación en contexto real. Por ejemplo, al estudiar cómo compran las personas en un supermercado, no basta con preguntar; también es necesario observar sus recorridos, decisiones y el entorno donde actúan."
+            }
+          ]
+        }
+      }    ,
+      {
+        "Category": "Entrevista focalizada",
+        "Question Text": {
+          "en-US": [
+            "What is the main purpose of a focused interview?"
+          ],
+          "es-MX": [
+            "¿Cuál es el propósito principal de la entrevista focalizada?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To obtain statistical data from a large population",
+            "To analyze participants’ subjective experience regarding a shared situation",
+            "To evaluate technical system performance",
+            "To validate quantitative hypotheses"
+          ],
+          "es-MX": [
+            "Obtener datos estadísticos de una población amplia.",
+            "Analizar la experiencia subjetiva de los participantes sobre una situación compartida.",
+            "Evaluar el rendimiento técnico de un sistema.",
+            "Validar hipótesis cuantitativas."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To analyze participants’ subjective experience regarding a shared situation",
+          "es-MX": "Analizar la experiencia subjetiva de los participantes sobre una situación compartida."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "A focused interview examines how individuals interpret and emotionally process a specific shared event or stimulus. For example, after exposing users to a new app feature, researchers may explore how participants felt, what meanings they attributed to it, and how it influenced their perception of the product."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La entrevista focalizada analiza cómo las personas interpretan y viven una experiencia concreta que han compartido. Por ejemplo, después de mostrar una nueva función de una app, se puede explorar cómo la percibieron, qué emociones generó y qué significado le atribuyeron."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Comparación de técnicas",
+        "Question Text": {
+          "en-US": [
+            "What differentiates a focused interview from a general semi-structured interview?"
+          ],
+          "es-MX": [
+            "¿Qué diferencia a una entrevista focalizada de una entrevista semiestructurada general?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A focused interview is always quantitative",
+            "A focused interview centers on a specific shared event or stimulus",
+            "A semi-structured interview avoids subjective experiences",
+            "A focused interview requires random sampling"
+          ],
+          "es-MX": [
+            "La entrevista focalizada es siempre cuantitativa.",
+            "La entrevista focalizada se centra en un evento o estímulo específico compartido.",
+            "La entrevista semiestructurada evita experiencias subjetivas.",
+            "La entrevista focalizada requiere muestreo aleatorio."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A focused interview centers on a specific shared event or stimulus",
+          "es-MX": "La entrevista focalizada se centra en un evento o estímulo específico compartido."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "While semi-structured interviews explore broader themes, focused interviews concentrate on a particular situation experienced by all participants. For instance, analyzing reactions to a training session immediately after it concludes ensures discussion revolves around the same concrete experience."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Mientras la entrevista semiestructurada puede abordar temas amplios, la focalizada se concentra en una experiencia concreta vivida por todos los participantes. Por ejemplo, analizar las reacciones a una capacitación justo después de realizarla garantiza que todos reflexionen sobre el mismo evento."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Análisis de entrevista narrativa",
+        "Question Text": {
+          "en-US": [
+            "What is the first step in the analysis process of an interview?"
+          ],
+          "es-MX": [
+            "¿Cuál es el primer paso en el proceso de análisis de una entrevista?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Confirming prior theories about the interviewee",
+            "Observing how the interviewee organizes their ideas without intervention",
+            "Identifying biographical elements not integrated into self-theories",
+            "Stimulating rapid and specific responses"
+          ],
+          "es-MX": [
+            "Confirmar teorías previas sobre el entrevistado.",
+            "Observar cómo el entrevistado organiza sus ideas sin intervención.",
+            "Identificar elementos biográficos no integrados en teorías sobre sí mismo.",
+            "Estimular respuestas rápidas y específicas."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Observing how the interviewee organizes their ideas without intervention",
+          "es-MX": "Observar cómo el entrevistado organiza sus ideas sin intervención."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "In narrative and qualitative interview analysis, the first step is structural observation. Researchers analyze how the story is organized before interpreting its meaning. For example, whether the participant begins with a turning point, a conflict, or a success already reveals how they construct their life narrative."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "En el análisis narrativo y cualitativo, el primer paso es observar la estructura del relato antes de interpretarlo. Se analiza cómo se organiza la historia. Por ejemplo, si la persona inicia con un conflicto o con un logro, esa elección ya aporta información sobre cómo construye su identidad."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Entrevista narrativa y episódica",
+        "Question Text": {
+          "en-US": [
+            "In which disciplines is narrative and episodic interviewing most commonly applied?"
+          ],
+          "es-MX": [
+            "¿En qué disciplinas es más común la aplicación de la entrevista narrativa y episódica?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Psychology and sociology",
+            "Marketing and graphic design",
+            "Engineering and physics",
+            "Business administration and finance"
+          ],
+          "es-MX": [
+            "Psicología y sociología.",
+            "Marketing y diseño gráfico.",
+            "Ingeniería y física.",
+            "Administración de empresas y finanzas."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Psychology and sociology",
+          "es-MX": "Psicología y sociología."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "These methods are widely used in disciplines that explore meaning, identity, and social experience. In sociology, they help study life trajectories and social mobility. In psychology, they are used to understand how personal experiences shape identity and emotional development."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Estas metodologías se utilizan principalmente en disciplinas que analizan significado, identidad y experiencia social. En sociología permiten estudiar trayectorias de vida y procesos sociales. En psicología ayudan a comprender cómo experiencias significativas influyen en el desarrollo personal."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Fase de balance",
+        "Question Text": {
+          "en-US": [
+            "What does the balance phase aim to achieve in a narrative interview?"
+          ],
+          "es-MX": [
+            "¿Cuál de las siguientes opciones describe el propósito de la fase de «balance» en la entrevista narrativa?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Completing the narration with additional details",
+            "Asking questions to stimulate a narrative response",
+            "Arguing key aspects without interrupting the narration",
+            "Inducing the interviewee to draw conclusions prematurely"
+          ],
+          "es-MX": [
+            "Completar la narración con detalles adicionales.",
+            "Realizar preguntas para estimular una respuesta narrativa.",
+            "Argumentar aspectos clave sin interrumpir la narración.",
+            "Inducir al entrevistado a sacar conclusiones antes de terminar."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Arguing key aspects without interrupting the narration",
+          "es-MX": "Argumentar aspectos clave sin interrumpir la narración."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "During the balance phase, the interviewer revisits important elements mentioned earlier to clarify or deepen them while respecting the narrative’s internal logic. The goal is not to change the direction of the story but to ensure analytical completeness."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "En la fase de balance, el investigador retoma elementos clave del relato para profundizarlos sin alterar su coherencia interna. No se trata de cambiar la historia, sino de ampliar aspectos relevantes para el análisis."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Profundización conceptual",
+        "Question Text": {
+          "en-US": [
+            "Why is it important not to interrupt the main narration phase?"
+          ],
+          "es-MX": [
+            "¿Por qué es importante no interrumpir la fase principal de narración?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To reduce interview duration",
+            "To preserve the natural structure and meaning of the narrative",
+            "To prevent recording errors",
+            "To ensure statistical comparability"
+          ],
+          "es-MX": [
+            "Para reducir la duración de la entrevista.",
+            "Para preservar la estructura y significado natural del relato.",
+            "Para evitar errores de grabación.",
+            "Para asegurar comparabilidad estadística."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To preserve the natural structure and meaning of the narrative",
+          "es-MX": "Para preservar la estructura y significado natural del relato."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Interruptions can distort the sequence and emphasis chosen by the participant. In narrative interviews, meaning is often embedded in how the story unfolds. Allowing uninterrupted narration helps maintain authenticity and analytical reliability."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las interrupciones pueden alterar la secuencia y el énfasis elegido por el entrevistado. En entrevistas narrativas, el significado se encuentra también en cómo se desarrolla el relato. Permitir una narración fluida garantiza mayor autenticidad y validez analítica."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Profundización narrativa",
+        "Question Text": {
+          "en-US": [
+            "What does it mean when a narrative interview identifies biographical elements not integrated into self-theories?"
+          ],
+          "es-MX": [
+            "¿Qué significa identificar elementos biográficos no integrados en teorías sobre sí mismo en una entrevista narrativa?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Finding inconsistencies between lived experiences and self-interpretation",
+            "Detecting statistical errors in the story",
+            "Identifying missing demographic data",
+            "Correcting grammar mistakes in the narration"
+          ],
+          "es-MX": [
+            "Detectar inconsistencias entre experiencias vividas y la auto-interpretación.",
+            "Detectar errores estadísticos en el relato.",
+            "Identificar datos demográficos faltantes.",
+            "Corregir errores gramaticales en la narración."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Finding inconsistencies between lived experiences and self-interpretation",
+          "es-MX": "Detectar inconsistencias entre experiencias vividas y la auto-interpretación."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Sometimes participants narrate events that contradict how they describe themselves. Identifying these elements helps researchers understand hidden tensions, unresolved conflicts, or identity reconstruction processes."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "En ocasiones, el entrevistado relata experiencias que no coinciden con la imagen que tiene de sí mismo. Detectar estos elementos permite comprender tensiones internas, contradicciones o procesos de reconstrucción identitaria."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Entrevista narrativa vs episódica",
+        "Question Text": {
+          "en-US": [
+            "What is the main difference between a narrative interview and an episodic interview?"
+          ],
+          "es-MX": [
+            "¿Cuál es la principal diferencia entre una entrevista narrativa y una entrevista episódica?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Narrative interviews focus on complete life stories, while episodic interviews focus on specific situations.",
+            "Narrative interviews use surveys, while episodic interviews use experiments.",
+            "Narrative interviews collect quantitative data, while episodic interviews collect qualitative data.",
+            "There is no conceptual difference."
+          ],
+          "es-MX": [
+            "La entrevista narrativa aborda historias de vida completas, mientras que la episódica se centra en situaciones específicas.",
+            "La entrevista narrativa usa encuestas, mientras que la episódica usa experimentos.",
+            "La entrevista narrativa recoge datos cuantitativos, mientras que la episódica recoge datos cualitativos.",
+            "No existe diferencia conceptual."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Narrative interviews focus on complete life stories, while episodic interviews focus on specific situations.",
+          "es-MX": "La entrevista narrativa aborda historias de vida completas, mientras que la episódica se centra en situaciones específicas."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Narrative interviews aim to reconstruct broader life trajectories, while episodic interviews explore concrete events or experiences. The episodic format is more structured and context-specific."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La entrevista narrativa busca reconstruir trayectorias de vida amplias. La episódica se enfoca en eventos concretos o experiencias específicas, con mayor delimitación contextual."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Rol del investigador",
+        "Question Text": {
+          "en-US": [
+            "What is the researcher’s primary role during the main narration phase?"
+          ],
+          "es-MX": [
+            "¿Cuál es el rol principal del investigador durante la fase principal de narración?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To actively guide the content of the story",
+            "To listen attentively without imposing interpretations",
+            "To challenge contradictions immediately",
+            "To summarize each segment of the narration"
+          ],
+          "es-MX": [
+            "Guiar activamente el contenido del relato.",
+            "Escuchar atentamente sin imponer interpretaciones.",
+            "Cuestionar contradicciones de inmediato.",
+            "Resumir cada parte del relato."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To listen attentively without imposing interpretations",
+          "es-MX": "Escuchar atentamente sin imponer interpretaciones."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The researcher must maintain neutrality and avoid influencing the structure or meaning of the narrative. Their role is primarily observational and supportive during this phase."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El investigador debe mantener neutralidad y evitar influir en la estructura o el significado del relato. Su función es principalmente observacional y de acompañamiento."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Análisis avanzado",
+        "Question Text": {
+          "en-US": [
+            "Why is structural analysis important before interpretative analysis in narrative interviews?"
+          ],
+          "es-MX": [
+            "¿Por qué es importante realizar primero un análisis estructural antes del análisis interpretativo en entrevistas narrativas?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because structure reveals how meaning is constructed",
+            "Because interpretation must always precede observation",
+            "Because it simplifies statistical modeling",
+            "Because it reduces interview time"
+          ],
+          "es-MX": [
+            "Porque la estructura revela cómo se construye el significado.",
+            "Porque la interpretación siempre debe preceder a la observación.",
+            "Porque simplifica el modelado estadístico.",
+            "Porque reduce el tiempo de la entrevista."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because structure reveals how meaning is constructed",
+          "es-MX": "Porque la estructura revela cómo se construye el significado."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "In narrative research, meaning is embedded in the organization of events. Before interpreting content, researchers must understand how the story unfolds structurally, since structure often conveys implicit meaning."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "En investigación narrativa, el significado se encuentra en la organización del relato. Antes de interpretar el contenido, es necesario analizar cómo se estructura la historia, ya que esa estructura transmite significado implícito."
+            }
+          ]
+        }
+      }
+      
+      
+  
+  
+  
+  
+    ]
+  }
+  

@@ -1,0 +1,601 @@
+{
+    "meta": {
+        "slug": "ux-cuadro-mando-dashboard",
+        "title": "Cuadro de Mando y Toma de Decisiones",
+        "subject": "Investigación Centrada en la Interfaz de Usuario",
+        "unit": 13,
+        "classNo": 1,
+        "description": "Concepto de cuadro de mando como herramienta ejecutiva para visualizar indicadores clave, analizar su evolución y apoyar la toma de decisiones estratégicas.",
+        "tags": [
+            "Cuadro de mando",
+            "Dashboard",
+            "KPI",
+            "Indicadores",
+            "Toma de decisiones",
+            "Analítica web"
+        ]
+    },
+    "Questions": [
+        {
+            "Category": "Fundamentos del Cuadro de Mando",
+            "Question Text": {
+                "en-US": [
+                    "What is the main purpose of a dashboard (cuadro de mando)?"
+                ],
+                "es-MX": [
+                    "¿Cuál es el propósito principal de un cuadro de mando?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "To decorate executive reports.",
+                    "To summarize key data and support informed decision-making.",
+                    "To replace all analytics tools.",
+                    "To increase website loading speed."
+                ],
+                "es-MX": [
+                    "Decorar reportes ejecutivos.",
+                    "Resumir datos clave y apoyar la toma de decisiones informadas.",
+                    "Reemplazar todas las herramientas analíticas.",
+                    "Aumentar la velocidad de carga del sitio."
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "To summarize key data and support informed decision-making.",
+                "es-MX": "Resumir datos clave y apoyar la toma de decisiones informadas."
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "A dashboard provides an executive summary of relevant indicators and their evolution, allowing managers to make strategic decisions based on data."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "El cuadro de mando funciona como un resumen ejecutivo que muestra indicadores clave y su evolución, facilitando decisiones estratégicas basadas en datos."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Indicadores y Evolución",
+            "Question Text": {
+                "en-US": [
+                    "Why is it important for a dashboard to show the evolution of indicators?"
+                ],
+                "es-MX": [
+                    "¿Por qué es importante que un cuadro de mando muestre la evolución de los indicadores?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "To make the design more attractive.",
+                    "To identify trends and changes over time.",
+                    "To reduce the number of KPIs.",
+                    "To eliminate the need for analysis."
+                ],
+                "es-MX": [
+                    "Para hacer el diseño más atractivo.",
+                    "Para identificar tendencias y cambios a lo largo del tiempo.",
+                    "Para reducir la cantidad de KPI.",
+                    "Para eliminar la necesidad de análisis."
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "To identify trends and changes over time.",
+                "es-MX": "Para identificar tendencias y cambios a lo largo del tiempo."
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "Tracking indicator evolution helps detect growth, decline, or anomalies, which are essential for strategic planning."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "Observar la evolución permite detectar crecimiento, caída o anomalías en el rendimiento, apoyando decisiones informadas."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Toma de Decisiones",
+            "Question Text": {
+                "en-US": [
+                    "Who primarily benefits from the information presented in a dashboard?"
+                ],
+                "es-MX": [
+                    "¿Quién se beneficia principalmente de la información presentada en un cuadro de mando?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Only web developers.",
+                    "Executive and decision-making roles.",
+                    "Graphic designers only.",
+                    "External competitors."
+                ],
+                "es-MX": [
+                    "Solo desarrolladores web.",
+                    "Perfiles ejecutivos y responsables de decisiones.",
+                    "Solo diseñadores gráficos.",
+                    "Competidores externos."
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Executive and decision-making roles.",
+                "es-MX": "Perfiles ejecutivos y responsables de decisiones."
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "Dashboards are designed to provide clear and actionable insights for managers and decision-makers."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "El cuadro de mando está orientado a facilitar información clara y accionable para quienes toman decisiones estratégicas."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Definición de Cuadro de Mando",
+            "Question Text": {
+                "en-US": [
+                    "What best defines a dashboard (cuadro de mando) in a decision-making context?"
+                ],
+                "es-MX": [
+                    "¿Qué define mejor a un cuadro de mando en el contexto de la toma de decisiones?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "A collection of all available metrics without prioritization.",
+                    "A visual executive summary that tracks key indicators and their evolution to support decisions.",
+                    "A design mockup used to present the website interface.",
+                    "A tool used only to store raw data from analytics platforms."
+                ],
+                "es-MX": [
+                    "Una colección de todas las métricas disponibles sin priorización.",
+                    "Un resumen ejecutivo visual que muestra indicadores clave y su evolución para apoyar decisiones.",
+                    "Un mockup de diseño para presentar la interfaz del sitio.",
+                    "Una herramienta usada únicamente para almacenar datos crudos de plataformas analíticas."
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "A visual executive summary that tracks key indicators and their evolution to support decisions.",
+                "es-MX": "Un resumen ejecutivo visual que muestra indicadores clave y su evolución para apoyar decisiones."
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "A dashboard is not just a list of numbers. Its value comes from selecting the most relevant indicators for a specific objective and presenting them clearly so decisions can be made quickly."
+                    },
+                    {
+                        "type": "text",
+                        "content": "For example, an e-commerce leadership dashboard might track conversion rate, cart abandonment, and revenue per visitor over time. If cart abandonment suddenly increases after a checkout change, the dashboard helps detect the trend early and triggers a UX investigation."
+                    },
+                    {
+                        "type": "text",
+                        "content": "Learn more: https://en.wikipedia.org/wiki/Dashboard_(business)"
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "Un cuadro de mando no es una lista de números sin orden. Su valor está en seleccionar los indicadores más relevantes para un objetivo específico y mostrarlos de forma clara para tomar decisiones con rapidez."
+                    },
+                    {
+                        "type": "text",
+                        "content": "Por ejemplo, en un e-commerce un cuadro de mando ejecutivo puede mostrar la tasa de conversión, el abandono de carrito y el ingreso por visitante a lo largo del tiempo. Si el abandono de carrito sube de golpe después de un cambio en el checkout, el cuadro de mando permite detectar la tendencia temprano y detonar una investigación UX."
+                    },
+                    {
+                        "type": "text",
+                        "content": "Para leer más: https://es.wikipedia.org/wiki/Tablero_de_control"
+                    }
+                ]
+            }
+        },
+        {
+          "Category": "Diseño de Cuadro de Mando",
+          "Question Text": {
+            "en-US": [
+              "Why should a dashboard avoid including too many detailed metrics?"
+            ],
+            "es-MX": [
+              "¿Por qué un cuadro de mando debe evitar incluir demasiadas métricas detalladas?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Because executives prefer colorful designs.",
+              "Because too much detail can obscure strategic insights.",
+              "Because metrics cannot be compared over time.",
+              "Because dashboards replace all detailed reports."
+            ],
+            "es-MX": [
+              "Porque los ejecutivos prefieren diseños coloridos.",
+              "Porque demasiados detalles pueden ocultar la visión estratégica.",
+              "Porque las métricas no pueden compararse en el tiempo.",
+              "Porque el cuadro de mando reemplaza todos los reportes detallados."
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Because too much detail can obscure strategic insights.",
+            "es-MX": "Porque demasiados detalles pueden ocultar la visión estratégica."
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "text",
+                "content": "A dashboard should prioritize clarity and focus on key indicators. Excessive detail reduces readability and strategic value."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "text",
+                "content": "El cuadro de mando debe centrarse en indicadores clave. Demasiado detalle dificulta la interpretación estratégica."
+              }
+            ]
+          }
+        }
+        ,
+        {
+          "Category": "Dashboard Estratégico",
+          "Question Text": {
+            "en-US": [
+              "What makes a dashboard strategic rather than operational?"
+            ],
+            "es-MX": [
+              "¿Qué hace que un cuadro de mando sea estratégico y no solo operativo?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "It includes raw technical logs.",
+              "It focuses on long-term goals and key performance indicators.",
+              "It tracks only daily technical errors.",
+              "It shows design prototypes."
+            ],
+            "es-MX": [
+              "Incluye registros técnicos crudos.",
+              "Se enfoca en objetivos de largo plazo e indicadores clave.",
+              "Solo monitorea errores técnicos diarios.",
+              "Muestra prototipos de diseño."
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "It focuses on long-term goals and key performance indicators.",
+            "es-MX": "Se enfoca en objetivos de largo plazo e indicadores clave."
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "text",
+                "content": "Strategic dashboards align metrics with business objectives and long-term planning rather than short-term operational tasks."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "text",
+                "content": "Un cuadro de mando estratégico vincula métricas con objetivos del negocio y planificación a largo plazo."
+              }
+            ]
+          }
+        }
+        ,
+        {
+          "Category": "Relación KPI y Cuadro de Mando",
+          "Question Text": {
+            "en-US": [
+              "Why are KPIs essential components of a dashboard?"
+            ],
+            "es-MX": [
+              "¿Por qué los KPI son componentes esenciales de un cuadro de mando?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Because they replace all other metrics.",
+              "Because they visually decorate reports.",
+              "Because they directly measure progress toward strategic goals.",
+              "Because they eliminate the need for interpretation."
+            ],
+            "es-MX": [
+              "Porque reemplazan todas las demás métricas.",
+              "Porque decoran visualmente los reportes.",
+              "Porque miden directamente el avance hacia objetivos estratégicos.",
+              "Porque eliminan la necesidad de interpretación."
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Because they directly measure progress toward strategic goals.",
+            "es-MX": "Porque miden directamente el avance hacia objetivos estratégicos."
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "text",
+                "content": "KPIs ensure that dashboards are not just collections of numbers but tools aligned with measurable objectives."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "text",
+                "content": "Los KPI garantizan que el cuadro de mando esté alineado con objetivos estratégicos medibles y no sea solo una lista de datos."
+              }
+            ]
+          }
+        },
+        {
+          "Category": "KPI en Analítica Web",
+          "Question Text": {
+            "en-US": [
+              "What does the KPI 'pages per session' primarily measure?"
+            ],
+            "es-MX": [
+              "¿Qué mide principalmente el KPI 'páginas por sesión'?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "The number of unique users visiting the site.",
+              "The average number of pages viewed during a single session.",
+              "The percentage of users who abandon after one page.",
+              "The total number of conversions in a campaign."
+            ],
+            "es-MX": [
+              "El número de usuarios únicos que visitan el sitio.",
+              "El promedio de páginas vistas durante una misma sesión.",
+              "El porcentaje de usuarios que abandonan tras una sola página.",
+              "El número total de conversiones en una campaña."
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "The average number of pages viewed during a single session.",
+            "es-MX": "El promedio de páginas vistas durante una misma sesión."
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "text",
+                "content": "Pages per session indicates user engagement depth. A higher value suggests users explore more content, which can reflect interest or effective navigation design."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "text",
+                "content": "Las páginas por sesión indican la profundidad de interacción del usuario. Un valor alto puede reflejar interés o una arquitectura de información bien diseñada."
+              }
+            ]
+          }
+        }
+        ,
+        {
+          "Category": "Embudo de Conversión",
+          "Question Text": {
+            "en-US": [
+              "Why is it important to measure each step of the conversion funnel?"
+            ],
+            "es-MX": [
+              "¿Por qué es importante medir cada paso del embudo de conversión?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "To identify where users drop off before completing the goal.",
+              "To calculate server loading speed.",
+              "To reduce the number of KPIs displayed.",
+              "To replace qualitative research."
+            ],
+            "es-MX": [
+              "Para identificar en qué etapa los usuarios abandonan antes de completar el objetivo.",
+              "Para calcular la velocidad del servidor.",
+              "Para reducir el número de KPI mostrados.",
+              "Para reemplazar la investigación cualitativa."
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "To identify where users drop off before completing the goal.",
+            "es-MX": "Para identificar en qué etapa los usuarios abandonan antes de completar el objetivo."
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "text",
+                "content": "Analyzing each funnel stage helps detect friction points. For example, many users may visit a landing page but fail to complete a form, indicating usability or clarity issues."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "text",
+                "content": "Medir cada etapa permite detectar puntos de fricción. Por ejemplo, muchos usuarios pueden acceder a la landing pero no completar el formulario, lo que indica problemas de claridad o usabilidad."
+              }
+            ]
+          }
+        }
+        ,
+        {
+          "Category": "Microconversiones",
+          "Question Text": {
+            "en-US": [
+              "What is the purpose of tracking microconversions in a UX dashboard?"
+            ],
+            "es-MX": [
+              "¿Cuál es el propósito de medir microconversiones en un cuadro de mando UX?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "To measure only final sales.",
+              "To evaluate intermediate user actions that lead toward a main goal.",
+              "To increase website loading speed.",
+              "To replace KPIs with detailed reports."
+            ],
+            "es-MX": [
+              "Medir únicamente las ventas finales.",
+              "Evaluar acciones intermedias del usuario que conducen a un objetivo principal.",
+              "Incrementar la velocidad de carga del sitio.",
+              "Reemplazar los KPI por reportes detallados."
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "To evaluate intermediate user actions that lead toward a main goal.",
+            "es-MX": "Evaluar acciones intermedias del usuario que conducen a un objetivo principal."
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "text",
+                "content": "Microconversions help understand behavioral progress before a macro-conversion occurs. For instance, clicking 'Start free trial' is a microconversion leading to subscription."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "text",
+                "content": "Las microconversiones permiten analizar el progreso del usuario antes de una conversión final. Por ejemplo, hacer clic en 'Comenzar prueba gratuita' es una acción intermedia previa a la suscripción."
+              }
+            ]
+          }
+        },
+        {
+          "Category": "KPI de Frecuencia",
+          "Question Text": {
+            "en-US": [
+              "Which KPI measures how often users visit an online communication medium?"
+            ],
+            "es-MX": [
+              "¿Cuál de los siguientes indicadores clave de rendimiento (KPI) mide la frecuencia con la que los usuarios visitan un medio de comunicación online?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Pages per session",
+              "Frequency (sessions / unique users)",
+              "Average session duration",
+              "Landing microconversion rate"
+            ],
+            "es-MX": [
+              "Páginas vistas por visita (páginas/sesión).",
+              "Frecuencia (sesiones/visitantes únicos).",
+              "Duración media de la sesión.",
+              "Tasa de microconversión acceso landing."
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Frequency (sessions / unique users)",
+            "es-MX": "Frecuencia (sesiones/visitantes únicos)."
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "text",
+                "content": "Frequency measures how often users return to a website within a given period. It is calculated by dividing total sessions by unique users. For example, if 100 users generate 300 sessions in a month, the frequency is 3. This KPI is especially important in media platforms, blogs, and subscription services, where repeat engagement indicates loyalty and content relevance."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "text",
+                "content": "La frecuencia indica cuántas veces, en promedio, un usuario vuelve a un sitio en un periodo determinado. Se calcula dividiendo el número total de sesiones entre los usuarios únicos. Por ejemplo, si 100 usuarios generan 300 sesiones en un mes, la frecuencia es 3. Este KPI es clave en medios digitales y plataformas de contenido, ya que refleja recurrencia y fidelización."
+              }
+            ]
+          }
+        }
+        ,
+        {
+          "Category": "Cuadro de Mando UX",
+          "Question Text": {
+            "en-US": [
+              "According to the text, what should a UX team dashboard include?"
+            ],
+            "es-MX": [
+              "Según el texto, un cuadro de mando para el equipo de UX debería incluir:"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Only final subscription metrics",
+              "Each critical step of the conversion funnel",
+              "Only engagement metrics without conversions",
+              "Financial and aesthetic graphics only"
+            ],
+            "es-MX": [
+              "Solo los indicadores finales relacionados con las suscripciones.",
+              "Cada paso crítico del embudo de conversión.",
+              "Exclusivamente métricas de engagement, sin incluir conversiones.",
+              "Gráficos financieros y estéticos para facilitar la interpretación."
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Each critical step of the conversion funnel",
+            "es-MX": "Cada paso crítico del embudo de conversión."
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "text",
+                "content": "A UX dashboard should track every key step in the user journey, not just the final conversion. Monitoring intermediate stages—such as landing visits, form starts, and form completions—helps detect friction points. For instance, if many users reach the landing page but few complete registration, the problem may lie in usability or clarity."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "text",
+                "content": "Un cuadro de mando UX debe reflejar cada etapa crítica del recorrido del usuario, no solo la conversión final. Analizar pasos intermedios permite detectar puntos de fricción. Por ejemplo, si muchos usuarios llegan a la landing pero pocos completan el registro, puede existir un problema de usabilidad o claridad."
+              }
+            ]
+          }
+        }
+        ,
+        {
+          "Category": "Microconversiones",
+          "Question Text": {
+            "en-US": [
+              "What is the objective of increasing the microconversion rate of access to a subscription landing page?"
+            ],
+            "es-MX": [
+              "¿Cuál es el objetivo de incrementar la tasa de microconversión de acceso a la landing page de suscripción?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Increase time spent on the website",
+              "Increase pages per session by 25%",
+              "Increase landing visits by 15% relative to total sessions",
+              "Increase the visit frequency of unique users"
+            ],
+            "es-MX": [
+              "Incrementar el tiempo de permanencia en la web",
+              "Incrementar un 25 % las páginas vistas por sesión.",
+              "Incrementar un 15 % las visitas a la landing page respecto al total de sesiones.",
+              "Incrementar la frecuencia de visitas de usuarios únicos."
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Increase landing visits by 15% relative to total sessions",
+            "es-MX": "Incrementar un 15 % las visitas a la landing page respecto al total de sesiones."
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "text",
+                "content": "A microconversion measures an intermediate action that leads toward a main goal. Increasing landing access improves the probability of final subscription. For example, if only 20% of sessions reach the subscription page, raising that to 35% significantly increases potential conversions."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "text",
+                "content": "Una microconversión es una acción intermedia que acerca al usuario al objetivo principal. Incrementar el acceso a la landing de suscripción aumenta la probabilidad de conversión final. Por ejemplo, si solo el 20 % de las sesiones llegan a la página de suscripción, elevarlo al 35 % incrementa significativamente las oportunidades de registro."
+              }
+            ]
+          }
+        }
+    ]
+}

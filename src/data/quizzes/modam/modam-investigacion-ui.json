@@ -552,7 +552,527 @@
       }
     ]
   }
+},
+{
+  "Category": "Técnicas de investigación UX",
+  "Question Text": {
+    "en-US": [
+      "What is the main difference between generative and evaluative research techniques?"
+    ],
+    "es-MX": [
+      "¿Cuál es la principal diferencia entre las técnicas generativas y evaluativas en la investigación centrada en el usuario?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Generative techniques validate solutions and evaluative techniques discover problems",
+      "Generative techniques are useful early to create ideas, evaluative techniques are used once something exists to test",
+      "Generative techniques focus on context while evaluative focus on attitudes",
+      "Generative techniques are always qualitative and evaluative always quantitative"
+    ],
+    "es-MX": [
+      "Las técnicas generativas validan soluciones y las evaluativas descubren problemas",
+      "Las técnicas generativas son útiles al inicio para crear ideas, las evaluativas se usan cuando ya existe algo para probar",
+      "Las técnicas generativas se enfocan en el contexto y las evaluativas en actitudes",
+      "Las técnicas generativas siempre son cualitativas y las evaluativas siempre cuantitativas"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Generative techniques are useful early to create ideas, evaluative techniques are used once something exists to test",
+    "es-MX": "Las técnicas generativas son útiles al inicio para crear ideas, las evaluativas se usan cuando ya existe algo para probar"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "Generative research helps understand users, their needs and problems before designing a solution. Evaluative research measures whether a proposed solution actually works. In simple terms: generative research discovers WHAT to build, evaluative research checks IF it works."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "La investigación generativa sirve para entender a los usuarios, sus necesidades y problemas antes de diseñar. La investigación evaluativa sirve para comprobar si la solución diseñada funciona correctamente. En resumen: la generativa descubre qué construir y la evaluativa verifica si funciona."
+      }
+    ]
+  }
+},
+{
+  "Category": "Modelo de Christian Rohrer",
+  "Question Text": {
+    "en-US": [
+      "What classification did Christian Rohrer propose for UX research methods?"
+    ],
+    "es-MX": [
+      "¿Qué clasificación propone Christian Rohrer para las técnicas de investigación centrada en el usuario?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Attitudinal vs behavioral, qualitative vs quantitative, context of use",
+      "Qualitative vs quantitative, generative vs evaluative, strategize vs execute vs assess",
+      "Generative vs evaluative, attitudinal vs behavioral, strategize vs execute vs assess",
+      "Only qualitative vs quantitative"
+    ],
+    "es-MX": [
+      "Actitudinal vs conductual, cualitativo vs cuantitativo, contexto de uso",
+      "Cualitativo vs cuantitativo, generativo vs evaluativo, strategize vs execute vs assess",
+      "Generativo vs evaluativo, actitudinal vs conductual, strategize vs execute vs assess",
+      "Solo cualitativo vs cuantitativo"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Generative vs evaluative, attitudinal vs behavioral, strategize vs execute vs assess",
+    "es-MX": "Generativo vs evaluativo, actitudinal vs conductual, strategize vs execute vs assess"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "Christian Rohrer, a UX research expert at Nielsen Norman Group, proposed a framework to classify research methods. He divides them into three dimensions: generative vs evaluative (discover vs validate), attitudinal vs behavioral (what users say vs what they do), and product stage (strategize, execute, assess). This model helps select the correct research method depending on the project stage."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "Christian Rohrer, investigador de UX en Nielsen Norman Group, propuso un modelo para clasificar métodos de investigación. Divide las técnicas en tres ejes: generativo vs evaluativo (descubrir vs validar), actitudinal vs conductual (lo que el usuario dice vs lo que realmente hace) y etapa del producto (estrategia, ejecución y evaluación). Este modelo ayuda a elegir el método correcto según el momento del proyecto."
+      }
+    ]
+  }
+},
+{
+  "Category": "Fases del proceso UX",
+  "Question Text": {
+    "en-US": [
+      "In which phase of the design process are evaluation techniques mainly used?"
+    ],
+    "es-MX": [
+      "¿En qué fase del proceso de diseño se utilizan principalmente las técnicas de evaluación?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Early discovery phase",
+      "During design execution with prototypes",
+      "After launch only",
+      "Equally in all phases"
+    ],
+    "es-MX": [
+      "Fase temprana de descubrimiento",
+      "Durante la ejecución del diseño con prototipos",
+      "Solo después del lanzamiento",
+      "Igualmente en todas las fases"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "During design execution with prototypes",
+    "es-MX": "Durante la ejecución del diseño con prototipos"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "The UX process has phases: discovery (understand the problem), design (create solutions), and validation (test them). Evaluation techniques are mainly used once prototypes or solutions exist because they measure usability, effectiveness and errors."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "El proceso UX incluye fases: descubrimiento (entender el problema), diseño (crear soluciones) y validación (probarlas). Las técnicas evaluativas se usan principalmente cuando ya existen prototipos o soluciones, porque permiten medir usabilidad, efectividad y errores."
+      }
+    ]
+  }
+},
+{
+  "Category": "Beneficios de la usabilidad",
+  "Question Text": {
+    "en-US": [
+      "What is one of the main benefits of usability research during the design process?"
+    ],
+    "es-MX": [
+      "¿Cuál es uno de los principales beneficios de la investigación de usabilidad durante el proceso de diseño?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Increase user errors",
+      "Reduce design costs by fixing problems earlier",
+      "Decrease user satisfaction",
+      "Negatively impact conversion and loyalty"
+    ],
+    "es-MX": [
+      "Aumentar los errores cometidos por los usuarios",
+      "Reducir los costos de diseño al corregir errores en etapas posteriores",
+      "Disminuir la satisfacción del usuario",
+      "Impactar negativamente la conversión y fidelización"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Reduce design costs by fixing problems earlier",
+    "es-MX": "Reducir los costos de diseño al corregir errores en etapas posteriores"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "Usability research detects problems before implementation. Fixing a design error during early stages is dramatically cheaper than correcting it after development or release. This is known as the 'cost of change curve'. Early usability testing prevents rework, reduces development time, improves satisfaction, and increases product adoption."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "La investigación de usabilidad permite detectar problemas antes de que el sistema esté terminado. Corregir un error en etapas tempranas es mucho más barato que arreglarlo después del desarrollo o lanzamiento. Esto se conoce como la 'curva del costo del cambio': mientras más tarde se detecta un problema, más caro es solucionarlo. Por ello la usabilidad reduce retrabajo, tiempo de desarrollo y aumenta satisfacción y adopción del producto."
+      }
+    ]
+  }
+},
+{
+  "Category": "Economía UX",
+  "Question Text": {
+    "en-US": [
+      "According to Jakob Nielsen, how much of a project budget should be invested in usability?"
+    ],
+    "es-MX": [
+      "¿Cuánto del presupuesto total de un proyecto web recomienda dedicar Jakob Nielsen a la usabilidad?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "5%",
+      "10%",
+      "15%",
+      "20%"
+    ],
+    "es-MX": [
+      "5%",
+      "10%",
+      "15%",
+      "20%"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "10%",
+    "es-MX": "10%"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "Jakob Nielsen, a pioneer in usability and co-founder of Nielsen Norman Group, found that allocating around 10% of a project budget to usability provides a strong return on investment. Small usability investments prevent expensive redesigns and greatly improve product performance and user success."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "Jakob Nielsen, pionero de la usabilidad y cofundador de Nielsen Norman Group, demostró que dedicar aproximadamente el 10% del presupuesto a usabilidad genera alto retorno de inversión. Esta cantidad es suficiente para investigación, pruebas y mejoras sin encarecer el proyecto. Evita rediseños costosos posteriores y mejora el éxito del producto."
+      }
+    ]
+  }
+},
+{
+  "Category": "Impacto de UX en métricas",
+  "Question Text": {
+    "en-US": [
+      "What was the average KPI improvement after usability improvements according to Jakob Nielsen?"
+    ],
+    "es-MX": [
+      "¿Cuál fue el incremento promedio en KPI después de implementar mejoras de usabilidad según Jakob Nielsen?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "50%",
+      "83%",
+      "100%",
+      "135%"
+    ],
+    "es-MX": [
+      "50%",
+      "83%",
+      "100%",
+      "135%"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "135%",
+    "es-MX": "135%"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "KPI (Key Performance Indicators) measure performance such as conversion rate, task success and completion time. Nielsen observed that usability improvements significantly increase these metrics because users understand the interface faster and make fewer errors."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "Los KPI (Indicadores Clave de Desempeño) miden rendimiento como conversión, éxito en tareas y tiempo de ejecución. Nielsen observó incrementos promedio del 135% porque una interfaz usable reduce errores, acelera tareas y facilita la toma de decisiones, mejorando directamente el desempeño del sistema."
+      }
+    ]
+  }
+},
+{
+  "Category": "Documentación de investigación",
+  "Question Text": {
+    "en-US": [
+      "What is one requirement for documenting research tests effectively?"
+    ],
+    "es-MX": [
+      "¿Cuál es uno de los requisitos para documentar las pruebas de investigación de manera efectiva?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Write very extensive documentation",
+      "Use formal academic language",
+      "Ensure tests are reproducible",
+      "Remove keywords to simplify classification"
+    ],
+    "es-MX": [
+      "Ser extenso y detallado",
+      "Usar lenguaje académico formal",
+      "Asegurar que las pruebas sean reproducibles",
+      "Omitir palabras clave"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Ensure tests are reproducible",
+    "es-MX": "Asegurarse de que las pruebas sean reproducibles"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "Research documentation must allow another team to repeat the study and obtain similar results. Reproducibility requires clear objectives, methodology, participants and procedure description. A UX report normally includes: identification, objectives, methodology, participants, results and conclusions. The goal is clarity and reliability, not length."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "La documentación debe permitir que otra persona pueda repetir el estudio y obtener resultados comparables. Por eso se describen objetivos, participantes, contexto y procedimiento. Un reporte UX típico contiene: identificación, objetivos, metodología, participantes, resultados y conclusiones. La meta no es escribir mucho, sino que sea claro y verificable."
+      }
+    ]
+  }
+},
+{
+  "Category": "Apartados del reporte",
+  "Question Text": {
+    "en-US": [
+      "What is the main objective of the Identification section in research documentation?"
+    ],
+    "es-MX": [
+      "¿Cuál es el objetivo principal del apartado de Identificación en la documentación de pruebas de investigación?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Describe methodology",
+      "Present results",
+      "Indicate who performed the research and when",
+      "Provide recommendations"
+    ],
+    "es-MX": [
+      "Describir metodología",
+      "Presentar resultados",
+      "Indicar quién realizó la investigación y cuándo",
+      "Dar recomendaciones"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Indicate who performed the research and when",
+    "es-MX": "Informar sobre quién realizó la investigación y cuándo"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "The identification section provides context: author, date, project and version. This allows traceability. After identification comes objectives, methodology, participants, results and recommendations. Without identification the research cannot be validated over time."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "El apartado de identificación da contexto: autor, fecha, proyecto y versión del estudio. Sirve para trazabilidad y control histórico. Después siguen objetivos, metodología, participantes, resultados y recomendaciones. Sin identificación el estudio no puede verificarse ni compararse en el tiempo."
+      }
+    ]
+  }
+},
+{
+  "Category": "Metodología",
+  "Question Text": {
+    "en-US": [
+      "What should the methodology section contain in research documentation?"
+    ],
+    "es-MX": [
+      "¿Qué debe contener el apartado de Metodología en la documentación de pruebas de investigación?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Detailed results",
+      "Place and date only",
+      "Participant information and selection procedure",
+      "Future recommendations"
+    ],
+    "es-MX": [
+      "Resultados detallados",
+      "Lugar y fecha",
+      "Información de participantes y procedimiento de selección",
+      "Recomendaciones futuras"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Participant information and selection procedure",
+    "es-MX": "La información sobre los participantes y el procedimiento de selección"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "Methodology explains how the study was conducted: participants, recruitment criteria, tasks and tools. Results and conclusions belong to later sections. Methodology ensures validity and allows replication of the experiment."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "La metodología describe cómo se realizó el estudio: perfil de participantes, criterios de selección, tareas y herramientas. Los resultados y conclusiones pertenecen a apartados posteriores. La metodología garantiza validez y reproducibilidad del experimento."
+      }
+    ]
+  }
+},
+{
+  "Category": "Metodología del estudio",
+  "Question Text": {
+    "en-US": [
+      "What should the methodology section contain in research documentation?"
+    ],
+    "es-MX": [
+      "¿Qué debe contener el apartado de Metodología en la documentación de pruebas de investigación?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Detailed description of results",
+      "Place and date of the test",
+      "Information about participants and recruitment procedure",
+      "Future recommendations"
+    ],
+    "es-MX": [
+      "Una descripción detallada de los resultados obtenidos",
+      "El lugar y la fecha de realización de la prueba",
+      "La información sobre los participantes y el procedimiento de selección",
+      "Las recomendaciones para futuras investigaciones"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Information about participants and recruitment procedure",
+    "es-MX": "La información sobre los participantes y el procedimiento de selección"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "Methodology explains HOW the study was conducted. It includes participants profile, recruitment criteria, tasks, tools and environment. Results belong to the findings section and recommendations to conclusions. Without methodology the research cannot be validated or replicated."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "La metodología explica CÓMO se realizó el estudio. Incluye perfil de participantes, criterios de selección, tareas, herramientas y contexto de la prueba. Los resultados pertenecen al apartado de hallazgos y las recomendaciones al de conclusiones. Sin metodología no puede verificarse ni reproducirse la investigación."
+      }
+    ]
+  }
+},
+{
+  "Category": "Tipos de documentos",
+  "Question Text": {
+    "en-US": [
+      "What is the main difference between a planning document and a results document in terms of methodology?"
+    ],
+    "es-MX": [
+      "¿Cuál es la principal diferencia entre el documento de planificación y el documento de resultados en términos de metodología?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Theoretical and systematic approach",
+      "No methodological details",
+      "Narrative approach based on practice",
+      "Focus only on objectives"
+    ],
+    "es-MX": [
+      "Enfoque teórico y sistemático",
+      "No incluye detalles metodológicos",
+      "Enfoque narrativo basado en la práctica",
+      "Que se centra solo en los objetivos"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Narrative approach based on practice",
+    "es-MX": "Enfoque narrativo basado en la práctica"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "The planning document describes what will be done: objectives, hypotheses and procedures. The results document explains what actually happened during testing, therefore it uses a narrative based on real observations, behaviors and evidence collected during the sessions."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "El documento de planificación describe lo que se hará: objetivos, hipótesis y procedimientos. El documento de resultados describe lo que realmente ocurrió durante la prueba, por eso tiene un enfoque narrativo basado en la práctica, observaciones y evidencias obtenidas."
+      }
+    ]
+  }
+},
+{
+  "Category": "Resumen ejecutivo",
+  "Question Text": {
+    "en-US": [
+      "What should be included in the Executive Summary section?"
+    ],
+    "es-MX": [
+      "¿Qué se debe incluir en el apartado de Resumen ejecutivo?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "User description",
+      "Date and location",
+      "Main conclusions related to objectives",
+      "Full transcript of records"
+    ],
+    "es-MX": [
+      "Descripción de los usuarios",
+      "Fechas y lugar de realización",
+      "Principales conclusiones en relación con los objetivos",
+      "Transcripción de los registros"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Main conclusions related to objectives",
+    "es-MX": "Principales conclusiones en relación con los objetivos"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "The executive summary allows stakeholders to quickly understand results without reading the full report. It synthesizes conclusions and impact on objectives. Detailed data, transcripts and metrics belong to appendices or findings sections."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "El resumen ejecutivo permite entender rápidamente los resultados sin leer todo el documento. Resume las conclusiones y su relación con los objetivos. Los datos detallados, métricas y transcripciones pertenecen a anexos o hallazgos."
+      }
+    ]
+  }
 }
+
+
+
+
 
 
 

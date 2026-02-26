@@ -1,0 +1,533 @@
+{
+    "meta": {
+      "slug": "ux-roi-usabilidad-fundamentos",
+      "title": "ROI de la Usabilidad · Fundamentos",
+      "subject": "Investigación Centrada en la Interfaz de Usuario",
+      "unit": 2,
+      "classNo": 1,
+      "description": "Conceptos base sobre el retorno de inversión en usabilidad según Nielsen Norman Group.",
+      "tags": ["UX", "ROI", "Usabilidad", "Negocio", "Métricas"]
+    },
+    "Questions": [
+      {
+        "Category": "Inversión en usabilidad",
+        "Question Text": {
+          "en-US": [
+            "What percentage of a project budget is typically recommended to invest in usability activities?"
+          ],
+          "es-MX": [
+            "¿Qué porcentaje del presupuesto de un proyecto se recomienda invertir en actividades de usabilidad?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Around 1%",
+            "Around 5%",
+            "Around 10%",
+            "Around 40%"
+          ],
+          "es-MX": [
+            "Alrededor del 1%",
+            "Alrededor del 5%",
+            "Alrededor del 10%",
+            "Alrededor del 40%"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Around 10%",
+          "es-MX": "Alrededor del 10%"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Jakob Nielsen explains that organizations typically need to invest roughly 10% of the total development budget in usability work. This includes research, testing, iteration and evaluation. Investing significantly less often leads to expensive redesigns later, while investing much more usually produces diminishing returns."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Jakob Nielsen explica que normalmente las organizaciones deben invertir cerca del 10% del presupuesto total de desarrollo en usabilidad. Esto incluye investigación, pruebas, iteraciones y evaluación. Invertir menos suele provocar rediseños costosos posteriormente, mientras invertir mucho más genera beneficios decrecientes."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Medición de beneficios",
+        "Question Text": {
+          "en-US": [
+            "How are usability benefits usually measured in projects?"
+          ],
+          "es-MX": [
+            "¿Cómo se suelen medir los beneficios de la usabilidad en los proyectos?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "By asking developers opinions",
+            "By comparing metrics before and after redesign",
+            "By counting lines of code",
+            "By measuring screen resolution"
+          ],
+          "es-MX": [
+            "Preguntando la opinión de los desarrolladores",
+            "Comparando métricas antes y después del rediseño",
+            "Contando líneas de código",
+            "Midiendo la resolución de pantalla"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "By comparing metrics before and after redesign",
+          "es-MX": "Comparando métricas antes y después del rediseño"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Usability improvements are measured empirically. Organizations compare performance indicators such as success rate, productivity, sales or usage before and after applying usability methods. This makes usability a measurable engineering discipline rather than a subjective design opinion."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las mejoras de usabilidad se miden empíricamente. Las organizaciones comparan indicadores de desempeño como tasa de éxito, productividad, ventas o uso antes y después de aplicar métodos de usabilidad. Esto convierte la usabilidad en una disciplina medible y no en una opinión de diseño."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Impacto en métricas",
+        "Question Text": {
+          "en-US": [
+            "What is the typical average improvement observed after usability improvements?"
+          ],
+          "es-MX": [
+            "¿Cuál es la mejora promedio típica observada después de aplicar mejoras de usabilidad?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "About 10%",
+            "About 35%",
+            "About 135%",
+            "About 500%"
+          ],
+          "es-MX": [
+            "Alrededor del 10%",
+            "Alrededor del 35%",
+            "Alrededor del 135%",
+            "Alrededor del 500%"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "About 135%",
+          "es-MX": "Alrededor del 135%"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Across multiple projects studied by Nielsen Norman Group, usability improvements produced an average improvement of about 135%. This demonstrates that usability is not merely aesthetic enhancement, but a major performance multiplier affecting efficiency, adoption and business outcomes."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "En múltiples proyectos analizados por Nielsen Norman Group, las mejoras de usabilidad produjeron un incremento promedio cercano al 135%. Esto demuestra que la usabilidad no es solo estética, sino un multiplicador de desempeño que impacta eficiencia, adopción y resultados de negocio."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Métricas de negocio",
+        "Question Text": {
+          "en-US": [
+            "Which business metrics commonly improve after usability improvements?"
+          ],
+          "es-MX": [
+            "¿Qué métricas de negocio suelen mejorar después de aplicar mejoras de usabilidad?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Only server performance",
+            "Sales, traffic, productivity and feature usage",
+            "Only hardware speed",
+            "Only programming time"
+          ],
+          "es-MX": [
+            "Solo el rendimiento del servidor",
+            "Ventas, tráfico, productividad y uso de funciones",
+            "Solo la velocidad del hardware",
+            "Solo el tiempo de programación"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Sales, traffic, productivity and feature usage",
+          "es-MX": "Ventas, tráfico, productividad y uso de funciones"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Usability improvements directly impact user behavior. Nielsen reported increases in sales, website traffic, employee productivity and the use of system features. This proves usability affects real-world outcomes, not just user satisfaction."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las mejoras de usabilidad impactan directamente el comportamiento del usuario. Nielsen reportó incrementos en ventas, tráfico web, productividad de empleados y uso de funciones del sistema. Esto demuestra que la usabilidad afecta resultados reales y no solo la satisfacción del usuario."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "ROI y dinero",
+        "Question Text": {
+          "en-US": [
+            "Why is usability ROI not always easy to express directly in money?"
+          ],
+          "es-MX": [
+            "¿Por qué el ROI de la usabilidad no siempre es fácil de expresar directamente en dinero?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because usability has no measurable effects",
+            "Because usability metrics and financial metrics use different units",
+            "Because companies do not care about usability",
+            "Because design cannot be evaluated"
+          ],
+          "es-MX": [
+            "Porque la usabilidad no tiene efectos medibles",
+            "Porque las métricas de usabilidad y financieras usan unidades diferentes",
+            "Porque las empresas no se interesan en la usabilidad",
+            "Porque el diseño no puede evaluarse"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because usability metrics and financial metrics use different units",
+          "es-MX": "Porque las métricas de usabilidad y financieras usan unidades diferentes"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Usability improvements are often measured in efficiency, error reduction or success rate, while ROI requires monetary value. Converting behavior improvements into currency is possible but requires interpretation and context, which makes ROI estimation complex."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las mejoras de usabilidad suelen medirse en eficiencia, reducción de errores o tasa de éxito, mientras que el ROI requiere valor monetario. Convertir mejoras de comportamiento a dinero es posible pero requiere interpretación y contexto, lo que hace complejo el cálculo del ROI."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Tipo de proyectos",
+        "Question Text": {
+          "en-US": [
+            "In which type of systems is usability ROI easiest to calculate?"
+          ],
+          "es-MX": [
+            "¿En qué tipo de sistemas es más fácil calcular el ROI de la usabilidad?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Video games only",
+            "Artistic design portfolios",
+            "E-commerce and employee productivity systems",
+            "Offline desktop wallpapers"
+          ],
+          "es-MX": [
+            "Solo videojuegos",
+            "Portafolios artísticos",
+            "Comercio electrónico y sistemas de productividad laboral",
+            "Fondos de pantalla offline"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "E-commerce and employee productivity systems",
+          "es-MX": "Comercio electrónico y sistemas de productividad laboral"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "ROI is easier to calculate when improvements translate directly into measurable financial outcomes. In e-commerce it affects sales, and in workplace systems it affects employee time and productivity, both easily converted to money."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El ROI es más fácil de calcular cuando las mejoras se traducen directamente en resultados financieros medibles. En comercio electrónico afecta ventas y en sistemas laborales afecta tiempo y productividad, ambos convertibles a dinero."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Interpretación del ROI",
+        "Question Text": {
+          "en-US": [
+            "If a redesign does not increase revenue but reduces user errors and support calls, does usability still provide ROI?"
+          ],
+          "es-MX": [
+            "Si un rediseño no aumenta ingresos pero reduce errores de usuario y llamadas a soporte, ¿la usabilidad sigue generando ROI?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "No, ROI only exists when sales increase",
+            "Yes, because operational costs decrease",
+            "No, usability only affects aesthetics",
+            "Only if users like the colors"
+          ],
+          "es-MX": [
+            "No, el ROI solo existe si aumentan las ventas",
+            "Sí, porque disminuyen costos operativos",
+            "No, la usabilidad solo afecta la estética",
+            "Solo si a los usuarios les gustan los colores"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Yes, because operational costs decrease",
+          "es-MX": "Sí, porque disminuyen costos operativos"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "ROI is not limited to revenue increase. Reducing support calls, training time and user errors lowers operational costs. Business value can come from savings as well as income generation."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El ROI no solo depende de aumentar ingresos. Reducir llamadas a soporte, capacitación y errores disminuye costos operativos. El valor empresarial también puede venir del ahorro."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Toma de decisiones",
+        "Question Text": {
+          "en-US": [
+            "Why might investing more than 10% of the budget in usability eventually produce diminishing returns?"
+          ],
+          "es-MX": [
+            "¿Por qué invertir más del 10% del presupuesto en usabilidad puede producir beneficios decrecientes?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because usability stops working",
+            "Because most major usability problems are already solved",
+            "Because users reject improvements",
+            "Because developers forbid testing"
+          ],
+          "es-MX": [
+            "Porque la usabilidad deja de funcionar",
+            "Porque la mayoría de problemas importantes ya están resueltos",
+            "Porque los usuarios rechazan mejoras",
+            "Porque los desarrolladores prohíben pruebas"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because most major usability problems are already solved",
+          "es-MX": "Porque la mayoría de problemas importantes ya están resueltos"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Early usability work fixes major barriers that block user performance. After these are solved, additional improvements become incremental rather than transformative, reducing marginal return on investment."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las primeras mejoras corrigen los principales obstáculos de uso. Después de resolverlos, las mejoras restantes son pequeñas y generan menor retorno marginal de inversión."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Análisis empresarial",
+        "Question Text": {
+          "en-US": [
+            "A company improves usability and employees complete tasks 40% faster. What is the primary business impact?"
+          ],
+          "es-MX": [
+            "Una empresa mejora la usabilidad y los empleados realizan tareas 40% más rápido. ¿Cuál es el impacto principal en el negocio?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Better screen colors",
+            "Lower productivity",
+            "Higher operational efficiency and reduced labor cost",
+            "More software bugs"
+          ],
+          "es-MX": [
+            "Mejores colores en pantalla",
+            "Menor productividad",
+            "Mayor eficiencia operativa y reducción de costos laborales",
+            "Más errores de software"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Higher operational efficiency and reduced labor cost",
+          "es-MX": "Mayor eficiencia operativa y reducción de costos laborales"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "In internal systems, usability translates directly into time savings. Time saved equals cost saved, making productivity one of the strongest forms of usability ROI."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "En sistemas internos la usabilidad se traduce directamente en ahorro de tiempo. El tiempo ahorrado equivale a dinero ahorrado, siendo la productividad una de las formas más fuertes de ROI de usabilidad."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Caso práctico",
+        "Question Text": {
+          "en-US": [
+            "A manager says: 'Usability is expensive and does not generate profit'. According to usability ROI principles, what is the best response?"
+          ],
+          "es-MX": [
+            "Un gerente dice: 'La usabilidad es costosa y no genera ganancias'. Según el ROI de usabilidad, ¿cuál es la mejor respuesta?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Usability only improves visual design",
+            "Usability reduces costs and increases efficiency, which is also profit",
+            "Usability is required only for designers",
+            "Usability depends on personal taste"
+          ],
+          "es-MX": [
+            "La usabilidad solo mejora el diseño visual",
+            "La usabilidad reduce costos y aumenta eficiencia, lo cual también es ganancia",
+            "La usabilidad solo es para diseñadores",
+            "La usabilidad depende del gusto personal"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Usability reduces costs and increases efficiency, which is also profit",
+          "es-MX": "La usabilidad reduce costos y aumenta eficiencia, lo cual también es ganancia"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "ROI includes cost savings, not only revenue. Fewer errors, less training and fewer support calls generate measurable economic value."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El ROI incluye ahorro de costos, no solo ingresos. Menos errores, menor capacitación y menos soporte generan valor económico medible."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Evaluación de inversión",
+        "Question Text": {
+          "en-US": [
+            "A company refuses usability testing to save money. What is the most likely long-term consequence?"
+          ],
+          "es-MX": [
+            "Una empresa evita pruebas de usabilidad para ahorrar dinero. ¿Cuál es la consecuencia más probable a largo plazo?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Lower development cost forever",
+            "More expensive redesign and maintenance later",
+            "Higher user satisfaction",
+            "Faster development permanently"
+          ],
+          "es-MX": [
+            "Menor costo de desarrollo para siempre",
+            "Rediseño y mantenimiento más costosos después",
+            "Mayor satisfacción del usuario",
+            "Desarrollo permanentemente más rápido"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "More expensive redesign and maintenance later",
+          "es-MX": "Rediseño y mantenimiento más costosos después"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Fixing usability problems late in development is significantly more expensive than preventing them early. Usability investment reduces future technical debt."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Corregir problemas tarde es mucho más costoso que prevenirlos. Invertir en usabilidad reduce deuda técnica futura."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Interpretación de métricas",
+        "Question Text": {
+          "en-US": [
+            "After improving usability, users complete tasks faster but total user count stays the same. Is the project successful?"
+          ],
+          "es-MX": [
+            "Después de mejorar la usabilidad, los usuarios completan tareas más rápido pero el número de usuarios no cambia. ¿El proyecto es exitoso?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "No, success only means more users",
+            "Yes, efficiency improvement represents business value",
+            "No, usability requires visual redesign",
+            "Only if marketing improves"
+          ],
+          "es-MX": [
+            "No, el éxito solo significa más usuarios",
+            "Sí, mejorar eficiencia representa valor de negocio",
+            "No, la usabilidad requiere rediseño visual",
+            "Solo si mejora el marketing"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Yes, efficiency improvement represents business value",
+          "es-MX": "Sí, mejorar eficiencia representa valor de negocio"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Usability success is measured by performance improvement, not only growth. Efficiency gains reduce operational cost and improve productivity."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El éxito de la usabilidad se mide por mejora de desempeño, no solo crecimiento. Mayor eficiencia reduce costos operativos y mejora productividad."
+            }
+          ]
+        }
+      }
+      
+      
+      
+    ]
+  }
+  

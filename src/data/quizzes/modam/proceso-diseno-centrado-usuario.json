@@ -1,0 +1,405 @@
+{
+    "meta": {
+      "slug": "ux-mpiua-proceso-diseno",
+      "title": "Proceso de Diseño Centrado en el Usuario · Modelo MPIu+a",
+      "subject": "Investigación Centrada en la Interfaz de Usuario",
+      "unit": 2,
+      "classNo": 2,
+      "description": "Fundamentos del modelo de proceso de ingeniería de usabilidad y accesibilidad (MPIu+a) aplicado al rediseño de plataformas digitales.",
+      "tags": ["UX", "UCD", "MPIu+a", "Usabilidad", "Accesibilidad", "Metodología"]
+    },
+    "Questions": [
+      {
+        "Category": "Fundamentos del modelo",
+        "Question Text": {
+          "en-US": [
+            "What is the purpose of the MPIu+a model in interface design?"
+          ],
+          "es-MX": [
+            "¿Cuál es el propósito del modelo MPIu+a en el diseño de interfaces?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To decorate graphical interfaces",
+            "To guide the redesign process through usability and accessibility engineering",
+            "To replace user research",
+            "To reduce programming languages"
+          ],
+          "es-MX": [
+            "Decorar interfaces gráficas",
+            "Guiar el proceso de rediseño mediante ingeniería de usabilidad y accesibilidad",
+            "Reemplazar la investigación de usuarios",
+            "Reducir lenguajes de programación"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To guide the redesign process through usability and accessibility engineering",
+          "es-MX": "Guiar el proceso de rediseño mediante ingeniería de usabilidad y accesibilidad"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The MPIu+a model provides a structured methodology to redesign digital platforms, ensuring usability and accessibility are considered systematically instead of intuitively."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El modelo MPIu+a ofrece una metodología estructurada para rediseñar plataformas digitales, asegurando que la usabilidad y accesibilidad se consideren de forma sistemática y no intuitiva."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Metodología científica",
+        "Question Text": {
+          "en-US": [
+            "Why is design-based research used together with the MPIu+a model?"
+          ],
+          "es-MX": [
+            "¿Por qué se utiliza la investigación basada en el diseño junto al modelo MPIu+a?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To eliminate user participation",
+            "To make the redesign process rigorous and evidence-based",
+            "To speed programming only",
+            "To avoid testing phases"
+          ],
+          "es-MX": [
+            "Eliminar la participación de usuarios",
+            "Hacer el proceso de rediseño riguroso y basado en evidencia",
+            "Solo acelerar la programación",
+            "Evitar fases de prueba"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To make the redesign process rigorous and evidence-based",
+          "es-MX": "Hacer el proceso de rediseño riguroso y basado en evidencia"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Design-based research ensures that decisions are supported by systematic observation and evaluation rather than assumptions, making UX design a scientific process."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La investigación basada en el diseño permite que las decisiones se fundamenten en observación y evaluación sistemática y no en suposiciones, convirtiendo el diseño UX en un proceso científico."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Trabajo multidisciplinario",
+        "Question Text": {
+          "en-US": [
+            "Why does the model require multidisciplinary collaboration?"
+          ],
+          "es-MX": [
+            "¿Por qué el modelo requiere colaboración multidisciplinaria?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because designers cannot work alone",
+            "To integrate different knowledge areas and satisfy user needs",
+            "To reduce usability importance",
+            "To avoid documentation"
+          ],
+          "es-MX": [
+            "Porque los diseñadores no pueden trabajar solos",
+            "Para integrar distintas áreas de conocimiento y satisfacer necesidades del usuario",
+            "Para reducir la importancia de la usabilidad",
+            "Para evitar documentación"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To integrate different knowledge areas and satisfy user needs",
+          "es-MX": "Para integrar distintas áreas de conocimiento y satisfacer necesidades del usuario"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "User experience involves technical, informational and human factors. Collaboration between disciplines allows a more complete solution aligned with real user context."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La experiencia de usuario involucra factores técnicos, informacionales y humanos. La colaboración entre disciplinas permite soluciones completas alineadas al contexto real del usuario."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Enfoque centrado en el usuario",
+        "Question Text": {
+          "en-US": [
+            "What is the main goal of involving users throughout the redesign process?"
+          ],
+          "es-MX": [
+            "¿Cuál es el objetivo principal de involucrar a los usuarios durante todo el proceso de rediseño?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To replace the development team",
+            "To ensure the final product meets specific user needs and experience in digital environments",
+            "To remove the need for accessibility",
+            "To focus only on aesthetics"
+          ],
+          "es-MX": [
+            "Reemplazar al equipo de desarrollo",
+            "Asegurar que el producto final cumpla necesidades específicas y la experiencia del usuario en entornos digitales",
+            "Eliminar la necesidad de accesibilidad",
+            "Enfocarse solo en estética"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To ensure the final product meets specific user needs and experience in digital environments",
+          "es-MX": "Asegurar que el producto final cumpla necesidades específicas y la experiencia del usuario en entornos digitales"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "User participation helps align the redesign with real needs, expectations, and context of use. This avoids building solutions based only on assumptions and increases the chance that the interface truly supports users in their digital experience."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La participación de usuarios ayuda a alinear el rediseño con necesidades reales, expectativas y contexto de uso. Esto evita crear soluciones basadas solo en suposiciones y aumenta la probabilidad de que la interfaz apoye de verdad la experiencia del usuario en entornos digitales."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Rigor del proceso",
+        "Question Text": {
+          "en-US": [
+            "Which statement best explains why a rigorous methodology is useful for redesigning digital platforms?"
+          ],
+          "es-MX": [
+            "¿Qué afirmación explica mejor por qué una metodología rigurosa es útil para rediseñar plataformas digitales?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It guarantees success without evaluation",
+            "It organizes phases and decisions so outcomes can be justified with evidence",
+            "It eliminates the need for multidisciplinary teams",
+            "It focuses only on coding standards"
+          ],
+          "es-MX": [
+            "Garantiza el éxito sin evaluación",
+            "Organiza fases y decisiones para justificar resultados con evidencia",
+            "Elimina la necesidad de equipos multidisciplinarios",
+            "Se enfoca solo en estándares de programación"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It organizes phases and decisions so outcomes can be justified with evidence",
+          "es-MX": "Organiza fases y decisiones para justificar resultados con evidencia"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "A rigorous methodology makes the redesign traceable: you can explain why decisions were made, what data supported them, and how each phase contributed to meeting usability and accessibility goals."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Una metodología rigurosa hace el rediseño trazable: permite explicar por qué se tomaron decisiones, qué evidencia las sustentó y cómo cada fase contribuyó a cumplir objetivos de usabilidad y accesibilidad."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Ciencia de la Información y UX",
+        "Question Text": {
+          "en-US": [
+            "How does including topics from Information Science strengthen the redesign of an e-commerce platform's information architecture?"
+          ],
+          "es-MX": [
+            "¿Cómo fortalece el rediseño de la arquitectura de información de una plataforma e-commerce el incluir temáticas de Ciencia de la Información?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "By focusing only on visual style",
+            "By improving organization, findability, labeling, and user navigation logic",
+            "By removing the need for user research",
+            "By replacing usability with marketing"
+          ],
+          "es-MX": [
+            "Enfocándose solo en el estilo visual",
+            "Mejorando organización, encontrabilidad, etiquetado y lógica de navegación del usuario",
+            "Eliminando la necesidad de investigación de usuarios",
+            "Reemplazando usabilidad por marketing"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "By improving organization, findability, labeling, and user navigation logic",
+          "es-MX": "Mejorando organización, encontrabilidad, etiquetado y lógica de navegación del usuario"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Information Science contributes methods for structuring and describing information. In e-commerce, better information architecture improves findability and reduces friction, helping users locate products and complete tasks efficiently."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La Ciencia de la Información aporta métodos para estructurar y describir información. En e-commerce, una mejor arquitectura de información mejora la encontrabilidad y reduce fricción, ayudando a que el usuario localice productos y complete tareas con eficiencia."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Aplicación del modelo",
+        "Question Text": {
+          "en-US": [
+            "A team redesigns an e-commerce site without following a structured methodology but relies only on designer experience. What is the main risk?"
+          ],
+          "es-MX": [
+            "Un equipo rediseña un sitio e-commerce sin seguir una metodología estructurada y solo usa la experiencia del diseñador. ¿Cuál es el principal riesgo?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The system becomes too accessible",
+            "Decisions cannot be validated or justified with evidence",
+            "Development becomes faster permanently",
+            "Users no longer need testing"
+          ],
+          "es-MX": [
+            "El sistema se vuelve demasiado accesible",
+            "Las decisiones no pueden validarse ni justificarse con evidencia",
+            "El desarrollo se vuelve permanentemente más rápido",
+            "Los usuarios ya no requieren pruebas"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Decisions cannot be validated or justified with evidence",
+          "es-MX": "Las decisiones no pueden validarse ni justificarse con evidencia"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The MPIu+a model promotes evidence-based decisions. Without a methodology, redesign choices depend on opinion rather than validated user needs, making the project difficult to evaluate or defend."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El modelo MPIu+a promueve decisiones basadas en evidencia. Sin metodología, las decisiones dependen de opiniones y no de necesidades validadas del usuario, dificultando evaluar o justificar el proyecto."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Accesibilidad y usabilidad",
+        "Question Text": {
+          "en-US": [
+            "Why is accessibility integrated together with usability in the MPIu+a model?"
+          ],
+          "es-MX": [
+            "¿Por qué la accesibilidad se integra junto con la usabilidad en el modelo MPIu+a?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because accessibility replaces usability",
+            "Because a system must be usable by diverse users and contexts",
+            "Because accessibility only improves colors",
+            "Because usability is optional"
+          ],
+          "es-MX": [
+            "Porque la accesibilidad reemplaza la usabilidad",
+            "Porque un sistema debe poder usarse por usuarios diversos y contextos distintos",
+            "Porque la accesibilidad solo mejora colores",
+            "Porque la usabilidad es opcional"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because a system must be usable by diverse users and contexts",
+          "es-MX": "Porque un sistema debe poder usarse por usuarios diversos y contextos distintos"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Usability ensures efficiency and effectiveness, while accessibility ensures inclusion. Integrating both guarantees the platform works for the widest range of users."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La usabilidad asegura eficiencia y efectividad, mientras la accesibilidad asegura inclusión. Integrarlas garantiza que la plataforma funcione para el mayor número posible de usuarios."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Evaluación profesional",
+        "Question Text": {
+          "en-US": [
+            "If after applying MPIu+a the interface looks visually similar but users complete tasks more successfully, what does this indicate?"
+          ],
+          "es-MX": [
+            "Si después de aplicar MPIu+a la interfaz luce similar visualmente pero los usuarios completan tareas con mayor éxito, ¿qué indica?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The redesign failed because visuals did not change",
+            "The redesign succeeded because usability improved",
+            "The redesign only improved performance speed",
+            "The redesign only affects developers"
+          ],
+          "es-MX": [
+            "El rediseño falló porque la apariencia no cambió",
+            "El rediseño tuvo éxito porque mejoró la usabilidad",
+            "El rediseño solo mejoró velocidad del sistema",
+            "El rediseño solo afecta a desarrolladores"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The redesign succeeded because usability improved",
+          "es-MX": "El rediseño tuvo éxito porque mejoró la usabilidad"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "User-centered design evaluates performance and task success, not visual change alone. Better task completion indicates improved interaction quality."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El diseño centrado en usuario evalúa desempeño y éxito en tareas, no solo apariencia. Mayor éxito en tareas indica mejor calidad de interacción."
+            }
+          ]
+        }
+      }
+      
+      
+
+
+    ]
+  }
+  

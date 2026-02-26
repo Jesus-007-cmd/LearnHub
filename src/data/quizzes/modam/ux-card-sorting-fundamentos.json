@@ -1,0 +1,922 @@
+{
+    "meta": {
+      "slug": "ux-card-sorting-fundamentos",
+      "title": "Card Sorting · Fundamentos",
+      "subject": "Investigación Centrada en la Interfaz de Usuario",
+      "unit": 4,
+      "classNo": 1,
+      "description": "Fundamentos de la técnica de card sorting para comprender modelos mentales y mejorar la arquitectura de información.",
+      "tags": ["UX", "Card Sorting", "Arquitectura de Información", "Modelos Mentales", "Investigación"]
+    },
+    "Questions": [
+      {
+        "Category": "Objetivo del card sorting",
+        "Question Text": {
+          "en-US": [
+            "What is the main objective of the card sorting technique?"
+          ],
+          "es-MX": [
+            "¿Cuál es el objetivo principal de la técnica de card sorting?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Collect direct user opinions",
+            "Dedicate time to playful user activities",
+            "Identify users' mental models",
+            "Develop new application features"
+          ],
+          "es-MX": [
+            "Recoger opiniones directas de los usuarios",
+            "Dedicar tiempo a actividades lúdicas",
+            "Deducir los modelos mentales del usuario",
+            "Desarrollar nuevas funcionalidades"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Identify users' mental models",
+          "es-MX": "Deducir los modelos mentales del usuario"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Card sorting helps understand how users mentally organize information. This insight guides the structure and labeling of navigation systems."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El card sorting permite comprender cómo los usuarios organizan mentalmente la información. Esto ayuda a estructurar la navegación y etiquetado del sistema."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Uso profesional",
+        "Question Text": {
+          "en-US": [
+            "According to the UPA Biennial Survey, what percentage of UX professionals use card sorting?"
+          ],
+          "es-MX": [
+            "Según la UPA Biennial Survey, ¿qué porcentaje de profesionales UX usa card sorting?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "48%",
+            "52%",
+            "60%",
+            "70%"
+          ],
+          "es-MX": [
+            "48%",
+            "52%",
+            "60%",
+            "70%"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "52%",
+          "es-MX": "52%"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The UPA survey reported that 52% of UX professionals use card sorting, showing its relevance as a common information architecture technique."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La encuesta UPA reporta que 52% de los profesionales UX utilizan card sorting, evidenciando su relevancia en arquitectura de información."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Ventajas del método",
+        "Question Text": {
+          "en-US": [
+            "Which of the following is NOT an advantage of using card sorting?"
+          ],
+          "es-MX": [
+            "¿Cuál de las siguientes NO es una ventaja de usar card sorting?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Predictability",
+            "Findability",
+            "Reducing production costs",
+            "Ensuring information is placed where users expect it"
+          ],
+          "es-MX": [
+            "Predictibilidad",
+            "Encontrabilidad",
+            "Reducir los costos de producción",
+            "Asegurar que la información esté donde el usuario espera encontrarla"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Reducing production costs",
+          "es-MX": "Reducir los costos de producción"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Card sorting improves navigation structure and findability, but its primary benefit is not direct cost reduction; rather, it enhances information organization."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El card sorting mejora la estructura de navegación y la encontrabilidad, pero su beneficio principal no es reducir costos directamente, sino mejorar la organización de la información."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Definición de la técnica",
+        "Question Text": {
+          "en-US": [
+            "What is card sorting?"
+          ],
+          "es-MX": [
+            "¿Qué es el card sorting?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A method to measure website loading speed",
+            "A user research technique where participants group information into categories",
+            "A programming strategy to structure databases",
+            "A survey to evaluate graphic design preferences"
+          ],
+          "es-MX": [
+            "Un método para medir la velocidad de carga de un sitio web",
+            "Una técnica de investigación donde los participantes agrupan información en categorías",
+            "Una estrategia de programación para estructurar bases de datos",
+            "Una encuesta para evaluar preferencias de diseño gráfico"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A user research technique where participants group information into categories",
+          "es-MX": "Una técnica de investigación donde los participantes agrupan información en categorías"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Card sorting is a research method used in UX and information architecture where users organize content into groups that make sense to them. It reveals how they mentally structure information."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El card sorting es una técnica de investigación en UX y arquitectura de información donde los usuarios organizan contenidos en grupos que tienen sentido para ellos. Permite descubrir cómo estructuran mentalmente la información."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Comprensión conceptual",
+        "Question Text": {
+          "en-US": [
+            "In card sorting, what do the 'cards' represent?"
+          ],
+          "es-MX": [
+            "En card sorting, ¿qué representan las 'cards'?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Graphic interface elements such as buttons and icons",
+            "Pieces of content or functionalities that users must organize",
+            "Marketing campaign materials",
+            "Physical loyalty cards for customers"
+          ],
+          "es-MX": [
+            "Elementos gráficos de la interfaz como botones e íconos",
+            "Fragmentos de contenido o funcionalidades que los usuarios deben organizar",
+            "Material publicitario de campañas",
+            "Tarjetas físicas de fidelización de clientes"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Pieces of content or functionalities that users must organize",
+          "es-MX": "Fragmentos de contenido o funcionalidades que los usuarios deben organizar"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "In card sorting, each card represents a piece of information such as a menu item, product category, or system function. Participants group them according to how they naturally understand and organize information."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "En card sorting, cada tarjeta representa una pieza de información como una categoría de menú, un producto o una función del sistema. Los participantes las agrupan según su modelo mental."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Comprensión conceptual",
+        "Question Text": {
+          "en-US": [
+            "Why are physical or digital 'cards' used in card sorting?"
+          ],
+          "es-MX": [
+            "¿Por qué se utilizan tarjetas físicas o digitales en el card sorting?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To decorate the interface visually",
+            "To represent pieces of content that users must organize",
+            "To test graphic design preferences",
+            "To measure system performance"
+          ],
+          "es-MX": [
+            "Para decorar visualmente la interfaz",
+            "Para representar piezas de contenido que los usuarios deben organizar",
+            "Para evaluar preferencias de diseño gráfico",
+            "Para medir el rendimiento del sistema"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To represent pieces of content that users must organize",
+          "es-MX": "Para representar piezas de contenido que los usuarios deben organizar"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Cards are used to represent individual pieces of information such as menu items, categories, or features. Participants group them according to how they mentally structure the content."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las tarjetas representan piezas individuales de información como categorías, opciones de menú o funcionalidades. El usuario las organiza según su modelo mental."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Tipos de card sorting",
+        "Question Text": {
+          "en-US": [
+            "What is the main difference between open and closed card sorting?"
+          ],
+          "es-MX": [
+            "¿Cuál es la diferencia principal entre card sorting abierto y cerrado?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Open sorting uses physical cards and closed sorting uses digital tools",
+            "In open sorting users create their own categories, while in closed sorting categories are predefined",
+            "Open sorting is quantitative and closed sorting is qualitative",
+            "Closed sorting allows users to rename cards"
+          ],
+          "es-MX": [
+            "El abierto usa tarjetas físicas y el cerrado herramientas digitales",
+            "En el abierto los usuarios crean sus propias categorías, mientras que en el cerrado las categorías ya están definidas",
+            "El abierto es cuantitativo y el cerrado es cualitativo",
+            "El cerrado permite renombrar las tarjetas"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "In open sorting users create their own categories, while in closed sorting categories are predefined",
+          "es-MX": "En el abierto los usuarios crean sus propias categorías, mientras que en el cerrado las categorías ya están definidas"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Imagine you are designing an online store. You give users cards labeled 'Laptops', 'Smartphones', 'Headphones', 'Shipping', and 'Returns'. In an OPEN card sorting session, users might create categories like 'Electronics' and 'Customer Service' and decide where each card belongs. This helps discover how they naturally organize information. In a CLOSED card sorting session, you would already provide categories such as 'Products' and 'Support', and users must place each card inside those predefined groups. This helps validate whether your proposed structure matches user expectations."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Imagina que estás diseñando una tienda en línea y entregas tarjetas con: 'Laptops', 'Celulares', 'Audífonos', 'Envíos' y 'Devoluciones'. En un card sorting ABIERTO, los usuarios crean sus propias categorías, por ejemplo 'Electrónica' y 'Atención al cliente', y deciden cómo agrupar las tarjetas. Esto permite descubrir cómo organizan naturalmente la información. En un card sorting CERRADO, tú ya defines categorías como 'Productos' y 'Soporte', y los usuarios deben colocar cada tarjeta dentro de esas opciones. Esto sirve para validar si la estructura que diseñaste coincide con la forma en que las personas piensan."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Organización de grupos",
+        "Question Text": {
+          "en-US": [
+            "What do the groups formed by participants in card sorting reveal?"
+          ],
+          "es-MX": [
+            "¿Qué revelan los grupos que forman los participantes en un card sorting?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Random classifications without analytical value",
+            "The designer's intended navigation structure",
+            "How users mentally relate and categorize information",
+            "The aesthetic preferences of participants"
+          ],
+          "es-MX": [
+            "Clasificaciones aleatorias sin valor analítico",
+            "La estructura de navegación que pensó el diseñador",
+            "Cómo los usuarios relacionan y categorizan mentalmente la información",
+            "Las preferencias estéticas de los participantes"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "How users mentally relate and categorize information",
+          "es-MX": "Cómo los usuarios relacionan y categorizan mentalmente la información"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Suppose several participants receive cards labeled 'Shipping', 'Returns', 'Warranty', and 'Order Tracking'. If most of them group these under a category like 'Customer Support', this pattern reveals how users mentally associate these services. When multiple users consistently create similar groupings, designers can use that insight to structure menus and navigation in a way that feels natural and intuitive."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Imagina que varios participantes reciben tarjetas como 'Envíos', 'Devoluciones', 'Garantía' y 'Seguimiento de pedido'. Si la mayoría las agrupa bajo una categoría como 'Atención al cliente', ese patrón muestra cómo relacionan mentalmente esos contenidos. Cuando distintos usuarios forman grupos similares, esa coincidencia indica una estructura mental compartida que puede usarse para diseñar menús y navegación más intuitivos."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Tipos de card sorting",
+        "Question Text": {
+          "en-US": [
+            "What is the main difference between open and closed card sorting?"
+          ],
+          "es-MX": [
+            "¿Cuál es la principal diferencia entre el card sorting abierto y el cerrado?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The number of participants",
+            "The duration of the test",
+            "The user's freedom to create their own groups",
+            "The type of cards used"
+          ],
+          "es-MX": [
+            "El número de participantes",
+            "La duración de la prueba",
+            "La libertad del usuario para crear sus propios grupos",
+            "El tipo de tarjetas utilizadas"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The user's freedom to create their own groups",
+          "es-MX": "La libertad del usuario para crear sus propios grupos"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Imagine you are designing the navigation of a university website. In an open card sorting session, students might create categories such as 'Academic Services' or 'Student Life' based on how they naturally think. In a closed session, you would already provide categories like 'Admissions', 'Programs', and 'Support', and students must place each card into one of them. The key difference lies in whether users define the structure themselves or validate an existing one."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Imagina que diseñas la navegación de un sitio universitario. En un card sorting abierto, los estudiantes podrían crear categorías como 'Servicios académicos' o 'Vida estudiantil' según su forma natural de organizar la información. En uno cerrado, tú ya defines categorías como 'Admisiones', 'Programas' o 'Soporte', y ellos deben clasificar las tarjetas dentro de esas opciones. La diferencia clave está en si el usuario crea la estructura o valida una ya propuesta."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Card sorting híbrido",
+        "Question Text": {
+          "en-US": [
+            "What is a characteristic of hybrid card sorting?"
+          ],
+          "es-MX": [
+            "¿Cuál es una característica del card sorting híbrido?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "All groups are fully predefined",
+            "Users cannot create new groups",
+            "It combines characteristics of open and closed card sorting",
+            "It is always the most used modality"
+          ],
+          "es-MX": [
+            "Los grupos están totalmente predefinidos",
+            "Los usuarios no pueden crear nuevos grupos",
+            "Combina características de card sorting abierto y cerrado",
+            "Es la modalidad más utilizada"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It combines characteristics of open and closed card sorting",
+          "es-MX": "Combina características de card sorting abierto y cerrado"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "In hybrid card sorting, designers provide some predefined categories but allow participants to create additional ones if needed. For example, an e-commerce site might provide 'Products' and 'Support' as fixed groups, but users can add a new group like 'Promotions' if they feel certain items do not fit. This approach allows both validation and discovery."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "En el card sorting híbrido, el diseñador ofrece algunas categorías predefinidas, pero permite que los usuarios creen nuevas si lo consideran necesario. Por ejemplo, una tienda en línea puede incluir 'Productos' y 'Soporte', pero el usuario podría agregar 'Promociones' si ciertos elementos no encajan. Esto permite validar una estructura y al mismo tiempo descubrir nuevas agrupaciones."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Think Aloud en card sorting",
+        "Question Text": {
+          "en-US": [
+            "Why is it important to ask participants to think aloud during a card sorting session?"
+          ],
+          "es-MX": [
+            "¿Por qué es importante pedir a los participantes que piensen en voz alta durante una prueba de card sorting?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To evaluate their mental speed",
+            "To obtain additional qualitative information",
+            "To reduce the duration of the test",
+            "To make them feel more comfortable"
+          ],
+          "es-MX": [
+            "Para evaluar su rapidez mental",
+            "Para obtener información cualitativa adicional",
+            "Para reducir la duración de la prueba",
+            "Para que se sientan más cómodos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To obtain additional qualitative information",
+          "es-MX": "Para obtener información cualitativa adicional"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "When participants explain why they place certain cards together, researchers gain insight into their reasoning process. For example, a user might say, 'I grouped Shipping and Returns because both happen after purchase.' This explanation reveals logic that cannot be inferred only by observing the final groups."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Cuando los participantes explican por qué agrupan ciertas tarjetas, el investigador comprende su razonamiento. Por ejemplo, un usuario puede decir: 'Agrupé Envíos y Devoluciones porque ambas ocurren después de la compra.' Ese comentario revela la lógica mental detrás de la organización, algo que no se obtiene solo observando el resultado final."
+            }
+          ]
+        }
+      } ,
+      {
+        "Category": "Affinity Diagramming",
+        "Question Text": {
+          "en-US": [
+            "What is affinity diagramming mainly used for in UX work?"
+          ],
+          "es-MX": [
+            "¿Para qué se utiliza principalmente el affinity diagramming en UX?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To measure usability task completion time",
+            "To organize qualitative data (observations, quotes, ideas) into themes and find patterns",
+            "To validate a navigation menu structure with predefined categories",
+            "To run an A/B test on interface colors"
+          ],
+          "es-MX": [
+            "Para medir el tiempo de completado de tareas de usabilidad",
+            "Para organizar datos cualitativos (observaciones, citas, ideas) en temas y encontrar patrones",
+            "Para validar una estructura de navegación con categorías predefinidas",
+            "Para ejecutar una prueba A/B de colores de interfaz"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To organize qualitative data (observations, quotes, ideas) into themes and find patterns",
+          "es-MX": "Para organizar datos cualitativos (observaciones, citas, ideas) en temas y encontrar patrones"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Think of a usability test for a banking app. You collect many notes like: 'I couldn't find the transfer button', 'The wording is confusing', 'I don't trust the confirmation screen', and 'I had to go back three times'. With affinity diagramming, the team writes each note on a sticky note and groups them into themes such as 'Navigation & findability', 'Language clarity', 'Trust & security perception', and 'Workflow friction'. The value is not the grouping itself, but the insight that emerges: for example, if many notes end up in 'Trust & security perception', you may need to redesign messages, confirmations, and visual cues (locks, summaries, clarity) even if the navigation is correct."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Imagina una prueba de usabilidad de una app bancaria. Recolectas notas como: 'No encontré el botón de transferencia', 'Las palabras me confunden', 'No confío en la pantalla de confirmación' y 'Tuve que regresar tres veces'. Con affinity diagramming, el equipo escribe cada nota en un post-it y las agrupa por temas como 'Navegación y encontrabilidad', 'Claridad del lenguaje', 'Confianza / percepción de seguridad' y 'Fricción del flujo'. Lo valioso no es solo agrupar, sino detectar patrones: por ejemplo, si muchas observaciones caen en 'Confianza', el rediseño debe mejorar mensajes, confirmaciones y señales visuales (resumen claro, consistencia, avisos) aunque el menú esté bien."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Comparación de técnicas",
+        "Question Text": {
+          "en-US": [
+            "What is the main difference between card sorting and affinity diagramming?"
+          ],
+          "es-MX": [
+            "¿Cuál es la diferencia principal entre card sorting y affinity diagramming?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Card sorting organizes research findings, while affinity diagramming validates navigation structures",
+            "Card sorting focuses on structuring content, while affinity diagramming organizes qualitative research insights",
+            "Card sorting is quantitative and affinity diagramming is only visual",
+            "Affinity diagramming replaces usability testing"
+          ],
+          "es-MX": [
+            "El card sorting organiza hallazgos de investigación, mientras que el affinity diagramming valida estructuras de navegación",
+            "El card sorting se enfoca en estructurar contenido, mientras que el affinity diagramming organiza hallazgos cualitativos",
+            "El card sorting es cuantitativo y el affinity diagramming es solo visual",
+            "El affinity diagramming reemplaza las pruebas de usabilidad"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Card sorting focuses on structuring content, while affinity diagramming organizes qualitative research insights",
+          "es-MX": "El card sorting se enfoca en estructurar contenido, mientras que el affinity diagramming organiza hallazgos cualitativos"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Imagine you are designing a new e-commerce website. If you want to decide how to organize menu categories like 'Electronics', 'Clothing', and 'Customer Support', you would use card sorting to understand how users group content. However, after conducting interviews or usability tests, you may have dozens of notes such as 'Users feel overwhelmed by filters' or 'They distrust payment confirmation screens'. In that case, you would use affinity diagramming to cluster these qualitative observations into themes like 'Cognitive overload' or 'Trust issues'. Card sorting shapes structure; affinity diagramming reveals patterns in research data."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Imagina que estás diseñando una tienda en línea. Si quieres definir cómo organizar categorías del menú como 'Electrónica', 'Ropa' y 'Soporte', utilizarías card sorting para descubrir cómo los usuarios estructuran el contenido. En cambio, si después de entrevistas o pruebas de usabilidad tienes muchas notas como 'El usuario se siente saturado por los filtros' o 'No confía en la pantalla de pago', usarías affinity diagramming para agrupar esas observaciones en temas como 'Sobrecarga cognitiva' o 'Problemas de confianza'. El card sorting ayuda a construir la arquitectura; el affinity diagramming ayuda a interpretar la investigación."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Herramientas digitales",
+        "Question Text": {
+          "en-US": [
+            "What is one of the main benefits of using digital tools to run card sorting studies?"
+          ],
+          "es-MX": [
+            "¿Cuál es uno de los principales beneficios de usar herramientas digitales para realizar pruebas de card sorting?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They allow a more detailed qualitative analysis",
+            "They allow running the test remotely and automatically generate visual and statistical outputs",
+            "They eliminate the need to select participants",
+            "They ensure all users think aloud"
+          ],
+          "es-MX": [
+            "Permiten un análisis cualitativo más detallado",
+            "Permiten realizar la prueba a distancia y obtener información gráfica y estadística de manera automática",
+            "Eliminan la necesidad de seleccionar participantes",
+            "Aseguran que todos los usuarios piensen en voz alta"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They allow running the test remotely and automatically generate visual and statistical outputs",
+          "es-MX": "Permiten realizar la prueba a distancia y obtener información gráfica y estadística de manera automática"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "For example, if you need participants from different cities, a digital tool lets them sort cards from home. After many participants finish, the tool can automatically generate similarity matrices, dendrogram-like visualizations, or frequency summaries showing which items were grouped together most often—saving time compared to manual counting."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Por ejemplo, si necesitas participantes de distintas ciudades, una herramienta digital permite que todos hagan el sorting desde casa. Cuando terminan, la plataforma puede generar automáticamente gráficos y resúmenes (por ejemplo, qué tarjetas se agruparon más veces, matrices de similitud o visualizaciones de patrones), evitando contabilizar todo a mano."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Comparación de técnicas",
+        "Question Text": {
+          "en-US": [
+            "What is the main difference between affinity diagramming and card sorting?"
+          ],
+          "es-MX": [
+            "¿Cuál es la diferencia principal entre affinity diagramming y card sorting?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Affinity diagramming is more suitable for simple systems",
+            "Affinity diagramming focuses on building consensus among participants, while card sorting looks for common patterns in users' mental models",
+            "Card sorting requires fewer participants",
+            "Card sorting is faster to implement"
+          ],
+          "es-MX": [
+            "El affinity diagramming es más adecuado para sistemas simples",
+            "El affinity diagramming se enfoca en generar consenso entre los participantes, mientras que card sorting busca patrones comunes en los modelos mentales de los usuarios",
+            "El card sorting requiere menos participantes",
+            "El card sorting es más rápido de implementar"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Affinity diagramming focuses on building consensus among participants, while card sorting looks for common patterns in users' mental models",
+          "es-MX": "El affinity diagramming se enfoca en generar consenso entre los participantes, mientras que card sorting busca patrones comunes en los modelos mentales de los usuarios"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Imagine you interview 10 users and collect 80 notes like 'filter options are confusing' or 'I can't find my past orders'. With affinity diagramming, the team collaboratively groups these notes into themes (e.g., 'Navigation issues', 'Filters', 'Trust'), discussing until they agree on meaningful clusters. Card sorting is different: you give users content cards (e.g., 'Shipping', 'Returns', 'Warranty') and observe how users group them, then you analyze the repeated patterns to design a better menu structure."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Imagina que entrevistas a 10 usuarios y obtienes 80 notas como: 'Los filtros confunden' o 'No encuentro mis pedidos'. En affinity diagramming, el equipo agrupa esas notas en temas (por ejemplo, 'Navegación', 'Filtros', 'Confianza') mediante discusión hasta llegar a un consenso sobre qué significa cada grupo. En card sorting es distinto: se entregan tarjetas de contenido (por ejemplo, 'Envíos', 'Devoluciones', 'Garantía') y se observa cómo las agrupan los usuarios; luego se analizan patrones repetidos para diseñar una mejor estructura del menú."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Cuándo usar Affinity Diagramming",
+        "Question Text": {
+          "en-US": [
+            "In which situations is it more appropriate to use affinity diagramming instead of card sorting?"
+          ],
+          "es-MX": [
+            "¿En qué situaciones es más adecuado utilizar affinity diagramming en lugar de card sorting?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To categorize products in an online store",
+            "To organize complex concepts and design applications for professionals or niche markets",
+            "To conduct a branding investigation",
+            "To obtain user insights in early product creation stages"
+          ],
+          "es-MX": [
+            "Para categorizar productos de una tienda online",
+            "Para organizar conceptos complejos y diseñar aplicaciones para profesionales o mercados nicho",
+            "Para realizar una investigación de branding",
+            "Para obtener insights del usuario en fases tempranas de creación de un producto"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To organize complex concepts and design applications for professionals or niche markets",
+          "es-MX": "Para organizar conceptos complejos y diseñar aplicaciones para profesionales o mercados nicho"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "For example, if you are designing software for doctors, engineers, or legal professionals, users may describe needs, workflows, and terminology that are nuanced and interconnected. Affinity diagramming helps the team turn many qualitative inputs (quotes, observations, pain points) into structured themes—such as 'compliance', 'critical workflow steps', or 'specialized terminology'—before deciding what features and information architecture should look like."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Por ejemplo, si diseñas una aplicación para médicos, ingenieros o abogados, aparecen necesidades, flujos y términos muy específicos y conectados entre sí. El affinity diagramming ayuda a convertir muchos datos cualitativos (citas, observaciones, problemas, ideas) en temas claros —como 'cumplimiento', 'pasos críticos del flujo' o 'terminología especializada'— antes de decidir cómo se verá la solución o su arquitectura."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Interpretación de investigación",
+        "Question Text": {
+          "en-US": [
+            "How does affinity diagramming help interpret UX research findings?"
+          ],
+          "es-MX": [
+            "¿Cómo ayuda el affinity diagramming a interpretar los hallazgos de una investigación UX?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "By automatically calculating statistical averages",
+            "By grouping individual observations into meaningful themes that reveal patterns",
+            "By validating predefined navigation categories",
+            "By reducing the number of participants needed"
+          ],
+          "es-MX": [
+            "Calculando automáticamente promedios estadísticos",
+            "Agrupando observaciones individuales en temas significativos que revelan patrones",
+            "Validando categorías de navegación predefinidas",
+            "Reduciendo el número de participantes necesarios"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "By grouping individual observations into meaningful themes that reveal patterns",
+          "es-MX": "Agrupando observaciones individuales en temas significativos que revelan patrones"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Imagine you conduct 15 user interviews and collect over 120 notes such as: 'The checkout feels risky', 'Too many required fields', 'I don’t understand the confirmation message', and 'I’m afraid of making a mistake'. Individually, these comments seem unrelated. Through affinity diagramming, you group them under broader themes like 'Trust concerns', 'Cognitive overload', and 'Clarity of feedback'. This process transforms scattered observations into structured insights, helping the team identify root problems instead of isolated complaints."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Imagina que realizas 15 entrevistas y obtienes más de 120 notas como: 'El pago me da desconfianza', 'Demasiados campos obligatorios', 'No entiendo el mensaje final' o 'Temo equivocarme'. De manera individual parecen comentarios aislados. Con affinity diagramming, se agrupan bajo temas como 'Problemas de confianza', 'Sobrecarga cognitiva' o 'Claridad del feedback'. Este proceso convierte observaciones dispersas en patrones estructurados, permitiendo detectar causas raíz en lugar de tratar síntomas aislados."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Thinking Aloud",
+        "Question Text": {
+          "en-US": [
+            "What does the 'thinking aloud' technique consist of in usability testing?"
+          ],
+          "es-MX": [
+            "¿En qué consiste la técnica de 'pensar en voz alta' en pruebas de usabilidad?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Users explain how the system should be designed",
+            "Users verbally express what they are thinking while performing tasks",
+            "Users answer a satisfaction survey after the test",
+            "Users discuss improvements with the design team"
+          ],
+          "es-MX": [
+            "Los usuarios explican cómo debería diseñarse el sistema",
+            "Los usuarios expresan verbalmente lo que están pensando mientras realizan tareas",
+            "Los usuarios responden una encuesta al final de la prueba",
+            "Los usuarios discuten mejoras con el equipo de diseño"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Users verbally express what they are thinking while performing tasks",
+          "es-MX": "Los usuarios expresan verbalmente lo que están pensando mientras realizan tareas"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "For example, during an online purchase test, a participant might say: 'I don’t see the checkout button', or 'I’m not sure if this payment screen is secure.' These comments reveal confusion, expectations, and emotional reactions that cannot be detected only by observing clicks. Thinking aloud exposes the reasoning behind user behavior, which is why Nielsen considers it one of the most powerful usability methods."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Por ejemplo, durante una prueba de compra en línea, un participante puede decir: 'No veo el botón de pagar' o 'No estoy seguro si esta pantalla es segura'. Estos comentarios revelan dudas, expectativas y emociones que no se detectan solo observando los clics. Pensar en voz alta permite comprender el razonamiento detrás del comportamiento del usuario, por eso Nielsen la considera una de las herramientas más poderosas de usabilidad."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Concepto de observación etnográfica",
+        "Question Text": {
+          "en-US": [
+            "What is ethnographic observation in user experience research?"
+          ],
+          "es-MX": [
+            "¿Qué es la observación etnográfica en la investigación de experiencia de usuario?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A laboratory-based experiment to measure task efficiency",
+            "A method of observing users in their natural context to understand real behaviors",
+            "A quantitative survey conducted online",
+            "A usability test focused only on interface errors"
+          ],
+          "es-MX": [
+            "Un experimento de laboratorio para medir eficiencia",
+            "Un método de observar a los usuarios en su contexto natural para comprender comportamientos reales",
+            "Una encuesta cuantitativa realizada en línea",
+            "Una prueba de usabilidad enfocada solo en errores de interfaz"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A method of observing users in their natural context to understand real behaviors",
+          "es-MX": "Un método de observar a los usuarios en su contexto natural para comprender comportamientos reales"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "For example, instead of asking restaurant staff how they use a reservation system, a researcher spends time observing them during peak hours. This reveals real constraints such as multitasking, interruptions, and informal workarounds that would not appear in controlled lab settings."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Por ejemplo, en lugar de preguntar a los empleados de un restaurante cómo usan el sistema de reservas, el investigador los observa durante horas pico. Así descubre interrupciones constantes, multitareas y soluciones improvisadas que no aparecerían en un entorno de laboratorio."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Técnicas etnográficas",
+        "Question Text": {
+          "en-US": [
+            "What are ethnographic techniques in UX research?"
+          ],
+          "es-MX": [
+            "¿Qué son las técnicas etnográficas en investigación UX?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Statistical models for measuring user satisfaction",
+            "Qualitative methods such as observation, shadowing, and contextual inquiry to understand user behavior",
+            "Automated tools for collecting performance data",
+            "Marketing segmentation strategies"
+          ],
+          "es-MX": [
+            "Modelos estadísticos para medir satisfacción",
+            "Métodos cualitativos como observación, acompañamiento y entrevistas contextuales para comprender el comportamiento del usuario",
+            "Herramientas automáticas para recolectar métricas",
+            "Estrategias de segmentación de marketing"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Qualitative methods such as observation, shadowing, and contextual inquiry to understand user behavior",
+          "es-MX": "Métodos cualitativos como observación, acompañamiento y entrevistas contextuales para comprender el comportamiento del usuario"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Examples include shadowing a delivery driver during a full workday, conducting contextual interviews inside a hospital ward, or observing how customers navigate a supermarket. These techniques focus on real-life interactions rather than artificial test conditions."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Algunos ejemplos son acompañar a un repartidor durante toda su jornada, realizar entrevistas contextuales dentro de un hospital o observar cómo los clientes recorren un supermercado. Estas técnicas se centran en interacciones reales y no en escenarios simulados."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Aplicación práctica de la etnografía",
+        "Question Text": {
+          "en-US": [
+            "How can ethnographic research be applied in a real UX project?"
+          ],
+          "es-MX": [
+            "¿Cómo puede aplicarse la investigación etnográfica en un proyecto real de UX?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "By analyzing only interface color schemes",
+            "By observing users in real environments to detect unspoken needs and workflow patterns",
+            "By measuring loading speed in controlled conditions",
+            "By conducting post-launch satisfaction surveys"
+          ],
+          "es-MX": [
+            "Analizando únicamente los colores de la interfaz",
+            "Observando a los usuarios en entornos reales para detectar necesidades implícitas y patrones de trabajo",
+            "Midiendo la velocidad de carga en laboratorio",
+            "Aplicando encuestas después del lanzamiento"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "By observing users in real environments to detect unspoken needs and workflow patterns",
+          "es-MX": "Observando a los usuarios en entornos reales para detectar necesidades implícitas y patrones de trabajo"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Imagine designing software for warehouse workers. Instead of only interviewing them, researchers observe how they scan products, move through aisles, and handle interruptions. They may discover that workers operate with gloves, under time pressure, and often rely on shortcuts. These insights influence interface size, navigation speed, and error tolerance."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Imagina que diseñas un sistema para trabajadores de almacén. En lugar de solo entrevistarlos, se les observa mientras escanean productos, se desplazan entre estantes y manejan interrupciones. Puede descubrirse que usan guantes, trabajan bajo presión y recurren a atajos. Estos hallazgos influyen en el tamaño de botones, rapidez del sistema y tolerancia a errores."
+            }
+          ]
+        }
+      }
+      
+      
+      
+      
+  
+    ]
+  }
+  

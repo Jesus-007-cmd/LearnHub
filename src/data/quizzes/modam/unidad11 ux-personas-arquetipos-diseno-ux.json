@@ -1,0 +1,588 @@
+{
+    "meta": {
+      "slug": "ux-personas-arquetipos-diseno-ux",
+      "title": "Personas y Arquetipos en Diseño UX",
+      "subject": "Investigación Centrada en la Interfaz de Usuario",
+      "unit": 11,
+      "classNo": 1,
+      "description": "Concepto de persona y arquetipos en UX. Cómo representan grupos de usuarios y guían el proceso de diseño centrado en el usuario.",
+      "tags": [
+        "UX Research",
+        "Personas",
+        "Arquetipos",
+        "User Centered Design",
+        "Diseño Centrado en el Usuario",
+        "Modelos Mentales"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "Personas en UX",
+        "Question Text": {
+          "en-US": [
+            "What are personas in UX design?"
+          ],
+          "es-MX": [
+            "¿Qué son las persona-ae en diseño UX?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Real users selected for usability testing.",
+            "Fictional representations based on real user research.",
+            "Marketing slogans used to attract customers.",
+            "Technical specifications of user interfaces."
+          ],
+          "es-MX": [
+            "Usuarios reales seleccionados para pruebas de usabilidad.",
+            "Representaciones ficticias basadas en investigación real de usuarios.",
+            "Eslogans publicitarios para atraer clientes.",
+            "Especificaciones técnicas de interfaces."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Fictional representations based on real user research.",
+          "es-MX": "Representaciones ficticias basadas en investigación real de usuarios."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Personas are fictional profiles created from real user research data. They represent typical user groups and include goals, motivations, frustrations, and behaviors."
+            },
+            {
+              "type": "text",
+              "content": "They help design teams empathize with users and make decisions aligned with real needs rather than assumptions."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las personas son perfiles ficticios construidos a partir de datos reales obtenidos en investigación de usuarios. Representan grupos típicos con objetivos, motivaciones, frustraciones y comportamientos."
+            },
+            {
+              "type": "text",
+              "content": "Ayudan al equipo de diseño a tomar decisiones basadas en necesidades reales y no en suposiciones internas."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Arquetipos en UX",
+        "Question Text": {
+          "en-US": [
+            "What are archetypes in UX design?"
+          ],
+          "es-MX": [
+            "¿Qué son los arquetipos en diseño UX?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Specific real individuals selected for interviews.",
+            "Abstract models that represent behavioral patterns of users.",
+            "Technical user interface templates.",
+            "Marketing personas created only for advertising."
+          ],
+          "es-MX": [
+            "Individuos reales seleccionados para entrevistas.",
+            "Modelos abstractos que representan patrones de comportamiento de los usuarios.",
+            "Plantillas técnicas de interfaz.",
+            "Personas creadas únicamente para publicidad."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Abstract models that represent behavioral patterns of users.",
+          "es-MX": "Modelos abstractos que representan patrones de comportamiento de los usuarios."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Archetypes are generalized behavioral models that describe recurring user patterns without focusing on detailed personal narratives."
+            },
+            {
+              "type": "text",
+              "content": "Unlike personas, archetypes emphasize shared motivations and interaction styles rather than demographic detail."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los arquetipos son modelos generales que describen patrones de comportamiento recurrentes en los usuarios sin centrarse en una narrativa personal detallada."
+            },
+            {
+              "type": "text",
+              "content": "A diferencia de las personas, los arquetipos enfatizan motivaciones y estilos de interacción compartidos más que datos demográficos específicos."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Personas – Atributos Clave",
+        "Question Text": {
+          "en-US": [
+            "According to the user-centered experience approach, what is the main attribute that defines a persona?"
+          ],
+          "es-MX": [
+            "Según el enfoque centrado en la experiencia del usuario, el principal atributo que define a una persona es:"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Their age and socioeconomic level.",
+            "Their goals in the interaction process.",
+            "Their demographic behavior.",
+            "Their relationship with the product or service."
+          ],
+          "es-MX": [
+            "Su edad y nivel socioeconómico.",
+            "Sus objetivos en el proceso de interacción.",
+            "Su comportamiento demográfico.",
+            "Su relación con el producto/servicio."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Their goals in the interaction process.",
+          "es-MX": "Sus objetivos en el proceso de interacción."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "In UX, personas are primarily defined by their goals and motivations during interaction with a product or service."
+            },
+            {
+              "type": "text",
+              "content": "Demographic data is secondary; what truly guides design decisions are user objectives, needs, and expected outcomes."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "En UX, una persona se define principalmente por sus objetivos y motivaciones al interactuar con un producto o servicio."
+            },
+            {
+              "type": "text",
+              "content": "Los datos demográficos son secundarios; lo que realmente guía las decisiones de diseño son las metas, necesidades y expectativas del usuario."
+            }
+          ]
+        }
+      }
+      ,
+      {
+        "Category": "Personas – Cantidad Recomendada",
+        "Question Text": {
+          "en-US": [
+            "What is the recommended range of personas that is usually sufficient in most projects?"
+          ],
+          "es-MX": [
+            "¿Cuál es el rango recomendado de personas que suele ser suficiente en la mayoría de los proyectos?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Between one and three.",
+            "Between four and eight.",
+            "Between three and six.",
+            "Between five and ten."
+          ],
+          "es-MX": [
+            "Entre una y tres.",
+            "Entre cuatro y ocho.",
+            "Entre tres y seis.",
+            "Entre cinco y diez."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Between three and six.",
+          "es-MX": "Entre tres y seis."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Most UX projects require between three and six personas to represent meaningful behavioral variations without overcomplicating the design process."
+            },
+            {
+              "type": "text",
+              "content": "Too few personas may oversimplify user diversity, while too many can dilute focus and create confusion in decision-making."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La mayoría de los proyectos UX funcionan adecuadamente con entre tres y seis personas, ya que representan variaciones conductuales relevantes sin complicar el proceso."
+            },
+            {
+              "type": "text",
+              "content": "Muy pocas personas pueden simplificar en exceso la diversidad de usuarios, mientras que demasiadas pueden generar confusión en la toma de decisiones."
+            }
+          ]
+        }
+      }
+      ,
+      {
+        "Category": "Personas – Uso de Fotografías",
+        "Question Text": {
+          "en-US": [
+            "Why is it important to use photos when creating persona profiles?"
+          ],
+          "es-MX": [
+            "¿Por qué es importante usar fotos en la construcción de las fichas de personas?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To make archetypes visually attractive.",
+            "Because photographs are mandatory in UX design.",
+            "To facilitate mental representation and empathy with users.",
+            "Because drawings are less effective in creative environments."
+          ],
+          "es-MX": [
+            "Para que los arquetipos sean visualmente atractivos.",
+            "Porque las fotografías son un requisito obligatorio en el diseño UX.",
+            "Para facilitar la representación mental y la empatía con los usuarios.",
+            "Porque los dibujos son menos efectivos en entornos creativos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To facilitate mental representation and empathy with users.",
+          "es-MX": "Para facilitar la representación mental y la empatía con los usuarios."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Including a photo helps teams visualize the persona as a realistic individual rather than an abstract concept."
+            },
+            {
+              "type": "text",
+              "content": "This strengthens empathy and improves alignment in design decisions by humanizing user research findings."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Incluir una fotografía ayuda a visualizar a la persona como un individuo real y no como un concepto abstracto."
+            },
+            {
+              "type": "text",
+              "content": "Esto fortalece la empatía y mejora la alineación en las decisiones de diseño al humanizar los resultados de la investigación."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Prototipado – Conceptos Básicos",
+        "Question Text": {
+          "en-US": [
+            "What is a prototype?"
+          ],
+          "es-MX": [
+            "¿Qué es un prototipo?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A finished product with all functionalities implemented.",
+            "A preliminary version of a product used to explore ideas and validate essential features.",
+            "An artistic representation of the final system design.",
+            "An exclusively digital model used in advanced design stages."
+          ],
+          "es-MX": [
+            "Un producto terminado con todas sus funcionalidades implementadas.",
+            "Una versión preliminar de un producto para explorar ideas y validar características esenciales.",
+            "Una representación artística del diseño final de un sistema de información.",
+            "Un modelo exclusivamente digital utilizado en etapas avanzadas del diseño."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A preliminary version of a product used to explore ideas and validate essential features.",
+          "es-MX": "Una versión preliminar de un producto para explorar ideas y validar características esenciales."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "A prototype is an early representation of a product that allows teams to test concepts, validate usability, and refine functionality before full development."
+            },
+            {
+              "type": "text",
+              "content": "Its purpose is not to be complete, but to support experimentation and iterative improvement."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Un prototipo es una representación temprana de un producto que permite probar conceptos, validar la usabilidad y ajustar funcionalidades antes del desarrollo final."
+            },
+            {
+              "type": "text",
+              "content": "Su objetivo no es estar completo, sino facilitar la experimentación y la mejora iterativa."
+            }
+          ]
+        }
+      }
+      ,
+      {
+        "Category": "Prototipos en Papel",
+        "Question Text": {
+          "en-US": [
+            "What is an advantage of paper prototypes?"
+          ],
+          "es-MX": [
+            "¿Cuál es una ventaja de los prototipos en papel?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They are visually attractive and simulate the final design faithfully.",
+            "They allow quick and low-cost testing in early design stages.",
+            "They guarantee stakeholder approval.",
+            "They eliminate the need for iterative improvements."
+          ],
+          "es-MX": [
+            "Son visualmente atractivos y simulan fielmente el diseño final.",
+            "Permiten realizar pruebas rápidas y económicas en etapas tempranas del diseño.",
+            "Garantizan la aceptación del diseño por parte de los stakeholders.",
+            "Evitan la necesidad de iteraciones sucesivas en el proceso de diseño."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They allow quick and low-cost testing in early design stages.",
+          "es-MX": "Permiten realizar pruebas rápidas y económicas en etapas tempranas del diseño."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Paper prototypes are inexpensive and easy to modify, making them ideal for rapid iteration during the conceptual phase."
+            },
+            {
+              "type": "text",
+              "content": "They help identify usability issues before investing time and resources in digital development."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los prototipos en papel son económicos y fáciles de modificar, lo que los hace ideales para iteraciones rápidas en fases conceptuales."
+            },
+            {
+              "type": "text",
+              "content": "Permiten detectar problemas de usabilidad antes de invertir tiempo y recursos en desarrollo digital."
+            }
+          ]
+        }
+      }
+      ,
+      {
+        "Category": "Prototipo vs Boceto",
+        "Question Text": {
+          "en-US": [
+            "What differentiates a prototype from a sketch?"
+          ],
+          "es-MX": [
+            "¿Qué diferencia a un prototipo de un boceto?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A prototype aims to faithfully represent a process, while a sketch is mainly artistic.",
+            "A prototype includes aesthetic elements, while a sketch does not.",
+            "A sketch is always digital, and a prototype can be paper or digital.",
+            "Prototypes are exclusive to digital interfaces, while sketches are not."
+          ],
+          "es-MX": [
+            "El prototipo busca representar fielmente un proceso, mientras que el boceto es solo artístico.",
+            "El prototipo incluye elementos estéticos, mientras que el boceto no.",
+            "El boceto es siempre digital, y el prototipo puede ser en papel o digital.",
+            "Los prototipos son exclusivos para interfaces digitales, mientras que los bocetos no."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A prototype aims to faithfully represent a process, while a sketch is mainly artistic.",
+          "es-MX": "El prototipo busca representar fielmente un proceso, mientras que el boceto es solo artístico."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "A prototype simulates how a system works and allows interaction testing, while a sketch is typically a conceptual or visual representation."
+            },
+            {
+              "type": "text",
+              "content": "The key difference lies in functionality: prototypes support usability validation, sketches support idea generation."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Un prototipo simula cómo funciona un sistema y permite probar la interacción, mientras que un boceto suele ser una representación conceptual o visual."
+            },
+            {
+              "type": "text",
+              "content": "La diferencia clave está en la funcionalidad: el prototipo valida usabilidad; el boceto explora ideas."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Tipos de Prototipos",
+        "Question Text": {
+          "en-US": [
+            "What characterizes a low-fidelity prototype?"
+          ],
+          "es-MX": [
+            "¿Qué caracteriza a un prototipo de baja fidelidad?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It closely resembles the final visual design.",
+            "It focuses on structure and functionality rather than visual details.",
+            "It requires advanced development tools.",
+            "It includes fully implemented interactions."
+          ],
+          "es-MX": [
+            "Se asemeja casi exactamente al diseño visual final.",
+            "Se enfoca en la estructura y funcionalidad más que en los detalles visuales.",
+            "Requiere herramientas avanzadas de desarrollo.",
+            "Incluye interacciones completamente implementadas."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It focuses on structure and functionality rather than visual details.",
+          "es-MX": "Se enfoca en la estructura y funcionalidad más que en los detalles visuales."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Low-fidelity prototypes prioritize layout, information hierarchy, and basic interaction flows rather than aesthetics."
+            },
+            {
+              "type": "text",
+              "content": "For example, wireframes drawn on paper or simple grayscale screens help validate navigation logic before investing in visual design."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los prototipos de baja fidelidad priorizan la estructura, la jerarquía de información y los flujos básicos de interacción por encima del aspecto visual."
+            },
+            {
+              "type": "text",
+              "content": "Por ejemplo, wireframes en papel o pantallas en escala de grises permiten validar la lógica de navegación antes de invertir en diseño visual."
+            }
+          ]
+        }
+      }
+      ,
+      {
+        "Category": "Prototipos de Alta Fidelidad",
+        "Question Text": {
+          "en-US": [
+            "When is it most appropriate to use a high-fidelity prototype?"
+          ],
+          "es-MX": [
+            "¿Cuándo es más apropiado utilizar un prototipo de alta fidelidad?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "At the very beginning of ideation.",
+            "When validating final visual and interaction details before development.",
+            "When no user testing is required.",
+            "Only after the product has been launched."
+          ],
+          "es-MX": [
+            "Al inicio del proceso de ideación.",
+            "Al validar detalles visuales y de interacción antes del desarrollo final.",
+            "Cuando no se requiere prueba con usuarios.",
+            "Solo después del lanzamiento del producto."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "When validating final visual and interaction details before development.",
+          "es-MX": "Al validar detalles visuales y de interacción antes del desarrollo final."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "High-fidelity prototypes simulate the final look and behavior of a product."
+            },
+            {
+              "type": "text",
+              "content": "They are useful before development to ensure that animations, microinteractions, and visual hierarchy function as expected, reducing costly redesign later."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los prototipos de alta fidelidad simulan el aspecto y comportamiento final del producto."
+            },
+            {
+              "type": "text",
+              "content": "Son útiles antes del desarrollo para validar animaciones, microinteracciones y jerarquía visual, reduciendo retrabajos costosos posteriormente."
+            }
+          ]
+        }
+      }
+      ,
+      {
+        "Category": "Iteración en Prototipado",
+        "Question Text": {
+          "en-US": [
+            "Why is iteration essential in the prototyping process?"
+          ],
+          "es-MX": [
+            "¿Por qué es esencial la iteración en el proceso de prototipado?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it guarantees immediate market success.",
+            "Because it allows continuous improvement based on user feedback.",
+            "Because it replaces the need for research.",
+            "Because it eliminates development costs."
+          ],
+          "es-MX": [
+            "Porque garantiza éxito inmediato en el mercado.",
+            "Porque permite mejorar continuamente con base en la retroalimentación del usuario.",
+            "Porque sustituye la necesidad de investigación.",
+            "Porque elimina los costos de desarrollo."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it allows continuous improvement based on user feedback.",
+          "es-MX": "Porque permite mejorar continuamente con base en la retroalimentación del usuario."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Iteration enables teams to test, detect usability problems, and refine solutions incrementally."
+            },
+            {
+              "type": "text",
+              "content": "For instance, after observing users struggle with a checkout flow, designers can adjust button placement and test again before final implementation."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La iteración permite probar, detectar problemas de usabilidad y ajustar soluciones de manera progresiva."
+            },
+            {
+              "type": "text",
+              "content": "Por ejemplo, si los usuarios presentan dificultades en el flujo de pago, el equipo puede modificar la ubicación de botones y volver a probar antes del desarrollo definitivo."
+            }
+          ]
+        }
+      }
+      
+    ]
+  }

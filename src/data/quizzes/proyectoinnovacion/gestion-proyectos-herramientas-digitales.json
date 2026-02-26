@@ -1,0 +1,407 @@
+{
+    "meta": {
+      "slug": "gestion-proyectos-herramientas-digitales",
+      "title": "Plan de Trabajo, Gantt y Desarrollo de Herramientas",
+      "subject": "Unidad 1 · Fundamentos de Gestión y Desarrollo de Proyectos",
+      "unit": 1,
+      "classNo": 1,
+      "description": "Conceptos básicos sobre plan de trabajo, diagrama de Gantt, desarrollo práctico de herramientas digitales y tipos de pruebas en proyectos tecnológicos.",
+      "tags": [
+        "Plan de trabajo",
+        "Diagrama de Gantt",
+        "Gestión de proyectos",
+        "Desarrollo de herramientas",
+        "Pruebas de usabilidad",
+        "Implementación"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "Plan de Trabajo",
+        "Question Text": {
+          "en-US": [
+            "What is a work plan?"
+          ],
+          "es-MX": [
+            "¿Qué es un plan de trabajo?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A graphic tool to visualize project timelines.",
+            "A document describing tasks, deadlines, required resources, and objectives.",
+            "A final project report.",
+            "A simple list of general objectives."
+          ],
+          "es-MX": [
+            "Una herramienta gráfica para visualizar tiempos del proyecto.",
+            "Un documento que describe tareas, plazos, recursos necesarios y objetivos.",
+            "Un informe final del proyecto.",
+            "Una lista simple de objetivos generales."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A document describing tasks, deadlines, required resources, and objectives.",
+          "es-MX": "Un documento que describe tareas, plazos, recursos necesarios y objetivos."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "A work plan structures how a project will be executed by defining responsibilities, timelines, and resources."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El plan de trabajo organiza la ejecución del proyecto definiendo tareas, responsables, tiempos y recursos."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Diagrama de Gantt",
+        "Question Text": {
+          "en-US": [
+            "What is the main purpose of a Gantt chart?"
+          ],
+          "es-MX": [
+            "¿Cuál es el propósito principal del diagrama de Gantt?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To describe only project objectives.",
+            "To identify possible bottlenecks or delays.",
+            "To replace the work plan.",
+            "To calculate project profitability."
+          ],
+          "es-MX": [
+            "Describir únicamente los objetivos del proyecto.",
+            "Identificar posibles cuellos de botella o retrasos.",
+            "Reemplazar el plan de trabajo.",
+            "Calcular la rentabilidad del proyecto."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To identify possible bottlenecks or delays.",
+          "es-MX": "Identificar posibles cuellos de botella o retrasos."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "A Gantt chart visually represents task timelines, helping detect overlaps, delays, or critical path issues."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El diagrama de Gantt muestra visualmente las tareas en el tiempo, permitiendo detectar retrasos o problemas en la secuencia."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Relación Plan y Gantt",
+        "Question Text": {
+          "en-US": [
+            "How are a work plan and a Gantt chart related?"
+          ],
+          "es-MX": [
+            "¿Cómo se relacionan el plan de trabajo y el diagrama de Gantt?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They are the same document.",
+            "They are unrelated tools.",
+            "The work plan provides details, and the Gantt chart visualizes them.",
+            "The Gantt chart replaces detailed planning."
+          ],
+          "es-MX": [
+            "Son el mismo documento.",
+            "Son herramientas independientes sin relación.",
+            "El plan describe en detalle y el Gantt lo visualiza.",
+            "El Gantt reemplaza la planificación detallada."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The work plan provides details, and the Gantt chart visualizes them.",
+          "es-MX": "El plan describe en detalle y el Gantt lo visualiza."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The work plan explains tasks and resources, while the Gantt chart presents them visually across a timeline."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El plan explica tareas y recursos; el Gantt las representa gráficamente en una línea de tiempo."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Desarrollo Práctico",
+        "Question Text": {
+          "en-US": [
+            "What should be included in the practical development of a tool?"
+          ],
+          "es-MX": [
+            "¿Qué se debe incluir en el desarrollo práctico de la herramienta?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Hardware platform selection.",
+            "Tool proposal and objectives.",
+            "Marketing strategy implementation.",
+            "Economic profitability analysis."
+          ],
+          "es-MX": [
+            "Selección de la plataforma de hardware.",
+            "Propuesta de la herramienta y objetivos.",
+            "Implementación de estrategia de marketing.",
+            "Análisis de rentabilidad económica."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Tool proposal and objectives.",
+          "es-MX": "Propuesta de la herramienta y objetivos."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Practical development begins with defining what will be built and its intended purpose."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El desarrollo práctico inicia definiendo qué se construirá y cuáles son sus objetivos."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Implementación",
+        "Question Text": {
+          "en-US": [
+            "Which topic is part of tool development and implementation?"
+          ],
+          "es-MX": [
+            "¿Cuál es uno de los temas abarcados en el desarrollo e implementación?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Market research only.",
+            "User interface generation.",
+            "Financial investment planning.",
+            "External marketing campaigns."
+          ],
+          "es-MX": [
+            "Investigación de mercado únicamente.",
+            "Generación de interfaces de usuario.",
+            "Planeación financiera.",
+            "Campañas de marketing externas."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "User interface generation.",
+          "es-MX": "Generación de interfaces de usuario."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Implementation includes designing and building the user interface and system functionality."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La implementación contempla la construcción de la interfaz y funcionalidades del sistema."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Pruebas del Proyecto",
+        "Question Text": {
+          "en-US": [
+            "What type of testing should be performed during tool development?"
+          ],
+          "es-MX": [
+            "¿Qué tipo de pruebas deben realizarse en la herramienta?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Economic testing.",
+            "Profitability testing.",
+            "Web usability testing.",
+            "Market competitiveness testing."
+          ],
+          "es-MX": [
+            "Pruebas económicas.",
+            "Pruebas de rentabilidad.",
+            "Pruebas de usabilidad en la web.",
+            "Pruebas de mercado y competitividad."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Web usability testing.",
+          "es-MX": "Pruebas de usabilidad en la web."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Usability testing ensures the tool functions correctly and provides a positive user experience."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las pruebas de usabilidad verifican que la herramienta funcione correctamente y sea comprensible para el usuario."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Estructura del TFM",
+        "Question Text": {
+          "en-US": [
+            "Which elements are included in a Master's Thesis (TFM) report?"
+          ],
+          "es-MX": [
+            "¿Qué elementos contiene la memoria de TFM?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Cover page.",
+            "All answers are correct.",
+            "Abstract.",
+            "Main development section."
+          ],
+          "es-MX": [
+            "Portada.",
+            "Todas las respuestas son correctas.",
+            "Resumen.",
+            "Desarrollo."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "All answers are correct.",
+          "es-MX": "Todas las respuestas son correctas."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "A Master's Thesis report includes a cover page, abstract, and development section as core structural components."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La memoria del TFM incluye portada, resumen y desarrollo como partes estructurales esenciales del documento académico."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Resumen Académico",
+        "Question Text": {
+          "en-US": [
+            "What characterizes the abstract section of a TFM?"
+          ],
+          "es-MX": [
+            "El apartado «Resumen»..."
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It does not include keywords.",
+            "It must contain between 150 and 1000 words.",
+            "None of the answers are correct.",
+            "It contains keywords."
+          ],
+          "es-MX": [
+            "No contiene las palabras clave.",
+            "Es un resumen entre 150 y 1000 palabras.",
+            "Ninguna es cierta.",
+            "Contiene palabras clave."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It contains keywords.",
+          "es-MX": "Contiene palabras clave."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "An academic abstract summarizes the objective, methodology, and main findings of the research and includes keywords for indexing and search purposes."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El resumen académico sintetiza objetivo, metodología y resultados principales, e incluye palabras clave para facilitar su indexación."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Referencias Académicas",
+        "Question Text": {
+          "en-US": [
+            "What is required in the references section of a TFM?"
+          ],
+          "es-MX": [
+            "El apartado de «Referencias»:"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It must contain some cited sources only.",
+            "It must follow APA 6 format exclusively.",
+            "It must include all cited sources.",
+            "Using Wikipedia is recommended."
+          ],
+          "es-MX": [
+            "Debe contener algunas fuentes citadas.",
+            "Es formato APA 6.",
+            "Debe contener todas las fuentes citadas.",
+            "Es recomendable usar la Wikipedia."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It must include all cited sources.",
+          "es-MX": "Debe contener todas las fuentes citadas."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The references section must include every source cited in the document, formatted according to the required academic style."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La sección de referencias debe incluir todas las fuentes que fueron citadas en el trabajo, siguiendo el formato académico requerido."
+            }
+          ]
+        }
+      }
+    ]
+  }

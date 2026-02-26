@@ -1,0 +1,1205 @@
+{
+    "meta": {
+      "slug": "ux-neuromarketing-fundamentos-aplicaciones",
+      "title": "Neuromarketing en UX",
+      "subject": "Investigación Centrada en la Interfaz de Usuario",
+      "unit": 10,
+      "classNo": 1,
+      "description": "Bases del neuromarketing aplicadas a UX: definición, metodología, principales técnicas (EEG, eye tracking, GSR), ventajas, limitaciones y dilemas éticos en investigación.",
+      "tags": [
+        "UX Research",
+        "Neuromarketing",
+        "EEG",
+        "Eye Tracking",
+        "Biometría",
+        "Comportamiento del Consumidor",
+        "Ética"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "Neuromarketing – Definición",
+        "Question Text": {
+          "en-US": [
+            "How is neuromarketing defined from the perspective of its field of specialization?"
+          ],
+          "es-MX": [
+            "¿Qué define al neuromarketing desde el punto de vista del ámbito de especialización?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It is a discipline focused exclusively on social media usage.",
+            "It is the set of neuroscience techniques applied to marketing.",
+            "It is a branch of psychology focused on consumer behavior.",
+            "It is the direct measurement of quantitative sales data."
+          ],
+          "es-MX": [
+            "Es una disciplina centrada únicamente en el uso de redes sociales.",
+            "Es el conjunto de técnicas del ámbito de la neurociencia aplicadas al marketing.",
+            "Es una rama de la psicología enfocada en el comportamiento de consumidores.",
+            "Es la medición directa de datos cuantitativos de ventas."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It is the set of neuroscience techniques applied to marketing.",
+          "es-MX": "Es el conjunto de técnicas del ámbito de la neurociencia aplicadas al marketing."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Neuromarketing integrates neuroscience tools and methodologies into marketing research to better understand consumers’ unconscious responses. It does not focus only on social media or traditional psychology, but rather uses scientific techniques such as EEG, eye tracking, or biometric sensors."
+            },
+            {
+              "type": "text",
+              "content": "For example, a company may use eye tracking to analyze which elements of a website capture the most visual attention, helping optimize layout and visual hierarchy."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El neuromarketing integra herramientas y metodologías de la neurociencia en la investigación de marketing para comprender mejor las respuestas inconscientes del consumidor. No se limita a redes sociales ni únicamente a la psicología tradicional, sino que emplea técnicas científicas como EEG, eye tracking o sensores biométricos."
+            },
+            {
+              "type": "text",
+              "content": "Por ejemplo, una empresa puede utilizar eye tracking para identificar qué elementos de una página web captan mayor atención visual y así optimizar su jerarquía visual y diseño."
+            }
+          ]
+        }
+      }
+      ,
+      {
+        "Category": "Neuromarketing – Objetivos",
+        "Question Text": {
+          "en-US": [
+            "What are the main objectives of neuromarketing?"
+          ],
+          "es-MX": [
+            "¿Cuáles son los principales objetivos del neuromarketing?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To increase production, profitability, and sales.",
+            "To measure levels of emotion, attention, and memory in consumers.",
+            "To design advertising campaigns based on social media trends.",
+            "To analyze companies’ financial performance."
+          ],
+          "es-MX": [
+            "Incrementar la producción, la rentabilidad y las ventas.",
+            "Medir los niveles de emoción, atención y memoria en consumidores.",
+            "Diseñar campañas publicitarias basadas en gustos de las redes sociales.",
+            "Analizar el rendimiento financiero de las empresas."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To measure levels of emotion, attention, and memory in consumers.",
+          "es-MX": "Medir los niveles de emoción, atención y memoria en consumidores."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Neuromarketing aims to objectively measure cognitive and emotional processes such as attention, emotional engagement, and memory retention. These variables help predict consumer behavior beyond self-reported opinions."
+            },
+            {
+              "type": "text",
+              "content": "For instance, by measuring galvanic skin response during an advertisement, researchers can identify which scenes generate emotional peaks and which moments lose engagement."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El objetivo del neuromarketing es medir de forma objetiva procesos cognitivos y emocionales como la atención, la emoción y la memoria. Estas variables permiten anticipar comportamientos más allá de lo que el consumidor declara verbalmente."
+            },
+            {
+              "type": "text",
+              "content": "Por ejemplo, mediante la medición de la respuesta galvánica de la piel durante un anuncio, se pueden detectar los momentos que generan mayor activación emocional y aquellos que pierden interés."
+            }
+          ]
+        }
+      }
+      ,
+      {
+        "Category": "Neuromarketing – Caso Aplicado",
+        "Question Text": {
+          "en-US": [
+            "According to the neuromarketing study applied to the 2014 Christmas Lottery commercial, what was detected in the long version of the ad?"
+          ],
+          "es-MX": [
+            "Según los resultados del estudio de neuromarketing aplicado al spot de la lotería de Navidad 2014, ¿qué se detectó en la versión larga del anuncio?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A sustained increase in emotional levels.",
+            "52 seconds of emotional deactivation.",
+            "A 182% increase in attention throughout the ad.",
+            "A total loss of interest in the product."
+          ],
+          "es-MX": [
+            "Un aumento sostenido en los niveles de emoción.",
+            "52 segundos de desactivación emocional.",
+            "Un incremento del 182 % en atención durante todo el anuncio.",
+            "Una pérdida total de interés en el producto."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "52 seconds of emotional deactivation.",
+          "es-MX": "52 segundos de desactivación emocional."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The neuromarketing study applied to the 2014 Christmas Lottery commercial detected 52 consecutive seconds of emotional deactivation in the long version of the advertisement. Emotional deactivation does not mean that viewers disliked the ad; rather, it indicates a measurable drop in physiological and neurological activation, such as reduced arousal, lower attention levels, and diminished cognitive engagement."
+            },
+            {
+              "type": "text",
+              "content": "Through biometric tools such as EEG, eye tracking, or galvanic skin response, researchers can observe second-by-second fluctuations in emotional intensity. In this case, the long narrative segment failed to sustain emotional peaks, causing a prolonged plateau in activation. In emotionally driven advertising—especially in seasonal campaigns like Christmas—maintaining engagement is critical for memory encoding and brand association."
+            },
+            {
+              "type": "text",
+              "content": "This finding demonstrates one of the key strengths of neuromarketing: identifying micro-moments where engagement drops, something that traditional surveys cannot detect with precision. A participant might report that the ad was 'touching' overall, but physiological data can reveal exactly which scenes weaken narrative impact."
+            },
+            {
+              "type": "text",
+              "content": "Strategically, such insights allow teams to optimize pacing, shorten low-impact segments, adjust music intensity, or restructure emotional climaxes. For example, reducing the duration of emotionally flat scenes or reinforcing them with stronger storytelling elements could increase sustained engagement."
+            },
+            {
+              "type": "text",
+              "content": "In UX contexts, this principle applies to digital experiences as well. If a landing page shows a 20-second drop in attention during scrolling, designers can analyze layout hierarchy, visual emphasis, or content density. Neuromarketing thus shifts analysis from 'Did users like it?' to 'When and why did engagement change?'"
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El estudio de neuromarketing aplicado al spot de la Lotería de Navidad 2014 detectó 52 segundos consecutivos de desactivación emocional en la versión larga del anuncio. La desactivación emocional no significa que el anuncio fuera rechazado, sino que se observó una disminución medible en la activación fisiológica y neurológica, como menor arousal, reducción de atención y menor implicación cognitiva."
+            },
+            {
+              "type": "text",
+              "content": "Mediante herramientas biométricas como EEG, eye tracking o respuesta galvánica de la piel, los investigadores pueden analizar segundo a segundo las variaciones en la intensidad emocional. En este caso, un segmento narrativo prolongado no logró mantener picos emocionales, generando una meseta prolongada de activación. En publicidad emocional —especialmente en campañas navideñas— mantener la implicación constante es clave para la codificación en memoria y la asociación con la marca."
+            },
+            {
+              "type": "text",
+              "content": "Este hallazgo demuestra una de las grandes ventajas del neuromarketing: identificar micro-momentos donde se pierde impacto, algo que una encuesta tradicional difícilmente puede detectar con precisión temporal. Un participante puede declarar que el anuncio le pareció 'emotivo', pero los datos fisiológicos revelan exactamente qué escenas disminuyen la intensidad narrativa."
+            },
+            {
+              "type": "text",
+              "content": "Desde el punto de vista estratégico, esta información permite optimizar el ritmo, reducir segmentos de bajo impacto, ajustar la música o reforzar el clímax emocional. Por ejemplo, acortar escenas planas o intensificar elementos narrativos puede aumentar la implicación sostenida."
+            },
+            {
+              "type": "text",
+              "content": "En UX digital, este mismo principio se aplica al análisis de experiencias interactivas. Si en una landing page se detecta una caída de atención durante el scroll, el equipo puede revisar jerarquía visual, densidad de contenido o estímulos emocionales. El neuromarketing cambia la pregunta de '¿Te gustó?' a '¿En qué momento cambió tu nivel de implicación y por qué?'."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Neuromarketing – Valor Diferencial",
+        "Question Text": {
+          "en-US": [
+            "What is the most important differentiating value of large neuromarketing consulting firms?"
+          ],
+          "es-MX": [
+            "¿Cuál es el valor diferencial más importante de las grandes consultoras en neuromarketing?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The hardware used.",
+            "The selection of metrics.",
+            "Proprietary software associated with a specific methodology.",
+            "The combination of different techniques."
+          ],
+          "es-MX": [
+            "El hardware utilizado.",
+            "La elección de métricas.",
+            "El software propietario asociado a una metodología concreta.",
+            "La combinación de distintas técnicas."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Proprietary software associated with a specific methodology.",
+          "es-MX": "El software propietario asociado a una metodología concreta."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "In large neuromarketing consulting firms, the true differentiating factor is not the hardware itself—since EEG or eye-tracking devices can be acquired by many providers—but the proprietary software and analytical algorithms developed internally."
+            },
+            {
+              "type": "text",
+              "content": "These firms build specific data-processing models, dashboards, and interpretation frameworks that transform raw biometric signals into actionable marketing insights. The competitive advantage lies in how data is processed and interpreted, not merely collected."
+            },
+            {
+              "type": "text",
+              "content": "For example, two companies may use the same EEG device, but their proprietary software may differ in how they segment attention peaks or emotional valence, leading to different strategic conclusions."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "En las grandes consultoras de neuromarketing, el verdadero valor diferencial no suele estar en el hardware —ya que dispositivos como EEG o eye tracking pueden ser adquiridos por múltiples empresas— sino en el software propietario y los algoritmos de análisis desarrollados internamente."
+            },
+            {
+              "type": "text",
+              "content": "Estas consultoras diseñan modelos propios de procesamiento de datos, paneles de visualización e interpretaciones metodológicas que convierten señales biométricas en insights estratégicos. La ventaja competitiva reside en cómo se procesan e interpretan los datos, no únicamente en cómo se capturan."
+            },
+            {
+              "type": "text",
+              "content": "Por ejemplo, dos empresas pueden utilizar el mismo dispositivo EEG, pero diferir en la forma en que identifican picos de atención o valencia emocional, generando conclusiones estratégicas distintas."
+            }
+          ]
+        }
+      }
+      ,
+      {
+        "Category": "Neuromarketing – Métricas",
+        "Question Text": {
+          "en-US": [
+            "Which metric allows measuring whether a user understands or feels confused by a stimulus?"
+          ],
+          "es-MX": [
+            "¿Qué métrica permite medir si un usuario entiende o se siente desconcertado por un estímulo?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Emotional engagement.",
+            "Comprehension.",
+            "Retention.",
+            "Visual focus."
+          ],
+          "es-MX": [
+            "Involucración emocional.",
+            "Comprensión.",
+            "Retención.",
+            "Foco visual."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Comprehension.",
+          "es-MX": "Comprensión."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Comprehension measures whether the cognitive processing of a stimulus is clear and meaningful to the user. It evaluates if the message is understood or if cognitive overload generates confusion."
+            },
+            {
+              "type": "text",
+              "content": "In neuromarketing, comprehension can be inferred through neural coherence patterns or cognitive load indicators. A spike in cognitive effort without emotional alignment may indicate confusion."
+            },
+            {
+              "type": "text",
+              "content": "In UX, this is critical when testing landing pages or onboarding flows. If users show high attention but low comprehension signals, the interface may be visually engaging yet cognitively unclear."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La métrica de comprensión evalúa si el procesamiento cognitivo del estímulo resulta claro y significativo para el usuario. Permite identificar si el mensaje se entiende o si existe sobrecarga cognitiva que genera confusión."
+            },
+            {
+              "type": "text",
+              "content": "En neuromarketing, la comprensión puede inferirse mediante patrones de coherencia neuronal o indicadores de carga cognitiva. Un aumento en el esfuerzo mental sin alineación emocional puede sugerir desconcierto."
+            },
+            {
+              "type": "text",
+              "content": "En UX digital, esta métrica es clave al probar flujos de onboarding o páginas informativas. Si hay atención visual pero baja comprensión, el diseño puede resultar atractivo pero poco claro."
+            }
+          ]
+        }
+      }
+      ,
+      {
+        "Category": "Neuromarketing – Tamaño de Muestra",
+        "Question Text": {
+          "en-US": [
+            "What is the minimum sample size to achieve a margin of error below 10% using EEG in neuromarketing?"
+          ],
+          "es-MX": [
+            "¿Cuál es el tamaño mínimo de muestra para lograr un margen de error inferior al 10 % con EEG en neuromarketing?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "More than 30 participants.",
+            "Between 15 and 20 participants.",
+            "4 participants.",
+            "More than 40 participants."
+          ],
+          "es-MX": [
+            "Más de 30 participantes.",
+            "Entre 15 y 20 participantes.",
+            "4 participantes.",
+            "Más de 40 participantes."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Between 15 and 20 participants.",
+          "es-MX": "Entre 15 y 20 participantes."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "EEG-based neuromarketing studies typically require between 15 and 20 participants to achieve a reliable margin of error below 10%. Unlike large-scale surveys, EEG captures high-resolution biometric data, allowing meaningful insights with smaller samples."
+            },
+            {
+              "type": "text",
+              "content": "The statistical reliability comes from repeated neural signal patterns across participants rather than large population sampling. However, representativeness and experimental control remain essential."
+            },
+            {
+              "type": "text",
+              "content": "In practice, a UX research team testing video ads with EEG may gather 18 participants and still obtain statistically robust emotional activation trends."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los estudios de neuromarketing basados en EEG suelen requerir entre 15 y 20 participantes para alcanzar un margen de error inferior al 10 %. A diferencia de encuestas masivas, el EEG capta datos biométricos de alta resolución, lo que permite obtener resultados significativos con muestras más reducidas."
+            },
+            {
+              "type": "text",
+              "content": "La confiabilidad estadística proviene de la repetición consistente de patrones neuronales entre participantes, más que de un muestreo poblacional amplio. No obstante, sigue siendo fundamental el control experimental y la selección adecuada de la muestra."
+            },
+            {
+              "type": "text",
+              "content": "En la práctica, un equipo UX puede analizar 18 usuarios con EEG para evaluar un anuncio en video y obtener tendencias sólidas de activación emocional."
+            }
+          ]
+        }
+      },
+{
+  "Category": "Neuromarketing – Hardware vs Software",
+  "Question Text": {
+    "en-US": [
+      "Why is hardware not considered the main differentiating factor in neuromarketing consulting firms?"
+    ],
+    "es-MX": [
+      "¿Por qué el hardware no se considera el principal factor diferencial en las consultoras de neuromarketing?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Because hardware does not measure attention.",
+      "Because many firms can access similar hardware technologies.",
+      "Because hardware replaces methodology.",
+      "Because hardware eliminates margin of error."
+    ],
+    "es-MX": [
+      "Porque el hardware no mide la atención.",
+      "Porque muchas consultoras pueden acceder a tecnologías de hardware similares.",
+      "Porque el hardware sustituye la metodología.",
+      "Porque el hardware elimina el margen de error."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Because many firms can access similar hardware technologies.",
+    "es-MX": "Porque muchas consultoras pueden acceder a tecnologías de hardware similares."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "Neuromarketing hardware such as EEG or eye tracking devices can be purchased by multiple companies. Therefore, the true competitive advantage does not lie in owning the equipment itself, but in how the collected data is processed and interpreted."
+      },
+      {
+        "type": "text",
+        "content": "The differentiation emerges from proprietary software, analytical algorithms, and methodological frameworks that transform raw biometric signals into strategic insights."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "El hardware de neuromarketing como EEG o eye tracking puede ser adquirido por múltiples empresas. Por ello, el verdadero valor diferencial no radica en poseer el equipo, sino en cómo se procesan e interpretan los datos obtenidos."
+      },
+      {
+        "type": "text",
+        "content": "La ventaja competitiva surge del software propietario, los algoritmos de análisis y la metodología aplicada para convertir señales biométricas en insights estratégicos."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Neuromarketing – Métricas Comparadas",
+  "Question Text": {
+    "en-US": [
+      "Which metric is most directly related to evaluating memory encoding in a stimulus?"
+    ],
+    "es-MX": [
+      "¿Qué métrica está más directamente relacionada con evaluar la codificación en memoria de un estímulo?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Visual focus.",
+      "Emotional engagement.",
+      "Retention.",
+      "Comprehension."
+    ],
+    "es-MX": [
+      "Foco visual.",
+      "Involucración emocional.",
+      "Retención.",
+      "Comprensión."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Retention.",
+    "es-MX": "Retención."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "Retention measures the likelihood that a stimulus will be encoded and stored in memory. While emotional engagement and attention support memory processes, retention directly evaluates whether the information has cognitive persistence."
+      },
+      {
+        "type": "text",
+        "content": "For example, an advertisement may generate strong emotional engagement, but if retention signals are low, the brand message may not be remembered later."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "La retención mide la probabilidad de que un estímulo sea codificado y almacenado en la memoria. Aunque la emoción y la atención influyen en este proceso, la retención evalúa directamente la permanencia cognitiva del mensaje."
+      },
+      {
+        "type": "text",
+        "content": "Por ejemplo, un anuncio puede generar alta involucración emocional, pero si la retención es baja, el mensaje de marca podría no recordarse posteriormente."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Neuromarketing – Muestra y Margen de Error",
+  "Question Text": {
+    "en-US": [
+      "Why can EEG studies achieve reliable results with smaller sample sizes compared to traditional surveys?"
+    ],
+    "es-MX": [
+      "¿Por qué los estudios con EEG pueden obtener resultados confiables con muestras más pequeñas en comparación con encuestas tradicionales?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Because EEG eliminates statistical error.",
+      "Because EEG captures high-resolution biometric data.",
+      "Because EEG replaces the need for methodology.",
+      "Because EEG increases emotional engagement."
+    ],
+    "es-MX": [
+      "Porque el EEG elimina el error estadístico.",
+      "Porque el EEG capta datos biométricos de alta resolución.",
+      "Porque el EEG sustituye la metodología.",
+      "Porque el EEG incrementa la involucración emocional."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Because EEG captures high-resolution biometric data.",
+    "es-MX": "Porque el EEG capta datos biométricos de alta resolución."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "EEG captures detailed neural activation patterns at a high temporal resolution. This precision allows researchers to detect consistent patterns across participants without requiring large populations."
+      },
+      {
+        "type": "text",
+        "content": "Unlike surveys that depend on self-reported opinions and broader sampling for statistical stability, EEG measures direct physiological responses, reducing variability caused by subjective interpretation."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "El EEG registra patrones de activación neuronal con alta resolución temporal. Esta precisión permite identificar patrones consistentes entre participantes sin necesidad de grandes poblaciones."
+      },
+      {
+        "type": "text",
+        "content": "A diferencia de las encuestas, que dependen de opiniones declaradas y requieren muestras amplias para estabilidad estadística, el EEG mide respuestas fisiológicas directas, reduciendo la variabilidad subjetiva."
+      }
+    ]
+  }
+},
+{
+  "Category": "Neuromarketing – Conductancia Eléctrica de la Piel (GSR)",
+  "Question Text": {
+    "en-US": [
+      "What exactly does skin conductance measure in neuromarketing?"
+    ],
+    "es-MX": [
+      "¿Qué mide exactamente la conductancia eléctrica de la piel en neuromarketing?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Brain activity during rational stimuli.",
+      "The intensity and timing of emotional response to a stimulus.",
+      "The frequency of facial microexpressions.",
+      "The level of oxygenation in the brain."
+    ],
+    "es-MX": [
+      "La actividad cerebral durante estímulos racionales.",
+      "La intensidad y el momento de la emoción ante un estímulo.",
+      "La frecuencia de las microexpresiones faciales.",
+      "El nivel de oxigenación en el cerebro."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "The intensity and timing of emotional response to a stimulus.",
+    "es-MX": "La intensidad y el momento de la emoción ante un estímulo."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "Skin conductance (GSR or SCR) measures changes in the electrical properties of the skin caused by sweat gland activity, which is directly linked to autonomic nervous system activation."
+      },
+      {
+        "type": "text",
+        "content": "It does not measure whether the emotion is positive or negative, but it accurately captures the intensity and exact moment of emotional arousal when a stimulus is presented."
+      },
+      {
+        "type": "text",
+        "content": "For example, during an advertisement, a sudden spike in GSR indicates a strong emotional reaction, allowing researchers to identify impactful scenes."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "La conductancia eléctrica de la piel (GSR o SCR) mide cambios en las propiedades eléctricas de la piel provocados por la activación de las glándulas sudoríparas, vinculadas al sistema nervioso autónomo."
+      },
+      {
+        "type": "text",
+        "content": "No determina si la emoción es positiva o negativa, pero sí identifica con precisión la intensidad y el momento exacto de activación emocional ante un estímulo."
+      },
+      {
+        "type": "text",
+        "content": "Por ejemplo, durante un anuncio, un pico en la GSR indica una reacción emocional intensa, permitiendo detectar qué escenas generan mayor impacto."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Neuromarketing – EEG vs fMRI",
+  "Question Text": {
+    "en-US": [
+      "What is one of the main advantages of electroencephalography (EEG) over functional magnetic resonance imaging (fMRI)?"
+    ],
+    "es-MX": [
+      "¿Cuál es una de las principales ventajas de la electroencefalografía (EEG) frente a la resonancia magnética funcional (fMRI)?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "It offers higher spatial resolution.",
+      "It is more affordable and allows greater participant mobility.",
+      "It does not require trained specialists.",
+      "It can measure deeper brain structures."
+    ],
+    "es-MX": [
+      "Ofrece mayor resolución espacial.",
+      "Es más barata y permite mayor libertad de movimiento al participante.",
+      "No requiere la participación de especialistas entrenados.",
+      "Puede medir las áreas más internas del cerebro."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "It is more affordable and allows greater participant mobility.",
+    "es-MX": "Es más barata y permite mayor libertad de movimiento al participante."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "EEG is significantly more affordable and portable compared to fMRI. Participants can sit, watch screens, or interact more naturally during EEG testing."
+      },
+      {
+        "type": "text",
+        "content": "While fMRI provides high spatial resolution and can measure deeper brain structures, it requires expensive equipment and restricts movement inside a scanner."
+      },
+      {
+        "type": "text",
+        "content": "In marketing and UX contexts, EEG is often preferred because it balances cost, ecological validity, and temporal precision."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "El EEG es considerablemente más económico y portátil que la fMRI. Permite que los participantes interactúen de manera más natural, por ejemplo viendo pantallas o navegando interfaces."
+      },
+      {
+        "type": "text",
+        "content": "Aunque la fMRI ofrece mayor resolución espacial y acceso a áreas profundas del cerebro, implica equipos costosos y limita el movimiento dentro del escáner."
+      },
+      {
+        "type": "text",
+        "content": "En contextos de marketing y UX, el EEG suele preferirse por su equilibrio entre costo, validez ecológica y precisión temporal."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Neuromarketing – Microexpresiones",
+  "Question Text": {
+    "en-US": [
+      "Which neuromarketing technique allows recording facial microexpressions related to emotional states?"
+    ],
+    "es-MX": [
+      "¿Qué técnica de neuromarketing permite registrar microexpresiones faciales relacionadas con estados emocionales?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Functional magnetic resonance imaging (fMRI).",
+      "Electroencephalography (EEG).",
+      "Electromyography (EMG).",
+      "Skin conductance (GSR or SCR)."
+    ],
+    "es-MX": [
+      "Resonancia magnética funcional (fMRI).",
+      "Electroencefalografía (EEG).",
+      "Electromiografía (EMG).",
+      "Conductancia eléctrica de la piel (GSR o SCR)."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Electromyography (EMG).",
+    "es-MX": "Electromiografía (EMG)."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "Electromyography (EMG) measures subtle electrical activity in facial muscles, allowing detection of microexpressions linked to emotional states."
+      },
+      {
+        "type": "text",
+        "content": "Unlike EEG or GSR, EMG specifically captures muscular responses, which can indicate valence (positive or negative emotion)."
+      },
+      {
+        "type": "text",
+        "content": "For example, activation in the zygomatic muscle may indicate positive emotion, while corrugator activation may suggest negative emotional response."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "La electromiografía (EMG) mide la actividad eléctrica sutil en los músculos faciales, permitiendo detectar microexpresiones asociadas a estados emocionales."
+      },
+      {
+        "type": "text",
+        "content": "A diferencia del EEG o la GSR, la EMG capta directamente respuestas musculares, lo que puede ayudar a identificar la valencia emocional (positiva o negativa)."
+      },
+      {
+        "type": "text",
+        "content": "Por ejemplo, la activación del músculo cigomático suele asociarse a emociones positivas, mientras que el corrugador se relaciona con emociones negativas."
+      }
+    ]
+  }
+},
+{
+  "Category": "Neuromarketing – Métricas Emocionales",
+  "Question Text": {
+    "en-US": [
+      "Which neuromarketing technique helps determine whether an emotion is positive or negative (emotional valence)?"
+    ],
+    "es-MX": [
+      "¿Qué técnica de neuromarketing ayuda a determinar si una emoción es positiva o negativa (valencia emocional)?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Skin conductance (GSR).",
+      "Electroencephalography (EEG).",
+      "Electromyography (EMG).",
+      "Functional magnetic resonance imaging (fMRI)."
+    ],
+    "es-MX": [
+      "Conductancia eléctrica de la piel (GSR).",
+      "Electroencefalografía (EEG).",
+      "Electromiografía (EMG).",
+      "Resonancia magnética funcional (fMRI)."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Electromyography (EMG).",
+    "es-MX": "Electromiografía (EMG)."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "EMG measures subtle muscle activity in the face, allowing researchers to identify whether emotional responses are positive or negative."
+      },
+      {
+        "type": "text",
+        "content": "Unlike GSR, which measures intensity, EMG helps determine emotional valence through specific muscle activation patterns."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "La EMG mide la actividad muscular facial, lo que permite identificar si la emoción es positiva o negativa."
+      },
+      {
+        "type": "text",
+        "content": "A diferencia de la GSR, que solo mide intensidad, la EMG ayuda a determinar la valencia emocional mediante patrones musculares específicos."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Neuromarketing – Resolución y Precisión",
+  "Question Text": {
+    "en-US": [
+      "Which technique provides higher spatial resolution in neuromarketing studies?"
+    ],
+    "es-MX": [
+      "¿Qué técnica ofrece mayor resolución espacial en estudios de neuromarketing?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Electroencephalography (EEG).",
+      "Skin conductance (GSR).",
+      "Functional magnetic resonance imaging (fMRI).",
+      "Electromyography (EMG)."
+    ],
+    "es-MX": [
+      "Electroencefalografía (EEG).",
+      "Conductancia eléctrica de la piel (GSR).",
+      "Resonancia magnética funcional (fMRI).",
+      "Electromiografía (EMG)."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Functional magnetic resonance imaging (fMRI).",
+    "es-MX": "Resonancia magnética funcional (fMRI)."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "fMRI offers high spatial resolution, allowing researchers to identify specific brain areas activated during stimuli exposure."
+      },
+      {
+        "type": "text",
+        "content": "However, it has lower temporal resolution and restricts participant movement compared to EEG."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "La fMRI ofrece alta resolución espacial, permitiendo identificar áreas específicas del cerebro activadas ante un estímulo."
+      },
+      {
+        "type": "text",
+        "content": "Sin embargo, tiene menor resolución temporal y limita el movimiento del participante en comparación con el EEG."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Neuromarketing – Intensidad vs Actividad Cerebral",
+  "Question Text": {
+    "en-US": [
+      "If a researcher wants to detect the exact moment of emotional activation, which technique is most appropriate?"
+    ],
+    "es-MX": [
+      "Si un investigador quiere detectar el momento exacto de activación emocional, ¿qué técnica es más adecuada?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Functional magnetic resonance imaging (fMRI).",
+      "Skin conductance (GSR).",
+      "Electroencephalography (EEG).",
+      "Electromyography (EMG)."
+    ],
+    "es-MX": [
+      "Resonancia magnética funcional (fMRI).",
+      "Conductancia eléctrica de la piel (GSR).",
+      "Electroencefalografía (EEG).",
+      "Electromiografía (EMG)."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Skin conductance (GSR).",
+    "es-MX": "Conductancia eléctrica de la piel (GSR)."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "GSR provides precise temporal data about when emotional arousal occurs during stimulus exposure."
+      },
+      {
+        "type": "text",
+        "content": "It detects rapid changes in physiological activation, making it useful for identifying emotional peaks."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "La GSR proporciona datos temporales precisos sobre cuándo ocurre la activación emocional ante un estímulo."
+      },
+      {
+        "type": "text",
+        "content": "Detecta cambios rápidos en la activación fisiológica, siendo útil para identificar picos emocionales."
+      }
+    ]
+  }
+},
+{
+  "Category": "Neuromarketing – Ventajas",
+  "Question Text": {
+    "en-US": [
+      "What is one of the main advantages of neuromarketing compared to traditional techniques?"
+    ],
+    "es-MX": [
+      "¿Cuál es una de las principales ventajas del neuromarketing respecto a las técnicas tradicionales?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "It requires less specialization for implementation.",
+      "It measures conscious brain phenomena only.",
+      "It provides faster insights into user motivations.",
+      "It does not generate methodological concerns."
+    ],
+    "es-MX": [
+      "Requiere menos especialización para su aplicación.",
+      "Permite registrar fenómenos conscientes del cerebro.",
+      "Aporta información en menos tiempo sobre las motivaciones del usuario.",
+      "No genera dudas metodológicas en su uso."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "It provides faster insights into user motivations.",
+    "es-MX": "Aporta información en menos tiempo sobre las motivaciones del usuario."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "Neuromarketing captures physiological and neural responses in real time, reducing reliance on self-reported data."
+      },
+      {
+        "type": "text",
+        "content": "Traditional techniques like surveys depend on conscious reflection, while neuromarketing reveals implicit motivations more directly."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "El neuromarketing capta respuestas fisiológicas y neuronales en tiempo real, reduciendo la dependencia de declaraciones conscientes del usuario."
+      },
+      {
+        "type": "text",
+        "content": "Las técnicas tradicionales, como encuestas, dependen de la reflexión consciente, mientras que el neuromarketing permite identificar motivaciones implícitas de forma más directa."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Neuromarketing – Limitaciones",
+  "Question Text": {
+    "en-US": [
+      "What is an important limitation of neuromarketing today?"
+    ],
+    "es-MX": [
+      "¿Cuál es una limitación importante del neuromarketing actualmente?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "It cannot be applied outside the medical field.",
+      "It requires long field study sessions.",
+      "Some of its tools are expensive and require laboratory conditions.",
+      "It focuses only on positive consumer emotions."
+    ],
+    "es-MX": [
+      "No puede ser aplicado fuera del ámbito médico.",
+      "Requiere largas sesiones de análisis y estudios de campo.",
+      "Algunas de sus herramientas son costosas y requieren condiciones de laboratorio.",
+      "Solo se enfoca en las emociones positivas de los consumidores."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Some of its tools are expensive and require laboratory conditions.",
+    "es-MX": "Algunas de sus herramientas son costosas y requieren condiciones de laboratorio."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "Techniques such as fMRI and advanced EEG systems require specialized equipment and controlled environments."
+      },
+      {
+        "type": "text",
+        "content": "These factors increase costs and limit accessibility compared to traditional research methods."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "Técnicas como la fMRI y sistemas avanzados de EEG requieren equipos especializados y entornos controlados."
+      },
+      {
+        "type": "text",
+        "content": "Estos factores incrementan los costos y limitan su accesibilidad frente a métodos tradicionales."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Neuromarketing – Dilema Ético",
+  "Question Text": {
+    "en-US": [
+      "According to the ethical dilemma of neuromarketing, what is one of the main concerns about this discipline?"
+    ],
+    "es-MX": [
+      "Según el dilema ético del neuromarketing, ¿cuál es uno de los principales temores que genera esta disciplina?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Lack of information about consumer decisions.",
+      "The existence of a supposed 'buy button' capable of manipulating decisions.",
+      "Excessive use of traditional techniques.",
+      "Inability to connect products with user needs."
+    ],
+    "es-MX": [
+      "La falta de información sobre las decisiones de los consumidores.",
+      "La existencia de un supuesto 'botón de compra' que podría manipular nuestras decisiones.",
+      "El uso excesivo de técnicas tradicionales que limitan su alcance.",
+      "La incapacidad para conectar productos con las necesidades de los usuarios."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "The existence of a supposed 'buy button' capable of manipulating decisions.",
+    "es-MX": "La existencia de un supuesto 'botón de compra' que podría manipular nuestras decisiones."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "One of the main ethical concerns is the belief that neuromarketing could identify a specific neural trigger capable of manipulating consumer decisions."
+      },
+      {
+        "type": "text",
+        "content": "Although this idea is largely exaggerated, it raises debates about autonomy, consent, and responsible use of neuroscientific tools."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "Uno de los principales temores éticos es la idea de que el neuromarketing pueda identificar un disparador neuronal específico capaz de manipular decisiones de compra."
+      },
+      {
+        "type": "text",
+        "content": "Aunque esta idea suele estar exagerada, genera debates sobre autonomía, consentimiento y uso responsable de herramientas neurocientíficas."
+      }
+    ]
+  }
+},
+{
+  "Category": "Neuromarketing – fMRI",
+  "Question Text": {
+    "en-US": [
+      "What is functional magnetic resonance imaging (fMRI) primarily used for in neuromarketing studies?"
+    ],
+    "es-MX": [
+      "¿Para qué se utiliza principalmente la resonancia magnética funcional (fMRI) en estudios de neuromarketing?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "To measure facial muscle activity.",
+      "To identify specific brain areas activated during stimuli exposure.",
+      "To detect skin conductance changes.",
+      "To measure eye fixation patterns."
+    ],
+    "es-MX": [
+      "Medir la actividad muscular facial.",
+      "Identificar áreas específicas del cerebro activadas ante estímulos.",
+      "Detectar cambios en la conductancia de la piel.",
+      "Medir patrones de fijación ocular."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "To identify specific brain areas activated during stimuli exposure.",
+    "es-MX": "Identificar áreas específicas del cerebro activadas ante estímulos."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "fMRI measures changes in blood oxygenation (BOLD signal) to determine which brain regions are activated during exposure to stimuli such as advertisements or products."
+      },
+      {
+        "type": "text",
+        "content": "It provides high spatial resolution, allowing researchers to analyze deep brain structures related to reward, memory, and decision-making."
+      },
+      {
+        "type": "text",
+        "content": "However, it is extremely expensive. A single session may cost between $500 and $2,000 USD per participant, and a full scanner system can exceed $1–3 million USD."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "La fMRI mide cambios en la oxigenación sanguínea (señal BOLD) para identificar qué áreas del cerebro se activan ante estímulos como anuncios o productos."
+      },
+      {
+        "type": "text",
+        "content": "Ofrece alta resolución espacial y permite analizar estructuras profundas relacionadas con recompensa, memoria y toma de decisiones."
+      },
+      {
+        "type": "text",
+        "content": "Es una herramienta extremadamente costosa. Una sesión puede costar entre 500 y 2,000 USD por participante, y el equipo completo puede superar 1 a 3 millones de dólares."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Neuromarketing – EEG Profesional",
+  "Question Text": {
+    "en-US": [
+      "What is a professional multi-channel EEG system used for in neuromarketing?"
+    ],
+    "es-MX": [
+      "¿Para qué se utiliza un sistema EEG profesional multicanal en neuromarketing?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "To measure skin moisture levels.",
+      "To analyze real-time brain activity and attention levels.",
+      "To detect muscle contractions in the face.",
+      "To measure blood oxygenation in deep brain areas."
+    ],
+    "es-MX": [
+      "Medir niveles de humedad en la piel.",
+      "Analizar la actividad cerebral en tiempo real y niveles de atención.",
+      "Detectar contracciones musculares faciales.",
+      "Medir la oxigenación en áreas profundas del cerebro."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "To analyze real-time brain activity and attention levels.",
+    "es-MX": "Analizar la actividad cerebral en tiempo real y niveles de atención."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "Professional EEG systems measure electrical brain activity through multiple scalp electrodes, providing high temporal resolution."
+      },
+      {
+        "type": "text",
+        "content": "They are used to assess attention, cognitive workload, engagement, and emotional activation."
+      },
+      {
+        "type": "text",
+        "content": "A professional 32–64 channel EEG system may cost between $20,000 and $100,000 USD depending on configuration and software."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "Los sistemas EEG profesionales miden la actividad eléctrica cerebral mediante múltiples electrodos colocados en el cuero cabelludo."
+      },
+      {
+        "type": "text",
+        "content": "Permiten evaluar atención, carga cognitiva, involucración y activación emocional con alta resolución temporal."
+      },
+      {
+        "type": "text",
+        "content": "Un sistema profesional de 32 a 64 canales puede costar entre 20,000 y 100,000 USD dependiendo del software y configuración."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Neuromarketing – Eye Tracking",
+  "Question Text": {
+    "en-US": [
+      "What is advanced eye tracking technology primarily used for in neuromarketing?"
+    ],
+    "es-MX": [
+      "¿Para qué se utiliza principalmente el eye tracking avanzado en neuromarketing?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "To measure deep brain activation.",
+      "To record facial muscle movements.",
+      "To analyze visual attention and gaze patterns.",
+      "To measure skin conductance changes."
+    ],
+    "es-MX": [
+      "Medir activación cerebral profunda.",
+      "Registrar movimientos musculares faciales.",
+      "Analizar la atención visual y patrones de mirada.",
+      "Medir cambios en la conductancia de la piel."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "To analyze visual attention and gaze patterns.",
+    "es-MX": "Analizar la atención visual y patrones de mirada."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "Eye tracking records eye movements and fixation points to determine what visual elements attract attention."
+      },
+      {
+        "type": "text",
+        "content": "It is widely used in UX and advertising to optimize layouts, product placement, and call-to-action positioning."
+      },
+      {
+        "type": "text",
+        "content": "High-precision laboratory eye tracking systems can cost between $10,000 and $50,000 USD."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "El eye tracking registra movimientos oculares y puntos de fijación para identificar qué elementos visuales captan la atención."
+      },
+      {
+        "type": "text",
+        "content": "Se utiliza en UX y publicidad para optimizar diseño, ubicación de productos y botones de acción."
+      },
+      {
+        "type": "text",
+        "content": "Los sistemas de laboratorio de alta precisión pueden costar entre 10,000 y 50,000 USD."
+      }
+    ]
+  }
+}
+
+
+    ]
+  }
+  

@@ -1,0 +1,492 @@
+{
+    "meta": {
+      "slug": "ux-eye-tracking-analisis-visual",
+      "title": "Eye Tracking y Análisis Visual",
+      "subject": "Investigación Centrada en la Interfaz de Usuario",
+      "unit": 6,
+      "classNo": 1,
+      "description": "Fundamentos del eye tracking, heat maps y análisis de fijación visual para evaluar comportamiento y atención del usuario.",
+      "tags": ["UX", "Eye Tracking", "Heat Map", "Análisis Visual", "Investigación", "Usabilidad"]
+    },
+    "Questions": [
+      {
+        "Category": "Fundamentos de Eye Tracking",
+        "Question Text": {
+          "en-US": [
+            "What is the main function of eye tracking?"
+          ],
+          "es-MX": [
+            "¿Cuál es la principal función del eye tracking?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To monitor mouse movements on a screen",
+            "To identify the hottest zones of a website",
+            "To track eye movements to determine exactly where a person is looking",
+            "To analyze clicks on a webpage"
+          ],
+          "es-MX": [
+            "Monitorear los movimientos del ratón en una pantalla.",
+            "Identificar las zonas más «calientes» de una web.",
+            "Monitorizar el movimiento de los ojos para saber qué punto exacto está mirando el sujeto.",
+            "Realizar un análisis de clics en una página web."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To track eye movements to determine exactly where a person is looking",
+          "es-MX": "Monitorizar el movimiento de los ojos para saber qué punto exacto está mirando el sujeto."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Eye tracking captures gaze behavior to understand visual attention patterns. For example, in a banking app, it can reveal whether users actually look at security warnings or skip them entirely. This allows researchers to detect attention gaps even when users do not click or interact."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El eye tracking registra el comportamiento de la mirada para analizar patrones de atención visual. Por ejemplo, en una app bancaria puede mostrar si los usuarios realmente observan las advertencias de seguridad o simplemente las ignoran. Esto permite detectar fallos de atención aunque el usuario no haga clic en nada."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Visualización de atención",
+        "Question Text": {
+          "en-US": [
+            "Which graphical tool represents areas of greater visual fixation on a surface?"
+          ],
+          "es-MX": [
+            "¿Qué herramienta gráfica representa las zonas de mayor fijación visual en una superficie?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Eye tracking",
+            "Heat map",
+            "Ocular monitoring",
+            "Vision lines"
+          ],
+          "es-MX": [
+            "Eye tracking.",
+            "Heat map.",
+            "Seguimiento ocular.",
+            "Líneas de visión."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Heat map",
+          "es-MX": "Heat map."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "This visualization uses color gradients to indicate intensity of visual attention. Warm colors usually signal high concentration of gaze points. For example, in an online store homepage, it might reveal that users focus heavily on product images but overlook the promotional discount banner placed on the side."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Esta visualización utiliza gradientes de color para indicar intensidad de atención visual. Los colores cálidos suelen representar mayor concentración de mirada. Por ejemplo, en la página principal de una tienda en línea puede mostrar que los usuarios se concentran en las imágenes de productos pero ignoran el banner de descuento colocado en un lateral."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Relación entre métodos",
+        "Question Text": {
+          "en-US": [
+            "Which statement is correct about the relationship between eye tracking and heat maps?"
+          ],
+          "es-MX": [
+            "¿Qué opción es cierta sobre la relación entre eye tracking y heat map?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A heat map is always obtained from eye tracking tests",
+            "Heat maps can only be generated from eye tracking",
+            "Eye tracking results can be represented in different ways, not only with heat maps",
+            "Heat maps are only used in websites"
+          ],
+          "es-MX": [
+            "Siempre se obtiene un heat map de las pruebas de eye tracking.",
+            "El heat map solo se puede generar a partir de eye tracking.",
+            "Los resultados del eye tracking pueden representarse de diversas formas, no solo con heat maps.",
+            "El heat map se utiliza únicamente en sitios web."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Eye tracking results can be represented in different ways, not only with heat maps",
+          "es-MX": "Los resultados del eye tracking pueden representarse de diversas formas, no solo con heat maps."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Gaze data can be visualized through multiple formats such as scan paths, fixation plots, and sequence diagrams. For example, a scan path may show that a user first looks at a product image, then at the price, and finally at reviews, helping researchers understand decision-making order beyond color intensity maps."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los datos de mirada pueden visualizarse mediante diferentes formatos como recorridos visuales (scan paths), mapas de fijación y diagramas secuenciales. Por ejemplo, un recorrido visual puede mostrar que el usuario primero mira la imagen del producto, después el precio y luego las reseñas, ayudando a comprender el orden de decisión más allá de los colores de un mapa."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Concepto profundo de Heat Map",
+        "Question Text": {
+          "en-US": [
+            "What does a heat map reveal in user experience research?"
+          ],
+          "es-MX": [
+            "¿Qué revela un heat map en la investigación de experiencia de usuario?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The number of clicks per second",
+            "The emotional state of the user",
+            "The distribution and intensity of visual attention on a surface",
+            "The loading speed of a webpage"
+          ],
+          "es-MX": [
+            "La cantidad de clics por segundo.",
+            "El estado emocional del usuario.",
+            "La distribución e intensidad de la atención visual en una superficie.",
+            "La velocidad de carga de una página web."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The distribution and intensity of visual attention on a surface",
+          "es-MX": "La distribución e intensidad de la atención visual en una superficie."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "A heat map shows where users visually concentrate over time. For instance, in a news website, it may demonstrate that readers consistently ignore the right sidebar and focus mainly on headlines and images. This insight helps designers reorganize layout hierarchy to align with natural viewing patterns."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Un heat map muestra dónde los usuarios concentran su atención visual a lo largo del tiempo. Por ejemplo, en un sitio de noticias puede evidenciar que los lectores ignoran sistemáticamente la barra lateral derecha y se enfocan principalmente en titulares e imágenes. Esta información permite ajustar la jerarquía visual para alinearla con los patrones reales de lectura."
+            }
+          ]
+        }
+      }    ,
+      {
+        "Category": "Saccades y fijaciones",
+        "Question Text": {
+          "en-US": [
+            "What is a 'saccade' in the context of eye tracking?"
+          ],
+          "es-MX": [
+            "¿Qué es una «sacada» en el contexto de eye tracking?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The continuous movement of the eye while reading",
+            "The time the eye remains fixed on a specific point",
+            "A rapid jump of the eye between two fixation points",
+            "The movement of the mouse on the screen"
+          ],
+          "es-MX": [
+            "El movimiento continuo del ojo mientras lee un texto.",
+            "El tiempo que el ojo se detiene en un punto específico.",
+            "Un salto rápido del ojo entre dos puntos de fijación.",
+            "El movimiento del ratón en la pantalla."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A rapid jump of the eye between two fixation points",
+          "es-MX": "Un salto rápido del ojo entre dos puntos de fijación."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "During visual exploration, the eye does not move smoothly; instead, it performs quick jumps between points where it briefly stops. For example, when reading a product description online, your gaze quickly jumps from one word group to another. These rapid transitions allow the brain to reposition focus efficiently before processing new information."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Durante la exploración visual el ojo no se mueve de manera continua, sino que realiza saltos rápidos entre puntos donde se detiene brevemente. Por ejemplo, al leer la descripción de un producto en línea, la mirada salta de un grupo de palabras a otro. Estos movimientos permiten reposicionar la atención antes de procesar nueva información."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Condiciones de prueba",
+        "Question Text": {
+          "en-US": [
+            "Why is it recommended to avoid thinking aloud during an eye tracking test?"
+          ],
+          "es-MX": [
+            "¿Por qué se recomienda evitar que el usuario piense en voz alta durante una prueba de eye tracking?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it distracts the facilitator",
+            "Because it alters fixation duration and produces unnatural results",
+            "Because the user may feel uncomfortable",
+            "Because the eye tracking equipment cannot record while the user speaks"
+          ],
+          "es-MX": [
+            "Porque distrae al facilitador de la prueba.",
+            "Porque altera la duración de las fijaciones visuales, dando resultados no naturales.",
+            "Porque el usuario puede sentir incomodidad.",
+            "Porque el equipo de eye tracking no puede registrar datos mientras el usuario habla."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it alters fixation duration and produces unnatural results",
+          "es-MX": "Porque altera la duración de las fijaciones visuales, dando resultados no naturales."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Speaking while performing a visual task introduces cognitive load that changes natural gaze behavior. For instance, if a participant must describe what they see on a homepage, they may look longer at certain elements simply because they are explaining them, not because those elements naturally captured attention. This can distort the authenticity of visual attention data."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Hablar mientras se realiza una tarea visual introduce carga cognitiva adicional que modifica el comportamiento natural de la mirada. Por ejemplo, si un participante debe describir lo que observa en una página principal, puede fijar más tiempo su mirada en ciertos elementos solo porque los está explicando, no porque realmente hayan captado su atención de forma espontánea. Esto distorsiona los datos reales de atención visual."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Aplicaciones del eye tracking",
+        "Question Text": {
+          "en-US": [
+            "Which of the following is NOT a common use of eye tracking?"
+          ],
+          "es-MX": [
+            "¿Cuál de los siguientes no es un uso común del eye tracking?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Advertising in traditional media",
+            "Optimization of printed materials",
+            "Interior design",
+            "Cognitive psychology research"
+          ],
+          "es-MX": [
+            "Publicidad en medios tradicionales.",
+            "Optimización de materiales impresos.",
+            "Diseño de interiores.",
+            "Investigación en psicología cognitiva."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Interior design",
+          "es-MX": "Diseño de interiores."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Eye tracking is widely used in advertising, packaging design, website optimization, and cognitive research to understand visual attention and perception. For example, companies test magazine ads or product labels to see where consumers look first. However, while spatial studies exist in architecture, traditional interior decoration does not typically rely on eye tracking as a standard evaluation method."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El eye tracking se utiliza ampliamente en publicidad, diseño de empaques, optimización web e investigación en psicología cognitiva para analizar atención y percepción visual. Por ejemplo, empresas prueban anuncios en revistas o etiquetas de productos para saber qué elemento se observa primero. Aunque existen estudios espaciales en arquitectura, el diseño de interiores tradicional no suele usar eye tracking como método estándar de evaluación."
+            }
+          ]
+        }
+      }    ,
+      {
+        "Category": "Diferencia conceptual",
+        "Question Text": {
+          "en-US": [
+            "What is the main difference between eye tracking and a heat map?"
+          ],
+          "es-MX": [
+            "¿Cuál es la principal diferencia entre eye tracking y un heat map?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Eye tracking measures clicks, while heat maps measure emotions",
+            "Eye tracking collects raw gaze data, while a heat map is a visual representation of that data",
+            "Heat maps replace eye tracking technology",
+            "Eye tracking only works on websites, while heat maps work in any medium"
+          ],
+          "es-MX": [
+            "El eye tracking mide clics, mientras que el heat map mide emociones",
+            "El eye tracking recopila datos crudos de la mirada, mientras que el heat map es una representación visual de esos datos",
+            "El heat map sustituye la tecnología de eye tracking",
+            "El eye tracking solo funciona en sitios web, mientras que el heat map funciona en cualquier medio"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Eye tracking collects raw gaze data, while a heat map is a visual representation of that data",
+          "es-MX": "El eye tracking recopila datos crudos de la mirada, mientras que el heat map es una representación visual de esos datos"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Eye tracking is the technology that records where and how the eyes move, generating detailed gaze coordinates, fixation durations, and movement patterns. A heat map, on the other hand, is just one way of visualizing that information using color intensity. For example, in a usability study of a landing page, the eye tracker records thousands of gaze points, while the heat map summarizes them into colored areas that highlight attention concentration."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El eye tracking es la tecnología que registra dónde y cómo se mueve la mirada, generando coordenadas, tiempos de fijación y patrones de movimiento. El heat map, en cambio, es una forma de visualizar esa información mediante colores que representan intensidad de atención. Por ejemplo, en una prueba de una landing page, el dispositivo registra miles de puntos de mirada, mientras que el heat map los resume en zonas de color que muestran concentración visual."
+            }
+          ]
+        }
+      }    ,
+      {
+        "Category": "Implementación técnica",
+        "Question Text": {
+          "en-US": [
+            "How are web interaction heat maps implemented on a website?"
+          ],
+          "es-MX": [
+            "¿Cómo se implementan los heat maps de interacción web en un sitio web?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They require physical sensors installed on the computer",
+            "Through a code snippet inserted into web pages",
+            "They activate automatically when traffic increases",
+            "They require special software installed on each user's device"
+          ],
+          "es-MX": [
+            "Requieren el uso de sensores físicos en la computadora.",
+            "A través de un fragmento de código insertado en las páginas web.",
+            "Se activan automáticamente cuando se genera tráfico en el sitio.",
+            "Se necesita instalar un software especial en cada dispositivo del usuario."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Through a code snippet inserted into web pages",
+          "es-MX": "A través de un fragmento de código insertado en las páginas web."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Web-based heat maps are typically implemented by embedding a tracking script into the site's HTML. This script records user interactions such as clicks, cursor movements, and scrolling behavior. For example, tools like Hotjar or Microsoft Clarity use JavaScript snippets that collect anonymized interaction data and later generate visual maps inside their dashboards."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los heat maps web se implementan normalmente mediante la inserción de un script de seguimiento en el código HTML del sitio. Este script registra interacciones como clics, movimientos del cursor y desplazamiento (scroll). Por ejemplo, herramientas como Hotjar o Microsoft Clarity utilizan fragmentos de JavaScript que recopilan datos anonimizados y luego generan los mapas visuales en su panel de análisis."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Limitaciones técnicas",
+        "Question Text": {
+          "en-US": [
+            "What limitation do heat maps have on websites with dynamic interfaces?"
+          ],
+          "es-MX": [
+            "¿Qué limitación tienen los heat maps en sitios con interfaces dinámicas?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They cannot be used on any type of website",
+            "They do not allow cursor tracking",
+            "They do not work well when content changes without changing the URL",
+            "They are incompatible with any page that contains forms"
+          ],
+          "es-MX": [
+            "No se pueden utilizar en ningún tipo de sitio web.",
+            "No permiten el seguimiento del cursor del ratón.",
+            "No funcionan bien en sitios donde el contenido cambia sin cambiar la URL.",
+            "Son incompatibles con cualquier tipo de página que tenga formularios."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They do not work well when content changes without changing the URL",
+          "es-MX": "No funcionan bien en sitios donde el contenido cambia sin cambiar la URL."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Heat maps usually aggregate interaction data based on page structure and URL. In single-page applications (SPAs) where content updates dynamically without reloading, the recorded interactions may overlap incorrectly or fail to represent distinct states. For example, if a product catalog filters results without changing the URL, clicks and scroll behavior may be mixed across different content variations."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los heat maps suelen agrupar datos de interacción según la estructura de la página y la URL. En aplicaciones de una sola página (SPA), donde el contenido cambia dinámicamente sin recargarse, los datos pueden mezclarse o superponerse de forma incorrecta. Por ejemplo, si un catálogo de productos filtra resultados sin cambiar la URL, los clics y el scroll pueden combinarse entre diferentes versiones del contenido."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Tipos de heat maps",
+        "Question Text": {
+          "en-US": [
+            "What are the three main types of web interaction heat maps?"
+          ],
+          "es-MX": [
+            "¿Cuáles son los tres tipos principales de heat maps de interacción web?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Click map, cursor tracking map, and scroll map",
+            "Click map, visit map, and eye tracking map",
+            "Activity map, conversion map, and navigation map",
+            "Movement map, click map, and form map"
+          ],
+          "es-MX": [
+            "Mapa de clics, mapa de seguimiento del cursor y mapa de scroll.",
+            "Mapa de clics, mapa de visitas y mapa de eye tracking.",
+            "Mapa de actividad, mapa de conversión y mapa de navegación.",
+            "Mapa de movimiento, mapa de clics y mapa de formulario."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Click map, cursor tracking map, and scroll map",
+          "es-MX": "Mapa de clics, mapa de seguimiento del cursor y mapa de scroll."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Click maps show where users press on the page, cursor maps reflect mouse movement patterns that approximate attention, and scroll maps indicate how far users navigate vertically. For example, a scroll map might reveal that 60% of users never reach the footer, suggesting that important information placed there is rarely seen."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El mapa de clics muestra dónde los usuarios hacen clic, el mapa de seguimiento del cursor refleja patrones de movimiento que pueden aproximar la atención, y el mapa de scroll indica hasta qué punto los usuarios se desplazan verticalmente. Por ejemplo, un mapa de scroll puede evidenciar que el 60% de los usuarios nunca llega al pie de página, lo que indica que la información colocada ahí rara vez se visualiza."
+            }
+          ]
+        }
+      }
+  
+  
+  
+
+
+    ]
+  }
+  

@@ -1,0 +1,923 @@
+{
+    "meta": {
+      "slug": "iso9241-hcd-introduccion",
+      "title": "ISO 9241-210 · Diseño Centrado en el Humano (Introducción)",
+      "subject": "Investigación Centrada en la Interfaz de Usuario",
+      "unit": 1,
+      "classNo": 1,
+      "description": "Preguntas fundamentales sobre el propósito y alcance de la norma ISO 9241-210.",
+      "tags": ["ISO 9241", "UX", "HCD", "Usabilidad", "Interacción Humano-Sistema"]
+    },
+    "Questions": [
+      {
+        "Category": "Fundamentos de la norma",
+        "Question Text": {
+          "en-US": [
+            "What is the main objective of ISO 9241-210?"
+          ],
+          "es-MX": [
+            "¿Cuál es el objetivo principal de la norma ISO 9241-210?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Improve hardware performance",
+            "Create programming standards",
+            "Design useful and usable systems centered on people",
+            "Reduce maintenance costs"
+          ],
+          "es-MX": [
+            "Mejorar el rendimiento del hardware",
+            "Crear estándares de programación",
+            "Diseñar sistemas útiles y usables centrados en las personas",
+            "Reducir costos de mantenimiento"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Design useful and usable systems centered on people",
+          "es-MX": "Diseñar sistemas útiles y usables centrados en las personas"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "ISO 9241-210 defines principles for human-centred design. The goal is not only to make systems functional, but to ensure they are understandable, efficient, and satisfactory for users. It requires considering human abilities, limitations, and context of use throughout development."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La norma ISO 9241-210 establece principios para el diseño centrado en el humano. No busca únicamente que el sistema funcione, sino que sea comprensible, eficiente y satisfactorio para quien lo utiliza. Para ello se deben considerar las capacidades, limitaciones y el contexto real de uso de las personas durante todo el desarrollo."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Alcance",
+        "Question Text": {
+          "en-US": [
+            "What type of systems does the standard cover?"
+          ],
+          "es-MX": [
+            "¿Qué tipo de sistemas cubre la norma?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Only mobile applications",
+            "Only websites",
+            "Any computer-based interactive system",
+            "Only enterprise software"
+          ],
+          "es-MX": [
+            "Solo aplicaciones móviles",
+            "Solo páginas web",
+            "Cualquier sistema interactivo basado en computadora",
+            "Solo software empresarial"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Any computer-based interactive system",
+          "es-MX": "Cualquier sistema interactivo basado en computadora"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The standard applies broadly to interactive systems including software products, websites, banking machines, mobile devices and digital services. It focuses on interaction, not on a specific technology."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La norma se aplica de forma amplia a sistemas interactivos como software, sitios web, cajeros automáticos, dispositivos móviles y servicios digitales. Su enfoque es la interacción persona-sistema, no una tecnología específica."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Ciclo de vida",
+        "Question Text": {
+          "en-US": [
+            "When should human-centred design principles be applied?"
+          ],
+          "es-MX": [
+            "¿Cuándo deben aplicarse los principios del diseño centrado en el humano?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Only at the end of the project",
+            "Only during testing",
+            "Throughout the system life cycle",
+            "Only during maintenance"
+          ],
+          "es-MX": [
+            "Solo al final del proyecto",
+            "Solo durante pruebas",
+            "Durante todo el ciclo de vida del sistema",
+            "Solo en mantenimiento"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Throughout the system life cycle",
+          "es-MX": "Durante todo el ciclo de vida del sistema"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Human-centred design must be integrated from planning, analysis and design to implementation and evaluation. Applying it only at the end would not prevent usability problems."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El diseño centrado en el humano debe integrarse desde la planeación, análisis y diseño hasta la implementación y evaluación. Aplicarlo solo al final no permite prevenir problemas de usabilidad."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Propósito del diseño",
+        "Question Text": {
+          "en-US": [
+            "What does human-centred design mainly seek to adapt?"
+          ],
+          "es-MX": [
+            "¿Qué busca adaptar principalmente el diseño centrado en el humano?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The user to the system",
+            "The system to human capabilities",
+            "The business to technology",
+            "The hardware to programmers"
+          ],
+          "es-MX": [
+            "El usuario al sistema",
+            "El sistema a las capacidades humanas",
+            "El negocio a la tecnología",
+            "El hardware a los programadores"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The system to human capabilities",
+          "es-MX": "El sistema a las capacidades humanas"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Human-centred design ensures technology fits human abilities, limitations and context instead of forcing users to adapt to complex systems."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El diseño centrado en el humano busca que la tecnología se adapte a las capacidades, limitaciones y contexto de las personas, no al revés."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Ergonomía",
+        "Question Text": {
+          "en-US": [
+            "In ISO 9241-210, ergonomics is related to:"
+          ],
+          "es-MX": [
+            "En ISO 9241-210, la ergonomía se relaciona con:"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Visual decoration",
+            "Adapting systems to people",
+            "Marketing strategy",
+            "Database optimization"
+          ],
+          "es-MX": [
+            "Decoración visual",
+            "Adaptar el sistema a las personas",
+            "Estrategia de marketing",
+            "Optimización de base de datos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Adapting systems to people",
+          "es-MX": "Adaptar el sistema a las personas"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Ergonomics studies how systems must be designed according to human physical and cognitive characteristics to improve usability and comfort."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La ergonomía estudia cómo los sistemas deben diseñarse considerando las características físicas y cognitivas humanas para mejorar la usabilidad y comodidad."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Evaluación",
+        "Question Text": {
+          "en-US": [
+            "Why must design solutions be evaluated with real users?"
+          ],
+          "es-MX": [
+            "¿Por qué deben evaluarse las soluciones de diseño con usuarios reales?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "To validate usability and detect problems",
+            "To increase code performance",
+            "To reduce development cost automatically",
+            "To avoid documentation"
+          ],
+          "es-MX": [
+            "Para validar la usabilidad y detectar problemas",
+            "Para aumentar el rendimiento del código",
+            "Para reducir automáticamente el costo",
+            "Para evitar documentación"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "To validate usability and detect problems",
+          "es-MX": "Para validar la usabilidad y detectar problemas"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Testing with real users reveals usability issues that cannot be detected only by developers or designers."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Probar con usuarios reales permite detectar problemas de usabilidad que no pueden identificarse únicamente por desarrolladores o diseñadores."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Principios HCD",
+        "Question Text": {
+          "en-US": [
+            "Human-centred design is based on an explicit understanding of..."
+          ],
+          "es-MX": [
+            "El diseño centrado en el humano se basa en una comprensión explícita de..."
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Programming languages",
+            "Users, tasks and context of use",
+            "Company finances",
+            "Hardware performance"
+          ],
+          "es-MX": [
+            "Lenguajes de programación",
+            "Usuarios, tareas y contexto de uso",
+            "Finanzas de la empresa",
+            "Rendimiento del hardware"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Users, tasks and context of use",
+          "es-MX": "Usuarios, tareas y contexto de uso"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Design decisions must be based on understanding who the users are, what they need to do, and under what conditions they interact with the system."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las decisiones de diseño deben basarse en comprender quiénes son los usuarios, qué tareas realizan y en qué contexto utilizan el sistema."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Principios HCD",
+        "Question Text": {
+          "en-US": [
+            "Users must be involved in the design process because..."
+          ],
+          "es-MX": [
+            "Los usuarios deben participar en el proceso de diseño porque..."
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They replace developers",
+            "They provide real feedback about the system",
+            "They reduce hardware requirements",
+            "They program the interface"
+          ],
+          "es-MX": [
+            "Sustituyen a los desarrolladores",
+            "Proporcionan retroalimentación real sobre el sistema",
+            "Reducen requisitos de hardware",
+            "Programan la interfaz"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They provide real feedback about the system",
+          "es-MX": "Proporcionan retroalimentación real sobre el sistema"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Real users reveal needs and usability problems that designers cannot predict without testing."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los usuarios reales revelan necesidades y problemas de uso que los diseñadores no pueden prever sin evaluaciones."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Principios HCD",
+        "Question Text": {
+          "en-US": [
+            "Human-centred design is iterative because..."
+          ],
+          "es-MX": [
+            "El diseño centrado en el humano es iterativo porque..."
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Design is done once",
+            "It requires repeated evaluation and improvement",
+            "It eliminates testing",
+            "It avoids prototypes"
+          ],
+          "es-MX": [
+            "El diseño se hace una sola vez",
+            "Requiere evaluación y mejora repetida",
+            "Elimina pruebas",
+            "Evita prototipos"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It requires repeated evaluation and improvement",
+          "es-MX": "Requiere evaluación y mejora repetida"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Design solutions are continuously refined through cycles of testing, feedback and redesign."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las soluciones de diseño se refinan continuamente mediante ciclos de prueba, retroalimentación y rediseño."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Principios HCD",
+        "Question Text": {
+          "en-US": [
+            "Human-centred design addresses the whole user experience, which means..."
+          ],
+          "es-MX": [
+            "El diseño centrado en el humano aborda toda la experiencia del usuario, lo que significa..."
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Only interface colors",
+            "Only system performance",
+            "All perceptions, emotions and interactions",
+            "Only technical functions"
+          ],
+          "es-MX": [
+            "Solo colores de la interfaz",
+            "Solo rendimiento del sistema",
+            "Todas las percepciones, emociones e interacciones",
+            "Solo funciones técnicas"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "All perceptions, emotions and interactions",
+          "es-MX": "Todas las percepciones, emociones e interacciones"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "User experience includes emotions, expectations, usability, efficiency and satisfaction, not only interface appearance."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La experiencia de usuario incluye emociones, expectativas, facilidad de uso, eficiencia y satisfacción, no solo la apariencia visual."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Principios HCD",
+        "Question Text": {
+          "en-US": [
+            "Why is a multidisciplinary team important in human-centred design?"
+          ],
+          "es-MX": [
+            "¿Por qué es importante un equipo multidisciplinario en el diseño centrado en el humano?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because only designers work on the system",
+            "Because different perspectives improve design quality",
+            "Because it reduces testing",
+            "Because it replaces evaluation"
+          ],
+          "es-MX": [
+            "Porque solo trabajan diseñadores",
+            "Porque diferentes perspectivas mejoran la calidad del diseño",
+            "Porque reduce pruebas",
+            "Porque reemplaza la evaluación"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because different perspectives improve design quality",
+          "es-MX": "Porque diferentes perspectivas mejoran la calidad del diseño"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Human-centred design requires collaboration between designers, engineers, usability specialists and stakeholders to address all user needs."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El diseño centrado en el humano requiere colaboración entre diseñadores, ingenieros y especialistas para cubrir todas las necesidades del usuario."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Principios HCD",
+        "Question Text": {
+          "en-US": [
+            "Human-centred design reduces risks because..."
+          ],
+          "es-MX": [
+            "El diseño centrado en el humano reduce riesgos porque..."
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Users are ignored",
+            "Problems are detected early",
+            "Systems become more complex",
+            "Testing is eliminated"
+          ],
+          "es-MX": [
+            "Se ignoran los usuarios",
+            "Se detectan problemas tempranamente",
+            "Los sistemas se vuelven más complejos",
+            "Se eliminan las pruebas"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Problems are detected early",
+          "es-MX": "Se detectan problemas tempranamente"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Continuous evaluation allows identifying usability issues before implementation, reducing development risks and costs."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La evaluación continua permite identificar problemas antes de la implementación reduciendo riesgos y costos."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Proceso HCD",
+        "Question Text": {
+          "en-US": [
+            "What is the first activity in the human-centred design process?"
+          ],
+          "es-MX": [
+            "¿Cuál es la primera actividad en el proceso de diseño centrado en el humano?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Evaluate prototypes",
+            "Specify the context of use",
+            "Implement the system",
+            "Create marketing strategy"
+          ],
+          "es-MX": [
+            "Evaluar prototipos",
+            "Especificar el contexto de uso",
+            "Implementar el sistema",
+            "Crear estrategia de marketing"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Specify the context of use",
+          "es-MX": "Especificar el contexto de uso"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The process begins by understanding who the users are, what they do, and under what conditions they interact with the system."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El proceso inicia comprendiendo quiénes son los usuarios, qué hacen y en qué condiciones utilizan el sistema."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Proceso HCD",
+        "Question Text": {
+          "en-US": [
+            "After defining the context of use, what comes next?"
+          ],
+          "es-MX": [
+            "Después de definir el contexto de uso, ¿qué sigue?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Define user requirements",
+            "Delete prototypes",
+            "Launch the product",
+            "Train programmers"
+          ],
+          "es-MX": [
+            "Definir requisitos del usuario",
+            "Eliminar prototipos",
+            "Lanzar el producto",
+            "Capacitar programadores"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Define user requirements",
+          "es-MX": "Definir requisitos del usuario"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Understanding context allows identifying user needs and usability requirements."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Comprender el contexto permite identificar necesidades y requisitos de usabilidad."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Proceso HCD",
+        "Question Text": {
+          "en-US": [
+            "What activity follows defining user requirements?"
+          ],
+          "es-MX": [
+            "¿Qué actividad sigue después de definir los requisitos del usuario?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Produce design solutions",
+            "Finish the project",
+            "Remove evaluation",
+            "Upgrade servers"
+          ],
+          "es-MX": [
+            "Producir soluciones de diseño",
+            "Terminar el proyecto",
+            "Eliminar evaluación",
+            "Actualizar servidores"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Produce design solutions",
+          "es-MX": "Producir soluciones de diseño"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Design solutions include sketches, prototypes and interface proposals based on user needs."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las soluciones incluyen bocetos, prototipos y propuestas de interfaz basadas en las necesidades del usuario."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Proceso HCD",
+        "Question Text": {
+          "en-US": [
+            "What is the last activity in the human-centred design cycle?"
+          ],
+          "es-MX": [
+            "¿Cuál es la última actividad del ciclo de diseño centrado en el humano?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Evaluate the design with users",
+            "Install the hardware",
+            "Write technical documentation",
+            "Stop testing"
+          ],
+          "es-MX": [
+            "Evaluar el diseño con usuarios",
+            "Instalar el hardware",
+            "Escribir documentación técnica",
+            "Detener las pruebas"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Evaluate the design with users",
+          "es-MX": "Evaluar el diseño con usuarios"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Evaluation verifies whether the system meets user needs and usability goals."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La evaluación verifica si el sistema cumple las necesidades del usuario y objetivos de usabilidad."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Proceso HCD",
+        "Question Text": {
+          "en-US": [
+            "What happens after evaluating the design?"
+          ],
+          "es-MX": [
+            "¿Qué sucede después de evaluar el diseño?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The process repeats and improves",
+            "The project ends permanently",
+            "Users are removed",
+            "Testing is prohibited"
+          ],
+          "es-MX": [
+            "El proceso se repite y mejora",
+            "El proyecto termina permanentemente",
+            "Se eliminan los usuarios",
+            "Se prohíben las pruebas"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "The process repeats and improves",
+          "es-MX": "El proceso se repite y mejora"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Human-centred design is iterative; results of evaluation refine requirements and redesign solutions."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El diseño centrado en el humano es iterativo; los resultados de la evaluación permiten mejorar requisitos y rediseñar."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Proceso HCD",
+        "Question Text": {
+          "en-US": [
+            "Why is iteration essential in human-centred design?"
+          ],
+          "es-MX": [
+            "¿Por qué la iteración es esencial en el diseño centrado en el humano?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because users change over time",
+            "Because problems are discovered progressively",
+            "Because programmers need practice",
+            "Because hardware expires"
+          ],
+          "es-MX": [
+            "Porque los usuarios cambian con el tiempo",
+            "Porque los problemas se descubren progresivamente",
+            "Porque los programadores necesitan práctica",
+            "Porque el hardware expira"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because problems are discovered progressively",
+          "es-MX": "Porque los problemas se descubren progresivamente"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Repeated cycles of testing reveal usability issues gradually and allow continuous improvement."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los ciclos repetidos de prueba permiten descubrir problemas gradualmente y mejorar continuamente el sistema."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Comprensión conceptual",
+        "Question Text": {
+          "en-US": [
+            "Human-centred design focuses primarily on..."
+          ],
+          "es-MX": [
+            "El diseño centrado en el humano se enfoca principalmente en..."
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Technology capabilities",
+            "Business goals only",
+            "Human needs and use context",
+            "Programming efficiency"
+          ],
+          "es-MX": [
+            "Capacidades tecnológicas",
+            "Solo objetivos del negocio",
+            "Necesidades humanas y contexto de uso",
+            "Eficiencia de programación"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Human needs and use context",
+          "es-MX": "Necesidades humanas y contexto de uso"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "The core of HCD is designing according to human characteristics rather than technical or business priorities alone."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El núcleo del HCD es diseñar considerando a las personas, no solo la tecnología o el negocio."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Comprensión conceptual",
+        "Question Text": {
+          "en-US": [
+            "Human-centred design should be applied..."
+          ],
+          "es-MX": [
+            "El diseño centrado en el humano debe aplicarse..."
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Only during usability testing",
+            "Only after development",
+            "From the beginning to the end of development",
+            "Only in maintenance phase"
+          ],
+          "es-MX": [
+            "Solo durante pruebas de usabilidad",
+            "Solo después del desarrollo",
+            "Desde el inicio hasta el final del desarrollo",
+            "Solo en mantenimiento"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "From the beginning to the end of development",
+          "es-MX": "Desde el inicio hasta el final del desarrollo"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "HCD is integrated across the entire lifecycle, not limited to testing phases."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El HCD se integra durante todo el ciclo de vida del sistema, no solo en pruebas."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Comprensión conceptual",
+        "Question Text": {
+          "en-US": [
+            "Usability problems are best detected by..."
+          ],
+          "es-MX": [
+            "Los problemas de usabilidad se detectan mejor mediante..."
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Programmers assumptions",
+            "Automatic tools only",
+            "Real users interacting with the system",
+            "Marketing surveys"
+          ],
+          "es-MX": [
+            "Suposiciones de programadores",
+            "Solo herramientas automáticas",
+            "Usuarios reales interactuando con el sistema",
+            "Encuestas de marketing"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Real users interacting with the system",
+          "es-MX": "Usuarios reales interactuando con el sistema"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Real user testing reveals practical usability issues that theoretical evaluation cannot predict."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las pruebas con usuarios reales revelan problemas prácticos que no pueden predecirse solo teóricamente."
+            }
+          ]
+        }
+      }
+      
+      
+      
+      
+      
+      
+    ]
+  }
+  

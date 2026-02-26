@@ -1,0 +1,1378 @@
+{
+  "meta": {
+    "slug": "ux-split-test-ab-testing-experimentacion",
+    "title": "Split Test y A/B Testing en UX",
+    "subject": "Investigación Centrada en la Interfaz de Usuario",
+    "unit": 9,
+    "classNo": 1,
+    "description": "Fundamentos del split test y A/B testing en experiencia de usuario: asignación aleatoria, métricas, hipótesis y herramientas de experimentación digital.",
+    "tags": [
+      "UX Research",
+      "A/B Testing",
+      "Split Test",
+      "Experimentación",
+      "Optimización",
+      "Métricas"
+    ]
+  },
+  "Questions": [
+    {
+      "Category": "Fundamentos de Split Test",
+      "Question Text": {
+        "en-US": [
+          "What is the main objective of split testing techniques?"
+        ],
+        "es-MX": [
+          "¿Cuál es el principal objetivo de las técnicas de split test?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "To ensure statistical generalizations",
+          "To randomly assign subjects to compare variations objectively",
+          "To collect qualitative feedback about preferences",
+          "To reduce website loading time"
+        ],
+        "es-MX": [
+          "Permitir hacer generalizaciones estadísticas.",
+          "Se seleccionan los sujetos de forma aleatoria.",
+          "Recolectar opiniones cualitativas sobre preferencias.",
+          "Reducir el tiempo de carga del sitio web."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To randomly assign subjects to compare variations objectively",
+        "es-MX": "Se seleccionan los sujetos de forma aleatoria."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The primary objective of split testing is to create a controlled experimental environment where different versions of a digital element are compared objectively. The key mechanism is random assignment: users are distributed randomly across variations so that external variables (such as demographics, device type, or browsing behavior) are evenly balanced. This allows researchers to attribute performance differences to the design variation itself rather than to uncontrolled factors."
+          },
+          {
+            "type": "text",
+            "content": "In UX and product optimization, this is crucial because it supports causal inference. For example, if an online store tests two versions of a checkout button (green vs. blue), randomization ensures that both groups are statistically comparable. If the green version shows a 12% higher conversion rate, the team can reasonably conclude that the design change influenced user behavior."
+          },
+          {
+            "type": "text",
+            "content": "Split testing is not about collecting opinions or guaranteeing statistical representativeness of a population. It is about isolating the impact of a specific design variable. Without random assignment, results may be biased and unreliable."
+          },
+          {
+            "type": "link",
+            "content": "https://en.wikipedia.org/wiki/A/B_testing"
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El objetivo principal del split test es crear un entorno experimental controlado donde se comparan distintas versiones de un elemento digital de manera objetiva. El mecanismo central es la asignación aleatoria: los usuarios se distribuyen al azar entre las variaciones, equilibrando factores externos como perfil demográfico, dispositivo o comportamiento previo."
+          },
+          {
+            "type": "text",
+            "content": "En UX y optimización de producto esto es fundamental porque permite inferir causalidad. Por ejemplo, si una tienda en línea prueba un botón verde contra uno azul, la asignación aleatoria garantiza que ambos grupos sean comparables. Si el botón verde genera 12% más conversiones, se puede atribuir el efecto al cambio de diseño y no a características de los usuarios."
+          },
+          {
+            "type": "text",
+            "content": "El split test no busca opiniones cualitativas ni representatividad estadística poblacional. Su finalidad es aislar el impacto de una variable de diseño. Sin aleatoriedad, los resultados pueden estar sesgados y no ser confiables."
+          },
+          {
+            "type": "link",
+            "content": "https://es.wikipedia.org/wiki/Prueba_A/B"
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Elementos del Split Test",
+      "Question Text": {
+        "en-US": [
+          "Which element is essential to conduct a split test?"
+        ],
+        "es-MX": [
+          "¿Cuál de los siguientes elementos es indispensable para realizar un split test?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "A theoretical web design model",
+          "A design proposal, an objective, a metric, and a technical implementation",
+          "A qualitative analysis of user preferences",
+          "A small sample size for better control"
+        ],
+        "es-MX": [
+          "Un modelo teórico sobre el diseño web.",
+          "Una propuesta de diseño, un objetivo, una métrica y una solución técnica.",
+          "Un análisis cualitativo de las preferencias del usuario.",
+          "Una muestra pequeña de usuarios para mayor control."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "A design proposal, an objective, a metric, and a technical implementation",
+        "es-MX": "Una propuesta de diseño, un objetivo, una métrica y una solución técnica."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "A split test requires four fundamental components: (1) a clearly defined variation (what is being changed), (2) a measurable objective (what outcome is expected), (3) a metric that operationalizes success (conversion rate, click-through rate, engagement, etc.), and (4) a technical implementation that correctly distributes traffic randomly and records data accurately."
+          },
+          {
+            "type": "text",
+            "content": "Without a defined objective and metric, the experiment lacks direction and cannot produce actionable insights. For example, testing two headlines on a landing page only makes sense if success is defined in advance—such as increasing sign-ups by 10% or reducing bounce rate."
+          },
+          {
+            "type": "text",
+            "content": "The technical setup is equally critical. If traffic is not split randomly or if tracking is flawed, results may be invalid. In UX research, rigor in defining hypotheses and metrics transforms design decisions into evidence-based improvements."
+          },
+          {
+            "type": "link",
+            "content": "https://www.optimizely.com/optimization-glossary/ab-testing/"
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Un split test necesita cuatro componentes esenciales: (1) una variación claramente definida (qué se va a cambiar), (2) un objetivo medible (qué resultado se espera mejorar), (3) una métrica que traduzca el éxito en datos (tasa de conversión, clics, interacción, etc.), y (4) una implementación técnica que distribuya el tráfico de forma aleatoria y registre correctamente la información."
+          },
+          {
+            "type": "text",
+            "content": "Sin un objetivo y una métrica claros, el experimento carece de dirección y no genera resultados accionables. Por ejemplo, probar dos titulares en una landing solo tiene sentido si se define previamente que el éxito será aumentar registros en 10% o disminuir la tasa de rebote."
+          },
+          {
+            "type": "text",
+            "content": "La parte técnica también es crítica. Si el tráfico no se divide correctamente o si la medición falla, los resultados pierden validez. En UX Research, la claridad en hipótesis y métricas convierte decisiones de diseño en mejoras basadas en evidencia."
+          },
+          {
+            "type": "link",
+            "content": "https://www.optimizely.com/optimization-glossary/ab-testing/"
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Herramientas de A/B Testing",
+      "Question Text": {
+        "en-US": [
+          "Which tool is mentioned as suitable for conducting A/B testing?"
+        ],
+        "es-MX": [
+          "¿Cuál de las siguientes herramientas es mencionada como adecuada para realizar A/B testing?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Photoshop",
+          "Unbounce",
+          "Google Translate",
+          "Sketch"
+        ],
+        "es-MX": [
+          "Photoshop.",
+          "Unbounce.",
+          "Google Translate.",
+          "Sketch."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Unbounce",
+        "es-MX": "Unbounce."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Unbounce is a digital experimentation and landing page optimization platform that enables teams to create multiple page variants and test them under real traffic conditions. Unlike design tools such as Photoshop or Sketch—which are used to create visual assets—Unbounce supports live experimentation with built-in traffic distribution and performance tracking."
+          },
+          {
+            "type": "text",
+            "content": "For example, a marketing team can create two landing page versions: one highlighting price discounts and another emphasizing product quality. Unbounce automatically divides incoming visitors between versions and tracks conversions, allowing the team to determine which message performs better."
+          },
+          {
+            "type": "text",
+            "content": "In UX experimentation, tools like Unbounce operationalize hypotheses by enabling real-world validation. The key distinction is that experimentation platforms measure behavior, not just design appearance."
+          },
+          {
+            "type": "link",
+            "content": "https://unbounce.com/"
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Unbounce es una plataforma de experimentación digital y optimización de landing pages que permite crear múltiples versiones de una página y probarlas con tráfico real. A diferencia de herramientas de diseño como Photoshop o Sketch—que sirven para crear maquetas visuales—Unbounce permite ejecutar experimentos en producción con división automática de tráfico y medición de resultados."
+          },
+          {
+            "type": "text",
+            "content": "Por ejemplo, un equipo de marketing puede diseñar dos versiones de una página: una centrada en descuentos y otra en la calidad del producto. Unbounce divide automáticamente a los visitantes y registra las conversiones, permitiendo identificar cuál estrategia funciona mejor."
+          },
+          {
+            "type": "text",
+            "content": "En la experimentación UX, herramientas como Unbounce hacen posible validar hipótesis en escenarios reales. La diferencia clave es que no solo diseñan interfaces, sino que miden comportamiento del usuario con datos cuantitativos."
+          },
+          {
+            "type": "link",
+            "content": "https://unbounce.com/"
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Experimentation (Split Test Fundamentals)",
+      "Question Text": {
+        "en-US": [
+          "What best defines a split test in UX or digital product optimization?"
+        ],
+        "es-MX": [
+          "¿Qué define mejor un split test en UX o en la optimización de productos digitales?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "A qualitative interview to explore user motivations.",
+          "A controlled experiment where traffic is divided between two or more variants to compare performance.",
+          "A heuristic evaluation conducted by experts.",
+          "A usability test with five participants."
+        ],
+        "es-MX": [
+          "Una entrevista cualitativa para explorar motivaciones del usuario.",
+          "Un experimento controlado donde se divide el tráfico entre dos o más variantes para comparar rendimiento.",
+          "Una evaluación heurística realizada por expertos.",
+          "Una prueba de usabilidad con cinco participantes."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "A controlled experiment where traffic is divided between two or more variants to compare performance.",
+        "es-MX": "Un experimento controlado donde se divide el tráfico entre dos o más variantes para comparar rendimiento."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "A split test is fundamentally an experiment. Users are randomly divided into groups, each exposed to a different version of a design element (for example, two button colors or two headlines). The goal is to measure which variant performs better based on a defined metric such as conversion rate, click-through rate, or time on task. Example: an e-commerce site splits traffic between two checkout layouts to see which one reduces abandonment. The key idea is controlled comparison with measurable outcomes, not just subjective preference.\n\nRead more: https://en.wikipedia.org/wiki/A/B_testing"
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Un split test es, en esencia, un experimento. Los usuarios se dividen aleatoriamente en grupos y cada grupo ve una versión distinta de un elemento (por ejemplo, dos colores de botón o dos titulares diferentes). El objetivo es medir cuál variante funciona mejor según una métrica definida como tasa de conversión, clics o tiempo en tarea. Ejemplo real: un e-commerce divide el tráfico entre dos versiones del checkout para identificar cuál reduce el abandono. La clave es la comparación controlada con datos medibles, no la opinión subjetiva.\n\nLeer más: https://es.wikipedia.org/wiki/Prueba_A/B"
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Experimentation (A/B Testing)",
+      "Question Text": {
+        "en-US": [
+          "What is the main purpose of A/B testing in UX research?"
+        ],
+        "es-MX": [
+          "¿Cuál es el propósito principal del A/B testing en UX Research?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "To explore deep emotional experiences through interviews.",
+          "To statistically compare two versions and determine which performs better.",
+          "To validate a theoretical usability framework.",
+          "To collect open-ended qualitative feedback."
+        ],
+        "es-MX": [
+          "Explorar experiencias emocionales profundas mediante entrevistas.",
+          "Comparar estadísticamente dos versiones y determinar cuál funciona mejor.",
+          "Validar un marco teórico de usabilidad.",
+          "Recopilar retroalimentación cualitativa abierta."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To statistically compare two versions and determine which performs better.",
+        "es-MX": "Comparar estadísticamente dos versiones y determinar cuál funciona mejor."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "A/B testing is used to make data-driven decisions. By exposing different user groups to two variations (A and B), researchers can analyze performance differences and determine statistical significance. This helps avoid decisions based on intuition alone. Example: a SaaS product tests two pricing page layouts and finds that Version B increases sign-ups by 8% with statistical significance. This supports evidence-based design decisions.\n\nRead more: https://www.optimizely.com/optimization-glossary/ab-testing/"
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El A/B testing se utiliza para tomar decisiones basadas en datos. Al exponer grupos distintos de usuarios a dos variantes (A y B), se analizan las diferencias de rendimiento y se determina si son estadísticamente significativas. Esto evita decisiones basadas únicamente en intuición. Ejemplo real: un producto SaaS prueba dos versiones de su página de precios y descubre que la versión B incrementa registros en 8% con significancia estadística, respaldando la decisión de diseño con evidencia.\n\nLeer más: https://www.optimizely.com/optimization-glossary/ab-testing/"
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Tools (A/B Testing Platforms)",
+      "Question Text": {
+        "en-US": [
+          "What is Unbounce primarily used for in digital product optimization?"
+        ],
+        "es-MX": [
+          "¿Para qué se utiliza principalmente Unbounce en la optimización de productos digitales?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Designing static mockups for mobile applications.",
+          "Translating website content automatically.",
+          "Creating and testing landing page variations to improve conversions.",
+          "Conducting in-depth ethnographic field research."
+        ],
+        "es-MX": [
+          "Diseñar maquetas estáticas para aplicaciones móviles.",
+          "Traducir automáticamente contenido web.",
+          "Crear y probar variantes de landing pages para mejorar conversiones.",
+          "Realizar investigación etnográfica profunda en campo."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Creating and testing landing page variations to improve conversions.",
+        "es-MX": "Crear y probar variantes de landing pages para mejorar conversiones."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Unbounce is a marketing and experimentation platform that allows teams to build landing pages without heavy development and run A/B tests on them. Its main goal is conversion optimization. Example: a company launches two versions of a campaign landing page—one emphasizing price, the other emphasizing benefits—and measures which one drives more form submissions. The platform handles traffic splitting and performance tracking.\n\nRead more: https://unbounce.com/"
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Unbounce es una plataforma enfocada en marketing y experimentación que permite crear landing pages sin depender completamente de desarrollo y ejecutar pruebas A/B sobre ellas. Su objetivo principal es optimizar conversiones. Ejemplo real: una empresa lanza dos versiones de una página de campaña—una centrada en precio y otra en beneficios—y mide cuál genera más registros. La herramienta divide el tráfico y registra resultados automáticamente.\n\nLeer más: https://unbounce.com/"
+          }
+        ]
+      }
+    },
+    {
+      "Category": "A/B Testing vs Multivariate Testing (MVT)",
+      "Question Text": {
+        "en-US": [
+          "What is the main difference between an A/B test and a multivariate test (MVT)?"
+        ],
+        "es-MX": [
+          "¿Cuál es la principal diferencia entre un test A/B y un test multivariable (MVT)?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "A/B testing manipulates multiple variables simultaneously.",
+          "MVT evaluates the combined effect of multiple variables in a single test.",
+          "MVT can only be applied to large websites.",
+          "A/B testing requires less traffic than MVT."
+        ],
+        "es-MX": [
+          "El A/B test manipula múltiples variables simultáneamente.",
+          "El MVT evalúa el efecto combinado de múltiples variables en un solo test.",
+          "El MVT solo puede aplicarse a sitios web grandes.",
+          "El A/B test requiere menos tráfico que el MVT."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "MVT evaluates the combined effect of multiple variables in a single test.",
+        "es-MX": "El MVT evalúa el efecto combinado de múltiples variables en un solo test."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The core difference lies in complexity. A/B testing compares two (or more) complete versions of a page or element, typically changing only one major variable at a time. In contrast, Multivariate Testing (MVT) analyzes multiple variables simultaneously and evaluates how their combinations influence user behavior."
+          },
+          {
+            "type": "text",
+            "content": "For example, in an A/B test you might compare Version A vs Version B of a landing page. In an MVT, you could test combinations of headline (H1 vs H2), button color (blue vs green), and image (Image 1 vs Image 2) all at once, generating multiple combinations. The system then measures how each combination performs."
+          },
+          {
+            "type": "text",
+            "content": "MVT provides deeper interaction insights but requires more traffic and statistical power. It is used when teams want to understand not only which version works better, but how variables interact with each other."
+          },
+          {
+            "type": "link",
+            "content": "https://www.optimizely.com/optimization-glossary/multivariate-testing/"
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La diferencia principal radica en la complejidad del experimento. El test A/B compara dos (o más) versiones completas de una página o elemento, normalmente modificando una variable principal a la vez. En cambio, el Test Multivariable (MVT) analiza varias variables simultáneamente y evalúa cómo sus combinaciones influyen en el comportamiento del usuario."
+          },
+          {
+            "type": "text",
+            "content": "Por ejemplo, en un A/B test se compararía una versión A contra una versión B de una landing. En un MVT, se podrían probar combinaciones de titular (H1 vs H2), color de botón (azul vs verde) e imagen (Imagen 1 vs Imagen 2) al mismo tiempo, generando múltiples combinaciones."
+          },
+          {
+            "type": "text",
+            "content": "El MVT ofrece un análisis más profundo sobre la interacción entre variables, pero requiere mayor tráfico y potencia estadística. Se utiliza cuando se busca comprender cómo interactúan varios elementos de diseño entre sí."
+          },
+          {
+            "type": "link",
+            "content": "https://www.optimizely.com/optimization-glossary/multivariate-testing/"
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Ventajas del Multivariate Testing (MVT)",
+      "Question Text": {
+        "en-US": [
+          "What is a key advantage of MVT over A/B testing?"
+        ],
+        "es-MX": [
+          "¿Cuál es una ventaja clave del MVT sobre el A/B test?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "It allows testing without specialized software.",
+          "It is more effective in early project stages.",
+          "It generates detailed results that can lead to new hypotheses.",
+          "It does not require large volumes of traffic."
+        ],
+        "es-MX": [
+          "Permite realizar pruebas sin necesidad de software especializado.",
+          "Es más efectivo en fases tempranas de un proyecto.",
+          "Genera resultados detallados que pueden dar lugar a nuevas hipótesis.",
+          "No requiere grandes volúmenes de tráfico para obtener conclusiones precisas."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "It generates detailed results that can lead to new hypotheses.",
+        "es-MX": "Genera resultados detallados que pueden dar lugar a nuevas hipótesis."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "One major advantage of MVT is its ability to reveal interaction effects between variables. Instead of only identifying which full version performs better (as in A/B testing), MVT can show how different elements influence each other."
+          },
+          {
+            "type": "text",
+            "content": "For example, an experiment may reveal that a green button works best only when paired with a specific headline. This insight can inspire new design hypotheses and iterative experiments."
+          },
+          {
+            "type": "text",
+            "content": "Because it analyzes multiple combinations, MVT provides richer behavioral data. However, this advantage comes with higher complexity and traffic requirements."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Una ventaja clave del MVT es que permite identificar efectos de interacción entre variables. A diferencia del A/B test, que solo indica qué versión completa funciona mejor, el MVT muestra cómo interactúan los distintos elementos entre sí."
+          },
+          {
+            "type": "text",
+            "content": "Por ejemplo, un experimento puede revelar que un botón verde funciona mejor únicamente cuando se combina con cierto titular específico. Este tipo de hallazgo puede generar nuevas hipótesis de diseño."
+          },
+          {
+            "type": "text",
+            "content": "Al analizar múltiples combinaciones, el MVT produce información más detallada sobre el comportamiento del usuario, aunque requiere mayor volumen de tráfico y mayor complejidad técnica."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Limitaciones del Multivariate Testing (MVT)",
+      "Question Text": {
+        "en-US": [
+          "Why is MVT not suitable for projects in early stages?"
+        ],
+        "es-MX": [
+          "¿Por qué el MVT no es adecuado para proyectos en fases tempranas?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Because it cannot be applied to landing pages.",
+          "Because it requires large volumes of traffic that are difficult to obtain at that stage.",
+          "Because variables cannot be manipulated in HTML interfaces.",
+          "Because it always produces conclusive results without prior hypotheses."
+        ],
+        "es-MX": [
+          "Porque no se puede aplicar a landing pages.",
+          "Porque requiere grandes volúmenes de tráfico que son difíciles de conseguir en esa etapa.",
+          "Porque no se pueden manipular variables en interfaces en HTML.",
+          "Porque siempre genera resultados concluyentes sin hipótesis previas."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Because it requires large volumes of traffic that are difficult to obtain at that stage.",
+        "es-MX": "Porque requiere grandes volúmenes de tráfico que son difíciles de conseguir en esa etapa."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Multivariate testing divides traffic across many combinations. This means each variation receives a smaller subset of users. To achieve statistical significance, high traffic volumes are required."
+          },
+          {
+            "type": "text",
+            "content": "In early-stage projects, websites or apps often lack sufficient users. Running an MVT in such conditions may produce unreliable or inconclusive results due to insufficient sample size."
+          },
+          {
+            "type": "text",
+            "content": "For this reason, A/B testing is typically recommended during early phases, while MVT is more appropriate for mature products with stable, high traffic."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El MVT divide el tráfico entre muchas combinaciones distintas. Esto significa que cada variación recibe un número menor de usuarios. Para alcanzar significancia estadística se necesita un volumen elevado de tráfico."
+          },
+          {
+            "type": "text",
+            "content": "En proyectos en etapas tempranas, los sitios web o aplicaciones suelen tener pocos usuarios. Ejecutar un MVT en esas condiciones puede generar resultados poco confiables o no concluyentes debido al tamaño de muestra insuficiente."
+          },
+          {
+            "type": "text",
+            "content": "Por esta razón, en fases iniciales suele recomendarse el A/B testing, mientras que el MVT es más adecuado para productos maduros con tráfico estable y elevado."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Encuestas en Investigación",
+      "Question Text": {
+        "en-US": [
+          "What is the main objective of a survey in the context of research?"
+        ],
+        "es-MX": [
+          "¿Cuál es el principal objetivo de una encuesta en el contexto de la investigación?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "To create interactive prototypes.",
+          "To describe and quantify a behavior or conduct of a collective.",
+          "To perform advanced statistical analysis.",
+          "To design visually attractive products."
+        ],
+        "es-MX": [
+          "Crear prototipos interactivos.",
+          "Describir y cuantificar una conducta o comportamiento de un colectivo.",
+          "Realizar análisis estadísticos avanzados.",
+          "Diseñar productos visuales atractivos."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To describe and quantify a behavior or conduct of a collective.",
+        "es-MX": "Describir y cuantificar una conducta o comportamiento de un colectivo."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The primary purpose of surveys in research is to collect structured data that allows researchers to describe patterns, attitudes, behaviors, or characteristics of a group. Surveys are especially useful when the goal is quantification—measuring how often something happens, how many people share an opinion, or how strongly they agree with a statement."
+          },
+          {
+            "type": "text",
+            "content": "For example, a UX team may launch a survey to understand how many users abandon a checkout process and why. By analyzing frequency distributions and trends, researchers can identify widespread issues affecting the collective user base."
+          },
+          {
+            "type": "text",
+            "content": "Surveys are not primarily for building prototypes or performing complex statistics (although statistical analysis may follow). Their central role is structured data collection at scale."
+          },
+          {
+            "type": "link",
+            "content": "https://en.wikipedia.org/wiki/Survey_methodology"
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El objetivo principal de una encuesta en investigación es recopilar datos estructurados que permitan describir patrones, actitudes, comportamientos o características de un grupo. Son especialmente útiles cuando se busca cuantificar: medir cuántas personas realizan una acción, comparten una opinión o presentan una conducta específica."
+          },
+          {
+            "type": "text",
+            "content": "Por ejemplo, un equipo de UX puede aplicar una encuesta para identificar qué porcentaje de usuarios abandona un proceso de compra y cuáles son las razones más frecuentes. El análisis de frecuencias y tendencias permite detectar problemas generalizados."
+          },
+          {
+            "type": "text",
+            "content": "Las encuestas no se utilizan para diseñar prototipos ni exclusivamente para realizar análisis estadísticos complejos. Su función central es recolectar información estructurada a gran escala."
+          },
+          {
+            "type": "link",
+            "content": "https://es.wikipedia.org/wiki/Encuesta"
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Fases del Diseño y Encuestas",
+      "Question Text": {
+        "en-US": [
+          "In which phases of the design process can a survey be integrated?"
+        ],
+        "es-MX": [
+          "¿En qué fases del proceso de diseño se puede integrar una encuesta?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Generative and evaluative.",
+          "Qualitative and quantitative.",
+          "Exploratory and synthesis.",
+          "Strategic and operational."
+        ],
+        "es-MX": [
+          "Generativa y evaluativa.",
+          "Cualitativa y cuantitativa.",
+          "Exploratoria y de síntesis.",
+          "Estratégica y operativa."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Generative and evaluative.",
+        "es-MX": "Generativa y evaluativa."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Surveys can be used in both generative and evaluative phases of the design process. In the generative phase, surveys help identify user needs, expectations, and pain points before designing a solution."
+          },
+          {
+            "type": "text",
+            "content": "In the evaluative phase, surveys can measure satisfaction, usability perception, or user experience after implementing a design. For example, after launching a new app feature, a team may send a post-release survey to measure user satisfaction and perceived ease of use."
+          },
+          {
+            "type": "text",
+            "content": "Thus, surveys support both early exploration and later validation within UX processes."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las encuestas pueden utilizarse tanto en fases generativas como evaluativas del diseño. En la fase generativa ayudan a identificar necesidades, expectativas y problemas antes de desarrollar una solución."
+          },
+          {
+            "type": "text",
+            "content": "En la fase evaluativa permiten medir satisfacción, percepción de usabilidad o experiencia posterior a la implementación. Por ejemplo, tras lanzar una nueva funcionalidad, se puede enviar una encuesta para evaluar qué tan útil o clara resulta para los usuarios."
+          },
+          {
+            "type": "text",
+            "content": "Por lo tanto, las encuestas apoyan tanto la exploración inicial como la validación posterior en procesos UX."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Encuestas Digitales vs Telefónicas",
+      "Question Text": {
+        "en-US": [
+          "What is a key advantage of digital surveys compared to telephone surveys?"
+        ],
+        "es-MX": [
+          "¿Cuál es una ventaja clave de las encuestas digitales en comparación con las telefónicas?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "They are more economical and allow including materials such as images.",
+          "They require fewer interviews to obtain reliable data.",
+          "They do not require advanced technological tools.",
+          "They have a higher response rate."
+        ],
+        "es-MX": [
+          "Son más económicas y permiten incluir materiales como imágenes.",
+          "Requieren menor número de entrevistas para obtener datos fiables.",
+          "No necesitan herramientas tecnológicas avanzadas.",
+          "Tienen un índice de respuesta más alto."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "They are more economical and allow including materials such as images.",
+        "es-MX": "Son más económicas y permiten incluir materiales como imágenes."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Digital surveys reduce operational costs because they do not require interviewers, call centers, or manual data entry. They can be distributed instantly via email, social media, or embedded directly within digital products."
+          },
+          {
+            "type": "text",
+            "content": "Another advantage is multimedia integration. Researchers can include screenshots, videos, prototypes, or interactive elements. For example, a UX team can show users two interface designs and ask them to evaluate clarity or preference directly within the survey."
+          },
+          {
+            "type": "text",
+            "content": "Although digital surveys may not always have higher response rates, they offer scalability, automation, and richer contextual input compared to traditional telephone methods."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las encuestas digitales reducen costos operativos porque no requieren entrevistadores, centros de llamadas ni captura manual de datos. Se pueden distribuir de manera inmediata por correo electrónico, redes sociales o dentro del propio producto digital."
+          },
+          {
+            "type": "text",
+            "content": "Además, permiten integrar elementos multimedia. Por ejemplo, un equipo UX puede mostrar capturas de pantalla, prototipos o videos y pedir a los usuarios que evalúen claridad o preferencia directamente dentro de la encuesta."
+          },
+          {
+            "type": "text",
+            "content": "Aunque no siempre tienen mayor tasa de respuesta, ofrecen escalabilidad, automatización y mayor riqueza contextual en comparación con métodos telefónicos tradicionales."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Fases del Proceso de Diseño",
+      "Question Text": {
+        "en-US": [
+          "Which of the following correctly represents the main phases of the user-centered design process?"
+        ],
+        "es-MX": [
+          "¿Cuál de las siguientes opciones representa correctamente las fases principales del proceso de diseño centrado en el usuario?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Ideation, decoration, marketing, launch.",
+          "Research, definition, ideation, prototyping, evaluation.",
+          "Brainstorming, coding, advertising, selling.",
+          "Observation, intuition, aesthetics, publishing."
+        ],
+        "es-MX": [
+          "Ideación, decoración, marketing y lanzamiento.",
+          "Investigación, definición, ideación, prototipado y evaluación.",
+          "Lluvia de ideas, programación, publicidad y venta.",
+          "Observación, intuición, estética y publicación."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Research, definition, ideation, prototyping, evaluation.",
+        "es-MX": "Investigación, definición, ideación, prototipado y evaluación."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The user-centered design (UCD) process follows a structured sequence that ensures solutions respond to real user needs. It typically begins with research to understand users, context, and problems. The definition phase synthesizes findings into clear problem statements. Ideation generates potential solutions, which are then materialized in prototypes."
+          },
+          {
+            "type": "text",
+            "content": "Evaluation closes the loop by testing prototypes with users to validate usability and experience. For example, when designing a mobile banking app, a team first studies user pain points (research), defines key challenges (definition), proposes interface solutions (ideation), builds wireframes or mockups (prototyping), and finally conducts usability testing (evaluation)."
+          },
+          {
+            "type": "text",
+            "content": "Importantly, this process is iterative: evaluation results often lead back to research or ideation for refinement."
+          },
+          {
+            "type": "link",
+            "content": "https://www.interaction-design.org/literature/topics/user-centered-design"
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El proceso de diseño centrado en el usuario (UCD) sigue una secuencia estructurada que garantiza que las soluciones respondan a necesidades reales. Generalmente inicia con investigación para comprender usuarios, contexto y problemas. Después, en la fase de definición, se sintetizan los hallazgos en planteamientos claros del problema."
+          },
+          {
+            "type": "text",
+            "content": "Posteriormente, en la ideación se generan posibles soluciones, las cuales se materializan mediante prototipos. Finalmente, la evaluación permite probar los prototipos con usuarios reales para validar usabilidad y experiencia."
+          },
+          {
+            "type": "text",
+            "content": "Por ejemplo, al diseñar una app bancaria móvil, primero se investigan los puntos de dolor, luego se definen los problemas clave, se proponen soluciones de interfaz, se construyen wireframes y finalmente se realizan pruebas de usabilidad. El proceso es iterativo: los resultados de evaluación pueden llevar a repetir etapas anteriores para mejorar la solución."
+          },
+          {
+            "type": "link",
+            "content": "https://www.interaction-design.org/literature/topics/user-centered-design"
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Fase de Investigación",
+      "Question Text": {
+        "en-US": [
+          "What is the main goal of the research phase in the user-centered design process?"
+        ],
+        "es-MX": [
+          "¿Cuál es el objetivo principal de la fase de investigación en el proceso de diseño centrado en el usuario?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "To create final visual interfaces.",
+          "To understand users, their needs, and the context of use.",
+          "To implement the technical solution.",
+          "To define marketing strategies."
+        ],
+        "es-MX": [
+          "Crear las interfaces visuales finales.",
+          "Comprender a los usuarios, sus necesidades y el contexto de uso.",
+          "Implementar la solución técnica.",
+          "Definir estrategias de marketing."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To understand users, their needs, and the context of use.",
+        "es-MX": "Comprender a los usuarios, sus necesidades y el contexto de uso."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The research phase aims to gather insights about users, their behaviors, motivations, frustrations, and environment. This may involve interviews, surveys, usability studies, or contextual inquiry."
+          },
+          {
+            "type": "text",
+            "content": "For example, before designing a healthcare app, researchers might interview patients and doctors to understand workflow challenges and pain points. Without this understanding, design decisions risk being based on assumptions."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La fase de investigación busca obtener información sobre los usuarios, sus comportamientos, motivaciones, frustraciones y contexto de uso. Puede incluir entrevistas, encuestas, pruebas de usabilidad u observación contextual."
+          },
+          {
+            "type": "text",
+            "content": "Por ejemplo, antes de diseñar una app médica, el equipo puede entrevistar a pacientes y doctores para comprender los problemas en su flujo de trabajo. Sin esta base, el diseño se apoyaría solo en suposiciones."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Fase de Definición",
+      "Question Text": {
+        "en-US": [
+          "What happens during the definition phase of the design process?"
+        ],
+        "es-MX": [
+          "¿Qué ocurre durante la fase de definición del proceso de diseño?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "The team synthesizes research findings into clear problem statements.",
+          "The team builds interactive prototypes.",
+          "The team launches the product publicly.",
+          "The team collects marketing analytics."
+        ],
+        "es-MX": [
+          "El equipo sintetiza los hallazgos en planteamientos claros del problema.",
+          "El equipo construye prototipos interactivos.",
+          "El equipo lanza el producto al público.",
+          "El equipo recopila métricas de marketing."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "The team synthesizes research findings into clear problem statements.",
+        "es-MX": "El equipo sintetiza los hallazgos en planteamientos claros del problema."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "In the definition phase, teams analyze research data and translate insights into structured problem statements, user personas, and design requirements."
+          },
+          {
+            "type": "text",
+            "content": "For instance, after interviewing users, a team may define the core problem as: 'Users struggle to complete registration due to unclear instructions.' This clarity guides the ideation phase."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "En la fase de definición, el equipo analiza los datos recopilados y transforma los hallazgos en problemas estructurados, perfiles de usuario y requisitos de diseño."
+          },
+          {
+            "type": "text",
+            "content": "Por ejemplo, después de entrevistas, el equipo puede definir el problema central como: 'Los usuarios abandonan el registro porque las instrucciones no son claras.' Esta claridad orienta la fase de ideación."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Fase de Ideación",
+      "Question Text": {
+        "en-US": [
+          "What is the purpose of the ideation phase in UX design?"
+        ],
+        "es-MX": [
+          "¿Cuál es el propósito de la fase de ideación en el diseño UX?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "To generate multiple possible solutions to a defined problem.",
+          "To measure user satisfaction quantitatively.",
+          "To finalize the production code.",
+          "To recruit participants."
+        ],
+        "es-MX": [
+          "Generar múltiples posibles soluciones a un problema definido.",
+          "Medir cuantitativamente la satisfacción del usuario.",
+          "Finalizar el código de producción.",
+          "Reclutar participantes."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To generate multiple possible solutions to a defined problem.",
+        "es-MX": "Generar múltiples posibles soluciones a un problema definido."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Ideation involves brainstorming and exploring alternative solutions to the defined problem. The goal is creative expansion before narrowing options."
+          },
+          {
+            "type": "text",
+            "content": "For example, if users struggle with navigation, the team may propose simplified menus, visual icons, or guided onboarding flows before selecting the most promising concept."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La ideación consiste en generar y explorar diferentes alternativas para resolver el problema definido. Se busca ampliar el panorama creativo antes de seleccionar una solución final."
+          },
+          {
+            "type": "text",
+            "content": "Por ejemplo, si los usuarios tienen dificultades con la navegación, el equipo puede proponer menús simplificados, iconografía visual o flujos guiados antes de elegir la mejor opción."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Fase de Prototipado",
+      "Question Text": {
+        "en-US": [
+          "What is the objective of the prototyping phase?"
+        ],
+        "es-MX": [
+          "¿Cuál es el objetivo de la fase de prototipado?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "To build testable representations of proposed solutions.",
+          "To collect user feedback through surveys.",
+          "To conduct statistical significance tests.",
+          "To deploy the final product."
+        ],
+        "es-MX": [
+          "Construir representaciones probables y testeables de las soluciones propuestas.",
+          "Recopilar retroalimentación mediante encuestas.",
+          "Realizar pruebas de significancia estadística.",
+          "Publicar el producto final."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To build testable representations of proposed solutions.",
+        "es-MX": "Construir representaciones probables y testeables de las soluciones propuestas."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Prototyping transforms ideas into tangible artifacts such as wireframes, mockups, or interactive prototypes that can be tested with users."
+          },
+          {
+            "type": "text",
+            "content": "For example, a low-fidelity prototype of a banking app can be tested to observe whether users understand navigation before investing in full development."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El prototipado convierte ideas en representaciones tangibles como wireframes, maquetas o prototipos interactivos que pueden probarse con usuarios."
+          },
+          {
+            "type": "text",
+            "content": "Por ejemplo, un prototipo de baja fidelidad de una app bancaria puede probarse para verificar si los usuarios comprenden la navegación antes de invertir en desarrollo completo."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Fase de Evaluación",
+      "Question Text": {
+        "en-US": [
+          "What is the main purpose of the evaluation phase in UX design?"
+        ],
+        "es-MX": [
+          "¿Cuál es el propósito principal de la fase de evaluación en diseño UX?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "To validate whether the solution meets user needs and usability criteria.",
+          "To define the research problem.",
+          "To brainstorm creative ideas.",
+          "To design marketing campaigns."
+        ],
+        "es-MX": [
+          "Validar si la solución cumple con las necesidades del usuario y criterios de usabilidad.",
+          "Definir el problema de investigación.",
+          "Generar ideas creativas.",
+          "Diseñar campañas de marketing."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To validate whether the solution meets user needs and usability criteria.",
+        "es-MX": "Validar si la solución cumple con las necesidades del usuario y criterios de usabilidad."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The evaluation phase tests prototypes or implemented solutions with real users to determine usability, effectiveness, and satisfaction."
+          },
+          {
+            "type": "text",
+            "content": "For example, usability testing may reveal that users still struggle with checkout steps, prompting iterative improvements. Evaluation ensures evidence-based refinement."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La fase de evaluación consiste en probar prototipos o soluciones implementadas con usuarios reales para determinar su usabilidad, efectividad y nivel de satisfacción."
+          },
+          {
+            "type": "text",
+            "content": "Por ejemplo, una prueba de usabilidad puede mostrar que los usuarios siguen teniendo dificultades en el proceso de pago, lo que impulsa mejoras iterativas. La evaluación garantiza refinamiento basado en evidencia."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Focus Group Online",
+      "Question Text": {
+        "en-US": [
+          "Which of the following is a benefit of conducting an online focus group?"
+        ],
+        "es-MX": [
+          "¿Cuál de los siguientes es un beneficio del focus group online?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "It eliminates group bias.",
+          "It allows participation from geographically distant participants.",
+          "It always guarantees natural interaction among participants.",
+          "It reduces the moderator's influence."
+        ],
+        "es-MX": [
+          "Permite evitar el sesgo grupal.",
+          "Posibilita incorporar participantes de áreas geográficas distantes.",
+          "Siempre asegura una interacción natural entre los participantes.",
+          "Reduce el impacto del papel del moderador."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "It allows participation from geographically distant participants.",
+        "es-MX": "Posibilita incorporar participantes de áreas geográficas distantes."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "One of the main advantages of online focus groups is accessibility. Participants can join from different cities, countries, or even continents without travel costs or logistical barriers."
+          },
+          {
+            "type": "text",
+            "content": "This increases diversity in the sample and makes recruitment more flexible. For example, a UX team testing a global app can include users from Latin America, Europe, and Asia in the same session."
+          },
+          {
+            "type": "text",
+            "content": "However, online focus groups do not eliminate group bias or moderator influence. Social dynamics still exist, even in virtual environments."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Una de las principales ventajas del focus group online es la accesibilidad. Los participantes pueden integrarse desde distintas ciudades o países sin costos de traslado ni barreras logísticas."
+          },
+          {
+            "type": "text",
+            "content": "Esto permite mayor diversidad en la muestra y flexibilidad en el reclutamiento. Por ejemplo, un equipo UX que evalúa una app global puede reunir usuarios de diferentes regiones en una sola sesión."
+          },
+          {
+            "type": "text",
+            "content": "No obstante, el formato online no elimina el sesgo grupal ni la influencia del moderador. Las dinámicas sociales siguen presentes."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Focus Group – Modalidad Chat",
+      "Question Text": {
+        "en-US": [
+          "What is a common disadvantage of real-time chat modality in a focus group?"
+        ],
+        "es-MX": [
+          "¿Cuál es una desventaja común de la modalidad chat en tiempo real en un focus group?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "It requires high implementation costs.",
+          "It does not allow organizing information easily.",
+          "It limits interaction among participants and the depth of responses.",
+          "It cannot be used for concept testing."
+        ],
+        "es-MX": [
+          "Requiere un alto costo de implementación.",
+          "No permite organizar la información fácilmente.",
+          "Limita la interacción entre participantes y la profundidad de las respuestas.",
+          "No es adecuada para realizar test de concepto."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "It limits interaction among participants and the depth of responses.",
+        "es-MX": "Limita la interacción entre participantes y la profundidad de las respuestas."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Real-time chat focus groups can reduce spontaneity and richness of communication. Participants may write shorter responses compared to speaking, limiting emotional expression and non-verbal cues."
+          },
+          {
+            "type": "text",
+            "content": "Additionally, parallel conversations may occur in chat, making discussion fragmented. This can affect the natural flow of interaction compared to video or in-person sessions."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "En un focus group por chat en tiempo real, la comunicación suele ser menos espontánea y menos rica en matices. Las respuestas tienden a ser más breves y se pierden señales no verbales como tono de voz o gestos."
+          },
+          {
+            "type": "text",
+            "content": "Además, pueden generarse conversaciones paralelas que fragmentan el diálogo. Esto afecta la profundidad y fluidez de la discusión en comparación con sesiones presenciales o por videollamada."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Rol del Moderador en Focus Group",
+      "Question Text": {
+        "en-US": [
+          "What is a key responsibility of a moderator during a focus group?"
+        ],
+        "es-MX": [
+          "¿Qué tarea realiza un moderador durante un focus group?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "To influence participants' opinions.",
+          "To ensure balanced participation among attendees.",
+          "To replace the role of the researcher.",
+          "To define participant profiles."
+        ],
+        "es-MX": [
+          "Condicionar las opiniones de los participantes.",
+          "Asegurar el equilibrio en la participación de los asistentes.",
+          "Sustituir el papel del investigador.",
+          "Definir el perfil de los participantes."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To ensure balanced participation among attendees.",
+        "es-MX": "Asegurar el equilibrio en la participación de los asistentes."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The moderator’s role is to guide discussion neutrally, encourage quieter participants to speak, and prevent dominant individuals from monopolizing the conversation."
+          },
+          {
+            "type": "text",
+            "content": "A good moderator maintains focus on research objectives while fostering open dialogue. For example, if one participant dominates the session, the moderator may redirect questions to others to maintain balance."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El moderador guía la conversación de manera neutral, fomenta la participación de quienes hablan menos y evita que una persona monopolice el diálogo."
+          },
+          {
+            "type": "text",
+            "content": "Un buen moderador mantiene el enfoque en los objetivos de investigación mientras promueve un ambiente abierto y equilibrado. Por ejemplo, puede redirigir preguntas para asegurar que todos participen."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Técnicas Proyectivas – Propósito",
+      "Question Text": {
+        "en-US": [
+          "What is the main purpose of projective techniques in qualitative research?"
+        ],
+        "es-MX": [
+          "¿Cuál es el principal propósito de las técnicas proyectivas en investigación cualitativa?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "To measure the frequency of product usage.",
+          "To obtain information directly through specific questions.",
+          "To explore hidden motivations, feelings, and deep beliefs indirectly.",
+          "To compare quantitative data with qualitative data."
+        ],
+        "es-MX": [
+          "Medir la frecuencia de uso de un producto.",
+          "Obtener información directa a través de preguntas específicas.",
+          "Explorar motivaciones ocultas, sentimientos y creencias profundas de forma indirecta.",
+          "Comparar datos cuantitativos con cualitativos."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To explore hidden motivations, feelings, and deep beliefs indirectly.",
+        "es-MX": "Explorar motivaciones ocultas, sentimientos y creencias profundas de forma indirecta."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Projective techniques are used in qualitative research to uncover underlying attitudes, emotions, and beliefs that participants may not express directly. Instead of asking explicit questions, researchers use indirect stimuli such as images, stories, or metaphors to encourage projection."
+          },
+          {
+            "type": "text",
+            "content": "For example, when evaluating a financial app, asking users to describe the app as a person may reveal perceptions such as 'strict', 'friendly', or 'unreliable', which would be difficult to capture with direct questioning."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las técnicas proyectivas buscan revelar actitudes, emociones y creencias que el participante puede no expresar de forma directa. En lugar de preguntas explícitas, se utilizan estímulos indirectos como imágenes, historias o metáforas para facilitar la proyección."
+          },
+          {
+            "type": "text",
+            "content": "Por ejemplo, al evaluar una app financiera, pedir al usuario que la describa como si fuera una persona puede revelar percepciones como 'estricta', 'confiable' o 'complicada', aspectos que no siempre emergen con preguntas directas."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Técnicas de Asociación – Personificación",
+      "Question Text": {
+        "en-US": [
+          "In association techniques, which example describes personification?"
+        ],
+        "es-MX": [
+          "En la técnica de asociación, ¿qué ejemplo describe la personificación?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Asking the user to draw how a story ends.",
+          "Asking the user to link a product with a specific category.",
+          "Asking the user to associate a product with a famous character.",
+          "Asking the user to complete sentences related to their experience."
+        ],
+        "es-MX": [
+          "Pedir al usuario que dibuje cómo termina una historia.",
+          "Pedir al usuario que vincule un producto con una categoría específica.",
+          "Pedir al usuario que asocie un producto con un personaje famoso.",
+          "Pedir al usuario que complete frases relacionadas con su experiencia."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Asking the user to associate a product with a famous character.",
+        "es-MX": "Pedir al usuario que asocie un producto con un personaje famoso."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Personification involves attributing human characteristics to a product or brand. By associating a product with a known character, users project traits and emotions onto the object."
+          },
+          {
+            "type": "text",
+            "content": "For example, if users compare a productivity app to a 'strict teacher' or a 'creative artist', researchers gain insight into perceived personality, tone, and usability style."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La personificación consiste en atribuir características humanas a un producto o marca. Al asociarlo con un personaje, el usuario proyecta rasgos y emociones sobre el objeto."
+          },
+          {
+            "type": "text",
+            "content": "Por ejemplo, si un usuario compara una app de productividad con 'un maestro estricto' o 'un artista creativo', el investigador obtiene información sobre la personalidad percibida y el estilo de uso."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Técnicas Proyectivas – Anticipación",
+      "Question Text": {
+        "en-US": [
+          "Which projective technique is used to analyze how a user anticipates future events based on past experiences?"
+        ],
+        "es-MX": [
+          "¿Cuál de las siguientes técnicas proyectivas se utiliza para analizar cómo un usuario anticipa sucesos basándose en experiencias pasadas?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Third-person projection.",
+          "Analogies, similes, and metaphors.",
+          "Storyboard.",
+          "Image-based association."
+        ],
+        "es-MX": [
+          "Proyección sobre un tercero.",
+          "Analogías, símiles y metáforas.",
+          "Storyboard.",
+          "Asociación a partir de imágenes."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Storyboard.",
+        "es-MX": "Storyboard."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "A storyboard technique allows participants to narrate sequences of events, often visualizing how they expect a situation to unfold. This helps researchers understand expectations, assumptions, and anticipated outcomes."
+          },
+          {
+            "type": "text",
+            "content": "For example, when designing a food delivery app, users may be asked to draw or describe the steps they imagine from ordering to receiving their meal. This reveals gaps between expectation and actual experience."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El storyboard permite que los participantes narren o representen una secuencia de eventos, mostrando cómo anticipan que se desarrollará una situación."
+          },
+          {
+            "type": "text",
+            "content": "Por ejemplo, al diseñar una app de entrega de comida, se puede pedir al usuario que describa paso a paso lo que espera que ocurra desde que hace el pedido hasta que recibe su comida. Esto ayuda a identificar expectativas y posibles fricciones."
+          }
+        ]
+      }
+    }
+    
+    
+    
+    
+    
+    
+    
+
+  ]
+}

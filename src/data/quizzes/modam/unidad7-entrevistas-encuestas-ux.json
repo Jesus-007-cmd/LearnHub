@@ -1,0 +1,534 @@
+{
+    "meta": {
+      "slug": "ux-entrevistas-encuestas-investigacion",
+      "title": "Entrevistas y Encuestas en UX",
+      "subject": "Investigación Centrada en la Interfaz de Usuario",
+      "unit": 7,
+      "classNo": 1,
+      "description": "Diferencias entre entrevista y encuesta, momento de uso en el proceso de diseño y tipo de información obtenida.",
+      "tags": ["UX", "Entrevistas", "Encuestas", "Investigación", "Cualitativo", "Cuantitativo"]
+    },
+    "Questions": [
+      {
+        "Category": "Diferencias metodológicas",
+        "Question Text": {
+          "en-US": [
+            "What is the main difference between an interview and a survey?"
+          ],
+          "es-MX": [
+            "¿Cuál es la principal diferencia entre una entrevista y una encuesta?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Interviews collect quantitative data and surveys collect qualitative data",
+            "An interview is based on guided conversation, while a survey uses structured questions",
+            "A survey is directed by the interviewer, while an interview is informal",
+            "Interviews are only used in market research"
+          ],
+          "es-MX": [
+            "La entrevista recolecta datos cuantitativos y la encuesta cualitativos",
+            "La entrevista está basada en una conversación dirigida, mientras que la encuesta utiliza preguntas tabuladas",
+            "La encuesta está dirigida por el entrevistador, mientras que la entrevista es más informal",
+            "La entrevista solo se usa en investigación de mercado"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "An interview is based on guided conversation, while a survey uses structured questions",
+          "es-MX": "La entrevista está basada en una conversación dirigida, mientras que la encuesta utiliza preguntas tabuladas"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Interviews allow flexible, in-depth exploration through dialogue, while surveys rely on predefined answer options. For example, during a mobile banking redesign, an interview may reveal emotional concerns like fear of making mistakes, while a survey might measure how many users prefer biometric login over passwords."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La entrevista permite explorar a profundidad mediante una conversación flexible, mientras que la encuesta se basa en preguntas cerradas y opciones estructuradas. Por ejemplo, en el rediseño de una app bancaria, una entrevista puede revelar temores o inseguridades del usuario, mientras que una encuesta puede medir cuántas personas prefieren iniciar sesión con huella digital en lugar de contraseña."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Momento en el proceso",
+        "Question Text": {
+          "en-US": [
+            "At which stage of the design process is interviewing typically used?"
+          ],
+          "es-MX": [
+            "¿En qué fase del proceso de diseño suele utilizarse la entrevista como técnica?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "During usability evaluation",
+            "During prototype validation",
+            "In the generative phase to gather context and user insights",
+            "During quantitative testing"
+          ],
+          "es-MX": [
+            "Durante la evaluación de usabilidad",
+            "En la fase de validación de prototipos",
+            "En la etapa generativa para generar ideas y contexto desde una perspectiva centrada en el usuario",
+            "En la etapa de pruebas cuantitativas"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "In the generative phase to gather context and user insights",
+          "es-MX": "En la etapa generativa para generar ideas y contexto desde una perspectiva centrada en el usuario"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Interviews are especially useful early in the process, when designers need to understand behaviors, motivations, and unmet needs. For example, before creating a new e-commerce platform, interviews may uncover that users abandon purchases due to hidden shipping costs, which then influences design priorities."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las entrevistas se utilizan principalmente al inicio del proceso, cuando se necesita comprender comportamientos, motivaciones y necesidades no satisfechas. Por ejemplo, antes de diseñar una nueva plataforma de comercio electrónico, las entrevistas pueden revelar que los usuarios abandonan la compra por costos ocultos de envío, lo cual influye directamente en decisiones de diseño."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Tipo de información",
+        "Question Text": {
+          "en-US": [
+            "Which type of information is NOT commonly obtained through interviews?"
+          ],
+          "es-MX": [
+            "¿Qué tipo de información no es comúnmente extraída de una entrevista?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Hidden motivations",
+            "Statistical data about product usage",
+            "Non-observable aspects of user routines",
+            "Latent user needs"
+          ],
+          "es-MX": [
+            "Motivaciones ocultas",
+            "Datos estadísticos sobre el uso del producto",
+            "Aspectos no observables de las rutinas del usuario",
+            "Necesidades latentes del usuario"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Statistical data about product usage",
+          "es-MX": "Datos estadísticos sobre el uso del producto"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Interviews focus on qualitative depth rather than numerical measurement. While they can reveal why users behave in certain ways, they are not designed to produce large-scale statistical patterns. For example, knowing that 72% of users abandon a checkout process typically requires analytics or surveys, not interviews."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las entrevistas están orientadas a la profundidad cualitativa más que a la medición numérica. Permiten entender por qué las personas actúan de cierta forma, pero no están diseñadas para generar porcentajes representativos a gran escala. Por ejemplo, saber que el 72% de los usuarios abandona un carrito de compra generalmente requiere analítica o encuestas, no entrevistas."
+            }
+          ]
+        }
+      }    ,
+      {
+        "Category": "Tipos de entrevista",
+        "Question Text": {
+          "en-US": [
+            "What is the main characteristic of a structured interview?"
+          ],
+          "es-MX": [
+            "¿Cuál es la principal característica de una entrevista estructurada?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "The interviewer follows no plan",
+            "Questions are asked in a predefined and specific order",
+            "The interviewer explores topics freely",
+            "No prior preparation is required"
+          ],
+          "es-MX": [
+            "El entrevistador no sigue ningún plan.",
+            "Las preguntas se formulan en un orden predefinido y específico.",
+            "El entrevistador explora temas de manera libre.",
+            "No se requiere ninguna preparación previa."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Questions are asked in a predefined and specific order",
+          "es-MX": "Las preguntas se formulan en un orden predefinido y específico."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "A structured interview follows a strict script to ensure consistency across participants. For example, when comparing customer satisfaction between two versions of an app, asking identical questions in the same sequence helps reduce bias and makes answers easier to compare systematically."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Una entrevista estructurada sigue un guion rígido para garantizar consistencia entre participantes. Por ejemplo, si se comparan niveles de satisfacción entre dos versiones de una app, formular exactamente las mismas preguntas en el mismo orden permite reducir sesgos y facilita la comparación sistemática de respuestas."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Entrevista no estructurada",
+        "Question Text": {
+          "en-US": [
+            "In which situation is it more appropriate to use an unstructured interview?"
+          ],
+          "es-MX": [
+            "¿En qué situación es más recomendable utilizar una entrevista no estructurada?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "When there is extensive prior information about the topic",
+            "To validate answers among multiple users",
+            "In an initial exploration when little information is available",
+            "When quantitative data analysis is required"
+          ],
+          "es-MX": [
+            "Cuando se tiene mucha información previa sobre el tema.",
+            "Para validar respuestas entre distintos usuarios.",
+            "En un primer contacto para explorar un tema con escasa información previa.",
+            "Cuando se necesita analizar datos cuantitativos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "In an initial exploration when little information is available",
+          "es-MX": "En un primer contacto para explorar un tema con escasa información previa."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Unstructured interviews allow participants to speak freely and reveal unexpected insights. For instance, when researching a new digital health service, early conversations without rigid questions may uncover concerns or needs designers had not considered, such as privacy fears or accessibility barriers."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La entrevista no estructurada permite que el participante hable con libertad y aporte información inesperada. Por ejemplo, al investigar un nuevo servicio digital de salud, una conversación abierta puede revelar preocupaciones sobre privacidad o barreras de accesibilidad que el equipo de diseño no había anticipado."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Entrevista semiestructurada",
+        "Question Text": {
+          "en-US": [
+            "What is an advantage of a semi-structured interview?"
+          ],
+          "es-MX": [
+            "¿Cuál es una ventaja de la entrevista semiestructurada?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It allows better systematization of information",
+            "It requires little interviewer experience",
+            "It provides richer information without requiring extensive prior knowledge",
+            "It is the fastest technique to obtain results"
+          ],
+          "es-MX": [
+            "Permite sistematizar mejor la información.",
+            "Requiere de poca experiencia por parte del entrevistador.",
+            "Proporciona mayor riqueza de información sin necesidad de mucha información previa.",
+            "Es la técnica más rápida para obtener resultados."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It provides richer information without requiring extensive prior knowledge",
+          "es-MX": "Proporciona mayor riqueza de información sin necesidad de mucha información previa."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "A semi-structured interview combines predefined guiding questions with flexibility to explore emerging topics. For example, in testing a new educational platform, the interviewer may follow core questions about usability but also dive deeper if a participant mentions frustration or confusion, capturing both structure and depth."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La entrevista semiestructurada combina preguntas guía previamente definidas con la flexibilidad de profundizar en temas emergentes. Por ejemplo, al evaluar una nueva plataforma educativa, el entrevistador puede seguir un guion básico sobre usabilidad, pero profundizar cuando el participante menciona frustración o confusión, logrando equilibrio entre estructura y profundidad."
+            }
+          ]
+        }
+      }    ,
+      {
+        "Category": "Diseño de entrevista semiestructurada",
+        "Question Text": {
+          "en-US": [
+            "What is one of the first considerations when designing a semi-structured interview?"
+          ],
+          "es-MX": [
+            "¿Cuál es una de las primeras consideraciones que debe tener un investigador al diseñar una entrevista semiestructurada?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Deciding the exact number of questions",
+            "Clearly defining user language about the topics to be discussed",
+            "Establishing a rigid questionnaire",
+            "Organizing the interview in a formal environment"
+          ],
+          "es-MX": [
+            "Decidir el número exacto de preguntas.",
+            "Definir claramente el lenguaje del usuario sobre los temas a tratar.",
+            "Establecer un cuestionario rígido.",
+            "Organizar la entrevista en un ambiente formal."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Clearly defining user language about the topics to be discussed",
+          "es-MX": "Definir claramente el lenguaje del usuario sobre los temas a tratar."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Before preparing detailed questions, researchers must understand how users describe their experiences and problems. For example, when studying a fitness app, users may talk about 'staying motivated' rather than 'engagement metrics.' Using their natural terminology improves clarity and builds rapport during the interview."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Antes de elaborar preguntas específicas, el investigador debe comprender cómo los usuarios describen sus experiencias y problemas. Por ejemplo, al analizar una app de ejercicio, los usuarios pueden hablar de 'mantener la motivación' en lugar de 'retención o engagement'. Utilizar su propio lenguaje facilita la comunicación y genera mayor confianza durante la entrevista."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Guion en entrevista semiestructurada",
+        "Question Text": {
+          "en-US": [
+            "In a semi-structured interview, what type of script is typically used?"
+          ],
+          "es-MX": [
+            "En una entrevista semiestructurada, ¿qué tipo de guion se utiliza?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A sequential questionnaire",
+            "A structured script with closed questions",
+            "A non-sequential script organized by themes",
+            "An improvised script without clear objectives"
+          ],
+          "es-MX": [
+            "Un cuestionario secuencial.",
+            "Un guion estructurado con preguntas cerradas.",
+            "Un guion no secuencial basado en temas.",
+            "Un guion improvisado sin objetivos claros."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A non-sequential script organized by themes",
+          "es-MX": "Un guion no secuencial basado en temas."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Instead of following a strict order, the interviewer works with thematic blocks that can adapt to the flow of conversation. For example, while discussing checkout experiences in an e-commerce study, the conversation might shift naturally from payment methods to trust issues, allowing deeper exploration without losing structure."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "En lugar de seguir un orden rígido, el entrevistador trabaja con bloques temáticos que pueden adaptarse al flujo de la conversación. Por ejemplo, al analizar la experiencia de pago en un comercio electrónico, la conversación puede pasar del método de pago a temas de confianza de manera natural, sin perder coherencia en la investigación."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Fases de la entrevista",
+        "Question Text": {
+          "en-US": [
+            "Which of the following is one of the phases in conducting a semi-structured interview?"
+          ],
+          "es-MX": [
+            "¿Cuál es una de las fases del desarrollo de una entrevista semiestructurada?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Conducting statistical analysis of responses",
+            "Starting with general topics to break the ice",
+            "Asking specific questions about all topics immediately",
+            "Taking notes during the conversation"
+          ],
+          "es-MX": [
+            "Realizar un análisis estadístico de las respuestas.",
+            "Iniciar con temas generales para romper el hielo.",
+            "Hacer preguntas específicas sobre todos los temas.",
+            "Tomar notas durante la conversación."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Starting with general topics to break the ice",
+          "es-MX": "Iniciar con temas generales para romper el hielo."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "A semi-structured interview usually begins with broad, comfortable questions to establish rapport before moving into deeper topics. For example, when researching a financial app, the interviewer might first ask about general digital habits before discussing sensitive issues like budgeting difficulties or debt management."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Una entrevista semiestructurada normalmente comienza con preguntas generales y cómodas para generar confianza antes de profundizar en temas más complejos. Por ejemplo, al investigar una app financiera, el entrevistador puede iniciar preguntando sobre hábitos digitales generales antes de abordar temas sensibles como dificultades para administrar el dinero."
+            }
+          ]
+        }
+      }    ,
+      {
+        "Category": "Análisis de entrevistas",
+        "Question Text": {
+          "en-US": [
+            "What is the first step in the interview analysis process?"
+          ],
+          "es-MX": [
+            "¿Cuál es el primer paso en el proceso de análisis de una entrevista?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Coding",
+            "Analysis",
+            "Transcription",
+            "Report writing"
+          ],
+          "es-MX": [
+            "Codificación.",
+            "Análisis.",
+            "Transcripción.",
+            "Elaboración del informe."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Transcription",
+          "es-MX": "Transcripción."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Before interpreting qualitative data, researchers must convert audio or video recordings into written text. This allows systematic review and identification of patterns. For example, in a usability study interview, transcribing participants’ exact words makes it easier to detect recurring frustrations or repeated expressions across different sessions."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Antes de interpretar los datos cualitativos, es necesario convertir el material grabado en texto escrito. Esto facilita una revisión detallada y sistemática. Por ejemplo, en entrevistas sobre usabilidad, transcribir las palabras exactas de los participantes permite identificar patrones repetidos como quejas frecuentes o expresiones similares entre distintos usuarios."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Codificación cualitativa",
+        "Question Text": {
+          "en-US": [
+            "In categorization-coding, what does 'coding' represent?"
+          ],
+          "es-MX": [
+            "En la categorización-codificación, ¿qué representa la «codificación»?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Assigning an indicative label to a unit of meaning",
+            "Conceptual classification of a unit",
+            "Transcribing recorded material",
+            "Interpreting final results"
+          ],
+          "es-MX": [
+            "La asignación de un código indicativo a una unidad.",
+            "La clasificación conceptual de una unidad.",
+            "La transcripción del material grabado.",
+            "La interpretación de los resultados."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Assigning an indicative label to a unit of meaning",
+          "es-MX": "La asignación de un código indicativo a una unidad."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Coding involves labeling segments of text that represent meaningful ideas. For instance, if several interviewees mention difficulty finding a checkout button, the researcher may assign a label such as 'navigation confusion.' These labels later help group similar insights into broader themes."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La codificación consiste en asignar etiquetas a fragmentos de texto que representan ideas relevantes. Por ejemplo, si varios entrevistados mencionan dificultad para encontrar el botón de pago, el investigador puede asignar un código como 'confusión en la navegación'. Posteriormente, estos códigos permiten agrupar hallazgos similares en categorías más amplias."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Software de análisis cualitativo",
+        "Question Text": {
+          "en-US": [
+            "Which of the following is software commonly used for qualitative data analysis?"
+          ],
+          "es-MX": [
+            "¿Cuál de los siguientes es un paquete de software utilizado para el análisis cualitativo de datos?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Microsoft Word",
+            "ATLAS.ti",
+            "Adobe Photoshop",
+            "Final Cut Pro"
+          ],
+          "es-MX": [
+            "Microsoft Word.",
+            "ATLAS.ti.",
+            "Adobe Photoshop.",
+            "Final Cut Pro."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "ATLAS.ti",
+          "es-MX": "ATLAS.ti."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Qualitative analysis tools help organize, code, and categorize large volumes of textual data. For example, researchers analyzing dozens of interview transcripts can use specialized software to tag themes, compare patterns, and visualize relationships between concepts in a structured way."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las herramientas de análisis cualitativo permiten organizar, codificar y categorizar grandes volúmenes de texto. Por ejemplo, al analizar decenas de entrevistas, el investigador puede utilizar software especializado para etiquetar temas, comparar patrones y visualizar relaciones entre conceptos de manera estructurada."
+            }
+          ]
+        }
+      }
+  
+  
+
+      
+    ]
+  }
+  

@@ -1,0 +1,1302 @@
+{
+    "meta": {
+        "slug": "modam-investigacion-cuali-cuanti",
+        "title": "MODAM · Investigación Cuantitativa vs Cualitativa",
+        "subject": "Investigación Centrada en la Interfaz de Usuario",
+        "unit": 2,
+        "classNo": 1,
+        "description": "Diferencias, características, métodos y aplicación de la investigación cuantitativa y cualitativa en UX.",
+        "tags": [
+            "UX",
+            "Investigación",
+            "Cuantitativa",
+            "Cualitativa",
+            "Métodos"
+        ]
+    },
+    "Questions": [
+        {
+            "Category": "Investigación cuantitativa",
+            "Question Text": {
+                "en-US": [
+                    "What type of questions does quantitative methodology answer?"
+                ],
+                "es-MX": [
+                    "¿Qué tipo de preguntas responde la metodología cuantitativa?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "How? Why?",
+                    "How much? When? Where?",
+                    "What? Who?",
+                    "How? Who?"
+                ],
+                "es-MX": [
+                    "¿Cómo? ¿Por qué?",
+                    "¿Cuánto? ¿Cuándo? ¿Dónde?",
+                    "¿Qué? ¿Quién?",
+                    "¿Cómo? ¿Quién?"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "How much? When? Where?",
+                "es-MX": "¿Cuánto? ¿Cuándo? ¿Dónde?"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "Quantitative research measures phenomena using numerical data. It answers measurable questions such as frequency, quantity, location or time. Its goal is statistical generalization rather than understanding meaning."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "La investigación cuantitativa mide fenómenos mediante datos numéricos. Responde preguntas medibles como frecuencia, cantidad, ubicación o tiempo. Su objetivo es la generalización estadística más que la interpretación profunda."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Fundamentos epistemológicos",
+            "Question Text": {
+                "en-US": [
+                    "What epistemological base supports quantitative methodology?"
+                ],
+                "es-MX": [
+                    "¿En qué se basa epistemológicamente la metodología cuantitativa?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Positivism",
+                    "Constructivism",
+                    "Interpretivism",
+                    "Critical realism"
+                ],
+                "es-MX": [
+                    "En el positivismo",
+                    "En el constructivismo",
+                    "En el interpretativismo",
+                    "En el realismo crítico"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Positivism",
+                "es-MX": "En el positivismo"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "Quantitative research comes from positivism, which assumes reality can be objectively measured through observation and statistics. The researcher seeks neutrality and replicable results."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "La investigación cuantitativa proviene del positivismo, que considera que la realidad puede medirse objetivamente mediante observación y estadísticas. El investigador busca neutralidad y resultados replicables."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Investigación cualitativa",
+            "Question Text": {
+                "en-US": [
+                    "What is a key characteristic of qualitative research compared to quantitative?"
+                ],
+                "es-MX": [
+                    "¿Cuál es una característica clave de la investigación cualitativa en contraste con la cuantitativa?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Confirms hypotheses",
+                    "Uses large samples",
+                    "Is inductive",
+                    "Uses numerical data"
+                ],
+                "es-MX": [
+                    "Confirma hipótesis",
+                    "Utiliza muestras grandes",
+                    "Es inductiva",
+                    "Utiliza datos numéricos"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Is inductive",
+                "es-MX": "Es inductiva"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "Qualitative research builds knowledge from observation to theory (induction). Instead of testing hypotheses, it discovers patterns, meanings and interpretations from participant experiences."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "La investigación cualitativa construye conocimiento desde la observación hacia la teoría (inducción). No prueba hipótesis previamente, sino que descubre patrones, significados e interpretaciones desde la experiencia de los participantes."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Investigación cuantitativa",
+            "Question Text": {
+                "en-US": [
+                    "What type of information does quantitative methodology provide?"
+                ],
+                "es-MX": [
+                    "¿Qué tipo de información nos proporciona la metodología cuantitativa?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Information about unconscious motivations",
+                    "Information about rational and conscious motivations",
+                    "Situational context information",
+                    "Personal experiences of the user"
+                ],
+                "es-MX": [
+                    "Información sobre las motivaciones inconscientes e irracionales del usuario",
+                    "Información sobre los aspectos racionales y conscientes de las motivaciones del usuario",
+                    "Información sobre el contexto situacional del usuario",
+                    "Información sobre las experiencias personales del usuario"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Information about rational and conscious motivations",
+                "es-MX": "Información sobre los aspectos racionales y conscientes de las motivaciones del usuario"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "Quantitative research captures conscious and rational responses that users can report numerically. It measures preferences, frequency and declared choices, but does not deeply explain emotional meaning or subconscious reasons."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "La investigación cuantitativa captura respuestas conscientes y racionales que el usuario puede declarar numéricamente. Mide preferencias, frecuencia y decisiones reportadas, pero no explica a profundidad significados emocionales ni razones subconscientes."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Investigación cualitativa",
+            "Question Text": {
+                "en-US": [
+                    "What is the natural domain of qualitative research?"
+                ],
+                "es-MX": [
+                    "¿Cuál es el ámbito natural de la investigación cualitativa?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Expressed needs",
+                    "Rational motivations",
+                    "Unconscious and irrational motivations",
+                    "Quantified variables"
+                ],
+                "es-MX": [
+                    "Las necesidades expresas",
+                    "Las motivaciones racionales",
+                    "Las motivaciones inconscientes e irracionales",
+                    "Las variables cuantificadas"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Unconscious and irrational motivations",
+                "es-MX": "Las motivaciones inconscientes e irracionales"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "Qualitative research explores meanings, emotions and context. Through interviews and observation it uncovers motivations users cannot easily quantify or even consciously explain."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "La investigación cualitativa explora significados, emociones y contexto. Mediante entrevistas y observación descubre motivaciones que el usuario no puede cuantificar ni explicar conscientemente."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Caso de estudio",
+            "Question Text": {
+                "en-US": [
+                    "In the New Coke case study, what aspect was not adequately considered?"
+                ],
+                "es-MX": [
+                    "En el ejemplo del estudio de caso de la nueva Coca-Cola, ¿qué aspecto no se tuvo en cuenta adecuadamente?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Production cost",
+                    "Flavor preference",
+                    "Emotional connection with the brand",
+                    "Market distribution"
+                ],
+                "es-MX": [
+                    "El costo de producción del nuevo producto",
+                    "Las preferencias de sabor de los consumidores",
+                    "El vínculo emocional de los consumidores con la marca",
+                    "La distribución del producto en el mercado"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Emotional connection with the brand",
+                "es-MX": "El vínculo emocional de los consumidores con la marca"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "Coca-Cola relied on quantitative taste tests which showed people preferred the new flavor. However, they ignored the symbolic and emotional attachment users had with the original product. The failure demonstrated that numbers cannot replace emotional meaning."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "Coca-Cola se basó en pruebas cuantitativas de sabor donde los usuarios preferían la nueva fórmula. Sin embargo ignoró el valor simbólico y emocional de la marca. El fracaso demostró que los datos numéricos no sustituyen el significado emocional del producto."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Autores cualitativos",
+            "Question Text": {
+                "en-US": [
+                    "What is qualitative research according to Taylor and Bogdan (1984)?"
+                ],
+                "es-MX": [
+                    "¿Qué es la investigación cualitativa según Taylor y Bogdan (1984)?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Research producing numerical data",
+                    "Research producing descriptive data: people's words and observable behavior",
+                    "Research based on variable manipulation",
+                    "Laboratory experimentation research"
+                ],
+                "es-MX": [
+                    "Investigación que produce datos numéricos",
+                    "Investigación que produce datos descriptivos: las palabras de las personas y la conducta observable",
+                    "Investigación basada en manipulación de variables",
+                    "Investigación experimental de laboratorio"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Research producing descriptive data: people's words and observable behavior",
+                "es-MX": "Investigación que produce datos descriptivos: las palabras de las personas y la conducta observable"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "Taylor and Bogdan define qualitative research as the study of social reality through language, interaction and behavior. Instead of numbers, it uses meanings, discourse and context to understand human experience."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "Taylor y Bogdan definen la investigación cualitativa como el estudio de la realidad social mediante lenguaje, interacción y conducta observable. En lugar de números utiliza significados, discurso y contexto para comprender la experiencia humana."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Tipos de datos cualitativos",
+            "Question Text": {
+                "en-US": [
+                    "What types of qualitative data does Uwe Flick identify?"
+                ],
+                "es-MX": [
+                    "¿Qué tipo de datos cualitativos identifica Uwe Flick?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Statistical and descriptive data",
+                    "Numerical and observational data",
+                    "Verbal and visual data",
+                    "Experimental and theoretical data"
+                ],
+                "es-MX": [
+                    "Datos estadísticos y descriptivos",
+                    "Datos numéricos y de observación",
+                    "Datos verbales y visuales",
+                    "Datos experimentales y teóricos"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Verbal and visual data",
+                "es-MX": "Datos verbales y visuales"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "Uwe Flick explains qualitative research works with verbal data (interviews, conversations) and visual data (images, behavior, recordings). Meaning emerges from interpretation rather than measurement."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "Uwe Flick explica que la investigación cualitativa trabaja con datos verbales (entrevistas, discursos) y visuales (imágenes, conducta, grabaciones). El significado surge de la interpretación y no de la medición."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Características cualitativas",
+            "Question Text": {
+                "en-US": [
+                    "Which is an essential characteristic of qualitative research?"
+                ],
+                "es-MX": [
+                    "¿Cuál es una característica esencial de la investigación cualitativa?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "It is statistical",
+                    "It is deductive",
+                    "It is naturalistic and studies reality in context",
+                    "It is purely experimental"
+                ],
+                "es-MX": [
+                    "Es estadística",
+                    "Es deductiva",
+                    "Es naturalista y analiza la realidad en su contexto",
+                    "Es exclusivamente experimental"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "It is naturalistic and studies reality in context",
+                "es-MX": "Es naturalista y analiza la realidad en su contexto"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "Qualitative research studies phenomena in real environments instead of controlled labs. The goal is understanding meaning in context rather than isolating variables."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "La investigación cualitativa estudia fenómenos en entornos reales y no en laboratorio. Su objetivo es comprender significados en contexto en lugar de aislar variables."
+                    }
+                ]
+            }
+        },
+        {
+          "Category": "Investigación cualitativa",
+          "Question Text": {
+            "en-US": [
+              "Which challenge does qualitative research help overcome in HCD?"
+            ],
+            "es-MX": [
+              "¿Cuál es uno de los desafíos que la investigación cualitativa ayuda a superar en el DCU?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Measuring exact number of users",
+              "Aligning brand expectations with user perceptions",
+              "Calculating product profitability",
+              "Determining sales volume"
+            ],
+            "es-MX": [
+              "Medir el número exacto de usuarios",
+              "Alinear expectativas de las marcas con percepciones del usuario",
+              "Calcular la rentabilidad de un producto",
+              "Determinar la cantidad de ventas"
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Aligning brand expectations with user perceptions",
+            "es-MX": "Alinear expectativas de las marcas con percepciones del usuario"
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "text",
+                "content": "Human-Centered Design often fails when organizations assume users think like them. Qualitative research reveals the real mental models, emotions and interpretations of users, allowing alignment between what designers intend and what users actually experience."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "text",
+                "content": "El Diseño Centrado en el Usuario falla cuando la organización supone que el usuario piensa igual que el diseñador. La investigación cualitativa revela modelos mentales reales, emociones e interpretaciones del usuario, permitiendo alinear lo que la marca cree con lo que el usuario percibe."
+              }
+            ]
+          }
+        },
+        {
+          "Category": "Técnicas cualitativas",
+          "Question Text": {
+            "en-US": [
+              "Which technique is used to detect inconsistencies between what users say and what they do?"
+            ],
+            "es-MX": [
+              "¿Qué técnica se usa en investigación cualitativa para descubrir inconsistencias entre lo que el usuario dice y hace?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Structured surveys",
+              "Statistical analysis",
+              "Direct observation",
+              "Phone interviews"
+            ],
+            "es-MX": [
+              "Encuestas estructuradas",
+              "Análisis estadístico",
+              "Observación directa",
+              "Entrevistas telefónicas"
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Direct observation",
+            "es-MX": "Observación directa"
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "text",
+                "content": "Users frequently rationalize behavior after acting. Observation reveals real behavior instead of declared behavior, which is why ethnography and contextual inquiry are core qualitative methods."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "text",
+                "content": "Las personas suelen justificar sus acciones después de realizarlas. La observación muestra el comportamiento real y no el declarado, por eso la etnografía y la indagación contextual son métodos fundamentales de investigación cualitativa."
+              }
+            ]
+          }
+        },
+        {
+          "Category": "Innovación y diseño",
+          "Question Text": {
+            "en-US": [
+              "What is necessary to innovate in design according to qualitative research?"
+            ],
+            "es-MX": [
+              "¿Qué es necesario para innovar en diseño según la investigación cualitativa?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Detailed quantitative analysis",
+              "Deep understanding of unspoken user needs",
+              "Large data collection",
+              "Market trend evaluation"
+            ],
+            "es-MX": [
+              "Un análisis cuantitativo detallado",
+              "Conocimiento profundo de las necesidades no expresadas del usuario",
+              "La recopilación de grandes volúmenes de datos",
+              "La evaluación de tendencias de mercado"
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Deep understanding of unspoken user needs",
+            "es-MX": "Conocimiento profundo de las necesidades no expresadas del usuario"
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "text",
+                "content": "Innovation rarely comes from what users explicitly request. It comes from latent needs — problems users feel but cannot articulate. Qualitative research uncovers these through interpretation of behavior, context and emotion."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "text",
+                "content": "La innovación rara vez surge de lo que el usuario pide explícitamente. Surge de necesidades latentes: problemas que el usuario siente pero no puede expresar. La investigación cualitativa las descubre interpretando conducta, contexto y emoción."
+              }
+            ]
+          }
+        },
+        {
+          "Category": "Problemas en investigación",
+          "Question Text": {
+            "en-US": [
+              "What is one of the main obstacles researchers face when trying to obtain information?"
+            ],
+            "es-MX": [
+              "¿Cuál es uno de los principales obstáculos que enfrenta un investigador al intentar obtener información?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Lack of economic resources",
+              "Users predisposition to give information",
+              "Lack of technological tools",
+              "Competition between researchers"
+            ],
+            "es-MX": [
+              "La falta de recursos económicos",
+              "La predisposición de los usuarios a dar información",
+              "La ausencia de herramientas tecnológicas",
+              "La competencia entre investigadores"
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Users predisposition to give information",
+            "es-MX": "La predisposición de los usuarios a dar información"
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "text",
+                "content": "In research, the biggest difficulty is not technology or budget but human behavior. Participants may hide, modify or rationalize answers due to memory, social desirability or fear of judgment, affecting data reliability."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "text",
+                "content": "En investigación el mayor problema no es la tecnología ni el presupuesto sino el comportamiento humano. Los participantes pueden ocultar, modificar o racionalizar respuestas por memoria, presión social o temor al juicio, afectando la confiabilidad de los datos."
+              }
+            ]
+          }
+        },
+        {
+          "Category": "Técnicas de análisis",
+          "Question Text": {
+            "en-US": [
+              "Which technique attributed to Sakichi Toyoda is used to discover the root cause of a problem?"
+            ],
+            "es-MX": [
+              "¿Qué técnica es atribuida a Sakichi Toyoda y se utiliza para descubrir la raíz de un problema?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "SWOT analysis",
+              "Eisenhower matrix",
+              "Five whys",
+              "Pareto technique"
+            ],
+            "es-MX": [
+              "El análisis FODA",
+              "La matriz de Eisenhower",
+              "Los cinco porqués",
+              "La técnica de Pareto"
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Five whys",
+            "es-MX": "Los cinco porqués"
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "text",
+                "content": "The Five Whys method repeatedly asks why a problem occurs until reaching the underlying cause. In UX it helps distinguish symptoms from real usability problems."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "text",
+                "content": "El método de los cinco porqués consiste en preguntar repetidamente por qué ocurre un problema hasta llegar a la causa raíz. En UX permite distinguir síntomas de problemas reales de usabilidad."
+              }
+            ]
+          }
+        },
+        {
+          "Category": "Contexto de uso",
+          "Question Text": {
+            "en-US": [
+              "Why is it important to consider context in qualitative research?"
+            ],
+            "es-MX": [
+              "¿Por qué es importante considerar el contexto en la investigación cualitativa?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "It ensures anonymity",
+              "Responses vary depending on environment",
+              "It is easier to collect data",
+              "It reduces research cost"
+            ],
+            "es-MX": [
+              "Porque asegura el anonimato del usuario",
+              "Porque las respuestas pueden variar según el entorno",
+              "Porque es más fácil recolectar datos en diferentes contextos",
+              "Porque reduce el costo de la investigación"
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Responses vary depending on environment",
+            "es-MX": "Porque las respuestas pueden variar según el entorno"
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "text",
+                "content": "Human behavior changes depending on environment, social pressure and situation. A lab answer is not always equal to real-world behavior, which is why contextual research is essential in UX."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "text",
+                "content": "El comportamiento humano cambia según el entorno, la presión social y la situación. Una respuesta en laboratorio no siempre es igual al comportamiento real, por eso la investigación contextual es esencial en UX."
+              }
+            ]
+          }
+        },
+        {
+          "Category": "Validez en investigación",
+          "Question Text": {
+            "en-US": [
+              "What does validity mean in quantitative research?"
+            ],
+            "es-MX": [
+              "¿Qué significa la validez en la investigación cuantitativa?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Results can be interpreted",
+              "The instrument measures what it intends to measure",
+              "Participants agree with results",
+              "Data collection is fast"
+            ],
+            "es-MX": [
+              "Que los resultados puedan interpretarse",
+              "Que el instrumento mide lo que pretende medir",
+              "Que los participantes estén de acuerdo con los resultados",
+              "Que la recolección de datos sea rápida"
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "The instrument measures what it intends to measure",
+            "es-MX": "Que el instrumento mide lo que pretende medir"
+          },
+          "Explanation": {
+            "en-US": [
+              { "type": "text", "content": "Validity ensures the measurement actually represents the studied phenomenon. Without validity, numerical results are meaningless." }
+            ],
+            "es-MX": [
+              { "type": "text", "content": "La validez asegura que la medición represente realmente el fenómeno estudiado. Sin validez los números no tienen significado." }
+            ]
+          }
+        },
+        {
+          "Category": "Confiabilidad",
+          "Question Text": {
+            "en-US": [
+              "What is reliability in quantitative research?"
+            ],
+            "es-MX": [
+              "¿Qué es la confiabilidad en la investigación cuantitativa?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Participants understand questions",
+              "Results are consistent when repeated",
+              "Data is qualitative",
+              "Sample is small"
+            ],
+            "es-MX": [
+              "Que los participantes entiendan las preguntas",
+              "Que los resultados sean consistentes al repetirse",
+              "Que los datos sean cualitativos",
+              "Que la muestra sea pequeña"
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Results are consistent when repeated",
+            "es-MX": "Que los resultados sean consistentes al repetirse"
+          },
+          "Explanation": {
+            "en-US": [
+              { "type": "text", "content": "Reliability means a measurement produces the same results under the same conditions." }
+            ],
+            "es-MX": [
+              { "type": "text", "content": "La confiabilidad significa que una medición produce los mismos resultados bajo las mismas condiciones." }
+            ]
+          }
+        },
+        {
+          "Category": "Muestreo",
+          "Question Text": {
+            "en-US": [
+              "Which sampling type is characteristic of qualitative research?"
+            ],
+            "es-MX": [
+              "¿Qué tipo de muestreo es característico de la investigación cualitativa?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Random sampling",
+              "Probabilistic sampling",
+              "Intentional sampling",
+              "Statistical sampling"
+            ],
+            "es-MX": [
+              "Muestreo aleatorio",
+              "Muestreo probabilístico",
+              "Muestreo intencional",
+              "Muestreo estadístico"
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Intentional sampling",
+            "es-MX": "Muestreo intencional"
+          },
+          "Explanation": {
+            "en-US": [
+              { "type": "text", "content": "Qualitative research selects participants for their relevance, not representativeness." }
+            ],
+            "es-MX": [
+              { "type": "text", "content": "La investigación cualitativa selecciona participantes por relevancia y no por representatividad estadística." }
+            ]
+          }
+        },
+        {
+          "Category": "Saturación teórica",
+          "Question Text": {
+            "en-US": [
+              "When is data collection stopped in qualitative research?"
+            ],
+            "es-MX": [
+              "¿Cuándo se detiene la recolección de datos en investigación cualitativa?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "When sample size is large",
+              "When no new information appears",
+              "When statistics stabilize",
+              "When survey ends"
+            ],
+            "es-MX": [
+              "Cuando la muestra es grande",
+              "Cuando ya no aparece información nueva",
+              "Cuando las estadísticas se estabilizan",
+              "Cuando termina la encuesta"
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "When no new information appears",
+            "es-MX": "Cuando ya no aparece información nueva"
+          },
+          "Explanation": {
+            "en-US": [
+              { "type": "text", "content": "Qualitative studies stop at theoretical saturation: when interviews no longer produce new insights." }
+            ],
+            "es-MX": [
+              { "type": "text", "content": "Los estudios cualitativos terminan en la saturación teórica: cuando las entrevistas ya no generan ideas nuevas." }
+            ]
+          }
+        },
+        {
+          "Category": "Triangulación",
+          "Question Text": {
+            "en-US": [
+              "What is triangulation in research?"
+            ],
+            "es-MX": [
+              "¿Qué es la triangulación en investigación?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Using only surveys",
+              "Combining multiple methods to validate findings",
+              "Repeating the same experiment",
+              "Increasing sample size"
+            ],
+            "es-MX": [
+              "Usar solo encuestas",
+              "Combinar varios métodos para validar resultados",
+              "Repetir el mismo experimento",
+              "Aumentar el tamaño de muestra"
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Combining multiple methods to validate findings",
+            "es-MX": "Combinar varios métodos para validar resultados"
+          },
+          "Explanation": {
+            "en-US": [
+              { "type": "text", "content": "Triangulation increases research credibility by comparing results from different techniques." }
+            ],
+            "es-MX": [
+              { "type": "text", "content": "La triangulación aumenta la credibilidad al comparar resultados obtenidos por distintos métodos." }
+            ]
+          }
+        },
+        {
+          "Category": "Sesgos",
+          "Question Text": {
+            "en-US": [
+              "What is social desirability bias?"
+            ],
+            "es-MX": [
+              "¿Qué es el sesgo de deseabilidad social?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Users forget answers",
+              "Users respond what is socially acceptable",
+              "Users misunderstand questions",
+              "Researchers manipulate data"
+            ],
+            "es-MX": [
+              "El usuario olvida respuestas",
+              "El usuario responde lo socialmente aceptado",
+              "El usuario no entiende la pregunta",
+              "El investigador manipula datos"
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Users respond what is socially acceptable",
+            "es-MX": "El usuario responde lo socialmente aceptado"
+          },
+          "Explanation": {
+            "en-US": [
+              { "type": "text", "content": "Participants often modify answers to appear better or avoid judgment." }
+            ],
+            "es-MX": [
+              { "type": "text", "content": "Las personas suelen modificar respuestas para parecer mejor ante el investigador." }
+            ]
+          }
+        },
+        {
+          "Category": "Tipos de estudio",
+          "Question Text": {
+            "en-US": [
+              "Which type of study usually uses qualitative research methods?"
+            ],
+            "es-MX": [
+              "¿Qué tipo de estudio utiliza normalmente métodos de investigación cualitativa?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Explanatory",
+              "Experimental",
+              "Exploratory",
+              "Correlational"
+            ],
+            "es-MX": [
+              "Explicativo",
+              "Experimental",
+              "Exploratorio",
+              "Correlacional"
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Exploratory",
+            "es-MX": "Exploratorio"
+          },
+          "Explanation": {
+            "en-US": [
+              { "type": "text", "content": "Qualitative research is used when the phenomenon is not fully understood and researchers need to explore meanings, behaviors and context." }
+            ],
+            "es-MX": [
+              { "type": "text", "content": "La investigación cualitativa se utiliza cuando el fenómeno aún no se comprende bien y se necesita explorar significados, conductas y contexto." }
+            ]
+          }
+        },
+        {
+          "Category": "Datos declarados vs observados",
+          "Question Text": {
+            "en-US": [
+              "Why can surveys alone produce misleading UX results?"
+            ],
+            "es-MX": [
+              "¿Por qué las encuestas por sí solas pueden producir resultados engañosos en UX?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Users forget passwords",
+              "Users say what they think instead of what they do",
+              "Samples are always small",
+              "Statistics are incorrect"
+            ],
+            "es-MX": [
+              "Los usuarios olvidan contraseñas",
+              "Los usuarios dicen lo que creen en lugar de lo que hacen",
+              "Las muestras siempre son pequeñas",
+              "Las estadísticas son incorrectas"
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Users say what they think instead of what they do",
+            "es-MX": "Los usuarios dicen lo que creen en lugar de lo que hacen"
+          },
+          "Explanation": {
+            "en-US": [
+              { "type": "text", "content": "Self-reported behavior differs from real behavior. UX research must observe actions, not only opinions." }
+            ],
+            "es-MX": [
+              { "type": "text", "content": "El comportamiento declarado no coincide con el real. La investigación UX debe observar acciones, no solo opiniones." }
+            ]
+          }
+        },
+        {
+          "Category": "Métodos mixtos",
+          "Question Text": {
+            "en-US": [
+              "What is the purpose of combining qualitative and quantitative methods?"
+            ],
+            "es-MX": [
+              "¿Cuál es el propósito de combinar métodos cualitativos y cuantitativos?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Reduce research time",
+              "Validate and understand results simultaneously",
+              "Increase survey size",
+              "Avoid user interviews"
+            ],
+            "es-MX": [
+              "Reducir tiempo de investigación",
+              "Validar y comprender resultados simultáneamente",
+              "Aumentar tamaño de encuesta",
+              "Evitar entrevistas"
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Validate and understand results simultaneously",
+            "es-MX": "Validar y comprender resultados simultáneamente"
+          },
+          "Explanation": {
+            "en-US": [
+              { "type": "text", "content": "Quantitative research tells what happens; qualitative explains why it happens." }
+            ],
+            "es-MX": [
+              { "type": "text", "content": "La investigación cuantitativa dice qué ocurre y la cualitativa explica por qué ocurre." }
+            ]
+          }
+        },
+        {
+          "Category": "Errores comunes",
+          "Question Text": {
+            "en-US": [
+              "What happens if only quantitative data is used in product design?"
+            ],
+            "es-MX": [
+              "¿Qué ocurre si solo se usan datos cuantitativos en el diseño de un producto?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Design becomes faster",
+              "Product may ignore real user needs",
+              "Statistics become invalid",
+              "Sample size increases"
+            ],
+            "es-MX": [
+              "El diseño se vuelve más rápido",
+              "El producto puede ignorar necesidades reales del usuario",
+              "Las estadísticas se vuelven inválidas",
+              "Aumenta el tamaño de muestra"
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Product may ignore real user needs",
+            "es-MX": "El producto puede ignorar necesidades reales del usuario"
+          },
+          "Explanation": {
+            "en-US": [
+              { "type": "text", "content": "Numbers show trends but not meaning. Without qualitative insight design decisions may be technically correct but experientially wrong." }
+            ],
+            "es-MX": [
+              { "type": "text", "content": "Los números muestran tendencias pero no significados. Sin investigación cualitativa el diseño puede ser correcto técnicamente pero incorrecto para la experiencia del usuario." }
+            ]
+          }
+        },
+        {
+          "Category": "Investigación contextual",
+          "Question Text": {
+            "en-US": [
+              "Why is lab testing sometimes insufficient in UX research?"
+            ],
+            "es-MX": [
+              "¿Por qué las pruebas en laboratorio a veces son insuficientes en investigación UX?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Users become tired",
+              "Behavior changes outside real context",
+              "Devices are different",
+              "Researchers influence statistics"
+            ],
+            "es-MX": [
+              "Los usuarios se cansan",
+              "El comportamiento cambia fuera del contexto real",
+              "Los dispositivos son distintos",
+              "Los investigadores influyen en estadísticas"
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Behavior changes outside real context",
+            "es-MX": "El comportamiento cambia fuera del contexto real"
+          },
+          "Explanation": {
+            "en-US": [
+              { "type": "text", "content": "Real behavior depends on environment, distractions and real goals. Lab conditions alter user decisions." }
+            ],
+            "es-MX": [
+              { "type": "text", "content": "El comportamiento real depende del entorno, distracciones y objetivos reales. El laboratorio modifica la conducta del usuario." }
+            ]
+          }
+        },
+        {
+          "Category": "Interpretación",
+          "Question Text": {
+            "en-US": [
+              "Which research approach seeks understanding instead of prediction?"
+            ],
+            "es-MX": [
+              "¿Qué enfoque de investigación busca comprensión en lugar de predicción?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Quantitative",
+              "Experimental",
+              "Qualitative",
+              "Statistical"
+            ],
+            "es-MX": [
+              "Cuantitativo",
+              "Experimental",
+              "Cualitativo",
+              "Estadístico"
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Qualitative",
+            "es-MX": "Cualitativo"
+          },
+          "Explanation": {
+            "en-US": [
+              { "type": "text", "content": "Quantitative predicts behavior patterns. Qualitative interprets meaning and experience." }
+            ],
+            "es-MX": [
+              { "type": "text", "content": "La investigación cuantitativa predice patrones y la cualitativa interpreta significados y experiencias." }
+            ]
+          }
+        },
+        {
+          "Category": "Selección de método",
+          "Question Text": {
+            "en-US": [
+              "A team wants to understand why users abandon a registration form even though analytics show where they leave. What method should be used?"
+            ],
+            "es-MX": [
+              "Un equipo quiere entender por qué los usuarios abandonan un formulario de registro aunque las analíticas ya muestran dónde se salen. ¿Qué método debe utilizar?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Increase sample size",
+              "Usability testing with observation",
+              "A/B testing",
+              "Statistical segmentation"
+            ],
+            "es-MX": [
+              "Aumentar el tamaño de la muestra",
+              "Prueba de usabilidad con observación",
+              "Test A/B",
+              "Segmentación estadística"
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Usability testing with observation",
+            "es-MX": "Prueba de usabilidad con observación"
+          },
+          "Explanation": {
+            "en-US": [
+              { "type": "text", "content": "Analytics show where the problem occurs (quantitative), but not why. Observation reveals cognitive and interaction problems (qualitative)." }
+            ],
+            "es-MX": [
+              { "type": "text", "content": "La analítica indica dónde ocurre el problema (cuantitativo), pero no por qué. La observación revela problemas cognitivos y de interacción (cualitativo)." }
+            ]
+          }
+        },
+        {
+          "Category": "Datos declarados vs reales",
+          "Question Text": {
+            "en-US": [
+              "Users report that a feature is easy to use, but usability testing shows repeated errors. What does this demonstrate?"
+            ],
+            "es-MX": [
+              "Los usuarios dicen que una función es fácil de usar, pero en pruebas cometen errores repetidos. ¿Qué demuestra esto?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Sampling error",
+              "Difference between declared and observed behavior",
+              "Statistical variance",
+              "Measurement bias"
+            ],
+            "es-MX": [
+              "Error de muestreo",
+              "Diferencia entre comportamiento declarado y observado",
+              "Varianza estadística",
+              "Sesgo de medición"
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Difference between declared and observed behavior",
+            "es-MX": "Diferencia entre comportamiento declarado y observado"
+          },
+          "Explanation": {
+            "en-US": [
+              { "type": "text", "content": "Users often cannot accurately report their own behavior. UX relies on observing actions, not only opinions." }
+            ],
+            "es-MX": [
+              { "type": "text", "content": "Las personas no describen con precisión su comportamiento real. UX se basa en observar acciones, no solo opiniones." }
+            ]
+          }
+        },
+        {
+          "Category": "Tipo de investigación",
+          "Question Text": {
+            "en-US": [
+              "A team is designing a completely new product and needs to discover user needs that are not yet known. What type of research is appropriate?"
+            ],
+            "es-MX": [
+              "Un equipo diseña un producto completamente nuevo y necesita descubrir necesidades aún desconocidas del usuario. ¿Qué tipo de investigación corresponde?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Evaluative research",
+              "Generative research",
+              "A/B testing",
+              "Benchmarking"
+            ],
+            "es-MX": [
+              "Investigación evaluativa",
+              "Investigación generativa",
+              "Test A/B",
+              "Benchmarking"
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Generative research",
+            "es-MX": "Investigación generativa"
+          },
+          "Explanation": {
+            "en-US": [
+              { "type": "text", "content": "Generative research is used before designing to discover problems, needs and context." }
+            ],
+            "es-MX": [
+              { "type": "text", "content": "La investigación generativa se usa antes de diseñar para descubrir problemas, necesidades y contexto." }
+            ]
+          }
+        },
+        {
+          "Category": "Muestreo",
+          "Question Text": {
+            "en-US": [
+              "UX research selects participants because they represent specific user profiles rather than statistical population. What sampling is this?"
+            ],
+            "es-MX": [
+              "La investigación UX selecciona participantes porque representan perfiles específicos de usuario y no población estadística. ¿Qué tipo de muestreo es?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Random sampling",
+              "Probabilistic sampling",
+              "Intentional sampling",
+              "Mass sampling"
+            ],
+            "es-MX": [
+              "Muestreo aleatorio",
+              "Muestreo probabilístico",
+              "Muestreo intencional",
+              "Muestreo masivo"
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Intentional sampling",
+            "es-MX": "Muestreo intencional"
+          },
+          "Explanation": {
+            "en-US": [
+              { "type": "text", "content": "UX seeks relevant users, not statistical representativity." }
+            ],
+            "es-MX": [
+              { "type": "text", "content": "UX busca usuarios relevantes, no representatividad estadística." }
+            ]
+          }
+        },
+        {
+          "Category": "Saturación teórica",
+          "Question Text": {
+            "en-US": [
+              "After several interviews no new insights appear. What should the researcher conclude?"
+            ],
+            "es-MX": [
+              "Después de varias entrevistas ya no aparecen ideas nuevas. ¿Qué debe concluir el investigador?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Increase sample size indefinitely",
+              "Data saturation has been reached",
+              "The research failed",
+              "Switch to quantitative research"
+            ],
+            "es-MX": [
+              "Aumentar la muestra indefinidamente",
+              "Se alcanzó la saturación de datos",
+              "La investigación falló",
+              "Cambiar a investigación cuantitativa"
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Data saturation has been reached",
+            "es-MX": "Se alcanzó la saturación de datos"
+          },
+          "Explanation": {
+            "en-US": [
+              { "type": "text", "content": "Qualitative research ends when new interviews no longer produce new information." }
+            ],
+            "es-MX": [
+              { "type": "text", "content": "La investigación cualitativa termina cuando las entrevistas ya no aportan información nueva." }
+            ]
+          }
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    ]
+}
