@@ -1,0 +1,1328 @@
+{
+  "meta": {
+    "slug": "asume-dialogo",
+    "title": "ASUME · El diálogo",
+    "subject": "ASUME",
+    "unit": 1,
+    "classNo": 6,
+    "description": "Preguntas relacionadas con el tema del diálogo dentro del programa ASUME.",
+    "tags": [
+      "ASUME",
+      "Diálogo",
+      "Comunicación",
+      "Relaciones humanas"
+    ]
+  },
+  "Questions": [
+    {
+      "Category": "Concepto de diálogo",
+      "Question Text": {
+        "en-US": [
+          "What is dialogue?"
+        ],
+        "es-MX": [
+          "¿Qué es el diálogo?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "A discussion where one person imposes their opinion",
+          "A respectful exchange of ideas between two or more people",
+          "A speech given by a single person",
+          "Communication without listening"
+        ],
+        "es-MX": [
+          "Una discusión donde una persona impone su opinión",
+          "Un intercambio respetuoso de ideas entre dos o más personas",
+          "Un discurso de una sola persona",
+          "Comunicación sin escuchar"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "A respectful exchange of ideas between two or more people",
+        "es-MX": "Un intercambio respetuoso de ideas entre dos o más personas"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Dialogue is a form of communication where two or more people exchange ideas and opinions while listening to each other with respect."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El diálogo es una forma de comunicación en la que dos o más personas intercambian ideas y opiniones escuchándose con respeto."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Importancia del diálogo",
+      "Question Text": {
+        "en-US": [
+          "Why is dialogue important in human relationships?"
+        ],
+        "es-MX": [
+          "¿Por qué es importante el diálogo en las relaciones humanas?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Because it helps control others",
+          "Because it strengthens and preserves relationships",
+          "Because it avoids communication",
+          "Because it replaces friendship"
+        ],
+        "es-MX": [
+          "Porque ayuda a controlar a los demás",
+          "Porque fortalece y conserva las relaciones",
+          "Porque evita la comunicación",
+          "Porque reemplaza la amistad"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Because it strengthens and preserves relationships",
+        "es-MX": "Porque fortalece y conserva las relaciones"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Dialogue allows people to express ideas, listen to others and strengthen emotional bonds."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El diálogo permite expresar ideas, escuchar a los demás y fortalecer los vínculos afectivos."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Relaciones humanas",
+      "Question Text": {
+        "en-US": [
+          "According to the topic, what does dialogue help to preserve?"
+        ],
+        "es-MX": [
+          "Según el tema, ¿qué ayuda a conservar el diálogo?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Economic success",
+          "Affective relationships",
+          "Competition between people",
+          "Authority over others"
+        ],
+        "es-MX": [
+          "El éxito económico",
+          "Las relaciones afectivas",
+          "La competencia entre las personas",
+          "La autoridad sobre otros"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Affective relationships",
+        "es-MX": "Las relaciones afectivas"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Through dialogue people maintain understanding, trust and emotional connection."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Mediante el diálogo se mantiene la comprensión, la confianza y el vínculo afectivo entre las personas."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Objetivo del tema",
+      "Question Text": {
+        "en-US": [
+          "What is the objective of the topic about dialogue?"
+        ],
+        "es-MX": [
+          "¿Cuál es el objetivo del tema sobre el diálogo?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Teach people to argue",
+          "Convince participants to dedicate time to dialogue with close people",
+          "Avoid communication",
+          "Encourage competition"
+        ],
+        "es-MX": [
+          "Enseñar a discutir",
+          "Convencer a los participantes de dedicar tiempo al diálogo con personas cercanas",
+          "Evitar la comunicación",
+          "Fomentar la competencia"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Convince participants to dedicate time to dialogue with close people",
+        "es-MX": "Convencer a los participantes de dedicar tiempo al diálogo con personas cercanas"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The purpose of the topic is to encourage people to take time to talk with family members, friends and loved ones."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El objetivo es motivar a las personas a dedicar tiempo para dialogar con familiares, amigos y personas cercanas."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Personas cercanas",
+      "Question Text": {
+        "en-US": [
+          "With whom should we dedicate time to dialogue according to the objective of the topic?"
+        ],
+        "es-MX": [
+          "¿Con quiénes debemos dedicar tiempo para dialogar según el objetivo del tema?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Only with coworkers",
+          "With close people such as family and friends",
+          "Only with strangers",
+          "Only with authority figures"
+        ],
+        "es-MX": [
+          "Solo con compañeros de trabajo",
+          "Con personas cercanas como familia y amigos",
+          "Solo con desconocidos",
+          "Solo con figuras de autoridad"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "With close people such as family and friends",
+        "es-MX": "Con personas cercanas como familia y amigos"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Dialogue is especially important with the people closest to us because it strengthens trust and understanding."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El diálogo es especialmente importante con las personas cercanas porque fortalece la confianza y la comprensión."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Concepto de diálogo",
+      "Question Text": {
+        "en-US": [
+          "What is dialogue?"
+        ],
+        "es-MX": [
+          "¿Qué es el diálogo?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "A respectful exchange of ideas between people",
+          "A way to impose opinions",
+          "A conversation where only one person speaks",
+          "A discussion without listening"
+        ],
+        "es-MX": [
+          "Un intercambio respetuoso de ideas entre personas",
+          "Una forma de imponer opiniones",
+          "Una conversación donde solo una persona habla",
+          "Una discusión sin escuchar"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "A respectful exchange of ideas between people",
+        "es-MX": "Un intercambio respetuoso de ideas entre personas"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Dialogue is a respectful communication process where people exchange ideas and listen to each other."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El diálogo es un proceso de comunicación respetuoso donde las personas intercambian ideas y se escuchan mutuamente."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Importancia del diálogo",
+      "Question Text": {
+        "en-US": [
+          "Why is dialogue important?"
+        ],
+        "es-MX": [
+          "¿Por qué es importante el diálogo?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Because it strengthens understanding between people",
+          "Because it allows people to avoid communication",
+          "Because it creates more conflicts",
+          "Because it replaces relationships"
+        ],
+        "es-MX": [
+          "Porque fortalece la comprensión entre las personas",
+          "Porque permite evitar la comunicación",
+          "Porque crea más conflictos",
+          "Porque reemplaza las relaciones"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Because it strengthens understanding between people",
+        "es-MX": "Porque fortalece la comprensión entre las personas"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Dialogue helps people understand each other, build trust and maintain healthy relationships."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El diálogo ayuda a las personas a comprenderse, generar confianza y mantener relaciones sanas."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Comunicación en el diálogo",
+      "Question Text": {
+        "en-US": [
+          "What should we communicate to achieve unity with others?"
+        ],
+        "es-MX": [
+          "¿Qué debemos comunicar para lograr una unidad con los demás?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Only our opinions",
+          "What we think, feel and what happens to us",
+          "Only our problems",
+          "Only what others want to hear"
+        ],
+        "es-MX": [
+          "Solo nuestras opiniones",
+          "Lo que pensamos, lo que sentimos y lo que nos pasa",
+          "Solo nuestros problemas",
+          "Solo lo que otros quieren escuchar"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "What we think, feel and what happens to us",
+        "es-MX": "Lo que pensamos, lo que sentimos y lo que nos pasa"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Unity between people grows when we communicate honestly what we think, what we feel and what happens in our lives."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La unidad entre las personas se fortalece cuando comunicamos con sinceridad lo que pensamos, sentimos y lo que nos ocurre."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Unidad entre personas",
+      "Question Text": {
+        "en-US": [
+          "What helps us achieve unity with the people around us?"
+        ],
+        "es-MX": [
+          "¿Qué nos ayuda a lograr unidad con las personas que nos rodean?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Avoiding communication",
+          "Dialogue and communication",
+          "Competition",
+          "Imposing ideas"
+        ],
+        "es-MX": [
+          "Evitar la comunicación",
+          "El diálogo y la comunicación",
+          "La competencia",
+          "Imponer ideas"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Dialogue and communication",
+        "es-MX": "El diálogo y la comunicación"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Dialogue allows people to understand each other and strengthens unity between them."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El diálogo permite que las personas se comprendan y fortalece la unidad entre ellas."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Conocer a los demás",
+      "Question Text": {
+        "en-US": [
+          "How can we truly get to know other people?"
+        ],
+        "es-MX": [
+          "¿Cómo podemos conocer realmente a las demás personas?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "By observing them from afar",
+          "By talking and dialoguing with them",
+          "By judging them",
+          "By avoiding communication"
+        ],
+        "es-MX": [
+          "Observándolas de lejos",
+          "Dialogando y platicando con ellas",
+          "Juzgándolas",
+          "Evitando la comunicación"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "By talking and dialoguing with them",
+        "es-MX": "Dialogando y platicando con ellas"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Dialogue is the best way to understand others because it allows us to know their thoughts and feelings."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El diálogo permite conocer a las personas porque nos ayuda a entender sus pensamientos y sentimientos."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Relaciones humanas",
+      "Question Text": {
+        "en-US": [
+          "What happens as we get to know others through dialogue?"
+        ],
+        "es-MX": [
+          "¿Qué ocurre cuando vamos conociendo a los demás mediante el diálogo?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "We begin to appreciate and love them more",
+          "We avoid them",
+          "We distrust them",
+          "We compete with them"
+        ],
+        "es-MX": [
+          "Comenzamos a apreciarlos y amarlos más",
+          "Los evitamos",
+          "Desconfiamos de ellos",
+          "Competimos con ellos"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "We begin to appreciate and love them more",
+        "es-MX": "Comenzamos a apreciarlos y amarlos más"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "As people understand each other better through dialogue, relationships become stronger and more meaningful."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Al conocernos mejor mediante el diálogo, las relaciones se fortalecen y surge un mayor aprecio entre las personas."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Conocer a los demás",
+      "Question Text": {
+        "en-US": [
+          "What happens when we know people better?"
+        ],
+        "es-MX": [
+          "¿Qué sucede cuando conocemos mejor a las personas?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "We understand them better",
+          "We avoid them",
+          "We criticize them more",
+          "We stop communicating"
+        ],
+        "es-MX": [
+          "Las entendemos mejor",
+          "Las evitamos",
+          "Las criticamos más",
+          "Dejamos de comunicarnos"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "We understand them better",
+        "es-MX": "Las entendemos mejor"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Knowing people better helps us understand their feelings, ideas and way of thinking."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Cuando conocemos mejor a las personas podemos comprender mejor sus sentimientos y su manera de pensar."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Comprensión de las personas",
+      "Question Text": {
+        "en-US": [
+          "Through dialogue, what can we gradually discover about others?"
+        ],
+        "es-MX": [
+          "Mediante el diálogo, ¿qué podemos descubrir poco a poco de los demás?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Their fears, feelings, plans and qualities",
+          "Their secrets only",
+          "Their mistakes only",
+          "Their weaknesses only"
+        ],
+        "es-MX": [
+          "Sus sentimientos, gustos, planes y cualidades",
+          "Solo sus secretos",
+          "Solo sus errores",
+          "Solo sus debilidades"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Their fears, feelings, plans and qualities",
+        "es-MX": "Sus sentimientos, gustos, planes y cualidades"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Dialogue allows us to know the inner world of others, including their emotions, interests and aspirations."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El diálogo permite conocer el mundo interior de las personas, sus sentimientos, gustos, planes y cualidades."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Objetivo del diálogo",
+      "Question Text": {
+        "en-US": [
+          "What is NOT the objective of dialogue?"
+        ],
+        "es-MX": [
+          "¿Qué NO es el objetivo del diálogo?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "To understand others better",
+          "To improve knowledge of the other person",
+          "To force the other person to change",
+          "To strengthen relationships"
+        ],
+        "es-MX": [
+          "Comprender mejor a los demás",
+          "Conocer mejor al compañero",
+          "Intentar que el otro cambie",
+          "Fortalecer la relación"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To force the other person to change",
+        "es-MX": "Intentar que el otro cambie"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The purpose of dialogue is not to force others to change but to understand them better."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El objetivo del diálogo no es cambiar al otro, sino comprenderlo mejor."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Propósito del diálogo",
+      "Question Text": {
+        "en-US": [
+          "What is the real objective of dialogue?"
+        ],
+        "es-MX": [
+          "¿Cuál es el verdadero objetivo del diálogo?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "To win arguments",
+          "To better understand the other person",
+          "To impose opinions",
+          "To avoid differences"
+        ],
+        "es-MX": [
+          "Ganar discusiones",
+          "Comprender mejor al otro",
+          "Imponer opiniones",
+          "Evitar diferencias"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To better understand the other person",
+        "es-MX": "Comprender mejor al otro"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Dialogue helps people know each other better and strengthens relationships through understanding."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El diálogo permite conocer mejor a las personas y fortalecer la relación mediante la comprensión."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Obstáculos del diálogo",
+      "Question Text": {
+        "en-US": [
+          "What is a major obstacle to dialogue?"
+        ],
+        "es-MX": [
+          "¿Cuál es un gran obstáculo para el diálogo?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Humility",
+          "Pride",
+          "Respect",
+          "Listening"
+        ],
+        "es-MX": [
+          "La humildad",
+          "El orgullo",
+          "El respeto",
+          "Escuchar"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Pride",
+        "es-MX": "El orgullo"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Pride prevents people from listening and accepting other viewpoints, which makes dialogue difficult."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El orgullo impide escuchar y aceptar otros puntos de vista, dificultando así el diálogo."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Efectos del orgullo",
+      "Question Text": {
+        "en-US": [
+          "Why does pride make dialogue difficult?"
+        ],
+        "es-MX": [
+          "¿Por qué el orgullo dificulta el diálogo?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Because it encourages listening",
+          "Because it blocks the exchange of ideas",
+          "Because it improves communication",
+          "Because it promotes understanding"
+        ],
+        "es-MX": [
+          "Porque fomenta escuchar",
+          "Porque entorpece el intercambio de ideas",
+          "Porque mejora la comunicación",
+          "Porque promueve la comprensión"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Because it blocks the exchange of ideas",
+        "es-MX": "Porque entorpece el intercambio de ideas"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "When a person acts with pride, they tend to reject other opinions and stop the flow of communication."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Cuando una persona actúa con orgullo suele rechazar otras opiniones y se interrumpe el intercambio de ideas."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Actitudes para el diálogo",
+      "Question Text": {
+        "en-US": [
+          "What attitude helps improve dialogue between people?"
+        ],
+        "es-MX": [
+          "¿Qué actitud ayuda a mejorar el diálogo entre las personas?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Pride",
+          "Humility and willingness to listen",
+          "Indifference",
+          "Competition"
+        ],
+        "es-MX": [
+          "El orgullo",
+          "La humildad y disposición para escuchar",
+          "La indiferencia",
+          "La competencia"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Humility and willingness to listen",
+        "es-MX": "La humildad y disposición para escuchar"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Dialogue improves when people listen to each other with humility and openness."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El diálogo mejora cuando las personas escuchan con humildad y apertura."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Actitudes para dialogar",
+      "Question Text": {
+        "en-US": [
+          "What should we do to prevent dialogue from turning into accusation?"
+        ],
+        "es-MX": [
+          "¿Qué debemos hacer para evitar que el diálogo se convierta en acusación?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Attack the other person",
+          "Listen and try to understand",
+          "Ignore the other person",
+          "Impose our opinion"
+        ],
+        "es-MX": [
+          "Atacar a la otra persona",
+          "Escuchar e intentar comprender",
+          "Ignorar al otro",
+          "Imponer nuestra opinión"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Listen and try to understand",
+        "es-MX": "Escuchar e intentar comprender"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Dialogue improves when people try to understand each other instead of accusing or attacking."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El diálogo mejora cuando las personas buscan comprenderse en lugar de acusarse."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Comprensión de las personas",
+      "Question Text": {
+        "en-US": [
+          "How should we see other people when we dialogue with them?"
+        ],
+        "es-MX": [
+          "¿Cómo debemos ver a las demás personas cuando dialogamos con ellas?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Only by their mistakes",
+          "With their defects and qualities",
+          "Only by their problems",
+          "As enemies"
+        ],
+        "es-MX": [
+          "Solo por sus errores",
+          "Con sus defectos y cualidades",
+          "Solo por sus problemas",
+          "Como enemigos"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "With their defects and qualities",
+        "es-MX": "Con sus defectos y cualidades"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Understanding that everyone has both strengths and weaknesses helps dialogue become more respectful."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Reconocer que todos tenemos defectos y cualidades ayuda a que el diálogo sea más respetuoso."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Actitud para dialogar",
+      "Question Text": {
+        "en-US": [
+          "What attitude should we have when dialoguing with others?"
+        ],
+        "es-MX": [
+          "¿Qué actitud debemos tener al dialogar con los demás?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Desire to learn",
+          "Desire to win",
+          "Desire to criticize",
+          "Desire to dominate"
+        ],
+        "es-MX": [
+          "Deseo de aprender",
+          "Deseo de ganar",
+          "Deseo de criticar",
+          "Deseo de dominar"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Desire to learn",
+        "es-MX": "Deseo de aprender"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Dialogue becomes more meaningful when people are willing to learn from each other."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El diálogo se vuelve más enriquecedor cuando existe disposición para aprender del otro."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Reflexión personal",
+      "Question Text": {
+        "en-US": [
+          "What personal ability helps improve dialogue?"
+        ],
+        "es-MX": [
+          "¿Qué habilidad personal ayuda a mejorar el diálogo?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Self-criticism",
+          "Arrogance",
+          "Pride",
+          "Indifference"
+        ],
+        "es-MX": [
+          "La autocrítica",
+          "La arrogancia",
+          "El orgullo",
+          "La indiferencia"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Self-criticism",
+        "es-MX": "La autocrítica"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Self-criticism allows people to recognize their own mistakes and improve communication."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La autocrítica permite reconocer los propios errores y mejorar la comunicación."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Prudencia en el diálogo",
+      "Question Text": {
+        "en-US": [
+          "What does the phrase 'Not every truth should be said' mean in dialogue?"
+        ],
+        "es-MX": [
+          "¿Qué significa la frase 'No toda verdad es para ser dicha' en el diálogo?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "We should always say everything we think",
+          "We should be prudent about what we say",
+          "We should avoid dialogue",
+          "We should hide information"
+        ],
+        "es-MX": [
+          "Debemos decir siempre todo lo que pensamos",
+          "Debemos ser prudentes al hablar",
+          "Debemos evitar el diálogo",
+          "Debemos ocultar información"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "We should be prudent about what we say",
+        "es-MX": "Debemos ser prudentes al hablar"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Prudence in dialogue means knowing when and how to express ideas in a respectful way."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La prudencia en el diálogo consiste en saber cuándo y cómo expresar las ideas con respeto."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Respeto en la comunicación",
+      "Question Text": {
+        "en-US": [
+          "What should be respected during dialogue?"
+        ],
+        "es-MX": [
+          "¿Qué debe respetarse durante el diálogo?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Moments of silence",
+          "Only our opinion",
+          "Only our interests",
+          "Only our feelings"
+        ],
+        "es-MX": [
+          "Los momentos de silencio",
+          "Solo nuestra opinión",
+          "Solo nuestros intereses",
+          "Solo nuestros sentimientos"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Moments of silence",
+        "es-MX": "Los momentos de silencio"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Some situations require silence and respect rather than speaking impulsively."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "En algunas situaciones es necesario guardar silencio y actuar con respeto."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Comunicación prudente",
+      "Question Text": {
+        "en-US": [
+          "What must we learn to do in order to communicate wisely?"
+        ],
+        "es-MX": [
+          "¿Qué debemos aprender para comunicarnos con prudencia?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Know what to say and what to remain silent about",
+          "Say everything immediately",
+          "Avoid communication",
+          "Only listen without speaking"
+        ],
+        "es-MX": [
+          "Saber qué decir y qué callar",
+          "Decir todo inmediatamente",
+          "Evitar la comunicación",
+          "Solo escuchar sin hablar"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Know what to say and what to remain silent about",
+        "es-MX": "Saber qué decir y qué callar"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Effective dialogue requires wisdom to determine the right moment to speak or remain silent."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El diálogo requiere prudencia para saber cuándo hablar y cuándo guardar silencio."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Prudencia en el diálogo",
+      "Question Text": {
+        "en-US": [
+          "What are the three 'walls' we should consider before saying something?"
+        ],
+        "es-MX": [
+          "¿Cuáles son los tres 'muros' que debemos considerar antes de decir algo?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Is it true, is it good, and is it necessary",
+          "Is it fast, is it strong, and is it loud",
+          "Is it interesting, is it funny, and is it new",
+          "Is it personal, is it private, and is it secret"
+        ],
+        "es-MX": [
+          "¿Es verdad, es bueno y es necesario?",
+          "¿Es rápido, es fuerte y es ruidoso?",
+          "¿Es interesante, es divertido y es nuevo?",
+          "¿Es personal, es privado y es secreto?"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Is it true, is it good, and is it necessary",
+        "es-MX": "¿Es verdad, es bueno y es necesario?"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Before speaking, it is wise to reflect if what we are going to say is true, good and necessary."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Antes de hablar conviene preguntarse si lo que vamos a decir es verdad, es bueno y es necesario."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Filtros de Sócrates",
+      "Question Text": {
+        "en-US": [
+          "What is the purpose of Socrates' three filters in communication?"
+        ],
+        "es-MX": [
+          "¿Cuál es el propósito de los tres filtros de Sócrates en la comunicación?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "To judge people more easily",
+          "To ensure what we say is true, good and necessary",
+          "To speak more quickly",
+          "To avoid listening to others"
+        ],
+        "es-MX": [
+          "Juzgar a las personas más fácilmente",
+          "Asegurar que lo que decimos sea verdad, bueno y necesario",
+          "Hablar más rápido",
+          "Evitar escuchar a los demás"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To ensure what we say is true, good and necessary",
+        "es-MX": "Asegurar que lo que decimos sea verdad, bueno y necesario"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Socrates' three filters teach that before speaking we should consider if what we say is true, good and necessary."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los tres filtros de Sócrates enseñan que antes de hablar debemos preguntarnos si lo que diremos es verdad, es bueno y es necesario."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Momento adecuado para dialogar",
+      "Question Text": {
+        "en-US": [
+          "Why is it important to choose the right moment to dialogue?"
+        ],
+        "es-MX": [
+          "¿Por qué es importante escoger el momento adecuado para dialogar?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Because emotions can dominate the conversation",
+          "Because dialogue must always be fast",
+          "Because dialogue should always happen immediately",
+          "Because dialogue should avoid thinking"
+        ],
+        "es-MX": [
+          "Porque las emociones pueden dominar la conversación",
+          "Porque el diálogo debe ser rápido",
+          "Porque el diálogo siempre debe hacerse inmediatamente",
+          "Porque el diálogo debe evitar pensar"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Because emotions can dominate the conversation",
+        "es-MX": "Porque las emociones pueden dominar la conversación"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Dialogue works better when people are calm and able to think clearly."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El diálogo funciona mejor cuando las personas están tranquilas y pueden pensar con claridad."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Emociones y diálogo",
+      "Question Text": {
+        "en-US": [
+          "In which situation should we avoid starting a dialogue?"
+        ],
+        "es-MX": [
+          "¿En qué situación debemos evitar iniciar un diálogo?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "When we are calm",
+          "When we are dominated by anger or jealousy",
+          "When we want to understand someone",
+          "When we want to listen"
+        ],
+        "es-MX": [
+          "Cuando estamos tranquilos",
+          "Cuando estamos dominados por el coraje o los celos",
+          "Cuando queremos comprender a alguien",
+          "Cuando queremos escuchar"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "When we are dominated by anger or jealousy",
+        "es-MX": "Cuando estamos dominados por el coraje o los celos"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Strong emotions like anger or jealousy can make dialogue difficult and lead to conflict."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las emociones intensas como el coraje o los celos pueden dificultar el diálogo y generar conflictos."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Razón en el diálogo",
+      "Question Text": {
+        "en-US": [
+          "What should guide dialogue according to the topic?"
+        ],
+        "es-MX": [
+          "¿Qué debe guiar el diálogo según el tema?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Emotions",
+          "Reason",
+          "Anger",
+          "Pride"
+        ],
+        "es-MX": [
+          "Las emociones",
+          "La razón",
+          "El enojo",
+          "El orgullo"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Reason",
+        "es-MX": "La razón"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Dialogue should be guided by reason and reflection, not by uncontrolled emotions."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El diálogo debe estar guiado por la razón y la reflexión, no por emociones descontroladas."
+          }
+        ]
+      }
+    }
+    
+  ]
+}

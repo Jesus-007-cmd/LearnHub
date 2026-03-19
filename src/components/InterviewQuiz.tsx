@@ -109,7 +109,7 @@ export default function InterviewQuiz({
   const [showExplanation, setShowExplanation] = useState(false);
   const [showTranslation, setShowTranslation] = useState(false);
   const [readQuestionsAloud, setReadQuestionsAloud] = useState(false);
-  const [showLogo, setShowLogo] = useState(true);
+
 
   // Calificación
   const [correctCount, setCorrectCount] = useState(0);
@@ -546,8 +546,8 @@ export default function InterviewQuiz({
     activePanels === 1
       ? "md:grid-cols-1"
       : activePanels === 2
-      ? "md:grid-cols-2"
-      : "md:grid-cols-3";
+        ? "md:grid-cols-2"
+        : "md:grid-cols-3";
 
   const totalQuestions = questions.length || 1;
   const progressPct = Math.round(((currentQuestionIndex + 1) / totalQuestions) * 100);
@@ -691,13 +691,12 @@ export default function InterviewQuiz({
                   : questions[currentQuestionIndex].options_en
                 ).map((option, index) => (
                   <button
-                    key={`${index}-${uuidv4()}`}
+                  key={`${currentQuestionIndex}-${index}-${option}`}
                     onClick={() => handleAnswerSelect(option)}
                     className={`group w-full text-left rounded-xl px-4 py-3 ring-1 transition shadow-sm shadow-black/10
-                      ${
-                        selectedAnswer === option
-                          ? "bg-amber-600/90 ring-amber-300/30"
-                          : "bg-white/7.5 hover:bg-white/12 ring-white/10"
+                      ${selectedAnswer === option
+                        ? "bg-amber-600/90 ring-amber-300/30"
+                        : "bg-white/7.5 hover:bg-white/12 ring-white/10"
                       }`}
                   >
                     <div className="flex items-center justify-between">
@@ -801,11 +800,9 @@ export default function InterviewQuiz({
           {/* Toolbar acciones */}
           <div
             className="
-              mx-auto max-w-6xl mt-4
-              flex items-center gap-2
-              overflow-x-auto pb-2
-              [&>*]:whitespace-nowrap
-            "
+    mx-auto max-w-6xl mt-4
+    flex flex-wrap items-center gap-2
+  "
           >
             <ActionToggle
               active={readQuestionsAloud}
@@ -817,8 +814,8 @@ export default function InterviewQuiz({
                   ? "Lectura activada"
                   : "Reading ON"
                 : isES
-                ? "Lectura desactivada"
-                : "Reading OFF"}
+                  ? "Lectura desactivada"
+                  : "Reading OFF"}
             </ActionToggle>
 
             <ActionButton onClick={() => setShowExplanation((v) => !v)}>
@@ -828,8 +825,8 @@ export default function InterviewQuiz({
                   ? "Ocultar explicación"
                   : "Hide explanation"
                 : isES
-                ? "Explicación"
-                : "Explanation"}
+                  ? "Explicación"
+                  : "Explanation"}
             </ActionButton>
 
             <ActionButton onClick={() => setShowAnswer((v) => !v)}>
@@ -843,8 +840,8 @@ export default function InterviewQuiz({
                   ? "Ocultar respuesta"
                   : "Hide answer"
                 : isES
-                ? "Mostrar respuesta"
-                : "Show answer"}
+                  ? "Mostrar respuesta"
+                  : "Show answer"}
             </ActionButton>
 
             <ActionButton onClick={() => setShowTranslation((v) => !v)}>
@@ -854,8 +851,8 @@ export default function InterviewQuiz({
                   ? "Ocultar traducción"
                   : "Hide translation"
                 : isES
-                ? "Traducción al inglés"
-                : "Spanish translation"}
+                  ? "Traducción al inglés"
+                  : "Spanish translation"}
             </ActionButton>
 
             <ActionButton onClick={() => setResponseMode((m) => !m)}>
@@ -865,13 +862,10 @@ export default function InterviewQuiz({
                   ? "Modo respuesta ON"
                   : "Answer mode ON"
                 : isES
-                ? "Modo escuchar ON"
-                : "Listen mode ON"}
+                  ? "Modo escuchar ON"
+                  : "Listen mode ON"}
             </ActionButton>
 
-            <ActionButton onClick={() => setShowLogo((s) => !s)}>
-              {showLogo ? "Ocultar logo" : "Mostrar logo"}
-            </ActionButton>
 
             <ActionToggle
               active={quizMode === "advance-always"}
@@ -887,8 +881,8 @@ export default function InterviewQuiz({
                   ? "Modo: avanzar bien o mal"
                   : "Mode: advance always"
                 : isES
-                ? "Modo: repetir hasta acertar"
-                : "Mode: retry until correct"}
+                  ? "Modo: repetir hasta acertar"
+                  : "Mode: retry until correct"}
             </ActionToggle>
           </div>
         </>
@@ -928,31 +922,14 @@ export default function InterviewQuiz({
       )}
 
       {/* Logo + instrucciones */}
-      <div className="mx-auto max-w-6xl pt-4 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4">
-        {showLogo && (
-          <div className="hidden md:flex items-center justify-center w-full md:w-1/2 h-32 overflow-hidden rounded-xl transition-all duration-300">
-            <video
-              className="w-full h-full object-cover"
-              muted
-              loop
-              playsInline
-              autoPlay
-              preload="metadata"
-            >
-              <source src="/videologo.webm" type="video/webm" />
-              <source src="/videologo.mp4" type="video/mp4" />
-            </video>
-          </div>
-        )}
-
+      {/* Instrucciones */}
+      <div className="mx-auto max-w-6xl pt-4">
         <div
-          className={`
-            w-full
-            ${showLogo ? "md:w-1/2" : "md:w-2/3"}
-            mx-auto
-            rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-4 md:p-6
-            transition-all duration-300
-          `}
+          className="
+      w-full md:w-2/3 mx-auto
+      rounded-2xl bg-white/5 ring-1 ring-white/10 backdrop-blur p-4 md:p-6
+      transition-all duration-300
+    "
         >
           {showAnswer && !!questions.length && (
             <div className="mb-3 inline-flex items-center gap-2 text-emerald-300 text-xs md:text-sm">
@@ -975,9 +952,7 @@ export default function InterviewQuiz({
 
           <ul className="grid gap-1.5 md:gap-2 text-white/80 text-xs md:text-sm md:grid-cols-2">
             <li className="inline-flex items-center gap-2">
-              <kbd className="px-1.5 py-0.5 rounded bg-white/10 text-[11px]">
-                Enter
-              </kbd>
+              <kbd className="px-1.5 py-0.5 rounded bg-white/10 text-[11px]">Enter</kbd>
               {isES ? "Repetir pregunta" : "Repeat question"}
             </li>
             <li className="inline-flex items-center gap-2">
@@ -1028,9 +1003,8 @@ export default function InterviewQuiz({
             min={1}
             max={questions.length}
             className="w-full px-3 py-2 rounded-lg text-black"
-            placeholder={`${isES ? "Número entre" : "Number between"} 1 ${
-              isES ? "y" : "and"
-            } ${questions.length || 1}`}
+            placeholder={`${isES ? "Número entre" : "Number between"} 1 ${isES ? "y" : "and"
+              } ${questions.length || 1}`}
           />
           <button
             type="submit"
@@ -1059,11 +1033,10 @@ function QuizSelectCard({
       onClick={onClick}
       disabled={disabled}
       className={`group relative overflow-hidden rounded-2xl p-6 text-left shadow-xl shadow-black/20 ring-1 transition
-      ${
-        disabled
+      ${disabled
           ? "bg-white/5 ring-white/5 opacity-60 cursor-not-allowed"
           : "bg-white/5 ring-white/10 hover:ring-white/20"
-      }`}
+        }`}
     >
       <div className="absolute -top-16 -right-16 h-40 w-40 rounded-full bg-cyan-500/10 blur-2xl group-hover:bg-indigo-500/10 transition" />
       <h3 className="text-xl font-semibold">{title}</h3>
@@ -1104,11 +1077,10 @@ function ActionToggle({
   return (
     <button
       onClick={onClick}
-      className={`inline-flex items-center gap-2 rounded-xl px-3 py-2 ring-1 backdrop-blur transition text-xs md:text-sm ${
-        active
+      className={`inline-flex items-center gap-2 rounded-xl px-3 py-2 ring-1 backdrop-blur transition text-xs md:text-sm ${active
           ? "bg-emerald-600/90 hover:bg-emerald-600 ring-emerald-300/30"
           : "bg-white/8 hover:bg-white/12 ring-white/10"
-      }`}
+        }`}
     >
       {children}
     </button>
