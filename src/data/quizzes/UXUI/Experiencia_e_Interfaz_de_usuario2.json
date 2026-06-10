@@ -1,0 +1,945 @@
+{
+    "meta": {
+        "slug": "ux-ui-fundamentos",
+        "title": "Experiencia e Interfaz de Usuario (UX y UI)",
+        "subject": "UX Y UI",
+        "unit": 2,
+        "classNo": 2,
+        "description": "Preguntas relacionadas con los conceptos fundamentales de experiencia de usuario (UX), interfaz de usuario (UI) y usabilidad.",
+        "tags": [
+            "UX",
+            "UI",
+            "Experiencia de Usuario",
+            "Interfaz de Usuario",
+            "Usabilidad"
+        ]
+    },
+    "Questions": [
+     
+            {
+                "Category": "Percepción y Gestalt",
+                "Question Text": {
+                    "en-US": [
+                        "Which cognitive process allows us to acquire information from our environment through the senses and transform it into experiences?"
+                    ],
+                    "es-MX": [
+                        "¿Qué proceso cognitivo nos permite adquirir información del medio que nos rodea a través de los sentidos y transformarla en experiencias?"
+                    ]
+                },
+                "Options": {
+                    "en-US": [
+                        "Attention",
+                        "Perception",
+                        "Memory",
+                        "Learning"
+                    ],
+                    "es-MX": [
+                        "Atención",
+                        "Percepción",
+                        "Memoria",
+                        "Aprendizaje"
+                    ]
+                },
+                "Correct Answer": {
+                    "en-US": "Perception",
+                    "es-MX": "Percepción"
+                },
+                "Explanation": {
+                    "en-US": [
+                        {
+                            "type": "text",
+                            "content": "Perception is the cognitive process through which human beings interpret information received through the senses and give meaning to their environment."
+                        }
+                    ],
+                    "es-MX": [
+                        {
+                            "type": "text",
+                            "content": "La percepción es el proceso cognitivo que permite captar información del entorno mediante los sentidos y transformarla en experiencias con significado. Gracias a ella podemos interpretar estímulos visuales, auditivos y táctiles para comprender lo que ocurre a nuestro alrededor."
+                        },
+                        {
+                            "type": "ul",
+                            "items": [
+                                "Se obtiene información a través de los sentidos.",
+                                "Permite interpretar y comprender el entorno.",
+                                "Transforma estímulos en experiencias significativas.",
+                                "Es fundamental para la interacción entre personas y sistemas."
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "content": "En UX, comprender cómo perciben los usuarios la información ayuda a diseñar interfaces más intuitivas y fáciles de utilizar."
+                        }
+                    ]
+                }
+            },
+            {
+                "Category": "Percepción y Gestalt",
+                "Question Text": {
+                    "en-US": [
+                        "Which Gestalt principle states that objects located close to each other tend to be perceived as a group?"
+                    ],
+                    "es-MX": [
+                        "¿Qué principio de la Gestalt establece que los objetos cercanos entre sí tienden a percibirse como un grupo?"
+                    ]
+                },
+                "Options": {
+                    "en-US": [
+                        "Principle of Proximity",
+                        "Background Principle",
+                        "Figure Principle",
+                        "Continuity Principle"
+                    ],
+                    "es-MX": [
+                        "Principio de proximidad",
+                        "Principio de fondo",
+                        "Principio de figura",
+                        "Principio de continuidad"
+                    ]
+                },
+                "Correct Answer": {
+                    "en-US": "Principle of Proximity",
+                    "es-MX": "Principio de proximidad"
+                },
+                "Explanation": {
+                    "es-MX": [
+                        {
+                            "type": "text",
+                            "content": "El principio de proximidad de la Gestalt establece que tendemos a asociar y percibir como pertenecientes a un mismo grupo aquellos elementos que se encuentran físicamente más cercanos entre sí."
+                        },
+                        {
+                            "type": "ul",
+                            "items": [
+                                "Los elementos cercanos se perciben como relacionados.",
+                                "Ayuda a organizar visualmente la información.",
+                                "Reduce la complejidad de las interfaces.",
+                                "Es ampliamente utilizado en el diseño de páginas web y aplicaciones."
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "content": "Por ejemplo, los botones o campos de un formulario colocados próximos entre sí suelen interpretarse como pertenecientes a la misma sección."
+                        }
+                    ]
+                }
+            },
+            {
+                "Category": "Percepción y Gestalt",
+                "Question Text": {
+                    "en-US": [
+                        "Which Gestalt principle describes the ability to perceive incomplete shapes as complete figures using context?"
+                    ],
+                    "es-MX": [
+                        "¿Qué principio de la Gestalt describe la capacidad de percibir formas incompletas como figuras completas gracias al contexto?"
+                    ]
+                },
+                "Options": {
+                    "en-US": [
+                        "Figure Principle",
+                        "Perception Principle",
+                        "Closure Principle",
+                        "Continuity Principle"
+                    ],
+                    "es-MX": [
+                        "Principio de figura",
+                        "Principio de percepción",
+                        "Principio de cierre",
+                        "Principio de continuidad"
+                    ]
+                },
+                "Correct Answer": {
+                    "en-US": "Closure Principle",
+                    "es-MX": "Principio de cierre"
+                },
+                "Explanation": {
+                    "es-MX": [
+                        {
+                            "type": "text",
+                            "content": "El principio de cierre establece que las personas tienen la capacidad de completar mentalmente figuras incompletas para percibirlas como un todo coherente. El cerebro utiliza el contexto para llenar los espacios faltantes."
+                        },
+                        {
+                            "type": "ul",
+                            "items": [
+                                "Permite percibir figuras completas a partir de formas incompletas.",
+                                "El cerebro complementa automáticamente la información faltante.",
+                                "Facilita el reconocimiento de patrones.",
+                                "Es uno de los principios más importantes de la psicología Gestalt."
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "content": "Este principio se utiliza frecuentemente en logotipos, iconos e interfaces para simplificar elementos visuales sin perder significado."
+                        }
+                    ]
+                }
+            },
+            {
+              "Category": "Factores Cognitivos y UX",
+              "Question Text": {
+                "en-US": [
+                  "Which cognitive process consists of selecting what we focus on at each moment from the possibilities around us?"
+                ],
+                "es-MX": [
+                  "¿Qué proceso consiste en seleccionar en qué cosas nos concentramos en cada momento, de las posibilidades que nos rodean?"
+                ]
+              },
+              "Options": {
+                "en-US": [
+                  "Display",
+                  "Perception",
+                  "Attention",
+                  "Learning"
+                ],
+                "es-MX": [
+                  "Despliegue",
+                  "Percepción",
+                  "Atención",
+                  "Aprendizaje"
+                ]
+              },
+              "Correct Answer": {
+                "en-US": "Attention",
+                "es-MX": "Atención"
+              },
+              "Explanation": {
+                "es-MX": [
+                  {
+                    "type": "text",
+                    "content": "La atención es el proceso cognitivo mediante el cual las personas seleccionan en qué estímulos, objetos o información se concentran en cada momento. Gracias a ella podemos enfocarnos en aquello que resulta relevante para la tarea que estamos realizando y descartar información menos importante."
+                  },
+                  {
+                    "type": "ul",
+                    "items": [
+                      "Permite concentrarse en la información relevante.",
+                      "Ayuda a ignorar estímulos innecesarios o distractores.",
+                      "Influye directamente en la percepción y la memoria.",
+                      "Es fundamental para que las personas puedan interactuar eficazmente con una interfaz."
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "content": "Según los apuntes del tema, la atención se define como el proceso de seleccionar en qué cosas nos concentramos en cada momento, de las posibilidades que nos rodean. Además, se indica que en ella influyen tener un objetivo claro y que la información necesaria esté destacada."
+                  },
+                  {
+                    "type": "text",
+                    "content": "En diseño UX esto implica resaltar la información importante y evitar el exceso de elementos para facilitar que los usuarios centren su atención en lo verdaderamente relevante."
+                  },
+                  {
+                    "type": "text",
+                    "content": "Nota: en la prueba mostrada en clase aparece marcada la opción 'Memoria'. Sin embargo, dicha respuesta no coincide con la definición proporcionada en los apuntes oficiales del tema, donde la definición corresponde claramente al concepto de 'Atención'."
+                  }
+                ]
+              }
+            },
+            {
+              "Category": "Factores Cognitivos y UX",
+              "Question Text": {
+                "en-US": [
+                  "Which factor makes it easier for people to perform learned tasks or tasks based on previous experiences rather than undertaking new actions?"
+                ],
+                "es-MX": [
+                  "¿Con qué factor es más fácil para las personas realizar tareas aprendidas o basadas en experiencias previas que emprender nuevas acciones?"
+                ]
+              },
+              "Options": {
+                "en-US": [
+                  "Display",
+                  "Perception",
+                  "Memory",
+                  "Learning"
+                ],
+                "es-MX": [
+                  "Despliegue",
+                  "Percepción",
+                  "Memoria",
+                  "Aprendizaje"
+                ]
+              },
+              "Correct Answer": {
+                "en-US": "Learning",
+                "es-MX": "Aprendizaje"
+              },
+              "Explanation": {
+                "es-MX": [
+                  {
+                    "type": "text",
+                    "content": "El aprendizaje es el proceso mediante el cual las personas adquieren conocimientos y habilidades a partir de la experiencia. Gracias al aprendizaje, las tareas ya conocidas o practicadas anteriormente se realizan con mayor facilidad y requieren un menor esfuerzo cognitivo que aquellas que son completamente nuevas."
+                  },
+                  {
+                    "type": "ul",
+                    "items": [
+                      "Se basa en experiencias previas.",
+                      "Permite adquirir conocimientos y habilidades.",
+                      "Reduce el esfuerzo necesario para realizar tareas conocidas.",
+                      "Favorece la automatización de acciones repetidas.",
+                      "Influye en la manera en que los usuarios interactúan con las interfaces."
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "content": "En UX, aprovechar el aprendizaje previo de los usuarios permite diseñar interfaces más intuitivas, utilizando elementos y comportamientos que les resulten familiares y fáciles de comprender."
+                  },
+                  {
+                    "type": "text",
+                    "content": "Por ello, generalmente resulta más sencillo para una persona realizar tareas que ya ha aprendido o que se basan en experiencias anteriores que enfrentarse continuamente a nuevas formas de interacción."
+                  }
+                ]
+              }
+            },
+            {
+              "Category": "Factores Cognitivos y UX",
+              "Question Text": {
+                "en-US": [
+                  "How should icons, menus and controls be designed and located in user interfaces?"
+                ],
+                "es-MX": [
+                  "¿Cómo deben diseñarse y localizarse los iconos, menús y controles en las interfaces de usuario?"
+                ]
+              },
+              "Options": {
+                "en-US": [
+                  "Display",
+                  "Perception",
+                  "Attention and Memory",
+                  "Learning"
+                ],
+                "es-MX": [
+                  "Despliegue",
+                  "Percepción",
+                  "Atención y memoria",
+                  "Aprendizaje"
+                ]
+              },
+              "Correct Answer": {
+                "en-US": "Attention and Memory",
+                "es-MX": "Atención y memoria"
+              },
+              "Explanation": {
+                "es-MX": [
+                  {
+                    "type": "text",
+                    "content": "La memoria está estrechamente relacionada con la percepción y la atención. Una de las reglas fundamentales del diseño de interfaces es que resulta más fácil reconocer que recordar. Por ello, los iconos, menús y controles deben presentarse de forma coherente para facilitar su reconocimiento por parte de los usuarios."
+                  },
+                  {
+                    "type": "ul",
+                    "items": [
+                      "Los elementos deben mantenerse en posiciones consistentes.",
+                      "La coherencia facilita el reconocimiento y disminuye la carga de memoria.",
+                      "El usuario puede localizar más rápidamente la información.",
+                      "Se reducen errores y tiempos de aprendizaje.",
+                      "La atención se dirige con mayor facilidad hacia los elementos relevantes."
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "content": "Según los apuntes, cuando el usuario debe guardar o recuperar información es recomendable proporcionarle diversas formas de codificación, como colores, categorías, nombres, marcas de tiempo e iconos, con el objetivo de favorecer el reconocimiento posterior."
+                  },
+                  {
+                    "type": "text",
+                    "content": "En consecuencia, las interfaces deben diseñarse y organizarse de manera coherente, ya que esto aprovecha los procesos de atención y memoria del usuario, haciendo que la interacción sea más sencilla y eficiente."
+                  }
+                ]
+              }
+            },
+            {
+              "Category": "Búsqueda y Recuperación de Información",
+              "Question Text": {
+                "en-US": [
+                  "Which model is inspired by biological theories about the cost incurred by a predator in obtaining food compared to the benefit obtained?"
+                ],
+                "es-MX": [
+                  "¿Qué modelo está inspirado en la teoría biológica sobre el coste que le supone a un depredador conseguir su alimento frente a la ganancia obtenida?"
+                ]
+              },
+              "Options": {
+                "en-US": [
+                  "Information Foraging Model",
+                  "Berry Picking Model",
+                  "Mental Model",
+                  "Sequential Model"
+                ],
+                "es-MX": [
+                  "Modelo rastreo de información",
+                  "Modelo de recolección de frutos del bosque",
+                  "Modelo mental",
+                  "Modelo secuencial"
+                ]
+              },
+              "Correct Answer": {
+                "en-US": "Berry Picking Model",
+                "es-MX": "Modelo de recolección de frutos del bosque"
+              },
+              "Explanation": {
+                "es-MX": [
+                  {
+                    "type": "text",
+                    "content": "El modelo de recolección de frutos del bosque (Berry Picking) se inspira en el comportamiento observado en la naturaleza, donde un organismo evalúa constantemente el esfuerzo necesario para obtener alimento frente al beneficio que puede obtener. De forma análoga, las personas van recolectando información de distintas fuentes y modificando su búsqueda a medida que avanzan."
+                  },
+                  {
+                    "type": "ul",
+                    "items": [
+                      "La búsqueda se realiza de manera progresiva.",
+                      "La necesidad de información puede cambiar durante el proceso.",
+                      "Se consultan diversas fuentes de información.",
+                      "La estrategia de búsqueda evoluciona conforme se obtiene nueva información."
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "content": "Este modelo representa una búsqueda dinámica, donde los usuarios no obtienen toda la información de una sola vez, sino que la van recolectando gradualmente."
+                  }
+                ]
+              }
+            },
+            {
+              "Category": "Búsqueda y Recuperación de Información",
+              "Question Text": {
+                "en-US": [
+                  "Which model emphasizes that information search is not a linear process in which the user submits a query and compares the retrieved documents?"
+                ],
+                "es-MX": [
+                  "¿Qué modelo destaca que la búsqueda de información no es un proceso lineal en el que el usuario plantea una consulta y compara los documentos obtenidos?"
+                ]
+              },
+              "Options": {
+                "en-US": [
+                  "Information Foraging Model",
+                  "Berry Picking Model",
+                  "Mental Model",
+                  "Sequential Model"
+                ],
+                "es-MX": [
+                  "Modelo rastreo de información",
+                  "Modelo de recolección de frutos del bosque",
+                  "Modelo mental",
+                  "Modelo secuencial"
+                ]
+              },
+              "Correct Answer": {
+                "en-US": "Information Foraging Model",
+                "es-MX": "Modelo rastreo de información"
+              },
+              "Explanation": {
+                "es-MX": [
+                  {
+                    "type": "text",
+                    "content": "El modelo de rastreo de información (Information Foraging) establece que los usuarios siguen pistas o indicios de información y adaptan continuamente su estrategia de búsqueda. Por ello, la búsqueda no se considera un proceso estrictamente lineal."
+                  },
+                  {
+                    "type": "ul",
+                    "items": [
+                      "Los usuarios siguen rastros de información.",
+                      "La estrategia de búsqueda puede modificarse durante el proceso.",
+                      "La información encontrada influye en las siguientes decisiones.",
+                      "El comportamiento de búsqueda se asemeja al de un organismo que busca alimento de forma eficiente."
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "content": "Este modelo explica cómo las personas optimizan el tiempo y el esfuerzo invertidos para encontrar información relevante."
+                  }
+                ]
+              }
+            },
+            {
+              "Category": "Búsqueda y Recuperación de Información",
+              "Question Text": {
+                "en-US": [
+                  "Which process involves changing information needs according to what is being found and examined?"
+                ],
+                "es-MX": [
+                  "¿Qué proceso implica que la necesidad de información vaya cambiando en función de lo que se va encontrando y examinando?"
+                ]
+              },
+              "Options": {
+                "en-US": [
+                  "Selection",
+                  "Information Classification",
+                  "Information Retrieval",
+                  "Search"
+                ],
+                "es-MX": [
+                  "Selección",
+                  "Clasificación de información",
+                  "Recuperación de información",
+                  "Búsqueda"
+                ]
+              },
+              "Correct Answer": {
+                "en-US": "Search",
+                "es-MX": "Búsqueda"
+              },
+              "Explanation": {
+                "es-MX": [
+                  {
+                    "type": "text",
+                    "content": "La búsqueda de información es un proceso dinámico en el que las necesidades del usuario evolucionan conforme se examinan los resultados obtenidos. La nueva información puede modificar los objetivos iniciales y conducir a nuevas consultas."
+                  },
+                  {
+                    "type": "ul",
+                    "items": [
+                      "La necesidad de información no permanece fija.",
+                      "Los resultados obtenidos influyen en las siguientes búsquedas.",
+                      "La estrategia puede refinarse progresivamente.",
+                      "Es un proceso iterativo y adaptable."
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "content": "Por ello, la búsqueda de información se considera una actividad continua en la que el usuario aprende y redefine sus necesidades a medida que interactúa con las fuentes de información disponibles."
+                  }
+                ]
+              }
+            },
+            {
+              "Category": "Búsqueda y Recuperación de Información",
+              "Question Text": {
+                "en-US": [
+                  "Which model is inspired by biological theories about the cost incurred by a predator to obtain food compared to the benefit gained?"
+                ],
+                "es-MX": [
+                  "¿Qué modelo está inspirado en la teoría biológica sobre el coste que le supone a un depredador conseguir su alimento frente a la ganancia obtenida?"
+                ]
+              },
+              "Options": {
+                "en-US": [
+                  "Information Foraging Model",
+                  "Berry Picking Model",
+                  "Mental Model",
+                  "Sequential Model"
+                ],
+                "es-MX": [
+                  "Modelo rastreo de información",
+                  "Modelo de recolección de frutos del bosque",
+                  "Modelo mental",
+                  "Modelo secuencial"
+                ]
+              },
+              "Correct Answer": {
+                "en-US": "Information Foraging Model",
+                "es-MX": "Modelo rastreo de información"
+              },
+              "Explanation": {
+                "es-MX": [
+                  {
+                    "type": "text",
+                    "content": "El modelo de rastreo de información (Information Foraging) propuesto por Pirolli y Card se inspira en la teoría biológica del comportamiento de los depredadores al buscar alimento. De manera análoga, los usuarios buscan información evaluando continuamente el esfuerzo requerido y el beneficio esperado."
+                  },
+                  {
+                    "type": "ul",
+                    "items": [
+                      "Está basado en la teoría biológica del coste y beneficio.",
+                      "Los usuarios siguen pistas o indicios para localizar información.",
+                      "Las decisiones se modifican conforme se obtiene nueva información.",
+                      "El objetivo es maximizar la utilidad minimizando el esfuerzo."
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "content": "Según los apuntes, el usuario utiliza pistas para evaluar la relevancia de las fuentes y va cambiando sus decisiones durante la búsqueda."
+                  }
+                ]
+              }
+            },
+            {
+              "Category": "Búsqueda y Recuperación de Información",
+              "Question Text": {
+                "en-US": [
+                  "Which model states that information search is not a linear process in which the user submits a query and compares the retrieved documents?"
+                ],
+                "es-MX": [
+                  "¿Qué modelo destaca que la búsqueda de información no es un proceso lineal en el que el usuario plantea una consulta y compara los documentos obtenidos?"
+                ]
+              },
+              "Options": {
+                "en-US": [
+                  "Information Foraging Model",
+                  "Berry Picking Model",
+                  "Mental Model",
+                  "Sequential Model"
+                ],
+                "es-MX": [
+                  "Modelo rastreo de información",
+                  "Modelo de recolección de frutos del bosque",
+                  "Modelo mental",
+                  "Modelo secuencial"
+                ]
+              },
+              "Correct Answer": {
+                "en-US": "Berry Picking Model",
+                "es-MX": "Modelo de recolección de frutos del bosque"
+              },
+              "Explanation": {
+                "es-MX": [
+                  {
+                    "type": "text",
+                    "content": "El modelo Berrypicking o de recolección de frutos del bosque, propuesto por Bates, sostiene que la búsqueda de información no es un proceso lineal. Las necesidades del usuario evolucionan conforme explora y encuentra nueva información."
+                  },
+                  {
+                    "type": "ul",
+                    "items": [
+                      "La búsqueda es dinámica y no lineal.",
+                      "La consulta inicial puede cambiar durante el proceso.",
+                      "El usuario explora múltiples fuentes de información.",
+                      "Las necesidades de información evolucionan continuamente."
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "content": "Los apuntes indican explícitamente que este modelo incide en que la búsqueda de información no consiste simplemente en formular una consulta y comparar documentos, sino que es un proceso cambiante."
+                  }
+                ]
+              }
+            },
+            {
+              "Category": "Búsqueda y Recuperación de Información",
+              "Question Text": {
+                "en-US": [
+                  "Which process involves information needs changing according to what is found and examined?"
+                ],
+                "es-MX": [
+                  "¿Qué proceso implica que la necesidad de información vaya cambiando en función de lo que se va encontrando y examinando?"
+                ]
+              },
+              "Options": {
+                "en-US": [
+                  "Selection",
+                  "Information Classification",
+                  "Information Retrieval",
+                  "Search"
+                ],
+                "es-MX": [
+                  "Selección",
+                  "Clasificación de información",
+                  "Recuperación de información",
+                  "Búsqueda"
+                ]
+              },
+              "Correct Answer": {
+                "en-US": "Search",
+                "es-MX": "Búsqueda"
+              },
+              "Explanation": {
+                "es-MX": [
+                  {
+                    "type": "text",
+                    "content": "La búsqueda de información es un proceso dinámico en el que las necesidades del usuario pueden variar a medida que examina los resultados obtenidos y descubre nueva información."
+                  },
+                  {
+                    "type": "ul",
+                    "items": [
+                      "Las necesidades de información no permanecen constantes.",
+                      "La estrategia de búsqueda puede modificarse.",
+                      "El usuario aprende y refina sus consultas durante el proceso.",
+                      "La búsqueda es una actividad iterativa."
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "content": "Según el modelo Berrypicking de Bates, la necesidad de información va variando en función de lo que el usuario encuentra y examina durante la búsqueda."
+                  }
+                ]
+              }
+            },
+            {
+              "Category": "Aspectos Sociales en UX",
+              "Question Text": {
+                "en-US": [
+                  "What type of communication occurs when people interact and communicate at the same time, such as in a video call or chat?"
+                ],
+                "es-MX": [
+                  "¿Qué tipo de comunicación se produce cuando las personas interactúan y se comunican al mismo tiempo, por ejemplo, en una videollamada o en un chat?"
+                ]
+              },
+              "Options": {
+                "en-US": [
+                  "Synchronous communication",
+                  "Asynchronous communication",
+                  "Discrete communication",
+                  "Hybrid communication"
+                ],
+                "es-MX": [
+                  "Comunicación síncrona",
+                  "Comunicación asíncrona",
+                  "Comunicación discreta",
+                  "Comunicación híbrida"
+                ]
+              },
+              "Correct Answer": {
+                "en-US": "Synchronous communication",
+                "es-MX": "Comunicación síncrona"
+              },
+              "Explanation": {
+                "es-MX": [
+                  {
+                    "type": "text",
+                    "content": "La comunicación síncrona ocurre cuando las personas interactúan y se comunican al mismo tiempo. En este tipo de comunicación existe coincidencia temporal entre los participantes, por lo que la respuesta puede darse de forma inmediata."
+                  },
+                  {
+                    "type": "ul",
+                    "items": [
+                      "Sucede en tiempo real.",
+                      "Los participantes están conectados al mismo tiempo.",
+                      "Permite retroalimentación inmediata.",
+                      "Ejemplos claros son una videollamada o un chat en vivo."
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "content": "En diseño UX, identificar si una comunicación es síncrona ayuda a diseñar interfaces que faciliten turnos de palabra, mensajes instantáneos, estados de conexión y respuestas rápidas entre usuarios."
+                  }
+                ]
+              }
+            },
+            {
+              "Category": "Aspectos Sociales en UX",
+              "Question Text": {
+                "en-US": [
+                  "What type of communication occurs at different times, such as when someone sends an email and another person reads it the next day?"
+                ],
+                "es-MX": [
+                  "¿Qué tipo de comunicación se produce en tiempos distintos, por ejemplo, cuando una persona envía un correo electrónico a otra y esta lo lee al día siguiente?"
+                ]
+              },
+              "Options": {
+                "en-US": [
+                  "Synchronous communication",
+                  "Asynchronous communication",
+                  "Discrete communication",
+                  "Hybrid communication"
+                ],
+                "es-MX": [
+                  "Comunicación síncrona",
+                  "Comunicación asíncrona",
+                  "Comunicación discreta",
+                  "Comunicación híbrida"
+                ]
+              },
+              "Correct Answer": {
+                "en-US": "Asynchronous communication",
+                "es-MX": "Comunicación asíncrona"
+              },
+              "Explanation": {
+                "es-MX": [
+                  {
+                    "type": "text",
+                    "content": "La comunicación asíncrona se produce cuando las personas no interactúan al mismo tiempo. El mensaje se envía en un momento y puede ser leído o respondido posteriormente."
+                  },
+                  {
+                    "type": "ul",
+                    "items": [
+                      "No requiere que los participantes estén conectados simultáneamente.",
+                      "Permite responder después.",
+                      "Es común en correos electrónicos, foros o comentarios.",
+                      "Da más flexibilidad de tiempo al usuario."
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "content": "En UX, este tipo de comunicación requiere diseñar bien las notificaciones, el historial de mensajes, los estados de lectura y la organización de conversaciones para que el usuario pueda retomar el contexto fácilmente."
+                  }
+                ]
+              }
+            },
+            {
+              "Category": "Aspectos Sociales en UX",
+              "Question Text": {
+                "en-US": [
+                  "Which social aspect should be considered in user interface design?"
+                ],
+                "es-MX": [
+                  "¿Qué aspecto social debe tenerse en cuenta en el diseño de interfaces de usuario?"
+                ]
+              },
+              "Options": {
+                "en-US": [
+                  "Memory",
+                  "Perception",
+                  "Attention",
+                  "Trust"
+                ],
+                "es-MX": [
+                  "Memoria",
+                  "Percepción",
+                  "Atención",
+                  "Confianza"
+                ]
+              },
+              "Correct Answer": {
+                "en-US": "Trust",
+                "es-MX": "Confianza"
+              },
+              "Explanation": {
+                "es-MX": [
+                  {
+                    "type": "text",
+                    "content": "La confianza es un aspecto social importante en el diseño de interfaces de usuario. No solo influye en cómo el usuario percibe la información, sino también en si decide comprar, registrarse o entregar datos personales dentro de una plataforma."
+                  },
+                  {
+                    "type": "ul",
+                    "items": [
+                      "Afecta la credibilidad de la información presentada.",
+                      "Influye en la decisión de compra o contratación.",
+                      "Determina si el usuario está dispuesto a registrarse.",
+                      "También influye en la disposición a proporcionar datos personales."
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "content": "Memoria, percepción y atención son factores cognitivos; en cambio, la confianza pertenece a los aspectos sociales del diseño UX, junto con la comunicación, la conciencia situacional y la coordinación."
+                  }
+                ]
+              }
+            },
+{
+  "Category": "Emociones y Diseño UX",
+  "Question Text": {
+    "en-US": [
+      "At which level are quick judgments made about the environment, such as whether it is good or bad, safe or dangerous?"
+    ],
+    "es-MX": [
+      "¿En qué nivel se hacen juicios rápidos sobre el entorno, como si es bueno o malo, seguro o peligroso?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Visceral level",
+      "Behavioral level",
+      "Reflective level",
+      "Motivational level"
+    ],
+    "es-MX": [
+      "Nivel visceral",
+      "Nivel comportamental",
+      "Nivel reflexivo",
+      "Nivel motivacional"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Visceral level",
+    "es-MX": "Nivel visceral"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "El nivel visceral es el nivel más inmediato y automático de procesamiento emocional. En él se producen juicios rápidos e inconscientes sobre el entorno, permitiendo determinar de manera instantánea si algo es atractivo, agradable, seguro o peligroso."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Opera de forma automática e inconsciente.",
+          "Genera primeras impresiones sobre objetos y entornos.",
+          "Permite emitir juicios rápidos sobre lo agradable o desagradable.",
+          "Está relacionado con las reacciones emocionales inmediatas."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "En UX, este nivel explica por qué la apariencia visual de una interfaz influye en la primera impresión del usuario. Colores, formas, tipografía y composición pueden generar sensaciones positivas o negativas antes incluso de comenzar a utilizar el sistema."
+      }
+    ]
+  }
+},
+{
+  "Category": "Emociones y Diseño UX",
+  "Question Text": {
+    "en-US": [
+      "At which level is skill learning based, although it still occurs partly unconsciously?"
+    ],
+    "es-MX": [
+      "¿En qué nivel se basa el aprendizaje de habilidades, aunque todavía ocurre en parte de manera inconsciente?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Visceral level",
+      "Behavioral level",
+      "Reflective level",
+      "Motivational level"
+    ],
+    "es-MX": [
+      "Nivel visceral",
+      "Nivel comportamental",
+      "Nivel reflexivo",
+      "Nivel motivacional"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Behavioral level",
+    "es-MX": "Nivel comportamental"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "El nivel comportamental está relacionado con la ejecución de acciones y con el aprendizaje de habilidades. Muchas tareas se vuelven automáticas gracias a la práctica, por lo que una parte importante de este nivel ocurre sin que el usuario sea plenamente consciente de ello."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Se relaciona con el uso y funcionamiento del producto.",
+          "Interviene en el aprendizaje y adquisición de habilidades.",
+          "Muchas acciones se realizan automáticamente gracias a la experiencia.",
+          "Influye en la facilidad y eficiencia de uso."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Desde la perspectiva de UX, este nivel está asociado con la usabilidad, la facilidad de aprendizaje y la eficiencia con la que los usuarios realizan sus tareas una vez que han adquirido experiencia con la interfaz."
+      }
+    ]
+  }
+},
+{
+  "Category": "Emociones y Diseño UX",
+  "Question Text": {
+    "en-US": [
+      "Which level includes understanding, reasoning and conscious decision making?"
+    ],
+    "es-MX": [
+      "¿Qué nivel incluye la comprensión, el razonamiento y la toma consciente de decisiones?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Visceral level",
+      "Behavioral level",
+      "Reflective level",
+      "Motivational level"
+    ],
+    "es-MX": [
+      "Nivel visceral",
+      "Nivel comportamental",
+      "Nivel reflexivo",
+      "Nivel motivacional"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Reflective level",
+    "es-MX": "Nivel reflexivo"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "El nivel reflexivo corresponde al procesamiento consciente. En este nivel intervienen la comprensión, el razonamiento, la interpretación y la toma deliberada de decisiones, permitiendo que las personas evalúen sus experiencias y construyan significados sobre ellas."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Implica pensamiento consciente y razonamiento.",
+          "Permite interpretar y valorar las experiencias.",
+          "Participa en la formación de recuerdos y significados.",
+          "Influye en las decisiones y preferencias futuras."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "En UX, el nivel reflexivo explica cómo los usuarios construyen opiniones sobre un producto o servicio. La satisfacción, la imagen de marca y el significado personal que se atribuye a una experiencia son aspectos asociados a este nivel descrito por Don Norman."
+      }
+    ]
+  }
+}
+        
+    ]
+}

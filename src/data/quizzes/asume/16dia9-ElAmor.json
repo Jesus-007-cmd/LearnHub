@@ -1,0 +1,839 @@
+{
+    "meta": {
+      "slug": "tema-16-el-amor",
+      "title": "ASUME · El amor",
+      "subject": "ASUME",
+      "unit": 1,
+      "classNo": 16,
+      "description": "Preguntas relacionadas con el tema del amor dentro del programa ASUME.",
+      "tags": [
+        "ASUME",
+        "Amor",
+        "Valores",
+        "Relaciones",
+        "Formación"
+      ]
+    },
+    "Questions": [
+        {
+            "Category": "Concepto de amor",
+            "Question Text": {
+              "en-US": [
+                "What is true love mainly based on?"
+              ],
+              "es-MX": [
+                "¿En qué se basa principalmente el amor verdadero?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Respect, care and sincere commitment",
+                "Only physical attraction",
+                "Material interest",
+                "Temporary emotions only"
+              ],
+              "es-MX": [
+                "Respeto, cuidado y compromiso sincero",
+                "Solo atracción física",
+                "Interés material",
+                "Solo emociones pasajeras"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Respect, care and sincere commitment",
+              "es-MX": "Respeto, cuidado y compromiso sincero"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "True love is reflected through respect, responsibility and genuine concern for another person's well-being."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El amor verdadero se refleja mediante respeto, responsabilidad e interés genuino por el bienestar de otra persona."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Amor y compromiso",
+            "Question Text": {
+              "en-US": [
+                "What is love considered in this statement?"
+              ],
+              "es-MX": [
+                "¿Qué se considera el amor en esta afirmación?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "A decision and a commitment",
+                "Only an emotion",
+                "A temporary attraction",
+                "Something based on luck"
+              ],
+              "es-MX": [
+                "Una decisión y un compromiso",
+                "Solo una emoción",
+                "Una atracción temporal",
+                "Algo basado en la suerte"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "A decision and a commitment",
+              "es-MX": "Una decisión y un compromiso"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Love is not only a feeling; it also involves choosing to care, remain faithful and act responsibly toward another person."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El amor no es solo un sentimiento; también implica elegir cuidar, ser fiel y actuar responsablemente hacia otra persona."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Objetivo del amor",
+            "Question Text": {
+              "en-US": [
+                "What is one purpose of love toward others?"
+              ],
+              "es-MX": [
+                "¿Cuál es un propósito del amor hacia los demás?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "To strengthen love toward the people around us",
+                "To think only of oneself",
+                "To avoid relationships",
+                "To seek personal benefit only"
+              ],
+              "es-MX": [
+                "Fortalecer el amor hacia las personas que nos rodean",
+                "Pensar solo en uno mismo",
+                "Evitar las relaciones",
+                "Buscar solo beneficio personal"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "To strengthen love toward the people around us",
+              "es-MX": "Fortalecer el amor hacia las personas que nos rodean"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Love grows when it is shared with family, friends and the people around us through care and kindness."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El amor crece cuando se comparte con la familia, amigos y las personas que nos rodean mediante cuidado y bondad."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Amor propio",
+            "Question Text": {
+              "en-US": [
+                "What should come before loving someone in particular?"
+              ],
+              "es-MX": [
+                "¿Qué debe venir antes de amar a alguien en particular?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Accepting and loving ourselves",
+                "Expecting others to change first",
+                "Seeking approval from everyone",
+                "Avoiding all emotions"
+              ],
+              "es-MX": [
+                "Aceptarnos y querernos a nosotros mismos",
+                "Esperar que otros cambien primero",
+                "Buscar aprobación de todos",
+                "Evitar toda emoción"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Accepting and loving ourselves",
+              "es-MX": "Aceptarnos y querernos a nosotros mismos"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Healthy relationships begin with self-acceptance, self-respect and valuing oneself."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Las relaciones sanas comienzan con la autoaceptación, el respeto propio y el valorarse a uno mismo."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Amor y sacrificio",
+            "Question Text": {
+              "en-US": [
+                "What does the video \"My Dad Lies\" mainly show about a father's love?"
+              ],
+              "es-MX": [
+                "¿Qué muestra principalmente el video \"Mi papá miente\" sobre el amor de un padre?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "That love can involve sacrifice, protection and silent effort",
+                "That lying is always the best solution",
+                "That parents should hide affection",
+                "That material things are more important than family"
+              ],
+              "es-MX": [
+                "Que el amor puede implicar sacrificio, protección y esfuerzo silencioso",
+                "Que mentir siempre es la mejor solución",
+                "Que los padres deben ocultar el cariño",
+                "Que las cosas materiales son más importantes que la familia"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "That love can involve sacrifice, protection and silent effort",
+              "es-MX": "Que el amor puede implicar sacrificio, protección y esfuerzo silencioso"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "The video shows a father who hides his difficulties to protect his daughter and give her hope, reflecting love through sacrifice and responsibility."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El video muestra a un padre que oculta sus dificultades para proteger a su hija y darle esperanza, reflejando el amor mediante sacrificio y responsabilidad."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Valoración familiar",
+            "Question Text": {
+              "en-US": [
+                "What reflection does the video \"My Dad Lies\" invite us to make?"
+              ],
+              "es-MX": [
+                "¿Qué reflexión nos invita a hacer el video \"Mi papá miente\"?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "To appreciate the efforts parents make for their children",
+                "To judge people only by appearances",
+                "To value money above affection",
+                "To ignore family sacrifices"
+              ],
+              "es-MX": [
+                "Valorar los esfuerzos que los padres hacen por sus hijos",
+                "Juzgar a las personas solo por las apariencias",
+                "Valorar el dinero por encima del afecto",
+                "Ignorar los sacrificios familiares"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "To appreciate the efforts parents make for their children",
+              "es-MX": "Valorar los esfuerzos que los padres hacen por sus hijos"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "The story reminds us that many parents work hard and sacrifice in silence to give their children a better life."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La historia nos recuerda que muchos padres trabajan y se sacrifican en silencio para dar una mejor vida a sus hijos."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Amor verdadero",
+            "Question Text": {
+              "en-US": [
+                "What can true love help a person do?"
+              ],
+              "es-MX": [
+                "¿Qué puede ayudar a una persona a hacer el amor verdadero?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Become sensitive and open to life",
+                "Reject all responsibilities",
+                "Think only about oneself",
+                "Avoid relationships and growth"
+              ],
+              "es-MX": [
+                "Ser sensible y abrirse a la vida",
+                "Rechazar toda responsabilidad",
+                "Pensar solo en uno mismo",
+                "Evitar relaciones y crecimiento"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Become sensitive and open to life",
+              "es-MX": "Ser sensible y abrirse a la vida"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "True love helps people connect with others, appreciate life and develop empathy toward family, work and society."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El amor verdadero ayuda a las personas a relacionarse con los demás, valorar la vida y desarrollar empatía hacia la familia, el trabajo y la sociedad."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Prioridades humanas",
+            "Question Text": {
+              "en-US": [
+                "Why do many people fail to learn how to love?"
+              ],
+              "es-MX": [
+                "¿Por qué muchas personas no aprenden a amar?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Because they prioritize success, money and prestige over love",
+                "Because love has no importance in life",
+                "Because only some people can love",
+                "Because love depends only on luck"
+              ],
+              "es-MX": [
+                "Porque priorizan el éxito, dinero y prestigio por encima del amor",
+                "Porque el amor no tiene importancia en la vida",
+                "Porque solo algunas personas pueden amar",
+                "Porque el amor depende solo de la suerte"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Because they prioritize success, money and prestige over love",
+              "es-MX": "Porque priorizan el éxito, dinero y prestigio por encima del amor"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Many people focus their energy on material or social goals and neglect learning how to build true loving relationships."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Muchas personas enfocan su energía en metas materiales o sociales y descuidan aprender a construir relaciones de amor verdadero."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Amor en acciones",
+            "Question Text": {
+              "en-US": [
+                "How is love often shown when least expected?"
+              ],
+              "es-MX": [
+                "¿Cómo suele manifestarse el amor cuando menos lo esperas?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Through acts of kindness and support",
+                "Through selfish behavior",
+                "Through indifference",
+                "Through materialism only"
+              ],
+              "es-MX": [
+                "Mediante actos de bondad y apoyo",
+                "Mediante egoísmo",
+                "Mediante indiferencia",
+                "Solo mediante cosas materiales"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Through acts of kindness and support",
+              "es-MX": "Mediante actos de bondad y apoyo"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Many times love appears unexpectedly through help, understanding and kindness."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Muchas veces el amor aparece inesperadamente mediante ayuda, comprensión y bondad."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Amor verdadero",
+            "Question Text": {
+              "en-US": [
+                "What is a clear sign of true love?"
+              ],
+              "es-MX": [
+                "¿Cuál es una señal clara del amor verdadero?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Thinking more about giving than receiving",
+                "Expecting benefits first",
+                "Seeking control over others",
+                "Thinking only of oneself"
+              ],
+              "es-MX": [
+                "Pensar más en dar que en recibir",
+                "Esperar beneficios primero",
+                "Buscar controlar a otros",
+                "Pensar solo en uno mismo"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Thinking more about giving than receiving",
+              "es-MX": "Pensar más en dar que en recibir"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "True love seeks the good and happiness of the other person and finds joy in giving."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El amor verdadero busca el bien y la felicidad de la otra persona y encuentra alegría en dar."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Arte de amar",
+            "Question Text": {
+              "en-US": [
+                "What qualities are part of the art of loving?"
+              ],
+              "es-MX": [
+                "¿Qué cualidades forman parte del arte de amar?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Care, respect, responsibility and understanding",
+                "Control, selfishness and pride",
+                "Indifference and distance",
+                "Convenience and manipulation"
+              ],
+              "es-MX": [
+                "Cuidado, respeto, responsabilidad y comprensión",
+                "Control, egoísmo y orgullo",
+                "Indiferencia y distancia",
+                "Conveniencia y manipulación"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Care, respect, responsibility and understanding",
+              "es-MX": "Cuidado, respeto, responsabilidad y comprensión"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "True love is practiced through caring actions, respect, commitment and understanding toward the loved person."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El amor verdadero se practica mediante acciones de cuidado, respeto, compromiso y comprensión hacia la persona amada."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Pasos del amor",
+            "Question Text": {
+              "en-US": [
+                "What is presented as the first step of love?"
+              ],
+              "es-MX": [
+                "¿Cuál se presenta como el primer paso del amor?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Knowing the other person",
+                "Demanding perfection",
+                "Thinking only of oneself",
+                "Avoiding commitment"
+              ],
+              "es-MX": [
+                "Conocer a la otra persona",
+                "Exigir perfección",
+                "Pensar solo en uno mismo",
+                "Evitar compromiso"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Knowing the other person",
+              "es-MX": "Conocer a la otra persona"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Knowing someone helps understand who they are, their qualities and their needs, which strengthens love."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Conocer a alguien ayuda a comprender quién es, sus cualidades y necesidades, lo cual fortalece el amor."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Entrega en el amor",
+            "Question Text": {
+              "en-US": [
+                "What does love imply in practice?"
+              ],
+              "es-MX": [
+                "¿Qué implica el amor en la práctica?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Seeking the well-being and growth of the loved person",
+                "Thinking only of personal convenience",
+                "Controlling the other person",
+                "Avoiding responsibilities"
+              ],
+              "es-MX": [
+                "Buscar el bienestar y crecimiento de la persona amada",
+                "Pensar solo en la propia conveniencia",
+                "Controlar a la otra persona",
+                "Evitar responsabilidades"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Seeking the well-being and growth of the loved person",
+              "es-MX": "Buscar el bienestar y crecimiento de la persona amada"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "True love looks for the happiness, security and development of the other person, not only personal benefit."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El amor verdadero busca la felicidad, seguridad y desarrollo de la otra persona, no solo el beneficio personal."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Amor fraternal",
+            "Question Text": {
+              "en-US": [
+                "What value is mainly reflected in the video \"Love of Sisters\"?"
+              ],
+              "es-MX": [
+                "¿Qué valor se refleja principalmente en el video \"Amor de hermanas\"?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Family love and solidarity",
+                "Competition between siblings",
+                "Material ambition",
+                "Personal pride"
+              ],
+              "es-MX": [
+                "Amor familiar y solidaridad",
+                "Competencia entre hermanos",
+                "Ambición material",
+                "Orgullo personal"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Family love and solidarity",
+              "es-MX": "Amor familiar y solidaridad"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "The story highlights affection, sacrifice and support between sisters."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La historia resalta el cariño, sacrificio y apoyo entre hermanas."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Sacrificio por amor",
+            "Question Text": {
+              "en-US": [
+                "What often motivates sacrifices between siblings?"
+              ],
+              "es-MX": [
+                "¿Qué suele motivar los sacrificios entre hermanos?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Genuine love and care",
+                "Interest in rewards",
+                "Desire for control",
+                "Fear of punishment"
+              ],
+              "es-MX": [
+                "Amor genuino y cuidado",
+                "Interés en recompensas",
+                "Deseo de control",
+                "Miedo al castigo"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Genuine love and care",
+              "es-MX": "Amor genuino y cuidado"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Family sacrifice is commonly born from affection and concern for another person's well-being."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El sacrificio familiar suele nacer del afecto y la preocupación por el bienestar del otro."
+                }
+              ]
+            }
+          }
+          ,
+{
+  "Category": "Relaciones familiares",
+  "Question Text": {
+    "en-US": [
+      "What strengthens the relationship between sisters?"
+    ],
+    "es-MX": [
+      "¿Qué fortalece la relación entre hermanas?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Understanding, support and affection",
+      "Envy and rivalry",
+      "Distance and indifference",
+      "Selfish decisions"
+    ],
+    "es-MX": [
+      "Comprensión, apoyo y cariño",
+      "Envidia y rivalidad",
+      "Distancia e indiferencia",
+      "Decisiones egoístas"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Understanding, support and affection",
+    "es-MX": "Comprensión, apoyo y cariño"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "Healthy family bonds grow through empathy, unity and sincere affection."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "Los vínculos familiares sanos crecen mediante empatía, unión y cariño sincero."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Mensaje del video",
+  "Question Text": {
+    "en-US": [
+      "What lesson can be learned from the video \"Love of Sisters\"?"
+    ],
+    "es-MX": [
+      "¿Qué enseñanza puede dejar el video \"Amor de hermanas\"?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "True love is shown through actions",
+      "Words are enough without actions",
+      "Family bonds are unimportant",
+      "Love depends only on money"
+    ],
+    "es-MX": [
+      "El amor verdadero se demuestra con acciones",
+      "Las palabras bastan sin acciones",
+      "Los lazos familiares no importan",
+      "El amor depende solo del dinero"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "True love is shown through actions",
+    "es-MX": "El amor verdadero se demuestra con acciones"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "The story teaches that genuine affection is visible through sacrifice, care and support."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "La historia enseña que el cariño genuino se ve mediante sacrificio, cuidado y apoyo."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Acciones del amor",
+  "Question Text": {
+    "en-US": [
+      "What is one action made possible through love toward another person?"
+    ],
+    "es-MX": [
+      "¿Cuál es una acción que el amor hace posible hacia otra persona?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Forgiving and helping meet their needs",
+      "Seeking revenge constantly",
+      "Ignoring their value",
+      "Thinking only of oneself"
+    ],
+    "es-MX": [
+      "Perdonar y ayudar a cubrir sus necesidades",
+      "Buscar venganza constantemente",
+      "Ignorar su valor",
+      "Pensar solo en uno mismo"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Forgiving and helping meet their needs",
+    "es-MX": "Perdonar y ayudar a cubrir sus necesidades"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "Love is expressed through forgiveness, recognizing the other person's value and caring for their needs."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "El amor se expresa mediante el perdón, el reconocimiento del valor del otro y el cuidado de sus necesidades."
+      }
+    ]
+  }
+},
+{
+  "Category": "Amor en acciones",
+  "Question Text": {
+    "en-US": [
+      "How is true love best demonstrated?"
+    ],
+    "es-MX": [
+      "¿Cómo se demuestra mejor el amor verdadero?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Through actions of care, respect and responsibility",
+      "Only through words",
+      "Through personal convenience",
+      "By avoiding commitment"
+    ],
+    "es-MX": [
+      "Mediante acciones de cuidado, respeto y responsabilidad",
+      "Solo con palabras",
+      "Mediante conveniencia personal",
+      "Evitando el compromiso"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Through actions of care, respect and responsibility",
+    "es-MX": "Mediante acciones de cuidado, respeto y responsabilidad"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "text",
+        "content": "Love becomes real when it is translated into actions that benefit and value the loved person."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "El amor se vuelve real cuando se traduce en acciones que benefician y valoran a la persona amada."
+      }
+    ]
+  }
+}
+    ]
+  }

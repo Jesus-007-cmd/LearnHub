@@ -1,0 +1,327 @@
+{
+    "meta": {
+      "slug": "tema-24-reflexiones-acerca-del-trabajo",
+      "title": "ASUME · Reflexiones acerca del trabajo",
+      "subject": "ASUME",
+      "unit": 1,
+      "classNo": 24,
+      "description": "Preguntas relacionadas con el valor del trabajo, la actitud laboral y el crecimiento personal.",
+      "tags": [
+        "ASUME",
+        "Trabajo",
+        "Actitud",
+        "Motivación",
+        "Trabajo en equipo",
+        "Superación personal"
+      ]
+    },
+    "Questions": [
+        {
+          "Category": "Valor del trabajo",
+          "Question Text": {
+            "en-US": [
+              "What can work help people achieve besides earning money?"
+            ],
+            "es-MX": [
+              "¿Qué puede ayudar a lograr el trabajo además de ganar dinero?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Personal growth and contribution to society",
+              "Avoiding all responsibilities",
+              "Living without effort",
+              "Ignoring other people"
+            ],
+            "es-MX": [
+              "El crecimiento personal y la contribución a la sociedad",
+              "Evitar todas las responsabilidades",
+              "Vivir sin esfuerzo",
+              "Ignorar a los demás"
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Personal growth and contribution to society",
+            "es-MX": "El crecimiento personal y la contribución a la sociedad"
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "text",
+                "content": "Work can help people grow personally, learn new skills and contribute positively to society."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "text",
+                "content": "El trabajo puede ayudar a crecer personalmente, aprender nuevas habilidades y aportar algo positivo a la sociedad."
+              }
+            ]
+          }
+        }
+        ,
+        {
+          "Category": "Actitud laboral",
+          "Question Text": {
+            "en-US": [
+              "Why is attitude important at work?"
+            ],
+            "es-MX": [
+              "¿Por qué es importante la actitud en el trabajo?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Because it can change the way people experience their work",
+              "Because work never involves difficulties",
+              "Because responsibilities disappear",
+              "Because effort becomes unnecessary"
+            ],
+            "es-MX": [
+              "Porque puede cambiar la manera en que las personas viven su trabajo",
+              "Porque el trabajo nunca implica dificultades",
+              "Porque las responsabilidades desaparecen",
+              "Porque el esfuerzo se vuelve innecesario"
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Because it can change the way people experience their work",
+            "es-MX": "Porque puede cambiar la manera en que las personas viven su trabajo"
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "text",
+                "content": "A positive attitude can make work more meaningful and enjoyable even during difficult moments."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "text",
+                "content": "Una actitud positiva puede hacer que el trabajo sea más significativo y agradable incluso en momentos difíciles."
+              }
+            ]
+          }
+        }
+        ,
+        {
+          "Category": "Trabajo y sociedad",
+          "Question Text": {
+            "en-US": [
+              "Why are all jobs important to society?"
+            ],
+            "es-MX": [
+              "¿Por qué todos los trabajos son importantes para la sociedad?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Because every job contributes in a different way",
+              "Because only some professions matter",
+              "Because work has no social impact",
+              "Because teamwork is unnecessary"
+            ],
+            "es-MX": [
+              "Porque cada trabajo contribuye de manera diferente",
+              "Porque solamente algunas profesiones importan",
+              "Porque el trabajo no tiene impacto social",
+              "Porque el trabajo en equipo es innecesario"
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Because every job contributes in a different way",
+            "es-MX": "Porque cada trabajo contribuye de manera diferente"
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "text",
+                "content": "Different jobs help society function and improve in many important ways."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "text",
+                "content": "Los diferentes trabajos ayudan a que la sociedad funcione y mejore de muchas maneras importantes."
+              }
+            ]
+          }
+        }
+        ,
+        {
+          "Category": "Trabajo y crecimiento",
+          "Question Text": {
+            "en-US": [
+              "What can people discover through their work?"
+            ],
+            "es-MX": [
+              "¿Qué pueden descubrir las personas mediante su trabajo?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Skills, strengths and areas for improvement",
+              "That effort has no value",
+              "That responsibilities are unnecessary",
+              "That learning should stop"
+            ],
+            "es-MX": [
+              "Habilidades, fortalezas y áreas de mejora",
+              "Que el esfuerzo no tiene valor",
+              "Que las responsabilidades son innecesarias",
+              "Que el aprendizaje debe detenerse"
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Skills, strengths and areas for improvement",
+            "es-MX": "Habilidades, fortalezas y áreas de mejora"
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "text",
+                "content": "Work experiences help people understand themselves better and continue improving."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "text",
+                "content": "Las experiencias laborales ayudan a conocerse mejor y continuar mejorando."
+              }
+            ]
+          }
+        }
+        ,
+        {
+          "Category": "Trabajo en equipo",
+          "Question Text": {
+            "en-US": [
+              "Why is teamwork valuable in a workplace?"
+            ],
+            "es-MX": [
+              "¿Por qué es valioso el trabajo en equipo en un ambiente laboral?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Because each person contributes differently to the group",
+              "Because only one person should solve everything",
+              "Because cooperation is unnecessary",
+              "Because responsibilities belong to others only"
+            ],
+            "es-MX": [
+              "Porque cada persona aporta algo diferente al grupo",
+              "Porque una sola persona debe resolver todo",
+              "Porque la cooperación es innecesaria",
+              "Porque las responsabilidades pertenecen solamente a otros"
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Because each person contributes differently to the group",
+            "es-MX": "Porque cada persona aporta algo diferente al grupo"
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "text",
+                "content": "Teamwork improves results by combining different talents, skills and perspectives."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "text",
+                "content": "El trabajo en equipo mejora los resultados al combinar diferentes talentos, habilidades y perspectivas."
+              }
+            ]
+          }
+        }
+        ,
+        {
+          "Category": "Motivación laboral",
+          "Question Text": {
+            "en-US": [
+              "What can motivate people to work with passion?"
+            ],
+            "es-MX": [
+              "¿Qué puede motivar a las personas a trabajar con pasión?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Family, goals, learning and personal growth",
+              "Avoiding every challenge",
+              "Ignoring responsibilities",
+              "Doing things without purpose"
+            ],
+            "es-MX": [
+              "La familia, las metas, el aprendizaje y el crecimiento personal",
+              "Evitar todos los desafíos",
+              "Ignorar las responsabilidades",
+              "Hacer las cosas sin propósito"
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Family, goals, learning and personal growth",
+            "es-MX": "La familia, las metas, el aprendizaje y el crecimiento personal"
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "text",
+                "content": "Different motivations can inspire people to work with greater dedication and enthusiasm."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "text",
+                "content": "Diferentes motivaciones pueden inspirar a las personas a trabajar con mayor dedicación y entusiasmo."
+              }
+            ]
+          }
+        }
+        ,
+        {
+          "Category": "Perspectiva laboral",
+          "Question Text": {
+            "en-US": [
+              "How can changing perspective improve work experience?"
+            ],
+            "es-MX": [
+              "¿Cómo puede mejorar la experiencia laboral cambiar la perspectiva?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "By turning work into an opportunity for growth and learning",
+              "By making responsibilities disappear",
+              "By avoiding interaction with others",
+              "By eliminating all difficulties"
+            ],
+            "es-MX": [
+              "Convirtiendo el trabajo en una oportunidad de crecimiento y aprendizaje",
+              "Haciendo desaparecer las responsabilidades",
+              "Evitando la convivencia con los demás",
+              "Eliminando todas las dificultades"
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "By turning work into an opportunity for growth and learning",
+            "es-MX": "Convirtiendo el trabajo en una oportunidad de crecimiento y aprendizaje"
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "text",
+                "content": "A positive perspective helps people appreciate the opportunities that work can provide."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "text",
+                "content": "Una perspectiva positiva ayuda a valorar las oportunidades que el trabajo puede ofrecer."
+              }
+            ]
+          }
+        }
+    ]
+  }

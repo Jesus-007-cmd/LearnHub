@@ -1,0 +1,975 @@
+{
+    "meta": {
+      "slug": "asume-el-hogar",
+      "title": "ASUME · El hogar",
+      "subject": "ASUME",
+      "unit": 1,
+      "classNo": 7,
+      "description": "Preguntas relacionadas con el tema del hogar dentro del programa ASUME.",
+      "tags": [
+        "ASUME",
+        "Hogar",
+        "Familia",
+        "Relaciones humanas"
+      ]
+    },
+    "Questions": [
+        {
+            "Category": "Concepto del hogar",
+            "Question Text": {
+              "en-US": [
+                "What is the home according to the topic?"
+              ],
+              "es-MX": [
+                "¿Qué es el hogar según el tema?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "A physical place where people live",
+                "A place where there is love, understanding and support",
+                "A place only to rest",
+                "A place to store belongings"
+              ],
+              "es-MX": [
+                "Un lugar físico donde viven las personas",
+                "Un lugar donde hay amor, comprensión y apoyo",
+                "Un lugar solo para descansar",
+                "Un lugar para guardar cosas"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "A place where there is love, understanding and support",
+              "es-MX": "Un lugar donde hay amor, comprensión y apoyo"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "A home is not just a physical place, but an environment where people share love, support and understanding, creating strong emotional bonds."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El hogar no es solo un lugar físico, sino un espacio donde existe amor, comprensión y apoyo entre las personas, fortaleciendo los lazos afectivos."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Diferencia entre casa y hogar",
+            "Question Text": {
+              "en-US": [
+                "What is the difference between a house and a home?"
+              ],
+              "es-MX": [
+                "¿Cuál es la diferencia entre una casa y un hogar?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "There is no difference",
+                "A house is built with materials, a home is built with love",
+                "A home is bigger than a house",
+                "A house is more important than a home"
+              ],
+              "es-MX": [
+                "No hay diferencia",
+                "La casa se construye con materiales, el hogar se construye con amor",
+                "El hogar es más grande que la casa",
+                "La casa es más importante que el hogar"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "A house is built with materials, a home is built with love",
+              "es-MX": "La casa se construye con materiales, el hogar se construye con amor"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "A house refers to a physical structure, while a home is created through love, relationships and emotional connection between the people who live in it."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La casa es una estructura física hecha con materiales, pero el hogar se forma con amor, convivencia y vínculos emocionales entre las personas que viven en ella."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Reflexión sobre el hogar",
+            "Question Text": {
+              "en-US": [
+                "What is a home for you?"
+              ],
+              "es-MX": [
+                "¿Qué es para ti un hogar?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "A place only to sleep",
+                "A place full of love, support and understanding",
+                "A place to keep objects",
+                "A place without emotions"
+              ],
+              "es-MX": [
+                "Un lugar solo para dormir",
+                "Un lugar lleno de amor, apoyo y comprensión",
+                "Un lugar para guardar cosas",
+                "Un lugar sin emociones"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "A place full of love, support and understanding",
+              "es-MX": "Un lugar lleno de amor, apoyo y comprensión"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "A home is defined not by physical space but by the emotional environment, where people feel safe, loved and supported."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Un hogar no se define por el espacio físico, sino por el ambiente emocional, donde las personas se sienten seguras, queridas y apoyadas."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Hogar como refugio",
+            "Question Text": {
+              "en-US": [
+                "Why can a home be considered a refuge and a place of rest?"
+              ],
+              "es-MX": [
+                "¿Por qué el hogar puede considerarse un refugio y un lugar de descanso?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Because it is only a physical structure",
+                "Because it provides safety, peace and emotional support",
+                "Because it is used only for sleeping",
+                "Porque es un lugar sin responsabilidades"
+              ],
+              "es-MX": [
+                "Porque es solo una estructura física",
+                "Porque brinda seguridad, tranquilidad y apoyo emocional",
+                "Porque solo sirve para dormir",
+                "Porque es un lugar sin responsabilidades"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Because it provides safety, peace and emotional support",
+              "es-MX": "Porque brinda seguridad, tranquilidad y apoyo emocional"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "A home is a refuge because it offers a safe environment where people can rest, recover energy and feel emotionally supported, allowing them to be themselves without fear."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El hogar es un refugio porque brinda un ambiente seguro donde las personas pueden descansar, recuperar energías y sentirse apoyadas emocionalmente, permitiéndoles ser ellas mismas sin temor."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Extensión del hogar",
+            "Question Text": {
+              "en-US": [
+                "How can the concept of home extend beyond a physical place?"
+              ],
+              "es-MX": [
+                "¿Cómo puede extenderse el concepto de hogar más allá de un lugar físico?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Only to the place where we sleep",
+                "To places where we have created lasting bonds of affection",
+                "Only to our workplace",
+                "Only to where we keep our belongings"
+              ],
+              "es-MX": [
+                "Solo al lugar donde dormimos",
+                "A los lugares donde hemos creado vínculos de cariño perdurables",
+                "Solo al lugar de trabajo",
+                "Solo donde guardamos nuestras cosas"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "To places where we have created lasting bonds of affection",
+              "es-MX": "A los lugares donde hemos creado vínculos de cariño perdurables"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Home is not limited to a physical space. It extends to any place where meaningful emotional connections are formed, through shared experiences, affection and important moments with others."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El hogar no se limita a un espacio físico. Se extiende a todos aquellos lugares donde hemos creado vínculos afectivos significativos, a través de experiencias compartidas, cariño y momentos importantes con otras personas."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Elementos que forman el hogar",
+            "Question Text": {
+              "en-US": [
+                "What helps give shape to a home according to the topic?"
+              ],
+              "es-MX": [
+                "¿Qué ayuda a dar forma al hogar según el tema?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Only the physical structure",
+                "Daily details, meaningful objects and shared experiences",
+                "Only money and material things",
+                "Only the size of the house"
+              ],
+              "es-MX": [
+                "Solo la estructura física",
+                "Los pequeños detalles, los objetos que apreciamos y las experiencias compartidas",
+                "Solo el dinero y las cosas materiales",
+                "Solo el tamaño de la casa"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Daily details, meaningful objects and shared experiences",
+              "es-MX": "Los pequeños detalles, los objetos que apreciamos y las experiencias compartidas"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "A home is shaped by everyday moments, the objects that hold emotional value and the experiences shared with others, which together build a sense of belonging and emotional connection."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El hogar se va formando a través de los pequeños detalles de la vida cotidiana, los objetos que tienen un valor especial y las experiencias compartidas, creando un sentido de pertenencia y conexión emocional."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Sentido de pertenencia",
+            "Question Text": {
+              "en-US": [
+                "What feeling can a place create when it becomes a home?"
+              ],
+              "es-MX": [
+                "¿Qué sentimiento puede generar un lugar cuando se convierte en hogar?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Fear and distance",
+                "A sense of belonging and affection",
+                "Confusion and rejection",
+                "Competition and indifference"
+              ],
+              "es-MX": [
+                "Miedo y distancia",
+                "Un sentido de pertenencia y cariño",
+                "Confusión y rechazo",
+                "Competencia e indiferencia"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "A sense of belonging and affection",
+              "es-MX": "Un sentido de pertenencia y cariño"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "A place becomes a home when it awakens a sense of belonging, affection and emotional connection. It is not only about being there physically, but about feeling that the place is part of our life, our memories and our personal history."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Un lugar se convierte en hogar cuando despierta en nosotros un sentido de pertenencia, cariño y conexión emocional. No se trata solo de estar ahí físicamente, sino de sentir que ese espacio forma parte de nuestra vida, de nuestros recuerdos y de nuestra historia personal."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Vínculos afectivos",
+            "Question Text": {
+              "en-US": [
+                "What makes a place feel like home beyond the walls?"
+              ],
+              "es-MX": [
+                "¿Qué hace que un lugar se sienta como hogar más allá de las paredes?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Luxury and size",
+                "The emotional bonds built there",
+                "The number of rooms",
+                "The cost of the house"
+              ],
+              "es-MX": [
+                "El lujo y el tamaño",
+                "Los vínculos afectivos que se construyen ahí",
+                "La cantidad de cuartos",
+                "El costo de la casa"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "The emotional bonds built there",
+              "es-MX": "Los vínculos afectivos que se construyen ahí"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "What truly turns a place into a home is not its appearance, but the emotional bonds created there. Love, trust, companionship and shared moments give meaning to a space and make it special."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Lo que realmente transforma un lugar en hogar no es su apariencia, sino los vínculos afectivos que ahí se construyen. El amor, la confianza, la compañía y los momentos compartidos son los que dan sentido al espacio y lo vuelven especial."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Recuerdos del hogar",
+            "Question Text": {
+              "en-US": [
+                "Why can objects and small details be important in a home?"
+              ],
+              "es-MX": [
+                "¿Por qué pueden ser importantes los objetos y los pequeños detalles en un hogar?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Because they increase the price of the house",
+                "Because they preserve memories and emotional meaning",
+                "Because they replace people",
+                "Because they are more important than affection"
+              ],
+              "es-MX": [
+                "Porque aumentan el precio de la casa",
+                "Porque conservan recuerdos y significado emocional",
+                "Porque reemplazan a las personas",
+                "Porque son más importantes que el cariño"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Because they preserve memories and emotional meaning",
+              "es-MX": "Porque conservan recuerdos y significado emocional"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Objects and small details can be meaningful in a home because they keep memories alive. Sometimes a simple object reminds us of a person, a moment or an experience, and that emotional value helps strengthen the idea of home."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Los objetos y los pequeños detalles pueden ser importantes en un hogar porque conservan recuerdos. A veces un objeto sencillo nos recuerda a una persona, un momento o una experiencia, y ese valor emocional ayuda a fortalecer la idea de hogar."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Construcción del hogar",
+            "Question Text": {
+              "en-US": [
+                "How is a home built over time?"
+              ],
+              "es-MX": [
+                "¿Cómo se construye un hogar con el paso del tiempo?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Only with money",
+                "With love, experiences and meaningful relationships",
+                "Only with furniture",
+                "With rules and punishment"
+              ],
+              "es-MX": [
+                "Solo con dinero",
+                "Con amor, experiencias y relaciones significativas",
+                "Solo con muebles",
+                "Con reglas y castigos"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "With love, experiences and meaningful relationships",
+              "es-MX": "Con amor, experiencias y relaciones significativas"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "A home is built gradually through love, shared experiences and meaningful relationships. It is the result of daily life, care and the emotional ties that grow between the people who share life together."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El hogar se construye poco a poco mediante el amor, las experiencias compartidas y las relaciones significativas. Es el resultado de la convivencia diaria, del cuidado mutuo y de los lazos afectivos que crecen entre las personas que comparten la vida."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Ambiente en el hogar",
+            "Question Text": {
+              "en-US": [
+                "When can we NOT truly speak of a home?"
+              ],
+              "es-MX": [
+                "¿Cuándo NO se puede hablar verdaderamente de un hogar?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "When there is love and respect",
+                "When resentment, misunderstanding and lack of love predominate",
+                "When people share moments together",
+                "When there is communication"
+              ],
+              "es-MX": [
+                "Cuando hay amor y respeto",
+                "Cuando predominan los rencores, la incomprensión y falta el amor",
+                "Cuando se comparten momentos",
+                "Cuando hay comunicación"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "When resentment, misunderstanding and lack of love predominate",
+              "es-MX": "Cuando predominan los rencores, la incomprensión y falta el amor"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "A home cannot truly exist when negative emotions like resentment and lack of love dominate, because these break emotional bonds and create a harmful environment."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "No se puede hablar de un verdadero hogar cuando predominan los rencores, la incomprensión y falta el amor, ya que esto rompe los vínculos afectivos y genera un ambiente negativo."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Cuidado del hogar",
+            "Question Text": {
+              "en-US": [
+                "What should we avoid so that our home does not become a negative environment?"
+              ],
+              "es-MX": [
+                "¿Qué debemos evitar para que nuestro hogar no se convierta en un ambiente negativo?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Sharing experiences",
+                "Letting it become a cycle of conflict and unpleasant environment",
+                "Talking with others",
+                "Helping each other"
+              ],
+              "es-MX": [
+                "Compartir experiencias",
+                "Permitir que se convierta en un círculo de conflicto y ambiente desagradable",
+                "Dialogar con los demás",
+                "Ayudarse mutuamente"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Letting it become a cycle of conflict and unpleasant environment",
+              "es-MX": "Permitir que se convierta en un círculo de conflicto y ambiente desagradable"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "We must prevent the home from becoming a cycle of constant conflict, since this creates a negative environment that can lead to emotional distancing."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Debemos evitar que el hogar se convierta en un círculo de conflictos constantes, ya que esto genera un ambiente desagradable que puede llevar al distanciamiento entre las personas."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Mejora del hogar",
+            "Question Text": {
+              "en-US": [
+                "What should we do to improve our home day by day?"
+              ],
+              "es-MX": [
+                "¿Qué debemos hacer para mejorar nuestro hogar día a día?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Ignore problems",
+                "Fight to resolve problems and strengthen relationships",
+                "Avoid communication",
+                "Blame others"
+              ],
+              "es-MX": [
+                "Ignorar los problemas",
+                "Luchar por resolver los problemas y fortalecer las relaciones",
+                "Evitar la comunicación",
+                "Culpar a los demás"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Fight to resolve problems and strengthen relationships",
+              "es-MX": "Luchar por resolver los problemas y fortalecer las relaciones"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Improving a home requires effort, willingness to solve conflicts and a commitment to build better relationships every day."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Mejorar el hogar requiere esfuerzo, disposición para resolver problemas y compromiso para fortalecer las relaciones día con día."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Importancia del ambiente físico",
+            "Question Text": {
+              "en-US": [
+                "Besides human relationships, what else is important in a home?"
+              ],
+              "es-MX": [
+                "Además de las relaciones humanas, ¿qué más es importante en un hogar?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Only emotions",
+                "The physical environment",
+                "Only money",
+                "Only rules"
+              ],
+              "es-MX": [
+                "Solo las emociones",
+                "El ambiente físico",
+                "Solo el dinero",
+                "Solo las reglas"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "The physical environment",
+              "es-MX": "El ambiente físico"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Although relationships are the foundation of a home, the physical environment also plays an important role, as it influences comfort, coexistence and well-being."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Aunque las relaciones humanas son la base del hogar, el ambiente físico también es importante, ya que influye en la comodidad, la convivencia y el bienestar."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Cuidado del hogar",
+            "Question Text": {
+              "en-US": [
+                "What does the beauty and harmony of a home depend on?"
+              ],
+              "es-MX": [
+                "¿De qué depende la belleza y armonía de un hogar?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "From money",
+                "From the care and attention we give it",
+                "From its size",
+                "From expensive furniture"
+              ],
+              "es-MX": [
+                "Del dinero",
+                "Del cuidado y el interés que pongamos en él",
+                "De su tamaño",
+                "De muebles costosos"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "From the care and attention we give it",
+              "es-MX": "Del cuidado y el interés que pongamos en él"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "The beauty and harmony of a home do not depend on money, but on the care, attention and dedication that people put into maintaining and improving their living space."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La belleza y armonía del hogar no dependen del dinero, sino del cuidado, el interés y la dedicación que las personas ponen en su espacio, lo que lo hace agradable y armonioso."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Orden y limpieza",
+            "Question Text": {
+              "en-US": [
+                "Why are cleanliness and order important in a home?"
+              ],
+              "es-MX": [
+                "¿Por qué son importantes la limpieza y el orden en el hogar?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Because they make the place more expensive",
+                "Because they make the place welcoming and functional",
+                "Because they impress others",
+                "Because they replace relationships"
+              ],
+              "es-MX": [
+                "Porque hacen el lugar más caro",
+                "Porque hacen el lugar acogedor y funcional",
+                "Porque impresionan a otros",
+                "Porque reemplazan las relaciones"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Because they make the place welcoming and functional",
+              "es-MX": "Porque hacen el lugar acogedor y funcional"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Cleanliness, order and small details contribute to creating a comfortable, welcoming and functional environment, improving the quality of life within the home."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La limpieza, el orden y los pequeños detalles ayudan a crear un ambiente cómodo, acogedor y funcional, mejorando la calidad de vida dentro del hogar."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Reflejo del hogar",
+            "Question Text": {
+              "en-US": [
+                "What does a home reflect about the people who live in it?"
+              ],
+              "es-MX": [
+                "¿Qué refleja el hogar sobre las personas que viven en él?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Only their economic level",
+                "Their way of being, values and habits",
+                "Only their possessions",
+                "Nothing important"
+              ],
+              "es-MX": [
+                "Solo su nivel económico",
+                "Su forma de ser, valores y hábitos",
+                "Solo sus pertenencias",
+                "Nada importante"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Their way of being, values and habits",
+              "es-MX": "Su forma de ser, valores y hábitos"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "A home reflects the personality, values and habits of the people who live in it, since the way it is cared for, organized and lived in shows how they are and what they consider important."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El hogar refleja la personalidad, los valores y los hábitos de quienes lo habitan, ya que la forma en que se cuida, se organiza y se vive muestra cómo son y qué consideran importante."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Importancia del hogar",
+            "Question Text": {
+              "en-US": [
+                "What does a person find in the home according to the summary?"
+              ],
+              "es-MX": [
+                "¿Qué encuentra una persona en el hogar según el resumen?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Only material things",
+                "The human warmth necessary to develop personality",
+                "Only rest",
+                "Only responsibilities"
+              ],
+              "es-MX": [
+                "Solo cosas materiales",
+                "El calor humano necesario para desarrollar su personalidad",
+                "Solo descanso",
+                "Solo responsabilidades"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "The human warmth necessary to develop personality",
+              "es-MX": "El calor humano necesario para desarrollar su personalidad"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "The home provides emotional support and human warmth, which are essential for the development of a person's personality and well-being."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El hogar brinda el calor humano y el apoyo emocional necesarios para el desarrollo de la personalidad y el bienestar de la persona."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Extensión del hogar",
+            "Question Text": {
+              "en-US": [
+                "What other spaces can be considered part of the home?"
+              ],
+              "es-MX": [
+                "¿Qué otros espacios pueden considerarse parte del hogar?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Only the house",
+                "The street, neighborhood and city",
+                "Only the workplace",
+                "Only the bedroom"
+              ],
+              "es-MX": [
+                "Solo la casa",
+                "La calle, la colonia y la ciudad",
+                "Solo el trabajo",
+                "Solo la recámara"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "The street, neighborhood and city",
+              "es-MX": "La calle, la colonia y la ciudad"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "The concept of home extends beyond the house, including the environment where we live and interact daily, such as our street, neighborhood and community."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El hogar también abarca el entorno donde vivimos e interactuamos, como la calle, la colonia y la ciudad, formando parte de nuestra vida cotidiana."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Base del hogar",
+            "Question Text": {
+              "en-US": [
+                "What are the foundations of a home?"
+              ],
+              "es-MX": [
+                "¿Cuáles son los cimientos del hogar?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Money and possessions",
+                "Human relationships and love",
+                "The size of the house",
+                "The location"
+              ],
+              "es-MX": [
+                "El dinero y las posesiones",
+                "Las relaciones humanas y el amor",
+                "El tamaño de la casa",
+                "La ubicación"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Human relationships and love",
+              "es-MX": "Las relaciones humanas y el amor"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "The true foundation of a home is not material things, but the relationships and love shared among the people who live in it."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Los verdaderos cimientos del hogar no son las cosas materiales, sino las relaciones humanas y el amor entre las personas que lo integran."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Ambiente del hogar",
+            "Question Text": {
+              "en-US": [
+                "What should we strive to make our home?"
+              ],
+              "es-MX": [
+                "¿En qué debemos convertir nuestro hogar?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "A place of conflict",
+                "A welcoming and pleasant place",
+                "A place of competition",
+                "A place of indifference"
+              ],
+              "es-MX": [
+                "Un lugar de conflicto",
+                "Un lugar acogedor y agradable",
+                "Un lugar de competencia",
+                "Un lugar de indiferencia"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "A welcoming and pleasant place",
+              "es-MX": "Un lugar acogedor y agradable"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "We should strive to make our home a welcoming and pleasant place where everyone feels comfortable and valued."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Debemos esforzarnos por hacer de nuestro hogar un lugar acogedor y agradable donde todos se sientan a gusto y valorados."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Importancia del ambiente físico",
+            "Question Text": {
+              "en-US": [
+                "Besides relationships, what else is important in a home?"
+              ],
+              "es-MX": [
+                "Además de las relaciones, ¿qué más es importante en el hogar?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Only emotions",
+                "The physical environment",
+                "Only money",
+                "Only rules"
+              ],
+              "es-MX": [
+                "Solo las emociones",
+                "El ambiente físico",
+                "Solo el dinero",
+                "Solo las reglas"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "The physical environment",
+              "es-MX": "El ambiente físico"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Although relationships are the foundation, the physical environment also contributes to comfort, organization and overall well-being within the home."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Aunque las relaciones son la base, el ambiente físico también influye en la comodidad, el orden y el bienestar general dentro del hogar."
+                }
+              ]
+            }
+          }
+    ]
+  }

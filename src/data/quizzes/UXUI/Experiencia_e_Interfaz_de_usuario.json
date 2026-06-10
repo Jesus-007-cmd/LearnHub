@@ -1,0 +1,2798 @@
+{
+    "meta": {
+        "slug": "ux-ui-fundamentos",
+        "title": "Experiencia e Interfaz de Usuario (UX y UI)",
+        "subject": "UX Y UI",
+        "unit": 1,
+        "classNo": 1,
+        "description": "Preguntas relacionadas con los conceptos fundamentales de experiencia de usuario (UX), interfaz de usuario (UI) y usabilidad.",
+        "tags": [
+            "UX",
+            "UI",
+            "Experiencia de Usuario",
+            "Interfaz de Usuario",
+            "Usabilidad"
+        ]
+    },
+    "Questions": [
+        {
+            "Category": "Experiencia de Usuario",
+            "Question Text": {
+                "en-US": [
+                    "What is user experience?"
+                ],
+                "es-MX": [
+                    "¿Qué es la experiencia de usuario?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "The effectiveness, efficiency and satisfaction achieved when using a system",
+                    "The perceptions and responses resulting from the use and anticipated use of a system, product or service",
+                    "Satisfying user needs when using a system, product or service",
+                    "The perceptions and responses of the user when using a system, product or service"
+                ],
+                "es-MX": [
+                    "La efectividad, eficiencia y satisfacción del usuario al usar un sistema",
+                    "Las percepciones y respuestas del usuario al usar un sistema, producto o servicio, y ante la expectativa de usarlo",
+                    "Satisfacer las necesidades del usuario al usar un sistema, producto o servicio",
+                    "Las percepciones y respuestas del usuario al usar un sistema, producto o servicio"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "The perceptions and responses resulting from the use and anticipated use of a system, product or service",
+                "es-MX": "Las percepciones y respuestas del usuario al usar un sistema, producto o servicio, y ante la expectativa de usarlo"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "User experience (UX) refers to the perceptions, emotions and responses a person has before, during and after interacting with a system, product or service. It includes both actual use and expectations about its use."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "La experiencia de usuario (UX) se refiere a las percepciones, emociones y respuestas que una persona tiene antes, durante y después de interactuar con un sistema, producto o servicio. Incluye tanto el uso real como las expectativas previas de uso."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Usabilidad",
+            "Question Text": {
+                "en-US": [
+                    "What should be measured to determine the usability of an interface?"
+                ],
+                "es-MX": [
+                    "¿Qué hay que medir para determinar la usabilidad de una interfaz?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "The degree of effectiveness, efficiency and satisfaction when users achieve their objectives",
+                    "The overall user experience while using the interface",
+                    "The time required to complete a task using the interface",
+                    "The visual appearance of the interface"
+                ],
+                "es-MX": [
+                    "El grado de efectividad, eficiencia y satisfacción del usuario al usar la interfaz para lograr un objetivo",
+                    "La experiencia del usuario al usar la interfaz para lograr un objetivo",
+                    "El tiempo que tarda el usuario en completar una tarea usando la interfaz",
+                    "La apariencia visual de la interfaz"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "The degree of effectiveness, efficiency and satisfaction when users achieve their objectives",
+                "es-MX": "El grado de efectividad, eficiencia y satisfacción del usuario al usar la interfaz para lograr un objetivo"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "According to usability principles, usability is measured through effectiveness, efficiency and user satisfaction when completing tasks within a specific context of use."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "La usabilidad se evalúa mediante tres factores principales: efectividad, eficiencia y satisfacción. Estos indicadores permiten determinar qué tan fácil y útil resulta una interfaz para alcanzar los objetivos del usuario."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Diseño de Experiencia de Usuario",
+            "Question Text": {
+                "en-US": [
+                    "Which of these user experience factors can be designed?"
+                ],
+                "es-MX": [
+                    "¿Cuáles de estos factores de la experiencia de usuario se pueden diseñar?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "The user's previous experiences and skills",
+                    "The user's attitude and personality",
+                    "Brand image, presentation, functionality and interactive behavior of the user interface",
+                    "The user's needs, expectations and desires"
+                ],
+                "es-MX": [
+                    "Las experiencias previas y habilidades del usuario",
+                    "La actitud y la personalidad del usuario",
+                    "La imagen de marca, la presentación, la funcionalidad y el comportamiento interactivo de la interfaz de usuario",
+                    "Las necesidades, expectativas y deseos del usuario"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Brand image, presentation, functionality and interactive behavior of the user interface",
+                "es-MX": "La imagen de marca, la presentación, la funcionalidad y el comportamiento interactivo de la interfaz de usuario"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "Designers cannot directly control users' personalities, previous experiences or expectations. However, they can design the interface, functionality, presentation and brand image to influence the overall user experience."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "Los diseñadores no pueden modificar directamente la personalidad, experiencias previas o expectativas de los usuarios. Lo que sí pueden diseñar es la interfaz, su presentación visual, funcionalidad, comportamiento interactivo e imagen de marca para mejorar la experiencia de usuario."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Retorno de Inversión (ROI)",
+            "Question Text": {
+                "en-US": [
+                    "Why can investing in user experience generate a positive return on investment?"
+                ],
+                "es-MX": [
+                    "¿Por qué invertir en experiencia de usuario puede generar un retorno de inversión positivo?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Because it always reduces hardware costs",
+                    "Because it helps increase conversions and reduce user abandonment",
+                    "Because it eliminates the need for software development",
+                    "Because it guarantees project success"
+                ],
+                "es-MX": [
+                    "Porque siempre reduce los costos de hardware",
+                    "Porque ayuda a incrementar las conversiones y reducir el abandono de usuarios",
+                    "Porque elimina la necesidad de desarrollo de software",
+                    "Porque garantiza el éxito del proyecto"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Because it helps increase conversions and reduce user abandonment",
+                "es-MX": "Porque ayuda a incrementar las conversiones y reducir el abandono de usuarios"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "Improving the user experience can increase the number of users who complete desired actions, such as purchasing, registering or donating, while reducing abandonment rates and increasing revenue."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "Mejorar la experiencia de usuario puede aumentar la cantidad de usuarios que completan acciones deseadas, como comprar, registrarse o donar, mientras reduce el abandono y mejora los ingresos."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Fracaso de Proyectos",
+            "Question Text": {
+                "en-US": [
+                    "Which of the following was identified as a common cause of software project failure?"
+                ],
+                "es-MX": [
+                    "¿Cuál de los siguientes fue identificado como una causa común del fracaso de proyectos de software?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Poorly defined requirements",
+                    "Using too many programming languages",
+                    "Having experienced developers",
+                    "Performing user testing"
+                ],
+                "es-MX": [
+                    "Requisitos mal definidos",
+                    "Utilizar demasiados lenguajes de programación",
+                    "Contar con desarrolladores experimentados",
+                    "Realizar pruebas con usuarios"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Poorly defined requirements",
+                "es-MX": "Requisitos mal definidos"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "The IEEE article mentioned poorly defined requirements as one of the major reasons software projects fail. User-centered design activities help clarify requirements before development begins."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "El artículo de IEEE menciona los requisitos mal definidos como una de las principales causas del fracaso de proyectos de software. Las actividades de diseño centrado en el usuario ayudan a definirlos correctamente desde el inicio."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Costos de Desarrollo",
+            "Question Text": {
+                "en-US": [
+                    "According to the presentation, how much more expensive can it be to fix an error after development compared to fixing it before development is completed?"
+                ],
+                "es-MX": [
+                    "Según la presentación, ¿cuánto más costoso puede ser corregir un error después del desarrollo en comparación con corregirlo antes de finalizarlo?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "10 times more expensive",
+                    "25 times more expensive",
+                    "50 times more expensive",
+                    "100 times more expensive"
+                ],
+                "es-MX": [
+                    "10 veces más costoso",
+                    "25 veces más costoso",
+                    "50 veces más costoso",
+                    "100 veces más costoso"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "100 times more expensive",
+                "es-MX": "100 veces más costoso"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "The presentation states that correcting an error after development can cost up to 100 times more than identifying and fixing the same error before development is completed."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "La presentación indica que corregir un error después del desarrollo puede costar hasta 100 veces más que detectarlo y solucionarlo antes de que el proyecto sea completado."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Diseño Centrado en el Usuario",
+            "Question Text": {
+                "en-US": [
+                    "Which activity helps identify user needs before development begins?"
+                ],
+                "es-MX": [
+                    "¿Qué actividad ayuda a identificar las necesidades de los usuarios antes de comenzar el desarrollo?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Writing source code",
+                    "Stakeholder interviews and user research",
+                    "Purchasing new hardware",
+                    "Deploying the final product"
+                ],
+                "es-MX": [
+                    "Escribir código fuente",
+                    "Entrevistas con stakeholders e investigación de usuarios",
+                    "Comprar nuevo hardware",
+                    "Implementar el producto final"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Stakeholder interviews and user research",
+                "es-MX": "Entrevistas con stakeholders e investigación de usuarios"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "User-centered design relies on interviews and research to understand user needs and business requirements before development begins."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "El diseño centrado en el usuario utiliza entrevistas e investigación para comprender las necesidades de los usuarios y los requisitos del negocio antes de iniciar el desarrollo."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Desarrollo de Software",
+            "Question Text": {
+                "en-US": [
+                    "According to the presentation, what percentage of programmers' time is spent on avoidable rework?"
+                ],
+                "es-MX": [
+                    "Según la presentación, ¿qué porcentaje del tiempo de los programadores se dedica a retrabajo evitable?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "10%",
+                    "25%",
+                    "50%",
+                    "75%"
+                ],
+                "es-MX": [
+                    "10%",
+                    "25%",
+                    "50%",
+                    "75%"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "50%",
+                "es-MX": "50%"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "The presentation cites research indicating that programmers spend approximately 50 percent of their time performing rework that could have been avoided."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "La presentación cita investigaciones que indican que los programadores dedican aproximadamente el 50% de su tiempo a realizar retrabajos que podrían haberse evitado."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Métricas UX",
+            "Question Text": {
+                "en-US": [
+                    "What does conversion rate measure?"
+                ],
+                "es-MX": [
+                    "¿Qué mide la tasa de conversión?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "The number of software errors",
+                    "The percentage of visitors who complete a desired action",
+                    "The amount of code written",
+                    "The number of help desk calls"
+                ],
+                "es-MX": [
+                    "La cantidad de errores de software",
+                    "El porcentaje de visitantes que completan una acción deseada",
+                    "La cantidad de código escrito",
+                    "El número de llamadas al centro de ayuda"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "The percentage of visitors who complete a desired action",
+                "es-MX": "El porcentaje de visitantes que completan una acción deseada"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "Conversion rate measures the percentage of users who perform the action expected by the organization, such as registering, purchasing or making a donation."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "La tasa de conversión mide el porcentaje de usuarios que realizan la acción esperada por la organización, como registrarse, comprar o realizar una donación."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Métricas UX",
+            "Question Text": {
+                "en-US": [
+                    "What is user drop-off or abandonment?"
+                ],
+                "es-MX": [
+                    "¿Qué es el abandono de usuarios o drop-off?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Users completing all tasks successfully",
+                    "Users leaving before completing the desired action",
+                    "Users requesting additional features",
+                    "Users updating their profile"
+                ],
+                "es-MX": [
+                    "Usuarios que completan todas las tareas exitosamente",
+                    "Usuarios que abandonan antes de completar la acción deseada",
+                    "Usuarios que solicitan nuevas funciones",
+                    "Usuarios que actualizan su perfil"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Users leaving before completing the desired action",
+                "es-MX": "Usuarios que abandonan antes de completar la acción deseada"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "Drop-off occurs when users leave a process, website or application before completing the action the organization expects them to perform."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "El abandono ocurre cuando los usuarios dejan un proceso, sitio web o aplicación antes de completar la acción que la organización espera que realicen."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Diseño Centrado en el Usuario",
+            "Question Text": {
+                "en-US": [
+                    "Which practice helps reduce misunderstandings between customers, developers and users?"
+                ],
+                "es-MX": [
+                    "¿Qué práctica ayuda a reducir los malentendidos entre clientes, desarrolladores y usuarios?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Ignoring user feedback",
+                    "User-centered design activities",
+                    "Reducing project documentation",
+                    "Adding more programming languages"
+                ],
+                "es-MX": [
+                    "Ignorar la retroalimentación de los usuarios",
+                    "Las actividades de diseño centrado en el usuario",
+                    "Reducir la documentación del proyecto",
+                    "Agregar más lenguajes de programación"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "User-centered design activities",
+                "es-MX": "Las actividades de diseño centrado en el usuario"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "User-centered design improves communication among stakeholders and helps ensure that requirements and expectations are clearly understood."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "El diseño centrado en el usuario mejora la comunicación entre los involucrados y ayuda a garantizar que los requisitos y expectativas sean comprendidos correctamente."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Retorno de Inversión (ROI)",
+            "Question Text": {
+                "en-US": [
+                    "How can improving the conversion rate benefit an organization?"
+                ],
+                "es-MX": [
+                    "¿Cómo puede beneficiar a una organización mejorar la tasa de conversión?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "By increasing the number of users who complete the desired action",
+                    "By eliminating all software errors",
+                    "By reducing internet costs",
+                    "By removing the need for user testing"
+                ],
+                "es-MX": [
+                    "Incrementando el número de usuarios que completan la acción deseada",
+                    "Eliminando todos los errores de software",
+                    "Reduciendo los costos de internet",
+                    "Eliminando la necesidad de realizar pruebas con usuarios"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "By increasing the number of users who complete the desired action",
+                "es-MX": "Incrementando el número de usuarios que completan la acción deseada"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "A higher conversion rate means more users perform the intended action, which can increase revenue, registrations, donations or other business objectives."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "Una tasa de conversión más alta significa que más usuarios realizan la acción esperada, lo que puede aumentar ingresos, registros, donaciones u otros objetivos del negocio."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Métricas UX",
+            "Question Text": {
+                "en-US": [
+                    "What is a conversion in the context of user experience and websites?"
+                ],
+                "es-MX": [
+                    "¿Qué es una conversión en el contexto de la experiencia de usuario y los sitios web?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "A software error reported by users",
+                    "A visitor completing the desired action",
+                    "A user leaving the website",
+                    "A website loading successfully"
+                ],
+                "es-MX": [
+                    "Un error de software reportado por los usuarios",
+                    "Un visitante que completa la acción deseada",
+                    "Un usuario que abandona el sitio web",
+                    "Un sitio web que carga correctamente"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "A visitor completing the desired action",
+                "es-MX": "Un visitante que completa la acción deseada"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "A conversion occurs when a user performs the action expected by the organization, such as purchasing a product, registering, subscribing or making a donation."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "Una conversión ocurre cuando un usuario realiza la acción que la organización espera, como comprar un producto, registrarse, suscribirse o realizar una donación."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "UX y UI",
+            "Question Text": {
+                "en-US": [
+                    "What is the main difference between UX and UI?"
+                ],
+                "es-MX": [
+                    "¿Cuál es la principal diferencia entre UX y UI?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "UX focuses on what the user feels, while UI focuses on what the user interacts with",
+                    "UX focuses on programming, while UI focuses on databases",
+                    "UX focuses on hardware, while UI focuses on software",
+                    "There is no difference between UX and UI"
+                ],
+                "es-MX": [
+                    "UX se enfoca en lo que siente el usuario, mientras que UI se enfoca en aquello con lo que interactúa",
+                    "UX se enfoca en programación, mientras que UI se enfoca en bases de datos",
+                    "UX se enfoca en hardware, mientras que UI se enfoca en software",
+                    "No existe diferencia entre UX y UI"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "UX focuses on what the user feels, while UI focuses on what the user interacts with",
+                "es-MX": "UX se enfoca en lo que siente el usuario, mientras que UI se enfoca en aquello con lo que interactúa"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "UI refers to the elements the user interacts with, while UX refers to the perceptions and feelings generated during that interaction."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "La UI corresponde a los elementos con los que interactúa el usuario, mientras que la UX corresponde a las percepciones y sentimientos que se generan durante dicha interacción."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Investigación UX",
+            "Question Text": {
+                "en-US": [
+                    "What is the primary purpose of UX research?"
+                ],
+                "es-MX": [
+                    "¿Cuál es el propósito principal de la investigación UX?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Understand user needs, motivations and difficulties",
+                    "Create graphic designs",
+                    "Develop source code",
+                    "Manage databases"
+                ],
+                "es-MX": [
+                    "Comprender las necesidades, motivaciones y dificultades de los usuarios",
+                    "Crear diseños gráficos",
+                    "Desarrollar código fuente",
+                    "Administrar bases de datos"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Understand user needs, motivations and difficulties",
+                "es-MX": "Comprender las necesidades, motivaciones y dificultades de los usuarios"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "UX research seeks to understand users so products can be designed according to their real needs and expectations."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "La investigación UX busca comprender a los usuarios para diseñar productos que respondan a sus necesidades y expectativas reales."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Arquitectura de Información",
+            "Question Text": {
+                "en-US": [
+                    "What does information architecture focus on?"
+                ],
+                "es-MX": [
+                    "¿En qué se enfoca la arquitectura de información?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Organizing and retrieving information",
+                    "Creating visual effects",
+                    "Writing software code",
+                    "Managing servers"
+                ],
+                "es-MX": [
+                    "La organización y recuperación de la información",
+                    "La creación de efectos visuales",
+                    "La escritura de código de software",
+                    "La administración de servidores"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Organizing and retrieving information",
+                "es-MX": "La organización y recuperación de la información"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "Information architecture helps users find information efficiently through structure, navigation and content organization."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "La arquitectura de información ayuda a los usuarios a encontrar información de manera eficiente mediante la estructura, navegación y organización de contenidos."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Arquitectura de Información",
+            "Question Text": {
+                "en-US": [
+                    "Which activity is commonly associated with information architecture?"
+                ],
+                "es-MX": [
+                    "¿Qué actividad está comúnmente asociada con la arquitectura de información?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Creating site maps",
+                    "Designing logos",
+                    "Writing marketing campaigns",
+                    "Configuring networks"
+                ],
+                "es-MX": [
+                    "Crear mapas de sitio",
+                    "Diseñar logotipos",
+                    "Redactar campañas publicitarias",
+                    "Configurar redes"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Creating site maps",
+                "es-MX": "Crear mapas de sitio"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "Site maps are one of the main tools used in information architecture to organize content and navigation."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "Los mapas de sitio son una de las principales herramientas utilizadas en arquitectura de información para organizar contenidos y navegación."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Diseño Gráfico",
+            "Question Text": {
+                "en-US": [
+                    "What is the primary responsibility of graphic design within UX projects?"
+                ],
+                "es-MX": [
+                    "¿Cuál es la responsabilidad principal del diseño gráfico dentro de proyectos UX?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Managing databases",
+                    "Visual appearance and presentation",
+                    "Creating business requirements",
+                    "Performing software testing"
+                ],
+                "es-MX": [
+                    "Administrar bases de datos",
+                    "La apariencia visual y presentación",
+                    "Crear requisitos de negocio",
+                    "Realizar pruebas de software"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Visual appearance and presentation",
+                "es-MX": "La apariencia visual y presentación"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "Graphic design focuses on the visual aspects of a product, helping create attractive and understandable interfaces."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "El diseño gráfico se enfoca en los aspectos visuales del producto, ayudando a crear interfaces atractivas y comprensibles."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Diseño de Interacción",
+            "Question Text": {
+                "en-US": [
+                    "What does interaction design primarily address?"
+                ],
+                "es-MX": [
+                    "¿Qué aborda principalmente el diseño de interacción?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Task flows and user-system interaction",
+                    "Server maintenance",
+                    "Database administration",
+                    "Financial planning"
+                ],
+                "es-MX": [
+                    "Los flujos de tareas y la interacción usuario-sistema",
+                    "El mantenimiento de servidores",
+                    "La administración de bases de datos",
+                    "La planeación financiera"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Task flows and user-system interaction",
+                "es-MX": "Los flujos de tareas y la interacción usuario-sistema"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "Interaction design defines how users interact with controls, systems and processes to accomplish their goals."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "El diseño de interacción define cómo los usuarios interactúan con controles, sistemas y procesos para alcanzar sus objetivos."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Diseño de Interacción",
+            "Question Text": {
+                "en-US": [
+                    "What area serves as a connection between UI and UX according to the diagram?"
+                ],
+                "es-MX": [
+                    "¿Qué área sirve como conexión entre UI y UX según el diagrama?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Interaction design",
+                    "Graphic design",
+                    "Programming",
+                    "Marketing"
+                ],
+                "es-MX": [
+                    "Diseño de interacción",
+                    "Diseño gráfico",
+                    "Programación",
+                    "Marketing"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Interaction design",
+                "es-MX": "Diseño de interacción"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "The diagram places interaction design in the overlap between UI and UX, showing its importance in both areas."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "El diagrama ubica al diseño de interacción en la intersección entre UI y UX, mostrando su importancia para ambas áreas."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Experiencia de Usuario",
+            "Question Text": {
+                "en-US": [
+                    "Which discipline helps identify user frustrations before a product is launched?"
+                ],
+                "es-MX": [
+                    "¿Qué disciplina ayuda a identificar las frustraciones de los usuarios antes de lanzar un producto?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "UX research",
+                    "Network administration",
+                    "Accounting",
+                    "Database optimization"
+                ],
+                "es-MX": [
+                    "Investigación UX",
+                    "Administración de redes",
+                    "Contabilidad",
+                    "Optimización de bases de datos"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "UX research",
+                "es-MX": "Investigación UX"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "UX research helps discover user problems, frustrations and expectations before development decisions are finalized."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "La investigación UX permite descubrir problemas, frustraciones y expectativas de los usuarios antes de finalizar decisiones de desarrollo."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "UX y UI",
+            "Question Text": {
+                "en-US": [
+                    "What does the user interact with directly in a digital product?"
+                ],
+                "es-MX": [
+                    "¿Con qué interactúa directamente el usuario en un producto digital?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "The user interface (UI)",
+                    "The database",
+                    "The source code",
+                    "The server hardware"
+                ],
+                "es-MX": [
+                    "La interfaz de usuario (UI)",
+                    "La base de datos",
+                    "El código fuente",
+                    "El hardware del servidor"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "The user interface (UI)",
+                "es-MX": "La interfaz de usuario (UI)"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "UI consists of the visual and interactive elements that users directly manipulate while using a product."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "La UI está formada por los elementos visuales e interactivos que los usuarios manipulan directamente al utilizar un producto."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Disciplinas de UX",
+            "Question Text": {
+                "en-US": [
+                    "Which disciplines are shown as contributing to user interface design?"
+                ],
+                "es-MX": [
+                    "¿Qué disciplinas aparecen como contribuyentes al diseño de la interfaz de usuario?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Graphic design, information architecture, interaction design and UX research",
+                    "Accounting, marketing, finance and logistics",
+                    "Programming, networking, databases and cybersecurity",
+                    "Sales, purchasing, operations and support"
+                ],
+                "es-MX": [
+                    "Diseño gráfico, arquitectura de información, diseño de interacción e investigación UX",
+                    "Contabilidad, marketing, finanzas y logística",
+                    "Programación, redes, bases de datos y ciberseguridad",
+                    "Ventas, compras, operaciones y soporte"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Graphic design, information architecture, interaction design and UX research",
+                "es-MX": "Diseño gráfico, arquitectura de información, diseño de interacción e investigación UX"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "The diagram illustrates that user interface design overlaps with graphic design, information architecture, interaction design and UX research."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "El diagrama muestra que el diseño de la interfaz de usuario se relaciona y solapa con el diseño gráfico, la arquitectura de información, el diseño de interacción y la investigación UX."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Diseño Gráfico",
+            "Question Text": {
+                "en-US": [
+                    "Which discipline is responsible for visual elements and appearance?"
+                ],
+                "es-MX": [
+                    "¿Qué disciplina se ocupa de los elementos visuales y la apariencia?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Graphic design",
+                    "Information architecture",
+                    "Interaction design",
+                    "UX research"
+                ],
+                "es-MX": [
+                    "Diseño gráfico",
+                    "Arquitectura de información",
+                    "Diseño de interacción",
+                    "Investigación UX"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Graphic design",
+                "es-MX": "Diseño gráfico"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "Graphic design focuses on the visual appearance of a product, including colors, typography, images and other visual elements that influence the user's perception."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "El diseño gráfico se encarga de la apariencia visual de un producto, incluyendo colores, tipografía, imágenes y otros elementos visuales que influyen en la percepción del usuario."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Arquitectura de Información",
+            "Question Text": {
+                "en-US": [
+                    "Which discipline focuses on information organization, retrieval, site maps and navigation?"
+                ],
+                "es-MX": [
+                    "¿Qué disciplina se ocupa de la organización y recuperación de la información, los mapas de sitio y la navegación?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Graphic design",
+                    "Interaction design",
+                    "Information architecture",
+                    "UX research"
+                ],
+                "es-MX": [
+                    "Diseño gráfico",
+                    "Diseño de interacción",
+                    "Arquitectura de información",
+                    "Investigación UX"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Information architecture",
+                "es-MX": "Arquitectura de información"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "Information architecture is responsible for structuring and organizing information so users can find and access content efficiently."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "La arquitectura de información es responsable de estructurar y organizar la información para que los usuarios puedan encontrar y acceder al contenido de manera eficiente."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Investigación UX",
+            "Question Text": {
+                "en-US": [
+                    "Which discipline seeks to understand user needs, motivations and difficulties related to a product?"
+                ],
+                "es-MX": [
+                    "¿Qué disciplina busca comprender las necesidades, motivaciones y dificultades de los usuarios en relación con un producto?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Graphic design",
+                    "Interaction design",
+                    "Information architecture",
+                    "UX research"
+                ],
+                "es-MX": [
+                    "Diseño gráfico",
+                    "Diseño de interacción",
+                    "Arquitectura de información",
+                    "Investigación UX"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "UX research",
+                "es-MX": "Investigación UX"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "UX research helps identify user needs, motivations, expectations and problems so products can be designed around real user requirements."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "La investigación UX ayuda a identificar las necesidades, motivaciones, expectativas y problemas de los usuarios para diseñar productos centrados en sus requerimientos reales."
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Perspectivas del Diseño UX",
+            "Question Text": {
+                "en-US": [
+                    "Which perspectives are considered important in UX design?"
+                ],
+                "es-MX": [
+                    "¿Qué perspectivas son importantes en el diseño UX?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Social, professional and business",
+                    "Social, political and cultural",
+                    "Social, professional and religious",
+                    "Business, social and cultural"
+                ],
+                "es-MX": [
+                    "Social, profesional y negocio",
+                    "Social, política y cultural",
+                    "Social, profesional y religiosa",
+                    "Negocio, social y cultural"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Social, professional and business",
+                "es-MX": "Social, profesional y negocio"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "UX design is not limited to making an interface look attractive. It must consider different perspectives so the product is useful, understandable and valuable."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "The social perspective considers how people interact with the product and how it affects their daily activities.",
+                            "The professional perspective considers the tasks, responsibilities and context in which the user performs their work.",
+                            "The business perspective ensures that the product also supports organizational goals, such as sales, efficiency or customer satisfaction."
+                        ]
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "El diseño UX no se limita a que una interfaz se vea bonita. Debe considerar distintas perspectivas para que el producto sea útil, comprensible y valioso para las personas y para la organización."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "La perspectiva social considera cómo las personas interactúan con el producto y cómo este influye en sus actividades diarias.",
+                            "La perspectiva profesional toma en cuenta las tareas, responsabilidades y contexto en el que el usuario realiza su trabajo.",
+                            "La perspectiva de negocio busca que el producto también cumpla objetivos de la organización, como ventas, eficiencia o satisfacción del cliente."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Impacto de UX",
+            "Question Text": {
+                "en-US": [
+                    "Which of the following is one of the most well-known impacts related to UX?"
+                ],
+                "es-MX": [
+                    "¿Cuál de los siguientes es uno de los impactos más conocidos relacionados con UX?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Poor interaction",
+                    "Poor system performance",
+                    "Poor design in medical applications",
+                    "Complex devices"
+                ],
+                "es-MX": [
+                    "Mala interacción",
+                    "Mal funcionamiento",
+                    "Mal diseño en aplicaciones médicas",
+                    "Aparatos complejos"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Poor design in medical applications",
+                "es-MX": "Mal diseño en aplicaciones médicas"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "Poor UX design can have serious consequences, especially in critical systems such as medical applications. In these contexts, an unclear interface may cause confusion, delays or incorrect decisions."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "If a button, label or instruction is confusing, the user may perform the wrong action.",
+                            "In medical environments, a design error can affect patient safety.",
+                            "This example shows that UX is not only about comfort, but also about reliability, clarity and risk reduction."
+                        ]
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "Un mal diseño UX puede tener consecuencias graves, especialmente en sistemas críticos como las aplicaciones médicas. En estos contextos, una interfaz poco clara puede provocar confusión, retrasos o decisiones incorrectas."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "Si un botón, etiqueta o instrucción no es clara, el usuario puede realizar una acción equivocada.",
+                            "En entornos médicos, un error de diseño puede afectar la seguridad del paciente.",
+                            "Este ejemplo demuestra que UX no solo trata de comodidad, sino también de claridad, confiabilidad y reducción de riesgos."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Beneficios de UX",
+            "Question Text": {
+                "en-US": [
+                    "Which of the following is a business benefit obtained through usability and user experience?"
+                ],
+                "es-MX": [
+                    "¿Cuál de los siguientes es un beneficio para el negocio obtenido gracias a la usabilidad y experiencia de usuario?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Cost reduction",
+                    "Rapid growth",
+                    "Lower publicity",
+                    "Increased sales"
+                ],
+                "es-MX": [
+                    "Reducción de costos",
+                    "Rápido crecimiento",
+                    "Baja publicidad",
+                    "Aumento de ventas"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Increased sales",
+                "es-MX": "Aumento de ventas"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "Good usability and user experience can directly influence business results. When users understand how to use a product, feel comfortable with it and can complete their goals easily, they are more likely to buy, register, donate or continue using the service."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "A clear interface reduces frustration.",
+                            "A simple process reduces abandonment.",
+                            "A positive experience increases trust.",
+                            "Higher trust and fewer obstacles can lead to more conversions and increased sales."
+                        ]
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "Una buena usabilidad y experiencia de usuario puede influir directamente en los resultados del negocio. Cuando los usuarios entienden cómo usar un producto, se sienten cómodos y pueden completar sus objetivos con facilidad, es más probable que compren, se registren, donen o sigan usando el servicio."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "Una interfaz clara reduce la frustración.",
+                            "Un proceso sencillo disminuye el abandono.",
+                            "Una experiencia positiva aumenta la confianza.",
+                            "Mayor confianza y menos obstáculos pueden generar más conversiones y aumento de ventas."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Madurez en Diseño UX",
+            "Question Text": {
+                "en-US": [
+                    "At which step does the designer rely on intuition or untested assumptions?"
+                ],
+                "es-MX": [
+                    "¿En qué peldaño el diseñador se basa en la intuición o en suposiciones sin probar?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "First step",
+                    "Second step",
+                    "Third step",
+                    "Fourth step"
+                ],
+                "es-MX": [
+                    "Primer peldaño",
+                    "Segundo peldaño",
+                    "Tercer peldaño",
+                    "Cuarto peldaño"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "First step",
+                "es-MX": "Primer peldaño"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "The first level of UX maturity is characterized by decisions based mainly on intuition, personal experience and assumptions that have not been validated with users."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "Design decisions are made without user research.",
+                            "There is little or no evidence supporting the decisions.",
+                            "The team assumes they know what users need.",
+                            "This approach increases the risk of creating products that do not solve real user problems."
+                        ]
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "El primer nivel de madurez en UX se caracteriza por tomar decisiones basadas principalmente en la intuición, la experiencia personal y suposiciones que no han sido validadas con usuarios reales."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "Las decisiones se toman sin realizar investigación de usuarios.",
+                            "Existe poca o ninguna evidencia que respalde las decisiones.",
+                            "El equipo supone conocer las necesidades de los usuarios.",
+                            "Este enfoque aumenta el riesgo de desarrollar productos que no resuelven problemas reales."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Madurez en Diseño UX",
+            "Question Text": {
+                "en-US": [
+                    "At which step are decisions based on principles, patterns, research and testing?"
+                ],
+                "es-MX": [
+                    "¿En qué peldaño las decisiones se basan en principios, patrones, investigación y pruebas?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "First step",
+                    "Third step",
+                    "Second step",
+                    "Fourth step"
+                ],
+                "es-MX": [
+                    "Primer peldaño",
+                    "Tercer peldaño",
+                    "Segundo peldaño",
+                    "Cuarto peldaño"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Second step",
+                "es-MX": "Segundo peldaño"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "At this level, design decisions are no longer based solely on assumptions. Instead, they are supported by established principles, recognized patterns, user research and validation through testing."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "Research is used to understand user needs.",
+                            "Design patterns help create familiar interfaces.",
+                            "Usability testing validates decisions.",
+                            "Evidence becomes more important than personal opinions."
+                        ]
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "En este nivel las decisiones de diseño dejan de depender únicamente de suposiciones. Se apoyan en principios establecidos, patrones reconocidos, investigación de usuarios y validación mediante pruebas."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "Se utiliza investigación para comprender las necesidades de los usuarios.",
+                            "Los patrones de diseño ayudan a crear interfaces familiares.",
+                            "Las pruebas de usabilidad permiten validar decisiones.",
+                            "La evidencia adquiere más importancia que las opiniones personales."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Métricas UX",
+            "Question Text": {
+                "en-US": [
+                    "Which type of metrics can provide useful information about the actual use of an interface?"
+                ],
+                "es-MX": [
+                    "¿Qué tipo de métricas pueden aportar información útil sobre el uso real que se está haciendo de una interfaz?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Inductive metrics",
+                    "Qualitative metrics",
+                    "Ethnographic metrics",
+                    "Quantitative metrics"
+                ],
+                "es-MX": [
+                    "Métricas inductivas",
+                    "Métricas cualitativas",
+                    "Métricas etnográficas",
+                    "Métricas cuantitativas"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Quantitative metrics",
+                "es-MX": "Métricas cuantitativas"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "Quantitative metrics are based on numerical data collected from users and systems. They help measure how an interface is actually being used and provide objective evidence for decision making."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "Number of users who complete a task.",
+                            "Conversion rate.",
+                            "Task completion time.",
+                            "Error rate.",
+                            "Percentage of user abandonment."
+                        ]
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "Las métricas cuantitativas se basan en datos numéricos obtenidos de los usuarios y de los sistemas. Permiten medir objetivamente cómo se utiliza una interfaz y facilitan la toma de decisiones basada en evidencia."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "Cantidad de usuarios que completan una tarea.",
+                            "Tasa de conversión.",
+                            "Tiempo necesario para completar una actividad.",
+                            "Número o porcentaje de errores.",
+                            "Porcentaje de abandono de usuarios."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Implicación de Usuarios",
+            "Question Text": {
+                "en-US": [
+                    "At which step are design decisions supported by surveys and interviews with users?"
+                ],
+                "es-MX": [
+                    "¿En qué peldaño las decisiones se apoyan en encuestas y entrevistas realizadas a los usuarios?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Second step",
+                    "Third step",
+                    "Fourth step",
+                    "Fifth step"
+                ],
+                "es-MX": [
+                    "Segundo peldaño",
+                    "Tercer peldaño",
+                    "Cuarto peldaño",
+                    "Quinto peldaño"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Third step",
+                "es-MX": "Tercer peldaño"
+            },
+            "Explanation": {
+                "en-US": [
+                    {
+                        "type": "text",
+                        "content": "At the third step, design decisions begin to incorporate information collected directly from users through interviews and surveys."
+                    }
+                ],
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "En el tercer peldaño las decisiones comienzan a apoyarse en información obtenida directamente de los usuarios mediante entrevistas y encuestas."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "Se recopilan opiniones de usuarios reales.",
+                            "Se conocen necesidades y dificultades.",
+                            "Las decisiones ya no dependen únicamente de intuiciones.",
+                            "Aún no existen pruebas de uso real del sistema."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Implicación de Usuarios",
+            "Question Text": {
+                "en-US": [
+                    "What is the main purpose of usability testing with real users?"
+                ],
+                "es-MX": [
+                    "¿Cuál es el propósito principal de realizar pruebas de usabilidad con usuarios reales?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Obtain empirical evidence about system use",
+                    "Increase advertising",
+                    "Reduce server costs",
+                    "Create marketing campaigns"
+                ],
+                "es-MX": [
+                    "Obtener evidencia empírica sobre el uso del sistema",
+                    "Incrementar la publicidad",
+                    "Reducir costos de servidores",
+                    "Crear campañas de marketing"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Obtain empirical evidence about system use",
+                "es-MX": "Obtener evidencia empírica sobre el uso del sistema"
+            },
+            "Explanation": {
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "En el cuarto peldaño se realizan pruebas de usabilidad con usuarios reales para observar cómo utilizan el sistema y detectar problemas que no son evidentes durante el diseño."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "Permiten observar comportamientos reales.",
+                            "Detectan errores de diseño.",
+                            "Proporcionan evidencia objetiva.",
+                            "Ayudan a mejorar la experiencia de usuario."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Analítica UX",
+            "Question Text": {
+                "en-US": [
+                    "At which step is web analytics used to obtain metrics from real users?"
+                ],
+                "es-MX": [
+                    "¿En qué peldaño se utiliza la analítica web para obtener métricas de usuarios reales?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Third step",
+                    "Fourth step",
+                    "Fifth step",
+                    "Sixth step"
+                ],
+                "es-MX": [
+                    "Tercer peldaño",
+                    "Cuarto peldaño",
+                    "Quinto peldaño",
+                    "Sexto peldaño"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Fifth step",
+                "es-MX": "Quinto peldaño"
+            },
+            "Explanation": {
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "La analítica web aparece en el quinto peldaño y permite recopilar métricas sobre el comportamiento real de los usuarios dentro de una aplicación o sitio web."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "Tiempo de permanencia.",
+                            "Tasa de conversión.",
+                            "Porcentaje de abandono.",
+                            "Número de clics y recorridos de navegación."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Analítica UX",
+            "Question Text": {
+                "en-US": [
+                    "What is one limitation of quantitative metrics?"
+                ],
+                "es-MX": [
+                    "¿Cuál es una limitación de las métricas cuantitativas?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "They do not explain why users behave in a certain way",
+                    "They cannot be collected automatically",
+                    "They are based on opinions only",
+                    "They cannot measure user actions"
+                ],
+                "es-MX": [
+                    "No explican por qué los usuarios se comportan de determinada manera",
+                    "No pueden recopilarse automáticamente",
+                    "Se basan únicamente en opiniones",
+                    "No pueden medir acciones de los usuarios"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "They do not explain why users behave in a certain way",
+                "es-MX": "No explican por qué los usuarios se comportan de determinada manera"
+            },
+            "Explanation": {
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "Las métricas cuantitativas muestran qué está ocurriendo, pero no explican las razones detrás del comportamiento de los usuarios."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "Indican cuántos usuarios abandonan una tarea.",
+                            "Muestran tiempos y porcentajes.",
+                            "No revelan motivaciones ni dificultades.",
+                            "Por ello suelen complementarse con entrevistas y observación."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Implicación de Usuarios",
+            "Question Text": {
+                "en-US": [
+                    "Which level represents the highest degree of user participation in design?"
+                ],
+                "es-MX": [
+                    "¿Qué nivel representa el mayor grado de participación de los usuarios en el diseño?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Fourth step",
+                    "Fifth step",
+                    "Sixth step",
+                    "Collaborative design with users"
+                ],
+                "es-MX": [
+                    "Cuarto peldaño",
+                    "Quinto peldaño",
+                    "Sexto peldaño",
+                    "Diseño colaborativo con usuarios"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Collaborative design with users",
+                "es-MX": "Diseño colaborativo con usuarios"
+            },
+            "Explanation": {
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "El diseño colaborativo o codiseño representa el máximo nivel de implicación de los usuarios, ya que participan activamente en la creación de las soluciones."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "Los usuarios aportan ideas.",
+                            "Participan en decisiones de diseño.",
+                            "Ayudan a validar propuestas.",
+                            "Contribuyen a crear herramientas que realmente satisfacen sus necesidades."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Niveles de Implicación de Usuarios",
+            "Question Text": {
+                "en-US": [
+                    "At which step are design decisions based primarily on intuition and untested assumptions?"
+                ],
+                "es-MX": [
+                    "¿En qué peldaño las decisiones de diseño se basan principalmente en la intuición y en suposiciones sin probar?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "First step",
+                    "Second step",
+                    "Third step",
+                    "Fourth step"
+                ],
+                "es-MX": [
+                    "Primer peldaño",
+                    "Segundo peldaño",
+                    "Tercer peldaño",
+                    "Cuarto peldaño"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "First step",
+                "es-MX": "Primer peldaño"
+            },
+            "Explanation": {
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "El primer peldaño representa el nivel más básico de implicación de los usuarios. Las decisiones se toman con base en la experiencia personal, intuición o creencias del diseñador, sin evidencia obtenida de usuarios reales."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "No se realizan investigaciones con usuarios.",
+                            "Las decisiones se apoyan en opiniones personales.",
+                            "Existe un alto riesgo de equivocarse respecto a las necesidades reales.",
+                            "Es el nivel con menor participación de los usuarios."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Niveles de Implicación de Usuarios",
+            "Question Text": {
+                "en-US": [
+                    "At which step are design decisions based on proven principles, patterns and guidelines?"
+                ],
+                "es-MX": [
+                    "¿En qué peldaño las decisiones se basan en principios, patrones y pautas de diseño probadas?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "First step",
+                    "Second step",
+                    "Third step",
+                    "Fourth step"
+                ],
+                "es-MX": [
+                    "Primer peldaño",
+                    "Segundo peldaño",
+                    "Tercer peldaño",
+                    "Cuarto peldaño"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Second step",
+                "es-MX": "Segundo peldaño"
+            },
+            "Explanation": {
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "En el segundo peldaño las decisiones dejan de depender únicamente de la intuición y comienzan a apoyarse en principios de diseño, patrones de interacción y recomendaciones que han sido investigadas y validadas previamente."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "Se utilizan buenas prácticas reconocidas.",
+                            "Se aplican patrones de diseño conocidos.",
+                            "Las decisiones tienen mayor fundamento que en el primer peldaño.",
+                            "Todavía no existe participación directa de usuarios reales."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Niveles de Implicación de Usuarios",
+            "Question Text": {
+                "en-US": [
+                    "At which step do designers begin collecting information through surveys and user interviews?"
+                ],
+                "es-MX": [
+                    "¿En qué peldaño los diseñadores comienzan a recopilar información mediante encuestas y entrevistas a usuarios?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Second step",
+                    "Third step",
+                    "Fourth step",
+                    "Fifth step"
+                ],
+                "es-MX": [
+                    "Segundo peldaño",
+                    "Tercer peldaño",
+                    "Cuarto peldaño",
+                    "Quinto peldaño"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Third step",
+                "es-MX": "Tercer peldaño"
+            },
+            "Explanation": {
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "El tercer peldaño incorpora información obtenida directamente de los usuarios mediante entrevistas y encuestas. Esto permite comprender mejor sus necesidades, expectativas y dificultades."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "Se obtiene retroalimentación de usuarios reales.",
+                            "Se identifican necesidades y problemas.",
+                            "Las decisiones comienzan a apoyarse en evidencia.",
+                            "Aún no se observa el comportamiento real durante el uso."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Niveles de Implicación de Usuarios",
+            "Question Text": {
+                "en-US": [
+                    "What is the primary objective of surveys and interviews in UX?"
+                ],
+                "es-MX": [
+                    "¿Cuál es el objetivo principal de las encuestas y entrevistas en UX?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Understand user opinions and needs",
+                    "Measure server performance",
+                    "Reduce development costs",
+                    "Create graphic designs"
+                ],
+                "es-MX": [
+                    "Comprender las opiniones y necesidades de los usuarios",
+                    "Medir el rendimiento de servidores",
+                    "Reducir costos de desarrollo",
+                    "Crear diseños gráficos"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Understand user opinions and needs",
+                "es-MX": "Comprender las opiniones y necesidades de los usuarios"
+            },
+            "Explanation": {
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "Las entrevistas y encuestas permiten conocer lo que los usuarios piensan, sienten y esperan de un producto antes de que se desarrollen o modifiquen sus funcionalidades."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "Ayudan a descubrir necesidades reales.",
+                            "Permiten identificar expectativas.",
+                            "Facilitan la toma de decisiones informadas.",
+                            "Reducen el riesgo de desarrollar características innecesarias."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Niveles de Implicación de Usuarios",
+            "Question Text": {
+                "en-US": [
+                    "At which step are usability tests performed with real users?"
+                ],
+                "es-MX": [
+                    "¿En qué peldaño se realizan pruebas de usabilidad con usuarios reales?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Second step",
+                    "Third step",
+                    "Fourth step",
+                    "Fifth step"
+                ],
+                "es-MX": [
+                    "Segundo peldaño",
+                    "Tercer peldaño",
+                    "Cuarto peldaño",
+                    "Quinto peldaño"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Fourth step",
+                "es-MX": "Cuarto peldaño"
+            },
+            "Explanation": {
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "El cuarto peldaño introduce los test de usabilidad con usuarios reales. Estos permiten observar directamente cómo interactúan las personas con una interfaz y detectar problemas de diseño."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "Se observan comportamientos reales.",
+                            "Se identifican obstáculos y errores.",
+                            "Se valida si las tareas son fáciles de completar.",
+                            "Se obtiene evidencia más sólida que con entrevistas únicamente."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Niveles de Implicación de Usuarios",
+            "Question Text": {
+                "en-US": [
+                    "What is the main advantage of usability testing compared to surveys and interviews?"
+                ],
+                "es-MX": [
+                    "¿Cuál es la principal ventaja de las pruebas de usabilidad frente a las encuestas y entrevistas?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "They observe actual user behavior",
+                    "They eliminate all design errors",
+                    "They require fewer resources",
+                    "They replace UX research"
+                ],
+                "es-MX": [
+                    "Permiten observar el comportamiento real de los usuarios",
+                    "Eliminan todos los errores de diseño",
+                    "Requieren menos recursos",
+                    "Sustituyen la investigación UX"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "They observe actual user behavior",
+                "es-MX": "Permiten observar el comportamiento real de los usuarios"
+            },
+            "Explanation": {
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "Las entrevistas muestran lo que los usuarios dicen, mientras que las pruebas de usabilidad permiten observar lo que realmente hacen al interactuar con una interfaz."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "Se detectan problemas que los usuarios no mencionan.",
+                            "Se observan errores reales durante las tareas.",
+                            "Se obtiene evidencia directa del uso del sistema.",
+                            "Las decisiones se apoyan en comportamientos observables."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Niveles de Implicación de Usuarios",
+            "Question Text": {
+                "en-US": [
+                    "At which step is web analytics used to collect data about real user behavior?"
+                ],
+                "es-MX": [
+                    "¿En qué peldaño se utiliza la analítica web para recopilar datos sobre el comportamiento real de los usuarios?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Third step",
+                    "Fourth step",
+                    "Fifth step",
+                    "Sixth step"
+                ],
+                "es-MX": [
+                    "Tercer peldaño",
+                    "Cuarto peldaño",
+                    "Quinto peldaño",
+                    "Sexto peldaño"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Fifth step",
+                "es-MX": "Quinto peldaño"
+            },
+            "Explanation": {
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "En el quinto peldaño se utilizan herramientas de analítica web para recopilar información objetiva sobre el uso real de una interfaz. Los datos provienen directamente de la interacción de los usuarios con el sistema."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "Se recopilan métricas reales.",
+                            "Permite conocer patrones de navegación.",
+                            "Ayuda a detectar abandonos y errores.",
+                            "Las decisiones se apoyan en datos cuantitativos."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Analítica UX",
+            "Question Text": {
+                "en-US": [
+                    "Which of the following is an example of a quantitative metric?"
+                ],
+                "es-MX": [
+                    "¿Cuál de los siguientes es un ejemplo de métrica cuantitativa?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "User opinion about a design",
+                    "User emotions during a task",
+                    "Conversion rate",
+                    "Personal preferences"
+                ],
+                "es-MX": [
+                    "La opinión de un usuario sobre un diseño",
+                    "Las emociones de un usuario durante una tarea",
+                    "La tasa de conversión",
+                    "Las preferencias personales"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Conversion rate",
+                "es-MX": "La tasa de conversión"
+            },
+            "Explanation": {
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "Las métricas cuantitativas se expresan mediante números y permiten medir objetivamente el comportamiento de los usuarios. La tasa de conversión es una de las métricas más utilizadas en UX."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "Mide acciones completadas por los usuarios.",
+                            "Se expresa mediante porcentajes.",
+                            "Permite comparar resultados.",
+                            "Ayuda a evaluar mejoras en la experiencia de usuario."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Niveles de Implicación de Usuarios",
+            "Question Text": {
+                "en-US": [
+                    "At which step are users observed directly in their real environment?"
+                ],
+                "es-MX": [
+                    "¿En qué peldaño se observa directamente a los usuarios en su entorno real?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Fourth step",
+                    "Fifth step",
+                    "Sixth step",
+                    "Seventh step"
+                ],
+                "es-MX": [
+                    "Cuarto peldaño",
+                    "Quinto peldaño",
+                    "Sexto peldaño",
+                    "Séptimo peldaño"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Sixth step",
+                "es-MX": "Sexto peldaño"
+            },
+            "Explanation": {
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "El sexto peldaño consiste en observar directamente a los usuarios en el contexto donde realmente utilizan el producto o servicio. Esto permite descubrir situaciones que normalmente no aparecen en entrevistas o encuestas."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "Se estudia el contexto real de uso.",
+                            "Se detectan problemas ocultos.",
+                            "Se identifican hábitos y comportamientos reales.",
+                            "Se obtiene una comprensión más profunda de los usuarios."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Observación Contextual",
+            "Question Text": {
+                "en-US": [
+                    "What is one advantage of observing users in their natural environment?"
+                ],
+                "es-MX": [
+                    "¿Cuál es una ventaja de observar a los usuarios en su entorno natural?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "It reveals behaviors that users may not mention",
+                    "It eliminates the need for testing",
+                    "It guarantees perfect designs",
+                    "It replaces all UX methods"
+                ],
+                "es-MX": [
+                    "Permite descubrir comportamientos que los usuarios podrían no mencionar",
+                    "Elimina la necesidad de realizar pruebas",
+                    "Garantiza diseños perfectos",
+                    "Sustituye todos los métodos UX"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "It reveals behaviors that users may not mention",
+                "es-MX": "Permite descubrir comportamientos que los usuarios podrían no mencionar"
+            },
+            "Explanation": {
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "Las personas no siempre son conscientes de todo lo que hacen ni recuerdan todos los problemas que enfrentan. La observación contextual permite descubrir comportamientos que no aparecen en entrevistas o cuestionarios."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "Revela problemas reales.",
+                            "Permite comprender mejor el contexto.",
+                            "Ayuda a identificar necesidades ocultas.",
+                            "Complementa otras técnicas de investigación UX."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Niveles de Implicación de Usuarios",
+            "Question Text": {
+                "en-US": [
+                    "Which level represents the highest degree of user participation in the design process?"
+                ],
+                "es-MX": [
+                    "¿Qué nivel representa el mayor grado de participación de los usuarios en el proceso de diseño?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Fifth step",
+                    "Sixth step",
+                    "Seventh step",
+                    "Fourth step"
+                ],
+                "es-MX": [
+                    "Quinto peldaño",
+                    "Sexto peldaño",
+                    "Séptimo peldaño",
+                    "Cuarto peldaño"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Seventh step",
+                "es-MX": "Séptimo peldaño"
+            },
+            "Explanation": {
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "El séptimo peldaño corresponde al codiseño o diseño colaborativo. En este nivel los usuarios dejan de ser únicamente una fuente de información y participan activamente en la creación de las soluciones."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "Los usuarios colaboran con los diseñadores.",
+                            "Participan en la generación de ideas.",
+                            "Ayudan a validar propuestas.",
+                            "Es el nivel de implicación más alto."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Niveles de Implicación de Usuarios",
+            "Question Text": {
+                "en-US": [
+                    "Which sequence correctly represents the progression from the third to the fifth step?"
+                ],
+                "es-MX": [
+                    "¿Cuál secuencia representa correctamente la progresión desde el tercer hasta el quinto peldaño?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Usability Testing → Surveys and Interviews → Web Analytics",
+                    "Web Analytics → Surveys and Interviews → Usability Testing",
+                    "Surveys and Interviews → Usability Testing → Web Analytics",
+                    "Observation → Surveys and Interviews → Web Analytics"
+                ],
+                "es-MX": [
+                    "Pruebas de usabilidad → Encuestas y entrevistas → Analítica web",
+                    "Analítica web → Encuestas y entrevistas → Pruebas de usabilidad",
+                    "Encuestas y entrevistas → Pruebas de usabilidad → Analítica web",
+                    "Observación → Encuestas y entrevistas → Analítica web"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Surveys and Interviews → Usability Testing → Web Analytics",
+                "es-MX": "Encuestas y entrevistas → Pruebas de usabilidad → Analítica web"
+            },
+            "Explanation": {
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "La progresión de los niveles de implicación aumenta gradualmente la participación de los usuarios y la calidad de la evidencia obtenida."
+                    },
+                    {
+                        "type": "ol",
+                        "items": [
+                            "Tercer peldaño: encuestas y entrevistas.",
+                            "Cuarto peldaño: pruebas de usabilidad.",
+                            "Quinto peldaño: analítica web y métricas de uso."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Madurez UX en las Organizaciones",
+            "Question Text": {
+                "en-US": [
+                    "At which level is UX not recognized and design decisions are based on assumptions and intuition?"
+                ],
+                "es-MX": [
+                    "¿En qué nivel UX no es reconocido y las decisiones de diseño se basan en asunciones e intuición?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "First step",
+                    "Second step",
+                    "Third step",
+                    "Fourth step"
+                ],
+                "es-MX": [
+                    "Primer peldaño",
+                    "Segundo peldaño",
+                    "Tercer peldaño",
+                    "Cuarto peldaño"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "First step",
+                "es-MX": "Primer peldaño"
+            },
+            "Explanation": {
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "El primer nivel de madurez UX se caracteriza porque la experiencia de usuario aún no es reconocida como una disciplina importante dentro de la organización."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "El diseño está centrado en el desarrollador.",
+                            "Las decisiones se basan en intuición.",
+                            "No existe investigación UX formal.",
+                            "Los usuarios tienen poca o ninguna participación."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Madurez UX en las Organizaciones",
+            "Question Text": {
+                "en-US": [
+                    "At which level does awareness of usability begin and design principles are applied?"
+                ],
+                "es-MX": [
+                    "¿En qué nivel comienza a existir conciencia sobre la usabilidad y se aplican principios de diseño?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "First step",
+                    "Second step",
+                    "Third step",
+                    "Fourth step"
+                ],
+                "es-MX": [
+                    "Primer peldaño",
+                    "Segundo peldaño",
+                    "Tercer peldaño",
+                    "Cuarto peldaño"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Second step",
+                "es-MX": "Segundo peldaño"
+            },
+            "Explanation": {
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "En el segundo nivel la organización comienza a reconocer la importancia de la usabilidad y se aplican principios y pautas de diseño conocidas."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "Existe una mayor preocupación por la experiencia de usuario.",
+                            "Se utilizan buenas prácticas de diseño.",
+                            "La toma de decisiones sigue siendo principalmente interna.",
+                            "La participación de usuarios sigue siendo limitada."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Madurez UX en las Organizaciones",
+            "Question Text": {
+                "en-US": [
+                    "Which level represents the ideal UX culture where business decisions are supported by UX research and metrics?"
+                ],
+                "es-MX": [
+                    "¿Qué nivel representa la cultura UX ideal, donde las decisiones empresariales se apoyan en investigación UX y métricas?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "First step",
+                    "Fourth step",
+                    "Third step",
+                    "Sixth step"
+                ],
+                "es-MX": [
+                    "Primer peldaño",
+                    "Cuarto peldaño",
+                    "Tercer peldaño",
+                    "Sexto peldaño"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Sixth step",
+                "es-MX": "Sexto peldaño"
+            },
+            "Explanation": {
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "El sexto nivel representa el estado más avanzado de madurez UX. La experiencia de usuario forma parte de la cultura organizacional y las decisiones estratégicas se apoyan en evidencia obtenida mediante investigación y métricas."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "UX participa en la estrategia empresarial.",
+                            "Las decisiones se basan en evidencia.",
+                            "La investigación es continua.",
+                            "La organización está centrada en el usuario."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Madurez UX en las Organizaciones",
+            "Question Text": {
+                "en-US": [
+                    "What is one characteristic of organizations with low UX maturity?"
+                ],
+                "es-MX": [
+                    "¿Cuál es una característica de las organizaciones con baja madurez UX?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Decisions are based on assumptions",
+                    "Continuous user research",
+                    "User-centered culture",
+                    "Strategic UX planning"
+                ],
+                "es-MX": [
+                    "Las decisiones se basan en suposiciones",
+                    "Investigación continua con usuarios",
+                    "Cultura centrada en el usuario",
+                    "Planeación estratégica de UX"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Decisions are based on assumptions",
+                "es-MX": "Las decisiones se basan en suposiciones"
+            },
+            "Explanation": {
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "Las organizaciones con baja madurez UX suelen tomar decisiones basadas en opiniones internas o intuiciones, en lugar de utilizar evidencia obtenida mediante investigación."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "Existe poca participación de usuarios.",
+                            "No se realizan pruebas frecuentes.",
+                            "Las decisiones dependen de la experiencia personal.",
+                            "El riesgo de errores de diseño es mayor."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Madurez UX en las Organizaciones",
+            "Question Text": {
+                "en-US": [
+                    "Why is UX maturity important for an organization?"
+                ],
+                "es-MX": [
+                    "¿Por qué es importante la madurez UX para una organización?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "It helps make decisions based on user evidence",
+                    "It eliminates the need for developers",
+                    "It replaces business goals",
+                    "It removes the need for testing"
+                ],
+                "es-MX": [
+                    "Ayuda a tomar decisiones basadas en evidencia de usuarios",
+                    "Elimina la necesidad de desarrolladores",
+                    "Sustituye los objetivos del negocio",
+                    "Elimina la necesidad de realizar pruebas"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "It helps make decisions based on user evidence",
+                "es-MX": "Ayuda a tomar decisiones basadas en evidencia de usuarios"
+            },
+            "Explanation": {
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "A medida que aumenta la madurez UX, la organización utiliza más investigación, métricas y evidencia para comprender a sus usuarios y mejorar sus productos."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "Reduce errores de diseño.",
+                            "Incrementa la satisfacción de los usuarios.",
+                            "Permite tomar mejores decisiones.",
+                            "Favorece el cumplimiento de objetivos de negocio."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Sitios Web",
+            "Question Text": {
+                "en-US": [
+                    "What is each individual screen or document within a website or application called?"
+                ],
+                "es-MX": [
+                    "¿Cómo se denomina cada una de las pantallas o documentos individuales dentro de un sitio web o aplicación?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Web Page",
+                    "Website",
+                    "Informational Website",
+                    "Web Application"
+                ],
+                "es-MX": [
+                    "Página Web",
+                    "Sitio Web",
+                    "Sitio Web Informativo",
+                    "Aplicación Web"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Web Page",
+                "es-MX": "Página Web"
+            },
+            "Explanation": {
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "Una página web es cada uno de los documentos o pantallas individuales que forman parte de un sitio web o de una aplicación web. Cada página suele tener una función específica y puede estar conectada con otras mediante enlaces."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "Representa una pantalla individual.",
+                            "Forma parte de un sitio web más grande.",
+                            "Puede contener texto, imágenes, formularios o videos.",
+                            "Normalmente se accede a ella mediante una URL específica."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Sitios Web",
+            "Question Text": {
+                "en-US": [
+                    "What is a collection of organized and interconnected web pages under the same domain called?"
+                ],
+                "es-MX": [
+                    "¿Cómo se denomina un conjunto de páginas web organizadas y enlazadas bajo un mismo dominio?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Web Page",
+                    "Web Application",
+                    "Website",
+                    "Corporate Web"
+                ],
+                "es-MX": [
+                    "Página Web",
+                    "Aplicación Web",
+                    "Sitio Web",
+                    "Web Corporativa"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Website",
+                "es-MX": "Sitio Web"
+            },
+            "Explanation": {
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "Un sitio web está formado por varias páginas web relacionadas entre sí y organizadas bajo un mismo dominio. Su estructura permite a los usuarios navegar entre diferentes secciones para acceder a la información o funcionalidades disponibles."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "Está compuesto por múltiples páginas web.",
+                            "Comparte un mismo dominio de Internet.",
+                            "Incluye menús y sistemas de navegación.",
+                            "Puede contener información, servicios o aplicaciones."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "Category": "Tipos de Sitios Web",
+            "Question Text": {
+                "en-US": [
+                    "Which type of website is mainly intended to provide information to users?"
+                ],
+                "es-MX": [
+                    "¿Qué tipo de sitio web tiene como objetivo principal proporcionar información a los usuarios?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Web Page",
+                    "Web Application",
+                    "Informational Website",
+                    "Blog"
+                ],
+                "es-MX": [
+                    "Página Web",
+                    "Aplicación Web",
+                    "Sitio Web Informativo",
+                    "Blog"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Informational Website",
+                "es-MX": "Sitio Web Informativo"
+            },
+            "Explanation": {
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "Un sitio web informativo tiene como propósito principal presentar información al usuario. Generalmente contiene contenido estático y su objetivo no es realizar procesos complejos sino comunicar datos, noticias, servicios o información institucional."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "Su finalidad principal es informar.",
+                            "Normalmente contiene contenido estático.",
+                            "Es común en empresas, escuelas y organismos públicos.",
+                            "Prioriza la claridad y facilidad de acceso a la información."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+        "Category": "Tipos de Sitios Web",
+        "Question Text": {
+        "en-US": [
+        "Which type of website provides information about a brand, product or service, including its mission, vision and differentiators?"
+        ],
+        "es-MX": [
+        "¿Qué tipo de sitio web ofrece información sobre una marca, producto o servicio, incluyendo su visión, misión y factores diferenciadores?"
+        ]
+        },
+        "Options": {
+        "en-US": [
+        "Corporate Websites",
+        "Website",
+        "Personal Websites",
+        "Web Applications"
+        ],
+        "es-MX": [
+        "Webs corporativas",
+        "Sitio Web",
+        "Sitios personales",
+        "Aplicaciones web"
+        ]
+        },
+        "Correct Answer": {
+        "en-US": "Corporate Websites",
+        "es-MX": "Webs corporativas"
+        },
+        "Explanation": {
+        "es-MX": [
+        {
+        "type": "text",
+        "content": "Las webs corporativas representan la presencia digital de una empresa, organización o institución. Su objetivo es comunicar quiénes son, qué ofrecen y cuáles son sus valores."
+        },
+        {
+        "type": "ul",
+        "items": [
+        "Presentan información sobre la empresa.",
+        "Incluyen misión, visión y valores.",
+        "Muestran productos o servicios.",
+        "Ayudan a fortalecer la imagen de marca.",
+        "Facilitan el contacto con clientes y usuarios."
+        ]
+        }
+        ]
+        }
+        },
+        {
+        "Category": "Tipos de Sitios Web",
+        "Question Text": {
+        "en-US": [
+        "Which type of website is used to showcase the knowledge, experience and achievements of a professional?"
+        ],
+        "es-MX": [
+        "¿Qué tipo de sitio web se utiliza para mostrar los conocimientos, experiencia y reconocimientos de un profesional?"
+        ]
+        },
+        "Options": {
+        "en-US": [
+        "Corporate Websites",
+        "Web Applications",
+        "Personal Websites",
+        "Websites"
+        ],
+        "es-MX": [
+        "Webs corporativas",
+        "Aplicaciones Web",
+        "Sitios personales",
+        "Sitios Web"
+        ]
+        },
+        "Correct Answer": {
+        "en-US": "Personal Websites",
+        "es-MX": "Sitios personales"
+        },
+        "Explanation": {
+        "es-MX": [
+        {
+        "type": "text",
+        "content": "Los sitios personales son espacios digitales donde una persona comparte información sobre su trayectoria, habilidades, proyectos y logros profesionales o personales."
+        },
+        {
+        "type": "ul",
+        "items": [
+        "Funcionan como portafolio profesional.",
+        "Muestran experiencia y conocimientos.",
+        "Pueden incluir currículo y certificaciones.",
+        "Ayudan a construir una marca personal.",
+        "Son comunes entre diseñadores, desarrolladores y consultores."
+        ]
+        }
+        ]
+        }
+        },
+        {
+        "Category": "Tipos de Sitios Web",
+        "Question Text": {
+        "en-US": [
+        "Which type of website usually consists of one or a few pages and is commonly used to promote a new product or service?"
+        ],
+        "es-MX": [
+        "¿Qué tipo de sitio web suele componerse de una o pocas páginas y se utiliza para promocionar un nuevo producto o servicio?"
+        ]
+        },
+        "Options": {
+        "en-US": [
+        "Web Page",
+        "Web Applications",
+        "Microsites",
+        "Blog"
+        ],
+        "es-MX": [
+        "Página Web",
+        "Aplicaciones Web",
+        "Micrositios Web",
+        "Blog"
+        ]
+        },
+        "Correct Answer": {
+        "en-US": "Microsites",
+        "es-MX": "Micrositios Web"
+        },
+        "Explanation": {
+        "es-MX": [
+        {
+        "type": "text",
+        "content": "Un micrositio es un sitio web pequeño e independiente que normalmente se crea para una campaña específica, lanzamiento de producto o promoción temporal."
+        },
+        {
+        "type": "ul",
+        "items": [
+        "Puede estar formado por una o pocas páginas.",
+        "Suele tener una duración limitada.",
+        "Se utiliza para campañas de marketing.",
+        "Se enfoca en un producto, servicio o evento específico.",
+        "Su contenido está orientado a un objetivo concreto."
+        ]
+        }
+        ]
+        }
+        }
+        
+    ]
+}

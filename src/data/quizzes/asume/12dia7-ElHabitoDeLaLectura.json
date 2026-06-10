@@ -1,0 +1,762 @@
+{
+    "meta": {
+      "slug": "tema-12-habito-de-la-lectura",
+      "title": "ASUME · El hábito de la lectura",
+      "subject": "ASUME",
+      "unit": 1,
+      "classNo": 12,
+      "description": "Preguntas relacionadas con el tema del hábito de la lectura dentro del programa ASUME.",
+      "tags": [
+        "ASUME",
+        "Lectura",
+        "Aprendizaje",
+        "Desarrollo personal"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "Importancia de la lectura",
+        "Question Text": {
+          "en-US": [
+            "Why is reading considered an important habit?"
+          ],
+          "es-MX": [
+            "¿Por qué se considera la lectura un hábito importante?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it only entertains people",
+            "Because it strengthens knowledge, comprehension and thinking",
+            "Because it replaces experience completely",
+            "Because it is useful only in school"
+          ],
+          "es-MX": [
+            "Porque solo entretiene a las personas",
+            "Porque fortalece el conocimiento, la comprensión y el pensamiento",
+            "Porque sustituye completamente la experiencia",
+            "Porque solo sirve en la escuela"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it strengthens knowledge, comprehension and thinking",
+          "es-MX": "Porque fortalece el conocimiento, la comprensión y el pensamiento"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Reading is an important habit because it expands knowledge, improves comprehension and develops the ability to think more clearly."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La lectura es un hábito importante porque amplía el conocimiento, mejora la comprensión y desarrolla la capacidad de pensar con mayor claridad."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Interés por la lectura",
+        "Question Text": {
+          "en-US": [
+            "Why can reading become a valuable habit for many people?"
+          ],
+          "es-MX": [
+            "¿Por qué la lectura puede convertirse en un hábito valioso para muchas personas?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it wastes free time",
+            "Because it helps learn, imagine and grow personally",
+            "Because it only serves in school",
+            "Because it avoids all responsibilities"
+          ],
+          "es-MX": [
+            "Porque desperdicia el tiempo libre",
+            "Porque ayuda a aprender, imaginar y crecer personalmente",
+            "Porque solo sirve en la escuela",
+            "Porque evita todas las responsabilidades"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it helps learn, imagine and grow personally",
+          "es-MX": "Porque ayuda a aprender, imaginar y crecer personalmente"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Reading is valuable because it expands knowledge, stimulates imagination and supports personal development."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La lectura es valiosa porque amplía el conocimiento, estimula la imaginación y favorece el desarrollo personal."
+            }
+          ]
+        }
+      }
+      ,
+      {
+        "Category": "Aprendizaje mediante libros",
+        "Question Text": {
+          "en-US": [
+            "What can a person learn through books?"
+          ],
+          "es-MX": [
+            "¿Qué puede aprender una persona a través de los libros?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Only memorized facts",
+            "Ideas, experiences, knowledge and new perspectives",
+            "Only entertainment without value",
+            "Nothing useful for life"
+          ],
+          "es-MX": [
+            "Solo datos memorizados",
+            "Ideas, experiencias, conocimientos y nuevas perspectivas",
+            "Solo entretenimiento sin valor",
+            "Nada útil para la vida"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Ideas, experiences, knowledge and new perspectives",
+          "es-MX": "Ideas, experiencias, conocimientos y nuevas perspectivas"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Books allow readers to access knowledge, life lessons and different ways of understanding the world."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los libros permiten acceder a conocimientos, enseñanzas de vida y distintas formas de entender el mundo."
+            }
+          ]
+        }
+      }
+      ,
+      {
+        "Category": "Desinterés por la lectura",
+        "Question Text": {
+          "en-US": [
+            "What is a common reason some people do not enjoy reading?"
+          ],
+          "es-MX": [
+            "¿Cuál es una razón común por la que algunas personas no disfrutan leer?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "They have not found topics that interest them",
+            "Reading is impossible to learn",
+            "Books contain no ideas",
+            "Only children can enjoy reading"
+          ],
+          "es-MX": [
+            "No han encontrado temas que les interesen",
+            "Leer es imposible de aprender",
+            "Los libros no contienen ideas",
+            "Solo los niños pueden disfrutar la lectura"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "They have not found topics that interest them",
+          "es-MX": "No han encontrado temas que les interesen"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Sometimes people dislike reading because they have not discovered books or subjects that connect with their interests."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "A veces no gusta leer porque aún no se han descubierto libros o temas que conecten con los intereses personales."
+            }
+          ]
+        }
+      }
+      ,
+      {
+        "Category": "Hábito lector",
+        "Question Text": {
+          "en-US": [
+            "How can the habit of reading usually be developed?"
+          ],
+          "es-MX": [
+            "¿Cómo suele desarrollarse el hábito de la lectura?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "By forcing long readings only",
+            "By starting with interesting topics and reading consistently",
+            "By avoiding books completely",
+            "By reading only once a year"
+          ],
+          "es-MX": [
+            "Obligándose solo a lecturas largas",
+            "Comenzando con temas interesantes y leyendo con constancia",
+            "Evitando por completo los libros",
+            "Leyendo solo una vez al año"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "By starting with interesting topics and reading consistently",
+          "es-MX": "Comenzando con temas interesantes y leyendo con constancia"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Reading habits grow when a person chooses enjoyable topics and practices regularly."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El hábito lector crece cuando la persona elige temas agradables y practica con regularidad."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Importancia de la lectura",
+        "Question Text": {
+          "en-US": [
+            "Why is reading considered an inexhaustible source of knowledge and learning?"
+          ],
+          "es-MX": [
+            "¿Por qué se considera la lectura una fuente inagotable de conocimiento y aprendizaje?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it always offers new ideas and information",
+            "Because it replaces all life experience",
+            "Because it only entertains people",
+            "Because it avoids the need to think"
+          ],
+          "es-MX": [
+            "Porque siempre ofrece nuevas ideas e información",
+            "Porque reemplaza toda experiencia de vida",
+            "Porque solo entretiene a las personas",
+            "Porque evita la necesidad de pensar"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it always offers new ideas and information",
+          "es-MX": "Porque siempre ofrece nuevas ideas e información"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Reading provides constant access to knowledge, experiences and perspectives that continue to enrich the mind."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La lectura brinda acceso constante a conocimientos, experiencias y perspectivas que siguen enriqueciendo la mente."
+            }
+          ]
+        }
+      }
+      ,
+      {
+        "Category": "Aprendizaje continuo",
+        "Question Text": {
+          "en-US": [
+            "What does reading mainly promote in a person?"
+          ],
+          "es-MX": [
+            "¿Qué promueve principalmente la lectura en una persona?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Ignorance and routine",
+            "Continuous learning and intellectual growth",
+            "Dependence on others",
+            "Loss of imagination"
+          ],
+          "es-MX": [
+            "Ignorancia y rutina",
+            "Aprendizaje continuo y crecimiento intelectual",
+            "Dependencia de otros",
+            "Pérdida de imaginación"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Continuous learning and intellectual growth",
+          "es-MX": "Aprendizaje continuo y crecimiento intelectual"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Reading strengthens understanding, expands vocabulary and supports lifelong intellectual development."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La lectura fortalece la comprensión, amplía el vocabulario y favorece el desarrollo intelectual permanente."
+            }
+          ]
+        }
+      }
+      ,
+      {
+        "Category": "Beneficios de los libros",
+        "Question Text": {
+          "en-US": [
+            "What can books offer beyond simple entertainment?"
+          ],
+          "es-MX": [
+            "¿Qué pueden ofrecer los libros además del simple entretenimiento?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Knowledge, reflection and learning",
+            "Only distraction without value",
+            "Confusion in every topic",
+            "Nothing useful for life"
+          ],
+          "es-MX": [
+            "Conocimiento, reflexión y aprendizaje",
+            "Solo distracción sin valor",
+            "Confusión en todo tema",
+            "Nada útil para la vida"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Knowledge, reflection and learning",
+          "es-MX": "Conocimiento, reflexión y aprendizaje"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Books can teach, inspire reflection and help people understand new subjects and ideas."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Los libros pueden enseñar, inspirar reflexión y ayudar a comprender nuevos temas e ideas."
+            }
+          ]
+        }
+      }
+      ,
+      {
+        "Category": "Valor de la lectura",
+        "Question Text": {
+          "en-US": [
+            "Why does reading remain valuable throughout life?"
+          ],
+          "es-MX": [
+            "¿Por qué la lectura sigue siendo valiosa durante toda la vida?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because learning opportunities never end",
+            "Because only children need books",
+            "Because reading becomes easier than thinking",
+            "Because it eliminates all mistakes"
+          ],
+          "es-MX": [
+            "Porque las oportunidades de aprender nunca terminan",
+            "Porque solo los niños necesitan libros",
+            "Porque leer se vuelve más fácil que pensar",
+            "Porque elimina todos los errores"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because learning opportunities never end",
+          "es-MX": "Porque las oportunidades de aprender nunca terminan"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "As long as a person reads, they can continue discovering ideas, improving skills and growing personally."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Mientras una persona lea, puede seguir descubriendo ideas, mejorando habilidades y creciendo personalmente."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Definición de hábito",
+        "Question Text": {
+          "en-US": [
+            "What is a habit according to the explanation?"
+          ],
+          "es-MX": [
+            "¿Qué es un hábito según la explicación?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A sudden action without practice",
+            "An ease acquired through constant practice of an exercise",
+            "A temporary emotion",
+            "An activity done only once"
+          ],
+          "es-MX": [
+            "Una acción repentina sin práctica",
+            "Una facilidad que se adquiere por la constante práctica de un ejercicio",
+            "Una emoción temporal",
+            "Una actividad realizada una sola vez"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "An ease acquired through constant practice of an exercise",
+          "es-MX": "Una facilidad que se adquiere por la constante práctica de un ejercicio"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "A habit is formed when repeated practice makes an action easier and more natural over time."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Un hábito se forma cuando la práctica repetida vuelve una acción más fácil y natural con el tiempo."
+            }
+          ]
+        }
+      }
+      ,
+      {
+        "Category": "Formación de hábitos",
+        "Question Text": {
+          "en-US": [
+            "How are habits mainly developed?"
+          ],
+          "es-MX": [
+            "¿Cómo se desarrollan principalmente los hábitos?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Through constant repetition and practice",
+            "Only by motivation one day",
+            "By avoiding effort",
+            "Only by natural talent"
+          ],
+          "es-MX": [
+            "Mediante repetición y práctica constante",
+            "Solo por motivación de un día",
+            "Evitando el esfuerzo",
+            "Solo por talento natural"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Through constant repetition and practice",
+          "es-MX": "Mediante repetición y práctica constante"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Repeated actions strengthen behavior patterns until they become habits."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Las acciones repetidas fortalecen conductas hasta convertirlas en hábitos."
+            }
+          ]
+        }
+      }
+      ,
+      {
+        "Category": "Definición de método",
+        "Question Text": {
+          "en-US": [
+            "What is a method according to the explanation?"
+          ],
+          "es-MX": [
+            "¿Qué es un método según la explicación?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Doing something without order",
+            "A way of doing something in an organized manner",
+            "A result obtained by chance",
+            "A rule used only in school"
+          ],
+          "es-MX": [
+            "Hacer algo sin orden",
+            "Un modo de hacer con orden una cosa",
+            "Un resultado obtenido al azar",
+            "Una regla usada solo en la escuela"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A way of doing something in an organized manner",
+          "es-MX": "Un modo de hacer con orden una cosa"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "A method helps achieve goals through steps or actions carried out with order."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Un método ayuda a lograr objetivos mediante pasos o acciones realizadas con orden."
+            }
+          ]
+        }
+      }
+      ,
+      {
+        "Category": "Lectura con método",
+        "Question Text": {
+          "en-US": [
+            "Why is a method useful for developing the reading habit?"
+          ],
+          "es-MX": [
+            "¿Por qué es útil un método para desarrollar el hábito de la lectura?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it organizes time and practice consistently",
+            "Because it eliminates the need to read",
+            "Because it replaces discipline completely",
+            "Because it only works for children"
+          ],
+          "es-MX": [
+            "Porque organiza el tiempo y la práctica con constancia",
+            "Porque elimina la necesidad de leer",
+            "Porque sustituye completamente la disciplina",
+            "Porque solo funciona en niños"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it organizes time and practice consistently",
+          "es-MX": "Porque organiza el tiempo y la práctica con constancia"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "A method creates order and consistency, making it easier to build a lasting reading habit."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "Un método crea orden y constancia, facilitando formar un hábito duradero de lectura."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Relaciones personales",
+        "Question Text": {
+          "en-US": [
+            "How can reading benefit our personal relationships?"
+          ],
+          "es-MX": [
+            "¿Cómo puede beneficiar la lectura nuestras relaciones personales?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "By making communication more difficult",
+            "By helping us express ourselves better and talk about different topics",
+            "By avoiding conversations with others",
+            "By making people depend on us"
+          ],
+          "es-MX": [
+            "Haciendo más difícil la comunicación",
+            "Ayudándonos a expresarnos mejor y hablar de diferentes temas",
+            "Evitando conversaciones con los demás",
+            "Haciendo que las personas dependan de nosotros"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "By helping us express ourselves better and talk about different topics",
+          "es-MX": "Ayudándonos a expresarnos mejor y hablar de diferentes temas"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Reading improves vocabulary and knowledge, which helps communication and social interaction."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La lectura mejora el vocabulario y el conocimiento, lo cual favorece la comunicación y la convivencia social."
+            }
+          ]
+        }
+      }
+      ,
+      {
+        "Category": "Seguridad personal",
+        "Question Text": {
+          "en-US": [
+            "Why can knowing different topics increase self-confidence?"
+          ],
+          "es-MX": [
+            "¿Por qué conocer diferentes temas puede aumentar la seguridad personal?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Because it helps participate in conversations with confidence",
+            "Because it avoids all mistakes forever",
+            "Because it makes effort unnecessary",
+            "Because it guarantees success in everything"
+          ],
+          "es-MX": [
+            "Porque ayuda a participar en conversaciones con confianza",
+            "Porque evita todos los errores para siempre",
+            "Porque hace innecesario el esfuerzo",
+            "Porque garantiza éxito en todo"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Because it helps participate in conversations with confidence",
+          "es-MX": "Porque ayuda a participar en conversaciones con confianza"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Knowledge gives confidence by allowing a person to communicate ideas and interact more securely."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "El conocimiento brinda confianza al permitir comunicar ideas e interactuar con mayor seguridad."
+            }
+          ]
+        }
+      }
+      ,
+      {
+        "Category": "Comunicación efectiva",
+        "Question Text": {
+          "en-US": [
+            "What skill improves when a person reads frequently?"
+          ],
+          "es-MX": [
+            "¿Qué habilidad mejora cuando una persona lee con frecuencia?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Confused speech",
+            "Clearer and better expression",
+            "Lack of attention",
+            "Fear of speaking"
+          ],
+          "es-MX": [
+            "Habla confusa",
+            "Expresión más clara y mejor",
+            "Falta de atención",
+            "Miedo a hablar"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Clearer and better expression",
+          "es-MX": "Expresión más clara y mejor"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Frequent reading strengthens vocabulary and language use, improving communication."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La lectura frecuente fortalece el vocabulario y el uso del lenguaje, mejorando la comunicación."
+            }
+          ]
+        }
+      }
+      ,
+      {
+        "Category": "Beneficio social de la lectura",
+        "Question Text": {
+          "en-US": [
+            "What social benefit can reading provide?"
+          ],
+          "es-MX": [
+            "¿Qué beneficio social puede brindar la lectura?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Isolation from others",
+            "Better interaction and confidence with people",
+            "Loss of curiosity",
+            "Avoiding all discussions"
+          ],
+          "es-MX": [
+            "Aislamiento de los demás",
+            "Mejor convivencia y confianza con las personas",
+            "Pérdida de curiosidad",
+            "Evitar toda discusión"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Better interaction and confidence with people",
+          "es-MX": "Mejor convivencia y confianza con las personas"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "text",
+              "content": "Reading enriches conversation topics and communication skills, helping social relationships."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "text",
+              "content": "La lectura enriquece los temas de conversación y las habilidades comunicativas, ayudando en las relaciones sociales."
+            }
+          ]
+        }
+      }
+
+    ]
+  }

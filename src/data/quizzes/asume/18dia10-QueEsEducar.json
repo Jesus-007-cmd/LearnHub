@@ -1,0 +1,1581 @@
+{
+    "meta": {
+      "slug": "tema-19-los-valores",
+      "title": "ASUME · Los valores",
+      "subject": "ASUME",
+      "unit": 1,
+      "classNo": 19,
+      "description": "Preguntas relacionadas con el tema de los valores dentro del programa ASUME.",
+      "tags": [
+        "ASUME",
+        "Valores",
+        "Ética",
+        "Desarrollo personal"
+      ]
+    },
+    "Questions": [
+  
+        {
+            "Category": "Concepto de educación",
+            "Question Text": {
+              "en-US": [
+                "What does educating mainly involve?"
+              ],
+              "es-MX": [
+                "¿Qué implica principalmente educar?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Only transmitting academic information",
+                "Helping a person develop values, knowledge and responsible behavior",
+                "Imposing rules without explanation",
+                "Avoiding personal decision-making"
+              ],
+              "es-MX": [
+                "Solo transmitir información académica",
+                "Ayudar a una persona a desarrollar valores, conocimientos y conducta responsable",
+                "Imponer reglas sin explicación",
+                "Evitar la toma de decisiones personales"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Helping a person develop values, knowledge and responsible behavior",
+              "es-MX": "Ayudar a una persona a desarrollar valores, conocimientos y conducta responsable"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Education is not limited to teaching information; it also seeks to form values, responsibility and personal growth."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La educación no se limita a enseñar información; también busca formar valores, responsabilidad y crecimiento personal."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Meta de la educación",
+            "Question Text": {
+              "en-US": [
+                "What is considered the ultimate goal of education?"
+              ],
+              "es-MX": [
+                "¿Qué se considera la meta final de la educación?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Memorizing information permanently",
+                "Depending completely on teachers",
+                "Self-education and personal growth",
+                "Avoiding independent decisions"
+              ],
+              "es-MX": [
+                "Memorizar información permanentemente",
+                "Depender completamente de los maestros",
+                "La autoeducación y el crecimiento personal",
+                "Evitar las decisiones independientes"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Self-education and personal growth",
+              "es-MX": "La autoeducación y el crecimiento personal"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "The goal of education is for a person to learn to guide and improve themselves independently throughout life."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La meta de la educación es que la persona aprenda a dirigirse y superarse por sí misma a lo largo de la vida."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Responsabilidad social",
+            "Question Text": {
+              "en-US": [
+                "What social responsibility do educators have according to the objective presented?"
+              ],
+              "es-MX": [
+                "¿Qué responsabilidad social tienen los educadores según el objetivo presentado?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "To teach only academic subjects",
+                "To help form and guide people positively within society",
+                "To avoid involvement in social development",
+                "To focus only on individual success"
+              ],
+              "es-MX": [
+                "Enseñar únicamente materias académicas",
+                "Ayudar a formar y orientar positivamente a las personas dentro de la sociedad",
+                "Evitar involucrarse en el desarrollo social",
+                "Enfocarse solamente en el éxito individual"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "To help form and guide people positively within society",
+              "es-MX": "Ayudar a formar y orientar positivamente a las personas dentro de la sociedad"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Educators have a social responsibility because their actions and example influence the development of people and society."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Los educadores tienen una responsabilidad social porque sus acciones y ejemplo influyen en el desarrollo de las personas y de la sociedad."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Concepto de educación",
+            "Question Text": {
+              "en-US": [
+                "Why is it considered a limited concept to think education only means teaching manners?"
+              ],
+              "es-MX": [
+                "¿Por qué se considera un concepto limitado pensar que educar solo significa enseñar modales?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Because education only applies at school",
+                "Because education involves the complete formation of the person",
+                "Because manners are not important",
+                "Because education depends only on rules"
+              ],
+              "es-MX": [
+                "Porque la educación solo aplica en la escuela",
+                "Porque la educación implica la formación completa de la persona",
+                "Porque los modales no son importantes",
+                "Porque la educación depende únicamente de reglas"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Because education involves the complete formation of the person",
+              "es-MX": "Porque la educación implica la formación completa de la persona"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Education goes beyond simple habits or manners because it seeks the integral development of the human person."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La educación va más allá de simples hábitos o modales porque busca el desarrollo integral de la persona humana."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Educación integral",
+            "Question Text": {
+              "en-US": [
+                "What does it mean that education covers the whole person?"
+              ],
+              "es-MX": [
+                "¿Qué significa que la educación abarca a la persona entera?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "That it only teaches academic subjects",
+                "That it develops values, attitudes, habits and personal growth",
+                "That it focuses only on external behavior",
+                "That it avoids emotional development"
+              ],
+              "es-MX": [
+                "Que solamente enseña materias académicas",
+                "Que desarrolla valores, actitudes, hábitos y crecimiento personal",
+                "Que se enfoca únicamente en la conducta externa",
+                "Que evita el desarrollo emocional"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "That it develops values, attitudes, habits and personal growth",
+              "es-MX": "Que desarrolla valores, actitudes, hábitos y crecimiento personal"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "True education seeks the integral development of the person in knowledge, values and behavior."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La verdadera educación busca el desarrollo integral de la persona en conocimientos, valores y conducta."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Hábitos y educación",
+            "Question Text": {
+              "en-US": [
+                "Which of the following is mentioned as part of the limited idea of education?"
+              ],
+              "es-MX": [
+                "¿Cuál de los siguientes se menciona como parte de la idea limitada de educación?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Teaching creativity and critical thinking",
+                "Helping discover personal purpose",
+                "Teaching polite greetings and good habits only",
+                "Developing emotional intelligence completely"
+              ],
+              "es-MX": [
+                "Enseñar creatividad y pensamiento crítico",
+                "Ayudar a descubrir el propósito personal",
+                "Enseñar únicamente saludos amables y buenos hábitos",
+                "Desarrollar completamente la inteligencia emocional"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Teaching polite greetings and good habits only",
+              "es-MX": "Enseñar únicamente saludos amables y buenos hábitos"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "The topic explains that reducing education only to manners or habits is a limited understanding of true education."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El tema explica que reducir la educación únicamente a modales o hábitos es una visión limitada de la verdadera educación."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Desarrollo personal",
+            "Question Text": {
+              "en-US": [
+                "According to the topic, what does educating mainly involve?"
+              ],
+              "es-MX": [
+                "Según el tema, ¿qué implica principalmente educar?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Treating everyone exactly the same way",
+                "Discovering and developing each person's unique qualities",
+                "Teaching only academic information",
+                "Focusing only on discipline and rules"
+              ],
+              "es-MX": [
+                "Tratar a todos exactamente de la misma manera",
+                "Descubrir y desarrollar las cualidades únicas de cada persona",
+                "Enseñar únicamente información académica",
+                "Enfocarse solamente en disciplina y reglas"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Discovering and developing each person's unique qualities",
+              "es-MX": "Descubrir y desarrollar las cualidades únicas de cada persona"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Education seeks to recognize the particular abilities and qualities of each person in order to help them grow and develop."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La educación busca reconocer las capacidades y cualidades particulares de cada persona para ayudarla a crecer y desarrollarse."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Apoyo familiar",
+            "Question Text": {
+              "en-US": [
+                "What important lesson can be learned from the video about the mother who believed in her son?"
+              ],
+              "es-MX": [
+                "¿Qué enseñanza importante puede aprenderse del video sobre la madre que creyó en su hijo?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "That criticism motivates more than support",
+                "That believing in a person's abilities can help them grow and succeed",
+                "That education only depends on schools",
+                "That personal effort has no importance"
+              ],
+              "es-MX": [
+                "Que la crítica motiva más que el apoyo",
+                "Que creer en las capacidades de una persona puede ayudarla a crecer y triunfar",
+                "Que la educación depende únicamente de las escuelas",
+                "Que el esfuerzo personal no tiene importancia"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "That believing in a person's abilities can help them grow and succeed",
+              "es-MX": "Que creer en las capacidades de una persona puede ayudarla a crecer y triunfar"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Support, trust and encouragement from parents or educators can positively influence a person's development and confidence."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El apoyo, la confianza y la motivación de los padres o educadores pueden influir positivamente en el desarrollo y seguridad de una persona."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Confianza y educación",
+            "Question Text": {
+              "en-US": [
+                "Why is believing in someone's potential important in education?"
+              ],
+              "es-MX": [
+                "¿Por qué es importante creer en el potencial de una persona en la educación?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Because it strengthens confidence and motivation",
+                "Because it avoids all mistakes automatically",
+                "Because it replaces discipline completely",
+                "Because it guarantees success without effort"
+              ],
+              "es-MX": [
+                "Porque fortalece la confianza y la motivación",
+                "Porque evita automáticamente todos los errores",
+                "Porque sustituye completamente la disciplina",
+                "Porque garantiza el éxito sin esfuerzo"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Because it strengthens confidence and motivation",
+              "es-MX": "Porque fortalece la confianza y la motivación"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "When people feel supported and valued, they are more motivated to develop their abilities and continue learning."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Cuando las personas se sienten apoyadas y valoradas, tienen mayor motivación para desarrollar sus capacidades y continuar aprendiendo."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Influencia de los padres",
+            "Question Text": {
+              "en-US": [
+                "What role do parents or educators play in a person's development?"
+              ],
+              "es-MX": [
+                "¿Qué papel tienen los padres o educadores en el desarrollo de una persona?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "They only provide academic information",
+                "They can inspire confidence, values and personal growth",
+                "They should avoid emotional support",
+                "They have no influence on personal development"
+              ],
+              "es-MX": [
+                "Solo proporcionan información académica",
+                "Pueden inspirar confianza, valores y crecimiento personal",
+                "Deben evitar el apoyo emocional",
+                "No tienen influencia en el desarrollo personal"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "They can inspire confidence, values and personal growth",
+              "es-MX": "Pueden inspirar confianza, valores y crecimiento personal"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Parents and educators influence attitudes, confidence and the emotional growth of the people they guide."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Los padres y educadores influyen en las actitudes, la confianza y el crecimiento emocional de las personas que orientan."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Educación personalizada",
+            "Question Text": {
+              "en-US": [
+                "Why should education be as personalized as possible?"
+              ],
+              "es-MX": [
+                "¿Por qué la educación debe ser lo más personalizada posible?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Because all people are exactly the same",
+                "Because each person has different characteristics and needs",
+                "Because education only depends on age",
+                "Because rules are enough for everyone"
+              ],
+              "es-MX": [
+                "Porque todas las personas son exactamente iguales",
+                "Porque cada persona tiene características y necesidades diferentes",
+                "Porque la educación depende solamente de la edad",
+                "Porque las reglas son suficientes para todos"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Because each person has different characteristics and needs",
+              "es-MX": "Porque cada persona tiene características y necesidades diferentes"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Education should adapt to the qualities, abilities and needs of each individual person."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La educación debe adaptarse a las cualidades, capacidades y necesidades de cada persona."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Factores de educación",
+            "Question Text": {
+              "en-US": [
+                "Which factors should be considered to personalize education?"
+              ],
+              "es-MX": [
+                "¿Qué factores deben considerarse para personalizar la educación?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Only academic grades",
+                "Gender, age, maturity and temperament",
+                "Only economic status",
+                "Only physical appearance"
+              ],
+              "es-MX": [
+                "Únicamente las calificaciones académicas",
+                "Género, edad, madurez y temperamento",
+                "Solo la situación económica",
+                "Solo la apariencia física"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Gender, age, maturity and temperament",
+              "es-MX": "Género, edad, madurez y temperamento"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "The topic explains that education should consider personal and social factors that influence development and learning."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El tema explica que la educación debe considerar factores personales y sociales que influyen en el desarrollo y aprendizaje."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Diversidad humana",
+            "Question Text": {
+              "en-US": [
+                "What idea does the topic emphasize about people and education?"
+              ],
+              "es-MX": [
+                "¿Qué idea destaca el tema sobre las personas y la educación?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "That everyone learns in the same way",
+                "That no two people are identical",
+                "That personality does not affect education",
+                "That education should be completely uniform"
+              ],
+              "es-MX": [
+                "Que todos aprenden de la misma manera",
+                "Que no existen dos personas idénticas",
+                "Que la personalidad no afecta la educación",
+                "Que la educación debe ser completamente uniforme"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "That no two people are identical",
+              "es-MX": "Que no existen dos personas idénticas"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "The topic highlights that every person is unique, so education should respect individual differences."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El tema destaca que cada persona es única, por lo que la educación debe respetar las diferencias individuales."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Guía educativa",
+            "Question Text": {
+              "en-US": [
+                "What should an educator do after identifying a person's individual characteristics?"
+              ],
+              "es-MX": [
+                "¿Qué debe hacer un educador después de identificar las características individuales de una persona?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Treat everyone exactly the same",
+                "Guide the person toward the development of their personality",
+                "Focus only on correcting mistakes",
+                "Avoid giving personal guidance"
+              ],
+              "es-MX": [
+                "Tratar a todos exactamente igual",
+                "Guiar a la persona hacia el desarrollo de su personalidad",
+                "Enfocarse únicamente en corregir errores",
+                "Evitar brindar orientación personal"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Guide the person toward the development of their personality",
+              "es-MX": "Guiar a la persona hacia el desarrollo de su personalidad"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "The educator should help each person develop their abilities, personality and personal potential."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El educador debe ayudar a cada persona a desarrollar sus capacidades, personalidad y potencial personal."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Autoconocimiento",
+            "Question Text": {
+              "en-US": [
+                "Why is it important for a person to discover their own qualities?"
+              ],
+              "es-MX": [
+                "¿Por qué es importante que una persona descubra sus propias cualidades?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Because it helps them take advantage of their strengths",
+                "Because qualities do not influence personal growth",
+                "Because defects are more important than virtues",
+                "Because self-knowledge prevents learning"
+              ],
+              "es-MX": [
+                "Porque le ayuda a aprovechar sus fortalezas",
+                "Porque las cualidades no influyen en el crecimiento personal",
+                "Porque los defectos son más importantes que las virtudes",
+                "Porque el autoconocimiento impide aprender"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Because it helps them take advantage of their strengths",
+              "es-MX": "Porque le ayuda a aprovechar sus fortalezas"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Recognizing personal qualities allows people to develop their abilities and use them positively."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Reconocer las cualidades personales permite desarrollar capacidades y utilizarlas de manera positiva."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Superación personal",
+            "Question Text": {
+              "en-US": [
+                "What should a person do with their defects according to the topic?"
+              ],
+              "es-MX": [
+                "¿Qué debe hacer una persona con sus defectos según el tema?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Ignore them completely",
+                "Use them to dominate others",
+                "Work to overcome and improve them",
+                "Hide them without making changes"
+              ],
+              "es-MX": [
+                "Ignorarlos completamente",
+                "Usarlos para dominar a los demás",
+                "Trabajar para superarlos y mejorarlos",
+                "Ocultarlos sin hacer cambios"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Work to overcome and improve them",
+              "es-MX": "Trabajar para superarlos y mejorarlos"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Education encourages people to recognize weaknesses and make efforts to improve personally."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La educación impulsa a reconocer las debilidades y esforzarse por mejorar personalmente."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Rol del educador",
+            "Question Text": {
+              "en-US": [
+                "Who can act as an educator according to the topic?"
+              ],
+              "es-MX": [
+                "¿Quién puede actuar como educador según el tema?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Only school teachers",
+                "Parents, teachers and guides",
+                "Only family members",
+                "Only authority figures"
+              ],
+              "es-MX": [
+                "Solo los maestros de escuela",
+                "Padres, maestros y guías",
+                "Únicamente los familiares",
+                "Solo figuras de autoridad"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Parents, teachers and guides",
+              "es-MX": "Padres, maestros y guías"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "The topic explains that different people such as parents, teachers and guides can contribute to personal formation."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El tema explica que diferentes personas como padres, maestros y guías pueden contribuir a la formación personal."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Educación sentimental",
+            "Question Text": {
+              "en-US": [
+                "What is the purpose of emotional education?"
+              ],
+              "es-MX": [
+                "¿Cuál es el propósito de la educación sentimental?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "To ignore emotions completely",
+                "To understand and manage emotions in a healthy way",
+                "To avoid relationships with others",
+                "To focus only on academic success"
+              ],
+              "es-MX": [
+                "Ignorar completamente las emociones",
+                "Comprender y manejar las emociones de manera sana",
+                "Evitar las relaciones con los demás",
+                "Enfocarse únicamente en el éxito académico"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "To understand and manage emotions in a healthy way",
+              "es-MX": "Comprender y manejar las emociones de manera sana"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Emotional education helps people recognize, express and manage emotions positively in daily life."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La educación sentimental ayuda a reconocer, expresar y manejar las emociones de manera positiva en la vida diaria."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Relaciones humanas",
+            "Question Text": {
+              "en-US": [
+                "Why are emotions important in personal development?"
+              ],
+              "es-MX": [
+                "¿Por qué son importantes las emociones en el desarrollo personal?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Because they influence behavior and relationships with others",
+                "Because emotions have no effect on decisions",
+                "Because emotions should always be hidden",
+                "Because only logic matters in education"
+              ],
+              "es-MX": [
+                "Porque influyen en la conducta y las relaciones con los demás",
+                "Porque las emociones no afectan las decisiones",
+                "Porque las emociones siempre deben ocultarse",
+                "Porque solo la lógica importa en la educación"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Because they influence behavior and relationships with others",
+              "es-MX": "Porque influyen en la conducta y las relaciones con los demás"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Emotions affect decisions, communication and the way people interact with others."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Las emociones afectan las decisiones, la comunicación y la manera en que las personas se relacionan con los demás."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Autocontrol emocional",
+            "Question Text": {
+              "en-US": [
+                "What skill does emotional education help strengthen?"
+              ],
+              "es-MX": [
+                "¿Qué habilidad ayuda a fortalecer la educación sentimental?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Impulsive reactions",
+                "Emotional self-control and empathy",
+                "Indifference toward others",
+                "Avoiding communication"
+              ],
+              "es-MX": [
+                "Las reacciones impulsivas",
+                "El autocontrol emocional y la empatía",
+                "La indiferencia hacia los demás",
+                "Evitar la comunicación"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Emotional self-control and empathy",
+              "es-MX": "El autocontrol emocional y la empatía"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Emotional education promotes empathy, emotional balance and respectful interaction with others."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La educación sentimental fomenta la empatía, el equilibrio emocional y la convivencia respetuosa con los demás."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Formación integral",
+            "Question Text": {
+              "en-US": [
+                "Why is emotional education considered part of integral education?"
+              ],
+              "es-MX": [
+                "¿Por qué la educación sentimental se considera parte de la educación integral?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Because education should include emotional and personal development",
+                "Because emotions replace knowledge completely",
+                "Because only feelings matter in life",
+                "Because academic learning is unnecessary"
+              ],
+              "es-MX": [
+                "Porque la educación debe incluir el desarrollo emocional y personal",
+                "Porque las emociones sustituyen completamente el conocimiento",
+                "Porque solo los sentimientos importan en la vida",
+                "Porque el aprendizaje académico es innecesario"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Because education should include emotional and personal development",
+              "es-MX": "Porque la educación debe incluir el desarrollo emocional y personal"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Integral education seeks the balanced development of knowledge, emotions and personal values."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La educación integral busca el desarrollo equilibrado del conocimiento, las emociones y los valores personales."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Influencia de los padres",
+            "Question Text": {
+              "en-US": [
+                "What idea does the video mainly reflect about the influence of parents?"
+              ],
+              "es-MX": [
+                "¿Qué idea refleja principalmente el video sobre la influencia de los padres?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Children learn only at school",
+                "Children often imitate the behaviors and attitudes of adults",
+                "Parents have no influence on values",
+                "Education depends only on punishments"
+              ],
+              "es-MX": [
+                "Los hijos aprenden únicamente en la escuela",
+                "Los hijos suelen imitar las conductas y actitudes de los adultos",
+                "Los padres no influyen en los valores",
+                "La educación depende solamente de castigos"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Children often imitate the behaviors and attitudes of adults",
+              "es-MX": "Los hijos suelen imitar las conductas y actitudes de los adultos"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "The video shows that children learn many attitudes and behaviors from the examples given by adults at home."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El video muestra que los hijos aprenden muchas actitudes y conductas a partir de los ejemplos que observan en los adultos."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Valores y conducta",
+            "Question Text": {
+              "en-US": [
+                "What problem is shown when adults teach children to deceive or manipulate others?"
+              ],
+              "es-MX": [
+                "¿Qué problema se muestra cuando los adultos enseñan a los hijos a engañar o manipular a otros?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "That unethical behavior can become normalized",
+                "That children become more responsible automatically",
+                "That dishonesty improves coexistence",
+                "That manipulation strengthens empathy"
+              ],
+              "es-MX": [
+                "Que las conductas poco éticas pueden normalizarse",
+                "Que los hijos se vuelven más responsables automáticamente",
+                "Que la deshonestidad mejora la convivencia",
+                "Que la manipulación fortalece la empatía"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "That unethical behavior can become normalized",
+              "es-MX": "Que las conductas poco éticas pueden normalizarse"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Repeated examples of deception or manipulation can cause children to see those actions as acceptable."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Los ejemplos repetidos de engaño o manipulación pueden hacer que los hijos vean esas acciones como normales o aceptables."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Educación y ejemplo",
+            "Question Text": {
+              "en-US": [
+                "Why are adult examples important in a child's education?"
+              ],
+              "es-MX": [
+                "¿Por qué son importantes los ejemplos de los adultos en la educación de un hijo?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Because children learn behaviors through observation and imitation",
+                "Because children ignore what adults do",
+                "Because only rules educate",
+                "Because education depends only on school subjects"
+              ],
+              "es-MX": [
+                "Porque los hijos aprenden conductas mediante la observación e imitación",
+                "Porque los hijos ignoran lo que hacen los adultos",
+                "Porque solamente las reglas educan",
+                "Porque la educación depende únicamente de materias escolares"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Because children learn behaviors through observation and imitation",
+              "es-MX": "Porque los hijos aprenden conductas mediante la observación e imitación"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Children frequently imitate attitudes, reactions and values demonstrated by the adults around them."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Los hijos suelen imitar las actitudes, reacciones y valores demostrados por los adultos que los rodean."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Violencia y educación",
+            "Question Text": {
+              "en-US": [
+                "What risk exists when violence is presented as a solution to problems?"
+              ],
+              "es-MX": [
+                "¿Qué riesgo existe cuando la violencia se presenta como solución a los problemas?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Children may believe aggression is acceptable behavior",
+                "Children automatically become emotionally mature",
+                "Violence improves communication skills",
+                "Conflicts disappear permanently"
+              ],
+              "es-MX": [
+                "Que los hijos crean que la agresión es una conducta aceptable",
+                "Que los hijos se vuelvan emocionalmente maduros automáticamente",
+                "Que la violencia mejore la comunicación",
+                "Que los conflictos desaparezcan permanentemente"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Children may believe aggression is acceptable behavior",
+              "es-MX": "Que los hijos crean que la agresión es una conducta aceptable"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "If violence is constantly justified, children may normalize aggressive reactions in daily life."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Si la violencia se justifica constantemente, los hijos pueden normalizar las reacciones agresivas en la vida diaria."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Educación con el ejemplo",
+            "Question Text": {
+              "en-US": [
+                "Why is teaching by example important in education?"
+              ],
+              "es-MX": [
+                "¿Por qué es importante educar con el ejemplo?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Because people trust and follow actions more easily than words alone",
+                "Because rules are unnecessary",
+                "Because example replaces communication completely",
+                "Because education only depends on authority"
+              ],
+              "es-MX": [
+                "Porque las personas confían y siguen más fácilmente las acciones que solo las palabras",
+                "Porque las reglas son innecesarias",
+                "Porque el ejemplo sustituye completamente la comunicación",
+                "Porque la educación depende únicamente de la autoridad"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Because people trust and follow actions more easily than words alone",
+              "es-MX": "Porque las personas confían y siguen más fácilmente las acciones que solo las palabras"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "When people perceive genuine respect, interest and care through actions, they feel more secure and willing to be guided."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Cuando las personas perciben respeto, interés y cariño mediante las acciones, se sienten más seguras para dejarse guiar."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Diálogo y confianza",
+            "Question Text": {
+              "en-US": [
+                "What is the purpose of promoting dialogue in education?"
+              ],
+              "es-MX": [
+                "¿Cuál es el propósito de propiciar el diálogo en la educación?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "To avoid communication about personal issues",
+                "To build trust and understand others' concerns and goals",
+                "To control every decision of others",
+                "To replace emotional support"
+              ],
+              "es-MX": [
+                "Evitar la comunicación sobre problemas personales",
+                "Generar confianza y comprender las preocupaciones y metas de los demás",
+                "Controlar todas las decisiones de los demás",
+                "Sustituir el apoyo emocional"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "To build trust and understand others' concerns and goals",
+              "es-MX": "Generar confianza y comprender las preocupaciones y metas de los demás"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Dialogue allows people to express problems, dreams and experiences while strengthening confidence and communication."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El diálogo permite expresar problemas, sueños y experiencias, fortaleciendo la confianza y la comunicación."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Apoyo personal",
+            "Question Text": {
+              "en-US": [
+                "What does supporting someone in education involve?"
+              ],
+              "es-MX": [
+                "¿Qué implica apoyar a una persona en la educación?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Helping them move toward personal improvement",
+                "Solving every problem for them",
+                "Avoiding responsibility completely",
+                "Focusing only on mistakes"
+              ],
+              "es-MX": [
+                "Ayudarle a avanzar hacia la superación personal",
+                "Resolver todos los problemas por ella",
+                "Evitar completamente la responsabilidad",
+                "Enfocarse únicamente en los errores"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Helping them move toward personal improvement",
+              "es-MX": "Ayudarle a avanzar hacia la superación personal"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Educational support means encouraging and helping others grow, improve and overcome difficulties."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El apoyo educativo significa motivar y ayudar a otros a crecer, mejorar y superar dificultades."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Medios de educación",
+            "Question Text": {
+              "en-US": [
+                "Which means of education are mentioned in the topic?"
+              ],
+              "es-MX": [
+                "¿Qué medios de educación se mencionan en el tema?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Punishment, fear and isolation",
+                "Example, words and support",
+                "Competition, pressure and control",
+                "Authority, silence and obedience"
+              ],
+              "es-MX": [
+                "Castigo, miedo y aislamiento",
+                "Ejemplo, palabra y apoyo",
+                "Competencia, presión y control",
+                "Autoridad, silencio y obediencia"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Example, words and support",
+              "es-MX": "Ejemplo, palabra y apoyo"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "The topic explains that education can be carried out through example, communication and supportive guidance."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El tema explica que la educación puede realizarse mediante el ejemplo, la comunicación y el apoyo hacia los demás."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Armonía educativa",
+            "Question Text": {
+              "en-US": [
+                "Why is harmony between parents and school important in education?"
+              ],
+              "es-MX": [
+                "¿Por qué es importante la armonía entre los padres y la escuela en la educación?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Because it helps avoid confusion and provides security to children",
+                "Because education only belongs to schools",
+                "Because parents should not participate in education",
+                "Because disagreements improve learning automatically"
+              ],
+              "es-MX": [
+                "Porque ayuda a evitar confusiones y brinda seguridad a los hijos",
+                "Porque la educación pertenece únicamente a las escuelas",
+                "Porque los padres no deben participar en la educación",
+                "Porque los desacuerdos mejoran automáticamente el aprendizaje"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Because it helps avoid confusion and provides security to children",
+              "es-MX": "Porque ayuda a evitar confusiones y brinda seguridad a los hijos"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "When parents and schools communicate and agree on important educational aspects, children grow with greater confidence and stability."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Cuando los padres y la escuela dialogan y coinciden en aspectos importantes de la educación, los hijos crecen con mayor seguridad y estabilidad."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Comunicación educativa",
+            "Question Text": {
+              "en-US": [
+                "What should parents and schools do to improve education?"
+              ],
+              "es-MX": [
+                "¿Qué deben hacer los padres y la escuela para mejorar la educación?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Avoid communication about educational issues",
+                "Dialogue and reach agreements on important educational matters",
+                "Leave all responsibility to students",
+                "Compete against each other constantly"
+              ],
+              "es-MX": [
+                "Evitar la comunicación sobre temas educativos",
+                "Dialogar y ponerse de acuerdo en temas importantes de educación",
+                "Dejar toda la responsabilidad a los alumnos",
+                "Competir constantemente entre ellos"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Dialogue and reach agreements on important educational matters",
+              "es-MX": "Dialogar y ponerse de acuerdo en temas importantes de educación"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Communication and cooperation between parents and schools strengthen the educational process."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La comunicación y cooperación entre padres y escuela fortalecen el proceso educativo."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Seguridad emocional",
+            "Question Text": {
+              "en-US": [
+                "What benefit do children receive when adults agree on educational guidance?"
+              ],
+              "es-MX": [
+                "¿Qué beneficio reciben los hijos cuando los adultos coinciden en la orientación educativa?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Greater security and confidence in their development",
+                "Less responsibility in daily life",
+                "More confusion about values",
+                "Dependence on others for every decision"
+              ],
+              "es-MX": [
+                "Mayor seguridad y confianza en su desarrollo",
+                "Menos responsabilidad en la vida diaria",
+                "Más confusión sobre los valores",
+                "Dependencia de otros para cada decisión"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Greater security and confidence in their development",
+              "es-MX": "Mayor seguridad y confianza en su desarrollo"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Consistent guidance from adults helps children feel secure and supported while growing."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La orientación coherente de los adultos ayuda a que los hijos se sientan seguros y apoyados durante su crecimiento."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Aceptación personal",
+            "Question Text": {
+              "en-US": [
+                "Why is it important to accept each child as they are?"
+              ],
+              "es-MX": [
+                "¿Por qué es importante aceptar a cada hijo tal como es?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Because every person has unique qualities and individuality",
+                "Because children should never improve",
+                "Because education should ignore personality",
+                "Because all children must behave identically"
+              ],
+              "es-MX": [
+                "Porque cada persona tiene cualidades e individualidad propias",
+                "Porque los hijos nunca deben mejorar",
+                "Porque la educación debe ignorar la personalidad",
+                "Porque todos los hijos deben comportarse igual"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Because every person has unique qualities and individuality",
+              "es-MX": "Porque cada persona tiene cualidades e individualidad propias"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Education should respect the individuality of each person and help them develop positively."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La educación debe respetar la individualidad de cada persona y ayudarla a desarrollarse positivamente."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Comunicación familiar",
+            "Question Text": {
+              "en-US": [
+                "What attitude is recommended when talking with children?"
+              ],
+              "es-MX": [
+                "¿Qué actitud se recomienda al hablar con los hijos?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Blaming them for every problem",
+                "Speaking naturally and recognizing our own feelings",
+                "Avoiding emotional communication",
+                "Using fear to gain obedience"
+              ],
+              "es-MX": [
+                "Culparlos de todos los problemas",
+                "Hablar con naturalidad y reconocer nuestros propios sentimientos",
+                "Evitar la comunicación emocional",
+                "Usar el miedo para obtener obediencia"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Speaking naturally and recognizing our own feelings",
+              "es-MX": "Hablar con naturalidad y reconocer nuestros propios sentimientos"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Healthy communication includes honesty, emotional openness and avoiding unfair blame."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La comunicación sana incluye honestidad, apertura emocional y evitar culpas injustas."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Criterio educativo",
+            "Question Text": {
+              "en-US": [
+                "Why is personal judgment important when hearing theories about education?"
+              ],
+              "es-MX": [
+                "¿Por qué es importante usar el criterio personal al escuchar teorías sobre educación?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Because not every theory applies equally to every person",
+                "Because education should ignore all advice",
+                "Because theories are always incorrect",
+                "Because only punishment educates"
+              ],
+              "es-MX": [
+                "Porque no todas las teorías aplican igual para todas las personas",
+                "Porque la educación debe ignorar todos los consejos",
+                "Porque las teorías siempre son incorrectas",
+                "Porque solo el castigo educa"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Because not every theory applies equally to every person",
+              "es-MX": "Porque no todas las teorías aplican igual para todas las personas"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Educational decisions should consider the needs and reality of each individual person."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Las decisiones educativas deben considerar las necesidades y realidad de cada persona."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Educación con el ejemplo",
+            "Question Text": {
+              "en-US": [
+                "What does the phrase 'your actions speak so loudly that I cannot hear your words' mean?"
+              ],
+              "es-MX": [
+                "¿Qué significa la frase 'tus hechos hablan tan fuerte que no puedo oír lo que tus palabras dicen'?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "That actions influence more strongly than words alone",
+                "That words are always more important than actions",
+                "That communication should be avoided",
+                "That rules matter more than behavior"
+              ],
+              "es-MX": [
+                "Que las acciones influyen más fuertemente que las palabras solamente",
+                "Que las palabras siempre son más importantes que las acciones",
+                "Que debe evitarse la comunicación",
+                "Que las reglas importan más que la conducta"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "That actions influence more strongly than words alone",
+              "es-MX": "Que las acciones influyen más fuertemente que las palabras solamente"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "People learn greatly from observing behavior, so actions often teach more than spoken advice."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Las personas aprenden mucho observando la conducta, por lo que las acciones suelen enseñar más que los consejos hablados."
+                }
+              ]
+            }
+          }
+    ]
+  }

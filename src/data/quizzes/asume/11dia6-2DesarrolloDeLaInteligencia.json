@@ -1,0 +1,2381 @@
+{
+    "meta": {
+      "slug": "asume-desarrollo-de-la-inteligencia",
+      "title": "ASUME · Desarrollo de la inteligencia",
+      "subject": "ASUME",
+      "unit": 1,
+      "classNo": 11,
+      "description": "Preguntas relacionadas con el tema desarrollo de la inteligencia dentro del programa ASUME.",
+      "tags": [
+        "ASUME",
+        "Inteligencia",
+        "Desarrollo personal",
+        "Aprendizaje",
+        "Razonamiento"
+      ]
+    },
+    "Questions": [
+        {
+            "Category": "Concepto de la inteligencia",
+            "Question Text": {
+              "en-US": [
+                "What is intelligence according to the topic?"
+              ],
+              "es-MX": [
+                "¿Qué es la inteligencia según el tema?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "The ability to memorize information without understanding it",
+                "The ability to understand, learn, reason and apply knowledge in different situations",
+                "The amount of knowledge a person has accumulated over time",
+                "The speed with which a person answers questions"
+              ],
+              "es-MX": [
+                "La capacidad de memorizar información sin comprenderla",
+                "La capacidad de comprender, aprender, razonar y aplicar conocimientos en distintas situaciones",
+                "La cantidad de conocimientos que una persona ha acumulado con el tiempo",
+                "La rapidez con la que una persona responde preguntas"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "The ability to understand, learn, reason and apply knowledge in different situations",
+              "es-MX": "La capacidad de comprender, aprender, razonar y aplicar conocimientos en distintas situaciones"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Intelligence is not only about accumulating information, but about understanding it, reasoning with it and applying it effectively in different contexts and situations."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La inteligencia no se limita a acumular información, sino a comprenderla, razonarla y aplicarla de manera adecuada en diferentes contextos y situaciones."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Importancia de la inteligencia",
+            "Question Text": {
+              "en-US": [
+                "Why is it important to develop intelligence?"
+              ],
+              "es-MX": [
+                "¿Por qué es importante desarrollar la inteligencia?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Because it allows us to memorize more data",
+                "Because it helps us overcome challenges and face life better",
+                "Because it makes us physically stronger",
+                "Because it avoids all problems"
+              ],
+              "es-MX": [
+                "Porque permite memorizar más datos",
+                "Porque nos ayuda a superarnos y enfrentar mejor la vida",
+                "Porque nos hace más fuertes físicamente",
+                "Porque evita todos los problemas"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Because it helps us overcome challenges and face life better",
+              "es-MX": "Porque nos ayuda a superarnos y enfrentar mejor la vida"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Developing intelligence allows a person to grow, make better decisions and face different life situations more effectively."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Desarrollar la inteligencia permite a la persona superarse, tomar mejores decisiones y enfrentar las distintas situaciones de la vida de manera más adecuada."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Desarrollo personal",
+            "Question Text": {
+              "en-US": [
+                "What does developing intelligence allow a person to do?"
+              ],
+              "es-MX": [
+                "¿Qué permite a una persona desarrollar su inteligencia?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Stay the same without changes",
+                "Improve personally and adapt to different situations",
+                "Depend more on others",
+                "Avoid thinking deeply"
+              ],
+              "es-MX": [
+                "Permanecer igual sin cambios",
+                "Mejorar como persona y adaptarse a distintas situaciones",
+                "Depender más de los demás",
+                "Evitar pensar profundamente"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Improve personally and adapt to different situations",
+              "es-MX": "Mejorar como persona y adaptarse a distintas situaciones"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Developing intelligence helps people grow, adapt and respond better to the different challenges they face in daily life."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Desarrollar la inteligencia ayuda a las personas a crecer, adaptarse y responder mejor a los retos que se presentan en la vida diaria."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Superación personal",
+            "Question Text": {
+              "en-US": [
+                "What does it mean that intelligence helps us overcome ourselves?"
+              ],
+              "es-MX": [
+                "¿Qué significa que la inteligencia nos ayuda a superarnos?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "That we stop learning",
+                "That we improve our abilities and way of thinking constantly",
+                "That we avoid making decisions",
+                "That we depend on luck"
+              ],
+              "es-MX": [
+                "Que dejamos de aprender",
+                "Que mejoramos nuestras capacidades y forma de pensar constantemente",
+                "Que evitamos tomar decisiones",
+                "Que dependemos de la suerte"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "That we improve our abilities and way of thinking constantly",
+              "es-MX": "Que mejoramos nuestras capacidades y forma de pensar constantemente"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Intelligence allows continuous improvement, helping a person to develop better skills, think more clearly and act with greater awareness."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La inteligencia permite una mejora constante, ayudando a la persona a desarrollar mejores habilidades, pensar con mayor claridad y actuar con mayor conciencia."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Aplicación en la vida",
+            "Question Text": {
+              "en-US": [
+                "In what way does intelligence help to face life?"
+              ],
+              "es-MX": [
+                "¿De qué manera la inteligencia ayuda a enfrentar la vida?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "By ignoring problems",
+                "By analyzing, understanding and making better decisions",
+                "By avoiding responsibilities",
+                "By reacting without thinking"
+              ],
+              "es-MX": [
+                "Ignorando los problemas",
+                "Analizando, comprendiendo y tomando mejores decisiones",
+                "Evitando responsabilidades",
+                "Reaccionando sin pensar"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "By analyzing, understanding and making better decisions",
+              "es-MX": "Analizando, comprendiendo y tomando mejores decisiones"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Intelligence helps to face life by allowing us to analyze situations, understand them and act in a more conscious and effective way."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La inteligencia ayuda a enfrentar la vida al permitirnos analizar las situaciones, comprenderlas y actuar de manera más consciente y efectiva."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Objetivo del desarrollo de la inteligencia",
+            "Question Text": {
+              "en-US": [
+                "What is the objective of developing intelligence according to the topic?"
+              ],
+              "es-MX": [
+                "¿Cuál es el objetivo del desarrollo de la inteligencia según el tema?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "To compete with others without preparation",
+                "To create interest in learning, studying and expanding culture to improve oneself",
+                "To avoid effort in personal growth",
+                "To focus only on material success"
+              ],
+              "es-MX": [
+                "Competir con los demás sin preparación",
+                "Crear interés por aprender, estudiar y ampliar la cultura como camino para superarse",
+                "Evitar el esfuerzo en el crecimiento personal",
+                "Enfocarse solo en el éxito material"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "To create interest in learning, studying and expanding culture to improve oneself",
+              "es-MX": "Crear interés por aprender, estudiar y ampliar la cultura como camino para superarse"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "The objective is to awaken the desire to learn and grow, using knowledge and culture as a way to achieve personal improvement."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El objetivo es despertar el interés por aprender y crecer, utilizando el conocimiento y la cultura como medio para lograr la superación personal."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Concepto de voluntad",
+            "Question Text": {
+              "en-US": [
+                "What is will according to the explanation?"
+              ],
+              "es-MX": [
+                "¿Qué es la voluntad según la explicación?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "A feeling that changes constantly without control",
+                "A decision to act or undertake a specific action",
+                "An automatic reaction without thinking",
+                "A habit that is repeated without intention"
+              ],
+              "es-MX": [
+                "Un sentimiento que cambia constantemente sin control",
+                "Una decisión de actuar o emprender una acción determinada",
+                "Una reacción automática sin pensar",
+                "Un hábito que se repite sin intención"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "A decision to act or undertake a specific action",
+              "es-MX": "Una decisión de actuar o emprender una acción determinada"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Will is the ability to decide consciously to act, guiding behavior toward a specific purpose or goal."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La voluntad es la capacidad de decidir conscientemente actuar, orientando la conducta hacia un propósito o meta determinada."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Concepto de cultura",
+            "Question Text": {
+              "en-US": [
+                "What is culture according to the explanation?"
+              ],
+              "es-MX": [
+                "¿Qué es la cultura según la explicación?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "The amount of money a person has",
+                "The level of progress in social behavior, knowledge and human development",
+                "Only academic knowledge learned in school",
+                "The customs without relation to personal growth"
+              ],
+              "es-MX": [
+                "La cantidad de dinero que tiene una persona",
+                "El grado de avance en la conducta social, el conocimiento y la evolución como ser humano",
+                "Solo el conocimiento académico aprendido en la escuela",
+                "Las costumbres sin relación con el crecimiento personal"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "The level of progress in social behavior, knowledge and human development",
+              "es-MX": "El grado de avance en la conducta social, el conocimiento y la evolución como ser humano"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Culture reflects the development of a person in knowledge, behavior and growth as a human being, not only academic learning."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La cultura refleja el desarrollo de la persona en conocimiento, conducta y evolución como ser humano, no solo el aprendizaje académico."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Relación entre voluntad e inteligencia",
+            "Question Text": {
+              "en-US": [
+                "Why is will important in the development of intelligence?"
+              ],
+              "es-MX": [
+                "¿Por qué es importante la voluntad en el desarrollo de la inteligencia?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Because it replaces the need to learn",
+                "Because it drives the decision to learn, study and improve oneself",
+                "Because it avoids effort in personal growth",
+                "Because it guarantees immediate results without work"
+              ],
+              "es-MX": [
+                "Porque sustituye la necesidad de aprender",
+                "Porque impulsa la decisión de aprender, estudiar y superarse",
+                "Porque evita el esfuerzo en el crecimiento personal",
+                "Porque garantiza resultados inmediatos sin trabajo"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Because it drives the decision to learn, study and improve oneself",
+              "es-MX": "Porque impulsa la decisión de aprender, estudiar y superarse"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Will is essential because it motivates a person to act, learn and persist in their personal development process."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La voluntad es fundamental porque motiva a la persona a actuar, aprender y perseverar en su proceso de desarrollo personal."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Definición de inteligencia",
+            "Question Text": {
+              "en-US": [
+                "What is intelligence according to the definition?"
+              ],
+              "es-MX": [
+                "¿Qué es la inteligencia según la definición?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "The ability to store information without using it",
+                "The ability to know, understand and through creativity put it into practice",
+                "The repetition of learned knowledge without change",
+                "The accumulation of data without application"
+              ],
+              "es-MX": [
+                "La capacidad de almacenar información sin utilizarla",
+                "La facultad de conocer, comprender y mediante la creatividad ponerlo en práctica",
+                "La repetición del conocimiento aprendido sin cambio",
+                "La acumulación de datos sin aplicación"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "The ability to know, understand and through creativity put it into practice",
+              "es-MX": "La facultad de conocer, comprender y mediante la creatividad ponerlo en práctica"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Intelligence involves not only knowing and understanding, but also applying that knowledge creatively in real situations."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La inteligencia implica no solo conocer y comprender, sino también aplicar ese conocimiento de manera creativa en situaciones reales."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Resolución de problemas",
+            "Question Text": {
+              "en-US": [
+                "What ability is related to solving problems within intelligence?"
+              ],
+              "es-MX": [
+                "¿Qué capacidad está relacionada con la resolución de problemas dentro de la inteligencia?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Avoiding difficult situations",
+                "Facing and solving situations effectively",
+                "Depending on others for decisions",
+                "Repeating the same actions without analysis"
+              ],
+              "es-MX": [
+                "Evitar las situaciones difíciles",
+                "Enfrentar y resolver situaciones de manera efectiva",
+                "Depender de otros para tomar decisiones",
+                "Repetir las mismas acciones sin análisis"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Facing and solving situations effectively",
+              "es-MX": "Enfrentar y resolver situaciones de manera efectiva"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "One of the main aspects of intelligence is the ability to face problems and find appropriate solutions."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Uno de los aspectos principales de la inteligencia es la capacidad de enfrentar problemas y encontrar soluciones adecuadas."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Adaptación a situaciones nuevas",
+            "Question Text": {
+              "en-US": [
+                "How does intelligence help when facing new situations?"
+              ],
+              "es-MX": [
+                "¿Cómo ayuda la inteligencia al enfrentarse a situaciones nuevas?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "By rejecting change completely",
+                "By allowing adaptation and understanding of new contexts",
+                "By maintaining the same behavior without adjustment",
+                "By avoiding any unknown situation"
+              ],
+              "es-MX": [
+                "Rechazando completamente el cambio",
+                "Permitiendo adaptarse y comprender nuevos contextos",
+                "Manteniendo el mismo comportamiento sin ajuste",
+                "Evitando cualquier situación desconocida"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "By allowing adaptation and understanding of new contexts",
+              "es-MX": "Permitiendo adaptarse y comprender nuevos contextos"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Intelligence allows people to adapt to new situations, understand them and respond appropriately."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La inteligencia permite a las personas adaptarse a nuevas situaciones, comprenderlas y responder de manera adecuada."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Comunicación de ideas",
+            "Question Text": {
+              "en-US": [
+                "What role does communication play in intelligence?"
+              ],
+              "es-MX": [
+                "¿Qué papel juega la comunicación dentro de la inteligencia?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "It is not related to intelligence",
+                "It allows expressing ideas and thoughts clearly to others",
+                "It replaces the need to think",
+                "It limits personal expression"
+              ],
+              "es-MX": [
+                "No tiene relación con la inteligencia",
+                "Permite expresar ideas y pensamientos de forma clara a los demás",
+                "Sustituye la necesidad de pensar",
+                "Limita la expresión personal"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "It allows expressing ideas and thoughts clearly to others",
+              "es-MX": "Permite expresar ideas y pensamientos de forma clara a los demás"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Intelligence also involves the ability to communicate ideas effectively, helping others understand our thoughts."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La inteligencia también implica la capacidad de comunicar ideas de forma efectiva, facilitando que otros comprendan nuestros pensamientos."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Aprendizaje de la experiencia",
+            "Question Text": {
+              "en-US": [
+                "Why is past experience important in intelligence?"
+              ],
+              "es-MX": [
+                "¿Por qué es importante la experiencia pasada en la inteligencia?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Because it limits future decisions",
+                "Because it allows learning and taking advantage of previous situations",
+                "Because it replaces reasoning",
+                "Because it prevents change"
+              ],
+              "es-MX": [
+                "Porque limita las decisiones futuras",
+                "Porque permite aprender y aprovechar situaciones anteriores",
+                "Porque sustituye el razonamiento",
+                "Porque impide el cambio"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Because it allows learning and taking advantage of previous situations",
+              "es-MX": "Porque permite aprender y aprovechar situaciones anteriores"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Experience is key in intelligence because it helps us learn from the past and apply that learning to future situations."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La experiencia es clave en la inteligencia porque nos permite aprender del pasado y aplicar ese aprendizaje en situaciones futuras."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Aprendizaje a partir de experiencias",
+            "Question Text": {
+              "en-US": [
+                "What does reflecting on a situation where you learned the most allow you to do?"
+              ],
+              "es-MX": [
+                "¿Qué permite reflexionar sobre una situación en donde aprendiste más?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Ignore past experiences without analysis",
+                "Recognize learning obtained and apply it to future situations",
+                "Forget what happened and avoid thinking about it",
+                "Depend on others to understand what was learned"
+              ],
+              "es-MX": [
+                "Ignorar las experiencias pasadas sin analizarlas",
+                "Reconocer el aprendizaje obtenido y aplicarlo en situaciones futuras",
+                "Olvidar lo ocurrido y evitar pensar en ello",
+                "Depender de otros para entender lo aprendido"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Recognize learning obtained and apply it to future situations",
+              "es-MX": "Reconocer el aprendizaje obtenido y aplicarlo en situaciones futuras"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Reflecting on meaningful experiences helps identify what was learned and use that knowledge to make better decisions in the future."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Reflexionar sobre experiencias significativas permite identificar lo aprendido y utilizar ese conocimiento para tomar mejores decisiones en el futuro."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Conciencia del aprendizaje",
+            "Question Text": {
+              "en-US": [
+                "Why is it important to identify situations where you learned more?"
+              ],
+              "es-MX": [
+                "¿Por qué es importante identificar las situaciones donde más aprendiste?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Because it has no impact on personal growth",
+                "Because it helps understand how learning occurs and strengthens development",
+                "Because it replaces the need to study",
+                "Because it avoids facing new situations"
+              ],
+              "es-MX": [
+                "Porque no tiene impacto en el crecimiento personal",
+                "Porque ayuda a comprender cómo ocurre el aprendizaje y fortalece el desarrollo",
+                "Porque sustituye la necesidad de estudiar",
+                "Porque evita enfrentar nuevas situaciones"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Because it helps understand how learning occurs and strengthens development",
+              "es-MX": "Porque ayuda a comprender cómo ocurre el aprendizaje y fortalece el desarrollo"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Identifying meaningful learning experiences helps a person understand how they grow and improve their ability to face future challenges."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Identificar experiencias significativas de aprendizaje ayuda a la persona a comprender cómo crece y mejora su capacidad para enfrentar retos futuros."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Experiencia y aprendizaje",
+            "Question Text": {
+              "en-US": [
+                "What type of situations usually generate the greatest learning?"
+              ],
+              "es-MX": [
+                "¿Qué tipo de situaciones suelen generar mayor aprendizaje?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Those that do not require effort or reflection",
+                "Those that involve challenges, reflection and personal involvement",
+                "Those that are repeated without change",
+                "Those that are avoided constantly"
+              ],
+              "es-MX": [
+                "Aquellas que no requieren esfuerzo ni reflexión",
+                "Aquellas que implican retos, reflexión y participación personal",
+                "Aquellas que se repiten sin cambios",
+                "Aquellas que se evitan constantemente"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Those that involve challenges, reflection and personal involvement",
+              "es-MX": "Aquellas que implican retos, reflexión y participación personal"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "The greatest learning usually comes from challenging situations that require thinking, decision-making and active participation."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El mayor aprendizaje suele surgir de situaciones que implican retos, reflexión y participación activa de la persona."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Origen de la inteligencia",
+            "Question Text": {
+              "en-US": [
+                "Where does a part of intelligence come from?"
+              ],
+              "es-MX": [
+                "¿De dónde proviene una parte de la inteligencia?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Only from school learning",
+                "From what is inherited from parents",
+                "Only from personal effort",
+                "From luck and chance"
+              ],
+              "es-MX": [
+                "Solo del aprendizaje escolar",
+                "De lo que se hereda de los padres",
+                "Solo del esfuerzo personal",
+                "De la suerte y el azar"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "From what is inherited from parents",
+              "es-MX": "De lo que se hereda de los padres"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "A part of intelligence is inherited, meaning it comes from the genetic characteristics received from our parents."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Una parte de la inteligencia es heredada, es decir, proviene de las características genéticas que recibimos de nuestros padres."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Desarrollo adquirido de la inteligencia",
+            "Question Text": {
+              "en-US": [
+                "How is another part of intelligence developed?"
+              ],
+              "es-MX": [
+                "¿Cómo se desarrolla otra parte de la inteligencia?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Only through inheritance",
+                "Through experience, new knowledge, reading and study",
+                "Without effort or practice",
+                "Only by observing others without participating"
+              ],
+              "es-MX": [
+                "Solo mediante la herencia",
+                "Mediante la experiencia, nuevos conocimientos, lecturas y estudios",
+                "Sin esfuerzo ni práctica",
+                "Solo observando sin participar"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Through experience, new knowledge, reading and study",
+              "es-MX": "Mediante la experiencia, nuevos conocimientos, lecturas y estudios"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Another part of intelligence is acquired through life experiences, learning, reading and continuous study."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Otra parte de la inteligencia se adquiere a través de la experiencia, el aprendizaje, la lectura y el estudio constante."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Importancia de la experiencia",
+            "Question Text": {
+              "en-US": [
+                "Why is experience important in the development of intelligence?"
+              ],
+              "es-MX": [
+                "¿Por qué es importante la experiencia en el desarrollo de la inteligencia?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Because it replaces knowledge completely",
+                "Because it allows learning from real situations and improving understanding",
+                "Because it avoids the need to think",
+                "Because it limits personal growth"
+              ],
+              "es-MX": [
+                "Porque sustituye completamente el conocimiento",
+                "Porque permite aprender de situaciones reales y mejorar la comprensión",
+                "Porque evita la necesidad de pensar",
+                "Porque limita el crecimiento personal"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Because it allows learning from real situations and improving understanding",
+              "es-MX": "Porque permite aprender de situaciones reales y mejorar la comprensión"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Experience helps to strengthen intelligence by allowing people to learn from real-life situations and apply that learning in the future."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La experiencia fortalece la inteligencia al permitir aprender de situaciones reales y aplicar ese aprendizaje en el futuro."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Factores de desarrollo",
+            "Question Text": {
+              "en-US": [
+                "Which of the following contributes to the development of acquired intelligence?"
+              ],
+              "es-MX": [
+                "¿Cuál de los siguientes contribuye al desarrollo de la inteligencia adquirida?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Avoiding learning opportunities",
+                "Reading, studying, observing and reflecting",
+                "Repeating actions without understanding",
+                "Depending only on inheritance"
+              ],
+              "es-MX": [
+                "Evitar oportunidades de aprendizaje",
+                "Leer, estudiar, observar y reflexionar",
+                "Repetir acciones sin comprender",
+                "Depender solo de la herencia"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Reading, studying, observing and reflecting",
+              "es-MX": "Leer, estudiar, observar y reflexionar"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Acquired intelligence grows through activities that involve learning, reflection and active participation in knowledge."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La inteligencia adquirida crece mediante actividades que implican aprendizaje, reflexión y participación activa en el conocimiento."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Inteligencias múltiples",
+            "Question Text": {
+              "en-US": [
+                "What is the main idea of multiple intelligences?"
+              ],
+              "es-MX": [
+                "¿Cuál es la idea principal de las inteligencias múltiples?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "That intelligence is measured only by school grades",
+                "That all people have the same type of intelligence",
+                "That there are different types of intelligence and each person develops different abilities",
+                "That intelligence depends only on memory"
+              ],
+              "es-MX": [
+                "Que la inteligencia se mide solo por las calificaciones escolares",
+                "Que todas las personas tienen el mismo tipo de inteligencia",
+                "Que existen diferentes tipos de inteligencia y cada persona desarrolla distintas habilidades",
+                "Que la inteligencia depende solo de la memoria"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "That there are different types of intelligence and each person develops different abilities",
+              "es-MX": "Que existen diferentes tipos de inteligencia y cada persona desarrolla distintas habilidades"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "The theory of multiple intelligences explains that intelligence is not unique, but diverse, and each person can stand out in different areas."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La teoría de las inteligencias múltiples explica que la inteligencia no es única, sino diversa, y cada persona puede destacar en diferentes áreas."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Percepción de la inteligencia",
+            "Question Text": {
+              "en-US": [
+                "Why is it incorrect to think that only a person with good grades is intelligent?"
+              ],
+              "es-MX": [
+                "¿Por qué es incorrecto pensar que solo una persona con buenas calificaciones es inteligente?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Because grades are not important",
+                "Because intelligence includes different abilities beyond academic performance",
+                "Because everyone has the same abilities",
+                "Because school does not evaluate intelligence"
+              ],
+              "es-MX": [
+                "Porque las calificaciones no son importantes",
+                "Porque la inteligencia incluye diferentes habilidades más allá del rendimiento académico",
+                "Porque todos tienen las mismas habilidades",
+                "Porque la escuela no evalúa la inteligencia"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Because intelligence includes different abilities beyond academic performance",
+              "es-MX": "Porque la inteligencia incluye diferentes habilidades más allá del rendimiento académico"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Intelligence is not limited to academic success; it also includes social, creative, practical and emotional abilities."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La inteligencia no se limita al rendimiento académico; también incluye habilidades sociales, creativas, prácticas y emocionales."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Tipos de inteligencia",
+            "Question Text": {
+              "en-US": [
+                "Which of the following is an example of a type of intelligence?"
+              ],
+              "es-MX": [
+                "¿Cuál de los siguientes es un ejemplo de un tipo de inteligencia?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Only logical thinking",
+                "Social, creative or physical abilities",
+                "Only memory capacity",
+                "Only academic knowledge"
+              ],
+              "es-MX": [
+                "Solo el pensamiento lógico",
+                "Habilidades sociales, creativas o físicas",
+                "Solo la capacidad de memoria",
+                "Solo el conocimiento académico"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Social, creative or physical abilities",
+              "es-MX": "Habilidades sociales, creativas o físicas"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Multiple intelligences include different abilities such as social interaction, creativity and physical skills."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Las inteligencias múltiples incluyen diferentes habilidades como la interacción social, la creatividad y las capacidades físicas."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Reflexión del video",
+            "Question Text": {
+              "en-US": [
+                "What reflection does the video about multiple intelligences leave?"
+              ],
+              "es-MX": [
+                "¿Qué reflexión deja el video sobre las inteligencias múltiples?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "That only academic intelligence matters",
+                "That each person has different abilities and can develop their own intelligence",
+                "That intelligence cannot be improved",
+                "That only school defines intelligence"
+              ],
+              "es-MX": [
+                "Que solo importa la inteligencia académica",
+                "Que cada persona tiene habilidades diferentes y puede desarrollar su propia inteligencia",
+                "Que la inteligencia no se puede mejorar",
+                "Que solo la escuela define la inteligencia"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "That each person has different abilities and can develop their own intelligence",
+              "es-MX": "Que cada persona tiene habilidades diferentes y puede desarrollar su propia inteligencia"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "The video highlights that everyone has different abilities, and intelligence can be developed in many ways depending on each person."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El video resalta que cada persona tiene habilidades diferentes y que la inteligencia puede desarrollarse de distintas maneras según cada individuo."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Desarrollo de la inteligencia",
+            "Question Text": {
+              "en-US": [
+                "Can intelligence be developed over time?"
+              ],
+              "es-MX": [
+                "¿Puede desarrollarse la inteligencia con el tiempo?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "No, intelligence is fixed and cannot change",
+                "Yes, it can develop and increase day by day according to our will",
+                "Only during childhood",
+                "Only with formal education"
+              ],
+              "es-MX": [
+                "No, la inteligencia es fija y no puede cambiar",
+                "Sí, puede desarrollarse e incrementarse día a día de acuerdo a nuestra voluntad",
+                "Solo durante la infancia",
+                "Solo mediante la educación formal"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Yes, it can develop and increase day by day according to our will",
+              "es-MX": "Sí, puede desarrollarse e incrementarse día a día de acuerdo a nuestra voluntad"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Intelligence is not static; it can grow over time through effort, learning and personal determination."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La inteligencia no es estática; puede crecer con el tiempo mediante el esfuerzo, el aprendizaje y la voluntad personal."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Importancia de la voluntad",
+            "Question Text": {
+              "en-US": [
+                "What role does will play in the development of intelligence?"
+              ],
+              "es-MX": [
+                "¿Qué papel juega la voluntad en el desarrollo de la inteligencia?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "It has no influence",
+                "It determines the effort and constancy to improve intelligence",
+                "It replaces the need to learn",
+                "It limits personal growth"
+              ],
+              "es-MX": [
+                "No tiene influencia",
+                "Determina el esfuerzo y la constancia para mejorar la inteligencia",
+                "Sustituye la necesidad de aprender",
+                "Limita el crecimiento personal"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "It determines the effort and constancy to improve intelligence",
+              "es-MX": "Determina el esfuerzo y la constancia para mejorar la inteligencia"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Will is essential because it drives a person to make the effort required to learn and grow intellectually."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La voluntad es fundamental porque impulsa a la persona a esforzarse para aprender y desarrollarse intelectualmente."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Potencial humano",
+            "Question Text": {
+              "en-US": [
+                "What does the idea that we use only a small percentage of our intellectual capacity imply?"
+              ],
+              "es-MX": [
+                "¿Qué implica la idea de que usamos solo un pequeño porcentaje de nuestra capacidad intelectual?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "That we cannot improve further",
+                "That there is great potential to develop our intelligence",
+                "That intelligence is limited by age",
+                "That only some people can learn"
+              ],
+              "es-MX": [
+                "Que no podemos mejorar más",
+                "Que existe un gran potencial para desarrollar nuestra inteligencia",
+                "Que la inteligencia está limitada por la edad",
+                "Que solo algunas personas pueden aprender"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "That there is great potential to develop our intelligence",
+              "es-MX": "Que existe un gran potencial para desarrollar nuestra inteligencia"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "The idea suggests that human beings have a large capacity for growth and learning that can be developed with effort and dedication."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Esta idea sugiere que los seres humanos tienen una gran capacidad de crecimiento y aprendizaje que puede desarrollarse con esfuerzo y dedicación."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Superación personal",
+            "Question Text": {
+              "en-US": [
+                "What is necessary to take advantage of the development of intelligence?"
+              ],
+              "es-MX": [
+                "¿Qué es necesario para aprovechar el desarrollo de la inteligencia?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Avoid effort and responsibility",
+                "Have will, discipline and desire to learn",
+                "Depend only on natural talent",
+                "Wait for opportunities without acting"
+              ],
+              "es-MX": [
+                "Evitar el esfuerzo y la responsabilidad",
+                "Tener voluntad, disciplina y deseo de aprender",
+                "Depender solo del talento natural",
+                "Esperar oportunidades sin actuar"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Have will, discipline and desire to learn",
+              "es-MX": "Tener voluntad, disciplina y deseo de aprender"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "To develop intelligence it is necessary to have will, discipline and a constant desire to learn and improve."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Para desarrollar la inteligencia es necesario tener voluntad, disciplina y un deseo constante de aprender y mejorar."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Importancia del estudio",
+            "Question Text": {
+              "en-US": [
+                "Is study only for children?"
+              ],
+              "es-MX": [
+                "¿El estudio es solo para los niños?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Yes, only children need to study",
+                "No, adults can also continue developing their intellectual capacity",
+                "Only young people can learn",
+                "Study is not necessary after a certain age"
+              ],
+              "es-MX": [
+                "Sí, solo los niños necesitan estudiar",
+                "No, los adultos también pueden seguir desarrollando su capacidad intelectual",
+                "Solo los jóvenes pueden aprender",
+                "El estudio no es necesario después de cierta edad"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "No, adults can also continue developing their intellectual capacity",
+              "es-MX": "No, los adultos también pueden seguir desarrollando su capacidad intelectual"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Study is not limited to childhood; it is a continuous process that allows people to grow intellectually throughout their lives."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El estudio no se limita a la niñez; es un proceso continuo que permite a las personas desarrollarse intelectualmente durante toda la vida."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Desarrollo en adultos",
+            "Question Text": {
+              "en-US": [
+                "What does study offer adults?"
+              ],
+              "es-MX": [
+                "¿Qué ofrece el estudio a los adultos?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "It has no benefit",
+                "The possibility to continue using and increasing their intellectual capacity",
+                "Only entertainment",
+                "Only academic titles"
+              ],
+              "es-MX": [
+                "No tiene ningún beneficio",
+                "La posibilidad de seguir utilizando e incrementando su capacidad intelectual",
+                "Solo entretenimiento",
+                "Solo títulos académicos"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "The possibility to continue using and increasing their intellectual capacity",
+              "es-MX": "La posibilidad de seguir utilizando e incrementando su capacidad intelectual"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Study allows adults to continue learning, strengthening their mind and improving their ability to understand and act in life."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El estudio permite a los adultos seguir aprendiendo, fortaleciendo su mente y mejorando su capacidad para comprender y actuar en la vida."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Superación continua",
+            "Question Text": {
+              "en-US": [
+                "What happens when a person continues studying over time?"
+              ],
+              "es-MX": [
+                "¿Qué sucede cuando una persona continúa estudiando con el tiempo?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Their abilities remain the same",
+                "They become more knowledgeable and prepared to face life",
+                "They lose interest in learning",
+                "They depend less on their own thinking"
+              ],
+              "es-MX": [
+                "Sus capacidades permanecen iguales",
+                "Se vuelve más culto y preparado para enfrentar la vida",
+                "Pierde el interés por aprender",
+                "Depende menos de su propio pensamiento"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "They become more knowledgeable and prepared to face life",
+              "es-MX": "Se vuelve más culto y preparado para enfrentar la vida"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Continuous study helps a person grow intellectually, becoming more prepared and capable of handling different life situations."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El estudio constante ayuda a la persona a crecer intelectualmente, volviéndose más preparada y capaz de enfrentar diferentes situaciones de la vida."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Aprendizaje permanente",
+            "Question Text": {
+              "en-US": [
+                "Why is it important to continue learning throughout life?"
+              ],
+              "es-MX": [
+                "¿Por qué es importante seguir aprendiendo durante toda la vida?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Because learning has no limits and improves our development",
+                "Because it is only required by society",
+                "Because it replaces experience",
+                "Because it avoids making decisions"
+              ],
+              "es-MX": [
+                "Porque el aprendizaje no tiene límites y mejora nuestro desarrollo",
+                "Porque solo es una obligación social",
+                "Porque sustituye la experiencia",
+                "Porque evita tomar decisiones"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Because learning has no limits and improves our development",
+              "es-MX": "Porque el aprendizaje no tiene límites y mejora nuestro desarrollo"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Learning throughout life allows continuous growth, helping people adapt and improve their abilities constantly."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Aprender durante toda la vida permite un crecimiento continuo, ayudando a las personas a adaptarse y mejorar sus habilidades constantemente."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Método de estudio",
+            "Question Text": {
+              "en-US": [
+                "What is recommended to develop intelligence?"
+              ],
+              "es-MX": [
+                "¿Qué se recomienda para desarrollar la inteligencia?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Study without organization or planning",
+                "Form a study method and discipline",
+                "Avoid structured learning",
+                "Depend only on memory"
+              ],
+              "es-MX": [
+                "Estudiar sin organización ni planificación",
+                "Formarnos un método y una disciplina de estudio",
+                "Evitar el aprendizaje estructurado",
+                "Depender solo de la memoria"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Form a study method and discipline",
+              "es-MX": "Formarnos un método y una disciplina de estudio"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Having a study method and discipline allows better organization of learning and continuous development of intelligence."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Contar con un método y disciplina de estudio permite organizar mejor el aprendizaje y desarrollar la inteligencia de manera constante."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Disciplina de estudio",
+            "Question Text": {
+              "en-US": [
+                "Why is discipline important in study?"
+              ],
+              "es-MX": [
+                "¿Por qué es importante la disciplina en el estudio?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Because it limits learning",
+                "Because it helps maintain consistency and improve learning over time",
+                "Because it replaces effort",
+                "Because it avoids responsibility"
+              ],
+              "es-MX": [
+                "Porque limita el aprendizaje",
+                "Porque ayuda a mantener constancia y mejorar el aprendizaje con el tiempo",
+                "Porque sustituye el esfuerzo",
+                "Porque evita la responsabilidad"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Because it helps maintain consistency and improve learning over time",
+              "es-MX": "Porque ayuda a mantener constancia y mejorar el aprendizaje con el tiempo"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Discipline allows a person to study consistently, which is essential for long-term learning and intellectual growth."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La disciplina permite estudiar de forma constante, lo cual es fundamental para el aprendizaje a largo plazo y el desarrollo intelectual."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Ambiente de estudio",
+            "Question Text": {
+              "en-US": [
+                "What should be done with the study environment?"
+              ],
+              "es-MX": [
+                "¿Qué se debe hacer con el ambiente de estudio?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Ignore the conditions of the place",
+                "Adapt it to study and avoid distractions",
+                "Study in noisy and distracting places",
+                "Change it constantly without order"
+              ],
+              "es-MX": [
+                "Ignorar las condiciones del lugar",
+                "Adecuarlo para el estudio y evitar distracciones",
+                "Estudiar en lugares ruidosos y con distracciones",
+                "Cambiarlo constantemente sin orden"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Adapt it to study and avoid distractions",
+              "es-MX": "Adecuarlo para el estudio y evitar distracciones"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "A proper study environment helps concentration and improves learning by reducing distractions."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Un ambiente adecuado de estudio favorece la concentración y mejora el aprendizaje al reducir las distracciones."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Condiciones para aprender",
+            "Question Text": {
+              "en-US": [
+                "What happens if there are many distractions during study?"
+              ],
+              "es-MX": [
+                "¿Qué sucede si hay muchas distracciones durante el estudio?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Learning improves automatically",
+                "Concentration decreases and learning is affected",
+                "It does not affect anything",
+                "It replaces the need for discipline"
+              ],
+              "es-MX": [
+                "El aprendizaje mejora automáticamente",
+                "Disminuye la concentración y se afecta el aprendizaje",
+                "No afecta en nada",
+                "Sustituye la necesidad de disciplina"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Concentration decreases and learning is affected",
+              "es-MX": "Disminuye la concentración y se afecta el aprendizaje"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Distractions reduce focus, making it harder to understand and retain information effectively."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Las distracciones reducen la concentración, dificultando la comprensión y retención de la información."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Definición de inteligencia",
+            "Question Text": {
+              "en-US": [
+                "What must an intelligence demonstrate to be considered as such?"
+              ],
+              "es-MX": [
+                "¿Qué debe demostrar una inteligencia para considerarse como tal?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "That it only exists in theory",
+                "That it provides reasonable evidence of its existence",
+                "That it depends on luck",
+                "That it is only measured by exams"
+              ],
+              "es-MX": [
+                "Que solo exista en teoría",
+                "Que dé evidencias razonables de su existencia",
+                "Que dependa de la suerte",
+                "Que solo se mida con exámenes"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "That it provides reasonable evidence of its existence",
+              "es-MX": "Que dé evidencias razonables de su existencia"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "For an intelligence to be recognized, it must show clear and reasonable evidence through observable abilities or results."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Para que una inteligencia sea reconocida, debe mostrar evidencias claras y razonables mediante habilidades o resultados observables."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Percepción de la realidad",
+            "Question Text": {
+              "en-US": [
+                "What should intelligence allow a person to do regarding reality?"
+              ],
+              "es-MX": [
+                "¿Qué debe permitir la inteligencia respecto a la realidad?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Ignore reality completely",
+                "Perceive and understand reality",
+                "Avoid thinking about situations",
+                "Depend only on others' opinions"
+              ],
+              "es-MX": [
+                "Ignorar completamente la realidad",
+                "Percibir y comprender la realidad",
+                "Evitar pensar en las situaciones",
+                "Depender solo de la opinión de otros"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Perceive and understand reality",
+              "es-MX": "Percibir y comprender la realidad"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Intelligence involves the ability to perceive reality and understand it, allowing a person to interpret their environment."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La inteligencia implica la capacidad de percibir la realidad y comprenderla, permitiendo interpretar el entorno."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Expresión de la inteligencia",
+            "Question Text": {
+              "en-US": [
+                "How should intelligence be expressed?"
+              ],
+              "es-MX": [
+                "¿Cómo debe expresarse la inteligencia?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Without any form of communication",
+                "Through symbolic codes or forms that others can recognize",
+                "Only through silence",
+                "Only through written exams"
+              ],
+              "es-MX": [
+                "Sin ninguna forma de comunicación",
+                "Mediante códigos simbólicos o formas que otros puedan reconocer",
+                "Solo mediante el silencio",
+                "Solo mediante exámenes escritos"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Through symbolic codes or forms that others can recognize",
+              "es-MX": "Mediante códigos simbólicos o formas que otros puedan reconocer"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Intelligence must be expressed in ways that others can understand and value, such as language, art or other symbolic forms."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La inteligencia debe expresarse mediante formas que otros puedan comprender y valorar, como el lenguaje, el arte u otros códigos simbólicos."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Reconocimiento de la inteligencia",
+            "Question Text": {
+              "en-US": [
+                "When is a person considered truly intelligent in a specific area?"
+              ],
+              "es-MX": [
+                "¿Cuándo se considera que una persona es verdaderamente inteligente en un área?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "When no one recognizes their ability",
+                "When others value their ability as exceptional",
+                "When they avoid showing their skills",
+                "When they only think about themselves"
+              ],
+              "es-MX": [
+                "Cuando nadie reconoce su habilidad",
+                "Cuando otros valoran su capacidad como realmente excepcional",
+                "Cuando evita mostrar sus habilidades",
+                "Cuando solo piensa en sí mismo"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "When others value their ability as exceptional",
+              "es-MX": "Cuando otros valoran su capacidad como realmente excepcional"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "A person is considered intelligent when their abilities are recognized and valued by others as outstanding."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Una persona se considera inteligente cuando sus capacidades son reconocidas y valoradas por otros como sobresalientes."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Ejemplo de inteligencia",
+            "Question Text": {
+              "en-US": [
+                "Why is Miguel Ángel considered an example of intelligence?"
+              ],
+              "es-MX": [
+                "¿Por qué Miguel Ángel es considerado un ejemplo de inteligencia?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Because he followed instructions only",
+                "Because he showed exceptional ability in drawing and painting",
+                "Because he memorized information",
+                "Because he avoided expressing himself"
+              ],
+              "es-MX": [
+                "Porque solo seguía instrucciones",
+                "Porque mostró una capacidad excepcional en el dibujo y la pintura",
+                "Porque memorizaba información",
+                "Porque evitaba expresarse"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Because he showed exceptional ability in drawing and painting",
+              "es-MX": "Porque mostró una capacidad excepcional en el dibujo y la pintura"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Miguel Ángel is an example of intelligence because he demonstrated extraordinary ability in art, which was recognized and valued by others."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Miguel Ángel es un ejemplo de inteligencia porque demostró una habilidad extraordinaria en el arte, la cual fue reconocida y valorada por otros."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Aplicación del conocimiento",
+            "Question Text": {
+              "en-US": [
+                "What does it mean to extend theoretical knowledge to daily life?"
+              ],
+              "es-MX": [
+                "¿Qué significa extender los conocimientos teóricos a la vida diaria?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Only memorize information without using it",
+                "Apply what is learned in real situations with practical meaning",
+                "Avoid using knowledge outside of school",
+                "Limit learning to theory only"
+              ],
+              "es-MX": [
+                "Solo memorizar información sin usarla",
+                "Aplicar lo aprendido en situaciones reales con sentido práctico",
+                "Evitar usar el conocimiento fuera de la escuela",
+                "Limitar el aprendizaje solo a la teoría"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Apply what is learned in real situations with practical meaning",
+              "es-MX": "Aplicar lo aprendido en situaciones reales con sentido práctico"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Extending knowledge to daily life means using what we learn in real contexts, giving it usefulness and practical value."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Extender el conocimiento a la vida diaria significa utilizar lo aprendido en contextos reales, dándole utilidad y sentido práctico."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Utilidad del aprendizaje",
+            "Question Text": {
+              "en-US": [
+                "Why is it important to give practical meaning to what we learn?"
+              ],
+              "es-MX": [
+                "¿Por qué es importante darle un sentido práctico a lo que aprendemos?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Because it avoids thinking",
+                "Because it allows knowledge to be useful in real life",
+                "Because it replaces experience",
+                "Because it limits understanding"
+              ],
+              "es-MX": [
+                "Porque evita pensar",
+                "Porque permite que el conocimiento sea útil en la vida real",
+                "Porque sustituye la experiencia",
+                "Porque limita la comprensión"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Because it allows knowledge to be useful in real life",
+              "es-MX": "Porque permite que el conocimiento sea útil en la vida real"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Learning becomes more meaningful when it is applied, as it helps solve real problems and improves daily decision-making."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El aprendizaje cobra mayor sentido cuando se aplica, ya que ayuda a resolver problemas reales y mejorar la toma de decisiones."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Hábito de la lectura",
+            "Question Text": {
+              "en-US": [
+                "Why is it important to develop the habit of reading?"
+              ],
+              "es-MX": [
+                "¿Por qué es importante fomentar el hábito de la lectura?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Because it replaces thinking",
+                "Because it increases knowledge and strengthens understanding",
+                "Because it avoids effort",
+                "Because it limits imagination"
+              ],
+              "es-MX": [
+                "Porque sustituye el pensamiento",
+                "Porque incrementa el conocimiento y fortalece la comprensión",
+                "Porque evita el esfuerzo",
+                "Porque limita la imaginación"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Because it increases knowledge and strengthens understanding",
+              "es-MX": "Porque incrementa el conocimiento y fortalece la comprensión"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Reading helps develop intelligence by expanding knowledge, improving comprehension and stimulating thinking."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La lectura ayuda a desarrollar la inteligencia al ampliar el conocimiento, mejorar la comprensión y estimular el pensamiento."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Aprendizaje significativo",
+            "Question Text": {
+              "en-US": [
+                "What happens when learning is applied in daily life?"
+              ],
+              "es-MX": [
+                "¿Qué sucede cuando el aprendizaje se aplica en la vida diaria?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "It loses importance",
+                "It becomes meaningful and useful",
+                "It is forgotten more easily",
+                "It becomes unnecessary"
+              ],
+              "es-MX": [
+                "Pierde importancia",
+                "Se vuelve significativo y útil",
+                "Se olvida más fácilmente",
+                "Se vuelve innecesario"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "It becomes meaningful and useful",
+              "es-MX": "Se vuelve significativo y útil"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Applying knowledge in real life gives it meaning and allows it to be useful in solving everyday situations."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Aplicar el conocimiento en la vida real le da sentido y permite que sea útil para resolver situaciones cotidianas."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Aprendizaje en eventos",
+            "Question Text": {
+              "en-US": [
+                "What activities can help us learn more?"
+              ],
+              "es-MX": [
+                "¿Qué actividades pueden ayudarnos a aprender más?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Only formal school classes",
+                "Attending talks, conferences, cultural or musical events and courses",
+                "Avoiding social interaction",
+                "Only studying in silence without interaction"
+              ],
+              "es-MX": [
+                "Solo las clases escolares formales",
+                "Asistir a pláticas, conferencias, eventos culturales o musicales y cursos",
+                "Evitar la interacción social",
+                "Solo estudiar en silencio sin interacción"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Attending talks, conferences, cultural or musical events and courses",
+              "es-MX": "Asistir a pláticas, conferencias, eventos culturales o musicales y cursos"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Different events and activities provide opportunities to learn new knowledge and perspectives beyond traditional education."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Los distintos eventos y actividades ofrecen oportunidades para adquirir nuevos conocimientos y perspectivas más allá de la educación tradicional."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Aprendizaje autodidacta",
+            "Question Text": {
+              "en-US": [
+                "Is it necessary to attend special courses to learn?"
+              ],
+              "es-MX": [
+                "¿Es necesario asistir a cursos especiales para aprender?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Yes, it is the only way to learn",
+                "No, it is also possible to study on your own and be self-taught",
+                "Only teachers can teach knowledge",
+                "Learning depends only on institutions"
+              ],
+              "es-MX": [
+                "Sí, es la única forma de aprender",
+                "No, también es posible estudiar por cuenta propia y ser autodidacta",
+                "Solo los maestros pueden enseñar conocimiento",
+                "El aprendizaje depende solo de instituciones"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "No, it is also possible to study on your own and be self-taught",
+              "es-MX": "No, también es posible estudiar por cuenta propia y ser autodidacta"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Learning does not depend only on formal education; a person can also develop knowledge independently through self-study."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El aprendizaje no depende únicamente de la educación formal; una persona también puede desarrollar conocimientos de manera independiente."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Autonomía en el aprendizaje",
+            "Question Text": {
+              "en-US": [
+                "What does being self-taught mean?"
+              ],
+              "es-MX": [
+                "¿Qué significa ser autodidacta?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Depending completely on others to learn",
+                "Learning independently through one's own initiative",
+                "Avoiding study completely",
+                "Only learning in formal institutions"
+              ],
+              "es-MX": [
+                "Depender completamente de otros para aprender",
+                "Aprender de manera independiente por iniciativa propia",
+                "Evitar el estudio completamente",
+                "Solo aprender en instituciones formales"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Learning independently through one's own initiative",
+              "es-MX": "Aprender de manera independiente por iniciativa propia"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "A self-taught person takes initiative in their learning, seeking knowledge through their own effort and curiosity."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Una persona autodidacta toma la iniciativa en su aprendizaje, buscando conocimiento mediante su propio esfuerzo y curiosidad."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Formas de aprendizaje",
+            "Question Text": {
+              "en-US": [
+                "What does this topic suggest about ways of learning?"
+              ],
+              "es-MX": [
+                "¿Qué sugiere este tema sobre las formas de aprendizaje?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "There is only one correct way to learn",
+                "There are multiple ways to learn, both formal and independent",
+                "Learning only occurs in school",
+                "Learning depends only on age"
+              ],
+              "es-MX": [
+                "Solo existe una forma correcta de aprender",
+                "Existen múltiples formas de aprender, tanto formales como independientes",
+                "El aprendizaje solo ocurre en la escuela",
+                "El aprendizaje depende solo de la edad"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "There are multiple ways to learn, both formal and independent",
+              "es-MX": "Existen múltiples formas de aprender, tanto formales como independientes"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Learning can occur in different contexts, including events, courses and independent study, depending on each person's initiative."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El aprendizaje puede darse en distintos contextos, como eventos, cursos o de forma independiente, según la iniciativa de cada persona."
+                }
+              ]
+            }
+          },
+          {
+            "Category": "Definición de inteligencia",
+            "Question Text": {
+              "en-US": [
+                "What is intelligence according to this definition?"
+              ],
+              "es-MX": [
+                "¿Qué es la inteligencia según esta definición?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "The ability to memorize information quickly",
+                "The ability to think in a reasonable way",
+                "The ability to avoid making decisions",
+                "The ability to depend on others"
+              ],
+              "es-MX": [
+                "La capacidad de memorizar información rápidamente",
+                "La capacidad para pensar de un modo razonable",
+                "La capacidad de evitar tomar decisiones",
+                "La capacidad de depender de otros"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "The ability to think in a reasonable way",
+              "es-MX": "La capacidad para pensar de un modo razonable"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Intelligence is defined as the ability to think logically and reasonably, allowing better understanding and decision-making."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "La inteligencia se define como la capacidad de pensar de manera lógica y razonable, lo que permite una mejor comprensión y toma de decisiones."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Importancia del estudio",
+            "Question Text": {
+              "en-US": [
+                "What does study provide to a person?"
+              ],
+              "es-MX": [
+                "¿Qué nos proporciona el estudio?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Only temporary knowledge",
+                "The opportunity to increase our capacity and be more prepared for life",
+                "Only academic titles",
+                "No real benefit"
+              ],
+              "es-MX": [
+                "Solo conocimiento temporal",
+                "La oportunidad de incrementar nuestra capacidad y estar más preparados para la vida",
+                "Solo títulos académicos",
+                "Ningún beneficio real"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "The opportunity to increase our capacity and be more prepared for life",
+              "es-MX": "La oportunidad de incrementar nuestra capacidad y estar más preparados para la vida"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Study helps develop intellectual capacity, making a person more knowledgeable and better prepared to face life situations."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El estudio ayuda a desarrollar la capacidad intelectual, haciendo a la persona más culta y mejor preparada para enfrentar la vida."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Desarrollo personal",
+            "Question Text": {
+              "en-US": [
+                "What happens if a person stops learning and studying?"
+              ],
+              "es-MX": [
+                "¿Qué sucede si una persona deja de aprender y estudiar?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Their development continues normally",
+                "Their evolution and personal development stop",
+                "They become more intelligent automatically",
+                "Nothing changes in their life"
+              ],
+              "es-MX": [
+                "Su desarrollo continúa normalmente",
+                "Se detiene su evolución y desarrollo como ser humano",
+                "Se vuelve más inteligente automáticamente",
+                "Nada cambia en su vida"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Their evolution and personal development stop",
+              "es-MX": "Se detiene su evolución y desarrollo como ser humano"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Continuous learning is essential for personal growth; without it, development and improvement are limited."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "El aprendizaje continuo es esencial para el crecimiento personal; sin él, el desarrollo y la mejora se ven limitados."
+                }
+              ]
+            }
+          }
+          ,
+          {
+            "Category": "Pensamiento y desarrollo",
+            "Question Text": {
+              "en-US": [
+                "Why is thinking in a reasonable way important for personal development?"
+              ],
+              "es-MX": [
+                "¿Por qué es importante pensar de manera razonable para el desarrollo personal?"
+              ]
+            },
+            "Options": {
+              "en-US": [
+                "Because it avoids responsibility",
+                "Because it allows better decisions and understanding of situations",
+                "Because it limits learning",
+                "Because it replaces experience"
+              ],
+              "es-MX": [
+                "Porque evita la responsabilidad",
+                "Porque permite tomar mejores decisiones y comprender las situaciones",
+                "Porque limita el aprendizaje",
+                "Porque sustituye la experiencia"
+              ]
+            },
+            "Correct Answer": {
+              "en-US": "Because it allows better decisions and understanding of situations",
+              "es-MX": "Porque permite tomar mejores decisiones y comprender las situaciones"
+            },
+            "Explanation": {
+              "en-US": [
+                {
+                  "type": "text",
+                  "content": "Reasonable thinking helps analyze situations, make better decisions and contribute to personal growth."
+                }
+              ],
+              "es-MX": [
+                {
+                  "type": "text",
+                  "content": "Pensar de manera razonable permite analizar situaciones, tomar mejores decisiones y contribuir al crecimiento personal."
+                }
+              ]
+            }
+          }
+    ]
+  }
