@@ -1,0 +1,2113 @@
+{
+  "meta": {
+    "slug": "ux-ui-fundamentos",
+    "title": "Experiencia e Interfaz de Usuario (UX y UI)",
+    "subject": "UX Y UI",
+    "unit": 5,
+    "classNo": 5,
+    "description": "Preguntas relacionadas con los conceptos fundamentales de experiencia de usuario (UX), interfaz de usuario (UI) y usabilidad.",
+    "tags": [
+      "UX",
+      "UI",
+      "Experiencia de Usuario",
+      "Interfaz de Usuario",
+      "Usabilidad"
+    ]
+  },
+  "Questions": [
+    {
+      "Category": "Investigación y diseño centrado en el usuario",
+      "Question Text": {
+        "en-US": [
+          "Which technique is based on participant observation by the researcher over a prolonged period within a specific community?"
+        ],
+        "es-MX": [
+          "¿Qué técnica se basa en la observación participante del investigador durante un tiempo prolongado en una determinada comunidad?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Quantitative",
+          "Ethnography",
+          "Virtual space",
+          "Mixed"
+        ],
+        "es-MX": [
+          "Cuantitativo",
+          "Etnografía",
+          "Espacio virtual",
+          "Mixta"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Ethnography",
+        "es-MX": "Etnografía"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La etnografía es una técnica de investigación cualitativa basada en la observación participante del investigador dentro de una comunidad durante un periodo prolongado. Su finalidad es comprender el comportamiento, las interacciones y las necesidades reales de las personas en su contexto habitual. En el diseño centrado en el usuario, este enfoque permite obtener información profunda sobre cómo los usuarios utilizan la tecnología y favorece la creación de productos más adecuados a sus necesidades."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Es una técnica de investigación cualitativa.",
+              "Se basa en la observación participante.",
+              "Analiza el comportamiento de las personas en su contexto real.",
+              "Permite comprender necesidades y hábitos de los usuarios.",
+              "Es utilizada en procesos de diseño centrado en el usuario."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Diseño centrado en el usuario",
+      "Question Text": {
+        "en-US": [
+          "Which approach allows us to focus on designing what users really need and avoid unnecessary functionalities?"
+        ],
+        "es-MX": [
+          "¿Qué enfoque nos permite centrarnos en diseñar lo que el usuario necesita y evitar funcionalidades innecesarias?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Content-centered design",
+          "Technology-centered design",
+          "Designer-centered design",
+          "Data-driven design"
+        ],
+        "es-MX": [
+          "Diseño centrado en el contenido",
+          "Diseño centrado en la tecnología",
+          "Diseño centrado en el diseñador",
+          "Diseño basado en datos"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Data-driven design",
+        "es-MX": "Diseño basado en datos"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El diseño basado en datos consiste en tomar decisiones apoyadas en la información obtenida mediante investigaciones, observaciones y pruebas con usuarios. Este enfoque permite comprender las necesidades reales de las personas y evita incorporar funciones que no aportan valor o que podrían resultar difíciles de utilizar. De esta manera, se favorece una experiencia de usuario más eficiente y alineada con los objetivos de los usuarios."
+          },
+          {
+            "type": "text",
+            "content": "Los principios del diseño de experiencia de usuario establecen que las decisiones no deben basarse únicamente en intuiciones o suposiciones del diseñador, sino en información obtenida de usuarios reales. La investigación y la evaluación temprana permiten desarrollar únicamente aquellas características que aportan valor y mejoran la experiencia del usuario."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Las decisiones se sustentan en información obtenida de los usuarios.",
+              "Permite identificar necesidades reales.",
+              "Evita funcionalidades innecesarias o complejas.",
+              "Favorece una mejor experiencia de usuario.",
+              "Reduce tiempo y recursos en desarrollos que no aportan valor."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Investigación y observación",
+      "Question Text": {
+        "en-US": [
+          "During this period, data from real interactions and users' discourse are collected for qualitative analysis."
+        ],
+        "es-MX": [
+          "Durante ese periodo se recogerán datos de interacciones reales y de los discursos para luego hacer un análisis cualitativo de los mismos:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Observation",
+          "Planning",
+          "Conclusion",
+          "Results collection"
+        ],
+        "es-MX": [
+          "La observación",
+          "Planteamiento",
+          "Conclusión",
+          "Obtención de resultados"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Observation",
+        "es-MX": "La observación"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La observación es una técnica de investigación cualitativa que permite recopilar información sobre las interacciones y comportamientos reales de los usuarios. Mediante la observación directa es posible analizar cómo las personas utilizan un sistema dentro de su contexto habitual y estudiar los discursos generados durante el uso. Esta información proporciona una comprensión más profunda de las necesidades y problemas de los usuarios, constituyendo una base importante para el diseño centrado en el usuario."
+          },
+          {
+            "type": "text",
+            "content": "El estudio de la experiencia de usuario señala que la observación directa de los usuarios en situaciones reales puede resultar especialmente esclarecedora, ya que permite obtener información que difícilmente puede apreciarse mediante métodos controlados o únicamente con métricas cuantitativas."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Es una técnica de investigación cualitativa.",
+              "Analiza interacciones reales de los usuarios.",
+              "Permite estudiar el contexto de uso.",
+              "Proporciona información para mejorar el diseño.",
+              "Ayuda a comprender necesidades y comportamientos de las personas."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Investigación y análisis competitivo",
+      "Question Text": {
+        "en-US": [
+          "Specify the need behind our design:"
+        ],
+        "es-MX": [
+          "Concretar cuál es la necesidad detrás de nuestro diseño:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Carry out a comparison",
+          "Identify the real competitor",
+          "Identify the need",
+          "Blind imitation"
+        ],
+        "es-MX": [
+          "Realizar una comparativa",
+          "Identificar al competidor real",
+          "Identificar la necesidad",
+          "La imitación ciega"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Identify the need",
+        "es-MX": "Identificar la necesidad"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Antes de diseñar una solución es fundamental comprender qué necesidad se pretende satisfacer. El diseño centrado en el usuario establece que las decisiones deben partir del conocimiento de las necesidades, motivaciones y problemas reales de las personas, ya que el objetivo principal no es desarrollar funcionalidades por intuición, sino crear productos útiles y acordes con el contexto de uso."
+          },
+          {
+            "type": "text",
+            "content": "Identificar la necesidad permite establecer correctamente los objetivos del proyecto y comprender qué valor aportará el producto. El material de UX señala que la investigación constituye la base del proceso de diseño, ya que en ella se analizan las situaciones, se identifican los problemas y se determinan los aspectos que deben ser evaluados para ofrecer una mejor experiencia de usuario."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Permite comprender los problemas reales de los usuarios.",
+              "Constituye la base del diseño centrado en el usuario.",
+              "Ayuda a definir objetivos y prioridades del proyecto.",
+              "Evita desarrollar funciones innecesarias.",
+              "Contribuye a crear productos con mayor valor para las personas."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Investigación y análisis competitivo",
+      "Question Text": {
+        "en-US": [
+          "We will find direct competitors, such as Home Away or Wimdu, which are direct competitors of Airbnb, and indirect competitors, those that have a different product or service from ours:"
+        ],
+        "es-MX": [
+          "Nos encontraremos con competidores directos, como Home Away o Wimdu que son competidores directos de Airbnb, e indirectos, aquellos que tienen un producto o servicio diferente al nuestro:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Carry out a comparison",
+          "Identify the real competitor",
+          "Identify the need",
+          "Blind imitation"
+        ],
+        "es-MX": [
+          "Realizar una comparativa",
+          "Identificar al competidor real",
+          "Identificar la necesidad",
+          "La imitación ciega"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Identify the real competitor",
+        "es-MX": "Identificar al competidor real"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Identificar al competidor real permite conocer qué organizaciones ofrecen soluciones similares y cuáles representan una alternativa para los usuarios. Los competidores pueden ser directos, cuando ofrecen productos o servicios semejantes, o indirectos, cuando satisfacen la misma necesidad mediante propuestas diferentes."
+          },
+          {
+            "type": "text",
+            "content": "El análisis competitivo es una herramienta importante en UX, ya que permite comprender el entorno, detectar oportunidades y diferenciar el producto de otras soluciones existentes. No se trata únicamente de copiar características, sino de entender cómo otras organizaciones resuelven los problemas de sus usuarios y qué aspectos pueden mejorarse."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Permite distinguir competidores directos e indirectos.",
+              "Ayuda a comprender el mercado y las alternativas existentes.",
+              "Facilita la identificación de oportunidades de mejora.",
+              "Contribuye a diferenciar el producto de la competencia.",
+              "Favorece la toma de decisiones fundamentadas."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Investigación y análisis competitivo",
+      "Question Text": {
+        "en-US": [
+          "It is an almost certain path to failure. Before imitating, we must consider whether our problem coincides with that of the competitor:"
+        ],
+        "es-MX": [
+          "Es un camino casi seguro hacia el fracaso. Antes de imitar debemos plantearnos si nuestro problema coincide con el del competidor:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Carry out a comparison",
+          "Identify the real competitor",
+          "Identify the need",
+          "Blind imitation"
+        ],
+        "es-MX": [
+          "Realizar una comparativa",
+          "Identificar al competidor real",
+          "Identificar la necesidad",
+          "La imitación ciega"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Blind imitation",
+        "es-MX": "La imitación ciega"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La imitación ciega consiste en copiar las soluciones implementadas por otras organizaciones sin analizar previamente si responden a las necesidades, objetivos y contexto de los propios usuarios. Este enfoque puede conducir al fracaso, ya que las características que funcionan para un producto determinado no necesariamente serán adecuadas para otro."
+          },
+          {
+            "type": "text",
+            "content": "El diseño de experiencia de usuario señala que las decisiones no deben basarse en intuiciones, preferencias personales o simples imitaciones, sino en la investigación y en el conocimiento de las necesidades reales de los usuarios. Comprender el contexto de uso y las motivaciones de las personas resulta más importante que reproducir soluciones ajenas."
+          },
+          {
+            "type": "text",
+            "content": "Por ello, el análisis competitivo debe utilizarse como una fuente de información y aprendizaje, pero no como una justificación para copiar sin criterio. Cada producto debe responder a los problemas y expectativas específicas de sus propios usuarios."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Consiste en copiar soluciones sin un análisis previo.",
+              "Ignora las necesidades reales de los usuarios.",
+              "Puede conducir a decisiones equivocadas.",
+              "El diseño debe basarse en investigación y no en imitaciones.",
+              "Cada producto debe responder a su propio contexto y objetivos."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Entrevistas y técnicas de investigación",
+      "Question Text": {
+        "en-US": [
+          "It consists of translating research questions into questions that we will ask users:"
+        ],
+        "es-MX": [
+          "Consiste en una traducción de las preguntas de investigación en preguntas que realizaremos a los usuarios:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Information retrieval",
+          "Simultaneous equations",
+          "Interview",
+          "Navigation design"
+        ],
+        "es-MX": [
+          "Recuperación de información",
+          "Ecuaciones simultaneas",
+          "Entrevista",
+          "Diseño de navegación"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Interview",
+        "es-MX": "Entrevista"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La entrevista es una técnica de investigación cualitativa utilizada en experiencia de usuario para obtener información directamente de las personas. Consiste en transformar las preguntas de investigación del proyecto en preguntas comprensibles para los usuarios, con el fin de conocer sus necesidades, motivaciones, dificultades y expectativas respecto a un producto o servicio."
+          },
+          {
+            "type": "text",
+            "content": "El diseño centrado en el usuario establece que las decisiones no deben basarse únicamente en las intuiciones del diseñador. Por ello, la investigación UX utiliza entrevistas para recopilar información de usuarios reales y comprender el contexto en el que utilizan la tecnología. Esta información constituye la base para desarrollar soluciones más útiles y satisfactorias."
+          },
+          {
+            "type": "text",
+            "content": "Las entrevistas permiten obtener información que no puede observarse directamente, como opiniones, experiencias, expectativas y percepciones de los usuarios. Por esta razón, son una de las herramientas más utilizadas en la investigación de experiencia de usuario."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Es una técnica de investigación cualitativa.",
+              "Permite conocer necesidades y motivaciones de los usuarios.",
+              "Traduce las preguntas de investigación en preguntas comprensibles.",
+              "Proporciona información para el diseño centrado en el usuario.",
+              "Ayuda a comprender el contexto y las expectativas de las personas."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Entrevistas y técnicas de investigación",
+      "Question Text": {
+        "en-US": [
+          "In this part of the interview we introduce ourselves, logistics begin and informal questions are asked about the user's personal and professional circumstances:"
+        ],
+        "es-MX": [
+          "En esta parte de la entrevista nos presentamos, se inicia la logística, y se realizan una serie de preguntas informales al usuario sobre sus circunstancias personales y profesionales:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Development",
+          "Body",
+          "Introduction",
+          "Future projection"
+        ],
+        "es-MX": [
+          "Desarrollo",
+          "Cuerpo",
+          "Introducción",
+          "Proyección futura"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Introduction",
+        "es-MX": "Introducción"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La introducción corresponde a la primera fase de una entrevista. En esta etapa se establece el contacto inicial con el participante, se explica el propósito de la investigación, se inicia la logística y se formulan preguntas informales relacionadas con las circunstancias personales y profesionales del usuario. El objetivo es generar confianza y crear un ambiente adecuado para obtener información de calidad."
+          },
+          {
+            "type": "text",
+            "content": "En la investigación centrada en el usuario es importante crear una relación de confianza con las personas entrevistadas. Esto facilita que los usuarios expresen con mayor libertad sus experiencias, problemas y necesidades, permitiendo obtener información más precisa y útil para el proceso de diseño."
+          },
+          {
+            "type": "text",
+            "content": "Una buena introducción favorece la comunicación y constituye el punto de partida para desarrollar posteriormente las preguntas principales de la entrevista."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Es la primera etapa de la entrevista.",
+              "Permite establecer un ambiente de confianza.",
+              "Incluye la presentación y aspectos logísticos.",
+              "Se realizan preguntas generales sobre el usuario.",
+              "Prepara el desarrollo de las preguntas centrales."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Entrevistas y técnicas de investigación",
+      "Question Text": {
+        "en-US": [
+          "After the central questions, questions are asked that require active participation from the person:"
+        ],
+        "es-MX": [
+          "Después de las preguntas centrales, se realizan preguntas que requieran una aportación activa de la persona:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Development",
+          "Body",
+          "Introduction",
+          "Future projection"
+        ],
+        "es-MX": [
+          "Desarrollo",
+          "Cuerpo",
+          "Introducción",
+          "Proyección futura"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Future projection",
+        "es-MX": "Proyección futura"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La proyección futura es la etapa final de la entrevista en la que, después de abordar las preguntas centrales, se formulan cuestiones que requieren una participación más activa del usuario. En esta fase se busca conocer opiniones, ideas, sugerencias y posibles escenarios futuros relacionados con el producto o servicio que se está evaluando."
+          },
+          {
+            "type": "text",
+            "content": "Este tipo de preguntas permite explorar expectativas y descubrir oportunidades de mejora que pueden no surgir durante las preguntas principales. Gracias a ello, el investigador obtiene información valiosa para comprender cómo los usuarios imaginan una solución ideal o cómo desearían que evolucionara un producto."
+          },
+          {
+            "type": "text",
+            "content": "La experiencia de usuario busca comprender no solo el comportamiento actual de las personas, sino también sus necesidades futuras y sus expectativas, con el propósito de diseñar productos más útiles y satisfactorios."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Corresponde a la parte final de la entrevista.",
+              "Favorece la participación activa del usuario.",
+              "Permite obtener ideas y sugerencias.",
+              "Ayuda a identificar oportunidades de mejora.",
+              "Explora expectativas y necesidades futuras."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Cuestionarios y técnicas de investigación",
+      "Question Text": {
+        "en-US": [
+          "The following are recommendations for preparing a questionnaire except:"
+        ],
+        "es-MX": [
+          "Las siguientes son recomendaciones para la elaboración de un cuestionario excepto:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Having multiple correct answers",
+          "Avoid giving clues about the correct answer",
+          "Avoid absurd or ridiculous options",
+          "Asking trick questions"
+        ],
+        "es-MX": [
+          "Tener múltiples respuestas correctas",
+          "Evitar dar pistas sobre la respuesta correcta",
+          "Evitar opciones que sean absurdas o ridículas",
+          "Realizar preguntas con trampa"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Having multiple correct answers",
+        "es-MX": "Tener múltiples respuestas correctas"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "En la elaboración de cuestionarios es importante que cada pregunta tenga una única respuesta correcta y que las alternativas incorrectas sean plausibles. La existencia de múltiples respuestas correctas puede generar confusión, disminuir la validez del instrumento y afectar la calidad de la información obtenida."
+          },
+          {
+            "type": "text",
+            "content": "Entre las recomendaciones habituales para diseñar cuestionarios se encuentran evitar dar pistas sobre la respuesta correcta, no incluir opciones absurdas o ridículas y redactar preguntas claras y comprensibles. El objetivo es obtener respuestas fiables y minimizar posibles sesgos."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Las preguntas deben ser claras y comprensibles.",
+              "Se recomienda una sola respuesta correcta.",
+              "Las opciones incorrectas deben ser plausibles.",
+              "No deben existir pistas evidentes sobre la respuesta.",
+              "Se busca obtener información válida y objetiva."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Cuestionarios y técnicas de investigación",
+      "Question Text": {
+        "en-US": [
+          "The following are not recommendations for preparing a questionnaire except:"
+        ],
+        "es-MX": [
+          "Las siguientes no son recomendaciones para la elaboración de un cuestionario excepto:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Avoid double questions",
+          "Ask trick questions",
+          "Avoid evaluating memory",
+          "Avoid opinion-based questions"
+        ],
+        "es-MX": [
+          "Evitar las preguntas dobles",
+          "Realizar preguntas con trampa",
+          "Evitar evaluar recuerdo",
+          "Evitar las preguntas basadas en opiniones"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Ask trick questions",
+        "es-MX": "Realizar preguntas con trampa"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las preguntas con trampa no constituyen una recomendación en el diseño de cuestionarios. Este tipo de preguntas puede inducir a error, generar confusión y afectar la validez de los resultados obtenidos. El propósito de un cuestionario es recopilar información de forma clara y objetiva, no confundir al participante."
+          },
+          {
+            "type": "text",
+            "content": "Un buen cuestionario debe evitar preguntas dobles, reducir la dependencia de la memoria de las personas y formular preguntas comprensibles y neutrales. De esta manera se obtiene información más precisa y útil para la investigación."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Las preguntas con trampa no son recomendables.",
+              "Los cuestionarios deben ser claros y objetivos.",
+              "Se deben evitar preguntas ambiguas.",
+              "La información obtenida debe ser fiable.",
+              "El objetivo es comprender a los usuarios y no confundirlos."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Cuestionarios y técnicas de investigación",
+      "Question Text": {
+        "en-US": [
+          "They are used to access people's knowledge, therefore they should contain incorrect answers:"
+        ],
+        "es-MX": [
+          "Se utilizan para acceder a los conocimientos de las personas, por lo que sí deben tener respuestas incorrectas:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Questionnaires",
+          "Interviews",
+          "Tests",
+          "Data analysis"
+        ],
+        "es-MX": [
+          "Cuestionarios",
+          "Entrevistas",
+          "Pruebas",
+          "Análisis de datos"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Questionnaires",
+        "es-MX": "Cuestionarios"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los cuestionarios son instrumentos de investigación utilizados para acceder a los conocimientos, opiniones y percepciones de las personas mediante preguntas estructuradas. Cuando se emplean para evaluar conocimientos, es necesario incluir respuestas incorrectas o distractores plausibles con el fin de distinguir entre quienes poseen el conocimiento y quienes no."
+          },
+          {
+            "type": "text",
+            "content": "Los cuestionarios constituyen una técnica ampliamente utilizada en investigación debido a que permiten recopilar información de un gran número de personas de manera sistemática. La calidad de las preguntas y de las opciones de respuesta influye directamente en la fiabilidad y validez de los resultados obtenidos."
+          },
+          {
+            "type": "text",
+            "content": "En el ámbito del diseño centrado en el usuario, los cuestionarios representan una herramienta útil para conocer características, necesidades y opiniones de los usuarios, complementando otras técnicas como las entrevistas, la observación y las pruebas de usabilidad."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Permiten acceder a los conocimientos de las personas.",
+              "Son instrumentos estructurados de investigación.",
+              "Pueden incluir respuestas incorrectas como distractores.",
+              "Facilitan la recopilación sistemática de información.",
+              "Complementan otras técnicas de investigación en UX."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Analítica web y comportamiento del usuario",
+      "Question Text": {
+        "en-US": [
+          "Knowing this data is useful to determine where users leave, whether due to UI or UX reasons:"
+        ],
+        "es-MX": [
+          "Conocer este dato es útil para saber dónde se producen las fugas de los usuarios, ya sea por motivos UI o UX:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Behaviour Flow",
+          "Bounce rate",
+          "Exit pages",
+          "Time on page"
+        ],
+        "es-MX": [
+          "Behaviour Flow",
+          "Tasa rebote",
+          "Páginas de salida",
+          "Tiempo permanencia"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Exit pages",
+        "es-MX": "Páginas de salida"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las páginas de salida son aquellas en las que los usuarios abandonan un sitio web. Analizar esta información permite identificar en qué parte del recorrido se producen las fugas y determinar si existen problemas relacionados con la interfaz de usuario (UI), la experiencia de usuario (UX), el contenido o la navegación."
+          },
+          {
+            "type": "text",
+            "content": "La experiencia de usuario se ve influida por factores como la funcionalidad, la presentación, el comportamiento interactivo y la facilidad de uso. Cuando una página presenta problemas de comprensión, tiempos de carga elevados o una navegación confusa, los usuarios pueden abandonar el sitio, por lo que las páginas de salida constituyen una métrica importante para detectar oportunidades de mejora."
+          },
+          {
+            "type": "text",
+            "content": "El material de UX señala que las métricas cuantitativas proporcionadas por la analítica web permiten conocer cómo utilizan realmente los usuarios una interfaz en su contexto de uso, aunque estas métricas no explican por sí mismas las causas del comportamiento observado y suelen complementarse con otras técnicas de investigación."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Permiten detectar dónde abandonan el sitio los usuarios.",
+              "Ayudan a identificar problemas de UI o UX.",
+              "Constituyen una métrica de analítica web.",
+              "Facilitan la mejora de la navegación y del contenido.",
+              "Proporcionan información sobre el comportamiento real de los usuarios."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Analítica web y comportamiento del usuario",
+      "Question Text": {
+        "en-US": [
+          "Shows the user's path through the website, indicating where they enter and where they go:"
+        ],
+        "es-MX": [
+          "Muestra el flujo del usuario en la web: por dónde acceden y hacia dónde se dirigen:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Behaviour Flow",
+          "Bounce rate",
+          "Exit pages",
+          "Time on page"
+        ],
+        "es-MX": [
+          "Behaviour Flow",
+          "Tasa rebote",
+          "Páginas de salida",
+          "Tiempo permanencia"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Behaviour Flow",
+        "es-MX": "Behaviour Flow"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Behaviour Flow es una herramienta de analítica web que representa gráficamente el recorrido que siguen los usuarios dentro de un sitio web. Permite observar desde qué páginas acceden, qué secciones visitan posteriormente y en qué momento abandonan la navegación."
+          },
+          {
+            "type": "text",
+            "content": "Esta información resulta de gran utilidad en experiencia de usuario porque permite comprender el comportamiento real de las personas y detectar posibles problemas en la estructura de navegación, la organización de la información o los flujos de interacción."
+          },
+          {
+            "type": "text",
+            "content": "El material de UX destaca que la analítica web constituye uno de los niveles más avanzados de incorporación de información sobre los usuarios, ya que proporciona datos obtenidos del uso real del sistema en su contexto habitual, complementando las pruebas y observaciones realizadas durante el proceso de diseño."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Representa el recorrido seguido por los usuarios.",
+              "Permite conocer desde dónde acceden y hacia dónde navegan.",
+              "Ayuda a identificar problemas en la navegación.",
+              "Proporciona información obtenida del uso real del sistema.",
+              "Contribuye a mejorar la experiencia de usuario."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Analítica web y comportamiento del usuario",
+      "Question Text": {
+        "en-US": [
+          "Indicates the percentage of users who leave the page without performing any interaction:"
+        ],
+        "es-MX": [
+          "Indica en porcentaje cuántos usuarios de los que han accedido han salido de la página sin hacer ninguna interacción:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Behaviour Flow",
+          "Bounce rate",
+          "Exit pages",
+          "Time on page"
+        ],
+        "es-MX": [
+          "Behaviour Flow",
+          "Tasa rebote",
+          "Páginas de salida",
+          "Tiempo permanencia"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Bounce rate",
+        "es-MX": "Tasa rebote"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La tasa de rebote representa el porcentaje de usuarios que abandonan una página sin realizar ninguna interacción adicional. Es una métrica utilizada para evaluar el interés que genera una página y para identificar posibles problemas relacionados con el contenido, la navegación o la experiencia de usuario."
+          },
+          {
+            "type": "text",
+            "content": "Una tasa de rebote elevada no siempre significa que exista un problema, pero puede indicar que la información no responde a las expectativas de los usuarios, que la interfaz resulta confusa o que el contenido no es suficientemente relevante para continuar navegando."
+          },
+          {
+            "type": "text",
+            "content": "La analítica web proporciona métricas cuantitativas sobre el uso real que hacen los usuarios de una interfaz. Sin embargo, como señala el material de UX, estas métricas permiten saber qué está ocurriendo, pero generalmente no explican por qué sucede, por lo que es recomendable complementarlas con entrevistas, observación y pruebas con usuarios."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Expresa el porcentaje de usuarios que abandonan la página sin interactuar.",
+              "Es una métrica de analítica web ampliamente utilizada.",
+              "Puede revelar problemas de contenido o experiencia de usuario.",
+              "Ayuda a detectar oportunidades de mejora.",
+              "Debe interpretarse junto con otras técnicas de investigación."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Personas y experiencia de usuario",
+      "Question Text": {
+        "en-US": [
+          "Knowing what users do and where they do it allows us to anticipate their needs by identifying groups of interest and understanding their needs:"
+        ],
+        "es-MX": [
+          "El hecho de conocer qué hace y dónde, nos permite anticiparnos a sus necesidades, encontrando grupos que le interesen y anticipándonos a sus necesidades:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Communication coherence",
+          "Organization",
+          "Knowledge of their environment and behavior",
+          "Better product development"
+        ],
+        "es-MX": [
+          "Coherencia en la comunicación",
+          "Organización",
+          "Conocimiento de su entorno y comportamiento",
+          "Mejor desarrollo de productos"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Knowledge of their environment and behavior",
+        "es-MX": "Conocimiento de su entorno y comportamiento"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El conocimiento del entorno y del comportamiento de los usuarios permite comprender cómo interactúan con los productos y cuáles son sus necesidades reales. En experiencia de usuario, conocer qué hacen las personas, dónde lo hacen y cuáles son sus objetivos facilita anticiparse a sus expectativas y diseñar soluciones más adecuadas."
+          },
+          {
+            "type": "text",
+            "content": "El material de UX destaca que las decisiones de diseño deben basarse en la investigación de las necesidades, motivaciones y dificultades de los usuarios. Además, la observación del contexto real y el análisis del comportamiento permiten obtener información más precisa sobre cómo las personas utilizan un sistema y qué mejoras pueden implementarse."
+          },
+          {
+            "type": "text",
+            "content": "Comprender el entorno y los hábitos de los usuarios ayuda a segmentar grupos con características similares y a desarrollar productos que respondan de manera más efectiva a sus necesidades y expectativas."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Permite comprender el contexto de uso.",
+              "Ayuda a anticipar necesidades de los usuarios.",
+              "Facilita la segmentación de grupos con intereses comunes.",
+              "Contribuye al diseño centrado en el usuario.",
+              "Favorece una mejor experiencia de usuario."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Personas y experiencia de usuario",
+      "Question Text": {
+        "en-US": [
+          "Team members will know users more easily if we identify a user type with a persona:"
+        ],
+        "es-MX": [
+          "Los miembros del equipo conocerán más fácilmente si identificamos a un tipo de usuario con un personaje:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Communication coherence",
+          "Organization",
+          "Knowledge of their environment and behavior",
+          "Better product development"
+        ],
+        "es-MX": [
+          "Coherencia en la comunicación",
+          "Organización",
+          "Conocimiento de su entorno y comportamiento",
+          "Mejor desarrollo de productos"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Communication coherence",
+        "es-MX": "Coherencia en la comunicación"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La utilización de personas o personajes representativos de los usuarios favorece una comunicación más clara y coherente entre los miembros del equipo. Al compartir una representación común del usuario objetivo, todos los participantes del proyecto comprenden mejor sus características, necesidades y objetivos."
+          },
+          {
+            "type": "text",
+            "content": "En el diseño centrado en el usuario es importante que desarrolladores, diseñadores y demás integrantes del equipo tengan una visión compartida de las personas para quienes se está diseñando. Esto permite que las decisiones se orienten hacia las necesidades reales de los usuarios y no hacia preferencias personales."
+          },
+          {
+            "type": "text",
+            "content": "Las personas ayudan a mantener una comunicación consistente y facilitan que todos los involucrados trabajen con los mismos objetivos y con una comprensión común de los usuarios."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Favorece una visión compartida de los usuarios.",
+              "Mejora la comunicación entre los miembros del equipo.",
+              "Permite comprender mejor las necesidades de las personas.",
+              "Reduce interpretaciones diferentes sobre el usuario objetivo.",
+              "Contribuye a mantener la coherencia en las decisiones de diseño."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Personas y experiencia de usuario",
+      "Question Text": {
+        "en-US": [
+          "We will focus the design on that type of user, leaving our personal preferences aside:"
+        ],
+        "es-MX": [
+          "Enfocaremos el diseño hacia esa tipología de usuarios, dejando nuestras preferencias personales de lado:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Communication coherence",
+          "Organization",
+          "Knowledge of their environment and behavior",
+          "Better product development"
+        ],
+        "es-MX": [
+          "Coherencia en la comunicación",
+          "Organización",
+          "Conocimiento de su entorno y comportamiento",
+          "Mejor desarrollo de productos"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Better product development",
+        "es-MX": "Mejor desarrollo de productos"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Centrar el diseño en una tipología específica de usuarios permite desarrollar productos más adecuados a sus necesidades y evitar que las decisiones se basen en las preferencias personales del equipo. El diseño centrado en el usuario busca comprender a las personas y crear soluciones que respondan a sus objetivos y expectativas."
+          },
+          {
+            "type": "text",
+            "content": "El material de UX señala que el profesional no es el usuario y que existe el riesgo de asumir erróneamente que los demás piensan o actúan igual. Por ello, las decisiones deben apoyarse en la investigación y en el conocimiento de los usuarios reales para lograr productos más útiles y satisfactorios."
+          },
+          {
+            "type": "text",
+            "content": "Diseñar pensando en una tipología concreta de usuarios contribuye a desarrollar productos más eficientes, con mejores experiencias de uso y con mayores probabilidades de satisfacer las necesidades de las personas."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Permite dejar de lado las preferencias personales del equipo.",
+              "Favorece el diseño centrado en el usuario.",
+              "Contribuye a desarrollar productos más adecuados.",
+              "Mejora la experiencia de usuario.",
+              "Incrementa las probabilidades de satisfacer las necesidades reales de las personas."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Personas y experiencia de usuario",
+      "Question Text": {
+        "en-US": [
+          "Factor where we seek to know from where the person is accessing the product: home, work or study center:"
+        ],
+        "es-MX": [
+          "Factor donde se busca conocer desde dónde está accediendo la persona al producto: su hogar, su trabajo, su centro de estudio:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Person mentality",
+          "Drives and motivations",
+          "Person environment",
+          "External factors"
+        ],
+        "es-MX": [
+          "Mentalidad de la persona",
+          "Impulsos y motivaciones",
+          "Entorno de la persona",
+          "Factores externos"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Person environment",
+        "es-MX": "Entorno de la persona"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El entorno de la persona hace referencia al contexto en el que el usuario utiliza un producto o servicio. Comprender si accede desde su hogar, su lugar de trabajo o su centro de estudios permite identificar las condiciones de uso, las limitaciones y las necesidades específicas que pueden influir en la experiencia de usuario."
+          },
+          {
+            "type": "text",
+            "content": "El diseño centrado en el usuario considera que las personas interactúan con la tecnología dentro de un contexto determinado. Por ello, la investigación en UX analiza no solamente las características del usuario, sino también el ambiente y las circunstancias en las que utiliza el producto, ya que estos factores pueden afectar sus decisiones y comportamientos."
+          },
+          {
+            "type": "text",
+            "content": "El material de experiencia de usuario destaca la importancia de observar a las personas en situaciones reales, pues el contexto de uso proporciona información valiosa para diseñar productos más adecuados y satisfactorios."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Permite conocer el contexto en el que se utiliza el producto.",
+              "Considera lugares como el hogar, trabajo o centro de estudios.",
+              "Ayuda a comprender las necesidades reales del usuario.",
+              "Forma parte del diseño centrado en el usuario.",
+              "Favorece el desarrollo de mejores experiencias de uso."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Personas y experiencia de usuario",
+      "Question Text": {
+        "en-US": [
+          "Factor where we imagine the motivations that have led the person to interact with the product from a specific objective:"
+        ],
+        "es-MX": [
+          "Factor donde imaginar las motivaciones que han llevado a la persona a interactuar con el producto a partir de un objetivo específico:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Person mentality",
+          "Drives and motivations",
+          "Person environment",
+          "External factors"
+        ],
+        "es-MX": [
+          "Mentalidad de la persona",
+          "Impulsos y motivaciones",
+          "Entorno de la persona",
+          "Factores externos"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Drives and motivations",
+        "es-MX": "Impulsos y motivaciones"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los impulsos y motivaciones representan las razones que llevan a una persona a utilizar un producto o servicio para alcanzar un objetivo determinado. Comprender estas motivaciones permite conocer qué espera obtener el usuario y cuáles son las necesidades que intenta satisfacer mediante la interacción con el sistema."
+          },
+          {
+            "type": "text",
+            "content": "La experiencia de usuario busca comprender no solamente lo que hacen las personas, sino también por qué lo hacen. Las motivaciones constituyen uno de los elementos fundamentales para diseñar soluciones que realmente aporten valor y respondan a las expectativas de los usuarios."
+          },
+          {
+            "type": "text",
+            "content": "El material de UX señala que las decisiones de diseño deben apoyarse en la comprensión de las necesidades y objetivos de las personas, ya que son estos elementos los que determinan la forma en que interactúan con los productos digitales."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Permiten comprender por qué las personas utilizan un producto.",
+              "Están relacionadas con los objetivos del usuario.",
+              "Ayudan a identificar necesidades y expectativas.",
+              "Constituyen un elemento esencial del diseño centrado en el usuario.",
+              "Favorecen la creación de productos con mayor valor para las personas."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Personas y experiencia de usuario",
+      "Question Text": {
+        "en-US": [
+          "Factor where we try to put ourselves in their place and imagine their thoughts:"
+        ],
+        "es-MX": [
+          "Factor donde se trata de ponerse en su lugar y tratar de imaginar sus pensamientos:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Person mentality",
+          "Drives and motivations",
+          "Person environment",
+          "External factors"
+        ],
+        "es-MX": [
+          "Mentalidad de la persona",
+          "Impulsos y motivaciones",
+          "Entorno de la persona",
+          "Factores externos"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Person mentality",
+        "es-MX": "Mentalidad de la persona"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La mentalidad de la persona hace referencia a la manera en que piensa, percibe y comprende el mundo que la rodea. En experiencia de usuario, ponerse en el lugar del usuario e imaginar sus pensamientos constituye un ejercicio de empatía que permite comprender mejor sus expectativas, preocupaciones y necesidades."
+          },
+          {
+            "type": "text",
+            "content": "El diseño centrado en el usuario parte del principio de que el diseñador no es el usuario. Por ello, es necesario entender cómo piensan las personas, cuáles son sus conocimientos previos y cómo interpretan la información, con el propósito de desarrollar interfaces más intuitivas y fáciles de utilizar."
+          },
+          {
+            "type": "text",
+            "content": "Comprender la mentalidad del usuario permite anticipar problemas de uso y tomar decisiones más adecuadas durante el proceso de diseño. Este enfoque favorece el desarrollo de productos más accesibles, comprensibles y satisfactorios."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Se relaciona con la forma en que piensa el usuario.",
+              "Implica desarrollar empatía hacia las personas.",
+              "Permite comprender expectativas y percepciones.",
+              "Ayuda a diseñar interfaces más intuitivas.",
+              "Contribuye a mejorar la experiencia de usuario."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Historias de usuario",
+      "Question Text": {
+        "en-US": [
+          "It is a summary of the user's story, which must answer three questions: who benefits, what is wanted, and what is the benefit:"
+        ],
+        "es-MX": [
+          "Es una síntesis de la historia del usuario, que debe responder a tres preguntas: quién se beneficia; qué se quiere; cuál es el beneficio:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Estimation",
+          "Priority",
+          "Description",
+          "ID"
+        ],
+        "es-MX": [
+          "Estimación",
+          "Prioridad",
+          "Descripción",
+          "ID"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Description",
+        "es-MX": "Descripción"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La descripción de una historia de usuario representa una síntesis de las necesidades del usuario y expresa el valor que se espera obtener. Habitualmente responde a tres cuestiones fundamentales: quién se beneficia, qué necesita o desea realizar y cuál es el beneficio esperado. Esta estructura permite comprender el propósito de la funcionalidad desde la perspectiva del usuario."
+          },
+          {
+            "type": "text",
+            "content": "Las historias de usuario son una herramienta utilizada en metodologías ágiles para expresar requisitos en un lenguaje sencillo y centrado en las personas. En lugar de describir aspectos técnicos, se enfocan en las necesidades y objetivos del usuario, favoreciendo el diseño centrado en el usuario y la comunicación entre los miembros del equipo."
+          },
+          {
+            "type": "text",
+            "content": "Una descripción adecuada ayuda a comprender el valor que aporta una funcionalidad y facilita la toma de decisiones durante el desarrollo del producto, manteniendo siempre la atención en las necesidades reales de los usuarios."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Resume las necesidades del usuario.",
+              "Responde quién se beneficia, qué desea y cuál es el beneficio.",
+              "Se expresa desde la perspectiva del usuario.",
+              "Facilita la comunicación entre los miembros del equipo.",
+              "Favorece el diseño centrado en el usuario."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Historias de usuario",
+      "Question Text": {
+        "en-US": [
+          "It is considered the ideal time required to implement the user story:"
+        ],
+        "es-MX": [
+          "Se considera como el tiempo ideal para implementar la historia de usuario:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Estimation",
+          "Priority",
+          "Description",
+          "ID"
+        ],
+        "es-MX": [
+          "Estimación",
+          "Prioridad",
+          "Descripción",
+          "ID"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Estimation",
+        "es-MX": "Estimación"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La estimación corresponde al tiempo o esfuerzo ideal necesario para implementar una historia de usuario. Este valor permite al equipo planificar el trabajo, organizar las tareas y determinar la viabilidad de desarrollar una funcionalidad dentro de un periodo determinado."
+          },
+          {
+            "type": "text",
+            "content": "En las metodologías ágiles, las estimaciones no representan tiempos exactos, sino aproximaciones que ayudan a priorizar y distribuir el trabajo. La finalidad es contar con una referencia que facilite la planificación y permita gestionar adecuadamente los recursos disponibles."
+          },
+          {
+            "type": "text",
+            "content": "La estimación constituye un elemento importante en la gestión de proyectos, ya que contribuye a mantener un ritmo de desarrollo sostenible y a prever la complejidad de las diferentes historias de usuario."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Representa el tiempo o esfuerzo ideal de implementación.",
+              "Permite planificar el trabajo del equipo.",
+              "Facilita la organización de tareas.",
+              "Ayuda a evaluar la complejidad de una funcionalidad.",
+              "Contribuye a una mejor gestión del proyecto."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Historias de usuario",
+      "Question Text": {
+        "en-US": [
+          "They are placed below user stories. Instead of what, they describe how to build and result from decomposing user stories into parts:"
+        ],
+        "es-MX": [
+          "Se sitúan por debajo de las historias de usuario. En lugar de qué, describen cómo construir y resultan de la descomposición de las historias de usuario en partes:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Tasks",
+          "Priority",
+          "Description",
+          "ID"
+        ],
+        "es-MX": [
+          "Tareas",
+          "Prioridad",
+          "Descripción",
+          "ID"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Tasks",
+        "es-MX": "Tareas"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las tareas se sitúan por debajo de las historias de usuario y representan la descomposición de estas en actividades más pequeñas y específicas. Mientras que las historias de usuario describen qué necesita el usuario y el valor que se pretende obtener, las tareas explican cómo se llevará a cabo la implementación."
+          },
+          {
+            "type": "text",
+            "content": "Esta división permite organizar el trabajo de forma más eficiente, distribuir responsabilidades y facilitar el seguimiento del progreso del proyecto. Las tareas constituyen una herramienta fundamental para convertir las necesidades del usuario en actividades concretas de desarrollo."
+          },
+          {
+            "type": "text",
+            "content": "La separación entre historias de usuario y tareas favorece una mejor planificación y ayuda a mantener el enfoque en las necesidades de los usuarios, sin perder de vista los aspectos técnicos necesarios para construir la solución."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Se derivan de las historias de usuario.",
+              "Describen cómo se implementará una funcionalidad.",
+              "Permiten dividir el trabajo en partes más pequeñas.",
+              "Facilitan la organización y seguimiento del proyecto.",
+              "Contribuyen a una mejor planificación del desarrollo."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Storyboard y experiencia de usuario",
+      "Question Text": {
+        "en-US": [
+          "Phase in which the data that we are going to introduce are selected from the research we have carried out: interviews, user tests:"
+        ],
+        "es-MX": [
+          "Fase en donde se seleccionan los datos que vamos a introducir a partir de investigaciones que hayamos realizado: entrevistas, test de usuarios:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Choose the level of fidelity",
+          "Create the visuals and add captions",
+          "Collect data",
+          "Define the persona and scenario"
+        ],
+        "es-MX": [
+          "Elegir el nivel de fidelidad",
+          "Elaborar los visuales y añadir las leyendas",
+          "Recopilar datos",
+          "Definir la persona y el escenario"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Collect data",
+        "es-MX": "Recopilar datos"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La recopilación de datos constituye una de las primeras fases en la elaboración de un storyboard. En esta etapa se selecciona la información obtenida mediante técnicas de investigación como entrevistas, observación y pruebas con usuarios. Estos datos permiten comprender las necesidades, objetivos y comportamientos de las personas para representar posteriormente situaciones reales de uso."
+          },
+          {
+            "type": "text",
+            "content": "El diseño centrado en el usuario establece que las decisiones no deben basarse únicamente en intuiciones o preferencias personales, sino en información obtenida de usuarios reales. Por ello, la investigación previa constituye la base para construir escenarios y narrativas que reflejen experiencias auténticas."
+          },
+          {
+            "type": "text",
+            "content": "La calidad del storyboard depende en gran medida de la información recopilada. Cuanto más representativos sean los datos obtenidos durante la investigación, más útil será el storyboard para comprender y comunicar la experiencia de los usuarios."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Utiliza información procedente de entrevistas y pruebas con usuarios.",
+              "Constituye una etapa inicial del storyboard.",
+              "Permite representar situaciones reales de uso.",
+              "Se basa en la investigación centrada en el usuario.",
+              "Favorece una mejor comprensión de las necesidades de las personas."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Storyboard y experiencia de usuario",
+      "Question Text": {
+        "en-US": [
+          "They will form the basis of the storyboard. If several routes are to be drawn, it is advisable to create several storyboards:"
+        ],
+        "es-MX": [
+          "Serán la base del storyboard. Si se van a trazar varias rutas, es conveniente realizar varios storyboards:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Choose the level of fidelity",
+          "Create the visuals and add captions",
+          "Collect data",
+          "Define the persona and scenario"
+        ],
+        "es-MX": [
+          "Elegir el nivel de fidelidad",
+          "Elaborar los visuales y añadir las leyendas",
+          "Recopilar datos",
+          "Definir la persona y el escenario"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Define the persona and scenario",
+        "es-MX": "Definir la persona y el escenario"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La definición de la persona y del escenario constituye la base del storyboard, ya que permite representar quién utilizará el producto y en qué contexto lo hará. Cuando existen diferentes recorridos o situaciones de uso, resulta conveniente elaborar varios storyboards para reflejar adecuadamente las distintas experiencias posibles."
+          },
+          {
+            "type": "text",
+            "content": "Los personajes o personas representan tipos de usuarios obtenidos a partir de la investigación, mientras que los escenarios describen el contexto en el que interactúan con el sistema. Esta combinación permite comprender mejor las necesidades y objetivos de los usuarios durante el proceso de diseño."
+          },
+          {
+            "type": "text",
+            "content": "El material de experiencia de usuario destaca la importancia de conocer el entorno, los comportamientos y las motivaciones de las personas, ya que estos elementos sirven como referencia para construir escenarios realistas y orientar las decisiones de diseño."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Constituyen la base del storyboard.",
+              "Permiten representar diferentes contextos de uso.",
+              "Facilitan la comprensión de las necesidades de los usuarios.",
+              "Ayudan a describir recorridos alternativos.",
+              "Favorecen el diseño centrado en el usuario."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Storyboard y experiencia de usuario",
+      "Question Text": {
+        "en-US": [
+          "In this step we will develop the final storyboard. Norman Nielsen recommends Scott McCloud's book Understanding Comics:"
+        ],
+        "es-MX": [
+          "En este paso elaboraremos el storyboard definitivo. Norman Nielsen recomienda el libro de Scott McCloud, Entender el comic:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Choose the level of fidelity",
+          "Create the visuals and add captions",
+          "Collect data",
+          "Define the persona and scenario"
+        ],
+        "es-MX": [
+          "Elegir el nivel de fidelidad",
+          "Elaborar los visuales y añadir las leyendas",
+          "Recopilar datos",
+          "Definir la persona y el escenario"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Create the visuals and add captions",
+        "es-MX": "Elaborar los visuales y añadir las leyendas"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La elaboración de los visuales y la incorporación de leyendas corresponden a la fase en la que se construye el storyboard definitivo. En esta etapa se representan gráficamente las acciones, situaciones y emociones de los usuarios, acompañándolas de descripciones que facilitan la comprensión de la historia."
+          },
+          {
+            "type": "text",
+            "content": "Los storyboards son herramientas visuales utilizadas en experiencia de usuario para describir cómo una persona interactúa con un producto dentro de un contexto determinado. Su objetivo es comunicar de manera sencilla y clara una secuencia de acontecimientos, facilitando la identificación de problemas y oportunidades de mejora."
+          },
+          {
+            "type": "text",
+            "content": "Jakob Nielsen y otros especialistas en usabilidad recomiendan utilizar representaciones visuales simples y comprensibles. Asimismo, la obra 'Entender el cómic' de Scott McCloud explica principios de comunicación visual que resultan útiles para construir historias fáciles de interpretar y transmitir al resto del equipo."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Corresponde a la construcción del storyboard definitivo.",
+              "Incluye imágenes y textos explicativos.",
+              "Permite representar la experiencia del usuario.",
+              "Facilita la comunicación entre los miembros del equipo.",
+              "Ayuda a detectar problemas y oportunidades de mejora."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Priorización de historias de usuario",
+      "Question Text": {
+        "en-US": [
+          "Technique that seeks to number user stories in priority order. There can only be one number 01:"
+        ],
+        "es-MX": [
+          "Técnica donde buscan numerar las userstories, en orden de prioridad. Solo puede haber un número 01:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Business value & storypoints technique",
+          "Urgent technique",
+          "List ranking technique",
+          "MOSCOW technique"
+        ],
+        "es-MX": [
+          "Técnica business value & storypoints",
+          "Técnica urgente",
+          "Técnica de clasificación de lista",
+          "Técnica MOSCOW"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "List ranking technique",
+        "es-MX": "Técnica de clasificación de lista"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La técnica de clasificación de lista consiste en ordenar las historias de usuario de acuerdo con su importancia o prioridad. Cada elemento recibe una posición específica dentro de la lista y únicamente puede existir un primer lugar o número 01, lo que obliga al equipo a establecer claramente qué funcionalidades son más importantes para el producto."
+          },
+          {
+            "type": "text",
+            "content": "La priorización es una actividad fundamental en las metodologías ágiles, ya que normalmente existen más requisitos de los que pueden implementarse en un solo ciclo de desarrollo. Por ello, resulta necesario determinar cuáles proporcionan mayor valor y deben desarrollarse primero."
+          },
+          {
+            "type": "text",
+            "content": "El ordenamiento de las user stories facilita la planificación del trabajo y permite concentrar los esfuerzos en aquellas funcionalidades que aportan más beneficios a los usuarios y al negocio."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Ordena las historias de usuario según su prioridad.",
+              "Solo puede existir una historia en la posición número 01.",
+              "Ayuda a definir qué funcionalidades implementar primero.",
+              "Facilita la planificación del proyecto.",
+              "Es una técnica de priorización utilizada en metodologías ágiles."
+            ]
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Priorización de historias de usuario",
+      "Question Text": {
+        "en-US": [
+          "It consists of giving greater value and priority to the features of the future product that have the highest commercial value:"
+        ],
+        "es-MX": [
+          "Consiste en dar más valor y prioridad a las características del futuro producto que tienen un mayor valor comercial:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Business value & storypoints technique",
+          "Urgent technique",
+          "List ranking technique",
+          "MOSCOW technique"
+        ],
+        "es-MX": [
+          "Técnica business value & storypoints",
+          "Técnica urgente",
+          "Técnica de clasificación de lista",
+          "Técnica MOSCOW"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "MOSCOW technique",
+        "es-MX": "Técnica MOSCOW"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La técnica MOSCOW es un método de priorización que permite clasificar las funcionalidades del producto según su importancia y valor para el negocio. Divide los requisitos en cuatro categorías: Must Have (imprescindibles), Should Have (importantes), Could Have (deseables) y Won't Have (no se implementarán por el momento)."
+          },
+          {
+            "type": "text",
+            "content": "Su propósito es asegurar que los recursos disponibles se destinen primero a las características que proporcionan un mayor valor comercial y que resultan indispensables para el éxito del producto. De esta manera, se optimiza el proceso de desarrollo y se facilita la toma de decisiones."
+          },
+          {
+            "type": "text",
+            "content": "Las metodologías ágiles utilizan técnicas de priorización para garantizar que las funcionalidades más importantes se desarrollen antes que aquellas de menor impacto o valor para los usuarios y la organización."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Clasifica las funcionalidades según su importancia.",
+              "Prioriza las características con mayor valor para el negocio.",
+              "Divide los requisitos en cuatro categorías.",
+              "Ayuda a optimizar los recursos del proyecto.",
+              "Facilita la toma de decisiones durante el desarrollo."
+            ]
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Priorización de historias de usuario",
+      "Question Text": {
+        "en-US": [
+          "It also uses a two-dimensional table, but storypoints are replaced by the urgency of having a feature available:"
+        ],
+        "es-MX": [
+          "También utiliza una tabla de dos dimensiones, pero se cambian los storypoints por la urgencia de tener lista una funcionalidad:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Business value & storypoints technique",
+          "Urgent technique",
+          "List ranking technique",
+          "MOSCOW technique"
+        ],
+        "es-MX": [
+          "Técnica business value & storypoints",
+          "Técnica urgente",
+          "Técnica de clasificación de lista",
+          "Técnica MOSCOW"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Urgent technique",
+        "es-MX": "Técnica urgente"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La técnica urgente utiliza una tabla de dos dimensiones similar a la empleada en business value & storypoints, pero sustituye la complejidad o los storypoints por el grado de urgencia con el que se requiere disponer de una determinada funcionalidad. De esta manera, las decisiones de prioridad se orientan hacia la rapidez con la que una característica debe estar disponible."
+          },
+          {
+            "type": "text",
+            "content": "Este enfoque resulta útil cuando existen restricciones de tiempo o cuando determinadas funciones deben implementarse cuanto antes debido a necesidades del negocio, exigencias de los usuarios o factores externos que hacen necesario acelerar su desarrollo."
+          },
+          {
+            "type": "text",
+            "content": "La priorización basada en la urgencia permite adaptar el proyecto a circunstancias cambiantes y asegurar que las funcionalidades más críticas estén disponibles en el momento oportuno."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Utiliza una matriz de dos dimensiones.",
+              "Sustituye los storypoints por el nivel de urgencia.",
+              "Prioriza las funcionalidades más críticas.",
+              "Permite responder a necesidades inmediatas.",
+              "Facilita la planificación en entornos cambiantes."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Priorización de historias de usuario",
+      "Question Text": {
+        "en-US": [
+          "What is the main objective of prioritizing user stories?"
+        ],
+        "es-MX": [
+          "¿Cuál es el principal objetivo de priorizar historias de usuario?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Increase the number of requirements",
+          "Implement the least important functionalities first",
+          "Determine which functionalities provide the greatest value",
+          "Eliminate communication between team members"
+        ],
+        "es-MX": [
+          "Incrementar el número de requisitos",
+          "Implementar primero las funcionalidades menos importantes",
+          "Determinar qué funcionalidades aportan mayor valor",
+          "Eliminar la comunicación entre los miembros del equipo"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Determine which functionalities provide the greatest value",
+        "es-MX": "Determinar qué funcionalidades aportan mayor valor"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La priorización de historias de usuario tiene como objetivo identificar qué funcionalidades aportan un mayor valor para los usuarios y para el negocio. Debido a que los recursos y el tiempo de desarrollo son limitados, resulta necesario establecer un orden que permita implementar primero aquellas características más importantes."
+          },
+          {
+            "type": "text",
+            "content": "Las metodologías ágiles buscan maximizar el valor entregado en cada iteración, por lo que la priorización constituye una actividad fundamental para asegurar que el producto satisfaga las necesidades más relevantes de los usuarios."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Priorización de historias de usuario",
+      "Question Text": {
+        "en-US": [
+          "What do storypoints mainly represent in a user story?"
+        ],
+        "es-MX": [
+          "¿Qué representan principalmente los storypoints en una historia de usuario?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Commercial value",
+          "Development effort",
+          "Priority level",
+          "User age"
+        ],
+        "es-MX": [
+          "Valor comercial",
+          "Esfuerzo de desarrollo",
+          "Nivel de prioridad",
+          "Edad del usuario"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Development effort",
+        "es-MX": "Esfuerzo de desarrollo"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los storypoints representan una medida relativa del esfuerzo necesario para implementar una historia de usuario. No expresan tiempo exacto, sino una estimación de la complejidad, el trabajo requerido y la incertidumbre asociada a una funcionalidad."
+          },
+          {
+            "type": "text",
+            "content": "En las metodologías ágiles, los storypoints facilitan la planificación y permiten comparar unas historias de usuario con otras para estimar mejor la capacidad de trabajo del equipo."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Priorización de historias de usuario",
+      "Question Text": {
+        "en-US": [
+          "Which category of the MOSCOW technique groups the indispensable requirements?"
+        ],
+        "es-MX": [
+          "¿Qué categoría de la técnica MOSCOW agrupa los requisitos indispensables?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Could Have",
+          "Should Have",
+          "Must Have",
+          "Won't Have"
+        ],
+        "es-MX": [
+          "Could Have",
+          "Should Have",
+          "Must Have",
+          "Won't Have"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Must Have",
+        "es-MX": "Must Have"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La categoría Must Have de la técnica MOSCOW agrupa las funcionalidades indispensables para el funcionamiento del producto. Son características críticas que deben implementarse obligatoriamente, ya que sin ellas el sistema no cumpliría adecuadamente sus objetivos."
+          },
+          {
+            "type": "text",
+            "content": "La técnica MOSCOW divide los requisitos en Must Have, Should Have, Could Have y Won't Have, permitiendo asignar prioridades y optimizar los recursos disponibles."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Priorización de historias de usuario",
+      "Question Text": {
+        "en-US": [
+          "Which category of the MOSCOW technique corresponds to desirable but non-essential functionalities?"
+        ],
+        "es-MX": [
+          "¿Qué categoría de la técnica MOSCOW corresponde a funcionalidades deseables pero no indispensables?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Must Have",
+          "Should Have",
+          "Could Have",
+          "Won't Have"
+        ],
+        "es-MX": [
+          "Must Have",
+          "Should Have",
+          "Could Have",
+          "Won't Have"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Could Have",
+        "es-MX": "Could Have"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La categoría Could Have agrupa las funcionalidades deseables que aportan valor al producto, pero cuya ausencia no impide el funcionamiento adecuado del sistema. Estas características suelen implementarse cuando existen recursos y tiempo disponibles."
+          },
+          {
+            "type": "text",
+            "content": "La clasificación MOSCOW permite concentrar inicialmente los esfuerzos en las funcionalidades más importantes y posponer aquellas menos críticas."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Priorización de historias de usuario",
+      "Question Text": {
+        "en-US": [
+          "What is the purpose of using prioritization matrices?"
+        ],
+        "es-MX": [
+          "¿Cuál es la finalidad de utilizar matrices de priorización?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Increase project complexity",
+          "Facilitate decision making",
+          "Replace user stories",
+          "Eliminate planning"
+        ],
+        "es-MX": [
+          "Incrementar la complejidad del proyecto",
+          "Facilitar la toma de decisiones",
+          "Sustituir las historias de usuario",
+          "Eliminar la planificación"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Facilitate decision making",
+        "es-MX": "Facilitar la toma de decisiones"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las matrices de priorización permiten comparar diferentes funcionalidades considerando variables como el valor de negocio, la complejidad o la urgencia. Gracias a ello, los equipos pueden tomar decisiones fundamentadas y asignar mejor los recursos disponibles."
+          },
+          {
+            "type": "text",
+            "content": "Estas herramientas son ampliamente utilizadas en metodologías ágiles porque facilitan la planificación y ayudan a maximizar el valor entregado al usuario."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Priorización de historias de usuario",
+      "Question Text": {
+        "en-US": [
+          "Which category of the MOSCOW technique corresponds to requirements that are important but not critical?"
+        ],
+        "es-MX": [
+          "¿Qué categoría de la técnica MOSCOW corresponde a requisitos importantes pero no críticos?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Must Have",
+          "Should Have",
+          "Could Have",
+          "Won't Have"
+        ],
+        "es-MX": [
+          "Must Have",
+          "Should Have",
+          "Could Have",
+          "Won't Have"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Should Have",
+        "es-MX": "Should Have"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La categoría Should Have agrupa las funcionalidades importantes que aportan valor al producto, pero cuya ausencia temporal no impide su funcionamiento. Estas características suelen implementarse después de los requisitos considerados imprescindibles."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Priorización de historias de usuario",
+      "Question Text": {
+        "en-US": [
+          "Which category of the MOSCOW technique includes functionalities that will not be implemented for now?"
+        ],
+        "es-MX": [
+          "¿Qué categoría de la técnica MOSCOW incluye las funcionalidades que no serán implementadas por el momento?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Must Have",
+          "Should Have",
+          "Could Have",
+          "Won't Have"
+        ],
+        "es-MX": [
+          "Must Have",
+          "Should Have",
+          "Could Have",
+          "Won't Have"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Won't Have",
+        "es-MX": "Won't Have"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La categoría Won't Have agrupa aquellas funcionalidades que han sido identificadas pero que no se desarrollarán en la iteración actual, permitiendo concentrar los recursos en requisitos de mayor prioridad."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Historias de usuario",
+      "Question Text": {
+        "en-US": [
+          "What is the purpose of user stories in agile methodologies?"
+        ],
+        "es-MX": [
+          "¿Cuál es la finalidad de las historias de usuario en las metodologías ágiles?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Describe technical details",
+          "Express user needs and objectives",
+          "Replace testing",
+          "Eliminate planning"
+        ],
+        "es-MX": [
+          "Describir detalles técnicos",
+          "Expresar necesidades y objetivos del usuario",
+          "Sustituir las pruebas",
+          "Eliminar la planificación"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Express user needs and objectives",
+        "es-MX": "Expresar necesidades y objetivos del usuario"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las historias de usuario permiten expresar los requisitos desde la perspectiva del usuario, enfocándose en las necesidades y beneficios esperados en lugar de los aspectos técnicos."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Historias de usuario",
+      "Question Text": {
+        "en-US": [
+          "What do tasks mainly describe within a user story?"
+        ],
+        "es-MX": [
+          "¿Qué describen principalmente las tareas dentro de una historia de usuario?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Why the user needs the functionality",
+          "How the functionality will be implemented",
+          "The commercial value",
+          "The user's age"
+        ],
+        "es-MX": [
+          "Por qué el usuario necesita la funcionalidad",
+          "Cómo se implementará la funcionalidad",
+          "El valor comercial",
+          "La edad del usuario"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "How the functionality will be implemented",
+        "es-MX": "Cómo se implementará la funcionalidad"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las tareas describen las actividades específicas necesarias para implementar una historia de usuario, detallando cómo se llevará a cabo la construcción de la funcionalidad."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Historias de usuario",
+      "Question Text": {
+        "en-US": [
+          "Why is it useful to divide user stories into tasks?"
+        ],
+        "es-MX": [
+          "¿Por qué es útil dividir las historias de usuario en tareas?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "To increase complexity",
+          "To organize and distribute work",
+          "To eliminate requirements",
+          "To avoid planning"
+        ],
+        "es-MX": [
+          "Incrementar la complejidad",
+          "Organizar y distribuir el trabajo",
+          "Eliminar requisitos",
+          "Evitar la planificación"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To organize and distribute work",
+        "es-MX": "Organizar y distribuir el trabajo"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La descomposición de historias de usuario en tareas facilita la organización, asignación y seguimiento del trabajo, permitiendo una mejor planificación del proyecto."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Priorización de historias de usuario",
+      "Question Text": {
+        "en-US": [
+          "Which factor is replaced in the urgent technique?"
+        ],
+        "es-MX": [
+          "¿Qué factor es sustituido en la técnica urgente?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Commercial value",
+          "Storypoints",
+          "User stories",
+          "Descriptions"
+        ],
+        "es-MX": [
+          "Valor comercial",
+          "Storypoints",
+          "Historias de usuario",
+          "Descripciones"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Storypoints",
+        "es-MX": "Storypoints"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La técnica urgente sustituye los storypoints por el nivel de urgencia con el que una funcionalidad debe estar disponible."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Priorización de historias de usuario",
+      "Question Text": {
+        "en-US": [
+          "What is the purpose of the Business Value & Storypoints technique?"
+        ],
+        "es-MX": [
+          "¿Cuál es la finalidad de la técnica Business Value & Storypoints?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Determine the age of users",
+          "Relate business value and implementation effort",
+          "Replace user stories",
+          "Eliminate prioritization"
+        ],
+        "es-MX": [
+          "Determinar la edad de los usuarios",
+          "Relacionar el valor de negocio y el esfuerzo de implementación",
+          "Sustituir las historias de usuario",
+          "Eliminar la priorización"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Relate business value and implementation effort",
+        "es-MX": "Relacionar el valor de negocio y el esfuerzo de implementación"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La técnica Business Value & Storypoints permite identificar las funcionalidades que aportan mayor valor al negocio con un esfuerzo razonable de implementación."
+          }
+        ]
+      }
+    }
+  ]
+}

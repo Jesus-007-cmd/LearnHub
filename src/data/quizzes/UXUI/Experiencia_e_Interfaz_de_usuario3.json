@@ -1,0 +1,1034 @@
+{
+  "meta": {
+    "slug": "ux-ui-fundamentos",
+    "title": "Experiencia e Interfaz de Usuario (UX y UI)",
+    "subject": "UX Y UI",
+    "unit": 3,
+    "classNo": 3,
+    "description": "Preguntas relacionadas con los conceptos fundamentales de experiencia de usuario (UX), interfaz de usuario (UI) y usabilidad.",
+    "tags": [
+      "UX",
+      "UI",
+      "Experiencia de Usuario",
+      "Interfaz de Usuario",
+      "Usabilidad"
+    ]
+  },
+  "Questions": [
+    {
+      "Category": "Planos del diseño UX",
+      "Question Text": {
+        "en-US": [
+          "In which plane are the general objectives of the website or app defined, balancing the client's goals with the users' needs?"
+        ],
+        "es-MX": [
+          "¿En qué plano se definen los objetivos generales del diseño de la web/app, tratando siempre de equilibrar los objetivos del cliente con las necesidades del usuario?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Scope",
+          "Strategy",
+          "Structure",
+          "Skeleton"
+        ],
+        "es-MX": [
+          "Enfoque",
+          "Estrategia",
+          "Estructura",
+          "Esquema"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Strategy",
+        "es-MX": "Estrategia"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El plano de estrategia constituye el nivel más abstracto del diseño UX. En él se establecen los objetivos del negocio y las necesidades de los usuarios, buscando un equilibrio entre ambos. Este plano sirve como punto de partida para todas las decisiones posteriores del diseño."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Define qué se pretende lograr con la web o aplicación.",
+              "Considera tanto los objetivos del cliente como las necesidades del usuario.",
+              "Es la base sobre la que se construyen los demás planos.",
+              "Corresponde al nivel estratégico del diseño UX."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Planos del diseño UX",
+      "Question Text": {
+        "en-US": [
+          "Which plane, located below the surface layer, specifies the placement of buttons, tabs, text blocks and photographs?"
+        ],
+        "es-MX": [
+          "¿Qué plano está situado debajo de la capa de superficie y nos indica la colocación de botones, pestañas, bloques de texto y fotografías?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Scope",
+          "Strategy",
+          "Structure",
+          "Skeleton"
+        ],
+        "es-MX": [
+          "Enfoque",
+          "Estrategia",
+          "Estructura",
+          "Esquema"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Skeleton",
+        "es-MX": "Esquema"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El plano de esquema (Skeleton) se encuentra justo debajo de la capa de superficie y determina la disposición concreta de los elementos de la interfaz. En este nivel se define dónde se ubicarán botones, menús, pestañas, imágenes y bloques de información para facilitar la interacción del usuario."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Define la distribución visual de los elementos.",
+              "Determina la ubicación de controles y contenidos.",
+              "Precede a la capa de superficie.",
+              "Busca favorecer la usabilidad y la interacción."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Planos del diseño UX",
+      "Question Text": {
+        "en-US": [
+          "Which plane defines how contents and functions are delivered and how users interact with them?"
+        ],
+        "es-MX": [
+          "¿Qué plano define la forma en la que se van a entregar los contenidos y funciones, es decir, cómo se estructura el contenido y cómo se interactúa con él?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Scope",
+          "Strategy",
+          "Structure",
+          "Skeleton"
+        ],
+        "es-MX": [
+          "Enfoque",
+          "Estrategia",
+          "Estructura",
+          "Esquema"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Structure",
+        "es-MX": "Estructura"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El plano de estructura determina la organización del contenido y la manera en que el usuario interactuará con las funciones del sistema. En este nivel se define la arquitectura de información y el diseño de interacción, estableciendo cómo se relacionan las distintas partes del producto."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Organiza los contenidos y funcionalidades.",
+              "Define la interacción entre usuario y sistema.",
+              "Incluye la arquitectura de información y el diseño de interacción.",
+              "Sirve de puente entre el alcance y el esquema visual."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Diseño visual, interfaz y accesibilidad",
+      "Question Text": {
+        "en-US": [
+          "In which design are text, typography, images and graphics visually treated, in addition to navigation components?"
+        ],
+        "es-MX": [
+          "¿En qué diseño se realiza el tratamiento visual de texto, tipografías, imágenes y gráficos, además de los componentes de la navegación?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Accessibility",
+          "Information design",
+          "Visual design",
+          "Navigation design"
+        ],
+        "es-MX": [
+          "Accesibilidad",
+          "Diseño de la información",
+          "Diseño visual",
+          "Diseño de navegación"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Visual design",
+        "es-MX": "Diseño visual"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El diseño visual se encarga de la apariencia de la interfaz y del tratamiento gráfico de sus elementos. Incluye aspectos como las tipografías, colores, imágenes, iconos, composición y presentación visual de los componentes de navegación. Su finalidad es conseguir interfaces atractivas, coherentes y fáciles de comprender para el usuario."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Se ocupa de la apariencia visual de la interfaz.",
+              "Incluye texto, tipografías, imágenes y gráficos.",
+              "Contribuye a la identidad y estética del producto.",
+              "Favorece una experiencia de usuario más agradable y comprensible."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Diseño visual, interfaz y accesibilidad",
+      "Question Text": {
+        "en-US": [
+          "Which design focuses on the elements that facilitate user interaction with the functionality and comes from traditional human-computer interaction studies?"
+        ],
+        "es-MX": [
+          "¿Qué diseño se ocupa de los elementos que facilitan la interacción del usuario con la funcionalidad y proviene del estudio tradicional de interacción humano-computador?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Accessibility",
+          "Information design",
+          "Interface design",
+          "Navigation design"
+        ],
+        "es-MX": [
+          "Accesibilidad",
+          "Diseño de la información",
+          "Diseño de la interfaz",
+          "Diseño de navegación"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Interface design",
+        "es-MX": "Diseño de la interfaz"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El diseño de la interfaz de usuario se ocupa de crear los elementos con los que interactúan las personas para utilizar las funcionalidades del sistema. Está estrechamente relacionado con el diseño de interacción y tiene sus raíces en el campo de la interacción persona-computador. Su propósito es hacer que la comunicación entre el usuario y el sistema sea eficiente, intuitiva y satisfactoria."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Facilita la interacción entre usuario y sistema.",
+              "Forma parte del diseño de interacción.",
+              "Proviene del estudio de la interacción humano-computador.",
+              "Busca mejorar la usabilidad y la experiencia de usuario."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Diseño visual, interfaz y accesibilidad",
+      "Question Text": {
+        "en-US": [
+          "What is the set of techniques aimed at ensuring that any user can access digital content regardless of disability?"
+        ],
+        "es-MX": [
+          "¿Cuál es el conjunto de técnicas enfocadas a que cualquier usuario pueda acceder al contenido de un producto digital sin que sea un obstáculo su grado de discapacidad?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Accessibility",
+          "Information design",
+          "Usability",
+          "Navigation design"
+        ],
+        "es-MX": [
+          "Accesibilidad",
+          "Diseño de la información",
+          "Usabilidad",
+          "Diseño de navegación"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Accessibility",
+        "es-MX": "Accesibilidad"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La accesibilidad comprende el conjunto de principios, técnicas y recomendaciones orientadas a garantizar que todas las personas puedan utilizar un producto digital, independientemente de sus capacidades físicas, sensoriales o cognitivas. Su objetivo es eliminar barreras y promover la inclusión, permitiendo que el contenido y las funcionalidades estén disponibles para el mayor número posible de usuarios."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Busca eliminar barreras de acceso.",
+              "Favorece la inclusión de personas con discapacidad.",
+              "Permite que más usuarios puedan utilizar el sistema.",
+              "Es un aspecto fundamental de la calidad y responsabilidad del diseño."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Fases del diseño UX",
+      "Question Text": {
+        "en-US": [
+          "In which phase are interviews, surveys, ethnographic research, A/B tests, analytics and product research mainly carried out?"
+        ],
+        "es-MX": [
+          "¿En qué fase se presentan como principales entregables las entrevistas, encuestas, investigación etnográfica, pruebas A/B, analíticas e investigación sobre el producto?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Strategy phase",
+          "Scope phase",
+          "Structure phase",
+          "Skeleton phase"
+        ],
+        "es-MX": [
+          "Fase estrategia",
+          "Fase alcance",
+          "Fase estructura",
+          "Fase esqueleto"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Strategy phase",
+        "es-MX": "Fase estrategia"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La fase de estrategia constituye la base del proceso de diseño UX. En ella se busca comprender el problema, los objetivos del negocio y las necesidades de los usuarios. Por ello, se utilizan técnicas de investigación como entrevistas, encuestas, estudios etnográficos, analíticas y pruebas que permiten obtener información para orientar las decisiones posteriores del diseño."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Se centra en comprender al usuario y al negocio.",
+              "Incluye investigación cualitativa y cuantitativa.",
+              "Permite definir objetivos y necesidades.",
+              "Sirve como fundamento para las fases posteriores del diseño."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Fases del diseño UX",
+      "Question Text": {
+        "en-US": [
+          "In which phase are user needs identified?"
+        ],
+        "es-MX": [
+          "¿En qué fase se identifican las necesidades de los usuarios?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Strategy phase",
+          "Scope phase",
+          "Structure phase",
+          "Skeleton phase"
+        ],
+        "es-MX": [
+          "Fase estrategia",
+          "Fase alcance",
+          "Fase estructura",
+          "Fase esqueleto"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Strategy phase",
+        "es-MX": "Fase estrategia"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La identificación de las necesidades de los usuarios corresponde a la fase de estrategia. En esta etapa se pretende equilibrar los objetivos del cliente con las expectativas y necesidades reales de las personas que utilizarán el sistema, sentando las bases del diseño centrado en el usuario."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Se analizan las necesidades y motivaciones del usuario.",
+              "Se consideran los objetivos del negocio.",
+              "Es la base del diseño centrado en el usuario.",
+              "Permite definir la dirección general del proyecto."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Fases del diseño UX",
+      "Question Text": {
+        "en-US": [
+          "In which phase are navigation, organization, labeling and search systems designed?"
+        ],
+        "es-MX": [
+          "¿En qué fase se realiza el diseño de los sistemas de navegación, organización, etiquetado y búsqueda?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Strategy phase",
+          "Scope phase",
+          "Structure phase",
+          "Skeleton phase"
+        ],
+        "es-MX": [
+          "Fase estrategia",
+          "Fase alcance",
+          "Fase estructura",
+          "Fase esqueleto"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Structure phase",
+        "es-MX": "Fase estructura"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La fase de estructura define la manera en que se organizan los contenidos y las funcionalidades del sistema. En esta etapa se diseña la arquitectura de información, incluyendo los sistemas de navegación, organización, etiquetado y búsqueda, con el propósito de facilitar que los usuarios encuentren y utilicen la información de forma eficiente."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Se define la arquitectura de información.",
+              "Se establecen sistemas de navegación y búsqueda.",
+              "Se organiza el contenido del producto.",
+              "Se busca facilitar la interacción y localización de información."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Fases del diseño UX",
+      "Question Text": {
+        "en-US": [
+          "Who proposed the five planes of user experience?"
+        ],
+        "es-MX": [
+          "¿Quién propuso los cinco planos de la experiencia de usuario?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Donald Norman",
+          "Jesse James Garrett",
+          "Jakob Nielsen",
+          "Ben Shneiderman"
+        ],
+        "es-MX": [
+          "Donald Norman",
+          "Jesse James Garrett",
+          "Jakob Nielsen",
+          "Ben Shneiderman"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Jesse James Garrett",
+        "es-MX": "Jesse James Garrett"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Jesse James Garrett propuso el modelo de los cinco planos de la experiencia de usuario en su libro The Elements of User Experience (2002). Este modelo permite estructurar el proceso de diseño de un producto digital desde la estrategia hasta la superficie visible para el usuario."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Fases del diseño UX",
+      "Question Text": {
+        "en-US": [
+          "How many planes are included in Jesse James Garrett's model?"
+        ],
+        "es-MX": [
+          "¿Cuántos planos comprende el modelo de Jesse James Garrett?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Three",
+          "Four",
+          "Five",
+          "Six"
+        ],
+        "es-MX": [
+          "Tres",
+          "Cuatro",
+          "Cinco",
+          "Seis"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Five",
+        "es-MX": "Cinco"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El modelo de Jesse James Garrett está compuesto por cinco planos: estrategia, alcance, estructura, esqueleto y superficie. Cada uno representa un nivel distinto del proceso de diseño de la experiencia de usuario."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Fases del diseño UX",
+      "Question Text": {
+        "en-US": [
+          "Which is the correct order of the planes proposed by Jesse James Garrett?"
+        ],
+        "es-MX": [
+          "¿Cuál es el orden correcto de los planos propuestos por Jesse James Garrett?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Strategy - Scope - Structure - Skeleton - Surface",
+          "Surface - Skeleton - Structure - Scope - Strategy",
+          "Strategy - Structure - Scope - Skeleton - Surface",
+          "Scope - Strategy - Structure - Surface - Skeleton"
+        ],
+        "es-MX": [
+          "Estrategia - Alcance - Estructura - Esqueleto - Superficie",
+          "Superficie - Esqueleto - Estructura - Alcance - Estrategia",
+          "Estrategia - Estructura - Alcance - Esqueleto - Superficie",
+          "Alcance - Estrategia - Estructura - Superficie - Esqueleto"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Strategy - Scope - Structure - Skeleton - Surface",
+        "es-MX": "Estrategia - Alcance - Estructura - Esqueleto - Superficie"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El modelo de Garrett establece cinco planos organizados jerárquicamente: estrategia, alcance, estructura, esqueleto y superficie. Cada plano depende del anterior y contribuye a construir una experiencia de usuario coherente."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Fases del diseño UX",
+      "Question Text": {
+        "en-US": [
+          "Which phase is considered the most abstract level of UX design?"
+        ],
+        "es-MX": [
+          "¿Qué fase se considera el nivel más abstracto del diseño UX?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Strategy",
+          "Scope",
+          "Structure",
+          "Skeleton"
+        ],
+        "es-MX": [
+          "Estrategia",
+          "Alcance",
+          "Estructura",
+          "Esqueleto"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Strategy",
+        "es-MX": "Estrategia"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La estrategia constituye el plano más profundo y abstracto del modelo de Garrett. En esta fase se analizan las necesidades de los usuarios y los objetivos del negocio, sirviendo de base para todas las decisiones posteriores del diseño."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Fases del diseño UX",
+      "Question Text": {
+        "en-US": [
+          "In which phase are the needs of users balanced with business goals?"
+        ],
+        "es-MX": [
+          "¿En qué fase se equilibran las necesidades de los usuarios con los objetivos del negocio?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Strategy",
+          "Scope",
+          "Structure",
+          "Skeleton"
+        ],
+        "es-MX": [
+          "Estrategia",
+          "Alcance",
+          "Estructura",
+          "Esqueleto"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Strategy",
+        "es-MX": "Estrategia"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La fase de estrategia busca encontrar un equilibrio entre las necesidades de los usuarios y los objetivos del negocio. Este principio es fundamental en el diseño centrado en el usuario y orienta el desarrollo de todo el producto."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Fases del diseño UX",
+      "Question Text": {
+        "en-US": [
+          "In which phase are functional and content requirements defined?"
+        ],
+        "es-MX": [
+          "¿En qué fase se definen los requisitos funcionales y de contenido?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Strategy",
+          "Scope",
+          "Structure",
+          "Skeleton"
+        ],
+        "es-MX": [
+          "Estrategia",
+          "Alcance",
+          "Estructura",
+          "Esqueleto"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Scope",
+        "es-MX": "Alcance"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La fase de alcance transforma las necesidades identificadas en la estrategia en requisitos concretos de contenido y funcionalidades. En ella se especifica qué tendrá el sistema y qué servicios ofrecerá al usuario."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Fases del diseño UX",
+      "Question Text": {
+        "en-US": [
+          "Which phase transforms user needs into concrete requirements?"
+        ],
+        "es-MX": [
+          "¿Qué fase transforma las necesidades de los usuarios en requisitos concretos?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Strategy",
+          "Scope",
+          "Structure",
+          "Skeleton"
+        ],
+        "es-MX": [
+          "Estrategia",
+          "Alcance",
+          "Estructura",
+          "Esqueleto"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Scope",
+        "es-MX": "Alcance"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El plano de alcance traduce las necesidades de los usuarios y los objetivos del negocio en requisitos funcionales y de contenido específicos que servirán para construir el producto."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Fases del diseño UX",
+      "Question Text": {
+        "en-US": [
+          "In which phase is information architecture defined?"
+        ],
+        "es-MX": [
+          "¿En qué fase se define la arquitectura de información?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Scope",
+          "Structure",
+          "Skeleton",
+          "Surface"
+        ],
+        "es-MX": [
+          "Alcance",
+          "Estructura",
+          "Esqueleto",
+          "Superficie"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Structure",
+        "es-MX": "Estructura"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La fase de estructura se encarga de definir la arquitectura de información y el diseño de interacción. En ella se establece cómo se organizan los contenidos y cómo interactuará el usuario con las funcionalidades del sistema."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Fases del diseño UX",
+      "Question Text": {
+        "en-US": [
+          "In which phase are navigation, organization, labeling and search systems designed?"
+        ],
+        "es-MX": [
+          "¿En qué fase se diseñan los sistemas de navegación, organización, etiquetado y búsqueda?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Scope",
+          "Structure",
+          "Skeleton",
+          "Surface"
+        ],
+        "es-MX": [
+          "Alcance",
+          "Estructura",
+          "Esqueleto",
+          "Superficie"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Structure",
+        "es-MX": "Estructura"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los sistemas de navegación, organización, etiquetado y búsqueda forman parte de la arquitectura de información, la cual pertenece al plano de estructura según el modelo de Jesse James Garrett."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Define cómo se organiza la información.",
+              "Facilita la localización del contenido.",
+              "Incluye sistemas de navegación y búsqueda.",
+              "Conecta las necesidades definidas en el alcance con la disposición visual del esqueleto."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Fases del diseño UX",
+      "Question Text": {
+        "en-US": [
+          "Which phase defines how users interact with the system?"
+        ],
+        "es-MX": [
+          "¿Qué fase define la forma en que los usuarios interactúan con el sistema?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Scope",
+          "Structure",
+          "Skeleton",
+          "Surface"
+        ],
+        "es-MX": [
+          "Alcance",
+          "Estructura",
+          "Esqueleto",
+          "Superficie"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Structure",
+        "es-MX": "Estructura"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La fase de estructura define la interacción entre el usuario y las funcionalidades del sistema. En ella se determina la manera en que se entregan los contenidos y cómo se relacionan las distintas partes del producto."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Fases del diseño UX",
+      "Question Text": {
+        "en-US": [
+          "In which phase are wireframes usually developed?"
+        ],
+        "es-MX": [
+          "¿En qué fase se elaboran normalmente los wireframes?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Structure",
+          "Skeleton",
+          "Surface",
+          "Strategy"
+        ],
+        "es-MX": [
+          "Estructura",
+          "Esqueleto",
+          "Superficie",
+          "Estrategia"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Skeleton",
+        "es-MX": "Esqueleto"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El plano de esqueleto especifica la disposición de los elementos de la interfaz y suele representarse mediante wireframes. Estos permiten visualizar la ubicación de botones, imágenes, menús y bloques de información antes del diseño final."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Fases del diseño UX",
+      "Question Text": {
+        "en-US": [
+          "Which phase is located immediately below the surface layer?"
+        ],
+        "es-MX": [
+          "¿Qué fase se encuentra inmediatamente debajo de la capa de superficie?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Structure",
+          "Scope",
+          "Skeleton",
+          "Strategy"
+        ],
+        "es-MX": [
+          "Estructura",
+          "Alcance",
+          "Esqueleto",
+          "Estrategia"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Skeleton",
+        "es-MX": "Esqueleto"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El esqueleto es el plano inmediatamente inferior a la superficie. Define la distribución de los elementos visibles que posteriormente recibirán el tratamiento visual definitivo."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Fases del diseño UX",
+      "Question Text": {
+        "en-US": [
+          "In which phase are the positions of buttons, tabs and text blocks determined?"
+        ],
+        "es-MX": [
+          "¿En qué fase se determina la ubicación de botones, pestañas y bloques de texto?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Structure",
+          "Skeleton",
+          "Surface",
+          "Scope"
+        ],
+        "es-MX": [
+          "Estructura",
+          "Esqueleto",
+          "Superficie",
+          "Alcance"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Skeleton",
+        "es-MX": "Esqueleto"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La fase de esqueleto define la disposición de los elementos que compondrán la interfaz, especificando dónde se ubicarán botones, imágenes, menús, pestañas y bloques de contenido."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Fases del diseño UX",
+      "Question Text": {
+        "en-US": [
+          "Which phase represents the final visual appearance of the product?"
+        ],
+        "es-MX": [
+          "¿Qué fase representa la apariencia visual final del producto?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Skeleton",
+          "Structure",
+          "Surface",
+          "Scope"
+        ],
+        "es-MX": [
+          "Esqueleto",
+          "Estructura",
+          "Superficie",
+          "Alcance"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Surface",
+        "es-MX": "Superficie"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La superficie es el plano más visible del modelo de Garrett. En él se materializa la apariencia final del producto, incluyendo colores, tipografías, imágenes y demás elementos visuales."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Fases del diseño UX",
+      "Question Text": {
+        "en-US": [
+          "Which phase is closest to the end user?"
+        ],
+        "es-MX": [
+          "¿Qué fase es la más cercana al usuario final?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Strategy",
+          "Scope",
+          "Structure",
+          "Surface"
+        ],
+        "es-MX": [
+          "Estrategia",
+          "Alcance",
+          "Estructura",
+          "Superficie"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Surface",
+        "es-MX": "Superficie"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La superficie constituye la capa visible con la que interactúa directamente el usuario. Es el resultado final de todas las decisiones tomadas en las fases anteriores."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Fases del diseño UX",
+      "Question Text": {
+        "en-US": [
+          "In which phase are colors, typography and images defined?"
+        ],
+        "es-MX": [
+          "¿En qué fase se definen los colores, tipografías e imágenes?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Skeleton",
+          "Surface",
+          "Structure",
+          "Scope"
+        ],
+        "es-MX": [
+          "Esqueleto",
+          "Superficie",
+          "Estructura",
+          "Alcance"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Surface",
+        "es-MX": "Superficie"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los colores, las tipografías, las imágenes y los demás elementos gráficos forman parte del plano de superficie, encargado del aspecto visual final del producto."
+          }
+        ]
+      }
+    }
+  ]
+}

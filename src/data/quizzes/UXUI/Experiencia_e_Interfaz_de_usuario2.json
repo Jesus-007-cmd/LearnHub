@@ -939,6 +939,385 @@
       }
     ]
   }
+},
+{
+  "Category": "Emociones y Diseño UX - Don Norman",
+  "Question Text": {
+    "en-US": [
+      "Who proposed the visceral, behavioral and reflective levels of emotional processing in design?"
+    ],
+    "es-MX": [
+      "¿Quién propuso los niveles visceral, comportamental y reflexivo del procesamiento emocional en el diseño?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Jakob Nielsen",
+      "Donald Norman",
+      "Alan Cooper",
+      "Ben Shneiderman"
+    ],
+    "es-MX": [
+      "Jakob Nielsen",
+      "Donald Norman",
+      "Alan Cooper",
+      "Ben Shneiderman"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Donald Norman",
+    "es-MX": "Donald Norman"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "Donald Norman es uno de los pioneros del diseño centrado en el usuario y propuso los niveles visceral, comportamental y reflexivo para explicar cómo las emociones influyen en la experiencia de uso."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Es considerado uno de los padres del diseño centrado en el usuario.",
+          "Fue vicepresidente de Apple.",
+          "Es autor de The Design of Everyday Things.",
+          "Sus teorías son fundamentales en UX."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Emociones y Diseño UX - Don Norman",
+  "Question Text": {
+    "en-US": [
+      "Which famous book was written by Donald Norman?"
+    ],
+    "es-MX": [
+      "¿Cuál es el libro más famoso escrito por Donald Norman?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Design Patterns",
+      "The Design of Everyday Things",
+      "Don't Make Me Think",
+      "About Face"
+    ],
+    "es-MX": [
+      "Design Patterns",
+      "The Design of Everyday Things",
+      "Don't Make Me Think",
+      "About Face"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "The Design of Everyday Things",
+    "es-MX": "The Design of Everyday Things"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "The Design of Everyday Things es una de las obras más influyentes sobre diseño centrado en el usuario y usabilidad."
+      }
+    ]
+  }
+},
+{
+  "Category": "Emociones y Diseño UX - Don Norman",
+  "Question Text": {
+    "en-US": [
+      "Which is the correct order of the levels proposed by Donald Norman?"
+    ],
+    "es-MX": [
+      "¿Cuál es el orden correcto de los niveles propuestos por Donald Norman?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Visceral - Behavioral - Reflective",
+      "Reflective - Behavioral - Visceral",
+      "Behavioral - Visceral - Reflective",
+      "Reflective - Visceral - Behavioral"
+    ],
+    "es-MX": [
+      "Visceral - Comportamental - Reflexivo",
+      "Reflexivo - Comportamental - Visceral",
+      "Comportamental - Visceral - Reflexivo",
+      "Reflexivo - Visceral - Comportamental"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Visceral - Behavioral - Reflective",
+    "es-MX": "Visceral - Comportamental - Reflexivo"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "Los tres niveles propuestos por Don Norman son visceral, comportamental y reflexivo, y representan diferentes formas en que las emociones influyen en la interacción con los productos."
+      }
+    ]
+  }
+},
+{
+  "Category": "Emociones y Diseño UX - Don Norman",
+  "Question Text": {
+    "en-US": [
+      "Which level is responsible for first impressions?"
+    ],
+    "es-MX": [
+      "¿Qué nivel es responsable de las primeras impresiones?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Visceral level",
+      "Behavioral level",
+      "Reflective level",
+      "Motivational level"
+    ],
+    "es-MX": [
+      "Nivel visceral",
+      "Nivel comportamental",
+      "Nivel reflexivo",
+      "Nivel motivacional"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Visceral level",
+    "es-MX": "Nivel visceral"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "El nivel visceral genera respuestas emocionales inmediatas y está relacionado con las primeras impresiones sobre la apariencia y atractivo de un producto."
+      }
+    ]
+  }
+},
+{
+  "Category": "Emociones y Diseño UX - Don Norman",
+  "Question Text": {
+    "en-US": [
+      "Which level is most closely related to usability and task execution?"
+    ],
+    "es-MX": [
+      "¿Qué nivel está más relacionado con la usabilidad y la ejecución de tareas?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Visceral level",
+      "Behavioral level",
+      "Reflective level",
+      "Emotional level"
+    ],
+    "es-MX": [
+      "Nivel visceral",
+      "Nivel comportamental",
+      "Nivel reflexivo",
+      "Nivel emocional"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Behavioral level",
+    "es-MX": "Nivel comportamental"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "El nivel comportamental está relacionado con el uso, la facilidad de aprendizaje y la eficiencia con que se realizan las tareas."
+      }
+    ]
+  }
+},
+{
+  "Category": "Emociones y Diseño UX - Don Norman",
+  "Question Text": {
+    "en-US": [
+      "Which level is associated with reasoning and conscious decisions?"
+    ],
+    "es-MX": [
+      "¿Qué nivel se asocia con el razonamiento y las decisiones conscientes?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Visceral level",
+      "Behavioral level",
+      "Reflective level",
+      "Motivational level"
+    ],
+    "es-MX": [
+      "Nivel visceral",
+      "Nivel comportamental",
+      "Nivel reflexivo",
+      "Nivel motivacional"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Reflective level",
+    "es-MX": "Nivel reflexivo"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "El nivel reflexivo involucra el razonamiento, la interpretación y la toma consciente de decisiones."
+      }
+    ]
+  }
+},
+{
+  "Category": "Emociones y Diseño UX - Don Norman",
+  "Question Text": {
+    "en-US": [
+      "Which level is mostly unconscious and automatic?"
+    ],
+    "es-MX": [
+      "¿Qué nivel es principalmente inconsciente y automático?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Visceral level",
+      "Reflective level",
+      "Cognitive level",
+      "Motivational level"
+    ],
+    "es-MX": [
+      "Nivel visceral",
+      "Nivel reflexivo",
+      "Nivel cognitivo",
+      "Nivel motivacional"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Visceral level",
+    "es-MX": "Nivel visceral"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "Las reacciones del nivel visceral ocurren de forma inmediata e inconsciente, antes de que intervenga el razonamiento."
+      }
+    ]
+  }
+},
+{
+  "Category": "Emociones y Diseño UX - Don Norman",
+  "Question Text": {
+    "en-US": [
+      "Which level contributes most to the image and meaning that users assign to a product?"
+    ],
+    "es-MX": [
+      "¿Qué nivel contribuye más a la imagen y significado que los usuarios atribuyen a un producto?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Visceral level",
+      "Behavioral level",
+      "Reflective level",
+      "Operational level"
+    ],
+    "es-MX": [
+      "Nivel visceral",
+      "Nivel comportamental",
+      "Nivel reflexivo",
+      "Nivel operativo"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Reflective level",
+    "es-MX": "Nivel reflexivo"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "La imagen de marca, los recuerdos y el significado personal asociado a un producto se construyen principalmente en el nivel reflexivo."
+      }
+    ]
+  }
+},
+{
+  "Category": "Emociones y Diseño UX - Don Norman",
+  "Question Text": {
+    "en-US": [
+      "Which level is especially important for efficiency and performance?"
+    ],
+    "es-MX": [
+      "¿Qué nivel es especialmente importante para la eficiencia y el rendimiento?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Behavioral level",
+      "Reflective level",
+      "Visceral level",
+      "Emotional level"
+    ],
+    "es-MX": [
+      "Nivel comportamental",
+      "Nivel reflexivo",
+      "Nivel visceral",
+      "Nivel emocional"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Behavioral level",
+    "es-MX": "Nivel comportamental"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "La eficiencia, facilidad de uso y desempeño de un producto se relacionan principalmente con el nivel comportamental."
+      }
+    ]
+  }
+},
+{
+  "Category": "Emociones y Diseño UX - Don Norman",
+  "Question Text": {
+    "en-US": [
+      "Which level influences the emotional reaction to colors, shapes and visual appearance?"
+    ],
+    "es-MX": [
+      "¿Qué nivel influye en la reacción emocional frente a colores, formas y apariencia visual?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Visceral level",
+      "Behavioral level",
+      "Reflective level",
+      "Motivational level"
+    ],
+    "es-MX": [
+      "Nivel visceral",
+      "Nivel comportamental",
+      "Nivel reflexivo",
+      "Nivel motivacional"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Visceral level",
+    "es-MX": "Nivel visceral"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "El nivel visceral está estrechamente relacionado con la apariencia visual y las emociones inmediatas que generan los colores, formas y composición de una interfaz."
+      }
+    ]
+  }
 }
         
     ]

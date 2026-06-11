@@ -2653,145 +2653,145 @@
             }
         },
         {
-        "Category": "Tipos de Sitios Web",
-        "Question Text": {
-        "en-US": [
-        "Which type of website provides information about a brand, product or service, including its mission, vision and differentiators?"
-        ],
-        "es-MX": [
-        "¿Qué tipo de sitio web ofrece información sobre una marca, producto o servicio, incluyendo su visión, misión y factores diferenciadores?"
-        ]
-        },
-        "Options": {
-        "en-US": [
-        "Corporate Websites",
-        "Website",
-        "Personal Websites",
-        "Web Applications"
-        ],
-        "es-MX": [
-        "Webs corporativas",
-        "Sitio Web",
-        "Sitios personales",
-        "Aplicaciones web"
-        ]
-        },
-        "Correct Answer": {
-        "en-US": "Corporate Websites",
-        "es-MX": "Webs corporativas"
-        },
-        "Explanation": {
-        "es-MX": [
-        {
-        "type": "text",
-        "content": "Las webs corporativas representan la presencia digital de una empresa, organización o institución. Su objetivo es comunicar quiénes son, qué ofrecen y cuáles son sus valores."
-        },
-        {
-        "type": "ul",
-        "items": [
-        "Presentan información sobre la empresa.",
-        "Incluyen misión, visión y valores.",
-        "Muestran productos o servicios.",
-        "Ayudan a fortalecer la imagen de marca.",
-        "Facilitan el contacto con clientes y usuarios."
-        ]
-        }
-        ]
-        }
-        },
-        {
-        "Category": "Tipos de Sitios Web",
-        "Question Text": {
-        "en-US": [
-        "Which type of website is used to showcase the knowledge, experience and achievements of a professional?"
-        ],
-        "es-MX": [
-        "¿Qué tipo de sitio web se utiliza para mostrar los conocimientos, experiencia y reconocimientos de un profesional?"
-        ]
-        },
-        "Options": {
-        "en-US": [
-        "Corporate Websites",
-        "Web Applications",
-        "Personal Websites",
-        "Websites"
-        ],
-        "es-MX": [
-        "Webs corporativas",
-        "Aplicaciones Web",
-        "Sitios personales",
-        "Sitios Web"
-        ]
-        },
-        "Correct Answer": {
-        "en-US": "Personal Websites",
-        "es-MX": "Sitios personales"
-        },
-        "Explanation": {
-        "es-MX": [
-        {
-        "type": "text",
-        "content": "Los sitios personales son espacios digitales donde una persona comparte información sobre su trayectoria, habilidades, proyectos y logros profesionales o personales."
+            "Category": "Tipos de Sitios Web",
+            "Question Text": {
+                "en-US": [
+                    "Which type of website provides information about a brand, product or service, including its mission, vision and differentiators?"
+                ],
+                "es-MX": [
+                    "¿Qué tipo de sitio web ofrece información sobre una marca, producto o servicio, incluyendo su visión, misión y factores diferenciadores?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Corporate Websites",
+                    "Website",
+                    "Personal Websites",
+                    "Web Applications"
+                ],
+                "es-MX": [
+                    "Webs corporativas",
+                    "Sitio Web",
+                    "Sitios personales",
+                    "Aplicaciones web"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Corporate Websites",
+                "es-MX": "Webs corporativas"
+            },
+            "Explanation": {
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "Las webs corporativas representan la presencia digital de una empresa, organización o institución. Su objetivo es comunicar quiénes son, qué ofrecen y cuáles son sus valores."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "Presentan información sobre la empresa.",
+                            "Incluyen misión, visión y valores.",
+                            "Muestran productos o servicios.",
+                            "Ayudan a fortalecer la imagen de marca.",
+                            "Facilitan el contacto con clientes y usuarios."
+                        ]
+                    }
+                ]
+            }
         },
         {
-        "type": "ul",
-        "items": [
-        "Funcionan como portafolio profesional.",
-        "Muestran experiencia y conocimientos.",
-        "Pueden incluir currículo y certificaciones.",
-        "Ayudan a construir una marca personal.",
-        "Son comunes entre diseñadores, desarrolladores y consultores."
-        ]
-        }
-        ]
-        }
+            "Category": "Tipos de Sitios Web",
+            "Question Text": {
+                "en-US": [
+                    "Which type of website is used to showcase the knowledge, experience and achievements of a professional?"
+                ],
+                "es-MX": [
+                    "¿Qué tipo de sitio web se utiliza para mostrar los conocimientos, experiencia y reconocimientos de un profesional?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Corporate Websites",
+                    "Web Applications",
+                    "Personal Websites",
+                    "Websites"
+                ],
+                "es-MX": [
+                    "Webs corporativas",
+                    "Aplicaciones Web",
+                    "Sitios personales",
+                    "Sitios Web"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Personal Websites",
+                "es-MX": "Sitios personales"
+            },
+            "Explanation": {
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "Los sitios personales son espacios digitales donde una persona comparte información sobre su trayectoria, habilidades, proyectos y logros profesionales o personales."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "Funcionan como portafolio profesional.",
+                            "Muestran experiencia y conocimientos.",
+                            "Pueden incluir currículo y certificaciones.",
+                            "Ayudan a construir una marca personal.",
+                            "Son comunes entre diseñadores, desarrolladores y consultores."
+                        ]
+                    }
+                ]
+            }
         },
         {
-        "Category": "Tipos de Sitios Web",
-        "Question Text": {
-        "en-US": [
-        "Which type of website usually consists of one or a few pages and is commonly used to promote a new product or service?"
-        ],
-        "es-MX": [
-        "¿Qué tipo de sitio web suele componerse de una o pocas páginas y se utiliza para promocionar un nuevo producto o servicio?"
-        ]
-        },
-        "Options": {
-        "en-US": [
-        "Web Page",
-        "Web Applications",
-        "Microsites",
-        "Blog"
-        ],
-        "es-MX": [
-        "Página Web",
-        "Aplicaciones Web",
-        "Micrositios Web",
-        "Blog"
-        ]
-        },
-        "Correct Answer": {
-        "en-US": "Microsites",
-        "es-MX": "Micrositios Web"
-        },
-        "Explanation": {
-        "es-MX": [
-        {
-        "type": "text",
-        "content": "Un micrositio es un sitio web pequeño e independiente que normalmente se crea para una campaña específica, lanzamiento de producto o promoción temporal."
-        },
-        {
-        "type": "ul",
-        "items": [
-        "Puede estar formado por una o pocas páginas.",
-        "Suele tener una duración limitada.",
-        "Se utiliza para campañas de marketing.",
-        "Se enfoca en un producto, servicio o evento específico.",
-        "Su contenido está orientado a un objetivo concreto."
-        ]
-        }
-        ]
-        }
+            "Category": "Tipos de Sitios Web",
+            "Question Text": {
+                "en-US": [
+                    "Which type of website usually consists of one or a few pages and is commonly used to promote a new product or service?"
+                ],
+                "es-MX": [
+                    "¿Qué tipo de sitio web suele componerse de una o pocas páginas y se utiliza para promocionar un nuevo producto o servicio?"
+                ]
+            },
+            "Options": {
+                "en-US": [
+                    "Web Page",
+                    "Web Applications",
+                    "Microsites",
+                    "Blog"
+                ],
+                "es-MX": [
+                    "Página Web",
+                    "Aplicaciones Web",
+                    "Micrositios Web",
+                    "Blog"
+                ]
+            },
+            "Correct Answer": {
+                "en-US": "Microsites",
+                "es-MX": "Micrositios Web"
+            },
+            "Explanation": {
+                "es-MX": [
+                    {
+                        "type": "text",
+                        "content": "Un micrositio es un sitio web pequeño e independiente que normalmente se crea para una campaña específica, lanzamiento de producto o promoción temporal."
+                    },
+                    {
+                        "type": "ul",
+                        "items": [
+                            "Puede estar formado por una o pocas páginas.",
+                            "Suele tener una duración limitada.",
+                            "Se utiliza para campañas de marketing.",
+                            "Se enfoca en un producto, servicio o evento específico.",
+                            "Su contenido está orientado a un objetivo concreto."
+                        ]
+                    }
+                ]
+            }
         }
         
     ]

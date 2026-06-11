@@ -1,0 +1,1318 @@
+{
+  "meta": {
+    "slug": "ux-ui-fundamentos",
+    "title": "Experiencia e Interfaz de Usuario (UX y UI)",
+    "subject": "UX Y UI",
+    "unit": 4,
+    "classNo": 4,
+    "description": "Preguntas relacionadas con los conceptos fundamentales de experiencia de usuario (UX), interfaz de usuario (UI) y usabilidad.",
+    "tags": [
+      "UX",
+      "UI",
+      "Experiencia de Usuario",
+      "Interfaz de Usuario",
+      "Usabilidad"
+    ]
+  },
+  "Questions": [
+    
+    {
+      "Category": "Metodología centrada en el usuario",
+      "Question Text": {
+        "en-US": [
+          "Which methodology seeks to satisfy and adapt to the needs and requirements of users?"
+        ],
+        "es-MX": [
+          "¿Qué metodología busca satisfacer y adaptarse a las necesidades y exigencias de los usuarios?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Company-centered methodology",
+          "User-centered methodology",
+          "Design thinking",
+          "Content-centered design"
+        ],
+        "es-MX": [
+          "Metodología centrada en la empresa",
+          "Metodología centrada en el usuario",
+          "Pensamiento de diseño",
+          "Diseño centrado en el contenido"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "User-centered methodology",
+        "es-MX": "Metodología centrada en el usuario"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La metodología centrada en el usuario (UCD) tiene como objetivo comprender y satisfacer las necesidades, expectativas y limitaciones de las personas que utilizarán el sistema. El diseño se fundamenta en la investigación y evaluación con usuarios reales, buscando mejorar la usabilidad y la experiencia de usuario."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Metodología centrada en el usuario",
+      "Question Text": {
+        "en-US": [
+          "Which user-centered design approach structures the website according to the organization's needs?"
+        ],
+        "es-MX": [
+          "¿Qué enfoque de diseño organiza el sitio web de acuerdo con la estructura y necesidades de la organización?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Content-centered design",
+          "Technology-centered design",
+          "Designer-centered design",
+          "Company-centered design"
+        ],
+        "es-MX": [
+          "Diseño centrado en el contenido",
+          "Diseño centrado en la tecnología",
+          "Diseño centrado en el diseñador",
+          "Diseño centrado en la empresa"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Company-centered design",
+        "es-MX": "Diseño centrado en la empresa"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "En el diseño centrado en la empresa, la organización del sitio y las decisiones de diseño se realizan principalmente considerando los objetivos, la estructura y las necesidades del negocio. El usuario no constituye el eje principal del proceso de diseño."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Metodología centrada en el usuario",
+      "Question Text": {
+        "en-US": [
+          "Which approach uses information content as the basis for organizing the website and navigation structure?"
+        ],
+        "es-MX": [
+          "¿Qué enfoque utiliza el contenido de la información como base para organizar el sitio y la estructura de navegación?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Content-centered design",
+          "Technology-centered design",
+          "Designer-centered design",
+          "Company-centered design"
+        ],
+        "es-MX": [
+          "Diseño centrado en el contenido",
+          "Diseño centrado en la tecnología",
+          "Diseño centrado en el diseñador",
+          "Diseño centrado en la empresa"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Content-centered design",
+        "es-MX": "Diseño centrado en el contenido"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El diseño centrado en el contenido considera que la información constituye el elemento principal para estructurar el sitio web. La organización de las páginas, categorías y sistemas de navegación se construyen a partir del contenido disponible y de la forma en que este debe presentarse al usuario."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "La información es el elemento principal del diseño.",
+              "La navegación se deriva de la estructura del contenido.",
+              "La arquitectura de información cobra especial importancia.",
+              "Es frecuente en portales, bibliotecas digitales y sitios con gran cantidad de información."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Pensamiento del diseño y experiencia de usuario",
+      "Question Text": {
+        "en-US": [
+          "Which trend in the design world uses a set of techniques to solve problems creatively and innovatively?"
+        ],
+        "es-MX": [
+          "¿Cuál es una tendencia dentro del mundo del diseño que utiliza una serie de técnicas para resolver problemas de manera creativa e innovadora?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Accessibility",
+          "Information design",
+          "Design thinking",
+          "Navigation design"
+        ],
+        "es-MX": [
+          "Accesibilidad",
+          "Diseño de la información",
+          "Pensamiento del diseño",
+          "Diseño de navegación"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Design thinking",
+        "es-MX": "Pensamiento del diseño"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El pensamiento del diseño (Design Thinking) es una metodología orientada a la resolución creativa e innovadora de problemas. Se basa en comprender las necesidades de las personas y generar soluciones centradas en el usuario mediante procesos de empatía, ideación y experimentación."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Favorece la innovación.",
+              "Está centrado en las personas.",
+              "Utiliza técnicas creativas para resolver problemas.",
+              "Es ampliamente utilizado en UX y desarrollo de productos."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Pensamiento del diseño y experiencia de usuario",
+      "Question Text": {
+        "en-US": [
+          "Which characteristic refers to trusting that a product does what it is supposed to do and contains the information it should contain?"
+        ],
+        "es-MX": [
+          "¿Qué característica se relaciona con confiar en que un producto haga lo que tiene que hacer o posea el contenido que debe tener?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Valuable",
+          "Accessible",
+          "Credible",
+          "Useful"
+        ],
+        "es-MX": [
+          "Valorable",
+          "Accesible",
+          "Creíble",
+          "Útil"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Credible",
+        "es-MX": "Creíble"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La credibilidad es una de las facetas de la experiencia de usuario propuestas por Peter Morville. Hace referencia a la confianza que los usuarios depositan en el producto y en la información que éste proporciona."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Genera confianza en el usuario.",
+              "Permite creer en la información presentada.",
+              "Está relacionada con la reputación y confiabilidad del sistema.",
+              "Forma parte de las facetas de la experiencia de usuario de Morville."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Pensamiento del diseño y experiencia de usuario",
+      "Question Text": {
+        "en-US": [
+          "Which characteristic refers to the ability of a product to allow users to achieve their goals effectively and efficiently?"
+        ],
+        "es-MX": [
+          "¿Qué característica se refiere a la capacidad y atributos del producto que permiten a los usuarios alcanzar sus objetivos de manera eficiente y efectiva?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Valuable",
+          "Accessible",
+          "Usable",
+          "Useful"
+        ],
+        "es-MX": [
+          "Valorable",
+          "Accesible",
+          "Usable",
+          "Útil"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Usable",
+        "es-MX": "Usable"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La usabilidad se refiere a la capacidad del producto para permitir que los usuarios alcancen sus objetivos con efectividad, eficiencia y satisfacción. La facilidad de uso es fundamental, pero por sí sola no es suficiente para garantizar una experiencia de usuario adecuada."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Permite alcanzar objetivos de forma eficiente.",
+              "Está relacionada con la efectividad y la satisfacción.",
+              "Es uno de los pilares fundamentales de la experiencia de usuario.",
+              "Su definición está alineada con la norma ISO 9241."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Metodologías de UX y gestión LEAN",
+      "Question Text": {
+        "en-US": [
+          "Which management philosophy is based on the practices implemented by Toyota to improve automobile production processes?"
+        ],
+        "es-MX": [
+          "¿Qué filosofía de gestión empresarial se basa en las prácticas implementadas por Toyota para mejorar los procesos de producción de automóviles?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "LEAN methodology",
+          "Prince methodology",
+          "Total Quality methodology",
+          "Six Sigma methodology"
+        ],
+        "es-MX": [
+          "Metodología LEAN",
+          "Metodología Prince",
+          "Metodología Calidad Total",
+          "Metodología Six Sigma"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "LEAN methodology",
+        "es-MX": "Metodología LEAN"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La metodología LEAN es una filosofía de gestión originada en el Sistema de Producción de Toyota. Su propósito es maximizar el valor entregado al cliente mediante la eliminación de desperdicios y la mejora continua de los procesos."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Se originó en Toyota.",
+              "Busca incrementar el valor para el cliente.",
+              "Promueve la mejora continua.",
+              "Elimina actividades que no aportan valor."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Metodologías de UX y gestión LEAN",
+      "Question Text": {
+        "en-US": [
+          "Which LEAN principle focuses on eliminating activities that do not add value, such as overproduction, waiting times, transportation and unnecessary movements?"
+        ],
+        "es-MX": [
+          "¿Qué principio de LEAN se enfoca en eliminar actividades que no aportan valor, como la sobreproducción, tiempos de espera, transporte y movimientos innecesarios?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Continuous improvement",
+          "Resource optimization",
+          "Quality",
+          "Flexibility"
+        ],
+        "es-MX": [
+          "Mejora continua",
+          "Optimización de recursos",
+          "Calidad",
+          "Flexibilidad"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Resource optimization",
+        "es-MX": "Optimización de recursos"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Uno de los principios fundamentales de LEAN consiste en optimizar los recursos eliminando desperdicios o actividades que no generan valor para el producto o servicio. Entre estos desperdicios se encuentran la sobreproducción, los tiempos de espera, el transporte innecesario y los movimientos innecesarios."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Reduce desperdicios.",
+              "Evita actividades sin valor añadido.",
+              "Incrementa la eficiencia de los procesos.",
+              "Permite aprovechar mejor los recursos disponibles."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Metodologías de UX y gestión LEAN",
+      "Question Text": {
+        "en-US": [
+          "Which LEAN principle promotes increased productivity and quality, cost reduction and information sharing?"
+        ],
+        "es-MX": [
+          "¿Qué principio de LEAN permite incrementar la productividad y la calidad, reducir costos y favorecer el intercambio de información?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Continuous improvement",
+          "Resource optimization",
+          "Quality",
+          "Flexibility"
+        ],
+        "es-MX": [
+          "Mejora continua",
+          "Optimización de recursos",
+          "Calidad",
+          "Flexibilidad"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Continuous improvement",
+        "es-MX": "Mejora continua"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La mejora continua (Kaizen) es uno de los pilares de la filosofía LEAN. Consiste en realizar mejoras constantes y progresivas en los procesos con el fin de aumentar la productividad, mejorar la calidad, reducir costos y facilitar la comunicación y el intercambio de información entre los participantes."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Busca mejoras permanentes en los procesos.",
+              "Favorece una mayor productividad.",
+              "Contribuye a reducir costos.",
+              "Permite compartir información y aumentar la calidad."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Metodologías UX y Doble Diamante",
+      "Question Text": {
+        "en-US": [
+          "Which framework was proposed for innovation and aimed at solving public and private sector problems?"
+        ],
+        "es-MX": [
+          "¿Cuál fue propuesto como marco de trabajo para la innovación y orientado a solucionar problemas del sector público o privado?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Double Diamond",
+          "User Experience",
+          "Agile Methodology",
+          "Six Sigma Methodology"
+        ],
+        "es-MX": [
+          "Doble diamante",
+          "Experiencia de usuario",
+          "Metodología ágil",
+          "Metodología Six Sigma"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Double Diamond",
+        "es-MX": "Doble diamante"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El modelo del Doble Diamante fue desarrollado por el Design Council del Reino Unido en 2004 como un marco de trabajo para la innovación. Su propósito es facilitar la resolución de problemas complejos mediante un proceso estructurado que alterna etapas de exploración y selección de soluciones. Este enfoque puede aplicarse tanto en el sector público como en el privado, y puede ser utilizado por diseñadores expertos o por personas sin formación especializada en diseño."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Fue creado por el Design Council en 2004.",
+              "Se orienta a la innovación y resolución de problemas.",
+              "Puede ser utilizado por expertos y no expertos.",
+              "Combina pensamiento divergente y convergente.",
+              "Está formado por las fases Descubrir, Definir, Desarrollar y Entrega."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Metodologías UX y Doble Diamante",
+      "Question Text": {
+        "en-US": [
+          "Which type of thinking explores multiple solutions and generates creative ideas?"
+        ],
+        "es-MX": [
+          "¿Qué tipo de pensamiento permite explorar múltiples soluciones y generar ideas creativas ante un problema?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Convergent thinking",
+          "Divergent thinking",
+          "Hybrid thinking",
+          "Development"
+        ],
+        "es-MX": [
+          "Pensamiento convergente",
+          "Pensamiento divergente",
+          "Pensamiento híbrido",
+          "Desarrollo"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Divergent thinking",
+        "es-MX": "Pensamiento divergente"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El pensamiento divergente es un proceso cognitivo asociado con la creatividad y la generación de ideas. Se caracteriza por explorar múltiples alternativas, abrir posibilidades y considerar diferentes perspectivas antes de seleccionar una solución. Es un pensamiento flexible, intuitivo, integrador y abierto, ampliamente utilizado en metodologías de innovación, diseño y experiencia de usuario."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Favorece la creatividad y la innovación.",
+              "Permite generar múltiples alternativas.",
+              "Amplía el espacio de posibles soluciones.",
+              "Se asocia con las fases Descubrir y Desarrollar del Doble Diamante.",
+              "Complementa al pensamiento convergente dentro del proceso de diseño."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Metodologías UX y Doble Diamante",
+      "Question Text": {
+        "en-US": [
+          "Which type of thinking is logical and analytical and is responsible for evaluating alternatives?"
+        ],
+        "es-MX": [
+          "¿Qué tipo de pensamiento es lógico y analítico y se encarga de evaluar las alternativas disponibles?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Convergent thinking",
+          "Divergent thinking",
+          "Hybrid thinking",
+          "Development"
+        ],
+        "es-MX": [
+          "Pensamiento convergente",
+          "Pensamiento divergente",
+          "Pensamiento híbrido",
+          "Desarrollo"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Convergent thinking",
+        "es-MX": "Pensamiento convergente"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El pensamiento convergente es un proceso de razonamiento lógico, sistemático y analítico orientado a evaluar alternativas y seleccionar la solución más adecuada. A diferencia del pensamiento divergente, que abre posibilidades, el pensamiento convergente reduce, organiza y prioriza las opciones disponibles para tomar decisiones fundamentadas. Está relacionado con el lenguaje, la lógica, la crítica y el pensamiento abstracto."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Está asociado con el razonamiento lógico.",
+              "Permite analizar, comparar y evaluar alternativas.",
+              "Facilita la selección de soluciones concretas.",
+              "Predomina en las fases Definir y Entrega del Doble Diamante.",
+              "Complementa al pensamiento divergente en los procesos de innovación."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Metodologías UX y Diseño de Interacción",
+      "Question Text": {
+        "en-US": [
+          "Which methodology is based on continuous testing and constant improvement of the product through iterative processes?"
+        ],
+        "es-MX": [
+          "¿Qué metodología se basa en la prueba continua y la mejora constante del producto mediante procesos iterativos?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Double Diamond",
+          "User Experience",
+          "Agile methodology",
+          "Six Sigma methodology"
+        ],
+        "es-MX": [
+          "Doble diamante",
+          "Experiencia de usuario",
+          "Metodología ágil",
+          "Metodología Six Sigma"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Agile methodology",
+        "es-MX": "Metodología ágil"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las metodologías ágiles se caracterizan por trabajar de forma iterativa e incremental, permitiendo evaluar continuamente el producto y adaptarlo según las necesidades detectadas. Este enfoque favorece la retroalimentación constante, la mejora continua y la capacidad de respuesta ante cambios en los requisitos. En el ámbito de la experiencia de usuario, este tipo de metodología facilita que el diseño evolucione de acuerdo con los resultados obtenidos durante el desarrollo y con las necesidades reales de los usuarios."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Se basa en ciclos iterativos y mejoras continuas.",
+              "Permite adaptar el producto a nuevas necesidades.",
+              "Favorece la evaluación y retroalimentación constantes.",
+              "Promueve la colaboración entre usuarios y equipo de desarrollo.",
+              "Es ampliamente utilizada en proyectos de UX y desarrollo de software."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Disciplinas del Diseño UX",
+      "Question Text": {
+        "en-US": [
+          "Which discipline includes creating prototypes from wireframes and performing heuristic evaluations?"
+        ],
+        "es-MX": [
+          "¿Qué disciplina comprende la creación de prototipos a partir de wireframes y la realización de evaluaciones heurísticas?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Interaction design",
+          "Visual design",
+          "User interface development",
+          "Information architecture"
+        ],
+        "es-MX": [
+          "Diseño de interacción",
+          "Diseño visual",
+          "Desarrollo de interfaz de usuario",
+          "Arquitectura de la información"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "User interface development",
+        "es-MX": "Desarrollo de interfaz de usuario"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El desarrollo de la interfaz de usuario transforma los esquemas y wireframes en prototipos funcionales sobre los cuales es posible realizar evaluaciones heurísticas y pruebas de usabilidad. Esta etapa permite validar aspectos relacionados con la disposición de los elementos, la interacción y el cumplimiento de principios de usabilidad antes de proceder a la implementación definitiva. Su finalidad es detectar problemas tempranamente y optimizar la experiencia del usuario."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Parte de wireframes y prototipos.",
+              "Permite realizar evaluaciones heurísticas.",
+              "Ayuda a detectar problemas de usabilidad.",
+              "Facilita la validación temprana del diseño.",
+              "Contribuye a mejorar la experiencia del usuario antes del desarrollo final."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Disciplinas del Diseño UX",
+      "Question Text": {
+        "en-US": [
+          "Which discipline gathers information from users and clients to define scenarios and user stories?"
+        ],
+        "es-MX": [
+          "¿Qué disciplina recopila información de clientes y usuarios para definir escenarios e historias de usuario?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Interaction design",
+          "Visual design",
+          "User interface development",
+          "Information architecture"
+        ],
+        "es-MX": [
+          "Diseño de interacción",
+          "Diseño visual",
+          "Desarrollo de interfaz de usuario",
+          "Arquitectura de la información"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Interaction design",
+        "es-MX": "Diseño de interacción"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El diseño de interacción se ocupa de comprender las tareas, objetivos y comportamientos de los usuarios para definir cómo interactuarán con el sistema. Para ello, se apoya en información obtenida mediante reuniones, entrevistas e investigación con usuarios y clientes, permitiendo construir escenarios de uso e historias de usuario que servirán de base para diseñar los flujos de interacción y las funcionalidades del producto."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Se centra en las tareas y comportamientos de los usuarios.",
+              "Utiliza información obtenida mediante investigación y reuniones.",
+              "Permite elaborar escenarios de uso e historias de usuario.",
+              "Define los flujos de interacción del sistema.",
+              "Busca adaptar el producto a las necesidades reales de las personas."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Metodologías UX y Doble Diamante",
+      "Question Text": {
+        "en-US": [
+          "It was proposed as a framework for innovation, both for expert designers and for people without design expertise, and aimed at solving public or private sector problems:"
+        ],
+        "es-MX": [
+          "Se propuso como marco de trabajo para la innovación, tanto para diseñadores expertos como para personas legas en diseño, y orientado a solucionar problemas del sector público o privado:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Double diamond",
+          "User experience",
+          "Agile methodology",
+          "Six Sigma methodology"
+        ],
+        "es-MX": [
+          "Doble diamante",
+          "Experiencia de usuario",
+          "Metodología ágil",
+          "Metodología Six Sigma"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Double diamond",
+        "es-MX": "Doble diamante"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El Doble Diamante es un marco de innovación desarrollado por el Design Council en 2004 para abordar problemas complejos mediante un proceso estructurado de exploración y selección. Su utilidad no se limita a diseñadores expertos, ya que también puede aplicarse por personas sin formación especializada en diseño para resolver problemas en contextos públicos o privados. El modelo organiza el proceso en cuatro fases: Descubrir, Definir, Desarrollar y Entrega."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Se utiliza como marco de trabajo para la innovación.",
+              "Puede aplicarse en el sector público y privado.",
+              "Es útil para diseñadores expertos y personas legas en diseño.",
+              "Alterna pensamiento divergente y convergente.",
+              "Sus fases son Descubrir, Definir, Desarrollar y Entrega."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Metodologías UX y Doble Diamante",
+      "Question Text": {
+        "en-US": [
+          "It is the thinking process used to explore all possible solutions and generate creative ideas for a problem. This type of thinking is visual, intuitive, integrative, subjective, metaphorical, empathetic and does not follow rules:"
+        ],
+        "es-MX": [
+          "Es el proceso de pensamiento utilizado para explorar todas las posibles soluciones y generar ideas creativas ante un problema. Este tipo de pensamiento es visual, intuitivo, integrador, subjetivo, metafórico, empático y no sigue reglas:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Convergent thinking",
+          "Divergent thinking",
+          "Hybrid thinking",
+          "Development"
+        ],
+        "es-MX": [
+          "Pensamiento convergente",
+          "Pensamiento divergente",
+          "Pensamiento híbrido",
+          "Desarrollo"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Divergent thinking",
+        "es-MX": "Pensamiento divergente"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El pensamiento divergente se orienta a abrir posibilidades, explorar alternativas y generar múltiples ideas frente a un problema. Se caracteriza por su flexibilidad, creatividad e intuición, por lo que permite imaginar soluciones no evidentes y considerar perspectivas distintas antes de elegir una opción. En metodologías de innovación como el Doble Diamante, este tipo de pensamiento predomina en las fases de exploración, donde el objetivo es ampliar el campo de posibilidades."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Explora múltiples soluciones posibles.",
+              "Favorece la creatividad y la generación de ideas.",
+              "Es visual, intuitivo, flexible y empático.",
+              "No sigue una ruta única o rígida.",
+              "Complementa al pensamiento convergente dentro del proceso de diseño."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Metodologías UX y Doble Diamante",
+      "Question Text": {
+        "en-US": [
+          "It is verbal and rational. It analyzes, separates, criticizes and is systematic. It is responsible for functions related to language, logic and abstract thinking:"
+        ],
+        "es-MX": [
+          "Es verbal y racional. Analiza, separa, critica y es sistemático. Es el encargado de las funciones relacionadas con el lenguaje, la lógica y el pensamiento abstracto:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Convergent thinking",
+          "Divergent thinking",
+          "Hybrid thinking",
+          "Development"
+        ],
+        "es-MX": [
+          "Pensamiento convergente",
+          "Pensamiento divergente",
+          "Pensamiento híbrido",
+          "Desarrollo"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Convergent thinking",
+        "es-MX": "Pensamiento convergente"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El pensamiento convergente se orienta al análisis racional, la organización de información y la selección de alternativas. A diferencia del pensamiento divergente, que abre posibilidades, el pensamiento convergente permite comparar, filtrar y elegir la solución más adecuada de acuerdo con criterios lógicos. En los procesos de diseño e innovación, resulta fundamental para transformar un conjunto amplio de ideas en una decisión concreta y viable."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Utiliza razonamiento lógico y sistemático.",
+              "Analiza, compara y critica alternativas.",
+              "Ayuda a seleccionar la solución más adecuada.",
+              "Está relacionado con el lenguaje y el pensamiento abstracto.",
+              "Complementa al pensamiento divergente en los procesos de innovación."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Metodologías UX y Disciplinas del Diseño",
+      "Question Text": {
+        "en-US": [
+          "This methodology is based on continuous testing and constant improvement of the product and consists of four processes, where the design is constantly adapted to the user experience:"
+        ],
+        "es-MX": [
+          "Esta metodología se basa en la prueba continua y la mejora constante del producto y consta de cuatro procesos, donde se trata de adaptar constantemente el diseño a la experiencia de usuario:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Double diamond",
+          "User experience",
+          "Agile methodology",
+          "Six Sigma methodology"
+        ],
+        "es-MX": [
+          "Doble diamante",
+          "Experiencia de usuario",
+          "Metodología ágil",
+          "Metodología Six Sigma"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Agile methodology",
+        "es-MX": "Metodología ágil"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las metodologías ágiles se basan en ciclos iterativos de desarrollo, prueba y mejora continua. Este enfoque permite adaptar constantemente el producto a las necesidades y expectativas de los usuarios, incorporando retroalimentación durante todo el proceso. La flexibilidad y la capacidad de respuesta ante cambios son características fundamentales de este tipo de metodologías, ampliamente utilizadas en el desarrollo de software y en proyectos de experiencia de usuario."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Se fundamenta en la mejora continua.",
+              "Trabaja mediante ciclos iterativos.",
+              "Permite incorporar retroalimentación constante.",
+              "Facilita la adaptación del producto a los usuarios.",
+              "Es ampliamente utilizada en proyectos de UX y software."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Disciplinas del Diseño UX",
+      "Question Text": {
+        "en-US": [
+          "We design prototypes from wireframes and perform a heuristic evaluation:"
+        ],
+        "es-MX": [
+          "Diseñamos prototipos a partir de los wireframes y realizamos una evaluación heurística:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Interaction design",
+          "Visual design",
+          "User interface development",
+          "Information architecture"
+        ],
+        "es-MX": [
+          "Diseño de interacción",
+          "Diseño visual",
+          "Desarrollo de interfaz de usuario",
+          "Arquitectura de la información"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Interaction design",
+        "es-MX": "Diseño de interacción"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El diseño de interacción se ocupa de definir cómo las personas interactúan con un sistema y cómo se comportan los elementos que lo componen. Dentro de este proceso es habitual construir prototipos a partir de wireframes y realizar evaluaciones heurísticas con el objetivo de identificar problemas de usabilidad y mejorar la experiencia del usuario antes de la implementación final. La evaluación heurística, popularizada por Jakob Nielsen, permite analizar la interfaz mediante principios de usabilidad reconocidos."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Se centra en la interacción entre usuarios y sistema.",
+              "Utiliza prototipos para validar soluciones.",
+              "Permite realizar evaluaciones heurísticas.",
+              "Ayuda a detectar problemas de usabilidad.",
+              "Busca mejorar la experiencia del usuario."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Disciplinas del Diseño UX",
+      "Question Text": {
+        "en-US": [
+          "From information gathering and meetings with clients and users, planning and research are developed, leading to the definition of scenarios and the construction of user stories:"
+        ],
+        "es-MX": [
+          "A partir de la recogida de información y las reuniones con clientes y usuarios se elabora una planificación e investigación que nos lleva a una definición de escenarios y la construcción de historias de nuestros usuarios:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Interaction design",
+          "Visual design",
+          "User interface development",
+          "Information architecture"
+        ],
+        "es-MX": [
+          "Diseño de interacción",
+          "Diseño visual",
+          "Desarrollo de interfaz de usuario",
+          "Arquitectura de la información"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Information architecture",
+        "es-MX": "Arquitectura de la información"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La arquitectura de la información se encarga de estructurar, organizar y representar la información de manera que resulte comprensible y útil para los usuarios. Para ello, se apoya en la investigación y en la recopilación de información procedente de clientes y usuarios, permitiendo definir escenarios, necesidades y modelos de organización que servirán como base para la navegación y la construcción de historias de usuario. Su finalidad es facilitar que las personas encuentren y utilicen la información de manera eficiente."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Organiza y estructura la información.",
+              "Se basa en la investigación con usuarios y clientes.",
+              "Permite definir escenarios de uso.",
+              "Contribuye a la elaboración de historias de usuario.",
+              "Sirve como base para los sistemas de navegación y organización."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Metodologías UX y Disciplinas del Diseño",
+      "Question Text": {
+        "en-US": [
+          "This methodology is based on continuous testing and constant improvement of the product and consists of four processes, where the design is constantly adapted to the user experience:"
+        ],
+        "es-MX": [
+          "Esta metodología se basa en la prueba continua y la mejora constante del producto y consta de cuatro procesos, donde se trata de adaptar constantemente el diseño a la experiencia de usuario:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Double diamond",
+          "User experience",
+          "Agile methodology",
+          "Six Sigma methodology"
+        ],
+        "es-MX": [
+          "Doble diamante",
+          "Experiencia de usuario",
+          "Metodología ágil",
+          "Metodología Six Sigma"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Agile methodology",
+        "es-MX": "Metodología ágil"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las metodologías ágiles se basan en ciclos iterativos de desarrollo, prueba y mejora continua. Este enfoque permite adaptar constantemente el producto a las necesidades y expectativas de los usuarios, incorporando retroalimentación durante todo el proceso. La flexibilidad y la capacidad de respuesta ante cambios son características fundamentales de este tipo de metodologías, ampliamente utilizadas en el desarrollo de software y en proyectos de experiencia de usuario."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Se fundamenta en la mejora continua.",
+              "Trabaja mediante ciclos iterativos.",
+              "Permite incorporar retroalimentación constante.",
+              "Facilita la adaptación del producto a los usuarios.",
+              "Es ampliamente utilizada en proyectos de UX y software."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Disciplinas del Diseño UX",
+      "Question Text": {
+        "en-US": [
+          "We design prototypes from wireframes and perform a heuristic evaluation:"
+        ],
+        "es-MX": [
+          "Diseñamos prototipos a partir de los wireframes y realizamos una evaluación heurística:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Interaction design",
+          "Visual design",
+          "User interface development",
+          "Information architecture"
+        ],
+        "es-MX": [
+          "Diseño de interacción",
+          "Diseño visual",
+          "Desarrollo de interfaz de usuario",
+          "Arquitectura de la información"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Interaction design",
+        "es-MX": "Diseño de interacción"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El diseño de interacción se ocupa de definir cómo las personas interactúan con un sistema y cómo se comportan los elementos que lo componen. Dentro de este proceso es habitual construir prototipos a partir de wireframes y realizar evaluaciones heurísticas con el objetivo de identificar problemas de usabilidad y mejorar la experiencia del usuario antes de la implementación final. La evaluación heurística, popularizada por Jakob Nielsen, permite analizar la interfaz mediante principios de usabilidad reconocidos."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Se centra en la interacción entre usuarios y sistema.",
+              "Utiliza prototipos para validar soluciones.",
+              "Permite realizar evaluaciones heurísticas.",
+              "Ayuda a detectar problemas de usabilidad.",
+              "Busca mejorar la experiencia del usuario."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Disciplinas del Diseño UX",
+      "Question Text": {
+        "en-US": [
+          "From information gathering and meetings with clients and users, planning and research are developed, leading to the definition of scenarios and the construction of user stories:"
+        ],
+        "es-MX": [
+          "A partir de la recogida de información y las reuniones con clientes y usuarios se elabora una planificación e investigación que nos lleva a una definición de escenarios y la construcción de historias de nuestros usuarios:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Interaction design",
+          "Visual design",
+          "User interface development",
+          "Information architecture"
+        ],
+        "es-MX": [
+          "Diseño de interacción",
+          "Diseño visual",
+          "Desarrollo de interfaz de usuario",
+          "Arquitectura de la información"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Information architecture",
+        "es-MX": "Arquitectura de la información"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La arquitectura de la información se encarga de estructurar, organizar y representar la información de manera que resulte comprensible y útil para los usuarios. Para ello, se apoya en la investigación y en la recopilación de información procedente de clientes y usuarios, permitiendo definir escenarios, necesidades y modelos de organización que servirán como base para la navegación y la construcción de historias de usuario. Su finalidad es facilitar que las personas encuentren y utilicen la información de manera eficiente."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Organiza y estructura la información.",
+              "Se basa en la investigación con usuarios y clientes.",
+              "Permite definir escenarios de uso.",
+              "Contribuye a la elaboración de historias de usuario.",
+              "Sirve como base para los sistemas de navegación y organización."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Evaluación heurística y usabilidad",
+      "Question Text": {
+        "en-US": [
+          "What is heuristic evaluation?"
+        ],
+        "es-MX": [
+          "¿Qué es la evaluación heurística?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "A technique for evaluating usability based on established principles",
+          "A method for measuring software performance",
+          "A programming methodology focused on user interfaces",
+          "A process for collecting user requirements"
+        ],
+        "es-MX": [
+          "Una técnica para evaluar la usabilidad basada en principios establecidos",
+          "Un método para medir el rendimiento del software",
+          "Una metodología de programación orientada a interfaces de usuario",
+          "Un proceso para recopilar requisitos de los usuarios"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "A technique for evaluating usability based on established principles",
+        "es-MX": "Una técnica para evaluar la usabilidad basada en principios establecidos"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La evaluación heurística es una técnica utilizada para analizar la facilidad de uso de una interfaz. Consiste en que uno o varios especialistas revisan una aplicación, página web o prototipo utilizando una serie de reglas o principios de diseño conocidos como heurísticas. Una heurística es una guía o recomendación basada en la experiencia que ayuda a identificar posibles problemas de usabilidad. Este método fue popularizado por Jakob Nielsen y permite detectar errores antes de que el producto sea utilizado por los usuarios finales, reduciendo costos y mejorando la experiencia de uso."
+          },
+          {
+            "type": "text",
+            "content": "Por ejemplo, una de las heurísticas de Nielsen establece que el sistema debe mantener informado al usuario sobre lo que está ocurriendo. Si una aplicación tarda varios segundos en guardar información y no muestra ningún mensaje o indicador de progreso, el usuario podría pensar que la aplicación se bloqueó. Durante una evaluación heurística, el especialista detectaría este problema y recomendaría mostrar un mensaje como 'Guardando información...' o una barra de progreso para mejorar la interacción."
+          },
+          {
+            "type": "text",
+            "content": "Las heurísticas más conocidas fueron propuestas por Jakob Nielsen e incluyen principios como la visibilidad del estado del sistema, la consistencia y los estándares, la prevención de errores, el reconocimiento en lugar del recuerdo y la flexibilidad y eficiencia de uso. Estas reglas no son obligatorias, pero sirven como referencia para diseñar interfaces más comprensibles, eficientes y fáciles de utilizar."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Una heurística es una regla o principio de diseño basado en la experiencia.",
+              "La evaluación heurística es una técnica para evaluar la usabilidad.",
+              "Fue popularizada por Jakob Nielsen.",
+              "Permite identificar problemas antes de la implementación final.",
+              "Ayuda a reducir costos y mejorar la experiencia del usuario.",
+              "Puede aplicarse a prototipos o sistemas ya desarrollados."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Proceso de diseño centrado en el usuario",
+      "Question Text": {
+        "en-US": [
+          "In this phase, we analyze the situation to identify the topics that will be evaluated:"
+        ],
+        "es-MX": [
+          "En esta fase analizamos la situación para identificar temas que vamos a evaluar:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Design and prototyping",
+          "Organization",
+          "Research",
+          "Testing"
+        ],
+        "es-MX": [
+          "Diseño y prototipado",
+          "Organización",
+          "Investigación",
+          "Pruebas"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Research",
+        "es-MX": "Investigación"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La fase de investigación constituye el punto de partida del proceso de diseño centrado en el usuario. En ella se analiza la situación actual, se recopila información y se identifican los aspectos que serán objeto de estudio. Su finalidad es comprender las necesidades, problemas y expectativas de los usuarios para establecer los objetivos del proyecto y determinar qué elementos deben evaluarse."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Permite comprender el contexto del problema.",
+              "Identifica las necesidades y expectativas de los usuarios.",
+              "Define los temas que serán evaluados.",
+              "Sirve de base para las etapas posteriores del proceso.",
+              "Utiliza técnicas como entrevistas, observación y análisis."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Proceso de diseño centrado en el usuario",
+      "Question Text": {
+        "en-US": [
+          "In this phase, the work carried out is presented to the client to determine whether expectations have been met and tests are performed with clients:"
+        ],
+        "es-MX": [
+          "En esta fase se presenta el trabajo realizado al cliente para conocer si han cumplido sus expectativas y se hacen pruebas con los clientes:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Design and prototyping",
+          "Organization",
+          "Research",
+          "Testing"
+        ],
+        "es-MX": [
+          "Diseño y prototipado",
+          "Organización",
+          "Investigación",
+          "Pruebas"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Testing",
+        "es-MX": "Pruebas"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La fase de pruebas tiene como objetivo validar las soluciones desarrolladas mediante la participación de usuarios y clientes. Durante esta etapa se presenta el trabajo realizado para verificar si cumple con las expectativas planteadas inicialmente y se identifican posibles mejoras. Las pruebas permiten obtener retroalimentación directa y comprobar la eficacia, eficiencia y satisfacción proporcionadas por el producto."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Permite validar las soluciones desarrolladas.",
+              "Involucra la participación de clientes y usuarios.",
+              "Proporciona retroalimentación para mejorar el producto.",
+              "Ayuda a detectar problemas antes de la implementación definitiva.",
+              "Contribuye a incrementar la calidad y la satisfacción del usuario."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Proceso de diseño centrado en el usuario",
+      "Question Text": {
+        "en-US": [
+          "This is the stage in which the results of the previous stage are represented together with the technical requirements so that they can be understood by users, clients and the rest of the work team:"
+        ],
+        "es-MX": [
+          "Esta es la etapa en la que se plasman los resultados de la etapa anterior, ahora con todos los requerimientos técnicos, con el fin de que sean comprendidos por usuarios, cliente y el resto del equipo de trabajo:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Design and prototyping",
+          "Organization",
+          "Research",
+          "Testing"
+        ],
+        "es-MX": [
+          "Diseño y prototipado",
+          "Organización",
+          "Investigación",
+          "Pruebas"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Design and prototyping",
+        "es-MX": "Diseño y prototipado"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La etapa de diseño y prototipado transforma los resultados obtenidos durante las fases anteriores en representaciones visuales y modelos funcionales. En esta fase se incorporan los requerimientos técnicos y se desarrollan prototipos que permiten comunicar las características del producto de manera clara tanto a usuarios y clientes como al resto del equipo de trabajo. Estos prototipos facilitan la comprensión y validación de las soluciones antes de su implementación final."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Materializa los resultados obtenidos en etapas anteriores.",
+              "Integra los requerimientos técnicos del proyecto.",
+              "Permite construir prototipos y representaciones visuales.",
+              "Facilita la comunicación entre usuarios, clientes y desarrolladores.",
+              "Contribuye a validar las soluciones antes de su implementación."
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
