@@ -1,0 +1,731 @@
+{
+  "meta": {
+    "slug": "ux-ui-fundamentos",
+    "title": "Experiencia e Interfaz de Usuario (UX y UI)",
+    "subject": "UX Y UI",
+    "unit": 9,
+    "classNo": 9,
+    "description": "Preguntas relacionadas con los conceptos fundamentales de experiencia de usuario (UX), interfaz de usuario (UI) y usabilidad.",
+    "tags": [
+      "UX",
+      "UI",
+      "Experiencia de Usuario",
+      "Interfaz de Usuario",
+      "Usabilidad"
+    ]
+  },
+  "Questions": [
+    {
+      "Category": "Principios de composición visual",
+      "Question Text": {
+        "en-US": [
+          "It is used to indicate hierarchy in a composition by using different sizes:"
+        ],
+        "es-MX": [
+          "Sirve para indicar el rango en una composición se utilizan diferentes tamaños:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Contrast",
+          "Scale",
+          "Location",
+          "Balance"
+        ],
+        "es-MX": [
+          "Contraste",
+          "Escala",
+          "Ubicación",
+          "Equilibrio"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Scale",
+        "es-MX": "Escala"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La escala consiste en utilizar diferentes tamaños para establecer una jerarquía visual dentro de una composición. Los elementos más grandes suelen atraer primero la atención del usuario, mientras que los más pequeños representan información de menor importancia."
+          },
+          {
+            "type": "text",
+            "content": "La correcta utilización de la escala facilita la lectura, organiza el contenido y ayuda a que los usuarios identifiquen rápidamente los elementos más relevantes de una interfaz."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Principios de composición visual",
+      "Question Text": {
+        "en-US": [
+          "It is the distribution of design elements on a page:"
+        ],
+        "es-MX": [
+          "Es la distribución de los elementos del diseño en nuestra página:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Contrast",
+          "Scale",
+          "Location",
+          "Balance"
+        ],
+        "es-MX": [
+          "Contraste",
+          "Escala",
+          "Ubicación",
+          "Equilibrio"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Balance",
+        "es-MX": "Equilibrio"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El equilibrio hace referencia a la distribución adecuada de los elementos de diseño dentro de una página. Su objetivo es lograr una composición armoniosa que transmita estabilidad visual y facilite la comprensión del contenido."
+          },
+          {
+            "type": "text",
+            "content": "Una distribución equilibrada permite que ningún elemento domine excesivamente la composición y contribuye a mejorar la experiencia de usuario."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Principios de composición visual",
+      "Question Text": {
+        "en-US": [
+          "It refers to the distribution of elements, whether symmetrical or asymmetrical, based on a central point shared by the elements:"
+        ],
+        "es-MX": [
+          "Se refiere a la distribución de los elementos ya sea asimétrica o simétrica, se realiza a partir de un punto central que tienen en común los elementos:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Contrast",
+          "Scale",
+          "Location",
+          "Radial balance"
+        ],
+        "es-MX": [
+          "Contraste",
+          "Escala",
+          "Ubicación",
+          "Equilibrio radial"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Radial balance",
+        "es-MX": "Equilibrio radial"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El equilibrio radial se produce cuando los elementos se organizan alrededor de un punto central común. Esta disposición puede ser simétrica o asimétrica, pero todos los componentes guardan relación con dicho centro."
+          },
+          {
+            "type": "text",
+            "content": "Este tipo de equilibrio se utiliza para crear composiciones visuales atractivas y dirigir la atención del usuario hacia una zona específica del diseño."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Principios de composición visual",
+      "Question Text": {
+        "en-US": [
+          "What is the main purpose of using scale in a design?"
+        ],
+        "es-MX": [
+          "¿Cuál es la principal finalidad de utilizar la escala en un diseño?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Increase the number of elements",
+          "Establish a visual hierarchy",
+          "Replace contrast",
+          "Center all elements"
+        ],
+        "es-MX": [
+          "Incrementar el número de elementos",
+          "Establecer una jerarquía visual",
+          "Sustituir el contraste",
+          "Centrar todos los elementos"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Establish a visual hierarchy",
+        "es-MX": "Establecer una jerarquía visual"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La escala permite destacar unos elementos sobre otros mediante el uso de diferentes tamaños, facilitando que el usuario identifique rápidamente la información más importante."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Principios de composición visual",
+      "Question Text": {
+        "en-US": [
+          "What is the objective of balance in a composition?"
+        ],
+        "es-MX": [
+          "¿Cuál es el objetivo del equilibrio en una composición?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Generate visual instability",
+          "Achieve an orderly and harmonious distribution",
+          "Increase contrast",
+          "Reduce the number of components"
+        ],
+        "es-MX": [
+          "Generar inestabilidad visual",
+          "Lograr una distribución ordenada y armoniosa",
+          "Incrementar el contraste",
+          "Reducir el número de componentes"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Achieve an orderly and harmonious distribution",
+        "es-MX": "Lograr una distribución ordenada y armoniosa"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El equilibrio busca distribuir los elementos de manera que la composición resulte agradable y estable visualmente, favoreciendo una mejor comprensión y una experiencia de usuario más satisfactoria."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Moodboard",
+      "Question Text": {
+        "en-US": [
+          "It is a technique that originated in the world of fashion and interior design, but in recent decades has been extended to other fields such as photography, video games or cinema:"
+        ],
+        "es-MX": [
+          "Es una técnica que surgió del mundo de la moda y el diseño de interiores, pero que en las últimas décadas se ha extrapolado a otros ámbitos como la fotografía, los videojuegos o el cine:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Graphic design",
+          "Moodboard",
+          "Web design",
+          "UX"
+        ],
+        "es-MX": [
+          "Diseño gráfico",
+          "Moodboard",
+          "Diseño web",
+          "UX"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Moodboard",
+        "es-MX": "Moodboard"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El moodboard es una técnica utilizada para representar visualmente ideas, estilos y conceptos mediante imágenes, colores, tipografías y otros elementos gráficos. Aunque se originó en ámbitos como la moda y el diseño de interiores, actualmente se emplea en disciplinas como la fotografía, el cine, los videojuegos y el diseño de interfaces."
+          },
+          {
+            "type": "text",
+            "content": "Su principal objetivo es transmitir una idea visual y servir como referencia para mantener una línea de diseño coherente durante el desarrollo del proyecto."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Moodboard",
+      "Question Text": {
+        "en-US": [
+          "Which of the following options does not correspond to an advantage of using moodboards?"
+        ],
+        "es-MX": [
+          "Cuál de las siguientes opciones no corresponde a una ventaja de utilizar moodboard:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "They are unrealistic",
+          "They are dynamic",
+          "Team members use them as a guide",
+          "They make it easier to express a visual concept"
+        ],
+        "es-MX": [
+          "Resultan poco realistas",
+          "Es dinámico",
+          "Los miembros del equipo lo usan como guía",
+          "Resulta más sencillo expresar un concepto visual"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "They are unrealistic",
+        "es-MX": "Resultan poco realistas"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Que un moodboard resulte poco realista no representa una ventaja. Entre sus principales beneficios destacan la facilidad para expresar ideas visuales, servir como guía para el equipo de trabajo y favorecer una comunicación más clara entre los participantes del proyecto."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Moodboard",
+      "Question Text": {
+        "en-US": [
+          "Step where the process starts from an idea, in the case of a new project, or from the branding provided by the client:"
+        ],
+        "es-MX": [
+          "Paso donde se parte de una idea, en el caso de un proyecto nuevo, o del branding suministrado por el cliente:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Organization of elements",
+          "Previous analysis",
+          "Collection of elements",
+          "Elements"
+        ],
+        "es-MX": [
+          "Organización de los elementos",
+          "Análisis previo",
+          "Recopilación de los elementos",
+          "Elementos"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Previous analysis",
+        "es-MX": "Análisis previo"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El análisis previo constituye la primera etapa en la elaboración de un moodboard. En ella se parte de una idea inicial o del branding proporcionado por el cliente, con el propósito de definir el estilo, la identidad visual y los objetivos del proyecto."
+          },
+          {
+            "type": "text",
+            "content": "Esta fase facilita la selección posterior de imágenes, colores y otros elementos que formarán parte del moodboard."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Moodboard",
+      "Question Text": {
+        "en-US": [
+          "The functions of this element may become limited if too many colors are used, even for secondary elements, since the usefulness assigned to represent the idea is reduced:"
+        ],
+        "es-MX": [
+          "Las funciones de este elemento pueden verse limitadas si utilizamos demasiados colores, aunque sea para elementos secundarios, puesto que se reduce la utilidad que le habíamos asignado para representar la idea:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Interface",
+          "Sketch",
+          "Design",
+          "Color"
+        ],
+        "es-MX": [
+          "Interfaz",
+          "Sketch",
+          "Diseño",
+          "Color"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Color",
+        "es-MX": "Color"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El color es un elemento fundamental para transmitir ideas y emociones dentro de una composición visual. Sin embargo, utilizar demasiados colores puede disminuir su efectividad y dificultar la representación clara del concepto que se desea comunicar."
+          },
+          {
+            "type": "text",
+            "content": "Por ello, en diseño se recomienda utilizar una paleta de colores coherente y limitada para mantener la armonía visual y reforzar el mensaje."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Evaluación de imágenes",
+      "Question Text": {
+        "en-US": [
+          "The aspects to be evaluated are related to image quality —exposure, color reproduction, sharpness, resolution and noise— and composition:"
+        ],
+        "es-MX": [
+          "Los aspectos para evaluar están relacionados con la calidad de la imagen —exposición, reproducción del color, nitidez, resolución y ruido— y la composición:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Legibility and credibility",
+          "Utility",
+          "Efficiency",
+          "Reliability"
+        ],
+        "es-MX": [
+          "Legibilidad y credibilidad",
+          "Utilidad",
+          "Eficacia",
+          "Confiabilidad"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Legibility and credibility",
+        "es-MX": "Legibilidad y credibilidad"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La legibilidad y credibilidad de una imagen dependen de factores como la exposición, la reproducción del color, la nitidez, la resolución y la composición. Estos aspectos influyen en la facilidad con que la información puede interpretarse y en la confianza que transmite al usuario."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Evaluación de imágenes",
+      "Question Text": {
+        "en-US": [
+          "We evaluate what we want to communicate, what the photograph communicates and what it should communicate:"
+        ],
+        "es-MX": [
+          "Evaluamos qué queremos comunicar, qué comunica la fotografía y debería comunicar:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Message",
+          "Utility",
+          "Efficiency",
+          "Reliability"
+        ],
+        "es-MX": [
+          "Mensaje",
+          "Utilidad",
+          "Eficacia",
+          "Confiabilidad"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Message",
+        "es-MX": "Mensaje"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El mensaje hace referencia a la intención comunicativa de la imagen. Durante la evaluación se analiza si la fotografía transmite correctamente aquello que se desea comunicar y si el usuario interpreta el contenido de la manera esperada."
+          },
+          {
+            "type": "text",
+            "content": "Una imagen efectiva debe mantener coherencia entre el mensaje que se pretende transmitir y la percepción que tienen los usuarios al observarla."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Evaluación de imágenes",
+      "Question Text": {
+        "en-US": [
+          "Why is it advisable to limit the number of colors in a design?"
+        ],
+        "es-MX": [
+          "¿Por qué es recomendable limitar la cantidad de colores en un diseño?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "To reduce visual effectiveness",
+          "To maintain coherence and reinforce the message",
+          "To eliminate contrast",
+          "To increase visual noise"
+        ],
+        "es-MX": [
+          "Para disminuir la efectividad visual",
+          "Para mantener la coherencia y reforzar el mensaje",
+          "Para eliminar el contraste",
+          "Para incrementar el ruido visual"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To maintain coherence and reinforce the message",
+        "es-MX": "Para mantener la coherencia y reforzar el mensaje"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Una paleta de colores controlada facilita la comprensión del diseño y ayuda a comunicar las ideas de manera más clara. El exceso de colores puede generar confusión y reducir la utilidad del color como elemento de comunicación."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Evaluación de imágenes",
+      "Question Text": {
+        "en-US": [
+          "Which factors influence the legibility and credibility of an image?"
+        ],
+        "es-MX": [
+          "¿Qué factores influyen en la legibilidad y credibilidad de una imagen?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Exposure, color reproduction, sharpness and composition",
+          "Programming language",
+          "Database structure",
+          "Network speed"
+        ],
+        "es-MX": [
+          "Exposición, reproducción del color, nitidez y composición",
+          "Lenguaje de programación",
+          "Estructura de la base de datos",
+          "Velocidad de red"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Exposure, color reproduction, sharpness and composition",
+        "es-MX": "Exposición, reproducción del color, nitidez y composición"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La calidad técnica y la composición de una imagen influyen directamente en su legibilidad y credibilidad, ya que permiten que la información sea interpretada de manera correcta y transmiten mayor confianza al usuario."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Elementos visuales",
+      "Question Text": {
+        "en-US": [
+          "The main function of the icon is to transmit visual information and the associated concept in the fastest and most intuitive way:"
+        ],
+        "es-MX": [
+          "La función principal del icono es conseguir transmitir la información visual y el concepto asociado de la forma más rápida e intuitiva:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Icon",
+          "Illustrations",
+          "Text",
+          "Typography"
+        ],
+        "es-MX": [
+          "Icono",
+          "Ilustraciones",
+          "Texto",
+          "Tipografías"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Icon",
+        "es-MX": "Icono"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los iconos permiten transmitir información y conceptos de manera rápida e intuitiva. Gracias a su naturaleza visual, facilitan la identificación de acciones y funciones sin necesidad de utilizar grandes cantidades de texto."
+          },
+          {
+            "type": "text",
+            "content": "En las interfaces de usuario, los iconos mejoran la comprensión y agilizan la interacción, contribuyendo a una experiencia más eficiente."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Elementos visuales",
+      "Question Text": {
+        "en-US": [
+          "They are used to communicate complex ideas in a more accessible way:"
+        ],
+        "es-MX": [
+          "Se utilizan para transmitir ideas complejas de una manera más accesible:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Icon",
+          "Illustrations",
+          "Text",
+          "Typography"
+        ],
+        "es-MX": [
+          "Icono",
+          "Ilustraciones",
+          "Texto",
+          "Tipografías"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Illustrations",
+        "es-MX": "Ilustraciones"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las ilustraciones permiten explicar conceptos complejos de forma visual y comprensible. Además de atraer la atención del usuario, facilitan la comunicación de ideas y enriquecen la experiencia visual de una interfaz."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Tipografía",
+      "Question Text": {
+        "en-US": [
+          "They make text more difficult to read in body text and small sizes:"
+        ],
+        "es-MX": [
+          "Hacen que el texto sea más difícil de leer en cuerpos de texto y tamaños pequeños:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Icon",
+          "Illustrations",
+          "Text",
+          "Typography"
+        ],
+        "es-MX": [
+          "Icono",
+          "Ilustraciones",
+          "Texto",
+          "Tipografías"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Typography",
+        "es-MX": "Tipografías"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Algunas tipografías decorativas o demasiado elaboradas pueden dificultar la lectura cuando se utilizan en cuerpos de texto o en tamaños pequeños. Por ello, es recomendable emplear tipografías claras y legibles para mejorar la comprensión y la experiencia de usuario."
+          },
+          {
+            "type": "text",
+            "content": "La legibilidad es uno de los factores más importantes en el diseño de interfaces y en la presentación de la información."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Elementos visuales",
+      "Question Text": {
+        "en-US": [
+          "What is one of the main advantages of using icons in interfaces?"
+        ],
+        "es-MX": [
+          "¿Cuál es una de las principales ventajas de utilizar iconos en las interfaces?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "They replace all text",
+          "They facilitate quick understanding of information",
+          "They eliminate navigation",
+          "They increase visual complexity"
+        ],
+        "es-MX": [
+          "Sustituyen todo el texto",
+          "Facilitan la comprensión rápida de la información",
+          "Eliminan la navegación",
+          "Incrementan la complejidad visual"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "They facilitate quick understanding of information",
+        "es-MX": "Facilitan la comprensión rápida de la información"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los iconos permiten representar acciones y conceptos de forma inmediata, reduciendo la cantidad de texto necesario y haciendo más intuitiva la interacción con el sistema."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Elementos visuales",
+      "Question Text": {
+        "en-US": [
+          "Why are illustrations useful in interface design?"
+        ],
+        "es-MX": [
+          "¿Por qué son útiles las ilustraciones en el diseño de interfaces?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Because they simplify the communication of complex ideas",
+          "Because they replace functionality",
+          "Because they eliminate text",
+          "Because they increase response times"
+        ],
+        "es-MX": [
+          "Porque simplifican la comunicación de ideas complejas",
+          "Porque sustituyen la funcionalidad",
+          "Porque eliminan completamente el texto",
+          "Porque incrementan los tiempos de respuesta"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Because they simplify the communication of complex ideas",
+        "es-MX": "Porque simplifican la comunicación de ideas complejas"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las ilustraciones ayudan a representar visualmente conceptos difíciles de explicar únicamente con texto, mejorando la comprensión y haciendo más atractiva la experiencia del usuario."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,819 @@
+{
+  "meta": {
+    "slug": "ux-ui-fundamentos",
+    "title": "Experiencia e Interfaz de Usuario (UX y UI)",
+    "subject": "UX Y UI",
+    "unit": 7,
+    "classNo": 7,
+    "description": "Preguntas relacionadas con los conceptos fundamentales de experiencia de usuario (UX), interfaz de usuario (UI) y usabilidad.",
+    "tags": [
+      "UX",
+      "UI",
+      "Experiencia de Usuario",
+      "Interfaz de Usuario",
+      "Usabilidad"
+    ]
+  },
+  "Questions": [
+    {
+      "Category": "Evolución de las interfaces",
+      "Question Text": {
+        "en-US": [
+          "Users had to type commands using abbreviations and key combinations that appeared on the screen, and the system responded with an action:"
+        ],
+        "es-MX": [
+          "El usuario tenía que escribir comandos, usando abreviaturas y combinaciones de teclas, que aparecían en pantalla y el sistema respondía con una acción:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Graphical User Interfaces (GUI)",
+          "Command line",
+          "Web interface",
+          "Virtual reality interface"
+        ],
+        "es-MX": [
+          "Interfaces gráficas de usuario (GUI)",
+          "Línea de comandos",
+          "Interfaz web",
+          "Interfaz de realidad virtual"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Command line",
+        "es-MX": "Línea de comandos"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las interfaces de línea de comandos fueron uno de los primeros mecanismos de interacción entre las personas y las computadoras. El usuario debía introducir comandos mediante texto, utilizando abreviaturas y combinaciones de teclas para ejecutar distintas acciones."
+          },
+          {
+            "type": "text",
+            "content": "Este tipo de interfaz requería memorizar instrucciones específicas y poseer conocimientos técnicos, por lo que posteriormente fueron sustituidas en gran medida por interfaces más intuitivas."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Evolución de las interfaces",
+      "Question Text": {
+        "en-US": [
+          "Graphic design became a priority and websites began to resemble multimedia environments with images, videos and text:"
+        ],
+        "es-MX": [
+          "Aquí el diseño gráfico fue una prioridad y los diseños web empezaron a parecerse cada vez más a entornos multimedia, con imágenes, vídeos y texto:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Graphical User Interfaces (GUI)",
+          "Command line",
+          "Web interface",
+          "Virtual reality interface"
+        ],
+        "es-MX": [
+          "Interfaces gráficas de usuario (GUI)",
+          "Línea de comandos",
+          "Interfaz web",
+          "Interfaz de realidad virtual"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Web interface",
+        "es-MX": "Interfaz web"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Con la evolución de Internet surgieron las interfaces web, en las cuales el diseño visual adquirió una gran importancia. Estas interfaces integran texto, imágenes, audio, vídeo y otros elementos multimedia para proporcionar experiencias más atractivas e interactivas."
+          },
+          {
+            "type": "text",
+            "content": "La evolución de las interfaces web ha permitido mejorar la experiencia de usuario y facilitar el acceso a la información desde diferentes dispositivos."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Evolución de las interfaces",
+      "Question Text": {
+        "en-US": [
+          "Later, WIMP interfaces emerged, an acronym that summarizes the main components in English: windows, icons, menus and pointer, and GUI interfaces:"
+        ],
+        "es-MX": [
+          "Posteriormente surgieron las interfaces WIMP, un acrónimo que resume los componentes principales en inglés: windows, icons, menus y pointer (ventanas, iconos, menús y puntero), y las interfaces GUI, interfaces gráficas de usuario:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Graphical User Interfaces (GUI)",
+          "Command line",
+          "Web interface",
+          "Virtual reality interface"
+        ],
+        "es-MX": [
+          "Interfaces gráficas de usuario (GUI)",
+          "Línea de comandos",
+          "Interfaz web",
+          "Interfaz de realidad virtual"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Graphical User Interfaces (GUI)",
+        "es-MX": "Interfaces gráficas de usuario (GUI)"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las interfaces gráficas de usuario (GUI) introdujeron elementos visuales como ventanas, iconos, menús y punteros, conocidos en conjunto como WIMP. Estos componentes facilitaron la interacción con los sistemas informáticos, haciendo que las computadoras fueran más accesibles para los usuarios."
+          },
+          {
+            "type": "text",
+            "content": "Las GUI marcaron una transición importante al permitir que las personas interactuaran mediante elementos gráficos en lugar de depender exclusivamente de comandos escritos."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Evolución de las interfaces",
+      "Question Text": {
+        "en-US": [
+          "What does the acronym WIMP stand for?"
+        ],
+        "es-MX": [
+          "¿Qué significan las siglas WIMP?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Windows, Icons, Menus and Pointer",
+          "Web, Images, Menus and Processes",
+          "Windows, Inputs, Maps and Pointer",
+          "World Interface Menu Process"
+        ],
+        "es-MX": [
+          "Windows, Icons, Menus and Pointer",
+          "Web, Images, Menus and Processes",
+          "Windows, Inputs, Maps and Pointer",
+          "World Interface Menu Process"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Windows, Icons, Menus and Pointer",
+        "es-MX": "Windows, Icons, Menus and Pointer"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "WIMP es un acrónimo formado por Windows, Icons, Menus y Pointer. Estos elementos constituyen la base de las interfaces gráficas de usuario modernas y facilitan una interacción más intuitiva entre las personas y los sistemas informáticos."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Evolución de las interfaces",
+      "Question Text": {
+        "en-US": [
+          "What was one of the main advantages of graphical user interfaces over command line interfaces?"
+        ],
+        "es-MX": [
+          "¿Cuál fue una de las principales ventajas de las interfaces gráficas de usuario respecto a las interfaces de línea de comandos?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "They required memorizing more commands",
+          "They made interaction easier through visual elements",
+          "They eliminated menus",
+          "They reduced system capabilities"
+        ],
+        "es-MX": [
+          "Requerían memorizar más comandos",
+          "Facilitaban la interacción mediante elementos visuales",
+          "Eliminaban los menús",
+          "Reducían las capacidades del sistema"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "They made interaction easier through visual elements",
+        "es-MX": "Facilitaban la interacción mediante elementos visuales"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las interfaces gráficas de usuario facilitaron la interacción entre las personas y las computadoras mediante ventanas, iconos, menús y punteros, reduciendo la necesidad de memorizar comandos y haciendo los sistemas más intuitivos y accesibles."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Evolución de las interfaces",
+      "Question Text": {
+        "en-US": [
+          "They had a very small screen, a physical keyboard, microphones and headphones/speakers for telephone conversations:"
+        ],
+        "es-MX": [
+          "Disponían de una pantalla muy pequeña, un teclado físico, micrófonos y auriculares/altavoces para tener una conversación telefónica:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Computers",
+          "Mobile phones",
+          "Projector",
+          "Monitors"
+        ],
+        "es-MX": [
+          "Computadoras",
+          "Teléfonos móviles",
+          "Proyector",
+          "Monitores"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Mobile phones",
+        "es-MX": "Teléfonos móviles"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los primeros teléfonos móviles disponían de pantallas pequeñas, teclados físicos y componentes como micrófonos y altavoces que permitían mantener conversaciones telefónicas. Con el paso del tiempo evolucionaron hasta convertirse en dispositivos inteligentes con pantallas táctiles y múltiples funcionalidades."
+          },
+          {
+            "type": "text",
+            "content": "La evolución de los teléfonos móviles ha transformado la manera en que las personas se comunican e interactúan con la información, dando origen a nuevas formas de interfaces y experiencias de usuario."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Evolución de las interfaces",
+      "Question Text": {
+        "en-US": [
+          "These interfaces can improve user understanding because they facilitate multiple representations of information and stimulate curiosity:"
+        ],
+        "es-MX": [
+          "Estas interfaces pueden mejorar la comprensión del usuario, gracias a que facilitan múltiples representaciones de la información, y a que estimulan la curiosidad:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Multimedia and video games",
+          "Command line",
+          "Mobile phones",
+          "Virtual reality interface"
+        ],
+        "es-MX": [
+          "Multimedia y videojuegos",
+          "Línea de comandos",
+          "Teléfonos móviles",
+          "Interfaz de realidad virtual"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Multimedia and video games",
+        "es-MX": "Multimedia y videojuegos"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las interfaces multimedia y los videojuegos favorecen la comprensión al combinar texto, imágenes, sonido, animaciones y otros recursos interactivos. Estas características permiten representar la información de distintas maneras y estimulan la curiosidad y el aprendizaje del usuario."
+          },
+          {
+            "type": "text",
+            "content": "La incorporación de elementos multimedia ha contribuido a desarrollar experiencias más dinámicas y atractivas, facilitando la interacción y mejorando la experiencia de usuario."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Evolución de las interfaces",
+      "Question Text": {
+        "en-US": [
+          "User interaction is carried out through an application that recognizes spoken language:"
+        ],
+        "es-MX": [
+          "La interacción del usuario se produce mediante una aplicación que reconoce el lenguaje hablado:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Multimedia and video games",
+          "Command line",
+          "Voice interface",
+          "Virtual reality interface"
+        ],
+        "es-MX": [
+          "Multimedia y videojuegos",
+          "Línea de comandos",
+          "Interfaz de Voz",
+          "Interfaz de realidad virtual"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Voice interface",
+        "es-MX": "Interfaz de Voz"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las interfaces de voz permiten la interacción entre las personas y los sistemas mediante el reconocimiento del lenguaje hablado. Estas interfaces utilizan tecnologías de procesamiento del lenguaje natural y reconocimiento de voz para interpretar instrucciones y proporcionar respuestas adecuadas."
+          },
+          {
+            "type": "text",
+            "content": "Asistentes virtuales como Siri, Alexa o Google Assistant son ejemplos de interfaces de voz que facilitan una comunicación más natural entre los usuarios y los dispositivos."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Evolución de las interfaces",
+      "Question Text": {
+        "en-US": [
+          "What characteristic distinguishes voice interfaces?"
+        ],
+        "es-MX": [
+          "¿Qué característica distingue a las interfaces de voz?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "They require command memorization",
+          "They recognize spoken language",
+          "They only use graphical elements",
+          "They depend on physical keyboards"
+        ],
+        "es-MX": [
+          "Requieren memorizar comandos",
+          "Reconocen el lenguaje hablado",
+          "Utilizan únicamente elementos gráficos",
+          "Dependen de teclados físicos"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "They recognize spoken language",
+        "es-MX": "Reconocen el lenguaje hablado"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las interfaces de voz se caracterizan por permitir la interacción mediante el habla, facilitando una comunicación más natural y accesible entre las personas y los sistemas informáticos."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Evolución de las interfaces",
+      "Question Text": {
+        "en-US": [
+          "What is one advantage of multimedia interfaces?"
+        ],
+        "es-MX": [
+          "¿Cuál es una ventaja de las interfaces multimedia?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "They reduce information representation",
+          "They stimulate curiosity and improve understanding",
+          "They eliminate interaction",
+          "They only use text"
+        ],
+        "es-MX": [
+          "Reducen las formas de representar la información",
+          "Estimulan la curiosidad y mejoran la comprensión",
+          "Eliminan la interacción",
+          "Utilizan únicamente texto"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "They stimulate curiosity and improve understanding",
+        "es-MX": "Estimulan la curiosidad y mejoran la comprensión"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las interfaces multimedia combinan diferentes recursos como imágenes, sonido, vídeo y animaciones, lo que favorece la comprensión de la información y hace más atractiva la experiencia para los usuarios."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Arquitectura de información",
+      "Question Text": {
+        "en-US": [
+          "It refers to text, product images, videos, etc., because this content will determine how information is organized:"
+        ],
+        "es-MX": [
+          "Se refiere al texto, imágenes de productos, vídeos, etc., porque este contenido va a determinar cómo se organiza la información:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Information architecture",
+          "Functionality",
+          "Content",
+          "Graphic design"
+        ],
+        "es-MX": [
+          "Arquitectura de información",
+          "Funcionalidad",
+          "Contenido",
+          "Diseño gráfico"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Content",
+        "es-MX": "Contenido"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El contenido comprende todos los elementos de información que forman parte de un producto digital, como textos, imágenes, vídeos y otros recursos multimedia. La naturaleza y cantidad del contenido influyen directamente en la forma en que la información será organizada y presentada a los usuarios."
+          },
+          {
+            "type": "text",
+            "content": "Una adecuada organización del contenido facilita la navegación, mejora la experiencia de usuario y permite que las personas encuentren la información que necesitan de manera más eficiente."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Arquitectura de información",
+      "Question Text": {
+        "en-US": [
+          "It refers to how information is organized, the navigation structure or the necessary screen flows:"
+        ],
+        "es-MX": [
+          "Se refiere a cómo se organiza la información, la estructura de navegación o flujos de pantallas necesarios:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Information architecture",
+          "Functionality",
+          "Content",
+          "Graphic design"
+        ],
+        "es-MX": [
+          "Arquitectura de información",
+          "Funcionalidad",
+          "Contenido",
+          "Diseño gráfico"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Information architecture",
+        "es-MX": "Arquitectura de información"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La arquitectura de información se encarga de organizar, estructurar y relacionar los contenidos de un sistema para facilitar su comprensión y acceso. Incluye la definición de la navegación, los flujos de pantallas y la distribución de la información dentro del producto."
+          },
+          {
+            "type": "text",
+            "content": "Su finalidad es permitir que los usuarios encuentren la información y las funcionalidades de forma sencilla, contribuyendo a una mejor experiencia de uso."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Arquitectura de información",
+      "Question Text": {
+        "en-US": [
+          "It refers to user flows, menus, categories in which content is organized and the search system:"
+        ],
+        "es-MX": [
+          "Se refiere a los flujos de usuario, los menús y categorías en las que se organiza el contenido, y el sistema de búsqueda:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Information architecture",
+          "Website structure or map",
+          "Content",
+          "Graphic design"
+        ],
+        "es-MX": [
+          "Arquitectura de información",
+          "Estructura o mapa del sitio web",
+          "Contenido",
+          "Diseño gráfico"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Website structure or map",
+        "es-MX": "Estructura o mapa del sitio web"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La estructura o mapa del sitio web representa la organización de las páginas, los menús, las categorías, los flujos de navegación y los mecanismos de búsqueda. Esta estructura permite visualizar cómo se relacionan los contenidos y facilita que los usuarios encuentren la información de manera eficiente."
+          },
+          {
+            "type": "text",
+            "content": "Un mapa del sitio bien diseñado contribuye a mejorar la usabilidad y a mantener una organización coherente de la información dentro del sistema."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Arquitectura de información",
+      "Question Text": {
+        "en-US": [
+          "What is the main purpose of information architecture?"
+        ],
+        "es-MX": [
+          "¿Cuál es el principal objetivo de la arquitectura de información?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Increase the amount of content",
+          "Organize and structure information to facilitate access",
+          "Replace graphic design",
+          "Eliminate navigation systems"
+        ],
+        "es-MX": [
+          "Incrementar la cantidad de contenido",
+          "Organizar y estructurar la información para facilitar el acceso",
+          "Sustituir el diseño gráfico",
+          "Eliminar los sistemas de navegación"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Organize and structure information to facilitate access",
+        "es-MX": "Organizar y estructurar la información para facilitar el acceso"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La arquitectura de información tiene como finalidad organizar y estructurar los contenidos y funcionalidades de un sistema para que los usuarios puedan localizar la información de manera sencilla y eficiente."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Arquitectura de información",
+      "Question Text": {
+        "en-US": [
+          "What element influences how information should be organized within a digital product?"
+        ],
+        "es-MX": [
+          "¿Qué elemento influye en la forma en que debe organizarse la información dentro de un producto digital?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Content",
+          "Graphic design",
+          "Hardware",
+          "Programming language"
+        ],
+        "es-MX": [
+          "Contenido",
+          "Diseño gráfico",
+          "Hardware",
+          "Lenguaje de programación"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Content",
+        "es-MX": "Contenido"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El contenido es uno de los factores que determinan la organización de la información, ya que los textos, imágenes, vídeos y demás elementos deben estructurarse de forma lógica para facilitar la comprensión y navegación del usuario."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Componentes de interfaz de usuario",
+      "Question Text": {
+        "en-US": [
+          "It is activated when pressed and has a text label or icon:"
+        ],
+        "es-MX": [
+          "Se acciona al pulsar y tiene una etiqueta de texto o icono:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Text field",
+          "Date picker",
+          "Checkboxes",
+          "Button"
+        ],
+        "es-MX": [
+          "Campo textual",
+          "Selector de fecha",
+          "Casillas para marcar",
+          "Botón"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Button",
+        "es-MX": "Botón"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Un botón es un componente de interfaz que permite ejecutar una acción cuando el usuario lo pulsa. Generalmente contiene una etiqueta de texto, un icono o ambos, con el propósito de comunicar claramente la acción que realizará."
+          },
+          {
+            "type": "text",
+            "content": "Los botones son uno de los elementos más comunes en las interfaces gráficas de usuario y permiten iniciar procesos, enviar formularios o acceder a funcionalidades específicas."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Componentes de interfaz de usuario",
+      "Question Text": {
+        "en-US": [
+          "It is used to select one or more options from a set:"
+        ],
+        "es-MX": [
+          "Sirve para seleccionar una o más opciones de un conjunto:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Text field",
+          "Date picker",
+          "Checkboxes",
+          "Button"
+        ],
+        "es-MX": [
+          "Campo textual",
+          "Selector de fecha",
+          "Casillas para marcar",
+          "Botón"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Checkboxes",
+        "es-MX": "Casillas para marcar"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las casillas para marcar permiten seleccionar una o varias opciones de manera independiente dentro de un conjunto. Cada casilla puede activarse o desactivarse sin afectar a las demás, lo que las hace adecuadas cuando es posible elegir múltiples alternativas."
+          },
+          {
+            "type": "text",
+            "content": "Este componente es ampliamente utilizado en formularios y configuraciones donde el usuario puede seleccionar varias preferencias simultáneamente."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Componentes de interfaz de usuario",
+      "Question Text": {
+        "en-US": [
+          "It is used to select only one option from a set, but is more compact than radio buttons:"
+        ],
+        "es-MX": [
+          "Sirve para seleccionar una sola opción de un conjunto, pero es más compacta que los botones de radio:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Text field",
+          "Date picker",
+          "Drop-down list",
+          "Button"
+        ],
+        "es-MX": [
+          "Campo textual",
+          "Selector de fecha",
+          "Lista desplegable",
+          "Botón"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Drop-down list",
+        "es-MX": "Lista desplegable"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La lista desplegable permite seleccionar una única opción entre varias alternativas y ocupa menos espacio que un conjunto de botones de radio. Las opciones permanecen ocultas hasta que el usuario despliega la lista."
+          },
+          {
+            "type": "text",
+            "content": "Este componente resulta especialmente útil cuando existe un gran número de opciones y se desea mantener una interfaz más limpia y organizada."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Componentes de interfaz de usuario",
+      "Question Text": {
+        "en-US": [
+          "What is the main purpose of a button in an interface?"
+        ],
+        "es-MX": [
+          "¿Cuál es la principal finalidad de un botón en una interfaz?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Store information",
+          "Execute an action",
+          "Select multiple options",
+          "Display dates"
+        ],
+        "es-MX": [
+          "Almacenar información",
+          "Ejecutar una acción",
+          "Seleccionar varias opciones",
+          "Mostrar fechas"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Execute an action",
+        "es-MX": "Ejecutar una acción"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los botones permiten iniciar acciones dentro de una interfaz, como enviar formularios, confirmar operaciones o acceder a determinadas funciones del sistema."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Componentes de interfaz de usuario",
+      "Question Text": {
+        "en-US": [
+          "Why are drop-down lists considered more compact than radio buttons?"
+        ],
+        "es-MX": [
+          "¿Por qué las listas desplegables se consideran más compactas que los botones de radio?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Because they allow selecting several options simultaneously",
+          "Because they hide the options until they are needed",
+          "Because they replace buttons",
+          "Because they do not require user interaction"
+        ],
+        "es-MX": [
+          "Porque permiten seleccionar varias opciones simultáneamente",
+          "Porque ocultan las opciones hasta que son necesarias",
+          "Porque sustituyen a los botones",
+          "Porque no requieren interacción del usuario"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Because they hide the options until they are needed",
+        "es-MX": "Porque ocultan las opciones hasta que son necesarias"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las listas desplegables muestran únicamente la opción seleccionada y mantienen ocultas las demás hasta que el usuario despliega la lista, permitiendo ahorrar espacio dentro de la interfaz."
+          }
+        ]
+      }
+    }
+  ]
+}

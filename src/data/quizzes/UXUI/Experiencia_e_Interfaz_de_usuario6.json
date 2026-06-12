@@ -1,0 +1,1173 @@
+{
+  "meta": {
+    "slug": "ux-ui-fundamentos",
+    "title": "Experiencia e Interfaz de Usuario (UX y UI)",
+    "subject": "UX Y UI",
+    "unit": 6,
+    "classNo": 6,
+    "description": "Preguntas relacionadas con los conceptos fundamentales de experiencia de usuario (UX), interfaz de usuario (UI) y usabilidad.",
+    "tags": [
+      "UX",
+      "UI",
+      "Experiencia de Usuario",
+      "Interfaz de Usuario",
+      "Usabilidad"
+    ]
+  },
+  "Questions": [
+    {
+      "Category": "Diagramas de flujo",
+      "Question Text": {
+        "en-US": [
+          "They are schemes that use geometric figures and icons to graphically represent the organization of information and the operation of processes through structured and related steps:"
+        ],
+        "es-MX": [
+          "Son esquemas que utilizan figuras geométricas e iconos, para representar gráficamente la organización de la información y el funcionamiento de los procesos mediante pasos estructurados y relacionados:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Symbol",
+          "Flowchart",
+          "Main scheme",
+          "Tracking diagrams"
+        ],
+        "es-MX": [
+          "Símbolo",
+          "Diagrama de flujo",
+          "Esquema principal",
+          "Diagramas de seguimiento"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Flowchart",
+        "es-MX": "Diagrama de flujo"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los diagramas de flujo son representaciones gráficas que utilizan símbolos, figuras geométricas y conectores para describir procesos y mostrar la secuencia lógica de las actividades. Facilitan la comprensión de la organización de la información y permiten visualizar de manera estructurada las relaciones entre las diferentes etapas de un proceso."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Diagramas de flujo",
+      "Question Text": {
+        "en-US": [
+          "Symbols represented by a rectangle and the dog-eared page icon:"
+        ],
+        "es-MX": [
+          "Símbolos representados por un rectángulo y el icono con oreja de perro:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Process",
+          "Print",
+          "Input",
+          "Pages and files"
+        ],
+        "es-MX": [
+          "Proceso",
+          "Impresión",
+          "Entrada",
+          "Página y archivos"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Pages and files",
+        "es-MX": "Página y archivos"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "En los diagramas de flujo, el símbolo con forma de documento o con una esquina doblada, conocido como 'oreja de perro', representa páginas, documentos o archivos. Estos símbolos permiten identificar información almacenada o generada dentro de un proceso."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Diagramas de flujo",
+      "Question Text": {
+        "en-US": [
+          "Through this symbol the conceptual relationships between two elements are represented:"
+        ],
+        "es-MX": [
+          "A través de este símbolo se representan las relaciones conceptuales entre dos elementos:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Process",
+          "Print",
+          "Input",
+          "Simple lines or connectors"
+        ],
+        "es-MX": [
+          "Proceso",
+          "Impresión",
+          "Entrada",
+          "Líneas simples o conectores"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Simple lines or connectors",
+        "es-MX": "Líneas simples o conectores"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las líneas simples o conectores se utilizan en los diagramas de flujo para representar las relaciones y la secuencia entre dos elementos. Su función es indicar la dirección del flujo de información o de las actividades, facilitando la comprensión de las conexiones existentes entre las distintas partes del proceso."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Diagramas de flujo",
+      "Question Text": {
+        "en-US": [
+          "What is the main purpose of a flowchart?"
+        ],
+        "es-MX": [
+          "¿Cuál es el principal objetivo de un diagrama de flujo?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Increase process complexity",
+          "Represent processes graphically",
+          "Replace written documentation",
+          "Eliminate information"
+        ],
+        "es-MX": [
+          "Incrementar la complejidad de los procesos",
+          "Representar gráficamente procesos",
+          "Sustituir la documentación escrita",
+          "Eliminar información"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Represent processes graphically",
+        "es-MX": "Representar gráficamente procesos"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los diagramas de flujo tienen como finalidad representar gráficamente procesos y facilitar la comprensión de las actividades, decisiones y relaciones existentes entre los diferentes elementos que forman parte de un sistema."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Diagramas de flujo",
+      "Question Text": {
+        "en-US": [
+          "What element indicates the direction of the flow within a flowchart?"
+        ],
+        "es-MX": [
+          "¿Qué elemento indica la dirección del flujo dentro de un diagrama de flujo?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Pages and files",
+          "Rectangle",
+          "Connectors or arrows",
+          "Print symbol"
+        ],
+        "es-MX": [
+          "Página y archivos",
+          "Rectángulo",
+          "Conectores o flechas",
+          "Símbolo de impresión"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Connectors or arrows",
+        "es-MX": "Conectores o flechas"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los conectores o flechas indican la dirección que sigue el proceso y muestran la secuencia lógica entre las actividades representadas en un diagrama de flujo."
+          }
+        ]
+      }
+    },
+{
+  "Category": "Diagramas de flujo y arquitectura de información",
+  "Question Text": {
+    "en-US": [
+      "This symbol represents when a user's action shows multiple outcomes:"
+    ],
+    "es-MX": [
+      "Este símbolo representa cuando una acción de un usuario muestra múltiples resultados:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Boxes",
+      "Rectangle",
+      "Circles",
+      "Semicircle"
+    ],
+    "es-MX": [
+      "Cuadros",
+      "Rectángulo",
+      "Círculos",
+      "Semicírculo"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Semicircle",
+    "es-MX": "Semicírculo"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "El semicírculo es un símbolo utilizado para representar situaciones en las que una acción realizada por el usuario puede dar lugar a múltiples resultados. Este elemento permite visualizar diferentes caminos o alternativas dentro de un proceso, facilitando la comprensión del comportamiento del sistema y las posibles respuestas ante una interacción."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Diagramas de flujo y arquitectura de información",
+  "Question Text": {
+    "en-US": [
+      "It is known when a group of pages share common attributes and are grouped together and identified by a label:"
+    ],
+    "es-MX": [
+      "Se conoce cuando un grupo de páginas comparten atributos comunes las agrupamos (un rectángulo con las esquinas redondeadas) e identificamos la misma mediante una etiqueta:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Iterative areas",
+      "Areas",
+      "Multiple areas",
+      "Simplex areas"
+    ],
+    "es-MX": [
+      "Áreas iterativas",
+      "Áreas",
+      "Áreas múltiples",
+      "Áreas simplex"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Areas",
+    "es-MX": "Áreas"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "Las áreas representan agrupaciones de páginas o elementos que comparten características comunes. Estas agrupaciones permiten organizar la información y estructurar mejor la arquitectura del sistema, facilitando la navegación y la comprensión de las relaciones existentes entre las distintas secciones."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Diagramas de flujo y arquitectura de información",
+  "Question Text": {
+    "en-US": [
+      "They occur when sequences of steps are repeated in different contexts and are called flows:"
+    ],
+    "es-MX": [
+      "Se dan cuando aparecen unas secuencias de pasos, que se repiten en diferentes contextos, y son llamadas flujos (rectángulo con las esquinas cortadas):"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Iterative areas",
+      "Areas",
+      "Multiple areas",
+      "Reusable areas"
+    ],
+    "es-MX": [
+      "Áreas iterativas",
+      "Áreas",
+      "Áreas múltiples",
+      "Áreas reutilizables"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Reusable areas",
+    "es-MX": "Áreas reutilizables"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "Las áreas reutilizables representan secuencias de pasos o flujos que aparecen repetidamente en distintos contextos dentro de un sistema. Su utilización permite aprovechar componentes comunes, reducir la complejidad del diseño y mantener una mayor consistencia en la experiencia de usuario."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Diagramas de flujo y arquitectura de información",
+  "Question Text": {
+    "en-US": [
+      "What is the purpose of grouping pages into areas?"
+    ],
+    "es-MX": [
+      "¿Cuál es la finalidad de agrupar páginas en áreas?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Increase complexity",
+      "Organize information with common characteristics",
+      "Eliminate navigation",
+      "Replace flow diagrams"
+    ],
+    "es-MX": [
+      "Incrementar la complejidad",
+      "Organizar información con características comunes",
+      "Eliminar la navegación",
+      "Sustituir los diagramas de flujo"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Organize information with common characteristics",
+    "es-MX": "Organizar información con características comunes"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "La agrupación de páginas en áreas permite organizar la información que comparte características comunes. Esto facilita la comprensión de la estructura del sistema y contribuye a una navegación más clara y eficiente para los usuarios."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Diagramas de flujo y arquitectura de información",
+  "Question Text": {
+    "en-US": [
+      "What is one advantage of reusable areas?"
+    ],
+    "es-MX": [
+      "¿Cuál es una ventaja de las áreas reutilizables?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Increase the number of errors",
+      "Reduce consistency",
+      "Reuse common flows in different contexts",
+      "Eliminate processes"
+    ],
+    "es-MX": [
+      "Incrementar el número de errores",
+      "Reducir la consistencia",
+      "Reutilizar flujos comunes en diferentes contextos",
+      "Eliminar procesos"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Reuse common flows in different contexts",
+    "es-MX": "Reutilizar flujos comunes en diferentes contextos"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "Las áreas reutilizables permiten emplear secuencias de pasos similares en diferentes partes del sistema, favoreciendo la consistencia, simplificando el diseño y mejorando la experiencia de usuario."
+      }
+    ]
+  }
+},
+{
+  "Category": "Navegación y arquitectura de información",
+  "Question Text": {
+    "en-US": [
+      "They are the interface elements whose main objective is to help users find information and functionality:"
+    ],
+    "es-MX": [
+      "Son los elementos de la interfaz, cuyo objetivo principal es ayudar a los usuarios a encontrar información y funcionalidad:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Navigation map",
+      "Content structure",
+      "Website navigation",
+      "Site map"
+    ],
+    "es-MX": [
+      "Mapa de navegación",
+      "Estructura de contenido",
+      "La navegación de un sitio web",
+      "Mapa del sitio"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Website navigation",
+    "es-MX": "La navegación de un sitio web"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "La navegación de un sitio web está formada por los elementos de la interfaz que permiten a los usuarios localizar información, acceder a diferentes secciones y utilizar las funcionalidades disponibles. Una navegación adecuada mejora la usabilidad y facilita que las personas alcancen sus objetivos de manera eficiente."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Navegación y arquitectura de información",
+  "Question Text": {
+    "en-US": [
+      "It is the hierarchical way of displaying information that helps to find and eliminate expendable pages because they are not related to the objective of the website:"
+    ],
+    "es-MX": [
+      "Es la forma jerárquica de mostrar la información ayuda a encontrar y eliminar páginas prescindibles porque no están relacionadas con el objetivo del sitio:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Navigation map",
+      "Content structure",
+      "Website navigation",
+      "Site map"
+    ],
+    "es-MX": [
+      "Mapa de navegación",
+      "Estructura de contenido",
+      "La navegación de un sitio web",
+      "Mapa del sitio"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Site map",
+    "es-MX": "Mapa del sitio"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "El mapa del sitio representa de forma jerárquica las páginas y secciones que conforman un sitio web. Esta representación permite organizar la información, identificar redundancias y eliminar aquellas páginas que no contribuyen a los objetivos del sitio."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Principios de navegación",
+  "Question Text": {
+    "en-US": [
+      "Reducing the number of options in the main menu so that it is easier to decide corresponds to which principle?"
+    ],
+    "es-MX": [
+      "Es mejor reducir el número de opciones del menú inicial, puesto que será más fácil decidir por alguna de ellas corresponde al siguiente principio:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Garrett principle",
+      "Disclosure principle",
+      "Object principle",
+      "Choices principle"
+    ],
+    "es-MX": [
+      "Principio de Garret",
+      "Principio de la revelación",
+      "El principio de los objetos",
+      "Principio de las elecciones"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Choices principle",
+    "es-MX": "Principio de las elecciones"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "El principio de las elecciones establece que reducir el número de opciones disponibles facilita la toma de decisiones por parte de los usuarios. Un exceso de alternativas puede generar confusión y aumentar el tiempo necesario para seleccionar una opción."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Navegación y arquitectura de información",
+  "Question Text": {
+    "en-US": [
+      "What is the main purpose of website navigation?"
+    ],
+    "es-MX": [
+      "¿Cuál es el principal objetivo de la navegación de un sitio web?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Increase the number of pages",
+      "Help users locate information and functionality",
+      "Eliminate menus",
+      "Increase complexity"
+    ],
+    "es-MX": [
+      "Incrementar el número de páginas",
+      "Ayudar a los usuarios a localizar información y funcionalidad",
+      "Eliminar los menús",
+      "Incrementar la complejidad"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Help users locate information and functionality",
+    "es-MX": "Ayudar a los usuarios a localizar información y funcionalidad"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "La navegación tiene como finalidad facilitar que los usuarios encuentren rápidamente la información y las funciones que necesitan, contribuyendo a una mejor experiencia de usuario."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Principios de navegación",
+  "Question Text": {
+    "en-US": [
+      "Why is it advisable to reduce the number of options in a menu?"
+    ],
+    "es-MX": [
+      "¿Por qué es recomendable reducir el número de opciones en un menú?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "To increase complexity",
+      "To facilitate decision making",
+      "To eliminate content",
+      "To increase navigation levels"
+    ],
+    "es-MX": [
+      "Incrementar la complejidad",
+      "Facilitar la toma de decisiones",
+      "Eliminar contenido",
+      "Incrementar los niveles de navegación"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "To facilitate decision making",
+    "es-MX": "Facilitar la toma de decisiones"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "Reducir el número de opciones disminuye la carga cognitiva y facilita que los usuarios seleccionen la alternativa más adecuada con mayor rapidez y menor esfuerzo."
+      }
+    ]
+  }
+},
+{
+  "Category": "Principios de navegación",
+  "Question Text": {
+    "en-US": [
+      "The user does not necessarily have to enter through the home page, but may access internal pages from other websites. This corresponds to the principle:"
+    ],
+    "es-MX": [
+      "El usuario no tiene que haber entrado por la página principal, sino que ha podido acceder por otras más internas desde otras webs corresponde al principio:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Garret principle",
+      "Disclosure principle",
+      "Object principle",
+      "Front door principle"
+    ],
+    "es-MX": [
+      "Principio de Garret",
+      "Principio de la revelación",
+      "El principio de los objetos",
+      "Principio de las puertas de entrada"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Front door principle",
+    "es-MX": "Principio de las puertas de entrada"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "El principio de las puertas de entrada establece que los usuarios no necesariamente llegan a un sitio web a través de la página principal. Es frecuente que accedan directamente a páginas internas mediante buscadores, enlaces externos o referencias desde otros sitios web. Por ello, cada página debe ser capaz de proporcionar contexto y facilitar la navegación hacia otros contenidos relevantes."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Principios de navegación",
+  "Question Text": {
+    "en-US": [
+      "Placing representative examples of the content next to a link refers to the principle:"
+    ],
+    "es-MX": [
+      "Al lado de un enlace ponemos ejemplos representativos del contenido al que vamos a acceder si pinchamos en el enlace hace referencia al principio:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Garret principle",
+      "Disclosure principle",
+      "Principle of examples",
+      "Front door principle"
+    ],
+    "es-MX": [
+      "Principio de Garret",
+      "Principio de la revelación",
+      "El principio de los ejemplos",
+      "Principio de las puertas de entrada"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Principle of examples",
+    "es-MX": "El principio de los ejemplos"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "El principio de los ejemplos consiste en proporcionar ejemplos representativos del contenido asociado a un enlace o categoría. Esta estrategia ayuda a los usuarios a comprender mejor qué información encontrarán al acceder y reduce la incertidumbre durante la navegación."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Principios de navegación",
+  "Question Text": {
+    "en-US": [
+      "The user does not have to enter through the home page, but may have accessed more internal pages from other websites:"
+    ],
+    "es-MX": [
+      "El usuario no tiene que haber entrado por la página principal, sino que ha podido acceder por otras más internas desde otras webs:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Garret principle",
+      "Front door principle",
+      "Principle of examples",
+      "Front door principle"
+    ],
+    "es-MX": [
+      "Principio de Garret",
+      "Principio de puertas de entrada",
+      "El principio de los ejemplos",
+      "Principio de las puertas de entrada"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Front door principle",
+    "es-MX": "Principio de puertas de entrada"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "El principio de las puertas de entrada reconoce que cualquier página de un sitio puede convertirse en el punto inicial de acceso para un usuario. Por ello, todas las páginas deben proporcionar información suficiente y permitir una navegación clara hacia otras secciones del sitio."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Principios de navegación",
+  "Question Text": {
+    "en-US": [
+      "What is the main purpose of the front door principle?"
+    ],
+    "es-MX": [
+      "¿Cuál es el principal objetivo del principio de las puertas de entrada?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Force users to start from the home page",
+      "Assume that any page can be the user's first contact",
+      "Reduce the number of pages",
+      "Eliminate external links"
+    ],
+    "es-MX": [
+      "Obligar a los usuarios a comenzar desde la página principal",
+      "Suponer que cualquier página puede ser el primer contacto del usuario",
+      "Reducir el número de páginas",
+      "Eliminar enlaces externos"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Assume that any page can be the user's first contact",
+    "es-MX": "Suponer que cualquier página puede ser el primer contacto del usuario"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "El principio de las puertas de entrada considera que cualquier página puede ser el primer punto de contacto con el usuario. Por ello, cada página debe ser comprensible por sí misma y proporcionar acceso a otros contenidos del sitio."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Principios de navegación",
+  "Question Text": {
+    "en-US": [
+      "What is the benefit of providing representative examples next to a link?"
+    ],
+    "es-MX": [
+      "¿Cuál es el beneficio de proporcionar ejemplos representativos junto a un enlace?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Increase uncertainty",
+      "Help users anticipate the content they will find",
+      "Eliminate navigation menus",
+      "Increase cognitive load"
+    ],
+    "es-MX": [
+      "Incrementar la incertidumbre",
+      "Ayudar a los usuarios a anticipar el contenido que encontrarán",
+      "Eliminar los menús de navegación",
+      "Incrementar la carga cognitiva"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Help users anticipate the content they will find",
+    "es-MX": "Ayudar a los usuarios a anticipar el contenido que encontrarán"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "El principio de los ejemplos permite que los usuarios comprendan mejor el contenido asociado a un enlace, facilitando la toma de decisiones y mejorando la experiencia de navegación."
+      }
+    ]
+  }
+},
+{
+  "Category": "Flujos de usuario y experiencia de usuario",
+  "Question Text": {
+    "en-US": [
+      "What type of gap refers to when the user cannot relate what they want to achieve and how to accomplish it?"
+    ],
+    "es-MX": [
+      "A qué tipo de brecha se refiere cuando el usuario no puede relacionar lo que quiere lograr y cómo llevarlo a cabo:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Main gap",
+      "Evaluation gap",
+      "Execution gap",
+      "Friction points"
+    ],
+    "es-MX": [
+      "Brecha principal",
+      "Brecha en la evaluación",
+      "Brecha en ejecución",
+      "Puntos de fricción"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Execution gap",
+    "es-MX": "Brecha en ejecución"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "La brecha en ejecución se produce cuando el usuario conoce el objetivo que desea alcanzar, pero no logra identificar las acciones necesarias para conseguirlo dentro del sistema. Esta situación suele deberse a problemas de diseño, navegación o falta de claridad en la interfaz."
+      },
+      {
+        "type": "text",
+        "content": "Reducir la brecha en ejecución es uno de los objetivos de la experiencia de usuario, ya que una interfaz intuitiva debe facilitar que las personas transformen sus intenciones en acciones concretas de manera sencilla y eficiente."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Flujos de usuario y experiencia de usuario",
+  "Question Text": {
+    "en-US": [
+      "What type of gap refers to when the user receives a response from the system that they consider incorrect or are unable to interpret?"
+    ],
+    "es-MX": [
+      "A qué tipo de brecha se refiere cuando el usuario recibe una respuesta por parte del sistema que considera errónea o que no es capaz de interpretar:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Main gap",
+      "Evaluation gap",
+      "Execution gap",
+      "Friction points"
+    ],
+    "es-MX": [
+      "Brecha principal",
+      "Brecha en la evaluación",
+      "Brecha en ejecución",
+      "Puntos de fricción"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Evaluation gap",
+    "es-MX": "Brecha en la evaluación"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "La brecha en la evaluación aparece cuando el usuario no puede interpretar correctamente la respuesta proporcionada por el sistema o considera que esta no corresponde con sus expectativas. En estas situaciones, el usuario tiene dificultades para comprender el estado del sistema y evaluar si ha alcanzado su objetivo."
+      },
+      {
+        "type": "text",
+        "content": "Una buena retroalimentación y una adecuada comunicación entre el sistema y el usuario permiten reducir esta brecha y mejorar la experiencia de uso."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Flujos de usuario y experiencia de usuario",
+  "Question Text": {
+    "en-US": [
+      "They are iterative and collaborative documents that help us get closer to the user's mental model, identifying expectations and friction points:"
+    ],
+    "es-MX": [
+      "Son documentos iterativos y colaborativos que nos ayudan a acercarnos al modelo mental del usuario, identificando sus expectativas para conseguir una experiencia más intuitiva, y detectando puntos de fricción:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Evaluation gap",
+      "Execution gap",
+      "User and task flows",
+      "Files"
+    ],
+    "es-MX": [
+      "Brecha en la evaluación",
+      "Brecha en ejecución",
+      "Flujos de usuario y de tareas",
+      "Archivos"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "User and task flows",
+    "es-MX": "Flujos de usuario y de tareas"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "Los flujos de usuario y de tareas son representaciones iterativas y colaborativas que permiten comprender cómo las personas interactúan con un sistema para alcanzar sus objetivos. Estos documentos ayudan a aproximarse al modelo mental del usuario, identificar expectativas y detectar posibles puntos de fricción."
+      },
+      {
+        "type": "text",
+        "content": "El análisis de los flujos contribuye a diseñar experiencias más intuitivas, ya que permite anticipar problemas y optimizar las interacciones entre el usuario y el sistema."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Flujos de usuario y experiencia de usuario",
+  "Question Text": {
+    "en-US": [
+      "What is the main objective of reducing the execution gap?"
+    ],
+    "es-MX": [
+      "¿Cuál es el principal objetivo de reducir la brecha en ejecución?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Increase system complexity",
+      "Facilitate the transformation of intentions into actions",
+      "Eliminate feedback",
+      "Reduce functionality"
+    ],
+    "es-MX": [
+      "Incrementar la complejidad del sistema",
+      "Facilitar la transformación de las intenciones en acciones",
+      "Eliminar la retroalimentación",
+      "Reducir la funcionalidad"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Facilitate the transformation of intentions into actions",
+    "es-MX": "Facilitar la transformación de las intenciones en acciones"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "Una interfaz intuitiva busca minimizar la brecha en ejecución, permitiendo que los usuarios puedan llevar a cabo sus objetivos de forma sencilla y sin esfuerzo innecesario."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Flujos de usuario y experiencia de usuario",
+  "Question Text": {
+    "en-US": [
+      "What is the purpose of identifying friction points?"
+    ],
+    "es-MX": [
+      "¿Cuál es la finalidad de identificar puntos de fricción?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Complicate the user experience",
+      "Detect opportunities for improvement",
+      "Increase the number of steps",
+      "Reduce accessibility"
+    ],
+    "es-MX": [
+      "Complicar la experiencia del usuario",
+      "Detectar oportunidades de mejora",
+      "Incrementar el número de pasos",
+      "Reducir la accesibilidad"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Detect opportunities for improvement",
+    "es-MX": "Detectar oportunidades de mejora"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "La identificación de puntos de fricción permite descubrir problemas y oportunidades de mejora dentro del flujo de interacción, contribuyendo a desarrollar experiencias más intuitivas y satisfactorias para los usuarios."
+      }
+    ]
+  }
+},
+{
+  "Category": "Flujos de usuario y tareas",
+  "Question Text": {
+    "en-US": [
+      "These are flows that all users perform in a similar way, for example registering in an application or making a payment in an e-commerce site with a credit card:"
+    ],
+    "es-MX": [
+      "Son flujos que todos los usuarios realizan de una forma similar, por ejemplo, registrarse en una aplicación o realizar un pago en un e-commerce con tarjeta de crédito:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Task flow",
+      "User flow",
+      "Data flow",
+      "Flow"
+    ],
+    "es-MX": [
+      "Flujo de tareas",
+      "Flujo de usuario",
+      "Flujo datos",
+      "Flujo"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Task flow",
+    "es-MX": "Flujo de tareas"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "Los flujos de tareas representan secuencias de acciones que suelen realizarse de manera similar independientemente del tipo de usuario. Su objetivo es describir los pasos necesarios para completar una tarea específica, como registrarse en una aplicación o efectuar una compra en un sitio de comercio electrónico."
+      },
+      {
+        "type": "text",
+        "content": "Estos flujos permiten comprender el proceso ideal para alcanzar un objetivo y ayudan a identificar posibles problemas que podrían afectar la experiencia de usuario."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Flujos de usuario y tareas",
+  "Question Text": {
+    "en-US": [
+      "It is a path where the user achieves their objective without any problem or error:"
+    ],
+    "es-MX": [
+      "Es un camino donde el usuario logra su objetivo sin ningún problema o error:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Happy path",
+      "Critical path",
+      "Design path",
+      "Alternative path"
+    ],
+    "es-MX": [
+      "Ruta feliz",
+      "Ruta crítica",
+      "Ruta de diseño",
+      "Camino alternativo"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Happy path",
+    "es-MX": "Ruta feliz"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "La ruta feliz describe el escenario ideal en el que el usuario alcanza su objetivo sin encontrar errores, obstáculos o desviaciones. Esta representación permite comprender el comportamiento esperado del sistema y sirve como referencia para analizar escenarios alternativos y puntos de fricción."
+      },
+      {
+        "type": "text",
+        "content": "En experiencia de usuario, la ruta feliz constituye un punto de partida para diseñar interfaces intuitivas y eficientes."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Flujos de usuario y tareas",
+  "Question Text": {
+    "en-US": [
+      "They represent the specific flow required to perform an action. Each type of person chooses different paths:"
+    ],
+    "es-MX": [
+      "Representan el flujo específico para realizar una acción. Cada tipo de persona escoge diferentes caminos:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Task flow",
+      "User flow",
+      "Data flow",
+      "Flow"
+    ],
+    "es-MX": [
+      "Flujo de tareas",
+      "Flujo de usuario",
+      "Flujo datos",
+      "Flujo"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "User flow",
+    "es-MX": "Flujo de usuario"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "Los flujos de usuario representan las diferentes rutas que pueden seguir distintos tipos de usuarios para alcanzar un mismo objetivo. A diferencia de los flujos de tareas, consideran las particularidades y comportamientos de cada persona, permitiendo analizar múltiples recorridos dentro del sistema."
+      },
+      {
+        "type": "text",
+        "content": "El estudio de los flujos de usuario permite detectar puntos de fricción, mejorar la navegación y diseñar experiencias más intuitivas y adaptadas a las necesidades reales de las personas."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Flujos de usuario y tareas",
+  "Question Text": {
+    "en-US": [
+      "What is the main difference between a task flow and a user flow?"
+    ],
+    "es-MX": [
+      "¿Cuál es la principal diferencia entre un flujo de tareas y un flujo de usuario?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Task flows are technical and user flows are graphical",
+      "Task flows are common for all users, while user flows may vary according to the type of user",
+      "User flows replace task flows",
+      "There is no difference between them"
+    ],
+    "es-MX": [
+      "Los flujos de tareas son técnicos y los flujos de usuario son gráficos",
+      "Los flujos de tareas son comunes para todos los usuarios, mientras que los flujos de usuario pueden variar según el tipo de persona",
+      "Los flujos de usuario sustituyen a los flujos de tareas",
+      "No existe diferencia entre ellos"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Task flows are common for all users, while user flows may vary according to the type of user",
+    "es-MX": "Los flujos de tareas son comunes para todos los usuarios, mientras que los flujos de usuario pueden variar según el tipo de persona"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "Los flujos de tareas describen un proceso general que normalmente todos los usuarios realizan de manera similar, mientras que los flujos de usuario consideran las diferencias existentes entre distintos perfiles y los diversos caminos que pueden seguir para alcanzar un objetivo."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Flujos de usuario y tareas",
+  "Question Text": {
+    "en-US": [
+      "What is the purpose of the happy path in user experience?"
+    ],
+    "es-MX": [
+      "¿Cuál es la finalidad de la ruta feliz en experiencia de usuario?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Represent the ideal path without errors",
+      "Increase system complexity",
+      "Eliminate alternative routes",
+      "Replace user flows"
+    ],
+    "es-MX": [
+      "Representar el recorrido ideal sin errores",
+      "Incrementar la complejidad del sistema",
+      "Eliminar caminos alternativos",
+      "Sustituir los flujos de usuario"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Represent the ideal path without errors",
+    "es-MX": "Representar el recorrido ideal sin errores"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "La ruta feliz permite describir el comportamiento esperado del sistema y el camino óptimo que sigue el usuario para alcanzar su objetivo sin problemas, facilitando posteriormente el análisis de errores y escenarios alternativos."
+      }
+    ]
+  }
+}
+  ]
+}

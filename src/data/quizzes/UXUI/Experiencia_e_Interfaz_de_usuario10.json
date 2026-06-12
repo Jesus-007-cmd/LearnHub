@@ -1,0 +1,796 @@
+{
+  "meta": {
+    "slug": "ux-ui-fundamentos",
+    "title": "Experiencia e Interfaz de Usuario (UX y UI)",
+    "subject": "UX Y UI",
+    "unit": 10,
+    "classNo": 10,
+    "description": "Preguntas relacionadas con los conceptos fundamentales de experiencia de usuario (UX), interfaz de usuario (UI) y usabilidad.",
+    "tags": [
+      "UX",
+      "UI",
+      "Experiencia de Usuario",
+      "Interfaz de Usuario",
+      "Usabilidad"
+    ]
+  },
+  "Questions": [
+    {
+      "Category": "Diseño modular",
+      "Question Text": {
+        "en-US": [
+          "It identifies and breaks down the patterns of an interface, identifying reusable components and specifying how they interact with the rest of the elements:"
+        ],
+        "es-MX": [
+          "Identifica y deconstruye los patrones de una interfaz, identificando los componentes reutilizables y especificando su forma de interactuar con el resto de los elementos:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Temporal design",
+          "Modular design",
+          "Sketch",
+          "Balance"
+        ],
+        "es-MX": [
+          "Diseño temporal",
+          "Diseño modular",
+          "Bosquejo",
+          "Equilibrio"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Modular design",
+        "es-MX": "Diseño modular"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El diseño modular consiste en dividir una interfaz en componentes reutilizables e independientes. Esto permite identificar patrones comunes y definir cómo interactúan los diferentes elementos entre sí."
+          },
+          {
+            "type": "text",
+            "content": "Gracias al diseño modular es posible mantener la consistencia de las interfaces, facilitar el mantenimiento y acelerar el desarrollo de nuevos productos o funcionalidades."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Sistemas de diseño",
+      "Question Text": {
+        "en-US": [
+          "They are a modular collection of user interface elements plus code fragments to facilitate implementation for developers:"
+        ],
+        "es-MX": [
+          "Son una colección modular de los elementos de la interfaz de usuario, más fragmentos de código para facilitar la implementación a los desarrolladores:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Modular design",
+          "UI design guides",
+          "Component library",
+          "Front-end guides"
+        ],
+        "es-MX": [
+          "Diseño modular",
+          "Guías de diseño IU",
+          "Biblioteca de componentes",
+          "Guías front-end"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Front-end guides",
+        "es-MX": "Guías front-end"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las guías front-end reúnen componentes de interfaz junto con fragmentos de código que facilitan a los desarrolladores la implementación de las interfaces. Estas guías ayudan a mantener la coherencia visual y funcional entre los diferentes productos."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Sistemas de diseño",
+      "Question Text": {
+        "en-US": [
+          "It is a downloadable file of user interface components that are independent of the business or page being created:"
+        ],
+        "es-MX": [
+          "Es un archivo descargable de componentes de interfaz de usuario y son independientes del negocio o la página que se crea:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Modular design",
+          "UI design guides",
+          "Component library",
+          "Front-end guides"
+        ],
+        "es-MX": [
+          "Diseño modular",
+          "Guías de diseño IU",
+          "Biblioteca de componentes",
+          "Guías front-end"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Component library",
+        "es-MX": "Biblioteca de componentes"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Una biblioteca de componentes es un conjunto reutilizable de elementos de interfaz que pueden emplearse en diferentes proyectos. Estos componentes son independientes del negocio específico y favorecen la reutilización y la consistencia del diseño."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Diseño modular",
+      "Question Text": {
+        "en-US": [
+          "What is one of the main advantages of modular design?"
+        ],
+        "es-MX": [
+          "¿Cuál es una de las principales ventajas del diseño modular?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Increase visual inconsistency",
+          "Promote component reuse",
+          "Eliminate maintenance",
+          "Prevent collaboration"
+        ],
+        "es-MX": [
+          "Incrementar la inconsistencia visual",
+          "Favorecer la reutilización de componentes",
+          "Eliminar el mantenimiento",
+          "Impedir la colaboración"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Promote component reuse",
+        "es-MX": "Favorecer la reutilización de componentes"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El diseño modular permite reutilizar componentes en diferentes pantallas y proyectos, reduciendo tiempos de desarrollo y manteniendo una experiencia de usuario consistente."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Sistemas de diseño",
+      "Question Text": {
+        "en-US": [
+          "Why are component libraries useful in interface development?"
+        ],
+        "es-MX": [
+          "¿Por qué son útiles las bibliotecas de componentes en el desarrollo de interfaces?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Because they avoid reusing elements",
+          "Because they allow components to be used in multiple projects",
+          "Because they replace programming",
+          "Because they eliminate design guides"
+        ],
+        "es-MX": [
+          "Porque evitan reutilizar elementos",
+          "Porque permiten utilizar componentes en múltiples proyectos",
+          "Porque sustituyen la programación",
+          "Porque eliminan las guías de diseño"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Because they allow components to be used in multiple projects",
+        "es-MX": "Porque permiten utilizar componentes en múltiples proyectos"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las bibliotecas de componentes permiten disponer de elementos ya definidos y reutilizables, lo que facilita el desarrollo, reduce errores y ayuda a mantener la coherencia entre aplicaciones y páginas web."
+          }
+        ]
+      }
+    }
+    ,
+{
+  "Category": "Sistemas de diseño",
+  "Question Text": {
+    "en-US": [
+      "It includes tangible and intangible elements shared throughout the organization and is materialized in a language that establishes effective communication between the interface and the user's mental models:"
+    ],
+    "es-MX": [
+      "Comprende elementos tangibles e intangibles compartidos por toda la entidad y se materializa en un lenguaje que establece una comunicación eficaz entre la interfaz y los modelos mentales del usuario:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Graphic design",
+      "Design system",
+      "Web design",
+      "UX"
+    ],
+    "es-MX": [
+      "Diseño gráfico",
+      "Sistema de diseño",
+      "Diseño web",
+      "UX"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Design system",
+    "es-MX": "Sistema de diseño"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "Un sistema de diseño es un conjunto de elementos tangibles e intangibles compartidos por toda una organización. Su objetivo es proporcionar un lenguaje común que permita crear interfaces coherentes y facilitar la comunicación entre el producto y los modelos mentales de los usuarios."
+      },
+      {
+        "type": "text",
+        "content": "Los sistemas de diseño favorecen la consistencia, la reutilización y la eficiencia en el desarrollo de productos digitales."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Sistemas de diseño",
+  "Question Text": {
+    "en-US": [
+      "They are the specific elements of the user interface plus the instructions on how to implement them consistently:"
+    ],
+    "es-MX": [
+      "Son los elementos específicos de la interfaz de usuario más las instrucciones sobre cómo implementarlos con uniformidad y coherencia:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Components and patterns",
+      "Schemes",
+      "Team members use them as a guide",
+      "Atomic design"
+    ],
+    "es-MX": [
+      "Componentes y patrones",
+      "Esquemas",
+      "Los miembros del equipo lo usan como guía",
+      "Diseño atómico"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Components and patterns",
+    "es-MX": "Componentes y patrones"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "Los componentes y patrones son elementos específicos de la interfaz de usuario acompañados de reglas e instrucciones que permiten implementarlos de manera uniforme y consistente en los diferentes productos de una organización."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Sistemas de diseño",
+  "Question Text": {
+    "en-US": [
+      "Its idea comes from extrapolating design systems to chemistry, where atoms combine to form molecules and more complex organisms:"
+    ],
+    "es-MX": [
+      "Su idea parte de una extrapolación de los sistemas de diseño a la química, y cómo esta ciencia parte de que toda materia está compuesta por átomos que se van combinando para formar moléculas y organismos más complejos:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Components and patterns",
+      "Schemes",
+      "Team members use them as a guide",
+      "Atomic design"
+    ],
+    "es-MX": [
+      "Componentes y patrones",
+      "Esquemas",
+      "Los miembros del equipo lo usan como guía",
+      "Diseño atómico"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Atomic design",
+    "es-MX": "Diseño atómico"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "El diseño atómico es una metodología inspirada en la química. Parte de elementos básicos llamados átomos, que se combinan para formar moléculas, organismos y estructuras más complejas, permitiendo construir interfaces consistentes y reutilizables."
+      },
+      {
+        "type": "text",
+        "content": "Este enfoque facilita la escalabilidad y el mantenimiento de los sistemas de diseño."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Sistemas de diseño",
+  "Question Text": {
+    "en-US": [
+      "What is one of the main objectives of a design system?"
+    ],
+    "es-MX": [
+      "¿Cuál es uno de los principales objetivos de un sistema de diseño?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Increase inconsistency between products",
+      "Provide consistency and a common language",
+      "Replace programming",
+      "Eliminate reusable components"
+    ],
+    "es-MX": [
+      "Incrementar la inconsistencia entre productos",
+      "Proporcionar consistencia y un lenguaje común",
+      "Sustituir la programación",
+      "Eliminar los componentes reutilizables"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Provide consistency and a common language",
+    "es-MX": "Proporcionar consistencia y un lenguaje común"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "Los sistemas de diseño permiten que todos los equipos trabajen bajo las mismas reglas y componentes, favoreciendo la coherencia visual y funcional entre los distintos productos digitales."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Diseño atómico",
+  "Question Text": {
+    "en-US": [
+      "According to atomic design, what is obtained by combining atoms?"
+    ],
+    "es-MX": [
+      "Según el diseño atómico, ¿qué se obtiene al combinar átomos?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Interfaces complete",
+      "Molecules",
+      "Patterns",
+      "Templates"
+    ],
+    "es-MX": [
+      "Interfaces completas",
+      "Moléculas",
+      "Patrones",
+      "Plantillas"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Molecules",
+    "es-MX": "Moléculas"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "En el diseño atómico, los átomos representan los componentes más básicos. La combinación de varios átomos da lugar a moléculas, las cuales posteriormente pueden formar organismos y estructuras más complejas dentro de una interfaz."
+      }
+    ]
+  }
+},
+{
+  "Category": "Principios psicológicos y leyes de UX",
+  "Question Text": {
+    "en-US": [
+      "It is a psychological effect described by the German psychiatrist and pediatrician, who determined that it is easier to remember elements that stand out because of characteristics such as shape or color:"
+    ],
+    "es-MX": [
+      "Se trata de un efecto psicológico descrito por el citado psiquiatra y pediatra alemán, que determinó que era más probable recordar elementos que destaquen por características como la forma, el color:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Law of proximity",
+      "Common region law",
+      "Hick-Hyman law",
+      "Isolation effect"
+    ],
+    "es-MX": [
+      "Ley de proximidad",
+      "Ley de la región común",
+      "La ley de Hick-Hyman",
+      "Efecto de aislamiento"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Isolation effect",
+    "es-MX": "Efecto de aislamiento"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "El efecto de aislamiento, también conocido como efecto Von Restorff, establece que los elementos que destacan visualmente por su color, forma o tamaño tienen una mayor probabilidad de ser recordados por las personas."
+      },
+      {
+        "type": "text",
+        "content": "En diseño de interfaces se utiliza para resaltar acciones importantes, botones o información relevante, facilitando la atención y la memorización."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Principios psicológicos y leyes de UX",
+  "Question Text": {
+    "en-US": [
+      "When elements are very close together, our mind encodes them as a block:"
+    ],
+    "es-MX": [
+      "Cuando nos encontramos con elementos muy próximos nuestra mente los codifica como un bloque:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Law of proximity",
+      "Common region law",
+      "Hick-Hyman law",
+      "Isolation effect"
+    ],
+    "es-MX": [
+      "Ley de proximidad",
+      "Ley de la región común",
+      "La ley de Hick-Hyman",
+      "Efecto de aislamiento"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Law of proximity",
+    "es-MX": "Ley de proximidad"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "La ley de proximidad establece que los elementos situados cerca unos de otros son percibidos como un grupo o una unidad. Este principio, procedente de la psicología Gestalt, se utiliza para organizar información y mejorar la comprensión de las interfaces."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Principios psicológicos y leyes de UX",
+  "Question Text": {
+    "en-US": [
+      "It relates the time required to make a decision with the number of possible choices, indicating that this relationship is logarithmic:"
+    ],
+    "es-MX": [
+      "Relaciona el tiempo que se tarda en tomar una decisión y la cantidad de decisiones posibles, y esta relación es logarítmica, por lo que debemos disminuir el número de decisiones para disminuir así la carga cognitiva del usuario:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Law of proximity",
+      "Common region law",
+      "Hick-Hyman law",
+      "Isolation effect"
+    ],
+    "es-MX": [
+      "Ley de proximidad",
+      "Ley de la región común",
+      "La ley de Hick-Hyman",
+      "Efecto de aislamiento"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Hick-Hyman law",
+    "es-MX": "La ley de Hick-Hyman"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "La ley de Hick-Hyman establece que el tiempo necesario para tomar una decisión aumenta conforme se incrementa el número de opciones disponibles. Por ello, en el diseño de interfaces se recomienda reducir la cantidad de alternativas para disminuir la carga cognitiva y facilitar la toma de decisiones."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Principios psicológicos y leyes de UX",
+  "Question Text": {
+    "en-US": [
+      "What is one of the applications of the isolation effect in interface design?"
+    ],
+    "es-MX": [
+      "¿Cuál es una de las aplicaciones del efecto de aislamiento en el diseño de interfaces?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Group elements by proximity",
+      "Highlight important information or actions",
+      "Reduce screen size",
+      "Increase the number of options"
+    ],
+    "es-MX": [
+      "Agrupar elementos por proximidad",
+      "Destacar información o acciones importantes",
+      "Reducir el tamaño de la pantalla",
+      "Incrementar el número de opciones"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Highlight important information or actions",
+    "es-MX": "Destacar información o acciones importantes"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "El efecto de aislamiento permite que ciertos elementos destaquen sobre los demás, aumentando la probabilidad de que sean percibidos y recordados por los usuarios. Por esta razón se utiliza para enfatizar botones, alertas o información relevante."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Principios psicológicos y leyes de UX",
+  "Question Text": {
+    "en-US": [
+      "According to the law of proximity, how are nearby elements perceived?"
+    ],
+    "es-MX": [
+      "Según la ley de proximidad, ¿cómo son percibidos los elementos cercanos entre sí?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "As independent objects",
+      "As a group or block",
+      "As highlighted elements",
+      "As unrelated elements"
+    ],
+    "es-MX": [
+      "Como objetos independientes",
+      "Como un grupo o bloque",
+      "Como elementos destacados",
+      "Como elementos sin relación"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "As a group or block",
+    "es-MX": "Como un grupo o bloque"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "La ley de proximidad indica que las personas tienden a percibir como relacionados aquellos elementos que se encuentran próximos entre sí, organizándolos mentalmente como una unidad."
+      }
+    ]
+  }
+},
+{
+  "Category": "Dark patterns",
+  "Question Text": {
+    "en-US": [
+      "They usually appear when registering for a service with a form; there are questions designed so that the user gives a response they did not intend:"
+    ],
+    "es-MX": [
+      "Suelen aparecer al registrarse en un servicio con un formulario; existen preguntas diseñadas para que el usuario de una respuesta que no pretendía:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Trick questions",
+      "Sneak into basket",
+      "Roach motel",
+      "Zuckering privacy"
+    ],
+    "es-MX": [
+      "Preguntas engañosas",
+      "Colarse en la cesta",
+      "Motel de cucarachas",
+      "Privacidad Zuckering"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Trick questions",
+    "es-MX": "Preguntas engañosas"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "Las preguntas engañosas son un tipo de patrón oscuro diseñado para inducir al usuario a responder algo distinto de lo que realmente desea. Suelen utilizar lenguaje confuso o formularios ambiguos para influir en las decisiones del usuario."
+      },
+      {
+        "type": "text",
+        "content": "Estas prácticas perjudican la experiencia de usuario y pueden generar desconfianza hacia el producto o servicio."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Dark patterns",
+  "Question Text": {
+    "en-US": [
+      "During a purchase process, another item is introduced into the shopping cart, frequently through an opt-out button or a checkbox:"
+    ],
+    "es-MX": [
+      "Cuando estás en un proceso de compra, en algún momento se introduce otro artículo en tu cesta de compra, frecuentemente mediante el botón de opción de exclusión voluntaria o alguna casilla de verificación:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Trick questions",
+      "Sneak into basket",
+      "Roach motel",
+      "Zuckering privacy"
+    ],
+    "es-MX": [
+      "Preguntas engañosas",
+      "Colarse en la cesta",
+      "Motel de cucarachas",
+      "Privacidad Zuckering"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Sneak into basket",
+    "es-MX": "Colarse en la cesta"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "Colarse en la cesta es un patrón oscuro que consiste en añadir productos o servicios adicionales al carrito de compra sin que el usuario los haya solicitado explícitamente. Generalmente se realiza mediante casillas preseleccionadas o mecanismos de exclusión voluntaria."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Dark patterns",
+  "Question Text": {
+    "en-US": [
+      "The website or app easily leads you into a situation, but then it becomes very difficult to leave:"
+    ],
+    "es-MX": [
+      "La web o app te conduce a una situación muy fácilmente, pero luego te resulta muy difícil salir:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Trick questions",
+      "Sneak into basket",
+      "Roach motel",
+      "Zuckering privacy"
+    ],
+    "es-MX": [
+      "Preguntas engañosas",
+      "Colarse en la cesta",
+      "Motel de cucarachas",
+      "Privacidad Zuckering"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Roach motel",
+    "es-MX": "Motel de cucarachas"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "El motel de cucarachas es un patrón oscuro en el que entrar en una situación, como suscribirse a un servicio, resulta muy sencillo, pero abandonarla o cancelar la suscripción es complicado y requiere muchos pasos."
+      },
+      {
+        "type": "text",
+        "content": "Este tipo de prácticas buscan retener al usuario de manera artificial y se consideran perjudiciales para una experiencia de usuario ética."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Dark patterns",
+  "Question Text": {
+    "en-US": [
+      "Which dark pattern adds products or services to the cart without the user's explicit consent?"
+    ],
+    "es-MX": [
+      "¿Qué patrón oscuro añade productos o servicios a la cesta sin el consentimiento explícito del usuario?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Trick questions",
+      "Sneak into basket",
+      "Roach motel",
+      "Zuckering privacy"
+    ],
+    "es-MX": [
+      "Preguntas engañosas",
+      "Colarse en la cesta",
+      "Motel de cucarachas",
+      "Privacidad Zuckering"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Sneak into basket",
+    "es-MX": "Colarse en la cesta"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "El patrón conocido como 'colarse en la cesta' consiste en agregar artículos adicionales al carrito mediante casillas preseleccionadas o mecanismos similares, sin que el usuario los haya solicitado directamente."
+      }
+    ]
+  }
+}
+,
+{
+  "Category": "Dark patterns",
+  "Question Text": {
+    "en-US": [
+      "What is the main characteristic of the Roach Motel pattern?"
+    ],
+    "es-MX": [
+      "¿Cuál es la principal característica del patrón denominado motel de cucarachas?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Confusing forms",
+      "Easy entry and difficult exit",
+      "Automatic sharing of information",
+      "Hidden advertisements"
+    ],
+    "es-MX": [
+      "Formularios confusos",
+      "Entrada sencilla y salida difícil",
+      "Compartición automática de información",
+      "Publicidad oculta"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Easy entry and difficult exit",
+    "es-MX": "Entrada sencilla y salida difícil"
+  },
+  "Explanation": {
+    "es-MX": [
+      {
+        "type": "text",
+        "content": "El motel de cucarachas se caracteriza porque el usuario puede ingresar fácilmente a un servicio o suscripción, pero cancelar o abandonar dicho servicio requiere procedimientos más complejos y largos."
+      }
+    ]
+  }
+}
+  ]
+}

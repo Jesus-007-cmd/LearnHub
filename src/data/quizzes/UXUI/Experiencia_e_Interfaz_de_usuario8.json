@@ -1,0 +1,1152 @@
+{
+  "meta": {
+    "slug": "ux-ui-fundamentos",
+    "title": "Experiencia e Interfaz de Usuario (UX y UI)",
+    "subject": "UX Y UI",
+    "unit": 8,
+    "classNo": 8,
+    "description": "Preguntas relacionadas con los conceptos fundamentales de experiencia de usuario (UX), interfaz de usuario (UI) y usabilidad.",
+    "tags": [
+      "UX",
+      "UI",
+      "Experiencia de Usuario",
+      "Interfaz de Usuario",
+      "Usabilidad"
+    ]
+  },
+  "Questions": [
+    
+    {
+      "Category": "Prototipado",
+      "Question Text": {
+        "en-US": [
+          "It is a model or simulation of the final product that includes functional, structural and graphical aspects according to its level of fidelity:"
+        ],
+        "es-MX": [
+          "Es un modelo, una simulación del producto final que incluye determinados aspectos funcionales, estructurales y gráficos del diseño según su grado de fidelidad:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Software",
+          "Prototype",
+          "Web interface",
+          "Virtual reality interface"
+        ],
+        "es-MX": [
+          "Software",
+          "Prototipo",
+          "Interfaz web",
+          "Interfaz de realidad virtual"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Prototype",
+        "es-MX": "Prototipo"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Un prototipo es una representación o simulación del producto final que permite visualizar y evaluar aspectos funcionales, estructurales y visuales antes de su implementación definitiva. Dependiendo de su nivel de fidelidad, puede mostrar desde ideas básicas hasta una experiencia muy cercana al producto terminado."
+          },
+          {
+            "type": "text",
+            "content": "El prototipado es una técnica fundamental en el diseño centrado en el usuario, ya que facilita la validación de ideas, la detección temprana de problemas y la comunicación entre los diferentes participantes del proyecto."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Prototipado",
+      "Question Text": {
+        "en-US": [
+          "They should be frequently involved in the design process, so collaborations and conversations can begin using low-fidelity deliverables:"
+        ],
+        "es-MX": [
+          "Son partes que deben estar involucradas en el proceso de diseño y con frecuencia, por lo que se pueden iniciar colaboraciones y conversaciones utilizando entregables de baja fidelidad:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Executives and senior management",
+          "Product teams",
+          "Internal UX team",
+          "Representative users"
+        ],
+        "es-MX": [
+          "Ejecutivos y alta gerencia",
+          "Equipos de productos",
+          "Equipo de UX interno",
+          "Usuarios representativos"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Product teams",
+        "es-MX": "Equipos de productos"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los equipos de productos deben participar activamente y de manera frecuente en el proceso de diseño. Los entregables de baja fidelidad permiten iniciar conversaciones tempranas, compartir ideas y realizar ajustes antes de invertir tiempo y recursos en soluciones más avanzadas."
+          },
+          {
+            "type": "text",
+            "content": "La colaboración continua entre diseñadores, desarrolladores y demás integrantes del equipo favorece la creación de productos alineados con las necesidades de los usuarios y los objetivos del proyecto."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Prototipado",
+      "Question Text": {
+        "en-US": [
+          "In general, they want to see a product that faithfully represents the final product in terms of appearance, feel and user experience:"
+        ],
+        "es-MX": [
+          "En general desean ver un producto que represente fielmente el producto final, en términos de apariencia, sensación y experiencia de usuario:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Executives and senior management",
+          "Product teams",
+          "Internal UX team",
+          "Representative users"
+        ],
+        "es-MX": [
+          "Ejecutivos y alta gerencia",
+          "Equipos de productos",
+          "Equipo de UX interno",
+          "Usuarios representativos"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Executives and senior management",
+        "es-MX": "Ejecutivos y alta gerencia"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los ejecutivos y la alta gerencia suelen preferir prototipos de alta fidelidad, ya que estos ofrecen una representación muy cercana al producto final en cuanto a apariencia, comportamiento y experiencia de usuario. Esto facilita la evaluación del proyecto y la toma de decisiones."
+          },
+          {
+            "type": "text",
+            "content": "Los prototipos de alta fidelidad permiten comunicar mejor la visión del producto y proporcionan una idea más realista del resultado esperado."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Prototipado",
+      "Question Text": {
+        "en-US": [
+          "What is the main purpose of creating a prototype?"
+        ],
+        "es-MX": [
+          "¿Cuál es la principal finalidad de crear un prototipo?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Replace the final product",
+          "Evaluate and validate design ideas before implementation",
+          "Eliminate user testing",
+          "Increase development costs"
+        ],
+        "es-MX": [
+          "Sustituir el producto final",
+          "Evaluar y validar ideas de diseño antes de la implementación",
+          "Eliminar las pruebas con usuarios",
+          "Incrementar los costos de desarrollo"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Evaluate and validate design ideas before implementation",
+        "es-MX": "Evaluar y validar ideas de diseño antes de la implementación"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El prototipado permite validar conceptos, detectar errores tempranamente y realizar mejoras antes de desarrollar el producto definitivo, reduciendo riesgos y costos durante el proceso de diseño."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Prototipado",
+      "Question Text": {
+        "en-US": [
+          "Why are low-fidelity deliverables useful during the early stages of design?"
+        ],
+        "es-MX": [
+          "¿Por qué son útiles los entregables de baja fidelidad en las primeras etapas del diseño?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Because they completely replace the final system",
+          "Because they facilitate collaboration and early feedback",
+          "Because they eliminate modifications",
+          "Because they only serve executives"
+        ],
+        "es-MX": [
+          "Porque sustituyen completamente al sistema final",
+          "Porque facilitan la colaboración y la retroalimentación temprana",
+          "Porque eliminan las modificaciones",
+          "Porque solo son útiles para los ejecutivos"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Because they facilitate collaboration and early feedback",
+        "es-MX": "Porque facilitan la colaboración y la retroalimentación temprana"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los prototipos de baja fidelidad permiten compartir ideas rápidamente, fomentar la colaboración y obtener retroalimentación temprana, lo que facilita realizar cambios antes de que el desarrollo avance demasiado."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Prototipos de baja fidelidad",
+      "Question Text": {
+        "en-US": [
+          "They are a cross-functional communication tool between the different teams: design, product and development:"
+        ],
+        "es-MX": [
+          "Son una herramienta de comunicación transversal entre los diferentes equipos: diseño, producto y desarrollo:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "High-fidelity prototypes",
+          "Low-fidelity prototypes",
+          "Medium-fidelity prototypes",
+          "Hyper-fidelity prototypes"
+        ],
+        "es-MX": [
+          "Prototipos de alta fidelidad",
+          "Prototipos de baja fidelidad",
+          "Prototipos de nivel medio de fidelidad",
+          "Prototipos de hiper fidelidad"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Low-fidelity prototypes",
+        "es-MX": "Prototipos de baja fidelidad"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los prototipos de baja fidelidad son herramientas sencillas que permiten comunicar ideas y facilitar la colaboración entre los equipos de diseño, producto y desarrollo. Su elaboración rápida favorece las conversaciones tempranas y la detección de problemas antes de invertir más recursos."
+          },
+          {
+            "type": "text",
+            "content": "Estos prototipos se utilizan principalmente en las primeras etapas del proceso de diseño, cuando es importante compartir conceptos y obtener retroalimentación de forma ágil."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Sketch y prototipos de baja fidelidad",
+      "Question Text": {
+        "en-US": [
+          "Which of the following options does not correspond to an advantage of using Sketch?"
+        ],
+        "es-MX": [
+          "Cuál de las siguientes opciones no corresponde a una ventaja de utilizar Sketch:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "They are unrealistic",
+          "Simple and economical processes",
+          "Motivation",
+          "Timely solution of important problems"
+        ],
+        "es-MX": [
+          "Resultan poco realistas",
+          "Procesos económicos y sencillos",
+          "La motivación",
+          "Solución de problemas importantes a tiempo"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "They are unrealistic",
+        "es-MX": "Resultan poco realistas"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Que los Sketch resulten poco realistas no constituye una ventaja, sino una de las limitaciones de este tipo de representaciones. Entre sus verdaderas ventajas destacan su bajo costo, la facilidad para realizar cambios y la posibilidad de detectar problemas de diseño en etapas tempranas."
+          },
+          {
+            "type": "text",
+            "content": "Los Sketch permiten fomentar la creatividad y la colaboración entre los miembros del equipo, facilitando la generación y validación de ideas."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Sketch y prototipos de baja fidelidad",
+      "Question Text": {
+        "en-US": [
+          "Which of the following options does not correspond to a disadvantage of using Sketch?"
+        ],
+        "es-MX": [
+          "Cuál de las siguientes opciones no corresponde a una desventaja de utilizar Sketch:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "They are unrealistic",
+          "Simple and economical processes",
+          "They are based on the user's imagination",
+          "Low functionality"
+        ],
+        "es-MX": [
+          "Resultan poco realistas",
+          "Procesos económicos y sencillos",
+          "Están basados en la imaginación del usuario",
+          "Poco funcionales"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Simple and economical processes",
+        "es-MX": "Procesos económicos y sencillos"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los procesos económicos y sencillos representan una ventaja de los Sketch, ya que permiten desarrollar ideas rápidamente y con pocos recursos. En cambio, aspectos como su escaso realismo, su limitada funcionalidad y la necesidad de que los usuarios imaginen ciertos elementos sí constituyen desventajas."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Sketch y prototipos de baja fidelidad",
+      "Question Text": {
+        "en-US": [
+          "What is one of the main advantages of low-fidelity Sketch prototypes?"
+        ],
+        "es-MX": [
+          "¿Cuál es una de las principales ventajas de los Sketch de baja fidelidad?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "They are expensive to modify",
+          "They allow problems to be detected early",
+          "They replace the final product",
+          "They eliminate collaboration"
+        ],
+        "es-MX": [
+          "Son costosos de modificar",
+          "Permiten detectar problemas tempranamente",
+          "Sustituyen al producto final",
+          "Eliminan la colaboración"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "They allow problems to be detected early",
+        "es-MX": "Permiten detectar problemas tempranamente"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los Sketch de baja fidelidad facilitan la identificación temprana de errores y oportunidades de mejora, permitiendo realizar modificaciones antes de invertir más tiempo y recursos en etapas posteriores del desarrollo."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Sketch y prototipos de baja fidelidad",
+      "Question Text": {
+        "en-US": [
+          "Why are Sketch prototypes considered economical?"
+        ],
+        "es-MX": [
+          "¿Por qué los Sketch se consideran una alternativa económica?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Because they require specialized hardware",
+          "Because they can be created quickly and with few resources",
+          "Because they eliminate the need for testing",
+          "Because they replace development"
+        ],
+        "es-MX": [
+          "Porque requieren hardware especializado",
+          "Porque pueden elaborarse rápidamente y con pocos recursos",
+          "Porque eliminan la necesidad de realizar pruebas",
+          "Porque sustituyen el desarrollo"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Because they can be created quickly and with few resources",
+        "es-MX": "Porque pueden elaborarse rápidamente y con pocos recursos"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los Sketch permiten representar ideas de manera sencilla y rápida, sin necesidad de herramientas complejas ni grandes inversiones, por lo que constituyen una opción económica durante las primeras etapas del diseño."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Wireframes",
+      "Question Text": {
+        "en-US": [
+          "It is a prototype created digitally and can be made with software intended for prototyping, such as Sketch or Adobe XD:"
+        ],
+        "es-MX": [
+          "Es un prototipo realizado en digital y puede estar realizado con un software destinado a la realización de prototipos, como Sketch, Adobe XD:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Interface",
+          "Sketch",
+          "Wireframe",
+          "Graphic design"
+        ],
+        "es-MX": [
+          "Interfaz",
+          "Sketch",
+          "Wireframe",
+          "Diseño gráfico"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Wireframe",
+        "es-MX": "Wireframe"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Un wireframe es una representación digital de una interfaz que permite definir la estructura y distribución de los elementos de una aplicación o sitio web. Puede elaborarse utilizando herramientas especializadas como Sketch, Adobe XD o Figma."
+          },
+          {
+            "type": "text",
+            "content": "Su finalidad es mostrar la organización del contenido y las funcionalidades antes de desarrollar el producto final, facilitando la comunicación entre los miembros del equipo."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Wireframes",
+      "Question Text": {
+        "en-US": [
+          "Step in which the type of wireframe to be generated and the pages to be represented in the navigation are determined:"
+        ],
+        "es-MX": [
+          "Paso donde se determina el tipo de wireframe que voy a generar: aplicaciones móviles, widget, formularios, páginas completas, etc. y las páginas que se van a representar de la navegación:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Decide the page type and navigation",
+          "Annotations",
+          "Fidelity",
+          "Layout"
+        ],
+        "es-MX": [
+          "Decidir el tipo de página y la navegación",
+          "Anotaciones",
+          "Fidelidad",
+          "Layout"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Decide the page type and navigation",
+        "es-MX": "Decidir el tipo de página y la navegación"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "En esta etapa se define qué tipo de wireframe será elaborado y cuáles serán las páginas o pantallas que formarán parte de la navegación. Esta planificación permite establecer la estructura general del producto y garantizar una adecuada organización de la información."
+          },
+          {
+            "type": "text",
+            "content": "La arquitectura de información y los flujos de navegación constituyen elementos fundamentales para el desarrollo de wireframes efectivos."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Wireframes",
+      "Question Text": {
+        "en-US": [
+          "It refers to describing the content, interaction, design or any other element that cannot be visually represented:"
+        ],
+        "es-MX": [
+          "Se refiere a describir el contenido, la interacción, el diseño o cualquier otro elemento que no se pueda representar visualmente:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Decide the page type and navigation",
+          "Annotations",
+          "Fidelity",
+          "Layout"
+        ],
+        "es-MX": [
+          "Decidir el tipo de página y la navegación",
+          "Anotaciones",
+          "Fidelidad",
+          "Layout"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Annotations",
+        "es-MX": "Anotaciones"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las anotaciones permiten complementar el wireframe con información adicional acerca del contenido, las interacciones o cualquier comportamiento que no pueda representarse únicamente mediante elementos gráficos."
+          },
+          {
+            "type": "text",
+            "content": "Estas descripciones facilitan la comunicación entre diseñadores y desarrolladores, evitando ambigüedades durante el proceso de implementación."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Wireframes",
+      "Question Text": {
+        "en-US": [
+          "What is the main purpose of a wireframe?"
+        ],
+        "es-MX": [
+          "¿Cuál es la principal finalidad de un wireframe?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Define the structure and organization of the interface",
+          "Replace the final application",
+          "Implement the database",
+          "Eliminate prototypes"
+        ],
+        "es-MX": [
+          "Definir la estructura y organización de la interfaz",
+          "Sustituir la aplicación final",
+          "Implementar la base de datos",
+          "Eliminar los prototipos"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Define the structure and organization of the interface",
+        "es-MX": "Definir la estructura y organización de la interfaz"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El wireframe permite organizar los contenidos y las funcionalidades de una interfaz antes de desarrollar el producto final, favoreciendo la comunicación entre los participantes del proyecto y facilitando la detección temprana de problemas."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Wireframes",
+      "Question Text": {
+        "en-US": [
+          "Why are annotations important in a wireframe?"
+        ],
+        "es-MX": [
+          "¿Por qué son importantes las anotaciones en un wireframe?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Because they replace graphic elements",
+          "Because they describe aspects that cannot be represented visually",
+          "Because they eliminate navigation",
+          "Because they increase complexity"
+        ],
+        "es-MX": [
+          "Porque sustituyen los elementos gráficos",
+          "Porque describen aspectos que no pueden representarse visualmente",
+          "Porque eliminan la navegación",
+          "Porque incrementan la complejidad"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Because they describe aspects that cannot be represented visually",
+        "es-MX": "Porque describen aspectos que no pueden representarse visualmente"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las anotaciones proporcionan información adicional sobre interacciones, contenido y comportamientos que no pueden expresarse únicamente mediante elementos gráficos, facilitando la comprensión del diseño por parte del equipo."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Prototipos de alta fidelidad",
+      "Question Text": {
+        "en-US": [
+          "They are interactive and more realistic prototypes, making them more suitable for obtaining feedback and conducting usability tests:"
+        ],
+        "es-MX": [
+          "Son prototipos interactivos y más realistas, por lo que serán mejores para solicitar comentarios y realizar pruebas de usabilidad:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Low-fidelity prototyping",
+          "Sketch",
+          "Draft",
+          "High-fidelity prototyping"
+        ],
+        "es-MX": [
+          "Prototipado de baja definición",
+          "Sketch",
+          "Bosquejo",
+          "Prototipado de alta definición"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "High-fidelity prototyping",
+        "es-MX": "Prototipado de alta definición"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los prototipos de alta fidelidad representan de manera muy cercana el aspecto y comportamiento del producto final. Gracias a su realismo e interactividad, son ideales para realizar pruebas de usabilidad y recopilar comentarios de los usuarios."
+          },
+          {
+            "type": "text",
+            "content": "Estos prototipos permiten detectar problemas relacionados con la experiencia de usuario antes del desarrollo definitivo, reduciendo costos y mejorando la calidad del producto."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Prototipos de alta fidelidad",
+      "Question Text": {
+        "en-US": [
+          "They provide the basis for the final code from the beginning, which in the future represents significant savings in time and effort:"
+        ],
+        "es-MX": [
+          "No proporcionan la base para el código final desde el principio, lo que en el futuro supone un gran ahorro en energía y tiempo:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Low-fidelity prototyping",
+          "Sketch",
+          "Draft",
+          "High-fidelity prototyping"
+        ],
+        "es-MX": [
+          "Prototipado de baja definición",
+          "Sketch",
+          "Bosquejo",
+          "Prototipado de alta definición"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Low-fidelity prototyping",
+        "es-MX": "Prototipado de baja definición"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los prototipos de baja fidelidad no proporcionan directamente una base para el código final. Sin embargo, permiten detectar errores y realizar cambios de forma temprana, evitando retrabajos costosos y ahorrando tiempo y recursos en etapas posteriores del desarrollo."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Prototipos de alta fidelidad",
+      "Question Text": {
+        "en-US": [
+          "Its quality depends on the designer's ability, since it will be as good as their HTML and CSS knowledge:"
+        ],
+        "es-MX": [
+          "Depende de la habilidad del diseñador, puesto que será tan bueno como sus conocimientos en HTML y CSS:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Low-fidelity prototyping",
+          "Sketch",
+          "Draft",
+          "High-fidelity prototyping"
+        ],
+        "es-MX": [
+          "Prototipado de baja definición",
+          "Sketch",
+          "Bosquejo",
+          "Prototipado de alta definición"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "High-fidelity prototyping",
+        "es-MX": "Prototipado de alta definición"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los prototipos de alta fidelidad requieren un mayor nivel de detalle y, en muchos casos, dependen de las habilidades técnicas del diseñador. El dominio de tecnologías como HTML y CSS influye en la calidad y el realismo del prototipo."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Prototipos de alta fidelidad",
+      "Question Text": {
+        "en-US": [
+          "What is one of the main advantages of high-fidelity prototypes?"
+        ],
+        "es-MX": [
+          "¿Cuál es una de las principales ventajas de los prototipos de alta fidelidad?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "They are less realistic",
+          "They facilitate usability testing and feedback collection",
+          "They eliminate the need for design",
+          "They are only useful for developers"
+        ],
+        "es-MX": [
+          "Son menos realistas",
+          "Facilitan las pruebas de usabilidad y la recopilación de comentarios",
+          "Eliminan la necesidad de diseño",
+          "Solo son útiles para los desarrolladores"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "They facilitate usability testing and feedback collection",
+        "es-MX": "Facilitan las pruebas de usabilidad y la recopilación de comentarios"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Al representar con gran precisión el producto final, los prototipos de alta fidelidad permiten evaluar la interacción real del usuario y obtener retroalimentación valiosa para mejorar el diseño."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Prototipos de alta fidelidad",
+      "Question Text": {
+        "en-US": [
+          "Why are high-fidelity prototypes considered more realistic?"
+        ],
+        "es-MX": [
+          "¿Por qué los prototipos de alta fidelidad se consideran más realistas?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Because they only contain text",
+          "Because they simulate appearance and interaction similar to the final product",
+          "Because they do not require design",
+          "Because they replace the source code"
+        ],
+        "es-MX": [
+          "Porque solo contienen texto",
+          "Porque simulan la apariencia y la interacción del producto final",
+          "Porque no requieren diseño",
+          "Porque sustituyen el código fuente"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Because they simulate appearance and interaction similar to the final product",
+        "es-MX": "Porque simulan la apariencia y la interacción del producto final"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los prototipos de alta fidelidad incorporan detalles visuales, comportamientos e interacciones muy parecidos a los del sistema definitivo, lo que permite evaluar la experiencia de usuario de manera más precisa."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Prototipos de alta fidelidad",
+      "Question Text": {
+        "en-US": [
+          "Which type of prototype is generally more suitable for early brainstorming and rapid changes?"
+        ],
+        "es-MX": [
+          "¿Qué tipo de prototipo es generalmente más adecuado para realizar lluvia de ideas y cambios rápidos en las primeras etapas?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "High-fidelity prototyping",
+          "Low-fidelity prototyping",
+          "Virtual reality interface",
+          "Final product"
+        ],
+        "es-MX": [
+          "Prototipado de alta definición",
+          "Prototipado de baja definición",
+          "Interfaz de realidad virtual",
+          "Producto final"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Low-fidelity prototyping",
+        "es-MX": "Prototipado de baja definición"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los prototipos de baja fidelidad son rápidos y económicos de elaborar, por lo que son ideales para explorar ideas, fomentar la colaboración y realizar modificaciones frecuentes durante las etapas iniciales del diseño."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Métodos de evaluación en UX",
+      "Question Text": {
+        "en-US": [
+          "They are especially useful during the early stages of development and collect information about the tastes, needs and dislikes of potential users:"
+        ],
+        "es-MX": [
+          "Son de especial interés en las primeras etapas de desarrollo y recabamos información sobre los gustos, necesidades y desagrados del usuario potencial:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Co-discovery method",
+          "Testing methods",
+          "Inspection methods",
+          "Inquiry and survey methods"
+        ],
+        "es-MX": [
+          "Método del codescubrimiento",
+          "Métodos de testing",
+          "Métodos de inspección",
+          "Métodos de indagación y sondeo"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Inquiry and survey methods",
+        "es-MX": "Métodos de indagación y sondeo"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los métodos de indagación y sondeo son especialmente útiles durante las primeras etapas del desarrollo, ya que permiten recopilar información sobre las necesidades, gustos, preferencias y desagrados de los usuarios potenciales. Herramientas como entrevistas, cuestionarios y encuestas ayudan a comprender mejor a los usuarios y facilitan el diseño de productos centrados en sus necesidades reales."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Métodos de evaluación en UX",
+      "Question Text": {
+        "en-US": [
+          "In this method, two users perform a task collaboratively while being observed by an expert:"
+        ],
+        "es-MX": [
+          "En este método dos usuarios desarrollan una tarea en colaboración mientras son observados por un experto:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Co-discovery method",
+          "Testing methods",
+          "Inspection methods",
+          "Inquiry and survey methods"
+        ],
+        "es-MX": [
+          "Método del codescubrimiento",
+          "Métodos de testing",
+          "Métodos de inspección",
+          "Métodos de indagación y sondeo"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Co-discovery method",
+        "es-MX": "Método del codescubrimiento"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El método del codescubrimiento consiste en que dos usuarios colaboran para realizar una tarea mientras un experto observa sus acciones y conversaciones. La interacción entre ambos permite obtener información valiosa acerca de cómo comprenden el sistema, identificar problemas de usabilidad y descubrir oportunidades de mejora en la experiencia de usuario."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Métodos de evaluación en UX",
+      "Question Text": {
+        "en-US": [
+          "Representative users perform specific tasks on the prototype and the results are later analyzed by experts:"
+        ],
+        "es-MX": [
+          "Los usuarios representativos realizan unas tareas concretas en el prototipo y posteriormente es analizado por los expertos:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Co-discovery method",
+          "Testing methods",
+          "Inspection methods",
+          "Inquiry and survey methods"
+        ],
+        "es-MX": [
+          "Método del codescubrimiento",
+          "Métodos de testing",
+          "Métodos de inspección",
+          "Métodos de indagación y sondeo"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Testing methods",
+        "es-MX": "Métodos de testing"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los métodos de testing consisten en pedir a usuarios representativos que realicen tareas concretas utilizando un prototipo o sistema. Posteriormente, los expertos analizan los resultados para detectar problemas de usabilidad, validar el diseño y proponer mejoras que permitan ofrecer una experiencia de usuario más eficiente e intuitiva."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Métodos de evaluación en UX",
+      "Question Text": {
+        "en-US": [
+          "What is the main objective of inquiry and survey methods?"
+        ],
+        "es-MX": [
+          "¿Cuál es el principal objetivo de los métodos de indagación y sondeo?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Analyze source code",
+          "Know the needs and preferences of users",
+          "Replace usability tests",
+          "Evaluate databases"
+        ],
+        "es-MX": [
+          "Analizar el código fuente",
+          "Conocer las necesidades y preferencias de los usuarios",
+          "Sustituir las pruebas de usabilidad",
+          "Evaluar bases de datos"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Know the needs and preferences of users",
+        "es-MX": "Conocer las necesidades y preferencias de los usuarios"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los métodos de indagación y sondeo tienen como finalidad recopilar información directamente de los usuarios potenciales. Mediante entrevistas, encuestas y cuestionarios es posible conocer sus necesidades, gustos y expectativas, permitiendo desarrollar productos más adecuados y centrados en las personas."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Métodos de evaluación en UX",
+      "Question Text": {
+        "en-US": [
+          "What is one of the advantages of the co-discovery method?"
+        ],
+        "es-MX": [
+          "¿Cuál es una de las ventajas del método del codescubrimiento?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Eliminates user participation",
+          "Allows observing collaboration and spontaneous conversations between users",
+          "Only evaluates source code",
+          "Does not require an observer"
+        ],
+        "es-MX": [
+          "Elimina la participación de los usuarios",
+          "Permite observar la colaboración y las conversaciones espontáneas entre usuarios",
+          "Solo evalúa el código fuente",
+          "No requiere un observador"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Allows observing collaboration and spontaneous conversations between users",
+        "es-MX": "Permite observar la colaboración y las conversaciones espontáneas entre usuarios"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "En el método del codescubrimiento dos usuarios trabajan juntos mientras un experto los observa. Las conversaciones y la colaboración entre ellos permiten descubrir problemas, necesidades y formas de pensar que pueden pasar desapercibidas en otros métodos de evaluación."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Métodos de evaluación en UX",
+      "Question Text": {
+        "en-US": [
+          "What is the main purpose of testing methods?"
+        ],
+        "es-MX": [
+          "¿Cuál es la finalidad principal de los métodos de testing?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Determine the programming language to use",
+          "Identify usability problems through representative users",
+          "Replace the design process",
+          "Organize databases"
+        ],
+        "es-MX": [
+          "Determinar el lenguaje de programación a utilizar",
+          "Identificar problemas de usabilidad mediante usuarios representativos",
+          "Sustituir el proceso de diseño",
+          "Organizar bases de datos"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Identify usability problems through representative users",
+        "es-MX": "Identificar problemas de usabilidad mediante usuarios representativos"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los métodos de testing permiten evaluar prototipos o sistemas mediante usuarios representativos que realizan tareas concretas. Los resultados obtenidos son analizados por expertos para detectar problemas y proponer mejoras en la experiencia de usuario."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Métodos de evaluación en UX",
+      "Question Text": {
+        "en-US": [
+          "Which of the following techniques belongs to inquiry and survey methods?"
+        ],
+        "es-MX": [
+          "¿Cuál de las siguientes técnicas pertenece a los métodos de indagación y sondeo?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Surveys and interviews",
+          "Heuristic evaluation",
+          "Code review",
+          "Performance tests"
+        ],
+        "es-MX": [
+          "Encuestas y entrevistas",
+          "Evaluación heurística",
+          "Revisión del código",
+          "Pruebas de rendimiento"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Surveys and interviews",
+        "es-MX": "Encuestas y entrevistas"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las encuestas y entrevistas son técnicas características de los métodos de indagación y sondeo, ya que permiten obtener información directamente de los usuarios acerca de sus necesidades, opiniones y expectativas."
+          }
+        ]
+      }
+    }
+    ,
+    {
+      "Category": "Métodos de evaluación en UX",
+      "Question Text": {
+        "en-US": [
+          "Why are testing methods important before releasing a product?"
+        ],
+        "es-MX": [
+          "¿Por qué son importantes los métodos de testing antes de lanzar un producto?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Because they increase development costs",
+          "Because they help detect errors and usability problems in advance",
+          "Because they eliminate user participation",
+          "Because they replace prototyping"
+        ],
+        "es-MX": [
+          "Porque incrementan los costos de desarrollo",
+          "Porque ayudan a detectar errores y problemas de usabilidad de forma anticipada",
+          "Porque eliminan la participación de los usuarios",
+          "Porque sustituyen al prototipado"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Because they help detect errors and usability problems in advance",
+        "es-MX": "Porque ayudan a detectar errores y problemas de usabilidad de forma anticipada"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las pruebas con usuarios permiten identificar problemas antes de que el producto sea liberado, lo que facilita realizar mejoras y ofrecer una experiencia más eficiente y satisfactoria para los usuarios."
+          }
+        ]
+      }
+    }
+  ]
+}
