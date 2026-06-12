@@ -365,27 +365,19 @@
                 ]
               },
               "Correct Answer": {
-                "en-US": "Berry Picking Model",
-                "es-MX": "Modelo de recolección de frutos del bosque"
+                "en-US": "Information Foraging Model",
+                "es-MX": "Modelo rastreo de información"
               },
               "Explanation": {
                 "es-MX": [
                   {
                     "type": "text",
-                    "content": "El modelo de recolección de frutos del bosque (Berry Picking) se inspira en el comportamiento observado en la naturaleza, donde un organismo evalúa constantemente el esfuerzo necesario para obtener alimento frente al beneficio que puede obtener. De forma análoga, las personas van recolectando información de distintas fuentes y modificando su búsqueda a medida que avanzan."
+                    "content": "Uno de estos modelos es el de Information Foraging (en español, rastreo de información), inspirado en la teoría de biología sobre el coste que le supone a un depredador conseguir su alimento frente a la ganancia (Pirolli y Card, 1999).  "
                   },
-                  {
-                    "type": "ul",
-                    "items": [
-                      "La búsqueda se realiza de manera progresiva.",
-                      "La necesidad de información puede cambiar durante el proceso.",
-                      "Se consultan diversas fuentes de información.",
-                      "La estrategia de búsqueda evoluciona conforme se obtiene nueva información."
-                    ]
-                  },
+                
                   {
                     "type": "text",
-                    "content": "Este modelo representa una búsqueda dinámica, donde los usuarios no obtienen toda la información de una sola vez, sino que la van recolectando gradualmente."
+                    "content": "Según Pirolli y Card (1999), las personas evalúan rápidamente si una fuente de información les puede resolver su pregunta y cuál será el coste, por ejemplo, en tiempo, de responderla."
                   }
                 ]
               }
