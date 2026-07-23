@@ -1,0 +1,2890 @@
+{
+  "meta": {
+    "slug": "animacion-web-u8",
+    "title": "JavaScript Nativo, Canvas, WAAPI y WebGL",
+    "subject": "DESARROLLO DE RECURSOS ANIMADOS PARA WEB",
+    "unit": 8,
+    "classNo": 0,
+    "description": "Unidad 8: animaciones con JavaScript nativo, Canvas, requestAnimationFrame, Application Programming Interface (API), Web Animations API (WAAPI), CanvasRenderingContext2D, métodos de dibujo en Canvas, WebGL, OpenGL ES, GPU, Vertex Shader y Fragment Shader.",
+    "tags": [
+      "JavaScript",
+      "JavaScript Nativo",
+      "Canvas",
+      "CanvasRenderingContext2D",
+      "requestAnimationFrame",
+      "API",
+      "Application Programming Interface",
+      "WAAPI",
+      "Web Animations API",
+      "animate()",
+      "WebGL",
+      "OpenGL ES",
+      "GPU",
+      "Vertex Shader",
+      "Fragment Shader",
+      "Shaders",
+      "Graphics",
+      "Animación Web"
+    ],
+    "questionCount": 32,
+    "languages": [
+      "en-US",
+      "es-MX"
+    ]
+  },
+  "Questions": [
+    {
+      "Category": "Native JavaScript",
+      "Question Text": {
+        "en-US": [
+          "Why use native JavaScript instead of a library?"
+        ],
+        "es-MX": [
+          "¿Por qué utilizar JavaScript nativo en vez de una librería?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "To avoid loading heavy libraries and optimize animations.",
+          "To simplify development and structure code with simple predefined modules.",
+          "To create organized programming compatible with CSS.",
+          "To compile code into a single file with all animations."
+        ],
+        "es-MX": [
+          "Para evitar cargar librerías pesadas y optimizar las animaciones.",
+          "Para facilitar el desarrollo y estructurar con módulos predefinidos sencillos.",
+          "Para hacer una programación organizada compatible con CSS.",
+          "Para compilar código en un solo archivo con todas las animaciones."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To avoid loading heavy libraries and optimize animations.",
+        "es-MX": "Para evitar cargar librerías pesadas y optimizar las animaciones."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Why use native JavaScript?"
+          },
+          {
+            "type": "text",
+            "content": "Native JavaScript allows developers to create animations and interactive features without relying on external libraries. This reduces the amount of code that must be downloaded, improving loading times and application performance."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Reduces page size.",
+              "Improves loading speed.",
+              "Avoids unnecessary dependencies.",
+              "Provides better performance for simple animations."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "¿Por qué utilizar JavaScript nativo?"
+          },
+          {
+            "type": "text",
+            "content": "JavaScript nativo permite desarrollar animaciones y funcionalidades interactivas sin depender de librerías externas. Esto disminuye la cantidad de archivos que debe cargar el navegador, mejorando el rendimiento y la velocidad de carga de la aplicación."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Reduce el tamaño de la página.",
+              "Mejora la velocidad de carga.",
+              "Evita dependencias innecesarias.",
+              "Ofrece un mejor rendimiento para animaciones sencillas."
+            ]
+          }
+        ]
+      }
+    },{
+      "Category": "JavaScript Animations",
+      "Question Text": {
+        "en-US": [
+          "JavaScript animations were traditionally created using which elements?"
+        ],
+        "es-MX": [
+          "¿Las animaciones JavaScript mediante de qué elementos se solían realizar?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Using CSS and the requestAnimationFrame function.",
+          "Using Canvas and the requestAnimationFrame function.",
+          "Using Canvas and CSS.",
+          "Using Canvas and the requestAnimationFrame class."
+        ],
+        "es-MX": [
+          "Con CSS y la función requestAnimationFrame.",
+          "Con Canvas y la función requestAnimationFrame.",
+          "Con Canvas y CSS.",
+          "Con Canvas y la clase requestAnimationFrame."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Using Canvas and the requestAnimationFrame function.",
+        "es-MX": "Con Canvas y la función requestAnimationFrame."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Canvas and requestAnimationFrame"
+          },
+          {
+            "type": "text",
+            "content": "Traditional JavaScript animations are commonly developed using the HTML5 Canvas element together with the <b>requestAnimationFrame()</b> function. This function synchronizes animations with the browser's refresh rate, providing smoother motion and better performance than older techniques such as setInterval()."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Canvas is used to draw graphics.",
+              "requestAnimationFrame() updates each animation frame.",
+              "Produces smoother animations.",
+              "Optimizes CPU and GPU usage."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Canvas y requestAnimationFrame"
+          },
+          {
+            "type": "text",
+            "content": "Las animaciones tradicionales en JavaScript suelen desarrollarse utilizando el elemento <b>Canvas</b> de HTML5 junto con la función <b>requestAnimationFrame()</b>. Esta función sincroniza la animación con la frecuencia de actualización del navegador, logrando movimientos más fluidos y un mejor rendimiento que técnicas antiguas como setInterval()."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Canvas permite dibujar gráficos.",
+              "requestAnimationFrame() actualiza cada cuadro de la animación.",
+              "Produce animaciones más fluidas.",
+              "Optimiza el uso del procesador y la tarjeta gráfica."
+            ]
+          }
+        ]
+      }
+    },{
+      "Category": "Application Programming Interface (API)",
+      "Question Text": {
+        "en-US": [
+          "What does API stand for?"
+        ],
+        "es-MX": [
+          "¿Qué significa API?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Application of Programming and Informatics.",
+          "Application Programming Interface.",
+          "Public Access to Internet.",
+          "Association of International Programmers."
+        ],
+        "es-MX": [
+          "Aplicación de programación e informática.",
+          "Interfaz de programación de aplicaciones.",
+          "Acceso público a Internet.",
+          "Asociación de programadores internacionales."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Application Programming Interface.",
+        "es-MX": "Interfaz de programación de aplicaciones."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "What is an API?"
+          },
+          {
+            "type": "text",
+            "content": "An <b>API (Application Programming Interface)</b> is a set of rules and functions that allows different software applications to communicate and exchange information. APIs simplify integration between systems without requiring access to their internal code."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Allows communication between applications.",
+              "Facilitates system integration.",
+              "Provides predefined functions and services.",
+              "Is widely used in web, mobile and cloud applications."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "¿Qué es una API?"
+          },
+          {
+            "type": "text",
+            "content": "Una <b>API (Interfaz de Programación de Aplicaciones)</b> es un conjunto de reglas, protocolos y funciones que permite que diferentes aplicaciones o sistemas se comuniquen e intercambien información. Las APIs facilitan la integración entre programas sin necesidad de acceder a su código interno."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Permite la comunicación entre aplicaciones.",
+              "Facilita la integración de sistemas.",
+              "Ofrece funciones y servicios predefinidos.",
+              "Se utiliza ampliamente en aplicaciones web, móviles y servicios en la nube."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "WAAPI",
+      "Question Text": {
+        "en-US": [
+          "What does WAAPI stand for?"
+        ],
+        "es-MX": [
+          "¿Qué significa WAAPI?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Web Application API.",
+          "Web Access Animations Point Interface.",
+          "Web Advance API.",
+          "Web Animations API."
+        ],
+        "es-MX": [
+          "Web application API.",
+          "Web access animations point interface.",
+          "Web advance API.",
+          "Web animations API."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Web Animations API.",
+        "es-MX": "Web animations API."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Web Animations API (WAAPI)"
+          },
+          {
+            "type": "text",
+            "content": "The <b>Web Animations API (WAAPI)</b> is a browser API that allows developers to create, control and synchronize animations directly with JavaScript, providing greater flexibility and performance than traditional techniques."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Native browser API.",
+              "Creates and controls animations.",
+              "Works with JavaScript.",
+              "Provides precise animation control."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "WAAPI simplifies the creation of interactive animations while offering better control over playback, timing and synchronization."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Web Animations API (WAAPI)"
+          },
+          {
+            "type": "text",
+            "content": "La <b>Web Animations API (WAAPI)</b> es una API del navegador que permite crear, controlar y sincronizar animaciones mediante JavaScript, ofreciendo mayor flexibilidad y control sobre su ejecución."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Es una API nativa del navegador.",
+              "Permite crear y controlar animaciones.",
+              "Funciona mediante JavaScript.",
+              "Ofrece un control preciso de las animaciones."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "WAAPI facilita el desarrollo de animaciones interactivas al proporcionar herramientas para controlar su reproducción, sincronización y duración."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "WAAPI",
+      "Question Text": {
+        "en-US": [
+          "What does the animate() function do in WAAPI?"
+        ],
+        "es-MX": [
+          "¿Qué hace la función animate en WAAPI?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "It is the animation trigger.",
+          "It animates a DOM element and receives two input parameters (effects and timing).",
+          "It automatically animates a DOM element.",
+          "It defines how long an animation will last."
+        ],
+        "es-MX": [
+          "Es el trigger de la animación.",
+          "Anima un elemento del DOM y tiene dos parámetros de entrada (efectos y timing).",
+          "Anima automáticamente un elemento del DOM.",
+          "Define el tiempo que durará una animación."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "It animates a DOM element and receives two input parameters (effects and timing).",
+        "es-MX": "Anima un elemento del DOM y tiene dos parámetros de entrada (efectos y timing)."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "animate() Function"
+          },
+          {
+            "type": "text",
+            "content": "The <b>animate()</b> function starts an animation on a DOM element. It commonly receives two parameters: one describing the animation effects (keyframes) and another defining timing options such as duration, delay and iterations."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Animates DOM elements.",
+              "Receives animation effects.",
+              "Receives timing options.",
+              "Returns an Animation object."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Using animate() allows developers to create animations directly from JavaScript while controlling their behavior programmatically."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Función animate()"
+          },
+          {
+            "type": "text",
+            "content": "La función <b>animate()</b> inicia una animación sobre un elemento del DOM. Generalmente recibe dos parámetros: uno que define los efectos de la animación (keyframes) y otro con las opciones de tiempo, como duración, retraso e iteraciones."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Anima elementos del DOM.",
+              "Recibe los efectos de la animación.",
+              "Recibe opciones de tiempo.",
+              "Devuelve un objeto Animation."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "La función animate() permite crear y controlar animaciones desde JavaScript con un alto nivel de flexibilidad y precisión."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "WAAPI",
+      "Question Text": {
+        "en-US": [
+          "Which of the following is NOT a WAAPI function or class?"
+        ],
+        "es-MX": [
+          "No es una función o clase de WAAPI:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Animate.",
+          "KeyframeEffect.",
+          "OptionalEffectTiming.",
+          "AnimationKeyframe."
+        ],
+        "es-MX": [
+          "Animate.",
+          "KeyframeEffect.",
+          "OptionalEffectTiming.",
+          "AnimationKeyframe."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "AnimationKeyframe.",
+        "es-MX": "AnimationKeyframe."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "WAAPI Classes"
+          },
+          {
+            "type": "text",
+            "content": "WAAPI defines several interfaces and classes to create and control animations, such as <b>KeyframeEffect</b> and timing-related objects. These components work together to describe animation effects and playback behavior."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Includes animation interfaces.",
+              "Uses KeyframeEffect.",
+              "Supports timing configuration.",
+              "Provides animation control objects."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Understanding WAAPI classes helps developers configure animations correctly and take advantage of the API's capabilities."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Clases de WAAPI"
+          },
+          {
+            "type": "text",
+            "content": "WAAPI incluye distintas interfaces y clases para crear y controlar animaciones, como <b>KeyframeEffect</b> y los objetos relacionados con el tiempo de reproducción. Estos componentes permiten definir el comportamiento de una animación."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Incluye interfaces para animaciones.",
+              "Utiliza KeyframeEffect.",
+              "Permite configurar el tiempo de reproducción.",
+              "Proporciona objetos para controlar animaciones."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Conocer las clases de WAAPI facilita utilizar correctamente la API y desarrollar animaciones más organizadas y flexibles."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "HTML Canvas",
+      "Question Text": {
+        "en-US": [
+          "What is the Canvas element used for on the web?"
+        ],
+        "es-MX": [
+          "¿Para qué sirve el canvas en web?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Canvas is used to create animations with Python and C++.",
+          "Canvas is used to draw graphics and animations without JavaScript or CSS.",
+          "Canvas is used to draw graphics, animations and other visual elements dynamically using JavaScript.",
+          "Canvas is used to play multimedia content such as music and videos."
+        ],
+        "es-MX": [
+          "El canvas en web se utiliza para realizar animaciones con programación Python y C++.",
+          "El canvas en web se utiliza para dibujar gráficos y animaciones sin la necesidad de usar JavaScript y CSS.",
+          "El canvas en web se utiliza para dibujar gráficos, animaciones y otros elementos visuales de forma dinámica utilizando JavaScript.",
+          "El canvas en web se utiliza para reproducir contenido multimedia, como música y videos, en un sitio web."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Canvas is used to draw graphics, animations and other visual elements dynamically using JavaScript.",
+        "es-MX": "El canvas en web se utiliza para dibujar gráficos, animaciones y otros elementos visuales de forma dinámica utilizando JavaScript."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Canvas"
+          },
+          {
+            "type": "text",
+            "content": "The <b>canvas</b> element provides a drawing area where JavaScript can generate graphics, animations and interactive visual content in real time."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Draws graphics dynamically.",
+              "Supports animations.",
+              "Controlled with JavaScript.",
+              "Useful for games and visualizations."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Canvas makes it possible to create interactive visual experiences by drawing directly on a bitmap surface inside the browser."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Canvas"
+          },
+          {
+            "type": "text",
+            "content": "El elemento <b>canvas</b> proporciona un área de dibujo donde JavaScript puede generar gráficos, animaciones y contenido visual de forma dinámica durante la ejecución de la página."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Permite dibujar gráficos dinámicamente.",
+              "Admite animaciones.",
+              "Se controla mediante JavaScript.",
+              "Es útil para juegos y visualizaciones."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Canvas permite crear experiencias visuales interactivas dibujando directamente sobre una superficie basada en píxeles dentro del navegador."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CanvasRenderingContext2D",
+      "Question Text": {
+        "en-US": [
+          "Which characteristics describe CanvasRenderingContext2D?"
+        ],
+        "es-MX": [
+          "Son características que podemos encontrar en CanvasRenderingContext2D:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Fast rendering, pixel-based and not very intuitive.",
+          "Slow rendering, pixel-based and easy to use.",
+          "Slow rendering, vector-based and not very intuitive.",
+          "Fast rendering, vector-based and easy to use."
+        ],
+        "es-MX": [
+          "Renderización rápida, trabaja bajo píxeles y poco intuitivo.",
+          "Renderización lenta, trabaja bajo píxeles y fácil de usar.",
+          "Renderización lenta, trabaja bajo vectores y poco intuitivo.",
+          "Renderización rápida, trabaja bajo vectores y fácil de usar."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Fast rendering, pixel-based and not very intuitive.",
+        "es-MX": "Renderización rápida, trabaja bajo píxeles y poco intuitivo."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "CanvasRenderingContext2D"
+          },
+          {
+            "type": "text",
+            "content": "CanvasRenderingContext2D is the API used to draw two-dimensional graphics on a canvas. It works directly with pixels, providing fast rendering while requiring explicit drawing instructions."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Works with pixels.",
+              "Provides fast rendering.",
+              "Draws 2D graphics.",
+              "Requires drawing commands."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Its pixel-based approach offers high performance for graphics and animations while giving developers precise control over rendering."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "CanvasRenderingContext2D"
+          },
+          {
+            "type": "text",
+            "content": "CanvasRenderingContext2D es la interfaz utilizada para dibujar gráficos bidimensionales sobre un canvas. Trabaja directamente con píxeles, ofreciendo una renderización rápida mediante instrucciones de dibujo."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Trabaja bajo píxeles.",
+              "Ofrece renderización rápida.",
+              "Permite dibujar gráficos 2D.",
+              "Utiliza instrucciones de dibujo."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Su funcionamiento basado en píxeles proporciona un alto rendimiento para gráficos y animaciones, permitiendo un control detallado del proceso de renderizado."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CanvasRenderingContext2D",
+      "Question Text": {
+        "en-US": [
+          "How do you draw a filled rectangle in CanvasRenderingContext2D?"
+        ],
+        "es-MX": [
+          "En CanvasRenderingContext2D, así se dibuja un rectángulo:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "ctx.fillRect(x, y, width, height);",
+          "ctx.strokeRect(x, y, width, height);",
+          "ctx.lineTo(x, y);",
+          "ctx.arc(x, y, radius, startAngle, endAngle);"
+        ],
+        "es-MX": [
+          "ctx.fillRect(x, y, ancho, alto).",
+          "ctx.strokeRect(x, y, ancho, alto).",
+          "ctx.lineTo(x, y).",
+          "ctx.arc(x, y, radius, startAngle, endAngle)."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "ctx.fillRect(x, y, width, height);",
+        "es-MX": "ctx.fillRect(x, y, ancho, alto)."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "fillRect()"
+          },
+          {
+            "type": "text",
+            "content": "The <b>fillRect(x, y, width, height)</b> method draws a filled rectangle on the canvas. CanvasRenderingContext2D provides many drawing methods that allow developers to create complete graphics and animations."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Filled rectangle → ctx.fillRect(x, y, width, height);",
+              "Rectangle outline → ctx.strokeRect(x, y, width, height);",
+              "Line → ctx.moveTo(x1, y1); ctx.lineTo(x2, y2);",
+              "Circle or arc → ctx.arc(x, y, radius, startAngle, endAngle);",
+              "Bezier curve → ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y);",
+              "Quadratic curve → ctx.quadraticCurveTo(cpx, cpy, x, y);",
+              "Text → ctx.fillText(text, x, y);",
+              "Image → ctx.drawImage(image, x, y);"
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Most Canvas drawings begin with beginPath(), define one or more shapes, and finish with fill() or stroke(). Combining these methods makes it possible to create illustrations, games and interactive animations."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "fillRect()"
+          },  
+          {
+            "type": "text",
+            "content": "El método <b>fillRect(x, y, ancho, alto)</b> dibuja un rectángulo relleno sobre el canvas. CanvasRenderingContext2D ofrece numerosos métodos para crear gráficos, figuras y animaciones de manera dinámica."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Rectángulo relleno → ctx.fillRect(x, y, ancho, alto);",
+              "Contorno de un rectángulo → ctx.strokeRect(x, y, ancho, alto);",
+              "Línea → ctx.moveTo(x1, y1); ctx.lineTo(x2, y2);",
+              "Círculo o arco → ctx.arc(x, y, radio, ánguloInicial, ánguloFinal);",
+              "Curva Bézier → ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, x, y);",
+              "Curva cuadrática → ctx.quadraticCurveTo(cpx, cpy, x, y);",
+              "Texto → ctx.fillText(texto, x, y);",
+              "Imagen → ctx.drawImage(imagen, x, y);"
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "La mayoría de los dibujos en Canvas comienzan con beginPath(), después se definen una o varias figuras y finalmente se renderizan mediante fill() o stroke(). La combinación de estos métodos permite desarrollar gráficos, ilustraciones, videojuegos y animaciones interactivas."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "WebGL Shaders",
+      "Question Text": {
+        "en-US": [
+          "Which rendering engine is WebGL based on?"
+        ],
+        "es-MX": [
+          "¿La renderización de WebGL en qué motor está basado?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "OpenGL.",
+          "Vulkan.",
+          "OpenCL.",
+          "DirectX."
+        ],
+        "es-MX": [
+          "OpenGL.",
+          "Vulkan.",
+          "OpenCL.",
+          "DirectX."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "OpenGL.",
+        "es-MX": "OpenGL."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "OpenGL"
+          },
+          {
+            "type": "text",
+            "content": "WebGL is based on <b>OpenGL ES</b>, a graphics API designed for embedded systems and mobile devices. It allows browsers to communicate with the GPU to render interactive 2D and 3D graphics."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Based on OpenGL ES.",
+              "Uses GPU acceleration.",
+              "Renders 2D and 3D graphics.",
+              "Works directly in modern browsers."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Using OpenGL ES allows WebGL applications to achieve high-performance graphics while remaining cross-platform."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "OpenGL"
+          },
+          {
+            "type": "text",
+            "content": "WebGL está basado en <b>OpenGL ES</b>, una API gráfica diseñada para sistemas embebidos y dispositivos móviles. Gracias a ella, el navegador puede comunicarse con la GPU para renderizar gráficos interactivos en dos y tres dimensiones."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Está basado en OpenGL ES.",
+              "Utiliza aceleración por GPU.",
+              "Renderiza gráficos 2D y 3D.",
+              "Funciona directamente en el navegador."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Basarse en OpenGL ES permite que WebGL ofrezca un alto rendimiento gráfico y compatibilidad con múltiples plataformas."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "WebGL Shaders",
+      "Question Text": {
+        "en-US": [
+          "What is the vertex shader used for in WebGL?"
+        ],
+        "es-MX": [
+          "En WebGL, ¿para qué sirve vertex shader?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "To calculate the color.",
+          "To calculate the number of polygons.",
+          "To process vertices.",
+          "To draw the texture and material."
+        ],
+        "es-MX": [
+          "Para calcular el color.",
+          "Para calcular el número de polígonos.",
+          "Para dibujar vértices.",
+          "Para dibujar la textura y el material."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To process vertices.",
+        "es-MX": "Para dibujar vértices."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Vertex Shader"
+          },
+          {
+            "type": "text",
+            "content": "A <b>vertex shader</b> processes every vertex of a 3D model before it is rendered. It calculates each vertex position and can also transform coordinates, apply rotations, scaling and other geometric operations."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Processes each vertex.",
+              "Calculates vertex positions.",
+              "Applies transformations.",
+              "Runs before rasterization."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Vertex shaders define the geometry of a scene before pixels are generated, making them essential for rendering 3D graphics."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Vertex Shader"
+          },
+          {
+            "type": "text",
+            "content": "El <b>vertex shader</b> procesa cada vértice de un modelo tridimensional antes del renderizado. Se encarga de calcular su posición y puede aplicar transformaciones como traslación, rotación, escalado y perspectiva."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Procesa cada vértice.",
+              "Calcula su posición.",
+              "Aplica transformaciones geométricas.",
+              "Se ejecuta antes del fragment shader."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "El vertex shader define la geometría de la escena antes de generar los píxeles que aparecerán en pantalla."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "WebGL Shaders",
+      "Question Text": {
+        "en-US": [
+          "What is the fragment shader used for in WebGL?"
+        ],
+        "es-MX": [
+          "En WebGL, ¿para qué sirve fragment shader?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "To calculate the color.",
+          "To calculate the number of polygons.",
+          "To draw vertices.",
+          "To draw textures and materials."
+        ],
+        "es-MX": [
+          "Para calcular el color.",
+          "Para calcular el número de polígonos.",
+          "Para dibujar vértices.",
+          "Para dibujar la textura y el material."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To calculate the color.",
+        "es-MX": "Para calcular el color."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Fragment Shader"
+          },
+          {
+            "type": "text",
+            "content": "A <b>fragment shader</b> is executed for every fragment (potential pixel) generated after rasterization. It determines the final appearance of each pixel by calculating color, lighting, shadows and texture effects."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Calculates pixel colors.",
+              "Applies lighting.",
+              "Processes textures.",
+              "Produces the final visual appearance."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Fragment shaders are responsible for the final visual quality of a rendered scene because every visible pixel passes through this stage."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Fragment Shader"
+          },
+          {
+            "type": "text",
+            "content": "El <b>fragment shader</b> se ejecuta para cada fragmento o posible píxel generado durante el renderizado. Su función es calcular el color final del píxel y aplicar efectos como iluminación, sombras y texturas."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Calcula el color final.",
+              "Aplica iluminación.",
+              "Procesa texturas.",
+              "Define la apariencia visual del píxel."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "El fragment shader determina el aspecto final de la escena, ya que todos los píxeles visibles pasan por esta etapa del proceso de renderizado."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CanvasRenderingContext2D",
+      "Question Text": {
+        "en-US": [
+          "What does the clearRect() method do in Canvas?"
+        ],
+        "es-MX": [
+          "¿Qué hace el método clearRect() en Canvas?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Changes the Canvas background color.",
+          "Clears a rectangular area of the Canvas.",
+          "Draws a transparent rectangle.",
+          "Restarts all Canvas animations."
+        ],
+        "es-MX": [
+          "Cambia el color de fondo del Canvas.",
+          "Borra un área rectangular del Canvas.",
+          "Dibuja un rectángulo transparente.",
+          "Reinicia todas las animaciones del Canvas."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Clears a rectangular area of the Canvas.",
+        "es-MX": "Borra un área rectangular del Canvas."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "clearRect()"
+          },
+          {
+            "type": "text",
+            "content": "The <b>clearRect(x, y, width, height)</b> method removes the pixels contained within a rectangular area of the Canvas, making that region transparent."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Uses X and Y coordinates.",
+              "Receives width and height.",
+              "Clears previously drawn pixels.",
+              "Commonly used between animation frames."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Clear the required drawing area before rendering the next animation frame to prevent previous images from remaining visible."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "clearRect()"
+          },
+          {
+            "type": "text",
+            "content": "El método <b>clearRect(x, y, ancho, alto)</b> elimina los píxeles contenidos dentro de un área rectangular del Canvas, dejando esa región transparente."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Utiliza coordenadas X y Y.",
+              "Recibe ancho y alto.",
+              "Borra los píxeles dibujados previamente.",
+              "Es común entre fotogramas de una animación."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "Limpia el área necesaria antes de dibujar el siguiente fotograma para evitar que permanezcan visibles los gráficos anteriores."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CanvasRenderingContext2D",
+      "Question Text": {
+        "en-US": [
+          "Which Canvas method draws only the outline of a rectangle?"
+        ],
+        "es-MX": [
+          "¿Qué método de Canvas dibuja únicamente el contorno de un rectángulo?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "ctx.fillRect()",
+          "ctx.strokeRect()",
+          "ctx.lineRect()",
+          "ctx.drawRect()"
+        ],
+        "es-MX": [
+          "ctx.fillRect()",
+          "ctx.strokeRect()",
+          "ctx.lineRect()",
+          "ctx.drawRect()"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "ctx.strokeRect()",
+        "es-MX": "ctx.strokeRect()"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "strokeRect()"
+          },
+          {
+            "type": "text",
+            "content": "The <b>strokeRect(x, y, width, height)</b> method draws the outline of a rectangle without filling its interior."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Draws a rectangular outline.",
+              "Receives X, Y, width and height.",
+              "Uses the current strokeStyle.",
+              "Its thickness depends on lineWidth."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Define strokeStyle and lineWidth before drawing when the rectangle requires a particular color or border thickness."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "strokeRect()"
+          },
+          {
+            "type": "text",
+            "content": "El método <b>strokeRect(x, y, ancho, alto)</b> dibuja el contorno de un rectángulo sin rellenar su parte interior."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Dibuja el contorno rectangular.",
+              "Recibe X, Y, ancho y alto.",
+              "Utiliza el valor de strokeStyle.",
+              "Su grosor depende de lineWidth."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "Define strokeStyle y lineWidth antes de dibujar cuando el rectángulo necesite un color o grosor de borde específico."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CanvasRenderingContext2D",
+      "Question Text": {
+        "en-US": [
+          "Which Canvas method is used to draw an image?"
+        ],
+        "es-MX": [
+          "¿Qué método de Canvas se utiliza para dibujar una imagen?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "ctx.image()",
+          "ctx.drawImage()",
+          "ctx.paintImage()",
+          "ctx.insertImage()"
+        ],
+        "es-MX": [
+          "ctx.image()",
+          "ctx.drawImage()",
+          "ctx.paintImage()",
+          "ctx.insertImage()"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "ctx.drawImage()",
+        "es-MX": "ctx.drawImage()"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "drawImage()"
+          },
+          {
+            "type": "text",
+            "content": "The <b>drawImage()</b> method draws an image, video frame or another Canvas onto the current Canvas. Its basic syntax is <b>ctx.drawImage(image, x, y)</b>."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Draws images on the Canvas.",
+              "Can define position and size.",
+              "Can crop part of an image.",
+              "Useful for games and animations."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Wait until an image has loaded before drawing it to avoid empty or incomplete results."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "drawImage()"
+          },
+          {
+            "type": "text",
+            "content": "El método <b>drawImage()</b> dibuja una imagen, un fotograma de video u otro Canvas sobre el Canvas actual. Su sintaxis básica es <b>ctx.drawImage(imagen, x, y)</b>."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Dibuja imágenes sobre el Canvas.",
+              "Puede definir posición y tamaño.",
+              "Permite recortar una parte de la imagen.",
+              "Es útil para juegos y animaciones."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "Espera a que la imagen termine de cargarse antes de dibujarla para evitar resultados vacíos o incompletos."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CanvasRenderingContext2D",
+      "Question Text": {
+        "en-US": [
+          "What does the beginPath() method do in Canvas?"
+        ],
+        "es-MX": [
+          "¿Qué hace el método beginPath() en Canvas?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Finishes the current drawing.",
+          "Clears the entire Canvas.",
+          "Starts a new path for drawing shapes.",
+          "Changes the Canvas color."
+        ],
+        "es-MX": [
+          "Finaliza el dibujo actual.",
+          "Borra todo el Canvas.",
+          "Inicia una nueva ruta para dibujar figuras.",
+          "Cambia el color del Canvas."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Starts a new path for drawing shapes.",
+        "es-MX": "Inicia una nueva ruta para dibujar figuras."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "beginPath()"
+          },
+          {
+            "type": "text",
+            "content": "The <b>beginPath()</b> method starts a new drawing path. Commands such as moveTo(), lineTo(), arc() and bezierCurveTo() are added to that path before it is rendered."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Starts a new path.",
+              "Separates independent shapes.",
+              "Works with line and curve methods.",
+              "The path is rendered with fill() or stroke()."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Call beginPath() before creating an independent figure so that it does not unintentionally connect with a previous path."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "beginPath()"
+          },
+          {
+            "type": "text",
+            "content": "El método <b>beginPath()</b> inicia una nueva ruta de dibujo. Después pueden agregarse instrucciones como moveTo(), lineTo(), arc() y bezierCurveTo() antes de renderizarla."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Inicia una nueva ruta.",
+              "Separa figuras independientes.",
+              "Funciona con métodos de líneas y curvas.",
+              "La ruta se renderiza con fill() o stroke()."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "Ejecuta beginPath() antes de crear una figura independiente para evitar que se conecte accidentalmente con una ruta anterior."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "WebGL Performance",
+      "Question Text": {
+        "en-US": [
+          "Which hardware component does WebGL primarily use for graphics processing?"
+        ],
+        "es-MX": [
+          "¿Qué componente de hardware utiliza principalmente WebGL para procesar gráficos?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "CPU.",
+          "DOM.",
+          "GPU.",
+          "RAM."
+        ],
+        "es-MX": [
+          "CPU.",
+          "DOM.",
+          "GPU.",
+          "RAM."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "GPU.",
+        "es-MX": "GPU."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "GPU Processing"
+          },
+          {
+            "type": "text",
+            "content": "WebGL uses the <b>GPU</b> to process large amounts of graphical information in parallel, including vertices, fragments, textures and visual effects."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Processes graphics in parallel.",
+              "Executes shader programs.",
+              "Accelerates 2D and 3D rendering.",
+              "Reduces part of the CPU workload."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "GPU processing makes complex interactive scenes and real-time visual effects possible within the browser."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Procesamiento mediante GPU"
+          },
+          {
+            "type": "text",
+            "content": "WebGL utiliza la <b>GPU</b> para procesar en paralelo grandes cantidades de información gráfica, incluyendo vértices, fragmentos, texturas y efectos visuales."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Procesa gráficos en paralelo.",
+              "Ejecuta programas shader.",
+              "Acelera el renderizado 2D y 3D.",
+              "Reduce parte del trabajo de la CPU."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "El procesamiento mediante GPU permite mostrar escenas complejas y efectos visuales interactivos en tiempo real dentro del navegador."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "WebGL Shaders",
+      "Question Text": {
+        "en-US": [
+          "Which WebGL shader processes the position of vertices?"
+        ],
+        "es-MX": [
+          "¿Qué shader de WebGL procesa la posición de los vértices?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Vertex Shader.",
+          "Fragment Shader.",
+          "Texture Shader.",
+          "Pixel Buffer."
+        ],
+        "es-MX": [
+          "Vertex Shader.",
+          "Fragment Shader.",
+          "Texture Shader.",
+          "Pixel Buffer."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Vertex Shader.",
+        "es-MX": "Vertex Shader."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Vertex Shader"
+          },
+          {
+            "type": "text",
+            "content": "The <b>Vertex Shader</b> processes each vertex and calculates its final position before the primitive is rasterized."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Receives vertex information.",
+              "Calculates vertex positions.",
+              "Applies geometric transformations.",
+              "Runs before the Fragment Shader."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "The Vertex Shader determines the geometry and position of the objects that will appear in the scene."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Vertex Shader"
+          },
+          {
+            "type": "text",
+            "content": "El <b>Vertex Shader</b> procesa cada vértice y calcula su posición final antes de que la figura sea rasterizada."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Recibe información de los vértices.",
+              "Calcula sus posiciones.",
+              "Aplica transformaciones geométricas.",
+              "Se ejecuta antes del Fragment Shader."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "El Vertex Shader determina la geometría y la posición de los objetos que aparecerán en la escena."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "WebGL Shaders",
+      "Question Text": {
+        "en-US": [
+          "Which WebGL shader calculates the final color of a fragment?"
+        ],
+        "es-MX": [
+          "¿Qué shader de WebGL calcula el color final de un fragmento?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Vertex Shader.",
+          "Fragment Shader.",
+          "Geometry Buffer.",
+          "Transform Shader."
+        ],
+        "es-MX": [
+          "Vertex Shader.",
+          "Fragment Shader.",
+          "Geometry Buffer.",
+          "Transform Shader."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Fragment Shader.",
+        "es-MX": "Fragment Shader."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Fragment Shader"
+          },
+          {
+            "type": "text",
+            "content": "The <b>Fragment Shader</b> calculates the final color of every fragment generated during rasterization. It can combine colors, textures, lighting and transparency."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Processes fragments.",
+              "Calculates final colors.",
+              "Applies textures and lighting.",
+              "Defines the visible appearance."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "The Fragment Shader controls the final visual appearance of the pixels displayed in a WebGL scene."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Fragment Shader"
+          },
+          {
+            "type": "text",
+            "content": "El <b>Fragment Shader</b> calcula el color final de cada fragmento generado durante la rasterización. Puede combinar colores, texturas, iluminación y transparencia."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Procesa fragmentos.",
+              "Calcula los colores finales.",
+              "Aplica texturas e iluminación.",
+              "Define la apariencia visible."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "El Fragment Shader controla la apariencia visual final de los píxeles mostrados en una escena WebGL."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Graphics Processing",
+      "Question Text": {
+        "en-US": [
+          "What does GPU stand for?"
+        ],
+        "es-MX": [
+          "¿Qué significa GPU?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "General Processing Unit.",
+          "Graphic Program Utility.",
+          "Graphics Processing Unit.",
+          "Global Processing User."
+        ],
+        "es-MX": [
+          "General Processing Unit.",
+          "Graphic Program Utility.",
+          "Graphics Processing Unit.",
+          "Global Processing User."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Graphics Processing Unit.",
+        "es-MX": "Graphics Processing Unit."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Graphics Processing Unit"
+          },
+          {
+            "type": "text",
+            "content": "A <b>Graphics Processing Unit</b> is hardware specialized in processing graphical operations and many calculations simultaneously."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Specialized in graphics.",
+              "Performs parallel calculations.",
+              "Accelerates rendering.",
+              "Used by technologies such as WebGL."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "The GPU improves the performance of graphics, animations, games and three-dimensional applications."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Graphics Processing Unit"
+          },
+          {
+            "type": "text",
+            "content": "Una <b>Graphics Processing Unit</b> es un componente especializado en procesar operaciones gráficas y realizar múltiples cálculos de forma simultánea."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Está especializada en gráficos.",
+              "Realiza cálculos en paralelo.",
+              "Acelera el renderizado.",
+              "Es utilizada por tecnologías como WebGL."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "La GPU mejora el rendimiento de gráficos, animaciones, videojuegos y aplicaciones tridimensionales."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Anime.js",
+      "Question Text": {
+        "en-US": [
+          "Which Anime.js property identifies the elements that will be animated?"
+        ],
+        "es-MX": [
+          "¿Qué propiedad de Anime.js identifica los elementos que serán animados?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "duration",
+          "timeline",
+          "targets",
+          "stagger"
+        ],
+        "es-MX": [
+          "duration",
+          "timeline",
+          "targets",
+          "stagger"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "targets",
+        "es-MX": "targets"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "targets"
+          },
+          {
+            "type": "text",
+            "content": "The <b>targets</b> property specifies the element or group of elements to which Anime.js will apply an animation."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Selects animation elements.",
+              "Accepts CSS selectors.",
+              "Can receive DOM elements.",
+              "Can animate multiple targets."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Use clear selectors so that animations affect only the intended elements."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "targets"
+          },
+          {
+            "type": "text",
+            "content": "La propiedad <b>targets</b> especifica el elemento o conjunto de elementos sobre los que Anime.js aplicará una animación."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Selecciona los elementos animados.",
+              "Acepta selectores CSS.",
+              "Puede recibir elementos del DOM.",
+              "Permite animar varios objetivos."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "Utiliza selectores claros para que la animación afecte únicamente a los elementos deseados."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Anime.js",
+      "Question Text": {
+        "en-US": [
+          "Which Anime.js property defines how long an animation lasts?"
+        ],
+        "es-MX": [
+          "¿Qué propiedad de Anime.js define cuánto tiempo dura una animación?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "delay",
+          "duration",
+          "loop",
+          "direction"
+        ],
+        "es-MX": [
+          "delay",
+          "duration",
+          "loop",
+          "direction"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "duration",
+        "es-MX": "duration"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "duration"
+          },
+          {
+            "type": "text",
+            "content": "The <b>duration</b> property defines the amount of time an Anime.js animation takes to move from its initial state to its final state."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Defines animation length.",
+              "Usually expressed in milliseconds.",
+              "Affects perceived speed.",
+              "Can vary between animated elements."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Choose a duration that makes the change visible without making the interaction feel slow."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "duration"
+          },
+          {
+            "type": "text",
+            "content": "La propiedad <b>duration</b> define el tiempo que una animación de Anime.js tarda en pasar de su estado inicial al estado final."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Define la duración de la animación.",
+              "Suele expresarse en milisegundos.",
+              "Afecta la velocidad percibida.",
+              "Puede variar entre elementos."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "Selecciona una duración que permita percibir el cambio sin hacer que la interacción se sienta lenta."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Anime.js",
+      "Question Text": {
+        "en-US": [
+          "Which Anime.js property allows an animation to repeat?"
+        ],
+        "es-MX": [
+          "¿Qué propiedad de Anime.js permite repetir una animación?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "repeat",
+          "iteration",
+          "loop",
+          "play"
+        ],
+        "es-MX": [
+          "repeat",
+          "iteration",
+          "loop",
+          "play"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "loop",
+        "es-MX": "loop"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "loop"
+          },
+          {
+            "type": "text",
+            "content": "The <b>loop</b> property determines whether an Anime.js animation repeats and can define how many times it should run."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Repeats an animation.",
+              "Can receive a number.",
+              "Can run indefinitely.",
+              "Useful for continuous effects."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Avoid unnecessary infinite loops because continuous movement may distract users or consume additional resources."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "loop"
+          },
+          {
+            "type": "text",
+            "content": "La propiedad <b>loop</b> determina si una animación de Anime.js se repetirá y puede indicar cuántas veces debe ejecutarse."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Repite una animación.",
+              "Puede recibir un número.",
+              "Puede ejecutarse indefinidamente.",
+              "Es útil para efectos continuos."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "Evita bucles infinitos innecesarios, ya que el movimiento constante puede distraer al usuario o consumir recursos adicionales."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Anime.js",
+      "Question Text": {
+        "en-US": [
+          "Which Anime.js property delays the beginning of an animation?"
+        ],
+        "es-MX": [
+          "¿Qué propiedad de Anime.js retrasa el inicio de una animación?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "duration",
+          "delay",
+          "timeline",
+          "speed"
+        ],
+        "es-MX": [
+          "duration",
+          "delay",
+          "timeline",
+          "speed"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "delay",
+        "es-MX": "delay"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "delay"
+          },
+          {
+            "type": "text",
+            "content": "The <b>delay</b> property defines how long Anime.js waits before beginning an animation."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Delays the animation start.",
+              "Usually uses milliseconds.",
+              "Helps coordinate sequences.",
+              "Can vary for each target."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Use short and purposeful delays so that the interface remains responsive."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "delay"
+          },
+          {
+            "type": "text",
+            "content": "La propiedad <b>delay</b> define cuánto tiempo espera Anime.js antes de iniciar una animación."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Retrasa el inicio de la animación.",
+              "Suele utilizar milisegundos.",
+              "Ayuda a coordinar secuencias.",
+              "Puede variar para cada objetivo."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "Utiliza retrasos breves y con un propósito claro para que la interfaz conserve una respuesta rápida."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "WAAPI",
+      "Question Text": {
+        "en-US": [
+          "What type of object does the animate() method return?"
+        ],
+        "es-MX": [
+          "¿Qué tipo de objeto devuelve el método animate()?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "A DOM object.",
+          "An Animation object.",
+          "A Canvas object.",
+          "A CSSStyle object."
+        ],
+        "es-MX": [
+          "Un objeto DOM.",
+          "Un objeto Animation.",
+          "Un objeto Canvas.",
+          "Un objeto CSSStyle."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "An Animation object.",
+        "es-MX": "Un objeto Animation."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Animation Object"
+          },
+          {
+            "type": "text",
+            "content": "The <b>animate()</b> method returns an Animation object that represents the created animation and provides methods to control its playback."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Represents the animation.",
+              "Can be stored in a variable.",
+              "Provides playback controls.",
+              "Contains timing and state information."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "The returned object allows JavaScript to pause, play, cancel or finish an animation after it has been created."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Objeto Animation"
+          },
+          {
+            "type": "text",
+            "content": "El método <b>animate()</b> devuelve un objeto Animation que representa la animación creada y proporciona métodos para controlar su reproducción."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Representa la animación.",
+              "Puede almacenarse en una variable.",
+              "Proporciona controles de reproducción.",
+              "Contiene información de tiempo y estado."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "El objeto devuelto permite pausar, reproducir, cancelar o finalizar una animación después de haberla creado."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "WAAPI",
+      "Question Text": {
+        "en-US": [
+          "Which WAAPI method pauses an animation?"
+        ],
+        "es-MX": [
+          "¿Qué método de WAAPI pausa una animación?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "stop()",
+          "pause()",
+          "freeze()",
+          "break()"
+        ],
+        "es-MX": [
+          "stop()",
+          "pause()",
+          "freeze()",
+          "break()"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "pause()",
+        "es-MX": "pause()"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "pause()"
+          },
+          {
+            "type": "text",
+            "content": "The <b>pause()</b> method temporarily stops an animation at its current playback position without returning it to the beginning."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Temporarily stops playback.",
+              "Preserves the current position.",
+              "Can later continue with play().",
+              "Operates on an Animation object."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Use pause() when users need to temporarily stop motion without losing animation progress."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "pause()"
+          },
+          {
+            "type": "text",
+            "content": "El método <b>pause()</b> detiene temporalmente una animación en su posición actual sin regresarla al inicio."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Detiene temporalmente la reproducción.",
+              "Conserva la posición actual.",
+              "Puede continuar mediante play().",
+              "Se aplica sobre un objeto Animation."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "Utiliza pause() cuando el usuario necesite detener temporalmente el movimiento sin perder el progreso de la animación."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "WAAPI",
+      "Question Text": {
+        "en-US": [
+          "Which WAAPI method plays or resumes an animation?"
+        ],
+        "es-MX": [
+          "¿Qué método de WAAPI reproduce o reanuda una animación?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "resume()",
+          "play()",
+          "continue()",
+          "restart()"
+        ],
+        "es-MX": [
+          "resume()",
+          "play()",
+          "continue()",
+          "restart()"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "play()",
+        "es-MX": "play()"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "play()"
+          },
+          {
+            "type": "text",
+            "content": "The <b>play()</b> method starts an animation or resumes it from the position where it was paused."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Starts an animation.",
+              "Resumes paused playback.",
+              "Uses the current playback position.",
+              "Belongs to the Animation interface."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Provide clear controls when users are allowed to pause and resume important animated content."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "play()"
+          },
+          {
+            "type": "text",
+            "content": "El método <b>play()</b> inicia una animación o la reanuda desde la posición en la que fue pausada."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Inicia una animación.",
+              "Reanuda la reproducción pausada.",
+              "Utiliza la posición actual.",
+              "Forma parte de la interfaz Animation."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "Proporciona controles claros cuando el usuario pueda pausar y reanudar contenido animado importante."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "WAAPI",
+      "Question Text": {
+        "en-US": [
+          "Which WAAPI method cancels an animation and removes its effects?"
+        ],
+        "es-MX": [
+          "¿Qué método de WAAPI cancela una animación y elimina sus efectos?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "finish()",
+          "stop()",
+          "cancel()",
+          "reset()"
+        ],
+        "es-MX": [
+          "finish()",
+          "stop()",
+          "cancel()",
+          "reset()"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "cancel()",
+        "es-MX": "cancel()"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "cancel()"
+          },
+          {
+            "type": "text",
+            "content": "The <b>cancel()</b> method stops an animation, clears its playback state and removes the visual effects produced by that animation."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Stops the animation.",
+              "Removes its visual effects.",
+              "Clears its playback state.",
+              "Returns it to an inactive condition."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Use cancel() when an animation is no longer needed and its effects must not remain applied."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "cancel()"
+          },
+          {
+            "type": "text",
+            "content": "El método <b>cancel()</b> detiene una animación, limpia su estado de reproducción y elimina los efectos visuales producidos por ella."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Detiene la animación.",
+              "Elimina sus efectos visuales.",
+              "Limpia el estado de reproducción.",
+              "La devuelve a una condición inactiva."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "Utiliza cancel() cuando una animación ya no sea necesaria y sus efectos no deban permanecer aplicados."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "SVG",
+      "Question Text": {
+        "en-US": [
+          "Which is a primary advantage of SVG over PNG?"
+        ],
+        "es-MX": [
+          "¿Cuál es una ventaja principal de SVG frente a PNG?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "It is always smaller.",
+          "It only works on large screens.",
+          "It can be scaled without losing quality.",
+          "It does not require a browser."
+        ],
+        "es-MX": [
+          "Siempre pesa menos.",
+          "Solo funciona en pantallas grandes.",
+          "Puede escalarse sin perder calidad.",
+          "No necesita un navegador."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "It can be scaled without losing quality.",
+        "es-MX": "Puede escalarse sin perder calidad."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Scalable Graphics"
+          },
+          {
+            "type": "text",
+            "content": "SVG describes graphics through vectors and mathematical shapes, allowing an image to be enlarged or reduced without becoming pixelated."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Vector-based format.",
+              "Independent of resolution.",
+              "Maintains sharp edges.",
+              "Suitable for responsive interfaces."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "SVG is particularly useful for logos, icons and illustrations that must remain sharp at different sizes."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Gráficos escalables"
+          },
+          {
+            "type": "text",
+            "content": "SVG describe los gráficos mediante vectores y formas matemáticas, permitiendo ampliar o reducir una imagen sin que se pixele."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Es un formato vectorial.",
+              "Es independiente de la resolución.",
+              "Mantiene los bordes definidos.",
+              "Es adecuado para interfaces responsivas."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "SVG es especialmente útil para logotipos, iconos e ilustraciones que deben conservar su nitidez en diferentes tamaños."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Animation Performance",
+      "Question Text": {
+        "en-US": [
+          "Which CSS property usually provides better animation performance?"
+        ],
+        "es-MX": [
+          "¿Qué propiedad de CSS suele ofrecer un mejor rendimiento al animarse?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "width",
+          "height",
+          "transform",
+          "margin"
+        ],
+        "es-MX": [
+          "width",
+          "height",
+          "transform",
+          "margin"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "transform",
+        "es-MX": "transform"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Animating transform"
+          },
+          {
+            "type": "text",
+            "content": "Animations based on <b>transform</b> can often be handled during the compositing stage without recalculating the complete page layout."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Can avoid Layout recalculation.",
+              "Often uses compositing.",
+              "Produces smoother movement.",
+              "Supports translation, rotation and scaling."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Prefer transform for movement and resizing effects instead of repeatedly changing layout-related properties."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Animación de transform"
+          },
+          {
+            "type": "text",
+            "content": "Las animaciones basadas en <b>transform</b> pueden procesarse frecuentemente durante la etapa de composición sin recalcular toda la distribución de la página."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Puede evitar recalcular Layout.",
+              "Suele aprovechar la composición.",
+              "Produce movimientos más fluidos.",
+              "Admite traslación, rotación y escalado."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "Prefiere transform para efectos de movimiento o cambio de escala en lugar de modificar repetidamente propiedades relacionadas con la distribución."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Animation Performance",
+      "Question Text": {
+        "en-US": [
+          "Which CSS property is commonly animated together with transform for good performance?"
+        ],
+        "es-MX": [
+          "¿Qué propiedad de CSS se anima comúnmente junto con transform para obtener un buen rendimiento?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "background",
+          "border",
+          "opacity",
+          "font-size"
+        ],
+        "es-MX": [
+          "background",
+          "border",
+          "opacity",
+          "font-size"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "opacity",
+        "es-MX": "opacity"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Animating opacity"
+          },
+          {
+            "type": "text",
+            "content": "The <b>opacity</b> property changes an element's transparency and can usually be animated efficiently without modifying its size or position in the document."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Controls transparency.",
+              "Does not change the document flow.",
+              "Creates fade effects.",
+              "Works well with transform."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Combine opacity and transform to create smooth entrances, exits and movement effects."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Animación de opacity"
+          },
+          {
+            "type": "text",
+            "content": "La propiedad <b>opacity</b> modifica la transparencia de un elemento y normalmente puede animarse de forma eficiente sin cambiar su tamaño ni su posición dentro del documento."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Controla la transparencia.",
+              "No modifica el flujo del documento.",
+              "Crea efectos de aparición y desaparición.",
+              "Funciona bien junto con transform."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "Combina opacity y transform para crear entradas, salidas y movimientos visuales fluidos."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Animation Performance",
+      "Question Text": {
+        "en-US": [
+          "What does GPU acceleration mean in web graphics?"
+        ],
+        "es-MX": [
+          "¿Qué significa aceleración por GPU en los gráficos web?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Running all JavaScript code faster.",
+          "Using the graphics processor to process graphics and animations.",
+          "Reducing the size of all images.",
+          "Optimizing only the HTML code."
+        ],
+        "es-MX": [
+          "Ejecutar más rápido todo el código JavaScript.",
+          "Utilizar el procesador gráfico para procesar gráficos y animaciones.",
+          "Reducir el tamaño de todas las imágenes.",
+          "Optimizar únicamente el código HTML."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Using the graphics processor to process graphics and animations.",
+        "es-MX": "Utilizar el procesador gráfico para procesar gráficos y animaciones."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "GPU Acceleration"
+          },
+          {
+            "type": "text",
+            "content": "GPU acceleration uses the graphics processor to perform graphical calculations and compositing operations that would otherwise require additional CPU work."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Uses the graphics processor.",
+              "Processes operations in parallel.",
+              "Improves visual performance.",
+              "Supports complex graphics and animations."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "GPU acceleration helps browsers display fluid animations and complex visual scenes more efficiently."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Aceleración por GPU"
+          },
+          {
+            "type": "text",
+            "content": "La aceleración por GPU utiliza el procesador gráfico para realizar cálculos visuales y operaciones de composición que, de otro modo, requerirían trabajo adicional de la CPU."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Utiliza el procesador gráfico.",
+              "Procesa operaciones en paralelo.",
+              "Mejora el rendimiento visual.",
+              "Admite gráficos y animaciones complejas."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "La aceleración por GPU ayuda al navegador a mostrar animaciones fluidas y escenas visuales complejas de manera más eficiente."
+          }
+        ]
+      }
+    }
+    
+  ]
+}

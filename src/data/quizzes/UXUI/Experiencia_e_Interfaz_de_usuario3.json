@@ -408,22 +408,22 @@
         ]
       },
       "Correct Answer": {
-        "en-US": "Structure phase",
-        "es-MX": "Fase estructura"
+        "en-US": "Skeleton phase",
+        "es-MX": "Fase esqueleto"
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "La fase de estructura define la manera en que se organizan los contenidos y las funcionalidades del sistema. En esta etapa se diseña la arquitectura de información, incluyendo los sistemas de navegación, organización, etiquetado y búsqueda, con el propósito de facilitar que los usuarios encuentren y utilicen la información de forma eficiente."
+            "content": "La fase de esqueleto (Skeleton) se encarga de definir la disposición de los elementos de la interfaz y comprende disciplinas como el diseño de la interfaz, el diseño de navegación y el diseño de la información. Dentro de este último se diseñan los sistemas de organización, etiquetado, navegación y búsqueda, con el propósito de facilitar que los usuarios encuentren y comprendan la información de manera eficiente."
           },
           {
             "type": "ul",
             "items": [
-              "Se define la arquitectura de información.",
-              "Se establecen sistemas de navegación y búsqueda.",
-              "Se organiza el contenido del producto.",
-              "Se busca facilitar la interacción y localización de información."
+              "Incluye el diseño de la interfaz y de la navegación.",
+              "Define los sistemas de organización, etiquetado y búsqueda.",
+              "Se encuentra inmediatamente debajo de la capa de superficie.",
+              "Busca facilitar la localización y comprensión de la información por parte del usuario."
             ]
           }
         ]
@@ -721,52 +721,6 @@
           {
             "type": "text",
             "content": "La fase de estructura se encarga de definir la arquitectura de información y el diseño de interacción. En ella se establece cómo se organizan los contenidos y cómo interactuará el usuario con las funcionalidades del sistema."
-          }
-        ]
-      }
-    },
-    {
-      "Category": "Fases del diseño UX",
-      "Question Text": {
-        "en-US": [
-          "In which phase are navigation, organization, labeling and search systems designed?"
-        ],
-        "es-MX": [
-          "¿En qué fase se diseñan los sistemas de navegación, organización, etiquetado y búsqueda?"
-        ]
-      },
-      "Options": {
-        "en-US": [
-          "Scope",
-          "Structure",
-          "Skeleton",
-          "Surface"
-        ],
-        "es-MX": [
-          "Alcance",
-          "Estructura",
-          "Esqueleto",
-          "Superficie"
-        ]
-      },
-      "Correct Answer": {
-        "en-US": "Structure",
-        "es-MX": "Estructura"
-      },
-      "Explanation": {
-        "es-MX": [
-          {
-            "type": "text",
-            "content": "Los sistemas de navegación, organización, etiquetado y búsqueda forman parte de la arquitectura de información, la cual pertenece al plano de estructura según el modelo de Jesse James Garrett."
-          },
-          {
-            "type": "ul",
-            "items": [
-              "Define cómo se organiza la información.",
-              "Facilita la localización del contenido.",
-              "Incluye sistemas de navegación y búsqueda.",
-              "Conecta las necesidades definidas en el alcance con la disposición visual del esqueleto."
-            ]
           }
         ]
       }

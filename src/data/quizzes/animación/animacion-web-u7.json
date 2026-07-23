@@ -1,0 +1,1106 @@
+  {
+    "meta": {
+      "slug": "animacion-web-u7",
+      "title": "JavaScript, Librerías de Animación y WebGL",
+      "subject": "DESARROLLO DE RECURSOS ANIMADOS PARA WEB",
+      "unit": 7,
+      "classNo": 0,
+      "description": "Unidad 7: fundamentos de JavaScript, librerías de animación para la web (jQuery, Anime.js y AniJS), sintaxis y funcionamiento de AniJS, características de Anime.js, DOM, WebGL, mallas (mesh) y texturas en gráficos 3D.",
+      "tags": [
+        "JavaScript",
+        "DOM",
+        "JavaScript Libraries",
+        "jQuery",
+        "Anime.js",
+        "AniJS",
+        "Web Animation",
+        "Interactivity",
+        "Animation Libraries",
+        "data-anijs",
+        "Timeline",
+        "Keyframes",
+        "Staggering",
+        "WebGL",
+        "GPU",
+        "Mesh",
+        "Texture",
+        "3D Graphics"
+      ],
+      "questionCount": 13,
+      "languages": [
+        "en-US",
+        "es-MX"
+      ]
+    },
+    "Questions": [
+      {
+        "Category": "Conceptos básicos de JavaScript",
+        "Question Text": {
+          "en-US": [
+            "What is JavaScript?"
+          ],
+          "es-MX": [
+            "¿Qué es JavaScript?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "JavaScript is a low-level programming language.",
+            "JavaScript is a functional programming language.",
+            "JavaScript is a high-level, interpreted and object-oriented programming language.",
+            "JavaScript is a compiled programming language."
+          ],
+          "es-MX": [
+            "JavaScript es un lenguaje de programación de bajo nivel.",
+            "JavaScript es un lenguaje de programación funcional.",
+            "JavaScript es un lenguaje de programación de alto nivel, interpretado y orientado a objetos.",
+            "JavaScript es un lenguaje de programación compilado."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "JavaScript is a high-level, interpreted and object-oriented programming language.",
+          "es-MX": "JavaScript es un lenguaje de programación de alto nivel, interpretado y orientado a objetos."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "What is JavaScript?"
+            },
+            {
+              "type": "text",
+              "content": "<b>JavaScript</b> is a high-level, interpreted and object-oriented programming language primarily used to add interactivity and dynamic behavior to websites. It runs directly in web browsers and is one of the three core technologies of web development together with HTML and CSS."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "High-level language.",
+                "Interpreted by the browser.",
+                "Supports object-oriented programming.",
+                "Adds interactivity to web pages."
+              ]
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "title-h2",
+              "content": "Importance"
+            },
+            {
+              "type": "text",
+              "content": "JavaScript allows developers to create dynamic interfaces, validate forms, manipulate HTML elements, communicate with servers and build modern web applications."
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "title-h2",
+              "content": "Examples"
+            },
+            {
+              "type": "text",
+              "content": "JavaScript is used for image sliders, interactive menus, animations, games, real-time chats, API communication and complete web applications."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "¿Qué es JavaScript?"
+            },
+            {
+              "type": "text",
+              "content": "<b>JavaScript</b> es un lenguaje de programación de alto nivel, interpretado y orientado a objetos que se utiliza principalmente para agregar interactividad y comportamiento dinámico a las páginas web. Se ejecuta directamente en el navegador y forma parte de las tres tecnologías fundamentales del desarrollo web junto con HTML y CSS."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Lenguaje de alto nivel.",
+                "Interpretado por el navegador.",
+                "Permite programación orientada a objetos.",
+                "Agrega interactividad a las páginas web."
+              ]
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "title-h2",
+              "content": "Importancia"
+            },
+            {
+              "type": "text",
+              "content": "JavaScript permite desarrollar interfaces dinámicas, validar formularios, manipular elementos HTML, comunicarse con servidores y crear aplicaciones web modernas con una excelente experiencia para el usuario."
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "title-h2",
+              "content": "Ejemplos de uso"
+            },
+            {
+              "type": "text",
+              "content": "Se utiliza para crear menús interactivos, carruseles de imágenes, animaciones, videojuegos, chats en tiempo real, consumo de APIs y aplicaciones web completas."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Librerías JavaScript",
+        "Question Text": {
+          "en-US": [
+            "What are some disadvantages of using JavaScript libraries?"
+          ],
+          "es-MX": [
+            "Contras que podemos encontrar al usar librerías JavaScript:"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Limited animations, slow image loading and complex code structure.",
+            "Complex programming, slow element loading and complex code structure.",
+            "Slow animations, slow element loading and poor browser compatibility.",
+            "Complex programming, limited animations and poor browser compatibility."
+          ],
+          "es-MX": [
+            "Animaciones limitadas, carga de imágenes lenta y estructura de código compleja.",
+            "Programación compleja, carga lenta de elementos y estructura de código compleja.",
+            "Animaciones lentas, carga lenta de elementos y poca compatibilidad con los navegadores.",
+            "Programación compleja, animaciones limitadas y poca compatibilidad con los navegadores."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Complex programming, slow element loading and complex code structure.",
+          "es-MX": "Programación compleja, carga lenta de elementos y estructura de código compleja."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Disadvantages of JavaScript Libraries"
+            },
+            {
+              "type": "text",
+              "content": "Although JavaScript libraries simplify many development tasks, they also have disadvantages. Some libraries increase project complexity, require additional files to be loaded and can make code harder to understand and maintain."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Can increase code complexity.",
+                "Require downloading additional files.",
+                "May slow page loading.",
+                "Require learning the library's syntax."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Desventajas de las librerías JavaScript"
+            },
+            {
+              "type": "text",
+              "content": "Aunque las librerías JavaScript facilitan muchas tareas de desarrollo, también presentan algunas desventajas. Algunas aumentan la complejidad del proyecto, requieren cargar archivos adicionales y pueden dificultar la comprensión y mantenimiento del código."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Pueden aumentar la complejidad del código.",
+                "Requieren descargar archivos adicionales.",
+                "Pueden hacer más lenta la carga de la página.",
+                "Es necesario aprender la sintaxis de la librería."
+              ]
+            }
+          ]
+        }
+      },{
+        "Category": "Librerías JavaScript",
+        "Question Text": {
+          "en-US": [
+            "Which of the following are examples of JavaScript libraries?"
+          ],
+          "es-MX": [
+            "Son ejemplos de librerías JavaScript:"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Bootstrap, Laravel and Angular JS.",
+            "jQuery, Anime.js and AniJS.",
+            "Joomla, WordPress and Drupal.",
+            "Bulma, Materialize and Bootstrap."
+          ],
+          "es-MX": [
+            "Bootstrap, Laravel y Angular Js.",
+            "jQuery, Anime.js y AniJS.",
+            "Joomla, WordPress y Drupal.",
+            "Bulma, Materialize y Bootstrap."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "jQuery, Anime.js and AniJS.",
+          "es-MX": "jQuery, Anime.js y AniJS."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Examples of JavaScript Libraries"
+            },
+            {
+              "type": "text",
+              "content": "JavaScript libraries provide prewritten code that simplifies web development. Libraries such as <b>jQuery</b>, <b>Anime.js</b> and <b>AniJS</b> help developers create interactive websites and animations with less code and greater efficiency."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "jQuery simplifies DOM manipulation and events.",
+                "Anime.js specializes in advanced animations.",
+                "AniJS creates animations using simple declarative syntax.",
+                "Libraries speed up development by reusing existing code."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Ejemplos de librerías JavaScript"
+            },
+            {
+              "type": "text",
+              "content": "Las librerías JavaScript proporcionan código previamente desarrollado que facilita la creación de aplicaciones web. Librerías como <b>jQuery</b>, <b>Anime.js</b> y <b>AniJS</b> permiten desarrollar sitios interactivos y animaciones con menos código y de forma más eficiente."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "jQuery facilita la manipulación del DOM y los eventos.",
+                "Anime.js está especializada en animaciones avanzadas.",
+                "AniJS permite crear animaciones mediante una sintaxis sencilla.",
+                "Las librerías aceleran el desarrollo reutilizando código existente."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "AniJS",
+        "Question Text": {
+          "en-US": [
+            "What are the characteristics of AniJS?"
+          ],
+          "es-MX": [
+            "¿Qué características tiene AniJS?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "It animates automatically and is easy to use.",
+            "It uses native JavaScript and is designed to animate images.",
+            "It includes a user manual and focuses on SVG animation.",
+            "It is lightweight and easy to use; it is based on low-level CSS and JavaScript."
+          ],
+          "es-MX": [
+            "Se anima automáticamente y es fácil de usar.",
+            "Se usa JavaScript nativo y se utiliza para animar imágenes.",
+            "Tiene manual de uso y se enfoca a animar SVG.",
+            "Es liviano y fácil de utilizar; está basado en CSS y JavaScript de bajo nivel."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "It is lightweight and easy to use; it is based on low-level CSS and JavaScript.",
+          "es-MX": "Es liviano y fácil de utilizar; está basado en CSS y JavaScript de bajo nivel."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "AniJS"
+            },
+            {
+              "type": "text",
+              "content": "AniJS is a lightweight JavaScript library that simplifies the creation of animations through HTML attributes. It relies on CSS and low-level JavaScript while reducing the amount of code developers need to write."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Lightweight library.",
+                "Easy to integrate.",
+                "Uses HTML attributes.",
+                "Based on CSS and JavaScript."
+              ]
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "title-h2",
+              "content": "Good Practices"
+            },
+            {
+              "type": "text",
+              "content": "Use AniJS for simple interactive animations that can be configured declaratively without writing large amounts of JavaScript."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "AniJS"
+            },
+            {
+              "type": "text",
+              "content": "AniJS es una biblioteca ligera que facilita la creación de animaciones mediante atributos HTML. Está basada en CSS y JavaScript de bajo nivel, permitiendo agregar efectos con una sintaxis sencilla."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Es una biblioteca ligera.",
+                "Es fácil de utilizar.",
+                "Utiliza atributos HTML.",
+                "Está basada en CSS y JavaScript."
+              ]
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "title-h2",
+              "content": "Buenas prácticas"
+            },
+            {
+              "type": "text",
+              "content": "Utiliza AniJS cuando necesites incorporar animaciones sencillas de forma rápida y con una configuración declarativa."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "AniJS",
+        "Question Text": {
+          "en-US": [
+            "What are the steps AniJS follows when it works?"
+          ],
+          "es-MX": [
+            "¿Cuáles son los pasos que sigue AniJS al funcionar?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A is the trigger, B is the action generated by the trigger and C is the element that receives the action.",
+            "A is the trigger, B is what selects the trigger, C is the action to perform and D is the element that receives the action.",
+            "A is the action to perform, B is the trigger and C is the element that receives the action.",
+            "A is the element that receives the action, B is the action to perform and C is the trigger."
+          ],
+          "es-MX": [
+            "A es el trigger, B es la acción que genera el trigger y C es el elemento que recibirá la acción.",
+            "A es el trigger, B es lo que selecciona el trigger, C es la acción por desarrollar y D es el elemento que recibirá la acción.",
+            "A es la acción por desarrollar, B es el trigger y C es el elemento que recibirá la acción.",
+            "A es el elemento que recibirá la acción, B es la acción por desarrollar y C es el trigger."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A is the trigger, B is what selects the trigger, C is the action to perform and D is the element that receives the action.",
+          "es-MX": "A es el trigger, B es lo que selecciona el trigger, C es la acción por desarrollar y D es el elemento que recibirá la acción."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "AniJS Workflow"
+            },
+            {
+              "type": "text",
+              "content": "AniJS follows a sequence composed of a trigger, a selector, an action and a target element. Each part defines when an animation starts, what causes it and where it is applied."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Trigger starts the process.",
+                "Selector identifies the source.",
+                "Action defines the animation.",
+                "Target receives the effect."
+              ]
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "title-h2",
+              "content": "Importance"
+            },
+            {
+              "type": "text",
+              "content": "Understanding this sequence makes it easier to configure animations correctly and reuse them throughout a website."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Funcionamiento de AniJS"
+            },
+            {
+              "type": "text",
+              "content": "AniJS organiza las animaciones mediante una secuencia formada por un trigger, un selector, una acción y un elemento destino. Cada parte define cuándo se ejecuta la animación y sobre qué elemento se aplicará."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "El trigger inicia el proceso.",
+                "El selector identifica el origen.",
+                "La acción define la animación.",
+                "El elemento destino recibe el efecto."
+              ]
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "title-h2",
+              "content": "Importancia"
+            },
+            {
+              "type": "text",
+              "content": "Comprender esta secuencia facilita configurar correctamente las animaciones y reutilizarlas dentro de una aplicación web."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "AniJS",
+        "Question Text": {
+          "en-US": [
+            "Which is an example of AniJS syntax in HTML?"
+          ],
+          "es-MX": [
+            "Es un ejemplo de cómo se escribe AniJS en HTML:"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "<div anijs-data=\"if: click, do: RotateY\" class=\"container-box\"></div>",
+            "<div data-anijs=\"if: click, do: flipInX\" class=\"container-box\"></div>",
+            "<div anijs=\"if: click, do: flipInY\" class=\"container-box\"></div>",
+            "<div data-anijs=\"if: click, do: flipInY\" class=\"container-box\"></div>"
+          ],
+          "es-MX": [
+            "<div anijs-data=\"if: click, do: RotateY\" class=\"container-box\"></div>",
+            "<div data-anijs=\"if: click, do: flipInX\" class=\"container-box\"></div>",
+            "<div anijs=\"if: click, do: flipInY\" class=\"container-box\"></div>",
+            "<div data-anijs=\"if: click, do: flipInY\" class=\"container-box\"></div>"
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "<div data-anijs=\"if: click, do: flipInY\" class=\"container-box\"></div>",
+          "es-MX": "<div data-anijs=\"if: click, do: flipInY\" class=\"container-box\"></div>"
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "AniJS Syntax"
+            },
+            {
+              "type": "text",
+              "content": "AniJS uses the <b>data-anijs</b> HTML attribute to declare animations. Inside this attribute, events, actions and optional targets are defined without writing additional JavaScript code."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Uses the data-anijs attribute.",
+                "Defines events with if.",
+                "Defines actions with do.",
+                "Can be written directly in HTML."
+              ]
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "title-h2",
+              "content": "Good Practices"
+            },
+            {
+              "type": "text",
+              "content": "Keep AniJS declarations clear and organized so animations remain easy to understand and maintain."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Sintaxis de AniJS"
+            },
+            {
+              "type": "text",
+              "content": "AniJS utiliza el atributo HTML <b>data-anijs</b> para declarar animaciones. Dentro de este atributo se especifican los eventos, las acciones y, cuando es necesario, el elemento sobre el que se aplicará el efecto."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Utiliza el atributo data-anijs.",
+                "Define eventos mediante if.",
+                "Define acciones mediante do.",
+                "Se escribe directamente en HTML."
+              ]
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "title-h2",
+              "content": "Buenas prácticas"
+            },
+            {
+              "type": "text",
+              "content": "Mantén las declaraciones de AniJS organizadas para facilitar la lectura, el mantenimiento y la reutilización de las animaciones."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Anime.js",
+        "Question Text": {
+          "en-US": [
+            "What does DOM stand for in HTML?"
+          ],
+          "es-MX": [
+            "¿Qué significa DOM en HTML?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Document Object Method.",
+            "Dynamic Object Mode.",
+            "Document Object Model.",
+            "Data Object Model."
+          ],
+          "es-MX": [
+            "Document object method.",
+            "Dynamic object mode.",
+            "Document object model.",
+            "Data object model."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Document Object Model.",
+          "es-MX": "Document object model."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Document Object Model (DOM)"
+            },
+            {
+              "type": "text",
+              "content": "The <b>Document Object Model (DOM)</b> is a programming interface that represents an HTML document as a tree of objects. It allows scripts to access, modify and interact with the elements of a web page dynamically."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Represents the HTML document as objects.",
+                "Allows access to page elements.",
+                "Can be modified with JavaScript.",
+                "Supports dynamic web interactions."
+              ]
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "title-h2",
+              "content": "Importance"
+            },
+            {
+              "type": "text",
+              "content": "The DOM is the foundation for creating interactive websites because it enables developers to manipulate content, styles and behavior after the page has loaded."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Document Object Model (DOM)"
+            },
+            {
+              "type": "text",
+              "content": "El <b>Document Object Model (DOM)</b> es una interfaz de programación que representa un documento HTML como un árbol de objetos. Permite acceder, modificar e interactuar dinámicamente con los elementos de una página web."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Representa el documento HTML como objetos.",
+                "Permite acceder a los elementos de la página.",
+                "Puede modificarse mediante JavaScript.",
+                "Facilita la interacción dinámica."
+              ]
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "title-h2",
+              "content": "Importancia"
+            },
+            {
+              "type": "text",
+              "content": "El DOM es la base para desarrollar sitios web interactivos, ya que permite manipular el contenido, los estilos y el comportamiento de los elementos después de cargar la página."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Anime.js",
+        "Question Text": {
+          "en-US": [
+            "Which features can be controlled in Anime.js?"
+          ],
+          "es-MX": [
+            "Son características que podemos controlar en Anime.js:"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Controls, SVG and particles.",
+            "Easings, particles, controls and timeline.",
+            "Keyframes, staggering, controls and timeline.",
+            "SVG, keyframes, particles and timeline."
+          ],
+          "es-MX": [
+            "Controls, SVG y particles.",
+            "Easings, particles, controls y timeline.",
+            "Keyframes, staggering, controls y timeline.",
+            "SVG, keyframes, particles y timeline."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Keyframes, staggering, controls and timeline.",
+          "es-MX": "Keyframes, staggering, controls y timeline."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Anime.js Features"
+            },
+            {
+              "type": "text",
+              "content": "Anime.js provides advanced animation features such as keyframes, staggering, playback controls and timelines, making it possible to coordinate complex animation sequences."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Supports keyframes.",
+                "Includes staggering effects.",
+                "Provides playback controls.",
+                "Uses timelines to coordinate animations."
+              ]
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "title-h2",
+              "content": "Importance"
+            },
+            {
+              "type": "text",
+              "content": "These features help organize multiple animations, improve synchronization and simplify the creation of complex visual effects."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Características de Anime.js"
+            },
+            {
+              "type": "text",
+              "content": "Anime.js ofrece funciones avanzadas como <b>keyframes</b>, <b>staggering</b>, controles de reproducción y <b>timeline</b>, permitiendo coordinar múltiples animaciones de manera sencilla."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Admite keyframes.",
+                "Incluye staggering.",
+                "Cuenta con controles de reproducción.",
+                "Utiliza timeline para coordinar animaciones."
+              ]
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "title-h2",
+              "content": "Importancia"
+            },
+            {
+              "type": "text",
+              "content": "Estas herramientas permiten organizar animaciones complejas, mejorar la sincronización y facilitar el desarrollo de efectos visuales avanzados."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Anime.js",
+        "Question Text": {
+          "en-US": [
+            "What is an advantage of using Anime.js?"
+          ],
+          "es-MX": [
+            "Ventajas de utilizar Anime.js:"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Lightweight size and an API for complex animations.",
+            "Easy installation and use.",
+            "Lightweight size and easy to use.",
+            "API for complex animations and a visual editor."
+          ],
+          "es-MX": [
+            "Peso liviano y API para animaciones complejas.",
+            "Fácil instalación y uso.",
+            "Peso liviano y fácil de utilizar.",
+            "API para animaciones complejas y editor visual."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Lightweight size and an API for complex animations.",
+          "es-MX": "Peso liviano y API para animaciones complejas."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Advantages of Anime.js"
+            },
+            {
+              "type": "text",
+              "content": "Anime.js is recognized for its lightweight size and its powerful API, which allows developers to build complex animations while keeping projects organized and flexible."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Lightweight library.",
+                "Powerful animation API.",
+                "Supports complex animations.",
+                "Easy to integrate into web projects."
+              ]
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "title-h2",
+              "content": "Importance"
+            },
+            {
+              "type": "text",
+              "content": "Using a lightweight animation library with a flexible API helps improve maintainability while creating sophisticated animation effects."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Ventajas de Anime.js"
+            },
+            {
+              "type": "text",
+              "content": "Anime.js destaca por su peso liviano y por ofrecer una API que facilita la creación de animaciones complejas, permitiendo desarrollar efectos avanzados con una implementación flexible."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Es una biblioteca ligera.",
+                "Cuenta con una API potente.",
+                "Permite animaciones complejas.",
+                "Se integra fácilmente en proyectos web."
+              ]
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "title-h2",
+              "content": "Importancia"
+            },
+            {
+              "type": "text",
+              "content": "Una biblioteca ligera con una API flexible facilita el desarrollo, el mantenimiento y la creación de animaciones avanzadas en aplicaciones web."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "WebGL",
+        "Question Text": {
+          "en-US": [
+            "What is WebGL?"
+          ],
+          "es-MX": [
+            "¿Qué es WebGL?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A JavaScript API for rendering interactive 2D and 3D graphics.",
+            "A framework for developing mobile applications.",
+            "A programming language for creating 3D elements on web pages.",
+            "Software for creating 3D elements for web pages."
+          ],
+          "es-MX": [
+            "Es un API de JavaScript para renderizar gráficos interactivos 2D y 3D.",
+            "Un framework para desarrollar aplicaciones móviles.",
+            "Un lenguaje de programación para crear elementos 3D en las páginas web.",
+            "Un software para crear elementos 3D para páginas web."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A JavaScript API for rendering interactive 2D and 3D graphics.",
+          "es-MX": "Es un API de JavaScript para renderizar gráficos interactivos 2D y 3D."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "WebGL"
+            },
+            {
+              "type": "text",
+              "content": "WebGL is a JavaScript API that enables browsers to render interactive two-dimensional and three-dimensional graphics without requiring additional plugins. It takes advantage of the computer's graphics hardware to improve rendering performance."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "JavaScript graphics API.",
+                "Supports 2D and 3D rendering.",
+                "Runs directly in web browsers.",
+                "Uses GPU acceleration."
+              ]
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "title-h2",
+              "content": "Importance"
+            },
+            {
+              "type": "text",
+              "content": "WebGL makes it possible to create interactive visual experiences, simulations and three-dimensional applications directly on the web."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "WebGL"
+            },
+            {
+              "type": "text",
+              "content": "WebGL es un API de JavaScript que permite renderizar gráficos interactivos en dos y tres dimensiones directamente en el navegador, aprovechando la aceleración por hardware para mejorar el rendimiento gráfico."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "API de gráficos para JavaScript.",
+                "Renderiza gráficos 2D y 3D.",
+                "Funciona directamente en el navegador.",
+                "Utiliza aceleración mediante GPU."
+              ]
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "title-h2",
+              "content": "Importancia"
+            },
+            {
+              "type": "text",
+              "content": "WebGL permite desarrollar experiencias visuales interactivas, simulaciones y aplicaciones tridimensionales sin necesidad de instalar complementos adicionales."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "WebGL",
+        "Question Text": {
+          "en-US": [
+            "In 3D, what is a mesh?"
+          ],
+          "es-MX": [
+            "En 3D, ¿qué es un mesh o malla?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Software designed to create 3D objects.",
+            "A type of material used in 3D printing.",
+            "A three-dimensional representation of an object or surface.",
+            "A two-dimensional representation of an object or surface."
+          ],
+          "es-MX": [
+            "Un software de diseño enfocado a crear elementos 3D.",
+            "Un tipo de material utilizado en la impresión 3D.",
+            "Una representación tridimensional de un objeto o superficie.",
+            "Una representación bidimensional de un objeto o superficie."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A three-dimensional representation of an object or surface.",
+          "es-MX": "Una representación tridimensional de un objeto o superficie."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Mesh"
+            },
+            {
+              "type": "text",
+              "content": "A mesh is the geometric structure that defines the shape of a three-dimensional object. It is composed of vertices, edges and faces that together form the visible surface of a model."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Represents a 3D object.",
+                "Built from vertices and faces.",
+                "Defines the object's geometry.",
+                "Used in modeling and rendering."
+              ]
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "title-h2",
+              "content": "Importance"
+            },
+            {
+              "type": "text",
+              "content": "Meshes are the foundation of three-dimensional models, since they define the structure that can later receive textures, materials and animations."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Mesh o malla"
+            },
+            {
+              "type": "text",
+              "content": "Una malla o <b>mesh</b> es la estructura geométrica que define la forma de un objeto tridimensional. Está compuesta por vértices, aristas y caras que forman la superficie visible del modelo."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Representa un objeto 3D.",
+                "Está formada por vértices y caras.",
+                "Define la geometría del modelo.",
+                "Se utiliza en modelado y renderizado."
+              ]
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "title-h2",
+              "content": "Importancia"
+            },
+            {
+              "type": "text",
+              "content": "Las mallas constituyen la base de los modelos tridimensionales, ya que sobre ellas pueden aplicarse materiales, texturas y animaciones."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "WebGL",
+        "Question Text": {
+          "en-US": [
+            "In 3D, what is a texture?"
+          ],
+          "es-MX": [
+            "En 3D, ¿qué es una textura?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "An image or pattern applied to the surface of a two-dimensional object.",
+            "A visual effect applied to a three-dimensional object.",
+            "An image or pattern applied to the surface of a three-dimensional object.",
+            "The way a three-dimensional object is represented in software."
+          ],
+          "es-MX": [
+            "Una imagen o patrón aplicado a la superficie de un objeto bidimensional.",
+            "Un efecto visual que se aplica a un objeto tridimensional.",
+            "Una imagen o patrón aplicado a la superficie de un objeto tridimensional.",
+            "Es la manera en la que se representa un objeto tridimensional en software."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "An image or pattern applied to the surface of a three-dimensional object.",
+          "es-MX": "Una imagen o patrón aplicado a la superficie de un objeto tridimensional."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Texture"
+            },
+            {
+              "type": "text",
+              "content": "A texture is an image or pattern mapped onto the surface of a three-dimensional model to provide colors, details and a more realistic appearance without modifying its geometry."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Applied to 3D models.",
+                "Adds visual details.",
+                "Improves realism.",
+                "Does not change the object's geometry."
+              ]
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "title-h2",
+              "content": "Importance"
+            },
+            {
+              "type": "text",
+              "content": "Textures enhance the visual quality of three-dimensional objects while keeping models efficient and lightweight."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Textura"
+            },
+            {
+              "type": "text",
+              "content": "Una textura es una imagen o patrón que se aplica sobre la superficie de un objeto tridimensional para proporcionar color, detalles y una apariencia más realista sin modificar su geometría."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Se aplica sobre modelos 3D.",
+                "Agrega detalles visuales.",
+                "Mejora el realismo.",
+                "No modifica la geometría del objeto."
+              ]
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "title-h2",
+              "content": "Importancia"
+            },
+            {
+              "type": "text",
+              "content": "Las texturas permiten enriquecer la apariencia de los modelos tridimensionales manteniendo un buen rendimiento en el renderizado."
+            }
+          ]
+        }
+      }
+    ]
+  }

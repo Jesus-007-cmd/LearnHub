@@ -1,0 +1,1887 @@
+{
+  "meta": {
+    "slug": "animacion-web-u5",
+    "title": "CPU, Renderizado Web y Transformaciones 3D",
+    "subject": "DESARROLLO DE RECURSOS ANIMADOS PARA WEB",
+    "unit": 5,
+    "classNo": 0,
+    "description": "Unidad 5: CPU, proceso de renderizado del navegador, capas de composición, ejes 3D, transformaciones CSS, box-shadow, transform-origin, perspective y transformaciones tridimensionales.",
+    "tags": [
+      "CPU",
+      "Renderizado Web",
+      "JavaScript",
+      "Style",
+      "Layout",
+      "Paint",
+      "Composite",
+      "Capas",
+      "Eje X",
+      "Eje Y",
+      "Eje Z",
+      "Box Shadow",
+      "Blur Radius",
+      "Spread Radius",
+      "Transform Origin",
+      "Transform",
+      "Perspective",
+      "Rotate3D",
+      "RotateY",
+      "Transformaciones 3D",
+      "CSS"
+    ],
+    "questionCount": 18,
+    "languages": [
+      "en-US",
+      "es-MX"
+    ]
+  },
+  "Questions": [
+    {
+      "Category": "CPU",
+      "Question Text": {
+        "en-US": [
+          "What does CPU stand for?"
+        ],
+        "es-MX": [
+          "¿Qué es CPU?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Computer Processing Unit.",
+          "Central Power Unit.",
+          "Central Processing Unit.",
+          "Control Processing Unit."
+        ],
+        "es-MX": [
+          "Computer processing unit.",
+          "Central power unit.",
+          "Central processing unit.",
+          "Control processing unit."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Central Processing Unit.",
+        "es-MX": "Central processing unit."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Central Processing Unit"
+          },
+          {
+            "type": "text",
+            "content": "CPU stands for Central Processing Unit. It is the main processor responsible for executing instructions, performing calculations and coordinating many operations carried out by a computer."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Executes program instructions.",
+              "Performs logical and mathematical operations.",
+              "Coordinates processes between hardware and software.",
+              "Participates in browser and JavaScript execution."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Unidad Central de Procesamiento"
+          },
+          {
+            "type": "text",
+            "content": "CPU significa Central Processing Unit (Unidad Central de Procesamiento). Es el procesador principal encargado de ejecutar instrucciones, realizar cálculos y coordinar muchas de las operaciones que lleva a cabo una computadora."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Ejecuta las instrucciones de los programas.",
+              "Realiza operaciones lógicas y matemáticas.",
+              "Coordina procesos entre el hardware y el software.",
+              "Participa en la ejecución del navegador y de JavaScript."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Proceso de renderizado web",
+      "Question Text": {
+        "en-US": [
+          "In what order is a website rendered?"
+        ],
+        "es-MX": [
+          "¿En qué orden se renderiza un sitio web?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "JavaScript, Layout, Style, Paint and Composite.",
+          "JavaScript, Style, Layout, Paint and Composite.",
+          "Composite, Paint, Layout, Style and JavaScript.",
+          "Style, JavaScript, Paint, Layout and Composite."
+        ],
+        "es-MX": [
+          "JavaScript, Layout, Style, Paint y Composite.",
+          "JavaScript, Style, Layout, Paint y Composite.",
+          "Composite, Paint, Layout, Style y JavaScript.",
+          "Style, JavaScript, Paint, Layout y Composite."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "JavaScript, Style, Layout, Paint and Composite.",
+        "es-MX": "JavaScript, Style, Layout, Paint y Composite."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Web rendering pipeline"
+          },
+          {
+            "type": "text",
+            "content": "According to the sequence used in this lesson, the browser first executes JavaScript that may modify the page, then calculates styles, determines element geometry during Layout, draws visual pixels during Paint and finally combines the resulting layers during Composite."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "JavaScript can modify content and styles.",
+              "Style calculates the CSS rules applied to each element.",
+              "Layout determines sizes and positions.",
+              "Paint draws the visual appearance.",
+              "Composite combines the layers on screen."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Proceso de renderizado de una página web"
+          },
+          {
+            "type": "text",
+            "content": "De acuerdo con la secuencia utilizada en este tema, el navegador primero ejecuta JavaScript cuando este modifica la página; después calcula los estilos, determina tamaños y posiciones en Layout, dibuja la apariencia visual durante Paint y finalmente combina las capas en Composite."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "JavaScript puede modificar el contenido y los estilos.",
+              "Style calcula las reglas CSS aplicadas.",
+              "Layout determina tamaños y posiciones.",
+              "Paint dibuja la apariencia visual.",
+              "Composite combina las capas en pantalla."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Capas de renderizado",
+      "Question Text": {
+        "en-US": [
+          "At which stage of website rendering are layers created?"
+        ],
+        "es-MX": [
+          "¿En qué paso de la renderización del sitio se crean las capas?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Style.",
+          "Composite.",
+          "JavaScript.",
+          "Paint."
+        ],
+        "es-MX": [
+          "Style.",
+          "Composite.",
+          "JavaScript.",
+          "Paint."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Composite.",
+        "es-MX": "Composite."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Composite and visual layers"
+          },
+          {
+            "type": "text",
+            "content": "In the lesson's simplified rendering model, Composite is the stage associated with organizing and combining visual layers to produce the final image displayed on the screen."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Paint produces the visual content of elements.",
+              "Composite arranges and combines the resulting layers.",
+              "Transforms and opacity can often be handled efficiently during compositing.",
+              "The final composition is sent to the screen."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Composite y las capas visuales"
+          },
+          {
+            "type": "text",
+            "content": "En el modelo simplificado utilizado en el tema, Composite es la etapa relacionada con organizar y combinar las capas visuales para producir la imagen final que aparece en la pantalla."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Paint genera la apariencia visual de los elementos.",
+              "Composite organiza y combina las capas resultantes.",
+              "Transformaciones y opacidad pueden procesarse eficientemente en esta etapa.",
+              "La composición final se presenta en pantalla."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Browser Rendering",
+      "Question Text": {
+        "en-US": [
+          "What does CPU stand for?"
+        ],
+        "es-MX": [
+          "¿Qué es CPU?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Computer processing unit.",
+          "Central power unit.",
+          "Central processing unit.",
+          "Control processing unit."
+        ],
+        "es-MX": [
+          "Computer processing unit.",
+          "Central power unit.",
+          "Central processing unit.",
+          "Control processing unit."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Central processing unit.",
+        "es-MX": "Central processing unit."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "CPU"
+          },
+          {
+            "type": "text",
+            "content": "The <b>CPU (Central Processing Unit)</b> is the main processor of a computer. It executes instructions, performs calculations and coordinates the execution of programs and system processes."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Executes program instructions.",
+              "Processes calculations and logic.",
+              "Coordinates system operations.",
+              "Works together with memory and other hardware."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "The CPU is responsible for processing the instructions required to execute applications and render web pages."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "CPU"
+          },
+          {
+            "type": "text",
+            "content": "La <b>CPU (Central Processing Unit)</b> es el procesador principal de un equipo. Se encarga de ejecutar instrucciones, realizar cálculos y coordinar la ejecución de los programas y procesos del sistema."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Ejecuta instrucciones de los programas.",
+              "Procesa cálculos y operaciones lógicas.",
+              "Coordina el funcionamiento del sistema.",
+              "Trabaja junto con la memoria y otros componentes."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "La CPU procesa las instrucciones necesarias para ejecutar aplicaciones y participar en la renderización de una página web."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Browser Rendering",
+      "Question Text": {
+        "en-US": [
+          "What is the rendering order of a website?"
+        ],
+        "es-MX": [
+          "¿En qué orden se renderiza un sitio web?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "JavaScript, Layout, Style, Paint and Composite.",
+          "JavaScript, Style, Layout, Paint and Composite.",
+          "Composite, Paint, Layout, Style and JavaScript.",
+          "Style, JavaScript, Paint, Layout and Composite."
+        ],
+        "es-MX": [
+          "JavaScript, Layout, Style, Paint y Composite.",
+          "JavaScript, Style, Layout, Paint y Composite.",
+          "Composite, Paint, Layout, Style y JavaScript.",
+          "Style, JavaScript, Paint, Layout y Composite."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "JavaScript, Style, Layout, Paint and Composite.",
+        "es-MX": "JavaScript, Style, Layout, Paint y Composite."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Rendering Pipeline"
+          },
+          {
+            "type": "text",
+            "content": "According to the course material, the browser renders a page following the sequence: <b>JavaScript → Style → Layout → Paint → Composite</b>. Each stage prepares the information required for the next one until the final image is displayed."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "JavaScript executes page logic.",
+              "Style calculates CSS rules.",
+              "Layout positions elements.",
+              "Paint and Composite generate the final visual result."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Understanding the rendering pipeline helps identify which operations affect website performance and visual updates."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Proceso de renderizado"
+          },
+          {
+            "type": "text",
+            "content": "De acuerdo con el material del curso, el navegador renderiza una página siguiendo la secuencia: <b>JavaScript → Style → Layout → Paint → Composite</b>. Cada etapa prepara la información necesaria para la siguiente hasta obtener el resultado visual final."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "JavaScript ejecuta la lógica.",
+              "Style calcula los estilos CSS.",
+              "Layout posiciona los elementos.",
+              "Paint y Composite generan el resultado visual."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Conocer el proceso de renderizado ayuda a identificar qué operaciones pueden afectar el rendimiento y la actualización visual de un sitio web."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Browser Rendering",
+      "Question Text": {
+        "en-US": [
+          "During which rendering stage are layers created?"
+        ],
+        "es-MX": [
+          "¿En qué paso de la renderización del sitio se crean las capas?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Style.",
+          "Composite.",
+          "JavaScript.",
+          "Paint."
+        ],
+        "es-MX": [
+          "Style.",
+          "Composite.",
+          "JavaScript.",
+          "Paint."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Composite.",
+        "es-MX": "Composite."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Composite Stage"
+          },
+          {
+            "type": "text",
+            "content": "The <b>Composite</b> stage combines the previously painted layers to generate the final image displayed by the browser. This process allows efficient visual updates without repainting the entire page."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Combines visual layers.",
+              "Produces the final rendered image.",
+              "Optimizes visual updates.",
+              "Occurs after the Paint stage."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Understanding the Composite stage helps developers create smoother animations and improve rendering performance."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Etapa Composite"
+          },
+          {
+            "type": "text",
+            "content": "La etapa <b>Composite</b> combina las capas generadas previamente para construir la imagen final que muestra el navegador. Este proceso permite actualizar elementos visuales de forma más eficiente."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Combina las capas visuales.",
+              "Genera la imagen final.",
+              "Optimiza las actualizaciones visuales.",
+              "Se ejecuta después de Paint."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Comprender la etapa Composite ayuda a desarrollar animaciones más fluidas y a optimizar el rendimiento del renderizado."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "3D Axes",
+      "Question Text": {
+        "en-US": [
+          "Which axis allows movement from left to right and vice versa?"
+        ],
+        "es-MX": [
+          "Es el eje que permite ir de izquierda a derecha y viceversa:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "XY Axis.",
+          "Z Axis.",
+          "Y Axis.",
+          "X Axis."
+        ],
+        "es-MX": [
+          "Eje XY.",
+          "Eje Z.",
+          "Eje Y.",
+          "Eje X."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "X Axis.",
+        "es-MX": "Eje X."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "X Axis"
+          },
+          {
+            "type": "text",
+            "content": "The <b>X axis</b> represents horizontal movement. In web graphics and coordinate systems, it allows an element to move from left to right or from right to left."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Represents horizontal movement.",
+              "Moves left and right.",
+              "Commonly used in 2D and 3D coordinates.",
+              "Works together with the Y and Z axes."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Understanding the X axis is essential when positioning or animating elements horizontally in web interfaces."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Eje X"
+          },
+          {
+            "type": "text",
+            "content": "El <b>eje X</b> representa el movimiento horizontal. En los sistemas de coordenadas y en las animaciones web permite desplazar un elemento de izquierda a derecha o de derecha a izquierda."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Representa el movimiento horizontal.",
+              "Permite desplazarse de izquierda a derecha.",
+              "Se utiliza en coordenadas 2D y 3D.",
+              "Trabaja junto con los ejes Y y Z."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Comprender el eje X es fundamental para posicionar y animar elementos horizontalmente dentro de una interfaz web."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "3D Axes",
+      "Question Text": {
+        "en-US": [
+          "Which axis allows movement from bottom to top and vice versa?"
+        ],
+        "es-MX": [
+          "Es el eje que permite ir de abajo a arriba y viceversa:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "XY Axis.",
+          "Z Axis.",
+          "Y Axis.",
+          "X Axis."
+        ],
+        "es-MX": [
+          "Eje XY.",
+          "Eje Z.",
+          "Eje Y.",
+          "Eje X."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Y Axis.",
+        "es-MX": "Eje Y."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Y Axis"
+          },
+          {
+            "type": "text",
+            "content": "The <b>Y axis</b> represents vertical movement. It allows an element to move upward or downward within a coordinate system."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Represents vertical movement.",
+              "Moves up and down.",
+              "Used in 2D and 3D spaces.",
+              "Works together with the X and Z axes."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "The Y axis is used to position and animate elements vertically within web layouts and graphic systems."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Eje Y"
+          },
+          {
+            "type": "text",
+            "content": "El <b>eje Y</b> representa el movimiento vertical. Permite desplazar un elemento hacia arriba o hacia abajo dentro de un sistema de coordenadas."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Representa el movimiento vertical.",
+              "Permite desplazarse hacia arriba y abajo.",
+              "Se utiliza en espacios 2D y 3D.",
+              "Trabaja junto con los ejes X y Z."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "El eje Y permite posicionar y animar elementos verticalmente dentro de una interfaz o sistema gráfico."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "3D Axes",
+      "Question Text": {
+        "en-US": [
+          "Which axis allows movement forward and backward?"
+        ],
+        "es-MX": [
+          "Es el eje que permite ir al frente y atrás y viceversa:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "XY Axis.",
+          "Z Axis.",
+          "Y Axis.",
+          "X Axis."
+        ],
+        "es-MX": [
+          "Eje XY.",
+          "Eje Z.",
+          "Eje Y.",
+          "Eje X."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Z Axis.",
+        "es-MX": "Eje Z."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Z Axis"
+          },
+          {
+            "type": "text",
+            "content": "The <b>Z axis</b> represents depth. It allows movement toward or away from the viewer, creating the perception of distance in three-dimensional space."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Represents depth.",
+              "Moves forward and backward.",
+              "Used in 3D transformations.",
+              "Creates perspective effects."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "The Z axis is essential for creating depth effects and three-dimensional animations in web interfaces."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Eje Z"
+          },
+          {
+            "type": "text",
+            "content": "El <b>eje Z</b> representa la profundidad. Permite desplazar un elemento hacia el frente o hacia atrás, creando la sensación de distancia en un espacio tridimensional."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Representa la profundidad.",
+              "Permite desplazarse hacia el frente y atrás.",
+              "Se utiliza en transformaciones 3D.",
+              "Genera efectos de perspectiva."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "El eje Z es fundamental para crear efectos de profundidad y animaciones tridimensionales dentro de las interfaces web."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CSS Box Shadow",
+      "Question Text": {
+        "en-US": [
+          "In CSS, what is the box-shadow property used for?"
+        ],
+        "es-MX": [
+          "En CSS, ¿para qué sirve la propiedad box-shadow?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "The box-shadow property is used to create a border around an element.",
+          "The box-shadow property is used to change the background color of elements on a web page.",
+          "The box-shadow property is used to add shadows to elements on a web page.",
+          "The box-shadow property is used to add shadows to text on a web page."
+        ],
+        "es-MX": [
+          "La propiedad box-shadow se utiliza para crear un borde en un elemento.",
+          "La propiedad box-shadow se utiliza para cambiar el color de fondo de los elementos de una página web.",
+          "La propiedad box-shadow se utiliza para agregar sombras a los elementos de una página web.",
+          "La propiedad box-shadow se utiliza para agregar sombras a los textos de una página web."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "The box-shadow property is used to add shadows to elements on a web page.",
+        "es-MX": "La propiedad box-shadow se utiliza para agregar sombras a los elementos de una página web."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "box-shadow"
+          },
+          {
+            "type": "text",
+            "content": "The <b>box-shadow</b> property adds shadow effects around an element's box. Shadows can be customized by changing their position, blur, spread and color to create depth and visual emphasis."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Adds shadows to elements.",
+              "Supports horizontal and vertical offsets.",
+              "Allows blur and spread adjustments.",
+              "Improves visual depth."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Use subtle shadows to create depth without distracting users or reducing readability."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Propiedad box-shadow"
+          },
+          {
+            "type": "text",
+            "content": "La propiedad <b>box-shadow</b> permite agregar sombras alrededor de un elemento. La sombra puede personalizarse modificando su posición, difuminado, expansión y color para generar sensación de profundidad."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Agrega sombras a los elementos.",
+              "Permite desplazamiento horizontal y vertical.",
+              "Admite difuminado y expansión.",
+              "Aporta profundidad visual."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "Utiliza sombras sutiles para resaltar elementos sin afectar la legibilidad ni sobrecargar el diseño."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CSS Box Shadow",
+      "Question Text": {
+        "en-US": [
+          "What effect does the spread-radius value have in a box-shadow?"
+        ],
+        "es-MX": [
+          "El valor spread-radius en un box-shadow, ¿qué efecto tiene?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Allows the shadow to blur.",
+          "Allows adding color to the shadow.",
+          "Allows the shadow to expand or contract.",
+          "Specifies the horizontal displacement of the shadow."
+        ],
+        "es-MX": [
+          "Permite difuminar la sombra.",
+          "Permite agregar color a la sombra.",
+          "Permite expandir o contraer la sombra.",
+          "Especifica el desplazamiento de la sombra en el eje X."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Allows the shadow to expand or contract.",
+        "es-MX": "Permite expandir o contraer la sombra."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "spread-radius"
+          },
+          {
+            "type": "text",
+            "content": "The <b>spread-radius</b> value controls the size of the shadow before it is blurred. Positive values expand the shadow, while negative values reduce its size."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Expands the shadow.",
+              "Can reduce the shadow size.",
+              "Works before blur is applied.",
+              "Helps control the shadow's shape."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Adjust spread-radius carefully to avoid oversized shadows that may distract users."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "spread-radius"
+          },
+          {
+            "type": "text",
+            "content": "El valor <b>spread-radius</b> controla el tamaño de la sombra antes de aplicar el difuminado. Los valores positivos expanden la sombra y los negativos la contraen."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Expande la sombra.",
+              "Puede contraer la sombra.",
+              "Actúa antes del difuminado.",
+              "Controla el tamaño de la sombra."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "Ajusta spread-radius con moderación para conseguir sombras equilibradas y mantener una apariencia limpia."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CSS Box Shadow",
+      "Question Text": {
+        "en-US": [
+          "What effect does the blur-radius value have in a box-shadow?"
+        ],
+        "es-MX": [
+          "El valor blur-radius en un box-shadow, ¿qué efecto tiene?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Allows the shadow to blur.",
+          "Allows adding color to the shadow.",
+          "Allows the shadow to expand or contract.",
+          "Specifies the horizontal displacement of the shadow."
+        ],
+        "es-MX": [
+          "Permite difuminar la sombra.",
+          "Permite agregar color a la sombra.",
+          "Permite expandir o contraer la sombra.",
+          "Especifica el desplazamiento de la sombra en el eje X."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Allows the shadow to blur.",
+        "es-MX": "Permite difuminar la sombra."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "blur-radius"
+          },
+          {
+            "type": "text",
+            "content": "The <b>blur-radius</b> value determines how soft or sharp the shadow appears. Larger values create a smoother and more diffuse shadow."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Controls the shadow blur.",
+              "Higher values produce softer shadows.",
+              "Lower values create sharper edges.",
+              "Improves depth effects."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Use blur values that create subtle depth while preserving the clarity of interface elements."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "blur-radius"
+          },
+          {
+            "type": "text",
+            "content": "El valor <b>blur-radius</b> determina el nivel de difuminado de la sombra. Mientras mayor sea el valor, más suave y dispersa será la sombra."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Controla el difuminado de la sombra.",
+              "Valores altos generan sombras más suaves.",
+              "Valores bajos producen bordes más definidos.",
+              "Mejora la sensación de profundidad."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "Utiliza niveles de difuminado adecuados para generar profundidad sin perder definición en los elementos de la interfaz."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CSS Transform Origin",
+      "Question Text": {
+        "en-US": [
+          "In CSS, what is the transform-origin property used for?"
+        ],
+        "es-MX": [
+          "En CSS, ¿para qué sirve la propiedad transform-origin?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "The transform-origin property is used to define the origin point of a transformation on an element.",
+          "The transform-origin property is used to define the position of an element on the page.",
+          "The transform-origin property is used to define the size of a transformation.",
+          "The transform-origin property is used to define the position of an element's background."
+        ],
+        "es-MX": [
+          "La propiedad transform-origin se utiliza para establecer el punto de origen de una transformación en un elemento.",
+          "La propiedad transform-origin se utiliza para establecer la posición de un elemento en la página.",
+          "La propiedad transform-origin se utiliza para establecer el tamaño de la transformación de un elemento.",
+          "La propiedad transform-origin se utiliza para establecer la posición del fondo de un elemento."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "The transform-origin property is used to define the origin point of a transformation on an element.",
+        "es-MX": "La propiedad transform-origin se utiliza para establecer el punto de origen de una transformación en un elemento."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "transform-origin"
+          },
+          {
+            "type": "text",
+            "content": "The <b>transform-origin</b> property defines the reference point from which CSS transformations are applied. Changing this point modifies how an element rotates, scales or skews."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Defines the transformation origin.",
+              "Affects rotations and scaling.",
+              "Can use keywords, percentages or lengths.",
+              "Works together with the transform property."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Adjust the transform origin when an animation or transformation needs to pivot around a specific point."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Propiedad transform-origin"
+          },
+          {
+            "type": "text",
+            "content": "La propiedad <b>transform-origin</b> define el punto de referencia desde el cual se aplican las transformaciones en CSS. Modificar este punto cambia la forma en que un elemento rota, escala o se sesga."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Define el origen de la transformación.",
+              "Afecta rotaciones y escalados.",
+              "Acepta palabras clave, porcentajes y longitudes.",
+              "Trabaja junto con la propiedad transform."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "Ajusta el punto de origen cuando una animación o transformación deba girar o escalar desde un punto específico."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CSS Transform Origin",
+      "Question Text": {
+        "en-US": [
+          "Which transform-origin value represents the center of an element?"
+        ],
+        "es-MX": [
+          "Estos valores en transform-origin permiten moverse desde el centro del elemento:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "center left",
+          "center top",
+          "50% 50%",
+          "center right"
+        ],
+        "es-MX": [
+          "Center left.",
+          "Center top.",
+          "50% 50%.",
+          "Center right."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "50% 50%",
+        "es-MX": "50% 50%."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Center Origin"
+          },
+          {
+            "type": "text",
+            "content": "The value <b>50% 50%</b> places the transformation origin at the exact center of the element. This is the default reference point for most CSS transformations."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Represents the center of the element.",
+              "Equivalent to center center.",
+              "Uses percentage values.",
+              "Default origin for transformations."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Use the center origin when rotations or scaling should occur evenly around the element."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Origen en el centro"
+          },
+          {
+            "type": "text",
+            "content": "El valor <b>50% 50%</b> coloca el origen de la transformación exactamente en el centro del elemento. Es el punto de referencia predeterminado para la mayoría de las transformaciones en CSS."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Representa el centro del elemento.",
+              "Equivale a center center.",
+              "Utiliza porcentajes.",
+              "Es el origen predeterminado de las transformaciones."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "Utiliza el centro como origen cuando desees que un elemento rote o escale de forma uniforme."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CSS Transform",
+      "Question Text": {
+        "en-US": [
+          "Which transformations are supported by the transform property?"
+        ],
+        "es-MX": [
+          "Son transformaciones permitidas en transform:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Hover, skew, rotate and scale.",
+          "Change color, translate and rotate.",
+          "Translate, skew, rotate and scale.",
+          "Skew, change color, rotate and scale."
+        ],
+        "es-MX": [
+          "Hover, sesgar, rotar y escalar.",
+          "Cambiar color, trasladar y rotar.",
+          "Trasladar, sesgar, rotar y escalar.",
+          "Sesgar, cambiar color, rotar y escalar."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Translate, skew, rotate and scale.",
+        "es-MX": "Trasladar, sesgar, rotar y escalar."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Transform Functions"
+          },
+          {
+            "type": "text",
+            "content": "The <b>transform</b> property supports functions such as <b>translate()</b>, <b>skew()</b>, <b>rotate()</b> and <b>scale()</b>. These functions modify the position, angle, size or inclination of an element without affecting the document flow."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "translate() moves elements.",
+              "rotate() changes orientation.",
+              "scale() changes size.",
+              "skew() tilts an element."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Combine transformation functions carefully to create smooth animations while preserving readability and usability."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Funciones de transform"
+          },
+          {
+            "type": "text",
+            "content": "La propiedad <b>transform</b> admite funciones como <b>translate()</b>, <b>skew()</b>, <b>rotate()</b> y <b>scale()</b>. Estas permiten modificar la posición, inclinación, rotación o tamaño de un elemento sin alterar el flujo normal del documento."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "translate() desplaza elementos.",
+              "rotate() cambia la orientación.",
+              "scale() modifica el tamaño.",
+              "skew() inclina un elemento."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "Combina las funciones de transformación con moderación para obtener animaciones fluidas y mantener una buena experiencia de usuario."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CSS Perspective",
+      "Question Text": {
+        "en-US": [
+          "What is the perspective property in CSS?"
+        ],
+        "es-MX": [
+          "¿Qué es la perspectiva?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "The perspective property in CSS is used to provide a three-dimensional perspective to an element and its children.",
+          "The perspective property in CSS is used to apply animation effects to an element and its children.",
+          "The perspective property in CSS is used to change the size of an element and its children.",
+          "The perspective property in CSS is used to view an element from different angles at the same time."
+        ],
+        "es-MX": [
+          "La propiedad perspective en CSS se utiliza para dar una perspectiva tridimensional a un elemento y a sus hijos.",
+          "La propiedad perspective en CSS se utiliza para aplicar efectos de animación a un elemento y a sus hijos.",
+          "La propiedad perspective en CSS se utiliza para cambiar el tamaño de un elemento y a sus hijos.",
+          "La propiedad perspective en CSS se utiliza para ver un elemento desde diferentes ángulos al mismo tiempo."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "The perspective property in CSS is used to provide a three-dimensional perspective to an element and its children.",
+        "es-MX": "La propiedad perspective en CSS se utiliza para dar una perspectiva tridimensional a un elemento y a sus hijos."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "perspective"
+          },
+          {
+            "type": "text",
+            "content": "The <b>perspective</b> property creates the illusion of depth by defining the distance between the viewer and the transformed elements. This allows child elements to appear with a realistic three-dimensional effect."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Creates a 3D perspective.",
+              "Affects transformed child elements.",
+              "Simulates viewing distance.",
+              "Works with 3D transforms."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Use moderate perspective values to create realistic depth without producing exaggerated distortion."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Propiedad perspective"
+          },
+          {
+            "type": "text",
+            "content": "La propiedad <b>perspective</b> crea la sensación de profundidad al definir la distancia entre el observador y los elementos transformados. Esto permite que los elementos hijos se visualicen con un efecto tridimensional más realista."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Genera una perspectiva 3D.",
+              "Afecta a los elementos hijos transformados.",
+              "Simula la distancia del observador.",
+              "Se utiliza junto con transformaciones 3D."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "Utiliza valores moderados de perspective para obtener profundidad sin producir distorsiones excesivas."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CSS Perspective",
+      "Question Text": {
+        "en-US": [
+          "To which element should the perspective property be applied?"
+        ],
+        "es-MX": [
+          "La propiedad perspective, ¿a qué elemento debe aplicarse?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "To the parent element.",
+          "To both the parent and child elements.",
+          "To the child element.",
+          "To the transformed element."
+        ],
+        "es-MX": [
+          "Al elemento padre.",
+          "Al elemento padre e hijo.",
+          "Al elemento hijo.",
+          "Al elemento transform."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To the parent element.",
+        "es-MX": "Al elemento padre."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Parent Element"
+          },
+          {
+            "type": "text",
+            "content": "The <b>perspective</b> property is applied to the parent element so that its transformed children are rendered with a three-dimensional perspective."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Applied to the parent element.",
+              "Affects transformed child elements.",
+              "Defines the viewing distance.",
+              "Works with 3D transformations."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Apply perspective to the container instead of each child to maintain a consistent 3D effect."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Elemento padre"
+          },
+          {
+            "type": "text",
+            "content": "La propiedad <b>perspective</b> debe aplicarse al elemento padre para que los elementos hijos transformados se representen con una perspectiva tridimensional."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Se aplica al elemento padre.",
+              "Afecta a los elementos hijos transformados.",
+              "Define la distancia del observador.",
+              "Funciona con transformaciones 3D."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "Aplica perspective al contenedor para mantener un efecto tridimensional uniforme en todos los elementos hijos."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CSS Perspective",
+      "Question Text": {
+        "en-US": [
+          "Which of the following is a valid value for the perspective property?"
+        ],
+        "es-MX": [
+          "Es un valor permitido en perspective:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "500px",
+          "50%",
+          "center",
+          "50deg"
+        ],
+        "es-MX": [
+          "500 px.",
+          "50%.",
+          "Center.",
+          "50 deg."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "500px",
+        "es-MX": "500 px."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Perspective Values"
+          },
+          {
+            "type": "text",
+            "content": "The <b>perspective</b> property accepts length values such as pixels. Smaller values produce a stronger 3D effect, while larger values create a subtler perspective."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Uses length units.",
+              "Pixels are commonly used.",
+              "Smaller values increase depth.",
+              "Larger values reduce distortion."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Choose perspective values that provide depth while preserving readability and usability."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Valores de perspective"
+          },
+          {
+            "type": "text",
+            "content": "La propiedad <b>perspective</b> acepta valores de longitud, como píxeles. Los valores pequeños generan un efecto tridimensional más pronunciado, mientras que los grandes producen una perspectiva más sutil."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Utiliza unidades de longitud.",
+              "Los píxeles son los más comunes.",
+              "Valores pequeños aumentan la profundidad.",
+              "Valores grandes reducen la distorsión."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "Selecciona valores de perspective que aporten profundidad sin afectar la legibilidad ni la experiencia del usuario."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CSS 3D Transform",
+      "Question Text": {
+        "en-US": [
+          "Which function is NOT allowed in CSS 3D transforms?"
+        ],
+        "es-MX": [
+          "Función no permitida en transform 3D:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "skewZ().",
+          "rotateZ().",
+          "scaleX().",
+          "translateY()."
+        ],
+        "es-MX": [
+          "skewZ().",
+          "rotateZ().",
+          "scaleX().",
+          "translateY()."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "skewZ().",
+        "es-MX": "skewZ()."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "skewZ()"
+          },
+          {
+            "type": "text",
+            "content": "According to the course material, <b>skewZ()</b> is not a valid CSS transform function. CSS provides skew(), skewX() and skewY(), but there is no skewZ() function."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "skew() is valid.",
+              "skewX() is valid.",
+              "skewY() is valid.",
+              "skewZ() does not exist."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Use only valid transformation functions to ensure animations work correctly across browsers."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Función skewZ()"
+          },
+          {
+            "type": "text",
+            "content": "De acuerdo con el material del curso, <b>skewZ()</b> no es una función válida de transformación en CSS. CSS incluye <b>skew()</b>, <b>skewX()</b> y <b>skewY()</b>, pero no existe <b>skewZ()</b>."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "skew() es válida.",
+              "skewX() es válida.",
+              "skewY() es válida.",
+              "skewZ() no existe."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "Utiliza únicamente funciones de transformación válidas para asegurar la compatibilidad y el correcto funcionamiento de las animaciones."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CSS 3D Transform",
+      "Question Text": {
+        "en-US": [
+          "Which function allows rotation around all axes at the same time?"
+        ],
+        "es-MX": [
+          "Función que permite rotar en todos los ejes a la vez:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "rotateZ().",
+          "rotateY().",
+          "rotate3d().",
+          "rotate()."
+        ],
+        "es-MX": [
+          "rotateZ().",
+          "rotateY().",
+          "rotate3d().",
+          "rotate()."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "rotate3d().",
+        "es-MX": "rotate3d()."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "rotate3d()"
+          },
+          {
+            "type": "text",
+            "content": "The <b>rotate3d()</b> function performs a three-dimensional rotation using a vector that defines the X, Y and Z axes together with the rotation angle."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Works in three dimensions.",
+              "Uses the X, Y and Z axes.",
+              "Requires a rotation angle.",
+              "Creates complex 3D rotations."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Use rotate3d() when a single transformation must combine multiple axes in a realistic 3D effect."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Función rotate3d()"
+          },
+          {
+            "type": "text",
+            "content": "La función <b>rotate3d()</b> permite realizar una rotación tridimensional utilizando un vector que define los ejes X, Y y Z junto con el ángulo de rotación."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Trabaja en tres dimensiones.",
+              "Utiliza los ejes X, Y y Z.",
+              "Requiere un ángulo de rotación.",
+              "Permite crear rotaciones complejas."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "Utiliza rotate3d() cuando necesites combinar varios ejes dentro de una misma transformación tridimensional."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CSS 3D Transform",
+      "Question Text": {
+        "en-US": [
+          "Which function rotates an element around its own vertical axis?"
+        ],
+        "es-MX": [
+          "Función que permite rotar a un elemento en su mismo eje de manera vertical:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "rotateZ().",
+          "rotateY().",
+          "rotateX().",
+          "rotate3d()."
+        ],
+        "es-MX": [
+          "rotateZ().",
+          "rotateY().",
+          "rotateX().",
+          "rotate3d()."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "rotateY().",
+        "es-MX": "rotateY()."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "rotateY()"
+          },
+          {
+            "type": "text",
+            "content": "The <b>rotateY()</b> function rotates an element around its vertical Y axis, creating the effect of turning the element from side to side in three-dimensional space."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Rotates around the Y axis.",
+              "Creates a side-to-side turning effect.",
+              "Used in 3D transformations.",
+              "Works with perspective for realistic depth."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Combine rotateY() with perspective to achieve more realistic three-dimensional animations."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Función rotateY()"
+          },
+          {
+            "type": "text",
+            "content": "La función <b>rotateY()</b> rota un elemento alrededor del eje vertical Y, produciendo el efecto de girarlo de un lado hacia otro dentro de un espacio tridimensional."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Rota sobre el eje Y.",
+              "Produce un giro lateral.",
+              "Se utiliza en transformaciones 3D.",
+              "Puede combinarse con perspective."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "Combina rotateY() con perspective para obtener un efecto tridimensional más natural y realista."
+          }
+        ]
+      }
+    }
+  ]
+}

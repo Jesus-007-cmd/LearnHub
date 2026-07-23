@@ -1,0 +1,1674 @@
+{
+  "meta": {
+    "slug": "animacion-web-u3",
+    "title": "Interacción, timing y propiedades animables en CSS",
+    "subject": "DESARROLLO DE RECURSOS ANIMADOS PARA WEB",
+    "unit": 3,
+    "classNo": 0,
+    "description": "Unidad 3: tipos de animaciones web, pseudoclases CSS (:hover y :focus), easing, curvas de Bézier, tiempos de animación, opacity, color, background-position, background-size y propiedades animables.",
+    "tags": [
+      "animación web",
+      "CSS",
+      "hover",
+      "focus",
+      "pseudo-class",
+      "triggers",
+      "loop",
+      "easing",
+      "Bezier",
+      "timing",
+      "opacity",
+      "color",
+      "background-position",
+      "background-size",
+      "transiciones",
+      "animaciones CSS"
+    ],
+    "questionCount": 17,
+    "languages": [
+      "en-US",
+      "es-MX"
+    ]
+  },
+    "Questions": [
+        
+        {
+          "Category": "Web Animations",
+          "Question Text": {
+            "en-US": [
+              "Types of animations found on websites:"
+            ],
+            "es-MX": [
+              "Tipos de animaciones que hay en sitios web:"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Trigger-based animations and loop animations.",
+              "State-based animations and emphasis animations.",
+              "Question-and-answer animations.",
+              "Scroll and swipe animations."
+            ],
+            "es-MX": [
+              "Animaciones a partir de triggers y animaciones en bucle.",
+              "Animaciones a partir de estados y énfasis.",
+              "Animaciones a partir de pregunta y respuesta.",
+              "Animaciones a partir de hacer scroll y swipe."
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Trigger-based animations and loop animations.",
+            "es-MX": "Animaciones a partir de triggers y animaciones en bucle."
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "title-h2",
+                "content": "Types of Web Animations"
+              },
+              {
+                "type": "text",
+                "content": "Web animations can be activated by specific user actions, known as <b>triggers</b>, or they can run continuously in a loop. Trigger-based animations respond to events such as clicks or mouse movements, while loop animations repeat automatically."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Trigger animations respond to user actions.",
+                  "Loop animations repeat automatically.",
+                  "Both improve interaction and visual communication.",
+                  "They are commonly used in modern websites."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Good Practices"
+              },
+              {
+                "type": "text",
+                "content": "Use animations only when they provide useful feedback or improve the user experience, avoiding excessive visual distractions."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "title-h2",
+                "content": "Tipos de animaciones web"
+              },
+              {
+                "type": "text",
+                "content": "Las animaciones en sitios web pueden activarse mediante <b>triggers</b>, es decir, eventos provocados por la interacción del usuario, o ejecutarse de forma continua mediante animaciones en bucle. Ambos tipos ayudan a mejorar la comunicación visual y la experiencia de navegación."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Los triggers responden a acciones del usuario.",
+                  "Las animaciones en bucle se ejecutan continuamente.",
+                  "Mejoran la interacción visual.",
+                  "Son frecuentes en interfaces web modernas."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Buenas prácticas"
+              },
+              {
+                "type": "text",
+                "content": "Utiliza animaciones únicamente cuando aporten información, retroalimentación o mejoren la experiencia del usuario, evitando efectos innecesarios."
+              }
+            ]
+          }
+        },
+        {
+          "Category": "CSS Pseudo-classes",
+          "Question Text": {
+            "en-US": [
+              "What is :hover in CSS?"
+            ],
+            "es-MX": [
+              "¿Qué es :hover en CSS?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "A pseudo-class used when the cursor is outside an element.",
+              "A pseudo-class used when the cursor is inside an element.",
+              "A pseudo-class used when the cursor is near an element.",
+              "A pseudo-class used when the cursor is over an element."
+            ],
+            "es-MX": [
+              "Un pseudoselector que se utiliza para aplicar estilos a un elemento cuando el cursor se sitúa fuera de él.",
+              "Un pseudoselector que se utiliza para aplicar estilos a un elemento cuando el cursor se sitúa dentro de él.",
+              "Un pseudoselector que se utiliza para aplicar estilos a un elemento cuando el cursor se sitúa cerca de él.",
+              "Un pseudoselector que se utiliza para aplicar estilos a un elemento cuando el cursor se sitúa sobre él."
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "A pseudo-class used when the cursor is over an element.",
+            "es-MX": "Un pseudoselector que se utiliza para aplicar estilos a un elemento cuando el cursor se sitúa sobre él."
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "title-h2",
+                "content": ":hover"
+              },
+              {
+                "type": "text",
+                "content": "The <b>:hover</b> pseudo-class applies styles while the pointing device is positioned over an element. It is commonly used to provide visual feedback for links, buttons and interactive components."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Activated when the pointer is over an element.",
+                  "Provides visual feedback.",
+                  "Frequently used on buttons and links.",
+                  "Improves user interaction."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Good Practices"
+              },
+              {
+                "type": "text",
+                "content": "Use hover effects to indicate that an element is interactive, but avoid relying on them as the only way to communicate important information."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "title-h2",
+                "content": "Pseudoselector :hover"
+              },
+              {
+                "type": "text",
+                "content": "El pseudoselector <b>:hover</b> aplica estilos cuando el cursor se sitúa sobre un elemento. Se utiliza con frecuencia para destacar botones, enlaces y otros componentes interactivos, proporcionando retroalimentación visual al usuario."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Se activa al colocar el cursor sobre un elemento.",
+                  "Proporciona retroalimentación visual.",
+                  "Es común en botones y enlaces.",
+                  "Mejora la interacción con la interfaz."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Buenas prácticas"
+              },
+              {
+                "type": "text",
+                "content": "Utiliza efectos hover para indicar que un elemento es interactivo, pero evita que sean el único medio para comunicar información importante."
+              }
+            ]
+          }
+        },
+        {
+          "Category": "CSS Pseudo-classes",
+          "Question Text": {
+            "en-US": [
+              "What is :focus in CSS?"
+            ],
+            "es-MX": [
+              "¿Qué es :focus en CSS?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "A pseudo-class applied when scrolling.",
+              "A pseudo-class applied when the cursor is inside an element.",
+              "A pseudo-class that applies and removes state changes when an element receives focus.",
+              "A pseudo-class applied when the cursor is over an element."
+            ],
+            "es-MX": [
+              "Un pseudoselector que se utiliza para aplicar estilos a un elemento cuando se hace scroll en pantalla.",
+              "Un pseudoselector que se utiliza para aplicar estilos a un elemento cuando el cursor se sitúa dentro de él.",
+              "Un pseudoselector que se utiliza para aplicar y quitar cambios de estado a un elemento cuando está enfocado.",
+              "Un pseudoselector que se utiliza para aplicar estilos a un elemento cuando el cursor se sitúa sobre él."
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "A pseudo-class that applies and removes state changes when an element receives focus.",
+            "es-MX": "Un pseudoselector que se utiliza para aplicar y quitar cambios de estado a un elemento cuando está enfocado."
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "title-h2",
+                "content": ":focus"
+              },
+              {
+                "type": "text",
+                "content": "The <b>:focus</b> pseudo-class applies styles when an element receives keyboard or input focus. It helps users identify which control is currently active."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Activated when an element receives focus.",
+                  "Commonly used on form controls.",
+                  "Improves keyboard navigation.",
+                  "Provides visual feedback."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Good Practices"
+              },
+              {
+                "type": "text",
+                "content": "Always provide a visible focus indicator to improve accessibility for keyboard and assistive technology users."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "title-h2",
+                "content": "Pseudoselector :focus"
+              },
+              {
+                "type": "text",
+                "content": "El pseudoselector <b>:focus</b> aplica estilos cuando un elemento recibe el foco, generalmente al seleccionarlo mediante el teclado o al interactuar con un campo de entrada. Facilita identificar cuál elemento está activo en un momento determinado."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Se activa cuando un elemento recibe el foco.",
+                  "Es común en formularios y controles.",
+                  "Favorece la navegación con teclado.",
+                  "Proporciona retroalimentación visual."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Buenas prácticas"
+              },
+              {
+                "type": "text",
+                "content": "Mantén siempre un indicador visual de foco para mejorar la accesibilidad y facilitar la navegación mediante teclado."
+              }
+            ]
+          }
+        },
+        {
+          "Category": "Animation Easing",
+          "Question Text": {
+            "en-US": [
+              "What is easing in animation?"
+            ],
+            "es-MX": [
+              "¿Qué es easing en animación?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "It is the mathematical function that describes how an animation's speed changes over time.",
+              "It is the function that removes smooth motion from an animation.",
+              "It is the constant speed of an animation.",
+              "It is the quality that makes an animation easier to understand."
+            ],
+            "es-MX": [
+              "Es la función matemática que describe la velocidad de cambio de una animación a lo largo del tiempo.",
+              "Es la función que elimina el movimiento suave en una animación.",
+              "Es la velocidad constante de una animación.",
+              "Es la calidad que se le debe dar a una animación para que sea más fácil de entender."
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "It is the mathematical function that describes how an animation's speed changes over time.",
+            "es-MX": "Es la función matemática que describe la velocidad de cambio de una animación a lo largo del tiempo."
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "title-h2",
+                "content": "Animation Easing"
+              },
+              {
+                "type": "text",
+                "content": "Easing is the mathematical function that controls how the speed of an animation changes from its beginning to its end. Instead of moving at a constant speed, an animation can accelerate, decelerate or combine both effects to create a more natural movement."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Controls animation speed over time.",
+                  "Creates more natural movement.",
+                  "Can accelerate or decelerate motion.",
+                  "Improves the visual experience."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Good Practices"
+              },
+              {
+                "type": "text",
+                "content": "Choose an easing function according to the interaction so that movements feel smooth, predictable and visually pleasant."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "title-h2",
+                "content": "Easing"
+              },
+              {
+                "type": "text",
+                "content": "El <b>easing</b> es la función matemática que controla cómo cambia la velocidad de una animación desde que inicia hasta que termina. Permite acelerar, desacelerar o combinar ambos efectos para generar movimientos más naturales."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Controla la velocidad de una animación.",
+                  "Genera movimientos más naturales.",
+                  "Puede acelerar o desacelerar el movimiento.",
+                  "Mejora la experiencia visual."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Buenas prácticas"
+              },
+              {
+                "type": "text",
+                "content": "Selecciona una función de easing adecuada para que las animaciones sean fluidas y coherentes con la interacción del usuario."
+              }
+            ]
+          }
+        },
+        {
+          "Category": "Animation Easing",
+          "Question Text": {
+            "en-US": [
+              "Which of the following are easing functions?"
+            ],
+            "es-MX": [
+              "Son funciones de easing:"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Ease-end, ease-in and linear.",
+              "Ease-out, ease-start and linear.",
+              "Ease-out, ease-in and linear.",
+              "Ease-end, ease-start and linear."
+            ],
+            "es-MX": [
+              "Ease-end, ease-in y linear.",
+              "Ease-out, ease-start y linear.",
+              "Ease-out, ease-in y linear.",
+              "Ease-end, ease-start y linear."
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Ease-out, ease-in and linear.",
+            "es-MX": "Ease-out, ease-in y linear."
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "title-h2",
+                "content": "Common Easing Functions"
+              },
+              {
+                "type": "text",
+                "content": "CSS includes several predefined easing functions that determine how an animation progresses over time. Among the most common are <b>linear</b>, <b>ease-in</b> and <b>ease-out</b>."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "linear keeps a constant speed.",
+                  "ease-in starts slowly.",
+                  "ease-out finishes slowly.",
+                  "Each function produces a different movement effect."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Good Practices"
+              },
+              {
+                "type": "text",
+                "content": "Select the easing function that best matches the interaction to improve the perception of fluidity."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "title-h2",
+                "content": "Funciones de easing"
+              },
+              {
+                "type": "text",
+                "content": "CSS ofrece diferentes funciones de <b>easing</b> que determinan cómo evoluciona una animación con el paso del tiempo. Entre las más utilizadas se encuentran <b>linear</b>, <b>ease-in</b> y <b>ease-out</b>."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "linear mantiene una velocidad constante.",
+                  "ease-in inicia lentamente.",
+                  "ease-out finaliza lentamente.",
+                  "Cada función genera un efecto de movimiento diferente."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Buenas prácticas"
+              },
+              {
+                "type": "text",
+                "content": "Selecciona la función de easing que mejor represente la interacción para lograr movimientos naturales y agradables."
+              }
+            ]
+          }
+        },
+        {
+          "Category": "Animation Curves",
+          "Question Text": {
+            "en-US": [
+              "What is a Bézier curve?"
+            ],
+            "es-MX": [
+              "¿Qué es una curva de Bézier?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "A mathematical curve used in digital graphic design to define a path.",
+              "A geometric figure used in digital graphic design.",
+              "A line used in graphic design.",
+              "An animation technique used in graphic design."
+            ],
+            "es-MX": [
+              "Una curva de Bézier es una curva matemática utilizada en diseño gráfico digital para definir una trayectoria.",
+              "Una curva de Bézier es una figura geométrica utilizada en el diseño gráfico digital.",
+              "Una curva de Bézier es una línea utilizada en diseño gráfico.",
+              "Una curva de Bézier es una técnica de animación utilizada en diseño gráfico."
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "A mathematical curve used in digital graphic design to define a path.",
+            "es-MX": "Una curva de Bézier es una curva matemática utilizada en diseño gráfico digital para definir una trayectoria."
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "title-h2",
+                "content": "Bézier Curve"
+              },
+              {
+                "type": "text",
+                "content": "A Bézier curve is a mathematical curve widely used in digital graphics, vector design and animation to define smooth paths and control movement."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Defines smooth paths.",
+                  "Uses control points.",
+                  "Common in vector graphics.",
+                  "Used in animation and web design."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Importance"
+              },
+              {
+                "type": "text",
+                "content": "Bézier curves make it possible to create precise shapes and smooth animation timing with a high degree of control."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "title-h2",
+                "content": "Curva de Bézier"
+              },
+              {
+                "type": "text",
+                "content": "Una <b>curva de Bézier</b> es una curva matemática ampliamente utilizada en gráficos vectoriales, diseño digital y animación para definir trayectorias suaves y controlar el movimiento de los elementos."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Define trayectorias suaves.",
+                  "Utiliza puntos de control.",
+                  "Es común en gráficos vectoriales.",
+                  "Se utiliza en animación y diseño web."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Importancia"
+              },
+              {
+                "type": "text",
+                "content": "Las curvas de Bézier permiten crear trayectorias precisas y movimientos fluidos, ofreciendo un mayor control sobre las animaciones y el diseño."
+              }
+            ]
+          }
+        },
+        {
+          "Category": "Animation Timing",
+          "Question Text": {
+            "en-US": [
+              "If a web animation lasts 1000 ms, how many seconds is that?"
+            ],
+            "es-MX": [
+              "Si una animación web dura 1000 ms, ¿cuántos segundos son?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "10 seconds.",
+              "1 second.",
+              "0.1 seconds.",
+              "100 seconds."
+            ],
+            "es-MX": [
+              "10 segundos.",
+              "1 segundo.",
+              "0,1 segundos.",
+              "100 segundos."
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "1 second.",
+            "es-MX": "1 segundo."
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "title-h2",
+                "content": "Milliseconds and Seconds"
+              },
+              {
+                "type": "text",
+                "content": "Animations are commonly measured in milliseconds (ms). One thousand milliseconds are equivalent to one second, making it easy to convert between both units when defining animation durations."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "1000 ms = 1 second.",
+                  "500 ms = 0.5 seconds.",
+                  "250 ms = 0.25 seconds.",
+                  "Milliseconds provide greater precision."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Good Practices"
+              },
+              {
+                "type": "text",
+                "content": "Use milliseconds when defining short interface animations because they provide greater precision and readability."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "title-h2",
+                "content": "Milisegundos y segundos"
+              },
+              {
+                "type": "text",
+                "content": "Las animaciones suelen medirse en milisegundos (ms). Mil milisegundos equivalen a un segundo, por lo que es sencillo convertir entre ambas unidades al definir la duración de una animación."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "1000 ms equivalen a 1 segundo.",
+                  "500 ms equivalen a 0.5 segundos.",
+                  "250 ms equivalen a 0.25 segundos.",
+                  "Los milisegundos ofrecen mayor precisión."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Buenas prácticas"
+              },
+              {
+                "type": "text",
+                "content": "Utiliza milisegundos para definir animaciones cortas, ya que permiten un control más preciso de la duración."
+              }
+            ]
+          }
+        },
+        {
+          "Category": "Animation Timing",
+          "Question Text": {
+            "en-US": [
+              "Recommended duration range for web animations:"
+            ],
+            "es-MX": [
+              "Intervalo adecuado para animaciones web:"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "From 100 ms to 500 ms.",
+              "From 1 ms to 100 ms.",
+              "From 500 ms to 1000 ms.",
+              "From 1000 ms to 5000 ms."
+            ],
+            "es-MX": [
+              "De 100 ms a 500 ms.",
+              "De 1 ms a 100 ms.",
+              "De 500 ms a 1000 ms.",
+              "De 1000 ms a 5000 ms."
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "From 100 ms to 500 ms.",
+            "es-MX": "De 100 ms a 500 ms."
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "title-h2",
+                "content": "Animation Duration"
+              },
+              {
+                "type": "text",
+                "content": "Most interface animations are recommended to last between 100 and 500 milliseconds. This range keeps interactions responsive while remaining visually smooth."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "100–500 ms is the recommended range.",
+                  "Very short animations may go unnoticed.",
+                  "Very long animations slow interaction.",
+                  "Balanced timing improves usability."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Good Practices"
+              },
+              {
+                "type": "text",
+                "content": "Choose durations that provide feedback without making users wait unnecessarily."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "title-h2",
+                "content": "Duración de las animaciones"
+              },
+              {
+                "type": "text",
+                "content": "La mayoría de las animaciones para interfaces web se recomienda que duren entre 100 y 500 milisegundos. Este intervalo mantiene una interacción fluida sin hacer que el usuario perciba lentitud."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "100–500 ms es el intervalo recomendado.",
+                  "Las animaciones muy cortas pueden pasar desapercibidas.",
+                  "Las demasiado largas ralentizan la interacción.",
+                  "Una duración equilibrada mejora la usabilidad."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Buenas prácticas"
+              },
+              {
+                "type": "text",
+                "content": "Selecciona duraciones que proporcionen retroalimentación visual sin obligar al usuario a esperar más de lo necesario."
+              }
+            ]
+          }
+        },
+        {
+          "Category": "Animation Timing",
+          "Question Text": {
+            "en-US": [
+              "Recommended timing for medium-length animations:"
+            ],
+            "es-MX": [
+              "Intervalo adecuado para animaciones medianas:"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "100 ms in and 500 ms out.",
+              "250 ms in and 200 ms out.",
+              "500 ms in and 100 ms out.",
+              "100 ms in and 100 ms out."
+            ],
+            "es-MX": [
+              "100 ms de entrada y 500 ms de salida.",
+              "250 ms de entrada y 200 ms de salida.",
+              "500 ms de entrada y 100 ms de salida.",
+              "100 ms de entrada y 100 ms de salida."
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "250 ms in and 200 ms out.",
+            "es-MX": "250 ms de entrada y 200 ms de salida."
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "title-h2",
+                "content": "Medium Animations"
+              },
+              {
+                "type": "text",
+                "content": "Medium-length animations often use different entry and exit durations to create smooth and natural transitions. A slightly longer entrance and a faster exit improve the perceived responsiveness."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "250 ms entry.",
+                  "200 ms exit.",
+                  "Provides natural movement.",
+                  "Maintains interface responsiveness."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Good Practices"
+              },
+              {
+                "type": "text",
+                "content": "Adjust entry and exit durations to match the interaction and avoid abrupt or unnecessarily slow animations."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "title-h2",
+                "content": "Animaciones medianas"
+              },
+              {
+                "type": "text",
+                "content": "Las animaciones de duración media suelen utilizar tiempos distintos para la entrada y la salida con el fin de generar transiciones suaves y naturales. Una entrada ligeramente más larga y una salida más rápida mejoran la percepción de fluidez."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "250 ms para la entrada.",
+                  "200 ms para la salida.",
+                  "Generan movimientos naturales.",
+                  "Mantienen una interfaz ágil."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Buenas prácticas"
+              },
+              {
+                "type": "text",
+                "content": "Ajusta los tiempos de entrada y salida según la interacción para conseguir animaciones fluidas y agradables para el usuario."
+              }
+            ]
+          }
+        },
+        {
+          "Category": "CSS Opacity",
+          "Question Text": {
+            "en-US": [
+              "In CSS, what is the opacity property used for?"
+            ],
+            "es-MX": [
+              "En CSS, ¿para qué sirve la propiedad opacity?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "The opacity property is used to change the size of an element.",
+              "The opacity property is used to change the color of an element.",
+              "The opacity property is used to control the transparency of an element.",
+              "The opacity property is used to add borders to an element."
+            ],
+            "es-MX": [
+              "La propiedad opacity en CSS se utiliza para cambiar el tamaño de un elemento.",
+              "La propiedad opacity en CSS se utiliza para cambiar el color de un elemento.",
+              "La propiedad opacity en CSS se utiliza para controlar la transparencia de un elemento.",
+              "La propiedad opacity en CSS se utiliza para añadir bordes a un elemento."
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "The opacity property is used to control the transparency of an element.",
+            "es-MX": "La propiedad opacity en CSS se utiliza para controlar la transparencia de un elemento."
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "title-h2",
+                "content": "CSS Opacity"
+              },
+              {
+                "type": "text",
+                "content": "The <b>opacity</b> property controls the transparency level of an element. An opacity value of <b>1</b> makes the element fully visible, while a value of <b>0</b> makes it completely transparent."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Controls element transparency.",
+                  "Accepts values from 0 to 1.",
+                  "1 means fully visible.",
+                  "0 means completely transparent."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Good Practices"
+              },
+              {
+                "type": "text",
+                "content": "Use opacity to create smooth visual effects while ensuring that important information remains readable."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "title-h2",
+                "content": "Propiedad opacity"
+              },
+              {
+                "type": "text",
+                "content": "La propiedad <b>opacity</b> controla el nivel de transparencia de un elemento. Un valor de <b>1</b> lo muestra completamente visible, mientras que un valor de <b>0</b> lo hace totalmente transparente."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Controla la transparencia del elemento.",
+                  "Acepta valores entre 0 y 1.",
+                  "1 representa un elemento completamente visible.",
+                  "0 representa un elemento totalmente transparente."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Buenas prácticas"
+              },
+              {
+                "type": "text",
+                "content": "Utiliza opacity para generar efectos visuales suaves sin comprometer la legibilidad ni la accesibilidad del contenido."
+              }
+            ]
+          }
+        },
+        {
+          "Category": "CSS Opacity",
+          "Question Text": {
+            "en-US": [
+              "Which value can be used with the CSS opacity property?"
+            ],
+            "es-MX": [
+              "Es un valor que puede ser utilizado en la propiedad opacity de CSS:"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "100",
+              "25 px",
+              "100%",
+              "0.5"
+            ],
+            "es-MX": [
+              "100.",
+              "25 px.",
+              "100 %.",
+              "0.5."
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "0.5",
+            "es-MX": "0.5."
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "title-h2",
+                "content": "Opacity Values"
+              },
+              {
+                "type": "text",
+                "content": "The opacity property accepts decimal values between <b>0</b> and <b>1</b>. Intermediate values such as <b>0.5</b> make an element partially transparent."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "0 = fully transparent.",
+                  "1 = fully opaque.",
+                  "0.5 = 50% transparency.",
+                  "Only numeric values from 0 to 1 are valid."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Good Practices"
+              },
+              {
+                "type": "text",
+                "content": "Use intermediate opacity values to create subtle visual effects while maintaining content visibility."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "title-h2",
+                "content": "Valores de opacity"
+              },
+              {
+                "type": "text",
+                "content": "La propiedad <b>opacity</b> acepta valores numéricos entre <b>0</b> y <b>1</b>. Los valores intermedios, como <b>0.5</b>, permiten mostrar un elemento parcialmente transparente."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "0 representa transparencia total.",
+                  "1 representa opacidad total.",
+                  "0.5 equivale aproximadamente a un 50 % de transparencia.",
+                  "Solo son válidos valores entre 0 y 1."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Buenas prácticas"
+              },
+              {
+                "type": "text",
+                "content": "Utiliza valores intermedios para crear efectos visuales sutiles sin dificultar la lectura del contenido."
+              }
+            ]
+          }
+        },
+        {
+          "Category": "CSS Opacity",
+          "Question Text": {
+            "en-US": [
+              "Which CSS declaration makes an element completely transparent?"
+            ],
+            "es-MX": [
+              "Es la manera adecuada de visualizar un elemento totalmente transparente usando CSS:"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              ".element { opacity: 0; }",
+              ".element { opacity: 0%; }",
+              ".element { opacity: 0.0%; }",
+              ".element { opacity: transparent; }"
+            ],
+            "es-MX": [
+              ".elemento { opacity: 0; }",
+              ".elemento { opacity: 0%; }",
+              ".elemento { opacity: 0.0%; }",
+              ".elemento { opacity: transparent; }"
+            ]
+          },
+          "Correct Answer": {
+            "en-US": ".element { opacity: 0; }",
+            "es-MX": ".elemento { opacity: 0; }"
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "title-h2",
+                "content": "Completely Transparent Element"
+              },
+              {
+                "type": "text",
+                "content": "Assigning <b>opacity: 0;</b> makes an element completely transparent while it still exists in the document and occupies its original space."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "0 makes the element invisible.",
+                  "The element remains in the layout.",
+                  "It can still receive events depending on other properties.",
+                  "Opacity values range from 0 to 1."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Good Practices"
+              },
+              {
+                "type": "text",
+                "content": "Use opacity together with transitions to create smooth fade-in and fade-out effects."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "title-h2",
+                "content": "Elemento totalmente transparente"
+              },
+              {
+                "type": "text",
+                "content": "Al asignar <b>opacity: 0;</b>, un elemento se vuelve completamente transparente, aunque continúa existiendo en el documento y conserva el espacio que ocupa dentro del diseño."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "0 hace que el elemento sea invisible.",
+                  "El elemento permanece en el flujo del documento.",
+                  "Puede seguir interactuando dependiendo de otras propiedades.",
+                  "Los valores válidos van de 0 a 1."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Buenas prácticas"
+              },
+              {
+                "type": "text",
+                "content": "Combina opacity con transiciones para crear efectos de aparición y desaparición suaves en las interfaces web."
+              }
+            ]
+          }
+        },
+        {
+          "Category": "CSS Color",
+          "Question Text": {
+            "en-US": [
+              "What is the CSS color property used for?"
+            ],
+            "es-MX": [
+              "¿Para qué sirve la propiedad color en CSS?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "The color property is used to set the color of an HTML element.",
+              "The color property is used to set the text size of an HTML element.",
+              "The color property is used to set the text color of an HTML element.",
+              "The color property is used to set the background color of an HTML element."
+            ],
+            "es-MX": [
+              "La propiedad color en CSS se utiliza para establecer el color de un elemento HTML.",
+              "La propiedad color en CSS se utiliza para establecer el tamaño del texto en un elemento HTML.",
+              "La propiedad color en CSS se utiliza para establecer el color del texto en un elemento HTML.",
+              "La propiedad color en CSS se utiliza para establecer el color de fondo de un elemento HTML."
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "The color property is used to set the text color of an HTML element.",
+            "es-MX": "La propiedad color en CSS se utiliza para establecer el color del texto en un elemento HTML."
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "title-h2",
+                "content": "CSS color Property"
+              },
+              {
+                "type": "text",
+                "content": "The <b>color</b> property defines the color of the text displayed inside an HTML element. It does not affect the background or the element's size, only the foreground text color."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Changes the text color.",
+                  "Does not modify the background.",
+                  "Applies to visible text.",
+                  "One of the most commonly used CSS properties."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Good Practices"
+              },
+              {
+                "type": "text",
+                "content": "Choose text colors with sufficient contrast against the background to improve readability and accessibility."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "title-h2",
+                "content": "Propiedad color"
+              },
+              {
+                "type": "text",
+                "content": "La propiedad <b>color</b> define el color del texto que se muestra dentro de un elemento HTML. No modifica el fondo ni el tamaño del elemento, únicamente el color del contenido textual."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Cambia el color del texto.",
+                  "No modifica el color de fondo.",
+                  "Se aplica al contenido visible.",
+                  "Es una de las propiedades más utilizadas de CSS."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Buenas prácticas"
+              },
+              {
+                "type": "text",
+                "content": "Utiliza colores con suficiente contraste respecto al fondo para mejorar la legibilidad y la accesibilidad del contenido."
+              }
+            ]
+          }
+        },
+        {
+          "Category": "CSS Color",
+          "Question Text": {
+            "en-US": [
+              "Which declaration correctly sets red text in CSS?"
+            ],
+            "es-MX": [
+              "Declaración correcta de un texto rojo en CSS:"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "color-text: red;",
+              "color: #000000;",
+              "color: red;",
+              "color: rojo;"
+            ],
+            "es-MX": [
+              "color-text: red;",
+              "color: #000000;",
+              "color: red;",
+              "color: rojo;"
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "color: red;",
+            "es-MX": "color: red;"
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "title-h2",
+                "content": "Setting Text Color"
+              },
+              {
+                "type": "text",
+                "content": "The declaration <b>color: red;</b> assigns the predefined CSS color <b>red</b> to the text. CSS recognizes standard color keywords in English."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Uses the color property.",
+                  "Accepts predefined color names.",
+                  "Keywords must be written in English.",
+                  "The declaration ends with a semicolon."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Good Practices"
+              },
+              {
+                "type": "text",
+                "content": "Use descriptive color names for simple cases and hexadecimal or RGB values when more precise colors are required."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "title-h2",
+                "content": "Asignación de color"
+              },
+              {
+                "type": "text",
+                "content": "La declaración <b>color: red;</b> asigna al texto el color predefinido <b>red</b>. Los nombres de colores reconocidos por CSS deben escribirse en inglés."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Utiliza la propiedad color.",
+                  "Acepta nombres de colores predefinidos.",
+                  "Los nombres deben escribirse en inglés.",
+                  "La declaración termina con punto y coma."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Buenas prácticas"
+              },
+              {
+                "type": "text",
+                "content": "Utiliza nombres de colores para ejemplos sencillos y valores Hexadecimal, RGB o HSL cuando necesites una mayor precisión."
+              }
+            ]
+          }
+        },
+        {
+          "Category": "CSS Color",
+          "Question Text": {
+            "en-US": [
+              "Which values are supported by the CSS color property?"
+            ],
+            "es-MX": [
+              "Valores permitidos en la propiedad color de CSS:"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Hexadecimal, HSL and RGB.",
+              "RGB, CMYK and Hexadecimal.",
+              "CMYK, Hexadecimal and RGBA.",
+              "RGBA, HSLA and YPbPr."
+            ],
+            "es-MX": [
+              "Hexadecimal, HSL y RGB.",
+              "RGB, CMYK y hexadecimal.",
+              "CMYK, hexadecimal y RGBA.",
+              "RGBA, HSLA y YPbPr."
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Hexadecimal, HSL and RGB.",
+            "es-MX": "Hexadecimal, HSL y RGB."
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "title-h2",
+                "content": "Color Formats"
+              },
+              {
+                "type": "text",
+                "content": "CSS supports several formats for defining colors. The most commonly used are hexadecimal notation, RGB values and the HSL color model, allowing developers to specify colors with different levels of precision."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Hexadecimal uses the # symbol.",
+                  "RGB defines red, green and blue values.",
+                  "HSL uses hue, saturation and lightness.",
+                  "Each format represents the same colors differently."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Importance"
+              },
+              {
+                "type": "text",
+                "content": "Understanding different color formats makes it easier to maintain consistent visual styles and choose the most appropriate representation for each project."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "title-h2",
+                "content": "Formatos de color"
+              },
+              {
+                "type": "text",
+                "content": "CSS admite diferentes formatos para representar colores. Entre los más utilizados se encuentran la notación hexadecimal, el modelo RGB y el modelo HSL, los cuales permiten definir colores con distintos niveles de precisión."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Hexadecimal utiliza el símbolo #.",
+                  "RGB define los valores rojo, verde y azul.",
+                  "HSL utiliza tono, saturación y luminosidad.",
+                  "Todos representan colores mediante formatos diferentes."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Importancia"
+              },
+              {
+                "type": "text",
+                "content": "Conocer los distintos formatos de color facilita mantener una apariencia consistente y seleccionar la representación más adecuada para cada proyecto web."
+              }
+            ]
+          }
+        },
+        {
+          "Category": "CSS Background",
+          "Question Text": {
+            "en-US": [
+              "What is the background-position property used for in CSS?"
+            ],
+            "es-MX": [
+              "¿Para qué sirve la propiedad background-position en CSS?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "The background-position property is used to set the background size of an element.",
+              "The background-position property is used to set the initial position of an element's background.",
+              "The background-position property is used to set the background color of an element.",
+              "The background-position property is used to set the background image source of an element."
+            ],
+            "es-MX": [
+              "La propiedad background-position en CSS se utiliza para establecer el tamaño de fondo de un elemento.",
+              "La propiedad background-position en CSS se utiliza para establecer la ubicación inicial de fondo de un elemento.",
+              "La propiedad background-position en CSS se utiliza para establecer el color de fondo de un elemento.",
+              "La propiedad background-position en CSS se utiliza para establecer la fuente de fondo de un elemento."
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "The background-position property is used to set the initial position of an element's background.",
+            "es-MX": "La propiedad background-position en CSS se utiliza para establecer la ubicación inicial de fondo de un elemento."
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "title-h2",
+                "content": "background-position"
+              },
+              {
+                "type": "text",
+                "content": "The <b>background-position</b> property specifies the initial position of a background image inside an element. It allows the image to be aligned horizontally, vertically or both."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Positions the background image.",
+                  "Accepts keywords, percentages and length values.",
+                  "Can align horizontally and vertically.",
+                  "Works together with other background properties."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Good Practices"
+              },
+              {
+                "type": "text",
+                "content": "Choose an appropriate background position so that the most important part of the image remains visible on different screen sizes."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "title-h2",
+                "content": "Propiedad background-position"
+              },
+              {
+                "type": "text",
+                "content": "La propiedad <b>background-position</b> permite definir la posición inicial de una imagen de fondo dentro de un elemento. Puede alinearse horizontal, verticalmente o en ambos ejes."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Posiciona la imagen de fondo.",
+                  "Acepta palabras clave, porcentajes y longitudes.",
+                  "Permite alineación horizontal y vertical.",
+                  "Trabaja junto con otras propiedades de fondo."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Buenas prácticas"
+              },
+              {
+                "type": "text",
+                "content": "Selecciona una posición adecuada para que la parte más importante de la imagen permanezca visible en distintos tamaños de pantalla."
+              }
+            ]
+          }
+        },
+        {
+          "Category": "CSS Background",
+          "Question Text": {
+            "en-US": [
+              "What is the background-size property used for in CSS?"
+            ],
+            "es-MX": [
+              "¿Para qué sirve la propiedad background-size en CSS?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "The background-size property is used to set the background size of an element.",
+              "The background-size property is used to set the initial position of an element's background.",
+              "The background-size property is used to set the background color of an element.",
+              "The background-size property is used to set the background image source of an element."
+            ],
+            "es-MX": [
+              "La propiedad background-size en CSS se utiliza para establecer el tamaño de fondo de un elemento.",
+              "La propiedad background-size en CSS se utiliza para establecer la ubicación inicial de fondo de un elemento.",
+              "La propiedad background-size en CSS se utiliza para establecer el color de fondo de un elemento.",
+              "La propiedad background-size en CSS se utiliza para establecer la fuente de fondo de un elemento."
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "The background-size property is used to set the background size of an element.",
+            "es-MX": "La propiedad background-size en CSS se utiliza para establecer el tamaño de fondo de un elemento."
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "title-h2",
+                "content": "background-size"
+              },
+              {
+                "type": "text",
+                "content": "The <b>background-size</b> property defines the size of a background image. It allows images to keep their original dimensions or scale using values such as <b>cover</b>, <b>contain</b> or custom dimensions."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Controls background image size.",
+                  "Supports cover and contain.",
+                  "Accepts custom dimensions.",
+                  "Improves responsive layouts."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Good Practices"
+              },
+              {
+                "type": "text",
+                "content": "Use cover or contain when adapting background images to different screen sizes while preserving their proportions."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "title-h2",
+                "content": "Propiedad background-size"
+              },
+              {
+                "type": "text",
+                "content": "La propiedad <b>background-size</b> define el tamaño de una imagen de fondo. Permite conservar sus dimensiones originales o ajustarlas mediante valores como <b>cover</b>, <b>contain</b> o dimensiones personalizadas."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Controla el tamaño de la imagen de fondo.",
+                  "Admite cover y contain.",
+                  "Acepta dimensiones personalizadas.",
+                  "Favorece el diseño adaptable."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Buenas prácticas"
+              },
+              {
+                "type": "text",
+                "content": "Utiliza cover o contain cuando necesites adaptar imágenes de fondo a diferentes tamaños de pantalla conservando sus proporciones."
+              }
+            ]
+          }
+        },
+        {
+          "Category": "CSS Animations",
+          "Question Text": {
+            "en-US": [
+              "Can the declaration background-color: red; be animated?"
+            ],
+            "es-MX": [
+              "¿Background-color: red; es animable?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "No, because it is a named color and not a hexadecimal or RGBA value.",
+              "No, because background-color cannot be animated.",
+              "Yes, because background-color is one of the background properties that can be animated.",
+              "Yes, because color values can be animated."
+            ],
+            "es-MX": [
+              "No, porque es un color definido por nombre y no un valor hexadecimal o RGBA.",
+              "No, porque background-color no se puede animar.",
+              "Sí, porque background-color es de las pocas propiedades de background que se puede animar.",
+              "Sí, porque los valores de color se pueden animar."
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Yes, because color values can be animated.",
+            "es-MX": "Sí, porque los valores de color se pueden animar."
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "title-h2",
+                "content": "Animating Colors"
+              },
+              {
+                "type": "text",
+                "content": "CSS allows color values to be animated smoothly. Properties such as <b>background-color</b> can transition gradually between colors when used with CSS transitions or animations."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Color values are animatable.",
+                  "Works with transitions and animations.",
+                  "Supports named, hexadecimal, RGB and HSL colors.",
+                  "Creates smooth visual effects."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Good Practices"
+              },
+              {
+                "type": "text",
+                "content": "Animate colors subtly to reinforce interaction without distracting the user."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "title-h2",
+                "content": "Animación de colores"
+              },
+              {
+                "type": "text",
+                "content": "CSS permite animar los valores de color de manera gradual. Propiedades como <b>background-color</b> pueden cambiar suavemente entre colores utilizando transiciones o animaciones."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Los colores pueden animarse.",
+                  "Funciona con transiciones y animaciones.",
+                  "Admite colores por nombre, Hexadecimal, RGB y HSL.",
+                  "Produce efectos visuales suaves."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Buenas prácticas"
+              },
+              {
+                "type": "text",
+                "content": "Utiliza animaciones de color de forma sutil para reforzar la interacción sin distraer al usuario."
+              }
+            ]
+          }
+        }
+    ]
+}

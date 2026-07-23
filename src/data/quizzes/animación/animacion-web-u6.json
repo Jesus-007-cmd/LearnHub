@@ -1,0 +1,1602 @@
+{
+    "meta": {
+        "slug": "animacion-web-u6",
+        "title": "Diseño Responsivo, Accesibilidad y Transformaciones Avanzadas en CSS",
+        "subject": "DESARROLLO DE RECURSOS ANIMADOS PARA WEB",
+        "unit": 6,
+        "classNo": 0,
+        "description": "Unidad 6: diseño responsivo, diseño adaptativo, media queries, adaptación de animaciones, accesibilidad web, WCAG, prefers-reduced-motion, transformaciones 3D avanzadas, perspective-origin, backface-visibility, transform-style, matrix() y matrix3d().",
+        "tags": [
+          "Responsive Design",
+          "Adaptive Design",
+          "Media Queries",
+          "Responsive Animations",
+          "Web Accessibility",
+          "WCAG",
+          "Accessibility",
+          "prefers-reduced-motion",
+          "CSS",
+          "CSS 3D",
+          "perspective-origin",
+          "backface-visibility",
+          "transform-style",
+          "matrix()",
+          "matrix3d()",
+          "Transform",
+          "Responsive Web Design"
+        ],
+        "questionCount": 17,
+        "languages": [
+          "en-US",
+          "es-MX"
+        ]
+      },
+    "Questions": [
+      {
+        "Category": "Diseño Responsivo",
+        "Question Text": {
+          "en-US": [
+            "What is responsive design?"
+          ],
+          "es-MX": [
+            "¿Qué es el diseño responsivo?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "A design technique used only for static websites.",
+            "A web design technique that only applies to mobile devices.",
+            "A web design technique that allows a website to adapt correctly to different devices and screen sizes.",
+            "A graphic design technique that uses content with fixed sizes."
+          ],
+          "es-MX": [
+            "El diseño responsivo es una técnica de diseño que solo se utiliza en sitios web estáticos.",
+            "El diseño responsivo es una técnica de diseño web que solo se aplica a dispositivos móviles.",
+            "El diseño responsivo es una técnica de diseño web que permite que un sitio web se adapte y se vea bien en diferentes dispositivos y tamaños de pantalla.",
+            "El diseño responsivo es una técnica de diseño gráfico que utiliza contenidos en tamaños específicos."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "A web design technique that allows a website to adapt correctly to different devices and screen sizes.",
+          "es-MX": "El diseño responsivo es una técnica de diseño web que permite que un sitio web se adapte y se vea bien en diferentes dispositivos y tamaños de pantalla."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Responsive Web Design"
+            },
+            {
+              "type": "text",
+              "content": "Responsive design allows a website to automatically adapt its layout, images and content to different screen sizes such as phones, tablets and desktop computers."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Improves user experience.",
+                "Works on multiple devices.",
+                "Uses flexible layouts.",
+                "Usually relies on media queries."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Diseño Responsivo"
+            },
+            {
+              "type": "text",
+              "content": "El diseño responsivo permite que un sitio web adapte automáticamente su distribución, imágenes y contenido para visualizarse correctamente en celulares, tabletas y computadoras."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Mejora la experiencia del usuario.",
+                "Funciona en múltiples dispositivos.",
+                "Utiliza diseños flexibles.",
+                "Generalmente emplea Media Queries."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Tipos de Diseño Responsivo",
+        "Question Text": {
+          "en-US": [
+            "Which are the main responsive design approaches?"
+          ],
+          "es-MX": [
+            "Son los tipos de diseño responsivo:"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Receptive and Mobile First.",
+            "Responsive and Adaptive.",
+            "Adaptive and Breakpoints.",
+            "Capacitive and Adaptive."
+          ],
+          "es-MX": [
+            "Receptivo y Mobile First.",
+            "Receptivo o adaptativo.",
+            "Adaptativo y breakpoints.",
+            "Capacitivo y adaptativo."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Responsive and Adaptive.",
+          "es-MX": "Receptivo o adaptativo."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Responsive vs Adaptive"
+            },
+            {
+              "type": "text",
+              "content": "Responsive design uses flexible layouts that continuously adapt to the available screen size. Adaptive design prepares several predefined layouts for specific screen sizes."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Responsive = flexible.",
+                "Adaptive = predefined layouts.",
+                "Both improve multi-device compatibility.",
+                "Media queries are commonly used."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Diseño Responsivo y Adaptativo"
+            },
+            {
+              "type": "text",
+              "content": "El diseño responsivo adapta continuamente el contenido mediante diseños flexibles. El diseño adaptativo utiliza varias versiones previamente diseñadas para tamaños específicos de pantalla."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Responsivo = diseño flexible.",
+                "Adaptativo = varios diseños predefinidos.",
+                "Ambos buscan mejorar la experiencia en distintos dispositivos.",
+                "Frecuentemente utilizan Media Queries."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Animaciones Responsivas",
+        "Question Text": {
+          "en-US": [
+            "If an animation does not adapt correctly to a small screen, what is the recommended solution?"
+          ],
+          "es-MX": [
+            "Cuando una animación se traslada y no se adapta adecuadamente, ¿qué se debe hacer?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Always include it, even if it looks incorrect.",
+            "Create a simplified version of the animation or remove it in extreme cases.",
+            "Remove it completely.",
+            "Scale it until it fits."
+          ],
+          "es-MX": [
+            "Incluirla, no importa si no se ve bien, siempre se debe migrar el mismo contenido.",
+            "Realizar una versión alternativa sintetizando el efecto o, en casos extremos, eliminarla.",
+            "Eliminarla completamente.",
+            "Escalarla para que se adapte bien."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Create a simplified version of the animation or remove it in extreme cases.",
+          "es-MX": "Realizar una versión alternativa sintetizando el efecto o, en casos extremos, eliminarla."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Responsive animations"
+            },
+            {
+              "type": "text",
+              "content": "Animations should also adapt to different devices. If an effect negatively affects usability or performance on small screens, it is recommended to simplify it or remove it when necessary."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Prioritize usability.",
+                "Reduce complex animations.",
+                "Improve performance.",
+                "Keep the visual experience consistent."
+              ]
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Animaciones Responsivas"
+            },
+            {
+              "type": "text",
+              "content": "Las animaciones también deben adaptarse a diferentes dispositivos. Si una animación afecta la experiencia del usuario o el rendimiento en pantallas pequeñas, se recomienda simplificarla o, en casos extremos, eliminarla."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Priorizar la usabilidad.",
+                "Reducir animaciones complejas.",
+                "Mejorar el rendimiento.",
+                "Mantener una experiencia consistente."
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Web Accessibility",
+        "Question Text": {
+          "en-US": [
+            "What is web accessibility?"
+          ],
+          "es-MX": [
+            "¿Qué es la accesibilidad web?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Designing websites only for people without disabilities.",
+            "Designing websites only for people with disabilities.",
+            "Designing websites only for older adults.",
+            "Designing and developing websites that are accessible and usable by everyone, including people with disabilities."
+          ],
+          "es-MX": [
+            "La accesibilidad web se refiere a la práctica de diseñar y desarrollar sitios web de manera que sean accesibles solo para personas sin discapacidades.",
+            "La accesibilidad web se refiere a la práctica de diseñar y desarrollar sitios web de manera que sean accesibles solo para personas con discapacidades.",
+            "La accesibilidad web se refiere a la práctica de diseñar y desarrollar sitios web de manera que sean accesibles solo para personas mayores de edad.",
+            "La accesibilidad web se refiere a la práctica de diseñar y desarrollar sitios web de manera que sean accesibles y utilizables por todas las personas, incluyendo aquellas con discapacidades."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Designing and developing websites that are accessible and usable by everyone, including people with disabilities.",
+          "es-MX": "La accesibilidad web se refiere a la práctica de diseñar y desarrollar sitios web de manera que sean accesibles y utilizables por todas las personas, incluyendo aquellas con discapacidades."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Web Accessibility"
+            },
+            {
+              "type": "text",
+              "content": "Web accessibility is the practice of designing and developing websites so that everyone can perceive, understand, navigate and interact with their content, regardless of their abilities or disabilities."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Promotes equal access.",
+                "Benefits people with and without disabilities.",
+                "Improves usability.",
+                "Encourages inclusive web design."
+              ]
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "title-h2",
+              "content": "Importance"
+            },
+            {
+              "type": "text",
+              "content": "Accessible websites provide a better experience for all users and remove barriers that may limit access to digital information."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Accesibilidad web"
+            },
+            {
+              "type": "text",
+              "content": "La <b>accesibilidad web</b> consiste en diseñar y desarrollar sitios web para que todas las personas puedan percibir, comprender, navegar e interactuar con su contenido, incluyendo a quienes presentan alguna discapacidad."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Favorece el acceso para todas las personas.",
+                "Beneficia a usuarios con y sin discapacidad.",
+                "Mejora la usabilidad.",
+                "Promueve un diseño web inclusivo."
+              ]
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "title-h2",
+              "content": "Importancia"
+            },
+            {
+              "type": "text",
+              "content": "La accesibilidad elimina barreras digitales y permite que un mayor número de personas utilice los sitios web de forma eficiente."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Web Accessibility",
+        "Question Text": {
+          "en-US": [
+            "What types of impairments can users have?"
+          ],
+          "es-MX": [
+            "¿Qué tipo de impedimentos podemos encontrar?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Temporary physical and mental impairments.",
+            "Permanent, temporary or situational physical and mental impairments.",
+            "Temporary and situational mental impairments.",
+            "Permanent and temporary physical impairments."
+          ],
+          "es-MX": [
+            "Físicos y mentales temporales.",
+            "Físicos y mentales permanentes, temporales o situacionales.",
+            "Mentales temporales y situacionales.",
+            "Físicos permanentes y temporales."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Permanent, temporary or situational physical and mental impairments.",
+          "es-MX": "Físicos y mentales permanentes, temporales o situacionales."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "Types of Impairments"
+            },
+            {
+              "type": "text",
+              "content": "Accessibility considers that users may experience physical or mental impairments that are permanent, temporary or situational. Designing for these scenarios improves the experience for everyone."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Permanent impairments.",
+                "Temporary impairments.",
+                "Situational impairments.",
+                "Physical and mental conditions."
+              ]
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "title-h2",
+              "content": "Importance"
+            },
+            {
+              "type": "text",
+              "content": "Considering different types of impairments helps create interfaces that adapt to a wider variety of users and contexts."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "Tipos de impedimentos"
+            },
+            {
+              "type": "text",
+              "content": "La accesibilidad contempla que las personas pueden presentar impedimentos físicos o mentales de carácter permanente, temporal o situacional. Diseñar considerando estos escenarios beneficia a todos los usuarios."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Impedimentos permanentes.",
+                "Impedimentos temporales.",
+                "Impedimentos situacionales.",
+                "Condiciones físicas y mentales."
+              ]
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "title-h2",
+              "content": "Importancia"
+            },
+            {
+              "type": "text",
+              "content": "Tomar en cuenta distintos tipos de impedimentos permite desarrollar interfaces más inclusivas y adaptables a diferentes contextos."
+            }
+          ]
+        }
+      },
+      {
+        "Category": "Web Accessibility",
+        "Question Text": {
+          "en-US": [
+            "What does WCAG stand for?"
+          ],
+          "es-MX": [
+            "¿Qué significa la WCAG?"
+          ]
+        },
+        "Options": {
+          "en-US": [
+            "Web Changes Accessibility Guidelines.",
+            "Web Content Accessibility Goals.",
+            "Web Content Accessibility Group.",
+            "Web Content Accessibility Guidelines."
+          ],
+          "es-MX": [
+            "Web changes accessibility guidelines.",
+            "Web content accessibility goals.",
+            "Web content accessibility group.",
+            "Web content accessibility guidelines."
+          ]
+        },
+        "Correct Answer": {
+          "en-US": "Web Content Accessibility Guidelines.",
+          "es-MX": "Web content accessibility guidelines."
+        },
+        "Explanation": {
+          "en-US": [
+            {
+              "type": "title-h2",
+              "content": "WCAG"
+            },
+            {
+              "type": "text",
+              "content": "The <b>Web Content Accessibility Guidelines (WCAG)</b> are an international set of recommendations that help developers create web content that is accessible to as many people as possible."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "International accessibility standard.",
+                "Published by the W3C.",
+                "Improves accessibility of web content.",
+                "Promotes inclusive digital experiences."
+              ]
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "title-h2",
+              "content": "Importance"
+            },
+            {
+              "type": "text",
+              "content": "Following the WCAG helps websites become more accessible, usable and compatible with assistive technologies."
+            }
+          ],
+          "es-MX": [
+            {
+              "type": "title-h2",
+              "content": "WCAG"
+            },
+            {
+              "type": "text",
+              "content": "Las <b>Web Content Accessibility Guidelines (WCAG)</b> son un conjunto de recomendaciones internacionales que orientan el desarrollo de contenido web accesible para el mayor número posible de personas."
+            },
+            {
+              "type": "ul",
+              "items": [
+                "Es un estándar internacional.",
+                "Fue desarrollado por el W3C.",
+                "Mejora la accesibilidad del contenido web.",
+                "Favorece experiencias digitales inclusivas."
+              ]
+            },
+            {
+              "type": "divider"
+            },
+            {
+              "type": "title-h2",
+              "content": "Importancia"
+            },
+            {
+              "type": "text",
+              "content": "Aplicar las WCAG ayuda a desarrollar sitios web más accesibles, utilizables y compatibles con tecnologías de asistencia."
+            }
+          ]
+        }
+      },
+{
+  "Category": "CSS Accessibility",
+  "Question Text": {
+    "en-US": [
+      "In CSS, what is the prefers-reduced-motion feature used for?"
+    ],
+    "es-MX": [
+      "En CSS, ¿para qué sirve la propiedad prefers-reduced-motion?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "To change the size of animations on a web page.",
+      "To hide elements on a web page.",
+      "To detect whether the user prefers reduced or no motion effects on a web page.",
+      "To change the speed of animations on a web page."
+    ],
+    "es-MX": [
+      "La propiedad prefers-reduced-motion se utiliza para cambiar el tamaño de las animaciones en una página web.",
+      "La propiedad prefers-reduced-motion se utiliza para ocultar elementos en una página web.",
+      "La propiedad prefers-reduced-motion se utiliza para indicar si el usuario prefiere o no animaciones o efectos de movimiento en una página web.",
+      "La propiedad prefers-reduced-motion se utiliza para cambiar la velocidad de las animaciones de una página web."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "To detect whether the user prefers reduced or no motion effects on a web page.",
+    "es-MX": "La propiedad prefers-reduced-motion se utiliza para indicar si el usuario prefiere o no animaciones o efectos de movimiento en una página web."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "prefers-reduced-motion"
+      },
+      {
+        "type": "text",
+        "content": "The <b>prefers-reduced-motion</b> media feature detects whether a user has requested reduced motion in the operating system. Websites can reduce or disable animations to provide a more comfortable and accessible experience."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Detects the user's motion preference.",
+          "Supports accessibility.",
+          "Can reduce or disable animations.",
+          "Uses CSS media queries."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Importance"
+      },
+      {
+        "type": "text",
+        "content": "Respecting the user's motion preference improves accessibility for people who may experience discomfort or motion sensitivity."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "prefers-reduced-motion"
+      },
+      {
+        "type": "text",
+        "content": "La característica <b>prefers-reduced-motion</b> permite detectar si el usuario ha indicado en su sistema operativo que prefiere reducir los movimientos y animaciones. Con ello es posible disminuir o desactivar estos efectos para ofrecer una experiencia más accesible."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Detecta la preferencia del usuario.",
+          "Favorece la accesibilidad.",
+          "Permite reducir o desactivar animaciones.",
+          "Se utiliza mediante media queries."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Importancia"
+      },
+      {
+        "type": "text",
+        "content": "Respetar la preferencia de movimiento del usuario mejora la accesibilidad y ayuda a evitar molestias provocadas por animaciones excesivas."
+      }
+    ]
+  }
+},
+{
+  "Category": "CSS Accessibility",
+  "Question Text": {
+    "en-US": [
+      "How is prefers-reduced-motion written in CSS?"
+    ],
+    "es-MX": [
+      "Así se escribe prefers-reduced-motion en CSS:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "@media (prefers-reduced-motion: reduce) {}",
+      ".prefers-reduced-motion: reduce {}",
+      "#prefers-reduced-motion: reduce {}",
+      ".class { prefers-reduced-motion: reduce; }"
+    ],
+    "es-MX": [
+      "@media (prefers-reduced-motion: reduce) {}",
+      ".prefers-reduced-motion: reduce {}",
+      "#prefers-reduced-motion: reduce {}",
+      ".clase { prefers-reduced-motion: reduce; }"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "@media (prefers-reduced-motion: reduce) {}",
+    "es-MX": "@media (prefers-reduced-motion: reduce) {}"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "CSS Media Query"
+      },
+      {
+        "type": "text",
+        "content": "The <b>prefers-reduced-motion</b> feature is used inside a CSS <b>@media</b> query. When the user requests reduced motion, different styles can be applied to limit or remove animations."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Uses the @media rule.",
+          "Checks the user's preference.",
+          "Supports the value reduce.",
+          "Applies alternative styles."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Good Practices"
+      },
+      {
+        "type": "text",
+        "content": "Always provide an alternative experience for users who request reduced motion instead of completely removing important visual feedback."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Media Query en CSS"
+      },
+      {
+        "type": "text",
+        "content": "La característica <b>prefers-reduced-motion</b> se utiliza dentro de una regla <b>@media</b>. Cuando el usuario solicita reducir el movimiento, es posible aplicar estilos alternativos para disminuir o eliminar las animaciones."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Utiliza la regla @media.",
+          "Consulta la preferencia del usuario.",
+          "Admite el valor reduce.",
+          "Permite aplicar estilos alternativos."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Buenas prácticas"
+      },
+      {
+        "type": "text",
+        "content": "Ofrece una alternativa para los usuarios que prefieren menos movimiento sin eliminar la retroalimentación visual importante."
+      }
+    ]
+  }
+},
+{
+  "Category": "CSS Accessibility",
+  "Question Text": {
+    "en-US": [
+      "It is always necessary to allow animations to be disabled."
+    ],
+    "es-MX": [
+      "Siempre es necesario permitir deshabilitar las animaciones."
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "No, animations should be evaluated.",
+      "Yes, to give the user complete control.",
+      "Yes, because it helps accessibility.",
+      "No, because it can make the web page slower."
+    ],
+    "es-MX": [
+      "No, se deben evaluar las animaciones.",
+      "Sí, para darle el control total al usuario.",
+      "Sí, ya que ayuda a la accesibilidad.",
+      "No, porque podemos volver lenta la página web."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "No, animations should be evaluated.",
+    "es-MX": "No, se deben evaluar las animaciones."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Animation Evaluation"
+      },
+      {
+        "type": "text",
+        "content": "Animations should be evaluated before deciding whether they should be reduced or disabled. Their purpose, usefulness, performance impact and accessibility should be considered so they improve the user experience without becoming distracting or uncomfortable."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Evaluate the purpose of each animation.",
+          "Consider usability and accessibility.",
+          "Avoid unnecessary motion effects.",
+          "Reduce or remove animations only when appropriate."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Importance"
+      },
+      {
+        "type": "text",
+        "content": "Evaluating animations helps balance visual appeal, performance and accessibility, creating interfaces that are more comfortable and effective for different users."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Evaluación de las animaciones"
+      },
+      {
+        "type": "text",
+        "content": "Antes de decidir si una animación debe reducirse o deshabilitarse, es recomendable evaluarla considerando su propósito, utilidad, impacto en el rendimiento y efecto sobre la accesibilidad. De esta manera es posible determinar si realmente aporta valor a la experiencia del usuario."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Evaluar el propósito de cada animación.",
+          "Considerar la usabilidad y la accesibilidad.",
+          "Evitar movimientos innecesarios.",
+          "Reducir o eliminar animaciones solo cuando sea conveniente."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Importancia"
+      },
+      {
+        "type": "text",
+        "content": "Evaluar las animaciones permite equilibrar la experiencia visual, el rendimiento y la accesibilidad, ayudando a crear interfaces más cómodas y eficientes para distintos tipos de usuarios."
+      }
+    ]
+  }
+},
+{
+  "Category": "CSS 3D",
+  "Question Text": {
+    "en-US": [
+      "In CSS, what is the perspective-origin property used for?"
+    ],
+    "es-MX": [
+      "En CSS, ¿para qué sirve la propiedad perspective-origin?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "The perspective-origin property is used to define the point of origin from which a 3D element is viewed.",
+      "The perspective-origin property is used to define the position of a 3D element.",
+      "The perspective-origin property is used to define the size of a 3D element.",
+      "The transform-origin property is used to define the translation of a 3D element."
+    ],
+    "es-MX": [
+      "La propiedad perspective-origin se utiliza para establecer el punto de origen desde donde se visualiza un elemento en 3D.",
+      "La propiedad perspective-origin se utiliza para establecer la posición de un elemento en 3D.",
+      "La propiedad perspective-origin se utiliza para establecer el tamaño de un elemento en 3D.",
+      "La propiedad transform-origin se utiliza para establecer la traslación de un elemento 3D."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "The perspective-origin property is used to define the point of origin from which a 3D element is viewed.",
+    "es-MX": "La propiedad perspective-origin se utiliza para establecer el punto de origen desde donde se visualiza un elemento en 3D."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "perspective-origin"
+      },
+      {
+        "type": "text",
+        "content": "The <b>perspective-origin</b> property defines the position from which the viewer observes a three-dimensional scene. Changing this point modifies the perceived angle of the 3D effect without changing the element itself."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Defines the viewer's position.",
+          "Changes the visual perspective.",
+          "Works together with perspective.",
+          "Creates different viewing angles."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Good Practices"
+      },
+      {
+        "type": "text",
+        "content": "Adjust perspective-origin only when a different viewing angle improves the visual effect or user experience."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Propiedad perspective-origin"
+      },
+      {
+        "type": "text",
+        "content": "La propiedad <b>perspective-origin</b> define el punto desde el cual se observa una escena tridimensional. Modificar este origen cambia el ángulo con el que se percibe el efecto 3D sin alterar la transformación aplicada al elemento."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Define el punto de observación.",
+          "Modifica la perspectiva visual.",
+          "Se utiliza junto con perspective.",
+          "Permite diferentes ángulos de visualización."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Buenas prácticas"
+      },
+      {
+        "type": "text",
+        "content": "Ajusta perspective-origin cuando sea necesario cambiar el punto de vista para obtener un efecto tridimensional más natural."
+      }
+    ]
+  }
+},
+{
+  "Category": "CSS 3D",
+  "Question Text": {
+    "en-US": [
+      "In CSS, what is the backface-visibility property used for?"
+    ],
+    "es-MX": [
+      "En CSS, ¿para qué sirve la propiedad backface-visibility?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "It rotates a 3D element.",
+      "It applies shadows to a 3D element.",
+      "It controls whether the back face of a 3D element is visible when it is rotated or flipped.",
+      "It changes the opacity of a 3D element."
+    ],
+    "es-MX": [
+      "La propiedad backface-visibility en CSS se utiliza para girar un elemento 3D.",
+      "La propiedad backface-visibility en CSS se utiliza para aplicar sombras a un elemento 3D.",
+      "La propiedad backface-visibility en CSS se utiliza para controlar si la cara posterior de un elemento 3D es visible cuando se gira o se voltea.",
+      "La propiedad backface-visibility en CSS se utiliza para cambiar la opacidad de un elemento 3D."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "It controls whether the back face of a 3D element is visible when it is rotated or flipped.",
+    "es-MX": "La propiedad backface-visibility en CSS se utiliza para controlar si la cara posterior de un elemento 3D es visible cuando se gira o se voltea."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "backface-visibility"
+      },
+      {
+        "type": "text",
+        "content": "The <b>backface-visibility</b> property determines whether the back side of an element is visible when it is rotated in three-dimensional space."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Controls the back face.",
+          "Used in 3D rotations.",
+          "Supports visible and hidden values.",
+          "Improves realistic 3D effects."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Good Practices"
+      },
+      {
+        "type": "text",
+        "content": "Hide the back face when creating card-flip or similar effects to avoid showing mirrored content."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Propiedad backface-visibility"
+      },
+      {
+        "type": "text",
+        "content": "La propiedad <b>backface-visibility</b> determina si la cara posterior de un elemento será visible cuando este se rote dentro de un espacio tridimensional."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Controla la cara posterior.",
+          "Se utiliza en rotaciones 3D.",
+          "Admite los valores visible y hidden.",
+          "Mejora los efectos tridimensionales."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Buenas prácticas"
+      },
+      {
+        "type": "text",
+        "content": "Oculta la cara posterior cuando desarrolles efectos de giro para evitar mostrar contenido invertido."
+      }
+    ]
+  }
+},
+{
+  "Category": "CSS 3D",
+  "Question Text": {
+    "en-US": [
+      "In CSS, what is the transform-style property used for?"
+    ],
+    "es-MX": [
+      "En CSS, ¿para qué sirve la propiedad transform-style?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "To apply transformation styles to web elements.",
+      "To change an element from 2D to 3D.",
+      "To specify whether child elements of a transformed element are rendered in a 2D plane or in 3D space.",
+      "To change the 3D style of an element."
+    ],
+    "es-MX": [
+      "La propiedad transform-style se utiliza para aplicar estilos de transformación a los elementos de una página web.",
+      "La propiedad transform-style se utiliza para cambiar el estado de un elemento 2D a 3D.",
+      "La propiedad transform-style se utiliza para especificar si los elementos hijos de un elemento transformado deben aparecer en un plano 2D o en un espacio 3D.",
+      "La propiedad transform-style se utiliza para cambiar el estilo 3D de un elemento en CSS."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "To specify whether child elements of a transformed element are rendered in a 2D plane or in 3D space.",
+    "es-MX": "La propiedad transform-style se utiliza para especificar si los elementos hijos de un elemento transformado deben aparecer en un plano 2D o en un espacio 3D."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "transform-style"
+      },
+      {
+        "type": "text",
+        "content": "The <b>transform-style</b> property specifies whether the children of a transformed element remain flattened in a two-dimensional plane or preserve their three-dimensional position."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Controls child rendering.",
+          "Supports flat and preserve-3d.",
+          "Works with nested 3D transforms.",
+          "Maintains three-dimensional layouts."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Good Practices"
+      },
+      {
+        "type": "text",
+        "content": "Use preserve-3d only when child elements require true three-dimensional positioning."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Propiedad transform-style"
+      },
+      {
+        "type": "text",
+        "content": "La propiedad <b>transform-style</b> especifica si los elementos hijos de un elemento transformado deben mantenerse en un plano bidimensional o conservar su posición dentro de un espacio tridimensional."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Controla la representación de los elementos hijos.",
+          "Utiliza los valores flat y preserve-3d.",
+          "Funciona con transformaciones 3D anidadas.",
+          "Conserva la profundidad de la escena."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Buenas prácticas"
+      },
+      {
+        "type": "text",
+        "content": "Utiliza preserve-3d únicamente cuando los elementos hijos necesiten conservar su profundidad dentro del espacio tridimensional."
+      }
+    ]
+  }
+},
+{
+  "Category": "CSS Matrix",
+  "Question Text": {
+    "en-US": [
+      "What is the matrix() function used for in CSS?"
+    ],
+    "es-MX": [
+      "¿Para qué sirve la función matrix en CSS?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "The matrix() function in CSS is used to transform an element using a 2D transformation matrix.",
+      "The matrix() function in CSS is used to apply styles to an element.",
+      "The matrix() function in CSS is used to create 3D animations.",
+      "The matrix() function in CSS is used to scale the size of an element."
+    ],
+    "es-MX": [
+      "La función matrix en CSS se utiliza para transformar un elemento en una matriz 2D.",
+      "La función matrix en CSS se utiliza para aplicar estilos a un elemento.",
+      "La función matrix en CSS se utiliza para crear animaciones en 3D.",
+      "La función matrix en CSS se utiliza para escalar el tamaño de un elemento."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "The matrix() function in CSS is used to transform an element using a 2D transformation matrix.",
+    "es-MX": "La función matrix en CSS se utiliza para transformar un elemento en una matriz 2D."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "matrix()"
+      },
+      {
+        "type": "text",
+        "content": "The <b>matrix()</b> function combines multiple two-dimensional transformations into a single declaration. It can represent translation, scaling, rotation and skew using six numerical values."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Represents a 2D transformation matrix.",
+          "Combines several transformations.",
+          "Uses six numeric values.",
+          "Works with the transform property."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Good Practices"
+      },
+      {
+        "type": "text",
+        "content": "Use matrix() only when necessary, since individual transform functions are usually easier to read and maintain."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Función matrix()"
+      },
+      {
+        "type": "text",
+        "content": "La función <b>matrix()</b> permite combinar varias transformaciones bidimensionales en una sola declaración. Mediante seis valores numéricos es posible representar traslaciones, escalados, rotaciones y sesgados."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Representa una matriz de transformación 2D.",
+          "Combina varias transformaciones.",
+          "Utiliza seis valores numéricos.",
+          "Forma parte de la propiedad transform."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Buenas prácticas"
+      },
+      {
+        "type": "text",
+        "content": "Utiliza matrix() cuando sea necesario combinar varias transformaciones en una sola operación; para casos simples suelen ser más legibles las funciones individuales."
+      }
+    ]
+  }
+},
+{
+  "Category": "CSS Matrix",
+  "Question Text": {
+    "en-US": [
+      "How many values does the matrix() function use in CSS?"
+    ],
+    "es-MX": [
+      "¿Cuántos valores usa matrix en CSS?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Six.",
+      "Four.",
+      "Three.",
+      "Sixteen."
+    ],
+    "es-MX": [
+      "Seis.",
+      "Cuatro.",
+      "Tres.",
+      "Dieciséis."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Six.",
+    "es-MX": "Seis."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Matrix Values"
+      },
+      {
+        "type": "text",
+        "content": "The <b>matrix()</b> function receives six numeric values that describe a two-dimensional transformation matrix. These values define scaling, skewing and translation."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Uses six parameters.",
+          "Defines a 2D matrix.",
+          "Supports multiple transformations.",
+          "Applied through transform."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Importance"
+      },
+      {
+        "type": "text",
+        "content": "Understanding the six parameters helps interpret and create complex CSS transformations."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Valores de matrix()"
+      },
+      {
+        "type": "text",
+        "content": "La función <b>matrix()</b> recibe seis valores numéricos que describen una matriz de transformación bidimensional. Estos parámetros permiten representar escalado, sesgado y traslación."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Utiliza seis parámetros.",
+          "Define una matriz 2D.",
+          "Representa varias transformaciones.",
+          "Se aplica mediante transform."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Importancia"
+      },
+      {
+        "type": "text",
+        "content": "Conocer los seis parámetros de matrix() facilita comprender y construir transformaciones bidimensionales más avanzadas."
+      }
+    ]
+  }
+},
+{
+  "Category": "CSS Matrix",
+  "Question Text": {
+    "en-US": [
+      "Which is the correct syntax for matrix() in CSS?"
+    ],
+    "es-MX": [
+      "Así es como se escribe matrix en CSS:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "transform: matrix(1,2,3,4,5,6);",
+      ".class { matrix:(1,2,3,4,5,6,7,8); }",
+      ".matrix { transform:(1,2,3,4,5,6); }",
+      "transform: matrix(1,2,3,4,5,6,7,8);"
+    ],
+    "es-MX": [
+      "transform: matrix(1,2,3,4,5,6);",
+      ".clase { matrix:(1,2,3,4,5,6,7,8); }",
+      ".matrix { transform:(1,2,3,4,5,6); }",
+      "transform: matrix(1,2,3,4,5,6,7,8);"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "transform: matrix(1,2,3,4,5,6);",
+    "es-MX": "transform: matrix(1,2,3,4,5,6);"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "matrix() Syntax"
+      },
+      {
+        "type": "text",
+        "content": "The matrix() function is used together with the <b>transform</b> property and requires exactly six numeric values enclosed in parentheses."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Uses the transform property.",
+          "Requires six numeric values.",
+          "Written as matrix(a,b,c,d,e,f).",
+          "Applies a 2D transformation."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Good Practices"
+      },
+      {
+        "type": "text",
+        "content": "Verify the order of the six values, since changing one parameter modifies the resulting transformation."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Sintaxis de matrix()"
+      },
+      {
+        "type": "text",
+        "content": "La función <b>matrix()</b> se utiliza junto con la propiedad <b>transform</b> y requiere exactamente seis valores numéricos escritos entre paréntesis."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Se utiliza con la propiedad transform.",
+          "Requiere seis valores numéricos.",
+          "Su sintaxis es matrix(a,b,c,d,e,f).",
+          "Aplica una transformación bidimensional."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Buenas prácticas"
+      },
+      {
+        "type": "text",
+        "content": "Verifica el orden de los seis parámetros, ya que modificar uno de ellos cambia el resultado de la transformación."
+      }
+    ]
+  }
+},
+{
+  "Category": "CSS Matrix3D",
+  "Question Text": {
+    "en-US": [
+      "What is the matrix3d() function used for in CSS?"
+    ],
+    "es-MX": [
+      "¿Para qué sirve la función matrix3d en CSS?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "The matrix3d() function in CSS is used to transform an element in 3D using a 4×4 matrix.",
+      "The matrix3d() function in CSS is used to apply styles to a 3D element.",
+      "The matrix3d() function in CSS is used to create 3D animations.",
+      "The matrix3d() function in CSS is used to create a 3D element."
+    ],
+    "es-MX": [
+      "La función matrix3d en CSS se utiliza para transformar un elemento en 3D utilizando una matriz 4×4.",
+      "La función matrix3d en CSS se utiliza para aplicar estilos en un elemento 3D.",
+      "La función matrix3d en CSS se utiliza para crear animaciones en 3D.",
+      "La función matrix3d en CSS se utiliza para crear un elemento en 3D."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "The matrix3d() function in CSS is used to transform an element in 3D using a 4×4 matrix.",
+    "es-MX": "La función matrix3d en CSS se utiliza para transformar un elemento en 3D utilizando una matriz 4×4."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "matrix3d()"
+      },
+      {
+        "type": "text",
+        "content": "The <b>matrix3d()</b> function applies three-dimensional transformations using a 4×4 transformation matrix. It combines translation, rotation, scaling and perspective into a single declaration."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Represents a 4×4 transformation matrix.",
+          "Works with three-dimensional transformations.",
+          "Combines multiple transformation effects.",
+          "Used with the transform property."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Good Practices"
+      },
+      {
+        "type": "text",
+        "content": "Use matrix3d() only for advanced transformations, since individual transform functions are usually easier to understand and maintain."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Función matrix3d()"
+      },
+      {
+        "type": "text",
+        "content": "La función <b>matrix3d()</b> aplica transformaciones tridimensionales mediante una matriz de transformación de 4×4. Permite combinar traslación, rotación, escalado y perspectiva en una sola declaración."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Representa una matriz de transformación 4×4.",
+          "Trabaja con transformaciones tridimensionales.",
+          "Combina múltiples efectos de transformación.",
+          "Se utiliza junto con la propiedad transform."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Buenas prácticas"
+      },
+      {
+        "type": "text",
+        "content": "Utiliza matrix3d() cuando sea necesario realizar transformaciones tridimensionales avanzadas; para casos sencillos suelen ser más legibles las funciones individuales."
+      }
+    ]
+  }
+},
+{
+  "Category": "CSS Matrix3D",
+  "Question Text": {
+    "en-US": [
+      "How many values does matrix3d() use in CSS?"
+    ],
+    "es-MX": [
+      "¿Cuántos valores usa matrix3d en CSS?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Six.",
+      "Eight.",
+      "Sixteen.",
+      "Fourteen."
+    ],
+    "es-MX": [
+      "Seis.",
+      "Ocho.",
+      "Dieciséis.",
+      "Catorce."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Sixteen.",
+    "es-MX": "Dieciséis."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Matrix3D Values"
+      },
+      {
+        "type": "text",
+        "content": "The <b>matrix3d()</b> function requires sixteen numeric values because it represents a complete 4×4 transformation matrix used for three-dimensional calculations."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Uses sixteen values.",
+          "Represents a 4×4 matrix.",
+          "Defines a complete 3D transformation.",
+          "Applied through transform."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Importance"
+      },
+      {
+        "type": "text",
+        "content": "Understanding the sixteen values helps interpret complex three-dimensional transformations in CSS."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Valores de matrix3d()"
+      },
+      {
+        "type": "text",
+        "content": "La función <b>matrix3d()</b> requiere dieciséis valores numéricos porque representa una matriz completa de transformación 4×4 utilizada para cálculos tridimensionales."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Utiliza dieciséis valores.",
+          "Representa una matriz 4×4.",
+          "Define una transformación 3D completa.",
+          "Se aplica mediante transform."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Importancia"
+      },
+      {
+        "type": "text",
+        "content": "Comprender los dieciséis parámetros facilita interpretar y construir transformaciones tridimensionales avanzadas."
+      }
+    ]
+  }
+},
+{
+  "Category": "CSS Matrix3D",
+  "Question Text": {
+    "en-US": [
+      "Which is the correct syntax for matrix3d() in CSS?"
+    ],
+    "es-MX": [
+      "Así es como se escribe matrix3d en CSS:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "transform: matrix3d(1,2,3,4,5,6);",
+      "transform: matrix3d(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16);",
+      ".matrix3d { transform:(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16); }",
+      "transform: matrix3d(1,2,3,4,5,6,7,8);"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "transform: matrix3d(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16);",
+    "es-MX": "transform: matrix3d(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16);"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "matrix3d() Syntax"
+      },
+      {
+        "type": "text",
+        "content": "The <b>matrix3d()</b> function is used with the <b>transform</b> property and requires exactly sixteen numeric values enclosed in parentheses."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Uses the transform property.",
+          "Requires sixteen values.",
+          "Represents a 4×4 matrix.",
+          "Applies three-dimensional transformations."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Good Practices"
+      },
+      {
+        "type": "text",
+        "content": "Verify the order of the sixteen parameters, since changing any value modifies the resulting three-dimensional transformation."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Sintaxis de matrix3d()"
+      },
+      {
+        "type": "text",
+        "content": "La función <b>matrix3d()</b> se utiliza junto con la propiedad <b>transform</b> y requiere exactamente dieciséis valores numéricos escritos entre paréntesis."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Se utiliza con la propiedad transform.",
+          "Requiere dieciséis valores.",
+          "Representa una matriz 4×4.",
+          "Aplica transformaciones tridimensionales."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Buenas prácticas"
+      },
+      {
+        "type": "text",
+        "content": "Verifica el orden de los dieciséis parámetros, ya que modificar cualquiera de ellos cambia el resultado de la transformación tridimensional."
+      }
+    ]
+  }
+}
+    ]
+  }

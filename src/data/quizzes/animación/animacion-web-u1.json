@@ -1,0 +1,2072 @@
+{
+  "meta": {
+    "slug": "animacion-web-u1",
+    "title": "Fundamentos de animación web y experiencia de usuario",
+    "subject": "DESARROLLO DE RECURSOS ANIMADOS PARA WEB",
+    "unit": 1,
+    "classNo": 0,
+    "description": "Unidad 1: fundamentos de la animación web, frames, tecnologías web, experiencia de usuario, carga cognitiva, HTML, CSS, JavaScript, herramientas de desarrollo y principios fundamentales de animación.",
+    "tags": [
+      "animación web",
+      "frames",
+      "experiencia de usuario",
+      "carga cognitiva",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "SVG",
+      "principios de animación",
+      "diseño de interfaces",
+      "navegadores",
+      "editores de código"
+    ],
+    "questionCount": 21,
+    "languages": [
+      "en-US",
+      "es-MX"
+    ]
+  },
+  "Questions": [
+    {
+      "Category": "Concepto de animación",
+      "Question Text": {
+        "en-US": [
+          "What is animation?"
+        ],
+        "es-MX": [
+          "¿Qué es la animación?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "A technique that creates the illusion of movement through a sequence of successive images or frames.",
+          "A technique used only to create and record videos.",
+          "A technique that consists exclusively of creating static images.",
+          "A technique used only to design characters, objects and elements that can move."
+        ],
+        "es-MX": [
+          "Es una técnica que crea la ilusión de movimiento mediante una serie de imágenes o fotogramas sucesivos.",
+          "Es una técnica que se utiliza únicamente para crear y grabar videos.",
+          "Es una técnica que consiste exclusivamente en crear imágenes estáticas.",
+          "Es una técnica que se utiliza solamente para diseñar personajes, objetos y elementos que puedan moverse."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "A technique that creates the illusion of movement through a sequence of successive images or frames.",
+        "es-MX": "Es una técnica que crea la ilusión de movimiento mediante una serie de imágenes o fotogramas sucesivos."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Animation creates the perception of movement"
+          },
+          {
+            "type": "text",
+            "content": "Animation does not require each image to move by itself. Instead, it displays a sequence of static images with small changes between them. When these images are shown rapidly, the human eye and brain perceive continuous movement."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Each individual image is called a frame.",
+              "Small changes between frames create the sensation of movement.",
+              "This principle is used in films, video games, interfaces and web animations."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "La animación crea la percepción de movimiento"
+          },
+          {
+            "type": "text",
+            "content": "La animación no requiere que cada imagen se mueva por sí sola. En realidad, muestra una secuencia de imágenes estáticas con pequeños cambios entre ellas. Cuando se presentan rápidamente, el ojo y el cerebro perciben un movimiento continuo."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Cada imagen individual recibe el nombre de fotograma o frame.",
+              "Los pequeños cambios entre fotogramas producen la sensación de movimiento.",
+              "Este principio se utiliza en películas, videojuegos, interfaces y animaciones web."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Frames o fotogramas",
+      "Question Text": {
+        "en-US": [
+          "What are frames in animation?"
+        ],
+        "es-MX": [
+          "¿Qué son los frames en animación?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "They are the static images that make up the movement sequence in a video or animation.",
+          "They are the transitions used to change from one scene to another.",
+          "They are the color layers used to decorate an animation.",
+          "They are the sound effects synchronized with an animation."
+        ],
+        "es-MX": [
+          "Son las imágenes estáticas que componen la secuencia de movimiento en un video o animación.",
+          "Son las transiciones utilizadas para cambiar de una escena a otra.",
+          "Son las capas de color utilizadas para decorar una animación.",
+          "Son los efectos de sonido sincronizados con una animación."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "They are the static images that make up the movement sequence in a video or animation.",
+        "es-MX": "Son las imágenes estáticas que componen la secuencia de movimiento en un video o animación."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "A frame is one static moment of an animation"
+          },
+          {
+            "type": "text",
+            "content": "A frame represents a single still image within an animated sequence. By displaying many frames one after another, each with slight visual changes, the animation produces the illusion that characters, objects or interface elements are moving."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "One frame is a static image.",
+              "A sequence of frames forms an animation.",
+              "The number of frames shown per second influences how smooth the movement appears."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Un frame representa un instante estático de la animación"
+          },
+          {
+            "type": "text",
+            "content": "Un frame o fotograma es una imagen fija dentro de una secuencia animada. Al mostrar muchos fotogramas uno después de otro, con pequeños cambios visuales, se crea la ilusión de que los personajes, objetos o elementos de una interfaz se están moviendo."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Un frame es una imagen estática.",
+              "Una secuencia de frames forma una animación.",
+              "La cantidad de fotogramas mostrados por segundo influye en la fluidez del movimiento."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Tecnologías de animación web",
+      "Question Text": {
+        "en-US": [
+          "Which technologies can be used to create web animations?"
+        ],
+        "es-MX": [
+          "¿Por medio de cuáles elementos se pueden crear animaciones web?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "CSS, JPG and JavaScript.",
+          "HTML, CSS, SVG and JavaScript.",
+          "HTML, CSS, JavaScript and PNG.",
+          "CSS, JavaScript, SVG and JPG."
+        ],
+        "es-MX": [
+          "CSS, JPG y JavaScript.",
+          "HTML, CSS, SVG y JavaScript.",
+          "HTML, CSS, JavaScript y PNG.",
+          "CSS, JavaScript, SVG y JPG."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "HTML, CSS, SVG and JavaScript.",
+        "es-MX": "HTML, CSS, SVG y JavaScript."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Web animations combine structure, style, graphics and behavior"
+          },
+          {
+            "type": "text",
+            "content": "HTML, CSS, SVG and JavaScript can work together to create interactive web animations. HTML defines the content and structure, CSS controls visual styles and transitions, SVG provides scalable vector graphics, and JavaScript adds logic, interaction and advanced control."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "HTML organizes the elements displayed on the page.",
+              "CSS creates transitions, transformations and keyframe animations.",
+              "SVG allows vector shapes and paths to be animated without losing quality.",
+              "JavaScript controls events, timing, interaction and dynamic changes."
+            ]
+          },
+          {
+            "type": "text",
+            "content": "JPG and PNG are image formats. They can be displayed inside an animation, but by themselves they are not programming or animation technologies."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Las animaciones web combinan estructura, estilo, gráficos y comportamiento"
+          },
+          {
+            "type": "text",
+            "content": "HTML, CSS, SVG y JavaScript pueden trabajar en conjunto para crear animaciones web interactivas. HTML define el contenido y la estructura; CSS controla los estilos visuales y las transiciones; SVG permite utilizar gráficos vectoriales escalables; y JavaScript agrega lógica, interacción y un control más avanzado."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "HTML organiza los elementos que aparecen en la página.",
+              "CSS permite crear transiciones, transformaciones y animaciones con fotogramas clave.",
+              "SVG permite animar figuras y trazados vectoriales sin perder calidad.",
+              "JavaScript controla eventos, tiempos, interacciones y cambios dinámicos."
+            ]
+          },
+          {
+            "type": "text",
+            "content": "JPG y PNG son formatos de imagen. Pueden utilizarse como recursos dentro de una animación, pero por sí solos no son tecnologías de programación o animación."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Carga cognitiva",
+      "Question Text": {
+        "en-US": [
+          "What is cognitive load when browsing a website?"
+        ],
+        "es-MX": [
+          "¿Que es la carga cognitiva cuando navegamos en una web?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Cognitive load refers to the amount of memory a web browser uses to operate.",
+          "Cognitive load refers to the number of elements used in an interface design.",
+          "Cognitive load refers to the page loading speed.",
+          "It is the amount of mental effort a user needs to process information and complete tasks on a website."
+        ],
+        "es-MX": [
+          "La carga cognitiva cuando navegamos en una web se refiere a la cantidad de memoria que usa un navegador para funcionar.",
+          "La carga cognitiva cuando navegamos en una web se refiere a la cantidad de elementos que utilizamos en el diseño de una interfaz.",
+          "La carga cognitiva cuando navegamos en una web se refiere a la velocidad de carga de la página.",
+          "Es la cantidad de esfuerzo mental que requiere un usuario para procesar la información y realizar tareas en el sitio web."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "It is the amount of mental effort a user needs to process information and complete tasks on a website.",
+        "es-MX": "Es la cantidad de esfuerzo mental que requiere un usuario para procesar la información y realizar tareas en el sitio web."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Cognitive Load"
+          },
+          {
+            "type": "text",
+            "content": "Cognitive load is the amount of mental effort required for a person to understand information, make decisions and complete tasks while interacting with a digital interface. A website with excessive options, confusing navigation or unnecessary visual elements increases cognitive load, making users spend more time thinking about how to use the interface instead of focusing on their objective."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Simple interfaces reduce mental effort.",
+              "Clear navigation makes information easier to locate.",
+              "Visual consistency helps users learn the interface faster.",
+              "Reducing unnecessary elements improves usability and decision making."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "One of the main goals of UX is to minimize cognitive load. When users think less about how to use a website, they can focus more on completing their tasks efficiently and with greater satisfaction."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Carga cognitiva"
+          },
+          {
+            "type": "text",
+            "content": "La carga cognitiva es el esfuerzo mental que una persona necesita para comprender la información, tomar decisiones y realizar tareas mientras interactúa con una interfaz digital. Un sitio web con demasiadas opciones, una navegación confusa o elementos visuales innecesarios incrementa esta carga, provocando que el usuario invierta más tiempo en entender cómo funciona la interfaz que en cumplir su objetivo."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Las interfaces simples reducen el esfuerzo mental.",
+              "Una navegación clara facilita localizar la información.",
+              "La consistencia visual ayuda a aprender más rápido el funcionamiento del sitio.",
+              "Eliminar elementos innecesarios mejora la usabilidad y la toma de decisiones."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Uno de los objetivos principales del diseño UX consiste en reducir la carga cognitiva. Cuando un usuario necesita pensar menos para utilizar un sitio web, puede concentrarse en realizar sus tareas con mayor rapidez, menor frustración y una mejor experiencia general."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Tiempo de atención",
+      "Question Text": {
+        "en-US": [
+          "Essentially, how much time do we have to convince a user on a website?"
+        ],
+        "es-MX": [
+          "En esencia, ¿cuánto tiempo tenemos para convencer a un usuario dentro de un sitio web?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Between 15 and 20 seconds.",
+          "Between 20 and 30 seconds.",
+          "Between 0.5 and 10 seconds.",
+          "Between 15 and 25 seconds."
+        ],
+        "es-MX": [
+          "Entre 15 y 20 segundos.",
+          "Entre 20 y 30 segundos.",
+          "Entre 0,5 y 10 segundos.",
+          "Entre 15 y 25 segundos."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Between 0.5 and 10 seconds.",
+        "es-MX": "Entre 0,5 y 10 segundos."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "First Impression"
+          },
+          {
+            "type": "text",
+            "content": "When users enter a website, they make an initial judgment within just a few seconds. During this short period they decide whether the site appears trustworthy, useful and easy to use. Visual design, loading speed, content organization and clarity all influence whether users remain on the page or leave immediately."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "A clear design captures attention immediately.",
+              "Fast loading improves retention.",
+              "Visible value propositions encourage users to continue browsing.",
+              "The first seconds strongly influence user confidence."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "For this reason, UX designers prioritize simplicity, visual hierarchy and fast performance to create positive first impressions that encourage users to continue exploring the website."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "La primera impresión"
+          },
+          {
+            "type": "text",
+            "content": "Cuando un usuario ingresa a un sitio web forma una primera impresión en cuestión de segundos. Durante ese breve tiempo decide si el sitio parece confiable, útil y fácil de utilizar. Factores como el diseño visual, la velocidad de carga, la organización del contenido y la claridad de la información influyen directamente en que permanezca navegando o abandone la página."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Un diseño claro capta la atención rápidamente.",
+              "La velocidad de carga mejora la permanencia del usuario.",
+              "Una propuesta de valor visible incrementa el interés.",
+              "Los primeros segundos influyen en la confianza del usuario."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Por esta razón, el diseño UX busca que la información más importante sea visible desde el primer momento, reduciendo el esfuerzo del usuario y favoreciendo que continúe interactuando con el sitio web."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Animaciones web",
+      "Question Text": {
+        "en-US": [
+          "Are animations on a website good?"
+        ],
+        "es-MX": [
+          "¿Las animaciones en un sitio web son buenas?:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "They should always be included in every element and omitting them is a mistake.",
+          "Each element and its animation should be evaluated; animations are beneficial when applied appropriately.",
+          "Each element should be evaluated and animations should be avoided whenever possible.",
+          "Animations should not be used because they increase cognitive load."
+        ],
+        "es-MX": [
+          "Siempre deben incluirse en todos los elementos y es un error omitirlas",
+          "Se debe evaluar cada elemento y su animación, son buenas si saben aplicarse.",
+          "Se debe evaluar cada elemento y omitir los más posible.",
+          "No deben aplicarse animaciones en un sitio, afectan a la carga cognitiva."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Each element and its animation should be evaluated; animations are beneficial when applied appropriately.",
+        "es-MX": "Se debe evaluar cada elemento y su animación, son buenas si saben aplicarse."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Animations in UX"
+          },
+          {
+            "type": "text",
+            "content": "Animations are valuable when they have a clear purpose. They help users understand interface changes, provide visual feedback, guide attention and make interactions feel more natural. However, excessive or unnecessary animations can distract users, increase cognitive load and negatively affect usability."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Animations should communicate information.",
+              "They should reinforce user interactions.",
+              "They must not delay tasks or distract attention.",
+              "Good animations improve usability rather than decoration alone."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Modern UX recommends using animations intentionally. Every animation should have a functional objective, improve understanding or provide feedback instead of simply adding visual effects."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Las animaciones dentro del diseño UX"
+          },
+          {
+            "type": "text",
+            "content": "Las animaciones constituyen un recurso importante cuando tienen un propósito específico dentro de la interfaz. Pueden ayudar a dirigir la atención del usuario, explicar cambios de estado, proporcionar retroalimentación visual y hacer que la interacción resulte más natural. Sin embargo, cuando se utilizan de forma excesiva o únicamente como elemento decorativo pueden distraer al usuario, aumentar la carga cognitiva y afectar la experiencia de uso."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Toda animación debe cumplir un objetivo funcional.",
+              "Debe mejorar la comprensión de la interfaz.",
+              "No debe retrasar la realización de tareas.",
+              "Las animaciones sutiles suelen ofrecer mejores resultados que los efectos excesivos."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Las buenas prácticas de UX recomiendan evaluar cada animación antes de incorporarla a un sitio web. Una animación bien diseñada facilita la interacción y mejora la experiencia del usuario; una animación innecesaria puede producir el efecto contrario."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Propósito de las animaciones web",
+      "Question Text": {
+        "en-US": [
+          "What are animations used for on a website?"
+        ],
+        "es-MX": [
+          "¿Para qué sirven las animaciones en un sitio web?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "To make the website more attractive.",
+          "To add functionality.",
+          "To improve the user experience.",
+          "To make websites more dynamic and less static."
+        ],
+        "es-MX": [
+          "Para hacer el sitio más atractivo.",
+          "Para agregarle funcionalidad.",
+          "Para mejorar la experiencia de usuario.",
+          "Para hacer los sitios más dinámicos y menos estáticos."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To improve the user experience.",
+        "es-MX": "Para mejorar la experiencia de usuario."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Animations as a User Experience Resource"
+          },
+          {
+            "type": "text",
+            "content": "Animations are not simply decorative elements. In UX design they are used to improve communication between the interface and the user by providing visual feedback, guiding attention, indicating state changes and making interactions easier to understand. When applied correctly, animations help users complete tasks naturally and with less effort."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Guide the user's attention toward important information.",
+              "Provide feedback after an action is performed.",
+              "Show transitions between interface states.",
+              "Reduce confusion during navigation.",
+              "Improve the overall user experience."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Modern UX recommends using animations only when they improve communication with users. Decorative animations without a clear purpose may distract users instead of helping them."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Las animaciones como recurso de experiencia de usuario"
+          },
+          {
+            "type": "text",
+            "content": "Las animaciones no tienen como finalidad únicamente embellecer un sitio web. Dentro del diseño UX representan un mecanismo de comunicación entre la interfaz y el usuario, ya que permiten proporcionar retroalimentación visual, dirigir la atención, indicar cambios de estado y facilitar la comprensión de las interacciones. Cuando se aplican correctamente ayudan a que las tareas se realicen con mayor facilidad y naturalidad."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Dirigen la atención hacia información importante.",
+              "Proporcionan retroalimentación después de una acción.",
+              "Indican cambios de estado dentro de la interfaz.",
+              "Reducen la confusión durante la navegación.",
+              "Mejoran la experiencia general del usuario."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Las animaciones deben aportar valor al usuario. Si contribuyen a comprender mejor la interfaz, facilitan la interacción y enriquecen la experiencia; cuando únicamente tienen un propósito decorativo pueden convertirse en un elemento distractor."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Funcionalidad y estética",
+      "Question Text": {
+        "en-US": [
+          "What is more important in web animations, functionality or aesthetics?"
+        ],
+        "es-MX": [
+          "¿Cuál es más importante en las animaciones web, la funcionalidad o la estética?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Functionality, because it enables interactivity.",
+          "Aesthetics, because it is important how elements are presented.",
+          "Both; design and animations must be balanced.",
+          "Neither; the most important thing is user-centered design."
+        ],
+        "es-MX": [
+          "La funcionalidad, porque es la que permite realizar la interactividad.",
+          "La estética, porque siempre es importante cómo se muestran los elementos al usuario.",
+          "Ambas, el diseño y las animaciones deben ser equilibradas.",
+          "Ninguna, lo más importante es el diseño centrado en el usuario."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Both; design and animations must be balanced.",
+        "es-MX": "Ambas, el diseño y las animaciones deben ser equilibradas."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Balancing Functionality and Aesthetics"
+          },
+          {
+            "type": "text",
+            "content": "Good interface design seeks a balance between functionality and aesthetics. A visually attractive interface that is difficult to use creates frustration, while a functional interface with poor visual quality may reduce trust and engagement. UX combines both aspects to create products that are useful, intuitive and visually appealing."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Functionality allows users to accomplish their goals.",
+              "Aesthetics improve perceived quality and trust.",
+              "Animations should support both usability and visual communication.",
+              "Balance produces a better overall experience."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Successful digital products combine usability, functionality and visual design. None of these elements should dominate at the expense of the others."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Equilibrio entre funcionalidad y estética"
+          },
+          {
+            "type": "text",
+            "content": "El diseño de interfaces busca mantener un equilibrio entre la funcionalidad y la estética. Una interfaz visualmente atractiva, pero difícil de utilizar, genera frustración en los usuarios; por el contrario, una interfaz funcional con un diseño visual deficiente puede disminuir la confianza y el interés por el producto. El diseño UX integra ambos aspectos para crear experiencias útiles, intuitivas y agradables."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "La funcionalidad permite alcanzar los objetivos del usuario.",
+              "La estética mejora la percepción de calidad y confianza.",
+              "Las animaciones deben reforzar tanto la comunicación visual como la usabilidad.",
+              "El equilibrio entre ambos factores produce una mejor experiencia."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Los productos digitales exitosos no dependen únicamente de un diseño atractivo ni solamente de su funcionalidad. La mejor experiencia de usuario se consigue cuando ambos aspectos trabajan de forma complementaria."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Prioridades en una interfaz web",
+      "Question Text": {
+        "en-US": [
+          "What should we prioritize when creating a web interface?"
+        ],
+        "es-MX": [
+          "¿Cuál ¿Qué debemos priorizar al realizar una interfaz web?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Ease of use, functionality and aesthetics.",
+          "Speed, animating every element and aesthetics.",
+          "Many elements, animations and aesthetics.",
+          "Functionality; animations do not matter if the site is slow."
+        ],
+        "es-MX": [
+          "La facilidad de uso, la funcionalidad y la estética.",
+          "La rapidez, animar todos los elementos y la estética.",
+          "La carga de elementos, las animaciones y la estética.",
+          "La funcionalidad, las animaciones no importan si el sitio es lento."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Ease of use, functionality and aesthetics.",
+        "es-MX": "La facilidad de uso, la funcionalidad y la estética."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Priorities in Interface Design"
+          },
+          {
+            "type": "text",
+            "content": "An effective web interface should prioritize ease of use, functionality and aesthetics together. Ease of use allows users to accomplish tasks effortlessly, functionality ensures that the system meets its objectives, and aesthetics create a positive first impression that reinforces confidence and satisfaction."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Interfaces should be intuitive.",
+              "Functions must solve real user needs.",
+              "Visual design should support usability.",
+              "Animations should complement the experience, not replace good design."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "UX promotes designing interfaces centered on users, where usability, functionality and visual quality work together to achieve efficient, satisfying and accessible experiences."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Prioridades en el diseño de una interfaz web"
+          },
+          {
+            "type": "text",
+            "content": "Una interfaz web debe diseñarse priorizando la facilidad de uso, la funcionalidad y la estética de manera conjunta. La facilidad de uso permite que las personas completen sus tareas con el menor esfuerzo posible; la funcionalidad garantiza que el sistema responda correctamente a las necesidades del usuario; y la estética contribuye a generar una percepción positiva, aumentando la confianza y la satisfacción durante la interacción."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "La interfaz debe ser intuitiva y fácil de aprender.",
+              "Las funciones deben resolver necesidades reales.",
+              "El diseño visual debe apoyar la usabilidad.",
+              "Las animaciones complementan la experiencia, pero no sustituyen un buen diseño."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "El diseño centrado en el usuario propone que todos los elementos de una interfaz trabajen en conjunto para ofrecer una experiencia eficiente, agradable y accesible. Ningún aspecto debe desarrollarse de manera aislada, ya que todos influyen en la calidad final del producto."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Animaciones web con CSS y JavaScript",
+      "Question Text": {
+        "en-US": [
+          "What are the two main methods for creating web animations?"
+        ],
+        "es-MX": [
+          "¿Cuáles son los dos métodos principales para crear animaciones en web?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "XML and CSS",
+          "CSS and HTML",
+          "CSS and JavaScript",
+          "HTML and XML"
+        ],
+        "es-MX": [
+          "XML y CSS",
+          "CSS y HTML",
+          "CSS y JavaScript",
+          "HTML y XML"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "CSS and JavaScript",
+        "es-MX": "CSS y JavaScript"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Web Animation Technologies"
+          },
+          {
+            "type": "text",
+            "content": "Modern web animations are primarily created using CSS and JavaScript. CSS provides transitions, transformations and keyframe animations that are ideal for visual effects and simple movements. JavaScript complements CSS by adding interaction, event handling, dynamic behavior and greater control over animation timing and execution."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "CSS creates transitions and visual animations.",
+              "JavaScript controls interaction and dynamic behavior.",
+              "Both technologies can work together in the same project.",
+              "Using each technology appropriately improves performance and user experience."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Current web development combines CSS and JavaScript because together they allow developers to create attractive, interactive and efficient user interfaces that adapt to different user actions."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Tecnologías para crear animaciones web"
+          },
+          {
+            "type": "text",
+            "content": "En el desarrollo web moderno, las animaciones se implementan principalmente mediante CSS y JavaScript. CSS permite crear transiciones, transformaciones y animaciones mediante fotogramas clave (keyframes), mientras que JavaScript aporta control sobre la interacción del usuario, los eventos y el comportamiento dinámico de los elementos. La combinación de ambas tecnologías permite desarrollar interfaces más atractivas, intuitivas e interactivas."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "CSS crea animaciones y efectos visuales.",
+              "JavaScript controla eventos e interacciones.",
+              "Ambas tecnologías pueden trabajar de forma complementaria.",
+              "Su uso adecuado mejora la experiencia del usuario y el rendimiento del sitio."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Actualmente, la mayoría de los sitios y aplicaciones web utilizan CSS y JavaScript para implementar animaciones, ya que ofrecen un equilibrio entre rendimiento, flexibilidad y capacidad de interacción."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CSS",
+      "Question Text": {
+        "en-US": [
+          "What is CSS used for on the web?"
+        ],
+        "es-MX": [
+          "¿Para qué sirve CSS en la web?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "CSS is used to add programming functions to web pages.",
+          "CSS is used only to create animations on web pages.",
+          "CSS is used to provide style, design and create animations for web pages.",
+          "CSS is used to connect a database to website code."
+        ],
+        "es-MX": [
+          "CSS sirve para añadir funciones de programación a las páginas web.",
+          "CSS sirve para crear solo animaciones en las páginas web.",
+          "CSS sirve para dar estilo, diseño y crear animaciones a las páginas web.",
+          "CSS sirve para conectar una base de datos al código en un sitio web."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "CSS is used to provide style, design and create animations for web pages.",
+        "es-MX": "CSS sirve para dar estilo, diseño y crear animaciones a las páginas web."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Cascading Style Sheets (CSS)"
+          },
+          {
+            "type": "text",
+            "content": "CSS (Cascading Style Sheets) is the language responsible for the visual presentation of web pages. It defines colors, typography, spacing, layouts, responsive design, transitions and animations. CSS separates presentation from HTML structure, making websites easier to maintain and visually consistent."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Controls colors, fonts and spacing.",
+              "Creates responsive layouts.",
+              "Implements transitions and animations.",
+              "Improves maintainability by separating style from structure."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Without CSS, web pages would display only structured content with very limited visual presentation. CSS provides the appearance and interaction users expect from modern websites."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "CSS (Cascading Style Sheets)"
+          },
+          {
+            "type": "text",
+            "content": "CSS, cuyas siglas significan Cascading Style Sheets (Hojas de Estilo en Cascada), es el lenguaje encargado de definir la presentación visual de una página web. Permite controlar colores, tipografías, tamaños, espacios, distribución de elementos, diseño adaptable, transiciones y animaciones, separando la apariencia del contenido definido en HTML. Esto facilita el mantenimiento del código y proporciona una experiencia visual uniforme."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Controla colores, tipografías y espacios.",
+              "Define el diseño y la distribución de la interfaz.",
+              "Permite crear transiciones y animaciones.",
+              "Facilita el mantenimiento al separar el diseño del contenido."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "CSS es uno de los tres pilares fundamentales del desarrollo web junto con HTML y JavaScript. Gracias a este lenguaje es posible construir interfaces modernas, atractivas, adaptables y fáciles de utilizar."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "HTML",
+      "Question Text": {
+        "en-US": [
+          "What does HTML stand for?"
+        ],
+        "es-MX": [
+          "¿Qué significa HTML?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Hypertext management language.",
+          "Hypertext markup layout.",
+          "Hypertext Markup Language.",
+          "Hightech multimedia language."
+        ],
+        "es-MX": [
+          "Hypertext management language.",
+          "Hypertext markup layout.",
+          "Hypertext markup language.",
+          "Hightech multimedia language."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Hypertext Markup Language.",
+        "es-MX": "Hypertext markup language."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "HyperText Markup Language (HTML)"
+          },
+          {
+            "type": "text",
+            "content": "HTML (HyperText Markup Language) is the standard markup language used to define the structure and content of web pages. It organizes information through elements such as headings, paragraphs, images, links, lists, tables and forms, providing the foundation upon which CSS and JavaScript operate."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Defines the structure of a webpage.",
+              "Organizes content through semantic elements.",
+              "Works together with CSS and JavaScript.",
+              "Is the foundation of modern web development."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Every website begins with HTML because it provides the structure that browsers interpret and display. CSS styles that structure, while JavaScript adds interactivity and dynamic behavior."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "HTML (HyperText Markup Language)"
+          },
+          {
+            "type": "text",
+            "content": "HTML, siglas de HyperText Markup Language (Lenguaje de Marcado de Hipertexto), es el lenguaje estándar utilizado para estructurar el contenido de las páginas web. Mediante etiquetas organiza títulos, párrafos, imágenes, enlaces, listas, tablas, formularios y otros elementos que conforman la estructura básica de un sitio web. Sobre esta estructura trabajan posteriormente CSS para el diseño visual y JavaScript para incorporar interactividad."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Define la estructura del contenido web.",
+              "Organiza la información mediante etiquetas semánticas.",
+              "Sirve como base para CSS y JavaScript.",
+              "Es uno de los pilares fundamentales del desarrollo web."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Todo sitio web comienza con HTML, ya que proporciona la estructura que interpretan los navegadores. Posteriormente CSS se encarga de la presentación visual y JavaScript añade comportamiento e interacción, formando las tres tecnologías fundamentales del desarrollo web."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Principio de estirar y encoger",
+      "Question Text": {
+        "en-US": [
+          "It is the description of the squash and stretch animation principle:"
+        ],
+        "es-MX": [
+          "Es la descripción del principio de animación de estirar y encoger:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Warns that something is about to happen.",
+          "Frame-by-frame drawn sequence.",
+          "Focuses on movement acceleration.",
+          "Represents the physical exaggeration of movement through flexibility and gravity."
+        ],
+        "es-MX": [
+          "Avisa que algo va a ocurrir.",
+          "Secuencia dibujada frame por frame.",
+          "Se enfoca a la aceleración de los movimientos.",
+          "Representa la exageración física del movimiento a partir de la flexibilidad y gravedad."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Represents the physical exaggeration of movement through flexibility and gravity.",
+        "es-MX": "Representa la exageración física del movimiento a partir de la flexibilidad y gravedad."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Squash and Stretch"
+          },
+          {
+            "type": "text",
+            "content": "Squash and Stretch is one of the twelve fundamental principles of animation introduced by Disney animators Frank Thomas and Ollie Johnston. It simulates how flexible objects deform when subjected to forces such as gravity, impact or movement. By stretching and compressing an object while preserving its overall volume, animations appear more dynamic, believable and expressive."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Represents flexibility and elasticity.",
+              "Makes movement appear more natural.",
+              "Emphasizes weight, impact and speed.",
+              "The object's volume should remain visually consistent.",
+              "It is widely used in 2D, 3D and web animations."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Squash and Stretch helps viewers perceive the physical properties of an object. Even subtle deformations make animations feel more realistic and visually appealing."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Principio de estirar y encoger (Squash and Stretch)"
+          },
+          {
+            "type": "text",
+            "content": "El principio de estirar y encoger, conocido internacionalmente como Squash and Stretch, es uno de los doce principios fundamentales de la animación propuestos por los animadores de Disney Frank Thomas y Ollie Johnston. Su finalidad es representar de manera exagerada la flexibilidad, elasticidad, peso y efecto de la gravedad sobre un objeto durante el movimiento. Al comprimir o estirar un elemento sin alterar visualmente su volumen, la animación transmite una sensación más natural, dinámica y creíble."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Representa elasticidad y flexibilidad.",
+              "Hace que el movimiento resulte más natural.",
+              "Permite transmitir peso, velocidad e impacto.",
+              "El volumen aparente del objeto debe mantenerse constante.",
+              "Se utiliza ampliamente en animación 2D, 3D y animaciones web."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Este principio es considerado la base de la animación tradicional, ya que dota de vida a los objetos y personajes. Incluso deformaciones muy sutiles permiten comunicar mejor las propiedades físicas de un elemento y mejorar significativamente la percepción del movimiento."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Principio de puesta en escena",
+      "Question Text": {
+        "en-US": [
+          "It is the description of the staging animation principle:"
+        ],
+        "es-MX": [
+          "Es la descripción del principio de animación de puesta en escena:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Warns that something is about to happen.",
+          "Frame-by-frame drawn sequence.",
+          "Represents the physical exaggeration of movement through flexibility and gravity.",
+          "Guides the viewer's eye toward the most important element."
+        ],
+        "es-MX": [
+          "Avisa que algo va a ocurrir.",
+          "Secuencia dibujada frame por frame.",
+          "Representa la exageración física del movimiento a partir de la flexibilidad y gravedad.",
+          "Guía el ojo del espectador a enfocar lo más importante."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Guides the viewer's eye toward the most important element.",
+        "es-MX": "Guía el ojo del espectador a enfocar lo más importante."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Staging"
+          },
+          {
+            "type": "text",
+            "content": "Staging is the animation principle responsible for presenting an action clearly so the audience immediately understands what is important. It uses composition, lighting, perspective, movement, color and timing to direct the viewer's attention toward the main action while minimizing unnecessary distractions."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Directs the viewer's attention.",
+              "Highlights the main action.",
+              "Reduces visual distractions.",
+              "Improves communication and understanding.",
+              "Applies to animation, film, games and user interfaces."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Good staging allows users or viewers to understand immediately where to focus their attention, making the animation clearer, more effective and easier to interpret."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Principio de puesta en escena (Staging)"
+          },
+          {
+            "type": "text",
+            "content": "La puesta en escena es el principio de animación encargado de presentar una acción de manera clara para que el espectador identifique de inmediato cuál es el elemento más importante. Para lograrlo se aprovechan recursos como la composición, la iluminación, el color, el contraste, el movimiento, el encuadre y la posición de los objetos, evitando distracciones que puedan desviar la atención del mensaje principal."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Dirige la atención hacia el elemento principal.",
+              "Resalta la acción más importante de la escena.",
+              "Reduce elementos que distraen al espectador.",
+              "Facilita la comprensión del mensaje visual.",
+              "También se aplica en interfaces, videojuegos y diseño UX."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Una buena puesta en escena permite que el usuario o espectador comprenda rápidamente qué sucede y dónde debe concentrar su atención, mejorando la comunicación visual y la experiencia durante la interacción."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Principio de anticipación",
+      "Question Text": {
+        "en-US": [
+          "It is the description of the anticipation animation principle:"
+        ],
+        "es-MX": [
+          "Es la descripción del principio de animación de anticipación:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Warns that something is about to happen.",
+          "Frame-by-frame drawn sequence.",
+          "Focuses on movement acceleration.",
+          "Secondary parts continue moving after the main movement has stopped."
+        ],
+        "es-MX": [
+          "Avisa que algo va a ocurrir.",
+          "Secuencia dibujada frame por frame.",
+          "Se enfoca a la aceleración de los movimientos.",
+          "Las partes secundarias mantienen el movimiento después de que haya parado la principal."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Warns that something is about to happen.",
+        "es-MX": "Avisa que algo va a ocurrir."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Anticipation"
+          },
+          {
+            "type": "text",
+            "content": "Anticipation prepares the audience for an upcoming action by showing a small movement before the main action occurs. This principle makes animations easier to understand because viewers can predict what is about to happen. For example, a character bends their knees before jumping or pulls an arm backward before throwing an object."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Prepares the viewer for the next action.",
+              "Makes movement easier to understand.",
+              "Creates a more natural animation.",
+              "Improves visual communication.",
+              "Helps avoid sudden or confusing movements."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Anticipation provides context before movement begins, making actions appear intentional, fluid and believable rather than abrupt."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Principio de anticipación (Anticipation)"
+          },
+          {
+            "type": "text",
+            "content": "La anticipación es un principio de animación que prepara al espectador para una acción que ocurrirá inmediatamente después. Consiste en realizar un movimiento previo que permita prever la acción principal, haciendo que esta resulte más clara y natural. Un ejemplo clásico es cuando un personaje flexiona las piernas antes de saltar o mueve el brazo hacia atrás antes de lanzar un objeto."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Prepara visualmente al espectador.",
+              "Facilita comprender la acción principal.",
+              "Hace que el movimiento parezca más natural.",
+              "Evita movimientos bruscos o inesperados.",
+              "Mejora la comunicación visual de la animación."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "La anticipación permite que las acciones sean más fluidas y creíbles, ya que el espectador comprende intuitivamente lo que está por suceder antes de que ocurra el movimiento principal."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Principio de arcos",
+      "Question Text": {
+        "en-US": [
+          "It is the description of the animation principle of arcs:"
+        ],
+        "es-MX": [
+          "Es la descripción del principio de animación de arcos:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Animation that is executed as a consequence of another.",
+          "Creates dynamism by producing surprise.",
+          "Gives personality to the animation.",
+          "Animations that follow curved paths like movement in real life."
+        ],
+        "es-MX": [
+          "Animación que se ejecuta a consecuencia de otra.",
+          "Genera dinamismo en la animación a partir de producir sorpresa.",
+          "Dota de personalidad a la animación.",
+          "Son animaciones que respetan las curvas del movimiento como si fuera la vida real."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Animations that follow curved paths like movement in real life.",
+        "es-MX": "Son animaciones que respetan las curvas del movimiento como si fuera la vida real."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Arc Principle"
+          },
+          {
+            "type": "text",
+            "content": "The Arc Principle states that almost every natural movement follows a curved path instead of a perfectly straight line. Living beings, vehicles and even objects influenced by gravity tend to move along arcs due to the laws of physics. Applying this principle makes animations appear smoother, more believable and visually pleasant."
+          },
+          {
+            "type": "title-h2",
+            "content": "Main Characteristics"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Produces more natural and realistic movements.",
+              "Represents trajectories influenced by gravity and inertia.",
+              "Avoids rigid or robotic movements.",
+              "Can be applied to characters, objects and interface elements.",
+              "It is one of Disney's Twelve Principles of Animation."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Application in Web Development"
+          },
+          {
+            "type": "text",
+            "content": "Modern interfaces frequently apply curved movements in menus, floating buttons, cards and icons. CSS transforms, SVG paths and JavaScript animation libraries make it possible to reproduce this behavior, generating smoother transitions and improving user perception."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Relationship with UX/UI"
+          },
+          {
+            "type": "text",
+            "content": "Curved movements are easier for users to visually follow than abrupt linear movements. This contributes to reducing cognitive load, improves continuity between interface states and creates a more pleasant navigation experience."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Practical Example"
+          },
+          {
+            "type": "text",
+            "content": "When a floating action button appears from the bottom of a mobile application, it usually follows a slight curved trajectory and slows down before stopping. This movement feels much more natural than an immediate linear displacement."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Did You Know?"
+          },
+          {
+            "type": "text",
+            "content": "The Arc Principle was formally described by Disney animators Frank Thomas and Ollie Johnston in their book 'The Illusion of Life: Disney Animation' and remains one of the most widely applied principles in traditional, 3D and web animation."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Principio de Arcos (Arc)"
+          },
+          {
+            "type": "text",
+            "content": "El principio de Arcos establece que prácticamente todos los movimientos naturales siguen trayectorias curvas y no líneas completamente rectas. Esto ocurre porque los cuerpos se encuentran influenciados por fuerzas físicas como la gravedad, la inercia y la aceleración. Al respetar estas trayectorias durante una animación, el movimiento resulta más fluido, creíble y agradable para el espectador. Este principio forma parte de los doce principios fundamentales de la animación propuestos por Frank Thomas y Ollie Johnston, animadores de Disney, y continúa siendo una referencia tanto en la animación tradicional como en la animación digital."
+          },
+          {
+            "type": "title-h2",
+            "content": "Características principales"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Los movimientos siguen trayectorias curvas similares a las observadas en la naturaleza.",
+              "Genera una sensación de movimiento más realista y menos robótica.",
+              "Representa correctamente el efecto de la gravedad y la inercia.",
+              "Puede aplicarse a personajes, objetos, cámaras y elementos de una interfaz.",
+              "Es uno de los principios más utilizados en animación 2D, 3D y desarrollo web."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Aplicación en desarrollo web"
+          },
+          {
+            "type": "text",
+            "content": "Las interfaces modernas emplean trayectorias curvas para desplazar botones flotantes, tarjetas, menús, iconos y otros componentes visuales. Tecnologías como CSS, SVG y JavaScript permiten implementar este comportamiento mediante transformaciones, curvas Bézier y bibliotecas especializadas de animación, consiguiendo transiciones más suaves y naturales."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Relación con UX/UI"
+          },
+          {
+            "type": "text",
+            "content": "Las trayectorias curvas facilitan el seguimiento visual del movimiento, disminuyen la sensación de brusquedad y ayudan al usuario a comprender mejor las transiciones entre estados de la interfaz. Esto contribuye a reducir la carga cognitiva y mejora la percepción general de la experiencia de usuario."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Ejemplo práctico"
+          },
+          {
+            "type": "text",
+            "content": "Cuando un botón flotante aparece desde la parte inferior de una aplicación móvil normalmente no se desplaza completamente en línea recta. En su lugar sigue una ligera trayectoria curva y desacelera antes de detenerse, generando un movimiento mucho más natural para el usuario."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "¿Sabías que...?"
+          },
+          {
+            "type": "text",
+            "content": "Aunque este principio nació en la animación tradicional de Disney, actualmente también se utiliza en videojuegos, interfaces móviles, aplicaciones web y bibliotecas como GSAP, Framer Motion y Motion One para conseguir movimientos más orgánicos y agradables."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Principio de atractivo",
+      "Question Text": {
+        "en-US": [
+          "It is the description of the animation principle of appeal:"
+        ],
+        "es-MX": [
+          "Es la descripción del principio de animación de atractivo:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Gives personality to the animation.",
+          "Animations that follow curved paths like movement in real life.",
+          "Specifies the number of frames needed to generate speed.",
+          "Maintains consistency in an animation."
+        ],
+        "es-MX": [
+          "Dota de personalidad a la animación.",
+          "Son animaciones que respetan las curvas del movimiento como si fuera la vida real.",
+          "Especifica el número de frames para generar la velocidad.",
+          "Mantiene la consistencia en una animación."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Gives personality to the animation.",
+        "es-MX": "Dota de personalidad a la animación."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Appeal Principle"
+          },
+          {
+            "type": "text",
+            "content": "The Appeal Principle refers to the ability of an animated character, object or interface element to create an emotional connection with the viewer. Appeal does not necessarily mean beauty; it means that the design and movement have a clear personality, visual coherence and enough interest to attract attention."
+          },
+          {
+            "type": "title-h2",
+            "content": "Main Characteristics"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Creates personality and emotional connection.",
+              "Combines appearance, movement and behavior coherently.",
+              "Makes characters and objects easier to remember.",
+              "Can communicate friendliness, energy, seriousness or trust.",
+              "Supports brand identity in digital products."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Application in Web Development"
+          },
+          {
+            "type": "text",
+            "content": "In web interfaces, appeal can be expressed through animated mascots, expressive icons, loading indicators, microinteractions and transitions that reflect the personality of a brand. The movement should be consistent with the visual style and the purpose of the product."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Relationship with UX/UI"
+          },
+          {
+            "type": "text",
+            "content": "Appealing animations can increase user engagement and make an interface feel more human. However, emotional design must not interfere with usability. The best results occur when personality reinforces communication and helps users understand the interface."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Practical Example"
+          },
+          {
+            "type": "text",
+            "content": "A friendly animated assistant that reacts when a user completes a task can reinforce satisfaction and make the product more memorable, provided that the animation is brief and does not interrupt the workflow."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Principio de Atractivo (Appeal)"
+          },
+          {
+            "type": "text",
+            "content": "El principio de Atractivo se refiere a la capacidad de un personaje, objeto o elemento animado para generar interés y establecer una conexión emocional con el espectador. No significa necesariamente que el diseño deba ser bello, sino que debe poseer personalidad, coherencia visual y características reconocibles que lo hagan agradable, expresivo y fácil de recordar."
+          },
+          {
+            "type": "title-h2",
+            "content": "Características principales"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Dota de personalidad a personajes, objetos y elementos de interfaz.",
+              "Relaciona de manera coherente la apariencia con la forma de moverse.",
+              "Favorece la conexión emocional con el espectador o usuario.",
+              "Permite comunicar cualidades como confianza, energía, simpatía o seriedad.",
+              "Ayuda a construir una identidad visual reconocible."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Aplicación en desarrollo web"
+          },
+          {
+            "type": "text",
+            "content": "En una interfaz web, el atractivo puede manifestarse mediante mascotas animadas, iconos expresivos, indicadores de carga, microinteracciones y transiciones que reflejen la personalidad de una marca. El movimiento debe ser coherente con el estilo visual y con la función que cumple cada elemento."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Relación con UX/UI"
+          },
+          {
+            "type": "text",
+            "content": "Una animación atractiva puede aumentar el interés, mejorar la percepción del producto y hacer que la experiencia resulte más cercana. Sin embargo, el componente emocional nunca debe perjudicar la claridad ni la facilidad de uso; debe reforzar la comunicación y apoyar los objetivos del usuario."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Ejemplo práctico"
+          },
+          {
+            "type": "text",
+            "content": "Un asistente animado que celebra discretamente cuando el usuario completa una tarea aporta personalidad y refuerza la sensación de logro. Para conservar una buena experiencia, el efecto debe ser breve y no interrumpir el flujo de trabajo."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Principio de solidez",
+      "Question Text": {
+        "en-US": [
+          "It is the description of the animation principle of solidity:"
+        ],
+        "es-MX": [
+          "Es la descripción del principio de animación de solidez:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Gives personality to the animation.",
+          "Animations that follow curved paths like movement in real life.",
+          "Specifies the number of frames needed to generate speed.",
+          "Maintains consistency in the animation."
+        ],
+        "es-MX": [
+          "Dota de personalidad a la animación.",
+          "Son animaciones que respetan las curvas del movimiento como si fuera la vida real.",
+          "Especifica el número de frames para generar la velocidad",
+          "Mantiene la consistencia de la animación."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Maintains consistency in the animation.",
+        "es-MX": "Mantiene la consistencia de la animación."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Solidity Principle"
+          },
+          {
+            "type": "text",
+            "content": "The Solidity Principle requires animated elements to preserve their internal coherence while moving. Changes in position, scale or perspective should not cause an object to lose its recognizable shape, apparent weight, volume, balance or spatial relationship with the environment."
+          },
+          {
+            "type": "title-h2",
+            "content": "Main Characteristics"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Maintains visual consistency throughout movement.",
+              "Preserves volume, weight and balance.",
+              "Respects perspective and spatial orientation.",
+              "Prevents unexplained changes in shape or structure.",
+              "Makes animation easier to understand and trust."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Application in Web Development"
+          },
+          {
+            "type": "text",
+            "content": "In web interfaces, solidity means that a component should remain visually coherent between states. A menu, card, icon or button may expand, rotate or move, but it should preserve its identity and behave predictably during opening, closing and state changes."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Relationship with UX/UI"
+          },
+          {
+            "type": "text",
+            "content": "Visual consistency helps users recognize that an element remains the same object before, during and after an animation. When its shape, iconography or behavior changes without explanation, the interface may feel unstable and increase cognitive load."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Practical Example"
+          },
+          {
+            "type": "text",
+            "content": "If a dropdown menu opens with one shape and icon but closes using a different shape or symbol, the movement loses solidity. A consistent animation should preserve the component's structure and clearly show the relationship between its open and closed states."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Principio de Solidez"
+          },
+          {
+            "type": "text",
+            "content": "El principio de Solidez establece que los elementos deben mantener su coherencia interna durante toda la animación. Aunque un objeto cambie de posición, tamaño, orientación o perspectiva, debe conservar propiedades reconocibles como su forma, volumen, peso, equilibrio y relación con el espacio."
+          },
+          {
+            "type": "title-h2",
+            "content": "Características principales"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Mantiene la consistencia visual durante el movimiento.",
+              "Conserva el volumen, el peso y el equilibrio aparentes.",
+              "Respeta la perspectiva y la orientación espacial.",
+              "Evita cambios inexplicables en la forma o estructura.",
+              "Facilita que el espectador comprenda la continuidad del objeto."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Aplicación en desarrollo web"
+          },
+          {
+            "type": "text",
+            "content": "En interfaces web, la solidez implica que un componente conserve su identidad entre distintos estados. Un menú, una tarjeta, un icono o un botón pueden expandirse, rotar o desplazarse, pero deben mantener una apariencia y un comportamiento coherentes al abrirse, cerrarse o cambiar de estado."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Relación con UX/UI"
+          },
+          {
+            "type": "text",
+            "content": "La consistencia visual permite que el usuario reconozca que un elemento sigue siendo el mismo antes, durante y después de la animación. Cuando cambia de forma, icono o comportamiento sin una razón comprensible, la interfaz puede percibirse inestable y aumentar la carga cognitiva."
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Ejemplo práctico"
+          },
+          {
+            "type": "text",
+            "content": "Si un menú desplegable se abre con una forma y un icono determinados, pero al cerrarse cambia inexplicablemente de estructura o símbolo, pierde solidez. Una animación consistente debe conservar la identidad del componente y mostrar con claridad la relación entre sus estados abierto y cerrado."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Editores de código",
+      "Question Text": {
+        "en-US": [
+          "They are software used to edit HTML, CSS and JS code:"
+        ],
+        "es-MX": [
+          "Son software para editar código HTML, CSS y JS:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Brackets.",
+          "Word.",
+          "PowerPoint.",
+          "Google Chrome."
+        ],
+        "es-MX": [
+          "Brackets.",
+          "Word.",
+          "PowerPoint.",
+          "Google Chrome."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Brackets.",
+        "es-MX": "Brackets."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Code Editors"
+          },
+          {
+            "type": "text",
+            "content": "A code editor is a specialized application designed to write, edit and organize source code. Programs such as Brackets provide syntax highlighting, automatic completion, code formatting and project management tools that simplify web development."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Supports HTML, CSS and JavaScript editing.",
+              "Highlights syntax to reduce programming errors.",
+              "Provides tools for faster coding.",
+              "Allows developers to organize web projects efficiently."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Although Brackets was one of the most popular editors for learning web development, today editors such as Visual Studio Code are more widely used because they offer extensions, integrated debugging and support for many programming languages."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Editores de código"
+          },
+          {
+            "type": "text",
+            "content": "Un editor de código es un programa especializado para escribir, modificar y organizar código fuente. Brackets fue desarrollado principalmente para el desarrollo web y ofrece funciones como resaltado de sintaxis, autocompletado, organización de proyectos y herramientas que facilitan la creación de páginas utilizando HTML, CSS y JavaScript."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Permite editar archivos HTML, CSS y JavaScript.",
+              "Resalta la sintaxis para facilitar la lectura del código.",
+              "Reduce errores durante la programación.",
+              "Facilita la organización de proyectos web."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Brackets fue uno de los editores más utilizados para aprender desarrollo web. Actualmente muchos desarrolladores emplean Visual Studio Code debido a su gran cantidad de extensiones y herramientas, aunque ambos cumplen la misma función de editar código."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Navegador web",
+      "Question Text": {
+        "en-US": [
+          "What is a web browser?"
+        ],
+        "es-MX": [
+          "¿Qué es un navegador web?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "A web browser is a type of online social network.",
+          "A web browser is a program that allows users to send emails.",
+          "A web browser is software that allows users to access and view web pages on the Internet.",
+          "A technological device (PC, tablet, smartphone) used to access the Internet."
+        ],
+        "es-MX": [
+          "Un navegador web es un tipo de red social en línea.",
+          "Un navegador web es un programa que permite a los usuarios enviar correos electrónicos.",
+          "Un navegador web es un software que permite a los usuarios acceder y visualizar páginas web en Internet.",
+          "Un dispositivo tecnológico (PC, tablet, smartphone) utilizado para acceder a Internet."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "A web browser is software that allows users to access and view web pages on the Internet.",
+        "es-MX": "Un navegador web es un software que permite a los usuarios acceder y visualizar páginas web en Internet."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Web Browser"
+          },
+          {
+            "type": "text",
+            "content": "A web browser is software that interprets HTML, CSS and JavaScript to display web pages. It communicates with web servers through Internet protocols, downloads resources and renders them into an interactive interface that users can navigate."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Displays websites and web applications.",
+              "Interprets HTML, CSS and JavaScript.",
+              "Communicates with web servers.",
+              "Examples include Chrome, Firefox, Edge and Safari."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Without a web browser it would not be possible to access or interact with modern websites, since it is responsible for interpreting and presenting all web content."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Navegador web"
+          },
+          {
+            "type": "text",
+            "content": "Un navegador web es un software encargado de interpretar y mostrar el contenido de las páginas de Internet. Para ello procesa archivos HTML, CSS y JavaScript, establece comunicación con los servidores web y presenta la información mediante una interfaz gráfica que permite al usuario navegar e interactuar con distintos sitios y aplicaciones."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Permite acceder a sitios y aplicaciones web.",
+              "Interpreta HTML, CSS y JavaScript.",
+              "Se comunica con servidores mediante Internet.",
+              "Ejemplos: Google Chrome, Microsoft Edge, Mozilla Firefox y Safari."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "El navegador representa el vínculo entre el usuario y la Web. Sin él no sería posible visualizar ni utilizar los recursos disponibles en Internet."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Lenguajes para desarrollar una página web",
+      "Question Text": {
+        "en-US": [
+          "Which languages are used to create a web page?"
+        ],
+        "es-MX": [
+          "¿Con qué lenguajes se hace una página web?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Python, Java and C++.",
+          "Swift, Kotlin and PHP.",
+          "HTML, CSS and JavaScript.",
+          "Ruby, Perl and Go."
+        ],
+        "es-MX": [
+          "Python, Java y C++.",
+          "Swift, Kotlin y PHP.",
+          "HTML, CSS y JavaScript.",
+          "Ruby, Perl y Go."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "HTML, CSS and JavaScript.",
+        "es-MX": "HTML, CSS y JavaScript."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "The Three Core Web Technologies"
+          },
+          {
+            "type": "text",
+            "content": "Modern web pages are primarily built with HTML, CSS and JavaScript. HTML defines the structure and content, CSS controls the visual presentation and layout, while JavaScript adds interaction, dynamic behavior and application logic."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "HTML structures the content.",
+              "CSS provides styles and visual design.",
+              "JavaScript adds interaction and dynamic behavior.",
+              "Together they form the foundation of Front-End web development."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Although many other languages are used in web development, HTML, CSS and JavaScript remain the essential technologies executed directly by web browsers."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Las tres tecnologías fundamentales del desarrollo web"
+          },
+          {
+            "type": "text",
+            "content": "Una página web moderna se construye principalmente utilizando HTML, CSS y JavaScript. HTML define la estructura y el contenido del documento, CSS controla el diseño, la presentación visual y las animaciones, mientras que JavaScript incorpora la lógica, la interactividad y el comportamiento dinámico de la interfaz. La combinación de estas tres tecnologías constituye la base del desarrollo Front-End."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "HTML organiza la estructura del contenido.",
+              "CSS define el diseño y la apariencia visual.",
+              "JavaScript agrega interacción y comportamiento dinámico.",
+              "Las tres trabajan de forma complementaria."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Aunque existen numerosos lenguajes para desarrollar aplicaciones web, HTML, CSS y JavaScript son las tecnologías esenciales que todos los navegadores interpretan de manera nativa y constituyen la base del desarrollo web moderno."
+          }
+        ]
+      }
+    }
+  ]
+}

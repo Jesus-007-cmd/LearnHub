@@ -1,0 +1,1606 @@
+{
+  "meta": {
+    "slug": "animacion-web-u4",
+    "title": "Sprites, SVG y animaciones CSS",
+    "subject": "DESARROLLO DE RECURSOS ANIMADOS PARA WEB",
+    "unit": 4,
+    "classNo": 0,
+    "description": "Unidad 4: sprites, optimización de imágenes, SVG, técnicas de animación SVG, coreografía web, planificación de animaciones, keyframes y propiedades animation de CSS.",
+    "tags": [
+      "sprites",
+      "sprite sheet",
+      "optimización de imágenes",
+      "SVG",
+      "SMIL",
+      "CSS",
+      "JavaScript",
+      "background-position",
+      "coreografía web",
+      "keyframes",
+      "@keyframes",
+      "animation",
+      "animation-direction",
+      "animation-fill-mode",
+      "animation-timing-function"
+    ],
+    "questionCount": 18,
+    "languages": [
+      "en-US",
+      "es-MX"
+    ]
+  },
+  "Questions": [
+    {
+      "Category": "Sprites",
+      "Question Text": {
+        "en-US": [
+          "Which is one of the advantages of sprites?"
+        ],
+        "es-MX": [
+          "Es una de las ventajas de los sprites:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "They are very easy to integrate and are the most intuitive animation method.",
+          "They create animations without losing quality.",
+          "They reduce the number of server requests by using a single image.",
+          "They are lightweight and never use the GPU."
+        ],
+        "es-MX": [
+          "Es muy fácil de integrar, además, es la manera más intuitiva.",
+          "Son animaciones que no pierden calidad.",
+          "Realiza menos conexiones para llamar una imagen.",
+          "Son ligeras y no afectan al GPU."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "They reduce the number of server requests by using a single image.",
+        "es-MX": "Realiza menos conexiones para llamar una imagen."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Sprites reduce HTTP requests"
+          },
+          {
+            "type": "text",
+            "content": "A sprite groups many images into a single file. Instead of downloading several independent images, the browser downloads only one image and displays different sections using background-position."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Only one image is downloaded.",
+              "Reduces HTTP requests.",
+              "Improves loading performance.",
+              "Frequently used in games and icon collections."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Los sprites reducen las solicitudes al servidor"
+          },
+          {
+            "type": "text",
+            "content": "Un sprite agrupa varias imágenes dentro de un solo archivo. En lugar de descargar muchas imágenes independientes, el navegador descarga únicamente una imagen y muestra diferentes partes mediante background-position."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Solo se descarga una imagen.",
+              "Reduce las solicitudes HTTP.",
+              "Mejora el tiempo de carga.",
+              "Se utiliza con frecuencia en videojuegos y colecciones de iconos."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Optimización de imágenes",
+      "Question Text": {
+        "en-US": [
+          "Are images always the lightest resource on a website?"
+        ],
+        "es-MX": [
+          "¿Las imágenes son la parte más ligera al cargar el sitio?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Yes, because there are image optimization techniques.",
+          "No. Image size always affects loading time.",
+          "Yes, because images can always be compressed without affecting performance.",
+          "No, because browsers automatically reduce image size."
+        ],
+        "es-MX": [
+          "Sí, porque actualmente hay técnicas para optimizarlas.",
+          "No. No importa el tamaño de la imagen, siempre consume tiempo de carga.",
+          "Sí, porque las imágenes se pueden reducir de tamaño para que no afecten la carga.",
+          "No, porque el navegador las procesa para que pesen menos en Internet."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "No. Image size always affects loading time.",
+        "es-MX": "No. No importa el tamaño de la imagen, siempre consume tiempo de carga."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Images influence loading performance"
+          },
+          {
+            "type": "text",
+            "content": "Even when optimized, every image must be downloaded by the browser. Larger files require more bandwidth and increase loading time."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Optimize images whenever possible.",
+              "Use modern formats like WebP or AVIF.",
+              "Reduce unnecessary downloads.",
+              "Compress images without excessive quality loss."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Las imágenes afectan el tiempo de carga"
+          },
+          {
+            "type": "text",
+            "content": "Aunque una imagen esté optimizada, el navegador siempre necesita descargarla. Mientras mayor sea su tamaño o cantidad, mayor será el tiempo de carga del sitio."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Optimizar las imágenes.",
+              "Utilizar formatos modernos como WebP o AVIF.",
+              "Reducir descargas innecesarias.",
+              "Comprimir imágenes sin perder demasiada calidad."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Sprites en la actualidad",
+      "Question Text": {
+        "en-US": [
+          "Are sprites still the best option for adding images and animations?"
+        ],
+        "es-MX": [
+          "¿Los sprites son la mejor opción para agregar imágenes y animarlas?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Yes, because they are the easiest solution.",
+          "No. Today there are techniques such as animated SVG, CSS animations and JavaScript.",
+          "Yes, because one image never overloads the GPU.",
+          "Yes, because many images can be animated simultaneously."
+        ],
+        "es-MX": [
+          "Sí, porque es muy fácil.",
+          "No, hay mejores técnicas, como SVG animados o elementos animados con JavaScript.",
+          "Sí, ya que, al ser una sola imagen, no saturan la GPU.",
+          "Sí, porque así animas muchas imágenes al mismo tiempo."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "No. Today there are techniques such as animated SVG, CSS animations and JavaScript.",
+        "es-MX": "No, hay mejores técnicas, como SVG animados o elementos animados con JavaScript."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Modern alternatives"
+          },
+          {
+            "type": "text",
+            "content": "Sprites are still useful for some games and pixel-art animations, but modern websites usually prefer SVG, CSS animations, Canvas or JavaScript because they provide greater flexibility, scalability and maintainability."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Sprites are still useful in specific scenarios.",
+              "SVG provides scalable graphics.",
+              "CSS creates efficient visual animations.",
+              "JavaScript offers advanced interaction and control."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Alternativas modernas a los sprites"
+          },
+          {
+            "type": "text",
+            "content": "Los sprites siguen siendo útiles en videojuegos 2D y animaciones tipo pixel art; sin embargo, actualmente la mayoría de los sitios web utilizan SVG, animaciones CSS, Canvas o JavaScript porque ofrecen mayor flexibilidad, escalabilidad y facilidad de mantenimiento."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Los sprites aún tienen aplicaciones específicas.",
+              "SVG permite gráficos escalables.",
+              "CSS facilita animaciones eficientes.",
+              "JavaScript ofrece mayor interacción y control."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "SVG",
+      "Question Text": {
+        "en-US": [
+          "What does SVG stand for?"
+        ],
+        "es-MX": [
+          "¿Qué significa SVG?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "System visualization graphic.",
+          "System vector graphic.",
+          "Scalable visualization graphic.",
+          "Scalable Vector Graphic."
+        ],
+        "es-MX": [
+          "System visualization graphic.",
+          "System vector graphic.",
+          "Scalable visualization graphic.",
+          "Scalable Vector Graphic."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Scalable Vector Graphic.",
+        "es-MX": "Scalable Vector Graphic."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "SVG"
+          },
+          {
+            "type": "text",
+            "content": "<b>SVG (Scalable Vector Graphic)</b> is a vector image format based on XML. Unlike bitmap images, SVG graphics can be resized without losing quality because they are described using mathematical shapes."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Vector image format.",
+              "Based on XML.",
+              "Scales without losing quality.",
+              "Widely used on modern websites."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "SVG graphics provide excellent quality at any size, making them ideal for icons, logos and interactive web graphics."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "SVG"
+          },
+          {
+            "type": "text",
+            "content": "<b>SVG (Scalable Vector Graphic)</b> es un formato de imagen vectorial basado en XML. A diferencia de las imágenes de mapa de bits, puede ampliarse o reducirse sin perder calidad porque está compuesto por formas matemáticas."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Formato de imagen vectorial.",
+              "Basado en XML.",
+              "Se escala sin perder calidad.",
+              "Muy utilizado en sitios web modernos."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Los archivos SVG mantienen una excelente calidad en cualquier resolución, por lo que son ideales para iconos, logotipos e ilustraciones web."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "SVG",
+      "Question Text": {
+        "en-US": [
+          "Which of the following is NOT a way to animate SVG?"
+        ],
+        "es-MX": [
+          "No es una de las formas de animar SVG:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "SMIL.",
+          "HTML.",
+          "JavaScript.",
+          "CSS."
+        ],
+        "es-MX": [
+          "SMIL.",
+          "HTML.",
+          "JavaScript.",
+          "CSS."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "HTML.",
+        "es-MX": "HTML."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "SVG Animation"
+          },
+          {
+            "type": "text",
+            "content": "SVG graphics can be animated using <b>SMIL</b>, <b>CSS</b> or <b>JavaScript</b>. HTML itself is not an animation technology; it only defines the document structure."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "SMIL animates SVG natively.",
+              "CSS creates transitions and animations.",
+              "JavaScript provides dynamic control.",
+              "HTML structures the page."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Choose the animation technique that best matches the project's complexity and browser compatibility requirements."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Animación SVG"
+          },
+          {
+            "type": "text",
+            "content": "Los archivos <b>SVG</b> pueden animarse mediante <b>SMIL</b>, <b>CSS</b> o <b>JavaScript</b>. HTML no es un mecanismo de animación, sino el lenguaje que define la estructura del documento."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "SMIL permite animaciones nativas.",
+              "CSS crea transiciones y animaciones.",
+              "JavaScript ofrece mayor control.",
+              "HTML define la estructura de la página."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "Selecciona la técnica de animación más adecuada según la complejidad del proyecto y la compatibilidad requerida."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "SVG",
+      "Question Text": {
+        "en-US": [
+          "Which of the following is an advantage of SVG?"
+        ],
+        "es-MX": [
+          "Es ventaja del SVG:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "It is larger than JPG, PNG and WEBM formats.",
+          "It is only compatible with web browsers.",
+          "It can be animated very easily.",
+          "It scales easily without losing quality."
+        ],
+        "es-MX": [
+          "Pesa más que formatos JPG, PNG o WEBM.",
+          "Solo es compatible con los navegadores.",
+          "Se puede animar muy fácil.",
+          "Se escala con facilidad y no pierde calidad."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "It scales easily without losing quality.",
+        "es-MX": "Se escala con facilidad y no pierde calidad."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "SVG Advantages"
+          },
+          {
+            "type": "text",
+            "content": "Because SVG images are vector-based, they can be enlarged or reduced to any size without losing sharpness or quality, making them ideal for responsive interfaces."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Resolution independent.",
+              "Maintains image quality.",
+              "Ideal for icons and logos.",
+              "Suitable for responsive design."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Using SVG helps maintain visual quality across different devices and screen resolutions while reducing the need for multiple image versions."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Ventajas del SVG"
+          },
+          {
+            "type": "text",
+            "content": "Al ser un formato vectorial, un archivo <b>SVG</b> puede ampliarse o reducirse sin perder nitidez. Esto lo convierte en una excelente opción para iconos, logotipos y elementos gráficos adaptables."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Es independiente de la resolución.",
+              "Mantiene la calidad al escalar.",
+              "Ideal para iconos y logotipos.",
+              "Favorece el diseño responsivo."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "El uso de SVG permite mantener una excelente calidad visual en diferentes dispositivos y resoluciones sin necesidad de generar múltiples versiones de una misma imagen."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Web Choreography",
+      "Question Text": {
+        "en-US": [
+          "What is web choreography?"
+        ],
+        "es-MX": [
+          "¿Qué es una coreografía en web?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "It is a type of design used to display logos and banners on a website.",
+          "It is a series of steps used to develop the code of a website.",
+          "It is a sequence of movements and actions performed on a website to create an interactive and visually appealing experience for users.",
+          "It is a programming technique used to improve the loading speed of a website."
+        ],
+        "es-MX": [
+          "Es un tipo de diseño utilizado para presentar logotipos y banners en un sitio web.",
+          "Es una serie de pasos para desarrollar el código de un sitio web.",
+          "Es una secuencia de movimientos y acciones que se realizan en un sitio web para crear una experiencia interactiva y visualmente atractiva para los usuarios.",
+          "Es una técnica de programación utilizada para mejorar la velocidad de carga de un sitio web."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "It is a sequence of movements and actions performed on a website to create an interactive and visually appealing experience for users.",
+        "es-MX": "Es una secuencia de movimientos y acciones que se realizan en un sitio web para crear una experiencia interactiva y visualmente atractiva para los usuarios."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Web Choreography"
+          },
+          {
+            "type": "text",
+            "content": "Web choreography is the organized sequence of movements, animations and actions that occur within a website. These elements work together to create an interactive, coherent and visually appealing experience."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Organizes movements and animations.",
+              "Coordinates actions within the interface.",
+              "Guides the user's attention.",
+              "Creates an interactive visual experience."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "A coherent choreography helps users understand what is happening in the interface and follow the visual sequence of the website more naturally."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Coreografía web"
+          },
+          {
+            "type": "text",
+            "content": "Una <b>coreografía web</b> es la secuencia organizada de movimientos, animaciones y acciones que ocurren dentro de un sitio web. Estos elementos trabajan en conjunto para crear una experiencia interactiva, coherente y visualmente atractiva."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Organiza movimientos y animaciones.",
+              "Coordina acciones dentro de la interfaz.",
+              "Guía la atención del usuario.",
+              "Crea una experiencia visual interactiva."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Una coreografía coherente ayuda al usuario a comprender lo que sucede en la interfaz y a seguir de manera natural la secuencia visual del sitio web."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Web Choreography",
+      "Question Text": {
+        "en-US": [
+          "Which types of choreographies can be found on the web?"
+        ],
+        "es-MX": [
+          "Son tipos de coreografías que podemos encontrar en web:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Vertical and horizontal scrolling stories.",
+          "Unique and variable stories.",
+          "Individual and group stories.",
+          "Trigger-based and scrolling stories."
+        ],
+        "es-MX": [
+          "De historias en scroll vertical y horizontal.",
+          "De historias únicas y variables.",
+          "De historias individuales y grupales.",
+          "De historias por triggers y scroll."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Individual and group stories.",
+        "es-MX": "De historias individuales y grupales."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Types of Web Choreographies"
+          },
+          {
+            "type": "text",
+            "content": "According to the course material, web choreographies can be organized as <b>individual and group stories</b>. A choreography presents information as a visual story, helping users identify individual elements first and then understand how they relate as a group."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Presents information as a visual story.",
+              "Helps identify individual elements.",
+              "Groups related interface elements.",
+              "Makes interactions easier to understand."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Organizing animations as individual and group stories helps reduce cognitive effort, allowing users to understand the interface more naturally."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Tipos de coreografías web"
+          },
+          {
+            "type": "text",
+            "content": "De acuerdo con el material del curso, las coreografías web pueden organizarse como <b>historias individuales y grupales</b>. Una coreografía presenta la información como una historia visual, ayudando al usuario a identificar primero los elementos individuales y posteriormente comprender cómo se relacionan como un conjunto."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Presenta la información como una historia visual.",
+              "Ayuda a identificar elementos individuales.",
+              "Agrupa elementos relacionados de la interfaz.",
+              "Facilita la comprensión de las interacciones."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Organizar las animaciones como historias individuales y grupales disminuye la carga cognitiva del usuario, permitiéndole comprender la interfaz de una forma más natural."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Web Choreography",
+      "Question Text": {
+        "en-US": [
+          "What do choreographies facilitate on a website?"
+        ],
+        "es-MX": [
+          "¿Qué facilitan las coreografías en un sitio web?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "They optimize website loading.",
+          "They facilitate the user's cognitive load.",
+          "They optimize the code of a website.",
+          "They help keep images organized within the web composition."
+        ],
+        "es-MX": [
+          "Optimizan la carga de la web.",
+          "Facilitan la carga cognitiva del usuario.",
+          "Optimizan el código de un sitio web.",
+          "Facilitan que las imágenes estén ordenadas dentro de la composición web."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "They facilitate the user's cognitive load.",
+        "es-MX": "Facilitan la carga cognitiva del usuario."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Cognitive Load"
+          },
+          {
+            "type": "text",
+            "content": "Web choreographies organize movements and present information progressively. This helps users process interface changes and understand the relationship between actions, elements and results."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Organize the presentation of information.",
+              "Guide users through visual changes.",
+              "Make interactions easier to understand.",
+              "Reduce unnecessary mental effort."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "A clear choreography helps users concentrate on the current task without becoming overwhelmed by simultaneous movements or excessive information."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Carga cognitiva"
+          },
+          {
+            "type": "text",
+            "content": "Las coreografías web organizan los movimientos y presentan la información de forma progresiva. Esto facilita que el usuario procese los cambios de la interfaz y comprenda la relación entre las acciones, los elementos y sus resultados."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Organizan la presentación de la información.",
+              "Guían al usuario durante los cambios visuales.",
+              "Facilitan la comprensión de las interacciones.",
+              "Reducen el esfuerzo mental innecesario."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Una coreografía clara permite que el usuario se concentre en la tarea actual sin sentirse saturado por movimientos simultáneos o información excesiva."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Web Animation Planning",
+      "Question Text": {
+        "en-US": [
+          "Grouping animations in code allows:"
+        ],
+        "es-MX": [
+          "Agrupar las animaciones en el código permite:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Better control when animating multiple elements.",
+          "Animate any element, regardless of difficulty.",
+          "Animate elements using only HTML code.",
+          "Animate JPG and PNG images, but not SVG."
+        ],
+        "es-MX": [
+          "Un mejor control al animar varios elementos.",
+          "Animar cualquier elemento, no importa si es muy difícil.",
+          "Animar elementos solo con código HTML.",
+          "Animar imágenes JPG, PNG, etc., y no solo SVG."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Better control when animating multiple elements.",
+        "es-MX": "Un mejor control al animar varios elementos."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Grouping Animations"
+          },
+          {
+            "type": "text",
+            "content": "Organizing animations in groups makes it easier to coordinate several elements, synchronize movements and maintain a consistent visual sequence throughout the interface."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Improves animation organization.",
+              "Coordinates multiple elements.",
+              "Makes synchronization easier.",
+              "Provides better control over visual behavior."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Grouping related animations simplifies maintenance and helps create more consistent interactive experiences."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Agrupación de animaciones"
+          },
+          {
+            "type": "text",
+            "content": "Agrupar las animaciones permite coordinar varios elementos como parte de una misma secuencia, facilitando su control y organización dentro de la interfaz."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Mejora la organización de las animaciones.",
+              "Coordina varios elementos.",
+              "Facilita la sincronización.",
+              "Permite un mayor control del comportamiento visual."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Agrupar animaciones relacionadas facilita su mantenimiento y ayuda a crear experiencias visuales más coherentes."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Web Animation Planning",
+      "Question Text": {
+        "en-US": [
+          "To create a good web animation, you should:"
+        ],
+        "es-MX": [
+          "Para hacer una buena animación web se debe:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Use only JavaScript because it provides more freedom.",
+          "Test during development to determine whether it can be done.",
+          "Plan in advance, considering limitations and available knowledge.",
+          "Use only CSS to optimize website loading."
+        ],
+        "es-MX": [
+          "Utilizar solo JavaScript, porque tiene mucha libertad.",
+          "Hacer pruebas durante el desarrollo de código para saber si se puede hacer o no.",
+          "Planificar previamente, considerando limitantes y conocimientos.",
+          "Usar solo CSS, para optimizar la carga del sitio."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Plan in advance, considering limitations and available knowledge.",
+        "es-MX": "Planificar previamente, considerando limitantes y conocimientos."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Animation Planning"
+          },
+          {
+            "type": "text",
+            "content": "According to the course, effective web animations begin with proper planning. Before implementation, it is important to consider project limitations, available technologies and the required knowledge."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Plan before coding.",
+              "Consider technical limitations.",
+              "Evaluate available knowledge.",
+              "Select the appropriate animation technique."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Planning reduces implementation problems and helps produce animations that are easier to maintain and understand."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Planificación de animaciones"
+          },
+          {
+            "type": "text",
+            "content": "De acuerdo con el material del curso, una buena animación web debe planificarse previamente, considerando las limitantes del proyecto y los conocimientos necesarios para desarrollarla."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Planificar antes de programar.",
+              "Considerar las limitantes técnicas.",
+              "Evaluar los conocimientos disponibles.",
+              "Elegir la técnica de animación adecuada."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Una buena planificación disminuye problemas durante el desarrollo y facilita crear animaciones organizadas y mantenibles."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Web Animation Planning",
+      "Question Text": {
+        "en-US": [
+          "In programming, are animations easy to create?"
+        ],
+        "es-MX": [
+          "En código, las animaciones son fáciles de hacer."
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Yes. There are many libraries that make them very easy to create.",
+          "No. They are always difficult and should only be created by programming experts.",
+          "It depends on the animation. Some require specific knowledge, so planning is important.",
+          "Yes. Modern software makes all animations easy."
+        ],
+        "es-MX": [
+          "Son muy fáciles de hacer, hay muchas galerías que te ayudan a hacerlo muy rápido.",
+          "Son muy difíciles y complicadas, las debe hacer un experto en programación.",
+          "Depende de la animación, a veces necesitamos conocimientos específicos, por eso es importante planear previamente qué vamos a realizar.",
+          "Son fáciles, por los software que actualmente existen."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "It depends on the animation. Some require specific knowledge, so planning is important.",
+        "es-MX": "Depende de la animación, a veces necesitamos conocimientos específicos, por eso es importante planear previamente qué vamos a realizar."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Animation Complexity"
+          },
+          {
+            "type": "text",
+            "content": "The difficulty of implementing an animation depends on its complexity. Some animations can be created easily, while others require specific techniques, planning and programming knowledge."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Complexity varies by animation.",
+              "Some require specialized knowledge.",
+              "Planning helps avoid implementation problems.",
+              "The chosen technique influences development."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Understanding the required complexity allows developers to choose appropriate tools and organize the implementation process."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Complejidad de las animaciones"
+          },
+          {
+            "type": "text",
+            "content": "La dificultad para desarrollar una animación depende del tipo de animación que se desea realizar. Algunas pueden implementarse fácilmente, mientras que otras requieren conocimientos específicos y una planificación previa."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "La complejidad depende del tipo de animación.",
+              "Algunas requieren conocimientos especializados.",
+              "La planificación ayuda a evitar problemas.",
+              "La técnica elegida influye en el desarrollo."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Conocer la complejidad de una animación permite seleccionar las herramientas adecuadas y organizar mejor su implementación."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CSS Keyframes",
+      "Question Text": {
+        "en-US": [
+          "What is a keyframe?"
+        ],
+        "es-MX": [
+          "¿Qué es un keyframe?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "A keyframe is a specific point in an animation where a state or key position is defined.",
+          "A keyframe is a specific point in an animation where the animation speed is defined.",
+          "A keyframe is a specific point in an animation where the end of the animation is defined.",
+          "A keyframe is a specific point in an animation where the beginning of the animation is defined."
+        ],
+        "es-MX": [
+          "Un keyframe es un punto específico en una animación donde se define un estado o una posición clave.",
+          "Un keyframe es un punto específico en una animación donde se define la velocidad de la animación.",
+          "Un keyframe es un punto específico en una animación donde se define el final de la animación.",
+          "Un keyframe es un punto específico en una animación donde se define el inicio de la animación."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "A keyframe is a specific point in an animation where a state or key position is defined.",
+        "es-MX": "Un keyframe es un punto específico en una animación donde se define un estado o una posición clave."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Keyframes"
+          },
+          {
+            "type": "text",
+            "content": "A <b>keyframe</b> defines an important state of an animation. Each keyframe specifies the properties that an element should have at a particular moment, allowing the browser to generate the intermediate changes."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Defines key animation states.",
+              "Specifies an element's properties.",
+              "Marks important points in the animation.",
+              "Allows smooth transitions between states."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Keyframes make it possible to define how an animation evolves from one state to another throughout its execution."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Keyframes"
+          },
+          {
+            "type": "text",
+            "content": "Un <b>keyframe</b> define un estado importante dentro de una animación. Cada keyframe especifica las propiedades que tendrá un elemento en un momento determinado, permitiendo que el navegador genere los cambios intermedios."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Define estados clave de una animación.",
+              "Especifica las propiedades del elemento.",
+              "Marca puntos importantes durante la animación.",
+              "Permite transiciones suaves entre estados."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Los keyframes permiten controlar cómo evoluciona una animación desde un estado inicial hasta uno final."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CSS Keyframes",
+      "Question Text": {
+        "en-US": [
+          "In CSS, how is the beginning of a keyframes animation declared?"
+        ],
+        "es-MX": [
+          "En CSS, así se declara el comienzo de los keyframes:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          ".keyframes animation {}",
+          "@keyframes animation ()",
+          "@keyframes animation {}",
+          "#keyframes animation {}"
+        ],
+        "es-MX": [
+          ".keyframes animacion {}",
+          "@keyframes animacion ()",
+          "@keyframes animacion {}",
+          "#keyframes animacion {}"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "@keyframes animation {}",
+        "es-MX": "@keyframes animacion {}"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "@keyframes"
+          },
+          {
+            "type": "text",
+            "content": "CSS animations begin by declaring an <b>@keyframes</b> rule. Inside this block, the different stages of the animation are defined using percentages or the keywords from and to."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Uses the @keyframes rule.",
+              "Contains the animation stages.",
+              "Supports percentages, from and to.",
+              "Defines the animation sequence."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Use descriptive animation names to make styles easier to understand and maintain."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Regla @keyframes"
+          },
+          {
+            "type": "text",
+            "content": "Las animaciones en CSS comienzan declarando una regla <b>@keyframes</b>. Dentro de ella se definen las diferentes etapas de la animación mediante porcentajes o utilizando las palabras reservadas <b>from</b> y <b>to</b>."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Utiliza la regla @keyframes.",
+              "Contiene las etapas de la animación.",
+              "Acepta porcentajes, from y to.",
+              "Define la secuencia de la animación."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "Utiliza nombres descriptivos para las animaciones y organiza sus etapas para facilitar el mantenimiento del código."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CSS Keyframes",
+      "Question Text": {
+        "en-US": [
+          "What are keyframes used for in CSS?"
+        ],
+        "es-MX": [
+          "En CSS, ¿para qué sirven los keyframes?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "To apply styles to an element.",
+          "To define the size of an element.",
+          "To define an element's animation from beginning to end.",
+          "To create transitions between pages."
+        ],
+        "es-MX": [
+          "Los keyframes en CSS se utilizan para aplicar estilos a un elemento.",
+          "Los keyframes en CSS se utilizan para definir el tamaño de un elemento.",
+          "Los keyframes en CSS se utilizan para definir la animación de un elemento desde el inicio hasta el fin.",
+          "Los keyframes en CSS se utilizan para crear transiciones entre páginas."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To define an element's animation from beginning to end.",
+        "es-MX": "Los keyframes en CSS se utilizan para definir la animación de un elemento desde el inicio hasta el fin."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Animation Definition"
+          },
+          {
+            "type": "text",
+            "content": "Keyframes define how an animation changes throughout its execution. They establish the initial, intermediate and final states that the browser uses to animate an element."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Defines the complete animation.",
+              "Specifies initial and final states.",
+              "Supports intermediate animation steps.",
+              "Controls how properties change over time."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Using keyframes provides precise control over the movement and visual changes of an element during an animation."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Definición de una animación"
+          },
+          {
+            "type": "text",
+            "content": "Los <b>keyframes</b> permiten definir cómo cambia una animación durante toda su ejecución. Establecen el estado inicial, los estados intermedios y el estado final que seguirá un elemento."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Define la animación completa.",
+              "Especifica el estado inicial y final.",
+              "Permite estados intermedios.",
+              "Controla la evolución de las propiedades."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Los keyframes ofrecen un control preciso sobre el movimiento y los cambios visuales que experimenta un elemento durante una animación."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CSS Animation",
+      "Question Text": {
+        "en-US": [
+          "In CSS, what is the animation property used for?"
+        ],
+        "es-MX": [
+          "En CSS, ¿para qué sirve la propiedad animation?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "The animation property is used to specify the parameters of animations on HTML elements.",
+          "The animation property is used to change the color, size and position of HTML elements.",
+          "The animation property is used to apply styles to HTML elements.",
+          "The animation property is used to animate HTML elements without using keyframes."
+        ],
+        "es-MX": [
+          "La propiedad animation en CSS se utiliza para especificar los parámetros de las animaciones en elementos HTML.",
+          "La propiedad animation se utiliza para cambiar el color, tamaño y posición de los elementos HTML.",
+          "La propiedad animation se utiliza para aplicar estilos a los elementos HTML.",
+          "La propiedad animation se utiliza para animar elementos HTML sin la necesidad de usar keyframes."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "The animation property is used to specify the parameters of animations on HTML elements.",
+        "es-MX": "La propiedad animation en CSS se utiliza para especificar los parámetros de las animaciones en elementos HTML."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Animation Property"
+          },
+          {
+            "type": "text",
+            "content": "The <b>animation</b> property groups the settings required to execute a CSS animation. It can specify the animation name, duration, timing function, delay, iteration count, direction, fill mode and play state."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Configures CSS animations.",
+              "Can combine several animation properties.",
+              "Works together with @keyframes.",
+              "Controls how an animation is executed."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Using the animation property simplifies animation definitions by grouping multiple parameters into a single declaration."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Propiedad animation"
+          },
+          {
+            "type": "text",
+            "content": "La propiedad <b>animation</b> agrupa los parámetros necesarios para ejecutar una animación en CSS. Permite especificar el nombre, duración, función de tiempo, retraso, número de repeticiones, dirección, fill-mode y estado de reproducción."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Configura las animaciones CSS.",
+              "Agrupa varias propiedades en una sola declaración.",
+              "Trabaja junto con @keyframes.",
+              "Controla la ejecución de la animación."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "La propiedad animation simplifica la definición de animaciones al reunir varios parámetros dentro de una única instrucción."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CSS Animation",
+      "Question Text": {
+        "en-US": [
+          "Which of the following is NOT a variation of the animation property?"
+        ],
+        "es-MX": [
+          "No es una variante de la propiedad animation:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "animation-duration",
+          "animation-direction",
+          "animation-easing",
+          "animation-fill-mode"
+        ],
+        "es-MX": [
+          "Animation-duration.",
+          "Animation-direction.",
+          "Animation-easing.",
+          "Animation-fill-mode."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "animation-easing",
+        "es-MX": "Animation-easing."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Animation Subproperties"
+          },
+          {
+            "type": "text",
+            "content": "The animation property is composed of several official subproperties such as <b>animation-duration</b>, <b>animation-direction</b> and <b>animation-fill-mode</b>. <b>animation-easing</b> is not an official CSS property; easing is defined through <b>animation-timing-function</b>."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "animation-duration is valid.",
+              "animation-direction is valid.",
+              "animation-fill-mode is valid.",
+              "animation-timing-function defines easing."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Knowing the official animation properties helps write valid CSS and avoid incorrect declarations."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Subpropiedades de animation"
+          },
+          {
+            "type": "text",
+            "content": "La propiedad <b>animation</b> está formada por varias subpropiedades oficiales, como <b>animation-duration</b>, <b>animation-direction</b> y <b>animation-fill-mode</b>. <b>animation-easing</b> no es una propiedad oficial de CSS; el comportamiento de aceleración se define mediante <b>animation-timing-function</b>."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "animation-duration es válida.",
+              "animation-direction es válida.",
+              "animation-fill-mode es válida.",
+              "animation-timing-function controla el easing."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Conocer las subpropiedades oficiales permite escribir animaciones válidas y evitar errores en el código CSS."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CSS Animation",
+      "Question Text": {
+        "en-US": [
+          "Which value is NOT allowed for animation-direction?"
+        ],
+        "es-MX": [
+          "Es un valor no permitido en animation-direction:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Normal.",
+          "Alternate.",
+          "Invert.",
+          "Reverse."
+        ],
+        "es-MX": [
+          "Normal.",
+          "Alternate.",
+          "Invert.",
+          "Reverse."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Invert.",
+        "es-MX": "Invert."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "animation-direction"
+          },
+          {
+            "type": "text",
+            "content": "The <b>animation-direction</b> property controls the direction in which an animation runs. Valid values include <b>normal</b>, <b>reverse</b>, <b>alternate</b> and <b>alternate-reverse</b>. The value <b>invert</b> does not exist for this property."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "normal is valid.",
+              "reverse is valid.",
+              "alternate is valid.",
+              "invert is not supported."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Use valid property values to ensure animations behave consistently across browsers."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "animation-direction"
+          },
+          {
+            "type": "text",
+            "content": "La propiedad <b>animation-direction</b> controla la dirección en la que se ejecuta una animación. Los valores válidos incluyen <b>normal</b>, <b>reverse</b>, <b>alternate</b> y <b>alternate-reverse</b>. El valor <b>invert</b> no forma parte de esta propiedad."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "normal es válido.",
+              "reverse es válido.",
+              "alternate es válido.",
+              "invert no está soportado."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "Utilizar valores válidos garantiza que las animaciones se comporten correctamente en diferentes navegadores."
+          }
+        ]
+      }
+    }
+  ]
+}

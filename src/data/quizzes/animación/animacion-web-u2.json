@@ -1,0 +1,2492 @@
+{
+  "meta": {
+    "slug": "animacion-web-u2",
+    "title": "Microanimaciones, transiciones y transformaciones con CSS",
+    "subject": "DESARROLLO DE RECURSOS ANIMADOS PARA WEB",
+    "unit": 2,
+    "classNo": 0,
+    "description": "Unidad 2: buenas prácticas de animación web, microanimaciones, cambios de estado, retroalimentación visual, jerarquía, tutorización, fundamentos de CSS, Box Model, distribución de interfaces, transiciones y transformaciones.",
+    "tags": [
+      "animación web",
+      "microanimaciones",
+      "experiencia de usuario",
+      "cambios de estado",
+      "retroalimentación visual",
+      "jerarquía",
+      "tutorización",
+      "CSS",
+      "triggers",
+      "transiciones CSS",
+      "transformaciones CSS",
+      "Box Model",
+      "diseño web",
+      "sistema de columnas"
+    ],
+    "questionCount": 27,
+    "languages": [
+      "en-US",
+      "es-MX"
+    ]
+  },
+    "Questions": [
+        
+        {
+          "Category": "Buenas prácticas en animaciones web",
+          "Question Text": {
+            "en-US": [
+              "A good web animation is:"
+            ],
+            "es-MX": [
+              "Una buena animación en web es:"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Very fast so it does not bother the user.",
+              "Slow so it can always be appreciated.",
+              "Consistent and slow for the user.",
+              "Smooth, fluid and does not interfere with the user experience."
+            ],
+            "es-MX": [
+              "Muy rápida, para que no moleste al usuario.",
+              "Lenta, para ser apreciada en todo momento.",
+              "Consistente y lenta para el usuario.",
+              "Fluida, suave y no interfiere con la experiencia del usuario."
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Smooth, fluid and does not interfere with the user experience.",
+            "es-MX": "Fluida, suave y no interfiere con la experiencia del usuario."
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "title-h2",
+                "content": "Good Web Animations"
+              },
+              {
+                "type": "text",
+                "content": "A well-designed animation improves communication between the interface and the user without becoming distracting. Its purpose is to reinforce interactions, indicate changes of state and provide visual feedback naturally. Rather than attracting attention by itself, a good animation helps users complete tasks more comfortably and efficiently."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "It is smooth and easy to follow.",
+                  "It has a clear functional purpose.",
+                  "It does not interrupt user tasks.",
+                  "It reinforces the interface instead of distracting from it."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Good Practices"
+              },
+              {
+                "type": "text",
+                "content": "Animations should have an appropriate duration, be consistent throughout the interface and always provide useful information. Excessively fast or unnecessarily slow animations negatively affect the user experience."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "title-h2",
+                "content": "Buenas animaciones web"
+              },
+              {
+                "type": "text",
+                "content": "Una buena animación tiene como objetivo mejorar la interacción entre el usuario y la interfaz sin convertirse en un elemento distractor. Debe comunicar cambios de estado, proporcionar retroalimentación visual y facilitar la comprensión del funcionamiento del sistema. Las animaciones más efectivas son aquellas que resultan naturales, discretas y ayudan al usuario a realizar sus tareas sin interferir con su flujo de trabajo."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Es fluida y fácil de seguir.",
+                  "Tiene un propósito funcional.",
+                  "No interrumpe las tareas del usuario.",
+                  "Refuerza la comunicación visual de la interfaz."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Buenas prácticas"
+              },
+              {
+                "type": "text",
+                "content": "Las animaciones deben tener una duración adecuada, ser consistentes en toda la interfaz y aportar información útil. Una animación demasiado rápida o demasiado lenta puede perjudicar la experiencia de usuario."
+              }
+            ]
+          }
+        },
+        {
+          "Category": "Microanimaciones",
+          "Question Text": {
+            "en-US": [
+              "What are microanimations used for in an interface?"
+            ],
+            "es-MX": [
+              "¿Para qué sirven las microanimaciones en una interfaz?"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "They are small functional animations that clearly communicate changes to users.",
+              "They are short animations to reduce interface load.",
+              "They are fast animations to avoid boring the user.",
+              "They improve browser performance."
+            ],
+            "es-MX": [
+              "Son animaciones pequeñas y funcionales que ayudan a mostrarle cambios con mayor claridad a los usuarios.",
+              "Son animaciones cortas para aligerar la carga de la interfaz.",
+              "Son animaciones rápidas para no aburrir al usuario y que el contenido sea fluido.",
+              "Son animaciones cortas y rápidas que mejoran el rendimiento del navegador web."
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "They are small functional animations that clearly communicate changes to users.",
+            "es-MX": "Son animaciones pequeñas y funcionales que ayudan a mostrarle cambios con mayor claridad a los usuarios."
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "title-h2",
+                "content": "Microanimations"
+              },
+              {
+                "type": "text",
+                "content": "Microanimations are brief interface animations designed to communicate information, confirm actions and indicate changes of state. Unlike decorative animations, their purpose is to improve usability by making the interface easier to understand."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Provide immediate visual feedback.",
+                  "Guide user attention.",
+                  "Show changes of state.",
+                  "Improve usability."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Good Practices"
+              },
+              {
+                "type": "text",
+                "content": "Microanimations should be subtle, brief and purposeful. They should communicate information without delaying the user's work or becoming distracting."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "title-h2",
+                "content": "Microanimaciones"
+              },
+              {
+                "type": "text",
+                "content": "Las microanimaciones son animaciones pequeñas y funcionales utilizadas para comunicar información durante la interacción con una interfaz. Su función principal es indicar cambios de estado, confirmar acciones realizadas por el usuario y proporcionar retroalimentación visual de forma inmediata. Debido a su corta duración, mejoran la experiencia de usuario sin interrumpir la navegación."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Confirman acciones del usuario.",
+                  "Informan cambios de estado.",
+                  "Dirigen la atención hacia elementos importantes.",
+                  "Mejoran la usabilidad de la interfaz."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Buenas prácticas"
+              },
+              {
+                "type": "text",
+                "content": "Las microanimaciones deben ser discretas, rápidas y tener un objetivo claro. No deben utilizarse únicamente como decoración, sino para facilitar la comunicación entre el sistema y el usuario."
+              }
+            ]
+          }
+        },
+        {
+          "Category": "Cambios de estado",
+          "Question Text": {
+            "en-US": [
+              "It is the description of the animation principle of state changes:"
+            ],
+            "es-MX": [
+              "Es la descripción del principio de animación de cambio de estado:"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "Shows the user the result of their actions.",
+              "Animation steps used to display information.",
+              "Visual changes indicating an element has been selected.",
+              "Increases the visibility of a selected element."
+            ],
+            "es-MX": [
+              "Muestra al usuario el resultado de sus acciones.",
+              "Pasos que sigue una animación para mostrar información.",
+              "Alteraciones visuales para saber que un elemento ha sido seleccionado por el usuario.",
+              "Aumenta la visibilidad de un elemento seleccionado."
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "Visual changes indicating an element has been selected.",
+            "es-MX": "Alteraciones visuales para saber que un elemento ha sido seleccionado por el usuario."
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "title-h2",
+                "content": "State Changes"
+              },
+              {
+                "type": "text",
+                "content": "State changes visually communicate that an interface element has changed after user interaction. They help users understand the current status of buttons, menus, forms and other controls, making interfaces more predictable and easier to use."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Indicate user interaction.",
+                  "Provide immediate feedback.",
+                  "Reduce uncertainty.",
+                  "Improve interface understanding."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Good Practices"
+              },
+              {
+                "type": "text",
+                "content": "State changes should be clear, consistent and immediately noticeable, allowing users to recognize what has happened without interrupting their workflow."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "title-h2",
+                "content": "Cambios de estado"
+              },
+              {
+                "type": "text",
+                "content": "Los cambios de estado son modificaciones visuales que indican que un elemento de la interfaz ha cambiado después de una interacción del usuario. Pueden representarse mediante cambios de color, tamaño, posición, opacidad o animaciones, permitiendo identificar fácilmente cuándo un botón ha sido presionado, un menú está activo o una opción ha sido seleccionada."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Indican el resultado de una interacción.",
+                  "Proporcionan retroalimentación inmediata.",
+                  "Reducen la incertidumbre del usuario.",
+                  "Mejoran la comprensión de la interfaz."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Buenas prácticas"
+              },
+              {
+                "type": "text",
+                "content": "Los cambios de estado deben ser consistentes en toda la interfaz y lo suficientemente visibles para que el usuario identifique rápidamente la respuesta del sistema, sin generar distracciones ni afectar la navegación."
+              }
+            ]
+          }
+        },
+        {
+          "Category": "Cambios lentos de valor",
+          "Question Text": {
+            "en-US": [
+              "It is the description of the slow value change animation principle:"
+            ],
+            "es-MX": [
+              "Es la descripción del principio de animación de cambio lento de valor:"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "They display information about progress appropriately.",
+              "They are parameters repeated throughout animations to maintain consistency in a project.",
+              "They show the relationship between elements, from general to specific.",
+              "They specify the steps to follow during an interaction."
+            ],
+            "es-MX": [
+              "Muestran información sobre un progreso de manera adecuada.",
+              "Son parámetros que se repiten dentro de las animaciones para mantener la consistencia en un proyecto.",
+              "Muestra la relación existente entre elementos, que va de lo general a lo particular.",
+              "Especifica los pasos a seguir dentro de una interacción."
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "They display information about progress appropriately.",
+            "es-MX": "Muestran información sobre un progreso de manera adecuada."
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "title-h2",
+                "content": "Slow Value Changes"
+              },
+              {
+                "type": "text",
+                "content": "Slow value changes represent gradual visual transitions that allow users to perceive progress naturally. They are commonly used in progress bars, loading indicators, counters and percentage changes to communicate that a process is advancing."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Represent gradual progress.",
+                  "Improve user understanding.",
+                  "Provide continuous visual feedback.",
+                  "Avoid abrupt changes."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Good Practices"
+              },
+              {
+                "type": "text",
+                "content": "Use smooth transitions that accurately reflect system progress. Visual feedback should always correspond to the real state of the process."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "title-h2",
+                "content": "Cambios lentos de valor"
+              },
+              {
+                "type": "text",
+                "content": "Los cambios lentos de valor son animaciones que muestran una transición gradual de información para representar el avance de un proceso. Se utilizan en elementos como barras de progreso, porcentajes o indicadores de carga, permitiendo que el usuario perciba de forma clara y natural cómo evoluciona una tarea."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Representan un progreso gradual.",
+                  "Facilitan la comprensión del proceso.",
+                  "Proporcionan retroalimentación visual continua.",
+                  "Evitan cambios bruscos en la interfaz."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Buenas prácticas"
+              },
+              {
+                "type": "text",
+                "content": "Las animaciones de progreso deben ser fluidas, representar el estado real del sistema y mantener informado al usuario durante la ejecución de una tarea."
+              }
+            ]
+          }
+        },
+        {
+          "Category": "Jerarquía",
+          "Question Text": {
+            "en-US": [
+              "It is the description of the hierarchy animation principle:"
+            ],
+            "es-MX": [
+              "Es la descripción del principio de animación de jerarquía:"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "They display information about progress appropriately.",
+              "They are parameters repeated throughout animations to maintain consistency in a project.",
+              "They show the relationship between elements, from general to specific.",
+              "They specify the steps to follow during an interaction."
+            ],
+            "es-MX": [
+              "Muestran información sobre un progreso de manera adecuada.",
+              "Son parámetros que se repiten dentro de las animaciones para mantener la consistencia en un proyecto.",
+              "Muestra la relación existente entre elementos, que va de lo general a lo particular.",
+              "Especifica los pasos a seguir dentro de una interacción."
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "They show the relationship between elements, from general to specific.",
+            "es-MX": "Muestra la relación existente entre elementos, que va de lo general a lo particular."
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "title-h2",
+                "content": "Hierarchy"
+              },
+              {
+                "type": "text",
+                "content": "Animation hierarchy helps users understand the relationship between interface elements. By emphasizing important components first, animations naturally guide attention and improve navigation."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Highlights important elements.",
+                  "Organizes visual information.",
+                  "Guides user attention.",
+                  "Improves interface understanding."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Good Practices"
+              },
+              {
+                "type": "text",
+                "content": "Animate primary elements before secondary ones, maintaining a clear visual order that helps users identify priorities."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "title-h2",
+                "content": "Jerarquía"
+              },
+              {
+                "type": "text",
+                "content": "El principio de jerarquía utiliza las animaciones para mostrar la relación entre los elementos de una interfaz y dirigir la atención del usuario hacia la información más importante. Esto facilita la comprensión del contenido y permite identificar con mayor facilidad qué elementos tienen mayor relevancia."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Organiza la información visual.",
+                  "Destaca los elementos importantes.",
+                  "Guía la atención del usuario.",
+                  "Facilita la comprensión de la interfaz."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Buenas prácticas"
+              },
+              {
+                "type": "text",
+                "content": "Las animaciones deben respetar la jerarquía visual, destacando primero los elementos principales y manteniendo una secuencia lógica durante la interacción."
+              }
+            ]
+          }
+        },
+        {
+          "Category": "Tutorización",
+          "Question Text": {
+            "en-US": [
+              "It is the description of the tutorial animation principle:"
+            ],
+            "es-MX": [
+              "Es la descripción del principio de animación de tutorización:"
+            ]
+          },
+          "Options": {
+            "en-US": [
+              "They display information about progress appropriately.",
+              "They are parameters repeated throughout animations to maintain consistency in a project.",
+              "They show the relationship between elements, from general to specific.",
+              "They specify the steps to follow during an interaction."
+            ],
+            "es-MX": [
+              "Muestran información sobre un progreso de manera adecuada.",
+              "Son parámetros que se repiten dentro de las animaciones para mantener la consistencia en un proyecto.",
+              "Muestra la relación existente entre elementos, que va de lo general a lo particular.",
+              "Especifica los pasos a seguir dentro de una interacción."
+            ]
+          },
+          "Correct Answer": {
+            "en-US": "They specify the steps to follow during an interaction.",
+            "es-MX": "Especifica los pasos a seguir dentro de una interacción."
+          },
+          "Explanation": {
+            "en-US": [
+              {
+                "type": "title-h2",
+                "content": "Tutorial Guidance"
+              },
+              {
+                "type": "text",
+                "content": "Tutorial animations guide users through an interface by presenting actions in a logical sequence. They help users understand how to complete tasks without requiring extensive written instructions."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Guide user actions.",
+                  "Reduce the learning curve.",
+                  "Improve onboarding.",
+                  "Facilitate interaction."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Good Practices"
+              },
+              {
+                "type": "text",
+                "content": "Tutorial animations should be simple, progressive and easy to understand, helping users complete tasks naturally."
+              }
+            ],
+            "es-MX": [
+              {
+                "type": "title-h2",
+                "content": "Tutorización"
+              },
+              {
+                "type": "text",
+                "content": "La tutorización consiste en utilizar animaciones para guiar al usuario paso a paso durante una interacción. Su objetivo es facilitar el aprendizaje del funcionamiento de una interfaz, mostrando de forma clara la secuencia de acciones necesarias para completar una tarea."
+              },
+              {
+                "type": "ul",
+                "items": [
+                  "Guía al usuario durante una tarea.",
+                  "Reduce la curva de aprendizaje.",
+                  "Facilita el uso de nuevas funciones.",
+                  "Mejora la experiencia de incorporación."
+                ]
+              },
+              {
+                "type": "divider"
+              },
+              {
+                "type": "title-h2",
+                "content": "Buenas prácticas"
+              },
+              {
+                "type": "text",
+                "content": "Las animaciones de tutorización deben ser claras, breves y aparecer únicamente cuando aporten ayuda al usuario, evitando interrumpir el flujo normal de navegación."
+              }
+            ]
+          }
+        },
+{
+  "Category": "CSS",
+  "Question Text": {
+    "en-US": [
+      "What is CSS?"
+    ],
+    "es-MX": [
+      "¿Qué es CSS?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Cascading Style Syntax.",
+      "Cascading Style Sheets.",
+      "Cascading Style Scripts.",
+      "Cascading Style SheetSheets."
+    ],
+    "es-MX": [
+      "Cascading Style Syntax.",
+      "Cascading Style Sheets.",
+      "Cascading Style Scripts.",
+      "Cascading Style SheetSheets."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Cascading Style Sheets.",
+    "es-MX": "Cascading Style Sheets."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Cascading Style Sheets (CSS)"
+      },
+      {
+        "type": "text",
+        "content": "CSS (Cascading Style Sheets) is the language used to define the visual appearance of web pages. It controls colors, typography, spacing, positioning, layouts, transitions and animations, allowing developers to separate presentation from HTML structure."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Defines the visual design of a website.",
+          "Works together with HTML.",
+          "Improves maintainability and code reuse.",
+          "Supports responsive design and animations."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Good Practices"
+      },
+      {
+        "type": "text",
+        "content": "Organize styles into reusable classes, avoid duplicated rules and keep the stylesheet modular to simplify maintenance and scalability."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "CSS (Cascading Style Sheets)"
+      },
+      {
+        "type": "text",
+        "content": "CSS (Hojas de Estilo en Cascada) es el lenguaje utilizado para definir la apariencia visual de una página web. Permite controlar colores, tipografías, tamaños, márgenes, posiciones, distribuciones, animaciones y otros aspectos relacionados con el diseño, separando la presentación del contenido definido en HTML."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Define el diseño visual de un sitio web.",
+          "Trabaja en conjunto con HTML.",
+          "Facilita el mantenimiento del código.",
+          "Permite crear interfaces adaptables y animadas."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Buenas prácticas"
+      },
+      {
+        "type": "text",
+        "content": "Es recomendable utilizar clases reutilizables, mantener los estilos organizados y separar correctamente la estructura (HTML), el diseño (CSS) y el comportamiento (JavaScript)."
+      }
+    ]
+  }
+},
+{
+  "Category": "CSS",
+  "Question Text": {
+    "en-US": [
+      "How is a class written in CSS?"
+    ],
+    "es-MX": [
+      "Así se escribe una clase en CSS:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      ".class {}",
+      "#class{}",
+      ".class[]",
+      "#class[]"
+    ],
+    "es-MX": [
+      ".clase {}",
+      "#clase{}",
+      ".clase[]",
+      "#clase[]"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": ".class {}",
+    "es-MX": ".clase {}"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "CSS Classes"
+      },
+      {
+        "type": "text",
+        "content": "A CSS class is identified by a period (.) followed by its name. Classes allow the same styles to be applied to multiple HTML elements, making stylesheets more organized and reusable."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Begin with a period (.).",
+          "Can be reused on multiple elements.",
+          "Improve code organization.",
+          "Promote style reuse."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Good Practices"
+      },
+      {
+        "type": "text",
+        "content": "Use descriptive class names, avoid unnecessary abbreviations and group related styles together to improve readability."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Clases en CSS"
+      },
+      {
+        "type": "text",
+        "content": "Una clase en CSS se identifica mediante un punto (.) seguido del nombre de la clase. Las clases permiten aplicar el mismo conjunto de estilos a uno o varios elementos HTML, favoreciendo la reutilización del código y una mejor organización de la hoja de estilos."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Comienzan con un punto (.).",
+          "Pueden reutilizarse en varios elementos.",
+          "Facilitan la organización del código.",
+          "Permiten mantener estilos consistentes."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Buenas prácticas"
+      },
+      {
+        "type": "text",
+        "content": "Utiliza nombres descriptivos para las clases, evita estilos repetidos y organiza las reglas CSS por componentes o secciones para facilitar el mantenimiento."
+      }
+    ]
+  }
+},
+{
+  "Category": "Eventos Web",
+  "Question Text": {
+    "en-US": [
+      "What is a trigger in web development?"
+    ],
+    "es-MX": [
+      "¿Qué es un trigger en web?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "A function executed when a web page loads.",
+      "A graphical element used to navigate between web pages.",
+      "An event or action automatically triggered in response to a user or system action.",
+      "A type of error that occurs while interacting with a web page."
+    ],
+    "es-MX": [
+      "Un trigger en web es una función que se ejecuta al cargar una página web.",
+      "Un trigger en web es un elemento gráfico utilizado para navegar entre diferentes páginas web.",
+      "Un trigger en web es un evento o acción que se dispara automáticamente en respuesta a una determinada acción del usuario o del sistema.",
+      "Un trigger en web es un tipo de error que ocurre al interactuar con una página web."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "An event or action automatically triggered in response to a user or system action.",
+    "es-MX": "Un trigger en web es un evento o acción que se dispara automáticamente en respuesta a una determinada acción del usuario o del sistema."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Web Triggers"
+      },
+      {
+        "type": "text",
+        "content": "A trigger is an event that automatically activates a specific action within an application. In web development, triggers are commonly associated with user interactions such as clicks, keyboard input, scrolling or system-generated events."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Respond to user actions.",
+          "Can also respond to system events.",
+          "Start processes automatically.",
+          "Support interactive web applications."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Good Practices"
+      },
+      {
+        "type": "text",
+        "content": "Associate triggers with meaningful events, avoid unnecessary executions and ensure each trigger performs a clear and specific action."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Trigger en desarrollo web"
+      },
+      {
+        "type": "text",
+        "content": "Un trigger es un evento o condición que provoca la ejecución automática de una acción dentro de una aplicación web. Puede originarse por una interacción del usuario, como hacer clic en un botón o escribir en un formulario, o por eventos generados por el propio sistema, permitiendo crear interfaces dinámicas y reactivas."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Responde a acciones del usuario.",
+          "También puede activarse por eventos del sistema.",
+          "Inicia procesos automáticamente.",
+          "Permite crear aplicaciones interactivas."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Buenas prácticas"
+      },
+      {
+        "type": "text",
+        "content": "Los triggers deben asociarse únicamente a eventos necesarios, ejecutar acciones específicas y evitar procesos innecesarios que puedan afectar el rendimiento o la experiencia del usuario."
+      }
+    ]
+  }
+},
+{
+  "Category": "CSS Transitions",
+  "Question Text": {
+    "en-US": [
+      "What is the CSS transition property used for?"
+    ],
+    "es-MX": [
+      "¿Para qué sirve la propiedad transition en CSS?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "It is used to change the background color of an element.",
+      "It is used to control the state change of an element.",
+      "It is used to define the size of an element.",
+      "It is used to apply animation effects to an element."
+    ],
+    "es-MX": [
+      "La propiedad transition en CSS se utiliza para cambiar el color de fondo de un elemento.",
+      "La propiedad transition en CSS se utiliza para controlar el cambio de estado de un elemento.",
+      "La propiedad transition en CSS se utiliza para establecer el tamaño de un elemento.",
+      "La propiedad transition en CSS se utiliza para aplicar efectos de animación a un elemento."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "It is used to control the state change of an element.",
+    "es-MX": "La propiedad transition en CSS se utiliza para controlar el cambio de estado de un elemento."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "CSS Transition Property"
+      },
+      {
+        "type": "text",
+        "content": "The transition property controls how an element changes from one visual state to another. It allows style changes to occur smoothly instead of instantly, creating a more natural and pleasant user experience."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Controls state changes.",
+          "Creates smooth visual effects.",
+          "Improves user interaction.",
+          "Works with CSS properties that change over time."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Good Practices"
+      },
+      {
+        "type": "text",
+        "content": "Use transitions only when they improve usability and provide visual feedback. Avoid excessive effects that may distract users."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Propiedad transition"
+      },
+      {
+        "type": "text",
+        "content": "La propiedad <b>transition</b> se utiliza para controlar el cambio de estado de un elemento cuando alguna de sus propiedades CSS modifica su valor. Gracias a esta propiedad, los cambios visuales se realizan de forma gradual, mejorando la experiencia del usuario y haciendo que la interacción sea más fluida."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Controla el cambio de estado de un elemento.",
+          "Genera transiciones visuales suaves.",
+          "Mejora la experiencia del usuario.",
+          "Facilita la interacción con la interfaz."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Buenas prácticas"
+      },
+      {
+        "type": "text",
+        "content": "Las transiciones deben utilizarse para comunicar cambios de estado de forma clara y natural, evitando efectos innecesarios que puedan distraer al usuario."
+      }
+    ]
+  }
+},
+{
+  "Category": "CSS Transitions",
+  "Question Text": {
+    "en-US": [
+      "It is the description of the transition-duration property:"
+    ],
+    "es-MX": [
+      "Es la descripción de la propiedad transition-duration:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Specifies which property the transition effect will be applied to.",
+      "Specifies how long the action should take.",
+      "Specifies the increments from beginning to end.",
+      "Specifies how long to wait before starting the effect."
+    ],
+    "es-MX": [
+      "Especifica a qué se le pretende aplicar el efecto de transición.",
+      "Especifica el tiempo que debe tardar la acción.",
+      "Especifica los incrementos desde inicio al final.",
+      "Especifica el tiempo que debe esperar antes de iniciar el efecto."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Specifies how long the action should take.",
+    "es-MX": "Especifica el tiempo que debe tardar la acción."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "transition-duration"
+      },
+      {
+        "type": "text",
+        "content": "The transition-duration property defines the amount of time required for a transition to complete. It determines how quickly or slowly a visual change occurs."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Defines transition time.",
+          "Accepts seconds or milliseconds.",
+          "Produces smoother visual changes.",
+          "Works together with other transition properties."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Good Practices"
+      },
+      {
+        "type": "text",
+        "content": "Choose durations that feel natural to users. Excessively long or extremely short transitions can negatively affect usability."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Propiedad transition-duration"
+      },
+      {
+        "type": "text",
+        "content": "La propiedad <b>transition-duration</b> especifica el tiempo que debe tardar una transición en completarse. Su función es definir la duración del cambio visual entre un estado y otro del elemento."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Define la duración de la transición.",
+          "Puede expresarse en segundos o milisegundos.",
+          "Controla la velocidad del efecto.",
+          "Se utiliza junto con otras propiedades de transition."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Buenas prácticas"
+      },
+      {
+        "type": "text",
+        "content": "Selecciona tiempos de transición adecuados para que los cambios sean perceptibles sin ralentizar la interacción del usuario."
+      }
+    ]
+  }
+},
+{
+  "Category": "CSS Transitions",
+  "Question Text": {
+    "en-US": [
+      "It is the description of the transition-delay property:"
+    ],
+    "es-MX": [
+      "Es la descripción de la propiedad transition-delay:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Specifies which property the transition effect will be applied to.",
+      "Specifies how long the action should take.",
+      "Specifies the increments from beginning to end.",
+      "Specifies how long to wait before starting the effect."
+    ],
+    "es-MX": [
+      "Especifica a qué se le pretende aplicar el efecto de transición.",
+      "Especifica el tiempo que debe tardar la acción.",
+      "Especifica los incrementos desde inicio al final.",
+      "Especifica el tiempo que debe esperar antes de iniciar el efecto."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Specifies how long to wait before starting the effect.",
+    "es-MX": "Especifica el tiempo que debe esperar antes de iniciar el efecto."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "transition-delay"
+      },
+      {
+        "type": "text",
+        "content": "The transition-delay property defines the waiting time before a transition begins. Once the specified delay has elapsed, the visual effect starts automatically."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Defines the waiting time.",
+          "Starts the transition later.",
+          "Can improve animation sequencing.",
+          "Works together with transition-duration."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Good Practices"
+      },
+      {
+        "type": "text",
+        "content": "Use delays only when they help guide user attention or improve the order of visual events. Avoid unnecessary waiting times."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Propiedad transition-delay"
+      },
+      {
+        "type": "text",
+        "content": "La propiedad <b>transition-delay</b> especifica el tiempo que debe esperar una transición antes de iniciar su ejecución. Una vez transcurrido ese intervalo, el efecto comienza automáticamente."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Define el tiempo de espera.",
+          "Retrasa el inicio de la transición.",
+          "Permite coordinar secuencias de animación.",
+          "Se utiliza junto con transition-duration."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Buenas prácticas"
+      },
+      {
+        "type": "text",
+        "content": "Utiliza retrasos únicamente cuando aporten claridad a la interacción o ayuden a organizar la secuencia visual, evitando tiempos de espera innecesarios."
+      }
+    ]
+  }
+},
+{
+  "Category": "CSS Box Model",
+  "Question Text": {
+    "en-US": [
+      "What is the Box Model?"
+    ],
+    "es-MX": [
+      "¿Qué es el box model?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "The Box Model is a JavaScript function used to manipulate HTML elements.",
+      "The Box Model is a graphic design technique used to create compositions.",
+      "The Box Model is a CSS concept that describes how content is represented and organized inside a box on a web page.",
+      "The Box Model is a way of organizing CSS code."
+    ],
+    "es-MX": [
+      "El box model es una función de JavaScript para manipular elementos HTML.",
+      "El box model es una técnica de diseño gráfico utilizada para hacer composiciones.",
+      "El box model es un concepto en CSS que describe cómo se representa y se organiza el contenido dentro de una caja en una página web.",
+      "El box model es una forma de acomodar el código en CSS."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "The Box Model is a CSS concept that describes how content is represented and organized inside a box on a web page.",
+    "es-MX": "El box model es un concepto en CSS que describe cómo se representa y se organiza el contenido dentro de una caja en una página web."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "CSS Box Model"
+      },
+      {
+        "type": "text",
+        "content": "The CSS Box Model is the model used by browsers to represent every HTML element as a rectangular box. Each box is composed of content, padding, border and margin, allowing developers to control spacing, size and element distribution on a web page."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Represents HTML elements as boxes.",
+          "Is composed of content, padding, border and margin.",
+          "Defines element dimensions and spacing.",
+          "Is fundamental for responsive layouts."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Good Practices"
+      },
+      {
+        "type": "text",
+        "content": "Understanding the Box Model helps prevent layout problems and makes it easier to design organized, responsive and maintainable interfaces."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Box Model"
+      },
+      {
+        "type": "text",
+        "content": "El <b>Box Model</b> es un concepto fundamental de CSS que describe cómo el navegador representa cada elemento HTML como una caja rectangular. Esta caja está formada por el contenido (<i>content</i>), el relleno (<i>padding</i>), el borde (<i>border</i>) y el margen (<i>margin</i>), permitiendo controlar el tamaño, la separación y la distribución de los elementos dentro de una página web."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Representa cada elemento HTML como una caja.",
+          "Está compuesto por content, padding, border y margin.",
+          "Controla dimensiones y espacios.",
+          "Es la base para crear diseños web correctamente organizados."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Buenas prácticas"
+      },
+      {
+        "type": "text",
+        "content": "Comprender el Box Model permite evitar problemas de distribución, crear interfaces responsivas y mantener un diseño consistente en todo el sitio web."
+      }
+    ]
+  }
+},
+{
+  "Category": "CSS Box Model",
+  "Question Text": {
+    "en-US": [
+      "It is the description of padding, which is one of the parts of the Box Model:"
+    ],
+    "es-MX": [
+      "Es la descripción de padding, que es una de las partes de box model:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Area where the content is displayed.",
+      "Area placed around the content to create spacing.",
+      "Area that surrounds the padding and content box.",
+      "Area that surrounds all previous boxes."
+    ],
+    "es-MX": [
+      "Área donde se muestra su contenido.",
+      "Área que se coloca alrededor del contenido para generar relleno.",
+      "Área que envuelve el cuadro de relleno y el cuadro de contenido.",
+      "Área que envuelve a los anteriores cuadros."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Area placed around the content to create spacing.",
+    "es-MX": "Área que se coloca alrededor del contenido para generar relleno."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Padding"
+      },
+      {
+        "type": "text",
+        "content": "Padding is the space located between the content and the border of an element. It creates internal spacing without changing the content itself, improving readability and visual appearance."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Creates internal spacing.",
+          "Separates content from the border.",
+          "Increases the visible size of the element.",
+          "Improves readability."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Good Practices"
+      },
+      {
+        "type": "text",
+        "content": "Use padding to provide comfortable spacing inside components and avoid placing text directly against borders."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Padding"
+      },
+      {
+        "type": "text",
+        "content": "El <b>padding</b> es el espacio interno que se coloca alrededor del contenido de un elemento antes del borde. Su función es generar un relleno que mejore la separación entre el contenido y el borde, proporcionando una presentación más limpia y legible."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Genera espacio interno.",
+          "Se encuentra entre el contenido y el borde.",
+          "Aumenta el área visible del elemento.",
+          "Mejora la legibilidad del contenido."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Buenas prácticas"
+      },
+      {
+        "type": "text",
+        "content": "Utiliza padding suficiente para mejorar la lectura y evitar que el contenido quede demasiado pegado al borde del elemento."
+      }
+    ]
+  }
+},
+{
+  "Category": "CSS Box Model",
+  "Question Text": {
+    "en-US": [
+      "It is the description of border, which is one of the parts of the Box Model:"
+    ],
+    "es-MX": [
+      "Es la descripción de border, que es una de las partes de box model:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Area where the content is displayed.",
+      "Area placed around the content to create spacing.",
+      "Area that surrounds the padding box and the content box.",
+      "Area that surrounds all previous boxes."
+    ],
+    "es-MX": [
+      "Área donde se muestra su contenido.",
+      "Área que se coloca alrededor del contenido para generar relleno.",
+      "Área que envuelve el cuadro de relleno y el cuadro de contenido.",
+      "Área que envuelve a los anteriores cuadros."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Area that surrounds the padding box and the content box.",
+    "es-MX": "Área que envuelve el cuadro de relleno y el cuadro de contenido."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Border"
+      },
+      {
+        "type": "text",
+        "content": "The border is the outline that surrounds both the content and the padding of an element. It visually defines the limits of the box and can be customized with different colors, styles and widths."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Surrounds content and padding.",
+          "Defines the visible edge of the element.",
+          "Can have different styles and colors.",
+          "Is part of the CSS Box Model."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Good Practices"
+      },
+      {
+        "type": "text",
+        "content": "Use borders consistently to improve visual organization without overloading the interface."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Border"
+      },
+      {
+        "type": "text",
+        "content": "El <b>border</b> es el borde que envuelve el área de contenido y el relleno (<i>padding</i>) de un elemento. Su función es delimitar visualmente la caja y puede configurarse con distintos colores, estilos y grosores mediante CSS."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Envuelve el contenido y el padding.",
+          "Define el límite visible del elemento.",
+          "Puede personalizarse con diferentes estilos.",
+          "Forma parte del Box Model."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Buenas prácticas"
+      },
+      {
+        "type": "text",
+        "content": "Utiliza bordes para mejorar la organización visual y resaltar elementos importantes, evitando un uso excesivo que recargue el diseño."
+      }
+    ]
+  }
+},
+{
+  "Category": "Diseño Web",
+  "Question Text": {
+    "en-US": [
+      "How are the elements of a web page graphically distributed?"
+    ],
+    "es-MX": [
+      "¿Cómo se distribuyen gráficamente los elementos de una página web?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Using rows and columns.",
+      "Using HTML tags.",
+      "Using CSS declarations.",
+      "Using JavaScript functions."
+    ],
+    "es-MX": [
+      "A partir de columnas y filas.",
+      "A partir de etiquetas HTML.",
+      "A partir de declaraciones de CSS.",
+      "A partir de funciones de JavaScript."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Using rows and columns.",
+    "es-MX": "A partir de columnas y filas."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Layout Structure"
+      },
+      {
+        "type": "text",
+        "content": "Modern web interfaces organize their content using rows and columns. This structure makes it easier to align, distribute and adapt elements to different screen sizes, providing a consistent visual organization."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Organizes content visually.",
+          "Uses rows and columns.",
+          "Facilitates responsive design.",
+          "Improves content alignment."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Good Practices"
+      },
+      {
+        "type": "text",
+        "content": "Plan the layout before development and maintain a consistent grid system throughout the interface."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Distribución de elementos"
+      },
+      {
+        "type": "text",
+        "content": "En el diseño web, los elementos se organizan gráficamente mediante filas y columnas. Esta distribución facilita la alineación del contenido, mejora la organización visual y permite construir interfaces ordenadas y adaptables a diferentes tamaños de pantalla."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Organiza visualmente el contenido.",
+          "Utiliza filas y columnas.",
+          "Facilita el diseño responsivo.",
+          "Mejora la alineación de los elementos."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Buenas prácticas"
+      },
+      {
+        "type": "text",
+        "content": "Mantén una distribución consistente utilizando sistemas de columnas y filas que faciliten la lectura y la adaptación de la interfaz en distintos dispositivos."
+      }
+    ]
+  }
+},
+{
+  "Category": "Diseño Web",
+  "Question Text": {
+    "en-US": [
+      "What is the normal flow in web design?"
+    ],
+    "es-MX": [
+      "¿Qué es el flujo normal en web?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "It is the way inline and block elements are presented in a web page layout.",
+      "It is the order in which the browser loads page elements.",
+      "It is the way a web page reproduces multimedia elements.",
+      "It is the way typography and image sizes are defined in a web design."
+    ],
+    "es-MX": [
+      "Es la forma en que los elementos de línea y de bloque son presentados en el diseño de una página web.",
+      "Es el orden con el que el navegador web carga los elementos de diseño de una página.",
+      "Es la forma en que una página web puede reproducir elementos multimedia.",
+      "Es la manera en que se definen los tamaños de tipografías e imágenes en un diseño web."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "It is the way inline and block elements are presented in a web page layout.",
+    "es-MX": "Es la forma en que los elementos de línea y de bloque son presentados en el diseño de una página web."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Normal Flow"
+      },
+      {
+        "type": "text",
+        "content": "The normal flow is the default way browsers place HTML elements on a page. Block elements occupy the available width, while inline elements are displayed within the same line whenever space is available."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Defines the default element layout.",
+          "Distinguishes block and inline elements.",
+          "Serves as the basis for CSS layouts.",
+          "Can be modified with CSS positioning."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Good Practices"
+      },
+      {
+        "type": "text",
+        "content": "Understand the normal flow before using Flexbox, Grid or positioning techniques to avoid unexpected layouts."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Flujo normal"
+      },
+      {
+        "type": "text",
+        "content": "El flujo normal es la forma predeterminada en que el navegador presenta los elementos HTML dentro de una página web. En este comportamiento, los elementos de bloque y los elementos en línea se distribuyen siguiendo las reglas establecidas por HTML y CSS antes de aplicar otros métodos de posicionamiento."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Representa el comportamiento predeterminado del navegador.",
+          "Organiza elementos de bloque y de línea.",
+          "Es la base para construir diseños con CSS.",
+          "Puede modificarse mediante otras técnicas de diseño."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Buenas prácticas"
+      },
+      {
+        "type": "text",
+        "content": "Comprender el flujo normal facilita el uso correcto de Flexbox, Grid y otras herramientas de posicionamiento sin generar problemas de distribución."
+      }
+    ]
+  }
+},
+{
+  "Category": "Diseño Web",
+  "Question Text": {
+    "en-US": [
+      "When designing a web interface, we can use a column system. What is the recommended number of columns in the model?"
+    ],
+    "es-MX": [
+      "Cuando diseñamos una interfaz web, podemos usar el sistema de columnas. ¿Cuál es número de columnas recomendado en el modelo?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Twelve columns.",
+      "Six columns.",
+      "Four columns.",
+      "Five columns."
+    ],
+    "es-MX": [
+      "Doce columnas.",
+      "Seis columnas.",
+      "Cuatro columnas.",
+      "Cinco columnas."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Twelve columns.",
+    "es-MX": "Doce columnas."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "12-Column Grid System"
+      },
+      {
+        "type": "text",
+        "content": "The 12-column grid is the most commonly used layout system in responsive web design. It provides flexibility by allowing different column combinations while maintaining visual consistency across the interface."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Facilitates responsive layouts.",
+          "Allows multiple column combinations.",
+          "Improves visual organization.",
+          "Is widely adopted in modern frameworks."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Good Practices"
+      },
+      {
+        "type": "text",
+        "content": "Keep consistent spacing and alignment throughout the grid to achieve clean and balanced interfaces."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Sistema de 12 columnas"
+      },
+      {
+        "type": "text",
+        "content": "El sistema de 12 columnas es uno de los modelos más utilizados en el diseño de interfaces web. Su principal ventaja es que permite distribuir el contenido de forma flexible, facilitando la creación de diseños ordenados, consistentes y adaptables a distintos tamaños de pantalla."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Facilita el diseño responsivo.",
+          "Permite múltiples combinaciones de distribución.",
+          "Mejora la organización visual.",
+          "Es utilizado por numerosos frameworks de diseño."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Buenas prácticas"
+      },
+      {
+        "type": "text",
+        "content": "Mantén una alineación uniforme entre columnas y aprovecha la flexibilidad del sistema para construir interfaces limpias, equilibradas y fáciles de mantener."
+      }
+    ]
+  }
+},
+{
+  "Category": "CSS Transform",
+  "Question Text": {
+    "en-US": [
+      "In CSS, what is the transform property used for?"
+    ],
+    "es-MX": [
+      "En CSS, ¿para qué se utiliza la propiedad transform?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "The transform property is used to change an element's font size.",
+      "The transform property is used to apply animations to an element.",
+      "The transform property is used to modify the size, rotation, translation or skew of an element.",
+      "The transform property is used to change an element's background."
+    ],
+    "es-MX": [
+      "La propiedad transform en CSS se utiliza para cambiar el tamaño de fuente de un elemento.",
+      "La propiedad transform en CSS se utiliza para aplicar animaciones a un elemento.",
+      "La propiedad transform en CSS se utiliza para modificar tamaño, rotación, desplazamiento o sesgar un elemento.",
+      "La propiedad transform en CSS se utiliza para cambiar el fondo de un elemento."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "The transform property is used to modify the size, rotation, translation or skew of an element.",
+    "es-MX": "La propiedad transform en CSS se utiliza para modificar tamaño, rotación, desplazamiento o sesgar un elemento."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "CSS transform"
+      },
+      {
+        "type": "text",
+        "content": "The transform property modifies the geometric appearance of an element without changing the normal document flow. It allows scaling, rotating, translating and skewing elements to create interactive effects and dynamic interfaces."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Changes an element's visual appearance.",
+          "Supports scale, rotate, translate and skew.",
+          "Does not modify the document flow.",
+          "Is commonly used in animations and transitions."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Good Practices"
+      },
+      {
+        "type": "text",
+        "content": "Use transform instead of modifying position or size directly whenever possible, since it generally provides smoother animations and better browser performance."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Propiedad transform"
+      },
+      {
+        "type": "text",
+        "content": "La propiedad <b>transform</b> permite modificar la apariencia geométrica de un elemento mediante transformaciones como escalar, rotar, desplazar o sesgar. Estas transformaciones se aplican sobre el elemento sin alterar el flujo normal del documento, por lo que son ampliamente utilizadas para crear efectos visuales e interfaces dinámicas."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Permite escalar elementos.",
+          "Permite rotarlos.",
+          "Permite desplazarlos.",
+          "Permite aplicar sesgado (<i>skew</i>)."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Buenas prácticas"
+      },
+      {
+        "type": "text",
+        "content": "Utiliza <b>transform</b> para crear efectos visuales y animaciones fluidas, evitando modificar directamente propiedades que puedan afectar el rendimiento de la interfaz."
+      }
+    ]
+  }
+},
+{
+  "Category": "CSS Transform",
+  "Question Text": {
+    "en-US": [
+      "With this declaration, an element can rotate in CSS:"
+    ],
+    "es-MX": [
+      "Con esta declaración, un elemento puede rotar en CSS:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "transform: scale(1.2);",
+      "transform: skew(360deg);",
+      "transform: rotate(2turn);",
+      "transform: translateX(50px);"
+    ],
+    "es-MX": [
+      "transform:scale(1.2);",
+      "transform: skew(360deg);",
+      "transform:rotate(2turn);",
+      "transform: translateX(50px);"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "transform: rotate(2turn);",
+    "es-MX": "transform:rotate(2turn);"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "rotate()"
+      },
+      {
+        "type": "text",
+        "content": "The rotate() function rotates an element around its transformation origin. Rotation values can be expressed in degrees, radians or turns depending on the desired effect."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Rotates an element.",
+          "Accepts deg, rad and turn units.",
+          "Works with the transform property.",
+          "Is frequently used in animations."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Good Practices"
+      },
+      {
+        "type": "text",
+        "content": "Use moderate rotation values to maintain readability and provide smooth, understandable visual feedback."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Función rotate()"
+      },
+      {
+        "type": "text",
+        "content": "La función <b>rotate()</b> permite girar un elemento alrededor de su punto de transformación. El giro puede expresarse mediante diferentes unidades como grados (<i>deg</i>), radianes (<i>rad</i>) o vueltas completas (<i>turn</i>), según el efecto que se desee conseguir."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Realiza rotaciones del elemento.",
+          "Acepta unidades como deg, rad y turn.",
+          "Forma parte de la propiedad transform.",
+          "Es ampliamente utilizada en animaciones CSS."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Buenas prácticas"
+      },
+      {
+        "type": "text",
+        "content": "Aplica rotaciones únicamente cuando aporten significado a la interacción o mejoren la experiencia visual del usuario."
+      }
+    ]
+  }
+},
+{
+  "Category": "CSS Transform",
+  "Question Text": {
+    "en-US": [
+      "With this declaration, an element can be skewed in CSS:"
+    ],
+    "es-MX": [
+      "Con esta declaración, un elemento puede sesgarse en CSS:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "transform: scale(1.2);",
+      "transform: skew(360deg);",
+      "transform: rotate(2turn);",
+      "transform: translateX(50px);"
+    ],
+    "es-MX": [
+      "transform:scale(1.2);",
+      "transform: skew(360deg);",
+      "transform:rotate(2turn);",
+      "transform: translateX(50px);"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "transform: skew(360deg);",
+    "es-MX": "transform: skew(360deg);"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "skew()"
+      },
+      {
+        "type": "text",
+        "content": "The skew() function tilts an element horizontally, vertically or both, creating an angled appearance while preserving its original dimensions."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Tilts an element.",
+          "Uses angle values.",
+          "Works with transform.",
+          "Creates perspective-like visual effects."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Good Practices"
+      },
+      {
+        "type": "text",
+        "content": "Use skew effects carefully, as excessive distortion may reduce readability and negatively impact usability."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Función skew()"
+      },
+      {
+        "type": "text",
+        "content": "La función <b>skew()</b> permite inclinar o sesgar un elemento modificando sus ángulos sobre uno o ambos ejes. Es una transformación utilizada para crear efectos visuales dinámicos sin modificar el contenido interno del elemento."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Inclina el elemento.",
+          "Utiliza valores angulares.",
+          "Forma parte de la propiedad transform.",
+          "Permite generar efectos visuales dinámicos."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Buenas prácticas"
+      },
+      {
+        "type": "text",
+        "content": "Utiliza el sesgado con moderación para evitar deformaciones excesivas que dificulten la lectura o la interacción del usuario."
+      }
+    ]
+  }
+},
+{
+  "Category": "CSS Transform",
+  "Question Text": {
+    "en-US": [
+      "Which transform function is used to move an element horizontally?"
+    ],
+    "es-MX": [
+      "¿Qué función de transform se utiliza para mover un elemento horizontalmente?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "translateX()",
+      "translateY()",
+      "rotate()",
+      "scale()"
+    ],
+    "es-MX": [
+      "translateX()",
+      "translateY()",
+      "rotate()",
+      "scale()"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "translateX()",
+    "es-MX": "translateX()"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "translateX()"
+      },
+      {
+        "type": "text",
+        "content": "The <b>translateX()</b> function moves an element along the horizontal axis without changing its size, rotation or shape. Positive values move the element to the right, while negative values move it to the left."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Moves an element horizontally.",
+          "Uses length or percentage values.",
+          "Does not modify the document flow.",
+          "Belongs to the transform property."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Good Practices"
+      },
+      {
+        "type": "text",
+        "content": "Use translateX() to create smooth horizontal animations instead of modifying margins or element positioning."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Función translateX()"
+      },
+      {
+        "type": "text",
+        "content": "La función <b>translateX()</b> desplaza un elemento sobre el eje horizontal sin modificar su tamaño, rotación o forma. Los valores positivos lo mueven hacia la derecha y los negativos hacia la izquierda."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Desplaza un elemento horizontalmente.",
+          "Utiliza valores de longitud o porcentaje.",
+          "No modifica el flujo del documento.",
+          "Forma parte de la propiedad transform."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Buenas prácticas"
+      },
+      {
+        "type": "text",
+        "content": "Utiliza translateX() para crear movimientos suaves sin alterar el posicionamiento normal de los elementos."
+      }
+    ]
+  }
+},
+{
+  "Category": "CSS Transition",
+  "Question Text": {
+    "en-US": [
+      "Which CSS property specifies how long a transition takes to complete?"
+    ],
+    "es-MX": [
+      "¿Qué propiedad de CSS especifica cuánto tiempo tarda en completarse una transición?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "transition-duration",
+      "transition-delay",
+      "transition-property",
+      "transition-style"
+    ],
+    "es-MX": [
+      "transition-duration",
+      "transition-delay",
+      "transition-property",
+      "transition-style"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "transition-duration",
+    "es-MX": "transition-duration"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "transition-duration"
+      },
+      {
+        "type": "text",
+        "content": "The <b>transition-duration</b> property defines the amount of time an animation takes from its initial state to its final state. The value is commonly expressed in seconds (s) or milliseconds (ms)."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Defines the animation duration.",
+          "Uses seconds or milliseconds.",
+          "Works together with other transition properties.",
+          "Improves the smoothness of visual changes."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Good Practices"
+      },
+      {
+        "type": "text",
+        "content": "Choose moderate durations so transitions feel natural without slowing down user interaction."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "transition-duration"
+      },
+      {
+        "type": "text",
+        "content": "La propiedad <b>transition-duration</b> define el tiempo que tarda una transición en pasar del estado inicial al estado final. Generalmente se expresa en segundos (s) o milisegundos (ms)."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Define la duración de la animación.",
+          "Utiliza segundos o milisegundos.",
+          "Trabaja junto con las demás propiedades transition.",
+          "Hace que los cambios visuales sean más suaves."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Buenas prácticas"
+      },
+      {
+        "type": "text",
+        "content": "Selecciona duraciones moderadas para que las transiciones sean fluidas sin afectar la rapidez de la interacción."
+      }
+    ]
+  }
+},
+{
+  "Category": "CSS Transform",
+  "Question Text": {
+    "en-US": [
+      "Which transform function changes the size of an element without modifying its original dimensions?"
+    ],
+    "es-MX": [
+      "¿Qué función de transform cambia el tamaño de un elemento sin modificar sus dimensiones originales?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "scale()",
+      "rotate()",
+      "translate()",
+      "skew()"
+    ],
+    "es-MX": [
+      "scale()",
+      "rotate()",
+      "translate()",
+      "skew()"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "scale()",
+    "es-MX": "scale()"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "scale()"
+      },
+      {
+        "type": "text",
+        "content": "The <b>scale()</b> function enlarges or reduces the visual size of an element by multiplying its width and height. It affects only the rendered appearance without changing the element's original dimensions in the document."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Changes the visual size of an element.",
+          "Accepts one or two scale values.",
+          "Belongs to the transform property.",
+          "Does not modify the document flow."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Good Practices"
+      },
+      {
+        "type": "text",
+        "content": "Apply moderate scaling values to create attractive effects without affecting readability or user experience."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Función scale()"
+      },
+      {
+        "type": "text",
+        "content": "La función <b>scale()</b> permite aumentar o reducir el tamaño visual de un elemento multiplicando su ancho y alto. Solo modifica su apariencia durante la representación, sin alterar sus dimensiones originales dentro del documento."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Modifica el tamaño visual del elemento.",
+          "Acepta uno o dos valores de escala.",
+          "Forma parte de la propiedad transform.",
+          "No altera el flujo del documento."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Buenas prácticas"
+      },
+      {
+        "type": "text",
+        "content": "Utiliza valores de escala moderados para lograr efectos atractivos sin afectar la legibilidad o la experiencia del usuario."
+      }
+    ]
+  }
+},
+{
+  "Category": "CSS Transition",
+  "Question Text": {
+    "en-US": [
+      "Which CSS property specifies how long a transition waits before it starts?"
+    ],
+    "es-MX": [
+      "¿Qué propiedad de CSS especifica cuánto tiempo espera una transición antes de comenzar?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "transition-delay",
+      "transition-duration",
+      "transition-property",
+      "transition-timing-function"
+    ],
+    "es-MX": [
+      "transition-delay",
+      "transition-duration",
+      "transition-property",
+      "transition-timing-function"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "transition-delay",
+    "es-MX": "transition-delay"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "transition-delay"
+      },
+      {
+        "type": "text",
+        "content": "The <b>transition-delay</b> property defines the amount of time the browser waits before starting a transition after a property value changes."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Delays the beginning of a transition.",
+          "Uses seconds or milliseconds.",
+          "Works together with transition-duration.",
+          "Helps coordinate multiple animations."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Good Practices"
+      },
+      {
+        "type": "text",
+        "content": "Use delays only when they improve the user experience. Excessive waiting times may make an interface feel slow."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "transition-delay"
+      },
+      {
+        "type": "text",
+        "content": "La propiedad <b>transition-delay</b> define el tiempo que el navegador espera antes de iniciar una transición después de que cambia el valor de una propiedad."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Retrasa el inicio de una transición.",
+          "Utiliza segundos o milisegundos.",
+          "Trabaja junto con transition-duration.",
+          "Ayuda a coordinar varias animaciones."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Buenas prácticas"
+      },
+      {
+        "type": "text",
+        "content": "Utiliza retrasos solo cuando mejoren la experiencia del usuario. Un tiempo de espera excesivo puede hacer que la interfaz se perciba lenta."
+      }
+    ]
+  }
+},
+{
+  "Category": "CSS Transform",
+  "Question Text": {
+    "en-US": [
+      "Which transform function rotates an element around its center?"
+    ],
+    "es-MX": [
+      "¿Qué función de transform rota un elemento alrededor de su centro?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "rotate()",
+      "translate()",
+      "scale()",
+      "skew()"
+    ],
+    "es-MX": [
+      "rotate()",
+      "translate()",
+      "scale()",
+      "skew()"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "rotate()",
+    "es-MX": "rotate()"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "rotate()"
+      },
+      {
+        "type": "text",
+        "content": "The <b>rotate()</b> function rotates an element around its transform origin by a specified angle. The angle can be expressed in degrees, radians, gradians or turns."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Rotates an element.",
+          "Uses angle values.",
+          "Belongs to the transform property.",
+          "Can rotate clockwise or counterclockwise."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Good Practices"
+      },
+      {
+        "type": "text",
+        "content": "Use subtle rotations to emphasize interaction without making interface elements difficult to read."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Función rotate()"
+      },
+      {
+        "type": "text",
+        "content": "La función <b>rotate()</b> permite girar un elemento alrededor de su punto de transformación utilizando un ángulo determinado. El ángulo puede expresarse en grados, radianes, gradianes o vueltas."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Gira un elemento.",
+          "Utiliza valores angulares.",
+          "Forma parte de la propiedad transform.",
+          "Puede girar en sentido horario o antihorario."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Buenas prácticas"
+      },
+      {
+        "type": "text",
+        "content": "Utiliza rotaciones discretas para resaltar una interacción sin dificultar la lectura de la interfaz."
+      }
+    ]
+  }
+},
+{
+  "Category": "CSS Transition",
+  "Question Text": {
+    "en-US": [
+      "Which transition property specifies the CSS property that will receive the animation effect?"
+    ],
+    "es-MX": [
+      "¿Qué propiedad de transition especifica cuál propiedad de CSS recibirá el efecto de animación?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "transition-property",
+      "transition-delay",
+      "transition-duration",
+      "transition-effect"
+    ],
+    "es-MX": [
+      "transition-property",
+      "transition-delay",
+      "transition-duration",
+      "transition-effect"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "transition-property",
+    "es-MX": "transition-property"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "transition-property"
+      },
+      {
+        "type": "text",
+        "content": "The <b>transition-property</b> property specifies which CSS property will be animated when its value changes. Only the selected properties receive the transition effect."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Defines which property is animated.",
+          "Works together with duration and delay.",
+          "Allows selective animations.",
+          "Improves transition control."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Good Practices"
+      },
+      {
+        "type": "text",
+        "content": "Specify only the properties that need animation to improve performance and make styles easier to maintain."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "transition-property"
+      },
+      {
+        "type": "text",
+        "content": "La propiedad <b>transition-property</b> especifica qué propiedad de CSS recibirá el efecto de transición cuando cambie su valor. Solo las propiedades seleccionadas serán animadas."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Define qué propiedad será animada.",
+          "Trabaja junto con duration y delay.",
+          "Permite animaciones selectivas.",
+          "Mejora el control de las transiciones."
+        ]
+      },
+      {
+        "type": "divider"
+      },
+      {
+        "type": "title-h2",
+        "content": "Buenas prácticas"
+      },
+      {
+        "type": "text",
+        "content": "Especifica únicamente las propiedades que realmente necesitan animarse para mejorar el rendimiento y facilitar el mantenimiento del código."
+      }
+    ]
+  }
+}
+
+    ]
+}

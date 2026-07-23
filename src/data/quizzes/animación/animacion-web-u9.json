@@ -1,0 +1,3247 @@
+{
+  "meta": {
+    "slug": "animacion-web-u9",
+    "title": "Web 2.0 y Tendencias de Desarrollo",
+    "subject": "DESARROLLO DE RECURSOS ANIMADOS PARA WEB",
+    "unit": 9,
+    "classNo": 0,
+    "description": "Unidad 9: Web 2.0, tendencias del desarrollo web, UI optimista, variables CSS, CSS Houdini, CSSOM, CSS in JS, versiones y niveles de CSS, WebGPU y tecnologías modernas para el desarrollo de aplicaciones web.",
+    "tags": [
+      "Web 2.0",
+      "Development Trends",
+      "Optimistic UI",
+      "CSS Variables",
+      "CSS Custom Properties",
+      "CSS Houdini",
+      "CSSOM",
+      "CSS in JS",
+      "Styled-components",
+      "Emotion",
+      "JSS",
+      "CSS Levels",
+      "CSS3",
+      "WebGPU",
+      "GPU",
+      "Modern CSS",
+      "Web Development",
+      "Animación Web"
+    ],
+    "questionCount": 27,
+    "languages": [
+      "en-US",
+      "es-MX"
+    ]
+  },
+  "Questions": [
+    {
+      "Category": "Web 2.0",
+      "Question Text": {
+        "en-US": [
+          "What is Web 2.0?"
+        ],
+        "es-MX": [
+          "¿Qué es la Web 2.0?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "An operating system that allowed the use of the Internet and web browsers.",
+          "A type of computer that allowed access to the Internet and web pages.",
+          "A version of the web where users were no longer only spectators, but also content creators (social networks).",
+          "The moment when mobile phones were able to access the Internet and share digital content."
+        ],
+        "es-MX": [
+          "Un sistema operativo de computadoras que permitía el uso de Internet y navegadores.",
+          "Un tipo de computadora que permitía acceder a Internet y navegar por páginas web.",
+          "Una versión de la web donde los usuarios ya no solo eran espectadores, sino creadores (redes sociales).",
+          "Es cuando los teléfonos móviles pudieron acceder a Internet y compartir contenidos digitales."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "A version of the web where users were no longer only spectators, but also content creators (social networks).",
+        "es-MX": "Una versión de la web donde los usuarios ya no solo eran espectadores, sino creadores (redes sociales)."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "What is Web 2.0?"
+          },
+          {
+            "type": "text",
+            "content": "Web 2.0 represents the evolution of the Internet from static websites to interactive platforms where users can create, share and collaborate on content. This stage gave rise to social networks, blogs, wikis and other collaborative services."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Users actively create content.",
+              "Encourages collaboration and interaction.",
+              "Includes social networks, blogs and wikis.",
+              "Improves communication between users."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "¿Qué es la Web 2.0?"
+          },
+          {
+            "type": "text",
+            "content": "La Web 2.0 representa la evolución de Internet desde páginas estáticas hacia plataformas interactivas donde los usuarios pueden crear, compartir y colaborar en la generación de contenido. Gracias a esta evolución surgieron las redes sociales, los blogs, las wikis y otros servicios colaborativos."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Los usuarios crean y comparten contenido.",
+              "Favorece la colaboración e interacción.",
+              "Incluye redes sociales, blogs y wikis.",
+              "Mejora la comunicación entre los usuarios."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Developer Specialization",
+      "Question Text": {
+        "en-US": [
+          "What specialization is recommended for a programmer?"
+        ],
+        "es-MX": [
+          "¿Qué especialización se le recomienda a un programador?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "The use of frameworks.",
+          "It depends on the developer's profile.",
+          "User Experience (UX) and User Interface (UI).",
+          "SEO and databases."
+        ],
+        "es-MX": [
+          "Uso de frameworks.",
+          "Depende del perfil del desarrollador.",
+          "En User Experience y User Interface.",
+          "En búsquedas SEO y base de datos."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "It depends on the developer's profile.",
+        "es-MX": "Depende del perfil del desarrollador."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Developer Specialization"
+          },
+          {
+            "type": "text",
+            "content": "There is no single specialization that is best for every programmer. The most appropriate specialization depends on each developer's interests, skills, experience and career goals. Some professionals focus on web development, mobile applications, cybersecurity, artificial intelligence or data science."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Depends on personal interests.",
+              "Depends on technical skills.",
+              "Depends on career goals.",
+              "There are many professional specializations."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Especialización del programador"
+          },
+          {
+            "type": "text",
+            "content": "No existe una especialización única para todos los programadores. La mejor opción depende de los intereses, habilidades, experiencia y objetivos profesionales de cada desarrollador. Algunos se especializan en desarrollo web, aplicaciones móviles, ciberseguridad, inteligencia artificial o ciencia de datos."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Depende de los intereses personales.",
+              "Depende de las habilidades técnicas.",
+              "Depende de los objetivos profesionales.",
+              "Existen múltiples áreas de especialización."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Software Development",
+      "Question Text": {
+        "en-US": [
+          "What is recommended for programmers?"
+        ],
+        "es-MX": [
+          "Se les recomienda a los programadores:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Learn a single programming language and focus only on it.",
+          "Stay updated and keep up with development trends.",
+          "Keep only the knowledge already acquired and ignore new trends until they become standardized.",
+          "Use only frameworks and avoid native programming languages."
+        ],
+        "es-MX": [
+          "Aprender un lenguaje en específico y solo enfocarse a él.",
+          "Mantenerse actualizados o conocer las tendencias de desarrollo.",
+          "Quedarse con los conocimientos obtenidos al momento y no seguir las tendencias hasta que estén normalizadas.",
+          "Utilizar solo frameworks y no trabajar con lenguajes nativos."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Stay updated and keep up with development trends.",
+        "es-MX": "Mantenerse actualizados o conocer las tendencias de desarrollo."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Keeping Up to Date"
+          },
+          {
+            "type": "text",
+            "content": "Technology evolves constantly. Programmers should continue learning new languages, frameworks, tools and best practices to remain competitive and develop modern, efficient and secure software solutions."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Learn continuously.",
+              "Follow new technologies.",
+              "Improve technical skills.",
+              "Adapt to industry changes."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Mantenerse actualizado"
+          },
+          {
+            "type": "text",
+            "content": "La tecnología evoluciona constantemente. Por ello, es recomendable que los programadores continúen aprendiendo nuevos lenguajes, frameworks, herramientas y buenas prácticas para mantenerse competitivos y desarrollar soluciones modernas, eficientes y seguras."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Aprender de forma continua.",
+              "Conocer nuevas tecnologías.",
+              "Mejorar las habilidades técnicas.",
+              "Adaptarse a los cambios de la industria."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Optimistic UI",
+      "Question Text": {
+        "en-US": [
+          "What is optimistic UI?"
+        ],
+        "es-MX": [
+          "¿Qué es UI optimista?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "A clean and minimalist interface designed to provide the best user experience.",
+          "An interface with bright colors and good contrast that creates a pleasant user experience.",
+          "An interface focused on animations to make applications easier to use.",
+          "An interface that displays the final state before the action completes its actual work, optimizing time and experience."
+        ],
+        "es-MX": [
+          "Interfaz limpia y minimalista para ofrecer la mejor experiencia de usuario.",
+          "Interfaz con colores llamativos y buenos contrastes que generen una experiencia agradable en el usuario.",
+          "Interfaz que se centra en animaciones para facilitar el uso a los usuarios.",
+          "Interfaz que muestra el estado final antes de que la acción termine el trabajo real para optimizar tiempos y experiencia."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "An interface that displays the final state before the action completes its actual work, optimizing time and experience.",
+        "es-MX": "Interfaz que muestra el estado final antes de que la acción termine el trabajo real para optimizar tiempos y experiencia."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Optimistic UI"
+          },
+          {
+            "type": "text",
+            "content": "An <b>optimistic UI</b> immediately displays the expected final state of an action while the actual request continues in the background. The interface assumes that the operation will succeed instead of blocking the user while waiting for confirmation from the server."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Displays the expected result immediately.",
+              "Performs the actual request in the background.",
+              "Makes the application feel faster.",
+              "Allows the user to continue performing other actions."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Optimistic UI reduces the perception of waiting and can make an application feel simpler, faster and more responsive, although failures must be detected and handled correctly."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "UI optimista"
+          },
+          {
+            "type": "text",
+            "content": "Una <b>UI optimista</b> muestra inmediatamente el estado final esperado de una acción mientras la solicitud real continúa ejecutándose en segundo plano. La interfaz supone que la operación tendrá éxito en lugar de bloquear al usuario mientras espera la confirmación del servidor."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Muestra inmediatamente el resultado esperado.",
+              "Realiza la solicitud real en segundo plano.",
+              "Hace que la aplicación se perciba más rápida.",
+              "Permite que el usuario continúe realizando otras acciones."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "La UI optimista reduce la percepción del tiempo de espera y puede hacer que una aplicación parezca más sencilla, rápida y amigable, aunque los posibles fallos deben detectarse y manejarse correctamente."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Optimistic UI",
+      "Question Text": {
+        "en-US": [
+          "What are the disadvantages of using optimistic UI?"
+        ],
+        "es-MX": [
+          "¿Cuáles son las desventajas de usar UI optimista?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "The interface may be slow, it is difficult to program and the application may not be user-friendly.",
+          "Errors are difficult to handle; an unreliable server can bring down the system, and large sending queues can block the application.",
+          "Errors are difficult to handle, the interface may be slow and the application becomes very heavy.",
+          "An unreliable server can bring down the system, many colors cannot be used and the design is not user-friendly."
+        ],
+        "es-MX": [
+          "La interfaz puede ir lenta, no es fácil de programar y la aplicación puede ser poco amigable.",
+          "Los errores son complicados de manejar; si el servidor no es fiable, puede tirar el sistema y, si las colas de envío son grandes, bloquean la aplicación.",
+          "Los errores son complicados de manejar, la interfaz puede ir lenta y la aplicación es muy pesada.",
+          "Si el servidor no es fiable puede tirar el sistema, no se puede usar gran cantidad de colores y el diseño es poco amigable."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Errors are difficult to handle; an unreliable server can bring down the system, and large sending queues can block the application.",
+        "es-MX": "Los errores son complicados de manejar; si el servidor no es fiable, puede tirar el sistema y, si las colas de envío son grandes, bloquean la aplicación."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Optimistic UI Risks"
+          },
+          {
+            "type": "text",
+            "content": "Optimistic UI requires careful error management because the interface displays a successful result before receiving confirmation. When a request fails, the application must retry it, restore the previous state or clearly communicate the problem."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Error handling becomes more complex.",
+              "An unreliable server can damage the user experience.",
+              "Failed requests may generate large waiting queues.",
+              "Uncontrolled queues can block the application or cause unexpected errors."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Implement retry limits, visible error states and recovery mechanisms so that the interface does not continue displaying a successful result when the real operation has failed."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Riesgos de la UI optimista"
+          },
+          {
+            "type": "text",
+            "content": "La UI optimista requiere un manejo cuidadoso de los errores porque la interfaz muestra un resultado exitoso antes de recibir la confirmación. Cuando una solicitud falla, la aplicación debe reintentarlo, recuperar el estado anterior o comunicar claramente el problema."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "El manejo de errores es más complejo.",
+              "Un servidor poco fiable puede perjudicar la experiencia.",
+              "Las solicitudes fallidas pueden generar grandes colas de espera.",
+              "Las colas sin control pueden bloquear la aplicación o provocar errores inesperados."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "Establece límites de reintentos, estados de error visibles y mecanismos de recuperación para evitar que la interfaz mantenga un resultado exitoso cuando la operación real haya fallado."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Optimistic UI",
+      "Question Text": {
+        "en-US": [
+          "Which is an example of optimistic UI?"
+        ],
+        "es-MX": [
+          "Es un ejemplo de UI optimista:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "A chat designed to share any type of multimedia content.",
+          "A chat designed with accessibility and bright colors in mind.",
+          "A chat that sends messages even without a server connection, trusting that they will be delivered when the application is online.",
+          "A chat designed to send messages from any device and share any type of multimedia content."
+        ],
+        "es-MX": [
+          "Un chat diseñado para compartir cualquier contenido multimedia.",
+          "Un chat diseñado contemplando la accesibilidad y el diseño en colores llamativos.",
+          "Un chat que envíe mensajes a pesar de no tener conexión al servidor, confiando que los mensajes se enviarán cuando la aplicación esté en línea.",
+          "Un chat diseñado para enviar mensajes desde cualquier dispositivo y compartir cualquier tipo de contenido multimedia."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "A chat that sends messages even without a server connection, trusting that they will be delivered when the application is online.",
+        "es-MX": "Un chat que envíe mensajes a pesar de no tener conexión al servidor, confiando que los mensajes se enviarán cuando la aplicación esté en línea."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Optimistic Chat"
+          },
+          {
+            "type": "text",
+            "content": "In an optimistic chat, the message appears immediately in the conversation even if the server has not confirmed its delivery. The application stores the pending operation and attempts to send it when the connection becomes available."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "The message appears immediately.",
+              "The user does not wait for server confirmation.",
+              "Pending messages can be placed in a sending queue.",
+              "The delivery status is confirmed or corrected later."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Clearly distinguish pending, delivered and failed messages, and provide retry options when a message cannot be sent."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Chat optimista"
+          },
+          {
+            "type": "text",
+            "content": "En un chat optimista, el mensaje aparece inmediatamente en la conversación aunque el servidor todavía no haya confirmado su entrega. La aplicación conserva la operación pendiente e intenta enviarla cuando la conexión esté disponible."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "El mensaje aparece inmediatamente.",
+              "El usuario no espera la confirmación del servidor.",
+              "Los mensajes pendientes pueden almacenarse en una cola de envío.",
+              "El estado de entrega se confirma o corrige posteriormente."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "Diferencia claramente los mensajes pendientes, entregados y fallidos, y ofrece opciones de reintento cuando un mensaje no pueda enviarse."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CSS Variables",
+      "Question Text": {
+        "en-US": [
+          "Which preprocessors support variables in CSS?"
+        ],
+        "es-MX": [
+          "Preprocesadores que permiten variables en CSS:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "jQuery, CSS Grid and SASS.",
+          "Less, Bootstrap and CSS Grid.",
+          "SASS, Less and SCSS.",
+          "Bootstrap, SASS and Less."
+        ],
+        "es-MX": [
+          "jQuery, CSS Grid y SASS.",
+          "Less, Bootstrap y CSS Grid.",
+          "SASS, Less y SCSS.",
+          "Bootstrap, SASS y Less."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "SASS, Less and SCSS.",
+        "es-MX": "SASS, Less y SCSS."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "CSS Preprocessors"
+          },
+          {
+            "type": "text",
+            "content": "Preprocessors such as <b>SASS</b>, <b>Less</b> and <b>SCSS</b> extend CSS with additional features, including variables. These variables make it possible to store reusable values such as colors, spacing, sizes and fonts."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "SASS supports variables.",
+              "SCSS is a syntax of SASS.",
+              "Less also supports reusable variables.",
+              "Variables help keep styles consistent."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Using variables reduces repeated values and makes large style sheets easier to update, organize and maintain."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Preprocesadores de CSS"
+          },
+          {
+            "type": "text",
+            "content": "Los preprocesadores <b>SASS</b>, <b>Less</b> y <b>SCSS</b> amplían las características de CSS e incorporan el uso de variables. Estas permiten almacenar valores reutilizables como colores, espacios, tamaños y tipografías."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "SASS permite utilizar variables.",
+              "SCSS es una sintaxis de SASS.",
+              "Less también admite variables reutilizables.",
+              "Las variables ayudan a mantener estilos consistentes."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Las variables reducen la repetición de valores y facilitan la actualización, organización y mantenimiento de hojas de estilo extensas."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CSS Variables",
+      "Question Text": {
+        "en-US": [
+          "How is a variable declared in CSS?"
+        ],
+        "es-MX": [
+          "Así se escribe una variable en CSS:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "#red: red;",
+          "-red: red;",
+          "--red: red;",
+          "var--red: red;"
+        ],
+        "es-MX": [
+          "#rojo: red;",
+          "-rojo: red;",
+          "--rojo: red;",
+          "var--rojo: red;"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "--red: red;",
+        "es-MX": "--rojo: red;"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "CSS Variable Declaration"
+          },
+          {
+            "type": "text",
+            "content": "A CSS custom property is declared with a name that begins with two hyphens, followed by a colon and its value. For example: <b>--red: red;</b>. It is commonly declared inside <b>:root</b> so it can be reused throughout the document."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Declaration → --red: red;",
+              "Global scope → :root { --red: red; }",
+              "Usage → color: var(--red);",
+              "The name must begin with two hyphens."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Use descriptive names such as --primary-color or --main-spacing so the purpose of each value is easy to identify."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Declaración de variables CSS"
+          },
+          {
+            "type": "text",
+            "content": "Una propiedad personalizada de CSS se declara con un nombre que comienza con dos guiones, seguido de dos puntos y su valor. Por ejemplo: <b>--rojo: red;</b>. Normalmente se declara dentro de <b>:root</b> para poder reutilizarla en todo el documento."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Declaración → --rojo: red;",
+              "Alcance global → :root { --rojo: red; }",
+              "Uso → color: var(--rojo);",
+              "El nombre debe comenzar con dos guiones."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "Utiliza nombres descriptivos como --color-principal o --espaciado-general para identificar fácilmente la función de cada valor."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CSS Variables",
+      "Question Text": {
+        "en-US": [
+          "Which is a limitation found when using variables in CSS?"
+        ],
+        "es-MX": [
+          "Es un problema que encontramos al usar variables en CSS:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "They cannot be used inside media queries.",
+          "They are heavy.",
+          "They must be declared in a CSS file different from the main file.",
+          "They cannot be used in mobile applications."
+        ],
+        "es-MX": [
+          "No se pueden usar dentro de media queries.",
+          "Son pesadas.",
+          "Se deben escribir en otro archivo CSS diferente al principal.",
+          "No se pueden usar en aplicaciones de dispositivos móviles."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "They cannot be used inside media queries.",
+        "es-MX": "No se pueden usar dentro de media queries."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "CSS Variables and Media Queries"
+          },
+          {
+            "type": "text",
+            "content": "CSS variables store values that can be reused in property declarations. However, they cannot replace the conditions or structural parts of a media query, such as its breakpoint expression."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "A variable can be reassigned inside a media query.",
+              "It can be used by properties within the media query.",
+              "It cannot replace the media query condition itself.",
+              "Breakpoints must be written directly in the query."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Example"
+          },
+          {
+            "type": "text",
+            "content": "A valid use is <b>@media (max-width: 600px) { :root { --spacing: 8px; } }</b>. The variable changes inside the query, but it does not replace the value 600px in the condition."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Variables CSS y media queries"
+          },
+          {
+            "type": "text",
+            "content": "Las variables CSS almacenan valores reutilizables para las declaraciones de propiedades. Sin embargo, no pueden sustituir las condiciones ni las partes estructurales de una media query, como la expresión que establece el punto de ruptura."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Una variable puede redefinirse dentro de una media query.",
+              "Puede utilizarse en propiedades ubicadas dentro de la consulta.",
+              "No puede reemplazar directamente la condición de la media query.",
+              "Los puntos de ruptura deben escribirse en la consulta."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Ejemplo"
+          },
+          {
+            "type": "text",
+            "content": "Un uso válido es <b>@media (max-width: 600px) { :root { --espaciado: 8px; } }</b>. La variable cambia dentro de la consulta, pero no sustituye el valor 600px de la condición."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CSS Houdini",
+      "Question Text": {
+        "en-US": [
+          "What is CSS Houdini?"
+        ],
+        "es-MX": [
+          "¿Qué es CSS Houdini?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "An API that allows developers to extend and modify the browser's CSS rendering engine.",
+          "A CSS gallery containing many animated effects.",
+          "An API with predefined animations for DOM elements.",
+          "A CSS preprocessor that supports variables."
+        ],
+        "es-MX": [
+          "Es un API que permite a los desarrolladores extender y modificar el motor de renderizado CSS del navegador.",
+          "Una galería CSS con muchos efectos animados.",
+          "Un API con animaciones predefinidas para usar con elementos en el DOM.",
+          "Es procesador CSS que permite variables en CSS."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "An API that allows developers to extend and modify the browser's CSS rendering engine.",
+        "es-MX": "Es un API que permite a los desarrolladores extender y modificar el motor de renderizado CSS del navegador."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "CSS Houdini"
+          },
+          {
+            "type": "text",
+            "content": "CSS Houdini is a collection of low-level APIs that exposes parts of the browser's CSS engine. It gives developers greater control over how the browser interprets, calculates and renders styles."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Provides access to parts of the CSS engine.",
+              "Allows developers to extend CSS behavior.",
+              "Can create new implementations for CSS properties.",
+              "Makes advanced visual effects possible."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "CSS Houdini expands the possibilities of standard CSS by allowing developers to create behaviors and visual effects that the browser can process as part of its rendering system."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "CSS Houdini"
+          },
+          {
+            "type": "text",
+            "content": "CSS Houdini es un conjunto de API de bajo nivel que expone partes del motor CSS del navegador. Esto brinda a los desarrolladores mayor control sobre la forma en que el navegador interpreta, calcula y renderiza los estilos."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Permite acceder a partes del motor CSS.",
+              "Amplía el comportamiento de CSS.",
+              "Permite crear nuevas implementaciones de propiedades.",
+              "Facilita efectos visuales avanzados."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "CSS Houdini amplía las posibilidades del CSS tradicional al permitir crear comportamientos y efectos que el navegador puede procesar como parte de su sistema de renderizado."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CSS Houdini",
+      "Question Text": {
+        "en-US": [
+          "What does CSSOM stand for?"
+        ],
+        "es-MX": [
+          "¿Qué significa CSSOM?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Centralized Style Syntax Object Model.",
+          "Combined Style and Structure Object Model.",
+          "Cascading Style Sheets Object Model.",
+          "Comprehensive Styling System Object Model."
+        ],
+        "es-MX": [
+          "Centralized style syntax object model.",
+          "Combined style and structure object model.",
+          "Cascading style sheets object model.",
+          "Comprehensive styling system object model."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Cascading Style Sheets Object Model.",
+        "es-MX": "Cascading style sheets object model."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "CSS Object Model"
+          },
+          {
+            "type": "text",
+            "content": "The <b>CSS Object Model (CSSOM)</b> is the object-based representation of the styles applied to a web document. It allows scripts and browser APIs to read, modify and manage CSS rules programmatically."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Represents CSS rules as objects.",
+              "Allows styles to be accessed with JavaScript.",
+              "Supports dynamic modification of style rules.",
+              "Participates in the browser rendering process."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "CSS Houdini provides direct access to parts of the CSSOM, allowing developers to create code that the browser can interpret and process as CSS."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Modelo de objetos CSS"
+          },
+          {
+            "type": "text",
+            "content": "El <b>CSS Object Model (CSSOM)</b> es la representación mediante objetos de los estilos aplicados a un documento web. Permite que los scripts y las API del navegador consulten, modifiquen y administren las reglas CSS."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Representa las reglas CSS como objetos.",
+              "Permite acceder a los estilos mediante JavaScript.",
+              "Admite la modificación dinámica de reglas.",
+              "Participa en el proceso de renderizado."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "CSS Houdini ofrece acceso directo a partes del CSSOM, permitiendo desarrollar código que el navegador puede interpretar y procesar como CSS."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CSS Houdini",
+      "Question Text": {
+        "en-US": [
+          "What is the main advantage of CSS Houdini over regular CSS?"
+        ],
+        "es-MX": [
+          "¿Cuál es la ventaja principal de CSS Houdini sobre CSS simple?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Greater browser compatibility.",
+          "It makes complex styles easier to write.",
+          "It allows the CSS rendering process to be modified to optimize loading.",
+          "It improves website security."
+        ],
+        "es-MX": [
+          "Mayor compatibilidad con navegadores.",
+          "Facilita la escritura de estilos complejos.",
+          "Permite modificar el renderizado CSS para optimizar la carga.",
+          "Mejora la seguridad del diseño web."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "It allows the CSS rendering process to be modified to optimize loading.",
+        "es-MX": "Permite modificar el renderizado CSS para optimizar la carga."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Rendering Control"
+          },
+          {
+            "type": "text",
+            "content": "CSS Houdini gives developers access to low-level parts of the CSS rendering process. This makes it possible to create specialized implementations for properties and visual effects instead of depending exclusively on the browser's predefined CSS features."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Provides greater control over rendering.",
+              "Can extend existing CSS properties.",
+              "Allows the creation of new visual behaviors.",
+              "Can optimize how particular effects are processed."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Use CSS Houdini carefully because low-level rendering customization can increase complexity and may affect compatibility, accessibility, privacy or security when it is implemented incorrectly."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Control del renderizado"
+          },
+          {
+            "type": "text",
+            "content": "CSS Houdini brinda acceso a partes de bajo nivel del proceso de renderizado CSS. Esto permite crear implementaciones especializadas para propiedades y efectos visuales, en lugar de depender únicamente de las funciones CSS predefinidas por el navegador."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Ofrece mayor control sobre el renderizado.",
+              "Puede ampliar propiedades CSS existentes.",
+              "Permite crear nuevos comportamientos visuales.",
+              "Puede optimizar el procesamiento de determinados efectos."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "Utiliza CSS Houdini con cuidado, ya que la personalización de bajo nivel aumenta la complejidad y puede afectar la compatibilidad, accesibilidad, privacidad o seguridad cuando se implementa incorrectamente."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CSS in JS",
+      "Question Text": {
+        "en-US": [
+          "What is CSS in JS?"
+        ],
+        "es-MX": [
+          "¿Qué es CSS in JS?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "A technique that consists of creating CSS styles using JavaScript.",
+          "A framework that integrates CSS into JavaScript.",
+          "A JavaScript library that removes the need to use CSS.",
+          "A technique that combines CSS and JavaScript into a single file with a .JSS extension."
+        ],
+        "es-MX": [
+          "Una técnica que consiste en crear los estilos de CSS mediante JavaScript.",
+          "Un framework que integra CSS en JavaScript.",
+          "Una librería JavaScript que suprime la necesidad de usar CSS.",
+          "Una técnica que permite unificar CSS y JavaScript en un solo archivo con extensión JSS."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "A technique that consists of creating CSS styles using JavaScript.",
+        "es-MX": "Una técnica que consiste en crear los estilos de CSS mediante JavaScript."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "CSS in JS"
+          },
+          {
+            "type": "text",
+            "content": "<b>CSS in JS</b> is a technique that creates and manages CSS styles through JavaScript. Styles can be associated directly with components, generated dynamically and modified according to application data or state."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Creates CSS styles using JavaScript.",
+              "Can generate styles dynamically.",
+              "Associates styles with components.",
+              "Supports reuse and encapsulation."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "CSS in JS is useful in component-based applications because it allows styles, behavior and component structure to be organized together while still generating CSS that the browser can render."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "CSS in JS"
+          },
+          {
+            "type": "text",
+            "content": "<b>CSS in JS</b> es una técnica que permite crear y administrar estilos CSS mediante JavaScript. Los estilos pueden asociarse directamente con los componentes, generarse dinámicamente y modificarse según los datos o el estado de la aplicación."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Crea estilos CSS mediante JavaScript.",
+              "Permite generar estilos dinámicos.",
+              "Asocia los estilos con los componentes.",
+              "Favorece la reutilización y encapsulación."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "CSS in JS resulta útil en aplicaciones basadas en componentes porque permite organizar conjuntamente los estilos, el comportamiento y la estructura del componente, generando finalmente CSS que el navegador puede renderizar."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CSS in JS",
+      "Question Text": {
+        "en-US": [
+          "What are advantages of CSS in JS?"
+        ],
+        "es-MX": [
+          "Ventajas de CSS in JS:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "It simplifies naming consistency during development and encapsulates components.",
+          "It improves website performance and is easier to implement during development.",
+          "It eliminates CSS conflicts and improves website performance.",
+          "It is easy to use and encapsulates components."
+        ],
+        "es-MX": [
+          "Simplifica la consistencia en las nomenclaturas del desarrollo y encapsula componentes.",
+          "Mejora el rendimiento del sitio y es más fácil de implementar en el desarrollo.",
+          "Elimina los conflictos del CSS y mejora el rendimiento del sitio.",
+          "Fácil de utilizar y encapsula componentes."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "It simplifies naming consistency during development and encapsulates components.",
+        "es-MX": "Simplifica la consistencia en las nomenclaturas del desarrollo y encapsula componentes."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Advantages of CSS in JS"
+          },
+          {
+            "type": "text",
+            "content": "CSS in JS can simplify style naming and encapsulate the styles that belong to each component. This reduces the need for global naming conventions and helps organize styles according to the structure of the application."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Improves naming consistency.",
+              "Encapsulates component styles.",
+              "Reduces dependence on global class names.",
+              "Supports reusable component-based styles."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Keep style definitions close to the component they belong to, use clear names and avoid generating unnecessary dynamic styles that make the code difficult to understand."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Ventajas de CSS in JS"
+          },
+          {
+            "type": "text",
+            "content": "CSS in JS puede simplificar la nomenclatura de los estilos y encapsular aquellos que pertenecen a cada componente. Esto reduce la necesidad de utilizar convenciones globales y ayuda a organizar los estilos conforme a la estructura de la aplicación."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Mejora la consistencia de las nomenclaturas.",
+              "Encapsula los estilos de cada componente.",
+              "Reduce la dependencia de clases globales.",
+              "Favorece estilos reutilizables por componentes."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "Mantén las definiciones de estilo cerca del componente correspondiente, utiliza nombres claros y evita generar estilos dinámicos innecesarios que dificulten la comprensión del código."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CSS in JS",
+      "Question Text": {
+        "en-US": [
+          "Which libraries implement CSS in JS?"
+        ],
+        "es-MX": [
+          "Librerías que implementan CSS in JS:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "PHP, Emotion and Python.",
+          "AnimeJS, Laravel and JSS.",
+          "Styled-components, JSS and Emotion.",
+          "AniJS, JSS and Laravel."
+        ],
+        "es-MX": [
+          "PHP, Emotion y Python.",
+          "AnimeJS, Laravel y JSS.",
+          "Styled-components, JSS y Emotion.",
+          "AniJS, JSS y Laravel."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Styled-components, JSS and Emotion.",
+        "es-MX": "Styled-components, JSS y Emotion."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "CSS in JS Libraries"
+          },
+          {
+            "type": "text",
+            "content": "<b>Styled-components</b>, <b>JSS</b> and <b>Emotion</b> are tools that allow developers to define CSS styles through JavaScript. They provide different syntaxes and mechanisms for creating dynamic, reusable and component-scoped styles."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Styled-components creates styled components.",
+              "JSS generates CSS from JavaScript objects.",
+              "Emotion supports dynamic and component-based styles.",
+              "All three help organize styles in JavaScript applications."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "These libraries help connect styles with application components and logic, making it possible to create reusable styles that respond to properties, state and other JavaScript values."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Librerías CSS in JS"
+          },
+          {
+            "type": "text",
+            "content": "<b>Styled-components</b>, <b>JSS</b> y <b>Emotion</b> son herramientas que permiten definir estilos CSS mediante JavaScript. Cada una ofrece diferentes sintaxis y mecanismos para crear estilos dinámicos, reutilizables y asociados con componentes."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Styled-components permite crear componentes con estilos.",
+              "JSS genera CSS a partir de objetos de JavaScript.",
+              "Emotion admite estilos dinámicos y basados en componentes.",
+              "Las tres ayudan a organizar estilos en aplicaciones JavaScript."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Estas librerías permiten relacionar los estilos con los componentes y la lógica de la aplicación, facilitando la creación de estilos reutilizables que respondan a propiedades, estados y otros valores de JavaScript."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CSS Levels",
+      "Question Text": {
+        "en-US": [
+          "How many versions of CSS are there?"
+        ],
+        "es-MX": [
+          "¿Cuántas versiones de CSS existen?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Three.",
+          "Two.",
+          "Five.",
+          "One."
+        ],
+        "es-MX": [
+          "Tres.",
+          "Dos.",
+          "Cinco.",
+          "Una."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Three.",
+        "es-MX": "Tres."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "CSS Versions"
+          },
+          {
+            "type": "text",
+            "content": "The general evolution of CSS is divided into three main versions: <b>CSS1</b>, <b>CSS2</b> and <b>CSS3</b>. Each version expanded the possibilities for styling and organizing web documents."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "CSS1 established the initial foundations.",
+              "CSS2 expanded layout and styling properties.",
+              "CSS3 introduced a modular development system.",
+              "Individual CSS modules can evolve independently."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Understanding the three main versions helps explain how CSS evolved from basic visual formatting into a modular technology with independently developed features."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Versiones de CSS"
+          },
+          {
+            "type": "text",
+            "content": "La evolución general de CSS se divide en tres versiones principales: <b>CSS1</b>, <b>CSS2</b> y <b>CSS3</b>. Cada versión amplió las posibilidades para aplicar estilos y organizar documentos web."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "CSS1 estableció las bases iniciales.",
+              "CSS2 amplió las propiedades de diseño y estilo.",
+              "CSS3 introdujo un sistema de desarrollo modular.",
+              "Los módulos de CSS pueden evolucionar de manera independiente."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Conocer las tres versiones principales permite comprender cómo CSS evolucionó desde el formato visual básico hasta convertirse en una tecnología modular con características desarrolladas de forma independiente."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CSS Levels",
+      "Question Text": {
+        "en-US": [
+          "Which CSS version changed its development system to modules?"
+        ],
+        "es-MX": [
+          "Versión de CSS que cambia su sistema a módulos:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "CSS1.",
+          "CSS2.",
+          "CSS3.",
+          "CSS4."
+        ],
+        "es-MX": [
+          "CSS1.",
+          "CSS2.",
+          "CSS3.",
+          "CSS4."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "CSS3.",
+        "es-MX": "CSS3."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "CSS3 Modules"
+          },
+          {
+            "type": "text",
+            "content": "With <b>CSS3</b>, the development system was divided into independent modules. Instead of developing every CSS feature as part of one complete version, areas such as selectors, colors, backgrounds and animations could progress separately."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "CSS3 introduced modular development.",
+              "Each module can progress independently.",
+              "Modules can have different maturity levels.",
+              "A module may reach a level higher than three."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "The modular system allows CSS features to evolve at different speeds without waiting for an entirely new version of the language."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Módulos de CSS3"
+          },
+          {
+            "type": "text",
+            "content": "Con <b>CSS3</b>, el sistema de desarrollo se dividió en módulos independientes. En lugar de desarrollar todas las características como parte de una sola versión completa, áreas como selectores, colores, fondos y animaciones pueden avanzar por separado."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "CSS3 introdujo el desarrollo modular.",
+              "Cada módulo puede avanzar independientemente.",
+              "Los módulos pueden tener distintos niveles de madurez.",
+              "Un módulo puede alcanzar un nivel superior a tres."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "El sistema modular permite que las características de CSS evolucionen a distintas velocidades sin tener que esperar una versión completamente nueva del lenguaje."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "CSS Levels",
+      "Question Text": {
+        "en-US": [
+          "Is CSS4 an official version?"
+        ],
+        "es-MX": [
+          "¿La versión de CSS4 es oficial?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "No, it is not being developed because CSS3 is sufficient.",
+          "Yes, it is recognized and is the current CSS standard.",
+          "The name CSS4 has not been formally declared because CSS changes and its scope continue to evolve.",
+          "Yes, but only beta versions can be used."
+        ],
+        "es-MX": [
+          "No, todavía no se desarrolla, ya que CSS3 es suficiente.",
+          "Sí, está reconocida y es el actual estándar de CSS.",
+          "Formalmente no se ha declarado nombre de CSS4, ya que los cambios y la profundidad de CSS han estado cambiando constantemente.",
+          "Sí, pero apenas son versiones beta las que se pueden usar."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "The name CSS4 has not been formally declared because CSS changes and its scope continue to evolve.",
+        "es-MX": "Formalmente no se ha declarado nombre de CSS4, ya que los cambios y la profundidad de CSS han estado cambiando constantemente."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "CSS4 and CSS Levels"
+          },
+          {
+            "type": "text",
+            "content": "CSS does not continue as a single complete version called <b>CSS4</b>. After CSS3, its features are developed through independent modules, and each module can receive its own level number."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "CSS3 remains the last general version name.",
+              "Modern CSS develops through independent modules.",
+              "Some modules have reached Level 4.",
+              "A Level 4 module does not mean that CSS4 exists as a complete version."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "The level number identifies the evolution of an individual module, such as Selectors Level 4, rather than a new version that replaces all of CSS3."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "CSS4 y los niveles de CSS"
+          },
+          {
+            "type": "text",
+            "content": "CSS no continúa como una sola versión completa denominada <b>CSS4</b>. Después de CSS3, sus características se desarrollan mediante módulos independientes y cada módulo puede recibir su propio número de nivel."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "CSS3 permanece como el último nombre de versión general.",
+              "El CSS moderno se desarrolla mediante módulos independientes.",
+              "Algunos módulos han alcanzado el nivel 4.",
+              "Un módulo de nivel 4 no significa que exista una versión completa CSS4."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "El número de nivel identifica la evolución de un módulo particular, como Selectors Level 4, y no una nueva versión que sustituya completamente a CSS3."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "WebGPU",
+      "Question Text": {
+        "en-US": [
+          "What is WebGPU used for?"
+        ],
+        "es-MX": [
+          "¿Para qué sirve WebGPU?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "For graphics rendering, because it provides a low-level API to accelerate graphics rendering in web applications.",
+          "For data compression, because it enables efficient compression of multimedia data in web environments.",
+          "For text processing, because it improves the speed and quality of text rendering on web pages.",
+          "For secure browsing, because it reinforces security while browsing the web and protects against cyberthreats."
+        ],
+        "es-MX": [
+          "Para la renderización gráfica, ya que proporciona una API de bajo nivel para acelerar la renderización de gráficos en aplicaciones web.",
+          "Para la compresión de datos, ya que permite la compresión eficiente de datos multimedia en entornos web.",
+          "Para el procesamiento de texto, ya que mejora la velocidad y calidad de renderización de texto en páginas web.",
+          "Para la navegación segura, ya que refuerza la seguridad durante la navegación web y protege contra amenazas cibernéticas."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "For graphics rendering, because it provides a low-level API to accelerate graphics rendering in web applications.",
+        "es-MX": "Para la renderización gráfica, ya que proporciona una API de bajo nivel para acelerar la renderización de gráficos en aplicaciones web."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "WebGPU"
+          },
+          {
+            "type": "text",
+            "content": "<b>WebGPU</b> is a low-level web graphics API designed to provide efficient access to the graphics processor. It allows web applications to perform complex rendering operations with greater performance, portability and control."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Provides low-level access to the GPU.",
+              "Accelerates graphics rendering.",
+              "Supports high-performance visual applications.",
+              "Aims to offer greater efficiency than WebGL."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "WebGPU expands the possibilities of web graphics by supporting complex scenes, animations and graphical calculations while seeking lower resource consumption and improved performance."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "WebGPU"
+          },
+          {
+            "type": "text",
+            "content": "<b>WebGPU</b> es una API gráfica de bajo nivel diseñada para proporcionar acceso eficiente al procesador gráfico. Permite que las aplicaciones web realicen operaciones complejas de renderizado con mayor rendimiento, portabilidad y control."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Proporciona acceso de bajo nivel a la GPU.",
+              "Acelera la renderización de gráficos.",
+              "Admite aplicaciones visuales de alto rendimiento.",
+              "Busca ofrecer una mayor eficiencia que WebGL."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "WebGPU amplía las posibilidades de los gráficos web al permitir escenas, animaciones y cálculos gráficos complejos, buscando reducir el consumo de recursos y mejorar el rendimiento."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "WebXR",
+      "Question Text": {
+        "en-US": [
+          "What is the WebXR Device API used for?"
+        ],
+        "es-MX": [
+          "¿Para qué sirve WebXR Device API?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "It facilitates the efficient transfer and processing of data in the cloud.",
+          "It improves security measures to protect user privacy during immersive web experiences.",
+          "It defines standards for 3D scenes used in virtual reality and augmented reality.",
+          "It improves the rendering of 3D elements on a web page."
+        ],
+        "es-MX": [
+          "Facilita la transferencia y procesamiento de datos en la nube de manera eficiente.",
+          "Mejora las medidas de seguridad para proteger la privacidad del usuario durante experiencias inmersivas en la web.",
+          "Para definir los estándares de escenas 3D para realidad virtual y realidad aumentada.",
+          "Mejorar la renderización de elementos 3D en una página web."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "It defines standards for 3D scenes used in virtual reality and augmented reality.",
+        "es-MX": "Para definir los estándares de escenas 3D para realidad virtual y realidad aumentada."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "WebXR Device API"
+          },
+          {
+            "type": "text",
+            "content": "The <b>WebXR Device API</b> is a collection of browser APIs for creating immersive virtual reality and augmented reality experiences. It connects web applications with compatible devices, sensors and input systems."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Supports virtual reality experiences.",
+              "Supports augmented reality experiences.",
+              "Detects compatible input and output devices.",
+              "Processes movements from the head, camera and device sensors."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "WebXR provides a common structure for rendering immersive scenes, tracking movement and adapting web experiences to virtual or augmented reality devices."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "WebXR Device API"
+          },
+          {
+            "type": "text",
+            "content": "La <b>WebXR Device API</b> es un conjunto de API del navegador para crear experiencias inmersivas de realidad virtual y realidad aumentada. Permite conectar las aplicaciones web con dispositivos, sensores y sistemas de entrada compatibles."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Admite experiencias de realidad virtual.",
+              "Admite experiencias de realidad aumentada.",
+              "Detecta dispositivos de entrada y salida compatibles.",
+              "Procesa movimientos de la cabeza, cámara y sensores del dispositivo."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "WebXR proporciona una estructura común para renderizar escenas inmersivas, registrar movimientos y adaptar las experiencias web a dispositivos de realidad virtual o aumentada."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Web APIs",
+      "Question Text": {
+        "en-US": [
+          "Is it advisable to use APIs in software development?"
+        ],
+        "es-MX": [
+          "¿Es recomendable usar API en los desarrollos?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Yes, because they enrich projects with tools and effects; however, they are often complex to learn.",
+          "No, because they cause slow rendering in software projects.",
+          "Yes, because they are very easy to use and include efficient content by default.",
+          "No, because they affect development times and cause code problems when the project is incompatible."
+        ],
+        "es-MX": [
+          "Sí, de esta manera los desarrollos se enriquecen de herramientas o efectos; sin embargo, suelen ser complejos de aprender.",
+          "No, porque generan cargas lentas en el renderizado del desarrollo.",
+          "Sí, porque son muy fáciles de usar y traen contenido desarrollado para hacer más eficiente su uso.",
+          "No, llegan a afectar los tiempos de desarrollo y el código da problemas si el desarrollo no es compatible."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Yes, because they enrich projects with tools and effects; however, they are often complex to learn.",
+        "es-MX": "Sí, de esta manera los desarrollos se enriquecen de herramientas o efectos; sin embargo, suelen ser complejos de aprender."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Using APIs"
+          },
+          {
+            "type": "text",
+            "content": "APIs provide predefined functions and interfaces that allow developers to incorporate specialized capabilities without building every feature from the beginning. They can add graphics, animations, device access and other advanced functions to an application."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Add specialized tools and functions.",
+              "Expand the capabilities of an application.",
+              "Reduce the need to develop everything from scratch.",
+              "May require additional technical knowledge."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Good Practices"
+          },
+          {
+            "type": "text",
+            "content": "Before adopting an API, evaluate its documentation, compatibility, learning difficulty, performance impact and long-term support to determine whether it is suitable for the project."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Uso de API"
+          },
+          {
+            "type": "text",
+            "content": "Las API proporcionan funciones e interfaces previamente definidas que permiten incorporar capacidades especializadas sin tener que desarrollar todas las características desde el principio. Pueden agregar gráficos, animaciones, acceso a dispositivos y otras funciones avanzadas."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Agregan herramientas y funciones especializadas.",
+              "Amplían las capacidades de una aplicación.",
+              "Reducen la necesidad de desarrollar todo desde cero.",
+              "Pueden requerir conocimientos técnicos adicionales."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Buenas prácticas"
+          },
+          {
+            "type": "text",
+            "content": "Antes de adoptar una API, evalúa su documentación, compatibilidad, dificultad de aprendizaje, impacto en el rendimiento y soporte a largo plazo para determinar si es adecuada para el proyecto."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Design Tools",
+      "Question Text": {
+        "en-US": [
+          "Which software design tools are used to create prototypes?"
+        ],
+        "es-MX": [
+          "Son herramientas de software de diseño para hacer prototipos:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Figma and Adobe XD.",
+          "Adobe After Effects and Adobe Premiere.",
+          "Blender and Adobe Photoshop.",
+          "Adobe Illustrator and Lottie."
+        ],
+        "es-MX": [
+          "Figma y Adobe XD.",
+          "Adobe After Effects y Adobe Premiere.",
+          "Blender y Adobe Photoshop.",
+          "Adobe Illustrator y Lottie."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Figma and Adobe XD.",
+        "es-MX": "Figma y Adobe XD."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Prototyping Tools"
+          },
+          {
+            "type": "text",
+            "content": "<b>Figma</b> and <b>Adobe XD</b> are interface design tools used to create wireframes, visual layouts and interactive prototypes. They allow designers to represent how an application will look and behave before it is fully developed."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Create interface layouts and components.",
+              "Connect screens to simulate navigation.",
+              "Add transitions and simple interactions.",
+              "Allow prototypes to be reviewed before development."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Prototypes help designers, developers and users evaluate navigation, visual hierarchy and interactions before investing time in the final implementation."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Herramientas de prototipado"
+          },
+          {
+            "type": "text",
+            "content": "<b>Figma</b> y <b>Adobe XD</b> son herramientas de diseño de interfaces utilizadas para crear esquemas, composiciones visuales y prototipos interactivos. Permiten representar cómo se verá y funcionará una aplicación antes de desarrollarla por completo."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Crean pantallas y componentes de interfaz.",
+              "Conectan pantallas para simular la navegación.",
+              "Incorporan transiciones e interacciones sencillas.",
+              "Permiten revisar el prototipo antes del desarrollo."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Los prototipos permiten que diseñadores, desarrolladores y usuarios evalúen la navegación, la jerarquía visual y las interacciones antes de invertir tiempo en la implementación final."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bodymovin",
+      "Question Text": {
+        "en-US": [
+          "What is Bodymovin?"
+        ],
+        "es-MX": [
+          "¿Qué es Bodymovin?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Design software focused on creating 3D elements and animations.",
+          "Design software for creating native web animations with JavaScript.",
+          "An Adobe After Effects plugin that exports animations as JSON.",
+          "A Blender plugin that exports animations as JSON."
+        ],
+        "es-MX": [
+          "Un software de diseño enfocado a crear elementos y animaciones 3D.",
+          "Un software de diseño para crear animaciones web nativas con JavaScript.",
+          "Un plugin para Adobe After Effects que permite exportar animaciones a JSON.",
+          "Un plugin para Blender que permite exportar animaciones a JSON."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "An Adobe After Effects plugin that exports animations as JSON.",
+        "es-MX": "Un plugin para Adobe After Effects que permite exportar animaciones a JSON."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Bodymovin"
+          },
+          {
+            "type": "text",
+            "content": "<b>Bodymovin</b> is an Adobe After Effects plugin that exports compatible animations into a JSON file. The exported information describes elements, shapes, transformations, keyframes and timing so the animation can later be reproduced in a web or mobile application."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Works as an Adobe After Effects plugin.",
+              "Exports animation data in JSON format.",
+              "Preserves compatible shapes and keyframes.",
+              "The exported animation can be reproduced with a compatible player such as Lottie."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Workflow"
+          },
+          {
+            "type": "text",
+            "content": "The animation is designed in After Effects, exported with Bodymovin and loaded into the application through JavaScript or a compatible library. Not every After Effects effect is supported, so the animation should be tested after export."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Bodymovin"
+          },
+          {
+            "type": "text",
+            "content": "<b>Bodymovin</b> es un plugin de Adobe After Effects que exporta las animaciones compatibles en un archivo JSON. La información exportada describe elementos, formas, transformaciones, keyframes y tiempos para reproducir posteriormente la animación en una aplicación web o móvil."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Funciona como plugin de Adobe After Effects.",
+              "Exporta los datos de la animación en formato JSON.",
+              "Conserva las formas y los keyframes compatibles.",
+              "La animación exportada puede reproducirse con un reproductor compatible como Lottie."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Flujo de trabajo"
+          },
+          {
+            "type": "text",
+            "content": "La animación se diseña en After Effects, se exporta mediante Bodymovin y se carga en la aplicación utilizando JavaScript o una librería compatible. No todos los efectos de After Effects son compatibles, por lo que debe comprobarse el resultado después de exportarlo."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Design Tools",
+      "Question Text": {
+        "en-US": [
+          "Is there a design tool that makes it easy to create animations with JavaScript?"
+        ],
+        "es-MX": [
+          "¿Existe alguna herramienta de diseño para animar de manera sencilla con JavaScript?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "No, but design tools are incorporating features that connect design with web development and simplify animation management.",
+          "No, because design formats and elements are incompatible with web development elements.",
+          "Yes, Bodymovin is a clear example because it exports animations without complications.",
+          "Yes, tools such as Figma and Adobe XD export finished code without requiring any programming or development."
+        ],
+        "es-MX": [
+          "No, pero las herramientas de diseño están haciendo incorporaciones para conectar el desarrollo web y gestionar de manera sencilla las animaciones.",
+          "No, por la incompatibilidad de formatos y elementos de diseño con los elementos de desarrollo web.",
+          "Sí, un ejemplo claro es Bodymovin, que permite exportar animaciones sin complicaciones.",
+          "Sí, herramientas como Figma y Adobe XD permiten exportar a código sin programar o desarrollar nada."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "No, but design tools are incorporating features that connect design with web development and simplify animation management.",
+        "es-MX": "No, pero las herramientas de diseño están haciendo incorporaciones para conectar el desarrollo web y gestionar de manera sencilla las animaciones."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Design and Web Development"
+          },
+          {
+            "type": "text",
+            "content": "Design tools and JavaScript development follow different workflows. A design application can create prototypes, transitions or animation assets, but the final behavior still needs to be integrated into the web project through code, libraries or compatible export formats."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Design tools create visual prototypes and animation assets.",
+              "Developers integrate the result into the application.",
+              "Plugins and export formats help connect both workflows.",
+              "The generated result may still require adaptation and testing."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Current Evolution"
+          },
+          {
+            "type": "text",
+            "content": "Modern design tools increasingly include animation controls, developer handoff features and export options. These additions simplify collaboration, but they do not completely replace the programming required to create and control animations in a real web application."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Diseño y desarrollo web"
+          },
+          {
+            "type": "text",
+            "content": "Las herramientas de diseño y el desarrollo con JavaScript utilizan flujos de trabajo diferentes. Una aplicación de diseño puede crear prototipos, transiciones o recursos animados, pero el comportamiento final todavía debe integrarse en el proyecto web mediante código, librerías o formatos de exportación compatibles."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Las herramientas de diseño crean prototipos y recursos animados.",
+              "Los desarrolladores integran el resultado en la aplicación.",
+              "Los plugins y formatos de exportación conectan ambos flujos.",
+              "El resultado puede requerir adaptación y pruebas."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Evolución actual"
+          },
+          {
+            "type": "text",
+            "content": "Las herramientas de diseño modernas incorporan cada vez más controles de animación, funciones de entrega para desarrolladores y opciones de exportación. Estas características facilitan la colaboración, pero no sustituyen completamente la programación necesaria para crear y controlar animaciones en una aplicación web real."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Development Frameworks",
+      "Question Text": {
+        "en-US": [
+          "Which are frameworks for web development?"
+        ],
+        "es-MX": [
+          "Son frameworks para el desarrollo de web:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Vue, Angular and React.",
+          "Ionic, Angular and PhoneGap.",
+          "Vue, Cordova and Aurelia.",
+          "Ionic, Aurelia and Vue."
+        ],
+        "es-MX": [
+          "Vue, Angular y React.",
+          "Ionic, Angular y PhoneGap.",
+          "Vue, Cordova y Aurelia.",
+          "Ionic, Aurelia y Vue."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Vue, Angular and React.",
+        "es-MX": "Vue, Angular y React."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Web Development Frameworks"
+          },
+          {
+            "type": "text",
+            "content": "Web frameworks simplify repetitive development tasks and provide structures for building complex applications. They usually include components, routing systems, state management and support for integrating animations."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Vue focuses on progressive development.",
+              "React builds user interfaces using components.",
+              "Angular provides a complete application framework.",
+              "Many frameworks include animation support or integration with animation libraries."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Using a framework reduces development time, improves project organization and makes it easier to create scalable applications with reusable components."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Frameworks para desarrollo web"
+          },
+          {
+            "type": "text",
+            "content": "Los frameworks web simplifican tareas repetitivas del desarrollo y proporcionan una estructura para construir aplicaciones complejas. Generalmente incluyen componentes, sistemas de navegación, administración del estado y facilidades para integrar animaciones."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Vue se enfoca en un desarrollo progresivo.",
+              "React construye interfaces mediante componentes.",
+              "Angular proporciona un framework completo para aplicaciones.",
+              "Muchos frameworks incluyen soporte para animaciones o integración con librerías especializadas."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Utilizar un framework reduce el tiempo de desarrollo, mejora la organización del proyecto y facilita la creación de aplicaciones escalables mediante componentes reutilizables."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Hybrid Frameworks",
+      "Question Text": {
+        "en-US": [
+          "Which are frameworks for hybrid applications?"
+        ],
+        "es-MX": [
+          "Son frameworks para aplicaciones híbridas:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Vue, Tabris and Aurelia.",
+          "Ionic, Angular and PhoneGap.",
+          "Ionic, Tabris and Quasar.",
+          "Cordova, Quasar and Ionic."
+        ],
+        "es-MX": [
+          "Vue, Tabris y Aurelia.",
+          "Ionic, Angular y PhoneGap.",
+          "Ionic, Tabris y Quasar.",
+          "Cordova, Quasar y Ionic."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Ionic, Tabris and Quasar.",
+        "es-MX": "Ionic, Tabris y Quasar."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Hybrid Frameworks"
+          },
+          {
+            "type": "text",
+            "content": "Hybrid application frameworks allow web technologies to create applications with an appearance similar to native Android or iOS applications. They simplify interface creation while maintaining a single code base."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Ionic provides mobile UI components.",
+              "Quasar supports responsive web and mobile applications.",
+              "Tabris creates applications with native-looking interfaces.",
+              "They help reuse the same project across multiple platforms."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "Hybrid frameworks reduce development time by allowing developers to build applications for different platforms from a common web technology stack."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Frameworks híbridos"
+          },
+          {
+            "type": "text",
+            "content": "Los frameworks para aplicaciones híbridas permiten utilizar tecnologías web para crear aplicaciones con apariencia similar a las aplicaciones nativas de Android o iOS. Facilitan el desarrollo reutilizando una misma base de código."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Ionic proporciona componentes para interfaces móviles.",
+              "Quasar permite crear aplicaciones web y móviles.",
+              "Tabris facilita interfaces con apariencia nativa.",
+              "Ayudan a reutilizar el mismo proyecto en varias plataformas."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Los frameworks híbridos reducen el tiempo de desarrollo al permitir crear aplicaciones para diferentes plataformas utilizando una base común de tecnologías web."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Native Application Frameworks",
+      "Question Text": {
+        "en-US": [
+          "Which are frameworks for native applications?"
+        ],
+        "es-MX": [
+          "Es un framework para aplicaciones nativas:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Vue, Tabris and Cordova.",
+          "Quasar, Ionic and PhoneGap.",
+          "Cordova, PhoneGap and Capacitor.",
+          "Electron, Cordova and Ionic."
+        ],
+        "es-MX": [
+          "Vue, Tabris y Cordova.",
+          "Quasar, Ionic y PhoneGap.",
+          "Cordova, PhoneGap y Capacitor.",
+          "Electron, Cordova y Ionic."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Cordova, PhoneGap and Capacitor.",
+        "es-MX": "Cordova, PhoneGap y Capacitor."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Native Application Frameworks"
+          },
+          {
+            "type": "text",
+            "content": "Frameworks such as <b>Cordova</b>, <b>PhoneGap</b> and <b>Capacitor</b> package web applications as installable native applications. They also provide APIs that allow access to device capabilities such as sensors, cameras, storage and contacts."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Convert web applications into installable apps.",
+              "Provide access to native device features.",
+              "Reuse HTML, CSS and JavaScript code.",
+              "Support deployment on multiple mobile platforms."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importance"
+          },
+          {
+            "type": "text",
+            "content": "These frameworks make it possible to build native applications while reusing web technologies, reducing development effort and allowing integration with device hardware."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Frameworks para aplicaciones nativas"
+          },
+          {
+            "type": "text",
+            "content": "Frameworks como <b>Cordova</b>, <b>PhoneGap</b> y <b>Capacitor</b> permiten empaquetar aplicaciones web como aplicaciones nativas instalables. Además, proporcionan API para acceder a funciones del dispositivo como sensores, cámara, almacenamiento y contactos."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Convierten aplicaciones web en aplicaciones instalables.",
+              "Permiten acceder a funciones nativas del dispositivo.",
+              "Reutilizan código HTML, CSS y JavaScript.",
+              "Facilitan la distribución en distintas plataformas móviles."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Estos frameworks permiten desarrollar aplicaciones nativas reutilizando tecnologías web, reduciendo el esfuerzo de desarrollo y facilitando la integración con el hardware del dispositivo."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Hybrid Frameworks",
+      "Question Text": {
+        "en-US": [
+          "What type of framework is Ionic?"
+        ],
+        "es-MX": [
+          "¿Qué tipo de framework es Ionic?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "A framework for web development.",
+          "A framework for hybrid applications.",
+          "A framework for native applications only.",
+          "A framework for desktop applications."
+        ],
+        "es-MX": [
+          "Un framework para desarrollo web.",
+          "Un framework para aplicaciones híbridas.",
+          "Un framework únicamente para aplicaciones nativas.",
+          "Un framework para aplicaciones de escritorio."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "A framework for hybrid applications.",
+        "es-MX": "Un framework para aplicaciones híbridas."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Ionic"
+          },
+          {
+            "type": "text",
+            "content": "<b>Ionic</b> is a framework used to build hybrid mobile applications using HTML, CSS and JavaScript. It provides a large collection of mobile UI components that resemble native Android and iOS applications."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Framework for hybrid applications.",
+              "Uses HTML, CSS and JavaScript.",
+              "Provides mobile UI components.",
+              "Can work with Angular, React or Vue."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Main Use"
+          },
+          {
+            "type": "text",
+            "content": "Ionic allows developers to create one application that can run on multiple mobile platforms while maintaining a native-like appearance."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Ionic"
+          },
+          {
+            "type": "text",
+            "content": "<b>Ionic</b> es un framework para desarrollar aplicaciones híbridas utilizando HTML, CSS y JavaScript. Incluye una amplia colección de componentes con apariencia similar a las aplicaciones nativas de Android e iOS."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Framework para aplicaciones híbridas.",
+              "Utiliza HTML, CSS y JavaScript.",
+              "Incluye componentes móviles prediseñados.",
+              "Compatible con Angular, React y Vue."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Uso principal"
+          },
+          {
+            "type": "text",
+            "content": "Ionic permite desarrollar una sola aplicación que puede ejecutarse en varias plataformas móviles, reduciendo tiempo y costos de desarrollo."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Hybrid Frameworks",
+      "Question Text": {
+        "en-US": [
+          "What type of framework is Quasar?"
+        ],
+        "es-MX": [
+          "¿Qué tipo de framework es Quasar?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "A framework for hybrid applications.",
+          "A framework for database management.",
+          "A framework for game development.",
+          "A framework for desktop applications only."
+        ],
+        "es-MX": [
+          "Un framework para aplicaciones híbridas.",
+          "Un framework para administración de bases de datos.",
+          "Un framework para desarrollo de videojuegos.",
+          "Un framework únicamente para aplicaciones de escritorio."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "A framework for hybrid applications.",
+        "es-MX": "Un framework para aplicaciones híbridas."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Quasar"
+          },
+          {
+            "type": "text",
+            "content": "<b>Quasar</b> is a framework based on Vue that allows developers to create hybrid applications from a single code base. It can generate web, mobile and desktop applications."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Framework for hybrid applications.",
+              "Based on Vue.",
+              "Uses JavaScript and HTML technologies.",
+              "Can generate web, mobile and desktop applications."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Main Use"
+          },
+          {
+            "type": "text",
+            "content": "Quasar is useful when developers want to reuse the same code to deploy applications on multiple platforms."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Quasar"
+          },
+          {
+            "type": "text",
+            "content": "<b>Quasar</b> es un framework basado en Vue que permite desarrollar aplicaciones híbridas utilizando una sola base de código. Puede generar aplicaciones web, móviles y de escritorio."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Framework para aplicaciones híbridas.",
+              "Está basado en Vue.",
+              "Utiliza tecnologías web como HTML, CSS y JavaScript.",
+              "Puede generar aplicaciones web, móviles y de escritorio."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Uso principal"
+          },
+          {
+            "type": "text",
+            "content": "Quasar facilita reutilizar el mismo proyecto para publicarlo en diferentes plataformas sin desarrollar una aplicación independiente para cada una."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Hybrid Frameworks",
+      "Question Text": {
+        "en-US": [
+          "What type of framework is Tabris?"
+        ],
+        "es-MX": [
+          "¿Qué tipo de framework es Tabris?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "A framework for desktop software.",
+          "A framework for hybrid applications.",
+          "A framework for database servers.",
+          "A framework for video games."
+        ],
+        "es-MX": [
+          "Un framework para aplicaciones de escritorio.",
+          "Un framework para aplicaciones híbridas.",
+          "Un framework para servidores de bases de datos.",
+          "Un framework para videojuegos."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "A framework for hybrid applications.",
+        "es-MX": "Un framework para aplicaciones híbridas."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Tabris"
+          },
+          {
+            "type": "text",
+            "content": "<b>Tabris</b> is a framework for building hybrid mobile applications using JavaScript. It enables developers to create applications with a native appearance while reusing web development knowledge."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Framework for hybrid applications.",
+              "Uses JavaScript.",
+              "Produces applications with native appearance.",
+              "Allows code reuse across mobile platforms."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Main Use"
+          },
+          {
+            "type": "text",
+            "content": "Tabris simplifies cross-platform mobile development by allowing developers to build applications from a single JavaScript code base."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Tabris"
+          },
+          {
+            "type": "text",
+            "content": "<b>Tabris</b> es un framework para desarrollar aplicaciones híbridas utilizando JavaScript. Permite crear aplicaciones con apariencia nativa reutilizando los conocimientos del desarrollo web."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Framework para aplicaciones híbridas.",
+              "Utiliza JavaScript.",
+              "Genera interfaces con apariencia nativa.",
+              "Facilita reutilizar código entre plataformas móviles."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Uso principal"
+          },
+          {
+            "type": "text",
+            "content": "Tabris ayuda a desarrollar aplicaciones móviles multiplataforma a partir de una sola base de código, reduciendo el tiempo de desarrollo y mantenimiento."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Native Application Frameworks",
+      "Question Text": {
+        "en-US": [
+          "What type of framework is Cordova?"
+        ],
+        "es-MX": [
+          "¿Qué tipo de framework es Cordova?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "A framework for web development.",
+          "A framework for hybrid applications.",
+          "A framework for native applications.",
+          "A framework for database administration."
+        ],
+        "es-MX": [
+          "Un framework para desarrollo web.",
+          "Un framework para aplicaciones híbridas.",
+          "Un framework para aplicaciones nativas.",
+          "Un framework para administración de bases de datos."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "A framework for native applications.",
+        "es-MX": "Un framework para aplicaciones nativas."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Cordova"
+          },
+          {
+            "type": "text",
+            "content": "<b>Cordova</b> allows developers to package web applications as installable native mobile applications. It provides plugins that enable JavaScript to access device features such as the camera, GPS, contacts and file system."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Framework for native applications.",
+              "Uses HTML, CSS and JavaScript.",
+              "Packages web apps into installable apps.",
+              "Provides access to device hardware through plugins."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Main Use"
+          },
+          {
+            "type": "text",
+            "content": "Cordova is useful when developers want to build native mobile applications while reusing existing web technologies."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Cordova"
+          },
+          {
+            "type": "text",
+            "content": "<b>Cordova</b> permite empaquetar aplicaciones web para convertirlas en aplicaciones móviles nativas instalables. Mediante plugins ofrece acceso desde JavaScript a funciones del dispositivo como cámara, GPS, contactos y almacenamiento."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Framework para aplicaciones nativas.",
+              "Utiliza HTML, CSS y JavaScript.",
+              "Convierte aplicaciones web en aplicaciones instalables.",
+              "Permite acceder al hardware mediante plugins."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Uso principal"
+          },
+          {
+            "type": "text",
+            "content": "Cordova facilita crear aplicaciones móviles reutilizando tecnologías web y aprovechando las capacidades nativas del dispositivo."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Native Application Frameworks",
+      "Question Text": {
+        "en-US": [
+          "What type of framework is PhoneGap?"
+        ],
+        "es-MX": [
+          "¿Qué tipo de framework es PhoneGap?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "A framework for desktop applications.",
+          "A framework for native applications.",
+          "A framework for web development.",
+          "A framework for database servers."
+        ],
+        "es-MX": [
+          "Un framework para aplicaciones de escritorio.",
+          "Un framework para aplicaciones nativas.",
+          "Un framework para desarrollo web.",
+          "Un framework para servidores de bases de datos."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "A framework for native applications.",
+        "es-MX": "Un framework para aplicaciones nativas."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "PhoneGap"
+          },
+          {
+            "type": "text",
+            "content": "<b>PhoneGap</b> is based on Apache Cordova and enables developers to create installable mobile applications using HTML, CSS and JavaScript. It simplifies deployment across multiple mobile operating systems."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Framework for native applications.",
+              "Based on Apache Cordova.",
+              "Uses HTML, CSS and JavaScript.",
+              "Supports multiple mobile platforms."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Main Use"
+          },
+          {
+            "type": "text",
+            "content": "PhoneGap allows developers to reuse web development skills while building applications that can be installed on mobile devices."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "PhoneGap"
+          },
+          {
+            "type": "text",
+            "content": "<b>PhoneGap</b> está basado en Apache Cordova y permite crear aplicaciones móviles instalables utilizando HTML, CSS y JavaScript. Facilita distribuir una misma aplicación en diferentes sistemas operativos móviles."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Framework para aplicaciones nativas.",
+              "Basado en Apache Cordova.",
+              "Utiliza HTML, CSS y JavaScript.",
+              "Compatible con múltiples plataformas móviles."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Uso principal"
+          },
+          {
+            "type": "text",
+            "content": "PhoneGap ayuda a desarrollar aplicaciones móviles reutilizando tecnologías web y reduciendo el esfuerzo necesario para publicar en distintas plataformas."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Web Frameworks",
+      "Question Text": {
+        "en-US": [
+          "What type of framework is Aurelia?"
+        ],
+        "es-MX": [
+          "¿Qué tipo de framework es Aurelia?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "A framework for hybrid applications.",
+          "A framework for native applications.",
+          "A framework for web development.",
+          "A framework for database administration."
+        ],
+        "es-MX": [
+          "Un framework para aplicaciones híbridas.",
+          "Un framework para aplicaciones nativas.",
+          "Un framework para desarrollo web.",
+          "Un framework para administración de bases de datos."
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "A framework for web development.",
+        "es-MX": "Un framework para desarrollo web."
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Aurelia"
+          },
+          {
+            "type": "text",
+            "content": "<b>Aurelia</b> is a modern JavaScript framework for web development. It emphasizes clean architecture, modular design and reusable components, making it suitable for building scalable web applications."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Framework for web development.",
+              "Built with JavaScript.",
+              "Uses reusable components.",
+              "Designed for modern and scalable web applications."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Main Use"
+          },
+          {
+            "type": "text",
+            "content": "Aurelia is recommended for developers who want a modular architecture and a modern approach to creating web applications."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Aurelia"
+          },
+          {
+            "type": "text",
+            "content": "<b>Aurelia</b> es un framework moderno basado en JavaScript para el desarrollo de aplicaciones web. Se caracteriza por su arquitectura modular, el uso de componentes reutilizables y un enfoque orientado a crear aplicaciones escalables."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Framework para desarrollo web.",
+              "Basado en JavaScript.",
+              "Utiliza componentes reutilizables.",
+              "Diseñado para aplicaciones web modernas y escalables."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Uso principal"
+          },
+          {
+            "type": "text",
+            "content": "Aurelia es una alternativa para desarrollar aplicaciones web con una arquitectura limpia, flexible y fácil de mantener."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Development Frameworks",
+      "Question Text": {
+        "en-US": [
+          "Which framework is developed by Google?"
+        ],
+        "es-MX": [
+          "¿Qué framework es desarrollado por Google?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Vue",
+          "Angular",
+          "Aurelia",
+          "Quasar"
+        ],
+        "es-MX": [
+          "Vue",
+          "Angular",
+          "Aurelia",
+          "Quasar"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Angular",
+        "es-MX": "Angular"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Angular"
+          },
+          {
+            "type": "text",
+            "content": "Angular is Google's web framework. It is designed for building scalable web applications using TypeScript and a component-based architecture."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Developed by Google.",
+              "Framework for web development.",
+              "Uses TypeScript.",
+              "Designed for enterprise applications."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Why is it important?"
+          },
+          {
+            "type": "text",
+            "content": "Angular provides a complete development environment, making it a popular choice for large web projects."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Angular"
+          },
+          {
+            "type": "text",
+            "content": "Angular es el framework para desarrollo web creado por Google. Está diseñado para construir aplicaciones escalables utilizando TypeScript y una arquitectura basada en componentes."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Desarrollado por Google.",
+              "Framework para desarrollo web.",
+              "Utiliza TypeScript.",
+              "Orientado a aplicaciones empresariales."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Importancia"
+          },
+          {
+            "type": "text",
+            "content": "Angular ofrece un entorno completo de desarrollo que facilita crear y mantener aplicaciones web de gran tamaño."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Development Frameworks",
+      "Question Text": {
+        "en-US": [
+          "Which framework is based on Vue?"
+        ],
+        "es-MX": [
+          "¿Qué framework está basado en Vue?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "React",
+          "Quasar",
+          "Cordova",
+          "PhoneGap"
+        ],
+        "es-MX": [
+          "React",
+          "Quasar",
+          "Cordova",
+          "PhoneGap"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Quasar",
+        "es-MX": "Quasar"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Quasar"
+          },
+          {
+            "type": "text",
+            "content": "Quasar extends Vue and allows developers to create web, mobile and desktop applications from a single code base."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Based on Vue.",
+              "Hybrid framework.",
+              "Single code base.",
+              "Supports multiple platforms."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Main Advantage"
+          },
+          {
+            "type": "text",
+            "content": "Quasar helps developers reuse code while targeting different platforms."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Quasar"
+          },
+          {
+            "type": "text",
+            "content": "Quasar está construido sobre Vue y permite desarrollar aplicaciones web, móviles y de escritorio reutilizando una sola base de código."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Basado en Vue.",
+              "Framework híbrido.",
+              "Una sola base de código.",
+              "Multiplataforma."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Ventaja principal"
+          },
+          {
+            "type": "text",
+            "content": "Reduce el tiempo de desarrollo al reutilizar el mismo proyecto para distintas plataformas."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Development Frameworks",
+      "Question Text": {
+        "en-US": [
+          "Which framework allows JavaScript to access native device features through plugins?"
+        ],
+        "es-MX": [
+          "¿Qué framework permite acceder al hardware del dispositivo mediante plugins desde JavaScript?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Vue",
+          "Angular",
+          "Cordova",
+          "React"
+        ],
+        "es-MX": [
+          "Vue",
+          "Angular",
+          "Cordova",
+          "React"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Cordova",
+        "es-MX": "Cordova"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Cordova"
+          },
+          {
+            "type": "text",
+            "content": "Cordova packages web applications as installable mobile applications and exposes native device capabilities through plugins."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Framework for native applications.",
+              "Uses HTML, CSS and JavaScript.",
+              "Provides access to camera, GPS and sensors.",
+              "Uses plugins."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Main Advantage"
+          },
+          {
+            "type": "text",
+            "content": "Developers can build mobile applications while reusing their web development knowledge."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Cordova"
+          },
+          {
+            "type": "text",
+            "content": "Cordova permite empaquetar aplicaciones web como aplicaciones móviles instalables y acceder a funciones nativas del dispositivo mediante plugins."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Framework para aplicaciones nativas.",
+              "Utiliza HTML, CSS y JavaScript.",
+              "Accede a cámara, GPS y sensores.",
+              "Funciona mediante plugins."
+            ]
+          },
+          {
+            "type": "divider"
+          },
+          {
+            "type": "title-h2",
+            "content": "Ventaja principal"
+          },
+          {
+            "type": "text",
+            "content": "Permite reutilizar tecnologías web mientras se aprovechan las capacidades nativas del dispositivo."
+          }
+        ]
+      }
+    }
+  ]
+}
