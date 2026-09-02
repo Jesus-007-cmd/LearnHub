@@ -1,0 +1,548 @@
+{
+  "meta": {
+    "slug": "gestores-contenidos-u10",
+    "title": "Optimización SEO y herramientas SEO",
+    "subject": "DISEÑO Y CREACIÓN WEB CON GESTORES DE CONTENIDOS",
+    "unit": 10,
+    "classNo": 0,
+    "description": "Introducción a la optimización SEO, sus principales conceptos y el uso de herramientas SEO para mejorar el posicionamiento de sitios web creados con WordPress.",
+    "tags": [
+      "WordPress",
+      "SEO",
+      "optimización SEO",
+      "posicionamiento web",
+      "motores de búsqueda",
+      "herramientas SEO",
+      "tráfico web"
+    ],
+    "questionCount": 9,
+    "languages": [
+      "en-US",
+      "es-MX"
+    ]
+  },
+  "Questions": [
+  {
+    "Category": {
+      "en-US": "Introduction to SEO",
+      "es-MX": "Introducción al SEO"
+    },
+    "Question Text": {
+      "en-US": "What does SEO make possible?",
+      "es-MX": "¿Qué permite el SEO?"
+    },
+    "Options": {
+      "en-US": [
+        "Articles with a specific structure",
+        "Images with specific sizes",
+        "Heavy files",
+        "Increasing a website's visibility and number of visits"
+      ],
+      "es-MX": [
+        "Artículos con estructura",
+        "Imágenes con tamaños específicos",
+        "Archivos pesados",
+        "Incrementar la visibilidad y aumentar el número de visitas que tendrá una web"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "Increasing a website's visibility and number of visits",
+      "es-MX": "Incrementar la visibilidad y aumentar el número de visitas que tendrá una web"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "Purpose of SEO"
+        },
+        {
+          "type": "text",
+          "content": "SEO consists of optimizing a website so that search engines can understand, index and display its content in relevant search results."
+        },
+        {
+          "type": "text",
+          "content": "Better positioning increases the website's visibility and can attract more organic visits without relying exclusively on paid advertising."
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Propósito del SEO"
+        },
+        {
+          "type": "text",
+          "content": "El SEO consiste en optimizar un sitio para que los motores de búsqueda puedan comprender, indexar y mostrar su contenido en resultados relevantes."
+        },
+        {
+          "type": "text",
+          "content": "Un mejor posicionamiento aumenta la visibilidad del sitio y puede atraer más visitas orgánicas sin depender exclusivamente de publicidad pagada."
+        }
+      ]
+    }
+  },
+  {
+    "Category": {
+      "en-US": "Introduction to SEO",
+      "es-MX": "Introducción al SEO"
+    },
+    "Question Text": {
+      "en-US": "Which is the most important web search engine among the following options?",
+      "es-MX": "¿Cuál es el buscador web más importante entre las siguientes opciones?"
+    },
+    "Options": {
+      "en-US": [
+        "Baidu",
+        "Bing",
+        "Yahoo!",
+        "Google"
+      ],
+      "es-MX": [
+        "Baidu",
+        "Bing",
+        "Yahoo!",
+        "Google"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "Google",
+      "es-MX": "Google"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "Google and SEO"
+        },
+        {
+          "type": "text",
+          "content": "Google is the main reference for SEO because a large portion of web searches are performed through its search engine."
+        },
+        {
+          "type": "text",
+          "content": "SEO practices commonly seek to help Google understand a website's content and display it to users making related searches."
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Google y el SEO"
+        },
+        {
+          "type": "text",
+          "content": "Google es el principal referente del SEO porque una gran parte de las búsquedas en Internet se realiza mediante su buscador."
+        },
+        {
+          "type": "text",
+          "content": "Las prácticas SEO buscan facilitar que Google comprenda el contenido de un sitio y lo muestre a los usuarios que realizan búsquedas relacionadas."
+        }
+      ]
+    }
+  },
+  {
+    "Category": {
+      "en-US": "Search engine indexing",
+      "es-MX": "Indexación en motores de búsqueda"
+    },
+    "Question Text": {
+      "en-US": "What type of content do search engines index first?",
+      "es-MX": "¿Qué tipo de contenido indexan primero los motores de búsqueda?"
+    },
+    "Options": {
+      "en-US": [
+        "Images",
+        "PHP files",
+        "Text",
+        "Numbers"
+      ],
+      "es-MX": [
+        "Imágenes",
+        "Archivos PHP",
+        "Textos",
+        "Números"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "Text",
+      "es-MX": "Textos"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "Text indexing"
+        },
+        {
+          "type": "text",
+          "content": "Search engines analyze textual content such as titles, headings, paragraphs, links and descriptions to understand the subject of a webpage."
+        },
+        {
+          "type": "text",
+          "content": "Clear and well-structured text helps search engines classify the content and associate it with relevant user searches."
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Indexación de textos"
+        },
+        {
+          "type": "text",
+          "content": "Los motores de búsqueda analizan contenidos textuales como títulos, encabezados, párrafos, enlaces y descripciones para comprender el tema de una página."
+        },
+        {
+          "type": "text",
+          "content": "Un texto claro y bien estructurado facilita que los buscadores clasifiquen el contenido y lo relacionen con búsquedas relevantes."
+        }
+      ]
+    }
+  },
+  {
+    "Category": {
+      "en-US": "Search engine crawling",
+      "es-MX": "Rastreo de motores de búsqueda"
+    },
+    "Question Text": {
+      "en-US": "What are crawlers?",
+      "es-MX": "¿Qué son los crawlers?"
+    },
+    "Options": {
+      "en-US": [
+        "Website cover editors",
+        "Trackers",
+        "Content management systems or CMS",
+        "A social network"
+      ],
+      "es-MX": [
+        "Editores de portadas web",
+        "Rastreadores",
+        "Gestores de contenidos o CMS",
+        "Una red social"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "Trackers",
+      "es-MX": "Rastreadores"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "Search engine crawlers"
+        },
+        {
+          "type": "text",
+          "content": "Crawlers are automated programs used by search engines to explore webpages and discover their content."
+        },
+        {
+          "type": "text",
+          "content": "They follow links between pages, collect information and send it to the search engine so that the content can be evaluated and indexed."
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Rastreadores de los buscadores"
+        },
+        {
+          "type": "text",
+          "content": "Los crawlers son programas automatizados que utilizan los motores de búsqueda para recorrer las páginas web y descubrir su contenido."
+        },
+        {
+          "type": "text",
+          "content": "Siguen los enlaces entre páginas, recopilan información y la envían al buscador para que el contenido pueda evaluarse e indexarse."
+        }
+      ]
+    }
+  },
+  {
+    "Category": {
+      "en-US": "Sitemaps",
+      "es-MX": "Mapas del sitio"
+    },
+    "Question Text": {
+      "en-US": "What does a website sitemap contain?",
+      "es-MX": "¿Qué contiene el sitemap de un sitio web?"
+    },
+    "Options": {
+      "en-US": [
+        "A list of all the website's pages",
+        "PHP files",
+        "A file used to create website redirects",
+        "The WordPress back end"
+      ],
+      "es-MX": [
+        "Listado de todas y cada una de las páginas del sitio web",
+        "Archivos PHP",
+        "Es un fichero que permite hacer redirecciones en el sitio web",
+        "Contiene el back-end de WordPress"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "A list of all the website's pages",
+      "es-MX": "Listado de todas y cada una de las páginas del sitio web"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "Website sitemap"
+        },
+        {
+          "type": "text",
+          "content": "A sitemap is a file that lists the relevant URLs of a website, such as its pages, posts, categories and other indexable content."
+        },
+        {
+          "type": "text",
+          "content": "It helps search engines discover the website's structure and locate content that should be crawled and considered for indexing."
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Mapa del sitio web"
+        },
+        {
+          "type": "text",
+          "content": "Un sitemap es un archivo que enumera las URL relevantes de un sitio, como sus páginas, entradas, categorías y otros contenidos indexables."
+        },
+        {
+          "type": "text",
+          "content": "Ayuda a los motores de búsqueda a conocer la estructura del sitio y localizar el contenido que debe rastrearse y considerarse para la indexación."
+        }
+      ]
+    }
+  },
+  {
+    "Category": {
+      "en-US": "Robots.txt file",
+      "es-MX": "Archivo robots.txt"
+    },
+    "Question Text": {
+      "en-US": "What does a website's robots.txt file allow you to do?",
+      "es-MX": "¿Qué permite hacer el archivo robots.txt de un sitio web?"
+    },
+    "Options": {
+      "en-US": [
+        "Determine which images and videos should be displayed",
+        "Create dynamic website themes",
+        "Tell search engine crawlers which website URLs they may access",
+        "Control access to the WordPress administration panel"
+      ],
+      "es-MX": [
+        "Indicar qué imágenes y videos debe mostrar",
+        "Crear temas dinámicos para web",
+        "Indicar a los rastreadores de los buscadores a cuáles URL del sitio web deben acceder",
+        "Controlar el acceso al administrador de WordPress"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "Tell search engine crawlers which website URLs they may access",
+      "es-MX": "Indicar a los rastreadores de los buscadores a cuáles URL del sitio web deben acceder"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "Purpose of robots.txt"
+        },
+        {
+          "type": "text",
+          "content": "The robots.txt file contains rules that tell compatible search engine crawlers which areas or URLs of a website they are allowed or not allowed to crawl."
+        },
+        {
+          "type": "text",
+          "content": "It manages crawler access but does not protect private information or replace the website's security controls."
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Función del archivo robots.txt"
+        },
+        {
+          "type": "text",
+          "content": "El archivo robots.txt contiene reglas que indican a los rastreadores compatibles qué áreas o URL del sitio tienen permitido o restringido rastrear."
+        },
+        {
+          "type": "text",
+          "content": "Sirve para administrar el acceso de los rastreadores, pero no protege información privada ni sustituye los controles de seguridad del sitio."
+        }
+      ]
+    }
+  },
+  {
+    "Category": {
+      "en-US": "Meta tags",
+      "es-MX": "Etiquetas meta"
+    },
+    "Question Text": {
+      "en-US": "What are meta tags?",
+      "es-MX": "¿Qué son los meta tags?"
+    },
+    "Options": {
+      "en-US": [
+        "A short description of the website's general content",
+        "A file created when friendly URLs are enabled",
+        "An identification system",
+        "A content management system"
+      ],
+      "es-MX": [
+        "Pequeña descripción sobre el contenido general de la web",
+        "Es un archivo que se crea cuando se habilitan las URL amigables",
+        "Sistema de identificación",
+        "Es un gestor de contenidos"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "A short description of the website's general content",
+      "es-MX": "Pequeña descripción sobre el contenido general de la web"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "Meta tags"
+        },
+        {
+          "type": "text",
+          "content": "Meta tags are HTML elements that provide search engines and browsers with information about a webpage."
+        },
+        {
+          "type": "text",
+          "content": "For example, a meta description briefly summarizes the page's content and may appear below its title in search results."
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Etiquetas meta"
+        },
+        {
+          "type": "text",
+          "content": "Los meta tags son elementos HTML que proporcionan a los buscadores y navegadores información acerca de una página web."
+        },
+        {
+          "type": "text",
+          "content": "Por ejemplo, la metadescripción resume brevemente el contenido de la página y puede aparecer debajo de su título en los resultados de búsqueda."
+        }
+      ]
+    }
+  },
+  {
+    "Category": {
+      "en-US": "SEO tools",
+      "es-MX": "Herramientas SEO"
+    },
+    "Question Text": {
+      "en-US": "What is GTmetrix?",
+      "es-MX": "¿Qué es GTmetrix?"
+    },
+    "Options": {
+      "en-US": [
+        "A service for creating databases",
+        "An application programmed in PHP",
+        "A communication protocol",
+        "A free tool that reports the optimization status of a website"
+      ],
+      "es-MX": [
+        "Un servicio que permite crear bases de datos",
+        "Una aplicación programada en PHP",
+        "Es un protocolo de comunicación",
+        "Una herramienta gratuita que permite conocer el estado de optimización de una web"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "A free tool that reports the optimization status of a website",
+      "es-MX": "Una herramienta gratuita que permite conocer el estado de optimización de una web"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "GTmetrix"
+        },
+        {
+          "type": "text",
+          "content": "GTmetrix is a web performance analysis tool that evaluates how a page loads and identifies factors that can affect its speed."
+        },
+        {
+          "type": "text",
+          "content": "Its reports include performance measurements and recommendations that can help optimize resources, loading times and the user experience."
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "GTmetrix"
+        },
+        {
+          "type": "text",
+          "content": "GTmetrix es una herramienta de análisis del rendimiento web que evalúa cómo carga una página e identifica factores que pueden afectar su velocidad."
+        },
+        {
+          "type": "text",
+          "content": "Sus informes incluyen mediciones y recomendaciones que ayudan a optimizar los recursos, los tiempos de carga y la experiencia del usuario."
+        }
+      ]
+    }
+  },
+  {
+    "Category": {
+      "en-US": "SEO-friendly WordPress themes",
+      "es-MX": "Temas de WordPress compatibles con SEO"
+    },
+    "Question Text": {
+      "en-US": "What should an SEO-friendly theme have?",
+      "es-MX": "¿Qué se recomienda que tenga un tema SEO-friendly?"
+    },
+    "Options": {
+      "en-US": [
+        "All database files publicly accessible",
+        "Plugins and reduced-size images",
+        "PHP files in the sitemaps",
+        "An appropriate architecture that allows crawlers to index the website easily"
+      ],
+      "es-MX": [
+        "Todos los archivos de la base de datos accesibles",
+        "Plugins e imágenes reducidas",
+        "Archivos PHP en el sitemaps",
+        "Una arquitectura adecuada que permita una indexación sencilla por los crawlers"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "An appropriate architecture that allows crawlers to index the website easily",
+      "es-MX": "Una arquitectura adecuada que permita una indexación sencilla por los crawlers"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "SEO-friendly architecture"
+        },
+        {
+          "type": "text",
+          "content": "An SEO-friendly theme should use an organized structure, clear navigation, valid semantic code and links that crawlers can follow."
+        },
+        {
+          "type": "text",
+          "content": "A clear architecture helps search engines discover, understand and index the website's relevant content."
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Arquitectura compatible con SEO"
+        },
+        {
+          "type": "text",
+          "content": "Un tema SEO-friendly debe utilizar una estructura organizada, navegación clara, código semántico válido y enlaces que los rastreadores puedan seguir."
+        },
+        {
+          "type": "text",
+          "content": "Una arquitectura clara facilita que los motores de búsqueda descubran, comprendan e indexen el contenido relevante del sitio."
+        }
+      ]
+    }
+  }
+]
+}

@@ -368,60 +368,61 @@
       ]
     }
   },
+ 
   {
     "Category": {
       "en-US": "Migration with plugins",
       "es-MX": "Migración con plugins"
     },
     "Question Text": {
-      "en-US": "What is the name of the plugin that makes it easy to migrate WordPress websites?",
-      "es-MX": "El plugin que permite realizar migraciones web de forma sencilla lleva el nombre de:"
+      "en-US": "Which section displays a drop-down menu with the file formats supported by the plugin and allows a migration file to be uploaded?",
+      "es-MX": "¿En qué sección se muestra un desplegable con los formatos admitidos por el plugin y se puede seleccionar un archivo de migración para subirlo?"
     },
     "Options": {
       "en-US": [
-        "All-Duplicator Migration",
-        "All-Updraft Migration",
-        "All-In-One WP Admin",
-        "All-In-One WP Migration"
+        "Backup",
+        "Files",
+        "Export",
+        "Import"
       ],
       "es-MX": [
-        "All-Duplicator Migration",
-        "All-Updraft Migration",
-        "All-In-One WP Admin",
-        "All-In-One WP Migration"
+        "Copia de seguridad",
+        "Archivos",
+        "Exportar",
+        "Importar"
       ]
     },
     "Correct Answer": {
-      "en-US": "All-In-One WP Migration",
-      "es-MX": "All-In-One WP Migration"
+      "en-US": "Import",
+      "es-MX": "Importar"
     },
     "Explanation": {
       "en-US": [
         {
           "type": "title-h2",
-          "content": "All-In-One WP Migration"
+          "content": "Import section"
         },
         {
           "type": "text",
-          "content": "All-In-One WP Migration is a WordPress plugin designed to export an entire website and import it into another WordPress installation."
+          "content": "The Import section is used to select the source from which the migration file will be obtained. When File is selected, the user can locate the backup on the computer and upload it."
         },
         {
           "type": "text",
-          "content": "It can transfer the database, media files, themes, plugins and website configuration in a single migration file."
+          "content": "The plugin then processes the migration file to restore the website's files, database and configuration."
         }
       ],
       "es-MX": [
         {
           "type": "title-h2",
-          "content": "All-In-One WP Migration"
+          "content": "Sección Importar"
         },
         {
           "type": "text",
-          "content": "All-In-One WP Migration es un plugin de WordPress diseñado para exportar un sitio completo e importarlo en otra instalación de WordPress."
+          "content": "La sección Importar permite seleccionar el origen desde el cual se obtendrá el archivo de migración. Al elegir Archivo, el usuario puede localizar la copia en su computadora y subirla."
         },
         {
           "type": "text",
-          "content": "Puede trasladar la base de datos, los archivos multimedia, los temas, los plugins y la configuración del sitio mediante un solo archivo de migración."
+          "content": "Posteriormente, el plugin procesa el archivo de migración para restaurar los archivos, la base de datos y la configuración del sitio."
         }
       ]
     }
@@ -432,54 +433,54 @@
       "es-MX": "Migración con plugins"
     },
     "Question Text": {
-      "en-US": "During a web migration, what information does the plugin automatically replace?",
-      "es-MX": "El plugin utilizado para realizar migraciones web sustituye de forma automática:"
+      "en-US": "What are the three main menu options provided by the All-In-One WP Migration plugin?",
+      "es-MX": "El plugin All-In-One WP Migration tiene tres opciones en su menú principal, que son:"
     },
     "Options": {
       "en-US": [
-        "URLs and email data",
-        "Cookies and database data",
-        "URLs and database data",
-        "Contact numbers and database data"
+        "Export, Import and Security",
+        "Export, File and Backup",
+        "Export, Import and Backup",
+        "Exportation, Import and Backup"
       ],
       "es-MX": [
-        "Las URL y los datos del correo electrónico",
-        "Las cookies y los datos de la base de datos",
-        "Las URL y los datos de la base de datos",
-        "Los números de contacto y los datos de la base de datos"
+        "Exportar, Importar y Seguridad",
+        "Exportar, Archivo y Copia de seguridad",
+        "Exportar, Importar y Copia de seguridad",
+        "Exportación, Importar y Copia de seguridad"
       ]
     },
     "Correct Answer": {
-      "en-US": "URLs and database data",
-      "es-MX": "Las URL y los datos de la base de datos"
+      "en-US": "Export, Import and Backup",
+      "es-MX": "Exportar, Importar y Copia de seguridad"
     },
     "Explanation": {
       "en-US": [
         {
           "type": "title-h2",
-          "content": "Automatic data replacement"
+          "content": "Main migration options"
         },
         {
-          "type": "text",
-          "content": "When a website is moved to a different domain or server, its old addresses may no longer point to the correct location."
-        },
-        {
-          "type": "text",
-          "content": "The migration plugin updates the URLs and the related database information so that pages, images, links and other resources work from the new location."
+          "type": "ul",
+          "items": [
+            "Export: creates a migration file containing the website.",
+            "Import: loads a previously exported migration file.",
+            "Backup: provides access to the generated website copies."
+          ]
         }
       ],
       "es-MX": [
         {
           "type": "title-h2",
-          "content": "Sustitución automática de datos"
+          "content": "Opciones principales de migración"
         },
         {
-          "type": "text",
-          "content": "Cuando un sitio se traslada a otro dominio o servidor, sus direcciones anteriores pueden dejar de apuntar a la ubicación correcta."
-        },
-        {
-          "type": "text",
-          "content": "El plugin de migración actualiza las URL y la información relacionada de la base de datos para que las páginas, imágenes, enlaces y otros recursos funcionen desde la nueva ubicación."
+          "type": "ul",
+          "items": [
+            "Exportar: crea un archivo de migración con el contenido del sitio.",
+            "Importar: carga un archivo de migración exportado previamente.",
+            "Copia de seguridad: permite acceder a las copias generadas del sitio."
+          ]
         }
       ]
     }
@@ -490,54 +491,54 @@
       "es-MX": "Migración con plugins"
     },
     "Question Text": {
-      "en-US": "What migration process is recommended, especially for beginners in website use and development?",
-      "es-MX": "¿Cuál es el proceso recomendado en una migración, sobre todo si se es principiante en el uso y desarrollo de sitios web?"
+      "en-US": "In the free version described in this exercise, what is the maximum website size that the migration plugin allows to be imported?",
+      "es-MX": "En la versión gratuita descrita en este ejercicio, ¿cuál es el tamaño máximo de sitio que permite importar el plugin de migración?"
     },
     "Options": {
       "en-US": [
-        "Manual migration",
-        "Migration with a plugin",
-        "Direct manual migration using files",
-        "Migration with an assistant"
+        "400 MB",
+        "100 MB",
+        "300 MB",
+        "500 MB"
       ],
       "es-MX": [
-        "Migración manual",
-        "Migración por plugin",
-        "Migración manual directa con archivos",
-        "Migración con asistente"
+        "400 MB",
+        "100 MB",
+        "300 MB",
+        "500 MB"
       ]
     },
     "Correct Answer": {
-      "en-US": "Migration with a plugin",
-      "es-MX": "Migración por plugin"
+      "en-US": "400 MB",
+      "es-MX": "400 MB"
     },
     "Explanation": {
       "en-US": [
         {
           "type": "title-h2",
-          "content": "Migration with a plugin"
+          "content": "Import size"
         },
         {
           "type": "text",
-          "content": "A migration plugin automates many technical operations, such as exporting the database, copying files and updating website addresses."
+          "content": "The version and configuration represented in this exercise establish a maximum import size of 400 MB."
         },
         {
           "type": "text",
-          "content": "This reduces the possibility of errors and makes the process more accessible to users who do not have experience managing servers, files or databases."
+          "content": "This value is not universal. In other versions or installations, the effective import size may depend on the limits configured by the server and hosting provider."
         }
       ],
       "es-MX": [
         {
           "type": "title-h2",
-          "content": "Migración mediante un plugin"
+          "content": "Tamaño de importación"
         },
         {
           "type": "text",
-          "content": "Un plugin de migración automatiza numerosas operaciones técnicas, como exportar la base de datos, copiar los archivos y actualizar las direcciones del sitio."
+          "content": "La versión y configuración representadas en este ejercicio establecen un tamaño máximo de importación de 400 MB."
         },
         {
           "type": "text",
-          "content": "Esto reduce la posibilidad de errores y facilita el proceso a quienes no tienen experiencia administrando servidores, archivos o bases de datos."
+          "content": "Este valor no es universal. En otras versiones o instalaciones, el tamaño efectivo de importación puede depender de los límites configurados por el servidor y el proveedor de alojamiento."
         }
       ]
     }

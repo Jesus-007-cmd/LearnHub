@@ -197,10 +197,16 @@ export default function InterviewQuiz({
 
   const handleJsonSelection = (jsonFile: any, language: ForceLang) => {
     const adapted: AdaptedQ[] = jsonFile.Questions.map((q: any) => {
-      const pickVariant = (lang: ForceLang) => {
-        const pool = q["Question Text"][lang] as string[];
-        const rnd = Math.floor(Math.random() * pool.length);
-        return pool[rnd];
+      const pickVariant = (lang: ForceLang): string => {
+        const value = q["Question Text"]?.[lang];
+      
+        if (Array.isArray(value)) {
+          if (value.length === 0) return "";
+          const rnd = Math.floor(Math.random() * value.length);
+          return value[rnd];
+        }
+      
+        return typeof value === "string" ? value : "";
       };
 
       const word_en = pickVariant("en-US");

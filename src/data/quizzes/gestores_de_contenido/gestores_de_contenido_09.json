@@ -1,0 +1,1275 @@
+{
+  "meta": {
+    "slug": "gestores-contenidos-u9",
+    "title": "Constructores de sitios web: Elementor y Divi",
+    "subject": "DISEÑO Y CREACIÓN WEB CON GESTORES DE CONTENIDOS",
+    "unit": 9,
+    "classNo": 0,
+    "description": "Introducción a los constructores visuales de sitios web en WordPress y estudio de las características, herramientas y funcionamiento de Elementor y Divi.",
+    "tags": [
+      "WordPress",
+      "constructores web",
+      "edición visual",
+      "Elementor",
+      "Divi",
+      "diseño web",
+      "páginas web"
+    ],
+    "questionCount": 21,
+    "languages": [
+      "en-US",
+      "es-MX"
+    ]
+  },
+  "Questions": [{
+    "Category": {
+      "en-US": "Introduction to website builders",
+      "es-MX": "Introducción a los constructores web"
+    },
+    "Question Text": {
+      "en-US": "One of the main features of Elementor and Divi is:",
+      "es-MX": "Una de las características principales de Elementor y Divi es:"
+    },
+    "Options": {
+      "en-US": [
+        "Designing websites using PostgreSQL",
+        "Designing websites with customizable CSS",
+        "Designing websites by creating plugins",
+        "Designing websites with drag-and-drop functionality"
+      ],
+      "es-MX": [
+        "Diseñar webs con la característica de PostgreSQL",
+        "Diseñar webs con la característica de CSS personalizable",
+        "Diseñar webs con la característica de crear plugins",
+        "Diseñar webs con la característica de drag and drop"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "Designing websites with drag-and-drop functionality",
+      "es-MX": "Diseñar webs con la característica de drag and drop"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "Drag-and-drop visual design"
+        },
+        {
+          "type": "text",
+          "content": "Elementor and Divi provide visual editors that allow users to drag elements such as text, images, buttons and columns and drop them into the desired position."
+        },
+        {
+          "type": "text",
+          "content": "This method makes it possible to design pages visually without having to write all the HTML and CSS code manually."
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Diseño visual mediante arrastrar y soltar"
+        },
+        {
+          "type": "text",
+          "content": "Elementor y Divi proporcionan editores visuales que permiten arrastrar elementos como textos, imágenes, botones y columnas, y soltarlos en la posición deseada."
+        },
+        {
+          "type": "text",
+          "content": "Este método permite diseñar páginas visualmente sin tener que escribir manualmente todo el código HTML y CSS."
+        }
+      ]
+    }
+  },
+  {
+    "Category": {
+      "en-US": "Elementor",
+      "es-MX": "Elementor"
+    },
+    "Question Text": {
+      "en-US": "In what year was Elementor launched?",
+      "es-MX": "¿En qué año fue lanzado al mercado Elementor?"
+    },
+    "Options": {
+      "en-US": [
+        "2013",
+        "2016",
+        "2017",
+        "2006"
+      ],
+      "es-MX": [
+        "2013",
+        "2016",
+        "2017",
+        "2006"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "2016",
+      "es-MX": "2016"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "Elementor's launch"
+        },
+        {
+          "type": "text",
+          "content": "Elementor was created and launched in 2016 to make professional WordPress website design more accessible through a visual editing system."
+        },
+        {
+          "type": "text",
+          "content": "Its editor allows users to observe page changes while modifying the design."
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Lanzamiento de Elementor"
+        },
+        {
+          "type": "text",
+          "content": "Elementor fue creado y lanzado en 2016 con el propósito de facilitar el diseño profesional de sitios en WordPress mediante un sistema de edición visual."
+        },
+        {
+          "type": "text",
+          "content": "Su editor permite observar los cambios de la página mientras se modifica el diseño."
+        }
+      ]
+    }
+  },
+  {
+    "Category": {
+      "en-US": "E-commerce compatibility",
+      "es-MX": "Compatibilidad con comercio electrónico"
+    },
+    "Question Text": {
+      "en-US": "Which WordPress tool is compatible with Elementor and Divi for creating e-commerce websites?",
+      "es-MX": "Elementor y Divi para realizar comercio electrónico son compatibles con:"
+    },
+    "Options": {
+      "en-US": [
+        "WooCommerce",
+        "CSS2",
+        "Social network",
+        "Python"
+      ],
+      "es-MX": [
+        "Woocommerce",
+        "CSS2",
+        "Red social",
+        "Python"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "WooCommerce",
+      "es-MX": "Woocommerce"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "WooCommerce compatibility"
+        },
+        {
+          "type": "text",
+          "content": "WooCommerce adds e-commerce functionality to WordPress, including products, prices, shopping carts, orders and payment options."
+        },
+        {
+          "type": "text",
+          "content": "Elementor and Divi can visually customize WooCommerce pages and elements, allowing users to design an online store without building its entire interface from code."
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Compatibilidad con WooCommerce"
+        },
+        {
+          "type": "text",
+          "content": "WooCommerce incorpora a WordPress las funciones necesarias para el comercio electrónico, como productos, precios, carritos, pedidos y opciones de pago."
+        },
+        {
+          "type": "text",
+          "content": "Elementor y Divi permiten personalizar visualmente las páginas y elementos de WooCommerce, facilitando el diseño de una tienda en línea sin construir toda su interfaz mediante código."
+        }
+      ]
+    }
+  },
+{
+  "Category": {
+    "en-US": "Elementor",
+    "es-MX": "Elementor"
+  },
+  "Question Text": {
+    "en-US": "What is Elementor in WordPress?",
+    "es-MX": "¿Qué es Elementor en WordPress?"
+  },
+  "Options": {
+    "en-US": [
+      "A visual page builder plugin",
+      "A database management system",
+      "A web hosting service",
+      "A programming language"
+    ],
+    "es-MX": [
+      "Un plugin constructor visual de páginas",
+      "Un sistema para administrar bases de datos",
+      "Un servicio de alojamiento web",
+      "Un lenguaje de programación"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "A visual page builder plugin",
+    "es-MX": "Un plugin constructor visual de páginas"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "What is Elementor?"
+      },
+      {
+        "type": "text",
+        "content": "Elementor is a WordPress plugin used to visually create and customize web pages. It provides an editor where elements such as headings, text, images, buttons and columns can be dragged and dropped into the desired position."
+      },
+      {
+        "type": "text",
+        "content": "Elementor does not replace WordPress or function as a programming language. It works inside WordPress and simplifies page design without requiring users to write all the code manually."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "¿Qué es Elementor?"
+      },
+      {
+        "type": "text",
+        "content": "Elementor es un plugin de WordPress que permite crear y personalizar páginas de manera visual. Proporciona un editor en el que se pueden arrastrar y soltar elementos como títulos, textos, imágenes, botones y columnas."
+      },
+      {
+        "type": "text",
+        "content": "Elementor no sustituye a WordPress ni es un lenguaje de programación. Funciona dentro de WordPress y facilita el diseño de páginas sin que el usuario tenga que escribir manualmente todo el código."
+      }
+    ]
+  }
+},
+{
+  "Category": {
+    "en-US": "Elementor settings",
+    "es-MX": "Ajustes de Elementor"
+  },
+  "Question Text": {
+    "en-US": "In Elementor settings, what do the Role Manager settings allow users to define?",
+    "es-MX": "En los ajustes de Elementor, los ajustes de «Gestor de perfiles» permiten:"
+  },
+  "Options": {
+    "en-US": [
+      "Define which WordPress roles have or do not have access to the Elementor database",
+      "Define which Elementor roles have or do not have access to the builder",
+      "Define which WordPress roles have or do not have access to Elementor contacts",
+      "Define which WordPress roles have or do not have access to the Elementor editor"
+    ],
+    "es-MX": [
+      "Definir qué perfiles de WordPress tienen o no tendrán acceso a la base de datos de Elementor",
+      "Definir qué perfiles de Elementor tienen o no tendrán acceso al constructor",
+      "Definir qué perfiles de WordPress tienen o no tendrán acceso a los contactos de Elementor",
+      "Definir qué perfiles de WordPress tienen o no tendrán acceso al editor de Elementor"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Define which WordPress roles have or do not have access to the Elementor editor",
+    "es-MX": "Definir qué perfiles de WordPress tienen o no tendrán acceso al editor de Elementor"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Elementor Role Manager"
+      },
+      {
+        "type": "text",
+        "content": "The Role Manager controls which WordPress user roles are allowed to access and use the Elementor editor."
+      },
+      {
+        "type": "text",
+        "content": "For example, an administrator can prevent users with a specific role from editing page designs while still allowing them to perform other WordPress tasks."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Gestor de perfiles de Elementor"
+      },
+      {
+        "type": "text",
+        "content": "El Gestor de perfiles controla qué perfiles de usuario de WordPress pueden acceder y utilizar el editor de Elementor."
+      },
+      {
+        "type": "text",
+        "content": "Por ejemplo, un administrador puede impedir que los usuarios con determinado perfil modifiquen el diseño de las páginas, aunque puedan realizar otras tareas en WordPress."
+      }
+    ]
+  }
+},
+{
+  "Category": {
+    "en-US": "Elementor versions",
+    "es-MX": "Versiones de Elementor"
+  },
+  "Question Text": {
+    "en-US": "Which versions of Elementor are available?",
+    "es-MX": "Elementor tiene versión:"
+  },
+  "Options": {
+    "en-US": [
+      "Premium and PHP files",
+      "Premium and free",
+      "Premium and dynamic themes",
+      "Premium and ZIP files"
+    ],
+    "es-MX": [
+      "Premium y archivos PHP",
+      "Premium y gratuita",
+      "Premium y temas dinámicos",
+      "Premium y archivos ZIP"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Premium and free",
+    "es-MX": "Premium y gratuita"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Free and Pro versions"
+      },
+      {
+        "type": "text",
+        "content": "Elementor has a free version, also known as Elementor Core, which includes the visual drag-and-drop editor and basic widgets."
+      },
+      {
+        "type": "text",
+        "content": "Its paid or premium version is called Elementor Pro and adds advanced widgets, templates, forms, popup creation and theme-building features."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Versiones gratuita y Pro"
+      },
+      {
+        "type": "text",
+        "content": "Elementor dispone de una versión gratuita, también conocida como Elementor Core, que incluye el editor visual de arrastrar y soltar y los widgets básicos."
+      },
+      {
+        "type": "text",
+        "content": "Su versión de pago o premium se llama Elementor Pro y añade widgets avanzados, plantillas, formularios, ventanas emergentes y herramientas para diseñar el tema."
+      }
+    ]
+  }
+},
+{
+  "Category": {
+    "en-US": "Elementor settings",
+    "es-MX": "Ajustes de Elementor"
+  },
+  "Question Text": {
+    "en-US": "In the Elementor version represented in this question, which settings section allows users to select where the generated CSS code will be stored?",
+    "es-MX": "En la versión de Elementor representada en esta pregunta, ¿qué sección de ajustes permite indicar dónde se guardará el código CSS generado?"
+  },
+  "Options": {
+    "en-US": [
+      "Experiments settings",
+      "Advanced settings",
+      "General settings",
+      "Style settings"
+    ],
+    "es-MX": [
+      "Ajustes «Experimentos»",
+      "Ajustes «Avanzados»",
+      "Ajustes «General»",
+      "Ajustes «Estilo»"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Advanced settings",
+    "es-MX": "Ajustes «Avanzados»"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "CSS print method"
+      },
+      {
+        "type": "text",
+        "content": "In the Elementor version represented in the question, the CSS Print Method option is located in Advanced settings. It determines whether the generated styles are stored in an external file or included internally in the page."
+      },
+      {
+        "type": "text",
+        "content": "Elementor's interface has changed over time. In current versions, this option is located in the Performance settings section."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Método de impresión CSS"
+      },
+      {
+        "type": "text",
+        "content": "En la versión de Elementor representada en la pregunta, la opción Método de impresión CSS se encuentra en los ajustes «Avanzados». Esta permite decidir si los estilos generados se guardan en un archivo externo o se incluyen internamente en la página."
+      },
+      {
+        "type": "text",
+        "content": "La interfaz de Elementor ha cambiado con el tiempo. En las versiones actuales, esta opción se encuentra en la sección de ajustes «Rendimiento»."
+      }
+    ]
+  }
+},
+{
+  "Category": {
+    "en-US": "Divi settings",
+    "es-MX": "Ajustes de Divi"
+  },
+  "Question Text": {
+    "en-US": "Which Divi settings tab allows users to enter their username and Divi API key?",
+    "es-MX": "¿Cuál es la pestaña de ajustes de Divi que permite ingresar los datos de usuario y la clave API de Divi?"
+  },
+  "Options": {
+    "en-US": [
+      "Updates tab",
+      "Builder tab",
+      "Integration tab",
+      "Design tab"
+    ],
+    "es-MX": [
+      "Pestaña «Actualizaciones»",
+      "Pestaña «Constructor»",
+      "Pestaña «Integración»",
+      "Pestaña «Diseño»"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Updates tab",
+    "es-MX": "Pestaña «Actualizaciones»"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Divi Updates tab"
+      },
+      {
+        "type": "text",
+        "content": "The Updates tab contains the fields for entering the Elegant Themes username and API key associated with the user's account."
+      },
+      {
+        "type": "text",
+        "content": "These credentials authenticate the subscription and allow the WordPress installation to receive Divi updates and access its corresponding features."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Pestaña Actualizaciones de Divi"
+      },
+      {
+        "type": "text",
+        "content": "La pestaña «Actualizaciones» contiene los campos para introducir el nombre de usuario de Elegant Themes y la clave API asociada con la cuenta."
+      },
+      {
+        "type": "text",
+        "content": "Estas credenciales autentican la suscripción y permiten que la instalación de WordPress reciba las actualizaciones de Divi y acceda a las funciones correspondientes."
+      }
+    ]
+  }
+},
+{
+  "Category": {
+    "en-US": "Divi customization",
+    "es-MX": "Personalización de Divi"
+  },
+  "Question Text": {
+    "en-US": "If we want to add the website logo using Divi, from which option is the logo uploaded?",
+    "es-MX": "Si queremos colocar el logo del sitio web usando el constructor Divi, el logo se carga desde:"
+  },
+  "Options": {
+    "en-US": [
+      "General and then Logo",
+      "Navigation and then Logo",
+      "Design and then Logo",
+      "Builder and then Logos"
+    ],
+    "es-MX": [
+      "«General» y luego «Logo»",
+      "«Navegación» y luego «Logo»",
+      "«Diseño» y luego «Logo»",
+      "«Constructor» y luego «Logos»"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "General and then Logo",
+    "es-MX": "«General» y luego «Logo»"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Adding a logo in Divi"
+      },
+      {
+        "type": "text",
+        "content": "The global website logo is configured in Divi Theme Options, under the General section and the Logo field."
+      },
+      {
+        "type": "text",
+        "content": "The user can open the WordPress Media Library to select an existing image or upload a new logo. Divi then uses it in areas of the theme that request the global logo."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Agregar un logotipo en Divi"
+      },
+      {
+        "type": "text",
+        "content": "El logotipo global del sitio se configura en las opciones del tema Divi, dentro de la sección «General» y el campo «Logo»."
+      },
+      {
+        "type": "text",
+        "content": "El usuario puede abrir la biblioteca de medios de WordPress para seleccionar una imagen existente o subir un nuevo logotipo. Divi lo utiliza en las áreas del tema que solicitan el logo global."
+      }
+    ]
+  }
+},
+{
+  "Category": {
+    "en-US": "Advertising in Divi",
+    "es-MX": "Publicidad en Divi"
+  },
+  "Question Text": {
+    "en-US": "What does the Ads tab in Divi settings allow users to do?",
+    "es-MX": "La pestaña de «Anuncios» de los ajustes de Divi permite:"
+  },
+  "Options": {
+    "en-US": [
+      "Manage advertisements and insert CSS and HTML into the content when monetizing the blog or website",
+      "Manage advertisements and insert PHP functions into the content when monetizing the blog or website",
+      "Manage advertisements and integrate hosting into the content when monetizing the blog or website",
+      "Manage advertisements and insert banners into the content when monetizing the blog or website"
+    ],
+    "es-MX": [
+      "Gestionar anuncios e integrar CSS y HTML en el contenido en caso de que se decidiera monetizar el blog o sitio web",
+      "Gestionar anuncios e integrar funciones PHP en el contenido en caso de que se decidiera monetizar el blog o sitio web",
+      "Gestionar anuncios e integrar el hosting en el contenido en caso de que se decidiera monetizar el blog o sitio web",
+      "Gestionar anuncios e integrar banners en el contenido en caso de que se decidiera monetizar el blog o sitio web"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Manage advertisements and insert banners into the content when monetizing the blog or website",
+    "es-MX": "Gestionar anuncios e integrar banners en el contenido en caso de que se decidiera monetizar el blog o sitio web"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Divi advertising settings"
+      },
+      {
+        "type": "text",
+        "content": "The Ads tab is used to configure advertisements that are not managed through WordPress widgets."
+      },
+      {
+        "type": "text",
+        "content": "It allows users to activate a banner, provide its image and destination URL, or enter advertising code such as an AdSense code."
+      },
+      {
+        "type": "text",
+        "content": "General CSS, HTML or JavaScript code is added through the Integration tab rather than the Ads tab."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Ajustes de publicidad de Divi"
+      },
+      {
+        "type": "text",
+        "content": "La pestaña «Anuncios» se utiliza para configurar publicidad que no se administra mediante los widgets de WordPress."
+      },
+      {
+        "type": "text",
+        "content": "Permite activar un banner, proporcionar su imagen y dirección de destino, o introducir código publicitario, como un código de AdSense."
+      },
+      {
+        "type": "text",
+        "content": "El código general CSS, HTML o JavaScript se agrega desde la pestaña «Integración» y no desde la pestaña «Anuncios»."
+      }
+    ]
+  }
+},
+{
+  "Category": {
+    "en-US": "Divi",
+    "es-MX": "Divi"
+  },
+  "Question Text": {
+    "en-US": "What is Divi in WordPress?",
+    "es-MX": "¿Qué es Divi en WordPress?"
+  },
+  "Options": {
+    "en-US": [
+      "A WordPress theme and visual website builder",
+      "A database management program",
+      "A web hosting service",
+      "A plugin used exclusively to create backups"
+    ],
+    "es-MX": [
+      "Un tema y constructor visual de sitios web para WordPress",
+      "Un programa para administrar bases de datos",
+      "Un servicio de alojamiento web",
+      "Un plugin utilizado exclusivamente para crear copias de seguridad"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "A WordPress theme and visual website builder",
+    "es-MX": "Un tema y constructor visual de sitios web para WordPress"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "What is Divi?"
+      },
+      {
+        "type": "text",
+        "content": "Divi is a WordPress theme that includes the Divi Builder, a visual tool for creating and customizing websites by dragging and dropping elements."
+      },
+      {
+        "type": "text",
+        "content": "The builder organizes pages using sections, rows, columns and modules. These modules can add elements such as text, images, buttons, galleries and forms."
+      },
+      {
+        "type": "text",
+        "content": "Divi Builder is also available as a separate plugin, allowing its visual editing system to be used with other compatible WordPress themes."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "¿Qué es Divi?"
+      },
+      {
+        "type": "text",
+        "content": "Divi es un tema para WordPress que incluye Divi Builder, una herramienta visual para crear y personalizar sitios mediante el sistema de arrastrar y soltar elementos."
+      },
+      {
+        "type": "text",
+        "content": "El constructor organiza las páginas mediante secciones, filas, columnas y módulos. Estos módulos permiten agregar elementos como textos, imágenes, botones, galerías y formularios."
+      },
+      {
+        "type": "text",
+        "content": "Divi Builder también está disponible como un plugin independiente, lo que permite utilizar su sistema de edición visual con otros temas compatibles de WordPress."
+      }
+    ]
+  }
+},
+{
+  "Category": {
+    "en-US": "Divi integration",
+    "es-MX": "Integración en Divi"
+  },
+  "Question Text": {
+    "en-US": "Which Divi settings option allows users to add code to the header, body and footer without editing the theme's internal files?",
+    "es-MX": "¿Cuál de las opciones de los ajustes de Divi permite agregar código adicional en la cabecera, body y footer sin necesidad de modificar los archivos internos del tema?"
+  },
+  "Options": {
+    "en-US": [
+      "General",
+      "Builder",
+      "Design",
+      "Integration"
+    ],
+    "es-MX": [
+      "General",
+      "Constructor",
+      "Diseño",
+      "Integración"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Integration",
+    "es-MX": "Integración"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Divi Integration settings"
+      },
+      {
+        "type": "text",
+        "content": "The Integration section provides fields for adding code to different areas of the website, including the head element, the beginning of the body and areas associated with posts."
+      },
+      {
+        "type": "text",
+        "content": "It can be used to add tracking codes, analytics scripts, verification tags, CSS or JavaScript without directly modifying the theme files."
+      },
+      {
+        "type": "text",
+        "content": "This reduces the risk of losing the inserted code when the Divi theme is updated."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Ajustes de Integración de Divi"
+      },
+      {
+        "type": "text",
+        "content": "La sección «Integración» proporciona campos para agregar código en diferentes áreas del sitio, como el elemento head, el inicio del body y las áreas relacionadas con las publicaciones."
+      },
+      {
+        "type": "text",
+        "content": "Puede utilizarse para insertar códigos de seguimiento, scripts de analítica, etiquetas de verificación, CSS o JavaScript sin modificar directamente los archivos del tema."
+      },
+      {
+        "type": "text",
+        "content": "Esto reduce el riesgo de perder el código insertado cuando se actualiza el tema Divi."
+      }
+    ]
+  }
+},
+{
+  "Category": {
+    "en-US": "Divi Builder",
+    "es-MX": "Divi Builder"
+  },
+  "Question Text": {
+    "en-US": "Which website page builder was developed by Elegant Themes?",
+    "es-MX": "Es un constructor de páginas web desarrollado por la compañía Elegant Themes:"
+  },
+  "Options": {
+    "en-US": [
+      "PostgreSQL",
+      "Python",
+      "Elementor Builder",
+      "Divi Builder"
+    ],
+    "es-MX": [
+      "PostgreSQL",
+      "Python",
+      "Constructor Elementor",
+      "Divi Builder"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Divi Builder",
+    "es-MX": "Divi Builder"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Divi Builder and Elegant Themes"
+      },
+      {
+        "type": "text",
+        "content": "Divi Builder is the visual website builder created by Elegant Themes. It allows WordPress pages to be designed by arranging sections, rows, columns and modules."
+      },
+      {
+        "type": "text",
+        "content": "PostgreSQL is a database system, Python is a programming language and Elementor is developed by a different company."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Divi Builder y Elegant Themes"
+      },
+      {
+        "type": "text",
+        "content": "Divi Builder es el constructor visual de sitios web creado por Elegant Themes. Permite diseñar páginas de WordPress organizando secciones, filas, columnas y módulos."
+      },
+      {
+        "type": "text",
+        "content": "PostgreSQL es un sistema de bases de datos, Python es un lenguaje de programación y Elementor es desarrollado por otra compañía."
+      }
+    ]
+  }
+},
+{
+  "Category": {
+    "en-US": "Divi general settings",
+    "es-MX": "Ajustes generales de Divi"
+  },
+  "Question Text": {
+    "en-US": "Which options can be found in the General tab of Divi's settings?",
+    "es-MX": "¿Cuáles de las siguientes opciones se encuentran en la pestaña «General» de los ajustes y configuración de Divi?"
+  },
+  "Options": {
+    "en-US": [
+      "Pages, Categories and General Settings",
+      "Logo, Fixed Navigation Bar and Enable Divi Gallery",
+      "Social Network, Configuration and Panel",
+      "Logo, Active Browsing Bar and Enable Divi Gallery"
+    ],
+    "es-MX": [
+      "«Páginas», «Categorías» y «Ajustes generales»",
+      "«Logo», «Barra de navegación fija» y «Activar Galería Divi»",
+      "«Red social», «Configuración» y «Panel»",
+      "«Logo», «Barra de exploración activa» y «Activar Galería Divi»"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Logo, Fixed Navigation Bar and Enable Divi Gallery",
+    "es-MX": "«Logo», «Barra de navegación fija» y «Activar Galería Divi»"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Divi General settings"
+      },
+      {
+        "type": "text",
+        "content": "The General settings include options that affect the overall appearance and behavior of the website."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Logo: establishes the global website logo.",
+          "Fixed Navigation Bar: keeps the navigation bar visible while the page is scrolled.",
+          "Enable Divi Gallery: replaces the default WordPress gallery style with Divi's gallery style."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Ajustes generales de Divi"
+      },
+      {
+        "type": "text",
+        "content": "Los ajustes «General» contienen opciones que afectan la apariencia y el funcionamiento general del sitio."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Logo: establece el logotipo global del sitio.",
+          "Barra de navegación fija: mantiene visible la barra de navegación mientras se desplaza la página.",
+          "Activar Galería Divi: sustituye el estilo predeterminado de las galerías de WordPress por el estilo de Divi."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": {
+    "en-US": "Divi navigation settings",
+    "es-MX": "Ajustes de navegación de Divi"
+  },
+  "Question Text": {
+    "en-US": "Which three subtabs make up the Navigation settings in Divi?",
+    "es-MX": "El ajuste de Divi correspondiente a la pestaña «Navegación» influye en el comportamiento del menú principal. ¿Cuáles son sus tres subpestañas?"
+  },
+  "Options": {
+    "en-US": [
+      "Pages, Categories and General Settings",
+      "Logo, Fixed Navigation Bar and Enable Divi Gallery",
+      "Social Network, Configuration and Panel",
+      "Logo, Active Browsing Bar and Enable Divi Gallery"
+    ],
+    "es-MX": [
+      "«Páginas», «Categorías» y «Ajustes generales»",
+      "«Logo», «Barra de navegación fija» y «Activar Galería Divi»",
+      "«Red social», «Configuración» y «Panel»",
+      "«Logo», «Barra de exploración activa» y «Activar Galería Divi»"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Pages, Categories and General Settings",
+    "es-MX": "«Páginas», «Categorías» y «Ajustes generales»"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Divi Navigation subtabs"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Pages: controls which pages are displayed in the navigation.",
+          "Categories: controls which categories appear in the menu.",
+          "General Settings: contains settings for the general behavior of navigation links and drop-down menus."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Subpestañas de Navegación"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Páginas: controla qué páginas se muestran en la navegación.",
+          "Categorías: controla qué categorías aparecen en el menú.",
+          "Ajustes generales: contiene opciones para el comportamiento general de los enlaces y los menús desplegables."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": {
+    "en-US": "Divi settings and configuration",
+    "es-MX": "Ajustes y configuración de Divi"
+  },
+  "Question Text": {
+    "en-US": "In which Divi settings tab can changes related to performance and user experience be made?",
+    "es-MX": "¿En qué pestaña de los ajustes de Divi se pueden realizar cambios relacionados con el rendimiento y la experiencia del usuario?"
+  },
+  "Options": {
+    "en-US": [
+      "Advanced",
+      "Pages",
+      "Navigation",
+      "Builder"
+    ],
+    "es-MX": [
+      "Avanzado",
+      "Páginas",
+      "Navegación",
+      "Constructor"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Builder",
+    "es-MX": "Constructor"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Builder settings"
+      },
+      {
+        "type": "text",
+        "content": "The Builder tab contains options that affect how the Divi builder works, including settings related to performance and the editing experience."
+      },
+      {
+        "type": "text",
+        "content": "These options help adjust the behavior of the builder and optimize its use while creating or editing website content."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Ajustes del constructor"
+      },
+      {
+        "type": "text",
+        "content": "La pestaña «Constructor» contiene opciones que afectan el funcionamiento del constructor Divi, incluidos ajustes relacionados con el rendimiento y la experiencia de edición."
+      },
+      {
+        "type": "text",
+        "content": "Estas opciones permiten modificar el comportamiento del constructor y optimizar su uso al crear o editar el contenido del sitio web."
+      }
+    ]
+  }
+},
+{
+  "Category": {
+    "en-US": "Divi settings and configuration",
+    "es-MX": "Ajustes y configuración de Divi"
+  },
+  "Question Text": {
+    "en-US": "In which Divi settings tab are the general design styles for website posts and pages defined?",
+    "es-MX": "¿En qué pestaña de los ajustes de Divi se definen los estilos generales de diseño para los artículos y las páginas del sitio web?"
+  },
+  "Options": {
+    "en-US": [
+      "General",
+      "Navigation",
+      "Builder",
+      "Layout"
+    ],
+    "es-MX": [
+      "Generales",
+      "De navegación",
+      "De constructor",
+      "De diseño"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Layout",
+    "es-MX": "De diseño"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Layout settings"
+      },
+      {
+        "type": "text",
+        "content": "The Layout tab defines general presentation and design options for posts and pages."
+      },
+      {
+        "type": "text",
+        "content": "These settings help maintain a consistent appearance across the different types of content displayed on the website."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Ajustes de diseño"
+      },
+      {
+        "type": "text",
+        "content": "La pestaña «De diseño» permite definir opciones generales de presentación y diseño para los artículos y las páginas."
+      },
+      {
+        "type": "text",
+        "content": "Estos ajustes ayudan a mantener una apariencia uniforme entre los distintos tipos de contenido mostrados en el sitio web."
+      }
+    ]
+  }
+},
+{
+  "Category": {
+    "en-US": "Divi settings and configuration",
+    "es-MX": "Ajustes y configuración de Divi"
+  },
+  "Question Text": {
+    "en-US": "Which Divi settings tab allows you to improve the website by enabling or disabling its available options according to each website's needs?",
+    "es-MX": "¿Qué pestaña de los ajustes de Divi permite mejorar el sitio web activando o desactivando sus opciones según las necesidades de cada web?"
+  },
+  "Options": {
+    "en-US": [
+      "General Settings",
+      "SEO",
+      "Builder",
+      "Layout"
+    ],
+    "es-MX": [
+      "Ajustes generales",
+      "SEO",
+      "Constructor",
+      "Diseño"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "SEO",
+    "es-MX": "SEO"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Divi SEO settings"
+      },
+      {
+        "type": "text",
+        "content": "The SEO tab contains options for optimizing how the website's content is interpreted and displayed by search engines."
+      },
+      {
+        "type": "text",
+        "content": "Its settings can be enabled or disabled according to the website's needs, including options for titles, descriptions, canonical URLs and indexing."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Ajustes SEO de Divi"
+      },
+      {
+        "type": "text",
+        "content": "La pestaña «SEO» contiene opciones para optimizar la manera en que los buscadores interpretan y muestran el contenido del sitio web."
+      },
+      {
+        "type": "text",
+        "content": "Sus ajustes pueden activarse o desactivarse según las necesidades del sitio e incluyen opciones para títulos, descripciones, direcciones canónicas e indexación."
+      }
+    ]
+  }
+},
+{
+  "Category": {
+    "en-US": "Divi settings and configuration",
+    "es-MX": "Ajustes y configuración de Divi"
+  },
+  "Question Text": {
+    "en-US": "Which Divi settings tab allows you to manage advertisements and add banners to the content when monetizing a blog or website?",
+    "es-MX": "¿En qué pestaña de los ajustes de Divi se pueden gestionar anuncios e integrar banners en el contenido cuando se desea monetizar un blog o sitio web?"
+  },
+  "Options": {
+    "en-US": [
+      "Advanced",
+      "Ads",
+      "Navigation",
+      "Builder"
+    ],
+    "es-MX": [
+      "Avanzado",
+      "Anuncios",
+      "Navegación",
+      "Constructor"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Ads",
+    "es-MX": "Anuncios"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Ads settings"
+      },
+      {
+        "type": "text",
+        "content": "The Ads tab contains Divi's options for configuring and displaying advertisements on a blog or website."
+      },
+      {
+        "type": "text",
+        "content": "It can be used to add advertising banners, define their destination links and insert advertising code when monetizing the website."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Ajustes de anuncios"
+      },
+      {
+        "type": "text",
+        "content": "La pestaña «Anuncios» contiene las opciones de Divi para configurar y mostrar publicidad en un blog o sitio web."
+      },
+      {
+        "type": "text",
+        "content": "Permite agregar banners publicitarios, establecer sus enlaces de destino e insertar códigos de anuncios cuando se desea monetizar el sitio."
+      }
+    ]
+  }
+},
+{
+  "Category": {
+    "en-US": "Divi settings and configuration",
+    "es-MX": "Ajustes y configuración de Divi"
+  },
+  "Question Text": {
+    "en-US": "Which Divi section allows advanced customization without directly editing the theme's internal code?",
+    "es-MX": "¿Qué sección de Divi permite realizar una personalización avanzada sin modificar directamente el código interno del tema?"
+  },
+  "Options": {
+    "en-US": [
+      "General Settings",
+      "Integration",
+      "Builder",
+      "Layout"
+    ],
+    "es-MX": [
+      "Ajustes generales",
+      "Integración",
+      "Constructor",
+      "Diseño"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Integration",
+    "es-MX": "Integración"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Integration settings"
+      },
+      {
+        "type": "text",
+        "content": "The Integration section allows custom code to be added to different areas of the website without directly modifying the theme files."
+      },
+      {
+        "type": "text",
+        "content": "For example, code can be inserted into the website's head or body, as well as before or after the content of posts."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Ajustes de integración"
+      },
+      {
+        "type": "text",
+        "content": "La sección «Integración» permite agregar código personalizado en distintas áreas del sitio sin modificar directamente los archivos internos del tema."
+      },
+      {
+        "type": "text",
+        "content": "Por ejemplo, se puede insertar código en la cabecera o el cuerpo de la web, así como antes o después del contenido de los artículos."
+      }
+    ]
+  }
+},
+{
+  "Category": {
+    "en-US": "Divi settings and configuration",
+    "es-MX": "Ajustes y configuración de Divi"
+  },
+  "Question Text": {
+    "en-US": "Which Divi settings tab contains options that influence the behavior of the website's main menu?",
+    "es-MX": "¿Qué pestaña de los ajustes de Divi contiene las opciones que influyen en el comportamiento del menú principal del sitio web?"
+  },
+  "Options": {
+    "en-US": [
+      "General Settings",
+      "Navigation",
+      "Builder",
+      "Exit"
+    ],
+    "es-MX": [
+      "Ajustes generales",
+      "Navegación",
+      "Constructor",
+      "Salida"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Navigation",
+    "es-MX": "Navegación"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Navigation settings"
+      },
+      {
+        "type": "text",
+        "content": "The Navigation tab contains options that control the behavior and organization of the website's main menu."
+      },
+      {
+        "type": "text",
+        "content": "These settings determine which pages and categories appear in the navigation menu and how they are presented to visitors."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Ajustes de navegación"
+      },
+      {
+        "type": "text",
+        "content": "La pestaña «Navegación» contiene las opciones que controlan el comportamiento y la organización del menú principal del sitio web."
+      },
+      {
+        "type": "text",
+        "content": "Estos ajustes permiten determinar qué páginas y categorías aparecen en el menú y cómo se presentan a los visitantes."
+      }
+    ]
+  }
+}
+]
+}
