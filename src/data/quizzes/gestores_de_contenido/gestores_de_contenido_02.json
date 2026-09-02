@@ -1,0 +1,718 @@
+{
+  "meta": {
+    "slug": "gestores-contenidos-u2",
+    "title": "Instalación del software de WordPress",
+    "subject": "DISEÑO Y CREACIÓN WEB CON GESTORES DE CONTENIDOS",
+    "unit": 2,
+    "classNo": 0,
+    "description": "Unidad 2: instalación del software de WordPress en un servidor local y en un servidor remoto, preparación del entorno, bases de datos y configuración inicial.",
+    "tags": [
+      "WordPress",
+      "instalación de WordPress",
+      "servidor local",
+      "servidor remoto",
+      "XAMPP",
+      "PHP",
+      "MySQL",
+      "base de datos",
+      "hosting",
+      "cPanel"
+    ],
+    "questionCount": 0,
+    "languages": [
+      "en-US",
+      "es-MX"
+    ]
+  },
+  "Questions": [
+    {
+      "Category": "Definición de XAMPP",
+      "Question Text": {
+        "en-US": [
+          "Definition of XAMPP:"
+        ],
+        "es-MX": [
+          "Definición de XAMPP:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "It is open-source, cross-platform hardware. It allows you to easily install Apache on your own computer, regardless of your operating system",
+          "It is an open-source, cross-platform server. It allows you to easily install Apache on your own computer, regardless of your operating system",
+          "It is a paid-code, cross-platform service. It allows you to easily install Apache on your own computer, regardless of your operating system",
+          "It is an open-source platform server. It allows you to easily uninstall Apache from your own computer, regardless of your operating system"
+        ],
+        "es-MX": [
+          "Es un hardware independiente de plataforma de código libre. Te permite instalar, de forma sencilla, Apache en tu propio ordenador, sin importar tu sistema operativo",
+          "Es un servidor independiente de plataforma de código libre. Te permite instalar, de forma sencilla, Apache en tu propio ordenador, sin importar tu sistema operativo",
+          "Es un servicio independiente de plataforma de código de pago. Te permite instalar, de forma sencilla, Apache en tu propio ordenador, sin importar tu sistema operativo",
+          "Es un servidor de plataforma de código libre. Te permite desinstalar, de forma sencilla, Apache en tu propio ordenador, sin importar tu sistema operativo"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "It is an open-source, cross-platform server. It allows you to easily install Apache on your own computer, regardless of your operating system",
+        "es-MX": "Es un servidor independiente de plataforma de código libre. Te permite instalar, de forma sencilla, Apache en tu propio ordenador, sin importar tu sistema operativo"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "XAMPP creates a local server environment"
+          },
+          {
+            "type": "text",
+            "content": "According to the course material, XAMPP is an open-source, cross-platform server package that allows Apache and the other components needed to run dynamic websites to be installed on a personal computer."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "The X represents the different operating systems on which it can run.",
+              "Apache provides the web server.",
+              "MySQL provides the database system according to the terminology used in the material.",
+              "PHP and Perl provide interpreters for scripting languages."
+            ]
+          },
+          {
+            "type": "text",
+            "content": "XAMPP is software, not physical hardware. It is open source rather than paid-code software, and its purpose is to install and use a local web environment, not simply to uninstall Apache."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "XAMPP crea un entorno de servidor local"
+          },
+          {
+            "type": "text",
+            "content": "De acuerdo con el material del curso, XAMPP es un paquete de servidor independiente de plataforma y de código libre que permite instalar Apache y otros componentes necesarios para ejecutar sitios web dinámicos en un ordenador personal."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "La X representa los diferentes sistemas operativos en los que puede funcionar.",
+              "Apache proporciona el servidor web.",
+              "MySQL proporciona el sistema de base de datos según la terminología utilizada en el material.",
+              "PHP y Perl proporcionan intérpretes para lenguajes de script."
+            ]
+          },
+          {
+            "type": "text",
+            "content": "XAMPP es software, no hardware físico. Es de código libre y no de código de pago; además, su finalidad es instalar y utilizar un entorno web local, no simplemente desinstalar Apache."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Componentes de XAMPP",
+      "Question Text": {
+        "en-US": [
+          "XAMPP includes database servers such as MySQL and SQLite, managers such as phpMyAdmin and phpSQLiteAdmin, and also incorporates the _____ interpreter and the _____ interpreter"
+        ],
+        "es-MX": [
+          "XAMPP incluye servidores de bases de datos como MySQL y SQLite, gestores phpMyAdmin y phpSQLiteAdmin e incorpora, también, el intérprete de _____ y el intérprete de _____"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "SQL and Perl",
+          "Java and Perl",
+          "PHP and Perl",
+          "Python and Perl"
+        ],
+        "es-MX": [
+          "SQL y Perl",
+          "Java y Perl",
+          "PHP y Perl",
+          "Python y Perl"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "PHP and Perl",
+        "es-MX": "PHP y Perl"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "XAMPP incorporates PHP and Perl interpreters"
+          },
+          {
+            "type": "text",
+            "content": "The correct answer is PHP and Perl because both are scripting languages included in the meaning and traditional composition of XAMPP."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "X: cross-platform support.",
+              "A: Apache web server.",
+              "M: MySQL database system, according to the material.",
+              "P: PHP interpreter.",
+              "P: Perl interpreter."
+            ]
+          },
+          {
+            "type": "text",
+            "content": "SQL is a language used to work with relational databases, but it is not the interpreter represented by the first P. Java and Python are not the two interpreters requested in this definition."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "XAMPP incorpora los intérpretes de PHP y Perl"
+          },
+          {
+            "type": "text",
+            "content": "La respuesta correcta es PHP y Perl porque ambos son lenguajes de script incluidos en el significado y en la composición tradicional de XAMPP."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "X: compatibilidad con diferentes plataformas.",
+              "A: servidor web Apache.",
+              "M: sistema de base de datos MySQL, de acuerdo con el material.",
+              "P: intérprete de PHP.",
+              "P: intérprete de Perl."
+            ]
+          },
+          {
+            "type": "text",
+            "content": "SQL es un lenguaje utilizado para trabajar con bases de datos relacionales, pero no es el intérprete representado por la primera P. Java y Python tampoco son los dos intérpretes solicitados en esta definición."
+          }
+        ]
+      }
+    },
+    
+    {
+      "Category": "Instalación de XAMPP",
+      "Question Text": {
+        "en-US": [
+          "The installation steps after downloading XAMPP are:"
+        ],
+        "es-MX": [
+          "Los pasos de instalación, después de la descarga de XAMPP, son:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "You select the language and the terms of use",
+          "Terms of use, you select the language and select the folder",
+          "You select the language, the terms of use and select the folder",
+          "You select the folder, terms of use and select the language"
+        ],
+        "es-MX": [
+          "Seleccionas el idioma y las condiciones de uso",
+          "Condiciones de uso, seleccionas el idioma y seleccionas la carpeta",
+          "Seleccionas el idioma, las condiciones de uso y seleccionas la carpeta",
+          "Seleccionas la carpeta, condiciones de uso, seleccionas el idioma"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "You select the language and the terms of use",
+        "es-MX": "Seleccionas el idioma y las condiciones de uso"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "The expected answer is language and terms of use"
+          },
+          {
+            "type": "text",
+            "content": "According to the sequence evaluated in the activity, after downloading and starting the XAMPP installation, the user selects the language and accepts the terms of use."
+          },
+          {
+            "type": "ol",
+            "items": [
+              "Select the installation language.",
+              "Review and accept the terms of use."
+            ]
+          },
+          {
+            "type": "text",
+            "content": "The other answers include the selection of the installation folder or present the steps in a different order. Although selecting a destination folder may occur during a real installation, it is not included in the answer expected by this specific exercise."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "La respuesta esperada es idioma y condiciones de uso"
+          },
+          {
+            "type": "text",
+            "content": "De acuerdo con la secuencia evaluada en la actividad, después de descargar e iniciar la instalación de XAMPP, el usuario selecciona el idioma y acepta las condiciones de uso."
+          },
+          {
+            "type": "ol",
+            "items": [
+              "Seleccionar el idioma de instalación.",
+              "Revisar y aceptar las condiciones de uso."
+            ]
+          },
+          {
+            "type": "text",
+            "content": "Las demás respuestas incluyen la selección de la carpeta de instalación o presentan los pasos en un orden diferente. Aunque durante una instalación real puede aparecer la selección de una carpeta de destino, esa acción no forma parte de la respuesta esperada por este ejercicio específico."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Descarga de WordPress",
+      "Question Text": {
+        "en-US": [
+          "To download WordPress, which would be the correct URL?"
+        ],
+        "es-MX": [
+          "Para descargar WordPress ¿Cuál sería la URL correcta?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "https://wordpress.com/",
+          "https://wordpress.org/",
+          "https://wordpress.net/",
+          "https://wordpress.edu/"
+        ],
+        "es-MX": [
+          "https://wordpress.com/",
+          "https://wordpress.org/",
+          "https://wordpress.net/",
+          "https://wordpress.edu/"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "https://wordpress.org/",
+        "es-MX": "https://wordpress.org/"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "WordPress software is downloaded from WordPress.org"
+          },
+          {
+            "type": "text",
+            "content": "WordPress.org is the official website from which the open-source WordPress software can be downloaded as a compressed file for installation on a local or remote server."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "WordPress.org provides the downloadable CMS software.",
+              "The downloaded ZIP file contains the WordPress folders and files.",
+              "WordPress.com is a hosted online service and is not the download address requested in this question.",
+              "WordPress.net and WordPress.edu are not the official download addresses presented in the material."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "El software WordPress se descarga desde WordPress.org"
+          },
+          {
+            "type": "text",
+            "content": "WordPress.org es el sitio oficial desde el cual se puede descargar el software WordPress de código abierto en un archivo comprimido para instalarlo en un servidor local o remoto."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "WordPress.org proporciona el software CMS descargable.",
+              "El archivo ZIP descargado contiene las carpetas y archivos de WordPress.",
+              "WordPress.com es un servicio alojado en línea y no es la dirección de descarga solicitada.",
+              "WordPress.net y WordPress.edu no son las direcciones oficiales de descarga presentadas en el material."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Instalación local de WordPress",
+      "Question Text": {
+        "en-US": [
+          "When accessing the XAMPP server to copy the WordPress files, what is the correct location?"
+        ],
+        "es-MX": [
+          "Al ingresar al servidor XAMP para copiar los archivos de WordPress, ¿cuál es la ubicación correcta?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Xampp/htdocs/",
+          "Xampp/wodpress/",
+          "Xampp/docs/",
+          "Xamp/htdocsx/"
+        ],
+        "es-MX": [
+          "Xampp/htdocs/",
+          "Xampp/wodpress/",
+          "Xampp/docs/",
+          "Xamp/htdocsx/"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Xampp/htdocs/",
+        "es-MX": "Xampp/htdocs/"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "WordPress files are copied inside htdocs"
+          },
+          {
+            "type": "text",
+            "content": "In a local XAMPP installation, htdocs is the directory Apache uses as its main document root. The WordPress project folder must be created inside this directory so that it can be accessed through localhost."
+          },
+          {
+            "type": "ol",
+            "items": [
+              "Open the XAMPP installation directory.",
+              "Open the htdocs directory.",
+              "Create a folder for the WordPress project.",
+              "Copy and extract the WordPress files inside the project folder."
+            ]
+          },
+          {
+            "type": "text",
+            "content": "For example, if the project folder is called practica-wordpress, the files would be placed inside Xampp/htdocs/practica-wordpress/. The other paths shown in the question do not correspond to XAMPP's document root."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Los archivos de WordPress se copian dentro de htdocs"
+          },
+          {
+            "type": "text",
+            "content": "En una instalación local de XAMPP, htdocs es el directorio que Apache utiliza como raíz principal de documentos. La carpeta del proyecto WordPress debe crearse dentro de este directorio para poder acceder a ella mediante localhost."
+          },
+          {
+            "type": "ol",
+            "items": [
+              "Abrir el directorio de instalación de XAMPP.",
+              "Ingresar en el directorio htdocs.",
+              "Crear una carpeta para el proyecto de WordPress.",
+              "Copiar y descomprimir los archivos de WordPress dentro de esa carpeta."
+            ]
+          },
+          {
+            "type": "text",
+            "content": "Por ejemplo, si la carpeta del proyecto se llama practica-wordpress, los archivos se colocarían en Xampp/htdocs/practica-wordpress/. Las demás rutas de la pregunta no corresponden a la raíz de documentos de XAMPP."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Proceso de instalación de WordPress",
+      "Question Text": {
+        "en-US": [
+          "The installation steps after downloading WordPress are:"
+        ],
+        "es-MX": [
+          "Los pasos de instalación después de la descarga de WordPress son:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "It is important that the local XAMP server is active, we copy the WordPress files to the server folder, create a database, enter the WordPress folder located on the local server, proceed with the installation, enter the form data and finish",
+          "It is important that the local XAMP server is active, we enter the form data, copy the WordPress files to the server folder, create a database, enter the WordPress folder located on the local server, proceed with the installation and finish",
+          "We create a database, it is important that the local XAMP server is active, we copy the WordPress files to the server folder, enter the WordPress folder located on the local server, proceed with the installation, enter the form data and finish",
+          "It is important that the local XAMP server is active, we create a database, copy the WordPress files to the server folder, enter the WordPress folder located on the local server, proceed with the installation, enter the form data and finish"
+        ],
+        "es-MX": [
+          "Es importante que el servidor local XAMP esté activo, copiamos los archivos de WordPress a la carpeta del servidor, creamos una base de datos, ingresamos a la carpeta WordPress localizada en el servidor local, procedemos a la instalación, capturamos datos del formulario y listo",
+          "Es importante que el servidor local XAMP esté activo, capturamos los datos del formulario, copiamos los archivos de WordPress a la carpeta del servidor, creamos una base de datos, ingresamos a la carpeta WordPress localizada en el servidor local, procedemos a la instalación y listo",
+          "Creamos una base de datos, es importante que el servidor local XAMP esté activo, copiamos los archivos de WordPress a la carpeta del servidor, ingresamos a la carpeta WordPress localizada en el servidor local, procedemos a la instalación, capturamos datos del formulario y listo",
+          "Es importante que el servidor local XAMP esté activo, creamos una base de datos, copiamos los archivos de WordPress a la carpeta del servidor, ingresamos a la carpeta WordPress localizada en el servidor local, procedemos a la instalación, capturamos datos del formulario y listo"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "It is important that the local XAMP server is active, we copy the WordPress files to the server folder, create a database, enter the WordPress folder located on the local server, proceed with the installation, enter the form data and finish",
+        "es-MX": "Es importante que el servidor local XAMP esté activo, copiamos los archivos de WordPress a la carpeta del servidor, creamos una base de datos, ingresamos a la carpeta WordPress localizada en el servidor local, procedemos a la instalación, capturamos datos del formulario y listo"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "The first option presents the expected installation order"
+          },
+          {
+            "type": "text",
+            "content": "According to the sequence evaluated in the activity, the local server must first be active. The WordPress files are then placed in the server directory, the database is created, and the installer is accessed through the project's local address."
+          },
+          {
+            "type": "ol",
+            "items": [
+              "Activate Apache and MySQL in the XAMPP control panel.",
+              "Copy and extract the WordPress files in the project folder inside htdocs.",
+              "Create the database using phpMyAdmin.",
+              "Enter the WordPress project through localhost.",
+              "Start the WordPress installation.",
+              "Enter the requested form data and complete the installation."
+            ]
+          },
+          {
+            "type": "text",
+            "content": "The second option attempts to enter the form data before copying the files and creating the database. The third and fourth options change the order expected by the exercise."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "La primera opción presenta el orden esperado de instalación"
+          },
+          {
+            "type": "text",
+            "content": "De acuerdo con la secuencia evaluada en la actividad, primero debe estar activo el servidor local. Después se colocan los archivos de WordPress en el directorio del servidor, se crea la base de datos y se accede al instalador mediante la dirección local del proyecto."
+          },
+          {
+            "type": "ol",
+            "items": [
+              "Activar Apache y MySQL en el panel de control de XAMPP.",
+              "Copiar y descomprimir los archivos de WordPress en la carpeta del proyecto dentro de htdocs.",
+              "Crear la base de datos mediante phpMyAdmin.",
+              "Ingresar al proyecto de WordPress mediante localhost.",
+              "Iniciar la instalación de WordPress.",
+              "Capturar los datos solicitados en el formulario y finalizar la instalación."
+            ]
+          },
+          {
+            "type": "text",
+            "content": "La segunda opción intenta capturar los datos del formulario antes de copiar los archivos y crear la base de datos. La tercera y la cuarta modifican el orden esperado por el ejercicio."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "FileZilla",
+      "Question Text": {
+        "en-US": [
+          "Definition of FileZilla:"
+        ],
+        "es-MX": [
+          "Definición de FileZilla:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "It is an FTP server for uploading files to the server. It is not free, but it is easy to install and configure",
+          "It is an FTP client for uploading files to WordPress. It is not free, but it is easy to install and configure",
+          "It is an FTP client for uploading files to the server. It is free and easy to install and configure",
+          "It is a TCP client for uploading files to the server. It is free and easy to install and configure"
+        ],
+        "es-MX": [
+          "Es un servidor FTP para subir los archivos al servidor. No es gratuito, pero es de fácil instalación y configuración",
+          "Es un cliente FTP para subir los archivos al WordPress. No es gratuito, pero es de fácil instalación y configuración",
+          "Es un cliente FTP para subir los archivos al servidor. Es gratuito y de fácil instalación y configuración",
+          "Es un cliente TCP para subir los archivos al servidor. Es gratuito, de fácil instalación y configuración"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "It is an FTP client for uploading files to the server. It is free and easy to install and configure",
+        "es-MX": "Es un cliente FTP para subir los archivos al servidor. Es gratuito y de fácil instalación y configuración"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "FileZilla is a free FTP client"
+          },
+          {
+            "type": "text",
+            "content": "FileZilla Client is an application used to connect a computer to a remote server and transfer files through FTP or other supported file-transfer protocols."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "It is a client because it connects to a remote server.",
+              "It can upload WordPress files from the local computer to the hosting server.",
+              "It is free and open-source software.",
+              "Its interface displays the local site on the left and the remote site on the right."
+            ]
+          },
+          {
+            "type": "text",
+            "content": "It is not the FTP server itself, and TCP is not the type of client requested in the exercise. The files are uploaded to the server, not directly 'to WordPress' as stated in the second option."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "FileZilla es un cliente FTP gratuito"
+          },
+          {
+            "type": "text",
+            "content": "FileZilla Client es una aplicación utilizada para conectar un ordenador con un servidor remoto y transferir archivos mediante FTP u otros protocolos de transferencia compatibles."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Es un cliente porque se conecta con un servidor remoto.",
+              "Permite subir los archivos de WordPress desde el ordenador local hasta el servidor del hosting.",
+              "Es un software gratuito y de código abierto.",
+              "Su interfaz muestra el sitio local a la izquierda y el sitio remoto a la derecha."
+            ]
+          },
+          {
+            "type": "text",
+            "content": "FileZilla Client no es el servidor FTP, y TCP no es el tipo de cliente solicitado por el ejercicio. Los archivos se suben al servidor, no directamente «al WordPress», como indica la segunda opción."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Carpeta remota de WordPress",
+      "Question Text": {
+        "en-US": [
+          "What is the name of the folder where the WordPress files are copied on the FTP server (FileZilla)?"
+        ],
+        "es-MX": [
+          "¿Cuál es el nombre de la carpeta donde se copian los archivos de WordPress en el servidor FTP (FileZilla)?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Htdocs",
+          "WordPress",
+          "Html",
+          "File"
+        ],
+        "es-MX": [
+          "Htdocs",
+          "WordPress",
+          "Html",
+          "File"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Html",
+        "es-MX": "Html"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "The expected answer in the activity is Html"
+          },
+          {
+            "type": "text",
+            "content": "The exercise uses Html to refer to the public web directory of the remote server. According to the course material, the more precise name of this root directory is public_html."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "The public_html directory belongs to the remote hosting server.",
+              "The WordPress files are uploaded to this directory through FileZilla.",
+              "Files placed there can be served through the website's domain.",
+              "Htdocs is the local document directory normally associated with XAMPP."
+            ]
+          },
+          {
+            "type": "text",
+            "content": "For this exam question, select Html because it is the marked answer. When performing an actual installation, look for public_html or the public document-root directory indicated by the hosting provider."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "La respuesta esperada en la actividad es Html"
+          },
+          {
+            "type": "text",
+            "content": "El ejercicio utiliza Html para referirse al directorio web público del servidor remoto. De acuerdo con el material, el nombre más preciso de esta carpeta raíz es public_html."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "El directorio public_html pertenece al servidor remoto del hosting.",
+              "Los archivos de WordPress se suben a esta carpeta mediante FileZilla.",
+              "Los archivos colocados ahí pueden mostrarse mediante el dominio del sitio.",
+              "Htdocs es el directorio local normalmente asociado con XAMPP."
+            ]
+          },
+          {
+            "type": "text",
+            "content": "Para esta pregunta del examen debes seleccionar Html porque es la respuesta marcada. En una instalación real, debes buscar public_html o el directorio público indicado por el proveedor de hosting."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Requisitos para utilizar FileZilla",
+      "Question Text": {
+        "en-US": [
+          "The previous steps before downloading FileZilla are:"
+        ],
+        "es-MX": [
+          "Los pasos previos antes de descarga FileZilla son:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Hire a hosting service with a domain. Hosting data: server name, username and password",
+          "Hire a hosting service with a domain and create a database. Hosting data: server name, username and password",
+          "Hire a hosting service with a domain and create a database. Hosting data: database name, username and password",
+          "Download a hosting service with a domain and create a server. Hosting data: server name, username and password"
+        ],
+        "es-MX": [
+          "Contratar un servicio de hosting con dominio. Datos del hosting: nombre del servidor, usuario y contraseña",
+          "Contratar un servicio de hosting con dominio y crear BD. Datos del hosting: nombre del servidor, usuario y contraseña",
+          "Contratar un servicio de hosting con dominio y crear BD. Datos del hosting: nombre de la BD, usuario y contraseña",
+          "Descargar un servicio de hosting con dominio y crear un servidor. Datos del hosting: nombre del servidor, usuario y contraseña"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Hire a hosting service with a domain and create a database. Hosting data: server name, username and password",
+        "es-MX": "Contratar un servicio de hosting con dominio y crear BD. Datos del hosting: nombre del servidor, usuario y contraseña"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Requirements for the remote installation of WordPress"
+          },
+          {
+            "type": "text",
+            "content": "Before transferring WordPress files with FileZilla, a hosting service with a domain must be contracted and a database must be created for the website."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "The hosting provides the remote server where the website will operate.",
+              "The domain provides the address used to access the website.",
+              "The database stores the content and configuration managed by WordPress.",
+              "The hosting provider supplies the server name, username and password required for the connection."
+            ]
+          },
+          {
+            "type": "text",
+            "content": "These elements prepare the remote environment so that FileZilla can connect to the server and transfer the WordPress files."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Requisitos para la instalación remota de WordPress"
+          },
+          {
+            "type": "text",
+            "content": "Antes de transferir los archivos de WordPress mediante FileZilla, se debe contratar un servicio de hosting con dominio y crear una base de datos para el sitio."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "El hosting proporciona el servidor remoto donde funcionará la web.",
+              "El dominio proporciona la dirección utilizada para acceder al sitio.",
+              "La base de datos almacena el contenido y la configuración gestionados por WordPress.",
+              "El proveedor de hosting entrega el nombre del servidor, el usuario y la contraseña necesarios para establecer la conexión."
+            ]
+          },
+          {
+            "type": "text",
+            "content": "Estos elementos preparan el entorno remoto para que FileZilla pueda conectarse con el servidor y transferir los archivos de WordPress."
+          }
+        ]
+      }
+    }
+
+  ]
+}

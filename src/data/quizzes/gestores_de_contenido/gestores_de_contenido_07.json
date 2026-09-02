@@ -1,0 +1,1565 @@
+{
+  "meta": {
+    "slug": "gestores-contenidos-u7",
+    "title": "Diseño del sitio web en WordPress (continuación)",
+    "subject": "DISEÑO Y CREACIÓN WEB CON GESTORES DE CONTENIDOS",
+    "unit": 7,
+    "classNo": 0,
+    "description": "Unidad 7: continuación del diseño de sitios web en WordPress mediante el uso, configuración y administración de widgets y shortcodes.",
+    "tags": [
+      "WordPress",
+      "diseño web",
+      "diseño en WordPress",
+      "widgets",
+      "widgets en WordPress",
+      "áreas de widgets",
+      "barras laterales",
+      "encabezado",
+      "pie de página",
+      "shortcodes",
+      "códigos cortos",
+      "contenido dinámico",
+      "personalización",
+      "administración de contenido"
+    ],
+    "questionCount": 0,
+    "languages": [
+      "en-US",
+      "es-MX"
+    ]
+  },
+  "Questions": [{
+    "Category": "Definición de widgets",
+    "Question Text": {
+      "en-US": [
+        "__________ are small applications that allow content and functionality blocks to be added to areas of a website"
+      ],
+      "es-MX": [
+        "Los __________ son pequeñas aplicaciones que permiten añadir bloques de contenido y funcionalidad a áreas de un sitio web"
+      ]
+    },
+    "Options": {
+      "en-US": [
+        "Themes",
+        "Widgets",
+        "Plugins",
+        "Posts"
+      ],
+      "es-MX": [
+        "Temas",
+        "Widgets",
+        "Plugins",
+        "Entradas"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "Widgets",
+      "es-MX": "Widgets"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "Widgets add content and functions to specific areas"
+        },
+        {
+          "type": "text",
+          "content": "Widgets are small components that add content or functions to predefined areas of a WordPress website."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "They can display text, images, menus and links.",
+            "They can be placed in sidebars, footers and other supported areas.",
+            "The available widget areas depend on the active WordPress theme."
+          ]
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Los widgets añaden contenido y funciones en áreas específicas"
+        },
+        {
+          "type": "text",
+          "content": "Los widgets son pequeños componentes que permiten añadir contenido o funciones a áreas predefinidas de un sitio de WordPress."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Pueden mostrar texto, imágenes, menús y enlaces.",
+            "Pueden colocarse en barras laterales, pies de página y otras áreas compatibles.",
+            "Las áreas disponibles dependen del tema de WordPress que esté activo."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Category": "Acceso al área de widgets",
+    "Question Text": {
+      "en-US": [
+        "To access the WordPress widget area, follow this path:"
+      ],
+      "es-MX": [
+        "Para acceder al área de widgets del WordPress se debe seguir la ruta:"
+      ]
+    },
+    "Options": {
+      "en-US": [
+        "Appearance, Themes and then Widgets",
+        "Appearance and then Widgets",
+        "Dashboard and then Widgets",
+        "Appearance, Widgets and then New"
+      ],
+      "es-MX": [
+        "Apariencia, Temas y luego Widgets",
+        "Apariencia y luego Widgets",
+        "Escritorio y luego Widgets",
+        "Apariencia, Widgets y luego Nuevo"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "Appearance and then Widgets",
+      "es-MX": "Apariencia y luego Widgets"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "Widgets are managed from the Appearance section"
+        },
+        {
+          "type": "text",
+          "content": "The Appearance > Widgets path opens the WordPress screen used to manage widgets and the areas where they can be displayed."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Available widgets can be added to supported areas.",
+            "Existing widgets can be configured, moved or removed.",
+            "The displayed areas vary according to the active theme."
+          ]
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Los widgets se administran desde el apartado Apariencia"
+        },
+        {
+          "type": "text",
+          "content": "La ruta Apariencia > Widgets abre la pantalla de WordPress utilizada para administrar los widgets y las áreas en las que pueden mostrarse."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Los widgets disponibles pueden agregarse a las áreas compatibles.",
+            "Los widgets existentes pueden configurarse, moverse o eliminarse.",
+            "Las áreas mostradas varían de acuerdo con el tema activo."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Category": "Widgets desde el personalizador",
+    "Question Text": {
+      "en-US": [
+        "Another way to add widgets is through a preview. It can be accessed using the following path:"
+      ],
+      "es-MX": [
+        "Otra manera de agregar widgets es desde una vista previa, se puede ingresar a ella de la siguiente forma:"
+      ]
+    },
+    "Options": {
+      "en-US": [
+        "Appearance, Customize and then Widgets",
+        "Appearance and then Widgets",
+        "Dashboard, Customize and then Widgets",
+        "Appearance, Themes and then Widgets"
+      ],
+      "es-MX": [
+        "Apariencias, Personalizar y luego Widgets",
+        "Apariencias y luego Widgets",
+        "Escritorio, Personalizar y luego Widgets",
+        "Apariencias, Temas y luego Widgets"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "Appearance, Customize and then Widgets",
+      "es-MX": "Apariencias, Personalizar y luego Widgets"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "The Customizer provides a preview of widget changes"
+        },
+        {
+          "type": "text",
+          "content": "The Appearance > Customize > Widgets path allows widgets to be added and configured while previewing how the changes will look on the website."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Changes can be previewed before they are published.",
+            "Widgets can be added to the areas supported by the theme.",
+            "The available options depend on the WordPress version and active theme."
+          ]
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "El personalizador muestra una vista previa de los widgets"
+        },
+        {
+          "type": "text",
+          "content": "La ruta Apariencia > Personalizar > Widgets permite añadir y configurar widgets mientras se observa una vista previa de los cambios en el sitio."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Los cambios pueden revisarse antes de publicarlos.",
+            "Los widgets pueden añadirse a las áreas compatibles con el tema.",
+            "Las opciones disponibles dependen de la versión de WordPress y del tema activo."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Category": "Diferencia entre plugins y widgets",
+    "Question Text": {
+      "en-US": [
+        "A plugin adds __________ to a website. Widgets, on the other hand, only display those functions in a specific area of the website"
+      ],
+      "es-MX": [
+        "Un plugin añade __________ a un sitio web. Los widgets por el contrario solo muestran esas funcionalidades en un área específica de la web"
+      ]
+    },
+    "Options": {
+      "en-US": [
+        "Customization",
+        "Widgets",
+        "Functionality",
+        "Features"
+      ],
+      "es-MX": [
+        "Personalización",
+        "Widgets",
+        "Funcionalidad",
+        "Características"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "Functionality",
+      "es-MX": "Funcionalidad"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "Plugins add functionality to WordPress"
+        },
+        {
+          "type": "text",
+          "content": "A plugin expands the functions available throughout a WordPress website. A widget can then display information or controls related to those functions in a specific area."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Plugins can modify or expand the general operation of the website.",
+            "Widgets display content or controls in areas supported by the theme.",
+            "Some plugins automatically add new widgets when they are installed."
+          ]
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Los plugins añaden funcionalidad a WordPress"
+        },
+        {
+          "type": "text",
+          "content": "Un plugin amplía las funciones disponibles en todo el sitio de WordPress. Un widget puede mostrar información o controles relacionados con esas funciones dentro de un área específica."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Los plugins pueden modificar o ampliar el funcionamiento general del sitio.",
+            "Los widgets muestran contenido o controles en las áreas admitidas por el tema.",
+            "Algunos plugins agregan widgets nuevos automáticamente al instalarse."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Category": "Widgets agregados por plugins",
+    "Question Text": {
+      "en-US": [
+        "When installing a plugin, it is common for it to add elements to the widget area, generally bearing the same name as the __________"
+      ],
+      "es-MX": [
+        "Al instalar un plugin es usual que agreguen elementos en el área de widgets, por lo general lleva el mismo nombre del __________"
+      ]
+    },
+    "Options": {
+      "en-US": [
+        "Theme",
+        "Plugin",
+        "Widget",
+        "Website"
+      ],
+      "es-MX": [
+        "Tema",
+        "Plugin",
+        "Widget",
+        "Sitio web"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "Plugin",
+      "es-MX": "Plugin"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "A plugin can add its own widget"
+        },
+        {
+          "type": "text",
+          "content": "Some plugins add a widget that allows their functions or content to be displayed in a sidebar, footer or another widget area. This widget commonly uses the plugin's name."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "The new widget becomes available after the plugin is installed or activated.",
+            "Its settings depend on the functions provided by the plugin.",
+            "Removing or deactivating the plugin can also remove its widget."
+          ]
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Un plugin puede agregar su propio widget"
+        },
+        {
+          "type": "text",
+          "content": "Algunos plugins añaden un widget que permite mostrar sus funciones o contenidos en una barra lateral, un pie de página u otra área de widgets. Este elemento suele llevar el nombre del plugin."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "El widget nuevo queda disponible después de instalar o activar el plugin.",
+            "Su configuración depende de las funciones proporcionadas por el plugin.",
+            "Al desactivar o eliminar el plugin también puede desaparecer su widget."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Category": "Plugins para widgets",
+    "Question Text": {
+      "en-US": [
+        "These are some examples of plugins for widgets:"
+      ],
+      "es-MX": [
+        "Estos son algunos ejemplos de plugins para widgets:"
+      ]
+    },
+    "Options": {
+      "en-US": [
+        "Google Maps, Jetpack and Whistles",
+        "Appearance, users and posts",
+        "Java, HTML and SQL",
+        "Header, sidebar and content"
+      ],
+      "es-MX": [
+        "Google Maps, Jetpack y Whistles",
+        "Apariencia, usuarios y entradas",
+        "Java, HTML y SQL",
+        "Header, sidebar y content"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "Google Maps, Jetpack and Whistles",
+      "es-MX": "Google Maps, Jetpack y Whistles"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "Plugins can provide additional widgets"
+        },
+        {
+          "type": "text",
+          "content": "Google Maps, Jetpack and Whistles are examples of tools that can add widgets or widget-related functions to a WordPress website."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "A map widget can display a location on the website.",
+            "Jetpack includes several content and functionality widgets.",
+            "Additional plugins expand the widget options provided by WordPress and the active theme."
+          ]
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Los plugins pueden proporcionar widgets adicionales"
+        },
+        {
+          "type": "text",
+          "content": "Google Maps, Jetpack y Whistles son ejemplos de herramientas que pueden añadir widgets o funciones relacionadas con widgets a un sitio de WordPress."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Un widget de mapas puede mostrar una ubicación dentro del sitio.",
+            "Jetpack incluye varios widgets de contenido y funcionalidad.",
+            "Los plugins adicionales amplían las opciones proporcionadas por WordPress y el tema activo."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Category": "Diferencia entre plugins y widgets",
+    "Question Text": {
+      "en-US": [
+        "What is the main difference between a plugin and a widget in WordPress?"
+      ],
+      "es-MX": [
+        "¿Cuál es la principal diferencia entre un plugin y un widget en WordPress?"
+      ]
+    },
+    "Options": {
+      "en-US": [
+        "A plugin adds or expands website functionality, while a widget displays content or controls in a specific area",
+        "A plugin only changes colors, while a widget installs new functions",
+        "A plugin creates pages, while a widget creates WordPress users",
+        "There is no difference because plugins and widgets perform exactly the same function"
+      ],
+      "es-MX": [
+        "Un plugin añade o amplía la funcionalidad del sitio, mientras que un widget muestra contenido o controles en un área específica",
+        "Un plugin solamente cambia colores, mientras que un widget instala funciones nuevas",
+        "Un plugin crea páginas, mientras que un widget crea usuarios de WordPress",
+        "No existe diferencia porque los plugins y los widgets realizan exactamente la misma función"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "A plugin adds or expands website functionality, while a widget displays content or controls in a specific area",
+      "es-MX": "Un plugin añade o amplía la funcionalidad del sitio, mientras que un widget muestra contenido o controles en un área específica"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "Plugins add functions and widgets display elements"
+        },
+        {
+          "type": "text",
+          "content": "A plugin extends what WordPress can do. A widget is a visual component used to place content or controls in a specific area supported by the theme."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "A contact form plugin adds the ability to create and receive forms.",
+            "A contact form widget can display that form in a sidebar or footer.",
+            "Some plugins provide widgets, but not every plugin needs one."
+          ]
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Los plugins agregan funciones y los widgets muestran elementos"
+        },
+        {
+          "type": "text",
+          "content": "Un plugin amplía lo que WordPress puede hacer. Un widget es un componente visual utilizado para colocar contenido o controles en un área específica admitida por el tema."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Un plugin de formularios añade la capacidad de crear y recibir formularios.",
+            "Un widget de formulario puede mostrar ese formulario en una barra lateral o en el pie de página.",
+            "Algunos plugins proporcionan widgets, pero no todos los plugins necesitan uno."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Category": "Función de Google Maps",
+    "Question Text": {
+      "en-US": [
+        "What is the main function of a Google Maps plugin or widget in WordPress?"
+      ],
+      "es-MX": [
+        "¿Cuál es la función principal de un plugin o widget de Google Maps en WordPress?"
+      ]
+    },
+    "Options": {
+      "en-US": [
+        "Display geographic locations and interactive maps",
+        "Create WordPress user accounts",
+        "Translate the website automatically",
+        "Manage comments and spam"
+      ],
+      "es-MX": [
+        "Mostrar ubicaciones geográficas y mapas interactivos",
+        "Crear cuentas de usuarios de WordPress",
+        "Traducir automáticamente el sitio web",
+        "Administrar comentarios y spam"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "Display geographic locations and interactive maps",
+      "es-MX": "Mostrar ubicaciones geográficas y mapas interactivos"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "Google Maps displays locations on the website"
+        },
+        {
+          "type": "text",
+          "content": "A Google Maps plugin or widget allows geographic locations to be displayed within a WordPress website."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "It can display the location of a business or organization.",
+            "Visitors can interact with the map and explore nearby areas.",
+            "The map can be placed on contact pages, posts or widget areas."
+          ]
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Google Maps muestra ubicaciones dentro del sitio"
+        },
+        {
+          "type": "text",
+          "content": "Un plugin o widget de Google Maps permite mostrar ubicaciones geográficas dentro de un sitio de WordPress."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Puede mostrar la ubicación de un negocio u organización.",
+            "Los visitantes pueden interactuar con el mapa y explorar zonas cercanas.",
+            "El mapa puede colocarse en páginas de contacto, entradas o áreas de widgets."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Category": "Marcadores de Google Maps",
+    "Question Text": {
+      "en-US": [
+        "What is the purpose of markers placed on a Google Maps map?"
+      ],
+      "es-MX": [
+        "¿Para qué sirven los marcadores colocados en un mapa de Google Maps?"
+      ]
+    },
+    "Options": {
+      "en-US": [
+        "Identify specific locations on the map",
+        "Change the WordPress administrator password",
+        "Delete the website navigation menu",
+        "Convert posts into plugins"
+      ],
+      "es-MX": [
+        "Identificar ubicaciones específicas dentro del mapa",
+        "Cambiar la contraseña del administrador de WordPress",
+        "Eliminar el menú de navegación del sitio",
+        "Convertir entradas en plugins"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "Identify specific locations on the map",
+      "es-MX": "Identificar ubicaciones específicas dentro del mapa"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "Markers identify exact points on a map"
+        },
+        {
+          "type": "text",
+          "content": "A marker indicates a specific geographic point and can provide visitors with additional information about that location."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "A marker can represent a store, office or event location.",
+            "It can include a title, description, image or link.",
+            "Multiple markers can be displayed on the same map."
+          ]
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Los marcadores identifican puntos exactos en un mapa"
+        },
+        {
+          "type": "text",
+          "content": "Un marcador señala un punto geográfico específico y puede proporcionar información adicional sobre esa ubicación."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Puede representar una tienda, oficina o ubicación de un evento.",
+            "Puede incluir un título, una descripción, una imagen o un enlace.",
+            "En un mismo mapa pueden mostrarse varios marcadores."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Category": "Inserción de Google Maps",
+    "Question Text": {
+      "en-US": [
+        "Where can a Google Maps map be displayed in WordPress?"
+      ],
+      "es-MX": [
+        "¿Dónde puede mostrarse un mapa de Google Maps en WordPress?"
+      ]
+    },
+    "Options": {
+      "en-US": [
+        "Only on the WordPress login screen",
+        "In posts, pages and compatible widget areas",
+        "Only in the plugin installation directory",
+        "Exclusively in the database"
+      ],
+      "es-MX": [
+        "Solamente en la pantalla de inicio de sesión",
+        "En entradas, páginas y áreas de widgets compatibles",
+        "Solamente en el directorio de instalación de plugins",
+        "Exclusivamente en la base de datos"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "In posts, pages and compatible widget areas",
+      "es-MX": "En entradas, páginas y áreas de widgets compatibles"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "Maps can be inserted into different WordPress areas"
+        },
+        {
+          "type": "text",
+          "content": "Google Maps plugins usually allow maps to be inserted into posts, pages and widget areas through blocks, widgets or shortcodes."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "A map can be placed on a contact page.",
+            "A widget can display it in a sidebar or footer.",
+            "A shortcode can insert a configured map into the editor."
+          ]
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Los mapas pueden insertarse en diferentes áreas de WordPress"
+        },
+        {
+          "type": "text",
+          "content": "Los plugins de Google Maps suelen permitir la inserción de mapas en entradas, páginas y áreas de widgets mediante bloques, widgets o shortcodes."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Un mapa puede colocarse en una página de contacto.",
+            "Un widget puede mostrarlo en una barra lateral o en el pie de página.",
+            "Un shortcode puede insertar un mapa configurado dentro del editor."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Category": "Función de Jetpack",
+    "Question Text": {
+      "en-US": [
+        "What type of functions does the Jetpack plugin add to WordPress?"
+      ],
+      "es-MX": [
+        "¿Qué tipo de funciones añade el plugin Jetpack a WordPress?"
+      ]
+    },
+    "Options": {
+      "en-US": [
+        "Security, performance, statistics and audience growth tools",
+        "Only tools for changing the website language",
+        "A new operating system for the server",
+        "Only a Google Maps location marker"
+      ],
+      "es-MX": [
+        "Herramientas de seguridad, rendimiento, estadísticas y crecimiento de audiencia",
+        "Solamente herramientas para cambiar el idioma del sitio",
+        "Un sistema operativo nuevo para el servidor",
+        "Solamente un marcador de ubicación de Google Maps"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "Security, performance, statistics and audience growth tools",
+      "es-MX": "Herramientas de seguridad, rendimiento, estadísticas y crecimiento de audiencia"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "Jetpack combines several WordPress tools"
+        },
+        {
+          "type": "text",
+          "content": "Jetpack is a multifunction plugin that provides tools for protecting, monitoring, improving and growing a WordPress website."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "It can provide website statistics and traffic information.",
+            "It includes security and performance options.",
+            "Some functions depend on the selected Jetpack plan."
+          ]
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Jetpack combina varias herramientas para WordPress"
+        },
+        {
+          "type": "text",
+          "content": "Jetpack es un plugin multifuncional que proporciona herramientas para proteger, supervisar, mejorar y hacer crecer un sitio de WordPress."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Puede proporcionar estadísticas e información sobre el tráfico.",
+            "Incluye opciones de seguridad y rendimiento.",
+            "Algunas funciones dependen del plan de Jetpack seleccionado."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Category": "Widgets adicionales de Jetpack",
+    "Question Text": {
+      "en-US": [
+        "What does Jetpack's Extra Sidebar Widgets feature provide?"
+      ],
+      "es-MX": [
+        "¿Qué proporciona la función Widgets adicionales de la barra lateral de Jetpack?"
+      ]
+    },
+    "Options": {
+      "en-US": [
+        "Additional widgets for displaying different types of content",
+        "A tool for deleting the WordPress database",
+        "A new programming language",
+        "A replacement for the website domain"
+      ],
+      "es-MX": [
+        "Widgets adicionales para mostrar diferentes tipos de contenido",
+        "Una herramienta para eliminar la base de datos de WordPress",
+        "Un nuevo lenguaje de programación",
+        "Un reemplazo para el dominio del sitio"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "Additional widgets for displaying different types of content",
+      "es-MX": "Widgets adicionales para mostrar diferentes tipos de contenido"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "Jetpack expands the available widget collection"
+        },
+        {
+          "type": "text",
+          "content": "The Extra Sidebar Widgets feature adds components that can display information and services within the widget areas supported by the theme."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Available options can include authors, statistics and RSS links.",
+            "Some classic widgets now have equivalent WordPress or Jetpack blocks.",
+            "The widgets can be managed from Appearance > Widgets."
+          ]
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Jetpack amplía la colección de widgets disponibles"
+        },
+        {
+          "type": "text",
+          "content": "La función de widgets adicionales agrega componentes capaces de mostrar información y servicios dentro de las áreas admitidas por el tema."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Las opciones pueden incluir autores, estadísticas y enlaces RSS.",
+            "Algunos widgets clásicos ahora tienen bloques equivalentes de WordPress o Jetpack.",
+            "Los widgets pueden administrarse desde Apariencia > Widgets."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Category": "Activación de widgets de Jetpack",
+    "Question Text": {
+      "en-US": [
+        "From which Jetpack section can the Extra Sidebar Widgets feature be enabled?"
+      ],
+      "es-MX": [
+        "¿Desde qué apartado de Jetpack puede habilitarse la función de widgets adicionales?"
+      ]
+    },
+    "Options": {
+      "en-US": [
+        "Jetpack, Settings, Writing and then Widgets",
+        "Posts, Categories and then Widgets",
+        "Users, Profiles and then Plugins",
+        "Media, Images and then Themes"
+      ],
+      "es-MX": [
+        "Jetpack, Ajustes, Escritura y luego Widgets",
+        "Entradas, Categorías y luego Widgets",
+        "Usuarios, Perfiles y luego Plugins",
+        "Medios, Imágenes y luego Temas"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "Jetpack, Settings, Writing and then Widgets",
+      "es-MX": "Jetpack, Ajustes, Escritura y luego Widgets"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "Jetpack widgets are enabled from its Writing settings"
+        },
+        {
+          "type": "text",
+          "content": "The Extra Sidebar Widgets option can be enabled from Jetpack settings within the Writing section."
+        },
+        {
+          "type": "ol",
+          "items": [
+            "Open Jetpack from the WordPress administration panel.",
+            "Enter Settings and select Writing.",
+            "Enable the option that makes extra widgets available."
+          ]
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Los widgets de Jetpack se habilitan desde los ajustes de Escritura"
+        },
+        {
+          "type": "text",
+          "content": "La opción de widgets adicionales puede habilitarse desde los ajustes de Jetpack, dentro del apartado Escritura."
+        },
+        {
+          "type": "ol",
+          "items": [
+            "Abrir Jetpack desde el panel de administración de WordPress.",
+            "Ingresar en Ajustes y seleccionar Escritura.",
+            "Habilitar la opción que permite utilizar widgets adicionales."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Category": "Función de Whistles",
+    "Question Text": {
+      "en-US": [
+        "What types of content structures can be created with the Whistles plugin?"
+      ],
+      "es-MX": [
+        "¿Qué tipos de estructuras de contenido pueden crearse con el plugin Whistles?"
+      ]
+    },
+    "Options": {
+      "en-US": [
+        "Tabs, toggles and accordions",
+        "WordPress users and passwords",
+        "Databases and server accounts",
+        "Themes and operating systems"
+      ],
+      "es-MX": [
+        "Pestañas, interruptores y acordeones",
+        "Usuarios y contraseñas de WordPress",
+        "Bases de datos y cuentas del servidor",
+        "Temas y sistemas operativos"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "Tabs, toggles and accordions",
+      "es-MX": "Pestañas, interruptores y acordeones"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "Whistles organizes content into interactive structures"
+        },
+        {
+          "type": "text",
+          "content": "Whistles allows content to be presented as tabs, toggles or accordions so that information can be organized within a smaller visual space."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Tabs separate information into selectable sections.",
+            "Toggles allow individual content sections to be opened and closed.",
+            "Accordions organize several expandable sections."
+          ]
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Whistles organiza el contenido en estructuras interactivas"
+        },
+        {
+          "type": "text",
+          "content": "Whistles permite presentar contenido mediante pestañas, interruptores o acordeones para organizar información dentro de un espacio visual reducido."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Las pestañas separan la información en apartados seleccionables.",
+            "Los interruptores permiten abrir y cerrar secciones individuales.",
+            "Los acordeones organizan varias secciones desplegables."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Category": "Organización de Whistles",
+    "Question Text": {
+      "en-US": [
+        "How does the Whistles plugin organize the content created by the user?"
+      ],
+      "es-MX": [
+        "¿Cómo organiza el plugin Whistles el contenido creado por el usuario?"
+      ]
+    },
+    "Options": {
+      "en-US": [
+        "It creates individual whistles and organizes them into whistle groups",
+        "It converts every whistle into a WordPress user",
+        "It stores the content only as image files",
+        "It automatically creates a different website for each whistle"
+      ],
+      "es-MX": [
+        "Crea whistles individuales y los organiza en grupos de whistles",
+        "Convierte cada whistle en un usuario de WordPress",
+        "Guarda el contenido solamente como archivos de imagen",
+        "Crea automáticamente un sitio diferente para cada whistle"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "It creates individual whistles and organizes them into whistle groups",
+      "es-MX": "Crea whistles individuales y los organiza en grupos de whistles"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "Whistles uses individual items and groups"
+        },
+        {
+          "type": "text",
+          "content": "The plugin creates a content type called whistle and a classification called whistle group. Individual items are assigned to groups before being displayed."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Each whistle can contain text, images or multimedia content.",
+            "Several whistles can be collected into one group.",
+            "The group can then be displayed as tabs, toggles or an accordion."
+          ]
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Whistles utiliza elementos individuales y grupos"
+        },
+        {
+          "type": "text",
+          "content": "El plugin crea un tipo de contenido llamado whistle y una clasificación denominada grupo de whistles. Los elementos individuales se asignan a grupos antes de mostrarse."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Cada whistle puede contener texto, imágenes o contenido multimedia.",
+            "Varios whistles pueden reunirse dentro de un grupo.",
+            "El grupo puede mostrarse como pestañas, interruptores o acordeón."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Category": "Inserción de Whistles",
+    "Question Text": {
+      "en-US": [
+        "How can a Whistles group be displayed within a WordPress website?"
+      ],
+      "es-MX": [
+        "¿Cómo puede mostrarse un grupo de Whistles dentro de un sitio de WordPress?"
+      ]
+    },
+    "Options": {
+      "en-US": [
+        "Using the [whistles] shortcode or the Whistles widget",
+        "Changing the WordPress database password",
+        "Deleting the active theme",
+        "Creating a new administrator account"
+      ],
+      "es-MX": [
+        "Mediante el shortcode [whistles] o el widget Whistles",
+        "Cambiando la contraseña de la base de datos",
+        "Eliminando el tema activo",
+        "Creando una cuenta nueva de administrador"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "Using the [whistles] shortcode or the Whistles widget",
+      "es-MX": "Mediante el shortcode [whistles] o el widget Whistles"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "Whistles can be inserted with a shortcode or widget"
+        },
+        {
+          "type": "text",
+          "content": "A configured Whistles group can be embedded into WordPress content with the [whistles] shortcode or displayed in a compatible area with the Whistles widget."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "The shortcode can be placed inside a post or page.",
+            "The widget can be added from Appearance > Widgets.",
+            "The selected group determines which content is displayed."
+          ]
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Whistles puede insertarse mediante un shortcode o un widget"
+        },
+        {
+          "type": "text",
+          "content": "Un grupo de Whistles configurado puede incrustarse en el contenido mediante el shortcode [whistles] o mostrarse en un área compatible utilizando el widget Whistles."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "El shortcode puede colocarse dentro de una entrada o página.",
+            "El widget puede añadirse desde Apariencia > Widgets.",
+            "El grupo seleccionado determina qué contenido se muestra."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Category": "Definición de shortcode",
+    "Question Text": {
+      "en-US": [
+        "It is an abbreviated or short code that WordPress users can insert into the web editor to add functionality to content without entering a programming language"
+      ],
+      "es-MX": [
+        "Es un código abreviado (o corto) que permite a los usuarios de WordPress insertarlo en el editor web para agregar funcionalidad al contenido, sin necesidad de insertar un lenguaje de programación"
+      ]
+    },
+    "Options": {
+      "en-US": [
+        "Theme",
+        "Widgets",
+        "Shortcode",
+        "Plugin"
+      ],
+      "es-MX": [
+        "Tema",
+        "Widgets",
+        "Shortcode",
+        "Plugin"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "Shortcode",
+      "es-MX": "Shortcode"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "A shortcode adds functions through a short instruction"
+        },
+        {
+          "type": "text",
+          "content": "A shortcode is a small instruction enclosed in square brackets that WordPress processes to generate content or execute a predefined function."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "It can be inserted into posts, pages and compatible widgets.",
+            "Its function is defined by WordPress, a theme or a plugin.",
+            "It allows complex elements to be added without writing the complete programming code."
+          ]
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Un shortcode añade funciones mediante una instrucción corta"
+        },
+        {
+          "type": "text",
+          "content": "Un shortcode es una pequeña instrucción encerrada entre corchetes que WordPress procesa para generar contenido o ejecutar una función previamente definida."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Puede insertarse en entradas, páginas y widgets compatibles.",
+            "Su función es definida por WordPress, un tema o un plugin.",
+            "Permite añadir elementos complejos sin escribir todo el código de programación."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Category": "Ejecución de un script mediante shortcode",
+    "Question Text": {
+      "en-US": [
+        "It is a tag that calls a __________ so that it runs in the place where it is inserted within the website. Its appearance is as follows: [shortcode id='1']"
+      ],
+      "es-MX": [
+        "Es una etiqueta que llama a un __________ para que se ejecute en el lugar que sea colocado dentro de la web. El aspecto que tienen es el siguiente: [shortcode id='1']"
+      ]
+    },
+    "Options": {
+      "en-US": [
+        "Plugin",
+        "Script",
+        "Widget",
+        "Shortcode"
+      ],
+      "es-MX": [
+        "Plugin",
+        "Scrip",
+        "Widget",
+        "Shortcode"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "Script",
+      "es-MX": "Scrip"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "A shortcode calls a predefined script or function"
+        },
+        {
+          "type": "text",
+          "content": "When WordPress finds a registered shortcode, it executes the function or script associated with its name and displays the resulting content in that location."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "The shortcode name identifies the function to be executed.",
+            "Attributes such as id can provide additional information.",
+            "The generated result replaces the shortcode when the page is displayed."
+          ]
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Un shortcode llama a un script o función predefinida"
+        },
+        {
+          "type": "text",
+          "content": "Cuando WordPress encuentra un shortcode registrado, ejecuta la función o el script asociado con su nombre y muestra el contenido resultante en esa ubicación."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "El nombre del shortcode identifica la función que debe ejecutarse.",
+            "Los atributos como id pueden proporcionar información adicional.",
+            "El resultado generado sustituye al shortcode cuando se muestra la página."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Category": "API de shortcodes",
+    "Question Text": {
+      "en-US": [
+        "Starting with WordPress version __________, the Shortcode API was incorporated so that any platform user could add functions through codes from the control panel without requiring previous programming knowledge"
+      ],
+      "es-MX": [
+        "WordPress, desde su versión __________, incorporó la API de shortcode para que cualquier usuario de la plataforma pueda añadir funciones por medio de códigos desde el panel de control sin necesidad de tener conocimientos previos de programación"
+      ]
+    },
+    "Options": {
+      "en-US": [
+        "4.5",
+        "2.0",
+        "3.5",
+        "2.5"
+      ],
+      "es-MX": [
+        "4.5",
+        "2.0",
+        "3.5",
+        "2.5"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "2.5",
+      "es-MX": "2.5"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "The Shortcode API was introduced in WordPress 2.5"
+        },
+        {
+          "type": "text",
+          "content": "WordPress 2.5 incorporated the Shortcode API, which provides a standardized mechanism for registering and processing short instructions within website content."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Developers register the function associated with each shortcode.",
+            "Users insert the shortcode through the content editor.",
+            "WordPress processes the instruction and displays the generated result."
+          ]
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "La API de shortcodes se incorporó en WordPress 2.5"
+        },
+        {
+          "type": "text",
+          "content": "WordPress 2.5 incorporó la API de shortcodes, que proporciona un mecanismo estandarizado para registrar y procesar instrucciones cortas dentro del contenido del sitio."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Los desarrolladores registran la función asociada con cada shortcode.",
+            "Los usuarios insertan el shortcode mediante el editor de contenido.",
+            "WordPress procesa la instrucción y muestra el resultado generado."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Category": "Plugins de shortcodes",
+    "Question Text": {
+      "en-US": [
+        "In the WordPress __________ library, multiple add-ons can be found that allow preconfigured shortcode packs to be added:"
+      ],
+      "es-MX": [
+        "En la librería de __________ para WordPress se podrán encontrar múltiples complementos que permiten añadir packs de shortcode preconfigurados:"
+      ]
+    },
+    "Options": {
+      "en-US": [
+        "Theme",
+        "Widgets",
+        "Shortcode",
+        "Plugin"
+      ],
+      "es-MX": [
+        "Tema",
+        "Widgets",
+        "Shortcode",
+        "Plugin"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "Plugin",
+      "es-MX": "Plugin"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "The plugin library contains shortcode packages"
+        },
+        {
+          "type": "text",
+          "content": "The WordPress plugin directory contains extensions that add collections of preconfigured shortcodes to a website."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Each plugin can provide different shortcode functions.",
+            "The plugin must be installed and activated before its shortcodes can be used.",
+            "Available shortcodes can generate buttons, tabs, columns and other elements."
+          ]
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "La librería de plugins contiene paquetes de shortcodes"
+        },
+        {
+          "type": "text",
+          "content": "El directorio de plugins de WordPress contiene extensiones que añaden colecciones de shortcodes preconfigurados al sitio."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Cada plugin puede proporcionar diferentes funciones mediante shortcodes.",
+            "El plugin debe instalarse y activarse antes de utilizar sus shortcodes.",
+            "Los shortcodes disponibles pueden generar botones, pestañas, columnas y otros elementos."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Category": "Shortcodes Ultimate",
+    "Question Text": {
+      "en-US": [
+        "In addition to being free, the Shortcodes Ultimate plugin contains more than fifty prepared __________ to optimize website functionality"
+      ],
+      "es-MX": [
+        "El plugin Shortcodes Ultimate además de ser gratuito contiene más de cincuenta __________ preparados para optimizar la funcionalidad de la web"
+      ]
+    },
+    "Options": {
+      "en-US": [
+        "Plugin",
+        "Script",
+        "Widget",
+        "Shortcode"
+      ],
+      "es-MX": [
+        "Plugin",
+        "Scrip",
+        "Widget",
+        "Shortcode"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "Shortcode",
+      "es-MX": "Shortcode"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "Shortcodes Ultimate includes more than fifty shortcodes"
+        },
+        {
+          "type": "text",
+          "content": "Shortcodes Ultimate provides more than fifty ready-to-use shortcodes for adding reusable visual and functional elements to WordPress content."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "It includes elements such as tabs, accordions, buttons and boxes.",
+            "Shortcodes can be used in posts, pages, widgets and template files.",
+            "The same configured element can be reused in different parts of the website."
+          ]
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Shortcodes Ultimate incluye más de cincuenta shortcodes"
+        },
+        {
+          "type": "text",
+          "content": "Shortcodes Ultimate proporciona más de cincuenta shortcodes listos para añadir elementos visuales y funcionales reutilizables al contenido de WordPress."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Incluye elementos como pestañas, acordeones, botones y cajas.",
+            "Los shortcodes pueden utilizarse en entradas, páginas, widgets y archivos de plantillas.",
+            "Un mismo elemento configurado puede reutilizarse en diferentes partes del sitio."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Category": "Editor de Shortcodes Ultimate",
+    "Question Text": {
+      "en-US": [
+        "The Shortcodes Ultimate plugin also includes a shortcode __________ that can be used to insert the desired elements, as well as a CSS editor"
+      ],
+      "es-MX": [
+        "El plugin Shortcodes Ultimate también incorpora un __________ de shortcode con el que se pueden insertar elementos deseados y un editor de CSS"
+      ]
+    },
+    "Options": {
+      "en-US": [
+        "Widget",
+        "Preconfigured",
+        "HTML language",
+        "Editor"
+      ],
+      "es-MX": [
+        "Widget",
+        "Preconfigurado",
+        "Lenguaje HTML",
+        "Editor"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "Editor",
+      "es-MX": "Editor"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "The editor visually generates and customizes shortcodes"
+        },
+        {
+          "type": "text",
+          "content": "The Shortcodes Ultimate visual editor allows an element to be selected and configured before its shortcode is inserted into the content."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "The user can choose the type of element to insert.",
+            "The shortcode can be previewed before being added.",
+            "The custom CSS editor allows the appearance of the generated elements to be adjusted."
+          ]
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "El editor genera y personaliza shortcodes visualmente"
+        },
+        {
+          "type": "text",
+          "content": "El editor visual de Shortcodes Ultimate permite seleccionar y configurar un elemento antes de insertar su shortcode dentro del contenido."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "El usuario puede elegir el tipo de elemento que desea insertar.",
+            "El shortcode puede previsualizarse antes de agregarlo.",
+            "El editor de CSS personalizado permite ajustar la apariencia de los elementos generados."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Category": {
+      "en-US": "Shortcode example",
+      "es-MX": "Ejemplo de shortcode"
+    },
+    "Question Text": {
+      "en-US": "What happens when the shortcode [gallery ids=\"12,15,18\"] is inserted into a WordPress page?",
+      "es-MX": "¿Qué sucede cuando se inserta el shortcode [gallery ids=\"12,15,18\"] en una página de WordPress?"
+    },
+    "Options": {
+      "en-US": [
+        "WordPress displays a gallery using the images with IDs 12, 15, and 18",
+        "The browser executes the shortcode as JavaScript",
+        "WordPress creates three new users",
+        "The website theme is permanently replaced"
+      ],
+      "es-MX": [
+        "WordPress muestra una galería con las imágenes cuyos identificadores son 12, 15 y 18",
+        "El navegador ejecuta el shortcode como JavaScript",
+        "WordPress crea tres usuarios nuevos",
+        "El tema del sitio web se reemplaza permanentemente"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "WordPress displays a gallery using the images with IDs 12, 15, and 18",
+      "es-MX": "WordPress muestra una galería con las imágenes cuyos identificadores son 12, 15 y 18"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "How does this shortcode work?"
+        },
+        {
+          "type": "text",
+          "content": "WordPress recognizes the word gallery as an instruction to create an image gallery. The ids attribute identifies the images that must appear in it."
+        },
+        {
+          "type": "text",
+          "content": "The user only inserts the shortcode into the content. WordPress interprets it and generates the elements needed to display the gallery without requiring the user to write programming code."
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "¿Cómo funciona este shortcode?"
+        },
+        {
+          "type": "text",
+          "content": "WordPress reconoce la palabra gallery como una instrucción para crear una galería. El atributo ids indica los identificadores de las imágenes que deben aparecer en ella."
+        },
+        {
+          "type": "text",
+          "content": "El usuario solamente inserta el shortcode en el contenido. WordPress lo interpreta y genera los elementos necesarios para mostrar la galería sin que el usuario tenga que escribir código de programación."
+        }
+      ]
+    }
+  }
+
+]
+}

@@ -1,0 +1,1047 @@
+{
+  "meta": {
+    "slug": "gestores-contenidos-u4",
+    "title": "Creación de entradas y librería multimedia",
+    "subject": "DISEÑO Y CREACIÓN WEB CON GESTORES DE CONTENIDOS",
+    "unit": 4,
+    "classNo": 0,
+    "description": "Unidad 4: creación y administración de entradas o posts en WordPress, publicación de contenido y gestión de archivos mediante la librería multimedia.",
+    "tags": [
+      "WordPress",
+      "entradas",
+      "posts",
+      "creación de entradas",
+      "publicación de contenido",
+      "editor de WordPress",
+      "librería multimedia",
+      "biblioteca de medios",
+      "imágenes",
+      "vídeos",
+      "audios",
+      "archivos multimedia"
+    ],
+    "questionCount": 0,
+    "languages": [
+      "en-US",
+      "es-MX"
+    ]
+  },
+  "Questions": [
+    {
+  "Category": "Entradas de WordPress",
+  "Question Text": {
+    "en-US": [
+      "The __________ of a website, together with static pages, are the main means of adding content to a site. We are referring to:"
+    ],
+    "es-MX": [
+      "Las __________ de un sitio web, junto con las páginas estáticas, son los principales medios para añadir contenido en un sitio. Nos referimos a:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Pages",
+      "Posts",
+      "Plugins",
+      "Settings"
+    ],
+    "es-MX": [
+      "Páginas",
+      "Entradas",
+      "Plugins",
+      "Configuraciones"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Posts",
+    "es-MX": "Entradas"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Posts are one of the main types of WordPress content"
+      },
+      {
+        "type": "text",
+        "content": "WordPress mainly uses posts and pages to add content to a website. Posts are generally used for frequently updated content, such as news, articles or blog publications."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Posts are normally displayed in reverse chronological order.",
+          "They can be organized using categories and tags.",
+          "They are suitable for dynamic content that is published regularly."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Las entradas son uno de los principales tipos de contenido de WordPress"
+      },
+      {
+        "type": "text",
+        "content": "WordPress utiliza principalmente las entradas y las páginas para añadir contenido a un sitio web. Las entradas suelen emplearse para contenido que se actualiza con frecuencia, como noticias, artículos o publicaciones de un blog."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Normalmente se muestran en orden cronológico inverso.",
+          "Se pueden organizar mediante categorías y etiquetas.",
+          "Son apropiadas para contenido dinámico que se publica periódicamente."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Editor TinyMCE",
+  "Question Text": {
+    "en-US": [
+      "The editor is an open-source JavaScript tool called TinyMCE, which is divided into two parts:"
+    ],
+    "es-MX": [
+      "El editor es una herramienta de JavaScript de código abierto nombrada TinyMCE, que se divide en dos partes que son:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Dashboard and posts",
+      "Administrator and dashboard",
+      "Visual and HTML",
+      "Visual and Java"
+    ],
+    "es-MX": [
+      "Escritorio y entradas",
+      "Administrador y escritorio",
+      "Visual y HTML",
+      "Visual y Java"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Visual and HTML",
+    "es-MX": "Visual y HTML"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "TinyMCE provides Visual and HTML editing"
+      },
+      {
+        "type": "text",
+        "content": "TinyMCE is an open-source JavaScript text editor used in the classic WordPress editor. It allows content to be edited through a visual interface or by working directly with its HTML code."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "The Visual section displays the content similarly to how visitors will see it.",
+          "The HTML section allows the markup code that structures the content to be viewed and edited.",
+          "Both sections modify the same post content."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "TinyMCE permite editar en modo Visual y HTML"
+      },
+      {
+        "type": "text",
+        "content": "TinyMCE es un editor de texto de código abierto desarrollado con JavaScript y utilizado en el editor clásico de WordPress. Permite editar el contenido mediante una interfaz visual o trabajar directamente con su código HTML."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "El apartado Visual muestra el contenido de una manera similar a como lo observarán los visitantes.",
+          "El apartado HTML permite consultar y modificar el código de marcado que estructura el contenido.",
+          "Ambos apartados modifican el contenido de la misma entrada."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Herramienta de negrita",
+  "Question Text": {
+    "en-US": [
+      "This text editor tool, represented by an icon, allows you to apply bold formatting to text in order to emphasize a word, phrase or sentence"
+    ],
+    "es-MX": [
+      "Esta herramienta del editor de texto representada por un ícono permite dar al texto el estilo de negrita, para dar énfasis a una palabra, frase u oración"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "B",
+      "I",
+      "Quotation marks",
+      "Lists"
+    ],
+    "es-MX": [
+      "B",
+      "I",
+      "Comillas",
+      "Listas"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "B",
+    "es-MX": "B"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "The B icon applies bold formatting"
+      },
+      {
+        "type": "text",
+        "content": "The B icon in the text editor applies bold formatting to the selected text. This formatting increases the visual weight of letters and is used to emphasize important words, phrases or sentences."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "First, the text to be emphasized is selected.",
+          "Pressing the B icon applies bold formatting.",
+          "Pressing it again removes the formatting from the selected text."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "El ícono B aplica el formato de negrita"
+      },
+      {
+        "type": "text",
+        "content": "El ícono B del editor permite aplicar el estilo de negrita al texto seleccionado. Este formato aumenta el peso visual de las letras y se utiliza para destacar palabras, frases u oraciones importantes."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Primero se selecciona el texto que se desea enfatizar.",
+          "Al presionar el ícono B se aplica la negrita.",
+          "Al presionarlo nuevamente se elimina el formato del texto seleccionado."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Categorías",
+  "Question Text": {
+    "en-US": [
+      "This module is very important for classifying posts according to the criteria established for the website"
+    ],
+    "es-MX": [
+      "Este módulo es de gran importancia para clasificar las entradas según el criterio que tenga el sitio web"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Categories",
+      "Posts",
+      "Tags",
+      "Media"
+    ],
+    "es-MX": [
+      "Categorías",
+      "Entradas",
+      "Etiquetas",
+      "Medios"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Categories",
+    "es-MX": "Categorías"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Categories classify posts by general topics"
+      },
+      {
+        "type": "text",
+        "content": "The Categories module allows WordPress posts to be classified according to the topics or criteria established for the website. This organization helps visitors find related content more easily."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Categories group posts that cover related topics.",
+          "A post can be assigned to one or more categories.",
+          "Categories can have a hierarchical organization with parent and child categories."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Las categorías clasifican las entradas por temas generales"
+      },
+      {
+        "type": "text",
+        "content": "El módulo Categorías permite clasificar las entradas de WordPress de acuerdo con los temas o criterios establecidos para el sitio web. Esta organización ayuda a que los visitantes encuentren más fácilmente contenidos relacionados."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Las categorías agrupan entradas que tratan temas relacionados.",
+          "Una entrada puede asignarse a una o varias categorías.",
+          "Las categorías pueden organizarse jerárquicamente mediante categorías superiores y subordinadas."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Módulo autor",
+  "Question Text": {
+    "en-US": [
+      "Through the drop-down list in this module, a post can be assigned to the desired author from the list of users registered in WordPress. We are referring to:"
+    ],
+    "es-MX": [
+      "A través del desplegable de este módulo, se puede asignar a la entrada el autor que se desee de entre la lista que se encuentre registrada en el WordPress. Nos referimos a:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Slug module",
+      "Comments module",
+      "Author module",
+      "Excerpt module"
+    ],
+    "es-MX": [
+      "Módulo slug",
+      "Módulo comentarios",
+      "Módulo autor",
+      "Módulo extracto"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Author module",
+    "es-MX": "Módulo autor"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "The Author module assigns a registered user to a post"
+      },
+      {
+        "type": "text",
+        "content": "The Author module contains a drop-down list that allows a registered WordPress user to be selected as the author of a post. The available users depend on the accounts and permissions configured on the website."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "It displays the users who can be assigned as authors.",
+          "It allows the author of an existing post to be changed.",
+          "The selected author's name can be displayed with the published post."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "El módulo autor asigna un usuario registrado a una entrada"
+      },
+      {
+        "type": "text",
+        "content": "El módulo Autor contiene una lista desplegable que permite seleccionar a un usuario registrado en WordPress como autor de una entrada. Los usuarios disponibles dependen de las cuentas y permisos configurados en el sitio."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Muestra los usuarios que pueden asignarse como autores.",
+          "Permite cambiar el autor de una entrada existente.",
+          "El nombre del autor seleccionado puede mostrarse junto con la entrada publicada."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Módulo extracto",
+  "Question Text": {
+    "en-US": [
+      "It is a summary used on the website in places where it is preferable to display a brief description instead of the complete content. We are referring to the module:"
+    ],
+    "es-MX": [
+      "Es un resumen que se usa en el sitio web en lugares donde es preferible que aparezca una descripción breve en vez del contenido en su totalidad. Nos referimos al módulo:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Slug module",
+      "Comments module",
+      "Author module",
+      "Excerpt module"
+    ],
+    "es-MX": [
+      "Módulo slug",
+      "Módulo comentarios",
+      "Módulo autor",
+      "Módulo extracto"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Excerpt module",
+    "es-MX": "Módulo extracto"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "The Excerpt module provides a brief summary of a post"
+      },
+      {
+        "type": "text",
+        "content": "The Excerpt module allows a short summary of a post to be entered. WordPress can display this description in places where showing the complete content would take up too much space."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "It presents the main idea of a post in a condensed form.",
+          "It can appear in post listings, archives or search results.",
+          "It encourages visitors to open the complete post to continue reading."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "El módulo extracto proporciona un resumen breve de la entrada"
+      },
+      {
+        "type": "text",
+        "content": "El módulo Extracto permite introducir un resumen breve de una entrada. WordPress puede mostrar esta descripción en aquellos lugares donde presentar el contenido completo ocuparía demasiado espacio."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Presenta de forma condensada la idea principal de una entrada.",
+          "Puede aparecer en listados, archivos o resultados de búsqueda.",
+          "Invita al visitante a abrir la entrada completa para continuar leyendo."
+        ]
+      }
+    ]
+  }
+}   ,
+{
+  "Category": "Biblioteca de medios",
+  "Question Text": {
+    "en-US": [
+      "Videos, images, PDF documents, audio files and other types of files can be uploaded to the __________ library"
+    ],
+    "es-MX": [
+      "En la biblioteca de __________ se pueden subir vídeos, imágenes, documentos PDF, audios, entre otros"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Categories",
+      "Posts",
+      "Tags",
+      "Media"
+    ],
+    "es-MX": [
+      "Categorías",
+      "Entradas",
+      "Etiquetas",
+      "Medios"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Media",
+    "es-MX": "Medios"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "The Media Library stores multimedia files"
+      },
+      {
+        "type": "text",
+        "content": "The WordPress Media Library allows files used on the website to be uploaded, viewed and managed from the administration area."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "It supports images, videos, audio files and PDF documents.",
+          "Uploaded files can be reused in different posts and pages.",
+          "Each file can contain information such as a title, caption and alternative text."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "La Biblioteca de medios almacena archivos multimedia"
+      },
+      {
+        "type": "text",
+        "content": "La Biblioteca de medios de WordPress permite subir, visualizar y administrar desde el área de administración los archivos utilizados en el sitio web."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Admite imágenes, vídeos, audios y documentos PDF.",
+          "Los archivos subidos pueden reutilizarse en diferentes entradas y páginas.",
+          "Cada archivo puede incluir datos como título, leyenda y texto alternativo."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Directorio de archivos multimedia",
+  "Question Text": {
+    "en-US": [
+      "When a multimedia file is uploaded to a website, WordPress stores it in the directory:"
+    ],
+    "es-MX": [
+      "Cuando se sube un archivo multimedia a la web, WordPress lo guarda en el directorio:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Wp-content/uploads",
+      "Wp-admin/uploads",
+      "Ww-content/uploads",
+      "Wp-content/media"
+    ],
+    "es-MX": [
+      "Wp-content/uploads",
+      "Wp-admin/uploads",
+      "Ww-content/uploads",
+      "Wp-content/medios"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Wp-content/uploads",
+    "es-MX": "Wp-content/uploads"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "WordPress stores uploaded files in wp-content/uploads"
+      },
+      {
+        "type": "text",
+        "content": "Files uploaded through the WordPress Media Library are normally stored in the wp-content/uploads directory."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "The wp-content directory contains the website's custom content.",
+          "The uploads subdirectory stores files added to the Media Library.",
+          "WordPress can organize these files into folders by year and month."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "WordPress guarda los archivos en wp-content/uploads"
+      },
+      {
+        "type": "text",
+        "content": "Los archivos cargados mediante la Biblioteca de medios de WordPress se almacenan normalmente en el directorio wp-content/uploads."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "El directorio wp-content contiene el contenido propio del sitio.",
+          "El subdirectorio uploads almacena los archivos añadidos a la Biblioteca de medios.",
+          "WordPress puede organizar estos archivos en carpetas según el año y el mes."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Acceso a la Biblioteca de medios",
+  "Question Text": {
+    "en-US": [
+      "To access the library, you must go to the __________ and select __________ from the left sidebar. Once inside, you can view the library and add new items"
+    ],
+    "es-MX": [
+      "Para acceder a la biblioteca se debe dirigir al __________ y, en la barra lateral izquierda, se ingresa en «__________»; una vez dentro se puede visualizar la librería y añadir nuevos elementos"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Administrator and multimedia",
+      "Administrator and multimedias",
+      "Administrator and library",
+      "Administrator and media"
+    ],
+    "es-MX": [
+      "Administrador y multimedia",
+      "Administrador y multimedios",
+      "Administrador y biblioteca",
+      "Administrador y medios"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Administrator and media",
+    "es-MX": "Administrador y medios"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "The Media Library is accessed from the administration area"
+      },
+      {
+        "type": "text",
+        "content": "To open the WordPress Media Library, enter the administration area and select Media from the left sidebar."
+      },
+      {
+        "type": "ol",
+        "items": [
+          "Access the WordPress administration area.",
+          "Select Media from the left sidebar.",
+          "Open the library or select the option to add a new file."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "La Biblioteca de medios se abre desde el área de administración"
+      },
+      {
+        "type": "text",
+        "content": "Para abrir la Biblioteca de medios de WordPress se debe acceder al área de administración y seleccionar Medios en la barra lateral izquierda."
+      },
+      {
+        "type": "ol",
+        "items": [
+          "Acceder al área de administración de WordPress.",
+          "Seleccionar Medios en la barra lateral izquierda.",
+          "Abrir la biblioteca o elegir la opción para añadir un archivo nuevo."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Información de la imagen",
+  "Question Text": {
+    "en-US": [
+      "By clicking on the image, you can edit the __________ title, the title, the __________ and the description, and copy the URL of the uploaded image if necessary"
+    ],
+    "es-MX": [
+      "Al dar clic sobre la imagen, se podrá editar el título __________, el título, la __________ y la descripción, y se podrá copiar la URL de la imagen subida de ser necesario"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Alternative and description",
+      "Alternative and caption",
+      "Alternative and note",
+      "Alternate and caption"
+    ],
+    "es-MX": [
+      "Alternativo y descripción",
+      "Alternativo y leyenda",
+      "Alternativo y nota",
+      "Alternado y leyenda"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Alternative and caption",
+    "es-MX": "Alternativo y leyenda"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "WordPress allows image information to be edited"
+      },
+      {
+        "type": "text",
+        "content": "When an image is selected in the WordPress Media Library, its alternative text, title, caption and description can be edited. The file URL can also be copied."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Alternative text describes the image and improves accessibility.",
+          "The title identifies the file within the Media Library.",
+          "The caption can be displayed next to the image in the published content.",
+          "The description can provide additional information about the file."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "WordPress permite editar la información de las imágenes"
+      },
+      {
+        "type": "text",
+        "content": "Cuando se selecciona una imagen en la Biblioteca de medios de WordPress, se pueden editar su texto alternativo, título, leyenda y descripción. También es posible copiar la URL del archivo."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "El texto alternativo describe la imagen y mejora la accesibilidad.",
+          "El título identifica el archivo dentro de la Biblioteca de medios.",
+          "La leyenda puede mostrarse junto a la imagen en el contenido publicado.",
+          "La descripción permite añadir información complementaria sobre el archivo."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Características de las imágenes",
+  "Question Text": {
+    "en-US": [
+      "For a website to have high-quality images without compromising its loading speed, it is essential to consider certain __________ when importing them into WordPress"
+    ],
+    "es-MX": [
+      "Es importante mencionar que, para que una web disponga de imágenes de calidad sin comprometer la velocidad de carga, es fundamental tomar en cuenta ciertas __________ a la hora de importarlas a WordPress"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Peculiarities",
+      "Complements",
+      "Characteristics",
+      "Comments"
+    ],
+    "es-MX": [
+      "Peculiaridades",
+      "Complementos",
+      "Características",
+      "Comentarios"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Characteristics",
+    "es-MX": "Características"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Image characteristics affect website performance"
+      },
+      {
+        "type": "text",
+        "content": "Before importing an image into WordPress, its dimensions, file format, resolution and file size should be considered. Proper optimization helps maintain visual quality without slowing down the website."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Dimensions should be appropriate for the space where the image will be displayed.",
+          "The file format should be selected according to the type of image.",
+          "Compression reduces file size and improves loading speed.",
+          "Images should preserve sufficient quality for their intended use."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Las características de las imágenes afectan el rendimiento del sitio"
+      },
+      {
+        "type": "text",
+        "content": "Antes de importar una imagen a WordPress deben considerarse sus dimensiones, formato, resolución y tamaño de archivo. Una optimización adecuada permite conservar la calidad visual sin reducir la velocidad de carga del sitio."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Las dimensiones deben adecuarse al espacio donde se mostrará la imagen.",
+          "El formato debe seleccionarse de acuerdo con el tipo de imagen.",
+          "La compresión reduce el tamaño del archivo y mejora la velocidad de carga.",
+          "La imagen debe conservar una calidad suficiente para el uso previsto."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Edición de imágenes",
+  "Question Text": {
+    "en-US": [
+      "Actions can be performed on an imported image. When editing it, you can:"
+    ],
+    "es-MX": [
+      "Desde la imagen importada se pueden realizar acciones sobre ella. A la hora de editar se puede:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Crop, rotate, flip and resize",
+      "Crop, rotate, move and change pixels",
+      "Report, rotate, flip and turn by degrees",
+      "Cut, paste and rotate"
+    ],
+    "es-MX": [
+      "Recortar, rotar, voltear y cambiar dimensiones",
+      "Recortar, rotar, mover y cambiar píxeles",
+      "Reportar, rotar, voltear y girar por grados",
+      "Cortar, pegar y rotar"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Crop, rotate, flip and resize",
+    "es-MX": "Recortar, rotar, voltear y cambiar dimensiones"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "WordPress includes basic image-editing tools"
+      },
+      {
+        "type": "text",
+        "content": "The WordPress image editor includes several basic tools that allow an imported image to be adjusted without using an external editing application."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Cropping removes unwanted areas of the image.",
+          "Rotating changes the image orientation.",
+          "Flipping reflects the image horizontally or vertically.",
+          "Resizing changes the image dimensions."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "WordPress incluye herramientas básicas para editar imágenes"
+      },
+      {
+        "type": "text",
+        "content": "El editor de imágenes de WordPress incluye varias herramientas básicas que permiten ajustar una imagen importada sin utilizar una aplicación externa de edición."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Recortar elimina las áreas de la imagen que no se necesitan.",
+          "Rotar modifica la orientación de la imagen.",
+          "Voltear refleja la imagen horizontal o verticalmente.",
+          "Cambiar dimensiones modifica el ancho y la altura de la imagen."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Información de los vídeos",
+  "Question Text": {
+    "en-US": [
+      "Videos can also be assigned a title, a caption and a description, and the URL generated when uploading them can be copied, but they cannot be assigned an __________"
+    ],
+    "es-MX": [
+      "A los vídeos también se les puede asignar un título, una leyenda y una descripción, y copiar la URL que se genera al subirlos, pero no se puede asignarles un __________"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Descriptive title",
+      "Alternative title",
+      "Caption title",
+      "Observation title"
+    ],
+    "es-MX": [
+      "Título descriptivo",
+      "Título alternativo",
+      "Título leyenda",
+      "Título observación"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Alternative title",
+    "es-MX": "Título alternativo"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Videos do not use alternative text like images"
+      },
+      {
+        "type": "text",
+        "content": "According to the course material, WordPress allows a title, caption and description to be added to an uploaded video, but it does not provide the same alternative-title field used for images."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "The title identifies the video in the Media Library.",
+          "The caption can accompany the video when it is displayed.",
+          "The description provides additional information.",
+          "The URL can be copied to use the video elsewhere on the website."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Los vídeos no utilizan texto alternativo como las imágenes"
+      },
+      {
+        "type": "text",
+        "content": "De acuerdo con el material del curso, WordPress permite añadir título, leyenda y descripción a un vídeo subido, pero no proporciona el mismo campo de título alternativo utilizado para las imágenes."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "El título identifica el vídeo dentro de la Biblioteca de medios.",
+          "La leyenda puede acompañar al vídeo cuando se muestra.",
+          "La descripción proporciona información adicional.",
+          "La URL puede copiarse para utilizar el vídeo en otra parte del sitio."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Archivos admitidos",
+  "Question Text": {
+    "en-US": [
+      "The WordPress Media Library allows you to upload:"
+    ],
+    "es-MX": [
+      "En la Biblioteca de medios de WordPress se pueden subir archivos:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Videos, images, PDF documents, audio files, among others",
+      "PHP files",
+      "Only JPG and PNG images",
+      ".com files"
+    ],
+    "es-MX": [
+      "Vídeos, imágenes, documentos PDF, audios, entre otros",
+      "Archivos PHP",
+      "Solo imágenes JPG y PNG",
+      "Archivo .com"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Videos, images, PDF documents, audio files, among others",
+    "es-MX": "Vídeos, imágenes, documentos PDF, audios, entre otros"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "The Media Library supports different file types"
+      },
+      {
+        "type": "text",
+        "content": "The WordPress Media Library can manage several types of multimedia and document files, including images, videos, audio files and PDF documents."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Images can be used in posts, pages and galleries.",
+          "Video and audio files can be embedded in website content.",
+          "PDF documents can be uploaded and linked for viewing or downloading.",
+          "Executable or source-code files are restricted for security reasons."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "La Biblioteca de medios admite diferentes tipos de archivos"
+      },
+      {
+        "type": "text",
+        "content": "La Biblioteca de medios de WordPress puede administrar distintos archivos multimedia y documentos, entre ellos imágenes, vídeos, audios y documentos PDF."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Las imágenes pueden utilizarse en entradas, páginas y galerías.",
+          "Los vídeos y audios pueden incorporarse al contenido del sitio.",
+          "Los documentos PDF pueden subirse y enlazarse para su consulta o descarga.",
+          "Los archivos ejecutables o de código fuente se restringen por seguridad."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Representación de vídeos",
+  "Question Text": {
+    "en-US": [
+      "Video media are represented in the library by:"
+    ],
+    "es-MX": [
+      "Los medios de vídeo se representan en la biblioteca a través de:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "A thumbnail preview of the video image",
+      "A .zip file",
+      "A video camera icon",
+      "A PHP configuration"
+    ],
+    "es-MX": [
+      "Visualización miniatura de imagen del vídeo",
+      "Archivo .zip",
+      "Un icono de cámara de vídeo",
+      "Una configuración PHP"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "A thumbnail preview of the video image",
+    "es-MX": "Visualización miniatura de imagen del vídeo"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Videos are represented by a thumbnail preview"
+      },
+      {
+        "type": "text",
+        "content": "In the WordPress Media Library, an uploaded video is represented visually through a thumbnail or preview image that helps identify the file."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "The thumbnail makes the video easier to recognize.",
+          "Selecting the preview opens the file information.",
+          "The title, caption, description and URL can be reviewed from its details."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Los vídeos se representan mediante una imagen en miniatura"
+      },
+      {
+        "type": "text",
+        "content": "En la Biblioteca de medios de WordPress, un vídeo subido se representa visualmente mediante una miniatura o imagen de vista previa que ayuda a identificar el archivo."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "La miniatura facilita el reconocimiento del vídeo.",
+          "Al seleccionar la vista previa se abre la información del archivo.",
+          "Desde sus detalles pueden consultarse el título, la leyenda, la descripción y la URL."
+        ]
+      }
+    ]
+  }
+}
+  ]
+
+}

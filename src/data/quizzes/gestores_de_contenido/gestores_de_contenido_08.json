@@ -1,0 +1,546 @@
+{
+  "meta": {
+    "slug": "gestores-contenidos-u8",
+    "title": "Migración en WordPress",
+    "subject": "DISEÑO Y CREACIÓN WEB CON GESTORES DE CONTENIDOS",
+    "unit": 8,
+    "classNo": 0,
+    "description": "Introducción a la migración de sitios web en WordPress, sus objetivos, el proceso manual y el uso de plugins para trasladar el contenido y la configuración.",
+    "tags": [
+      "WordPress",
+      "migración",
+      "migración manual",
+      "plugins de migración",
+      "base de datos",
+      "archivos"
+    ],
+    "questionCount": 9,
+    "languages": [
+      "en-US",
+      "es-MX"
+    ]
+  },
+  "Questions": [{
+    "Category": {
+      "en-US": "Introduction to web migration",
+      "es-MX": "Introducción a la migración web"
+    },
+    "Question Text": {
+      "en-US": "The transfer of all website data, such as images, photos, videos, files and emails, from a local hosting service to a new hosting service is known as:",
+      "es-MX": "La transferencia de todos los datos de un sitio web, como imágenes, fotos, videos, archivos y correos, desde un hosting local hacia un nuevo alojamiento se conoce como:"
+    },
+    "Options": {
+      "en-US": [
+        "Page",
+        "Migration",
+        "Post",
+        "Configuration"
+      ],
+      "es-MX": [
+        "Página",
+        "Migración",
+        "Entrada",
+        "Configuración"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "Migration",
+      "es-MX": "Migración"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "Web migration"
+        },
+        {
+          "type": "text",
+          "content": "A web migration consists of transferring a website's files, database, multimedia content, emails and configuration from one environment or hosting service to another."
+        },
+        {
+          "type": "text",
+          "content": "The goal is for the website to continue operating from its new location while preserving its content and functionality."
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Migración web"
+        },
+        {
+          "type": "text",
+          "content": "Una migración web consiste en trasladar los archivos, la base de datos, el contenido multimedia, los correos y la configuración de un sitio desde un entorno o alojamiento hacia otro."
+        },
+        {
+          "type": "text",
+          "content": "El objetivo es que el sitio continúe funcionando desde su nueva ubicación, conservando su contenido y sus funcionalidades."
+        }
+      ]
+    }
+  },
+  {
+    "Category": {
+      "en-US": "Introduction to web migration",
+      "es-MX": "Introducción a la migración web"
+    },
+    "Question Text": {
+      "en-US": "Why is it advisable to create a website backup before performing a migration?",
+      "es-MX": "¿Por qué se recomienda realizar una copia de seguridad del sitio web antes de efectuar una migración?"
+    },
+    "Options": {
+      "en-US": [
+        "To have two websites",
+        "To make the migration easier",
+        "To recover the website if a failure occurs",
+        "Because it is only a routine procedure"
+      ],
+      "es-MX": [
+        "Para poder tener dos sitios web",
+        "Así será más sencilla la migración",
+        "En caso de que exista algún fallo, se podrá recuperar el sitio web",
+        "Es solamente por rutina"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "To recover the website if a failure occurs",
+      "es-MX": "En caso de que exista algún fallo, se podrá recuperar el sitio web"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "Importance of a backup"
+        },
+        {
+          "type": "text",
+          "content": "A migration can fail because of incomplete file transfers, database errors, incompatible configurations or an interrupted connection."
+        },
+        {
+          "type": "text",
+          "content": "A backup preserves a working copy of the website and allows it to be restored if information is lost or the migrated site does not work correctly."
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Importancia de la copia de seguridad"
+        },
+        {
+          "type": "text",
+          "content": "Una migración puede presentar fallos por transferencias incompletas, errores en la base de datos, configuraciones incompatibles o interrupciones en la conexión."
+        },
+        {
+          "type": "text",
+          "content": "La copia de seguridad conserva una versión funcional del sitio y permite restaurarlo si se pierde información o el sitio migrado no funciona correctamente."
+        }
+      ]
+    }
+  },
+  {
+    "Category": {
+      "en-US": "Introduction to web migration",
+      "es-MX": "Introducción a la migración web"
+    },
+    "Question Text": {
+      "en-US": "What format should the database being imported have?",
+      "es-MX": "¿Qué formato debe tener la base de datos que se está importando?"
+    },
+    "Options": {
+      "en-US": [
+        "PHP",
+        "Java",
+        ".sql",
+        ".doc"
+      ],
+      "es-MX": [
+        "PHP",
+        "Java",
+        ".sql",
+        ".doc"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": ".sql",
+      "es-MX": ".sql"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "SQL database file"
+        },
+        {
+          "type": "text",
+          "content": "An .sql file contains the instructions needed to recreate the database structure and restore its stored information, including tables, users, posts, pages and WordPress settings."
+        },
+        {
+          "type": "text",
+          "content": "During migration, this file can be imported into the database manager of the new server."
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Archivo de base de datos SQL"
+        },
+        {
+          "type": "text",
+          "content": "Un archivo .sql contiene las instrucciones necesarias para reconstruir la estructura de la base de datos y recuperar la información almacenada, como tablas, usuarios, entradas, páginas y ajustes de WordPress."
+        },
+        {
+          "type": "text",
+          "content": "Durante la migración, este archivo puede importarse mediante el administrador de bases de datos del nuevo servidor."
+        }
+      ]
+    }
+  },
+  {
+    "Category": {
+      "en-US": "Migration with plugins",
+      "es-MX": "Migración con plugins"
+    },
+    "Question Text": {
+      "en-US": "What is the name of the plugin that makes it easy to migrate WordPress websites?",
+      "es-MX": "El plugin que permite realizar migraciones web de forma sencilla lleva el nombre de:"
+    },
+    "Options": {
+      "en-US": [
+        "All-Duplicator Migration",
+        "All-Updraft Migration",
+        "All-In-One WP Admin",
+        "All-In-One WP Migration"
+      ],
+      "es-MX": [
+        "All-Duplicator Migration",
+        "All-Updraft Migration",
+        "All-In-One WP Admin",
+        "All-In-One WP Migration"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "All-In-One WP Migration",
+      "es-MX": "All-In-One WP Migration"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "All-In-One WP Migration"
+        },
+        {
+          "type": "text",
+          "content": "All-In-One WP Migration is a WordPress plugin designed to export an entire website and import it into another WordPress installation."
+        },
+        {
+          "type": "text",
+          "content": "It can transfer the database, media files, themes, plugins and website configuration in a single migration file."
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "All-In-One WP Migration"
+        },
+        {
+          "type": "text",
+          "content": "All-In-One WP Migration es un plugin de WordPress diseñado para exportar un sitio completo e importarlo en otra instalación de WordPress."
+        },
+        {
+          "type": "text",
+          "content": "Puede trasladar la base de datos, los archivos multimedia, los temas, los plugins y la configuración del sitio mediante un solo archivo de migración."
+        }
+      ]
+    }
+  },
+  {
+    "Category": {
+      "en-US": "Migration with plugins",
+      "es-MX": "Migración con plugins"
+    },
+    "Question Text": {
+      "en-US": "During a web migration, what information does the plugin automatically replace?",
+      "es-MX": "El plugin utilizado para realizar migraciones web sustituye de forma automática:"
+    },
+    "Options": {
+      "en-US": [
+        "URLs and email data",
+        "Cookies and database data",
+        "URLs and database data",
+        "Contact numbers and database data"
+      ],
+      "es-MX": [
+        "Las URL y los datos del correo electrónico",
+        "Las cookies y los datos de la base de datos",
+        "Las URL y los datos de la base de datos",
+        "Los números de contacto y los datos de la base de datos"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "URLs and database data",
+      "es-MX": "Las URL y los datos de la base de datos"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "Automatic data replacement"
+        },
+        {
+          "type": "text",
+          "content": "When a website is moved to a different domain or server, its old addresses may no longer point to the correct location."
+        },
+        {
+          "type": "text",
+          "content": "The migration plugin updates the URLs and the related database information so that pages, images, links and other resources work from the new location."
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Sustitución automática de datos"
+        },
+        {
+          "type": "text",
+          "content": "Cuando un sitio se traslada a otro dominio o servidor, sus direcciones anteriores pueden dejar de apuntar a la ubicación correcta."
+        },
+        {
+          "type": "text",
+          "content": "El plugin de migración actualiza las URL y la información relacionada de la base de datos para que las páginas, imágenes, enlaces y otros recursos funcionen desde la nueva ubicación."
+        }
+      ]
+    }
+  },
+  {
+    "Category": {
+      "en-US": "Migration with plugins",
+      "es-MX": "Migración con plugins"
+    },
+    "Question Text": {
+      "en-US": "What migration process is recommended, especially for beginners in website use and development?",
+      "es-MX": "¿Cuál es el proceso recomendado en una migración, sobre todo si se es principiante en el uso y desarrollo de sitios web?"
+    },
+    "Options": {
+      "en-US": [
+        "Manual migration",
+        "Migration with a plugin",
+        "Direct manual migration using files",
+        "Migration with an assistant"
+      ],
+      "es-MX": [
+        "Migración manual",
+        "Migración por plugin",
+        "Migración manual directa con archivos",
+        "Migración con asistente"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "Migration with a plugin",
+      "es-MX": "Migración por plugin"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "Migration with a plugin"
+        },
+        {
+          "type": "text",
+          "content": "A migration plugin automates many technical operations, such as exporting the database, copying files and updating website addresses."
+        },
+        {
+          "type": "text",
+          "content": "This reduces the possibility of errors and makes the process more accessible to users who do not have experience managing servers, files or databases."
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Migración mediante un plugin"
+        },
+        {
+          "type": "text",
+          "content": "Un plugin de migración automatiza numerosas operaciones técnicas, como exportar la base de datos, copiar los archivos y actualizar las direcciones del sitio."
+        },
+        {
+          "type": "text",
+          "content": "Esto reduce la posibilidad de errores y facilita el proceso a quienes no tienen experiencia administrando servidores, archivos o bases de datos."
+        }
+      ]
+    }
+  },
+  {
+    "Category": {
+      "en-US": "Migration with plugins",
+      "es-MX": "Migración con plugins"
+    },
+    "Question Text": {
+      "en-US": "What is the name of the plugin that makes it easy to migrate WordPress websites?",
+      "es-MX": "El plugin que permite realizar migraciones web de forma sencilla lleva el nombre de:"
+    },
+    "Options": {
+      "en-US": [
+        "All-Duplicator Migration",
+        "All-Updraft Migration",
+        "All-In-One WP Admin",
+        "All-In-One WP Migration"
+      ],
+      "es-MX": [
+        "All-Duplicator Migration",
+        "All-Updraft Migration",
+        "All-In-One WP Admin",
+        "All-In-One WP Migration"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "All-In-One WP Migration",
+      "es-MX": "All-In-One WP Migration"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "All-In-One WP Migration"
+        },
+        {
+          "type": "text",
+          "content": "All-In-One WP Migration is a WordPress plugin designed to export an entire website and import it into another WordPress installation."
+        },
+        {
+          "type": "text",
+          "content": "It can transfer the database, media files, themes, plugins and website configuration in a single migration file."
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "All-In-One WP Migration"
+        },
+        {
+          "type": "text",
+          "content": "All-In-One WP Migration es un plugin de WordPress diseñado para exportar un sitio completo e importarlo en otra instalación de WordPress."
+        },
+        {
+          "type": "text",
+          "content": "Puede trasladar la base de datos, los archivos multimedia, los temas, los plugins y la configuración del sitio mediante un solo archivo de migración."
+        }
+      ]
+    }
+  },
+  {
+    "Category": {
+      "en-US": "Migration with plugins",
+      "es-MX": "Migración con plugins"
+    },
+    "Question Text": {
+      "en-US": "During a web migration, what information does the plugin automatically replace?",
+      "es-MX": "El plugin utilizado para realizar migraciones web sustituye de forma automática:"
+    },
+    "Options": {
+      "en-US": [
+        "URLs and email data",
+        "Cookies and database data",
+        "URLs and database data",
+        "Contact numbers and database data"
+      ],
+      "es-MX": [
+        "Las URL y los datos del correo electrónico",
+        "Las cookies y los datos de la base de datos",
+        "Las URL y los datos de la base de datos",
+        "Los números de contacto y los datos de la base de datos"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "URLs and database data",
+      "es-MX": "Las URL y los datos de la base de datos"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "Automatic data replacement"
+        },
+        {
+          "type": "text",
+          "content": "When a website is moved to a different domain or server, its old addresses may no longer point to the correct location."
+        },
+        {
+          "type": "text",
+          "content": "The migration plugin updates the URLs and the related database information so that pages, images, links and other resources work from the new location."
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Sustitución automática de datos"
+        },
+        {
+          "type": "text",
+          "content": "Cuando un sitio se traslada a otro dominio o servidor, sus direcciones anteriores pueden dejar de apuntar a la ubicación correcta."
+        },
+        {
+          "type": "text",
+          "content": "El plugin de migración actualiza las URL y la información relacionada de la base de datos para que las páginas, imágenes, enlaces y otros recursos funcionen desde la nueva ubicación."
+        }
+      ]
+    }
+  },
+  {
+    "Category": {
+      "en-US": "Migration with plugins",
+      "es-MX": "Migración con plugins"
+    },
+    "Question Text": {
+      "en-US": "What migration process is recommended, especially for beginners in website use and development?",
+      "es-MX": "¿Cuál es el proceso recomendado en una migración, sobre todo si se es principiante en el uso y desarrollo de sitios web?"
+    },
+    "Options": {
+      "en-US": [
+        "Manual migration",
+        "Migration with a plugin",
+        "Direct manual migration using files",
+        "Migration with an assistant"
+      ],
+      "es-MX": [
+        "Migración manual",
+        "Migración por plugin",
+        "Migración manual directa con archivos",
+        "Migración con asistente"
+      ]
+    },
+    "Correct Answer": {
+      "en-US": "Migration with a plugin",
+      "es-MX": "Migración por plugin"
+    },
+    "Explanation": {
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "Migration with a plugin"
+        },
+        {
+          "type": "text",
+          "content": "A migration plugin automates many technical operations, such as exporting the database, copying files and updating website addresses."
+        },
+        {
+          "type": "text",
+          "content": "This reduces the possibility of errors and makes the process more accessible to users who do not have experience managing servers, files or databases."
+        }
+      ],
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Migración mediante un plugin"
+        },
+        {
+          "type": "text",
+          "content": "Un plugin de migración automatiza numerosas operaciones técnicas, como exportar la base de datos, copiar los archivos y actualizar las direcciones del sitio."
+        },
+        {
+          "type": "text",
+          "content": "Esto reduce la posibilidad de errores y facilita el proceso a quienes no tienen experiencia administrando servidores, archivos o bases de datos."
+        }
+      ]
+    }
+  }
+]
+}

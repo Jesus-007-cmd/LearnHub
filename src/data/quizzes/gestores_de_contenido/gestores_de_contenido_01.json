@@ -1,0 +1,1976 @@
+{
+    "meta": {
+      "slug": "gestores-contenidos-u1",
+      "title": "Conociendo WordPress",
+      "subject": "DISEÑO Y CREACIÓN WEB CON GESTORES DE CONTENIDOS",
+      "unit": 1,
+      "classNo": 0,
+      "description": "Unidad 1: conceptos fundamentales de WordPress, sistemas de gestión de contenidos, historia de WordPress, diferencias entre WordPress.org y WordPress.com, dominio, hosting, otros CMS y estructura interna de WordPress.",
+      "tags": [
+        "WordPress",
+        "CMS",
+        "gestores de contenidos",
+        "WordPress.org",
+        "WordPress.com",
+        "dominio",
+        "hosting",
+        "servidor web",
+        "sistemas de gestión de contenidos",
+        "anatomía de WordPress"
+      ],
+      "questionCount": 3,
+      "languages": [
+        "en-US",
+        "es-MX"
+      ]
+    },
+   "Questions": [
+              {
+                "Category": "Conceptos básicos de CMS",
+                "Question Text": {
+                  "en-US": [
+                    "What does the acronym CMS stand for?"
+                  ],
+                  "es-MX": [
+                    "¿Cuál es el significado de las siglas CMS?"
+                  ]
+                },
+                "Options": {
+                  "en-US": [
+                    "Content Management Software.",
+                    "Content Management System.",
+                    "Content Direction System.",
+                    "Context Management System."
+                  ],
+                  "es-MX": [
+                    "Software de gestión de contenidos.",
+                    "Sistema de gestión de contenidos.",
+                    "Sistema de dirección de contenidos.",
+                    "Sistema de gestión de contextos."
+                  ]
+                },
+                "Correct Answer": {
+                  "en-US": "Content Management System.",
+                  "es-MX": "Sistema de gestión de contenidos."
+                },
+                "Explanation": {
+                  "en-US": [
+                    {
+                      "type": "title-h2",
+                      "content": "CMS stands for Content Management System"
+                    },
+                    {
+                      "type": "text",
+                      "content": "A CMS is a system that allows users to create, organize, edit, publish and maintain digital content, especially website content, through a management interface."
+                    },
+                    {
+                      "type": "ul",
+                      "items": [
+                        "Content refers to text, images, videos, pages, posts and other digital resources.",
+                        "Management refers to the processes of creating, editing, organizing and publishing that content.",
+                        "System refers to the set of software tools used to perform these tasks."
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "content": "Although a CMS is software, the acronym does not stand for Content Management Software. Its exact meaning is Content Management System."
+                    }
+                  ],
+                  "es-MX": [
+                    {
+                      "type": "title-h2",
+                      "content": "CMS significa sistema de gestión de contenidos"
+                    },
+                    {
+                      "type": "text",
+                      "content": "Un CMS es un sistema que permite crear, organizar, editar, publicar y mantener contenidos digitales, especialmente los contenidos de un sitio web, mediante una interfaz de administración."
+                    },
+                    {
+                      "type": "ul",
+                      "items": [
+                        "Contenido se refiere a textos, imágenes, videos, páginas, entradas y otros recursos digitales.",
+                        "Gestión comprende la creación, edición, organización y publicación de esos contenidos.",
+                        "Sistema se refiere al conjunto de herramientas de software que permite realizar estas tareas."
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "content": "Aunque un CMS es un tipo de software, las siglas no significan «software de gestión de contenidos». La traducción exacta de Content Management System es «sistema de gestión de contenidos»."
+                    }
+                  ]
+                }
+              },
+              {
+                "Category": "Historia de WordPress",
+                "Question Text": {
+                  "en-US": [
+                    "In what year was WordPress founded?",
+                    "When was WordPress created?"
+                  ],
+                  "es-MX": [
+                    "¿En qué año se fundó WordPress?",
+                    "¿Cuándo fue creado WordPress?"
+                  ]
+                },
+                "Options": {
+                  "en-US": [
+                    "2023.",
+                    "1993.",
+                    "2013.",
+                    "2003."
+                  ],
+                  "es-MX": [
+                    "2023.",
+                    "1993.",
+                    "2013.",
+                    "2003."
+                  ]
+                },
+                "Correct Answer": {
+                  "en-US": "2003.",
+                  "es-MX": "2003."
+                },
+                "Explanation": {
+                  "en-US": [
+                    {
+                      "type": "title-h2",
+                      "content": "WordPress was founded in 2003"
+                    },
+                    {
+                      "type": "text",
+                      "content": "WordPress originated in 2003 when Matt Mullenweg wanted to continue and improve the discontinued b2/cafelog blogging platform. Mike Little joined the project, and together they developed the software that became WordPress."
+                    },
+                    {
+                      "type": "ul",
+                      "items": [
+                        "Matt Mullenweg and Mike Little are recognized as the co-founders of WordPress.",
+                        "The first public version of WordPress was released on May 27, 2003.",
+                        "It was initially focused on blogs but later evolved into a versatile content management system."
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "content": "The other years are incorrect: 1993 predates the WordPress project, while 2013 and 2023 occurred after the platform had already existed for many years."
+                    }
+                  ],
+                  "es-MX": [
+                    {
+                      "type": "title-h2",
+                      "content": "WordPress fue fundado en 2003"
+                    },
+                    {
+                      "type": "text",
+                      "content": "WordPress surgió en 2003 cuando Matt Mullenweg decidió continuar y mejorar la plataforma de blogs b2/cafelog, que había dejado de actualizarse. Mike Little se unió al proyecto y juntos desarrollaron el software que se convertiría en WordPress."
+                    },
+                    {
+                      "type": "ul",
+                      "items": [
+                        "Matt Mullenweg y Mike Little son reconocidos como cofundadores de WordPress.",
+                        "La primera versión pública de WordPress apareció el 27 de mayo de 2003.",
+                        "Inicialmente se orientaba a la creación de blogs, pero evolucionó hasta convertirse en un CMS versátil."
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "content": "Las demás fechas son incorrectas: 1993 es anterior al inicio del proyecto, mientras que en 2013 y 2023 WordPress ya llevaba varios años funcionando."
+                    }
+                  ]
+                }
+              },
+              {
+                "Category": "Definición de WordPress",
+                "Question Text": {
+                  "en-US": [
+                    "What is WordPress?",
+                    "Which statement correctly defines WordPress?"
+                  ],
+                  "es-MX": [
+                    "¿Cuál es la definición de WordPress?",
+                    "¿Qué enunciado define correctamente WordPress?"
+                  ]
+                },
+                "Options": {
+                  "en-US": [
+                    "It is hardware used to manage and store website content.",
+                    "It is a programming language used exclusively to create blogs.",
+                    "It is a content management system that allows users to create, develop and maintain blogs or websites.",
+                    "It is a web hosting service used exclusively to store WordPress websites."
+                  ],
+                  "es-MX": [
+                    "Es un hardware utilizado para administrar y almacenar contenidos web.",
+                    "Es un lenguaje de programación utilizado exclusivamente para crear blogs.",
+                    "Es un sistema de gestión de contenidos que permite crear, desarrollar y mantener blogs o sitios web.",
+                    "Es un servicio de alojamiento utilizado exclusivamente para almacenar sitios creados con WordPress."
+                  ]
+                },
+                "Correct Answer": {
+                  "en-US": "It is a content management system that allows users to create, develop and maintain blogs or websites.",
+                  "es-MX": "Es un sistema de gestión de contenidos que permite crear, desarrollar y mantener blogs o sitios web."
+                },
+                "Explanation": {
+                  "en-US": [
+                    {
+                      "type": "title-h2",
+                      "content": "WordPress is a content management system"
+                    },
+                    {
+                      "type": "text",
+                      "content": "WordPress is open-source CMS software that provides the tools needed to create, organize, publish and maintain the content of blogs and websites without requiring every page to be programmed from scratch."
+                    },
+                    {
+                      "type": "ul",
+                      "items": [
+                        "It began mainly as a blogging tool.",
+                        "It can now be used to build institutional websites, portfolios, online stores, image galleries and other types of sites.",
+                        "Its functionality and design can be extended through plugins and themes.",
+                        "It is software, not physical hardware, a programming language or a hosting service."
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "content": "WordPress uses technologies such as PHP, HTML, CSS and MySQL, but WordPress itself is not one of these languages or a database. It is the content management system built with and supported by those technologies."
+                    }
+                  ],
+                  "es-MX": [
+                    {
+                      "type": "title-h2",
+                      "content": "WordPress es un sistema de gestión de contenidos"
+                    },
+                    {
+                      "type": "text",
+                      "content": "WordPress es un software CMS de código abierto que proporciona las herramientas necesarias para crear, organizar, publicar y mantener el contenido de blogs y sitios web sin tener que programar cada página desde cero."
+                    },
+                    {
+                      "type": "ul",
+                      "items": [
+                        "En sus inicios se utilizaba principalmente como una herramienta para blogs.",
+                        "Actualmente permite crear sitios institucionales, portafolios, tiendas virtuales, galerías y otras clases de sitios web.",
+                        "Sus funciones y su apariencia pueden ampliarse mediante plugins y temas.",
+                        "Es software, no un componente físico, un lenguaje de programación ni un servicio de alojamiento."
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "content": "WordPress utiliza tecnologías como PHP, HTML, CSS y MySQL, pero no debe confundirse con ellas. WordPress es el sistema de gestión de contenidos construido y respaldado por esas tecnologías."
+                    }
+                  ]
+                }
+              }
+              ,
+{
+  "Category": "WordPress.org y WordPress.com",
+  "Question Text": {
+    "en-US": [
+      "Which platform is developed mainly in PHP and is used to manage website content as a CMS?",
+      "Which WordPress option refers to the downloadable CMS software developed mainly with PHP?"
+    ],
+    "es-MX": [
+      "¿Qué plataforma está desarrollada principalmente en PHP y permite gestionar el contenido de una web actuando como CMS?",
+      "¿Qué opción de WordPress corresponde al software CMS descargable desarrollado principalmente con PHP?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "WordPress.com.",
+      "WordPress.org.",
+      "WordPress.mx.",
+      "WordPress.net."
+    ],
+    "es-MX": [
+      "WordPress.com.",
+      "WordPress.org.",
+      "WordPress.mx.",
+      "WordPress.net."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "WordPress.org.",
+    "es-MX": "WordPress.org."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "WordPress.org provides the downloadable CMS software"
+      },
+      {
+        "type": "text",
+        "content": "WordPress.org refers to the open-source WordPress software that can be downloaded and installed on a compatible web server. It is used as a content management system to create, edit, organize and publish website content."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "The WordPress core is developed mainly with PHP.",
+          "It uses a database, commonly MySQL or MariaDB, to store website information.",
+          "The user must obtain hosting and usually a domain to publish the website.",
+          "The user has extensive control over themes, plugins, code and site configuration."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "WordPress.com is a hosted online service rather than the website from which the self-hosted WordPress software is obtained. WordPress.mx and WordPress.net are not the two official alternatives discussed in the course material."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "WordPress.org proporciona el software CMS descargable"
+      },
+      {
+        "type": "text",
+        "content": "WordPress.org se refiere al software WordPress de código abierto que puede descargarse e instalarse en un servidor web compatible. Funciona como un sistema de gestión de contenidos para crear, editar, organizar y publicar el contenido de un sitio web."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "El núcleo de WordPress está desarrollado principalmente con PHP.",
+          "Utiliza una base de datos, normalmente MySQL o MariaDB, para almacenar la información del sitio.",
+          "El usuario debe contratar un hosting y generalmente un dominio para publicar la web.",
+          "El usuario dispone de un amplio control sobre temas, plugins, código y configuración."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "WordPress.com es un servicio de alojamiento en línea, no el sitio desde el cual se obtiene el software WordPress para instalarlo en un hosting propio. WordPress.mx y WordPress.net no son las dos alternativas oficiales estudiadas en el material."
+      }
+    ]
+  }
+},
+{
+  "Category": "WordPress.org y WordPress.com",
+  "Question Text": {
+    "en-US": [
+      "Which WordPress option is an online service that allows registered users to create websites or blogs, including a free WordPress subdomain?",
+      "Which service allows users to create a hosted website or blog without installing WordPress on their own server?"
+    ],
+    "es-MX": [
+      "¿Qué opción de WordPress es un servicio en línea que permite a los usuarios registrados crear sitios web o blogs, incluyendo un subdominio gratuito de WordPress?",
+      "¿Qué servicio permite crear una web o un blog alojado sin instalar WordPress en un servidor propio?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "WordPress.com.",
+      "WordPress.org.",
+      "WordPress.mx.",
+      "WordPress.net."
+    ],
+    "es-MX": [
+      "WordPress.com.",
+      "WordPress.org.",
+      "WordPress.mx.",
+      "WordPress.net."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "WordPress.com.",
+    "es-MX": "WordPress.com."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "WordPress.com is a hosted online service"
+      },
+      {
+        "type": "text",
+        "content": "WordPress.com allows users to register and create a website or blog hosted on the service's infrastructure. A free plan can provide an address that uses a WordPress.com subdomain, such as example.wordpress.com."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "The user does not need to install WordPress manually on a server.",
+          "Hosting and technical maintenance are managed by the service.",
+          "A free version is available with limitations.",
+          "Custom domains and additional features may require a paid plan."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "WordPress.org provides the downloadable software for a self-hosted installation. Therefore, it does not describe the hosted service presented in the question."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "WordPress.com es un servicio alojado en línea"
+      },
+      {
+        "type": "text",
+        "content": "WordPress.com permite que los usuarios se registren y creen una web o un blog alojado en la infraestructura del propio servicio. Su plan gratuito puede proporcionar una dirección con un subdominio de WordPress.com, como ejemplo.wordpress.com."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "El usuario no necesita instalar manualmente WordPress en un servidor.",
+          "El servicio se encarga del alojamiento y del mantenimiento técnico.",
+          "Existe una versión gratuita con ciertas limitaciones.",
+          "Los dominios personalizados y las funciones adicionales pueden requerir un plan de pago."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "WordPress.org proporciona el software descargable para instalarlo en un hosting propio. Por eso, no corresponde al servicio alojado que describe la pregunta."
+      }
+    ]
+  }
+},
+{
+  "Category": "Características de WordPress.com",
+  "Question Text": {
+    "en-US": [
+      "Which option correctly matches the characteristics of WordPress.com?",
+      "Which set correctly relates ownership, customization, maintenance and cost on WordPress.com?"
+    ],
+    "es-MX": [
+      "¿Qué opción relaciona correctamente las características de WordPress.com?",
+      "¿Qué conjunto relaciona correctamente la propiedad, personalización, mantenimiento y coste de WordPress.com?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Platform control: it is not self-hosted; Customization: limited themes and advanced CSS may require payment; Maintenance: the service handles it; Cost: a free version is available.",
+      "Platform control: completely owned and hosted by the user; Customization: unlimited without payment; Maintenance: entirely the user's responsibility; Cost: no free version is available.",
+      "Platform control: it is not self-hosted; Customization: unlimited plugins and themes on every free account; Maintenance: entirely the user's responsibility; Cost: hosting must always be purchased separately.",
+      "Platform control: completely owned and hosted by the user; Customization: themes cannot be used; Maintenance: no one performs it; Cost: every feature is permanently free."
+    ],
+    "es-MX": [
+      "Control de la plataforma: no está alojada por el propio usuario; Personalización: temas limitados y el CSS avanzado puede requerir pago; Mantenimiento: lo realiza el servicio; Coste: existe una versión gratuita.",
+      "Control de la plataforma: pertenece y está alojada completamente por el usuario; Personalización: es ilimitada sin pagar; Mantenimiento: corresponde totalmente al usuario; Coste: no existe una versión gratuita.",
+      "Control de la plataforma: no está alojada por el propio usuario; Personalización: permite plugins y temas ilimitados en todas las cuentas gratuitas; Mantenimiento: corresponde totalmente al usuario; Coste: siempre debe contratarse el hosting por separado.",
+      "Control de la plataforma: pertenece y está alojada completamente por el usuario; Personalización: no permite utilizar temas; Mantenimiento: nadie lo realiza; Coste: todas las funciones son permanentemente gratuitas."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Platform control: it is not self-hosted; Customization: limited themes and advanced CSS may require payment; Maintenance: the service handles it; Cost: a free version is available.",
+    "es-MX": "Control de la plataforma: no está alojada por el propio usuario; Personalización: temas limitados y el CSS avanzado puede requerir pago; Mantenimiento: lo realiza el servicio; Coste: existe una versión gratuita."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "The complete first combination is correct"
+      },
+      {
+        "type": "text",
+        "content": "WordPress.com is a hosted service. This means that the user can create and manage a website, but the underlying platform and hosting infrastructure are operated by WordPress.com rather than being self-hosted by the user."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Platform control: the website uses infrastructure managed by WordPress.com; it is not a self-hosted installation.",
+          "Customization: the free service offers limited options, while some themes, CSS capabilities and advanced features depend on the selected plan.",
+          "Maintenance: updates, hosting infrastructure and much of the technical maintenance are handled by the service.",
+          "Cost: a free version is available, although premium functions, custom domains and additional capabilities may require payment."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The other combinations mix characteristics of self-hosted WordPress.org with WordPress.com or make absolute claims such as unlimited customization and completely free access to every feature."
+      },
+      {
+        "type": "text",
+        "content": "In this context, saying that the platform 'is not yours' refers to the lack of ownership and control over the hosting platform. It does not mean that WordPress.com automatically owns the original content created by the user."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "La primera combinación completa es la correcta"
+      },
+      {
+        "type": "text",
+        "content": "WordPress.com es un servicio alojado. Esto significa que el usuario puede crear y administrar una web, pero la plataforma y la infraestructura de alojamiento son operadas por WordPress.com, en lugar de estar alojadas y administradas directamente por el usuario."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Control de la plataforma: la web utiliza infraestructura administrada por WordPress.com; no es una instalación alojada por el propio usuario.",
+          "Personalización: el servicio gratuito ofrece opciones limitadas, mientras que algunos temas, funciones de CSS y características avanzadas dependen del plan contratado.",
+          "Mantenimiento: las actualizaciones, la infraestructura y gran parte del mantenimiento técnico son gestionados por el servicio.",
+          "Coste: existe una versión gratuita, aunque las funciones premium, los dominios personalizados y otras capacidades pueden requerir un pago."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Las demás combinaciones mezclan características de WordPress.org autogestionado con las de WordPress.com o presentan afirmaciones absolutas incorrectas, como personalización ilimitada y acceso gratuito a todas las funciones."
+      },
+      {
+        "type": "text",
+        "content": "En este contexto, decir que la plataforma «no es tuya» se refiere a que el usuario no posee ni controla la plataforma de alojamiento. No significa que WordPress.com se convierta automáticamente en propietario del contenido original creado por el usuario."
+      }
+    ]
+  }
+},
+{
+  "Category": "Propiedad de WordPress.com",
+  "Question Text": {
+    "en-US": [
+      "Which statement correctly describes platform ownership and control on WordPress.com?",
+      "Who owns and manages the WordPress.com platform?"
+    ],
+    "es-MX": [
+      "¿Qué afirmación describe correctamente la propiedad y el control de la plataforma WordPress.com?",
+      "¿Quién es propietario y administra la plataforma WordPress.com?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "The user owns and manages the entire hosting platform.",
+      "The platform is operated by Automattic, so the user does not own or fully control the hosting infrastructure.",
+      "The platform has no owner because every WordPress.com account is self-hosted.",
+      "The user automatically becomes the owner of WordPress.com after creating an account."
+    ],
+    "es-MX": [
+      "El usuario es propietario y administra toda la plataforma de alojamiento.",
+      "La plataforma es operada por Automattic, por lo que el usuario no posee ni controla completamente la infraestructura de alojamiento.",
+      "La plataforma no tiene propietario porque todas las cuentas de WordPress.com están alojadas por el propio usuario.",
+      "El usuario se convierte automáticamente en propietario de WordPress.com al crear una cuenta."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "The platform is operated by Automattic, so the user does not own or fully control the hosting infrastructure.",
+    "es-MX": "La plataforma es operada por Automattic, por lo que el usuario no posee ni controla completamente la infraestructura de alojamiento."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "The WordPress.com platform is operated by Automattic"
+      },
+      {
+        "type": "text",
+        "content": "WordPress.com is a hosted service operated by Automattic. Users can create and manage their websites, but they do not own or directly control the servers, hosting infrastructure or complete technical platform."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "The user manages the content and available website settings.",
+          "Automattic operates the WordPress.com service and its infrastructure.",
+          "The user must follow the conditions and technical limitations of the selected plan.",
+          "This differs from WordPress.org, where the user chooses and controls the hosting environment."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "In this lesson, saying that WordPress.com 'is not yours' refers to the platform and hosting infrastructure. It does not mean that Automattic automatically owns the original articles, photographs or other content created by the user."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "La plataforma WordPress.com es operada por Automattic"
+      },
+      {
+        "type": "text",
+        "content": "WordPress.com es un servicio alojado y operado por Automattic. Los usuarios pueden crear y administrar sus sitios, pero no son propietarios ni controlan directamente los servidores, la infraestructura de alojamiento o la plataforma técnica completa."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "El usuario administra el contenido y las configuraciones disponibles de su web.",
+          "Automattic opera el servicio WordPress.com y su infraestructura.",
+          "El usuario debe respetar las condiciones y limitaciones técnicas del plan seleccionado.",
+          "Esto es diferente de WordPress.org, donde el usuario elige y controla su entorno de alojamiento."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Cuando el material indica que WordPress.com «no es tuyo», se refiere a la plataforma y a la infraestructura de alojamiento. No significa que Automattic se convierta automáticamente en propietario de los artículos, fotografías u otros contenidos originales del usuario."
+      }
+    ]
+  }
+},
+{
+  "Category": "Personalización de WordPress.com",
+  "Question Text": {
+    "en-US": [
+      "How does customization work on the free version of WordPress.com?",
+      "Which statement correctly describes customization on WordPress.com?"
+    ],
+    "es-MX": [
+      "¿Cómo funciona la personalización en la versión gratuita de WordPress.com?",
+      "¿Qué afirmación describe correctamente la personalización en WordPress.com?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "It offers unlimited installation of any theme, plugin and PHP code for free.",
+      "It does not allow any visual changes to the website.",
+      "It offers limited themes and options; some advanced customization features may require a paid plan.",
+      "It requires users to program the entire website from scratch."
+    ],
+    "es-MX": [
+      "Permite instalar gratuitamente cualquier tema, plugin y código PHP sin limitaciones.",
+      "No permite realizar ningún cambio visual en el sitio.",
+      "Ofrece temas y opciones limitadas; algunas funciones avanzadas de personalización pueden requerir un plan de pago.",
+      "Obliga al usuario a programar todo el sitio desde cero."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "It offers limited themes and options; some advanced customization features may require a paid plan.",
+    "es-MX": "Ofrece temas y opciones limitadas; algunas funciones avanzadas de personalización pueden requerir un plan de pago."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "WordPress.com customization depends on the selected plan"
+      },
+      {
+        "type": "text",
+        "content": "The free WordPress.com service allows users to select from the themes and customization options provided by the platform. However, it does not offer the same freedom as a self-hosted WordPress.org installation."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Users can choose from the themes available for their plan.",
+          "The free plan has more customization limitations.",
+          "Advanced design capabilities and certain CSS features may require payment.",
+          "WordPress.org generally offers greater control over themes, plugins and source code."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Limited customization does not mean that no changes are possible. It means that users can only use the tools and features permitted by the WordPress.com plan."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "La personalización de WordPress.com depende del plan seleccionado"
+      },
+      {
+        "type": "text",
+        "content": "El servicio gratuito de WordPress.com permite elegir entre los temas y opciones de personalización proporcionados por la plataforma. Sin embargo, no ofrece la misma libertad que una instalación propia de WordPress.org."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "El usuario puede elegir entre los temas disponibles para su plan.",
+          "El plan gratuito presenta mayores limitaciones de personalización.",
+          "Las capacidades avanzadas de diseño y algunas funciones de CSS pueden requerir un pago.",
+          "WordPress.org generalmente proporciona mayor control sobre temas, plugins y código fuente."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Una personalización limitada no significa que no pueda realizarse ningún cambio. Significa que el usuario solamente puede utilizar las herramientas y funciones permitidas por su plan de WordPress.com."
+      }
+    ]
+  }
+},
+{
+  "Category": "Mantenimiento de WordPress.com",
+  "Question Text": {
+    "en-US": [
+      "Who performs the technical maintenance of a website hosted on WordPress.com?",
+      "Which statement correctly describes maintenance on WordPress.com?"
+    ],
+    "es-MX": [
+      "¿Quién realiza el mantenimiento técnico de una web alojada en WordPress.com?",
+      "¿Qué afirmación describe correctamente el mantenimiento en WordPress.com?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "The service handles most of the platform's technical maintenance.",
+      "The user must manually maintain and update the WordPress.com servers.",
+      "The user's internet provider performs all maintenance.",
+      "WordPress.com websites do not receive any maintenance or updates."
+    ],
+    "es-MX": [
+      "El servicio se encarga de la mayor parte del mantenimiento técnico de la plataforma.",
+      "El usuario debe mantener y actualizar manualmente los servidores de WordPress.com.",
+      "El proveedor de Internet del usuario realiza todo el mantenimiento.",
+      "Los sitios de WordPress.com no reciben mantenimiento ni actualizaciones."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "The service handles most of the platform's technical maintenance.",
+    "es-MX": "El servicio se encarga de la mayor parte del mantenimiento técnico de la plataforma."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Technical maintenance is included with WordPress.com"
+      },
+      {
+        "type": "text",
+        "content": "Because WordPress.com is a hosted service, its operators manage the servers, platform updates, infrastructure and much of the technical security. The user does not have to install or update the WordPress core manually."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "The service maintains the hosting infrastructure.",
+          "Platform updates are applied by WordPress.com.",
+          "The user focuses mainly on content, design and the available settings.",
+          "The user is still responsible for managing content, account access and appropriate use of the website."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The phrase 'you do not have to do anything' in the original activity refers specifically to technical platform maintenance. It does not mean that the website requires no administration from its owner."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "El mantenimiento técnico está incluido en WordPress.com"
+      },
+      {
+        "type": "text",
+        "content": "Como WordPress.com es un servicio alojado, sus operadores administran los servidores, las actualizaciones de la plataforma, la infraestructura y buena parte de la seguridad técnica. El usuario no necesita instalar ni actualizar manualmente el núcleo de WordPress."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "El servicio mantiene la infraestructura de alojamiento.",
+          "WordPress.com aplica las actualizaciones de la plataforma.",
+          "El usuario se concentra principalmente en el contenido, el diseño y las configuraciones disponibles.",
+          "El usuario continúa siendo responsable de administrar su contenido, el acceso a su cuenta y el uso adecuado de la web."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "La expresión «no tienes que hacer nada» de la actividad original se refiere específicamente al mantenimiento técnico de la plataforma. No significa que el propietario pueda abandonar por completo la administración de su sitio."
+      }
+    ]
+  }
+},
+{
+  "Category": "Coste de WordPress.com",
+  "Question Text": {
+    "en-US": [
+      "Which statement correctly describes the cost of using WordPress.com?",
+      "Can WordPress.com be used for free?"
+    ],
+    "es-MX": [
+      "¿Qué afirmación describe correctamente el coste de utilizar WordPress.com?",
+      "¿Se puede utilizar WordPress.com gratuitamente?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "It can be used with a free plan, but premium features and services may require payment.",
+      "It is completely free and every advanced feature is included without limitations.",
+      "It can only be used after purchasing separate hosting from another company.",
+      "It has no free option and always requires the most expensive plan."
+    ],
+    "es-MX": [
+      "Puede utilizarse con un plan gratuito, pero las funciones y servicios premium pueden requerir un pago.",
+      "Es completamente gratuito e incluye todas las funciones avanzadas sin limitaciones.",
+      "Solo puede utilizarse después de contratar un hosting independiente con otra empresa.",
+      "No tiene una opción gratuita y siempre requiere contratar el plan más costoso."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "It can be used with a free plan, but premium features and services may require payment.",
+    "es-MX": "Puede utilizarse con un plan gratuito, pero las funciones y servicios premium pueden requerir un pago."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "WordPress.com offers free and paid options"
+      },
+      {
+        "type": "text",
+        "content": "WordPress.com can be used with a free plan that includes hosting and a WordPress.com subdomain. Users who need more capabilities can select a paid plan or purchase additional services."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "The free option is sufficient for creating a basic website or blog.",
+          "A custom domain may require a paid service or plan.",
+          "Additional storage, design tools and advanced features may require payment.",
+          "The availability of a free plan does not mean that every WordPress.com feature is free."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Unlike a self-hosted WordPress.org installation, the free WordPress.com option does not require the user to purchase separate hosting to begin creating a basic website."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "WordPress.com ofrece opciones gratuitas y de pago"
+      },
+      {
+        "type": "text",
+        "content": "WordPress.com puede utilizarse mediante un plan gratuito que incluye alojamiento y un subdominio de WordPress.com. Los usuarios que necesitan más capacidades pueden elegir un plan de pago o contratar servicios adicionales."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "La opción gratuita permite crear una web o un blog básico.",
+          "Un dominio personalizado puede requerir un servicio o plan de pago.",
+          "El almacenamiento adicional, las herramientas de diseño y las funciones avanzadas pueden tener coste.",
+          "La existencia de un plan gratuito no significa que todas las funciones de WordPress.com sean gratuitas."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "A diferencia de una instalación propia de WordPress.org, la opción gratuita de WordPress.com no exige contratar un hosting independiente para comenzar a crear un sitio básico."
+      }
+    ]
+  }
+},
+{
+  "Category": "Dominio web",
+  "Question Text": {
+    "en-US": [
+      "What is a web domain?",
+      "Which statement correctly defines a domain name?"
+    ],
+    "es-MX": [
+      "¿Qué es un dominio web?",
+      "¿Qué afirmación define correctamente un nombre de dominio?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "A human-readable name associated with an Internet resource and resolved through DNS to an IP address.",
+      "A storage system that assigns a different name to every file on a server.",
+      "A program that physically stores websites on the user's computer.",
+      "A protocol used exclusively to navigate between different servers."
+    ],
+    "es-MX": [
+      "Un nombre legible asociado con un recurso de Internet que se resuelve mediante el DNS para obtener una dirección IP.",
+      "Un sistema de almacenamiento que asigna un nombre diferente a cada archivo de un servidor.",
+      "Un programa que almacena físicamente los sitios web en la computadora del usuario.",
+      "Un protocolo utilizado exclusivamente para navegar entre diferentes servidores."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "A human-readable name associated with an Internet resource and resolved through DNS to an IP address.",
+    "es-MX": "Un nombre legible asociado con un recurso de Internet que se resuelve mediante el DNS para obtener una dirección IP."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "A domain is an easy-to-remember Internet identifier"
+      },
+      {
+        "type": "text",
+        "content": "A domain name is a human-readable identifier, such as google.com or wordpress.org, that allows users to access an Internet resource without memorizing its numerical IP address."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "The user enters a domain name in the browser.",
+          "The Domain Name System, or DNS, finds the IP address associated with that domain.",
+          "The browser uses the resulting IP address to contact the appropriate server.",
+          "The domain makes Internet resources easier to identify and remember."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The course material describes domains as a system that identifies servers with specific names. This is useful as an introductory explanation, but technically a domain identifies an Internet namespace or resource and can point to one or several IP addresses. Multiple domains can also point to the same server."
+      },
+      {
+        "type": "text",
+        "content": "A domain does not store the website. The website's files and services are stored and operated in a hosting environment."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Un dominio es un identificador de Internet fácil de recordar"
+      },
+      {
+        "type": "text",
+        "content": "Un nombre de dominio es un identificador legible para las personas, como google.com o wordpress.org, que permite acceder a un recurso de Internet sin memorizar su dirección IP numérica."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "El usuario escribe el dominio en el navegador.",
+          "El sistema de nombres de dominio o DNS localiza la dirección IP asociada.",
+          "El navegador utiliza la IP obtenida para comunicarse con el servidor correspondiente.",
+          "El dominio facilita la identificación y memorización de los recursos de Internet."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "El material explica de manera introductoria que los dominios identifican servidores con nombres específicos. Técnicamente, un dominio identifica un espacio de nombres o recurso de Internet y puede apuntar a una o varias direcciones IP. También es posible que varios dominios apunten al mismo servidor."
+      },
+      {
+        "type": "text",
+        "content": "El dominio no almacena el sitio web. Los archivos y servicios de la web se almacenan y ejecutan en un entorno de alojamiento o hosting."
+      }
+    ]
+  }
+},
+{
+  "Category": "Alojamiento web",
+  "Question Text": {
+    "en-US": [
+      "What is web hosting?",
+      "Which statement correctly defines a web hosting service?"
+    ],
+    "es-MX": [
+      "¿Qué es el hosting o alojamiento web?",
+      "¿Qué afirmación define correctamente un servicio de alojamiento web?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "A security system used exclusively to prevent access to web servers.",
+      "A service that provides server resources configured to store and operate one or multiple websites.",
+      "A domain registration system that eliminates websites from a server.",
+      "An unconfigured computer that can only be used to write programming code."
+    ],
+    "es-MX": [
+      "Un sistema de seguridad utilizado exclusivamente para impedir el acceso a los servidores web.",
+      "Un servicio que proporciona recursos de un servidor configurado para almacenar y operar uno o varios sitios web.",
+      "Un sistema de registro de dominios que elimina sitios web de un servidor.",
+      "Una computadora sin configurar que solamente puede utilizarse para escribir código de programación."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "A service that provides server resources configured to store and operate one or multiple websites.",
+    "es-MX": "Un servicio que proporciona recursos de un servidor configurado para almacenar y operar uno o varios sitios web."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Hosting provides the resources needed to operate a website"
+      },
+      {
+        "type": "text",
+        "content": "Web hosting is a service that makes server resources available for storing website files, processing requests and keeping one or more websites accessible through the Internet."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "It stores files such as pages, images, stylesheets and scripts.",
+          "It can provide databases, email accounts and security tools.",
+          "It keeps the website connected and available to visitors.",
+          "Many hosting services include a control panel, such as cPanel, for administering the website."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "There are several types of hosting. Shared hosting allows multiple websites to use the same server, dedicated hosting reserves a server for one customer, and cloud hosting distributes resources across multiple servers."
+      },
+      {
+        "type": "text",
+        "content": "A hosting service is not the same as a domain. The domain is the name used to locate the website, while hosting provides the infrastructure where the website operates."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "El hosting proporciona los recursos necesarios para operar una web"
+      },
+      {
+        "type": "text",
+        "content": "El alojamiento web o web hosting es un servicio que proporciona recursos de servidor para guardar los archivos de una web, procesar solicitudes y mantener uno o varios sitios accesibles mediante Internet."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Almacena archivos como páginas, imágenes, hojas de estilo y scripts.",
+          "Puede proporcionar bases de datos, cuentas de correo y herramientas de seguridad.",
+          "Mantiene el sitio conectado y disponible para sus visitantes.",
+          "Muchos servicios incluyen un panel de control, como cPanel, para administrar la web."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Existen diferentes tipos de alojamiento. El hosting compartido permite que varias webs utilicen un mismo servidor; el dedicado reserva un servidor para un cliente; y el alojamiento en la nube distribuye los recursos entre varios servidores."
+      },
+      {
+        "type": "text",
+        "content": "El hosting no es lo mismo que el dominio. El dominio es el nombre utilizado para localizar la web, mientras que el hosting proporciona la infraestructura en la que funciona."
+      }
+    ]
+  }
+},
+{
+  "Category": "Direcciones IP",
+  "Question Text": {
+    "en-US": [
+      "Which type of address uses numbers from 0 to 255 separated by periods in IPv4, or hexadecimal groups separated by colons in IPv6?",
+      "What address is represented with formats such as 192.168.1.1 or 2001:db8::1?"
+    ],
+    "es-MX": [
+      "¿Qué tipo de dirección utiliza números entre 0 y 255 separados por puntos en IPv4, o grupos hexadecimales separados por dos puntos en IPv6?",
+      "¿Qué dirección se representa mediante formatos como 192.168.1.1 o 2001:db8::1?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "A TCP address.",
+      "A PHP address.",
+      "An IP address.",
+      "A UP address."
+    ],
+    "es-MX": [
+      "Una dirección TCP.",
+      "Una dirección PHP.",
+      "Una dirección IP.",
+      "Una dirección UP."
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "An IP address.",
+    "es-MX": "Una dirección IP."
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "The described formats correspond to IP addresses"
+      },
+      {
+        "type": "text",
+        "content": "An Internet Protocol address, or IP address, is a numerical identifier used to locate and communicate with a device or network interface within an IP network."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "IPv4 uses four decimal numbers called octets, separated by periods.",
+          "Each IPv4 octet can have a value from 0 to 255.",
+          "An IPv4 example is 192.168.1.1.",
+          "IPv6 uses eight groups of hexadecimal digits separated by colons, although zeros can be compressed.",
+          "An abbreviated IPv6 example is 2001:db8::1."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "TCP is a transport protocol that can operate over IP, but 'TCP address' is not the name of the format described. PHP is a programming language, and 'UP address' is not a relevant networking concept."
+      },
+      {
+        "type": "text",
+        "content": "Domains and IP addresses are related but not identical: a domain is a memorable name, while DNS resolves that name to one or more IP addresses."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Los formatos descritos corresponden a direcciones IP"
+      },
+      {
+        "type": "text",
+        "content": "Una dirección de protocolo de Internet o dirección IP es un identificador numérico utilizado para localizar y establecer comunicación con un dispositivo o interfaz de red dentro de una red IP."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "IPv4 utiliza cuatro números decimales llamados octetos, separados por puntos.",
+          "Cada octeto de IPv4 puede tener un valor de 0 a 255.",
+          "Un ejemplo de IPv4 es 192.168.1.1.",
+          "IPv6 utiliza ocho grupos de dígitos hexadecimales separados por dos puntos, aunque los grupos de ceros pueden comprimirse.",
+          "Un ejemplo abreviado de IPv6 es 2001:db8::1."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "TCP es un protocolo de transporte que puede funcionar sobre IP, pero «dirección TCP» no es el nombre del formato descrito. PHP es un lenguaje de programación y «dirección UP» no es un concepto de red aplicable."
+      },
+      {
+        "type": "text",
+        "content": "Los dominios y las direcciones IP están relacionados, pero no son lo mismo: el dominio es un nombre fácil de recordar y el DNS lo resuelve para obtener una o varias direcciones IP."
+      }
+    ]
+  }
+},
+{
+  "Category": "Dominio",
+  "Question Text": {
+    "en-US": [
+      "Definition of domain:"
+    ],
+    "es-MX": [
+      "Definición de dominio:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "A system that identifies each server with a specific name",
+      "A system that stores each server with a specific name",
+      "A system that identifies each domain with a specific name",
+      "A system that navigates each server with a specific name"
+    ],
+    "es-MX": [
+      "Sistema que identifica a cada servidor con un nombre específico",
+      "Sistema que almacena cada servidor con un nombre específico",
+      "Sistema que identifica cada dominio con un nombre específico",
+      "Sistema que navega cada servidor con un nombre específico"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "A system that identifies each server with a specific name",
+    "es-MX": "Sistema que identifica a cada servidor con un nombre específico"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "A domain identifies a server with a specific name"
+      },
+      {
+        "type": "text",
+        "content": "According to the course material, the domain is part of the system that identifies each server with a specific and easy-to-remember name. This prevents users from having to memorize numerical IP addresses."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "IP addresses are difficult for users to remember.",
+          "A domain provides a recognizable name, such as google.es.",
+          "The browser consults a DNS server to find the IP address associated with the domain.",
+          "After receiving the IP address, the browser connects to the corresponding server."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The other options are incorrect because a domain does not store servers, identify another domain with a new name, or navigate servers."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Un dominio identifica a un servidor con un nombre específico"
+      },
+      {
+        "type": "text",
+        "content": "De acuerdo con el material del curso, el dominio forma parte del sistema que identifica a cada servidor mediante un nombre específico y fácil de recordar. De esta manera, el usuario no necesita memorizar una dirección IP numérica."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Las direcciones IP son difíciles de recordar para los usuarios.",
+          "El dominio proporciona un nombre reconocible, como google.es.",
+          "El navegador consulta un servidor DNS para encontrar la dirección IP asociada con el dominio.",
+          "Después de recibir la dirección IP, el navegador se conecta con el servidor correspondiente."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Las demás opciones son incorrectas porque un dominio no almacena servidores, no identifica otro dominio con un nombre nuevo ni se encarga de navegar por los servidores."
+      }
+    ]
+  }
+},
+{
+  "Category": "Hosting",
+  "Question Text": {
+    "en-US": [
+      "Definition of hosting:"
+    ],
+    "es-MX": [
+      "Definición de hosting:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Security called web hosting that allows any individual to rent a configured server ready to store and operate one or multiple websites",
+      "A service called web hosting that allows any individual to rent a configured server ready to store and delete one or multiple websites",
+      "A server called web hosting that allows any individual to rent an unconfigured server ready to program and operate one or multiple websites",
+      "A service called web hosting that allows any individual to rent a configured server ready to store and operate one or multiple websites"
+    ],
+    "es-MX": [
+      "Seguridad llamada alojamiento web o web hosting que permite a cualquier individuo alquilar un servidor configurado y listo para almacenar y operar uno o múltiples sitios web",
+      "Servicio llamado alojamiento web que permite a cualquier individuo alquilar un servidor configurado y listo para almacenar y eliminar uno o múltiples sitios web",
+      "Servidor llamado alojamiento web o web hosting que permite a cualquier individuo alquilar un servidor no configurado y listo para programar y operar uno o múltiples sitios web",
+      "Servicio llamado alojamiento web o web hosting que permite a cualquier individuo alquilar un servidor configurado y listo para almacenar y operar uno o múltiples sitios web"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "A service called web hosting that allows any individual to rent a configured server ready to store and operate one or multiple websites",
+    "es-MX": "Servicio llamado alojamiento web o web hosting que permite a cualquier individuo alquilar un servidor configurado y listo para almacenar y operar uno o múltiples sitios web"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Hosting is a service that provides a configured server"
+      },
+      {
+        "type": "text",
+        "content": "Web hosting is a service through which a person or organization can rent server resources that are configured and ready to store and operate one or multiple websites."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "It is a service, not a type of security.",
+          "The server is configured to host website files and resources.",
+          "Its purpose is to store and operate websites, not to eliminate them.",
+          "The hosting company handles much of the server infrastructure."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The last option is correct because it contains all the essential elements of the definition: it is a service, it provides a configured server, and that server is ready to store and operate websites."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "El hosting es un servicio que proporciona un servidor configurado"
+      },
+      {
+        "type": "text",
+        "content": "El alojamiento web o web hosting es un servicio mediante el cual una persona u organización puede alquilar recursos de un servidor configurado y preparado para almacenar y operar uno o varios sitios web."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Es un servicio, no un tipo de seguridad.",
+          "El servidor está configurado para alojar los archivos y recursos de la web.",
+          "Su finalidad es almacenar y operar sitios, no eliminarlos.",
+          "La empresa de hosting administra buena parte de la infraestructura del servidor."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "La última opción es correcta porque contiene todos los elementos esenciales de la definición: es un servicio, proporciona un servidor configurado y ese servidor está preparado para almacenar y operar sitios web."
+      }
+    ]
+  }
+},
+{
+  "Category": "Dirección IP",
+  "Question Text": {
+    "en-US": [
+      "It is composed of integers between 0 and 255 separated by a period, or by numbers and letters separated by colons, depending on the version. We are referring to the:"
+    ],
+    "es-MX": [
+      "Está compuesta por números enteros entre 0 y 255 separados por un punto o por números y letras separados por dos puntos, dependiendo de la versión. Nos referimos a la:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "TCP address",
+      "PHP address",
+      "IP address",
+      "UP address"
+    ],
+    "es-MX": [
+      "Dirección TCP",
+      "Dirección PHP",
+      "Dirección IP",
+      "Dirección UP"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "IP address",
+    "es-MX": "Dirección IP"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "The description refers to an IP address"
+      },
+      {
+        "type": "text",
+        "content": "An IP address is used to identify and locate a device or server within a network. Its representation depends on whether Internet Protocol version 4 or version 6 is used."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "IPv4 uses four numbers between 0 and 255 separated by periods.",
+          "An IPv4 example is 192.168.1.1.",
+          "IPv6 uses hexadecimal numbers and letters separated by colons.",
+          "An IPv6 example is 2001:db8::1."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "TCP is a communication protocol and PHP is a programming language, so neither one is the address described. UP address is not the relevant concept."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "La descripción corresponde a una dirección IP"
+      },
+      {
+        "type": "text",
+        "content": "Una dirección IP se utiliza para identificar y localizar un dispositivo o servidor dentro de una red. Su representación depende de si se utiliza la versión 4 o la versión 6 del protocolo de Internet."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "IPv4 utiliza cuatro números entre 0 y 255 separados por puntos.",
+          "Un ejemplo de IPv4 es 192.168.1.1.",
+          "IPv6 utiliza números y letras hexadecimales separados por dos puntos.",
+          "Un ejemplo de IPv6 es 2001:db8::1."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "TCP es un protocolo de comunicación y PHP es un lenguaje de programación, por lo que ninguno corresponde a la dirección descrita. Dirección UP tampoco es el concepto aplicable."
+      }
+    ]
+  }
+},
+{
+  "Category": "Concepto de CMS",
+  "Question Text": {
+    "en-US": [
+      "What is a CMS?"
+    ],
+    "es-MX": [
+      "¿Qué es un CMS?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "It is content management hardware that allows information to be managed easily and intuitively, without requiring technical programming knowledge",
+      "It is a gradual context system that allows information to be managed easily and intuitively, without requiring technical programming knowledge",
+      "It is a content management system that allows information to be managed easily and intuitively, without requiring technical programming knowledge",
+      "It is a content management system that allows emails to be managed easily and intuitively, without requiring technical web design knowledge"
+    ],
+    "es-MX": [
+      "Es un hardware gestor de contenidos que permite gestionar información de manera sencilla e intuitiva, sin necesidad de tener conocimientos técnicos de programación",
+      "Es un sistema gradual de contextos que permite gestionar la información de manera sencilla e intuitiva, sin necesidad de tener conocimientos técnicos de programación",
+      "Es un sistema gestor de contenidos que permite gestionar la información de manera sencilla e intuitiva, sin necesidad de tener conocimientos técnicos de programación",
+      "Es un sistema gestor de contenidos que permite gestionar correos de manera sencilla e intuitiva, sin necesidad de tener conocimientos técnicos de diseño web"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "It is a content management system that allows information to be managed easily and intuitively, without requiring technical programming knowledge",
+    "es-MX": "Es un sistema gestor de contenidos que permite gestionar la información de manera sencilla e intuitiva, sin necesidad de tener conocimientos técnicos de programación"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "A CMS is a content management system"
+      },
+      {
+        "type": "text",
+        "content": "A CMS allows users to create, manage, organize, publish and monitor digital information through an accessible interface, without requiring advanced programming knowledge."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "CMS stands for Content Management System.",
+          "It is a software system, not physical hardware.",
+          "It manages different types of digital content, not only emails.",
+          "Examples include WordPress, Joomla, Drupal and Shopify."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The third option is correct because it identifies a CMS as a content management system and describes its main purpose: making information management easier for users without technical programming knowledge."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Un CMS es un sistema gestor de contenidos"
+      },
+      {
+        "type": "text",
+        "content": "Un CMS permite crear, gestionar, organizar, publicar y dar seguimiento a información digital mediante una interfaz accesible, sin exigir conocimientos avanzados de programación."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "CMS significa Content Management System o sistema de gestión de contenidos.",
+          "Es un sistema de software, no un componente físico o hardware.",
+          "Administra diferentes tipos de contenido digital, no solamente correos.",
+          "WordPress, Joomla, Drupal y Shopify son ejemplos de gestores de contenidos."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "La tercera opción es correcta porque identifica al CMS como un sistema gestor de contenidos y describe su finalidad principal: facilitar la gestión de información a usuarios sin conocimientos técnicos de programación."
+      }
+    ]
+  }
+},
+{
+  "Category": "Uso de los CMS",
+  "Question Text": {
+    "en-US": [
+      "Currently, __________ is the most widely used content management platform in the world"
+    ],
+    "es-MX": [
+      "En la actualidad __________ es la plataforma de gestión de contenidos más usada en el mundo"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Drupal",
+      "Magento",
+      "Blogger",
+      "WordPress"
+    ],
+    "es-MX": [
+      "Drupal",
+      "Magento",
+      "Blogger",
+      "WordPress"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "WordPress",
+    "es-MX": "WordPress"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "WordPress is the most widely used CMS"
+      },
+      {
+        "type": "text",
+        "content": "According to the course material, WordPress is the most widely used content management platform in the world. It began as a blogging tool but evolved into a flexible CMS capable of supporting many types of websites."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "It can be used for blogs, business websites, portfolios and online stores.",
+          "Its functionality can be extended with plugins.",
+          "Its appearance can be changed through themes.",
+          "Drupal, Magento and Blogger have a smaller percentage of use in the data presented in the unit."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "WordPress es el CMS más utilizado"
+      },
+      {
+        "type": "text",
+        "content": "De acuerdo con el material del curso, WordPress es la plataforma de gestión de contenidos más utilizada en el mundo. Comenzó como una herramienta para blogs, pero evolucionó hasta convertirse en un CMS flexible para diferentes tipos de sitios."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Puede utilizarse para blogs, webs empresariales, portafolios y tiendas en línea.",
+          "Sus funciones pueden ampliarse mediante plugins.",
+          "Su apariencia puede modificarse mediante temas.",
+          "Drupal, Magento y Blogger presentan un porcentaje de uso menor en los datos de la unidad."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Porcentaje de uso de los CMS",
+  "Question Text": {
+    "en-US": [
+      "In the activity about CMS usage percentages, which CMS corresponds to 66.2%?"
+    ],
+    "es-MX": [
+      "En la actividad sobre el porcentaje de uso de los CMS, ¿qué CMS corresponde al 66.2 %?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "WordPress",
+      "Shopify",
+      "Joomla",
+      "Squarespace"
+    ],
+    "es-MX": [
+      "WordPress",
+      "Shopify",
+      "Joomla",
+      "Squarespace"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "WordPress",
+    "es-MX": "WordPress"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "66.2% corresponds to WordPress"
+      },
+      {
+        "type": "text",
+        "content": "In the activity, WordPress is associated with 66.2%, the highest percentage among the four CMS platforms shown."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "WordPress: 66.2%",
+          "Shopify: 5.2%",
+          "Joomla: 3.5%",
+          "Squarespace: 2.5%"
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The PDF presents 64.2% for WordPress, but this quiz preserves 66.2% because that is the value displayed in the exam activity."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "El 66.2 % corresponde a WordPress"
+      },
+      {
+        "type": "text",
+        "content": "En la actividad, WordPress está relacionado con el 66.2 %, el porcentaje más alto de los cuatro CMS mostrados."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "WordPress: 66.2 %",
+          "Shopify: 5.2 %",
+          "Joomla: 3.5 %",
+          "Squarespace: 2.5 %"
+        ]
+      },
+      {
+        "type": "text",
+        "content": "El PDF presenta un 64.2 % para WordPress, pero este quiz conserva el 66.2 % porque es el valor que aparece en la actividad del examen."
+      }
+    ]
+  }
+},
+{
+  "Category": "Porcentaje de uso de los CMS",
+  "Question Text": {
+    "en-US": [
+      "In the activity about CMS usage percentages, which CMS corresponds to 5.2%?"
+    ],
+    "es-MX": [
+      "En la actividad sobre el porcentaje de uso de los CMS, ¿qué CMS corresponde al 5.2 %?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "WordPress",
+      "Shopify",
+      "Joomla",
+      "Squarespace"
+    ],
+    "es-MX": [
+      "WordPress",
+      "Shopify",
+      "Joomla",
+      "Squarespace"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Shopify",
+    "es-MX": "Shopify"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "5.2% corresponds to Shopify"
+      },
+      {
+        "type": "text",
+        "content": "According to the relationship shown in the activity, Shopify has a usage percentage of 5.2%."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "WordPress: 66.2%",
+          "Shopify: 5.2%",
+          "Joomla: 3.5%",
+          "Squarespace: 2.5%"
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "El 5.2 % corresponde a Shopify"
+      },
+      {
+        "type": "text",
+        "content": "De acuerdo con la relación mostrada en la actividad, Shopify tiene un porcentaje de uso del 5.2 %."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "WordPress: 66.2 %",
+          "Shopify: 5.2 %",
+          "Joomla: 3.5 %",
+          "Squarespace: 2.5 %"
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Porcentaje de uso de los CMS",
+  "Question Text": {
+    "en-US": [
+      "In the activity about CMS usage percentages, which CMS corresponds to 3.5%?"
+    ],
+    "es-MX": [
+      "En la actividad sobre el porcentaje de uso de los CMS, ¿qué CMS corresponde al 3.5 %?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "WordPress",
+      "Shopify",
+      "Joomla",
+      "Squarespace"
+    ],
+    "es-MX": [
+      "WordPress",
+      "Shopify",
+      "Joomla",
+      "Squarespace"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Joomla",
+    "es-MX": "Joomla"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "3.5% corresponds to Joomla"
+      },
+      {
+        "type": "text",
+        "content": "According to the course activity, Joomla corresponds to a usage percentage of 3.5%."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "WordPress: 66.2%",
+          "Shopify: 5.2%",
+          "Joomla: 3.5%",
+          "Squarespace: 2.5%"
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "El 3.5 % corresponde a Joomla"
+      },
+      {
+        "type": "text",
+        "content": "De acuerdo con la actividad del curso, Joomla corresponde a un porcentaje de uso del 3.5 %."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "WordPress: 66.2 %",
+          "Shopify: 5.2 %",
+          "Joomla: 3.5 %",
+          "Squarespace: 2.5 %"
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Porcentaje de uso de los CMS",
+  "Question Text": {
+    "en-US": [
+      "In the activity about CMS usage percentages, which CMS corresponds to 2.5%?"
+    ],
+    "es-MX": [
+      "En la actividad sobre el porcentaje de uso de los CMS, ¿qué CMS corresponde al 2.5 %?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "WordPress",
+      "Shopify",
+      "Joomla",
+      "Squarespace"
+    ],
+    "es-MX": [
+      "WordPress",
+      "Shopify",
+      "Joomla",
+      "Squarespace"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Squarespace",
+    "es-MX": "Squarespace"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "2.5% corresponds to Squarespace"
+      },
+      {
+        "type": "text",
+        "content": "According to the relationship shown in the activity, Squarespace has a usage percentage of 2.5%, the lowest percentage among the four options presented."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "WordPress: 66.2%",
+          "Shopify: 5.2%",
+          "Joomla: 3.5%",
+          "Squarespace: 2.5%"
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "El 2.5 % corresponde a Squarespace"
+      },
+      {
+        "type": "text",
+        "content": "De acuerdo con la relación mostrada en la actividad, Squarespace tiene un porcentaje de uso del 2.5 %, el porcentaje más bajo entre las cuatro opciones presentadas."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "WordPress: 66.2 %",
+          "Shopify: 5.2 %",
+          "Joomla: 3.5 %",
+          "Squarespace: 2.5 %"
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Anatomía de WordPress",
+  "Question Text": {
+    "en-US": [
+      "WordPress comprises two characteristic areas: the __________ side or back end, which is the private part from where the website content is edited and created. We are referring to:"
+    ],
+    "es-MX": [
+      "WordPress comprende dos áreas características, el lado del __________ o back end, que es la parte privada desde donde se edita y crea el contenido de la web. Nos referimos a:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Dashboard",
+      "Administrator",
+      "Public",
+      "Configuration"
+    ],
+    "es-MX": [
+      "Escritorio",
+      "Administrador",
+      "Pública",
+      "Configuración"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Administrator",
+    "es-MX": "Administrador"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "The back end is the administrator side"
+      },
+      {
+        "type": "text",
+        "content": "The administrator side, also called the back end, is the private area of WordPress from which authorized users create, edit, publish and configure website content."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Access usually requires a username and password.",
+          "Administrators can create pages, posts and other content.",
+          "It provides options for themes, plugins, users and settings.",
+          "Website visitors normally cannot access this private area."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Dashboard and Configuration are sections within the back end, but the general private side is called the Administrator side. Public refers to the front end."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "El back end es el lado del administrador"
+      },
+      {
+        "type": "text",
+        "content": "El lado del administrador, también llamado back end, es el área privada de WordPress desde la cual los usuarios autorizados crean, editan, publican y configuran el contenido del sitio."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Para acceder normalmente se necesita un nombre de usuario y una contraseña.",
+          "El administrador puede crear páginas, entradas y otros contenidos.",
+          "Incluye opciones relacionadas con temas, plugins, usuarios y ajustes.",
+          "Los visitantes de la web normalmente no pueden acceder a esta área privada."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Escritorio y Configuración son secciones que forman parte del back end, pero el nombre general del lado privado es Administrador. Pública corresponde al front end."
+      }
+    ]
+  }
+},
+{
+  "Category": "Anatomía de WordPress",
+  "Question Text": {
+    "en-US": [
+      "WordPress comprises two characteristic areas: a __________ part or front end, which is what visitors see when entering the site's URL. We are referring to:"
+    ],
+    "es-MX": [
+      "WordPress comprende dos áreas características, una parte __________ o front end, que es lo que los visitantes ven al entrar en la URL del sitio. Nos referimos a:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Dashboard",
+      "Administrator",
+      "Public",
+      "Configuration"
+    ],
+    "es-MX": [
+      "Escritorio",
+      "Administrador",
+      "Pública",
+      "Configuración"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Public",
+    "es-MX": "Pública"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "The front end is the public part of the website"
+      },
+      {
+        "type": "text",
+        "content": "The public part, also called the front end, is the area visitors see and use when they enter the website's URL in a browser."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "It displays pages, posts, images, menus and other published content.",
+          "Its appearance is controlled mainly by the active WordPress theme.",
+          "Visitors interact with this area of the website.",
+          "Changes made in the back end can be reflected in the front end."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Dashboard, Administrator and Configuration belong to the private administration environment. Therefore, Public is the answer that completes the definition of the front end."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "El front end es la parte pública del sitio"
+      },
+      {
+        "type": "text",
+        "content": "La parte pública, también llamada front end, es el área que los visitantes ven y utilizan cuando escriben la URL del sitio en un navegador."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Muestra páginas, entradas, imágenes, menús y otros contenidos publicados.",
+          "Su apariencia está determinada principalmente por el tema activo de WordPress.",
+          "Los visitantes interactúan con esta parte del sitio.",
+          "Los cambios realizados en el back end pueden reflejarse en el front end."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Escritorio, Administrador y Configuración pertenecen al entorno privado de administración. Por eso, Pública es la respuesta que completa la definición de front end."
+      }
+    ]
+  }
+},
+{
+  "Category": "Estructura del back end",
+  "Question Text": {
+    "en-US": [
+      "The WordPress back end is summarized in three structures, which are:"
+    ],
+    "es-MX": [
+      "El back end de WordPress se resumen en tres estructuras que son:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Dashboard zone, administration area and configuration area",
+      "Public part, administration area and configuration area",
+      "Dashboard zone, administration area and public area",
+      "Dashboard zone, front end and configuration area"
+    ],
+    "es-MX": [
+      "Zona de escritorio, área de administración y área de configuración",
+      "Parte pública, área de administración y área de configuración",
+      "Zona de escritorio, área de administración y área pública",
+      "Zona de escritorio, front end, área de configuración"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Dashboard zone, administration area and configuration area",
+    "es-MX": "Zona de escritorio, área de administración y área de configuración"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "The back end has three basic structures"
+      },
+      {
+        "type": "text",
+        "content": "According to the course material, the WordPress back end can be summarized in the dashboard zone, the administration area and the configuration area. Each structure performs a different function within the private environment."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Dashboard zone: central area that displays recent posts, comments, news and website statistics.",
+          "Administration area: contains options for creating and publishing content, including Posts, Media, Pages and Comments.",
+          "Configuration area: includes Appearance, Plugins, Users, Tools and Settings."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The public part or front end is not one of the three back-end structures because it is the area viewed by website visitors."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "El back end tiene tres estructuras básicas"
+      },
+      {
+        "type": "text",
+        "content": "De acuerdo con el material, el back end de WordPress se resume en la zona de escritorio, el área de administración y el área de configuración. Cada estructura cumple una función diferente dentro del entorno privado."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Zona de escritorio: parte central que muestra los últimos artículos, comentarios, noticias y estadísticas del sitio.",
+          "Área de administración: contiene las opciones para crear y publicar contenido, como Entradas, Medios, Páginas y Comentarios.",
+          "Área de configuración: comprende Apariencia, Plugins, Usuarios, Herramientas y Ajustes."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "La parte pública o front end no pertenece a las tres estructuras del back end porque es el área que ven los visitantes del sitio."
+      }
+    ]
+  }
+}
+            ]
+        
+  }

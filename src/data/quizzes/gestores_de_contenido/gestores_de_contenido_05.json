@@ -1,0 +1,1080 @@
+{
+  "meta": {
+    "slug": "gestores-contenidos-u5",
+    "title": "Diseño del sitio web en WordPress",
+    "subject": "DISEÑO Y CREACIÓN WEB CON GESTORES DE CONTENIDOS",
+    "unit": 5,
+    "classNo": 0,
+    "description": "Unidad 5: diseño de sitios web en WordPress mediante la instalación y configuración de temas, la creación de menús de navegación y la elaboración y organización de páginas.",
+    "tags": [
+      "WordPress",
+      "diseño web",
+      "temas",
+      "apariencia",
+      "personalización",
+      "instalación de temas",
+      "configuración de temas",
+      "menús",
+      "menús de navegación",
+      "creación de menús",
+      "páginas",
+      "creación de páginas",
+      "página de inicio",
+      "estructura del sitio",
+      "administración de contenido"
+    ],
+    "questionCount": 0,
+    "languages": [
+      "en-US",
+      "es-MX"
+    ]
+  },
+  "Questions": [
+    {
+      "Category": "Definición de temas",
+      "Question Text": {
+        "en-US": [
+          "__________ are a collection of files that define the structure and visual styles of a website. We are referring to:"
+        ],
+        "es-MX": [
+          "Los __________ son un conjunto de archivos que permiten definir la estructura y estilos visuales que tendrá un sitio web. Nos referimos a:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Comments",
+          "Themes",
+          "Plugins",
+          "Posts"
+        ],
+        "es-MX": [
+          "Comentarios",
+          "Temas",
+          "Plugins",
+          "Entradas"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Themes",
+        "es-MX": "Temas"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Themes define the visual appearance of a WordPress website"
+          },
+          {
+            "type": "text",
+            "content": "A WordPress theme is a collection of files that determines the structure, design and visual presentation of a website."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Themes define colors, typography and page layouts.",
+              "They determine how posts, pages and other content are displayed.",
+              "Changing the theme can modify the website's appearance without deleting its content.",
+              "A theme can contain templates, style sheets, images and programming files."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Los temas definen la apariencia visual de un sitio WordPress"
+          },
+          {
+            "type": "text",
+            "content": "Un tema de WordPress es un conjunto de archivos que determina la estructura, el diseño y la presentación visual de un sitio web."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Los temas definen colores, tipografías y distribuciones de página.",
+              "Determinan cómo se muestran las entradas, páginas y demás contenidos.",
+              "Cambiar el tema puede modificar la apariencia del sitio sin eliminar su contenido.",
+              "Un tema puede contener plantillas, hojas de estilo, imágenes y archivos de programación."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Acceso a los temas",
+      "Question Text": {
+        "en-US": [
+          "Once themes are installed in WordPress, they can be viewed by going to:"
+        ],
+        "es-MX": [
+          "Los temas, cuando están instalados en WordPress, se pueden visualizar en:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Plugins and then Themes",
+          "Administrator and then Themes",
+          "Appearance and then Themes",
+          "Settings and then Themes"
+        ],
+        "es-MX": [
+          "Plugins y luego en Temas",
+          "Administrador y luego en Temas",
+          "Apariencia y luego en Temas",
+          "Ajustes y luego en Temas"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Appearance and then Themes",
+        "es-MX": "Apariencia y luego en Temas"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Installed themes are managed from Appearance"
+          },
+          {
+            "type": "text",
+            "content": "The themes installed on a WordPress website can be viewed and managed by selecting Appearance and then Themes from the administration sidebar."
+          },
+          {
+            "type": "ol",
+            "items": [
+              "Access the WordPress administration area.",
+              "Select Appearance from the left sidebar.",
+              "Select Themes to view the installed themes.",
+              "From this section, a theme can be previewed, activated or removed."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Los temas instalados se administran desde Apariencia"
+          },
+          {
+            "type": "text",
+            "content": "Los temas instalados en un sitio WordPress pueden visualizarse y administrarse seleccionando Apariencia y después Temas en la barra lateral de administración."
+          },
+          {
+            "type": "ol",
+            "items": [
+              "Acceder al área de administración de WordPress.",
+              "Seleccionar Apariencia en la barra lateral izquierda.",
+              "Seleccionar Temas para visualizar los temas instalados.",
+              "Desde este apartado se puede obtener una vista previa, activar o eliminar un tema."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Vista previa de temas",
+      "Question Text": {
+        "en-US": [
+          "The __________ option allows you to see what a theme will look like before installing it"
+        ],
+        "es-MX": [
+          "La __________ permite visualizar cómo se verá el tema antes de instalarlo"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Preview",
+          "Previous appearance",
+          "Design view",
+          "Previous design"
+        ],
+        "es-MX": [
+          "Vista previa",
+          "Apariencia previa",
+          "Vista de diseño",
+          "Diseño previo"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Preview",
+        "es-MX": "Vista previa"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Preview shows the theme before installation"
+          },
+          {
+            "type": "text",
+            "content": "The Preview option allows the general appearance of a WordPress theme to be inspected before it is installed or applied to the website."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "It displays an example of the theme's visual design.",
+              "It helps evaluate the layout, colors and general style.",
+              "Previewing does not immediately replace the active theme.",
+              "The theme must still be installed and activated before it becomes the website's design."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "La vista previa muestra el tema antes de instalarlo"
+          },
+          {
+            "type": "text",
+            "content": "La opción Vista previa permite examinar la apariencia general de un tema de WordPress antes de instalarlo o aplicarlo al sitio web."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Muestra un ejemplo del diseño visual del tema.",
+              "Ayuda a evaluar su distribución, colores y estilo general.",
+              "La vista previa no reemplaza inmediatamente el tema activo.",
+              "El tema debe instalarse y activarse para convertirse en el diseño del sitio."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Personalización del tema",
+      "Question Text": {
+        "en-US": [
+          "The theme configuration options are located in the area of:"
+        ],
+        "es-MX": [
+          "Las opciones de configuración del tema se encuentran en el área de:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Administrator, Appearance and then Customize",
+          "Appearance, Administrator and then Customize",
+          "Administrator, Settings and then Customize",
+          "Administrator, Plugins and then Customize"
+        ],
+        "es-MX": [
+          "Administrador, Apariencia y luego Personalizar",
+          "Apariencia, Administrador y luego Personalizar",
+          "Administrador, Ajustes y luego Personalizar",
+          "Administrador, Plugins y luego Personalizar"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Administrator, Appearance and then Customize",
+        "es-MX": "Administrador, Apariencia y luego Personalizar"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Theme options are available in the Customizer"
+          },
+          {
+            "type": "text",
+            "content": "The configuration options of a WordPress theme can be accessed from the administration area by selecting Appearance and then Customize."
+          },
+          {
+            "type": "ol",
+            "items": [
+              "Access the WordPress administration area.",
+              "Select Appearance from the left sidebar.",
+              "Select Customize to open the theme configuration options.",
+              "Review the changes in the preview before publishing them."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Las opciones del tema se encuentran en Personalizar"
+          },
+          {
+            "type": "text",
+            "content": "Las opciones de configuración de un tema de WordPress se encuentran en el área de administración, seleccionando Apariencia y después Personalizar."
+          },
+          {
+            "type": "ol",
+            "items": [
+              "Acceder al área de administración de WordPress.",
+              "Seleccionar Apariencia en la barra lateral izquierda.",
+              "Seleccionar Personalizar para abrir las opciones del tema.",
+              "Revisar los cambios en la vista previa antes de publicarlos."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Identidad del sitio",
+      "Question Text": {
+        "en-US": [
+          "This option allows you to change the provisional title entered during the initial installation process. You can also edit the tagline, which is a brief text that defines the website"
+        ],
+        "es-MX": [
+          "En esta opción se puede cambiar el título provisional que se colocó en el sitio durante el proceso inicial de instalación. También se puede editar la descripción, un breve texto que define al sitio web"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Colors option",
+          "Background image option",
+          "Site Identity option",
+          "Menu option"
+        ],
+        "es-MX": [
+          "Opción Colores",
+          "Opción Imagen de fondo",
+          "Opción Identidad del sitio",
+          "Opción Menú"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Site Identity option",
+        "es-MX": "Opción Identidad del sitio"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Site Identity contains the website title and tagline"
+          },
+          {
+            "type": "text",
+            "content": "The Site Identity option allows the website title and tagline entered during installation to be modified. Depending on the active theme, it may also contain options for the logo and site icon."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "The site title identifies the website.",
+              "The tagline briefly describes the website's purpose.",
+              "Some themes allow a logo to be selected from this section.",
+              "Changes can be reviewed before they are published."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Identidad del sitio contiene el título y la descripción"
+          },
+          {
+            "type": "text",
+            "content": "La opción Identidad del sitio permite modificar el título y la descripción introducidos durante la instalación. Dependiendo del tema activo, también puede contener las opciones del logotipo y del icono del sitio."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "El título permite identificar el sitio web.",
+              "La descripción explica brevemente el propósito del sitio.",
+              "Algunos temas permiten seleccionar un logotipo desde este apartado.",
+              "Los cambios pueden revisarse antes de publicarse."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Imagen de fondo",
+      "Question Text": {
+        "en-US": [
+          "This option allows you to import any image from the WordPress Media Library. The image should be high quality and large enough to cover the website's background area"
+        ],
+        "es-MX": [
+          "Esta opción permite importar cualquier imagen desde la Biblioteca de medios de WordPress. Es importante señalar que la imagen debe ser de alta calidad y que pueda abarcar el espacio de fondo del sitio"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Colors option",
+          "Background image option",
+          "Site Identity option",
+          "Menu option"
+        ],
+        "es-MX": [
+          "Opción Colores",
+          "Opción Imagen de fondo",
+          "Opción Identidad del sitio",
+          "Opción Menú"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Background image option",
+        "es-MX": "Opción Imagen de fondo"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "The Background Image option changes the website background"
+          },
+          {
+            "type": "text",
+            "content": "The Background Image option allows an image from the WordPress Media Library to be selected and used as the visual background of the website."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "The image should have sufficient dimensions to cover the available area.",
+              "Its file size should be optimized to avoid slowing down the website.",
+              "The background should maintain sufficient contrast with the website's text.",
+              "The availability of this option depends on the active theme."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "La opción Imagen de fondo modifica el fondo del sitio"
+          },
+          {
+            "type": "text",
+            "content": "La opción Imagen de fondo permite seleccionar una imagen de la Biblioteca de medios de WordPress y utilizarla como fondo visual del sitio web."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "La imagen debe tener dimensiones suficientes para cubrir el espacio disponible.",
+              "El tamaño del archivo debe optimizarse para evitar que el sitio cargue lentamente.",
+              "El fondo debe conservar suficiente contraste con los textos del sitio.",
+              "La disponibilidad de esta opción depende del tema que se encuentre activo."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Configuración de menús",
+      "Question Text": {
+        "en-US": [
+          "This option allows you to modify the menu structure, title, order and location, as well as add items to either the primary or secondary menu"
+        ],
+        "es-MX": [
+          "En esta opción se puede modificar la estructura del menú, el título, el orden, la ubicación del menú y añadir elementos, sea el menú principal o el secundario"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Colors option",
+          "Background image option",
+          "Site Identity option",
+          "Menu option"
+        ],
+        "es-MX": [
+          "Opción Colores",
+          "Opción Imagen de fondo",
+          "Opción Identidad del sitio",
+          "Opción Menú"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Menu option",
+        "es-MX": "Opción Menú"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "The Menu option controls website navigation"
+          },
+          {
+            "type": "text",
+            "content": "The Menu option allows the website's navigation menus to be created and modified. Items can be added, removed, reordered and assigned to the locations supported by the active theme."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "The menu title and structure can be modified.",
+              "Pages, posts, categories and custom links can be added.",
+              "Items can be reordered by dragging them to a new position.",
+              "The menu can be assigned to a primary, secondary or other available location."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "La opción Menú controla la navegación del sitio"
+          },
+          {
+            "type": "text",
+            "content": "La opción Menú permite crear y modificar los menús de navegación del sitio. Los elementos pueden añadirse, eliminarse, reordenarse y asignarse a las ubicaciones compatibles con el tema activo."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Se puede modificar el título y la estructura del menú.",
+              "Se pueden añadir páginas, entradas, categorías y enlaces personalizados.",
+              "Los elementos pueden reordenarse arrastrándolos a una posición nueva.",
+              "El menú puede asignarse a una ubicación principal, secundaria u otra disponible."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Widgets del pie de página",
+      "Question Text": {
+        "en-US": [
+          "In the __________ section, the footer information can be changed, its elements can be reordered and additional elements can be added to the footer"
+        ],
+        "es-MX": [
+          "En la sección de los __________ se podrá cambiar la información del pie de página, así como el orden de los elementos y agregar otros al footer"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Menus",
+          "Widgets",
+          "Additional CSS",
+          "Colors"
+        ],
+        "es-MX": [
+          "Menús",
+          "Widgets",
+          "CSS adicional",
+          "Colores"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Widgets",
+        "es-MX": "Widgets"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Widgets add content to designated theme areas"
+          },
+          {
+            "type": "text",
+            "content": "Widgets are content elements that can be placed in areas provided by the active theme, such as sidebars and the website footer."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Widgets can display text, images, menus and other content.",
+              "They can be added to the footer when the theme provides widget areas there.",
+              "Their order can normally be changed by dragging them.",
+              "The available widget areas depend on the active theme."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Los widgets añaden contenido en áreas del tema"
+          },
+          {
+            "type": "text",
+            "content": "Los widgets son elementos de contenido que pueden colocarse en las áreas proporcionadas por el tema activo, como las barras laterales y el pie de página del sitio."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Los widgets pueden mostrar texto, imágenes, menús y otros contenidos.",
+              "Pueden añadirse al pie de página cuando el tema proporciona áreas para ello.",
+              "Su orden normalmente puede modificarse arrastrándolos.",
+              "Las áreas disponibles dependen del tema que se encuentre activo."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Ajustes de extractos",
+      "Question Text": {
+        "en-US": [
+          "This section allows you to specify whether the content shown on the page containing the list of published blog posts will generally appear as a summary or as full text"
+        ],
+        "es-MX": [
+          "En esta sección se puede indicar si, en la página donde se muestra el listado de los blogs publicados, el contenido se mostrará en resumen o en texto completo, de forma general"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Background image",
+          "Additional CSS",
+          "Excerpt settings",
+          "Menu"
+        ],
+        "es-MX": [
+          "Imagen de fondo",
+          "CSS adicionales",
+          "Ajustes de extractos",
+          "Menú"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Excerpt settings",
+        "es-MX": "Ajustes de extractos"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Excerpt settings control how posts are summarized"
+          },
+          {
+            "type": "text",
+            "content": "Excerpt settings determine whether blog listing pages display the full content of each post or only a brief summary."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "A summary displays only part of the post.",
+              "Full text displays the complete post in the listing.",
+              "Excerpts make pages easier to scan when several posts are displayed.",
+              "The available behavior can depend on the active theme."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Los ajustes de extractos controlan cómo se resumen las entradas"
+          },
+          {
+            "type": "text",
+            "content": "Los Ajustes de extractos determinan si las páginas con listados de entradas muestran el contenido completo de cada publicación o solamente un resumen breve."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "El resumen muestra únicamente una parte de la entrada.",
+              "El texto completo presenta toda la entrada dentro del listado.",
+              "Los extractos facilitan la consulta cuando se muestran varias publicaciones.",
+              "El funcionamiento disponible puede depender del tema activo."
+            ]
+          }
+        ]
+      }
+    },
+{
+  "Category": "Definición de menús",
+  "Question Text": {
+    "en-US": [
+      "__________ on a website consist of a series of organized links that lead to specific pages within the website"
+    ],
+    "es-MX": [
+      "Los __________ en un sitio web consisten en una serie de enlaces organizados que conducen a determinadas páginas del sitio"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Comments",
+      "Menus",
+      "Plugins",
+      "Settings"
+    ],
+    "es-MX": [
+      "Comentarios",
+      "Menús",
+      "Plugins",
+      "Ajustes"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Menus",
+    "es-MX": "Menús"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Menus organize the website's navigation links"
+      },
+      {
+        "type": "text",
+        "content": "A website menu is an organized collection of links that allows visitors to access pages, posts, categories and other sections of the website."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Menus help visitors find the website's main content.",
+          "They can contain pages, posts, categories and custom links.",
+          "Their elements can be arranged in a specific order.",
+          "Some elements can be nested to create submenus."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Los menús organizan los enlaces de navegación"
+      },
+      {
+        "type": "text",
+        "content": "Un menú es un conjunto organizado de enlaces que permite a los visitantes acceder a páginas, entradas, categorías y otras secciones del sitio web."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Los menús ayudan a encontrar los contenidos principales del sitio.",
+          "Pueden contener páginas, entradas, categorías y enlaces personalizados.",
+          "Sus elementos pueden colocarse en un orden específico.",
+          "Algunos elementos pueden anidarse para crear submenús."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Ubicación de los menús",
+  "Question Text": {
+    "en-US": [
+      "Menus are usually located in the __________ part of websites, that is, in the header. WordPress allows you to create several menus and place them in different areas of the website"
+    ],
+    "es-MX": [
+      "Los menús suelen ubicarse en la parte __________ de las webs, es decir, en la cabecera. WordPress permite crear varios menús y situarlos en diferentes partes del sitio"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Upper",
+      "Lower",
+      "Middle",
+      "Footer"
+    ],
+    "es-MX": [
+      "Superior",
+      "Inferior",
+      "Intermedia",
+      "Pie de página"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Upper",
+    "es-MX": "Superior"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "The main menu is commonly located in the header"
+      },
+      {
+        "type": "text",
+        "content": "Website menus are commonly displayed in the upper part of the page, within the header, because this location makes the navigation options immediately visible."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "The primary menu is usually placed in the website header.",
+          "Additional menus can appear in sidebars or the footer.",
+          "A theme can provide several predefined menu locations.",
+          "The administrator assigns each menu to an available location."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "El menú principal suele ubicarse en la cabecera"
+      },
+      {
+        "type": "text",
+        "content": "Los menús suelen mostrarse en la parte superior de la página, dentro de la cabecera, porque esta ubicación permite visualizar inmediatamente las opciones de navegación."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "El menú principal normalmente se coloca en la cabecera del sitio.",
+          "Los menús adicionales pueden aparecer en barras laterales o en el pie de página.",
+          "Un tema puede proporcionar varias ubicaciones predeterminadas.",
+          "El administrador asigna cada menú a una ubicación disponible."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Administración de menús",
+  "Question Text": {
+    "en-US": [
+      "To create and manage a custom menu in WordPress, you must go to the administrator's left sidebar and select:"
+    ],
+    "es-MX": [
+      "Para crear y administrar un menú personalizado en WordPress se debe ir al panel lateral izquierdo del administrador en:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Appearance and then Menus",
+      "Tools and then Menus",
+      "Appearance, Customize and then Menus",
+      "Appearance, Themes and then Menus"
+    ],
+    "es-MX": [
+      "Apariencias y luego Menús",
+      "Herramientas y luego Menús",
+      "Apariencia, Personalizar y luego Menús",
+      "Apariencia, Temas y luego Menús"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Appearance and then Menus",
+    "es-MX": "Apariencias y luego Menús"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Custom menus are managed from Appearance"
+      },
+      {
+        "type": "text",
+        "content": "According to the course material, custom WordPress menus are created and managed from the administration sidebar by selecting Appearance and then Menus."
+      },
+      {
+        "type": "ol",
+        "items": [
+          "Access the WordPress administration area.",
+          "Open Appearance in the left sidebar.",
+          "Select Menus.",
+          "Create a new menu or modify an existing one."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Los menús personalizados se administran desde Apariencia"
+      },
+      {
+        "type": "text",
+        "content": "De acuerdo con el material del curso, los menús personalizados de WordPress se crean y administran desde la barra lateral de administración, seleccionando Apariencia y después Menús."
+      },
+      {
+        "type": "ol",
+        "items": [
+          "Acceder al área de administración de WordPress.",
+          "Abrir Apariencia en la barra lateral izquierda.",
+          "Seleccionar Menús.",
+          "Crear un menú nuevo o modificar uno existente."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Definición de páginas",
+  "Question Text": {
+    "en-US": [
+      "What WordPress calls pages are essentially a type of separate __________ used to publish specific general information that, once created, is rarely modified"
+    ],
+    "es-MX": [
+      "Lo que se conoce en WordPress como páginas en esencia son realmente un tipo de __________ separadas que se utilizan para publicar un contenido determinado de información general que, una vez creadas, poco se modifican"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Menus",
+      "Plugins",
+      "Settings",
+      "Posts"
+    ],
+    "es-MX": [
+      "Menús",
+      "Plugins",
+      "Ajustes",
+      "Entradas"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Posts",
+    "es-MX": "Entradas"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Pages are a separate type of WordPress content"
+      },
+      {
+        "type": "text",
+        "content": "According to the course material, WordPress pages can be understood as a separate type of post intended for general and relatively permanent information."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Pages are commonly used for content such as About Us, Contact and Services.",
+          "Their content is usually modified less frequently than regular posts.",
+          "Pages are not normally organized chronologically.",
+          "They can be included in the website's navigation menus."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Technically, WordPress stores both posts and pages as post types, although each one has a different purpose and behavior."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Las páginas son un tipo separado de contenido en WordPress"
+      },
+      {
+        "type": "text",
+        "content": "De acuerdo con el material del curso, las páginas de WordPress pueden entenderse como un tipo separado de entrada destinado a presentar información general y relativamente permanente."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Las páginas suelen utilizarse para contenidos como Quiénes somos, Contacto y Servicios.",
+          "Su contenido normalmente se modifica con menor frecuencia que el de las entradas.",
+          "Las páginas no suelen organizarse cronológicamente.",
+          "Pueden incluirse dentro de los menús de navegación del sitio."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Técnicamente, WordPress almacena tanto las entradas como las páginas como tipos de publicación, aunque cada una tiene una finalidad y un comportamiento diferentes."
+      }
+    ]
+  }
+},
+{
+  "Category": "Creación de páginas",
+  "Question Text": {
+    "en-US": [
+      "To create these pages, go to the left sidebar of the WordPress administration area and select:"
+    ],
+    "es-MX": [
+      "Para crear dichas entradas basta con dirigirse a la barra lateral izquierda del administrador de WordPress y pulsar en:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Pages and then Add New",
+      "Plugins, Pages and then Add New",
+      "Pages and then All Pages",
+      "Appearance, Page and then Add New"
+    ],
+    "es-MX": [
+      "Páginas y luego Añadir nueva",
+      "Plugins, Páginas y luego Añadir nueva",
+      "Páginas y luego Todas las páginas",
+      "Apariencia, Página y luego Añadir nueva"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Pages and then Add New",
+    "es-MX": "Páginas y luego Añadir nueva"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "New pages are created from Pages and Add New"
+      },
+      {
+        "type": "text",
+        "content": "A new WordPress page is created from the administration sidebar by selecting Pages and then Add New."
+      },
+      {
+        "type": "ol",
+        "items": [
+          "Access the WordPress administration area.",
+          "Select Pages from the left sidebar.",
+          "Select Add New.",
+          "Enter the page title and content.",
+          "Review the configuration and publish the page."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Las páginas nuevas se crean desde Páginas y Añadir nueva"
+      },
+      {
+        "type": "text",
+        "content": "Para crear una página nueva en WordPress se debe seleccionar Páginas y después Añadir nueva en la barra lateral del área de administración."
+      },
+      {
+        "type": "ol",
+        "items": [
+          "Acceder al área de administración de WordPress.",
+          "Seleccionar Páginas en la barra lateral izquierda.",
+          "Seleccionar Añadir nueva.",
+          "Introducir el título y el contenido de la página.",
+          "Revisar la configuración y publicar la página."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Opciones de pantalla",
+  "Question Text": {
+    "en-US": [
+      "Pages also contain additional __________ options that allow information sections to be added, such as custom fields, comments, slug and author"
+    ],
+    "es-MX": [
+      "En las páginas también hay opciones de __________ adicionales que permiten agregar secciones de información, como agregar campos personalizados, comentarios, slug, autor, etc."
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Screen",
+      "Menu",
+      "Appearance",
+      "Themes"
+    ],
+    "es-MX": [
+      "Pantalla",
+      "Menú",
+      "Apariencia",
+      "Temas"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Screen",
+    "es-MX": "Pantalla"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Screen options control the panels displayed in the editor"
+      },
+      {
+        "type": "text",
+        "content": "The Screen Options section allows additional information panels and editing controls to be displayed or hidden on the WordPress page-editing screen."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Custom fields can store additional information associated with a page.",
+          "The comments panel controls whether comments are available.",
+          "The slug identifies the page within its URL.",
+          "The author panel allows a registered user to be assigned to the page."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Las opciones de pantalla controlan los paneles del editor"
+      },
+      {
+        "type": "text",
+        "content": "El apartado Opciones de pantalla permite mostrar u ocultar paneles de información y controles adicionales dentro de la pantalla de edición de páginas de WordPress."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Los campos personalizados almacenan información adicional asociada con la página.",
+          "El panel de comentarios controla la disponibilidad de los comentarios.",
+          "El slug identifica la página dentro de su dirección URL.",
+          "El panel de autor permite asignar la página a un usuario registrado."
+        ]
+      }
+    ]
+  }
+}
+
+  ]
+}

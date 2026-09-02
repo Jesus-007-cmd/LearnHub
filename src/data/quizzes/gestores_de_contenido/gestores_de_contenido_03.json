@@ -1,0 +1,1507 @@
+{
+  "meta": {
+    "slug": "gestores-contenidos-u3",
+    "title": "Configuración básica de WordPress",
+    "subject": "DISEÑO Y CREACIÓN WEB CON GESTORES DE CONTENIDOS",
+    "unit": 3,
+    "classNo": 0,
+    "description": "Unidad 3: configuración básica de WordPress, opciones del sistema, ajustes generales, escritura, lectura, comentarios, medios, enlaces permanentes, privacidad y gestión de usuarios mediante roles.",
+    "tags": [
+      "WordPress",
+      "configuración de WordPress",
+      "ajustes generales",
+      "ajustes de escritura",
+      "ajustes de lectura",
+      "comentarios",
+      "medios",
+      "enlaces permanentes",
+      "privacidad",
+      "usuarios",
+      "roles de WordPress"
+    ],
+    "questionCount": 0,
+    "languages": [
+      "en-US",
+      "es-MX"
+    ]
+  },
+  "Questions": [
+    {
+      "Category": "Ajustes generales",
+      "Question Text": {
+        "en-US": [
+          "It contains the basic website configuration data and is one of the first pages that should be configured after WordPress has been installed:"
+        ],
+        "es-MX": [
+          "Contiene los datos de configuración básicos del sitio web y es una de las primeras páginas que se deberán configurar una vez instalado el WordPress:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Options",
+          "General settings",
+          "Reading settings",
+          "Writing settings"
+        ],
+        "es-MX": [
+          "Opciones",
+          "Ajustes generales",
+          "Ajustes de lectura",
+          "Ajustes escritura"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "General settings",
+        "es-MX": "Ajustes generales"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "General settings contain the website's basic information"
+          },
+          {
+            "type": "text",
+            "content": "The General Settings page is one of the first areas that should be reviewed after installing WordPress because it contains the essential information and basic operating preferences of the website."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Website title and tagline.",
+              "WordPress address and site address.",
+              "Administration email address.",
+              "Website language.",
+              "Timezone, date format and time format.",
+              "Beginning of the week."
+            ]
+          },
+          {
+            "type": "text",
+            "content": "These settings establish the website's identity, location and general behavior before content and other functions are configured."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Los ajustes generales contienen la información básica del sitio"
+          },
+          {
+            "type": "text",
+            "content": "La página Ajustes generales es una de las primeras áreas que deben revisarse después de instalar WordPress porque contiene la información esencial y las preferencias básicas de funcionamiento del sitio."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Título del sitio y descripción corta.",
+              "Dirección de WordPress y dirección del sitio.",
+              "Dirección de correo electrónico de administración.",
+              "Idioma del sitio.",
+              "Zona horaria y formatos de fecha y hora.",
+              "Día en el que comienza la semana."
+            ]
+          },
+          {
+            "type": "text",
+            "content": "Estos ajustes establecen la identidad, ubicación y comportamiento general de la web antes de configurar sus contenidos y otras funciones."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Identidad del sitio",
+      "Question Text": {
+        "en-US": [
+          "This serves to summarize the objectives of the website and to inform visitors and the automatic robots of search engines such as Google, which are an important aspect for the website's SEO positioning"
+        ],
+        "es-MX": [
+          "Esto sirve para resumir los objetivos del sitio y para informar a los visitantes y a los robots automáticos de los motores de búsqueda como Google, que son un aspecto importante para el posicionamiento SEO del sitio"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Website title and tagline",
+          "WordPress address (URL)",
+          "Email address",
+          "Site language"
+        ],
+        "es-MX": [
+          "Título del sitio y descripción corta",
+          "Dirección de WordPress (URL)",
+          "Dirección de correo electrónico",
+          "Idioma del sitio"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Website title and tagline",
+        "es-MX": "Título del sitio y descripción corta"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "The title and tagline describe the website"
+          },
+          {
+            "type": "text",
+            "content": "The website title identifies the site, while the tagline provides a short description that summarizes its subject, purpose or main objective."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "The title communicates the website's name or identity.",
+              "The tagline briefly explains what the website is about.",
+              "They help visitors understand the website's purpose.",
+              "They can provide descriptive information to search engines, depending on the theme and SEO configuration."
+            ]
+          },
+          {
+            "type": "text",
+            "content": "Both values are configured from the General Settings section of WordPress and should clearly represent the website's identity and purpose."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "El título y la descripción corta presentan el sitio"
+          },
+          {
+            "type": "text",
+            "content": "El título identifica el sitio, mientras que la descripción corta resume en pocas palabras su tema, finalidad u objetivo principal."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "El título comunica el nombre o identidad de la web.",
+              "La descripción corta explica brevemente de qué trata.",
+              "Ambos ayudan a los visitantes a comprender el propósito del sitio.",
+              "También pueden proporcionar información descriptiva a los motores de búsqueda, dependiendo del tema y de la configuración SEO."
+            ]
+          },
+          {
+            "type": "text",
+            "content": "Los dos valores se configuran desde Ajustes generales y deben representar claramente la identidad y finalidad del sitio."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Direcciones de WordPress",
+      "Question Text": {
+        "en-US": [
+          "The WordPress __________ defines the directory where the WordPress files are located, that is, the installation directory. The site address defines the URL that the user must enter to access the website"
+        ],
+        "es-MX": [
+          "La __________ de WordPress define en qué directorio se encuentran los archivos WordPress, es decir, el directorio de instalación. La dirección del sitio define la URL que debe introducir el usuario para acceder al sitio"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Date",
+          "Timezone",
+          "Address",
+          "Folder"
+        ],
+        "es-MX": [
+          "Fecha",
+          "Zona horaria",
+          "Dirección",
+          "Carpeta"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Address",
+        "es-MX": "Dirección"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "The WordPress address identifies the installation location"
+          },
+          {
+            "type": "text",
+            "content": "The WordPress Address (URL) indicates the web location of the directory where the WordPress core files are installed. The Site Address (URL) indicates the address visitors use to access the website."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "WordPress Address: location of the WordPress installation files.",
+              "Site Address: public URL used to visit the website.",
+              "Both addresses can be identical when WordPress is installed in the website's root directory.",
+              "They may be different when WordPress is installed in a subdirectory."
+            ]
+          },
+          {
+            "type": "text",
+            "content": "These addresses should be modified carefully because an incorrect URL can prevent the website or its administration panel from loading properly."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "La dirección de WordPress identifica la ubicación de la instalación"
+          },
+          {
+            "type": "text",
+            "content": "La Dirección de WordPress (URL) indica la ubicación web del directorio donde están instalados los archivos principales de WordPress. La Dirección del sitio (URL) indica la dirección que utilizan los visitantes para acceder a la web."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Dirección de WordPress: ubicación de los archivos de instalación.",
+              "Dirección del sitio: URL pública utilizada para visitar la web.",
+              "Ambas direcciones pueden ser iguales cuando WordPress está instalado en el directorio raíz.",
+              "Pueden ser diferentes cuando WordPress está instalado dentro de un subdirectorio."
+            ]
+          },
+          {
+            "type": "text",
+            "content": "Estas direcciones deben modificarse con cuidado porque una URL incorrecta puede impedir que el sitio o su panel de administración carguen correctamente."
+          }
+        ]
+      }
+    },
+{
+  "Category": "Ajustes de escritura",
+  "Question Text": {
+    "en-US": [
+      "They allow you to control and modify the general options related to the graphical interface in which posts and website content will be displayed:"
+    ],
+    "es-MX": [
+      "Permiten controlar y modificar las opciones generales en torno a la interfaz gráfica en la que se mostrarán en los posts y el contenido de la web:"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Writing settings",
+      "Reading settings",
+      "General settings",
+      "Media settings"
+    ],
+    "es-MX": [
+      "Ajustes de escritura",
+      "Ajustes de lectura",
+      "Ajustes generales",
+      "Ajustes de medios"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Writing settings",
+    "es-MX": "Ajustes de escritura"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Writing settings control content publishing options"
+      },
+      {
+        "type": "text",
+        "content": "The WordPress Writing Settings section contains options related to creating, organizing and publishing posts and other website content."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "It allows a default category to be selected for new posts.",
+          "It defines the default post format when the active theme supports formats.",
+          "It includes options related to publishing posts by email.",
+          "It contains the update services used to notify other web services about new content."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "These settings establish some of the default behaviors WordPress follows when new content is created and published."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Los ajustes de escritura controlan opciones de publicación"
+      },
+      {
+        "type": "text",
+        "content": "El apartado Ajustes de escritura de WordPress contiene opciones relacionadas con la creación, organización y publicación de entradas y otros contenidos del sitio."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Permite seleccionar una categoría predeterminada para las nuevas entradas.",
+          "Define el formato predeterminado de las entradas cuando el tema activo admite formatos.",
+          "Incluye opciones relacionadas con la publicación de entradas mediante correo electrónico.",
+          "Contiene los servicios de actualización utilizados para avisar a otros servicios web sobre contenidos nuevos."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Estos ajustes establecen algunos de los comportamientos predeterminados que seguirá WordPress al crear y publicar contenido."
+      }
+    ]
+  }
+},
+{
+  "Category": "Publicación por correo electrónico",
+  "Question Text": {
+    "en-US": [
+      "The __________ checkbox allows you to directly publish a post that has been sent to an assigned email address"
+    ],
+    "es-MX": [
+      "La casilla __________________ permite publicar directamente una entrada que haya sido enviada a una dirección de correo asignada"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Publish by email",
+      "Publish on the web",
+      "Publish on local server",
+      "Publish with web tools"
+    ],
+    "es-MX": [
+      "Publicar por correo electrónico",
+      "Publicar por la web",
+      "Publicar en servidor local",
+      "Publicar con herramientas web"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Publish by email",
+    "es-MX": "Publicar por correo electrónico"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Publishing by email creates posts from received messages"
+      },
+      {
+        "type": "text",
+        "content": "According to the course material, the Publish by Email option allows WordPress to receive messages at a specially configured email address and use them to publish posts."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "A dedicated and secret email account is configured.",
+          "WordPress connects to the account using the indicated mail server data.",
+          "The message content is processed as a post.",
+          "A default category can be assigned to posts received by email."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "The email address used for this function should remain private to prevent unauthorized messages from being published as website content."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Publicar por correo crea entradas a partir de mensajes recibidos"
+      },
+      {
+        "type": "text",
+        "content": "De acuerdo con el material, la opción Publicar por correo electrónico permite que WordPress reciba mensajes en una dirección especialmente configurada y los utilice para publicar entradas."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Se configura una cuenta de correo exclusiva y secreta.",
+          "WordPress se conecta con la cuenta utilizando los datos del servidor de correo.",
+          "El contenido del mensaje se procesa como una entrada.",
+          "Puede asignarse una categoría predeterminada a las entradas recibidas por correo."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "La dirección utilizada para esta función debe mantenerse privada para evitar que mensajes no autorizados se publiquen como contenido del sitio."
+      }
+    ]
+  }
+},
+{
+  "Category": "Servicios de actualización",
+  "Question Text": {
+    "en-US": [
+      "They appear at the end of the Writing Settings section and are web tools to which a ping is automatically sent to report that the blog has been updated"
+    ],
+    "es-MX": [
+      "Aparecen al final del apartado de los «Ajustes de escritura», son herramientas web a las que se les envía un ping automáticamente para informar que se ha actualizado el blog"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Update services",
+      "Repair services",
+      "Configuration services",
+      "Web services"
+    ],
+    "es-MX": [
+      "Servicios de actualización",
+      "Servicios de reparación",
+      "Servicios de configuración",
+      "Servicios en la web"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Update services",
+    "es-MX": "Servicios de actualización"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Update services notify other platforms about new content"
+      },
+      {
+        "type": "text",
+        "content": "Update services are web services that WordPress can automatically notify when a new post is published or the blog is updated."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "WordPress sends an automatic notification called a ping.",
+          "The ping informs the registered service that new content is available.",
+          "The service can visit or index the updated website.",
+          "The addresses of these services are entered in the Writing Settings section."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "This process helps distribute information about recently published content without requiring the administrator to notify each service manually."
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Los servicios de actualización informan sobre contenidos nuevos"
+      },
+      {
+        "type": "text",
+        "content": "Los servicios de actualización son herramientas web a las que WordPress puede avisar automáticamente cuando se publica una entrada nueva o se actualiza el blog."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "WordPress envía una notificación automática denominada ping.",
+          "El ping informa al servicio registrado que existe contenido nuevo.",
+          "El servicio puede visitar o indexar el sitio actualizado.",
+          "Las direcciones de estos servicios se introducen en el apartado Ajustes de escritura."
+        ]
+      },
+      {
+        "type": "text",
+        "content": "Este proceso ayuda a difundir información sobre el contenido recién publicado sin que el administrador tenga que avisar manualmente a cada servicio."
+      }
+    ]
+  }
+},
+{
+  "Category": "Ajustes de lectura",
+  "Question Text": {
+    "en-US": [
+      "They allow you to configure the general options for displaying the website content"
+    ],
+    "es-MX": [
+      "Permiten configurar las opciones generales para mostrar el contenido de la web"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Writing settings",
+      "Reading settings",
+      "General settings",
+      "Media settings"
+    ],
+    "es-MX": [
+      "Ajustes de escritura",
+      "Ajustes de lectura",
+      "Ajustes generales",
+      "Ajustes de medios"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Reading settings",
+    "es-MX": "Ajustes de lectura"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Reading settings control how website content is displayed"
+      },
+      {
+        "type": "text",
+        "content": "The WordPress Reading settings allow you to configure how the website's content is presented to visitors. From this section, you can choose what appears on the homepage, specify how many posts are displayed and manage other content-reading options."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "They determine whether the homepage displays the latest posts or a static page.",
+          "They control the maximum number of posts displayed.",
+          "They include the option related to search engine visibility."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Los ajustes de lectura controlan cómo se muestra el contenido"
+      },
+      {
+        "type": "text",
+        "content": "Los Ajustes de lectura de WordPress permiten configurar la manera en que se presenta el contenido del sitio a los visitantes. Desde este apartado se puede elegir qué aparece en la página principal, indicar cuántas entradas se mostrarán y administrar otras opciones relacionadas con la lectura del contenido."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Determinan si la página principal muestra las últimas entradas o una página estática.",
+          "Controlan el número máximo de entradas que se mostrarán.",
+          "Incluyen la opción relacionada con la visibilidad para los buscadores."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Número máximo de entradas",
+  "Question Text": {
+    "en-US": [
+      "With this setting, you can decide how many posts will be displayed in the listings. If it was decided that the latest posts will be displayed on the homepage, you can define how many posts will be displayed in total or the maximum number to be displayed"
+    ],
+    "es-MX": [
+      "Con este ajuste se puede decidir cuántas entradas se mostrará en los listados. Si se decidió que en la página principal se muestren las últimas entradas, se puede definir cuántas en total o el máximo por mostrar"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Maximum number of posts",
+      "Maximum number of outputs",
+      "Minimum number of posts",
+      "Maximum post configuration"
+    ],
+    "es-MX": [
+      "Número máximo de entradas",
+      "Número máximo de salidas",
+      "Número mínimo de entradas",
+      "Configuración máxima de entradas"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Maximum number of posts",
+    "es-MX": "Número máximo de entradas"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "The maximum number of posts limits how many posts are displayed"
+      },
+      {
+        "type": "text",
+        "content": "This WordPress Reading setting establishes the maximum number of posts that can appear together in the website's listings. It is especially relevant when the homepage has been configured to display the latest posts."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "It controls how many posts appear on a listing page.",
+          "It applies to the homepage when it displays the latest posts.",
+          "Posts exceeding the established limit are accessed through additional pages."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "El número máximo de entradas limita cuántas publicaciones se muestran"
+      },
+      {
+        "type": "text",
+        "content": "Este ajuste de lectura de WordPress establece la cantidad máxima de entradas que pueden aparecer juntas en los listados del sitio. Es especialmente importante cuando se ha configurado la página principal para mostrar las últimas entradas."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Controla cuántas entradas aparecen en una página de listado.",
+          "Se aplica a la página principal cuando esta muestra las últimas entradas.",
+          "Las entradas que superan el límite establecido se consultan mediante páginas adicionales."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Visibilidad para los buscadores",
+  "Question Text": {
+    "en-US": [
+      "This setting changes a series of data in the code to ask search engines to ignore the website content and refrain from displaying it in their listings. Selecting this option is useful when the website is in a development phase and you do not want it to appear on Google yet"
+    ],
+    "es-MX": [
+      "Este ajuste cambia una serie de datos en el código para pedir a los buscadores que ignoren el contenido del sitio web y que se abstengan de hacerlo aparecer en sus listados. Seleccionar esta opción es útil cuando el sitio se encuentra en una fase del desarrollo y no se desea que aparezca aún en Google"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Website visibility",
+      "Search engine visibility",
+      "Blog visibility",
+      "User visibility"
+    ],
+    "es-MX": [
+      "Visibilidad en la web",
+      "Visibilidad para los buscadores",
+      "Visibilidad para los blogs",
+      "Visibilidad para los usuarios"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Search engine visibility",
+    "es-MX": "Visibilidad para los buscadores"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Search engine visibility can discourage website indexing"
+      },
+      {
+        "type": "text",
+        "content": "The Search engine visibility option asks search engines not to index the website or display its pages in search results. It is useful while the website is under development and its content is not ready to be publicly found."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "It is located in the WordPress Reading settings.",
+          "It asks search engines to avoid indexing the website.",
+          "It is a request to search engines and does not block visitors from accessing the website."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "La visibilidad para los buscadores puede impedir la indexación del sitio"
+      },
+      {
+        "type": "text",
+        "content": "La opción Visibilidad para los buscadores solicita a los motores de búsqueda que no indexen el sitio ni muestren sus páginas entre los resultados. Es útil mientras la web se encuentra en desarrollo y su contenido todavía no está preparado para ser localizado públicamente."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Se encuentra dentro de los Ajustes de lectura de WordPress.",
+          "Solicita a los buscadores que eviten indexar el sitio.",
+          "Es una petición dirigida a los buscadores y no impide que los visitantes accedan al sitio."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Ajustes de comentarios",
+  "Question Text": {
+    "en-US": [
+      "The general options that affect comments on the website's posts and pages are configured"
+    ],
+    "es-MX": [
+      "Se configuran las opciones generales que afectan a los comentarios de las entradas y páginas del sitio"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Writing settings",
+      "Reading settings",
+      "General settings",
+      "Discussion settings"
+    ],
+    "es-MX": [
+      "Ajustes de escritura",
+      "Ajustes de lectura",
+      "Ajustes generales",
+      "Ajustes de comentarios"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Discussion settings",
+    "es-MX": "Ajustes de comentarios"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Discussion settings control comments in WordPress"
+      },
+      {
+        "type": "text",
+        "content": "The WordPress Discussion settings contain the general options that determine how comments work on the website's posts and pages. They allow the administrator to control participation, notifications, comment approval and moderation."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "They determine whether visitors are allowed to submit comments.",
+          "They establish the requirements a user must meet before commenting.",
+          "They control comment approval, moderation and notifications."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Los Ajustes de comentarios controlan los comentarios en WordPress"
+      },
+      {
+        "type": "text",
+        "content": "Los Ajustes de comentarios de WordPress contienen las opciones generales que determinan cómo funcionan los comentarios en las entradas y páginas del sitio. Permiten al administrador controlar la participación, las notificaciones, la aprobación y la moderación de los comentarios."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Determinan si los visitantes pueden enviar comentarios.",
+          "Establecen los requisitos que debe cumplir un usuario antes de comentar.",
+          "Controlan la aprobación, moderación y notificación de los comentarios."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Pingbacks y trackbacks",
+  "Question Text": {
+    "en-US": [
+      "Two important aspects to differentiate that are closely related to comments in the WordPress settings are the terms __________ and __________"
+    ],
+    "es-MX": [
+      "Dos aspectos importantes para diferenciar y que se relacionan estrechamente con los comentarios de los ajustes de WordPress son los términos __________ y __________"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Pingbacks and trackbacks",
+      "Name and email",
+      "Plugins and trackbacks",
+      "Pingbacks and plugins"
+    ],
+    "es-MX": [
+      "Pingbacks y trackbacks",
+      "Nombre y correo",
+      "Plugins y trackbacks",
+      "Pingbacks y plugins"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Pingbacks and trackbacks",
+    "es-MX": "Pingbacks y trackbacks"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Pingbacks and trackbacks notify websites about incoming links"
+      },
+      {
+        "type": "text",
+        "content": "Pingbacks and trackbacks are communication mechanisms between websites. They are used to notify a website that one of its posts has been mentioned or linked from content published on another website."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "A pingback is normally generated and verified automatically between compatible websites.",
+          "A trackback is a notification that is traditionally sent manually.",
+          "Both can appear in WordPress together with the comments associated with a post."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Los pingbacks y trackbacks notifican los enlaces recibidos"
+      },
+      {
+        "type": "text",
+        "content": "Los pingbacks y trackbacks son mecanismos de comunicación entre sitios web. Se utilizan para avisar a un sitio que una de sus entradas fue mencionada o enlazada desde un contenido publicado en otra web."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Un pingback normalmente se genera y verifica de manera automática entre sitios compatibles.",
+          "Un trackback es una notificación que tradicionalmente se envía de forma manual.",
+          "Ambos pueden aparecer en WordPress junto con los comentarios asociados a una entrada."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Moderación de comentarios",
+  "Question Text": {
+    "en-US": [
+      "These settings allow WordPress to perform a series of additional checks beyond those it performs by default before allowing a comment to be published on the website"
+    ],
+    "es-MX": [
+      "Estos ajustes permiten a WordPress realizar una serie de comprobaciones adicionales a las que trae por defecto antes de permitir que un comentario sea público en el sitio web"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Post moderation",
+      "Comment moderation",
+      "Reading settings",
+      "Comment manual"
+    ],
+    "es-MX": [
+      "Moderación de entradas",
+      "Moderación de comentarios",
+      "Ajustes de lectura",
+      "Manual de comentarios"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Comment moderation",
+    "es-MX": "Moderación de comentarios"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Comment moderation checks comments before publication"
+      },
+      {
+        "type": "text",
+        "content": "Comment moderation allows WordPress to apply additional criteria before publishing a comment. Depending on the configured rules, a comment can be held in the moderation queue so that an administrator can review and approve it."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "It helps prevent inappropriate content and spam.",
+          "It can detect specific words, links, email addresses or IP addresses.",
+          "Comments held for moderation must be reviewed before becoming public."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "La moderación comprueba los comentarios antes de publicarlos"
+      },
+      {
+        "type": "text",
+        "content": "La moderación de comentarios permite que WordPress aplique criterios adicionales antes de publicar un comentario. Dependiendo de las reglas configuradas, el comentario puede quedar retenido en una cola para que un administrador lo revise y autorice."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Ayuda a evitar contenido inapropiado y comentarios de tipo spam.",
+          "Puede detectar palabras, enlaces, direcciones de correo o direcciones IP específicas.",
+          "Los comentarios retenidos deben revisarse antes de hacerse públicos."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Ajustes de medios",
+  "Question Text": {
+    "en-US": [
+      "They refer to the general configuration of files uploaded to the website, such as images, videos, audio, etc. These settings are located in the left sidebar of the WordPress administrator"
+    ],
+    "es-MX": [
+      "Se refieren a la configuración general de los archivos que son subidos al sitio web como imágenes, vídeos, audios, etc. Dichos ajustes se encuentran en la barra lateral izquierda del administrador de WordPress"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Writing settings",
+      "Media settings",
+      "General settings",
+      "Discussion settings"
+    ],
+    "es-MX": [
+      "Ajustes de escritura",
+      "Ajustes de medios",
+      "Ajustes generales",
+      "Ajustes de comentarios"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Media settings",
+    "es-MX": "Ajustes de medios"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Media settings configure uploaded files"
+      },
+      {
+        "type": "text",
+        "content": "The WordPress Media settings control general aspects of the images and other multimedia files uploaded to the website. These options can be accessed from the Settings section of the administration sidebar."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "They configure the default dimensions of uploaded images.",
+          "They apply to files such as images, videos and audio.",
+          "They include the option to organize uploaded files into folders according to their date."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Los Ajustes de medios configuran los archivos subidos"
+      },
+      {
+        "type": "text",
+        "content": "Los Ajustes de medios de WordPress controlan aspectos generales de las imágenes y demás archivos multimedia que se suben al sitio. Se puede acceder a estas opciones desde el apartado Ajustes de la barra lateral de administración."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Configuran las dimensiones predeterminadas de las imágenes subidas.",
+          "Se aplican a archivos como imágenes, vídeos y audios.",
+          "Incluyen la opción de organizar los archivos subidos en carpetas de acuerdo con su fecha."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Organización de archivos",
+  "Question Text": {
+    "en-US": [
+      "If the __________ option is enabled, WordPress organizes files according to the date on which they were uploaded"
+    ],
+    "es-MX": [
+      "Si se habilita la opción de __________, WordPress ordena los archivos según la fecha en que han sido subidos"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "File upload",
+      "Image upload",
+      "Plugin upload",
+      "Theme upload"
+    ],
+    "es-MX": [
+      "Subida de archivos",
+      "Subida de imágenes",
+      "Subida de plugins",
+      "Subida de temas"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "File upload",
+    "es-MX": "Subida de archivos"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Uploaded files can be organized by date"
+      },
+      {
+        "type": "text",
+        "content": "The file upload option allows WordPress to organize uploaded media automatically according to the upload date. When enabled, WordPress creates a folder structure based on the corresponding year and month."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "The files are classified according to their upload date.",
+          "A folder corresponding to the year is created.",
+          "Within the year folder, another folder corresponding to the month is created."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Los archivos subidos pueden organizarse por fecha"
+      },
+      {
+        "type": "text",
+        "content": "La opción de subida de archivos permite que WordPress organice automáticamente los medios de acuerdo con la fecha en la que fueron cargados. Al habilitarla, WordPress crea una estructura de carpetas basada en el año y el mes correspondientes."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Los archivos se clasifican de acuerdo con la fecha de subida.",
+          "Se crea una carpeta correspondiente al año.",
+          "Dentro de la carpeta del año se crea otra correspondiente al mes."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Directorio de archivos",
+  "Question Text": {
+    "en-US": [
+      "WordPress stores files in the directory"
+    ],
+    "es-MX": [
+      "WordPress guarda los archivos en el directorio"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Wh-content/uploads",
+      "Wp-doc/uploads",
+      "Wp-content/uploads",
+      "Wp-content/up"
+    ],
+    "es-MX": [
+      "Wh-content/uploads",
+      "Wp-doc/uploads",
+      "Wp-content/uploads",
+      "Wp-content/up"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Wp-content/uploads",
+    "es-MX": "Wp-content/uploads"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Uploaded files are stored in wp-content/uploads"
+      },
+      {
+        "type": "text",
+        "content": "WordPress normally stores files uploaded through the Media Library in the wp-content/uploads directory. This folder is located inside wp-content, which contains the website's themes, plugins and uploaded media."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "wp-content is the directory for the website's custom content.",
+          "uploads is the subdirectory used for multimedia files.",
+          "The directory can contain folders organized by year and month."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Los archivos subidos se guardan en wp-content/uploads"
+      },
+      {
+        "type": "text",
+        "content": "WordPress guarda normalmente los archivos cargados mediante la Biblioteca de medios en el directorio wp-content/uploads. Esta carpeta se encuentra dentro de wp-content, donde también se almacenan los temas, los plugins y otros contenidos propios del sitio."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "wp-content es el directorio destinado al contenido propio del sitio.",
+          "uploads es el subdirectorio utilizado para los archivos multimedia.",
+          "El directorio puede contener carpetas organizadas por año y mes."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Enlaces permanentes",
+  "Question Text": {
+    "en-US": [
+      "A permalink is the address (URL) to specific content on the website. Through these settings, WordPress allows you to configure the structure that links will have on the website"
+    ],
+    "es-MX": [
+      "Permalink es la dirección (URL) a un contenido específico del sitio web. A través de estos ajustes WordPress permite configurar la estructura que tendrán los enlaces en la web"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Writing settings",
+      "Media settings",
+      "Permalinks",
+      "Discussion settings"
+    ],
+    "es-MX": [
+      "Ajustes de escritura",
+      "Ajustes de medios",
+      "Enlaces permanentes",
+      "Ajustes de comentarios"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Permalinks",
+    "es-MX": "Enlaces permanentes"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Permalinks define the structure of WordPress URLs"
+      },
+      {
+        "type": "text",
+        "content": "A permalink is the permanent URL used to access a specific post, page, category or other website resource. The WordPress Permalink settings allow the administrator to select the structure used to create these addresses."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Each published item has its own permalink.",
+          "The URL structure can include the post name, date, category or identifier.",
+          "Clear and descriptive links make content easier for users and search engines to understand."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Los enlaces permanentes definen la estructura de las URL"
+      },
+      {
+        "type": "text",
+        "content": "Un enlace permanente es la URL utilizada para acceder a una entrada, página, categoría u otro recurso específico del sitio. Los ajustes de Enlaces permanentes permiten al administrador seleccionar la estructura con la que WordPress creará estas direcciones."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Cada contenido publicado posee su propio enlace permanente.",
+          "La estructura puede incluir el nombre de la entrada, la fecha, la categoría o su identificador.",
+          "Las direcciones claras y descriptivas facilitan la comprensión del contenido para los usuarios y buscadores."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Configuración opcional de enlaces",
+  "Question Text": {
+    "en-US": [
+      "In __________ you can change or configure the structure of URLs based on the categories and tags intended for the posts or news section"
+    ],
+    "es-MX": [
+      "En __________ se puede cambiar o configurar la estructura que tendrán las URL con base en las categorías y etiquetas destinadas a la sección de los posts o noticias"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Optional",
+      "Configuration",
+      "Design",
+      "Archive"
+    ],
+    "es-MX": [
+      "Opcional",
+      "Configuración",
+      "Diseño",
+      "Archivo"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Optional",
+    "es-MX": "Opcional"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "The Optional section configures category and tag bases"
+      },
+      {
+        "type": "text",
+        "content": "The Optional section of the WordPress Permalink settings allows you to customize the text used as the base of category and tag URLs. This changes how the addresses of their archive pages are structured."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "The category base modifies the URL used for category archives.",
+          "The tag base modifies the URL used for tag archives.",
+          "These fields are optional because WordPress can generate the addresses automatically."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "El apartado Opcional configura las bases de categorías y etiquetas"
+      },
+      {
+        "type": "text",
+        "content": "El apartado Opcional de los ajustes de Enlaces permanentes permite personalizar el texto que se utiliza como base de las URL de categorías y etiquetas. Esto modifica la estructura de las direcciones de sus respectivas páginas de archivo."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "La base de las categorías modifica la URL de los archivos de categorías.",
+          "La base de las etiquetas modifica la URL de los archivos de etiquetas.",
+          "Estos campos son opcionales porque WordPress puede generar las direcciones automáticamente."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Ajustes de privacidad",
+  "Question Text": {
+    "en-US": [
+      "They allow you to configure information about the website's privacy policy, as well as assign or create a page dedicated to displaying essential information about these policies"
+    ],
+    "es-MX": [
+      "Permiten la configuración de la información sobre la política de privacidad del sitio web, así como asignar o crear una página dedicada a mostrar la información esencial de dichas políticas"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Writing settings",
+      "Media settings",
+      "Privacy settings",
+      "Discussion settings"
+    ],
+    "es-MX": [
+      "Ajustes de escritura",
+      "Ajustes de medios",
+      "Ajustes de privacidad",
+      "Ajustes de comentarios"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Privacy settings",
+    "es-MX": "Ajustes de privacidad"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Privacy settings manage the website's privacy policy page"
+      },
+      {
+        "type": "text",
+        "content": "The WordPress Privacy settings allow the administrator to create a new privacy policy page or select an existing page. This page informs visitors about how the website collects, uses, stores and protects their personal information."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "They allow an existing page to be assigned as the privacy policy.",
+          "They provide the option to create a new privacy policy page.",
+          "The policy should be adapted to the actual data processing performed by the website."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Los Ajustes de privacidad administran la página de política de privacidad"
+      },
+      {
+        "type": "text",
+        "content": "Los Ajustes de privacidad de WordPress permiten al administrador crear una nueva página de política de privacidad o seleccionar una página existente. Esta página informa a los visitantes cómo se recopilan, utilizan, almacenan y protegen sus datos personales."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Permiten asignar una página existente como política de privacidad.",
+          "Ofrecen la posibilidad de crear una nueva página para dicha política.",
+          "La política debe adaptarse al tratamiento de datos que realmente realiza el sitio."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Capacidades de usuario",
+  "Question Text": {
+    "en-US": [
+      "__________ are the things that a user can do within the administrator, such as adding posts, changing the theme, updating or installing plugins, etc."
+    ],
+    "es-MX": [
+      "Las __________ son las cosas que puede hacer el usuario dentro del administrador, como añadir entradas, cambiar el tema, actualizar o instalar plugins, etc."
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Capabilities",
+      "Options",
+      "Roles",
+      "Features"
+    ],
+    "es-MX": [
+      "Capacidades",
+      "Opciones",
+      "Roles",
+      "Características"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Capabilities",
+    "es-MX": "Capacidades"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Capabilities are the individual actions a user can perform"
+      },
+      {
+        "type": "text",
+        "content": "In WordPress, a capability is a specific permission that determines whether a user can perform a particular action within the administration area. Each user receives a set of capabilities according to the role assigned to them."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Examples include publishing posts, editing pages and managing comments.",
+          "Administrative capabilities can include installing plugins or changing themes.",
+          "The available capabilities depend on the user's assigned role."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Las capacidades son las acciones individuales que puede realizar un usuario"
+      },
+      {
+        "type": "text",
+        "content": "En WordPress, una capacidad es un permiso específico que determina si un usuario puede realizar cierta acción dentro del área de administración. Cada usuario recibe un conjunto de capacidades de acuerdo con el rol que tenga asignado."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Algunos ejemplos son publicar entradas, editar páginas y administrar comentarios.",
+          "Las capacidades administrativas pueden incluir instalar plugins o cambiar temas.",
+          "Las capacidades disponibles dependen del rol asignado al usuario."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Roles de usuario",
+  "Question Text": {
+    "en-US": [
+      "__________ are applied to each registered user to indicate which capabilities they will have and what they can and cannot do"
+    ],
+    "es-MX": [
+      "Los __________ se aplican a cada usuario registrado para indicar qué capacidades tendrá y lo que puede y no hacer"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "Capabilities",
+      "Roles",
+      "Languages",
+      "Attributes"
+    ],
+    "es-MX": [
+      "Capacidades",
+      "Roles",
+      "Idiomas",
+      "Atributos"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "Roles",
+    "es-MX": "Roles"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "Roles group the capabilities assigned to users"
+      },
+      {
+        "type": "text",
+        "content": "A WordPress role is a predefined group of capabilities assigned to a registered user. The role determines the general level of access the user has and the actions they are authorized to perform within the website."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Each registered user can be assigned a role.",
+          "A role contains a specific group of capabilities.",
+          "Roles help control access to administration functions and website content."
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "Los roles agrupan las capacidades asignadas a los usuarios"
+      },
+      {
+        "type": "text",
+        "content": "Un rol de WordPress es un conjunto predefinido de capacidades que se asigna a un usuario registrado. El rol determina su nivel general de acceso y las acciones que está autorizado a realizar dentro del sitio."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "A cada usuario registrado se le puede asignar un rol.",
+          "Un rol contiene un conjunto específico de capacidades.",
+          "Los roles permiten controlar el acceso a la administración y al contenido del sitio."
+        ]
+      }
+    ]
+  }
+},
+{
+  "Category": "Roles predeterminados de WordPress",
+  "Question Text": {
+    "en-US": [
+      "How many roles does WordPress have by default?"
+    ],
+    "es-MX": [
+      "¿Cuántos roles tiene por defecto WordPress?"
+    ]
+  },
+  "Options": {
+    "en-US": [
+      "67",
+      "66",
+      "6",
+      "5"
+    ],
+    "es-MX": [
+      "67",
+      "66",
+      "6",
+      "5"
+    ]
+  },
+  "Correct Answer": {
+    "en-US": "6",
+    "es-MX": "6"
+  },
+  "Explanation": {
+    "en-US": [
+      {
+        "type": "title-h2",
+        "content": "WordPress has six default user roles"
+      },
+      {
+        "type": "text",
+        "content": "WordPress defines six default user roles. Each role has a different set of capabilities and represents a specific level of access to the website's content and administration functions."
+      },
+      {
+        "type": "ol",
+        "items": [
+          "Super Administrator",
+          "Administrator",
+          "Editor",
+          "Author",
+          "Contributor",
+          "Subscriber"
+        ]
+      }
+    ],
+    "es-MX": [
+      {
+        "type": "title-h2",
+        "content": "WordPress tiene seis roles de usuario predeterminados"
+      },
+      {
+        "type": "text",
+        "content": "WordPress define seis roles de usuario por defecto. Cada rol posee un conjunto diferente de capacidades y representa un nivel específico de acceso al contenido y a las funciones de administración del sitio."
+      },
+      {
+        "type": "ol",
+        "items": [
+          "Superadministrador",
+          "Administrador",
+          "Editor",
+          "Autor",
+          "Colaborador",
+          "Suscriptor"
+        ]
+      }
+    ]
+  }
+}
+  ]
+}

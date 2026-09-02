@@ -1,0 +1,1869 @@
+{
+  "meta": {
+    "slug": "gestores-contenidos-u6",
+    "title": "Plugins para WordPress",
+    "subject": "DISEÑO Y CREACIÓN WEB CON GESTORES DE CONTENIDOS",
+    "unit": 6,
+    "classNo": 0,
+    "description": "Unidad 6: funcionamiento, instalación, configuración y edición de plugins para WordPress, uso de widgets, plugins más utilizados y creación de tiendas virtuales mediante WooCommerce.",
+    "tags": [
+      "WordPress",
+      "plugins",
+      "extensiones",
+      "instalación de plugins",
+      "configuración de plugins",
+      "activación de plugins",
+      "desactivación de plugins",
+      "edición de plugins",
+      "plugins y widgets",
+      "widgets",
+      "plugins más usados",
+      "WooCommerce",
+      "tienda virtual",
+      "comercio electrónico",
+      "ecommerce"
+    ],
+    "questionCount": 21,
+    "languages": [
+      "en-US",
+      "es-MX"
+    ]
+  },
+  "Questions": "Questions": [
+    {
+      "Category": "Definición de plugin",
+      "Question Text": {
+        "en-US": [
+          "What is a plugin?"
+        ],
+        "es-MX": [
+          "¿Qué es un plugin?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "They are additional hardware components added to WordPress to increase the website's functionality",
+          "They are additional tools added to WordPress to increase the website's functionality",
+          "They are traditional tools added to WordPress to increase the website's functionality",
+          "They are traditional components added to WordPress to increase the website's functionality"
+        ],
+        "es-MX": [
+          "Son hardware adicionales que se agregan a WordPress para aumentar la funcionalidad a la web",
+          "Son herramientas adicionales que se agregan a WordPress para aumentar la funcionalidad a la web",
+          "Son herramientas tradicionales que se agregan a WordPress para aumentar la funcionalidad a la web",
+          "Son componentes tradicionales que se agregan a WordPress para aumentar funcionalidad a la web"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "They are additional tools added to WordPress to increase the website's functionality",
+        "es-MX": "Son herramientas adicionales que se agregan a WordPress para aumentar la funcionalidad a la web"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Plugins extend WordPress functionality"
+          },
+          {
+            "type": "text",
+            "content": "A plugin is an additional software tool that can be installed in WordPress to add new functions or modify existing website behavior."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Plugins are software, not physical hardware.",
+              "They can add features without modifying the main WordPress files.",
+              "They can usually be activated, deactivated and removed from the administration area.",
+              "Each plugin is designed to perform one or more specific functions."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Los plugins amplían la funcionalidad de WordPress"
+          },
+          {
+            "type": "text",
+            "content": "Un plugin es una herramienta de software adicional que puede instalarse en WordPress para añadir funciones nuevas o modificar el comportamiento existente del sitio web."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Los plugins son software, no hardware físico.",
+              "Permiten añadir funciones sin modificar los archivos principales de WordPress.",
+              "Normalmente pueden activarse, desactivarse y eliminarse desde el área de administración.",
+              "Cada plugin está diseñado para realizar una o varias funciones específicas."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Funciones de los plugins",
+      "Question Text": {
+        "en-US": [
+          "Some of the functions that can be added to WordPress through plugins are:"
+        ],
+        "es-MX": [
+          "Algunas de las funciones que se pueden agregar en WordPress por medio de los plugins son:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Posts, pages, comments and media",
+          "Users, tools and settings",
+          "Improved security and antispam protection, social network integration and search engine optimization",
+          "Configuration, appearance and dashboard"
+        ],
+        "es-MX": [
+          "Entradas, páginas, comentarios y medios",
+          "Usuarios, herramientas y ajustes",
+          "Para mejorar la seguridad y protección antispam, conexión a redes sociales y optimización para buscadores",
+          "Configuración, apariencia y escritorio"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Improved security and antispam protection, social network integration and search engine optimization",
+        "es-MX": "Para mejorar la seguridad y protección antispam, conexión a redes sociales y optimización para buscadores"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Plugins can add many specialized functions"
+          },
+          {
+            "type": "text",
+            "content": "WordPress plugins can add specialized functions such as website security, spam protection, social network integration and search engine optimization."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Security plugins can detect threats and strengthen access controls.",
+              "Antispam plugins help filter unwanted comments and messages.",
+              "Social plugins connect website content with social networks.",
+              "SEO plugins help optimize content for search engines."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Los plugins pueden añadir numerosas funciones especializadas"
+          },
+          {
+            "type": "text",
+            "content": "Los plugins de WordPress permiten añadir funciones especializadas como seguridad, protección contra spam, conexión con redes sociales y optimización para motores de búsqueda."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Los plugins de seguridad pueden detectar amenazas y reforzar los controles de acceso.",
+              "Los plugins antispam ayudan a filtrar comentarios y mensajes no deseados.",
+              "Los plugins sociales conectan el contenido del sitio con las redes sociales.",
+              "Los plugins SEO ayudan a optimizar los contenidos para los buscadores."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Directorio oficial de plugins",
+      "Question Text": {
+        "en-US": [
+          "The directory's main page provides different ways to browse through thousands of plugins. We are referring to:"
+        ],
+        "es-MX": [
+          "En la página principal del directorio se muestran formas variadas para navegar entre la cantidad de miles de plugins, nos referimos a:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "https://wordpress.org/plugins",
+          "https://wordpress.com/plugins",
+          "https://wordpress.org/configuration",
+          "https://wordpress.net/plugins"
+        ],
+        "es-MX": [
+          "https://wordpress.org/plugins",
+          "https://wordpress.com/plugins",
+          "https://wordpress.org/configuracion",
+          "https://wordpress.net/plugins"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "https://wordpress.org/plugins",
+        "es-MX": "https://wordpress.org/plugins"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "WordPress.org contains the official plugin directory"
+          },
+          {
+            "type": "text",
+            "content": "The official WordPress plugin directory is located at wordpress.org/plugins. It provides search and navigation tools for finding plugins according to their name, function and popularity."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "The directory contains thousands of WordPress plugins.",
+              "Each plugin page includes its description and installation information.",
+              "Compatibility, updates, ratings and reviews can be consulted.",
+              "Plugins can also be searched for from the WordPress administration area."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "WordPress.org contiene el directorio oficial de plugins"
+          },
+          {
+            "type": "text",
+            "content": "El directorio oficial de plugins de WordPress se encuentra en wordpress.org/plugins. Proporciona herramientas de búsqueda y navegación para localizar plugins según su nombre, función y popularidad."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "El directorio contiene miles de plugins para WordPress.",
+              "La página de cada plugin incluye su descripción e información de instalación.",
+              "Se pueden consultar la compatibilidad, actualizaciones, valoraciones y reseñas.",
+              "Los plugins también pueden buscarse desde el área de administración de WordPress."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Categorías del directorio de plugins",
+      "Question Text": {
+        "en-US": [
+          "The default categories that show the most searched plugins are classified as:"
+        ],
+        "es-MX": [
+          "Las categorías que por defecto informan de los plugins más buscados se clasifican en:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Block-enabled plugins, featured plugins, beta plugins and popular plugins",
+          "Active-block plugins, installed plugins, beta plugins and popular plugins",
+          "Test-block plugins, highlighted plugins, beta plugins and popular plugins",
+          "Block-enabled plugins, featured plugins, plugins in development and popular plugins"
+        ],
+        "es-MX": [
+          "Plugins con bloques activados, plugins destacados, plugins en beta y plugins populares",
+          "Plugins con bloques activos, plugins instalados, plugins en beta y plugins populares",
+          "Plugins con bloques de prueba, plugins destacados, plugins en beta y plugins populares",
+          "Plugins con bloques activados, plugins destacados, plugins en desarrollo, plugins populares"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Block-enabled plugins, featured plugins, beta plugins and popular plugins",
+        "es-MX": "Plugins con bloques activados, plugins destacados, plugins en beta y plugins populares"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "The directory organizes plugins into default categories"
+          },
+          {
+            "type": "text",
+            "content": "According to the course material, the WordPress directory provides default categories that help users browse block-enabled, featured, beta and popular plugins."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Block-enabled plugins provide features related to the block editor.",
+              "Featured plugins are highlighted within the directory.",
+              "Beta plugins contain functions that may still be under evaluation.",
+              "Popular plugins are classified according to their use and community interest."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "El directorio organiza los plugins en categorías predeterminadas"
+          },
+          {
+            "type": "text",
+            "content": "De acuerdo con el material del curso, el directorio de WordPress proporciona categorías predeterminadas para navegar entre plugins con bloques activados, destacados, en beta y populares."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Los plugins con bloques activados proporcionan funciones relacionadas con el editor de bloques.",
+              "Los plugins destacados se encuentran resaltados dentro del directorio.",
+              "Los plugins en beta contienen funciones que todavía pueden estar en evaluación.",
+              "Los plugins populares se clasifican según su uso y el interés de la comunidad."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Descripción del plugin",
+      "Question Text": {
+        "en-US": [
+          "The plugin's purpose and features are explained through the __________"
+        ],
+        "es-MX": [
+          "A través de la __________ se define el uso del plugin y se explican aquellas características que posee"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Installation",
+          "Description",
+          "FAQ (frequently asked questions)",
+          "Screenshot or screen captures"
+        ],
+        "es-MX": [
+          "Instalación",
+          "Descripción",
+          "FAQ (preguntas frecuentes)",
+          "Screenshot o capturas de pantalla"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Description",
+        "es-MX": "Descripción"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "The description explains the plugin's purpose"
+          },
+          {
+            "type": "text",
+            "content": "The Description section explains what a plugin is designed to do and presents its principal features so users can determine whether it meets their needs."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "It identifies the main purpose of the plugin.",
+              "It describes the functions the plugin adds to WordPress.",
+              "It may explain requirements, limitations and compatibility.",
+              "It helps users evaluate the plugin before installing it."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "La descripción explica la finalidad del plugin"
+          },
+          {
+            "type": "text",
+            "content": "La sección Descripción explica para qué fue diseñado un plugin y presenta sus características principales para que los usuarios determinen si satisface sus necesidades."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Identifica la finalidad principal del plugin.",
+              "Describe las funciones que añade a WordPress.",
+              "Puede explicar requisitos, limitaciones y compatibilidad.",
+              "Ayuda a evaluar el plugin antes de instalarlo."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Instrucciones de instalación",
+      "Question Text": {
+        "en-US": [
+          "This section explains the necessary steps to install the plugin. Depending on the type of plugin, this section may vary, but the installation process is generally generic"
+        ],
+        "es-MX": [
+          "En esta sección se explican los pasos necesarios para instalar el plugin. Dependiendo del tipo de plugin esta sección puede variar, pero en general la instalación es genérica"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Installation",
+          "Change log",
+          "FAQ (frequently asked questions)",
+          "Description"
+        ],
+        "es-MX": [
+          "Instalación",
+          "Registro de los cambios",
+          "FAQ (preguntas frecuentes)",
+          "Descripción"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Installation",
+        "es-MX": "Instalación"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "The Installation section provides the required steps"
+          },
+          {
+            "type": "text",
+            "content": "The Installation section describes the steps required to add and activate the plugin in WordPress. Some plugins may also require additional configuration."
+          },
+          {
+            "type": "ol",
+            "items": [
+              "Install or upload the plugin.",
+              "Activate it from the WordPress administration area.",
+              "Open its settings if additional configuration is required.",
+              "Verify that the new function operates correctly."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "La sección Instalación proporciona los pasos necesarios"
+          },
+          {
+            "type": "text",
+            "content": "La sección Instalación describe los pasos necesarios para añadir y activar el plugin en WordPress. Algunos plugins también pueden requerir una configuración adicional."
+          },
+          {
+            "type": "ol",
+            "items": [
+              "Instalar o subir el plugin.",
+              "Activarlo desde el área de administración de WordPress.",
+              "Abrir sus ajustes si requiere configuración adicional.",
+              "Comprobar que la función nueva opere correctamente."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Soporte técnico del plugin",
+      "Question Text": {
+        "en-US": [
+          "It is the technical __________ forum where users report errors or ask the plugin author questions"
+        ],
+        "es-MX": [
+          "Es el foro de __________ técnico en el que los usuarios informan errores o consultan dudas al autor del plugin"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Reviews",
+          "Development",
+          "Statistics",
+          "Support"
+        ],
+        "es-MX": [
+          "Reseñas",
+          "Desarrollo",
+          "Estadístico",
+          "Soporte"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Support",
+        "es-MX": "Soporte"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "The support forum helps users resolve plugin problems"
+          },
+          {
+            "type": "text",
+            "content": "The Support section provides a forum where users can report errors, describe technical problems and ask questions related to the plugin."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Users can describe errors encountered while using the plugin.",
+              "The author or other community members can provide solutions.",
+              "Existing conversations can help resolve previously reported problems.",
+              "The available assistance depends on the plugin author and community."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "El foro de soporte ayuda a resolver problemas del plugin"
+          },
+          {
+            "type": "text",
+            "content": "La sección Soporte proporciona un foro donde los usuarios pueden informar errores, describir problemas técnicos y plantear dudas relacionadas con el plugin."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Los usuarios pueden describir los errores encontrados al utilizar el plugin.",
+              "El autor u otros miembros de la comunidad pueden proporcionar soluciones.",
+              "Las conversaciones existentes pueden ayudar a resolver problemas informados anteriormente.",
+              "La asistencia disponible depende del autor y de la comunidad del plugin."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Número de descargas",
+      "Question Text": {
+        "en-US": [
+          "What can the number of downloads of a plugin help determine?"
+        ],
+        "es-MX": [
+          "¿Qué permite determinar el número de descargas que puede tener un plugin?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "It determines the number of people who have rated it",
+          "It determines its level of acceptance within the developer community",
+          "It identifies whether a company or an individual developer created it",
+          "It determines the positive or negative level of trust in the plugin"
+        ],
+        "es-MX": [
+          "Permite apreciar el número de personas que lo han apuntado",
+          "Permite determinar el nivel de aceptación de este en la comunidad de desarrolladores",
+          "Permite conocer si es una empresa o un desarrollador particular que está detrás de la creación",
+          "Es un dato que permite determinar la confianza, positiva o negativa, en el plugin"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "It determines its level of acceptance within the developer community",
+        "es-MX": "Permite determinar el nivel de aceptación de este en la comunidad de desarrolladores"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Download numbers indicate the plugin's level of acceptance"
+          },
+          {
+            "type": "text",
+            "content": "The number of downloads helps indicate how widely a plugin has been accepted and used by the WordPress community."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "A large number of downloads can indicate considerable community interest.",
+              "Download numbers show how often the plugin has been obtained.",
+              "They do not identify who developed the plugin.",
+              "Downloads should be evaluated together with ratings, updates and compatibility."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Las descargas indican el nivel de aceptación del plugin"
+          },
+          {
+            "type": "text",
+            "content": "El número de descargas ayuda a determinar qué tan aceptado y utilizado es un plugin dentro de la comunidad de WordPress."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Una cantidad elevada de descargas puede reflejar un interés considerable de la comunidad.",
+              "Las descargas muestran cuántas veces se ha obtenido el plugin.",
+              "No permiten identificar quién desarrolló el plugin.",
+              "Deben analizarse junto con las valoraciones, actualizaciones y compatibilidad."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Evaluación de usuarios",
+      "Question Text": {
+        "en-US": [
+          "What helps determine the users' evaluation of the plugin?"
+        ],
+        "es-MX": [
+          "¿Qué permite determinar la evaluación del plugin por parte de los usuarios del plugin?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "It determines the number of people who have rated it",
+          "It determines its level of acceptance within the developer community",
+          "It identifies whether a company or an individual developer created it",
+          "It determines the positive or negative level of trust in the plugin"
+        ],
+        "es-MX": [
+          "Permite determinar el número de personas que lo han apuntado",
+          "Permite determinar el nivel de aceptación de este en la comunidad de desarrolladores",
+          "Permite determinar si es una empresa o un desarrollador particular que está detrás de la creación",
+          "Es un dato que permite determinar la confianza, positiva o negativa, en el plugin"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "It determines the number of people who have rated it",
+        "es-MX": "Permite determinar el número de personas que lo han apuntado"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "User evaluations show how many people have rated the plugin"
+          },
+          {
+            "type": "text",
+            "content": "The evaluation information indicates how many users have rated the plugin and provides evidence of their experience with it."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "The number of ratings shows how many users participated in the evaluation.",
+              "The average rating summarizes the opinions received.",
+              "A rating supported by many users is generally more representative.",
+              "Written reviews can provide additional details about user experiences."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Las evaluaciones muestran cuántas personas han valorado el plugin"
+          },
+          {
+            "type": "text",
+            "content": "La información de evaluación permite conocer cuántos usuarios han valorado el plugin y aporta indicios sobre la experiencia que tuvieron al utilizarlo."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "El número de valoraciones muestra cuántos usuarios participaron en la evaluación.",
+              "La calificación promedio resume las opiniones recibidas.",
+              "Una calificación respaldada por muchos usuarios suele ser más representativa.",
+              "Las reseñas escritas pueden proporcionar detalles adicionales sobre las experiencias."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Administración de plugins",
+      "Question Text": {
+        "en-US": [
+          "To manage plugins in WordPress, the path would be:"
+        ],
+        "es-MX": [
+          "Para administrar los plugins en WordPress la ruta sería:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Administrator, Appearance and then Plugins",
+          "Administrator and then Plugins",
+          "Administrator, Posts and then Plugins",
+          "Administrator, Settings and then Plugin"
+        ],
+        "es-MX": [
+          "Administrador, Apariencia y luego Plugins",
+          "Administrador y luego Plugins",
+          "Administrador, Entradas y luego Plugins",
+          "Administrador, Configuración y luego Plugin"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Administrator and then Plugins",
+        "es-MX": "Administrador y luego Plugins"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Plugins are managed from the WordPress administration panel"
+          },
+          {
+            "type": "text",
+            "content": "The Plugins section of the WordPress administration panel provides access to all installed extensions and the tools required to manage them."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Installed plugins can be viewed from this section.",
+              "Plugins can be activated, deactivated or deleted.",
+              "Available updates and configuration options can also be accessed."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Los plugins se administran desde el panel de WordPress"
+          },
+          {
+            "type": "text",
+            "content": "El apartado Plugins del panel de administración de WordPress permite acceder a todas las extensiones instaladas y a las herramientas necesarias para gestionarlas."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Desde este apartado se pueden consultar los plugins instalados.",
+              "Los plugins se pueden activar, desactivar o eliminar.",
+              "También se puede acceder a las actualizaciones y opciones de configuración disponibles."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Añadir un plugin",
+      "Question Text": {
+        "en-US": [
+          "To add a new plugin from WordPress itself, go to:"
+        ],
+        "es-MX": [
+          "Para añadir un nuevo plugin desde el mismo WordPress, se realiza a través de:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Plugins and then Add New",
+          "Administrator and then Plugins",
+          "Plugins and then Add",
+          "Plugins, Development and then Add"
+        ],
+        "es-MX": [
+          "Plugins y luego Añadir nuevo",
+          "Administrador y luego Plugins",
+          "Plugins y luego Añadir",
+          "Plugins, Desarrollo y luego Añadir"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Plugins and then Add New",
+        "es-MX": "Plugins y luego Añadir nuevo"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "The Add New option is used to install plugins"
+          },
+          {
+            "type": "text",
+            "content": "The Plugins > Add New path opens the WordPress plugin installation screen. From there, extensions can be searched for in the official directory or uploaded as compatible compressed files."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Plugins can be located using the search field.",
+              "The results display information about each available plugin.",
+              "A plugin can be installed directly from its result card."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "La opción Añadir nuevo permite instalar plugins"
+          },
+          {
+            "type": "text",
+            "content": "La ruta Plugins > Añadir nuevo abre la pantalla de instalación de plugins de WordPress. Desde allí se pueden buscar extensiones en el directorio oficial o subir archivos comprimidos compatibles."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Los plugins pueden localizarse mediante el campo de búsqueda.",
+              "Los resultados muestran información sobre cada plugin disponible.",
+              "Un plugin puede instalarse directamente desde su tarjeta de resultados."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Instalación y activación de plugins",
+      "Question Text": {
+        "en-US": [
+          "To install it, simply press the __________ button. The process will take a few seconds. Once the installation is complete, a new Activate button appears, allowing the plugin functions to start working and its settings to be configured"
+        ],
+        "es-MX": [
+          "Para la instalación basta con presionar en el botón de __________, la acción tomará unos segundos. Una vez finalizada la instalación se muestra un nuevo botón que indica Activar, esto permite que las funciones del plugin se pongan en marcha y se puedan realizar ajustes en el plugin"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Install now",
+          "Now",
+          "Install right now",
+          "Install"
+        ],
+        "es-MX": [
+          "Ahora instalar",
+          "Ahora",
+          "Instalar ahora",
+          "Instalar"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Install right now",
+        "es-MX": "Instalar ahora"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "The Install Now button downloads and installs the plugin"
+          },
+          {
+            "type": "text",
+            "content": "Pressing Install Now downloads the selected plugin files and adds them to WordPress. When the process finishes, the Activate button becomes available."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Installation adds the plugin files to the website.",
+              "Activation starts the functions provided by the plugin.",
+              "Some plugins provide additional settings after activation."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "El botón Instalar ahora descarga e instala el plugin"
+          },
+          {
+            "type": "text",
+            "content": "Al presionar Instalar ahora, WordPress descarga los archivos del plugin seleccionado y los agrega al sitio. Cuando el proceso termina, aparece el botón Activar."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "La instalación incorpora los archivos del plugin al sitio.",
+              "La activación pone en funcionamiento las características del plugin.",
+              "Algunos plugins muestran opciones adicionales de configuración después de activarlos."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Widgets",
+      "Question Text": {
+        "en-US": [
+          "__________ are blocks of text, images, links, menus, etc., that allow content to be added to the website"
+        ],
+        "es-MX": [
+          "Los __________ son bloques de texto, imágenes, enlaces, menús, etc. que permiten añadir contenido a la web"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Plugins",
+          "Widgets",
+          "Posts",
+          "Media"
+        ],
+        "es-MX": [
+          "Plugins",
+          "Widgets",
+          "Entradas",
+          "Medios"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Widgets",
+        "es-MX": "Widgets"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Widgets add content to specific areas of a website"
+          },
+          {
+            "type": "text",
+            "content": "Widgets are content blocks that can be placed in the areas supported by a WordPress theme, such as sidebars, headers and footers."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "They can display text, images, links and navigation menus.",
+              "Their available locations depend on the active theme.",
+              "They make it possible to add content without editing the theme files directly."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Los widgets añaden contenido en áreas específicas del sitio"
+          },
+          {
+            "type": "text",
+            "content": "Los widgets son bloques de contenido que pueden colocarse en las áreas admitidas por un tema de WordPress, como las barras laterales, los encabezados y los pies de página."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Pueden mostrar texto, imágenes, enlaces y menús de navegación.",
+              "Las ubicaciones disponibles dependen del tema activo.",
+              "Permiten añadir contenido sin modificar directamente los archivos del tema."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Editor de plugins",
+      "Question Text": {
+        "en-US": [
+          "Plugins installed on the website, as in the case of themes, can be adapted and modified due to the GPL license and their open-source distribution. To access these files, the path is:"
+        ],
+        "es-MX": [
+          "Los plugins instalados en la web, como en el caso de los temas, se pueden adaptar y modificar debido a la licencia GPL y a su distribución en código abierto. Para acceder a dichos documentos la ruta será la siguiente:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Plugin and then Plugin Editor",
+          "Administrator and then Plugin",
+          "Plugins and then Add",
+          "Plugins, Development and then Add"
+        ],
+        "es-MX": [
+          "Plugin y luego Editor de plugins",
+          "Administrador y luego Plugin",
+          "Plugins y luego Añadir",
+          "Plugins, Desarrollo y luego Añadir"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Plugin and then Plugin Editor",
+        "es-MX": "Plugin y luego Editor de plugins"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "The Plugin Editor provides access to plugin source files"
+          },
+          {
+            "type": "text",
+            "content": "The WordPress Plugin Editor allows authorized administrators to view and modify the source files of installed plugins directly from the administration panel."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "A plugin must be selected before editing its files.",
+              "Changes made in the editor affect the operation of the plugin.",
+              "A backup should be created before modifying any source file."
+            ]
+          },
+          {
+            "type": "text",
+            "content": "An incorrect modification can cause errors or make the website inaccessible, and plugin updates may overwrite changes made directly in the editor."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "El Editor de plugins permite acceder a los archivos del plugin"
+          },
+          {
+            "type": "text",
+            "content": "El Editor de plugins de WordPress permite que los administradores autorizados consulten y modifiquen directamente los archivos de código fuente de los plugins instalados."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Antes de editar los archivos se debe seleccionar el plugin correspondiente.",
+              "Los cambios realizados en el editor afectan el funcionamiento del plugin.",
+              "Es recomendable crear una copia de seguridad antes de modificar el código."
+            ]
+          },
+          {
+            "type": "text",
+            "content": "Una modificación incorrecta puede provocar errores o impedir el acceso al sitio, y las actualizaciones del plugin pueden sobrescribir los cambios realizados directamente en el editor."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Lenguajes para editar plugins",
+      "Question Text": {
+        "en-US": [
+          "If you have programming knowledge in __________, you can modify the files contained in the plugin folders"
+        ],
+        "es-MX": [
+          "Si se poseen los conocimientos en programación de __________, se puede modificar los documentos que contienen las carpetas del plugin"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "C++ and MySQL",
+          "Java and MySQL",
+          "PHP and MySQL",
+          "PHP and Panopto"
+        ],
+        "es-MX": [
+          "C++ y MySQL",
+          "Java y MySQL",
+          "PHP y MySQL",
+          "PHP y Panopto"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "PHP and MySQL",
+        "es-MX": "PHP y MySQL"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "WordPress plugins commonly use PHP and MySQL"
+          },
+          {
+            "type": "text",
+            "content": "PHP is the primary server-side programming language used by WordPress and its plugins, while MySQL is the database management system commonly used to store website information."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "PHP defines much of the plugin's behavior and functions.",
+              "MySQL stores and retrieves information from the WordPress database.",
+              "HTML, CSS and JavaScript may also be used for the plugin interface."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Los plugins de WordPress utilizan principalmente PHP y MySQL"
+          },
+          {
+            "type": "text",
+            "content": "PHP es el principal lenguaje de programación del servidor utilizado por WordPress y sus plugins, mientras que MySQL es el sistema de gestión de bases de datos empleado habitualmente para almacenar la información del sitio."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "PHP define gran parte del comportamiento y las funciones del plugin.",
+              "MySQL permite almacenar y consultar información en la base de datos de WordPress.",
+              "HTML, CSS y JavaScript también pueden utilizarse para crear la interfaz del plugin."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Plugins de formularios de contacto",
+      "Question Text": {
+        "en-US": [
+          "This type of plugin allows you to create forms so website visitors can communicate through private messages sent to an email address"
+        ],
+        "es-MX": [
+          "Este tipo de plugin permite crear formularios para que los visitantes del sitio puedan comunicarse a través de mensajes privados a una dirección de correo"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Contact format plugins",
+          "Address form plugins",
+          "Image plugins",
+          "Contact form plugins"
+        ],
+        "es-MX": [
+          "Plugins de formatos de contactos",
+          "Plugins de formulario de direcciones",
+          "Plugins para imágenes",
+          "Plugins de formulario de contactos"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Contact form plugins",
+        "es-MX": "Plugins de formulario de contactos"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Contact form plugins facilitate communication with visitors"
+          },
+          {
+            "type": "text",
+            "content": "Contact form plugins allow forms to be added to a WordPress website so visitors can send private messages without displaying the recipient's email address publicly."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Forms can include fields for a name, email address, subject and message.",
+              "Submitted information can be sent to an administrator's email address.",
+              "Some plugins include spam protection and field validation."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Los formularios de contacto facilitan la comunicación con los visitantes"
+          },
+          {
+            "type": "text",
+            "content": "Los plugins de formularios de contacto permiten añadir formularios a un sitio de WordPress para que los visitantes envíen mensajes privados sin mostrar públicamente la dirección de correo del destinatario."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Los formularios pueden contener campos para nombre, correo, asunto y mensaje.",
+              "La información enviada puede dirigirse al correo electrónico del administrador.",
+              "Algunos plugins incluyen protección contra spam y validación de campos."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Plugins para imágenes",
+      "Question Text": {
+        "en-US": [
+          "These are some examples of image plugins:"
+        ],
+        "es-MX": [
+          "Estos son algunos ejemplos de plugins para imágenes:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Polylang, Weglot, Google Translate",
+          "Monarch, Mash Share, Simple Social",
+          "WP Forms, Ninja Forms, Gravity Forms",
+          "Modula, Next Gen, Smart, Smush"
+        ],
+        "es-MX": [
+          "Polylang, Weglot, Google Translate",
+          "Monarch, Mash Share, Simple Social",
+          "WP Forms, Ninja Forms, Gravity Forms",
+          "Modula, Next Gen, Smart, Smush"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Modula, Next Gen, Smart, Smush",
+        "es-MX": "Modula, Next Gen, Smart, Smush"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Image plugins improve multimedia management"
+          },
+          {
+            "type": "text",
+            "content": "Modula, NextGEN, Smart and Smush are examples of plugins related to images. They provide tools for creating galleries, organizing multimedia content and optimizing image files."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Gallery plugins organize images into visual collections.",
+              "Optimization plugins reduce file sizes to improve loading speed.",
+              "Some plugins provide layouts, effects and additional display options."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Los plugins para imágenes mejoran la gestión multimedia"
+          },
+          {
+            "type": "text",
+            "content": "Modula, NextGEN, Smart y Smush son ejemplos de plugins relacionados con imágenes. Proporcionan herramientas para crear galerías, organizar contenido multimedia y optimizar archivos de imagen."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Los plugins de galerías organizan las imágenes en colecciones visuales.",
+              "Los plugins de optimización reducen el tamaño de los archivos para mejorar la velocidad de carga.",
+              "Algunos incorporan diseños, efectos y opciones adicionales de visualización."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Inserción automática de vídeos",
+      "Question Text": {
+        "en-US": [
+          "WordPress automatically converts links from this type of media without requiring plugins to play them. We are referring to:"
+        ],
+        "es-MX": [
+          "WordPress convierte automáticamente los enlaces de este medio, sin la necesidad de agregar plugins para reproducirlos. Nos referimos a:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Videos",
+          "Music",
+          "Widget",
+          "Images"
+        ],
+        "es-MX": [
+          "Vídeos",
+          "Música",
+          "Widget",
+          "Imágenes"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Videos",
+        "es-MX": "Vídeos"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "WordPress can automatically embed videos"
+          },
+          {
+            "type": "text",
+            "content": "WordPress can recognize links from compatible video platforms and convert them into embedded players without requiring an additional plugin."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "The video URL can be pasted directly into the content editor.",
+              "WordPress generates the corresponding embedded player.",
+              "Compatibility depends on the video platform and the type of link used."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "WordPress puede insertar vídeos automáticamente"
+          },
+          {
+            "type": "text",
+            "content": "WordPress puede reconocer enlaces de plataformas de vídeo compatibles y convertirlos en reproductores incrustados sin que sea necesario instalar un plugin adicional."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "La dirección del vídeo puede pegarse directamente en el editor de contenido.",
+              "WordPress genera el reproductor incrustado correspondiente.",
+              "La compatibilidad depende de la plataforma y del tipo de enlace utilizado."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Plugins para sitios multilingües",
+      "Question Text": {
+        "en-US": [
+          "These are some examples of plugins for creating multilingual websites:"
+        ],
+        "es-MX": [
+          "Estos son algunos ejemplos de plugins para crear sitios multilingües:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Polylang, Weglot, Gtranlate",
+          "Monarch, Mash Share, Simple Social",
+          "WP Forms, Ninja Forms, Gravity Forms",
+          "Modula, Next Gen, Smart, Smush"
+        ],
+        "es-MX": [
+          "Polylang, Weglot, Gtranlate",
+          "Monarch, Mash Share, Simple Social",
+          "WP Forms, Ninja Forms, Gravity Forms",
+          "Modula, Next Gen, Smart, Smush"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Polylang, Weglot, Gtranlate",
+        "es-MX": "Polylang, Weglot, Gtranlate"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Multilingual plugins provide content in different languages"
+          },
+          {
+            "type": "text",
+            "content": "Polylang, Weglot and GTranslate are plugins designed to create multilingual WordPress websites. They allow visitors to access content in the language they prefer."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Polylang allows translations to be managed manually.",
+              "Weglot combines automatic translation with editing tools.",
+              "GTranslate uses Google translation services to provide additional languages."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Los plugins multilingües ofrecen contenido en diferentes idiomas"
+          },
+          {
+            "type": "text",
+            "content": "Polylang, Weglot y GTranslate son plugins diseñados para crear sitios de WordPress multilingües. Permiten que los visitantes consulten el contenido en el idioma que prefieran."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Polylang permite administrar las traducciones manualmente.",
+              "Weglot combina la traducción automática con herramientas de edición.",
+              "GTranslate utiliza los servicios de traducción de Google para ofrecer idiomas adicionales."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Plugins para redes sociales",
+      "Question Text": {
+        "en-US": [
+          "These are some examples of social media plugins:"
+        ],
+        "es-MX": [
+          "Estos son algunos ejemplos de plugins para redes sociales:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Polylang, Weglot, Gtranlate",
+          "Monarch, Mash Share, Simple Social",
+          "WP Forms, Ninja Forms, Gravity Forms",
+          "Modula, Next Gen, Smart, Smush"
+        ],
+        "es-MX": [
+          "Polylang, Weglot, Gtranlate",
+          "Monarch, Mash Share, Simple Social",
+          "WP Forms, Ninja Forms, Gravity Forms",
+          "Modula, Next Gen, Smart, Smush"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Monarch, Mash Share, Simple Social",
+        "es-MX": "Monarch, Mash Share, Simple Social"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Social media plugins connect website content with social networks"
+          },
+          {
+            "type": "text",
+            "content": "Monarch, Mash Share and Simple Social are plugins that add social media functions to a WordPress website, such as sharing buttons and links to social profiles."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "They allow visitors to share posts and pages.",
+              "They can display buttons for different social networks.",
+              "Some include counters and customization options."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Los plugins sociales conectan el contenido con las redes sociales"
+          },
+          {
+            "type": "text",
+            "content": "Monarch, Mash Share y Simple Social son plugins que añaden funciones de redes sociales a un sitio de WordPress, como botones para compartir contenido y enlaces a perfiles sociales."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Permiten que los visitantes compartan entradas y páginas.",
+              "Pueden mostrar botones de diferentes redes sociales.",
+              "Algunos incluyen contadores y opciones de personalización."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Plugins para funcionalidades diversas",
+      "Question Text": {
+        "en-US": [
+          "These are some examples of plugins for various functionalities:"
+        ],
+        "es-MX": [
+          "Estos son algunos ejemplos de plugins para funcionalidades diversas:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Polylang, Weglot, Gtranlate",
+          "Monarch, Mash Share, Simple Social",
+          "WP Forms, Ninja Forms, Gravity Forms",
+          "Yoast SEO, iThemes Security, Wp Rocket"
+        ],
+        "es-MX": [
+          "Polylang, Weglot, Gtranlate",
+          "Monarch, Mash Share, Simple Social",
+          "WP Forms, Ninja Forms, Gravity Forms",
+          "Yoast SEO, iThemes Security, Wp Rocket"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Yoast SEO, iThemes Security, Wp Rocket",
+        "es-MX": "Yoast SEO, iThemes Security, Wp Rocket"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "These plugins perform different website optimization functions"
+          },
+          {
+            "type": "text",
+            "content": "Yoast SEO, iThemes Security and WP Rocket provide different functions related to search engine optimization, website protection and performance improvement."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Yoast SEO helps optimize content for search engines.",
+              "iThemes Security adds tools to protect the WordPress installation.",
+              "WP Rocket uses caching and other techniques to improve loading speed."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Estos plugins cumplen diferentes funciones de optimización"
+          },
+          {
+            "type": "text",
+            "content": "Yoast SEO, iThemes Security y WP Rocket proporcionan distintas funciones relacionadas con la optimización para buscadores, la protección del sitio y la mejora del rendimiento."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Yoast SEO ayuda a optimizar el contenido para los motores de búsqueda.",
+              "iThemes Security incorpora herramientas para proteger la instalación de WordPress.",
+              "WP Rocket utiliza caché y otras técnicas para mejorar la velocidad de carga."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "WooCommerce",
+      "Question Text": {
+        "en-US": [
+          "What is WooCommerce?"
+        ],
+        "es-MX": [
+          "¿Qué es WooCommerce?"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "It is an e-commerce platform created in 2011 by the WordPress development company, Woo Themes",
+          "It is a plugin platform created in 2011 by the WordPress development company, Woo Themes",
+          "It is an e-commerce page created in 2021 by the WordPress development company, WooThemes",
+          "It is an electronic platform created in 2011 by the WordPress development company"
+        ],
+        "es-MX": [
+          "Es una plataforma de comercio electrónico creada en 2011 por la empresa de desarrollo de Word Press, Woo Themes",
+          "Es una plataforma de plugins creada en 2011 por la empresa de desarrollo de Word Press, Woo Themes",
+          "Es una página de comercio electrónico creada en 2021 por la empresa de desarrollo de WordPress, WooThemes",
+          "Es una plataforma electrónica, creada en 2011 por la empresa de desarrollo de Word"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "It is an e-commerce platform created in 2011 by the WordPress development company, Woo Themes",
+        "es-MX": "Es una plataforma de comercio electrónico creada en 2011 por la empresa de desarrollo de Word Press, Woo Themes"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "WooCommerce turns WordPress into an online store"
+          },
+          {
+            "type": "text",
+            "content": "WooCommerce is an e-commerce platform for WordPress that was originally launched by WooThemes in 2011. It provides the tools required to sell products and services through a website."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "It allows physical and digital products to be sold.",
+              "It includes tools for managing inventory, orders and customers.",
+              "Its functions can be expanded through extensions and compatible plugins."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "WooCommerce convierte WordPress en una tienda en línea"
+          },
+          {
+            "type": "text",
+            "content": "WooCommerce es una plataforma de comercio electrónico para WordPress que fue lanzada originalmente por WooThemes en 2011. Proporciona las herramientas necesarias para vender productos y servicios mediante un sitio web."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Permite vender productos físicos y digitales.",
+              "Incluye herramientas para administrar inventario, pedidos y clientes.",
+              "Sus funciones pueden ampliarse mediante extensiones y plugins compatibles."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Seguridad de WooCommerce",
+      "Question Text": {
+        "en-US": [
+          "It provides security features to protect online stores and customer data. We are referring to the following feature:"
+        ],
+        "es-MX": [
+          "Ofrece características de seguridad para proteger las tiendas en línea y los datos de los clientes, nos referimos a la característica de:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Easy integration",
+          "Product management",
+          "Shipping",
+          "Security"
+        ],
+        "es-MX": [
+          "Fácil integración",
+          "Gestión de producto",
+          "Envío",
+          "Seguridad"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Security",
+        "es-MX": "Seguridad"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Security protects the store and customer information"
+          },
+          {
+            "type": "text",
+            "content": "Security measures help protect an online store against unauthorized access, malicious software, data theft and other threats that could affect customers or website operations."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "WordPress, WooCommerce and their extensions should be kept updated.",
+              "HTTPS encrypts the information exchanged with the website.",
+              "Strong passwords, backups and secure payment gateways reduce risks."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "La seguridad protege la tienda y la información de los clientes"
+          },
+          {
+            "type": "text",
+            "content": "Las medidas de seguridad ayudan a proteger una tienda en línea contra accesos no autorizados, programas maliciosos, robo de datos y otras amenazas que podrían afectar a los clientes o al funcionamiento del sitio."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "WordPress, WooCommerce y sus extensiones deben mantenerse actualizados.",
+              "El protocolo HTTPS cifra la información intercambiada con el sitio.",
+              "Las contraseñas seguras, las copias de respaldo y las pasarelas de pago confiables reducen los riesgos."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Gestión de productos",
+      "Question Text": {
+        "en-US": [
+          "Users can easily add, edit and delete products, as well as manage their inventory and prices. We are referring to the following feature:"
+        ],
+        "es-MX": [
+          "Los usuarios pueden agregar, editar y eliminar productos fácilmente, así como administrar su inventario y sus precios, nos referimos a la característica de:"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Easy integration",
+          "Product management",
+          "Shipping",
+          "Security"
+        ],
+        "es-MX": [
+          "Fácil integración",
+          "Gestión de productos",
+          "Envío",
+          "Seguridad"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Product management",
+        "es-MX": "Gestión de productos"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Product management controls the store catalog"
+          },
+          {
+            "type": "text",
+            "content": "WooCommerce product management provides the tools needed to create and maintain the items offered in an online store."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Products can be added, edited or removed.",
+              "Prices, descriptions, images and categories can be configured.",
+              "Inventory quantities and stock availability can be monitored."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "La gestión de productos controla el catálogo de la tienda"
+          },
+          {
+            "type": "text",
+            "content": "La gestión de productos de WooCommerce proporciona las herramientas necesarias para crear y mantener los artículos ofrecidos en una tienda en línea."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Los productos pueden agregarse, editarse o eliminarse.",
+              "Se pueden configurar precios, descripciones, imágenes y categorías.",
+              "Es posible controlar las cantidades del inventario y la disponibilidad de existencias."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Fácil integración",
+      "Question Text": {
+        "en-US": [
+          "It is one of the platform's key features. Because it is integrated with WordPress, WooCommerce users can easily add an online store to their existing website without changing platforms or installing additional software"
+        ],
+        "es-MX": [
+          "Es una de las características clave de la plataforma. Al estar integrado en WordPress, los usuarios de WooCommerce pueden añadir fácilmente una tienda en línea a su sitio web existente sin tener que cambiar de plataforma o instalar un software adicional"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Easy integration",
+          "Product management",
+          "Shipping",
+          "Security"
+        ],
+        "es-MX": [
+          "Fácil integración",
+          "Gestión de productos",
+          "Envío",
+          "Seguridad"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Easy integration",
+        "es-MX": "Fácil integración"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "WooCommerce integrates directly with WordPress"
+          },
+          {
+            "type": "text",
+            "content": "WooCommerce can be installed within an existing WordPress website, allowing it to acquire online store functions without requiring migration to a different platform."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "The store is managed from the WordPress administration panel.",
+              "Existing pages, posts and users can remain on the website.",
+              "WooCommerce can work with compatible themes and plugins."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "WooCommerce se integra directamente con WordPress"
+          },
+          {
+            "type": "text",
+            "content": "WooCommerce puede instalarse dentro de un sitio existente de WordPress para añadir funciones de tienda en línea sin tener que migrar el contenido a otra plataforma."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "La tienda se administra desde el panel de WordPress.",
+              "Las páginas, entradas y usuarios existentes pueden conservarse.",
+              "WooCommerce puede funcionar con temas y plugins compatibles."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Personalización de WooCommerce",
+      "Question Text": {
+        "en-US": [
+          "It is one of the most important WooCommerce features because it allows you to create a unique online store that reflects your brand identity. The platform adapts to the theme selected for the website design"
+        ],
+        "es-MX": [
+          "Se trata de una de las características más importantes de WooCommerce, ya que permite crear una tienda en línea única que refleje la identidad de su marca. En la plataforma, se ajusta al tema elegido para el diseño del sitio"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Easy integration",
+          "Product management",
+          "Shipping",
+          "Customization"
+        ],
+        "es-MX": [
+          "Fácil integración",
+          "Gestión de productos",
+          "Envío",
+          "Personalización"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Customization",
+        "es-MX": "Personalización"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Customization adapts the store to the brand identity"
+          },
+          {
+            "type": "text",
+            "content": "WooCommerce customization allows the appearance and operation of an online store to be adapted to the selected WordPress theme and the needs of the business."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Colors, typography and page layouts can be modified.",
+              "Product and checkout pages can be adapted.",
+              "Themes and extensions provide additional customization options."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "La personalización adapta la tienda a la identidad de la marca"
+          },
+          {
+            "type": "text",
+            "content": "La personalización de WooCommerce permite adaptar la apariencia y el funcionamiento de una tienda en línea al tema de WordPress seleccionado y a las necesidades del negocio."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Se pueden modificar colores, tipografías y diseños de las páginas.",
+              "Las páginas de productos y del proceso de compra pueden adaptarse.",
+              "Los temas y las extensiones ofrecen opciones adicionales de personalización."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Gestión de pagos",
+      "Question Text": {
+        "en-US": [
+          "__________ management is a critical part of any online store, and this plugin provides a wide variety of options for its users. As with other areas of the platform, WooCommerce management is highly customizable and can be adapted to the specific needs of each online store"
+        ],
+        "es-MX": [
+          "La gestión de ______ es una parte crítica de cualquier tienda en línea y este plugin ofrece una amplia variedad de opciones para sus usuarios. Al igual que con otras áreas de la plataforma, la gestión en WooCommerce es altamente personalizable y puede adaptarse a las necesidades específicas de cada tienda en línea"
+        ]
+      },
+      "Options": {
+        "en-US": [
+          "Easy integration",
+          "Product management",
+          "Payments",
+          "Security"
+        ],
+        "es-MX": [
+          "Fácil integración",
+          "Gestión de productos",
+          "Pagos",
+          "Seguridad"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Payments",
+        "es-MX": "Pagos"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Payment management processes online transactions"
+          },
+          {
+            "type": "text",
+            "content": "WooCommerce payment management allows a store to receive money from customers through different methods and payment gateways."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Payment options can include cards, bank transfers and digital wallets.",
+              "The available methods depend on the installed payment gateways.",
+              "Payment settings can be adapted to the country, currency and needs of the store."
+            ]
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "La gestión de pagos procesa las transacciones de la tienda"
+          },
+          {
+            "type": "text",
+            "content": "La gestión de pagos de WooCommerce permite que una tienda reciba dinero de sus clientes mediante diferentes métodos y pasarelas de pago."
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Las opciones pueden incluir tarjetas, transferencias bancarias y carteras digitales.",
+              "Los métodos disponibles dependen de las pasarelas de pago instaladas.",
+              "La configuración puede adaptarse al país, la moneda y las necesidades de la tienda."
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
