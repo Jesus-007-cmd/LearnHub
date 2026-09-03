@@ -1,0 +1,3503 @@
+{
+  "meta": {
+    "slug": "gestores-contenidos-u11",
+    "title": "Guía complementaria del profesor",
+    "subject": "DISEÑO Y CREACIÓN WEB CON GESTORES DE CONTENIDOS",
+    "unit": 11,
+    "classNo": 0,
+    "description": "Preguntas basadas en la guía complementaria proporcionada por el profesor.",
+    "tags": [
+      "guía del profesor",
+      "gestores de contenidos",
+      "diseño web",
+      "WordPress"
+    ],
+    "questionCount": 0,
+    "languages": [
+      "en-US",
+      "es-MX"
+    ]
+  },
+  "Questions": [
+    {
+      "Category": {
+        "en-US": "WordPress fundamentals",
+        "es-MX": "Fundamentos de WordPress"
+      },
+      "Question Text": {
+        "en-US": "What is WordPress?",
+        "es-MX": "¿Qué es WordPress?"
+      },
+      "Options": {
+        "en-US": [
+          "A programming language for developing web applications",
+          "A database management system",
+          "A content management system or CMS used to create, develop and maintain blogs and websites",
+          "A web server used to host pages"
+        ],
+        "es-MX": [
+          "Un lenguaje de programación para desarrollar aplicaciones web",
+          "Un sistema de gestión de bases de datos",
+          "Un sistema de gestión de contenidos o CMS que permite crear, desarrollar y mantener blogs o sitios web",
+          "Un servidor web utilizado para alojar páginas"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "A content management system or CMS used to create, develop and maintain blogs and websites",
+        "es-MX": "Un sistema de gestión de contenidos o CMS que permite crear, desarrollar y mantener blogs o sitios web"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "WordPress"
+          },
+          {
+            "type": "text",
+            "content": "WordPress is a content management system that provides tools for creating, publishing, organizing and updating website content."
+          },
+          {
+            "type": "text",
+            "content": "It can be used to build blogs, business websites, portfolios, online stores and many other types of websites."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "WordPress"
+          },
+          {
+            "type": "text",
+            "content": "WordPress es un sistema de gestión de contenidos que proporciona herramientas para crear, publicar, organizar y actualizar el contenido de un sitio web."
+          },
+          {
+            "type": "text",
+            "content": "Puede utilizarse para desarrollar blogs, páginas empresariales, portafolios, tiendas en línea y muchos otros tipos de sitios."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "Content management systems",
+        "es-MX": "Sistemas de gestión de contenidos"
+      },
+      "Question Text": {
+        "en-US": "What does the acronym CMS stand for?",
+        "es-MX": "¿Qué significan las siglas CMS?"
+      },
+      "Options": {
+        "en-US": [
+          "Computer Management Software",
+          "Content Management System",
+          "Content Media Service",
+          "Computer Multimedia System"
+        ],
+        "es-MX": [
+          "Computer Management Software",
+          "Content Management System",
+          "Content Media Service",
+          "Computer Multimedia System"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Content Management System",
+        "es-MX": "Content Management System"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Meaning of CMS"
+          },
+          {
+            "type": "text",
+            "content": "CMS stands for Content Management System."
+          },
+          {
+            "type": "text",
+            "content": "A CMS allows users to create, organize, modify and publish digital content through an administration interface."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Significado de CMS"
+          },
+          {
+            "type": "text",
+            "content": "CMS corresponde a las palabras inglesas Content Management System, que en español significan sistema de gestión de contenidos."
+          },
+          {
+            "type": "text",
+            "content": "Un CMS permite crear, organizar, modificar y publicar contenido digital mediante una interfaz de administración."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress history",
+        "es-MX": "Historia de WordPress"
+      },
+      "Question Text": {
+        "en-US": "What was WordPress originally created for?",
+        "es-MX": "¿Con qué finalidad fue creado WordPress originalmente?"
+      },
+      "Options": {
+        "en-US": [
+          "To create online stores",
+          "To manage business databases",
+          "As a tool for creating and publishing blogs",
+          "To develop social networks"
+        ],
+        "es-MX": [
+          "Para crear tiendas en línea",
+          "Para administrar bases de datos empresariales",
+          "Como una herramienta para la creación y publicación de blogs",
+          "Para desarrollar redes sociales"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "As a tool for creating and publishing blogs",
+        "es-MX": "Como una herramienta para la creación y publicación de blogs"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Original purpose of WordPress"
+          },
+          {
+            "type": "text",
+            "content": "WordPress was originally created as a tool for writing, managing and publishing blogs."
+          },
+          {
+            "type": "text",
+            "content": "Its capabilities later expanded, allowing it to support business websites, portals, portfolios, galleries and online stores."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Finalidad original de WordPress"
+          },
+          {
+            "type": "text",
+            "content": "WordPress fue creado originalmente como una herramienta para escribir, administrar y publicar blogs."
+          },
+          {
+            "type": "text",
+            "content": "Posteriormente amplió sus funciones y comenzó a utilizarse para sitios empresariales, portales, portafolios, galerías y tiendas en línea."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress history",
+        "es-MX": "Historia de WordPress"
+      },
+      "Question Text": {
+        "en-US": "In what year did WordPress first appear?",
+        "es-MX": "¿En qué año apareció WordPress?"
+      },
+      "Options": {
+        "en-US": [
+          "1992",
+          "1998",
+          "2001",
+          "2003"
+        ],
+        "es-MX": [
+          "1992",
+          "1998",
+          "2001",
+          "2003"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "2003",
+        "es-MX": "2003"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "WordPress launch"
+          },
+          {
+            "type": "text",
+            "content": "WordPress first appeared on May 27, 2003, as a blogging platform created by Matt Mullenweg and Mike Little."
+          },
+          {
+            "type": "text",
+            "content": "It later evolved into a complete content management system capable of creating many types of websites."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Aparición de WordPress"
+          },
+          {
+            "type": "text",
+            "content": "WordPress apareció por primera vez el 27 de mayo de 2003 como una plataforma para blogs creada por Matt Mullenweg y Mike Little."
+          },
+          {
+            "type": "text",
+            "content": "Posteriormente evolucionó hasta convertirse en un sistema de gestión de contenidos capaz de crear numerosos tipos de sitios web."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress platforms",
+        "es-MX": "Plataformas de WordPress"
+      },
+      "Question Text": {
+        "en-US": "What is a fundamental difference between WordPress.org and WordPress.com?",
+        "es-MX": "¿Cuál es una diferencia fundamental entre WordPress.org y WordPress.com?"
+      },
+      "Options": {
+        "en-US": [
+          "WordPress.org provides software that can be downloaded and installed, while WordPress.com is an online service",
+          "WordPress.com is a programming language and WordPress.org is a database",
+          "WordPress.org is only for blogs and WordPress.com is only for online stores",
+          "WordPress.com must always be installed on a local server"
+        ],
+        "es-MX": [
+          "WordPress.org ofrece el software que puede descargarse e instalarse, mientras WordPress.com es un servicio en línea",
+          "WordPress.com es un lenguaje de programación y WordPress.org una base de datos",
+          "WordPress.org solo sirve para blogs y WordPress.com solo para tiendas",
+          "WordPress.com debe instalarse siempre en un servidor local"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "WordPress.org provides software that can be downloaded and installed, while WordPress.com is an online service",
+        "es-MX": "WordPress.org ofrece el software que puede descargarse e instalarse, mientras WordPress.com es un servicio en línea"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "WordPress.org and WordPress.com"
+          },
+          {
+            "type": "text",
+            "content": "WordPress.org provides access to the open-source WordPress software, which can be downloaded and installed on a compatible hosting server."
+          },
+          {
+            "type": "text",
+            "content": "WordPress.com is a hosted online service that manages much of the technical infrastructure needed to operate a WordPress website."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "WordPress.org y WordPress.com"
+          },
+          {
+            "type": "text",
+            "content": "WordPress.org proporciona acceso al software de código abierto de WordPress, que puede descargarse e instalarse en un alojamiento compatible."
+          },
+          {
+            "type": "text",
+            "content": "WordPress.com es un servicio alojado en línea que administra gran parte de la infraestructura técnica necesaria para operar un sitio de WordPress."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress technical requirements",
+        "es-MX": "Requisitos técnicos de WordPress"
+      },
+      "Question Text": {
+        "en-US": "Which programming language is WordPress primarily developed in?",
+        "es-MX": "¿En qué lenguaje de programación está desarrollado principalmente WordPress?"
+      },
+      "Options": {
+        "en-US": [
+          "Python",
+          "Java",
+          "PHP",
+          "C++"
+        ],
+        "es-MX": [
+          "Python",
+          "Java",
+          "PHP",
+          "C++"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "PHP",
+        "es-MX": "PHP"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "PHP in WordPress"
+          },
+          {
+            "type": "text",
+            "content": "WordPress is primarily developed in PHP, a server-side programming language used to generate dynamic webpages."
+          },
+          {
+            "type": "text",
+            "content": "WordPress themes and plugins can also use PHP to process information and extend the platform's functionality."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "PHP en WordPress"
+          },
+          {
+            "type": "text",
+            "content": "WordPress está desarrollado principalmente en PHP, un lenguaje de programación del lado del servidor que permite generar páginas dinámicas."
+          },
+          {
+            "type": "text",
+            "content": "Los temas y plugins de WordPress también pueden utilizar PHP para procesar información y ampliar las funciones de la plataforma."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress technical requirements",
+        "es-MX": "Requisitos técnicos de WordPress"
+      },
+      "Question Text": {
+        "en-US": "Which of the following databases can be used by WordPress?",
+        "es-MX": "¿Cuál de las siguientes bases de datos puede utilizar WordPress?"
+      },
+      "Options": {
+        "en-US": [
+          "Oracle",
+          "MySQL",
+          "PostgreSQL",
+          "Microsoft Access"
+        ],
+        "es-MX": [
+          "Oracle",
+          "MySQL",
+          "PostgreSQL",
+          "Microsoft Access"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "MySQL",
+        "es-MX": "MySQL"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "WordPress database"
+          },
+          {
+            "type": "text",
+            "content": "WordPress can use MySQL to store posts, pages, users, comments, settings and other website information."
+          },
+          {
+            "type": "text",
+            "content": "WordPress is also compatible with MariaDB, an alternative database system derived from MySQL, although it is not included among the available answers."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Base de datos de WordPress"
+          },
+          {
+            "type": "text",
+            "content": "WordPress puede utilizar MySQL para almacenar entradas, páginas, usuarios, comentarios, configuraciones y otros datos del sitio."
+          },
+          {
+            "type": "text",
+            "content": "WordPress también es compatible con MariaDB, un sistema de bases de datos derivado de MySQL, aunque no aparece entre las opciones disponibles."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress technical requirements",
+        "es-MX": "Requisitos técnicos de WordPress"
+      },
+      "Question Text": {
+        "en-US": "Which of the following web servers is recommended for running WordPress?",
+        "es-MX": "¿Cuál de los siguientes servidores web es recomendado para ejecutar WordPress?"
+      },
+      "Options": {
+        "en-US": [
+          "IIS",
+          "Tomcat",
+          "Apache",
+          "PostgreSQL"
+        ],
+        "es-MX": [
+          "IIS",
+          "Tomcat",
+          "Apache",
+          "PostgreSQL"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Apache",
+        "es-MX": "Apache"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Web servers for WordPress"
+          },
+          {
+            "type": "text",
+            "content": "Apache is a web server commonly used and recommended for running WordPress because it supports PHP and WordPress-friendly URL rewriting."
+          },
+          {
+            "type": "text",
+            "content": "Nginx is also recommended and widely used for WordPress, although it is not included among the available answers."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Servidores web para WordPress"
+          },
+          {
+            "type": "text",
+            "content": "Apache es un servidor web utilizado y recomendado para ejecutar WordPress porque admite PHP y la reescritura de URL amigables."
+          },
+          {
+            "type": "text",
+            "content": "Nginx también es recomendado y ampliamente utilizado con WordPress, aunque no aparece entre las opciones disponibles."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "Domains and hosting",
+        "es-MX": "Dominios y alojamiento web"
+      },
+      "Question Text": {
+        "en-US": "What is a domain?",
+        "es-MX": "¿Qué es un dominio?"
+      },
+      "Options": {
+        "en-US": [
+          "The physical location where WordPress files are stored",
+          "A database for storing content",
+          "A simple name or identifier that locates a website or server without requiring users to remember its IP address",
+          "A program used to create webpages"
+        ],
+        "es-MX": [
+          "El lugar físico donde se almacenan los archivos de WordPress",
+          "Una base de datos para almacenar contenido",
+          "Un nombre o identificador sencillo que permite localizar un sitio o servidor sin tener que recordar su dirección IP",
+          "Un programa utilizado para crear páginas web"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "A simple name or identifier that locates a website or server without requiring users to remember its IP address",
+        "es-MX": "Un nombre o identificador sencillo que permite localizar un sitio o servidor sin tener que recordar su dirección IP"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Domain name"
+          },
+          {
+            "type": "text",
+            "content": "A domain is a unique, human-readable name used to identify and access a website, such as example.com."
+          },
+          {
+            "type": "text",
+            "content": "The Domain Name System translates that name into the IP address needed to locate the corresponding server."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Nombre de dominio"
+          },
+          {
+            "type": "text",
+            "content": "Un dominio es un nombre único y fácil de recordar que se utiliza para identificar y acceder a un sitio web, como ejemplo.com."
+          },
+          {
+            "type": "text",
+            "content": "El sistema de nombres de dominio traduce ese nombre a la dirección IP necesaria para localizar el servidor correspondiente."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "Domains and hosting",
+        "es-MX": "Dominios y alojamiento web"
+      },
+      "Question Text": {
+        "en-US": "What is web hosting?",
+        "es-MX": "¿Qué es un hosting?"
+      },
+      "Options": {
+        "en-US": [
+          "A name assigned to an IP address",
+          "A plugin for publishing WordPress",
+          "A language that interprets dynamic pages",
+          "A web hosting service that allows one or more websites to be stored and operated on a server"
+        ],
+        "es-MX": [
+          "Un nombre asignado a una dirección IP",
+          "Un plugin para publicar WordPress",
+          "Un lenguaje que interpreta páginas dinámicas",
+          "Un servicio de alojamiento web que permite almacenar y operar uno o varios sitios web en un servidor"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "A web hosting service that allows one or more websites to be stored and operated on a server",
+        "es-MX": "Un servicio de alojamiento web que permite almacenar y operar uno o varios sitios web en un servidor"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Web hosting"
+          },
+          {
+            "type": "text",
+            "content": "Web hosting is a service that provides server resources for storing a website's files, databases and configuration."
+          },
+          {
+            "type": "text",
+            "content": "The hosting server keeps the website available so that visitors can access it through its domain and an Internet connection."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Alojamiento web"
+          },
+          {
+            "type": "text",
+            "content": "El hosting es un servicio que proporciona recursos de servidor para almacenar los archivos, las bases de datos y la configuración de un sitio web."
+          },
+          {
+            "type": "text",
+            "content": "El servidor de alojamiento mantiene disponible el sitio para que los visitantes puedan acceder mediante su dominio y una conexión a Internet."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress installation",
+        "es-MX": "Instalación de WordPress"
+      },
+      "Question Text": {
+        "en-US": "Where can the WordPress software be downloaded for a self-hosted installation?",
+        "es-MX": "¿Desde dónde se descarga el software de WordPress para realizar una instalación propia?"
+      },
+      "Options": {
+        "en-US": [
+          "WordPress.com",
+          "WordPress.org",
+          "phpMyAdmin",
+          "Apache.org"
+        ],
+        "es-MX": [
+          "WordPress.com",
+          "WordPress.org",
+          "phpMyAdmin",
+          "Apache.org"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "WordPress.org",
+        "es-MX": "WordPress.org"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Downloading WordPress"
+          },
+          {
+            "type": "text",
+            "content": "WordPress.org provides the open-source WordPress software that can be downloaded and installed on a local computer or compatible web hosting server."
+          },
+          {
+            "type": "text",
+            "content": "WordPress.com is a hosted online service, while phpMyAdmin and Apache.org do not distribute the WordPress installation package."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Descarga de WordPress"
+          },
+          {
+            "type": "text",
+            "content": "WordPress.org proporciona el software de código abierto de WordPress, que puede descargarse e instalarse en una computadora local o en un servidor de alojamiento compatible."
+          },
+          {
+            "type": "text",
+            "content": "WordPress.com es un servicio alojado en línea, mientras que phpMyAdmin y Apache.org no distribuyen el paquete de instalación de WordPress."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress installation",
+        "es-MX": "Instalación de WordPress"
+      },
+      "Question Text": {
+        "en-US": "What type of file is obtained when WordPress is downloaded from its official website?",
+        "es-MX": "Al descargar WordPress desde su página oficial, ¿qué tipo de archivo se obtiene?"
+      },
+      "Options": {
+        "en-US": [
+          ".php",
+          ".exe",
+          ".zip",
+          ".htdocs"
+        ],
+        "es-MX": [
+          ".php",
+          ".exe",
+          ".zip",
+          ".htdocs"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": ".zip",
+        "es-MX": ".zip"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "WordPress compressed file"
+          },
+          {
+            "type": "text",
+            "content": "WordPress can be downloaded as a .zip file containing the folders and files required for its installation."
+          },
+          {
+            "type": "text",
+            "content": "The file must be extracted inside the project directory. WordPress releases may also be available in other compressed formats, such as .tar.gz, but .zip is the correct option presented here."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Archivo comprimido de WordPress"
+          },
+          {
+            "type": "text",
+            "content": "WordPress puede descargarse como un archivo .zip que contiene las carpetas y los archivos necesarios para realizar su instalación."
+          },
+          {
+            "type": "text",
+            "content": "El archivo debe descomprimirse dentro de la carpeta del proyecto. Las versiones de WordPress también pueden ofrecerse en otros formatos comprimidos, como .tar.gz, pero .zip es la opción correcta presentada."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "Local server with XAMPP",
+        "es-MX": "Servidor local con XAMPP"
+      },
+      "Question Text": {
+        "en-US": "What is XAMPP?",
+        "es-MX": "¿Qué es XAMPP?"
+      },
+      "Options": {
+        "en-US": [
+          "A local server",
+          "A database",
+          "A WordPress plugin",
+          "A visual builder"
+        ],
+        "es-MX": [
+          "Un servidor local",
+          "Una base de datos",
+          "Un plugin de WordPress",
+          "Un constructor visual"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "A local server",
+        "es-MX": "Un servidor local"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "XAMPP local environment"
+          },
+          {
+            "type": "text",
+            "content": "XAMPP is commonly described as a local server because it allows websites to be executed and tested on a computer without publishing them on the Internet."
+          },
+          {
+            "type": "text",
+            "content": "More precisely, XAMPP is a software package that creates a local server environment and includes components such as Apache, MariaDB, PHP and Perl."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Entorno local de XAMPP"
+          },
+          {
+            "type": "text",
+            "content": "XAMPP suele describirse como un servidor local porque permite ejecutar y probar sitios web en una computadora sin publicarlos en Internet."
+          },
+          {
+            "type": "text",
+            "content": "De manera más precisa, XAMPP es un paquete de programas que crea un entorno de servidor local e incluye componentes como Apache, MariaDB, PHP y Perl."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "Local server with XAMPP",
+        "es-MX": "Servidor local con XAMPP"
+      },
+      "Question Text": {
+        "en-US": "Which two XAMPP services must be active to work with the described WordPress installation?",
+        "es-MX": "¿Qué dos servicios deben estar activos en XAMPP para trabajar con la instalación de WordPress descrita?"
+      },
+      "Options": {
+        "en-US": [
+          "PHP and FileZilla",
+          "Apache and FTP",
+          "Apache and MySQL",
+          "MySQL and WordPress.com"
+        ],
+        "es-MX": [
+          "PHP y FileZilla",
+          "Apache y FTP",
+          "Apache y MySQL",
+          "MySQL y WordPress.com"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Apache and MySQL",
+        "es-MX": "Apache y MySQL"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Required XAMPP services"
+          },
+          {
+            "type": "text",
+            "content": "Apache processes requests and serves the WordPress pages, while the MySQL-compatible database service stores the website's content and configuration."
+          },
+          {
+            "type": "text",
+            "content": "Current XAMPP packages incorporate MariaDB instead of MySQL. MariaDB is compatible with WordPress and performs the database function represented by MySQL in this question."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Servicios necesarios de XAMPP"
+          },
+          {
+            "type": "text",
+            "content": "Apache procesa las solicitudes y sirve las páginas de WordPress, mientras que el servicio de base de datos compatible con MySQL almacena el contenido y la configuración del sitio."
+          },
+          {
+            "type": "text",
+            "content": "Las versiones actuales de XAMPP incorporan MariaDB en lugar de MySQL. MariaDB es compatible con WordPress y cumple la función de base de datos representada por MySQL en esta pregunta."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress project folders",
+        "es-MX": "Carpetas de proyectos de WordPress"
+      },
+      "Question Text": {
+        "en-US": "In which XAMPP folder should the WordPress project folder be placed?",
+        "es-MX": "¿En qué carpeta de XAMPP debe colocarse la carpeta del proyecto de WordPress?"
+      },
+      "Options": {
+        "en-US": [
+          "wp-content",
+          "wp-admin",
+          "htdocs",
+          "plugins"
+        ],
+        "es-MX": [
+          "wp-content",
+          "wp-admin",
+          "htdocs",
+          "plugins"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "htdocs",
+        "es-MX": "htdocs"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "The htdocs folder"
+          },
+          {
+            "type": "text",
+            "content": "In a standard XAMPP installation, htdocs is Apache's document directory and contains the websites served by the local server."
+          },
+          {
+            "type": "text",
+            "content": "A separate folder can be created inside htdocs for each WordPress project and accessed through localhost."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "La carpeta htdocs"
+          },
+          {
+            "type": "text",
+            "content": "En una instalación estándar de XAMPP, htdocs es el directorio de documentos de Apache y contiene los sitios atendidos por el servidor local."
+          },
+          {
+            "type": "text",
+            "content": "Dentro de htdocs puede crearse una carpeta independiente para cada proyecto de WordPress y acceder a ella mediante localhost."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress project folders",
+        "es-MX": "Carpetas de proyectos de WordPress"
+      },
+      "Question Text": {
+        "en-US": "How many WordPress projects can be created inside the htdocs folder?",
+        "es-MX": "¿Cuántos proyectos de WordPress pueden crearse dentro de htdocs?"
+      },
+      "Options": {
+        "en-US": [
+          "Only one",
+          "Ten",
+          "Fifty",
+          "As many projects as necessary"
+        ],
+        "es-MX": [
+          "Solo uno",
+          "Diez",
+          "Cincuenta",
+          "Todos los proyectos que sean necesarios"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "As many projects as necessary",
+        "es-MX": "Todos los proyectos que sean necesarios"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Multiple projects in htdocs"
+          },
+          {
+            "type": "text",
+            "content": "The htdocs directory can contain multiple folders, with each folder representing a different local WordPress project."
+          },
+          {
+            "type": "text",
+            "content": "There is no fixed limit of one, ten or fifty projects. The practical limit depends on the computer's available storage, memory and processing resources."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Varios proyectos en htdocs"
+          },
+          {
+            "type": "text",
+            "content": "El directorio htdocs puede contener varias carpetas y cada una puede corresponder a un proyecto local diferente de WordPress."
+          },
+          {
+            "type": "text",
+            "content": "No existe un límite fijo de uno, diez o cincuenta proyectos. El límite práctico depende del almacenamiento, la memoria y los recursos de procesamiento disponibles en la computadora."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "Local WordPress database",
+        "es-MX": "Base de datos local de WordPress"
+      },
+      "Question Text": {
+        "en-US": "Which tool is used to create the local database for WordPress?",
+        "es-MX": "¿Qué herramienta se utiliza para crear la base de datos de WordPress en local?"
+      },
+      "Options": {
+        "en-US": [
+          "FileZilla",
+          "Elementor",
+          "phpMyAdmin",
+          "cPanel exclusively"
+        ],
+        "es-MX": [
+          "FileZilla",
+          "Elementor",
+          "phpMyAdmin",
+          "cPanel exclusivamente"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "phpMyAdmin",
+        "es-MX": "phpMyAdmin"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Creating a database with phpMyAdmin"
+          },
+          {
+            "type": "text",
+            "content": "phpMyAdmin is a web-based administration tool used to create and manage MySQL-compatible databases."
+          },
+          {
+            "type": "text",
+            "content": "In a local XAMPP environment, it can be opened from localhost to create the database that WordPress will use."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Creación de la base de datos con phpMyAdmin"
+          },
+          {
+            "type": "text",
+            "content": "phpMyAdmin es una herramienta de administración web que permite crear y gestionar bases de datos compatibles con MySQL."
+          },
+          {
+            "type": "text",
+            "content": "En un entorno local con XAMPP puede abrirse desde localhost para crear la base de datos que utilizará WordPress."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "Local WordPress database",
+        "es-MX": "Base de datos local de WordPress"
+      },
+      "Question Text": {
+        "en-US": "What is recommended when choosing the name of a WordPress project's database?",
+        "es-MX": "¿Qué se recomienda respecto al nombre de la base de datos de un proyecto de WordPress?"
+      },
+      "Options": {
+        "en-US": [
+          "It must always be named “wordpress”",
+          "It must always be named “database”",
+          "It is recommended to use the same name as the project",
+          "It must have a different name from the project"
+        ],
+        "es-MX": [
+          "Debe llamarse siempre «wordpress»",
+          "Debe llamarse siempre «database»",
+          "Se recomienda usar el mismo nombre que el proyecto",
+          "Debe tener un nombre distinto al proyecto"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "It is recommended to use the same name as the project",
+        "es-MX": "Se recomienda usar el mismo nombre que el proyecto"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Database name"
+          },
+          {
+            "type": "text",
+            "content": "Using the same or a closely related name for the project folder and its database makes both resources easier to identify and reduces confusion when managing several local websites."
+          },
+          {
+            "type": "text",
+            "content": "This is an organizational recommendation rather than a technical requirement. WordPress can use another valid database name if it is entered correctly during installation."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Nombre de la base de datos"
+          },
+          {
+            "type": "text",
+            "content": "Utilizar el mismo nombre, o uno estrechamente relacionado, para la carpeta del proyecto y su base de datos facilita su identificación y evita confusiones al administrar varios sitios locales."
+          },
+          {
+            "type": "text",
+            "content": "Se trata de una recomendación de organización y no de un requisito técnico. WordPress puede utilizar otro nombre válido si se introduce correctamente durante la instalación."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "Local WordPress database",
+        "es-MX": "Base de datos local de WordPress"
+      },
+      "Question Text": {
+        "en-US": "In a local WordPress installation using XAMPP's default database configuration, what is the default database username?",
+        "es-MX": "En una instalación local de WordPress con la configuración predeterminada de XAMPP, ¿cuál es el usuario de la base de datos por defecto?"
+      },
+      "Options": {
+        "en-US": [
+          "admin",
+          "wordpress",
+          "root",
+          "localhost"
+        ],
+        "es-MX": [
+          "admin",
+          "wordpress",
+          "root",
+          "localhost"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "root",
+        "es-MX": "root"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Default local database user"
+          },
+          {
+            "type": "text",
+            "content": "In a standard local XAMPP configuration, root is the default database administrator account commonly used during a WordPress practice installation."
+          },
+          {
+            "type": "text",
+            "content": "This configuration applies to the local development environment. A public or production server should use a separate database user with only the permissions required by WordPress."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Usuario predeterminado de la base de datos local"
+          },
+          {
+            "type": "text",
+            "content": "En una configuración local estándar de XAMPP, root es la cuenta predeterminada de administración de la base de datos que suele utilizarse durante una instalación de práctica de WordPress."
+          },
+          {
+            "type": "text",
+            "content": "Esta configuración corresponde al entorno local de desarrollo. En un servidor público o de producción debe utilizarse un usuario independiente con únicamente los permisos necesarios para WordPress."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "Local WordPress database",
+        "es-MX": "Base de datos local de WordPress"
+      },
+      "Question Text": {
+        "en-US": "In a local WordPress installation using XAMPP's default database configuration, what should be entered as the database password?",
+        "es-MX": "En una instalación local de WordPress con la configuración predeterminada de XAMPP, ¿qué debe colocarse como contraseña de la base de datos?"
+      },
+      "Options": {
+        "en-US": [
+          "root",
+          "admin",
+          "localhost",
+          "It is left blank"
+        ],
+        "es-MX": [
+          "root",
+          "admin",
+          "localhost",
+          "Se deja en blanco"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "It is left blank",
+        "es-MX": "Se deja en blanco"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Password in a local XAMPP installation"
+          },
+          {
+            "type": "text",
+            "content": "In XAMPP's default local configuration, the root database account may initially have no password, so the password field is left blank during the WordPress installation."
+          },
+          {
+            "type": "text",
+            "content": "This configuration is intended only for an isolated development environment. A public or production server must use a strong password and secure database credentials."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Contraseña en una instalación local con XAMPP"
+          },
+          {
+            "type": "text",
+            "content": "En la configuración local predeterminada de XAMPP, la cuenta root de la base de datos puede no tener inicialmente una contraseña, por lo que el campo se deja en blanco durante la instalación de WordPress."
+          },
+          {
+            "type": "text",
+            "content": "Esta configuración únicamente debe utilizarse en un entorno aislado de desarrollo. En un servidor público o de producción deben emplearse una contraseña segura y credenciales protegidas."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "Posts and pages",
+        "es-MX": "Entradas y páginas"
+      },
+      "Question Text": {
+        "en-US": "What is the main difference between a post and a page in WordPress?",
+        "es-MX": "¿Cuál es la diferencia principal entre una entrada y una página en WordPress?"
+      },
+      "Options": {
+        "en-US": [
+          "Posts are for images and pages are for videos",
+          "Posts are mainly related to blog content, while pages are used for general website content",
+          "Pages can only be created by administrators",
+          "Posts cannot contain text"
+        ],
+        "es-MX": [
+          "Las entradas son para imágenes y las páginas para vídeos",
+          "Las entradas o posts se relacionan principalmente con el contenido de un blog, mientras que las páginas se utilizan para contenido general del sitio web",
+          "Las páginas solo pueden ser creadas por administradores",
+          "Las entradas no pueden contener texto"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Posts are mainly related to blog content, while pages are used for general website content",
+        "es-MX": "Las entradas o posts se relacionan principalmente con el contenido de un blog, mientras que las páginas se utilizan para contenido general del sitio web"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Posts and pages"
+          },
+          {
+            "type": "text",
+            "content": "Posts are commonly used for blog articles, news and content published periodically. They can be organized by date, categories and tags."
+          },
+          {
+            "type": "text",
+            "content": "Pages are generally used for permanent website information, such as Contact, About Us or Services. Both posts and pages can contain text, images and videos."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Entradas y páginas"
+          },
+          {
+            "type": "text",
+            "content": "Las entradas se utilizan normalmente para artículos de blog, noticias y contenido publicado periódicamente. Pueden organizarse por fecha, categorías y etiquetas."
+          },
+          {
+            "type": "text",
+            "content": "Las páginas suelen utilizarse para información permanente del sitio, como Contacto, Quiénes somos o Servicios. Tanto las entradas como las páginas pueden contener texto, imágenes y videos."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress posts",
+        "es-MX": "Entradas de WordPress"
+      },
+      "Question Text": {
+        "en-US": "Which section of the WordPress administration panel should be accessed to create a post?",
+        "es-MX": "¿A qué sección del administrador de WordPress se debe acceder para crear un post?"
+      },
+      "Options": {
+        "en-US": [
+          "Pages",
+          "Appearance",
+          "Posts",
+          "Plugins"
+        ],
+        "es-MX": [
+          "Páginas",
+          "Apariencia",
+          "Entradas",
+          "Plugins"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Posts",
+        "es-MX": "Entradas"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Creating a post"
+          },
+          {
+            "type": "text",
+            "content": "New blog posts are created from the Posts section of the WordPress administration panel."
+          },
+          {
+            "type": "text",
+            "content": "The complete route is Posts → Add New. The available options may depend on the permissions assigned to the user's role."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Creación de una entrada"
+          },
+          {
+            "type": "text",
+            "content": "Las nuevas publicaciones del blog se crean desde la sección «Entradas» del administrador de WordPress."
+          },
+          {
+            "type": "text",
+            "content": "La ruta completa es Entradas → Añadir nueva. Las opciones disponibles pueden depender de los permisos asignados al perfil del usuario."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress pages",
+        "es-MX": "Páginas de WordPress"
+      },
+      "Question Text": {
+        "en-US": "Which section should be accessed to create a new page in WordPress?",
+        "es-MX": "¿A qué sección se debe acceder para crear una nueva página en WordPress?"
+      },
+      "Options": {
+        "en-US": [
+          "Posts",
+          "Pages",
+          "Plugins",
+          "Tools"
+        ],
+        "es-MX": [
+          "Entradas",
+          "Páginas",
+          "Plugins",
+          "Herramientas"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Pages",
+        "es-MX": "Páginas"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Creating a page"
+          },
+          {
+            "type": "text",
+            "content": "New pages are created from the Pages section of the WordPress administration panel."
+          },
+          {
+            "type": "text",
+            "content": "The complete route is Pages → Add New. The Posts section is used for blog posts and should not be confused with the Pages section."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Creación de una página"
+          },
+          {
+            "type": "text",
+            "content": "Las páginas nuevas se crean desde la sección «Páginas» del administrador de WordPress."
+          },
+          {
+            "type": "text",
+            "content": "La ruta completa es Páginas → Añadir nueva. La sección «Entradas» se utiliza para las publicaciones del blog y no debe confundirse con «Páginas»."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress pages",
+        "es-MX": "Páginas de WordPress"
+      },
+      "Question Text": {
+        "en-US": "Which of the following is a typical example of a WordPress page?",
+        "es-MX": "¿Cuál de los siguientes sería un ejemplo típico de una página en WordPress?"
+      },
+      "Options": {
+        "en-US": [
+          "A daily blog post",
+          "A news article published chronologically",
+          "Contact or About the Company",
+          "A user comment"
+        ],
+        "es-MX": [
+          "Una publicación diaria del blog",
+          "Una noticia publicada cronológicamente",
+          "«Contacto» o «Sobre la empresa»",
+          "Un comentario de un usuario"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Contact or About the Company",
+        "es-MX": "«Contacto» o «Sobre la empresa»"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Examples of pages"
+          },
+          {
+            "type": "text",
+            "content": "Contact and About the Company are typical pages because they contain general information that remains relevant for long periods."
+          },
+          {
+            "type": "text",
+            "content": "Blog posts and news articles are usually created as posts because they are commonly organized and displayed chronologically."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Ejemplos de páginas"
+          },
+          {
+            "type": "text",
+            "content": "Contacto y Sobre la empresa son ejemplos típicos de páginas porque contienen información general que permanece vigente durante periodos prolongados."
+          },
+          {
+            "type": "text",
+            "content": "Las publicaciones del blog y las noticias suelen crearse como entradas porque normalmente se organizan y muestran cronológicamente."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress themes",
+        "es-MX": "Temas de WordPress"
+      },
+      "Question Text": {
+        "en-US": "What is a theme in WordPress?",
+        "es-MX": "¿Qué es un tema en WordPress?"
+      },
+      "Options": {
+        "en-US": [
+          "A database",
+          "A programming language",
+          "A web server",
+          "A set of files that defines the structure and visual styles of a website"
+        ],
+        "es-MX": [
+          "Una base de datos",
+          "Un lenguaje de programación",
+          "Un servidor web",
+          "Un conjunto de archivos que define la estructura y los estilos visuales de un sitio web"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "A set of files that defines the structure and visual styles of a website",
+        "es-MX": "Un conjunto de archivos que define la estructura y los estilos visuales de un sitio web"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "WordPress themes"
+          },
+          {
+            "type": "text",
+            "content": "A WordPress theme is a collection of files that controls the presentation, design and part of the structure of a website."
+          },
+          {
+            "type": "text",
+            "content": "Themes can define colors, typography, templates, page layouts and the appearance of different types of content."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Temas de WordPress"
+          },
+          {
+            "type": "text",
+            "content": "Un tema de WordPress es un conjunto de archivos que controla la presentación, el diseño y parte de la estructura de un sitio web."
+          },
+          {
+            "type": "text",
+            "content": "Los temas pueden definir colores, tipografías, plantillas, distribuciones de página y la apariencia de los distintos tipos de contenido."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress themes",
+        "es-MX": "Temas de WordPress"
+      },
+      "Question Text": {
+        "en-US": "In which WordPress section are themes managed?",
+        "es-MX": "¿En qué sección de WordPress se gestionan los temas?"
+      },
+      "Options": {
+        "en-US": [
+          "Posts → Themes",
+          "Tools → Themes",
+          "Appearance → Themes",
+          "Pages → Themes"
+        ],
+        "es-MX": [
+          "Entradas → Temas",
+          "Herramientas → Temas",
+          "Apariencia → Temas",
+          "Páginas → Temas"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Appearance → Themes",
+        "es-MX": "Apariencia → Temas"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Theme management"
+          },
+          {
+            "type": "text",
+            "content": "Themes are installed, activated, previewed and managed from Appearance → Themes in the WordPress administration panel."
+          },
+          {
+            "type": "text",
+            "content": "Access to this section requires a user role with permission to install or manage themes."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Administración de temas"
+          },
+          {
+            "type": "text",
+            "content": "Los temas se instalan, activan, previsualizan y administran desde Apariencia → Temas en el panel de WordPress."
+          },
+          {
+            "type": "text",
+            "content": "El acceso a esta sección requiere un perfil de usuario con permisos para instalar o administrar temas."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress themes",
+        "es-MX": "Temas de WordPress"
+      },
+      "Question Text": {
+        "en-US": "After installing a theme, what must be done for the website to use it?",
+        "es-MX": "Después de instalar un tema, ¿qué debe hacerse para que sea el utilizado por el sitio?"
+      },
+      "Options": {
+        "en-US": [
+          "Publish it",
+          "Export it",
+          "Convert it into a plugin",
+          "Activate it"
+        ],
+        "es-MX": [
+          "Publicarlo",
+          "Exportarlo",
+          "Convertirlo en plugin",
+          "Activarlo"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Activate it",
+        "es-MX": "Activarlo"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Theme activation"
+          },
+          {
+            "type": "text",
+            "content": "Installing a theme adds its files to WordPress, but does not automatically make it the website's active design."
+          },
+          {
+            "type": "text",
+            "content": "The theme must be activated before WordPress uses its templates and styles. Several themes can be installed, but normally only one is active at a time."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Activación de un tema"
+          },
+          {
+            "type": "text",
+            "content": "Instalar un tema agrega sus archivos a WordPress, pero no lo convierte automáticamente en el diseño activo del sitio."
+          },
+          {
+            "type": "text",
+            "content": "El tema debe activarse para que WordPress utilice sus plantillas y estilos. Pueden existir varios temas instalados, pero normalmente solo uno permanece activo."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress plugins",
+        "es-MX": "Plugins de WordPress"
+      },
+      "Question Text": {
+        "en-US": "What is a plugin in WordPress?",
+        "es-MX": "¿Qué es un plugin en WordPress?"
+      },
+      "Options": {
+        "en-US": [
+          "A theme used to change the visual appearance",
+          "An additional database",
+          "An additional tool or program that increases WordPress functionality",
+          "A server used to host WordPress"
+        ],
+        "es-MX": [
+          "Un tema utilizado para cambiar el aspecto visual",
+          "Una base de datos adicional",
+          "Una herramienta o programa adicional que permite aumentar las funcionalidades de WordPress",
+          "Un servidor utilizado para alojar WordPress"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "An additional tool or program that increases WordPress functionality",
+        "es-MX": "Una herramienta o programa adicional que permite aumentar las funcionalidades de WordPress"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "WordPress plugins"
+          },
+          {
+            "type": "text",
+            "content": "A plugin is a software component that can be installed in WordPress to add new tools or modify existing functionality."
+          },
+          {
+            "type": "text",
+            "content": "Plugins can provide features such as security, forms, search engine optimization, social media integration and electronic commerce."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Plugins de WordPress"
+          },
+          {
+            "type": "text",
+            "content": "Un plugin es un componente de software que puede instalarse en WordPress para agregar herramientas nuevas o modificar funciones existentes."
+          },
+          {
+            "type": "text",
+            "content": "Los plugins pueden incorporar funciones de seguridad, formularios, posicionamiento en buscadores, integración con redes sociales y comercio electrónico."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress plugins",
+        "es-MX": "Plugins de WordPress"
+      },
+      "Question Text": {
+        "en-US": "What is a plugin used for?",
+        "es-MX": "¿Para qué se utiliza un plugin?"
+      },
+      "Options": {
+        "en-US": [
+          "Only to change the website's color",
+          "To add or expand functionality that WordPress does not include by default",
+          "To replace Apache",
+          "To create the MySQL database"
+        ],
+        "es-MX": [
+          "Únicamente para cambiar el color del sitio",
+          "Para añadir o ampliar funcionalidades que WordPress no incluye de forma básica",
+          "Para sustituir Apache",
+          "Para crear la base de datos MySQL"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To add or expand functionality that WordPress does not include by default",
+        "es-MX": "Para añadir o ampliar funcionalidades que WordPress no incluye de forma básica"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Purpose of plugins"
+          },
+          {
+            "type": "text",
+            "content": "Plugins are used to extend WordPress without having to modify the platform's core files."
+          },
+          {
+            "type": "text",
+            "content": "Depending on the plugin, they can add online stores, contact forms, backups, security controls, image galleries and many other functions."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Finalidad de los plugins"
+          },
+          {
+            "type": "text",
+            "content": "Los plugins se utilizan para ampliar WordPress sin tener que modificar los archivos centrales de la plataforma."
+          },
+          {
+            "type": "text",
+            "content": "Dependiendo del plugin, pueden agregar tiendas en línea, formularios de contacto, copias de seguridad, controles de seguridad, galerías de imágenes y muchas otras funciones."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress plugins",
+        "es-MX": "Plugins de WordPress"
+      },
+      "Question Text": {
+        "en-US": "Which WordPress menu option is used to search for and add new plugins?",
+        "es-MX": "¿Desde qué opción del menú de WordPress se pueden buscar y añadir nuevos plugins?"
+      },
+      "Options": {
+        "en-US": [
+          "Appearance → Add New",
+          "Tools → Plugins",
+          "Pages → Plugins",
+          "Plugins → Add New"
+        ],
+        "es-MX": [
+          "Apariencia → Añadir nuevo",
+          "Herramientas → Plugins",
+          "Páginas → Plugins",
+          "Plugins → Añadir nuevo"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Plugins → Add New",
+        "es-MX": "Plugins → Añadir nuevo"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Adding a plugin"
+          },
+          {
+            "type": "text",
+            "content": "The Plugins → Add New section allows users with the necessary permissions to search the WordPress directory and install plugins."
+          },
+          {
+            "type": "text",
+            "content": "After a standard plugin is installed, it must normally be activated before its functionality becomes available on the website."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Añadir un plugin"
+          },
+          {
+            "type": "text",
+            "content": "La sección Plugins → Añadir nuevo permite a los usuarios con los permisos necesarios buscar en el directorio de WordPress e instalar plugins."
+          },
+          {
+            "type": "text",
+            "content": "Después de instalar un plugin convencional, normalmente debe activarse para que sus funciones estén disponibles en el sitio."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress plugins",
+        "es-MX": "Plugins de WordPress"
+      },
+      "Question Text": {
+        "en-US": "Besides searching for a plugin from the WordPress administration panel, where can it be downloaded for later installation?",
+        "es-MX": "Además de buscar un plugin desde el administrador de WordPress, ¿desde dónde puede descargarse para instalarlo posteriormente?"
+      },
+      "Options": {
+        "en-US": [
+          "Only from phpMyAdmin",
+          "From Apache",
+          "From the WordPress.org plugin directory",
+          "From MySQL"
+        ],
+        "es-MX": [
+          "Únicamente desde phpMyAdmin",
+          "Desde Apache",
+          "Desde el directorio de plugins de WordPress.org",
+          "Desde MySQL"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "From the WordPress.org plugin directory",
+        "es-MX": "Desde el directorio de plugins de WordPress.org"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "WordPress plugin directory"
+          },
+          {
+            "type": "text",
+            "content": "The WordPress.org plugin directory allows plugins to be searched for and downloaded as compressed files."
+          },
+          {
+            "type": "text",
+            "content": "A downloaded plugin can later be installed from Plugins → Add New → Upload Plugin. Plugins should be obtained from trusted sources to reduce security risks."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Directorio de plugins de WordPress"
+          },
+          {
+            "type": "text",
+            "content": "El directorio de WordPress.org permite buscar plugins y descargarlos como archivos comprimidos."
+          },
+          {
+            "type": "text",
+            "content": "El plugin descargado puede instalarse posteriormente desde Plugins → Añadir nuevo → Subir plugin. Es recomendable obtener los plugins de fuentes confiables para reducir riesgos de seguridad."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress widgets",
+        "es-MX": "Widgets de WordPress"
+      },
+      "Question Text": {
+        "en-US": "What are widgets in WordPress?",
+        "es-MX": "¿Qué son los widgets en WordPress?"
+      },
+      "Options": {
+        "en-US": [
+          "Database management systems",
+          "Small applications that add content blocks and functionality to specific areas of a website",
+          "Programming languages for WordPress",
+          "Web servers"
+        ],
+        "es-MX": [
+          "Sistemas gestores de bases de datos",
+          "Pequeñas aplicaciones que permiten añadir bloques de contenido y funcionalidad a determinadas áreas de un sitio web",
+          "Lenguajes de programación para WordPress",
+          "Servidores web"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Small applications that add content blocks and functionality to specific areas of a website",
+        "es-MX": "Pequeñas aplicaciones que permiten añadir bloques de contenido y funcionalidad a determinadas áreas de un sitio web"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "WordPress widgets"
+          },
+          {
+            "type": "text",
+            "content": "Widgets add content or functionality to areas provided by a theme, such as a sidebar, footer or header."
+          },
+          {
+            "type": "text",
+            "content": "Modern WordPress versions use blocks in widget areas, while legacy widgets can continue to work through the block-based widget editor."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Widgets de WordPress"
+          },
+          {
+            "type": "text",
+            "content": "Los widgets agregan contenido o funciones en áreas proporcionadas por el tema, como una barra lateral, un pie de página o una cabecera."
+          },
+          {
+            "type": "text",
+            "content": "Las versiones modernas de WordPress utilizan bloques en las áreas de widgets, mientras que los widgets clásicos pueden seguir funcionando mediante el editor de widgets basado en bloques."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress widgets",
+        "es-MX": "Widgets de WordPress"
+      },
+      "Question Text": {
+        "en-US": "What is the indicated route for managing widgets in WordPress?",
+        "es-MX": "¿Cuál es la ruta indicada para gestionar los widgets en WordPress?"
+      },
+      "Options": {
+        "en-US": [
+          "Appearance → Widgets",
+          "Tools → Widgets",
+          "Users → Widgets",
+          "Settings → Widgets"
+        ],
+        "es-MX": [
+          "Apariencia → Widgets",
+          "Herramientas → Widgets",
+          "Usuarios → Widgets",
+          "Ajustes → Widgets"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Appearance → Widgets",
+        "es-MX": "Apariencia → Widgets"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Accessing widgets"
+          },
+          {
+            "type": "text",
+            "content": "In the standard widget administration interface, widgets are managed from Appearance → Widgets."
+          },
+          {
+            "type": "text",
+            "content": "The available widget areas depend on the active theme. Some block themes manage equivalent areas through Appearance → Editor instead of displaying the traditional Widgets screen."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Acceso a los widgets"
+          },
+          {
+            "type": "text",
+            "content": "En la interfaz estándar de administración de widgets, estos se gestionan desde Apariencia → Widgets."
+          },
+          {
+            "type": "text",
+            "content": "Las áreas disponibles dependen del tema activo. Algunos temas de bloques administran espacios equivalentes desde Apariencia → Editor y pueden no mostrar la pantalla tradicional de Widgets."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress shortcodes",
+        "es-MX": "Shortcodes de WordPress"
+      },
+      "Question Text": {
+        "en-US": "What is a shortcode in WordPress?",
+        "es-MX": "¿Qué es un shortcode en WordPress?"
+      },
+      "Options": {
+        "en-US": [
+          "A protocol for transferring files",
+          "An abbreviated database",
+          "A short or abbreviated code that adds functionality",
+          "A type of web server"
+        ],
+        "es-MX": [
+          "Un protocolo para transferir archivos",
+          "Una base de datos abreviada",
+          "Un código abreviado o corto que permite agregar funcionalidad",
+          "Un tipo de servidor web"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "A short or abbreviated code that adds functionality",
+        "es-MX": "Un código abreviado o corto que permite agregar funcionalidad"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "WordPress shortcodes"
+          },
+          {
+            "type": "text",
+            "content": "A shortcode is a text tag enclosed in square brackets that WordPress interprets to execute a previously registered function."
+          },
+          {
+            "type": "text",
+            "content": "It can insert elements such as forms, galleries or buttons without requiring the user to write the complete underlying program code."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Shortcodes de WordPress"
+          },
+          {
+            "type": "text",
+            "content": "Un shortcode es una etiqueta de texto encerrada entre corchetes que WordPress interpreta para ejecutar una función registrada previamente."
+          },
+          {
+            "type": "text",
+            "content": "Puede insertar elementos como formularios, galerías o botones sin que el usuario tenga que escribir todo el código de programación que los genera."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress shortcodes",
+        "es-MX": "Shortcodes de WordPress"
+      },
+      "Question Text": {
+        "en-US": "Which of the following represents the generic structure of a shortcode?",
+        "es-MX": "¿Cuál de las siguientes opciones representa la estructura genérica de un shortcode?"
+      },
+      "Options": {
+        "en-US": [
+          "{shortcode id='1'}",
+          "(shortcode id='1')",
+          "<shortcode id='1'>",
+          "[shortcode id='1']"
+        ],
+        "es-MX": [
+          "{shortcode id='1'}",
+          "(shortcode id='1')",
+          "<shortcode id='1'>",
+          "[shortcode id='1']"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "[shortcode id='1']",
+        "es-MX": "[shortcode id='1']"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Shortcode structure"
+          },
+          {
+            "type": "text",
+            "content": "WordPress shortcodes are identified by square brackets. The shortcode name appears first and can be followed by attributes and their values."
+          },
+          {
+            "type": "text",
+            "content": "In [shortcode id='1'], shortcode is the tag name and id='1' is an attribute that provides information to the associated function."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Estructura de un shortcode"
+          },
+          {
+            "type": "text",
+            "content": "Los shortcodes de WordPress se identifican mediante corchetes. Primero aparece el nombre del shortcode y después pueden incluirse atributos con sus respectivos valores."
+          },
+          {
+            "type": "text",
+            "content": "En [shortcode id='1'], shortcode es el nombre de la etiqueta e id='1' es un atributo que proporciona información a la función asociada."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "Visual website builders",
+        "es-MX": "Constructores visuales"
+      },
+      "Question Text": {
+        "en-US": "What is a fundamental feature of visual builders such as Elementor and Divi?",
+        "es-MX": "¿Cuál es una característica fundamental de los constructores visuales como Elementor y Divi?"
+      },
+      "Options": {
+        "en-US": [
+          "They work exclusively through MySQL",
+          "They are used only to create plugins",
+          "They completely replace WordPress",
+          "They allow pages to be designed using a drag-and-drop system"
+        ],
+        "es-MX": [
+          "Funcionan exclusivamente mediante MySQL",
+          "Sirven únicamente para crear plugins",
+          "Sustituyen completamente a WordPress",
+          "Permiten diseñar páginas mediante el sistema Drag and Drop, es decir, arrastrar y soltar"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "They allow pages to be designed using a drag-and-drop system",
+        "es-MX": "Permiten diseñar páginas mediante el sistema Drag and Drop, es decir, arrastrar y soltar"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Drag-and-drop design"
+          },
+          {
+            "type": "text",
+            "content": "Elementor and Divi provide visual editors that allow elements such as text, images, buttons and columns to be dragged and dropped into a page."
+          },
+          {
+            "type": "text",
+            "content": "They work within WordPress and simplify page design; they do not completely replace the WordPress platform."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Diseño mediante arrastrar y soltar"
+          },
+          {
+            "type": "text",
+            "content": "Elementor y Divi proporcionan editores visuales que permiten arrastrar y soltar elementos como textos, imágenes, botones y columnas dentro de una página."
+          },
+          {
+            "type": "text",
+            "content": "Funcionan dentro de WordPress y facilitan el diseño de las páginas; no sustituyen completamente a la plataforma."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "Visual website builders",
+        "es-MX": "Constructores visuales"
+      },
+      "Question Text": {
+        "en-US": "Which two visual builders were specifically studied?",
+        "es-MX": "¿Cuáles son los dos constructores visuales estudiados específicamente?"
+      },
+      "Options": {
+        "en-US": [
+          "Elementor and WooCommerce",
+          "Divi and phpMyAdmin",
+          "Elementor and Divi",
+          "Elementor and Apache"
+        ],
+        "es-MX": [
+          "Elementor y WooCommerce",
+          "Divi y phpMyAdmin",
+          "Elementor y Divi",
+          "Elementor y Apache"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Elementor and Divi",
+        "es-MX": "Elementor y Divi"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Elementor and Divi"
+          },
+          {
+            "type": "text",
+            "content": "Elementor and Divi are visual website-building tools for WordPress."
+          },
+          {
+            "type": "text",
+            "content": "WooCommerce is an e-commerce plugin, phpMyAdmin is a database administration tool and Apache is a web server."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Elementor y Divi"
+          },
+          {
+            "type": "text",
+            "content": "Elementor y Divi son herramientas de construcción visual de sitios para WordPress."
+          },
+          {
+            "type": "text",
+            "content": "WooCommerce es un plugin de comercio electrónico, phpMyAdmin es una herramienta para administrar bases de datos y Apache es un servidor web."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "Elementor",
+        "es-MX": "Elementor"
+      },
+      "Question Text": {
+        "en-US": "Which versions does Elementor offer?",
+        "es-MX": "¿Qué versiones ofrece Elementor?"
+      },
+      "Options": {
+        "en-US": [
+          "Only a free version",
+          "Only a premium version",
+          "A free version and a premium version",
+          "A PHP version and a CSS version"
+        ],
+        "es-MX": [
+          "Solo una versión gratuita",
+          "Solo una versión premium",
+          "Una versión gratuita y una versión premium",
+          "Una versión PHP y una versión CSS"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "A free version and a premium version",
+        "es-MX": "Una versión gratuita y una versión premium"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Elementor versions"
+          },
+          {
+            "type": "text",
+            "content": "Elementor Core is the free version and includes the visual drag-and-drop editor and basic design tools."
+          },
+          {
+            "type": "text",
+            "content": "Elementor Pro is the paid or premium version and adds advanced widgets, theme-building tools and other professional features."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Versiones de Elementor"
+          },
+          {
+            "type": "text",
+            "content": "Elementor Core es la versión gratuita e incluye el editor visual de arrastrar y soltar y las herramientas básicas de diseño."
+          },
+          {
+            "type": "text",
+            "content": "Elementor Pro es la versión de pago o premium y agrega widgets avanzados, herramientas para construir temas y otras funciones profesionales."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "Elementor and Divi",
+        "es-MX": "Elementor y Divi"
+      },
+      "Question Text": {
+        "en-US": "What is the relationship between Elementor and Divi?",
+        "es-MX": "¿Qué relación existe entre Elementor y Divi?"
+      },
+      "Options": {
+        "en-US": [
+          "Divi is a mandatory Elementor add-on",
+          "Elementor works inside Divi",
+          "Divi is a premium version of Elementor",
+          "They are two different and independent builders"
+        ],
+        "es-MX": [
+          "Divi es un complemento obligatorio de Elementor",
+          "Elementor funciona dentro de Divi",
+          "Divi es una versión premium de Elementor",
+          "Son dos constructores diferentes e independientes"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "They are two different and independent builders",
+        "es-MX": "Son dos constructores diferentes e independientes"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Independent builders"
+          },
+          {
+            "type": "text",
+            "content": "Elementor and Divi are separate products developed by different companies. Neither is a version of or required add-on for the other."
+          },
+          {
+            "type": "text",
+            "content": "Elementor is installed as a WordPress plugin. Divi provides a visual builder through the Divi theme and is also available as the separate Divi Builder plugin."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Constructores independientes"
+          },
+          {
+            "type": "text",
+            "content": "Elementor y Divi son productos independientes desarrollados por empresas diferentes. Ninguno es una versión ni un complemento obligatorio del otro."
+          },
+          {
+            "type": "text",
+            "content": "Elementor se instala como plugin de WordPress. Divi ofrece un constructor visual mediante el tema Divi y también está disponible como el plugin independiente Divi Builder."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "Elementor and Divi",
+        "es-MX": "Elementor y Divi"
+      },
+      "Question Text": {
+        "en-US": "What is one difference between Elementor and Divi regarding access?",
+        "es-MX": "¿Cuál es una diferencia entre Elementor y Divi respecto al acceso?"
+      },
+      "Options": {
+        "en-US": [
+          "Elementor is always paid and Divi is always free",
+          "Elementor has a free option, while accessing Divi requires a paid option",
+          "Both are completely free",
+          "Neither can be installed in WordPress"
+        ],
+        "es-MX": [
+          "Elementor es siempre de pago y Divi siempre gratuito",
+          "Elementor dispone de una opción gratuita, mientras que para acceder a Divi se requiere una opción de pago",
+          "Los dos son completamente gratuitos",
+          "Ninguno puede instalarse en WordPress"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Elementor has a free option, while accessing Divi requires a paid option",
+        "es-MX": "Elementor dispone de una opción gratuita, mientras que para acceder a Divi se requiere una opción de pago"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Access to Elementor and Divi"
+          },
+          {
+            "type": "text",
+            "content": "Elementor Core can be installed and used for free, while Elementor Pro requires a paid subscription."
+          },
+          {
+            "type": "text",
+            "content": "Divi is a commercial product from Elegant Themes and normally requires purchasing a plan or license to download and use it. Available plans and prices may change over time."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Acceso a Elementor y Divi"
+          },
+          {
+            "type": "text",
+            "content": "Elementor Core puede instalarse y utilizarse gratuitamente, mientras que Elementor Pro requiere una suscripción de pago."
+          },
+          {
+            "type": "text",
+            "content": "Divi es un producto comercial de Elegant Themes y normalmente requiere adquirir un plan o una licencia para descargarlo y utilizarlo. Los planes y precios disponibles pueden cambiar con el tiempo."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress features",
+        "es-MX": "Características de WordPress"
+      },
+      "Question Text": {
+        "en-US": "Which of the following is a feature of WordPress?",
+        "es-MX": "¿Cuál de las siguientes es una característica de WordPress?"
+      },
+      "Options": {
+        "en-US": [
+          "It only allows images to be managed",
+          "It is only used to create personal blogs",
+          "It allows publications, users, roles and media to be managed, among other functions",
+          "It does not allow users to be managed"
+        ],
+        "es-MX": [
+          "Solo permite administrar imágenes",
+          "Únicamente sirve para crear blogs personales",
+          "Permite gestionar publicaciones, usuarios, roles y medios, entre otras funciones",
+          "No permite gestionar usuarios"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "It allows publications, users, roles and media to be managed, among other functions",
+        "es-MX": "Permite gestionar publicaciones, usuarios, roles y medios, entre otras funciones"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "WordPress content management"
+          },
+          {
+            "type": "text",
+            "content": "WordPress includes tools for creating and managing posts, pages, users, roles, images, audio, video and other website resources."
+          },
+          {
+            "type": "text",
+            "content": "Its functions can also be expanded through themes and plugins."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Gestión de contenidos en WordPress"
+          },
+          {
+            "type": "text",
+            "content": "WordPress incluye herramientas para crear y administrar entradas, páginas, usuarios, roles, imágenes, audios, videos y otros recursos del sitio web."
+          },
+          {
+            "type": "text",
+            "content": "Además, sus funciones pueden ampliarse mediante temas y plugins."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress languages",
+        "es-MX": "Idiomas en WordPress"
+      },
+      "Question Text": {
+        "en-US": "Does WordPress support multiple languages?",
+        "es-MX": "¿WordPress permite trabajar en varios idiomas?"
+      },
+      "Options": {
+        "en-US": [
+          "No, it only works in English",
+          "It only supports English and Spanish",
+          "Yes, WordPress is multilingual",
+          "Only through MySQL"
+        ],
+        "es-MX": [
+          "No, solamente funciona en inglés",
+          "Solamente admite inglés y español",
+          "Sí, WordPress es multidioma",
+          "Solo mediante MySQL"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Yes, WordPress is multilingual",
+        "es-MX": "Sí, WordPress es multidioma"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Language support"
+          },
+          {
+            "type": "text",
+            "content": "WordPress is translated into many languages, and the administration interface can be configured in the preferred available language."
+          },
+          {
+            "type": "text",
+            "content": "Publishing the same website content in several languages normally requires additional configuration, a multilingual plugin or a multisite structure."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Compatibilidad con diferentes idiomas"
+          },
+          {
+            "type": "text",
+            "content": "WordPress está traducido a numerosos idiomas y permite configurar la interfaz de administración en el idioma disponible que se prefiera."
+          },
+          {
+            "type": "text",
+            "content": "Para publicar el mismo contenido del sitio en varios idiomas normalmente se necesita una configuración adicional, un plugin multilingüe o una estructura multisitio."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress.com",
+        "es-MX": "WordPress.com"
+      },
+      "Question Text": {
+        "en-US": "On WordPress.com, a free website normally generates:",
+        "es-MX": "En WordPress.com, una web gratuita normalmente genera:"
+      },
+      "Options": {
+        "en-US": [
+          "A private IP address",
+          "A WordPress.com subdomain",
+          "An independent .org domain",
+          "A local Apache server"
+        ],
+        "es-MX": [
+          "Una dirección IP privada",
+          "Un subdominio de WordPress.com",
+          "Un dominio .org independiente",
+          "Un servidor Apache local"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "A WordPress.com subdomain",
+        "es-MX": "Un subdominio de WordPress.com"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "WordPress.com subdomain"
+          },
+          {
+            "type": "text",
+            "content": "A free website created on WordPress.com normally uses an address similar to mywebsite.wordpress.com."
+          },
+          {
+            "type": "text",
+            "content": "Using a custom domain depends on registering or connecting that domain and on the conditions of the selected WordPress.com plan."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Subdominio de WordPress.com"
+          },
+          {
+            "type": "text",
+            "content": "Un sitio gratuito creado en WordPress.com normalmente utiliza una dirección semejante a misitio.wordpress.com."
+          },
+          {
+            "type": "text",
+            "content": "El uso de un dominio personalizado depende de registrar o conectar dicho dominio y de las condiciones del plan de WordPress.com seleccionado."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "Client-server model",
+        "es-MX": "Modelo cliente-servidor"
+      },
+      "Question Text": {
+        "en-US": "In a client-server model using Apache, what role does the computer hosting the website perform?",
+        "es-MX": "En un modelo cliente-servidor utilizando Apache, ¿qué función cumple el equipo donde se aloja la web?"
+      },
+      "Options": {
+        "en-US": [
+          "It is only the client",
+          "It acts as a server and provides the content requested by clients",
+          "It functions exclusively as a database",
+          "It becomes a domain"
+        ],
+        "es-MX": [
+          "Es únicamente el cliente",
+          "Actúa como servidor y proporciona el contenido solicitado a los clientes",
+          "Funciona exclusivamente como base de datos",
+          "Se convierte en un dominio"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "It acts as a server and provides the content requested by clients",
+        "es-MX": "Actúa como servidor y proporciona el contenido solicitado a los clientes"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Web server function"
+          },
+          {
+            "type": "text",
+            "content": "Apache receives HTTP requests from client devices, processes them and returns the requested website resources."
+          },
+          {
+            "type": "text",
+            "content": "The devices and browsers that request and display those resources act as clients."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Función del servidor web"
+          },
+          {
+            "type": "text",
+            "content": "Apache recibe las solicitudes HTTP de los dispositivos cliente, las procesa y devuelve los recursos solicitados del sitio web."
+          },
+          {
+            "type": "text",
+            "content": "Los dispositivos y navegadores que solicitan y muestran esos recursos actúan como clientes."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress themes",
+        "es-MX": "Temas de WordPress"
+      },
+      "Question Text": {
+        "en-US": "What must be done with an installed theme for WordPress to use it?",
+        "es-MX": "¿Qué debe hacerse con un tema instalado para que WordPress lo utilice?"
+      },
+      "Options": {
+        "en-US": [
+          "Downloading it is enough",
+          "Saving it on the computer is enough",
+          "It must be activated",
+          "It must be converted into a post"
+        ],
+        "es-MX": [
+          "Basta con descargarlo",
+          "Basta con guardarlo en la computadora",
+          "Debe activarse",
+          "Debe convertirse en una entrada"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "It must be activated",
+        "es-MX": "Debe activarse"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Theme activation"
+          },
+          {
+            "type": "text",
+            "content": "Installing a theme makes it available in WordPress, but it must be activated before its design and templates are applied to the website."
+          },
+          {
+            "type": "text",
+            "content": "This question reinforces the difference between having a theme installed and having it active."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Activación de un tema"
+          },
+          {
+            "type": "text",
+            "content": "La instalación hace que el tema esté disponible en WordPress, pero es necesario activarlo para aplicar su diseño y sus plantillas al sitio web."
+          },
+          {
+            "type": "text",
+            "content": "Esta pregunta refuerza la diferencia entre tener un tema instalado y tenerlo activo."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress themes",
+        "es-MX": "Temas de WordPress"
+      },
+      "Question Text": {
+        "en-US": "Can several themes be installed in WordPress at the same time?",
+        "es-MX": "¿Puede haber varios temas instalados en WordPress al mismo tiempo?"
+      },
+      "Options": {
+        "en-US": [
+          "No, WordPress automatically deletes the previous themes",
+          "Yes, several themes can be installed, although the active one is used",
+          "Only two themes can be installed",
+          "Only on WordPress.com"
+        ],
+        "es-MX": [
+          "No, WordPress elimina automáticamente los anteriores",
+          "Sí, pueden estar instalados varios, aunque se utiliza el que esté activo",
+          "Únicamente pueden instalarse dos",
+          "Solo en WordPress.com"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Yes, several themes can be installed, although the active one is used",
+        "es-MX": "Sí, pueden estar instalados varios, aunque se utiliza el que esté activo"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Installed and active themes"
+          },
+          {
+            "type": "text",
+            "content": "WordPress can store several installed themes, but normally only one theme is active for the website at a time."
+          },
+          {
+            "type": "text",
+            "content": "Inactive themes remain available and can be activated later."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Temas instalados y tema activo"
+          },
+          {
+            "type": "text",
+            "content": "WordPress puede conservar varios temas instalados, pero normalmente solo uno permanece activo para el sitio web a la vez."
+          },
+          {
+            "type": "text",
+            "content": "Los temas inactivos permanecen disponibles y pueden activarse posteriormente."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "Themes and plugins",
+        "es-MX": "Temas y plugins"
+      },
+      "Question Text": {
+        "en-US": "What may occur when installing certain WordPress themes?",
+        "es-MX": "¿Qué puede ocurrir al instalar determinados temas de WordPress?"
+      },
+      "Options": {
+        "en-US": [
+          "They always delete all plugins",
+          "They replace PHP with JavaScript",
+          "They may require additional plugins to function correctly",
+          "They force a new database to be created"
+        ],
+        "es-MX": [
+          "Siempre eliminan todos los plugins",
+          "Sustituyen PHP por JavaScript",
+          "Pueden requerir plugins adicionales para funcionar correctamente",
+          "Obligan a crear una nueva base de datos"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "They may require additional plugins to function correctly",
+        "es-MX": "Pueden requerir plugins adicionales para funcionar correctamente"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Theme companion plugins"
+          },
+          {
+            "type": "text",
+            "content": "Some themes recommend or require companion plugins to enable particular features, such as page builders, forms, sliders or demo-content tools."
+          },
+          {
+            "type": "text",
+            "content": "These plugins must be installed and activated if their associated functions are needed."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Plugins complementarios de un tema"
+          },
+          {
+            "type": "text",
+            "content": "Algunos temas recomiendan o requieren plugins complementarios para habilitar determinadas funciones, como constructores de páginas, formularios, carruseles o herramientas de contenido de demostración."
+          },
+          {
+            "type": "text",
+            "content": "Estos plugins deben instalarse y activarse cuando se necesiten las funciones con las que están relacionados."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "Elementor",
+        "es-MX": "Elementor"
+      },
+      "Question Text": {
+        "en-US": "How is Elementor obtained in WordPress?",
+        "es-MX": "¿Cómo se obtiene Elementor en WordPress?"
+      },
+      "Options": {
+        "en-US": [
+          "By installing XAMPP again",
+          "From Appearance → Themes",
+          "As a plugin, from Plugins → Add New",
+          "From phpMyAdmin"
+        ],
+        "es-MX": [
+          "Instalando XAMPP nuevamente",
+          "Desde Apariencia → Temas",
+          "Como plugin, desde Plugins → Añadir nuevo",
+          "Desde phpMyAdmin"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "As a plugin, from Plugins → Add New",
+        "es-MX": "Como plugin, desde Plugins → Añadir nuevo"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Installing Elementor"
+          },
+          {
+            "type": "text",
+            "content": "The free Elementor plugin can be found and installed from Plugins → Add New in the WordPress administration panel."
+          },
+          {
+            "type": "text",
+            "content": "After installation, it must be activated. Elementor Pro is obtained separately and requires the base Elementor plugin."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Instalación de Elementor"
+          },
+          {
+            "type": "text",
+            "content": "El plugin gratuito de Elementor puede buscarse e instalarse desde Plugins → Añadir nuevo en el panel de administración de WordPress."
+          },
+          {
+            "type": "text",
+            "content": "Después de instalarlo, debe activarse. Elementor Pro se obtiene por separado y requiere el plugin base de Elementor."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "Visual website builders",
+        "es-MX": "Constructores visuales"
+      },
+      "Question Text": {
+        "en-US": "Which design method do Elementor and Divi use to facilitate page building?",
+        "es-MX": "¿Qué método de diseño utilizan Elementor y Divi para facilitar la construcción de páginas?"
+      },
+      "Options": {
+        "en-US": [
+          "Programming exclusively with PHP",
+          "Creating MySQL tables",
+          "Dragging and dropping elements (Drag and Drop)",
+          "Administration through FTP"
+        ],
+        "es-MX": [
+          "Programación exclusiva mediante PHP",
+          "Creación directa de tablas MySQL",
+          "Arrastrar y soltar elementos (Drag and Drop)",
+          "Administración mediante FTP"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Dragging and dropping elements (Drag and Drop)",
+        "es-MX": "Arrastrar y soltar elementos (Drag and Drop)"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Drag-and-drop design"
+          },
+          {
+            "type": "text",
+            "content": "Elementor and Divi provide visual editors that allow elements to be dragged into the page and dropped in the desired position."
+          },
+          {
+            "type": "text",
+            "content": "This repeated concept reinforces one of the main characteristics of visual website builders."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Diseño mediante arrastrar y soltar"
+          },
+          {
+            "type": "text",
+            "content": "Elementor y Divi proporcionan editores visuales que permiten arrastrar elementos hacia la página y soltarlos en la posición deseada."
+          },
+          {
+            "type": "text",
+            "content": "Este concepto repetido refuerza una de las características principales de los constructores visuales."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "Website builder compatibility",
+        "es-MX": "Compatibilidad entre constructores"
+      },
+      "Question Text": {
+        "en-US": "If a page is designed using Elementor-specific features and is later changed to Divi, what may occur?",
+        "es-MX": "Si una página se diseña utilizando características específicas de Elementor y posteriormente se cambia a Divi, ¿qué puede ocurrir?"
+      },
+      "Options": {
+        "en-US": [
+          "WordPress automatically deletes the entire page",
+          "All elements will necessarily work identically",
+          "Some specific resources or effects may be incompatible and require adjustments in the new builder",
+          "The MySQL database is deleted"
+        ],
+        "es-MX": [
+          "WordPress elimina automáticamente toda la página",
+          "Todos los elementos funcionarán obligatoriamente de forma idéntica",
+          "Algunos recursos o efectos específicos pueden no ser compatibles y requerir ajustes en el nuevo constructor",
+          "La base de datos MySQL se elimina"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Some specific resources or effects may be incompatible and require adjustments in the new builder",
+        "es-MX": "Algunos recursos o efectos específicos pueden no ser compatibles y requerir ajustes en el nuevo constructor"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Switching website builders"
+          },
+          {
+            "type": "text",
+            "content": "Elementor and Divi use their own modules, layouts, styles and configuration data, so builder-specific designs may not transfer identically."
+          },
+          {
+            "type": "text",
+            "content": "Basic WordPress content may remain, but some layouts, effects or components may need to be rebuilt or adjusted with the new builder."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Cambio de constructor visual"
+          },
+          {
+            "type": "text",
+            "content": "Elementor y Divi utilizan módulos, diseños, estilos y datos de configuración propios, por lo que los elementos específicos de un constructor pueden no transferirse de forma idéntica."
+          },
+          {
+            "type": "text",
+            "content": "El contenido básico de WordPress puede conservarse, pero algunos diseños, efectos o componentes podrían necesitar ajustes o reconstruirse con el nuevo constructor."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "Local WordPress installation",
+        "es-MX": "Instalación local de WordPress"
+      },
+      "Question Text": {
+        "en-US": "When creating the database for a local WordPress installation, what information is initially entered?",
+        "es-MX": "Al crear la base de datos para la instalación local de WordPress, ¿qué dato se introduce inicialmente?"
+      },
+      "Options": {
+        "en-US": [
+          "Username and password",
+          "Username, password and server",
+          "Only the database name",
+          "The website domain"
+        ],
+        "es-MX": [
+          "Usuario y contraseña",
+          "Usuario, contraseña y servidor",
+          "Solamente el nombre de la base de datos",
+          "El dominio del sitio"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Only the database name",
+        "es-MX": "Solamente el nombre de la base de datos"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Initial database creation"
+          },
+          {
+            "type": "text",
+            "content": "In the simplified phpMyAdmin procedure, the database is initially created by entering its name."
+          },
+          {
+            "type": "text",
+            "content": "The database username, password and server are entered later in the WordPress installer when establishing the connection."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Creación inicial de la base de datos"
+          },
+          {
+            "type": "text",
+            "content": "En el procedimiento simplificado realizado con phpMyAdmin, inicialmente se crea la base de datos introduciendo su nombre."
+          },
+          {
+            "type": "text",
+            "content": "El usuario, la contraseña y el servidor de la base de datos se introducen posteriormente en el instalador de WordPress para establecer la conexión."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "Local WordPress installation",
+        "es-MX": "Instalación local de WordPress"
+      },
+      "Question Text": {
+        "en-US": "Which address is entered in the browser to start the installer for a WordPress project created on a local server?",
+        "es-MX": "¿Qué dirección se introduce en el navegador para iniciar el instalador de un proyecto de WordPress creado en un servidor local?"
+      },
+      "Options": {
+        "en-US": [
+          "phpMyAdmin/project-name",
+          "localhost/project-name",
+          "wordpress.org/project-name",
+          "htdocs/project-name"
+        ],
+        "es-MX": [
+          "phpMyAdmin/nombre-del-proyecto",
+          "localhost/nombre-del-proyecto",
+          "wordpress.org/nombre-del-proyecto",
+          "htdocs/nombre-del-proyecto"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "localhost/project-name",
+        "es-MX": "localhost/nombre-del-proyecto"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Local project address"
+          },
+          {
+            "type": "text",
+            "content": "The localhost address identifies the computer acting as the local server, while the project name identifies its folder inside htdocs."
+          },
+          {
+            "type": "text",
+            "content": "If Apache uses a nondefault port, it must also be included, for example: localhost:8080/project-name."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Dirección del proyecto local"
+          },
+          {
+            "type": "text",
+            "content": "La dirección localhost identifica la computadora que funciona como servidor local, mientras que el nombre del proyecto identifica su carpeta dentro de htdocs."
+          },
+          {
+            "type": "text",
+            "content": "Si Apache utiliza un puerto diferente al predeterminado, también debe indicarse, por ejemplo: localhost:8080/nombre-del-proyecto."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "Theme customization",
+        "es-MX": "Personalización de temas"
+      },
+      "Question Text": {
+        "en-US": "Which options allow a WordPress theme to be customized?",
+        "es-MX": "¿Qué opciones permiten personalizar un tema de WordPress?"
+      },
+      "Options": {
+        "en-US": [
+          "Only the database",
+          "Only the domain name",
+          "Elements such as colors, fonts and images",
+          "Only the installed plugins"
+        ],
+        "es-MX": [
+          "Únicamente la base de datos",
+          "Únicamente el nombre del dominio",
+          "Aspectos como colores, fuentes e imágenes",
+          "Solo los plugins instalados"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Elements such as colors, fonts and images",
+        "es-MX": "Aspectos como colores, fuentes e imágenes"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Visual theme customization"
+          },
+          {
+            "type": "text",
+            "content": "Theme customization allows visual elements such as colors, typography, images, headers and other design settings to be adapted."
+          },
+          {
+            "type": "text",
+            "content": "The options available depend on the features provided by the active theme."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Personalización visual del tema"
+          },
+          {
+            "type": "text",
+            "content": "La personalización permite adaptar elementos visuales como colores, tipografías, imágenes, encabezados y otras opciones de diseño."
+          },
+          {
+            "type": "text",
+            "content": "Las opciones disponibles dependen de las funciones incluidas en el tema que se encuentre activo."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "Theme customization",
+        "es-MX": "Personalización de temas"
+      },
+      "Question Text": {
+        "en-US": "Which route contains the options for customizing a WordPress theme?",
+        "es-MX": "¿En qué ruta se encuentran las opciones para personalizar un tema de WordPress?"
+      },
+      "Options": {
+        "en-US": [
+          "Appearance → Customize",
+          "Pages → Customize",
+          "Posts → Customize",
+          "Tools → Customize"
+        ],
+        "es-MX": [
+          "Apariencia → Personalizar",
+          "Páginas → Personalizar",
+          "Entradas → Personalizar",
+          "Herramientas → Personalizar"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Appearance → Customize",
+        "es-MX": "Apariencia → Personalizar"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Theme customization route"
+          },
+          {
+            "type": "text",
+            "content": "With classic themes, customization options are normally accessed through Appearance → Customize."
+          },
+          {
+            "type": "text",
+            "content": "Modern block themes usually provide their main design controls through Appearance → Editor instead."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Ruta para personalizar un tema"
+          },
+          {
+            "type": "text",
+            "content": "En los temas clásicos, las opciones de personalización normalmente se encuentran en Apariencia → Personalizar."
+          },
+          {
+            "type": "text",
+            "content": "En cambio, los temas modernos de bloques suelen ofrecer sus controles principales de diseño mediante Apariencia → Editor."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress.com",
+        "es-MX": "WordPress.com"
+      },
+      "Question Text": {
+        "en-US": "Is it necessary to install WordPress on the computer to work with WordPress.com?",
+        "es-MX": "¿Es necesario instalar WordPress en la computadora para trabajar con WordPress.com?"
+      },
+      "Options": {
+        "en-US": [
+          "Yes, it must always be installed using XAMPP",
+          "Yes, it must first be downloaded from WordPress.org",
+          "No, WordPress.com works as an online service",
+          "Yes, and it also requires a local Apache server"
+        ],
+        "es-MX": [
+          "Sí, siempre debe instalarse mediante XAMPP",
+          "Sí, primero debe descargarse desde WordPress.org",
+          "No, WordPress.com funciona como un servicio online",
+          "Sí, y además requiere Apache local"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "No, WordPress.com works as an online service",
+        "es-MX": "No, WordPress.com funciona como un servicio online"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "WordPress.com online service"
+          },
+          {
+            "type": "text",
+            "content": "WordPress.com provides hosting and website management through an online account, so a local installation is not required."
+          },
+          {
+            "type": "text",
+            "content": "A local installation using XAMPP is a different method and normally uses the WordPress software obtained from WordPress.org."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Servicio online de WordPress.com"
+          },
+          {
+            "type": "text",
+            "content": "WordPress.com proporciona alojamiento y administración del sitio mediante una cuenta en línea, por lo que no requiere una instalación local."
+          },
+          {
+            "type": "text",
+            "content": "La instalación local mediante XAMPP es un procedimiento diferente y normalmente utiliza el software de WordPress obtenido desde WordPress.org."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress.com domains",
+        "es-MX": "Dominios en WordPress.com"
+      },
+      "Question Text": {
+        "en-US": "If a custom domain is desired on WordPress.com:",
+        "es-MX": "Si se desea un dominio personalizado en WordPress.com:"
+      },
+      "Options": {
+        "en-US": [
+          "It is always obtained free of charge",
+          "Payment for upgrades or premium services is required",
+          "XAMPP must be installed",
+          "phpMyAdmin must be used"
+        ],
+        "es-MX": [
+          "Se obtiene siempre gratuitamente",
+          "Es necesario pagar por las mejoras o servicios premium",
+          "Debe instalarse XAMPP",
+          "Es obligatorio utilizar phpMyAdmin"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Payment for upgrades or premium services is required",
+        "es-MX": "Es necesario pagar por las mejoras o servicios premium"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Custom domain"
+          },
+          {
+            "type": "text",
+            "content": "A free WordPress.com website normally uses a WordPress.com subdomain, while using a custom domain generally requires a paid plan or domain service."
+          },
+          {
+            "type": "text",
+            "content": "The exact benefits, prices and promotional domain offers can vary between plans."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Dominio personalizado"
+          },
+          {
+            "type": "text",
+            "content": "Un sitio gratuito de WordPress.com normalmente utiliza un subdominio de WordPress.com, mientras que el uso de un dominio personalizado generalmente requiere un plan o servicio de dominio de pago."
+          },
+          {
+            "type": "text",
+            "content": "Los beneficios, precios y promociones relacionados con el dominio pueden variar entre los diferentes planes."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "Plugin installation",
+        "es-MX": "Instalación de plugins"
+      },
+      "Question Text": {
+        "en-US": "If a plugin is downloaded to the computer as a .zip file, how can it be installed in WordPress?",
+        "es-MX": "Si un plugin se descarga como archivo .zip al ordenador, ¿cómo puede instalarse en WordPress?"
+      },
+      "Options": {
+        "en-US": [
+          "From Posts → Add New",
+          "From Appearance → Widgets",
+          "From Plugins → Add New → Upload Plugin, then install and activate it",
+          "By copying the file into MySQL"
+        ],
+        "es-MX": [
+          "Desde Entradas → Añadir nueva",
+          "Desde Apariencia → Widgets",
+          "Desde Plugins → Añadir nuevo → Subir plugin, instalarlo y posteriormente activarlo",
+          "Copiando el archivo en MySQL"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "From Plugins → Add New → Upload Plugin, then install and activate it",
+        "es-MX": "Desde Plugins → Añadir nuevo → Subir plugin, instalarlo y posteriormente activarlo"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Uploading a plugin"
+          },
+          {
+            "type": "text",
+            "content": "WordPress allows a plugin distributed as a .zip file to be uploaded from Plugins → Add New → Upload Plugin."
+          },
+          {
+            "type": "text",
+            "content": "After selecting the file, the plugin must be installed and then activated before its functions can be used."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Carga de un plugin"
+          },
+          {
+            "type": "text",
+            "content": "WordPress permite cargar un plugin distribuido como archivo .zip desde Plugins → Añadir nuevo → Subir plugin."
+          },
+          {
+            "type": "text",
+            "content": "Después de seleccionar el archivo, se debe instalar el plugin y posteriormente activarlo para poder utilizar sus funciones."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress migration",
+        "es-MX": "Migración de WordPress"
+      },
+      "Question Text": {
+        "en-US": "Which plugin is used to perform WordPress migrations easily?",
+        "es-MX": "¿Qué plugin se utiliza para realizar migraciones de WordPress de forma sencilla?"
+      },
+      "Options": {
+        "en-US": [
+          "Updraft Migration",
+          "Jetpack Migration",
+          "WordPress Admin Migration",
+          "All-in-One WP Migration"
+        ],
+        "es-MX": [
+          "Updraft Migration",
+          "Jetpack Migration",
+          "WordPress Admin Migration",
+          "All-in-One WP Migration"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "All-in-One WP Migration",
+        "es-MX": "All-in-One WP Migration"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "All-in-One WP Migration"
+          },
+          {
+            "type": "text",
+            "content": "All-in-One WP Migration allows a WordPress website to be exported to a backup file and imported into another installation."
+          },
+          {
+            "type": "text",
+            "content": "This process can transfer the website content, database, themes, plugins and configuration, subject to the plugin version and available limits."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "All-in-One WP Migration"
+          },
+          {
+            "type": "text",
+            "content": "All-in-One WP Migration permite exportar un sitio de WordPress a un archivo de respaldo e importarlo en otra instalación."
+          },
+          {
+            "type": "text",
+            "content": "Este proceso puede transferir el contenido, la base de datos, los temas, los plugins y la configuración del sitio, de acuerdo con la versión y los límites disponibles."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "Elementor and Divi",
+        "es-MX": "Elementor y Divi"
+      },
+      "Question Text": {
+        "en-US": "Can Elementor and Divi be installed on the same WordPress website?",
+        "es-MX": "¿Se pueden tener instalados Elementor y Divi en un mismo WordPress?"
+      },
+      "Options": {
+        "en-US": [
+          "No, WordPress only accepts one website builder",
+          "No, installing Divi deletes Elementor",
+          "Yes, both can be installed",
+          "Only if different databases are used"
+        ],
+        "es-MX": [
+          "No, WordPress solo acepta un constructor",
+          "No, instalar Divi elimina Elementor",
+          "Sí, pueden estar instalados ambos",
+          "Solo si se utilizan bases de datos distintas"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Yes, both can be installed",
+        "es-MX": "Sí, pueden estar instalados ambos"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Installing both website builders"
+          },
+          {
+            "type": "text",
+            "content": "Elementor and Divi can be present in the same WordPress installation, although their exact use depends on whether Divi is installed as a theme, a builder plugin or both."
+          },
+          {
+            "type": "text",
+            "content": "It is not advisable to edit the same page alternately with both builders because their modules, styles and layout systems are different and may cause compatibility problems."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Instalación de ambos constructores"
+          },
+          {
+            "type": "text",
+            "content": "Elementor y Divi pueden estar presentes en una misma instalación de WordPress, aunque su uso exacto depende de si Divi se instala como tema, como plugin constructor o de ambas formas."
+          },
+          {
+            "type": "text",
+            "content": "No es recomendable editar alternativamente una misma página con ambos constructores, ya que utilizan módulos, estilos y sistemas de diseño diferentes que podrían provocar problemas de compatibilidad."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "Visual website builders",
+        "es-MX": "Constructores visuales"
+      },
+      "Question Text": {
+        "en-US": "What are visual website builders such as Elementor and Divi mainly used for?",
+        "es-MX": "¿Para qué sirven principalmente los constructores visuales como Elementor y Divi?"
+      },
+      "Options": {
+        "en-US": [
+          "To replace MySQL",
+          "To exclusively manage users",
+          "To create Apache servers",
+          "To facilitate website design and development through more advanced and easier-to-use tools"
+        ],
+        "es-MX": [
+          "Para reemplazar MySQL",
+          "Para administrar exclusivamente usuarios",
+          "Para crear servidores Apache",
+          "Para facilitar el diseño y desarrollo de páginas web mediante herramientas más avanzadas y de manera más sencilla"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To facilitate website design and development through more advanced and easier-to-use tools",
+        "es-MX": "Para facilitar el diseño y desarrollo de páginas web mediante herramientas más avanzadas y de manera más sencilla"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Purpose of visual website builders"
+          },
+          {
+            "type": "text",
+            "content": "Elementor and Divi provide visual tools, modules and design controls that simplify the creation of more dynamic and customized pages."
+          },
+          {
+            "type": "text",
+            "content": "They reduce the need to manually write all the code, although knowledge of web design remains useful for achieving better results."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Finalidad de los constructores visuales"
+          },
+          {
+            "type": "text",
+            "content": "Elementor y Divi proporcionan herramientas visuales, módulos y controles de diseño que facilitan la creación de páginas más dinámicas y personalizadas."
+          },
+          {
+            "type": "text",
+            "content": "Reducen la necesidad de escribir manualmente todo el código, aunque los conocimientos de diseño web continúan siendo útiles para obtener mejores resultados."
+          }
+        ]
+      }
+    }
+  ]
+}
