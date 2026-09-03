@@ -3498,6 +3498,1166 @@
           }
         ]
       }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress versions",
+        "es-MX": "Versiones de WordPress"
+      },
+      "Question Text": {
+        "en-US": "The main versions of WordPress are named after musicians from which musical genre?",
+        "es-MX": "Las versiones principales de WordPress reciben nombres de músicos pertenecientes a ¿qué género musical?"
+      },
+      "Options": {
+        "en-US": [
+          "Jazz",
+          "Blues",
+          "Rock",
+          "Soul"
+        ],
+        "es-MX": [
+          "Jazz",
+          "Blues",
+          "Rock",
+          "Soul"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Jazz",
+        "es-MX": "Jazz"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Jazz musicians"
+          },
+          {
+            "type": "text",
+            "content": "WordPress major releases are traditionally named in honor of jazz musicians, such as Miles Davis, Ella Fitzgerald and Arturo O'Farrill."
+          },
+          {
+            "type": "text",
+            "content": "This naming convention mainly applies to major releases and not necessarily to every minor maintenance or security update."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Músicos de jazz"
+          },
+          {
+            "type": "text",
+            "content": "Las versiones principales de WordPress reciben tradicionalmente nombres en honor a músicos de jazz, como Miles Davis, Ella Fitzgerald y Arturo O'Farrill."
+          },
+          {
+            "type": "text",
+            "content": "Esta forma de nombrarlas se aplica principalmente a las versiones mayores y no necesariamente a cada actualización menor, de mantenimiento o de seguridad."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress folders",
+        "es-MX": "Carpetas de WordPress"
+      },
+      "Question Text": {
+        "en-US": "After downloading and extracting WordPress, what does the wp-admin folder contain?",
+        "es-MX": "Al descargar y descomprimir WordPress, ¿qué contiene la carpeta wp-admin?"
+      },
+      "Options": {
+        "en-US": [
+          "Plugins, themes and images",
+          "Only multimedia files",
+          "The MySQL database",
+          "The WordPress backend or administrative area"
+        ],
+        "es-MX": [
+          "Plugins, temas e imágenes",
+          "Únicamente archivos multimedia",
+          "La base de datos MySQL",
+          "El backend o área administrativa de WordPress"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "The WordPress backend or administrative area",
+        "es-MX": "El backend o área administrativa de WordPress"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "The wp-admin folder"
+          },
+          {
+            "type": "text",
+            "content": "The wp-admin folder contains core files used to display and operate the WordPress administration area."
+          },
+          {
+            "type": "text",
+            "content": "The complete backend also depends on other WordPress core files and on the information stored in the database."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "La carpeta wp-admin"
+          },
+          {
+            "type": "text",
+            "content": "La carpeta wp-admin contiene archivos del núcleo utilizados para mostrar y operar el área administrativa de WordPress."
+          },
+          {
+            "type": "text",
+            "content": "El funcionamiento completo del backend también depende de otros archivos del núcleo de WordPress y de la información almacenada en la base de datos."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "File transfer",
+        "es-MX": "Transferencia de archivos"
+      },
+      "Question Text": {
+        "en-US": "What is FTP?",
+        "es-MX": "¿Qué es FTP?"
+      },
+      "Options": {
+        "en-US": [
+          "A service for creating databases",
+          "An application written in PHP",
+          "A communication protocol",
+          "A file included in WordPress"
+        ],
+        "es-MX": [
+          "Un servicio para crear bases de datos",
+          "Una aplicación escrita en PHP",
+          "Un protocolo de comunicación",
+          "Un archivo incluido en WordPress"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "A communication protocol",
+        "es-MX": "Un protocolo de comunicación"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "File Transfer Protocol"
+          },
+          {
+            "type": "text",
+            "content": "FTP stands for File Transfer Protocol and is used to transfer files between a client computer and a server over a network."
+          },
+          {
+            "type": "text",
+            "content": "Traditional FTP does not encrypt the connection, so secure alternatives such as SFTP or FTPS are generally preferred when available."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Protocolo de transferencia de archivos"
+          },
+          {
+            "type": "text",
+            "content": "FTP significa File Transfer Protocol o protocolo de transferencia de archivos y permite transferir archivos entre una computadora cliente y un servidor mediante una red."
+          },
+          {
+            "type": "text",
+            "content": "El FTP tradicional no cifra la conexión, por lo que generalmente se prefieren alternativas seguras como SFTP o FTPS cuando están disponibles."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress folders",
+        "es-MX": "Carpetas de WordPress"
+      },
+      "Question Text": {
+        "en-US": "What does the wp-content folder mainly contain?",
+        "es-MX": "¿Qué contiene principalmente la carpeta wp-content?"
+      },
+      "Options": {
+        "en-US": [
+          "All database files",
+          "Plugins, themes, languages, images and other content files",
+          "Only PHP files",
+          "Administrator login information"
+        ],
+        "es-MX": [
+          "Todos los archivos de la base de datos",
+          "Plugins, temas, lenguajes, imágenes y otros archivos de contenido",
+          "Únicamente archivos PHP",
+          "Los datos de acceso del administrador"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Plugins, themes, languages, images and other content files",
+        "es-MX": "Plugins, temas, lenguajes, imágenes y otros archivos de contenido"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "The wp-content folder"
+          },
+          {
+            "type": "text",
+            "content": "The wp-content folder stores website-specific resources, including installed plugins, themes, language files and uploaded multimedia."
+          },
+          {
+            "type": "text",
+            "content": "WordPress normally stores uploaded images, audio and video inside the wp-content/uploads directory."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "La carpeta wp-content"
+          },
+          {
+            "type": "text",
+            "content": "La carpeta wp-content almacena recursos propios del sitio, entre ellos los plugins instalados, temas, archivos de idiomas y contenido multimedia subido."
+          },
+          {
+            "type": "text",
+            "content": "WordPress normalmente guarda las imágenes, audios y videos cargados dentro del directorio wp-content/uploads."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "Remote WordPress installation",
+        "es-MX": "Instalación remota de WordPress"
+      },
+      "Question Text": {
+        "en-US": "Which service is required to install WordPress on a remote server?",
+        "es-MX": "¿Qué servicio se necesita tener contratado para instalar WordPress en un servidor remoto?"
+      },
+      "Options": {
+        "en-US": [
+          "An SEO service",
+          "Only a database",
+          "A hosting service",
+          "An FTP plugin"
+        ],
+        "es-MX": [
+          "Un servicio SEO",
+          "Únicamente una base de datos",
+          "Un servicio de hosting",
+          "Un plugin FTP"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "A hosting service",
+        "es-MX": "Un servicio de hosting"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Remote web hosting hosting"
+          },
+          {
+            "type": "text",
+            "content": "A hosting service provides the remote server resources needed to store and operate a WordPress website on the Internet."
+          },
+          {
+            "type": "text",
+            "content": "Unlike a local installation, a remote installation remains accessible without keeping the user's personal computer running as the server."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Alojamiento web remoto"
+          },
+          {
+            "type": "text",
+            "content": "Un servicio de hosting proporciona los recursos del servidor remoto necesarios para almacenar y operar un sitio de WordPress en Internet."
+          },
+          {
+            "type": "text",
+            "content": "A diferencia de una instalación local, la instalación remota permanece accesible sin mantener encendida la computadora personal del usuario como servidor."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "File transfer",
+        "es-MX": "Transferencia de archivos"
+      },
+      "Question Text": {
+        "en-US": "What is required to upload files and folders from a computer to a remote server?",
+        "es-MX": "¿Qué se requiere para subir archivos y carpetas desde un ordenador a un servidor remoto?"
+      },
+      "Options": {
+        "en-US": [
+          "An FTP client",
+          "A PHP file",
+          "An SEO plugin",
+          "Only a domain"
+        ],
+        "es-MX": [
+          "Un cliente FTP",
+          "Un archivo PHP",
+          "Un plugin SEO",
+          "Únicamente un dominio"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "An FTP client",
+        "es-MX": "Un cliente FTP"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "FTP client"
+          },
+          {
+            "type": "text",
+            "content": "An FTP client such as FileZilla can connect to a remote server and transfer files and folders between the computer and the hosting space."
+          },
+          {
+            "type": "text",
+            "content": "Many hosting services also provide browser-based file managers, while secure connections may use SFTP or FTPS instead of traditional FTP."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Cliente FTP"
+          },
+          {
+            "type": "text",
+            "content": "Un cliente FTP como FileZilla puede conectarse a un servidor remoto y transferir archivos y carpetas entre la computadora y el espacio de alojamiento."
+          },
+          {
+            "type": "text",
+            "content": "Muchos servicios de hosting también proporcionan administradores de archivos en el navegador, mientras que las conexiones seguras pueden utilizar SFTP o FTPS en lugar del FTP tradicional."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress administration",
+        "es-MX": "Administración de WordPress"
+      },
+      "Question Text": {
+        "en-US": "Which credentials are generally required to log in to the WordPress administration area?",
+        "es-MX": "¿Qué datos son requeridos generalmente para ingresar en el administrador de WordPress?"
+      },
+      "Options": {
+        "en-US": [
+          "The database name",
+          "The phpMyAdmin username",
+          "The IP address and database name",
+          "Username or email address and password"
+        ],
+        "es-MX": [
+          "Nombre de la base de datos",
+          "Usuario de phpMyAdmin",
+          "Dirección IP y nombre de la base de datos",
+          "Usuario o correo electrónico y contraseña"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Username or email address and password",
+        "es-MX": "Usuario o correo electrónico y contraseña"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Administrator login credentials"
+          },
+          {
+            "type": "text",
+            "content": "WordPress normally allows access to the administration area by entering the account username or email address together with its password."
+          },
+          {
+            "type": "text",
+            "content": "These credentials belong to a WordPress user account and are different from the credentials used to access the database or hosting service."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Credenciales de acceso al administrador"
+          },
+          {
+            "type": "text",
+            "content": "WordPress normalmente permite ingresar al área administrativa mediante el nombre de usuario o correo electrónico de la cuenta y su contraseña."
+          },
+          {
+            "type": "text",
+            "content": "Estas credenciales pertenecen a una cuenta de WordPress y son diferentes de las utilizadas para acceder a la base de datos o al servicio de hosting."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress user roles",
+        "es-MX": "Roles de usuario de WordPress"
+      },
+      "Question Text": {
+        "en-US": "How many WordPress user roles are counted when the Super Administrator role is included?",
+        "es-MX": "¿Cuántos roles de usuario de WordPress se contabilizan al incluir el rol de Súper Administrador?"
+      },
+      "Options": {
+        "en-US": [
+          "Five",
+          "Ten",
+          "Unlimited",
+          "Six"
+        ],
+        "es-MX": [
+          "Cinco",
+          "Diez",
+          "Infinitos",
+          "Seis"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Six",
+        "es-MX": "Seis"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "WordPress user roles"
+          },
+          {
+            "type": "text",
+            "content": "The six roles counted here are Subscriber, Contributor, Author, Editor, Administrator and Super Administrator."
+          },
+          {
+            "type": "text",
+            "content": "A standard single-site WordPress installation has five default roles. The Super Administrator role is only available when WordPress Multisite is enabled."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Roles de usuario de WordPress"
+          },
+          {
+            "type": "text",
+            "content": "Los seis roles contabilizados son Suscriptor, Colaborador, Autor, Editor, Administrador y Súper Administrador."
+          },
+          {
+            "type": "text",
+            "content": "Una instalación estándar de WordPress con un solo sitio tiene cinco roles predeterminados. El rol de Súper Administrador únicamente está disponible cuando WordPress Multisite se encuentra habilitado."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress user roles",
+        "es-MX": "Roles de usuario de WordPress"
+      },
+      "Question Text": {
+        "en-US": "What can the Editor role do in WordPress?",
+        "es-MX": "¿Qué permite realizar el rol Editor en WordPress?"
+      },
+      "Options": {
+        "en-US": [
+          "Fully configure the website",
+          "Install and delete plugins",
+          "Create and edit pages, manage links and categories, among other editorial functions",
+          "Manage an entire Multisite network"
+        ],
+        "es-MX": [
+          "Configurar completamente el sitio web",
+          "Instalar y eliminar plugins",
+          "Crear y editar páginas, administrar enlaces y categorías, entre otras funciones editoriales",
+          "Administrar toda una red Multisite"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Create and edit pages, manage links and categories, among other editorial functions",
+        "es-MX": "Crear y editar páginas, administrar enlaces y categorías, entre otras funciones editoriales"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Editor permissions"
+          },
+          {
+            "type": "text",
+            "content": "An Editor can publish and manage posts and pages, including content created by other users, and can moderate comments and manage categories."
+          },
+          {
+            "type": "text",
+            "content": "The Editor cannot normally install plugins, change themes or perform the complete site configuration. Link management may depend on legacy features or an additional plugin."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Permisos del Editor"
+          },
+          {
+            "type": "text",
+            "content": "Un Editor puede publicar y administrar entradas y páginas, incluso las creadas por otros usuarios, además de moderar comentarios y gestionar categorías."
+          },
+          {
+            "type": "text",
+            "content": "Normalmente, el Editor no puede instalar plugins, cambiar temas ni realizar la configuración completa del sitio. La administración de enlaces puede depender de funciones antiguas o de un plugin adicional."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress menus",
+        "es-MX": "Menús de WordPress"
+      },
+      "Question Text": {
+        "en-US": "Which route is used to create or manage a menu in WordPress?",
+        "es-MX": "¿Qué ruta se utiliza para crear o gestionar un menú en WordPress?"
+      },
+      "Options": {
+        "en-US": [
+          "Pages → Menus",
+          "Posts → Menus",
+          "Appearance → Menus",
+          "Tools → Menus"
+        ],
+        "es-MX": [
+          "Páginas → Menús",
+          "Entradas → Menús",
+          "Apariencia → Menús",
+          "Herramientas → Menús"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Appearance → Menus",
+        "es-MX": "Apariencia → Menús"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Menu management"
+          },
+          {
+            "type": "text",
+            "content": "With classic themes, navigation menus are created and managed through Appearance → Menus."
+          },
+          {
+            "type": "text",
+            "content": "With modern block themes, menu and navigation editing is normally performed through Appearance → Editor → Navigation."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Administración de menús"
+          },
+          {
+            "type": "text",
+            "content": "En los temas clásicos, los menús de navegación se crean y administran mediante Apariencia → Menús."
+          },
+          {
+            "type": "text",
+            "content": "En los temas modernos de bloques, la edición de los menús y de la navegación normalmente se realiza desde Apariencia → Editor → Navegación."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "Multilingual websites",
+        "es-MX": "Sitios web multiidioma"
+      },
+      "Question Text": {
+        "en-US": "What does the Polylang plugin allow you to do?",
+        "es-MX": "¿Qué permite hacer el plugin Polylang?"
+      },
+      "Options": {
+        "en-US": [
+          "Create backups",
+          "Create online stores",
+          "Create multilingual websites",
+          "Create video galleries"
+        ],
+        "es-MX": [
+          "Crear copias de seguridad",
+          "Crear tiendas en línea",
+          "Crear sitios web multiidioma",
+          "Crear galerías de vídeo"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Create multilingual websites",
+        "es-MX": "Crear sitios web multiidioma"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Multilingual content with Polylang"
+          },
+          {
+            "type": "text",
+            "content": "Polylang is a WordPress plugin used to create and manage website content in several languages."
+          },
+          {
+            "type": "text",
+            "content": "It allows languages to be assigned to posts, pages, categories and other content, and it can provide a language selector for visitors."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Contenido multiidioma con Polylang"
+          },
+          {
+            "type": "text",
+            "content": "Polylang es un plugin de WordPress que permite crear y administrar el contenido de un sitio en varios idiomas."
+          },
+          {
+            "type": "text",
+            "content": "Permite asignar idiomas a entradas, páginas, categorías y otros contenidos, además de ofrecer un selector de idioma a los visitantes."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress backups",
+        "es-MX": "Copias de seguridad de WordPress"
+      },
+      "Question Text": {
+        "en-US": "What is the UpdraftPlus plugin used for?",
+        "es-MX": "¿Para qué se utiliza el plugin UpdraftPlus?"
+      },
+      "Options": {
+        "en-US": [
+          "To create multilingual websites",
+          "To create online stores",
+          "To generate contact forms",
+          "To create website backups"
+        ],
+        "es-MX": [
+          "Para crear sitios web multiidioma",
+          "Para crear tiendas online",
+          "Para generar formularios de contacto",
+          "Para crear copias de seguridad de un sitio web"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To create website backups",
+        "es-MX": "Para crear copias de seguridad de un sitio web"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Backups with UpdraftPlus"
+          },
+          {
+            "type": "text",
+            "content": "UpdraftPlus allows WordPress website files and database information to be backed up."
+          },
+          {
+            "type": "text",
+            "content": "The resulting backups can help restore the website after an error, data loss or unsuccessful update."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Copias de seguridad con UpdraftPlus"
+          },
+          {
+            "type": "text",
+            "content": "UpdraftPlus permite crear copias de los archivos y de la información de la base de datos de un sitio de WordPress."
+          },
+          {
+            "type": "text",
+            "content": "Estas copias pueden utilizarse para restaurar el sitio después de un error, una pérdida de información o una actualización fallida."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "E-commerce",
+        "es-MX": "Comercio electrónico"
+      },
+      "Question Text": {
+        "en-US": "What is WooCommerce used for in WordPress?",
+        "es-MX": "¿Para qué se utiliza WooCommerce en WordPress?"
+      },
+      "Options": {
+        "en-US": [
+          "To create backups",
+          "To create online stores or catalogs",
+          "To translate the website",
+          "To replace MySQL"
+        ],
+        "es-MX": [
+          "Para realizar copias de seguridad",
+          "Para crear tiendas o catálogos online",
+          "Para traducir el sitio web",
+          "Para sustituir MySQL"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To create online stores or catalogs",
+        "es-MX": "Para crear tiendas o catálogos online"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "E-commerce with WooCommerce"
+          },
+          {
+            "type": "text",
+            "content": "WooCommerce adds e-commerce features to WordPress, allowing products, prices, inventories, shopping carts, orders and payment methods to be managed."
+          },
+          {
+            "type": "text",
+            "content": "It can be used to create either a product catalog or a complete online store."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Comercio electrónico con WooCommerce"
+          },
+          {
+            "type": "text",
+            "content": "WooCommerce agrega funciones de comercio electrónico a WordPress y permite gestionar productos, precios, inventarios, carritos, pedidos y métodos de pago."
+          },
+          {
+            "type": "text",
+            "content": "Puede utilizarse para crear tanto un catálogo de productos como una tienda en línea completa."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress shortcodes",
+        "es-MX": "Shortcodes de WordPress"
+      },
+      "Question Text": {
+        "en-US": "Which plugin contains approximately fifty shortcodes when installed?",
+        "es-MX": "¿Qué plugin contiene aproximadamente cincuenta shortcodes al instalarse?"
+      },
+      "Options": {
+        "en-US": [
+          "Shortcodes Premium",
+          "Shortcodes Gallery",
+          "Shortcodes Ultimate",
+          "Shortcodes Widget"
+        ],
+        "es-MX": [
+          "Shortcodes Premium",
+          "Shortcodes Gallery",
+          "Shortcodes Ultimate",
+          "Shortcodes Widget"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Shortcodes Ultimate",
+        "es-MX": "Shortcodes Ultimate"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Shortcodes Ultimate"
+          },
+          {
+            "type": "text",
+            "content": "Shortcodes Ultimate provides a collection of preconfigured shortcodes for inserting elements such as buttons, columns, tabs, boxes and other components."
+          },
+          {
+            "type": "text",
+            "content": "The figure of approximately fifty shortcodes is a reference value because the exact number and available elements may change between plugin versions."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Shortcodes Ultimate"
+          },
+          {
+            "type": "text",
+            "content": "Shortcodes Ultimate proporciona una colección de shortcodes preconfigurados para insertar botones, columnas, pestañas, cajas y otros componentes."
+          },
+          {
+            "type": "text",
+            "content": "La cantidad de aproximadamente cincuenta shortcodes es una cifra de referencia, ya que el número exacto y los elementos disponibles pueden cambiar entre versiones del plugin."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "WordPress migration",
+        "es-MX": "Migración de WordPress"
+      },
+      "Question Text": {
+        "en-US": "What is recommended before migrating a WordPress website?",
+        "es-MX": "Antes de realizar una migración de un sitio web en WordPress, ¿qué se recomienda hacer?"
+      },
+      "Options": {
+        "en-US": [
+          "Create a website backup",
+          "Delete all plugins",
+          "Change the PHP version",
+          "Delete the database"
+        ],
+        "es-MX": [
+          "Realizar una copia de seguridad del sitio web",
+          "Eliminar todos los plugins",
+          "Cambiar la versión de PHP",
+          "Borrar la base de datos"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Create a website backup",
+        "es-MX": "Realizar una copia de seguridad del sitio web"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Backup before migration"
+          },
+          {
+            "type": "text",
+            "content": "A backup protects the website files, database and configuration before they are transferred or modified during migration."
+          },
+          {
+            "type": "text",
+            "content": "If the migration fails or causes data loss, the backup can be used to restore the previous working version."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Copia de seguridad antes de migrar"
+          },
+          {
+            "type": "text",
+            "content": "Una copia de seguridad protege los archivos, la base de datos y la configuración antes de que sean transferidos o modificados durante la migración."
+          },
+          {
+            "type": "text",
+            "content": "Si la migración falla o provoca una pérdida de información, el respaldo permite restaurar la versión anterior que funcionaba correctamente."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "Database migration",
+        "es-MX": "Migración de bases de datos"
+      },
+      "Question Text": {
+        "en-US": "Which format is normally used to export a database that will be migrated?",
+        "es-MX": "¿En qué formato se exporta normalmente la base de datos que se va a migrar?"
+      },
+      "Options": {
+        "en-US": [
+          ".php",
+          ".sql",
+          ".zip",
+          ".docs"
+        ],
+        "es-MX": [
+          ".php",
+          ".sql",
+          ".zip",
+          ".docs"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": ".sql",
+        "es-MX": ".sql"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "SQL database export"
+          },
+          {
+            "type": "text",
+            "content": "A database is commonly exported as an SQL dump file with the .sql extension."
+          },
+          {
+            "type": "text",
+            "content": "This file contains SQL instructions that can recreate the tables, structure and stored data when imported into another compatible database server."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Exportación de la base de datos en SQL"
+          },
+          {
+            "type": "text",
+            "content": "Una base de datos se exporta comúnmente como un archivo de volcado SQL con la extensión .sql."
+          },
+          {
+            "type": "text",
+            "content": "Este archivo contiene instrucciones SQL capaces de reconstruir las tablas, su estructura y los datos almacenados cuando se importa en otro servidor de bases de datos compatible."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "SEO",
+        "es-MX": "SEO"
+      },
+      "Question Text": {
+        "en-US": "What does SEO refer to?",
+        "es-MX": "¿A qué hace referencia el SEO?"
+      },
+      "Options": {
+        "en-US": [
+          "Organic or natural search positioning",
+          "The structure of a database",
+          "The creation of plugins",
+          "The storage of PHP files"
+        ],
+        "es-MX": [
+          "Al posicionamiento orgánico o natural",
+          "A la estructura de una base de datos",
+          "A la creación de plugins",
+          "Al almacenamiento de archivos PHP"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Organic or natural search positioning",
+        "es-MX": "Al posicionamiento orgánico o natural"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Search Engine Optimization"
+          },
+          {
+            "type": "text",
+            "content": "SEO stands for Search Engine Optimization and consists of practices that improve a website's visibility in unpaid or organic search results."
+          },
+          {
+            "type": "text",
+            "content": "SEO is therefore the optimization process that seeks to improve organic positioning rather than the position itself."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Optimización para motores de búsqueda"
+          },
+          {
+            "type": "text",
+            "content": "SEO significa Search Engine Optimization y comprende las prácticas que ayudan a mejorar la visibilidad de un sitio en los resultados orgánicos o no pagados de los buscadores."
+          },
+          {
+            "type": "text",
+            "content": "Por lo tanto, SEO es propiamente el proceso de optimización que busca mejorar el posicionamiento orgánico y no la posición por sí sola."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "Search engines",
+        "es-MX": "Motores de búsqueda"
+      },
+      "Question Text": {
+        "en-US": "What are crawlers?",
+        "es-MX": "¿Qué son los crawlers?"
+      },
+      "Options": {
+        "en-US": [
+          "Content management systems",
+          "Trackers used by search engines",
+          "WordPress plugins",
+          "Visual website builders"
+        ],
+        "es-MX": [
+          "Gestores de contenidos",
+          "Rastreadores utilizados por los motores de búsqueda",
+          "Plugins de WordPress",
+          "Constructores visuales"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "Trackers used by search engines",
+        "es-MX": "Rastreadores utilizados por los motores de búsqueda"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Search engine crawlers"
+          },
+          {
+            "type": "text",
+            "content": "Crawlers are automated programs that search engines use to discover and examine web pages and their links."
+          },
+          {
+            "type": "text",
+            "content": "The information found during crawling can then be processed and added to the search engine's index."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Rastreadores de los motores de búsqueda"
+          },
+          {
+            "type": "text",
+            "content": "Los crawlers son programas automatizados que los motores de búsqueda utilizan para descubrir y examinar páginas web y sus enlaces."
+          },
+          {
+            "type": "text",
+            "content": "La información encontrada durante el rastreo puede procesarse posteriormente y agregarse al índice del buscador."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "Sitemaps",
+        "es-MX": "Mapas del sitio"
+      },
+      "Question Text": {
+        "en-US": "What does a website sitemap mainly contain?",
+        "es-MX": "¿Qué contiene principalmente el sitemap de un sitio web?"
+      },
+      "Options": {
+        "en-US": [
+          "A list of the website's relevant pages and URLs",
+          "Registered users",
+          "PHP files",
+          "Only the website images"
+        ],
+        "es-MX": [
+          "Un listado de las páginas y URL relevantes del sitio web",
+          "Los usuarios registrados",
+          "Los archivos PHP",
+          "Únicamente las imágenes del sitio"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "A list of the website's relevant pages and URLs",
+        "es-MX": "Un listado de las páginas y URL relevantes del sitio web"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Website sitemap"
+          },
+          {
+            "type": "text",
+            "content": "A sitemap provides search engines with a structured list of relevant website URLs to facilitate their discovery and indexing."
+          },
+          {
+            "type": "text",
+            "content": "It can include pages, posts, categories and other content, but it does not necessarily need to include every existing URL."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Mapa del sitio web"
+          },
+          {
+            "type": "text",
+            "content": "Un sitemap proporciona a los motores de búsqueda una lista estructurada de las URL relevantes del sitio para facilitar su descubrimiento e indexación."
+          },
+          {
+            "type": "text",
+            "content": "Puede incluir páginas, entradas, categorías y otros contenidos, pero no necesariamente debe contener absolutamente todas las URL existentes."
+          }
+        ]
+      }
+    },
+    {
+      "Category": {
+        "en-US": "Search engine crawling",
+        "es-MX": "Rastreo de motores de búsqueda"
+      },
+      "Question Text": {
+        "en-US": "What is the robots.txt file used for?",
+        "es-MX": "¿Para qué sirve el archivo robots.txt?"
+      },
+      "Options": {
+        "en-US": [
+          "To indicate which images should be shown to users",
+          "To create dynamic themes",
+          "To indicate to search engine crawlers which website URLs they may crawl",
+          "To control access to the WordPress administration area"
+        ],
+        "es-MX": [
+          "Para indicar qué imágenes deben mostrarse a los usuarios",
+          "Para crear temas dinámicos",
+          "Para indicar a los rastreadores de los buscadores qué URL del sitio pueden rastrear",
+          "Para controlar el acceso al administrador de WordPress"
+        ]
+      },
+      "Correct Answer": {
+        "en-US": "To indicate to search engine crawlers which website URLs they may crawl",
+        "es-MX": "Para indicar a los rastreadores de los buscadores qué URL del sitio pueden rastrear"
+      },
+      "Explanation": {
+        "en-US": [
+          {
+            "type": "title-h2",
+            "content": "Crawling directives"
+          },
+          {
+            "type": "text",
+            "content": "The robots.txt file provides directives that tell compatible search engine crawlers which areas or URLs they are allowed or discouraged from crawling."
+          },
+          {
+            "type": "text",
+            "content": "It is not an access-control or security mechanism because the URLs remain publicly accessible and a crawler may choose not to follow the directives."
+          }
+        ],
+        "es-MX": [
+          {
+            "type": "title-h2",
+            "content": "Directivas de rastreo"
+          },
+          {
+            "type": "text",
+            "content": "El archivo robots.txt proporciona directivas que indican a los rastreadores compatibles qué áreas o URL tienen permitido rastrear o cuáles deben evitar."
+          },
+          {
+            "type": "text",
+            "content": "No es un mecanismo de control de acceso ni de seguridad, porque las URL pueden continuar siendo públicas y un rastreador podría decidir no respetar las instrucciones."
+          }
+        ]
+      }
     }
   ]
 }
