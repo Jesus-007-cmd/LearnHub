@@ -1,0 +1,880 @@
+{
+  "meta": {
+    "slug": "auditoria-bloque-8",
+    "title": "Riesgos 45K1, mapas de calor y controles",
+    "subject": "Auditoría CAC",
+    "unit": 8,
+    "classNo": 1,
+    "description": "Quiz de estudio del Bloque 8 para preparación de auditoría SGI / 45K1.",
+    "tags": [
+      "auditoria",
+      "SGI",
+      "45K1",
+      "SST",
+      "riesgos",
+      "mapas de calor",
+      "controles",
+      "CAC Delicias"
+    ]
+  },
+  "Questions": [
+    {
+      "Category": "Bloque 8 · Riesgos 45K1, mapas de calor y controles",
+      "Question Text": {
+        "es-MX": "¿Dónde puedes consultar los riesgos de Seguridad y Salud en el Trabajo aplicables al CAC?",
+        "en-US": "Where can you check the Occupational Health and Safety risks applicable to the CAC?"
+      },
+      "Options": {
+        "es-MX": [
+          "Portal SGI → Riesgos → Mapas de calor → 45K1; también en el listado de Riesgos Institucionales SST",
+          "Portal SGI → Cultura Organizacional → Valores",
+          "Portal SGI → Auditorías → Calendario",
+          "Intranet Nacional → Recursos Humanos → Nómina"
+        ],
+        "en-US": [
+          "SGI Portal → Risks → Heat Maps → 45K1; also in the Institutional OHS Risks list",
+          "SGI Portal → Organizational Culture → Values",
+          "SGI Portal → Audits → Calendar",
+          "National Intranet → Human Resources → Payroll"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Portal SGI → Riesgos → Mapas de calor → 45K1; también en el listado de Riesgos Institucionales SST",
+        "en-US": "SGI Portal → Risks → Heat Maps → 45K1; also in the Institutional OHS Risks list"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los riesgos SST pueden consultarse en la sección de Riesgos del Portal SGI, especialmente en Mapas de calor → 45K1."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "OHS risks can be checked in the SGI Portal Risks section, especially under Heat Maps → 45K1."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 8 · Riesgos 45K1, mapas de calor y controles",
+      "Question Text": {
+        "es-MX": "¿Qué es un mapa de calor de riesgos?",
+        "en-US": "What is a risk heat map?"
+      },
+      "Options": {
+        "es-MX": [
+          "Una representación visual que ayuda a clasificar y priorizar riesgos según su nivel",
+          "Un plano físico del edificio con rutas de evacuación",
+          "Un calendario de auditorías",
+          "Un registro exclusivo de mantenimiento"
+        ],
+        "en-US": [
+          "A visual representation that helps classify and prioritize risks according to their level",
+          "A physical building map with evacuation routes",
+          "An audit calendar",
+          "A maintenance-only record"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Una representación visual que ayuda a clasificar y priorizar riesgos según su nivel",
+        "en-US": "A visual representation that helps classify and prioritize risks according to their level"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El mapa de calor facilita identificar qué riesgos requieren mayor atención según su valoración."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "A heat map helps identify which risks require greater attention according to their assessment."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 8 · Riesgos 45K1, mapas de calor y controles",
+      "Question Text": {
+        "es-MX": "¿Debe un empleado memorizar todos los riesgos de Telcel?",
+        "en-US": "Does an employee need to memorize all Telcel risks?"
+      },
+      "Options": {
+        "es-MX": [
+          "No. Debe conocer los riesgos SST que aplican a sus actividades, los controles y dónde consultar la información vigente",
+          "Sí. Debe conocer todos los riesgos de toda la empresa de memoria",
+          "Solo debe conocer los riesgos financieros",
+          "No necesita conocer ningún riesgo si existe documentación"
+        ],
+        "en-US": [
+          "No. They should know the OHS risks applicable to their activities, the controls, and where to check current information",
+          "Yes. They must memorize all risks across the entire company",
+          "They only need to know financial risks",
+          "They do not need to know any risks if documentation exists"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "No. Debe conocer los riesgos SST que aplican a sus actividades, los controles y dónde consultar la información vigente",
+        "en-US": "No. They should know the OHS risks applicable to their activities, the controls, and where to check current information"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El enfoque es conocer lo aplicable al puesto y saber localizar la información oficial."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The focus is on knowing what applies to the job and being able to locate official information."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 8 · Riesgos 45K1, mapas de calor y controles",
+      "Question Text": {
+        "es-MX": "¿Dónde puedes consultar los riesgos específicos de cada puesto dentro del PIPC?",
+        "en-US": "Where can you check job-specific risks within the PIPC?"
+      },
+      "Options": {
+        "es-MX": [
+          "En la sección de Evaluación Inicial de Riesgos de cada Puesto",
+          "En el calendario de auditorías",
+          "En la política de calidad",
+          "En el módulo de nómina"
+        ],
+        "en-US": [
+          "In the Initial Risk Assessment section for each Job Position",
+          "In the audit calendar",
+          "In the quality policy",
+          "In the payroll module"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "En la sección de Evaluación Inicial de Riesgos de cada Puesto",
+        "en-US": "In the Initial Risk Assessment section for each Job Position"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El PIPC incluye evaluación de riesgos por puesto para funciones como Asesor, Analista, Almacenista y otros."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The PIPC includes job-based risk assessments for roles such as Advisor, Terminal Equipment Analyst, Warehouse Worker, and others."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 8 · Riesgos 45K1, mapas de calor y controles",
+      "Question Text": {
+        "es-MX": "¿Qué debe saber una persona sobre los riesgos de su propio puesto?",
+        "en-US": "What should a person know about the risks of their own job?"
+      },
+      "Options": {
+        "es-MX": [
+          "Qué riesgos le aplican y qué medidas preventivas o controles debe utilizar",
+          "Solo el nombre de su puesto",
+          "Todos los procedimientos de otras áreas",
+          "Únicamente los riesgos que ya causaron accidentes"
+        ],
+        "en-US": [
+          "Which risks apply to them and what preventive measures or controls they should use",
+          "Only their job title",
+          "All procedures from other areas",
+          "Only risks that have already caused accidents"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Qué riesgos le aplican y qué medidas preventivas o controles debe utilizar",
+        "en-US": "Which risks apply to them and what preventive measures or controls they should use"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El auditor puede pedir un ejemplo concreto de riesgo del puesto y cómo se controla."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "An auditor may ask for a specific example of a job risk and how it is controlled."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 8 · Riesgos 45K1, mapas de calor y controles",
+      "Question Text": {
+        "es-MX": "¿Cuál de los siguientes grupos contiene ejemplos de riesgos de un Asesor en el CAC?",
+        "en-US": "Which of the following groups contains examples of risks for a CAC Advisor?"
+      },
+      "Options": {
+        "es-MX": [
+          "Estrés por metas o atención a clientes, postura prolongada, fatiga visual y contacto biológico con público",
+          "Únicamente riesgo de caída desde alturas",
+          "Solo exposición a sustancias corrosivas",
+          "Exclusivamente riesgo de maquinaria pesada"
+        ],
+        "en-US": [
+          "Stress from targets or customer service, prolonged posture, visual fatigue, and biological contact with customers",
+          "Only risk of falling from heights",
+          "Only exposure to corrosive substances",
+          "Only heavy machinery risk"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Estrés por metas o atención a clientes, postura prolongada, fatiga visual y contacto biológico con público",
+        "en-US": "Stress from targets or customer service, prolonged posture, visual fatigue, and biological contact with customers"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Entre los controles aplicables están postura adecuada, higiene, limpieza y manejo preventivo del estrés."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Applicable controls include proper posture, hygiene, cleaning, and preventive stress management."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 8 · Riesgos 45K1, mapas de calor y controles",
+      "Question Text": {
+        "es-MX": "¿Cuál de los siguientes grupos contiene riesgos y controles relacionados con el puesto de Analista de Equipo Terminal?",
+        "en-US": "Which of the following groups contains risks and controls related to the Terminal Equipment Analyst role?"
+      },
+      "Options": {
+        "es-MX": [
+          "Manipulación de equipos electrónicos, descarga electrostática, herramientas pequeñas y ergonomía; controles como pulsera antiestática, orden, herramientas adecuadas y evitar sobrecargas eléctricas",
+          "Solo atención telefónica y archivo de documentos",
+          "Únicamente riesgos por manejo de alimentos",
+          "Solo riesgos de conducción vehicular"
+        ],
+        "en-US": [
+          "Handling electronic equipment, electrostatic discharge, small tools, and ergonomics; controls such as an antistatic wrist strap, order, proper tools, and avoiding electrical overloads",
+          "Only phone support and document filing",
+          "Only food-handling risks",
+          "Only vehicle-driving risks"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Manipulación de equipos electrónicos, descarga electrostática, herramientas pequeñas y ergonomía; controles como pulsera antiestática, orden, herramientas adecuadas y evitar sobrecargas eléctricas",
+        "en-US": "Handling electronic equipment, electrostatic discharge, small tools, and ergonomics; controls such as an antistatic wrist strap, order, proper tools, and avoiding electrical overloads"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "En el PIPC revisado, el Analista de Equipo Terminal aparece con un nivel de riesgo Medio-Alto."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "In the reviewed PIPC, the Terminal Equipment Analyst appears with a Medium-High risk level."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 8 · Riesgos 45K1, mapas de calor y controles",
+      "Question Text": {
+        "es-MX": "¿Qué riesgos pueden ser relevantes para un Almacenista?",
+        "en-US": "What risks may be relevant for a Warehouse Worker?"
+      },
+      "Options": {
+        "es-MX": [
+          "Manipulación de cajas o equipos, esfuerzo lumbar, golpes o atrapamientos con racks, caídas y estiba incorrecta",
+          "Solo fatiga visual por pantalla",
+          "Únicamente estrés por llamadas telefónicas",
+          "Solo riesgo de información confidencial"
+        ],
+        "en-US": [
+          "Handling boxes or equipment, lower-back strain, impacts or entrapment with racks, falls, and improper stacking",
+          "Only visual fatigue from screens",
+          "Only stress from phone calls",
+          "Only confidential-information risk"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Manipulación de cajas o equipos, esfuerzo lumbar, golpes o atrapamientos con racks, caídas y estiba incorrecta",
+        "en-US": "Handling boxes or equipment, lower-back strain, impacts or entrapment with racks, falls, and improper stacking"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los controles incluyen técnicas de levantamiento, pasillos libres, estiba segura, racks en buen estado y PPE cuando aplique."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Controls include lifting techniques, clear aisles, safe stacking, racks in good condition, and PPE when applicable."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 8 · Riesgos 45K1, mapas de calor y controles",
+      "Question Text": {
+        "es-MX": "Si detectas un riesgo nuevo o una condición insegura no contemplada, ¿qué debes hacer?",
+        "en-US": "If you detect a new risk or an unsafe condition not previously considered, what should you do?"
+      },
+      "Options": {
+        "es-MX": [
+          "Reportarlo para que sea evaluado, tratado y se le dé seguimiento",
+          "Esperar a que aparezca en el próximo mapa de calor anual",
+          "No informar hasta que ocurra un incidente",
+          "Modificar por cuenta propia los documentos oficiales"
+        ],
+        "en-US": [
+          "Report it so it can be evaluated, treated, and followed up",
+          "Wait until it appears in the next annual heat map",
+          "Do not report it until an incident occurs",
+          "Modify official documents on your own"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Reportarlo para que sea evaluado, tratado y se le dé seguimiento",
+        "en-US": "Report it so it can be evaluated, treated, and followed up"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los riesgos pueden revisarse cuando cambian las condiciones o aparecen nuevas situaciones."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Risks may be reviewed when conditions change or new situations arise."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 8 · Riesgos 45K1, mapas de calor y controles",
+      "Question Text": {
+        "es-MX": "¿Qué es un control de riesgo?",
+        "en-US": "What is a risk control?"
+      },
+      "Options": {
+        "es-MX": [
+          "Una medida destinada a eliminar, reducir o mantener bajo control la exposición a un riesgo",
+          "Un documento usado únicamente para auditorías",
+          "Una sanción aplicada al empleado",
+          "Un reporte financiero"
+        ],
+        "en-US": [
+          "A measure intended to eliminate, reduce, or keep exposure to a risk under control",
+          "A document used only for audits",
+          "A penalty applied to an employee",
+          "A financial report"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Una medida destinada a eliminar, reducir o mantener bajo control la exposición a un riesgo",
+        "en-US": "A measure intended to eliminate, reduce, or keep exposure to a risk under control"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los controles pueden incluir medidas técnicas, administrativas, capacitación, mantenimiento, señalización o PPE."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Controls may include technical measures, administrative measures, training, maintenance, signage, or PPE."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 8 · Riesgos 45K1, mapas de calor y controles",
+      "Question Text": {
+        "es-MX": "¿Cuál de los siguientes grupos contiene controles generales aplicables al CAC?",
+        "en-US": "Which of the following groups contains general controls applicable to the CAC?"
+      },
+      "Options": {
+        "es-MX": [
+          "Rutas y punto de reunión, simulacros, orden y limpieza, reporte de condiciones inseguras y actitud preventiva",
+          "Solo metas de ventas y productividad",
+          "Únicamente controles de nómina",
+          "Solo políticas comerciales"
+        ],
+        "en-US": [
+          "Routes and meeting point, drills, order and cleanliness, reporting unsafe conditions, and a preventive attitude",
+          "Only sales and productivity targets",
+          "Only payroll controls",
+          "Only commercial policies"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Rutas y punto de reunión, simulacros, orden y limpieza, reporte de condiciones inseguras y actitud preventiva",
+        "en-US": "Routes and meeting point, drills, order and cleanliness, reporting unsafe conditions, and a preventive attitude"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los controles generales complementan los controles específicos de cada puesto."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "General controls complement the specific controls for each job."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 8 · Riesgos 45K1, mapas de calor y controles",
+      "Question Text": {
+        "es-MX": "¿Qué norma funciona como marco de referencia para la gestión de riesgos en Telcel?",
+        "en-US": "Which standard serves as a framework for risk management at Telcel?"
+      },
+      "Options": {
+        "es-MX": [
+          "ISO 31000:2018",
+          "ISO 9001 únicamente",
+          "NOM-019-STPS-2011 únicamente",
+          "ISO 22301 únicamente"
+        ],
+        "en-US": [
+          "ISO 31000:2018",
+          "ISO 9001 only",
+          "NOM-019-STPS-2011 only",
+          "ISO 22301 only"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "ISO 31000:2018",
+        "en-US": "ISO 31000:2018"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "ISO 31000:2018 es el marco de referencia utilizado para la gestión de riesgos."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "ISO 31000:2018 is the framework used for risk management."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 8 · Riesgos 45K1, mapas de calor y controles",
+      "Question Text": {
+        "es-MX": "¿Cuáles son etapas generales de la gestión de riesgos?",
+        "en-US": "What are general stages of risk management?"
+      },
+      "Options": {
+        "es-MX": [
+          "Identificar, analizar, evaluar y tratar; además comunicar, consultar, monitorear y revisar",
+          "Solo identificar y archivar",
+          "Vender, facturar y cobrar",
+          "Auditar, sancionar y cerrar"
+        ],
+        "en-US": [
+          "Identify, analyze, evaluate, and treat; also communicate, consult, monitor, and review",
+          "Only identify and file",
+          "Sell, invoice, and collect",
+          "Audit, penalize, and close"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Identificar, analizar, evaluar y tratar; además comunicar, consultar, monitorear y revisar",
+        "en-US": "Identify, analyze, evaluate, and treat; also communicate, consult, monitor, and review"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La gestión de riesgos es un proceso continuo y no termina al identificar el riesgo."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Risk management is a continuous process and does not end when a risk is identified."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 8 · Riesgos 45K1, mapas de calor y controles",
+      "Question Text": {
+        "es-MX": "¿Cuándo pueden revisarse o actualizarse los riesgos y sus controles?",
+        "en-US": "When may risks and their controls be reviewed or updated?"
+      },
+      "Options": {
+        "es-MX": [
+          "Periódicamente y cuando cambien el contexto, las actividades o las condiciones relevantes",
+          "Solo una vez cuando abre el centro de trabajo",
+          "Únicamente cuando lo pida un cliente",
+          "Nunca después de que se documentan"
+        ],
+        "en-US": [
+          "Periodically and when the context, activities, or relevant conditions change",
+          "Only once when the workplace opens",
+          "Only when requested by a customer",
+          "Never after they are documented"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Periódicamente y cuando cambien el contexto, las actividades o las condiciones relevantes",
+        "en-US": "Periodically and when the context, activities, or relevant conditions change"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los riesgos y controles deben mantenerse vigentes y revisarse cuando existan cambios relevantes."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Risks and controls should remain current and be reviewed when relevant changes occur."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 8 · Riesgos 45K1, mapas de calor y controles",
+      "Question Text": {
+        "es-MX": "¿Quién debe aplicar los controles de Seguridad y Salud en el Trabajo?",
+        "en-US": "Who should apply Occupational Health and Safety controls?"
+      },
+      "Options": {
+        "es-MX": [
+          "Todos los trabajadores, de acuerdo con las actividades y riesgos que les corresponden",
+          "Solo la Comisión de Seguridad e Higiene",
+          "Únicamente el jefe del CAC",
+          "Solo el proveedor de mantenimiento"
+        ],
+        "en-US": [
+          "All workers, according to the activities and risks applicable to them",
+          "Only the Safety and Hygiene Commission",
+          "Only the CAC manager",
+          "Only the maintenance provider"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Todos los trabajadores, de acuerdo con las actividades y riesgos que les corresponden",
+        "en-US": "All workers, according to the activities and risks applicable to them"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La prevención no depende de una sola persona; cada trabajador debe aplicar los controles correspondientes a su función."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Prevention does not depend on one person; each worker should apply the controls corresponding to their role."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 8 · Riesgos 45K1, mapas de calor y controles",
+      "Question Text": {
+        "es-MX": "¿Qué evidencia puede demostrar que los riesgos de SST están siendo atendidos?",
+        "en-US": "What evidence can demonstrate that OHS risks are being addressed?"
+      },
+      "Options": {
+        "es-MX": [
+          "Bitácoras, recorridos de la Comisión, PIPC, simulacros, capacitación y registros de seguimiento",
+          "Únicamente comentarios verbales",
+          "Solo fotografías sin contexto",
+          "Exclusivamente el calendario de auditoría"
+        ],
+        "en-US": [
+          "Logs, Commission walkthroughs, the PIPC, drills, training, and follow-up records",
+          "Only verbal comments",
+          "Only photos without context",
+          "Only the audit calendar"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Bitácoras, recorridos de la Comisión, PIPC, simulacros, capacitación y registros de seguimiento",
+        "en-US": "Logs, Commission walkthroughs, the PIPC, drills, training, and follow-up records"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La evidencia debe relacionarse con los controles realmente aplicados en el centro."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Evidence should relate to the controls actually applied in the workplace."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 8 · Riesgos 45K1, mapas de calor y controles",
+      "Question Text": {
+        "es-MX": "Si el auditor te pide demostrar un control de riesgo, ¿qué sería lo más adecuado?",
+        "en-US": "If an auditor asks you to demonstrate a risk control, what would be most appropriate?"
+      },
+      "Options": {
+        "es-MX": [
+          "Mostrar cómo se aplica realmente el control y, cuando exista, la evidencia relacionada",
+          "Explicar únicamente una definición teórica",
+          "Mostrar cualquier documento aunque no corresponda al riesgo",
+          "Decir que todos los controles son responsabilidad del jefe"
+        ],
+        "en-US": [
+          "Show how the control is actually applied and, when available, the related evidence",
+          "Only explain a theoretical definition",
+          "Show any document even if it is unrelated to the risk",
+          "Say that all controls are the manager's responsibility"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Mostrar cómo se aplica realmente el control y, cuando exista, la evidencia relacionada",
+        "en-US": "Show how the control is actually applied and, when available, the related evidence"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El auditor puede buscar evidencia práctica de que el control existe y se aplica."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The auditor may look for practical evidence that the control exists and is applied."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 8 · Riesgos 45K1, mapas de calor y controles",
+      "Question Text": {
+        "es-MX": "Si el auditor pregunta: 'Dígame un riesgo de su puesto y qué hace para controlarlo', ¿cómo debes responder?",
+        "en-US": "If the auditor asks, 'Tell me one risk of your job and what you do to control it,' how should you answer?"
+      },
+      "Options": {
+        "es-MX": [
+          "Dar un ejemplo real de tu puesto y explicar el control que efectivamente aplicas",
+          "Elegir cualquier riesgo de otra área aunque no te corresponda",
+          "Responder solo con el nombre de ISO 45001",
+          "Inventar un riesgo para responder rápido"
+        ],
+        "en-US": [
+          "Give a real example from your job and explain the control you actually apply",
+          "Choose any risk from another area even if it does not apply to you",
+          "Answer only with the name ISO 45001",
+          "Invent a risk to answer quickly"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Dar un ejemplo real de tu puesto y explicar el control que efectivamente aplicas",
+        "en-US": "Give a real example from your job and explain the control you actually apply"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La mejor respuesta es concreta, verdadera y relacionada con las funciones reales del empleado."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The best answer is specific, truthful, and related to the employee's actual duties."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 8 · Riesgos 45K1, mapas de calor y controles",
+      "Question Text": {
+        "es-MX": "Si el auditor te pide mostrar dónde se consultan los riesgos de SST, ¿qué ruta debes poder localizar?",
+        "en-US": "If the auditor asks you to show where OHS risks are checked, which route should you be able to locate?"
+      },
+      "Options": {
+        "es-MX": [
+          "Portal SGI → Riesgos → Mapas de calor → 45K1",
+          "Portal SGI → Cultura Organizacional → Misión",
+          "Portal SGI → Auditorías → Lineamientos",
+          "Intranet Nacional → Nómina"
+        ],
+        "en-US": [
+          "SGI Portal → Risks → Heat Maps → 45K1",
+          "SGI Portal → Organizational Culture → Mission",
+          "SGI Portal → Audits → Guidelines",
+          "National Intranet → Payroll"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Portal SGI → Riesgos → Mapas de calor → 45K1",
+        "en-US": "SGI Portal → Risks → Heat Maps → 45K1"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "En auditoría puede ser más importante saber localizar la información que memorizar todo su contenido."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "During an audit, being able to locate the information may be more important than memorizing all of it."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 8 · Riesgos 45K1, mapas de calor y controles",
+      "Question Text": {
+        "es-MX": "Si el auditor pregunta: '¿Cómo sabe que ese riesgo está siendo controlado?', ¿qué conviene responder?",
+        "en-US": "If the auditor asks, 'How do you know that this risk is being controlled?', what should you answer?"
+      },
+      "Options": {
+        "es-MX": [
+          "Explicar el control aplicado y mostrar evidencia, como bitácoras, recorridos, mantenimiento, capacitación o registros, según corresponda",
+          "Decir que no ha ocurrido un accidente y eso es suficiente",
+          "Responder que lo sabe porque siempre se ha hecho así",
+          "Mostrar un documento sin relación con el riesgo"
+        ],
+        "en-US": [
+          "Explain the control being applied and show evidence such as logs, walkthroughs, maintenance, training, or records, as applicable",
+          "Say that no accident has occurred and that is enough",
+          "Say you know because it has always been done that way",
+          "Show a document unrelated to the risk"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Explicar el control aplicado y mostrar evidencia, como bitácoras, recorridos, mantenimiento, capacitación o registros, según corresponda",
+        "en-US": "Explain the control being applied and show evidence such as logs, walkthroughs, maintenance, training, or records, as applicable"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El control debe poder relacionarse con una acción real y, cuando aplique, con evidencia verificable."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The control should be linked to a real action and, when applicable, to verifiable evidence."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 8 · Riesgos 45K1, mapas de calor y controles",
+      "Question Text": {
+        "es-MX": "Para un Analista de Equipo Terminal, ¿cuál es un ejemplo correcto de riesgo y control?",
+        "en-US": "For a Terminal Equipment Analyst, which is a correct example of a risk and control?"
+      },
+      "Options": {
+        "es-MX": [
+          "Descarga electrostática al manipular equipos; usar pulsera antiestática y seguir prácticas seguras de manejo",
+          "Fatiga por conducir camiones; usar cinturón de seguridad",
+          "Exposición a químicos industriales; usar respirador autónomo",
+          "Caída desde andamios; usar línea de vida"
+        ],
+        "en-US": [
+          "Electrostatic discharge while handling equipment; use an antistatic wrist strap and follow safe handling practices",
+          "Fatigue from driving trucks; use a seat belt",
+          "Exposure to industrial chemicals; use a self-contained breathing apparatus",
+          "Falling from scaffolding; use a lifeline"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Descarga electrostática al manipular equipos; usar pulsera antiestática y seguir prácticas seguras de manejo",
+        "en-US": "Electrostatic discharge while handling equipment; use an antistatic wrist strap and follow safe handling practices"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El riesgo debe corresponder al puesto real. Para Analista, el manejo de equipos electrónicos y la descarga electrostática son ejemplos pertinentes."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The risk should correspond to the actual job. For an Analyst, handling electronic equipment and electrostatic discharge are relevant examples."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 8 · Riesgos 45K1, mapas de calor y controles",
+      "Question Text": {
+        "es-MX": "Como integrante de la Comisión de Seguridad e Higiene, ¿cómo participas en el control de riesgos del CAC?",
+        "en-US": "As a member of the Safety and Hygiene Commission, how do you participate in controlling CAC risks?"
+      },
+      "Options": {
+        "es-MX": [
+          "Realizando recorridos, revisando bitácoras, documentando condiciones, reportando hallazgos y dando seguimiento a su atención",
+          "Únicamente memorizando normas",
+          "Solo participando cuando hay auditoría externa",
+          "Reparando personalmente todos los equipos"
+        ],
+        "en-US": [
+          "By performing walkthroughs, reviewing logs, documenting conditions, reporting findings, and following up on their resolution",
+          "Only by memorizing standards",
+          "Only by participating during the external audit",
+          "By personally repairing all equipment"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Realizando recorridos, revisando bitácoras, documentando condiciones, reportando hallazgos y dando seguimiento a su atención",
+        "en-US": "By performing walkthroughs, reviewing logs, documenting conditions, reporting findings, and following up on their resolution"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El papel de la Comisión se demuestra con actividades y evidencia de recorridos, bitácoras, actas y seguimiento."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The Commission's role is demonstrated through activities and evidence from walkthroughs, logs, minutes, and follow-up."
+          }
+        ]
+      }
+    }
+  ]
+}

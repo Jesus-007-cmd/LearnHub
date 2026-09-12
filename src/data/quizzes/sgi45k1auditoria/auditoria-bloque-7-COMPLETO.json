@@ -1,0 +1,765 @@
+{
+  "meta": {
+    "slug": "auditoria-bloque-7",
+    "title": "Comisión de Seguridad e Higiene, recorridos y bitácoras",
+    "subject": "Auditoría CAC",
+    "unit": 7,
+    "classNo": 1,
+    "description": "Quiz de estudio del Bloque 7 para preparación de auditoría SGI / 45K1.",
+    "tags": [
+      "auditoria",
+      "SGI",
+      "45K1",
+      "Comision de Seguridad e Higiene",
+      "bitacoras",
+      "recorridos",
+      "extintores",
+      "detectores",
+      "lamparas de emergencia",
+      "CAC Delicias"
+    ]
+  },
+  "Questions": [
+    {
+      "Category": "Bloque 7 · Comisión de Seguridad e Higiene, recorridos y bitácoras",
+      "Question Text": {
+        "es-MX": "¿Qué hace la Comisión de Seguridad e Higiene durante sus recorridos de verificación?",
+        "en-US": "What does the Safety and Hygiene Commission do during its verification walkthroughs?"
+      },
+      "Options": {
+        "es-MX": [
+          "Inspecciona el centro, identifica actos o condiciones inseguras, documenta hallazgos y da seguimiento a su atención",
+          "Solo revisa ventas, metas y asistencia",
+          "Únicamente observa sin registrar nada",
+          "Sustituye por completo al proveedor de mantenimiento"
+        ],
+        "en-US": [
+          "It inspects the workplace, identifies unsafe acts or conditions, documents findings, and follows up on their resolution",
+          "It only checks sales, targets, and attendance",
+          "It only observes without recording anything",
+          "It completely replaces the maintenance provider"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Inspecciona el centro, identifica actos o condiciones inseguras, documenta hallazgos y da seguimiento a su atención",
+        "en-US": "It inspects the workplace, identifies unsafe acts or conditions, documents findings, and follows up on their resolution"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El recorrido debe servir para detectar condiciones o actos inseguros y dar seguimiento hasta su atención."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The walkthrough should identify unsafe acts or conditions and support follow-up until they are addressed."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 7 · Comisión de Seguridad e Higiene, recorridos y bitácoras",
+      "Question Text": {
+        "es-MX": "¿Qué evidencia puede mostrar la Comisión de Seguridad e Higiene de sus recorridos?",
+        "en-US": "What evidence can the Safety and Hygiene Commission show from its walkthroughs?"
+      },
+      "Options": {
+        "es-MX": [
+          "Actas, evidencia fotográfica y bitácoras o formatos de revisión",
+          "Solo mensajes personales entre compañeros",
+          "Únicamente fotografías sin fecha ni contexto",
+          "Solo el calendario de auditorías"
+        ],
+        "en-US": [
+          "Minutes, photographic evidence, and inspection logs or forms",
+          "Only personal messages between coworkers",
+          "Only photos without date or context",
+          "Only the audit calendar"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Actas, evidencia fotográfica y bitácoras o formatos de revisión",
+        "en-US": "Minutes, photographic evidence, and inspection logs or forms"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La evidencia puede incluir actas, fotografías, bitácoras y formatos relacionados con las revisiones realizadas."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Evidence may include minutes, photographs, logs, and forms related to the inspections performed."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 7 · Comisión de Seguridad e Higiene, recorridos y bitácoras",
+      "Question Text": {
+        "es-MX": "¿Qué norma está directamente relacionada con la integración y funcionamiento de la Comisión de Seguridad e Higiene?",
+        "en-US": "Which standard is directly related to the organization and operation of the Safety and Hygiene Commission?"
+      },
+      "Options": {
+        "es-MX": [
+          "NOM-019-STPS-2011",
+          "NOM-025-STPS-2008",
+          "NOM-026-STPS-2008",
+          "NOM-022-STPS-2015"
+        ],
+        "en-US": [
+          "NOM-019-STPS-2011",
+          "NOM-025-STPS-2008",
+          "NOM-026-STPS-2008",
+          "NOM-022-STPS-2015"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "NOM-019-STPS-2011",
+        "en-US": "NOM-019-STPS-2011"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La NOM-019-STPS-2011 se relaciona directamente con las Comisiones de Seguridad e Higiene."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "NOM-019-STPS-2011 is directly related to Safety and Hygiene Commissions."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 7 · Comisión de Seguridad e Higiene, recorridos y bitácoras",
+      "Question Text": {
+        "es-MX": "Si durante un recorrido se detecta una condición insegura, ¿qué debe hacerse?",
+        "en-US": "If an unsafe condition is detected during a walkthrough, what should be done?"
+      },
+      "Options": {
+        "es-MX": [
+          "Documentarla, reportarla, definir o solicitar la acción correspondiente y dar seguimiento hasta su corrección o cierre",
+          "Esperar a la siguiente auditoría para comentarla",
+          "Ocultarla si parece menor",
+          "Corregirla siempre personalmente aunque no exista autorización"
+        ],
+        "en-US": [
+          "Document it, report it, define or request the corresponding action, and follow up until correction or closure",
+          "Wait until the next audit to mention it",
+          "Hide it if it seems minor",
+          "Always fix it personally even without authorization"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Documentarla, reportarla, definir o solicitar la acción correspondiente y dar seguimiento hasta su corrección o cierre",
+        "en-US": "Document it, report it, define or request the corresponding action, and follow up until correction or closure"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El seguimiento debe dejar evidencia de la condición, la acción y su cierre cuando corresponda."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Follow-up should leave evidence of the condition, the action taken, and closure when applicable."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 7 · Comisión de Seguridad e Higiene, recorridos y bitácoras",
+      "Question Text": {
+        "es-MX": "¿Qué aspectos pueden revisarse mensualmente en un extintor mediante la bitácora del CAC?",
+        "en-US": "What items may be checked monthly on a fire extinguisher using the CAC log?"
+      },
+      "Options": {
+        "es-MX": [
+          "Ubicación, acceso libre, señalización, estado general, recarga, presión cuando aplique, seguro, collarín, holograma, manguera, boquilla, palanca, limpieza, soporte, cilindro y datos de servicio",
+          "Solo el color exterior del cilindro",
+          "Únicamente que el extintor esté presente",
+          "Solo la fecha de fabricación"
+        ],
+        "en-US": [
+          "Location, clear access, signage, general condition, recharge, pressure when applicable, safety pin, service collar, hologram, hose, nozzle, lever, cleanliness, support, cylinder, and service data",
+          "Only the exterior color of the cylinder",
+          "Only whether the extinguisher is present",
+          "Only the manufacturing date"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Ubicación, acceso libre, señalización, estado general, recarga, presión cuando aplique, seguro, collarín, holograma, manguera, boquilla, palanca, limpieza, soporte, cilindro y datos de servicio",
+        "en-US": "Location, clear access, signage, general condition, recharge, pressure when applicable, safety pin, service collar, hologram, hose, nozzle, lever, cleanliness, support, cylinder, and service data"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La bitácora considera una revisión visual amplia; no se limita a comprobar que el extintor esté presente."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The log includes a broad visual inspection and is not limited to confirming that the extinguisher is present."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 7 · Comisión de Seguridad e Higiene, recorridos y bitácoras",
+      "Question Text": {
+        "es-MX": "Si un extintor presenta desgaste o pintura saltada, ¿qué debe verificarse antes de concluir que sigue en buenas condiciones?",
+        "en-US": "If a fire extinguisher shows wear or chipped paint, what should be checked before concluding that it remains in good condition?"
+      },
+      "Options": {
+        "es-MX": [
+          "Que no presente corrosión, golpes, abolladuras u otra anomalía que comprometa el cilindro; si requiere valoración, se registra y reporta",
+          "Que la pintura sea del mismo tono que los demás",
+          "Solo que la etiqueta sea nueva",
+          "Que nadie haya comentado nada sobre el extintor"
+        ],
+        "en-US": [
+          "That it has no corrosion, impacts, dents, or other abnormal condition affecting the cylinder; if assessment is needed, it should be recorded and reported",
+          "That the paint is the same shade as the others",
+          "Only that the label is new",
+          "That nobody has mentioned anything about the extinguisher"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Que no presente corrosión, golpes, abolladuras u otra anomalía que comprometa el cilindro; si requiere valoración, se registra y reporta",
+        "en-US": "That it has no corrosion, impacts, dents, or other abnormal condition affecting the cylinder; if assessment is needed, it should be recorded and reported"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El desgaste superficial debe distinguirse de corrosión, abolladuras u otras condiciones que puedan comprometer el equipo."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Surface wear should be distinguished from corrosion, dents, or other conditions that may compromise the equipment."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 7 · Comisión de Seguridad e Higiene, recorridos y bitácoras",
+      "Question Text": {
+        "es-MX": "Si el auditor pregunta por qué un extintor con pintura desgastada se considera en servicio, ¿qué respuesta es adecuada si la revisión fue satisfactoria?",
+        "en-US": "If an auditor asks why an extinguisher with worn paint is considered serviceable, what is an appropriate answer if the inspection was satisfactory?"
+      },
+      "Options": {
+        "es-MX": [
+          "Porque el desgaste es superficial; la revisión visual no muestra corrosión ni abolladuras, los demás puntos de la bitácora son satisfactorios y cualquier anomalía se reportaría",
+          "Porque todos los extintores pueden usarse aunque estén dañados",
+          "Porque la pintura no importa nunca, sin necesidad de revisar nada más",
+          "Porque recibió mantenimiento y ya no es necesario revisarlo mensualmente"
+        ],
+        "en-US": [
+          "Because the wear is superficial; the visual inspection shows no corrosion or dents, the other log items are satisfactory, and any abnormal condition would be reported",
+          "Because all extinguishers can be used even when damaged",
+          "Because paint never matters and nothing else needs to be checked",
+          "Because it received maintenance and monthly checks are no longer necessary"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Porque el desgaste es superficial; la revisión visual no muestra corrosión ni abolladuras, los demás puntos de la bitácora son satisfactorios y cualquier anomalía se reportaría",
+        "en-US": "Because the wear is superficial; the visual inspection shows no corrosion or dents, the other log items are satisfactory, and any abnormal condition would be reported"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El mantenimiento reciente es un dato favorable, pero no sustituye la revisión visual mensual."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Recent maintenance is a favorable fact, but it does not replace the monthly visual inspection."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 7 · Comisión de Seguridad e Higiene, recorridos y bitácoras",
+      "Question Text": {
+        "es-MX": "Si falta un extintor o se detecta una anomalía, ¿qué debe hacer el personal del CAC?",
+        "en-US": "If a fire extinguisher is missing or an abnormal condition is detected, what should CAC personnel do?"
+      },
+      "Options": {
+        "es-MX": [
+          "Informarlo al superior, canalizar la atención al área correspondiente y dar seguimiento hasta su solución",
+          "Inventar una ruta específica de sistema aunque no esté confirmada",
+          "Esperar a que el proveedor lo detecte por sí solo",
+          "Dejarlo pendiente hasta la siguiente revisión mensual"
+        ],
+        "en-US": [
+          "Inform the supervisor, route the issue to the corresponding area, and follow up until it is resolved",
+          "Invent a specific system route even if it has not been confirmed",
+          "Wait for the provider to detect it on their own",
+          "Leave it pending until the next monthly check"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Informarlo al superior, canalizar la atención al área correspondiente y dar seguimiento hasta su solución",
+        "en-US": "Inform the supervisor, route the issue to the corresponding area, and follow up until it is resolved"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Debe enseñarse el proceso general de reporte, canalización y seguimiento sin afirmar una ruta técnica no confirmada."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The general process of reporting, routing, and follow-up should be taught without stating an unconfirmed technical route."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 7 · Comisión de Seguridad e Higiene, recorridos y bitácoras",
+      "Question Text": {
+        "es-MX": "¿Qué aspectos pueden revisarse mensualmente en los detectores de humo mediante la bitácora?",
+        "en-US": "What items may be checked monthly on smoke detectors using the log?"
+      },
+      "Options": {
+        "es-MX": [
+          "Ubicación, tipo de sensor, ausencia de obstrucciones, luz indicadora, baterías, activación en panel cuando aplique, estado, limpieza, fijación y mantenimiento",
+          "Solo el color del detector",
+          "Únicamente que esté colocado en el techo",
+          "Solo la marca y el modelo"
+        ],
+        "en-US": [
+          "Location, sensor type, absence of obstructions, indicator light, batteries, panel activation when applicable, condition, cleanliness, mounting, and maintenance",
+          "Only the detector color",
+          "Only that it is mounted on the ceiling",
+          "Only the brand and model"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Ubicación, tipo de sensor, ausencia de obstrucciones, luz indicadora, baterías, activación en panel cuando aplique, estado, limpieza, fijación y mantenimiento",
+        "en-US": "Location, sensor type, absence of obstructions, indicator light, batteries, panel activation when applicable, condition, cleanliness, mounting, and maintenance"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La bitácora mensual permite verificar visualmente y documentar condiciones básicas del detector."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The monthly log allows basic detector conditions to be visually checked and documented."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 7 · Comisión de Seguridad e Higiene, recorridos y bitácoras",
+      "Question Text": {
+        "es-MX": "¿La revisión mensual visual de detectores sustituye el mantenimiento técnico?",
+        "en-US": "Does the monthly visual detector check replace technical maintenance?"
+      },
+      "Options": {
+        "es-MX": [
+          "No. La revisión mensual y el mantenimiento técnico son actividades distintas",
+          "Sí. Si se ve limpio ya no requiere mantenimiento",
+          "Sí. La Comisión debe realizar todas las pruebas técnicas",
+          "No. Pero tampoco es necesario registrar la revisión visual"
+        ],
+        "en-US": [
+          "No. The monthly visual check and technical maintenance are different activities",
+          "Yes. If it looks clean, no maintenance is needed",
+          "Yes. The Commission must perform all technical testing",
+          "No. But the visual check does not need to be recorded"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "No. La revisión mensual y el mantenimiento técnico son actividades distintas",
+        "en-US": "No. The monthly visual check and technical maintenance are different activities"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Conviene distinguir la revisión rutinaria de la Comisión de las pruebas o mantenimiento especializado."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "It is important to distinguish routine Commission checks from specialized testing or maintenance."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 7 · Comisión de Seguridad e Higiene, recorridos y bitácoras",
+      "Question Text": {
+        "es-MX": "¿Qué aspectos pueden revisarse en una lámpara de emergencia mediante la bitácora?",
+        "en-US": "What items may be checked on an emergency light using the log?"
+      },
+      "Options": {
+        "es-MX": [
+          "Ubicación conforme al plan, baterías, encendido y apagado, tipo de alerta cuando aplique, conexión, estado físico, limpieza y funcionamiento",
+          "Solo que tenga una carcasa blanca",
+          "Únicamente la fecha de compra",
+          "Solo si está cerca de una ventana"
+        ],
+        "en-US": [
+          "Location according to the plan, batteries, on/off operation, alert type when applicable, connection, physical condition, cleanliness, and operation",
+          "Only that it has a white housing",
+          "Only the purchase date",
+          "Only whether it is near a window"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Ubicación conforme al plan, baterías, encendido y apagado, tipo de alerta cuando aplique, conexión, estado físico, limpieza y funcionamiento",
+        "en-US": "Location according to the plan, batteries, on/off operation, alert type when applicable, connection, physical condition, cleanliness, and operation"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La revisión busca confirmar que la lámpara esté ubicada, completa, limpia, conectada y funcionando."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The check aims to confirm that the emergency light is properly located, complete, clean, connected, and working."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 7 · Comisión de Seguridad e Higiene, recorridos y bitácoras",
+      "Question Text": {
+        "es-MX": "¿Cuál es la función principal de la iluminación de emergencia?",
+        "en-US": "What is the main function of emergency lighting?"
+      },
+      "Options": {
+        "es-MX": [
+          "Iluminar áreas, rutas o salidas cuando se requiera durante una emergencia",
+          "Mejorar la decoración del CAC",
+          "Sustituir permanentemente la iluminación normal",
+          "Indicar únicamente dónde se encuentra el botiquín"
+        ],
+        "en-US": [
+          "Illuminate areas, routes, or exits when needed during an emergency",
+          "Improve the appearance of the CAC",
+          "Permanently replace normal lighting",
+          "Only indicate where the first-aid kit is located"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Iluminar áreas, rutas o salidas cuando se requiera durante una emergencia",
+        "en-US": "Illuminate areas, routes, or exits when needed during an emergency"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La iluminación de emergencia apoya la orientación y evacuación cuando la iluminación normal no está disponible o no es suficiente."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Emergency lighting supports orientation and evacuation when normal lighting is unavailable or insufficient."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 7 · Comisión de Seguridad e Higiene, recorridos y bitácoras",
+      "Question Text": {
+        "es-MX": "¿Qué debe verificarse respecto a la señalización de seguridad durante un recorrido?",
+        "en-US": "What should be checked regarding safety signage during a walkthrough?"
+      },
+      "Options": {
+        "es-MX": [
+          "Que corresponda al plan, esté correctamente ubicada, limpia, visible y en buen estado",
+          "Solo que tenga colores llamativos",
+          "Que esté colocada aunque no coincida con el lugar",
+          "Únicamente que sea nueva"
+        ],
+        "en-US": [
+          "That it matches the plan, is correctly placed, clean, visible, and in good condition",
+          "Only that it has bright colors",
+          "That it is posted even if it does not match the location",
+          "Only that it is new"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Que corresponda al plan, esté correctamente ubicada, limpia, visible y en buen estado",
+        "en-US": "That it matches the plan, is correctly placed, clean, visible, and in good condition"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La señalización debe poder cumplir su función: estar presente, visible, legible y correctamente ubicada."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Signage must be able to perform its function: present, visible, legible, and correctly located."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 7 · Comisión de Seguridad e Higiene, recorridos y bitácoras",
+      "Question Text": {
+        "es-MX": "Si una señal está deteriorada, bloqueada o no corresponde con el lugar, ¿qué debe hacerse?",
+        "en-US": "If a sign is damaged, blocked, or does not correspond to the location, what should be done?"
+      },
+      "Options": {
+        "es-MX": [
+          "Registrar la condición, corregirla o solicitar su reposición y dar seguimiento",
+          "Ignorarla mientras pueda verse parcialmente",
+          "Retirarla sin informar y dejar el área sin señal",
+          "Esperar hasta la siguiente auditoría"
+        ],
+        "en-US": [
+          "Record the condition, correct it or request replacement, and follow up",
+          "Ignore it as long as it is partially visible",
+          "Remove it without reporting and leave the area without signage",
+          "Wait until the next audit"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Registrar la condición, corregirla o solicitar su reposición y dar seguimiento",
+        "en-US": "Record the condition, correct it or request replacement, and follow up"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Una señal deficiente debe tratarse como una condición que requiere corrección y seguimiento."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "A deficient sign should be treated as a condition requiring correction and follow-up."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 7 · Comisión de Seguridad e Higiene, recorridos y bitácoras",
+      "Question Text": {
+        "es-MX": "¿Qué otros aspectos del centro pueden formar parte de los recorridos y bitácoras de la Comisión?",
+        "en-US": "What other workplace aspects may be included in Commission walkthroughs and logs?"
+      },
+      "Options": {
+        "es-MX": [
+          "Baños, comedor o cocineta, condiciones locativas, instalaciones, estanterías, escaleras, limpieza, señalización y equipos de emergencia",
+          "Solo equipos de cómputo",
+          "Únicamente documentos administrativos",
+          "Solo el estacionamiento exterior"
+        ],
+        "en-US": [
+          "Restrooms, dining or kitchenette areas, locative conditions, installations, shelving, stairs, cleanliness, signage, and emergency equipment",
+          "Only computer equipment",
+          "Only administrative documents",
+          "Only the outside parking lot"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Baños, comedor o cocineta, condiciones locativas, instalaciones, estanterías, escaleras, limpieza, señalización y equipos de emergencia",
+        "en-US": "Restrooms, dining or kitchenette areas, locative conditions, installations, shelving, stairs, cleanliness, signage, and emergency equipment"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los recorridos pueden abarcar múltiples condiciones físicas y de seguridad del centro de trabajo."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Walkthroughs may cover multiple physical and safety conditions in the workplace."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 7 · Comisión de Seguridad e Higiene, recorridos y bitácoras",
+      "Question Text": {
+        "es-MX": "Si durante un recorrido no se detecta ninguna condición insegura, ¿debe conservarse evidencia del recorrido?",
+        "en-US": "If no unsafe condition is found during a walkthrough, should evidence of the walkthrough still be kept?"
+      },
+      "Options": {
+        "es-MX": [
+          "Sí. Debe documentarse que el recorrido se realizó y conservar la evidencia correspondiente",
+          "No. Solo se documentan recorridos con hallazgos",
+          "No. Basta con recordarlo de memoria",
+          "Solo si lo solicita un auditor"
+        ],
+        "en-US": [
+          "Yes. The walkthrough should be documented and the corresponding evidence kept",
+          "No. Only walkthroughs with findings are documented",
+          "No. It is enough to remember it",
+          "Only if an auditor requests it"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Sí. Debe documentarse que el recorrido se realizó y conservar la evidencia correspondiente",
+        "en-US": "Yes. The walkthrough should be documented and the corresponding evidence kept"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Un recorrido sin hallazgos también debe dejar evidencia de que la verificación se efectuó."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "A walkthrough with no findings should still leave evidence that the verification was performed."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 7 · Comisión de Seguridad e Higiene, recorridos y bitácoras",
+      "Question Text": {
+        "es-MX": "Después de detectar una oportunidad de mejora durante un recorrido, ¿qué debe hacerse?",
+        "en-US": "What should be done after identifying an improvement opportunity during a walkthrough?"
+      },
+      "Options": {
+        "es-MX": [
+          "Registrarla, definir o solicitar una acción y dar seguimiento hasta su corrección o cierre",
+          "Eliminar el registro una vez comunicado verbalmente",
+          "Esperar a que alguien la recuerde más adelante",
+          "Dejarla pendiente si no produjo un accidente"
+        ],
+        "en-US": [
+          "Record it, define or request an action, and follow up until correction or closure",
+          "Delete the record after verbally communicating it",
+          "Wait for someone to remember it later",
+          "Leave it pending if it did not cause an accident"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Registrarla, definir o solicitar una acción y dar seguimiento hasta su corrección o cierre",
+        "en-US": "Record it, define or request an action, and follow up until correction or closure"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El valor del recorrido está también en el seguimiento de los hallazgos hasta su atención."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The value of the walkthrough also lies in following findings through to resolution."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 7 · Comisión de Seguridad e Higiene, recorridos y bitácoras",
+      "Question Text": {
+        "es-MX": "Si un auditor pide ver evidencia del último recorrido de la Comisión, ¿qué conviene mostrar?",
+        "en-US": "If an auditor asks to see evidence of the Commission's latest walkthrough, what should be shown?"
+      },
+      "Options": {
+        "es-MX": [
+          "El acta o registro del recorrido y las bitácoras, fotografías o evidencias relacionadas que correspondan",
+          "Solo una explicación verbal sin documentos",
+          "Cualquier acta antigua aunque no corresponda al último recorrido",
+          "Únicamente el calendario de auditorías"
+        ],
+        "en-US": [
+          "The walkthrough minutes or record and the related logs, photographs, or evidence that apply",
+          "Only a verbal explanation without documents",
+          "Any old minutes even if they do not correspond to the latest walkthrough",
+          "Only the audit calendar"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "El acta o registro del recorrido y las bitácoras, fotografías o evidencias relacionadas que correspondan",
+        "en-US": "The walkthrough minutes or record and the related logs, photographs, or evidence that apply"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Ante una petición de evidencia, debe mostrarse documentación real y correspondiente al recorrido efectuado."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "When evidence is requested, real documentation corresponding to the walkthrough performed should be shown."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 7 · Comisión de Seguridad e Higiene, recorridos y bitácoras",
+      "Question Text": {
+        "es-MX": "Si el auditor pregunta: 'Durante su último recorrido, ¿qué revisó usted personalmente?', ¿cómo debe responder el empleado?",
+        "en-US": "If the auditor asks, 'During your last walkthrough, what did you personally inspect?', how should the employee answer?"
+      },
+      "Options": {
+        "es-MX": [
+          "Debe responder únicamente con lo que realmente revisó y mostrar el formato o evidencia correspondiente",
+          "Debe mencionar todas las revisiones posibles aunque no las haya realizado",
+          "Debe repetir de memoria el contenido completo de todas las bitácoras",
+          "Debe decir que no recuerda y elegir cualquier formato"
+        ],
+        "en-US": [
+          "They should answer only with what they actually inspected and show the corresponding form or evidence",
+          "They should mention every possible inspection even if they did not perform it",
+          "They should recite the full contents of all logs from memory",
+          "They should say they do not remember and choose any form"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Debe responder únicamente con lo que realmente revisó y mostrar el formato o evidencia correspondiente",
+        "en-US": "They should answer only with what they actually inspected and show the corresponding form or evidence"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La respuesta debe ser verdadera y trazable con la evidencia del recorrido."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The answer should be truthful and traceable to the walkthrough evidence."
+          }
+        ]
+      }
+    }
+  ]
+}

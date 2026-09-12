@@ -1,0 +1,644 @@
+{
+  "meta": {
+    "slug": "auditoria-bloque-6",
+    "title": "Auditorías, resultados, mejora continua y cambios",
+    "subject": "Auditoría CAC",
+    "unit": 6,
+    "classNo": 1,
+    "description": "Quiz de estudio del Bloque 6 para preparación de auditoría SGI / 45K1.",
+    "tags": [
+      "auditoria",
+      "SGI",
+      "mejora continua",
+      "cambios",
+      "resultados",
+      "CAC Delicias"
+    ]
+  },
+  "Questions": [
+    {
+      "Category": "Bloque 6 · Auditorías, resultados, mejora continua y cambios",
+      "Question Text": {
+        "es-MX": "¿Dónde puedes consultar información relacionada con auditorías dentro del Portal SGI?",
+        "en-US": "Where can you check audit-related information inside the SGI Portal?"
+      },
+      "Options": {
+        "es-MX": [
+          "Portal SGI → Auditorías",
+          "Portal SGI → Cultura Organizacional",
+          "Portal SGI → Comités → Comité de Normatividad",
+          "Portal SGI → Riesgos → Mapas de calor"
+        ],
+        "en-US": [
+          "SGI Portal → Audits",
+          "SGI Portal → Organizational Culture",
+          "SGI Portal → Committees → Standards Committee",
+          "SGI Portal → Risks → Heat Maps"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Portal SGI → Auditorías",
+        "en-US": "SGI Portal → Audits"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La sección Auditorías concentra información sobre resultados, atención de hallazgos, calendario y lineamientos."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The Audits section contains information about results, follow-up of findings, calendars, and guidelines."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 6 · Auditorías, resultados, mejora continua y cambios",
+      "Question Text": {
+        "es-MX": "¿Cuál es la ruta para consultar los resultados de auditorías?",
+        "en-US": "What is the route to check audit results?"
+      },
+      "Options": {
+        "es-MX": [
+          "Portal SGI → Auditorías → Información → Resultados de Auditorías",
+          "Portal SGI → Normas ISO → 45K1 → Política",
+          "Portal SGI → Riesgos → Mapas de calor",
+          "Intranet Nacional → Recursos Humanos → Nómina"
+        ],
+        "en-US": [
+          "SGI Portal → Audits → Information → Audit Results",
+          "SGI Portal → ISO Standards → 45K1 → Policy",
+          "SGI Portal → Risks → Heat Maps",
+          "National Intranet → Human Resources → Payroll"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Portal SGI → Auditorías → Información → Resultados de Auditorías",
+        "en-US": "SGI Portal → Audits → Information → Audit Results"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los resultados de auditorías se consultan dentro de Auditorías, en la sección de Información."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Audit results are checked inside Audits, under the Information section."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 6 · Auditorías, resultados, mejora continua y cambios",
+      "Question Text": {
+        "es-MX": "¿Dónde se consulta la atención de resultados o hallazgos de auditoría?",
+        "en-US": "Where can follow-up of audit results or findings be checked?"
+      },
+      "Options": {
+        "es-MX": [
+          "Portal SGI → Auditorías → Atención de resultados de Auditorías",
+          "Portal SGI → Cultura Organizacional → Valores",
+          "Portal SGI → Sistemas del SGI → @-Doc únicamente",
+          "BIT → Correo → Auditorías"
+        ],
+        "en-US": [
+          "SGI Portal → Audits → Audit Results Follow-up",
+          "SGI Portal → Organizational Culture → Values",
+          "SGI Portal → SGI Systems → @-Doc only",
+          "BIT → Email → Audits"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Portal SGI → Auditorías → Atención de resultados de Auditorías",
+        "en-US": "SGI Portal → Audits → Audit Results Follow-up"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La atención de hallazgos tiene una sección específica dentro del módulo de Auditorías."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Follow-up of findings has a specific section inside the Audits module."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 6 · Auditorías, resultados, mejora continua y cambios",
+      "Question Text": {
+        "es-MX": "Si en una auditoría anterior hubo una observación o acción que afecta al CAC, ¿qué debe hacer el personal?",
+        "en-US": "If a previous audit had an observation or action affecting the CAC, what should personnel do?"
+      },
+      "Options": {
+        "es-MX": [
+          "Conocer la acción aplicable, cumplirla y poder mostrar evidencia de su seguimiento cuando corresponda",
+          "Ignorarla si la auditoría ya terminó",
+          "Esperar a que vuelva a aparecer el mismo hallazgo",
+          "Modificar por cuenta propia los documentos oficiales"
+        ],
+        "en-US": [
+          "Know the applicable action, comply with it, and be able to show evidence of follow-up when applicable",
+          "Ignore it because the audit is already over",
+          "Wait until the same finding appears again",
+          "Modify official documents on your own"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Conocer la acción aplicable, cumplirla y poder mostrar evidencia de su seguimiento cuando corresponda",
+        "en-US": "Know the applicable action, comply with it, and be able to show evidence of follow-up when applicable"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los hallazgos deben traducirse en acciones y seguimiento, no solo quedar como información histórica."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Findings should lead to actions and follow-up, not remain only as historical information."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 6 · Auditorías, resultados, mejora continua y cambios",
+      "Question Text": {
+        "es-MX": "¿Dónde puedes consultar el calendario de auditorías y cuál es el periodo comunicado para la auditoría externa 2026?",
+        "en-US": "Where can you check the audit calendar, and what period was communicated for the 2026 external audit?"
+      },
+      "Options": {
+        "es-MX": [
+          "Portal SGI → Auditorías → Calendario; la auditoría externa fue comunicada del 21 de septiembre al 7 de octubre de 2026",
+          "Portal SGI → Riesgos → Mapas de calor; del 1 al 5 de enero de 2026",
+          "Portal SGI → Cultura Organizacional → Misión; del 15 al 20 de noviembre de 2026",
+          "@-Doc → Política SST; únicamente el 30 de septiembre de 2026"
+        ],
+        "en-US": [
+          "SGI Portal → Audits → Calendar; the external audit was communicated for September 21 to October 7, 2026",
+          "SGI Portal → Risks → Heat Maps; January 1 to 5, 2026",
+          "SGI Portal → Organizational Culture → Mission; November 15 to 20, 2026",
+          "@-Doc → OHS Policy; only September 30, 2026"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Portal SGI → Auditorías → Calendario; la auditoría externa fue comunicada del 21 de septiembre al 7 de octubre de 2026",
+        "en-US": "SGI Portal → Audits → Calendar; the external audit was communicated for September 21 to October 7, 2026"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El calendario se consulta en el módulo Auditorías y el aviso del Portal SGI comunicó la auditoría externa del 21 de septiembre al 7 de octubre de 2026."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The calendar is checked in the Audits module, and the SGI Portal notice communicated the external audit period from September 21 to October 7, 2026."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 6 · Auditorías, resultados, mejora continua y cambios",
+      "Question Text": {
+        "es-MX": "¿Dónde puedes consultar los lineamientos relacionados con auditorías?",
+        "en-US": "Where can you check the guidelines related to audits?"
+      },
+      "Options": {
+        "es-MX": [
+          "Portal SGI → Auditorías → Lineamientos",
+          "Portal SGI → Comités → Directorio",
+          "Portal SGI → Riesgos → Tratamiento",
+          "Intranet Nacional → Nómina"
+        ],
+        "en-US": [
+          "SGI Portal → Audits → Guidelines",
+          "SGI Portal → Committees → Directory",
+          "SGI Portal → Risks → Treatment",
+          "National Intranet → Payroll"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Portal SGI → Auditorías → Lineamientos",
+        "en-US": "SGI Portal → Audits → Guidelines"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los lineamientos se encuentran dentro del módulo de Auditorías."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The guidelines are located within the Audits module."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 6 · Auditorías, resultados, mejora continua y cambios",
+      "Question Text": {
+        "es-MX": "¿Dónde se encuentra el Sistema de Mejora Continua (SMC)?",
+        "en-US": "Where is the Continuous Improvement System (SMC) located?"
+      },
+      "Options": {
+        "es-MX": [
+          "Portal SGI → Sistemas del SGI → Sistema de Mejora Continua (Auditorías)",
+          "Portal SGI → Cultura Organizacional → Valores",
+          "Portal SGI → Riesgos → Mapas de calor",
+          "Intranet Nacional → Recursos Humanos"
+        ],
+        "en-US": [
+          "SGI Portal → SGI Systems → Continuous Improvement System (Audits)",
+          "SGI Portal → Organizational Culture → Values",
+          "SGI Portal → Risks → Heat Maps",
+          "National Intranet → Human Resources"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Portal SGI → Sistemas del SGI → Sistema de Mejora Continua (Auditorías)",
+        "en-US": "SGI Portal → SGI Systems → Continuous Improvement System (Audits)"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El SMC aparece dentro de Sistemas del SGI y se relaciona con el seguimiento de auditorías y acciones de mejora."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The SMC appears under SGI Systems and is related to audit follow-up and improvement actions."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 6 · Auditorías, resultados, mejora continua y cambios",
+      "Question Text": {
+        "es-MX": "Si una auditoría genera una oportunidad de mejora o acción para tu área, ¿qué debes hacer?",
+        "en-US": "If an audit generates an improvement opportunity or action for your area, what should you do?"
+      },
+      "Options": {
+        "es-MX": [
+          "Conocer y aplicar la acción correspondiente, colaborar con su seguimiento y conservar evidencia cuando aplique",
+          "Esperar a que otra área la resuelva sin participar",
+          "Eliminar cualquier registro anterior",
+          "Atenderla únicamente si el auditor vuelve a preguntar"
+        ],
+        "en-US": [
+          "Know and apply the corresponding action, collaborate with follow-up, and keep evidence when applicable",
+          "Wait for another area to resolve it without participating",
+          "Delete any previous record",
+          "Address it only if the auditor asks again"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Conocer y aplicar la acción correspondiente, colaborar con su seguimiento y conservar evidencia cuando aplique",
+        "en-US": "Know and apply the corresponding action, collaborate with follow-up, and keep evidence when applicable"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las acciones de mejora requieren participación y seguimiento hasta su cierre cuando correspondan al área."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Improvement actions require participation and follow-up until closure when they apply to the area."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 6 · Auditorías, resultados, mejora continua y cambios",
+      "Question Text": {
+        "es-MX": "¿Dónde puedes consultar información sobre acciones para la mejora?",
+        "en-US": "Where can you check information about improvement actions?"
+      },
+      "Options": {
+        "es-MX": [
+          "Portal SGI → Comunicación SGI → Acciones para la mejora",
+          "Portal SGI → Cultura Organizacional → Visión",
+          "Portal SGI → Riesgos → Mapas de calor",
+          "Portal SGI → Comités → Directorio"
+        ],
+        "en-US": [
+          "SGI Portal → SGI Communication → Improvement Actions",
+          "SGI Portal → Organizational Culture → Vision",
+          "SGI Portal → Risks → Heat Maps",
+          "SGI Portal → Committees → Directory"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Portal SGI → Comunicación SGI → Acciones para la mejora",
+        "en-US": "SGI Portal → SGI Communication → Improvement Actions"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Comunicación SGI incluye una sección específica de Acciones para la mejora."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "SGI Communication includes a specific Improvement Actions section."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 6 · Auditorías, resultados, mejora continua y cambios",
+      "Question Text": {
+        "es-MX": "¿Cómo puede enterarse el personal de cambios o información nueva del SGI?",
+        "en-US": "How can personnel learn about changes or new SGI information?"
+      },
+      "Options": {
+        "es-MX": [
+          "Mediante el Portal SGI, comunicaciones, correos, boletines, infografías o capacitación, según corresponda",
+          "Únicamente por comentarios informales entre compañeros",
+          "Solo cuando llegue el auditor",
+          "Únicamente mediante documentos impresos antiguos"
+        ],
+        "en-US": [
+          "Through the SGI Portal, communications, emails, bulletins, infographics, or training, as applicable",
+          "Only through informal comments among coworkers",
+          "Only when the auditor arrives",
+          "Only through old printed documents"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Mediante el Portal SGI, comunicaciones, correos, boletines, infografías o capacitación, según corresponda",
+        "en-US": "Through the SGI Portal, communications, emails, bulletins, infographics, or training, as applicable"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los cambios pueden comunicarse por distintos medios oficiales; lo importante es poder demostrar cómo se recibió la información cuando aplique."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Changes may be communicated through different official channels; the key is being able to demonstrate how the information was received when applicable."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 6 · Auditorías, resultados, mejora continua y cambios",
+      "Question Text": {
+        "es-MX": "Si hubo un cambio reciente en un procedimiento o actividad, ¿qué conviene poder explicar ante un auditor?",
+        "en-US": "If there was a recent change in a procedure or activity, what should you be able to explain to an auditor?"
+      },
+      "Options": {
+        "es-MX": [
+          "Qué cambió, cómo se comunicó y qué debe hacerse ahora de manera diferente",
+          "Solo la fecha aproximada del cambio",
+          "Únicamente quién autorizó vacaciones ese mes",
+          "No es necesario saber nada si el documento existe"
+        ],
+        "en-US": [
+          "What changed, how it was communicated, and what must now be done differently",
+          "Only the approximate date of the change",
+          "Only who approved vacations that month",
+          "There is no need to know anything if the document exists"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Qué cambió, cómo se comunicó y qué debe hacerse ahora de manera diferente",
+        "en-US": "What changed, how it was communicated, and what must now be done differently"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Ante cambios, el auditor puede buscar trazabilidad entre la comunicación y la aplicación real."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "When changes occur, the auditor may look for traceability between communication and actual implementation."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 6 · Auditorías, resultados, mejora continua y cambios",
+      "Question Text": {
+        "es-MX": "Si no recuerdas exactamente un procedimiento durante la auditoría, ¿qué es mejor hacer?",
+        "en-US": "If you do not remember a procedure exactly during the audit, what is the best thing to do?"
+      },
+      "Options": {
+        "es-MX": [
+          "Indicar que consultarías la fuente oficial, principalmente @-Doc, y localizar el procedimiento vigente",
+          "Inventar una respuesta para no quedar mal",
+          "Usar cualquier versión vieja que encuentres",
+          "Decir que nadie necesita conocer procedimientos"
+        ],
+        "en-US": [
+          "State that you would check the official source, mainly @-Doc, and locate the current procedure",
+          "Invent an answer to avoid looking bad",
+          "Use any old version you find",
+          "Say that nobody needs to know procedures"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Indicar que consultarías la fuente oficial, principalmente @-Doc, y localizar el procedimiento vigente",
+        "en-US": "State that you would check the official source, mainly @-Doc, and locate the current procedure"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Es preferible localizar la información oficial y vigente que improvisar una respuesta."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "It is better to locate the official and current information than to improvise an answer."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 6 · Auditorías, resultados, mejora continua y cambios",
+      "Question Text": {
+        "es-MX": "¿Dónde buscarías un manual o procedimiento oficial vigente?",
+        "en-US": "Where would you look for a current official manual or procedure?"
+      },
+      "Options": {
+        "es-MX": [
+          "En @-Doc",
+          "En cualquier archivo guardado en Descargas",
+          "En un correo antiguo sin verificar versión",
+          "En una copia impresa sin control documental"
+        ],
+        "en-US": [
+          "In @-Doc",
+          "In any file saved in Downloads",
+          "In an old email without checking the version",
+          "In an uncontrolled printed copy"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "En @-Doc",
+        "en-US": "In @-Doc"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "@-Doc es la referencia principal para manuales, procedimientos y documentos controlados."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "@-Doc is the main reference for manuals, procedures, and controlled documents."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 6 · Auditorías, resultados, mejora continua y cambios",
+      "Question Text": {
+        "es-MX": "Si una información de auditoría o una acción de mejora afecta tus actividades, ¿qué debes poder demostrar?",
+        "en-US": "If audit information or an improvement action affects your activities, what should you be able to demonstrate?"
+      },
+      "Options": {
+        "es-MX": [
+          "Que la conoces, la aplicas y puedes mostrar evidencia cuando corresponda",
+          "Que sabes únicamente el nombre del auditor",
+          "Que la información existe aunque nadie la aplique",
+          "Que fue enviada por correo, aunque nunca se haya revisado"
+        ],
+        "en-US": [
+          "That you know it, apply it, and can show evidence when applicable",
+          "That you only know the auditor's name",
+          "That the information exists even if no one applies it",
+          "That it was emailed even if it was never reviewed"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Que la conoces, la aplicas y puedes mostrar evidencia cuando corresponda",
+        "en-US": "That you know it, apply it, and can show evidence when applicable"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El énfasis de auditoría está en la aplicación y evidencia, no solo en la existencia del documento."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The audit emphasis is on application and evidence, not only on the existence of the document."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 6 · Auditorías, resultados, mejora continua y cambios",
+      "Question Text": {
+        "es-MX": "Si el auditor pregunta: '¿Conoce los resultados de la última auditoría? Muéstreme dónde los puede consultar', ¿qué debes hacer?",
+        "en-US": "If the auditor asks, 'Do you know the results of the last audit? Show me where you can check them,' what should you do?"
+      },
+      "Options": {
+        "es-MX": [
+          "Explicar que se consultan en Portal SGI → Auditorías → Información → Resultados de Auditorías y mostrar la ruta",
+          "Responder únicamente que sí, sin demostrarlo",
+          "Ir al módulo de Riesgos y buscar cualquier archivo",
+          "Decir que solo el jefe puede verlos"
+        ],
+        "en-US": [
+          "Explain that they are checked in SGI Portal → Audits → Information → Audit Results and show the route",
+          "Only answer yes without demonstrating it",
+          "Go to the Risks module and look for any file",
+          "Say that only the manager can see them"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Explicar que se consultan en Portal SGI → Auditorías → Información → Resultados de Auditorías y mostrar la ruta",
+        "en-US": "Explain that they are checked in SGI Portal → Audits → Information → Audit Results and show the route"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "En este tipo de pregunta, el auditor puede evaluar tanto el conocimiento como la capacidad de localizar la evidencia."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "In this type of question, the auditor may evaluate both knowledge and the ability to locate the evidence."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 6 · Auditorías, resultados, mejora continua y cambios",
+      "Question Text": {
+        "es-MX": "Si el auditor pregunta: '¿Cómo se enteró usted de este cambio?', ¿cuál sería una respuesta adecuada?",
+        "en-US": "If the auditor asks, 'How did you learn about this change?', what would be an appropriate answer?"
+      },
+      "Options": {
+        "es-MX": [
+          "Indicar el medio real por el que se comunicó, como correo, Portal SGI, boletín, infografía o capacitación, y mostrar evidencia si la tiene",
+          "Responder que alguien lo comentó sin recordar quién",
+          "Decir que lo supuso por experiencia",
+          "Inventar un medio de comunicación para responder rápido"
+        ],
+        "en-US": [
+          "State the actual communication channel used, such as email, the SGI Portal, a bulletin, infographic, or training, and show evidence if available",
+          "Say that someone mentioned it without remembering who",
+          "Say that you assumed it from experience",
+          "Invent a communication channel to answer quickly"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Indicar el medio real por el que se comunicó, como correo, Portal SGI, boletín, infografía o capacitación, y mostrar evidencia si la tiene",
+        "en-US": "State the actual communication channel used, such as email, the SGI Portal, a bulletin, infographic, or training, and show evidence if available"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Lo correcto es usar el medio real y trazable por el que se recibió el cambio."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The correct approach is to use the real and traceable channel through which the change was received."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,646 @@
+{
+  "meta": {
+    "slug": "auditoria-bloque-5",
+    "title": "Condiciones físicas, equipos de seguridad y reporte de anomalías",
+    "subject": "Auditoría CAC",
+    "unit": 5,
+    "classNo": 1,
+    "description": "Quiz de estudio del Bloque 5 para preparación de auditoría SGI / 45K1.",
+    "tags": [
+      "auditoria",
+      "SGI",
+      "45K1",
+      "SST",
+      "extintores",
+      "botiquin",
+      "condiciones inseguras",
+      "CAC Delicias"
+    ]
+  },
+  "Questions": [
+    {
+      "Category": "Bloque 5 · Condiciones físicas, equipos de seguridad y reporte de anomalías",
+      "Question Text": {
+        "es-MX": "¿Qué debe conocer un empleado respecto al extintor más cercano a su lugar de trabajo?",
+        "en-US": "What should an employee know about the fire extinguisher nearest to their work area?"
+      },
+      "Options": {
+        "es-MX": [
+          "Debe conocer físicamente su ubicación y poder señalarlo si se lo solicitan",
+          "Solo necesita saber que existe uno en el edificio",
+          "Únicamente el jefe debe conocer dónde están",
+          "No es necesario conocer su ubicación si hay señalización"
+        ],
+        "en-US": [
+          "They should physically know its location and be able to point it out if asked",
+          "They only need to know that one exists in the building",
+          "Only the manager needs to know where they are",
+          "There is no need to know its location if signage exists"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Debe conocer físicamente su ubicación y poder señalarlo si se lo solicitan",
+        "en-US": "They should physically know its location and be able to point it out if asked"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "En auditoría pueden pedir que el empleado señale el equipo físicamente, no solo que diga que existe."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "During an audit, an employee may be asked to physically point out the equipment, not just say that it exists."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 5 · Condiciones físicas, equipos de seguridad y reporte de anomalías",
+      "Question Text": {
+        "es-MX": "¿Cómo debe mantenerse el acceso a un extintor?",
+        "en-US": "How should access to a fire extinguisher be maintained?"
+      },
+      "Options": {
+        "es-MX": [
+          "Libre de obstáculos y fácilmente accesible",
+          "Con cajas enfrente para protegerlo",
+          "Bloqueado cuando no haya simulacros",
+          "Oculto para evitar que los clientes lo manipulen"
+        ],
+        "en-US": [
+          "Clear of obstacles and easily accessible",
+          "With boxes placed in front of it to protect it",
+          "Blocked when there are no drills",
+          "Hidden to prevent customers from touching it"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Libre de obstáculos y fácilmente accesible",
+        "en-US": "Clear of obstacles and easily accessible"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los equipos contra incendio deben permanecer visibles, accesibles y sin obstrucciones."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Firefighting equipment should remain visible, accessible, and unobstructed."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 5 · Condiciones físicas, equipos de seguridad y reporte de anomalías",
+      "Question Text": {
+        "es-MX": "Si detectas un extintor faltante, obstruido o con una anomalía, ¿qué debes hacer?",
+        "en-US": "If you detect a missing, obstructed, or abnormal fire extinguisher, what should you do?"
+      },
+      "Options": {
+        "es-MX": [
+          "Informarlo de inmediato al superior para que sea atendido y canalizado al área correspondiente, dando seguimiento hasta su solución",
+          "Esperar a la auditoría para comentarlo",
+          "Mover otro extintor sin autorización y no reportar nada",
+          "Ignorarlo si todavía hay otros extintores en el centro"
+        ],
+        "en-US": [
+          "Immediately inform the supervisor so it can be addressed and routed to the corresponding area, with follow-up until resolved",
+          "Wait until the audit to mention it",
+          "Move another extinguisher without authorization and do not report anything",
+          "Ignore it if there are other extinguishers in the workplace"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Informarlo de inmediato al superior para que sea atendido y canalizado al área correspondiente, dando seguimiento hasta su solución",
+        "en-US": "Immediately inform the supervisor so it can be addressed and routed to the corresponding area, with follow-up until resolved"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Conviene enseñar el principio general: reportar, canalizar y dar seguimiento. La ruta exacta de sistema o área solo debe afirmarse si está confirmada."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "It is best to teach the general principle: report, route, and follow up. A specific system or department should only be stated if it has been confirmed."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 5 · Condiciones físicas, equipos de seguridad y reporte de anomalías",
+      "Question Text": {
+        "es-MX": "¿Con qué frecuencia se revisan en el CAC los extintores y detectores de humo mediante sus bitácoras?",
+        "en-US": "How often are fire extinguishers and smoke detectors checked in the CAC logs?"
+      },
+      "Options": {
+        "es-MX": [
+          "Mensualmente",
+          "Cada cinco años",
+          "Solo después de una emergencia",
+          "Únicamente antes de la auditoría externa"
+        ],
+        "en-US": [
+          "Monthly",
+          "Every five years",
+          "Only after an emergency",
+          "Only before the external audit"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Mensualmente",
+        "en-US": "Monthly"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las bitácoras revisadas contemplan verificaciones mensuales."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The reviewed logs include monthly checks."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 5 · Condiciones físicas, equipos de seguridad y reporte de anomalías",
+      "Question Text": {
+        "es-MX": "¿Quién es preferible que participe en la revisión mensual de extintores?",
+        "en-US": "Who is preferably involved in the monthly fire extinguisher check?"
+      },
+      "Options": {
+        "es-MX": [
+          "Personal de la brigada contra incendio",
+          "Cualquier cliente que se encuentre disponible",
+          "Solo personal de ventas",
+          "Únicamente el proveedor externo, sin revisión interna"
+        ],
+        "en-US": [
+          "Fire brigade personnel",
+          "Any available customer",
+          "Sales staff only",
+          "Only the external provider, with no internal check"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Personal de la brigada contra incendio",
+        "en-US": "Fire brigade personnel"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El PIPC y la preparación interna favorecen que personal de brigada contra incendio participe en la revisión mensual."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The PIPC and internal preparedness favor participation by fire brigade personnel in the monthly check."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 5 · Condiciones físicas, equipos de seguridad y reporte de anomalías",
+      "Question Text": {
+        "es-MX": "¿Dónde se encuentra el botiquín del CAC?",
+        "en-US": "Where is the CAC first-aid kit located?"
+      },
+      "Options": {
+        "es-MX": [
+          "En el área de atención a clientes, de acuerdo con el PIPC revisado",
+          "En el estacionamiento exterior",
+          "Junto al anuncio grande de Telcel",
+          "Únicamente dentro de la oficina del proveedor de mantenimiento"
+        ],
+        "en-US": [
+          "In the customer service area, according to the reviewed PIPC",
+          "In the outside parking lot",
+          "Next to the large Telcel sign",
+          "Only inside the maintenance provider's office"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "En el área de atención a clientes, de acuerdo con el PIPC revisado",
+        "en-US": "In the customer service area, according to the reviewed PIPC"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El empleado debe conocer físicamente dónde está el botiquín. El PIPC revisado registra uno en el área de atención a clientes."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The employee should physically know where the first-aid kit is. The reviewed PIPC records one in the customer service area."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 5 · Condiciones físicas, equipos de seguridad y reporte de anomalías",
+      "Question Text": {
+        "es-MX": "Si detectas una condición insegura dentro del CAC, ¿qué debes hacer?",
+        "en-US": "If you detect an unsafe condition inside the CAC, what should you do?"
+      },
+      "Options": {
+        "es-MX": [
+          "Reportarla oportunamente al superior y gestionar su atención y seguimiento",
+          "Esperar a que cause un incidente",
+          "Ocultarla para evitar observaciones",
+          "Resolverla siempre por cuenta propia aunque no tengas autorización"
+        ],
+        "en-US": [
+          "Report it promptly to the supervisor and arrange attention and follow-up",
+          "Wait until it causes an incident",
+          "Hide it to avoid observations",
+          "Always fix it yourself even if you are not authorized"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Reportarla oportunamente al superior y gestionar su atención y seguimiento",
+        "en-US": "Report it promptly to the supervisor and arrange attention and follow-up"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las condiciones inseguras deben comunicarse y recibir seguimiento hasta su corrección."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Unsafe conditions should be communicated and followed up until corrected."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 5 · Condiciones físicas, equipos de seguridad y reporte de anomalías",
+      "Question Text": {
+        "es-MX": "Si detectas una luminaria deficiente o una falla de iluminación, ¿qué debes hacer?",
+        "en-US": "If you detect a faulty light fixture or lighting failure, what should you do?"
+      },
+      "Options": {
+        "es-MX": [
+          "Reportarla y generar una solicitud de mantenimiento cuando corresponda",
+          "Dejarla así hasta que deje de funcionar toda el área",
+          "Repararla personalmente sin autorización",
+          "Apagar otras luminarias para compensar"
+        ],
+        "en-US": [
+          "Report it and submit a maintenance request when applicable",
+          "Leave it as is until the entire area stops working",
+          "Repair it yourself without authorization",
+          "Turn off other lights to compensate"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Reportarla y generar una solicitud de mantenimiento cuando corresponda",
+        "en-US": "Report it and submit a maintenance request when applicable"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La infografía de iluminación indica realizar mantenimiento preventivo y generar solicitud en la Intranet Corporativa cuando se requiera atención."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The lighting infographic indicates preventive maintenance and submitting a request through the Corporate Intranet when attention is required."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 5 · Condiciones físicas, equipos de seguridad y reporte de anomalías",
+      "Question Text": {
+        "es-MX": "¿Cómo deben mantenerse las rutas y salidas de emergencia?",
+        "en-US": "How should emergency routes and exits be maintained?"
+      },
+      "Options": {
+        "es-MX": [
+          "Libres, visibles y correctamente señalizadas",
+          "Con objetos temporales si se pueden mover rápido",
+          "Bloqueadas cuando no haya simulacros",
+          "Sin señalización para evitar confusión"
+        ],
+        "en-US": [
+          "Clear, visible, and properly marked",
+          "With temporary objects if they can be moved quickly",
+          "Blocked when there are no drills",
+          "Without signage to avoid confusion"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Libres, visibles y correctamente señalizadas",
+        "en-US": "Clear, visible, and properly marked"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las rutas y salidas forman parte de las condiciones básicas para una evacuación segura."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Routes and exits are basic conditions for a safe evacuation."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 5 · Condiciones físicas, equipos de seguridad y reporte de anomalías",
+      "Question Text": {
+        "es-MX": "¿Qué identifica una señal de seguridad de color rojo, entre otros usos?",
+        "en-US": "What does a red safety sign identify, among other uses?"
+      },
+      "Options": {
+        "es-MX": [
+          "Prohibición, paro de emergencia o equipo contra incendio",
+          "Obligación de usar equipo de protección",
+          "Condición segura o ruta de evacuación",
+          "Precaución o advertencia únicamente"
+        ],
+        "en-US": [
+          "Prohibition, emergency stop, or firefighting equipment",
+          "Mandatory use of protective equipment",
+          "Safe condition or evacuation route",
+          "Caution or warning only"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Prohibición, paro de emergencia o equipo contra incendio",
+        "en-US": "Prohibition, emergency stop, or firefighting equipment"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "En la señalización de seguridad, el rojo se asocia, entre otros usos, con prohibición, paro de emergencia y equipos contra incendio."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "In safety signage, red is associated, among other uses, with prohibition, emergency stop, and firefighting equipment."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 5 · Condiciones físicas, equipos de seguridad y reporte de anomalías",
+      "Question Text": {
+        "es-MX": "¿Por qué son importantes el orden y la limpieza en el centro de trabajo?",
+        "en-US": "Why are order and cleanliness important in the workplace?"
+      },
+      "Options": {
+        "es-MX": [
+          "Porque ayudan a prevenir caídas, golpes, obstrucciones y otras condiciones inseguras",
+          "Solo porque mejoran la apariencia durante una auditoría",
+          "Porque sustituyen la necesidad de mantenimiento",
+          "Porque eliminan todos los riesgos sin necesidad de controles adicionales"
+        ],
+        "en-US": [
+          "Because they help prevent falls, impacts, obstructions, and other unsafe conditions",
+          "Only because they improve appearance during an audit",
+          "Because they replace the need for maintenance",
+          "Because they eliminate all risks without additional controls"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Porque ayudan a prevenir caídas, golpes, obstrucciones y otras condiciones inseguras",
+        "en-US": "Because they help prevent falls, impacts, obstructions, and other unsafe conditions"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Orden y limpieza son controles preventivos básicos y deben mantenerse de forma cotidiana."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Order and cleanliness are basic preventive controls and should be maintained routinely."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 5 · Condiciones físicas, equipos de seguridad y reporte de anomalías",
+      "Question Text": {
+        "es-MX": "Si encuentras un piso mojado o resbaloso, ¿qué acción es correcta?",
+        "en-US": "If you find a wet or slippery floor, what is the correct action?"
+      },
+      "Options": {
+        "es-MX": [
+          "Señalizar el área, evitar la exposición y gestionar la limpieza o corrección de la condición",
+          "Retirar cualquier señal para que el paso sea más rápido",
+          "Esperar a que se seque por sí solo sin avisar",
+          "Colocar objetos alrededor que también obstruyan el paso"
+        ],
+        "en-US": [
+          "Mark the area, avoid exposure, and arrange cleaning or correction of the condition",
+          "Remove any sign so people can move faster",
+          "Wait for it to dry on its own without reporting it",
+          "Place objects around it that also obstruct the walkway"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Señalizar el área, evitar la exposición y gestionar la limpieza o corrección de la condición",
+        "en-US": "Mark the area, avoid exposure, and arrange cleaning or correction of the condition"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Una superficie mojada puede provocar caídas al mismo nivel; debe controlarse y señalizarse mientras se corrige."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "A wet surface can cause same-level falls; it should be controlled and marked while being corrected."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 5 · Condiciones físicas, equipos de seguridad y reporte de anomalías",
+      "Question Text": {
+        "es-MX": "¿Cómo deben mantenerse los productos de limpieza u otras sustancias en el CAC?",
+        "en-US": "How should cleaning products or other substances be kept in the CAC?"
+      },
+      "Options": {
+        "es-MX": [
+          "Identificados o etiquetados y almacenados de forma segura",
+          "En cualquier envase disponible sin identificación",
+          "Junto con alimentos para ahorrar espacio",
+          "Abiertos para facilitar su uso"
+        ],
+        "en-US": [
+          "Identified or labeled and stored safely",
+          "In any available container without identification",
+          "Stored together with food to save space",
+          "Left open for easier use"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Identificados o etiquetados y almacenados de forma segura",
+        "en-US": "Identified or labeled and stored safely"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El almacenamiento seguro y la identificación de sustancias ayudan a evitar exposiciones y confusiones."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Safe storage and identification of substances help prevent exposure and confusion."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 5 · Condiciones físicas, equipos de seguridad y reporte de anomalías",
+      "Question Text": {
+        "es-MX": "¿Qué hace la Comisión de Seguridad e Higiene durante sus recorridos?",
+        "en-US": "What does the Safety and Hygiene Commission do during its walkthroughs?"
+      },
+      "Options": {
+        "es-MX": [
+          "Revisa condiciones del centro, identifica actos o condiciones inseguras, documenta y da seguimiento",
+          "Solo verifica ventas y productividad",
+          "Únicamente revisa la asistencia del personal",
+          "Se limita a observar sin registrar hallazgos"
+        ],
+        "en-US": [
+          "It reviews workplace conditions, identifies unsafe acts or conditions, documents them, and follows up",
+          "It only checks sales and productivity",
+          "It only checks employee attendance",
+          "It is limited to observing without recording findings"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Revisa condiciones del centro, identifica actos o condiciones inseguras, documenta y da seguimiento",
+        "en-US": "It reviews workplace conditions, identifies unsafe acts or conditions, documents them, and follows up"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los recorridos de la Comisión buscan identificar condiciones de riesgo y dar seguimiento a su atención."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Commission walkthroughs aim to identify risky conditions and follow up on their resolution."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 5 · Condiciones físicas, equipos de seguridad y reporte de anomalías",
+      "Question Text": {
+        "es-MX": "Si una ruta, señal o equipo contra incendio está bloqueado, ¿qué debes hacer?",
+        "en-US": "If a route, sign, or firefighting equipment is blocked, what should you do?"
+      },
+      "Options": {
+        "es-MX": [
+          "Reportarlo y procurar que quede libre para mantener una respuesta segura",
+          "Dejarlo bloqueado si la obstrucción es temporal",
+          "Mover la señal a un lugar donde no estorbe, aunque deje de ser visible",
+          "Ignorarlo si todavía existe otra ruta"
+        ],
+        "en-US": [
+          "Report it and make sure it is cleared to maintain a safe response",
+          "Leave it blocked if the obstruction is temporary",
+          "Move the sign somewhere out of the way even if it is no longer visible",
+          "Ignore it if another route exists"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Reportarlo y procurar que quede libre para mantener una respuesta segura",
+        "en-US": "Report it and make sure it is cleared to maintain a safe response"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las rutas, señales y equipos de emergencia deben permanecer disponibles y sin obstrucciones."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Emergency routes, signs, and equipment should remain available and unobstructed."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 5 · Condiciones físicas, equipos de seguridad y reporte de anomalías",
+      "Question Text": {
+        "es-MX": "Si el auditor te muestra algo en malas condiciones y pregunta '¿qué haría usted?', ¿cuál es la mejor respuesta?",
+        "en-US": "If the auditor shows you something in poor condition and asks 'what would you do?', what is the best answer?"
+      },
+      "Options": {
+        "es-MX": [
+          "Reportarlo de inmediato al superior; si requiere mantenimiento, usar el canal establecido y dar seguimiento hasta su corrección",
+          "Decir que no es responsabilidad de nadie en el CAC",
+          "Esperar a que mantenimiento lo detecte por sí solo",
+          "Ocultarlo hasta que termine la auditoría"
+        ],
+        "en-US": [
+          "Immediately report it to the supervisor; if maintenance is required, use the established channel and follow up until corrected",
+          "Say that it is not anyone's responsibility in the CAC",
+          "Wait for maintenance to find it on their own",
+          "Hide it until the audit is over"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Reportarlo de inmediato al superior; si requiere mantenimiento, usar el canal establecido y dar seguimiento hasta su corrección",
+        "en-US": "Immediately report it to the supervisor; if maintenance is required, use the established channel and follow up until corrected"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "En una pregunta de escenario, conviene responder con el proceso real: reportar, canalizar cuando aplique y dar seguimiento hasta la corrección."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "In a scenario question, it is best to answer with the real process: report, route when applicable, and follow up until correction."
+          }
+        ]
+      }
+    }
+  ]
+}

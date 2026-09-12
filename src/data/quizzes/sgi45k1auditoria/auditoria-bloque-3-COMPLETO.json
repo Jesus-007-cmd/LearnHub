@@ -1,0 +1,410 @@
+{
+  "meta": {
+    "slug": "auditoria-bloque-3",
+    "title": "Riesgos de Seguridad y Salud en el Trabajo 45K1",
+    "subject": "Auditoría CAC",
+    "unit": 3,
+    "classNo": 1,
+    "description": "Quiz de estudio del Bloque 3 para preparación de auditoría SGI / 45K1.",
+    "tags": [
+      "auditoria",
+      "SGI",
+      "45K1",
+      "SST",
+      "riesgos",
+      "CAC Delicias"
+    ]
+  },
+  "Questions": [
+    {
+      "Category": "Bloque 3 · Riesgos de Seguridad y Salud en el Trabajo 45K1",
+      "Question Text": {
+        "es-MX": "¿Dónde puedes consultar los riesgos de Seguridad y Salud en el Trabajo aplicables al CAC?",
+        "en-US": "Where can you check the Occupational Health and Safety risks applicable to the CAC?"
+      },
+      "Options": {
+        "es-MX": [
+          "Portal SGI → Riesgos → Mapas de calor → 45K1; también en los Riesgos Institucionales SST aplicables al tipo de centro de trabajo",
+          "Portal SGI → Cultura Organizacional → Valores",
+          "Portal SGI → Auditorías → Calendario",
+          "Intranet Nacional → Recursos Humanos → Nómina"
+        ],
+        "en-US": [
+          "SGI Portal → Risks → Heat Maps → 45K1; also in the Institutional OHS Risks applicable to the workplace type",
+          "SGI Portal → Organizational Culture → Values",
+          "SGI Portal → Audits → Calendar",
+          "National Intranet → Human Resources → Payroll"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Portal SGI → Riesgos → Mapas de calor → 45K1; también en los Riesgos Institucionales SST aplicables al tipo de centro de trabajo",
+        "en-US": "SGI Portal → Risks → Heat Maps → 45K1; also in the Institutional OHS Risks applicable to the workplace type"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Para SST, la referencia principal es la sección de Riesgos y el mapa de calor 45K1, además de los riesgos institucionales por tipo de centro."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "For OHS, the main reference is the Risks section and the 45K1 heat map, together with institutional risks by workplace type."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 3 · Riesgos de Seguridad y Salud en el Trabajo 45K1",
+      "Question Text": {
+        "es-MX": "¿Qué formato se utiliza para la Identificación de Peligros y Evaluación de Riesgos para la SST?",
+        "en-US": "Which form is used for Hazard Identification and OHS Risk Assessment?"
+      },
+      "Options": {
+        "es-MX": [
+          "F-00.00.00.00.00-030",
+          "PL-00.00.00.00.00-039",
+          "O-00.00.00.00.00-008",
+          "PR-00.00.00.00.00-026"
+        ],
+        "en-US": [
+          "F-00.00.00.00.00-030",
+          "PL-00.00.00.00.00-039",
+          "O-00.00.00.00.00-008",
+          "PR-00.00.00.00.00-026"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "F-00.00.00.00.00-030",
+        "en-US": "F-00.00.00.00.00-030"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El formato F-00.00.00.00.00-030 corresponde a la identificación de peligros y evaluación de riesgos para SST."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Form F-00.00.00.00.00-030 corresponds to hazard identification and OHS risk assessment."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 3 · Riesgos de Seguridad y Salud en el Trabajo 45K1",
+      "Question Text": {
+        "es-MX": "¿Cuál de los siguientes grupos corresponde a tipos de riesgos que pueden presentarse en tiendas o CAC?",
+        "en-US": "Which of the following groups corresponds to risk types that may occur in stores or CAC locations?"
+      },
+      "Options": {
+        "es-MX": [
+          "Biológicos, eléctricos, ergonómicos, físicos, locativos, mecánicos y psicosociales",
+          "Únicamente financieros, contables y fiscales",
+          "Solo informáticos y de telecomunicaciones",
+          "Exclusivamente ambientales y climáticos"
+        ],
+        "en-US": [
+          "Biological, electrical, ergonomic, physical, locative, mechanical, and psychosocial",
+          "Only financial, accounting, and tax-related",
+          "Only IT and telecommunications",
+          "Only environmental and climate-related"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Biológicos, eléctricos, ergonómicos, físicos, locativos, mecánicos y psicosociales",
+        "en-US": "Biological, electrical, ergonomic, physical, locative, mechanical, and psychosocial"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "En los riesgos institucionales de tiendas/CAC aparecen varias categorías, entre ellas biológicos, eléctricos, ergonómicos, locativos, mecánicos y psicosociales."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "In institutional store/CAC risks, several categories appear, including biological, electrical, ergonomic, locative, mechanical, and psychosocial risks."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 3 · Riesgos de Seguridad y Salud en el Trabajo 45K1",
+      "Question Text": {
+        "es-MX": "Si detectas una condición anormal o peligrosa en el CAC, ¿qué debes hacer?",
+        "en-US": "If you detect an abnormal or dangerous condition in the CAC, what should you do?"
+      },
+      "Options": {
+        "es-MX": [
+          "Informar de inmediato al superior y, si requiere mantenimiento, generar la solicitud mediante la Intranet Corporativa",
+          "Esperar a la siguiente auditoría para reportarla",
+          "Corregirla personalmente aunque no estés autorizado",
+          "Ignorarla si todavía no ha provocado un accidente"
+        ],
+        "en-US": [
+          "Immediately inform the supervisor and, if maintenance is required, submit the request through the Corporate Intranet",
+          "Wait until the next audit to report it",
+          "Correct it personally even if you are not authorized",
+          "Ignore it if it has not yet caused an accident"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Informar de inmediato al superior y, si requiere mantenimiento, generar la solicitud mediante la Intranet Corporativa",
+        "en-US": "Immediately inform the supervisor and, if maintenance is required, submit the request through the Corporate Intranet"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La infografía de prevención indica reportar de inmediato las condiciones anormales o peligrosas y usar la Intranet Corporativa cuando se requiera mantenimiento."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The prevention infographic indicates that abnormal or dangerous conditions should be reported immediately and the Corporate Intranet used when maintenance is required."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 3 · Riesgos de Seguridad y Salud en el Trabajo 45K1",
+      "Question Text": {
+        "es-MX": "¿Cuál de las siguientes condiciones puede provocar una caída al mismo nivel?",
+        "en-US": "Which of the following conditions can cause a same-level fall?"
+      },
+      "Options": {
+        "es-MX": [
+          "Piso mojado, objetos en zonas de paso o desorden que genere tropiezos",
+          "Una contraseña vencida",
+          "Una actualización de software",
+          "Una diferencia de inventario"
+        ],
+        "en-US": [
+          "Wet floors, objects in walkways, or clutter that may cause trips",
+          "An expired password",
+          "A software update",
+          "An inventory discrepancy"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Piso mojado, objetos en zonas de paso o desorden que genere tropiezos",
+        "en-US": "Wet floors, objects in walkways, or clutter that may cause trips"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los riesgos locativos incluyen resbalones y tropiezos por superficies o condiciones inseguras en las áreas de tránsito."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Locative risks include slips and trips caused by unsafe surfaces or conditions in traffic areas."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 3 · Riesgos de Seguridad y Salud en el Trabajo 45K1",
+      "Question Text": {
+        "es-MX": "¿Cuáles son ejemplos de riesgos ergonómicos en el trabajo de oficina o atención en CAC?",
+        "en-US": "Which are examples of ergonomic risks in office or CAC customer-service work?"
+      },
+      "Options": {
+        "es-MX": [
+          "Fatiga visual, posturas forzadas y movimientos repetitivos con mouse o teclado",
+          "Únicamente incendios y explosiones",
+          "Solo robo y asalto",
+          "Exposición exclusiva a sustancias corrosivas"
+        ],
+        "en-US": [
+          "Visual fatigue, awkward postures, and repetitive mouse or keyboard movements",
+          "Only fires and explosions",
+          "Only robbery and assault",
+          "Exposure only to corrosive substances"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Fatiga visual, posturas forzadas y movimientos repetitivos con mouse o teclado",
+        "en-US": "Visual fatigue, awkward postures, and repetitive mouse or keyboard movements"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El uso prolongado de pantalla, teclado y mouse puede generar fatiga visual, posturas forzadas y movimientos repetitivos."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Prolonged use of screens, keyboards, and mice can cause visual fatigue, awkward postures, and repetitive movements."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 3 · Riesgos de Seguridad y Salud en el Trabajo 45K1",
+      "Question Text": {
+        "es-MX": "¿Qué debes hacer si detectas una instalación eléctrica insegura?",
+        "en-US": "What should you do if you detect an unsafe electrical installation?"
+      },
+      "Options": {
+        "es-MX": [
+          "Reportarla para mantenimiento y evitar exponerte o manipularla sin autorización",
+          "Seguir utilizándola mientras funcione",
+          "Repararla por cuenta propia",
+          "Cubrirla y no informar a nadie"
+        ],
+        "en-US": [
+          "Report it for maintenance and avoid exposure or unauthorized handling",
+          "Keep using it as long as it works",
+          "Repair it on your own",
+          "Cover it and do not report it"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Reportarla para mantenimiento y evitar exponerte o manipularla sin autorización",
+        "en-US": "Report it for maintenance and avoid exposure or unauthorized handling"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Las instalaciones eléctricas inseguras deben reportarse y atenderse mediante el canal correspondiente; no deben improvisarse reparaciones."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Unsafe electrical installations should be reported and addressed through the proper channel; repairs should not be improvised."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 3 · Riesgos de Seguridad y Salud en el Trabajo 45K1",
+      "Question Text": {
+        "es-MX": "¿Qué papel tiene la Comisión de Seguridad e Higiene respecto a los riesgos del centro de trabajo?",
+        "en-US": "What role does the Safety and Hygiene Commission have regarding workplace risks?"
+      },
+      "Options": {
+        "es-MX": [
+          "Realizar recorridos, detectar condiciones o actos inseguros, documentarlos y dar seguimiento a su atención",
+          "Autorizar todas las ventas del CAC",
+          "Administrar únicamente las vacaciones del personal",
+          "Reemplazar a mantenimiento técnico en todas sus funciones"
+        ],
+        "en-US": [
+          "Perform walkthroughs, detect unsafe conditions or acts, document them, and follow up on their resolution",
+          "Authorize all CAC sales",
+          "Manage only employee vacations",
+          "Replace technical maintenance in all of its functions"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Realizar recorridos, detectar condiciones o actos inseguros, documentarlos y dar seguimiento a su atención",
+        "en-US": "Perform walkthroughs, detect unsafe conditions or acts, document them, and follow up on their resolution"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "La Comisión participa mediante recorridos de verificación, detección de condiciones inseguras y seguimiento de acciones."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The Commission participates through verification walkthroughs, detection of unsafe conditions, and follow-up actions."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 3 · Riesgos de Seguridad y Salud en el Trabajo 45K1",
+      "Question Text": {
+        "es-MX": "¿Cuál de las siguientes acciones ayuda a controlar riesgos eléctricos?",
+        "en-US": "Which of the following actions helps control electrical risks?"
+      },
+      "Options": {
+        "es-MX": [
+          "Evitar sobrecargas y extensiones no autorizadas, reportar daños y mantener instalaciones en condiciones seguras",
+          "Conectar varios equipos en cualquier multicontacto disponible",
+          "Usar cables dañados mientras todavía conduzcan corriente",
+          "Manipular contactos sin capacitación"
+        ],
+        "en-US": [
+          "Avoid overloads and unauthorized extensions, report damage, and keep installations in safe condition",
+          "Connect several devices to any available power strip",
+          "Use damaged cables as long as they still carry current",
+          "Handle electrical outlets without training"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Evitar sobrecargas y extensiones no autorizadas, reportar daños y mantener instalaciones en condiciones seguras",
+        "en-US": "Avoid overloads and unauthorized extensions, report damage, and keep installations in safe condition"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El control del riesgo eléctrico incluye evitar sobrecargas, no improvisar conexiones y reportar condiciones anormales."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Electrical risk control includes avoiding overloads, not improvising connections, and reporting abnormal conditions."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 3 · Riesgos de Seguridad y Salud en el Trabajo 45K1",
+      "Question Text": {
+        "es-MX": "¿Qué debería conocer cualquier empleado sobre los riesgos de SST?",
+        "en-US": "What should any employee know about OHS risks?"
+      },
+      "Options": {
+        "es-MX": [
+          "Los riesgos relacionados con sus actividades, los controles que debe aplicar y dónde consultar la información vigente",
+          "Todos los riesgos confidenciales de toda la empresa de memoria",
+          "Únicamente el nombre de la norma ISO",
+          "Solo los riesgos que ya provocaron accidentes"
+        ],
+        "en-US": [
+          "The risks related to their activities, the controls they must apply, and where to check current information",
+          "All confidential risks of the entire company from memory",
+          "Only the name of the ISO standard",
+          "Only risks that have already caused accidents"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Los riesgos relacionados con sus actividades, los controles que debe aplicar y dónde consultar la información vigente",
+        "en-US": "The risks related to their activities, the controls they must apply, and where to check current information"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El objetivo no es memorizar todo el sistema, sino conocer los riesgos aplicables al puesto, sus controles y dónde localizar la información oficial."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The goal is not to memorize the entire system, but to know the risks applicable to the job, their controls, and where to find the official information."
+          }
+        ]
+      }
+    }
+  ]
+}
