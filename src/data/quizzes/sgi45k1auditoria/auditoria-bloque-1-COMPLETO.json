@@ -1,15 +1,21 @@
 {
   "meta": {
-    "slug": "auditoria-bloque-1",
-    "title": "Fundamentos y navegación del SGI",
+    "slug": "auditoria-bloque-1-excel-2026",
+    "title": "Bloque 1 — Fundamentos y navegación del SGI",
     "subject": "Auditoría CAC",
     "unit": 1,
     "classNo": 1,
-    "description": "Quiz de estudio del Bloque 1 para preparación de auditoría SGI / 45K1, con rutas de navegación y fuentes oficiales vigentes.",
+    "description": "Quiz de estudio generado a partir de la pestaña Bloque1 del Excel de Auditoría CAC 2026. Conserva las 18 preguntas y respuestas del bloque, con redacción normalizada y explicaciones ampliadas para navegación del SGI, 45K1, ISO 45001, @Doc, auditorías, objetivos y riesgos.",
     "tags": [
       "auditoria",
       "SGI",
       "45K1",
+      "ISO 45001:2018",
+      "SST",
+      "@Doc",
+      "auditorias",
+      "riesgos",
+      "mapas de calor",
       "CAC Delicias"
     ]
   },
@@ -22,33 +28,33 @@
       },
       "Options": {
         "es-MX": [
-          "Sistema General de Información",
-          "Sistema de Gestión Integrado",
-          "Sistema de Gestión Institucional",
-          "Seguridad General Integrada"
+          "Sistema de Gestión Integrado. Es el sistema mediante el cual Telcel integra y administra distintos sistemas de gestión y normas aplicables a la organización.",
+          "Sistema General de Internet, utilizado únicamente para comunicaciones internas.",
+          "Servicio de Gestión Informática, exclusivo para soporte técnico.",
+          "Sistema de Garantías Internas, utilizado solo para equipos terminales."
         ],
         "en-US": [
-          "General Information System",
-          "Integrated Management System",
-          "Institutional Management System",
-          "Integrated General Safety"
+          "Integrated Management System. It is the system through which Telcel integrates and manages different management systems and standards applicable to the organization.",
+          "General Internet System, used only for internal communications.",
+          "IT Management Service, used exclusively for technical support.",
+          "Internal Warranty System, used only for terminal equipment."
         ]
       },
       "Correct Answer": {
-        "es-MX": "Sistema de Gestión Integrado",
-        "en-US": "Integrated Management System"
+        "es-MX": "Sistema de Gestión Integrado. Es el sistema mediante el cual Telcel integra y administra distintos sistemas de gestión y normas aplicables a la organización.",
+        "en-US": "Integrated Management System. It is the system through which Telcel integrates and manages different management systems and standards applicable to the organization."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "El SGI es el Sistema de Gestión Integrado de Telcel. Reúne los distintos sistemas, normas, procesos y herramientas de gestión para administrarlos de forma coordinada."
+            "content": "El SGI integra distintos sistemas de gestión de Telcel dentro de una estructura común. Para una auditoría, lo importante es entender que no se trata de una sola norma aislada: el portal concentra información, políticas, objetivos, auditorías, riesgos, comités y sistemas relacionados con la gestión institucional."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "SGI is Telcel's Integrated Management System. It brings together the different management systems, standards, processes, and tools so they can be managed in a coordinated way."
+            "content": "The SGI integrates different Telcel management systems within a common structure. For an audit, the important point is to understand that it is not a single isolated standard: the portal brings together information, policies, objectives, audits, risks, committees, and systems related to institutional management."
           }
         ]
       }
@@ -56,38 +62,38 @@
     {
       "Category": "Bloque 1 · Fundamentos y navegación del SGI",
       "Question Text": {
-        "es-MX": "¿Cuál es la ruta correcta para entrar al Portal del SGI desde BIT?",
-        "en-US": "What is the correct route to enter the SGI Portal from BIT?"
+        "es-MX": "Muéstrame cómo entrarías al Portal del SGI desde BIT.",
+        "en-US": "Show me how you would access the SGI Portal from BIT."
       },
       "Options": {
         "es-MX": [
-          "BIT → @Doc → Normas ISO → Portal del SGI",
-          "BIT → Correo → Intranet Nacional → Auditorías",
-          "BIT → Recursos Humanos → Sistemas del SGI → Portal del SGI",
-          "BIT → Intranet → iniciar sesión en la Intranet Nacional con credenciales PAC → Portal del SGI"
+          "BIT → Intranet → iniciar sesión en la Intranet Nacional con credenciales PAC → Portal del SGI.",
+          "BIT → Correo → Nómina → Portal del SGI.",
+          "BIT → @Doc → salir de sesión → Portal del SGI.",
+          "BIT → Equipo Terminal → Garantías → Portal del SGI."
         ],
         "en-US": [
-          "BIT → @Doc → ISO Standards → SGI Portal",
-          "BIT → Email → National Intranet → Audits",
-          "BIT → Human Resources → SGI Systems → SGI Portal",
-          "BIT → Intranet → sign in to the National Intranet with PAC credentials → SGI Portal"
+          "BIT → Intranet → sign in to the National Intranet with PAC credentials → SGI Portal.",
+          "BIT → Email → Payroll → SGI Portal.",
+          "BIT → @Doc → sign out → SGI Portal.",
+          "BIT → Terminal Equipment → Warranties → SGI Portal."
         ]
       },
       "Correct Answer": {
-        "es-MX": "BIT → Intranet → iniciar sesión en la Intranet Nacional con credenciales PAC → Portal del SGI",
-        "en-US": "BIT → Intranet → sign in to the National Intranet with PAC credentials → SGI Portal"
+        "es-MX": "BIT → Intranet → iniciar sesión en la Intranet Nacional con credenciales PAC → Portal del SGI.",
+        "en-US": "BIT → Intranet → sign in to the National Intranet with PAC credentials → SGI Portal."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "La ruta confirmada parte de BIT: se entra a Intranet, después a la Intranet Nacional con credenciales PAC y desde ahí al Portal del SGI. Lo importante en auditoría es poder llegar al portal sin improvisar la ruta."
+            "content": "Esta pregunta puede convertirse en una demostración práctica. El empleado debe poder navegar desde BIT hacia la Intranet Nacional, autenticarse con sus credenciales PAC y localizar el Portal del SGI. En una mini auditoría conviene practicar la ruta real en pantalla, no solo memorizarla."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "The confirmed route starts from BIT: open Intranet, sign in to the National Intranet with PAC credentials, and then open the SGI Portal. During an audit, the important point is being able to reach the portal without guessing the route."
+            "content": "This question may become a practical demonstration. The employee should be able to navigate from BIT to the National Intranet, authenticate with PAC credentials, and locate the SGI Portal. In a mock audit, it is useful to practice the actual route on screen rather than only memorize it."
           }
         ]
       }
@@ -100,33 +106,33 @@
       },
       "Options": {
         "es-MX": [
-          "Con las credenciales de inicio de sesión de la computadora",
-          "Con las credenciales de correo electrónico",
-          "Con las credenciales de PAC",
-          "Con las credenciales de @Doc"
+          "Con las credenciales de PAC, no con las credenciales de inicio de sesión de la computadora.",
+          "Con cualquier contraseña personal que use el empleado.",
+          "Con las mismas credenciales del inicio de sesión de Windows en todos los casos.",
+          "Sin credenciales, porque el acceso es público."
         ],
         "en-US": [
-          "With the computer login credentials",
-          "With the email credentials",
-          "With PAC credentials",
-          "With @Doc credentials"
+          "With PAC credentials, not the computer login credentials.",
+          "With any personal password used by the employee.",
+          "With the same Windows login credentials in every case.",
+          "Without credentials because access is public."
         ]
       },
       "Correct Answer": {
-        "es-MX": "Con las credenciales de PAC",
-        "en-US": "With PAC credentials"
+        "es-MX": "Con las credenciales de PAC, no con las credenciales de inicio de sesión de la computadora.",
+        "en-US": "With PAC credentials, not the computer login credentials."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "La Intranet Nacional utiliza las credenciales de PAC. No deben confundirse con las credenciales de inicio de sesión de Windows o de la computadora."
+            "content": "El Excel distingue expresamente las credenciales PAC de las credenciales de inicio de sesión de la computadora. Este detalle es importante porque el auditor puede pedir al empleado que ingrese directamente a la Intranet Nacional y demuestre que conoce el acceso correcto."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "The National Intranet uses PAC credentials. These should not be confused with the Windows or computer login credentials."
+            "content": "The spreadsheet expressly distinguishes PAC credentials from the computer login credentials. This detail is important because an auditor may ask the employee to access the National Intranet directly and demonstrate that they know the correct authentication method."
           }
         ]
       }
@@ -134,38 +140,38 @@
     {
       "Category": "Bloque 1 · Fundamentos y navegación del SGI",
       "Question Text": {
-        "es-MX": "¿Dónde puedes consultar los Objetivos Institucionales 2026?",
-        "en-US": "Where can you check the 2026 Institutional Objectives?"
+        "es-MX": "¿Dónde están los Objetivos Institucionales 2026?",
+        "en-US": "Where can the 2026 Institutional Objectives be found?"
       },
       "Options": {
         "es-MX": [
-          "En la Intranet Nacional, mediante el acceso a Objetivos Institucionales; también aparecen en distintas secciones del Portal SGI",
-          "Únicamente dentro de @Doc",
-          "Solamente en la sección de Auditorías",
-          "Únicamente en el Portal de Recursos Humanos"
+          "Se pueden consultar en la Intranet Nacional, donde aparece el acceso a Objetivos Institucionales; también aparecen dentro del Portal del SGI y en apartados como Cultura Organizacional y Normas ISO.",
+          "Únicamente en el calendario de vacaciones.",
+          "Solo en @Doc dentro de documentos de mantenimiento.",
+          "Exclusivamente en el sistema de nómina."
         ],
         "en-US": [
-          "On the National Intranet through Institutional Objectives; they also appear in different SGI Portal sections",
-          "Only in @Doc",
-          "Only in the Audits section",
-          "Only in the Human Resources Portal"
+          "They can be consulted on the National Intranet, where there is access to Institutional Objectives; they also appear within the SGI Portal and in sections such as Organizational Culture and ISO Standards.",
+          "Only in the vacation calendar.",
+          "Only in @Doc within maintenance documents.",
+          "Exclusively in the payroll system."
         ]
       },
       "Correct Answer": {
-        "es-MX": "En la Intranet Nacional, mediante el acceso a Objetivos Institucionales; también aparecen en distintas secciones del Portal SGI",
-        "en-US": "On the National Intranet through Institutional Objectives; they also appear in different SGI Portal sections"
+        "es-MX": "Se pueden consultar en la Intranet Nacional, donde aparece el acceso a Objetivos Institucionales; también aparecen dentro del Portal del SGI y en apartados como Cultura Organizacional y Normas ISO.",
+        "en-US": "They can be consulted on the National Intranet, where there is access to Institutional Objectives; they also appear within the SGI Portal and in sections such as Organizational Culture and ISO Standards."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "En la página principal de la Intranet Nacional existe un acceso a Objetivos Institucionales. También puede haber información relacionada dentro de distintas secciones del Portal SGI; ante auditoría conviene saber localizar la fuente vigente."
+            "content": "Los objetivos institucionales tienen más de un punto de acceso dentro del entorno interno. El Excel señala la Intranet Nacional como ubicación visible y también referencias dentro del Portal SGI. En auditoría conviene saber localizar la información vigente y no depender de una copia antigua o de memoria."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "The National Intranet home page includes access to Institutional Objectives. Related information may also appear in different SGI Portal sections; during an audit, it is best to know how to locate the current source."
+            "content": "Institutional objectives have more than one access point within the internal environment. The spreadsheet identifies the National Intranet as a visible location and also references within the SGI Portal. During an audit, personnel should know how to locate current information rather than rely on an old copy or memory."
           }
         ]
       }
@@ -173,38 +179,38 @@
     {
       "Category": "Bloque 1 · Fundamentos y navegación del SGI",
       "Question Text": {
-        "es-MX": "¿Cuál de los siguientes grupos contiene opciones principales del Portal SGI?",
-        "en-US": "Which of the following groups contains main options of the SGI Portal?"
+        "es-MX": "Menciona al menos tres opciones principales que existen dentro del Portal SGI.",
+        "en-US": "Name at least three main options available in the SGI Portal."
       },
       "Options": {
         "es-MX": [
-          "Correo, Nómina, Vacaciones, Inventarios y Compras",
-          "Cultura Organizacional, Auditorías, Normas ISO, Comunicación SGI, Comités y Riesgos",
-          "PAC, Windows, Outlook, SISEA y Caja",
-          "Ventas, Facturación, Recargas, Cobranza y Terminales"
+          "Ejemplos: Cultura Organizacional, Auditorías, Normas ISO, Comunicación SGI, Comités y Riesgos. También están Sistemas del SGI y Portales de Dirección.",
+          "Únicamente Nómina, Vacaciones y Asistencia.",
+          "Solo Correo, Contactos y Calendario.",
+          "Exclusivamente Garantías, Reparaciones y Equipos."
         ],
         "en-US": [
-          "Email, Payroll, Vacation, Inventory and Purchasing",
-          "Organizational Culture, Audits, ISO Standards, SGI Communication, Committees and Risks",
-          "PAC, Windows, Outlook, SISEA and Cash Desk",
-          "Sales, Billing, Top-ups, Collections and Terminals"
+          "Examples include Organizational Culture, Audits, ISO Standards, SGI Communication, Committees, and Risks. SGI Systems and Directorate Portals are also available.",
+          "Only Payroll, Vacation, and Attendance.",
+          "Only Email, Contacts, and Calendar.",
+          "Exclusively Warranties, Repairs, and Equipment."
         ]
       },
       "Correct Answer": {
-        "es-MX": "Cultura Organizacional, Auditorías, Normas ISO, Comunicación SGI, Comités y Riesgos",
-        "en-US": "Organizational Culture, Audits, ISO Standards, SGI Communication, Committees and Risks"
+        "es-MX": "Ejemplos: Cultura Organizacional, Auditorías, Normas ISO, Comunicación SGI, Comités y Riesgos. También están Sistemas del SGI y Portales de Dirección.",
+        "en-US": "Examples include Organizational Culture, Audits, ISO Standards, SGI Communication, Committees, and Risks. SGI Systems and Directorate Portals are also available."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "Entre los módulos principales del Portal SGI están Cultura Organizacional, Auditorías, Normas ISO, Comunicación SGI, Comités y Riesgos. También aparecen Sistemas del SGI —como @Doc y el Sistema de Mejora Continua— y Portales de Dirección."
+            "content": "No es necesario enumerar todo el portal, pero sí reconocer su estructura general. Saber mencionar varias secciones demuestra familiaridad con el SGI y facilita ubicar después políticas, auditorías, normas, riesgos o sistemas. En una práctica puede pedirse al empleado señalar algunas de estas opciones en pantalla."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "Main SGI Portal modules include Organizational Culture, Audits, ISO Standards, SGI Communication, Committees, and Risks. SGI Systems—such as @Doc and the Continuous Improvement System—and Management Portals are also available."
+            "content": "It is not necessary to list the entire portal, but personnel should recognize its general structure. Being able to name several sections demonstrates familiarity with the SGI and makes it easier to locate policies, audits, standards, risks, or systems. In practice, an employee may be asked to point to some of these options on screen."
           }
         ]
       }
@@ -217,33 +223,33 @@
       },
       "Options": {
         "es-MX": [
-          "Es el sistema de Calidad y corresponde a ISO 9001",
-          "Es el sistema de Seguridad de la Información y corresponde a ISO 27001",
-          "Es el sistema de Continuidad y corresponde a ISO 22301",
-          "Es el sistema de Seguridad y Salud en el Trabajo y corresponde a ISO 45001:2018"
+          "Es el sistema de gestión relacionado con Seguridad y Salud en el Trabajo y corresponde a ISO 45001:2018.",
+          "Es el sistema de calidad y corresponde a ISO 9001:2015.",
+          "Es un sistema de seguridad informática y corresponde a ISO 27001.",
+          "Es un código de nómina sin relación con normas ISO."
         ],
         "en-US": [
-          "It is the Quality system and corresponds to ISO 9001",
-          "It is the Information Security system and corresponds to ISO 27001",
-          "It is the Business Continuity system and corresponds to ISO 22301",
-          "It is the Occupational Health and Safety system and corresponds to ISO 45001:2018"
+          "It is the management system related to Occupational Health and Safety and corresponds to ISO 45001:2018.",
+          "It is the quality system and corresponds to ISO 9001:2015.",
+          "It is an information security system and corresponds to ISO 27001.",
+          "It is a payroll code unrelated to ISO standards."
         ]
       },
       "Correct Answer": {
-        "es-MX": "Es el sistema de Seguridad y Salud en el Trabajo y corresponde a ISO 45001:2018",
-        "en-US": "It is the Occupational Health and Safety system and corresponds to ISO 45001:2018"
+        "es-MX": "Es el sistema de gestión relacionado con Seguridad y Salud en el Trabajo y corresponde a ISO 45001:2018.",
+        "en-US": "It is the management system related to Occupational Health and Safety and corresponds to ISO 45001:2018."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "45K1 identifica el sistema de Seguridad y Salud en el Trabajo dentro del SGI y corresponde a ISO 45001:2018. No debe confundirse con sistemas de Calidad, Continuidad o Seguridad de la Información."
+            "content": "Dentro del material de preparación, 45K1 identifica el sistema de gestión de Seguridad y Salud en el Trabajo asociado con ISO 45001:2018. Esta relación es básica porque muchos de los temas posteriores —riesgos, controles, política, objetivos y alcance— se consultan desde esta sección."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "45K1 identifies the Occupational Health and Safety system within the SGI and corresponds to ISO 45001:2018. It should not be confused with Quality, Business Continuity, or Information Security systems."
+            "content": "Within the preparation material, 45K1 identifies the Occupational Health and Safety management system associated with ISO 45001:2018. This relationship is fundamental because many later topics—risks, controls, policy, objectives, and scope—are consulted from this section."
           }
         ]
       }
@@ -256,33 +262,33 @@
       },
       "Options": {
         "es-MX": [
-          "Aumentar únicamente la productividad y las ventas",
-          "Controlar exclusivamente la documentación del personal",
-          "Establecer condiciones de trabajo seguras y saludables, prevenir lesiones y deterioro de la salud y gestionar peligros y riesgos de SST",
-          "Administrar únicamente las auditorías financieras"
+          "Establecer y mantener condiciones de trabajo seguras y saludables, prevenir lesiones y deterioro de la salud y gestionar los peligros y riesgos de SST.",
+          "Incrementar únicamente las ventas del centro.",
+          "Administrar exclusivamente los inventarios de equipos.",
+          "Controlar solo el acceso a sistemas informáticos."
         ],
         "en-US": [
-          "Only to increase productivity and sales",
-          "Only to control employee documentation",
-          "To provide safe and healthy working conditions, prevent injury and ill health, and manage OHS hazards and risks",
-          "Only to manage financial audits"
+          "To establish and maintain safe and healthy working conditions, prevent injuries and ill health, and manage Occupational Health and Safety hazards and risks.",
+          "Only to increase sales at the workplace.",
+          "Exclusively to manage equipment inventory.",
+          "Only to control access to computer systems."
         ]
       },
       "Correct Answer": {
-        "es-MX": "Establecer condiciones de trabajo seguras y saludables, prevenir lesiones y deterioro de la salud y gestionar peligros y riesgos de SST",
-        "en-US": "To provide safe and healthy working conditions, prevent injury and ill health, and manage OHS hazards and risks"
+        "es-MX": "Establecer y mantener condiciones de trabajo seguras y saludables, prevenir lesiones y deterioro de la salud y gestionar los peligros y riesgos de SST.",
+        "en-US": "To establish and maintain safe and healthy working conditions, prevent injuries and ill health, and manage Occupational Health and Safety hazards and risks."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "ISO 45001 busca proporcionar condiciones de trabajo seguras y saludables, prevenir lesiones y deterioro de la salud, y gestionar los peligros y riesgos de SST. En el CAC esto se refleja en controles, recorridos, capacitación, simulacros y reporte de condiciones inseguras."
+            "content": "La finalidad de 45K1 es preventiva. Busca que las actividades se realicen en condiciones seguras y saludables, que los peligros sean identificados y que los riesgos se gestionen antes de que produzcan lesiones o deterioro de la salud. Ante el auditor conviene relacionar esta finalidad con acciones reales del CAC."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "ISO 45001 aims to provide safe and healthy working conditions, prevent injury and ill health, and manage OHS hazards and risks. At the CAC, this is reflected in controls, walkthroughs, training, drills, and reporting unsafe conditions."
+            "content": "The purpose of 45K1 is preventive. It seeks to ensure activities are performed under safe and healthy conditions, hazards are identified, and risks are managed before they cause injury or ill health. During an audit, personnel should connect this purpose with actual CAC practices."
           }
         ]
       }
@@ -290,38 +296,38 @@
     {
       "Category": "Bloque 1 · Fundamentos y navegación del SGI",
       "Question Text": {
-        "es-MX": "¿Cuál es la ruta para consultar el alcance de 45K1?",
-        "en-US": "What is the route to check the scope of 45K1?"
+        "es-MX": "Muéstrame dónde consultarías el alcance de 45K1.",
+        "en-US": "Show me where you would consult the scope of 45K1."
       },
       "Options": {
         "es-MX": [
-          "Portal SGI → Normas ISO → 45K1 / ISO 45001:2018 → Alcance",
-          "Portal SGI → Auditorías → Resultados → Alcance",
-          "Intranet Nacional → Recursos Humanos → Alcance",
-          "@Doc → Comunicación SGI → Alcance"
+          "Portal SGI → Normas ISO → 45K1 / ISO 45001:2018 → Alcance. Ahí se muestra que aplica a trabajadores, visitantes y clientes dentro de los centros y lugares de trabajo de las nueve regiones del país. También se identifica el documento O-00.00.00.00.00-008, Objetivo y Alcance del SGSST, cuya versión vigente puede consultarse en @Doc.",
+          "Portal SGI → Auditorías → Calendario → Alcance.",
+          "@Doc → únicamente manuales de equipos terminales.",
+          "Intranet Nacional → Nómina → Alcance."
         ],
         "en-US": [
-          "SGI Portal → ISO Standards → 45K1 / ISO 45001:2018 → Scope",
-          "SGI Portal → Audits → Results → Scope",
-          "National Intranet → Human Resources → Scope",
-          "@Doc → SGI Communication → Scope"
+          "SGI Portal → ISO Standards → 45K1 / ISO 45001:2018 → Scope. It shows that the scope applies to workers, visitors, and customers within workplaces and work locations across the country's nine regions. It also identifies document O-00.00.00.00.00-008, Objective and Scope of the OHSMS, whose current version can be consulted in @Doc.",
+          "SGI Portal → Audits → Calendar → Scope.",
+          "@Doc → only terminal equipment manuals.",
+          "National Intranet → Payroll → Scope."
         ]
       },
       "Correct Answer": {
-        "es-MX": "Portal SGI → Normas ISO → 45K1 / ISO 45001:2018 → Alcance",
-        "en-US": "SGI Portal → ISO Standards → 45K1 / ISO 45001:2018 → Scope"
+        "es-MX": "Portal SGI → Normas ISO → 45K1 / ISO 45001:2018 → Alcance. Ahí se muestra que aplica a trabajadores, visitantes y clientes dentro de los centros y lugares de trabajo de las nueve regiones del país. También se identifica el documento O-00.00.00.00.00-008, Objetivo y Alcance del SGSST, cuya versión vigente puede consultarse en @Doc.",
+        "en-US": "SGI Portal → ISO Standards → 45K1 / ISO 45001:2018 → Scope. It shows that the scope applies to workers, visitors, and customers within workplaces and work locations across the country's nine regions. It also identifies document O-00.00.00.00.00-008, Objective and Scope of the OHSMS, whose current version can be consulted in @Doc."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "El alcance de 45K1 se consulta en Portal SGI → Normas ISO → 45K1 / ISO 45001:2018 → Alcance. La información oficial de alcance también está vinculada con el documento O-00.00.00.00.00-008."
+            "content": "Esta pregunta combina navegación y comprensión. El Portal SGI permite ubicar el apartado de alcance de 45K1, mientras que @Doc sirve para consultar el documento controlado vigente O-00.00.00.00.00-008. El alcance señalado comprende trabajadores, visitantes y clientes dentro de los centros y lugares de trabajo de las nueve regiones del país."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "The 45K1 scope is checked under SGI Portal → ISO Standards → 45K1 / ISO 45001:2018 → Scope. The official scope information is also linked to document O-00.00.00.00.00-008."
+            "content": "This question combines navigation and understanding. The SGI Portal provides access to the 45K1 scope section, while @Doc is used to consult the current controlled document O-00.00.00.00.00-008. The stated scope covers workers, visitors, and customers within workplaces and work locations across the country's nine regions."
           }
         ]
       }
@@ -329,38 +335,38 @@
     {
       "Category": "Bloque 1 · Fundamentos y navegación del SGI",
       "Question Text": {
-        "es-MX": "¿Dónde puedes consultar la Política de Seguridad y Salud en el Trabajo?",
-        "en-US": "Where can you check the Occupational Health and Safety Policy?"
+        "es-MX": "Muéstrame dónde consultarías la Política de Seguridad y Salud en el Trabajo.",
+        "en-US": "Show me where you would consult the Occupational Health and Safety Policy."
       },
       "Options": {
         "es-MX": [
-          "Portal SGI → Riesgos → Mapas de calor únicamente",
-          "Portal SGI → Auditorías → Calendario",
-          "Intranet Nacional → Objetivos Institucionales únicamente",
-          "Portal SGI → Normas ISO → 45K1 → Política; también en @Doc como PL-00.00.00.00.00-039"
+          "Portal SGI → Normas ISO → 45K1 → Política. El documento oficial vigente se consulta en @Doc buscando PL-00.00.00.00.00-039, Seguridad y Salud en el Trabajo.",
+          "Portal SGI → Cultura Organizacional → únicamente Misión.",
+          "Portal SGI → Riesgos → Mapas de calor → Política.",
+          "BIT → Correo → Política de SST."
         ],
         "en-US": [
-          "SGI Portal → Risks → Heat maps only",
-          "SGI Portal → Audits → Calendar",
-          "National Intranet → Institutional Objectives only",
-          "SGI Portal → ISO Standards → 45K1 → Policy; also in @Doc as PL-00.00.00.00.00-039"
+          "SGI Portal → ISO Standards → 45K1 → Policy. The current official document is consulted in @Doc by searching for PL-00.00.00.00.00-039, Occupational Health and Safety.",
+          "SGI Portal → Organizational Culture → Mission only.",
+          "SGI Portal → Risks → Heat Maps → Policy.",
+          "BIT → Email → OHS Policy."
         ]
       },
       "Correct Answer": {
-        "es-MX": "Portal SGI → Normas ISO → 45K1 → Política; también en @Doc como PL-00.00.00.00.00-039",
-        "en-US": "SGI Portal → ISO Standards → 45K1 → Policy; also in @Doc as PL-00.00.00.00.00-039"
+        "es-MX": "Portal SGI → Normas ISO → 45K1 → Política. El documento oficial vigente se consulta en @Doc buscando PL-00.00.00.00.00-039, Seguridad y Salud en el Trabajo.",
+        "en-US": "SGI Portal → ISO Standards → 45K1 → Policy. The current official document is consulted in @Doc by searching for PL-00.00.00.00.00-039, Occupational Health and Safety."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "En el Portal SGI puede consultarse la Política dentro de Normas ISO → 45K1 → Política. Para mostrar el documento controlado y vigente, la referencia oficial es @Doc, donde se localiza como PL-00.00.00.00.00-039."
+            "content": "El Portal SGI permite identificar la política y su código, pero para mostrar la versión oficial vigente debe consultarse @Doc. Este es un buen ejemplo de la diferencia entre un portal de navegación y el repositorio de documentación controlada. En auditoría, si se solicita el documento, conviene mostrar la versión vigente."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "The Policy can be viewed in the SGI Portal under ISO Standards → 45K1 → Policy. To show the controlled and current document, the official reference is @Doc, where it is located as PL-00.00.00.00.00-039."
+            "content": "The SGI Portal allows personnel to identify the policy and its code, but the official current version should be consulted in @Doc. This is a good example of the difference between a navigation portal and the controlled-document repository. During an audit, if the document is requested, the current version should be shown."
           }
         ]
       }
@@ -368,38 +374,38 @@
     {
       "Category": "Bloque 1 · Fundamentos y navegación del SGI",
       "Question Text": {
-        "es-MX": "¿Cuál es una forma correcta de contribuir al cumplimiento de la Política de Seguridad y Salud en el Trabajo?",
-        "en-US": "Which is a correct way to contribute to compliance with the Occupational Health and Safety Policy?"
+        "es-MX": "¿Cómo contribuyes tú al cumplimiento de la Política de Seguridad y Salud en el Trabajo?",
+        "en-US": "How do you contribute to compliance with the Occupational Health and Safety Policy?"
       },
       "Options": {
         "es-MX": [
-          "Dejar los temas de seguridad únicamente a la Comisión de Seguridad e Higiene",
-          "Reportar peligros o condiciones inseguras, cumplir procedimientos de seguridad y mantener orden y limpieza",
-          "Esperar a que exista un accidente antes de reportar una condición insegura",
-          "Memorizar la política sin relacionarla con las actividades del puesto"
+          "Cumpliendo las medidas y procedimientos de seguridad, previniendo y reportando condiciones o actos inseguros, utilizando el equipo de protección cuando corresponda y participando en actividades de seguridad y mejora continua.",
+          "Dejando toda la responsabilidad únicamente a la Comisión de Seguridad e Higiene.",
+          "Aplicando medidas de seguridad solo cuando hay auditoría.",
+          "Ignorando condiciones menores mientras no ocurra un accidente."
         ],
         "en-US": [
-          "Leave all safety matters only to the Safety and Hygiene Commission",
-          "Report hazards or unsafe conditions, follow safety procedures, and maintain order and cleanliness",
-          "Wait for an accident before reporting an unsafe condition",
-          "Memorize the policy without relating it to job activities"
+          "By following safety measures and procedures, preventing and reporting unsafe conditions or acts, using protective equipment when applicable, and participating in safety and continual improvement activities.",
+          "Leaving all responsibility only to the Safety and Hygiene Commission.",
+          "Applying safety measures only when there is an audit.",
+          "Ignoring minor conditions as long as no accident occurs."
         ]
       },
       "Correct Answer": {
-        "es-MX": "Reportar peligros o condiciones inseguras, cumplir procedimientos de seguridad y mantener orden y limpieza",
-        "en-US": "Report hazards or unsafe conditions, follow safety procedures, and maintain order and cleanliness"
+        "es-MX": "Cumpliendo las medidas y procedimientos de seguridad, previniendo y reportando condiciones o actos inseguros, utilizando el equipo de protección cuando corresponda y participando en actividades de seguridad y mejora continua.",
+        "en-US": "By following safety measures and procedures, preventing and reporting unsafe conditions or acts, using protective equipment when applicable, and participating in safety and continual improvement activities."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "Contribuir a la Política significa llevarla a la práctica: cumplir medidas y procedimientos de seguridad, mantener orden y limpieza, prevenir riesgos y reportar peligros o condiciones inseguras. No basta con memorizar el texto."
+            "content": "La política se cumple mediante acciones cotidianas, no solo conociendo el documento. El trabajador demuestra su contribución al aplicar procedimientos, reportar condiciones inseguras y participar en actividades preventivas. La mejor respuesta ante el auditor debe relacionarse con lo que la persona realmente hace en su puesto."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "Contributing to the Policy means putting it into practice: follow safety measures and procedures, maintain order and cleanliness, prevent risks, and report hazards or unsafe conditions. Memorizing the text alone is not enough."
+            "content": "The policy is fulfilled through everyday actions, not merely by knowing the document. Workers demonstrate their contribution by following procedures, reporting unsafe conditions, and participating in preventive activities. The best audit response should be linked to what the person actually does in their job."
           }
         ]
       }
@@ -408,37 +414,37 @@
       "Category": "Bloque 1 · Fundamentos y navegación del SGI",
       "Question Text": {
         "es-MX": "¿Dónde consultarías los objetivos de Seguridad y Salud en el Trabajo?",
-        "en-US": "Where would you check the Occupational Health and Safety objectives?"
+        "en-US": "Where would you consult the Occupational Health and Safety objectives?"
       },
       "Options": {
         "es-MX": [
-          "Portal SGI → Auditorías → Auditores",
-          "Portal SGI → Comunicación SGI → Cursos",
-          "Portal SGI → Normas ISO → 45K1 → Objetivos; relacionados también con O-00.00.00.00.00-008",
-          "BIT → Recursos Humanos → Nómina"
+          "Portal SGI → Normas ISO → 45K1 → Objetivo. Ahí se identifica el documento O-00.00.00.00.00-008, Objetivo y Alcance del SGSST; la versión vigente y sus contenidos se consultan en @Doc.",
+          "Portal SGI → Auditorías → Resultados → Objetivos.",
+          "BIT → Equipo Terminal → Objetivos SST.",
+          "Únicamente en una copia impresa sin verificar."
         ],
         "en-US": [
-          "SGI Portal → Audits → Auditors",
-          "SGI Portal → SGI Communication → Courses",
-          "SGI Portal → ISO Standards → 45K1 → Objectives; also related to O-00.00.00.00.00-008",
-          "BIT → Human Resources → Payroll"
+          "SGI Portal → ISO Standards → 45K1 → Objective. There, document O-00.00.00.00.00-008, Objective and Scope of the OHSMS, is identified; its current version and contents are consulted in @Doc.",
+          "SGI Portal → Audits → Results → Objectives.",
+          "BIT → Terminal Equipment → OHS Objectives.",
+          "Only in an unverified printed copy."
         ]
       },
       "Correct Answer": {
-        "es-MX": "Portal SGI → Normas ISO → 45K1 → Objetivos; relacionados también con O-00.00.00.00.00-008",
-        "en-US": "SGI Portal → ISO Standards → 45K1 → Objectives; also related to O-00.00.00.00.00-008"
+        "es-MX": "Portal SGI → Normas ISO → 45K1 → Objetivo. Ahí se identifica el documento O-00.00.00.00.00-008, Objetivo y Alcance del SGSST; la versión vigente y sus contenidos se consultan en @Doc.",
+        "en-US": "SGI Portal → ISO Standards → 45K1 → Objective. There, document O-00.00.00.00.00-008, Objective and Scope of the OHSMS, is identified; its current version and contents are consulted in @Doc."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "Los objetivos de SST pueden consultarse en Portal SGI → Normas ISO → 45K1 → Objetivos. La información oficial se relaciona con el documento O-00.00.00.00.00-008, por lo que conviene saber localizar tanto la vista del portal como la fuente documental vigente."
+            "content": "La ruta del Portal SGI ayuda a localizar el objetivo dentro de 45K1 y remite al documento oficial O-00.00.00.00.00-008. La versión vigente debe verificarse en @Doc. Para auditoría conviene saber navegar hasta la información y comprender los objetivos aplicables, en lugar de depender de una impresión antigua."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "OHS objectives can be checked under SGI Portal → ISO Standards → 45K1 → Objectives. The official information is linked to document O-00.00.00.00.00-008, so it is useful to know both the portal view and the current controlled source."
+            "content": "The SGI Portal route helps locate the objective within 45K1 and refers to official document O-00.00.00.00.00-008. The current version should be verified in @Doc. For an audit, personnel should know how to navigate to the information and understand the applicable objectives rather than rely on an old printout."
           }
         ]
       }
@@ -446,38 +452,38 @@
     {
       "Category": "Bloque 1 · Fundamentos y navegación del SGI",
       "Question Text": {
-        "es-MX": "Si necesitas un procedimiento o documento oficial, ¿dónde deberías buscarlo?",
-        "en-US": "If you need an official procedure or document, where should you look for it?"
+        "es-MX": "Si necesitas un procedimiento o documento oficial, ¿dónde lo buscarías?",
+        "en-US": "If you need an official procedure or document, where would you look for it?"
       },
       "Options": {
         "es-MX": [
-          "En @Doc; también puede accederse desde Sistemas del SGI → @Doc",
-          "En mensajes antiguos de correo, aunque no estén vigentes",
-          "Únicamente en archivos personales de la computadora",
-          "En cualquier documento impreso, sin verificar su versión"
+          "En @Doc, repositorio de Telcel donde se encuentran manuales, procedimientos y demás información documentada. También hay acceso desde Portal del SGI → Sistemas del SGI → @Doc.",
+          "En cualquier archivo local guardado en la computadora.",
+          "Únicamente en correos antiguos.",
+          "En redes sociales o buscadores externos."
         ],
         "en-US": [
-          "In @Doc; it can also be accessed from SGI Systems → @Doc",
-          "In old email messages even if they are no longer current",
-          "Only in personal files on the computer",
-          "In any printed document without checking its version"
+          "In @Doc, Telcel's repository for manuals, procedures, and other documented information. It can also be accessed from SGI Portal → SGI Systems → @Doc.",
+          "In any local file saved on the computer.",
+          "Only in old emails.",
+          "On social networks or external search engines."
         ]
       },
       "Correct Answer": {
-        "es-MX": "En @Doc; también puede accederse desde Sistemas del SGI → @Doc",
-        "en-US": "In @Doc; it can also be accessed from SGI Systems → @Doc"
+        "es-MX": "En @Doc, repositorio de Telcel donde se encuentran manuales, procedimientos y demás información documentada. También hay acceso desde Portal del SGI → Sistemas del SGI → @Doc.",
+        "en-US": "In @Doc, Telcel's repository for manuals, procedures, and other documented information. It can also be accessed from SGI Portal → SGI Systems → @Doc."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "@Doc es el repositorio oficial para manuales, procedimientos y demás información documentada controlada. Si existe una impresión o copia local, debe verificarse siempre contra la versión vigente disponible en @Doc."
+            "content": "@Doc es la referencia para documentación oficial y controlada. Ante un auditor, si se solicita un manual o procedimiento, la mejor práctica es localizarlo en el sistema oficial y verificar su versión vigente. Una copia local o impresa puede no estar actualizada."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "@Doc is the official repository for manuals, procedures, and other controlled documented information. If a printed or local copy exists, it should always be checked against the current version available in @Doc."
+            "content": "@Doc is the reference source for official controlled documentation. During an audit, if a manual or procedure is requested, the best practice is to locate it in the official system and verify the current version. A local or printed copy may not be up to date."
           }
         ]
       }
@@ -486,37 +492,37 @@
       "Category": "Bloque 1 · Fundamentos y navegación del SGI",
       "Question Text": {
         "es-MX": "¿Dónde se encuentran los resultados de auditorías?",
-        "en-US": "Where are audit results located?"
+        "en-US": "Where can audit results be found?"
       },
       "Options": {
         "es-MX": [
-          "Portal SGI → Normas ISO → 45K1 → Política",
-          "Portal SGI → Riesgos → Mapas de calor",
-          "Intranet Nacional → Objetivos Institucionales",
-          "Portal SGI → Auditorías → Información → Resultados de Auditorías"
+          "Portal SGI → Auditorías → Información → Resultados de Auditorías. Para la atención de hallazgos: Auditorías → Atención de resultados de Auditorías. El procedimiento oficial se consulta en @Doc: P-00.00.00.00.00-018, Atención de Resultados de Auditoría Externa.",
+          "Portal SGI → Cultura Organizacional → Valores.",
+          "Únicamente en el calendario de auditorías.",
+          "@Doc → solo manuales de protección civil."
         ],
         "en-US": [
-          "SGI Portal → ISO Standards → 45K1 → Policy",
-          "SGI Portal → Risks → Heat maps",
-          "National Intranet → Institutional Objectives",
-          "SGI Portal → Audits → Information → Audit Results"
+          "SGI Portal → Audits → Information → Audit Results. For addressing findings: Audits → Attention to Audit Results. The official procedure is consulted in @Doc: P-00.00.00.00.00-018, Attention to External Audit Results.",
+          "SGI Portal → Organizational Culture → Values.",
+          "Only in the audit calendar.",
+          "@Doc → only Civil Protection manuals."
         ]
       },
       "Correct Answer": {
-        "es-MX": "Portal SGI → Auditorías → Información → Resultados de Auditorías",
-        "en-US": "SGI Portal → Audits → Information → Audit Results"
+        "es-MX": "Portal SGI → Auditorías → Información → Resultados de Auditorías. Para la atención de hallazgos: Auditorías → Atención de resultados de Auditorías. El procedimiento oficial se consulta en @Doc: P-00.00.00.00.00-018, Atención de Resultados de Auditoría Externa.",
+        "en-US": "SGI Portal → Audits → Information → Audit Results. For addressing findings: Audits → Attention to Audit Results. The official procedure is consulted in @Doc: P-00.00.00.00.00-018, Attention to External Audit Results."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "Los resultados se consultan en Portal SGI → Auditorías → Información → Resultados de Auditorías. La atención y seguimiento de hallazgos se encuentra en una sección distinta: Auditorías → Atención de resultados de auditorías."
+            "content": "El bloque distingue entre consultar resultados y consultar el procedimiento para atenderlos. Los resultados se localizan en el Portal SGI, mientras que el procedimiento oficial P-00.00.00.00.00-018 se consulta en @Doc. En auditoría pueden pedir tanto navegar a los resultados como identificar la fuente oficial para el tratamiento de hallazgos."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "Audit results are checked under SGI Portal → Audits → Information → Audit Results. Follow-up and treatment of findings are located in a separate section: Audits → Audit Results Follow-up."
+            "content": "The block distinguishes between consulting results and consulting the procedure for addressing them. Results are located in the SGI Portal, while official procedure P-00.00.00.00.00-018 is consulted in @Doc. During an audit, personnel may be asked both to navigate to results and identify the official source for handling findings."
           }
         ]
       }
@@ -524,38 +530,155 @@
     {
       "Category": "Bloque 1 · Fundamentos y navegación del SGI",
       "Question Text": {
-        "es-MX": "¿Dónde consultarías los riesgos institucionales de Seguridad y Salud en el Trabajo aplicables a una Tienda o CAC?",
-        "en-US": "Where would you check the institutional Occupational Health and Safety risks applicable to a Store or CAC?"
+        "es-MX": "¿Dónde consultarías los riesgos institucionales de Seguridad y Salud en el Trabajo aplicables al CAC/Tienda?",
+        "en-US": "Where would you consult the institutional Occupational Health and Safety risks applicable to the CAC/store?"
       },
       "Options": {
         "es-MX": [
-          "Portal SGI → Riesgos → Reporte de riesgos de negocio e institucionales; dentro del reporte, ubicar la sección de Riesgos Institucionales SST por tipo de centro de trabajo",
-          "Portal SGI → Auditorías → Calendario → 45K1",
-          "Portal SGI → Cultura Organizacional → Valores",
-          "BIT → Correo → Riesgos"
+          "Portal SGI → Riesgos → Reporte de riesgos de negocio e institucionales. Dentro del reporte se encuentra la sección de Riesgos Institucionales de Seguridad y Salud en el Trabajo y el archivo por tipo de centro de trabajo.",
+          "Portal SGI → Cultura Organizacional → Misión.",
+          "Portal SGI → Auditorías → Calendario.",
+          "BIT → Nómina → Riesgos."
         ],
         "en-US": [
-          "SGI Portal → Risks → Business and Institutional Risk Report; inside the report, locate the Institutional OHS Risks section by workplace type",
-          "SGI Portal → Audits → Calendar → 45K1",
-          "SGI Portal → Organizational Culture → Values",
-          "BIT → Email → Risks"
+          "SGI Portal → Risks → Business and Institutional Risk Report. Within the report is the Institutional Occupational Health and Safety Risks section and the file by workplace type.",
+          "SGI Portal → Organizational Culture → Mission.",
+          "SGI Portal → Audits → Calendar.",
+          "BIT → Payroll → Risks."
         ]
       },
       "Correct Answer": {
-        "es-MX": "Portal SGI → Riesgos → Reporte de riesgos de negocio e institucionales; dentro del reporte, ubicar la sección de Riesgos Institucionales SST por tipo de centro de trabajo",
-        "en-US": "SGI Portal → Risks → Business and Institutional Risk Report; inside the report, locate the Institutional OHS Risks section by workplace type"
+        "es-MX": "Portal SGI → Riesgos → Reporte de riesgos de negocio e institucionales. Dentro del reporte se encuentra la sección de Riesgos Institucionales de Seguridad y Salud en el Trabajo y el archivo por tipo de centro de trabajo.",
+        "en-US": "SGI Portal → Risks → Business and Institutional Risk Report. Within the report is the Institutional Occupational Health and Safety Risks section and the file by workplace type."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "Los riesgos institucionales de SST aplicables al tipo de centro de trabajo se consultan en Portal SGI → Riesgos → Reporte de riesgos de negocio e institucionales. Dentro del reporte está la sección de Seguridad y Salud en el Trabajo y el archivo de riesgos SST por tipo de centro. Esto es distinto de los riesgos de Seguridad de la Información."
+            "content": "Esta ruta permite identificar los riesgos institucionales de SST que corresponden al tipo de centro de trabajo. No se espera que el empleado memorice todos los riesgos de la organización, sino que sepa localizar el reporte y reconocer los que aplican al CAC y a sus actividades."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "Institutional OHS risks applicable to the workplace type are checked under SGI Portal → Risks → Business and Institutional Risk Report. Inside the report is the Occupational Health and Safety section and the OHS risks file by workplace type. This is different from Information Security risks."
+            "content": "This route allows personnel to identify the institutional OHS risks that correspond to the workplace type. Employees are not expected to memorize all organizational risks, but should know how to locate the report and recognize those that apply to the CAC and their activities."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 1 · Fundamentos y navegación del SGI",
+      "Question Text": {
+        "es-MX": "¿Dónde están los mapas de calor de riesgos?",
+        "en-US": "Where are the risk heat maps located?"
+      },
+      "Options": {
+        "es-MX": [
+          "Portal SGI → Riesgos → Mapas de calor a nivel empresa → seleccionar la norma correspondiente; para nosotros, 45K1.",
+          "Portal SGI → Cultura Organizacional → Valores.",
+          "Portal SGI → Auditorías → Resultados.",
+          "@Doc → únicamente procedimientos de mantenimiento."
+        ],
+        "en-US": [
+          "SGI Portal → Risks → Company-level Heat Maps → select the corresponding standard; for us, 45K1.",
+          "SGI Portal → Organizational Culture → Values.",
+          "SGI Portal → Audits → Results.",
+          "@Doc → only maintenance procedures."
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Portal SGI → Riesgos → Mapas de calor a nivel empresa → seleccionar la norma correspondiente; para nosotros, 45K1.",
+        "en-US": "SGI Portal → Risks → Company-level Heat Maps → select the corresponding standard; for us, 45K1."
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los mapas de calor se encuentran dentro del apartado Riesgos del Portal SGI y se organizan por norma. Para Seguridad y Salud en el Trabajo debe seleccionarse 45K1. El mapa ayuda a visualizar y priorizar la valoración de los riesgos y complementa la información institucional."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Heat maps are located within the Risks section of the SGI Portal and are organized by standard. For Occupational Health and Safety, 45K1 should be selected. The heat map helps visualize and prioritize risk assessment and complements institutional risk information."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 1 · Fundamentos y navegación del SGI",
+      "Question Text": {
+        "es-MX": "¿Cuál es el objetivo general del SGSST?",
+        "en-US": "What is the general objective of the OHSMS?"
+      },
+      "Options": {
+        "es-MX": [
+          "Mantener condiciones seguras y saludables en los centros y lugares de trabajo de Telcel a nivel nacional para preservar la integridad de los trabajadores, en apego a la política de SST.",
+          "Incrementar las ventas de todos los centros.",
+          "Reducir exclusivamente el consumo de energía.",
+          "Administrar únicamente los inventarios de equipos."
+        ],
+        "en-US": [
+          "To maintain safe and healthy conditions in Telcel workplaces and work locations nationwide in order to preserve workers' integrity, in accordance with the OHS policy.",
+          "Increase sales at all workplaces.",
+          "Exclusively reduce energy consumption.",
+          "Only manage equipment inventories."
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Mantener condiciones seguras y saludables en los centros y lugares de trabajo de Telcel a nivel nacional para preservar la integridad de los trabajadores, en apego a la política de SST.",
+        "en-US": "To maintain safe and healthy conditions in Telcel workplaces and work locations nationwide in order to preserve workers' integrity, in accordance with the OHS policy."
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El objetivo general del SGSST se centra en proteger la integridad de las personas mediante condiciones de trabajo seguras y saludables. Esta idea resume el propósito del sistema y debe relacionarse con la política de SST y con las acciones preventivas que se aplican diariamente en el CAC."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The general objective of the OHSMS focuses on protecting people by maintaining safe and healthy working conditions. This summarizes the purpose of the system and should be connected to the OHS policy and the preventive actions applied daily in the CAC."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 1 · Fundamentos y navegación del SGI",
+      "Question Text": {
+        "es-MX": "Menciona objetivos de SST para 2026.",
+        "en-US": "Name Occupational Health and Safety objectives for 2026."
+      },
+      "Options": {
+        "es-MX": [
+          "Prevenir incidentes y enfermedades mediante acciones derivadas de causa raíz y mantener cero fatalidades; auditar el cumplimiento de requisitos de SST, establecer controles y dar seguimiento.",
+          "Eliminar todos los recorridos de seguridad para reducir tiempo.",
+          "Suspender la capacitación y concentrarse solo en auditorías.",
+          "Reducir el número de reportes aunque existan condiciones inseguras."
+        ],
+        "en-US": [
+          "Prevent incidents and illnesses through actions derived from root-cause analysis and maintain zero fatalities; audit compliance with OHS requirements, establish controls, and follow up.",
+          "Eliminate all safety inspections to save time.",
+          "Suspend training and focus only on audits.",
+          "Reduce the number of reports even when unsafe conditions exist."
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Prevenir incidentes y enfermedades mediante acciones derivadas de causa raíz y mantener cero fatalidades; auditar el cumplimiento de requisitos de SST, establecer controles y dar seguimiento.",
+        "en-US": "Prevent incidents and illnesses through actions derived from root-cause analysis and maintain zero fatalities; audit compliance with OHS requirements, establish controls, and follow up."
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Los objetivos 2026 descritos en el Excel combinan prevención y seguimiento: evitar incidentes y enfermedades, mantener cero fatalidades, revisar el cumplimiento de requisitos y establecer controles. En auditoría puede ser suficiente mencionar los principales objetivos y saber dónde consultar su versión vigente."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The 2026 objectives described in the spreadsheet combine prevention and follow-up: prevent incidents and illnesses, maintain zero fatalities, review compliance with requirements, and establish controls. During an audit, it may be sufficient to mention the main objectives and know where to consult the current version."
           }
         ]
       }
@@ -564,37 +687,37 @@
       "Category": "Bloque 1 · Fundamentos y navegación del SGI",
       "Question Text": {
         "es-MX": "¿Dónde consultarías el mapa de calor de Seguridad y Salud en el Trabajo?",
-        "en-US": "Where would you check the Occupational Health and Safety risk heat map?"
+        "en-US": "Where would you consult the Occupational Health and Safety heat map?"
       },
       "Options": {
         "es-MX": [
-          "Portal SGI → Comunicación SGI → Revisión por Dirección",
-          "Portal SGI → Riesgos → Mapas de calor a nivel empresa → 45K1 Riesgos de Seguridad y Salud en el Trabajo",
-          "Portal SGI → Comités → Comité de Normatividad",
-          "Intranet Nacional → Recursos Humanos → Seguridad e Higiene"
+          "Portal SGI → Riesgos → Mapas de calor a nivel empresa → 45K1 Riesgos de Seguridad y Salud en el Trabajo.",
+          "Portal SGI → Cultura Organizacional → Valores.",
+          "Portal SGI → Auditorías → Información.",
+          "BIT → Correo → Mapas de calor."
         ],
         "en-US": [
-          "SGI Portal → SGI Communication → Management Review",
-          "SGI Portal → Risks → Company-level Heat Maps → 45K1 Occupational Health and Safety Risks",
-          "SGI Portal → Committees → Standards Committee",
-          "National Intranet → Human Resources → Safety and Hygiene"
+          "SGI Portal → Risks → Company-level Heat Maps → 45K1 Occupational Health and Safety Risks.",
+          "SGI Portal → Organizational Culture → Values.",
+          "SGI Portal → Audits → Information.",
+          "BIT → Email → Heat Maps."
         ]
       },
       "Correct Answer": {
-        "es-MX": "Portal SGI → Riesgos → Mapas de calor a nivel empresa → 45K1 Riesgos de Seguridad y Salud en el Trabajo",
-        "en-US": "SGI Portal → Risks → Company-level Heat Maps → 45K1 Occupational Health and Safety Risks"
+        "es-MX": "Portal SGI → Riesgos → Mapas de calor a nivel empresa → 45K1 Riesgos de Seguridad y Salud en el Trabajo.",
+        "en-US": "SGI Portal → Risks → Company-level Heat Maps → 45K1 Occupational Health and Safety Risks."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "Los mapas de calor se localizan en Portal SGI → Riesgos → Mapas de calor a nivel empresa. Para Seguridad y Salud en el Trabajo se selecciona 45K1; el mapa ayuda a visualizar y priorizar los riesgos según su valoración."
+            "content": "Esta pregunta es más específica que la anterior: no basta con saber que existen mapas de calor, sino identificar el correspondiente a SST. La ruta termina en 45K1 Riesgos de Seguridad y Salud en el Trabajo. Conviene practicar la navegación porque el auditor podría pedir mostrarlo directamente."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "Heat maps are located under SGI Portal → Risks → Company-level Heat Maps. For Occupational Health and Safety, select 45K1; the heat map helps visualize and prioritize risks according to their assessment."
+            "content": "This question is more specific than the previous one: it is not enough to know that heat maps exist; personnel should identify the OHS-specific one. The route ends at 45K1 Occupational Health and Safety Risks. Practicing navigation is useful because the auditor may ask to see it directly."
           }
         ]
       }
