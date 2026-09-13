@@ -1,11 +1,11 @@
 {
   "meta": {
-    "slug": "auditoria-bloque-2",
-    "title": "Peligros, riesgos y controles básicos de SST en el CAC",
+    "slug": "auditoria-bloque-2-excel-2026",
+    "title": "Bloque 2 — Peligros, riesgos y controles básicos de SST en el CAC",
     "subject": "Auditoría CAC",
     "unit": 2,
     "classNo": 1,
-    "description": "Quiz de estudio del Bloque 2 para preparación de auditoría SGI / 45K1.",
+    "description": "Quiz de estudio generado a partir de la pestaña Bloque2 del Excel de Auditoría CAC 2026, con explicaciones ampliadas.",
     "tags": [
       "auditoria",
       "SGI",
@@ -19,38 +19,38 @@
     {
       "Category": "Bloque 2 · Peligros, riesgos y controles básicos de SST en el CAC",
       "Question Text": {
-        "es-MX": "¿Cuál es la diferencia entre peligro y riesgo?",
+        "es-MX": "¿Qué diferencia hay entre un peligro y un riesgo?",
         "en-US": "What is the difference between a hazard and a risk?"
       },
       "Options": {
         "es-MX": [
-          "Un peligro es una fuente o situación con potencial de causar daño; el riesgo considera la probabilidad y las consecuencias de que ese daño ocurra",
+          "Peligro: algo con potencial de causar daño. Riesgo: posibilidad de que ese peligro cause daño y la gravedad que pueda tener.",
           "Peligro y riesgo significan exactamente lo mismo",
           "El peligro solo existe después de un accidente y el riesgo antes",
           "El riesgo es únicamente un documento y el peligro es una auditoría"
         ],
         "en-US": [
-          "A hazard is a source or situation with the potential to cause harm; risk considers the likelihood and consequences of that harm occurring",
+          "Hazard: something with the potential to cause harm. Risk: the possibility that the hazard may cause harm and the severity that harm could have.",
           "Hazard and risk mean exactly the same thing",
           "A hazard only exists after an accident and risk exists before it",
           "Risk is only a document and a hazard is an audit"
         ]
       },
       "Correct Answer": {
-        "es-MX": "Un peligro es una fuente o situación con potencial de causar daño; el riesgo considera la probabilidad y las consecuencias de que ese daño ocurra",
-        "en-US": "A hazard is a source or situation with the potential to cause harm; risk considers the likelihood and consequences of that harm occurring"
+        "es-MX": "Peligro: algo con potencial de causar daño. Riesgo: posibilidad de que ese peligro cause daño y la gravedad que pueda tener.",
+        "en-US": "Hazard: something with the potential to cause harm. Risk: the possibility that the hazard may cause harm and the severity that harm could have."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "El peligro es la fuente o condición que puede causar daño; el riesgo valora qué tan probable y qué tan grave podría ser."
+            "content": "El peligro es la fuente, condición o situación que puede causar daño. El riesgo aparece cuando se valora la posibilidad de que ese peligro se materialice y qué tan grave podría ser el daño. Para la auditoría conviene responder diferenciando claramente ambos conceptos y, si es posible, dar un ejemplo del CAC."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "A hazard is the source or condition that can cause harm; risk evaluates how likely and how severe the harm could be."
+            "content": "A hazard is the source, condition, or situation that can cause harm. Risk is considered when evaluating the possibility that the hazard will result in harm and how severe that harm could be. For an audit, clearly distinguish the two concepts and, if possible, give a CAC example."
           }
         ]
       }
@@ -58,38 +58,38 @@
     {
       "Category": "Bloque 2 · Peligros, riesgos y controles básicos de SST en el CAC",
       "Question Text": {
-        "es-MX": "¿Cuál de los siguientes grupos contiene ejemplos de riesgos que pueden presentarse en un CAC o tienda?",
-        "en-US": "Which of the following groups contains examples of risks that may occur in a CAC or store?"
+        "es-MX": "Menciona al menos 3 riesgos o peligros que existen en un CAC/Tienda.",
+        "en-US": "Mention at least 3 risks or hazards that exist in a CAC/Store."
       },
       "Options": {
         "es-MX": [
-          "Caídas al mismo nivel, riesgo eléctrico, riesgos ergonómicos y contacto biológico con público o dinero",
+          "Ejemplos: caídas, riesgo eléctrico, riesgos ergonómicos, biológicos, objetos punzocortantes, agresión de clientes, robo o asalto.",
           "Únicamente terremotos y huracanes",
           "Solo riesgos de programación y bases de datos",
           "Exclusivamente riesgos financieros"
         ],
         "en-US": [
-          "Same-level falls, electrical risk, ergonomic risks, and biological contact with customers or money",
+          "Examples: falls, electrical risk, ergonomic risks, biological risks, sharp objects, customer aggression, robbery or assault.",
           "Only earthquakes and hurricanes",
           "Only programming and database risks",
           "Only financial risks"
         ]
       },
       "Correct Answer": {
-        "es-MX": "Caídas al mismo nivel, riesgo eléctrico, riesgos ergonómicos y contacto biológico con público o dinero",
-        "en-US": "Same-level falls, electrical risk, ergonomic risks, and biological contact with customers or money"
+        "es-MX": "Ejemplos: caídas, riesgo eléctrico, riesgos ergonómicos, biológicos, objetos punzocortantes, agresión de clientes, robo o asalto.",
+        "en-US": "Examples: falls, electrical risk, ergonomic risks, biological risks, sharp objects, customer aggression, robbery or assault."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "En el CAC pueden existir riesgos locativos, eléctricos, ergonómicos, biológicos, mecánicos y psicosociales, entre otros."
+            "content": "En un CAC pueden coexistir diferentes tipos de riesgos. El Excel menciona caídas, riesgo eléctrico, riesgos ergonómicos, biológicos, punzocortantes, agresión de clientes y robo o asalto. En auditoría basta con mencionar al menos tres, pero es mejor relacionarlos con situaciones reales del centro de trabajo."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "In a CAC there may be locative, electrical, ergonomic, biological, mechanical, and psychosocial risks, among others."
+            "content": "Different types of risks may coexist in a CAC. The Excel lists falls, electrical risk, ergonomic and biological risks, sharp objects, customer aggression, and robbery or assault. During an audit, mentioning at least three is sufficient, but relating them to real workplace situations is stronger."
           }
         ]
       }
@@ -97,38 +97,38 @@
     {
       "Category": "Bloque 2 · Peligros, riesgos y controles básicos de SST en el CAC",
       "Question Text": {
-        "es-MX": "¿Qué acción ayuda a prevenir caídas al mismo nivel dentro del CAC?",
-        "en-US": "Which action helps prevent same-level falls inside the CAC?"
+        "es-MX": "¿Qué debes hacer para prevenir caídas al mismo nivel?",
+        "en-US": "What should you do to prevent same-level falls?"
       },
       "Options": {
         "es-MX": [
-          "Mantener pasillos despejados, atender derrames y respetar la señalización de piso mojado",
+          "Mantener áreas de paso despejadas, evitar obstáculos/cables, atender pisos mojados, respetar señalización, mantener orden y reportar condiciones inseguras.",
           "Dejar objetos en los pasillos para que sean visibles",
           "Retirar las señales de piso mojado cuando haya clientes",
           "Correr para evitar permanecer mucho tiempo en zonas de paso"
         ],
         "en-US": [
-          "Keep aisles clear, address spills, and respect wet-floor signage",
+          "Keep passageways clear, avoid obstacles/cables, address wet floors, respect signage, maintain order, and report unsafe conditions.",
           "Leave objects in aisles so they remain visible",
           "Remove wet-floor signs when customers are present",
           "Run to avoid spending too much time in walkways"
         ]
       },
       "Correct Answer": {
-        "es-MX": "Mantener pasillos despejados, atender derrames y respetar la señalización de piso mojado",
-        "en-US": "Keep aisles clear, address spills, and respect wet-floor signage"
+        "es-MX": "Mantener áreas de paso despejadas, evitar obstáculos/cables, atender pisos mojados, respetar señalización, mantener orden y reportar condiciones inseguras.",
+        "en-US": "Keep passageways clear, avoid obstacles/cables, address wet floors, respect signage, maintain order, and report unsafe conditions."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "Orden, limpieza, pasillos libres y señalización adecuada reducen el riesgo de resbalones y tropiezos."
+            "content": "La prevención de caídas depende principalmente del orden, limpieza y control de obstáculos. Los pasillos deben permanecer libres, los cables no deben convertirse en obstáculos, los pisos mojados deben atenderse y señalizarse, y cualquier condición insegura debe reportarse."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "Order, cleanliness, clear aisles, and proper signage reduce slip and trip risk."
+            "content": "Preventing falls mainly depends on order, cleanliness, and obstacle control. Passageways should remain clear, cables should not become obstacles, wet floors should be addressed and signposted, and any unsafe condition should be reported."
           }
         ]
       }
@@ -136,38 +136,38 @@
     {
       "Category": "Bloque 2 · Peligros, riesgos y controles básicos de SST en el CAC",
       "Question Text": {
-        "es-MX": "Si detectas un cable, contacto o instalación eléctrica dañada, ¿qué debes hacer?",
-        "en-US": "If you detect a damaged cable, outlet, or electrical installation, what should you do?"
+        "es-MX": "Si encuentras un cable, contacto o instalación eléctrica dañada, ¿qué haces?",
+        "en-US": "If you find a damaged cable, outlet, or electrical installation, what should you do?"
       },
       "Options": {
         "es-MX": [
-          "Reportarlo para su atención o mantenimiento y evitar exponerse o manipularlo sin autorización",
+          "Reportarla para su atención, evitar exponerse al peligro y no manipularla de forma insegura.",
           "Seguir utilizándolo hasta que deje de funcionar",
           "Repararlo personalmente aunque no estés autorizado",
           "Cubrirlo con cinta y no informar a nadie"
         ],
         "en-US": [
-          "Report it for attention or maintenance and avoid exposure or unauthorized handling",
+          "Report it for attention, avoid exposure to the hazard, and do not handle it unsafely.",
           "Keep using it until it stops working",
           "Repair it yourself even if you are not authorized",
           "Cover it with tape and do not report it"
         ]
       },
       "Correct Answer": {
-        "es-MX": "Reportarlo para su atención o mantenimiento y evitar exponerse o manipularlo sin autorización",
-        "en-US": "Report it for attention or maintenance and avoid exposure or unauthorized handling"
+        "es-MX": "Reportarla para su atención, evitar exponerse al peligro y no manipularla de forma insegura.",
+        "en-US": "Report it for attention, avoid exposure to the hazard, and do not handle it unsafely."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "Una condición eléctrica anormal debe reportarse y canalizarse; no debe improvisarse una reparación."
+            "content": "Una instalación eléctrica dañada no debe manipularse de manera improvisada. Lo correcto es reportarla para que sea atendida, mantenerse alejado de la condición peligrosa cuando corresponda y evitar cualquier acción que aumente la exposición al riesgo eléctrico."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "An abnormal electrical condition should be reported and routed for attention; repairs should not be improvised."
+            "content": "A damaged electrical installation should not be handled through improvised repairs. It should be reported for attention, exposure to the hazardous condition should be avoided when applicable, and actions that increase electrical risk should not be taken."
           }
         ]
       }
@@ -175,38 +175,38 @@
     {
       "Category": "Bloque 2 · Peligros, riesgos y controles básicos de SST en el CAC",
       "Question Text": {
-        "es-MX": "¿Cuál de los siguientes es un riesgo relacionado con el uso prolongado de computadora?",
-        "en-US": "Which of the following is a risk related to prolonged computer use?"
+        "es-MX": "¿Qué riesgos existen por trabajar muchas horas frente a una computadora?",
+        "en-US": "What risks exist from working many hours in front of a computer?"
       },
       "Options": {
         "es-MX": [
-          "Fatiga visual, postura forzada y movimientos repetitivos",
+          "Fatiga visual y riesgos ergonómicos, además de molestias musculoesqueléticas por postura prolongada.",
           "Exposición exclusiva a sustancias químicas",
           "Caída desde grandes alturas",
           "Radiación ionizante de uso industrial"
         ],
         "en-US": [
-          "Visual fatigue, awkward posture, and repetitive movements",
+          "Visual fatigue and ergonomic risks, as well as musculoskeletal discomfort from prolonged posture.",
           "Exposure only to chemicals",
           "Falls from great heights",
           "Industrial ionizing radiation"
         ]
       },
       "Correct Answer": {
-        "es-MX": "Fatiga visual, postura forzada y movimientos repetitivos",
-        "en-US": "Visual fatigue, awkward posture, and repetitive movements"
+        "es-MX": "Fatiga visual y riesgos ergonómicos, además de molestias musculoesqueléticas por postura prolongada.",
+        "en-US": "Visual fatigue and ergonomic risks, as well as musculoskeletal discomfort from prolonged posture."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "El trabajo con computadora puede generar riesgos ergonómicos y fatiga visual."
+            "content": "El uso prolongado de computadora puede generar fatiga visual y riesgos ergonómicos. También puede producir molestias musculoesqueléticas por mantener posturas durante largos periodos, especialmente si el puesto no está bien ajustado o se realizan movimientos repetitivos."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "Computer work can generate ergonomic risks and visual fatigue."
+            "content": "Prolonged computer use can cause visual fatigue and ergonomic risks. It can also cause musculoskeletal discomfort from maintaining positions for long periods, especially when the workstation is poorly adjusted or repetitive movements are performed."
           }
         ]
       }
@@ -214,38 +214,38 @@
     {
       "Category": "Bloque 2 · Peligros, riesgos y controles básicos de SST en el CAC",
       "Question Text": {
-        "es-MX": "¿Qué medida ayuda a prevenir molestias por postura, teclado o mouse?",
-        "en-US": "Which measure helps prevent discomfort from posture, keyboard, or mouse use?"
+        "es-MX": "¿Cómo puedes prevenir problemas por postura, teclado o mouse?",
+        "en-US": "How can you prevent problems related to posture, keyboard, or mouse use?"
       },
       "Options": {
         "es-MX": [
-          "Ajustar la postura y el puesto de trabajo, mantener una posición adecuada y realizar pausas o cambios de posición",
+          "Postura adecuada, condiciones ergonómicas, pausas/movimientos y seguir recomendaciones de SST.",
           "Trabajar siempre inclinado hacia la pantalla",
           "Mantener la muñeca forzada durante toda la jornada",
           "Evitar cualquier pausa para terminar más rápido"
         ],
         "en-US": [
-          "Adjust posture and the workstation, maintain a proper position, and take breaks or change position",
+          "Maintain proper posture and ergonomic conditions, take breaks/move, and follow OHS recommendations.",
           "Always work leaning toward the screen",
           "Keep the wrist in a strained position throughout the workday",
           "Avoid all breaks to finish faster"
         ]
       },
       "Correct Answer": {
-        "es-MX": "Ajustar la postura y el puesto de trabajo, mantener una posición adecuada y realizar pausas o cambios de posición",
-        "en-US": "Adjust posture and the workstation, maintain a proper position, and take breaks or change position"
+        "es-MX": "Postura adecuada, condiciones ergonómicas, pausas/movimientos y seguir recomendaciones de SST.",
+        "en-US": "Maintain proper posture and ergonomic conditions, take breaks/move, and follow OHS recommendations."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "Las medidas ergonómicas ayudan a disminuir fatiga, posturas forzadas y movimientos repetitivos."
+            "content": "La prevención incluye mantener una postura adecuada, procurar condiciones ergonómicas en el puesto, realizar pausas o cambios de posición y seguir las recomendaciones de SST. El objetivo es reducir fatiga, posturas forzadas y molestias derivadas del uso continuo de teclado y mouse."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "Ergonomic measures help reduce fatigue, awkward postures, and repetitive movements."
+            "content": "Prevention includes proper posture, ergonomic workstation conditions, breaks or position changes, and following OHS recommendations. The objective is to reduce fatigue, awkward postures, and discomfort from continuous keyboard and mouse use."
           }
         ]
       }
@@ -253,38 +253,38 @@
     {
       "Category": "Bloque 2 · Peligros, riesgos y controles básicos de SST en el CAC",
       "Question Text": {
-        "es-MX": "¿Qué medida ayuda a controlar el riesgo biológico asociado con el contacto frecuente con público o dinero?",
-        "en-US": "Which measure helps control biological risk associated with frequent contact with customers or money?"
+        "es-MX": "¿Hay riesgos relacionados con el contacto frecuente con personas o manejo de dinero?",
+        "en-US": "Are there risks related to frequent contact with people or handling money?"
       },
       "Options": {
         "es-MX": [
-          "Mantener higiene de manos y limpieza de superficies, siguiendo las medidas preventivas aplicables",
+          "Sí. Existen riesgos biológicos relacionados con enfermedades infecciosas; deben aplicarse medidas de higiene y prevención.",
           "No lavarse las manos para evitar resequedad",
           "Compartir objetos personales entre todos los empleados",
           "Guardar alimentos junto con objetos manipulados por clientes"
         ],
         "en-US": [
-          "Maintain hand hygiene and clean surfaces, following applicable preventive measures",
+          "Yes. There are biological risks related to infectious diseases; hygiene and preventive measures must be applied.",
           "Do not wash hands to avoid dryness",
           "Share personal items among all employees",
           "Store food together with objects handled by customers"
         ]
       },
       "Correct Answer": {
-        "es-MX": "Mantener higiene de manos y limpieza de superficies, siguiendo las medidas preventivas aplicables",
-        "en-US": "Maintain hand hygiene and clean surfaces, following applicable preventive measures"
+        "es-MX": "Sí. Existen riesgos biológicos relacionados con enfermedades infecciosas; deben aplicarse medidas de higiene y prevención.",
+        "en-US": "Yes. There are biological risks related to infectious diseases; hygiene and preventive measures must be applied."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "La higiene y limpieza son controles básicos frente al contacto frecuente con personas, superficies y dinero."
+            "content": "El contacto frecuente con personas y el manejo de dinero puede implicar exposición a agentes biológicos relacionados con enfermedades infecciosas. Por eso deben aplicarse medidas de higiene y prevención de acuerdo con las indicaciones vigentes del centro de trabajo."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "Hygiene and cleaning are basic controls for frequent contact with people, surfaces, and money."
+            "content": "Frequent contact with people and handling money may involve exposure to biological agents related to infectious diseases. Hygiene and preventive measures should therefore be applied according to current workplace instructions."
           }
         ]
       }
@@ -292,38 +292,38 @@
     {
       "Category": "Bloque 2 · Peligros, riesgos y controles básicos de SST en el CAC",
       "Question Text": {
-        "es-MX": "En los riesgos institucionales del CAC, la atención de clientes agresivos o situaciones de violencia puede relacionarse principalmente con:",
-        "en-US": "In the CAC institutional risks, dealing with aggressive customers or violent situations may mainly relate to:"
+        "es-MX": "¿Qué riesgo existe por clientes agresivos o situaciones de violencia?",
+        "en-US": "What risk exists from aggressive customers or situations of violence?"
       },
       "Options": {
         "es-MX": [
-          "Riesgo psicosocial; se deben seguir los procedimientos de seguridad y reportar la situación",
+          "Riesgo psicosocial. Seguir los procedimientos y medidas de seguridad, evitar exponerse innecesariamente y reportar la situación.",
           "Riesgo exclusivamente biológico",
           "Riesgo únicamente de iluminación",
           "Riesgo de continuidad informática"
         ],
         "en-US": [
-          "Psychosocial risk; safety procedures should be followed and the situation reported",
+          "Psychosocial risk. Follow procedures and safety measures, avoid unnecessary exposure, and report the situation.",
           "Exclusively biological risk",
           "Only a lighting risk",
           "IT continuity risk"
         ]
       },
       "Correct Answer": {
-        "es-MX": "Riesgo psicosocial; se deben seguir los procedimientos de seguridad y reportar la situación",
-        "en-US": "Psychosocial risk; safety procedures should be followed and the situation reported"
+        "es-MX": "Riesgo psicosocial. Seguir los procedimientos y medidas de seguridad, evitar exponerse innecesariamente y reportar la situación.",
+        "en-US": "Psychosocial risk. Follow procedures and safety measures, avoid unnecessary exposure, and report the situation."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "Las situaciones de violencia o trato con público hostil aparecen dentro de los riesgos psicosociales aplicables a tiendas/CAC."
+            "content": "La atención de clientes agresivos o situaciones de violencia se identifica en el Bloque 2 como un riesgo psicosocial. La respuesta esperada es seguir procedimientos y medidas de seguridad, evitar exponerse innecesariamente y reportar la situación para su atención y seguimiento."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "Violence or dealing with hostile customers appears among psychosocial risks applicable to stores/CAC."
+            "content": "Dealing with aggressive customers or violent situations is identified in Block 2 as a psychosocial risk. The expected response is to follow procedures and safety measures, avoid unnecessary exposure, and report the situation for attention and follow-up."
           }
         ]
       }
@@ -331,38 +331,38 @@
     {
       "Category": "Bloque 2 · Peligros, riesgos y controles básicos de SST en el CAC",
       "Question Text": {
-        "es-MX": "Ante un robo o asalto, ¿cuál es la actuación más adecuada?",
-        "en-US": "In the event of a robbery or assault, what is the most appropriate action?"
+        "es-MX": "¿Qué debes hacer durante un robo o asalto?",
+        "en-US": "What should you do during a robbery or assault?"
       },
       "Options": {
         "es-MX": [
-          "Seguir el protocolo de seguridad establecido, evitar confrontaciones y atender las indicaciones correspondientes",
+          "Seguir el protocolo establecido por Telcel, priorizar la seguridad de las personas, evitar acciones que aumenten el peligro y no improvisar.",
           "Enfrentar físicamente al agresor para recuperar los bienes",
           "Perseguir al responsable al salir del CAC",
           "Ignorar el protocolo para actuar por cuenta propia"
         ],
         "en-US": [
-          "Follow the established security protocol, avoid confrontation, and follow the corresponding instructions",
+          "Follow Telcel’s established protocol, prioritize people’s safety, avoid actions that increase danger, and do not improvise.",
           "Physically confront the aggressor to recover property",
           "Chase the person responsible after they leave the CAC",
           "Ignore the protocol and act on your own"
         ]
       },
       "Correct Answer": {
-        "es-MX": "Seguir el protocolo de seguridad establecido, evitar confrontaciones y atender las indicaciones correspondientes",
-        "en-US": "Follow the established security protocol, avoid confrontation, and follow the corresponding instructions"
+        "es-MX": "Seguir el protocolo establecido por Telcel, priorizar la seguridad de las personas, evitar acciones que aumenten el peligro y no improvisar.",
+        "en-US": "Follow Telcel’s established protocol, prioritize people’s safety, avoid actions that increase danger, and do not improvise."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "En un robo o asalto debe priorizarse la seguridad de las personas y seguirse el protocolo establecido."
+            "content": "Ante un robo o asalto debe priorizarse la seguridad de las personas. La actuación correcta es seguir el protocolo establecido por Telcel, evitar acciones que incrementen el peligro y no improvisar ni confrontar por cuenta propia."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "In a robbery or assault, people's safety should be prioritized and the established protocol followed."
+            "content": "During a robbery or assault, people’s safety must be prioritized. The correct action is to follow Telcel’s established protocol, avoid actions that increase danger, and avoid improvising or confronting the aggressor on your own."
           }
         ]
       }
@@ -370,38 +370,38 @@
     {
       "Category": "Bloque 2 · Peligros, riesgos y controles básicos de SST en el CAC",
       "Question Text": {
-        "es-MX": "Si observas objetos mal almacenados o una estantería en condición insegura, ¿qué debes hacer?",
-        "en-US": "If you see improperly stored objects or shelving in an unsafe condition, what should you do?"
+        "es-MX": "¿Qué riesgo existe por objetos mal acomodados o estanterías inseguras?",
+        "en-US": "What risk exists from improperly arranged objects or unsafe shelving?"
       },
       "Options": {
         "es-MX": [
-          "Corregir la condición cuando sea seguro hacerlo o reportarla para su atención, manteniendo el área ordenada",
+          "Caída de objetos / riesgo locativo. Mantener almacenamiento seguro, orden y reportar condiciones inseguras.",
           "Dejarla igual mientras todavía haya espacio",
           "Apilar más objetos para evitar que se muevan",
           "Esperar a que ocurra una caída para reportarla"
         ],
         "en-US": [
-          "Correct the condition when it is safe to do so or report it for attention, keeping the area orderly",
+          "Falling objects / locative risk. Maintain safe storage and order, and report unsafe conditions.",
           "Leave it as is while there is still space",
           "Stack more objects to keep them from moving",
           "Wait until something falls before reporting it"
         ]
       },
       "Correct Answer": {
-        "es-MX": "Corregir la condición cuando sea seguro hacerlo o reportarla para su atención, manteniendo el área ordenada",
-        "en-US": "Correct the condition when it is safe to do so or report it for attention, keeping the area orderly"
+        "es-MX": "Caída de objetos / riesgo locativo. Mantener almacenamiento seguro, orden y reportar condiciones inseguras.",
+        "en-US": "Falling objects / locative risk. Maintain safe storage and order, and report unsafe conditions."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "El almacenamiento seguro y el seguimiento de condiciones inseguras ayudan a prevenir golpes, atrapamientos y caída de objetos."
+            "content": "Los objetos mal acomodados o las estanterías inseguras pueden provocar caída de objetos y constituyen un riesgo locativo. La prevención consiste en mantener un almacenamiento seguro y ordenado y reportar cualquier condición que pueda ocasionar golpes o lesiones."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "Safe storage and follow-up of unsafe conditions help prevent impacts, entrapment, and falling objects."
+            "content": "Improperly arranged objects or unsafe shelving may cause falling objects and represent a locative risk. Prevention consists of safe, orderly storage and reporting any condition that could cause impacts or injuries."
           }
         ]
       }
@@ -409,38 +409,38 @@
     {
       "Category": "Bloque 2 · Peligros, riesgos y controles básicos de SST en el CAC",
       "Question Text": {
-        "es-MX": "¿Qué debes hacer con objetos punzocortantes o herramientas que puedan causar una lesión?",
-        "en-US": "What should you do with sharp objects or tools that could cause injury?"
+        "es-MX": "¿Qué riesgos pueden ocasionar objetos punzocortantes?",
+        "en-US": "What risks can sharp objects cause?"
       },
       "Options": {
         "es-MX": [
-          "Usarlos y almacenarlos de forma segura, con la herramienta adecuada y evitando dejarlos expuestos",
+          "Heridas o lesiones. Deben manejarse y almacenarse de forma segura.",
           "Dejarlos sobre cualquier superficie para tenerlos a la mano",
           "Transportarlos sin precaución si el recorrido es corto",
           "Utilizar cualquier objeto improvisado en lugar de la herramienta adecuada"
         ],
         "en-US": [
-          "Use and store them safely, with the proper tool, and avoid leaving them exposed",
+          "Wounds or injuries. They must be handled and stored safely.",
           "Leave them on any surface so they are within reach",
           "Carry them without precautions if the distance is short",
           "Use any improvised object instead of the proper tool"
         ]
       },
       "Correct Answer": {
-        "es-MX": "Usarlos y almacenarlos de forma segura, con la herramienta adecuada y evitando dejarlos expuestos",
-        "en-US": "Use and store them safely, with the proper tool, and avoid leaving them exposed"
+        "es-MX": "Heridas o lesiones. Deben manejarse y almacenarse de forma segura.",
+        "en-US": "Wounds or injuries. They must be handled and stored safely."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "El control de riesgos mecánicos incluye uso correcto, orden y almacenamiento seguro de objetos y herramientas."
+            "content": "Los objetos punzocortantes pueden ocasionar heridas o lesiones. Deben utilizarse, manipularse y almacenarse de manera segura para evitar que queden expuestos o generen un riesgo innecesario para trabajadores o visitantes."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "Mechanical risk control includes proper use, order, and safe storage of objects and tools."
+            "content": "Sharp objects can cause wounds or injuries. They should be used, handled, and stored safely so they are not left exposed or create unnecessary risk for workers or visitors."
           }
         ]
       }
@@ -448,38 +448,38 @@
     {
       "Category": "Bloque 2 · Peligros, riesgos y controles básicos de SST en el CAC",
       "Question Text": {
-        "es-MX": "¿Qué condición debe cumplirse antes de realizar un trabajo de alto riesgo?",
-        "en-US": "What condition should be met before performing high-risk work?"
+        "es-MX": "¿Puede realizarse un trabajo de alto riesgo sin autorización o controles?",
+        "en-US": "Can high-risk work be performed without authorization or controls?"
       },
       "Options": {
         "es-MX": [
-          "Debe contar con la autorización y los controles de seguridad correspondientes",
+          "No. Deben existir gestión, autorización y controles de seguridad correspondientes.",
           "Basta con que el empleado tenga experiencia informal",
           "Puede realizarse sin autorización si dura pocos minutos",
           "Solo se necesita avisar después de terminar"
         ],
         "en-US": [
-          "It must have the corresponding authorization and safety controls",
+          "No. The corresponding management, authorization, and safety controls must be in place.",
           "It is enough for the employee to have informal experience",
           "It may be performed without authorization if it lasts only a few minutes",
           "It only needs to be reported after completion"
         ]
       },
       "Correct Answer": {
-        "es-MX": "Debe contar con la autorización y los controles de seguridad correspondientes",
-        "en-US": "It must have the corresponding authorization and safety controls"
+        "es-MX": "No. Deben existir gestión, autorización y controles de seguridad correspondientes.",
+        "en-US": "No. The corresponding management, authorization, and safety controls must be in place."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "Los trabajos de alto riesgo requieren autorización y controles específicos; no deben improvisarse."
+            "content": "Los trabajos de alto riesgo no deben realizarse sin gestión, autorización y controles de seguridad. La idea clave para auditoría es que este tipo de trabajo requiere medidas específicas antes de ejecutarse; no debe improvisarse ni iniciarse solo por experiencia personal."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "High-risk work requires authorization and specific controls; it should not be improvised."
+            "content": "High-risk work should not be performed without the corresponding management, authorization, and safety controls. The key audit idea is that specific measures must be in place before the work begins; it should not be improvised based only on personal experience."
           }
         ]
       }
@@ -487,38 +487,38 @@
     {
       "Category": "Bloque 2 · Peligros, riesgos y controles básicos de SST en el CAC",
       "Question Text": {
-        "es-MX": "¿Dónde puedes consultar los riesgos institucionales de Seguridad y Salud en el Trabajo aplicables a una Tienda o CAC?",
-        "en-US": "Where can you check the institutional Occupational Health and Safety risks applicable to a Store or CAC?"
+        "es-MX": "¿Dónde consultarías los riesgos institucionales de SST aplicables a una Tienda/CAC?",
+        "en-US": "Where would you check the institutional OHS risks applicable to a Store/CAC?"
       },
       "Options": {
         "es-MX": [
-          "Portal SGI → Riesgos → Reporte de riesgos de negocio e institucionales → Riesgos Institucionales – SST → archivo de Riesgos Institucionales SST por Tipo de Centro de Trabajo 2026",
+          "Portal SGI → Riesgos → Reporte de riesgos de negocio e institucionales. Dentro del reporte se encuentra la sección de Riesgos Institucionales de SST y el enlace a “Riesgos Institucionales SST x Tipo de Centro de Trabajo 2026.xlsx”",
           "Portal SGI → Cultura Organizacional → Misión y Visión",
           "Portal SGI → Auditorías → Calendario únicamente",
           "Intranet Nacional → Nómina → Riesgos"
         ],
         "en-US": [
-          "SGI Portal → Risks → Business and Institutional Risk Report → Institutional OHS Risks → 2026 Institutional OHS Risks by Workplace Type file",
+          "SGI Portal → Risks → Business and institutional risk report. Within the report is the Institutional OHS Risks section and the link to “Institutional OHS Risks by Workplace Type 2026.xlsx”.",
           "SGI Portal → Organizational Culture → Mission and Vision",
           "SGI Portal → Audits → Calendar only",
           "National Intranet → Payroll → Risks"
         ]
       },
       "Correct Answer": {
-        "es-MX": "Portal SGI → Riesgos → Reporte de riesgos de negocio e institucionales → Riesgos Institucionales – SST → archivo de Riesgos Institucionales SST por Tipo de Centro de Trabajo 2026",
-        "en-US": "SGI Portal → Risks → Business and Institutional Risk Report → Institutional OHS Risks → 2026 Institutional OHS Risks by Workplace Type file"
+        "es-MX": "Portal SGI → Riesgos → Reporte de riesgos de negocio e institucionales. Dentro del reporte se encuentra la sección de Riesgos Institucionales de SST y el enlace a “Riesgos Institucionales SST x Tipo de Centro de Trabajo 2026.xlsx”",
+        "en-US": "SGI Portal → Risks → Business and institutional risk report. Within the report is the Institutional OHS Risks section and the link to “Institutional OHS Risks by Workplace Type 2026.xlsx”."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "El archivo institucional permite identificar los riesgos SST que corresponden al tipo de centro de trabajo."
+            "content": "La ruta indicada en el Excel permite localizar los riesgos institucionales de SST aplicables al tipo de centro de trabajo. Es importante no solo saber que existe el documento, sino poder explicar la ruta: Portal SGI → Riesgos → Reporte de riesgos de negocio e institucionales → sección de Riesgos Institucionales de SST → archivo por tipo de centro de trabajo 2026."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "The institutional file helps identify the OHS risks corresponding to the type of workplace."
+            "content": "The route shown in the Excel is used to locate institutional OHS risks applicable to the workplace type. It is important not only to know the document exists, but also to explain the route through the SGI Portal and the 2026 workplace-type file."
           }
         ]
       }
@@ -526,38 +526,38 @@
     {
       "Category": "Bloque 2 · Peligros, riesgos y controles básicos de SST en el CAC",
       "Question Text": {
-        "es-MX": "¿Dónde puedes localizar el mapa de calor de riesgos de Seguridad y Salud en el Trabajo?",
-        "en-US": "Where can you locate the Occupational Health and Safety risk heat map?"
+        "es-MX": "¿Dónde consultarías el mapa de calor de Seguridad y Salud en el Trabajo?",
+        "en-US": "Where would you check the Occupational Health and Safety risk heat map?"
       },
       "Options": {
         "es-MX": [
-          "Portal SGI → Riesgos → Mapas de calor → 45K1",
+          "Portal SGI → Riesgos → Mapas de calor a nivel empresa → 45K1 Riesgos de Seguridad y Salud en el Trabajo.",
           "Portal SGI → Cultura Organizacional → Valores",
           "Portal SGI → Comunicación SGI → Cursos",
           "BIT → Correo → Calendario"
         ],
         "en-US": [
-          "SGI Portal → Risks → Heat Maps → 45K1",
+          "SGI Portal → Risks → Company-level heat maps → 45K1 Occupational Health and Safety Risks.",
           "SGI Portal → Organizational Culture → Values",
           "SGI Portal → SGI Communication → Courses",
           "BIT → Email → Calendar"
         ]
       },
       "Correct Answer": {
-        "es-MX": "Portal SGI → Riesgos → Mapas de calor → 45K1",
-        "en-US": "SGI Portal → Risks → Heat Maps → 45K1"
+        "es-MX": "Portal SGI → Riesgos → Mapas de calor a nivel empresa → 45K1 Riesgos de Seguridad y Salud en el Trabajo.",
+        "en-US": "SGI Portal → Risks → Company-level heat maps → 45K1 Occupational Health and Safety Risks."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "Para SST se consulta el mapa de calor correspondiente a 45K1."
+            "content": "El mapa de calor de SST se consulta desde el Portal SGI, en Riesgos, dentro de los mapas de calor a nivel empresa, seleccionando 45K1 Riesgos de Seguridad y Salud en el Trabajo. El punto clave es saber ubicar la información cuando un auditor pregunte dónde se consulta."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "For OHS, the heat map corresponding to 45K1 is used."
+            "content": "The OHS heat map is consulted in the SGI Portal under Risks, within company-level heat maps, selecting 45K1 Occupational Health and Safety Risks. The key point is knowing where to locate the information when an auditor asks."
           }
         ]
       }
@@ -565,38 +565,38 @@
     {
       "Category": "Bloque 2 · Peligros, riesgos y controles básicos de SST en el CAC",
       "Question Text": {
-        "es-MX": "En una evaluación de riesgos, ¿qué representan niveles como bajo, medio, alto o extremo?",
-        "en-US": "In a risk assessment, what do levels such as low, medium, high, or extreme represent?"
+        "es-MX": "¿Qué significan los niveles bajo, medio, alto y extremo?",
+        "en-US": "What do the low, medium, high, and extreme levels mean?"
       },
       "Options": {
         "es-MX": [
-          "La clasificación o priorización del nivel de riesgo para orientar su tratamiento y controles",
+          "Son niveles de clasificación/priorización de los riesgos de acuerdo con su valoración.",
           "El nivel jerárquico del empleado que detectó el riesgo",
           "La antigüedad del documento",
           "El número de auditorías realizadas en el año"
         ],
         "en-US": [
-          "The classification or prioritization of the risk level to guide its treatment and controls",
+          "They are classification/prioritization levels for risks according to their assessment.",
           "The job level of the employee who identified the risk",
           "The age of the document",
           "The number of audits performed during the year"
         ]
       },
       "Correct Answer": {
-        "es-MX": "La clasificación o priorización del nivel de riesgo para orientar su tratamiento y controles",
-        "en-US": "The classification or prioritization of the risk level to guide its treatment and controls"
+        "es-MX": "Son niveles de clasificación/priorización de los riesgos de acuerdo con su valoración.",
+        "en-US": "They are classification/prioritization levels for risks according to their assessment."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "Estos niveles ayudan a valorar y priorizar los riesgos para determinar su atención."
+            "content": "Bajo, medio, alto y extremo son niveles usados para clasificar o priorizar riesgos según su valoración. Sirven para distinguir qué riesgos requieren mayor atención relativa y orientar su tratamiento, sin confundirlos con puestos, áreas o niveles jerárquicos."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "These levels help assess and prioritize risks to determine how they should be addressed."
+            "content": "Low, medium, high, and extreme are levels used to classify or prioritize risks according to their assessment. They help distinguish which risks require greater relative attention and guide their treatment."
           }
         ]
       }
@@ -604,38 +604,38 @@
     {
       "Category": "Bloque 2 · Peligros, riesgos y controles básicos de SST en el CAC",
       "Question Text": {
-        "es-MX": "¿Cuál de los siguientes grupos contiene ejemplos de controles para reducir riesgos en el CAC?",
-        "en-US": "Which of the following groups contains examples of controls to reduce risks in the CAC?"
+        "es-MX": "¿Qué controles o acciones conoces para prevenir riesgos en el CAC?",
+        "en-US": "What controls or actions do you know to prevent risks in the CAC?"
       },
       "Options": {
         "es-MX": [
-          "Mantenimiento, orden y limpieza, señalización, capacitación, equipo de protección cuando aplique y procedimientos de seguridad",
+          "Ejemplos: orden y limpieza, mantenimiento, señalización, recorridos de Seguridad e Higiene, simulacros, capacitación, pausas activas, protocolos y reporte de condiciones inseguras.",
           "Eliminar toda señalización y depender solo de la experiencia",
           "Trabajar más rápido aunque se omitan controles",
           "Esperar a la auditoría para corregir condiciones"
         ],
         "en-US": [
-          "Maintenance, order and cleanliness, signage, training, protective equipment when applicable, and safety procedures",
+          "Examples: order and cleanliness, maintenance, signage, Safety and Hygiene inspections, drills, training, active breaks, protocols, and reporting unsafe conditions.",
           "Remove all signage and rely only on experience",
           "Work faster even if controls are skipped",
           "Wait for the audit to correct conditions"
         ]
       },
       "Correct Answer": {
-        "es-MX": "Mantenimiento, orden y limpieza, señalización, capacitación, equipo de protección cuando aplique y procedimientos de seguridad",
-        "en-US": "Maintenance, order and cleanliness, signage, training, protective equipment when applicable, and safety procedures"
+        "es-MX": "Ejemplos: orden y limpieza, mantenimiento, señalización, recorridos de Seguridad e Higiene, simulacros, capacitación, pausas activas, protocolos y reporte de condiciones inseguras.",
+        "en-US": "Examples: order and cleanliness, maintenance, signage, Safety and Hygiene inspections, drills, training, active breaks, protocols, and reporting unsafe conditions."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "Los controles pueden ser técnicos, administrativos, de mantenimiento, capacitación, señalización o PPE cuando corresponda."
+            "content": "Los controles mencionados en el Excel abarcan medidas preventivas del día a día: orden y limpieza, mantenimiento, señalización, recorridos de Seguridad e Higiene, simulacros, capacitación, pausas activas, protocolos y reporte de condiciones inseguras. En auditoría ayuda mencionar ejemplos que realmente se apliquen en el CAC."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "Controls may include technical, administrative, maintenance, training, signage, or PPE measures when applicable."
+            "content": "The controls listed in the Excel include everyday preventive measures: order and cleanliness, maintenance, signage, Safety and Hygiene inspections, drills, training, active breaks, protocols, and reporting unsafe conditions. In an audit, examples actually applied in the CAC are especially useful."
           }
         ]
       }
@@ -643,38 +643,38 @@
     {
       "Category": "Bloque 2 · Peligros, riesgos y controles básicos de SST en el CAC",
       "Question Text": {
-        "es-MX": "¿Cómo puede contribuir un empleado a reducir los riesgos de Seguridad y Salud en el Trabajo?",
-        "en-US": "How can an employee help reduce Occupational Health and Safety risks?"
+        "es-MX": "¿Cómo contribuyes tú a disminuir los riesgos del CAC?",
+        "en-US": "How do you contribute to reducing risks in the CAC?"
       },
       "Options": {
         "es-MX": [
-          "Aplicando los controles de su puesto, reportando condiciones inseguras y participando en las medidas preventivas",
+          "Cumpliendo procedimientos, manteniendo orden, reportando peligros, siguiendo medidas de seguridad y participando en capacitación/simulacros.",
           "Dejando toda la responsabilidad únicamente al jefe",
           "Ocultando condiciones menores para evitar reportes",
           "Actuando solo cuando el auditor esté presente"
         ],
         "en-US": [
-          "By applying job-specific controls, reporting unsafe conditions, and participating in preventive measures",
+          "By following procedures, maintaining order, reporting hazards, following safety measures, and participating in training/drills.",
           "By leaving all responsibility only to the manager",
           "By hiding minor conditions to avoid reports",
           "By acting only when the auditor is present"
         ]
       },
       "Correct Answer": {
-        "es-MX": "Aplicando los controles de su puesto, reportando condiciones inseguras y participando en las medidas preventivas",
-        "en-US": "By applying job-specific controls, reporting unsafe conditions, and participating in preventive measures"
+        "es-MX": "Cumpliendo procedimientos, manteniendo orden, reportando peligros, siguiendo medidas de seguridad y participando en capacitación/simulacros.",
+        "en-US": "By following procedures, maintaining order, reporting hazards, following safety measures, and participating in training/drills."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "Todos los trabajadores participan en la prevención al aplicar controles y comunicar peligros o condiciones inseguras."
+            "content": "Cada trabajador contribuye a disminuir los riesgos al cumplir procedimientos, mantener orden, reportar peligros, respetar las medidas de seguridad y participar en capacitación y simulacros. La prevención no depende únicamente del jefe o de la Comisión de Seguridad e Higiene."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "All workers participate in prevention by applying controls and communicating hazards or unsafe conditions."
+            "content": "Each worker helps reduce risks by following procedures, maintaining order, reporting hazards, observing safety measures, and participating in training and drills. Prevention is not solely the responsibility of the manager or the Safety and Hygiene Commission."
           }
         ]
       }
@@ -682,38 +682,38 @@
     {
       "Category": "Bloque 2 · Peligros, riesgos y controles básicos de SST en el CAC",
       "Question Text": {
-        "es-MX": "Si detectas un peligro nuevo o una condición insegura que no estaba contemplada, ¿qué debes hacer?",
-        "en-US": "If you detect a new hazard or an unsafe condition that had not been considered, what should you do?"
+        "es-MX": "Si identificas un peligro nuevo, ¿qué debes hacer?",
+        "en-US": "If you identify a new hazard, what should you do?"
       },
       "Options": {
         "es-MX": [
-          "Reportarlo oportunamente al superior para que se evalúe, atienda y dé seguimiento",
+          "Reportarlo oportunamente al superior o responsable correspondiente para que sea evaluado y atendido.",
           "Esperar a que aparezca en el próximo documento anual",
           "No informar mientras no haya ocurrido un accidente",
           "Modificar por cuenta propia los documentos oficiales"
         ],
         "en-US": [
-          "Report it promptly to the supervisor so it can be evaluated, addressed, and followed up",
+          "Report it promptly to the supervisor or corresponding responsible person so it can be evaluated and addressed.",
           "Wait until it appears in the next annual document",
           "Do not report it unless an accident has occurred",
           "Modify official documents on your own"
         ]
       },
       "Correct Answer": {
-        "es-MX": "Reportarlo oportunamente al superior para que se evalúe, atienda y dé seguimiento",
-        "en-US": "Report it promptly to the supervisor so it can be evaluated, addressed, and followed up"
+        "es-MX": "Reportarlo oportunamente al superior o responsable correspondiente para que sea evaluado y atendido.",
+        "en-US": "Report it promptly to the supervisor or corresponding responsible person so it can be evaluated and addressed."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "Los riesgos y condiciones nuevas deben comunicarse para su evaluación y tratamiento; no se espera a que ocurra un incidente."
+            "content": "Un peligro nuevo debe comunicarse oportunamente para que pueda evaluarse y atenderse. No es necesario esperar a que ocurra un accidente; reportarlo permite que el responsable correspondiente determine las acciones y controles necesarios."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "New risks and conditions should be communicated for evaluation and treatment; there is no need to wait for an incident."
+            "content": "A new hazard should be communicated promptly so it can be evaluated and addressed. There is no need to wait for an accident; reporting it allows the responsible person to determine the necessary actions and controls."
           }
         ]
       }

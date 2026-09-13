@@ -1,17 +1,19 @@
 {
   "meta": {
-    "slug": "auditoria-bloque-4",
-    "title": "Preparación y Respuesta ante Emergencias / Protección Civil",
+    "slug": "auditoria-bloque-4-excel-2026",
+    "title": "Bloque 4 — Preparación y Respuesta ante Emergencias / Protección Civil",
     "subject": "Auditoría CAC",
     "unit": 4,
     "classNo": 1,
-    "description": "Quiz de estudio del Bloque 4 para preparación de auditoría SGI / 45K1.",
+    "description": "Quiz de estudio generado a partir de la pestaña Bloque4 del Excel de Auditoría CAC 2026. Conserva las 23 preguntas y respuestas del bloque y amplía las explicaciones con las sugerencias/evidencias incluidas en la misma pestaña.",
     "tags": [
       "auditoria",
       "SGI",
       "45K1",
+      "SST",
       "emergencias",
       "proteccion civil",
+      "brigadas",
       "CAC Delicias"
     ]
   },
@@ -19,38 +21,38 @@
     {
       "Category": "Bloque 4 · Preparación y Respuesta ante Emergencias / Protección Civil",
       "Question Text": {
-        "es-MX": "¿Dónde se encuentra físicamente el Programa Interno de Protección Civil (PIPC) en CAC Delicias 1?",
-        "en-US": "Where is the Internal Civil Protection Program (PIPC) physically located at CAC Delicias 1?"
+        "es-MX": "¿Dónde se encuentra el Programa Interno de Protección Civil de este CAC?",
+        "en-US": "Where is this CAC's Internal Civil Protection Program located?"
       },
       "Options": {
         "es-MX": [
-          "Impreso detrás de la barra 9, en la barra de la supervisora",
-          "Únicamente en el correo del jefe",
-          "En la bodega, junto a los extintores",
-          "Solo dentro del Portal SGI"
+          "En CAC Delicias I está impreso detrás de la barra 9, en la barra de la supervisora. El personal debe conocer dónde consultarlo.",
+          "Únicamente en @Doc; no existe copia física en el CAC.",
+          "En el punto de reunión exterior, junto al anuncio de Telcel.",
+          "En la sección de Mapas de calor 45K1 del Portal SGI."
         ],
         "en-US": [
-          "Printed behind counter 9, at the supervisor's counter",
-          "Only in the manager's email",
-          "In the warehouse, next to the fire extinguishers",
-          "Only inside the SGI Portal"
+          "At CAC Delicias I it is printed behind counter 9, at the supervisor's counter. Staff should know where to consult it.",
+          "Only in @Doc; there is no physical copy at the CAC.",
+          "At the outdoor assembly point, next to the Telcel sign.",
+          "In the 45K1 Heat Maps section of the SGI Portal."
         ]
       },
       "Correct Answer": {
-        "es-MX": "Impreso detrás de la barra 9, en la barra de la supervisora",
-        "en-US": "Printed behind counter 9, at the supervisor's counter"
+        "es-MX": "En CAC Delicias I está impreso detrás de la barra 9, en la barra de la supervisora. El personal debe conocer dónde consultarlo.",
+        "en-US": "At CAC Delicias I it is printed behind counter 9, at the supervisor's counter. Staff should know where to consult it."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "Todos deben saber localizar la copia física del PIPC. En CAC Delicias 1 está detrás de la barra 9."
+            "content": "El Excel indica que no es necesario memorizar todo el PIPC, pero sí saber dónde está disponible para consulta. Para la entrevista de auditoría conviene poder señalar físicamente la copia ubicada detrás de la barra 9."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "Everyone should know where to locate the physical PIPC copy. At CAC Delicias 1 it is behind counter 9."
+            "content": "The Excel indicates that staff do not need to memorize the entire Internal Civil Protection Program, but they should know where it is available for consultation. For an audit interview, it is useful to be able to physically point out the copy located behind counter 9."
           }
         ]
       }
@@ -63,33 +65,33 @@
       },
       "Options": {
         "es-MX": [
-          "En @-Doc, mediante el documento O-00.02.01.01.04-001",
-          "Solo en el correo personal del supervisor",
-          "Únicamente en el Programa de Nómina",
-          "En el módulo de ventas del CAC"
+          "En @Doc, buscando el documento O-00.02.01.01.04-001 Plan de Preparación y Respuesta ante Emergencias Telcel.",
+          "Únicamente en la copia impresa del PIPC detrás de la barra 9.",
+          "En Portal SGI → Riesgos → Mapas de calor → 45K1.",
+          "En el inventario de extintores del CAC."
         ],
         "en-US": [
-          "In @-Doc, through document O-00.02.01.01.04-001",
-          "Only in the supervisor's personal email",
-          "Only in the Payroll Program",
-          "In the CAC sales module"
+          "In @Doc, by searching for document O-00.02.01.01.04-001 Telcel Emergency Preparedness and Response Plan.",
+          "Only in the printed PIPC copy behind counter 9.",
+          "In SGI Portal → Risks → Heat Maps → 45K1.",
+          "In the CAC fire extinguisher inventory."
         ]
       },
       "Correct Answer": {
-        "es-MX": "En @-Doc, mediante el documento O-00.02.01.01.04-001",
-        "en-US": "In @-Doc, through document O-00.02.01.01.04-001"
+        "es-MX": "En @Doc, buscando el documento O-00.02.01.01.04-001 Plan de Preparación y Respuesta ante Emergencias Telcel.",
+        "en-US": "In @Doc, by searching for document O-00.02.01.01.04-001 Telcel Emergency Preparedness and Response Plan."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "El Plan de Preparación y Respuesta ante Emergencias Telcel se encuentra como documento controlado en @-Doc."
+            "content": "El Bloque 4 señala expresamente el documento O-00.02.01.01.04-001 en @Doc. También menciona que puede llegarse desde el material de apoyo de 45K1 relacionado con preparación ante emergencias y que el Plan aplica a los centros de trabajo Telcel a nivel nacional."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "The Telcel Emergency Preparedness and Response Plan is available as a controlled document in @-Doc."
+            "content": "Block 4 specifically identifies document O-00.02.01.01.04-001 in @Doc. It also notes that it can be reached from the 45K1 support material related to emergency preparedness and that the Plan applies to Telcel workplaces nationwide."
           }
         ]
       }
@@ -97,38 +99,38 @@
     {
       "Category": "Bloque 4 · Preparación y Respuesta ante Emergencias / Protección Civil",
       "Question Text": {
-        "es-MX": "¿Cuáles son las tres fases principales del Plan de Preparación y Respuesta ante Emergencias?",
-        "en-US": "What are the three main phases of the Emergency Preparedness and Response Plan?"
+        "es-MX": "¿Cuáles son las tres fases de respuesta ante una emergencia?",
+        "en-US": "What are the three phases of emergency response?"
       },
       "Options": {
         "es-MX": [
-          "Preparación, Respuesta y Recuperación",
-          "Prevención, Venta y Cierre",
-          "Planeación, Auditoría y Nómina",
-          "Inspección, Cobranza y Capacitación"
+          "Preparación (antes), Respuesta (durante) y Recuperación (después).",
+          "Identificación, Auditoría y Cierre.",
+          "Prevención, Sanción y Seguimiento.",
+          "Alerta, Inventario y Mantenimiento."
         ],
         "en-US": [
-          "Preparedness, Response, and Recovery",
-          "Prevention, Sales, and Closing",
-          "Planning, Audit, and Payroll",
-          "Inspection, Collections, and Training"
+          "Preparedness (before), Response (during), and Recovery (after).",
+          "Identification, Audit, and Closure.",
+          "Prevention, Sanction, and Follow-up.",
+          "Alert, Inventory, and Maintenance."
         ]
       },
       "Correct Answer": {
-        "es-MX": "Preparación, Respuesta y Recuperación",
-        "en-US": "Preparedness, Response, and Recovery"
+        "es-MX": "Preparación (antes), Respuesta (durante) y Recuperación (después).",
+        "en-US": "Preparedness (before), Response (during), and Recovery (after)."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "El plan se estructura en acciones antes, durante y después de una emergencia: Preparación, Respuesta y Recuperación."
+            "content": "Esta es una de las respuestas que el Excel recomienda que todo el personal pueda dar. Preparación corresponde a lo que se hace antes, como capacitación y simulacros; Respuesta a la protección y atención durante el evento; y Recuperación al restablecimiento posterior."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "The plan is structured around actions before, during, and after an emergency: Preparedness, Response, and Recovery."
+            "content": "This is one of the answers the Excel recommends all staff should be able to give. Preparedness covers what is done beforehand, such as training and drills; Response covers protection and action during the event; and Recovery covers restoring operations afterward."
           }
         ]
       }
@@ -136,38 +138,38 @@
     {
       "Category": "Bloque 4 · Preparación y Respuesta ante Emergencias / Protección Civil",
       "Question Text": {
-        "es-MX": "¿Cuál es una responsabilidad básica de los trabajadores en materia de emergencias?",
-        "en-US": "What is a basic worker responsibility regarding emergencies?"
+        "es-MX": "¿Qué responsabilidad tiene cada trabajador respecto a rutas de evacuación y equipos de emergencia?",
+        "en-US": "What responsibility does each worker have regarding evacuation routes and emergency equipment?"
       },
       "Options": {
         "es-MX": [
-          "Mantener libres y sin obstrucciones las rutas, salidas, señalización y equipos contra incendio",
-          "Bloquear temporalmente rutas de evacuación si hay poco espacio",
-          "Mover los equipos de emergencia sin autorización",
-          "Esperar a una auditoría para revisar las salidas"
+          "Mantener libres de obstáculos las rutas de evacuación, salidas de emergencia, señales y equipos contra incendios.",
+          "Utilizar las rutas de evacuación para almacenar objetos temporalmente.",
+          "Mover señales y equipos cuando estorben durante la operación.",
+          "Dejar esa responsabilidad exclusivamente a los brigadistas."
         ],
         "en-US": [
-          "Keep evacuation routes, exits, signage, and firefighting equipment clear and unobstructed",
-          "Temporarily block evacuation routes if space is limited",
-          "Move emergency equipment without authorization",
-          "Wait for an audit before checking exits"
+          "Keep evacuation routes, emergency exits, signs, and firefighting equipment free of obstructions.",
+          "Use evacuation routes for temporary storage.",
+          "Move signs and equipment whenever they interfere with operations.",
+          "Leave that responsibility exclusively to brigade members."
         ]
       },
       "Correct Answer": {
-        "es-MX": "Mantener libres y sin obstrucciones las rutas, salidas, señalización y equipos contra incendio",
-        "en-US": "Keep evacuation routes, exits, signage, and firefighting equipment clear and unobstructed"
+        "es-MX": "Mantener libres de obstáculos las rutas de evacuación, salidas de emergencia, señales y equipos contra incendios.",
+        "en-US": "Keep evacuation routes, emergency exits, signs, and firefighting equipment free of obstructions."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "Mantener despejados los medios de evacuación y equipos de emergencia facilita una respuesta segura."
+            "content": "El Excel marca esta frase como una responsabilidad que conviene aprender prácticamente tal cual. El objetivo es que las rutas, salidas, señalización y equipos de emergencia permanezcan accesibles y utilizables cuando se necesiten."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "Keeping evacuation routes and emergency equipment clear supports a safe response."
+            "content": "The Excel marks this as a responsibility worth learning almost verbatim. The objective is to keep routes, exits, signage, and emergency equipment accessible and usable when needed."
           }
         ]
       }
@@ -175,38 +177,38 @@
     {
       "Category": "Bloque 4 · Preparación y Respuesta ante Emergencias / Protección Civil",
       "Question Text": {
-        "es-MX": "¿Qué debes hacer durante una evacuación?",
-        "en-US": "What should you do during an evacuation?"
+        "es-MX": "¿Qué debes hacer cuando se indique una evacuación?",
+        "en-US": "What should you do when an evacuation is ordered?"
       },
       "Options": {
         "es-MX": [
-          "Mantener la calma, suspender actividades, seguir a los brigadistas y la ruta de evacuación, y dirigirse al punto de reunión sin correr, gritar ni empujar",
-          "Salir por cualquier acceso aunque no sea una ruta autorizada",
-          "Regresar por objetos personales antes de evacuar",
-          "Esperar a que todos terminen sus actividades antes de moverse"
+          "Mantener la calma, interrumpir las actividades, seguir las indicaciones de los brigadistas o la ruta señalizada y dirigirse al punto de reunión. No correr, no gritar y no empujar.",
+          "Seguir trabajando hasta que un brigadista llegue personalmente por ti.",
+          "Correr hacia la salida más cercana y separarte del grupo.",
+          "Regresar por objetos personales antes de dirigirte al punto de reunión."
         ],
         "en-US": [
-          "Remain calm, stop activities, follow brigade members and the evacuation route, and go to the meeting point without running, shouting, or pushing",
-          "Leave through any access even if it is not an authorized route",
-          "Go back for personal belongings before evacuating",
-          "Wait until everyone finishes their activities before moving"
+          "Remain calm, stop your activities, follow brigade members' instructions or the marked route, and go to the assembly point. Do not run, shout, or push.",
+          "Keep working until a brigade member personally comes to get you.",
+          "Run to the nearest exit and separate from the group.",
+          "Go back for personal belongings before heading to the assembly point."
         ]
       },
       "Correct Answer": {
-        "es-MX": "Mantener la calma, suspender actividades, seguir a los brigadistas y la ruta de evacuación, y dirigirse al punto de reunión sin correr, gritar ni empujar",
-        "en-US": "Remain calm, stop activities, follow brigade members and the evacuation route, and go to the meeting point without running, shouting, or pushing"
+        "es-MX": "Mantener la calma, interrumpir las actividades, seguir las indicaciones de los brigadistas o la ruta señalizada y dirigirse al punto de reunión. No correr, no gritar y no empujar.",
+        "en-US": "Remain calm, stop your activities, follow brigade members' instructions or the marked route, and go to the assembly point. Do not run, shout, or push."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "Durante una evacuación se siguen las rutas e indicaciones establecidas y se evita generar pánico o accidentes adicionales."
+            "content": "El PIPC, según la sugerencia del Bloque 4, indica seguir las flechas de las rutas de evacuación hasta el punto de reunión. La respuesta completa enfatiza calma, suspensión de actividades, obedecer indicaciones y evacuar sin correr, gritar ni empujar."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "During an evacuation, established routes and instructions are followed while avoiding panic or additional accidents."
+            "content": "According to the Block 4 guidance, the PIPC instructs staff to follow evacuation-route arrows to the assembly point. The complete response emphasizes remaining calm, stopping activities, following instructions, and evacuating without running, shouting, or pushing."
           }
         ]
       }
@@ -215,37 +217,37 @@
       "Category": "Bloque 4 · Preparación y Respuesta ante Emergencias / Protección Civil",
       "Question Text": {
         "es-MX": "¿Qué debes hacer al llegar al punto de reunión?",
-        "en-US": "What should you do when you reach the meeting point?"
+        "en-US": "What should you do when you arrive at the assembly point?"
       },
       "Options": {
         "es-MX": [
-          "Permanecer con el grupo, reportarse, esperar instrucciones y no regresar por cuenta propia",
-          "Retirarte del lugar inmediatamente sin avisar",
-          "Regresar al CAC para revisar si quedó algo encendido",
-          "Separarte del grupo para buscar información"
+          "Permanecer con el grupo, reportarse y esperar instrucciones de los brigadistas; no regresar por cuenta propia al inmueble.",
+          "Retirarte inmediatamente del lugar sin informar a nadie.",
+          "Separarte del grupo para revisar otras áreas.",
+          "Regresar al inmueble cuando consideres que ya no hay peligro."
         ],
         "en-US": [
-          "Stay with the group, report in, wait for instructions, and do not return on your own",
-          "Leave the area immediately without informing anyone",
-          "Return to the CAC to check whether something was left on",
-          "Separate from the group to look for information"
+          "Stay with the group, report in, and wait for instructions from brigade members; do not re-enter the building on your own.",
+          "Leave the area immediately without informing anyone.",
+          "Separate from the group to check other areas.",
+          "Re-enter the building when you personally believe the danger is over."
         ]
       },
       "Correct Answer": {
-        "es-MX": "Permanecer con el grupo, reportarse, esperar instrucciones y no regresar por cuenta propia",
-        "en-US": "Stay with the group, report in, wait for instructions, and do not return on your own"
+        "es-MX": "Permanecer con el grupo, reportarse y esperar instrucciones de los brigadistas; no regresar por cuenta propia al inmueble.",
+        "en-US": "Stay with the group, report in, and wait for instructions from brigade members; do not re-enter the building on your own."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "El punto de reunión permite concentrar al personal, verificar su presencia y esperar indicaciones seguras."
+            "content": "El Bloque 4 indica que en el punto de reunión el personal no debe separarse de su grupo y debe esperar instrucciones. La idea es facilitar el control de las personas evacuadas y evitar reingresos no autorizados."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "The meeting point allows personnel to gather, confirm attendance, and wait for safe instructions."
+            "content": "Block 4 indicates that at the assembly point staff should not separate from their group and must wait for instructions. The purpose is to facilitate accountability of evacuees and prevent unauthorized re-entry."
           }
         ]
       }
@@ -253,38 +255,38 @@
     {
       "Category": "Bloque 4 · Preparación y Respuesta ante Emergencias / Protección Civil",
       "Question Text": {
-        "es-MX": "¿Dónde se encuentra el punto de reunión externo de CAC Delicias 1?",
-        "en-US": "Where is the external meeting point for CAC Delicias 1?"
+        "es-MX": "¿Cuántos puntos de reunión tiene el CAC Delicias I?",
+        "en-US": "How many assembly points does CAC Delicias I have?"
       },
       "Options": {
         "es-MX": [
-          "En el estacionamiento exterior, junto al anuncio grande de Telcel ubicado en el poste",
-          "Dentro del área de cajas",
-          "En la bodega del CAC",
-          "Detrás de la barra 9"
+          "Un punto de reunión en el exterior.",
+          "Dos puntos de reunión en el interior.",
+          "Dos puntos de reunión exteriores.",
+          "Un punto de reunión dentro de la bodega."
         ],
         "en-US": [
-          "In the outside parking lot, next to the large Telcel sign on the pole",
-          "Inside the cashier area",
-          "In the CAC warehouse",
-          "Behind counter 9"
+          "One outdoor assembly point.",
+          "Two indoor assembly points.",
+          "Two outdoor assembly points.",
+          "One assembly point inside the storage room."
         ]
       },
       "Correct Answer": {
-        "es-MX": "En el estacionamiento exterior, junto al anuncio grande de Telcel ubicado en el poste",
-        "en-US": "In the outside parking lot, next to the large Telcel sign on the pole"
+        "es-MX": "Un punto de reunión en el exterior.",
+        "en-US": "One outdoor assembly point."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "El punto de reunión externo identificado para el CAC está en el estacionamiento, junto al anuncio grande de Telcel en el poste."
+            "content": "El inventario citado en el Bloque 4 registra un punto de reunión exterior. Además de recordar el número, la sugerencia es que cada empleado pueda señalar físicamente dónde se encuentra."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "The identified external meeting point for the CAC is in the parking lot, next to the large Telcel sign on the pole."
+            "content": "The inventory cited in Block 4 records one outdoor assembly point. In addition to remembering the number, the guidance is that each employee should be able to physically point out its location."
           }
         ]
       }
@@ -292,38 +294,38 @@
     {
       "Category": "Bloque 4 · Preparación y Respuesta ante Emergencias / Protección Civil",
       "Question Text": {
-        "es-MX": "¿Qué actividades pueden realizar las brigadas de emergencia de acuerdo con su capacitación?",
-        "en-US": "What activities may emergency brigades perform according to their training?"
+        "es-MX": "¿Qué hacen las Brigadas de Emergencia?",
+        "en-US": "What do the Emergency Brigades do?"
       },
       "Options": {
         "es-MX": [
-          "Participar en simulacros, aplicar protocolos de emergencia, apoyar primeros auxilios, evacuación, respuesta a conatos y búsqueda o rescate cuando corresponda",
-          "Autorizar vacaciones y horarios",
-          "Realizar únicamente inventarios",
-          "Sustituir permanentemente al personal de mantenimiento"
+          "Participan en capacitación y simulacros, aplican los protocolos de emergencia, brindan primeros auxilios y apoyan en evacuación, combate de conatos, búsqueda y rescate según su preparación.",
+          "Únicamente elaboran reportes administrativos después de una emergencia.",
+          "Solo revisan documentos durante las auditorías.",
+          "Su única función es llamar a servicios externos."
         ],
         "en-US": [
-          "Participate in drills, apply emergency protocols, support first aid, evacuation, incipient-fire response, and search or rescue when applicable",
-          "Authorize vacations and schedules",
-          "Perform inventories only",
-          "Permanently replace maintenance personnel"
+          "They participate in training and drills, apply emergency protocols, provide first aid, and support evacuation, incipient-fire response, search, and rescue according to their training.",
+          "They only prepare administrative reports after an emergency.",
+          "They only review documents during audits.",
+          "Their only function is to call external emergency services."
         ]
       },
       "Correct Answer": {
-        "es-MX": "Participar en simulacros, aplicar protocolos de emergencia, apoyar primeros auxilios, evacuación, respuesta a conatos y búsqueda o rescate cuando corresponda",
-        "en-US": "Participate in drills, apply emergency protocols, support first aid, evacuation, incipient-fire response, and search or rescue when applicable"
+        "es-MX": "Participan en capacitación y simulacros, aplican los protocolos de emergencia, brindan primeros auxilios y apoyan en evacuación, combate de conatos, búsqueda y rescate según su preparación.",
+        "en-US": "They participate in training and drills, apply emergency protocols, provide first aid, and support evacuation, incipient-fire response, search, and rescue according to their training."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "Las funciones de brigada dependen de la capacitación y del tipo de emergencia, incluyendo evacuación y apoyo de respuesta."
+            "content": "El Plan, según el Excel, define a las brigadas como personal organizado, capacitado y adiestrado para responder ante emergencias. Sus funciones dependen de la brigada y de la preparación recibida."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "Brigade duties depend on training and the type of emergency, including evacuation and response support."
+            "content": "According to the Excel, the Plan defines brigades as organized, trained personnel prepared to respond to emergencies. Their functions depend on the specific brigade and the training received."
           }
         ]
       }
@@ -331,38 +333,38 @@
     {
       "Category": "Bloque 4 · Preparación y Respuesta ante Emergencias / Protección Civil",
       "Question Text": {
-        "es-MX": "¿Cuántos simulacros deben realizarse como mínimo al año de acuerdo con el PIPC revisado?",
-        "en-US": "How many drills should be carried out at minimum each year according to the reviewed PIPC?"
+        "es-MX": "¿Cuántos simulacros se realizan al año de acuerdo con el PIPC?",
+        "en-US": "How many drills are carried out each year according to the PIPC?"
       },
       "Options": {
         "es-MX": [
-          "Al menos dos simulacros al año",
-          "Uno cada cinco años",
-          "Solo cuando lo solicite un auditor",
-          "No se establece ningún simulacro"
+          "Al menos dos simulacros anuales, utilizando distintos escenarios para evaluar la capacidad de respuesta y reforzar conocimientos.",
+          "Un simulacro cada dos años.",
+          "Un simulacro anual únicamente.",
+          "Un simulacro cada mes de forma obligatoria."
         ],
         "en-US": [
-          "At least two drills per year",
-          "One every five years",
-          "Only when requested by an auditor",
-          "No drills are established"
+          "At least two drills per year, using different scenarios to evaluate response capability and reinforce knowledge.",
+          "One drill every two years.",
+          "Only one drill per year.",
+          "One mandatory drill every month."
         ]
       },
       "Correct Answer": {
-        "es-MX": "Al menos dos simulacros al año",
-        "en-US": "At least two drills per year"
+        "es-MX": "Al menos dos simulacros anuales, utilizando distintos escenarios para evaluar la capacidad de respuesta y reforzar conocimientos.",
+        "en-US": "At least two drills per year, using different scenarios to evaluate response capability and reinforce knowledge."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "El PIPC revisado establece al menos dos simulacros por año."
+            "content": "El Bloque 4 señala que esta respuesta está expresamente respaldada por el PIPC: se realizan al menos dos simulacros al año y se emplean distintos escenarios para evaluar la respuesta y reforzar lo aprendido."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "The reviewed PIPC establishes at least two drills per year."
+            "content": "Block 4 states that this answer is expressly supported by the PIPC: at least two drills are conducted each year, using different scenarios to evaluate response capability and reinforce learning."
           }
         ]
       }
@@ -370,38 +372,38 @@
     {
       "Category": "Bloque 4 · Preparación y Respuesta ante Emergencias / Protección Civil",
       "Question Text": {
-        "es-MX": "¿Con qué frecuencia se revisan los extintores y detectores de humo en las bitácoras del CAC?",
-        "en-US": "How often are fire extinguishers and smoke detectors checked in the CAC logs?"
+        "es-MX": "¿Con qué frecuencia se deben revisar los extintores y detectores de humo?",
+        "en-US": "How often should fire extinguishers and smoke detectors be checked?"
       },
       "Options": {
         "es-MX": [
-          "Mensualmente",
-          "Cada cinco años",
-          "Solo después de una emergencia",
-          "Únicamente durante la auditoría externa"
+          "El PIPC establece/recomienda su revisión una vez al mes, apoyándose en el formato correspondiente; para extintores, preferentemente la realiza personal de la brigada contra incendios.",
+          "Únicamente una vez al año.",
+          "Solo cuando se aproxima una auditoría.",
+          "Cada cinco años, junto con la renovación del PIPC."
         ],
         "en-US": [
-          "Monthly",
-          "Every five years",
-          "Only after an emergency",
-          "Only during the external audit"
+          "The PIPC establishes/recommends checking them once a month using the corresponding form; for extinguishers, the check is preferably performed by firefighting brigade personnel.",
+          "Only once a year.",
+          "Only when an audit is approaching.",
+          "Every five years together with renewal of the PIPC."
         ]
       },
       "Correct Answer": {
-        "es-MX": "Mensualmente",
-        "en-US": "Monthly"
+        "es-MX": "El PIPC establece/recomienda su revisión una vez al mes, apoyándose en el formato correspondiente; para extintores, preferentemente la realiza personal de la brigada contra incendios.",
+        "en-US": "The PIPC establishes/recommends checking them once a month using the corresponding form; for extinguishers, the check is preferably performed by firefighting brigade personnel."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "Las bitácoras del CAC contemplan revisión mensual de extintores y detectores; en extintores se prefiere participación de personal de la brigada contra incendio."
+            "content": "Esta pregunta se relaciona con el control físico de los equipos de emergencia. El Excel indica una revisión mensual, documentada en el formato correspondiente, y señala que la revisión de extintores preferentemente la realice personal de la brigada contra incendios."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "The CAC logs include monthly checks of extinguishers and detectors; for extinguishers, participation by fire-brigade personnel is preferred."
+            "content": "This question relates to physical control of emergency equipment. The Excel indicates a monthly check documented on the corresponding form and notes that extinguisher checks should preferably be performed by firefighting brigade personnel."
           }
         ]
       }
@@ -409,38 +411,38 @@
     {
       "Category": "Bloque 4 · Preparación y Respuesta ante Emergencias / Protección Civil",
       "Question Text": {
-        "es-MX": "Si en este momento se activa una emergencia, ¿qué sería lo correcto hacer?",
-        "en-US": "If an emergency is activated right now, what would be the correct action?"
+        "es-MX": "¿Qué haría usted si en este momento se activa una emergencia?",
+        "en-US": "What would you do if an emergency were activated right now?"
       },
       "Options": {
         "es-MX": [
-          "Conservar la calma, seguir el protocolo correspondiente, atender las indicaciones de brigadistas y dirigirse por la ruta segura al punto de reunión cuando proceda",
-          "Ignorar la alarma hasta recibir un mensaje personal",
-          "Salir corriendo por la salida más cercana sin seguir instrucciones",
-          "Regresar a buscar objetos personales antes de actuar"
+          "Mantengo la calma, suspendo mis actividades, sigo las indicaciones de los brigadistas y las rutas señalizadas, evacúo sin correr, gritar ni empujar y me dirijo al punto de reunión, donde permanezco hasta recibir indicaciones.",
+          "Continúo trabajando hasta confirmar personalmente qué ocurrió.",
+          "Salgo por cualquier acceso, aunque no corresponda a la ruta señalizada, y me retiro del lugar.",
+          "Regreso por mis pertenencias antes de salir y después decido dónde reunirme."
         ],
         "en-US": [
-          "Remain calm, follow the corresponding protocol, follow brigade instructions, and use the safe route to the meeting point when appropriate",
-          "Ignore the alarm until receiving a personal message",
-          "Run out through the nearest exit without following instructions",
-          "Go back for personal belongings before taking action"
+          "I remain calm, stop my activities, follow brigade members' instructions and marked routes, evacuate without running, shouting, or pushing, and go to the assembly point, where I stay until instructed otherwise.",
+          "I keep working until I personally confirm what happened.",
+          "I leave through any access point even if it is not on the marked route, and then leave the area.",
+          "I go back for my belongings before exiting and then decide where to gather."
         ]
       },
       "Correct Answer": {
-        "es-MX": "Conservar la calma, seguir el protocolo correspondiente, atender las indicaciones de brigadistas y dirigirse por la ruta segura al punto de reunión cuando proceda",
-        "en-US": "Remain calm, follow the corresponding protocol, follow brigade instructions, and use the safe route to the meeting point when appropriate"
+        "es-MX": "Mantengo la calma, suspendo mis actividades, sigo las indicaciones de los brigadistas y las rutas señalizadas, evacúo sin correr, gritar ni empujar y me dirijo al punto de reunión, donde permanezco hasta recibir indicaciones.",
+        "en-US": "I remain calm, stop my activities, follow brigade members' instructions and marked routes, evacuate without running, shouting, or pushing, and go to the assembly point, where I stay until instructed otherwise."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "En una auditoría pueden plantear el escenario directamente. La respuesta debe centrarse en calma, protocolo, brigadistas, ruta y punto de reunión."
+            "content": "Esta es una pregunta práctica. El Excel recomienda complementar la respuesta pidiendo al empleado que señale la ruta de evacuación más cercana, el punto de reunión y dónde puede consultar el PIPC o el Plan de Preparación y Respuesta ante Emergencias."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "An auditor may present the scenario directly. The answer should focus on remaining calm, following the protocol and brigade instructions, and using the route and meeting point."
+            "content": "This is a practical question. The Excel recommends complementing the verbal answer by asking the employee to point out the nearest evacuation route, the assembly point, and where the PIPC or Emergency Preparedness and Response Plan can be consulted."
           }
         ]
       }
@@ -448,38 +450,467 @@
     {
       "Category": "Bloque 4 · Preparación y Respuesta ante Emergencias / Protección Civil",
       "Question Text": {
-        "es-MX": "Si el auditor te pide señalar físicamente el punto de reunión del CAC, ¿qué debes hacer?",
-        "en-US": "If the auditor asks you to physically point out the CAC meeting point, what should you do?"
+        "es-MX": "¿Dónde está el punto de reunión del CAC Delicias 1?",
+        "en-US": "Where is the assembly point for CAC Delicias 1?"
       },
       "Options": {
         "es-MX": [
-          "Indicar el estacionamiento exterior, junto al anuncio grande de Telcel ubicado en el poste",
-          "Decir que está en Internet sin señalarlo",
-          "Señalar cualquier espacio abierto cercano",
-          "Indicar la barra 9 porque ahí está el PIPC"
+          "En el exterior, en el estacionamiento, junto al anuncio grande de Telcel ubicado en el poste.",
+          "Detrás de la barra 9, junto al Programa Interno de Protección Civil.",
+          "Dentro de la bodega del CAC.",
+          "En la entrada principal, dentro del inmueble."
         ],
         "en-US": [
-          "Point to the outside parking lot, next to the large Telcel sign on the pole",
-          "Say it is on the Internet without pointing it out",
-          "Point to any nearby open area",
-          "Point to counter 9 because the PIPC is located there"
+          "Outside, in the parking lot, next to the large Telcel sign on the post.",
+          "Behind counter 9, next to the Internal Civil Protection Program.",
+          "Inside the CAC storage room.",
+          "At the main entrance, inside the building."
         ]
       },
       "Correct Answer": {
-        "es-MX": "Indicar el estacionamiento exterior, junto al anuncio grande de Telcel ubicado en el poste",
-        "en-US": "Point to the outside parking lot, next to the large Telcel sign on the pole"
+        "es-MX": "En el exterior, en el estacionamiento, junto al anuncio grande de Telcel ubicado en el poste.",
+        "en-US": "Outside, in the parking lot, next to the large Telcel sign on the post."
       },
       "Explanation": {
         "es-MX": [
           {
             "type": "text",
-            "content": "En este caso no basta con memorizarlo: conviene que cada empleado pueda identificar físicamente el punto de reunión."
+            "content": "El Excel ubica el punto de reunión en el exterior, específicamente en el estacionamiento junto al anuncio grande de Telcel colocado en el poste. La sugerencia es que el empleado pueda señalarlo físicamente."
           }
         ],
         "en-US": [
           {
             "type": "text",
-            "content": "In this case, memorizing is not enough: each employee should be able to physically identify the meeting point."
+            "content": "The Excel locates the assembly point outside, specifically in the parking lot next to the large Telcel sign on the post. The guidance is that the employee should be able to physically point it out."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 4 · Preparación y Respuesta ante Emergencias / Protección Civil",
+      "Question Text": {
+        "es-MX": "¿Qué brigadas de emergencia están integradas en el CAC?",
+        "en-US": "Which emergency brigades are established at the CAC?"
+      },
+      "Options": {
+        "es-MX": [
+          "Primeros Auxilios; Prevención y Combate de Incendios; Búsqueda y Rescate; y Evacuación.",
+          "Solo Primeros Auxilios y Evacuación.",
+          "Únicamente Prevención y Combate de Incendios y Búsqueda y Rescate.",
+          "Una sola brigada general para todas las emergencias."
+        ],
+        "en-US": [
+          "First Aid; Fire Prevention and Firefighting; Search and Rescue; and Evacuation.",
+          "Only First Aid and Evacuation.",
+          "Only Fire Prevention and Firefighting, and Search and Rescue.",
+          "One general brigade for all emergencies."
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Primeros Auxilios; Prevención y Combate de Incendios; Búsqueda y Rescate; y Evacuación.",
+        "en-US": "First Aid; Fire Prevention and Firefighting; Search and Rescue; and Evacuation."
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El Bloque 4 identifica cuatro brigadas en el CAC. Esta pregunta está marcada para todo el personal y la sugerencia es que cualquier empleado pueda reconocer, como mínimo, cuáles brigadas existen."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Block 4 identifies four brigades at the CAC. This question is intended for all staff, and the guidance is that any employee should at least be able to identify which brigades exist."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 4 · Preparación y Respuesta ante Emergencias / Protección Civil",
+      "Question Text": {
+        "es-MX": "¿Quién es el Jefe o Coordinador de la Unidad Interna de Protección Civil (UIPC) del CAC?",
+        "en-US": "Who is the Head or Coordinator of the CAC Internal Civil Protection Unit (UIPC)?"
+      },
+      "Options": {
+        "es-MX": [
+          "Sergio Montes Carnero.",
+          "Francisco Agustín Serna Cañedo.",
+          "Pedro Iván Marín Morales.",
+          "César Francisco Ramos Aguirre."
+        ],
+        "en-US": [
+          "Sergio Montes Carnero.",
+          "Francisco Agustín Serna Cañedo.",
+          "Pedro Iván Marín Morales.",
+          "César Francisco Ramos Aguirre."
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Sergio Montes Carnero.",
+        "en-US": "Sergio Montes Carnero."
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Según la integración disponible en el PIPC reflejada en el Excel, el Jefe o Coordinador de la UIPC es Sergio Montes Carnero. El propio Bloque 4 indica que este dato debe confirmarse como vigente antes de la auditoría."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "According to the PIPC integration reflected in the Excel, the Head or Coordinator of the UIPC is Sergio Montes Carnero. Block 4 itself states that this information should be confirmed as current before the audit."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 4 · Preparación y Respuesta ante Emergencias / Protección Civil",
+      "Question Text": {
+        "es-MX": "¿Quiénes integran actualmente la Brigada de Primeros Auxilios?",
+        "en-US": "Who currently makes up the First Aid Brigade?"
+      },
+      "Options": {
+        "es-MX": [
+          "Según la integración disponible: Francisco Agustín Serna Cañedo, Sergio Montes Carnero y Liliana Retana Gutiérrez.",
+          "Pedro Iván Marín Morales y Evelyn Viridiana Meléndez Luján.",
+          "Enrique Octavio Félix Villalobos, Jorge Iván Ramírez Ruiz y Mario Alberto Valdez Valencia.",
+          "César Francisco Ramos Aguirre y Yonatan Rivas Martínez."
+        ],
+        "en-US": [
+          "According to the available roster: Francisco Agustín Serna Cañedo, Sergio Montes Carnero, and Liliana Retana Gutiérrez.",
+          "Pedro Iván Marín Morales and Evelyn Viridiana Meléndez Luján.",
+          "Enrique Octavio Félix Villalobos, Jorge Iván Ramírez Ruiz, and Mario Alberto Valdez Valencia.",
+          "César Francisco Ramos Aguirre and Yonatan Rivas Martínez."
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Según la integración disponible: Francisco Agustín Serna Cañedo, Sergio Montes Carnero y Liliana Retana Gutiérrez.",
+        "en-US": "According to the available roster: Francisco Agustín Serna Cañedo, Sergio Montes Carnero, and Liliana Retana Gutiérrez."
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El Excel presenta esos tres nombres como la integración disponible de Primeros Auxilios y marca la pregunta para todo el personal. También advierte que debe confirmarse que los integrantes continúen vigentes."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The Excel lists these three names as the available First Aid Brigade roster and marks the question for all staff. It also warns that their current status should be confirmed."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 4 · Preparación y Respuesta ante Emergencias / Protección Civil",
+      "Question Text": {
+        "es-MX": "¿Quiénes integran actualmente la Brigada de Prevención y Combate de Incendios?",
+        "en-US": "Who currently makes up the Fire Prevention and Firefighting Brigade?"
+      },
+      "Options": {
+        "es-MX": [
+          "Según la integración disponible: Pedro Iván Marín Morales y Evelyn Viridiana Meléndez Luján. Debe confirmarse quién sustituyó a Luis Roberto Sánchez Noriega.",
+          "Francisco Agustín Serna Cañedo, Sergio Montes Carnero y Liliana Retana Gutiérrez.",
+          "Enrique Octavio Félix Villalobos, Jorge Iván Ramírez Ruiz y Mario Alberto Valdez Valencia.",
+          "César Francisco Ramos Aguirre y Yonatan Rivas Martínez, sin sustituciones pendientes."
+        ],
+        "en-US": [
+          "According to the available roster: Pedro Iván Marín Morales and Evelyn Viridiana Meléndez Luján. It must be confirmed who replaced Luis Roberto Sánchez Noriega.",
+          "Francisco Agustín Serna Cañedo, Sergio Montes Carnero, and Liliana Retana Gutiérrez.",
+          "Enrique Octavio Félix Villalobos, Jorge Iván Ramírez Ruiz, and Mario Alberto Valdez Valencia.",
+          "César Francisco Ramos Aguirre and Yonatan Rivas Martínez, with no pending replacement."
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Según la integración disponible: Pedro Iván Marín Morales y Evelyn Viridiana Meléndez Luján. Debe confirmarse quién sustituyó a Luis Roberto Sánchez Noriega.",
+        "en-US": "According to the available roster: Pedro Iván Marín Morales and Evelyn Viridiana Meléndez Luján. It must be confirmed who replaced Luis Roberto Sánchez Noriega."
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El Bloque 4 señala expresamente que Luis Roberto Sánchez Noriega ya no está en el CAC y no debe enseñarse como integrante vigente. Antes de la auditoría debe confirmarse quién lo sustituyó."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Block 4 expressly states that Luis Roberto Sánchez Noriega is no longer at the CAC and should not be taught as a current member. Before the audit, it should be confirmed who replaced him."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 4 · Preparación y Respuesta ante Emergencias / Protección Civil",
+      "Question Text": {
+        "es-MX": "¿Quiénes integran actualmente la Brigada de Búsqueda y Rescate?",
+        "en-US": "Who currently makes up the Search and Rescue Brigade?"
+      },
+      "Options": {
+        "es-MX": [
+          "Según la integración disponible: Enrique Octavio Félix Villalobos, Jorge Iván Ramírez Ruiz y Mario Alberto Valdez Valencia.",
+          "Francisco Agustín Serna Cañedo, Sergio Montes Carnero y Liliana Retana Gutiérrez.",
+          "Pedro Iván Marín Morales y Evelyn Viridiana Meléndez Luján.",
+          "César Francisco Ramos Aguirre y Yonatan Rivas Martínez."
+        ],
+        "en-US": [
+          "According to the available roster: Enrique Octavio Félix Villalobos, Jorge Iván Ramírez Ruiz, and Mario Alberto Valdez Valencia.",
+          "Francisco Agustín Serna Cañedo, Sergio Montes Carnero, and Liliana Retana Gutiérrez.",
+          "Pedro Iván Marín Morales and Evelyn Viridiana Meléndez Luján.",
+          "César Francisco Ramos Aguirre and Yonatan Rivas Martínez."
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Según la integración disponible: Enrique Octavio Félix Villalobos, Jorge Iván Ramírez Ruiz y Mario Alberto Valdez Valencia.",
+        "en-US": "According to the available roster: Enrique Octavio Félix Villalobos, Jorge Iván Ramírez Ruiz, and Mario Alberto Valdez Valencia."
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Según la integración disponible del Excel, estos tres integrantes corresponden a Búsqueda y Rescate. La sugerencia del bloque es confirmar que los tres continúen vigentes antes de utilizar la lista en la preparación de auditoría."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "According to the available roster in the Excel, these three members belong to Search and Rescue. The block guidance is to confirm that all three are still current before using the list for audit preparation."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 4 · Preparación y Respuesta ante Emergencias / Protección Civil",
+      "Question Text": {
+        "es-MX": "¿Quiénes integran actualmente la Brigada de Evacuación?",
+        "en-US": "Who currently makes up the Evacuation Brigade?"
+      },
+      "Options": {
+        "es-MX": [
+          "Según la integración disponible: César Francisco Ramos Aguirre y Yonatan Rivas Martínez. Debe confirmarse quién sustituyó a Cynthia Melissa Cano Palma.",
+          "Francisco Agustín Serna Cañedo, Sergio Montes Carnero y Liliana Retana Gutiérrez.",
+          "Pedro Iván Marín Morales y Evelyn Viridiana Meléndez Luján.",
+          "Enrique Octavio Félix Villalobos, Jorge Iván Ramírez Ruiz y Mario Alberto Valdez Valencia."
+        ],
+        "en-US": [
+          "According to the available roster: César Francisco Ramos Aguirre and Yonatan Rivas Martínez. It must be confirmed who replaced Cynthia Melissa Cano Palma.",
+          "Francisco Agustín Serna Cañedo, Sergio Montes Carnero, and Liliana Retana Gutiérrez.",
+          "Pedro Iván Marín Morales and Evelyn Viridiana Meléndez Luján.",
+          "Enrique Octavio Félix Villalobos, Jorge Iván Ramírez Ruiz, and Mario Alberto Valdez Valencia."
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Según la integración disponible: César Francisco Ramos Aguirre y Yonatan Rivas Martínez. Debe confirmarse quién sustituyó a Cynthia Melissa Cano Palma.",
+        "en-US": "According to the available roster: César Francisco Ramos Aguirre and Yonatan Rivas Martínez. It must be confirmed who replaced Cynthia Melissa Cano Palma."
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El Excel aclara que Cynthia Melissa Cano Palma ya no está en el CAC y no debe enseñarse como integrante vigente. Debe confirmarse quién ocupa su lugar antes de la auditoría."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The Excel clarifies that Cynthia Melissa Cano Palma is no longer at the CAC and should not be taught as a current member. Her replacement should be confirmed before the audit."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 4 · Preparación y Respuesta ante Emergencias / Protección Civil",
+      "Question Text": {
+        "es-MX": "Si ocurre una emergencia, ¿a quién debes seguir y dónde debes dirigirte?",
+        "en-US": "If an emergency occurs, whom should you follow and where should you go?"
+      },
+      "Options": {
+        "es-MX": [
+          "Debes seguir las indicaciones de los brigadistas, utilizar la ruta de evacuación correspondiente y dirigirte al punto de reunión.",
+          "Debes seguir a cualquier cliente que salga primero y retirarte del lugar.",
+          "Debes permanecer en tu puesto hasta que termine la emergencia.",
+          "Debes dirigirte primero a la barra 9 y esperar ahí."
+        ],
+        "en-US": [
+          "You should follow the brigade members' instructions, use the corresponding evacuation route, and go to the assembly point.",
+          "You should follow whichever customer leaves first and then leave the area.",
+          "You should remain at your workstation until the emergency ends.",
+          "You should first go to counter 9 and wait there."
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Debes seguir las indicaciones de los brigadistas, utilizar la ruta de evacuación correspondiente y dirigirte al punto de reunión.",
+        "en-US": "You should follow the brigade members' instructions, use the corresponding evacuation route, and go to the assembly point."
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "Esta pregunta está dirigida a todo el personal y busca comprobar una reacción práctica: identificar a los brigadistas, seguir la ruta de evacuación y llegar al punto de reunión, no solamente memorizar nombres o definiciones."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "This question is intended for all staff and is meant to verify a practical response: identify brigade members, follow the evacuation route, and reach the assembly point, rather than merely memorizing names or definitions."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 4 · Preparación y Respuesta ante Emergencias / Protección Civil",
+      "Question Text": {
+        "es-MX": "Si eres brigadista, ¿a qué brigada perteneces y cuál es tu función durante una emergencia?",
+        "en-US": "If you are a brigade member, which brigade do you belong to and what is your role during an emergency?"
+      },
+      "Options": {
+        "es-MX": [
+          "El brigadista debe identificar su brigada y explicar sus funciones reales conforme a su capacitación y al PIPC.",
+          "Todos los brigadistas tienen exactamente la misma función, sin importar su brigada.",
+          "El brigadista solo necesita conocer el nombre de su brigada, no sus funciones.",
+          "Las funciones se deciden en el momento de la emergencia sin basarse en capacitación o PIPC."
+        ],
+        "en-US": [
+          "The brigade member should identify their brigade and explain their actual duties according to their training and the PIPC.",
+          "All brigade members have exactly the same duties regardless of brigade.",
+          "The brigade member only needs to know the brigade name, not its duties.",
+          "Duties are decided at the time of the emergency without reference to training or the PIPC."
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "El brigadista debe identificar su brigada y explicar sus funciones reales conforme a su capacitación y al PIPC.",
+        "en-US": "The brigade member should identify their brigade and explain their actual duties according to their training and the PIPC."
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El Bloque 4 marca esta pregunta específicamente para brigadistas y la considera muy recomendable para una simulación de auditoría. La respuesta debe corresponder a la brigada real de la persona y a las funciones para las que fue capacitada."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Block 4 marks this question specifically for brigade members and considers it highly recommended for an audit simulation. The answer should match the person's actual brigade and the duties for which they were trained."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 4 · Preparación y Respuesta ante Emergencias / Protección Civil",
+      "Question Text": {
+        "es-MX": "Si necesitas primeros auxilios, combatir un conato, evacuar o realizar búsqueda y rescate, ¿sabes qué brigada corresponde?",
+        "en-US": "If first aid, incipient-fire response, evacuation, or search and rescue is needed, do you know which brigade is responsible?"
+      },
+      "Options": {
+        "es-MX": [
+          "Primeros Auxilios → Brigada de Primeros Auxilios; conato/incendio → Prevención y Combate de Incendios; evacuación → Brigada de Evacuación; persona no localizada → Búsqueda y Rescate.",
+          "Primeros Auxilios → Evacuación; conato/incendio → Búsqueda y Rescate; evacuación → Primeros Auxilios; persona no localizada → Incendios.",
+          "Todas las situaciones corresponden únicamente a la Brigada de Evacuación.",
+          "Cada situación la atiende cualquier brigada sin una función definida."
+        ],
+        "en-US": [
+          "First aid → First Aid Brigade; incipient fire/fire → Fire Prevention and Firefighting Brigade; evacuation → Evacuation Brigade; missing person → Search and Rescue Brigade.",
+          "First aid → Evacuation; incipient fire/fire → Search and Rescue; evacuation → First Aid; missing person → Firefighting.",
+          "All situations are handled only by the Evacuation Brigade.",
+          "Any brigade handles any situation without defined responsibilities."
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Primeros Auxilios → Brigada de Primeros Auxilios; conato/incendio → Prevención y Combate de Incendios; evacuación → Brigada de Evacuación; persona no localizada → Búsqueda y Rescate.",
+        "en-US": "First aid → First Aid Brigade; incipient fire/fire → Fire Prevention and Firefighting Brigade; evacuation → Evacuation Brigade; missing person → Search and Rescue Brigade."
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El propósito de esta pregunta es relacionar cada una de las cuatro brigadas con su función principal. El Excel la marca para todo el personal, por lo que conviene que todos sepan a qué brigada corresponde cada tipo de apoyo."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The purpose of this question is to relate each of the four brigades to its main function. The Excel marks it for all staff, so everyone should know which brigade corresponds to each type of assistance."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 4 · Preparación y Respuesta ante Emergencias / Protección Civil",
+      "Question Text": {
+        "es-MX": "¿Dónde puedes consultar quiénes son los integrantes vigentes de las brigadas del CAC?",
+        "en-US": "Where can you consult the current members of the CAC brigades?"
+      },
+      "Options": {
+        "es-MX": [
+          "En la integración vigente de la Unidad Interna de Protección Civil / documentación del PIPC del CAC.",
+          "Únicamente en el mapa de calor 45K1.",
+          "En el Plan nacional de emergencias, sin revisar la documentación local del CAC.",
+          "En el calendario de auditorías del Portal SGI."
+        ],
+        "en-US": [
+          "In the current Internal Civil Protection Unit roster / CAC PIPC documentation.",
+          "Only in the 45K1 heat map.",
+          "In the national emergency plan without reviewing the CAC's local documentation.",
+          "In the SGI Portal audit calendar."
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "En la integración vigente de la Unidad Interna de Protección Civil / documentación del PIPC del CAC.",
+        "en-US": "In the current Internal Civil Protection Unit roster / CAC PIPC documentation."
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El Excel señala que la integración puede cambiar cuando hay movimientos de personal. Por eso, los nombres vigentes deben consultarse en la integración actual de la UIPC o en la documentación correspondiente del PIPC del CAC."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The Excel notes that the roster can change when personnel changes occur. Therefore, current names should be checked in the current UIPC roster or the corresponding CAC PIPC documentation."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 4 · Preparación y Respuesta ante Emergencias / Protección Civil",
+      "Question Text": {
+        "es-MX": "¿Qué debes hacer si detectas que la integración de brigadas contiene a una persona que ya no labora en el CAC?",
+        "en-US": "What should you do if you discover that the brigade roster includes someone who no longer works at the CAC?"
+      },
+      "Options": {
+        "es-MX": [
+          "Informarlo al responsable correspondiente para que se actualice la integración y se definan los sustitutos; no asumir que la lista anterior sigue vigente.",
+          "Mantener la lista sin cambios hasta la siguiente auditoría.",
+          "Eliminar el nombre por cuenta propia sin informar ni definir sustitución.",
+          "Seguir enseñando la lista anterior porque fue válida en años previos."
+        ],
+        "en-US": [
+          "Report it to the appropriate person so the roster can be updated and replacements defined; do not assume the previous list is still current.",
+          "Keep the list unchanged until the next audit.",
+          "Delete the name on your own without reporting it or defining a replacement.",
+          "Continue teaching the old list because it was valid in previous years."
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Informarlo al responsable correspondiente para que se actualice la integración y se definan los sustitutos; no asumir que la lista anterior sigue vigente.",
+        "en-US": "Report it to the appropriate person so the roster can be updated and replacements defined; do not assume the previous list is still current."
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El Bloque 4 utiliza esta pregunta para reforzar la actualización documental antes de la auditoría. Las notas del Excel también indican que la lista del simulacro 2025 no debe tomarse como integración vigente y que ciertas personas señaladas en la actualización ya no deben presentarse como miembros actuales."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "Block 4 uses this question to reinforce document updating before the audit. The Excel notes also state that the 2025 drill list should not be treated as the current brigade roster and that certain people identified in the update should no longer be presented as current members."
           }
         ]
       }
