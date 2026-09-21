@@ -20,7 +20,13 @@ import {
 import Link from "next/link";
 
 import { getAllQuizMeta, loadQuizJsonBySlug } from "@/data/quizzes/registry";
+import ReviewButton from "@/features/review/ReviewButton";
 
+import {
+  addReviewQuestion,
+  removeReviewQuestion,
+  getReviewQuestions,
+} from "@/features/review/reviewStorage";
 const QUIZ_META = getAllQuizMeta();
 
 // ---------- Tipos ----------
@@ -75,6 +81,7 @@ export default function InterviewQuiz({
   hideQuizSelector,
 }: InterviewQuizProps = {}) {
   const [questions, setQuestions] = useState<AdaptedQ[]>([]);
+  const [reviewIds, setReviewIds] = useState<string[]>([]);
   const [currentSlug, setCurrentSlug] = useState<string | null>(
     initialQuizSlug ?? null
   );
@@ -119,7 +126,11 @@ export default function InterviewQuiz({
   const isES = questionLanguage === "es-MX";
   const otherLang: ForceLang = isES ? "en-US" : "es-MX";
   const totalAttempts = correctCount + incorrectCount;
-
+  useEffect(() => {
+    const saved = getReviewQuestions();
+  
+    setReviewIds(saved.map((q) => q.id));
+  }, []);
   useEffect(() => {
     const total = correctCount + incorrectCount;
     const pct = total > 0 ? Math.round((correctCount / total) * 100) : 0;
@@ -557,7 +568,58 @@ export default function InterviewQuiz({
 
   const totalQuestions = questions.length || 1;
   const progressPct = Math.round(((currentQuestionIndex + 1) / totalQuestions) * 100);
+  const handleToggleReview = () => {
+    const q = questions[currentQuestionIndex];
+  
+    if (!q) return;
+  
+    const id = `${currentSlug ?? "quiz"}-${currentQuestionIndex}`;
+  
+    const isSaved = reviewIds.includes(id);
+  
+    if (isSaved) {
+      const updated = removeReviewQuestion(id);
+  
+      setReviewIds(
+        updated.map((item) => item.id)
+      );
+  
+      return;
+    }
+  
+    const updated = addReviewQuestion({
+      id,
+  
+      quizSlug: currentSlug ?? "quiz",
+  
+      questionIndex: currentQuestionIndex,
+  
+      question_es: q.word_es,
+      question_en: q.word_en,
+  
+      options_es: q.options_es,
+      options_en: q.options_en,
+  
+      correct_es: q.correct_es_text,
+      correct_en: q.correct_en_text,
+  
+      category: q.category,
+  
+      markedAt: new Date().toISOString(),
+  
+      timesCorrect: 0,
+      timesIncorrect: 0,
+    });
+  
+    setReviewIds(
+      updated.map((item) => item.id)
+    );
+  };
+  const currentReviewId =
+  `${currentSlug ?? "quiz"}-${currentQuestionIndex}`;
 
+const isCurrentQuestionSaved =
+  reviewIds.includes(currentReviewId);
   // ===================== RENDER =====================
   return (
     <div
@@ -890,6 +952,10 @@ export default function InterviewQuiz({
                   ? "Modo: repetir hasta acertar"
                   : "Mode: retry until correct"}
             </ActionToggle>
+            <ReviewButton
+  saved={isCurrentQuestionSaved}
+  onClick={handleToggleReview}
+/>
           </div>
         </>
       ) : (
