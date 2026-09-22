@@ -1708,6 +1708,123 @@
           }
         ]
       }
+    },
+    {
+      "Category": "Bloque 9 · Preparación para la auditoría",
+      "Question Text": {
+        "es-MX": "¿Cómo debe mantenerse el escritorio de la computadora de trabajo para proteger la información?",
+        "en-US": "How should the work computer desktop be maintained to protect information?"
+      },
+      "Options": {
+        "es-MX": [
+          "Sin documentos ni archivos locales innecesarios, conservando solamente los accesos autorizados a los sistemas de trabajo",
+          "Con copias de todos los procedimientos para consultarlos sin entrar a @Doc",
+          "Con identificaciones y documentos de clientes organizados en carpetas personales",
+          "Con las contraseñas anotadas en un archivo visible para ingresar rápidamente"
+        ],
+        "en-US": [
+          "Without unnecessary local documents or files, keeping only authorized shortcuts to work systems",
+          "With copies of every procedure so they can be consulted without accessing @Doc",
+          "With customer identification documents organized in personal folders",
+          "With passwords written in a visible file for quick access"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Sin documentos ni archivos locales innecesarios, conservando solamente los accesos autorizados a los sistemas de trabajo",
+        "en-US": "Without unnecessary local documents or files, keeping only authorized shortcuts to work systems"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El escritorio de la computadora debe permanecer limpio y sin documentos que contengan información de clientes, identificaciones, formatos, capturas, contraseñas o copias no controladas de procedimientos. Los documentos institucionales deben consultarse en los sistemas autorizados, como @Doc, para comprobar su vigencia. Es posible conservar accesos directos o ligas autorizadas a los sistemas de trabajo, siempre que no incluyan contraseñas. Además, cuando el empleado se levanta de su lugar debe bloquear la sesión para impedir que otra persona consulte información o utilice sus credenciales."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The computer desktop should remain clean and free of documents containing customer information, identification records, forms, screenshots, passwords, or uncontrolled procedure copies. Institutional documents should be consulted through authorized systems, such as @Doc, to confirm that they are current. Authorized shortcuts or links to work systems may be retained as long as they do not contain passwords. In addition, employees should lock their sessions whenever they leave their workstations to prevent others from viewing information or using their credentials."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 9 · Preparación para la auditoría",
+      "Question Text": {
+        "es-MX": "¿Cuál es la diferencia entre el plan de auditoría, el informe de auditoría y el detalle de hallazgos?",
+        "en-US": "What is the difference between the audit plan, the audit report, and the detailed findings?"
+      },
+      "Options": {
+        "es-MX": [
+          "El plan establece cómo y a quién se auditará; el informe presenta los resultados generales, y el detalle de hallazgos describe las situaciones identificadas",
+          "El plan contiene las sanciones, el informe incluye las contraseñas y los hallazgos indican los horarios del personal",
+          "Los tres documentos tienen exactamente el mismo contenido y propósito",
+          "El plan se elabora después de la auditoría y el informe antes de realizarla"
+        ],
+        "en-US": [
+          "The plan establishes how and who will be audited; the report presents the overall results, and the detailed findings describe the situations identified",
+          "The plan contains penalties, the report includes passwords, and the findings specify employee schedules",
+          "All three documents have exactly the same content and purpose",
+          "The plan is prepared after the audit, while the report is prepared before it"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "El plan establece cómo y a quién se auditará; el informe presenta los resultados generales, y el detalle de hallazgos describe las situaciones identificadas",
+        "en-US": "The plan establishes how and who will be audited; the report presents the overall results, and the detailed findings describe the situations identified"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El plan de auditoría se consulta antes de la revisión y normalmente identifica fechas, alcance, áreas, procesos o personas consideradas y la forma en que se desarrollará la auditoría. El informe se emite después y resume el resultado general. El archivo o apartado de hallazgos presenta con mayor detalle las conformidades, observaciones, oportunidades de mejora o no conformidades identificadas, conforme a la clasificación utilizada por la organización. Aunque un empleado no haya sido entrevistado, debe revisar la información difundida que le corresponda para aprender de los resultados y evitar que la misma situación ocurra en su actividad."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The audit plan is consulted before the review and normally identifies dates, scope, areas, processes or personnel considered, and how the audit will be conducted. The report is issued afterward and summarizes the overall result. The findings file or section provides more detail about conformities, observations, opportunities for improvement, or nonconformities identified according to the classification used by the organization. Even employees who were not interviewed should review the applicable communicated information to learn from the results and prevent the same situation from occurring in their work."
+          }
+        ]
+      }
+    },
+    {
+      "Category": "Bloque 9 · Preparación para la auditoría",
+      "Question Text": {
+        "es-MX": "¿Para qué sirven el Portal Nacional del SGI y el portal regional?",
+        "en-US": "What are the National IMS Portal and the regional portal used for?"
+      },
+      "Options": {
+        "es-MX": [
+          "El Portal Nacional concentra información general y corporativa del SGI, mientras que el regional permite consultar información, comunicaciones y resultados correspondientes a la región",
+          "El Portal Nacional se utiliza solamente para ventas y el regional únicamente para registrar asistencias",
+          "Ambos portales son páginas externas sin relación con el Sistema de Gestión Integrado",
+          "El portal regional sustituye por completo a @Doc y permite modificar libremente los procedimientos"
+        ],
+        "en-US": [
+          "The National Portal centralizes general and corporate IMS information, while the regional portal provides information, communications, and results corresponding to the region",
+          "The National Portal is used only for sales, while the regional portal is used only to record attendance",
+          "Both portals are external websites unrelated to the Integrated Management System",
+          "The regional portal completely replaces @Doc and allows procedures to be freely modified"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "El Portal Nacional concentra información general y corporativa del SGI, mientras que el regional permite consultar información, comunicaciones y resultados correspondientes a la región",
+        "en-US": "The National Portal centralizes general and corporate IMS information, while the regional portal provides information, communications, and results corresponding to the region"
+      },
+      "Explanation": {
+        "es-MX": [
+          {
+            "type": "text",
+            "content": "El Portal Nacional del SGI permite consultar información general del sistema, normas, cultura, comunicación, auditorías, riesgos, comités y accesos a otros sistemas institucionales. El portal regional concentra avisos, documentos informativos, planes, resultados y comunicaciones que corresponden a la región. El empleado debe saber ingresar mediante las rutas institucionales autorizadas y localizar la información, sin necesidad de memorizar todas las direcciones. Estos portales sirven para consulta y concientización; cuando se requiera demostrar la versión controlada de un procedimiento o política, debe utilizarse el sistema documental oficial, como @Doc."
+          }
+        ],
+        "en-US": [
+          {
+            "type": "text",
+            "content": "The National IMS Portal provides general system information, standards, organizational culture, communications, audits, risks, committees, and access to other institutional systems. The regional portal contains notices, informational documents, plans, results, and communications applicable to the region. Employees should know how to enter through authorized institutional routes and locate information without having to memorize every address. These portals support consultation and awareness; when a controlled version of a procedure or policy must be demonstrated, the official document-management system, such as @Doc, should be used."
+          }
+        ]
+      }
     }
   ]
 }
