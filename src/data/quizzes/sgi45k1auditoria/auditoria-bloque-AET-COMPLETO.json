@@ -1,0 +1,680 @@
+{
+  "meta": {
+    "slug": "auditoria-bloque-aet",
+    "title": "Perfil y funciones del Analista de Equipo Terminal",
+    "subject": "Auditoría CAC",
+    "unit": 10,
+    "classNo": 1,
+    "description": "Quiz de estudio basado en el perfil oficial del puesto Analista EQ TERM (REG), código F-00.02.01.02.04-003, y en ejemplos operativos de Servicio Técnico. Distingue las funciones vigentes de las actividades históricas sujetas a autorización.",
+    "tags": ["auditoria", "AET", "Analista de Equipo Terminal", "Servicio Técnico", "diagnóstico", "garantía", "programación", "tarjetas electrónicas", "SGI", "CAC Delicias"]
+  },
+  "Questions": [
+    {
+      "Category": "Bloque AET · Perfil y funciones del Analista de Equipo Terminal",
+      "Question Text": {
+        "es-MX": "¿Cuál es el objetivo general del puesto de Analista de Equipo Terminal?",
+        "en-US": "What is the general objective of the Terminal Equipment Analyst position?"
+      },
+      "Options": {
+        "es-MX": [
+          "Atender solicitudes de diagnóstico, reparación, configuración, soporte, programación y garantía de equipos, accesorios y tarjetas electrónicas para asegurar la satisfacción de los clientes de Servicio Técnico",
+          "Realizar exclusivamente actividades administrativas y de archivo sin atender equipos",
+          "Vender únicamente planes tarifarios y controlar la caja del CAC",
+          "Autorizar todas las reparaciones de los proveedores a nivel nacional"
+        ],
+        "en-US": [
+          "Handle requests for diagnosis, repair, configuration, support, programming, and warranty of equipment, accessories, and electronic boards to ensure Technical Service customer satisfaction",
+          "Perform only administrative and filing activities without handling equipment",
+          "Sell only rate plans and control the CAC cash register",
+          "Authorize all supplier repairs nationwide"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Atender solicitudes de diagnóstico, reparación, configuración, soporte, programación y garantía de equipos, accesorios y tarjetas electrónicas para asegurar la satisfacción de los clientes de Servicio Técnico",
+        "en-US": "Handle requests for diagnosis, repair, configuration, support, programming, and warranty of equipment, accessories, and electronic boards to ensure Technical Service customer satisfaction"
+      },
+      "Explanation": {
+        "es-MX": [{"type": "text", "content": "El objetivo oficial está establecido en el Perfil de Puesto de Analista EQ TERM (REG). No se limita a reparar equipos: integra diagnóstico, configuración, soporte, programación, garantía y atención al cliente, siempre con la finalidad de asegurar su satisfacción."}],
+        "en-US": [{"type": "text", "content": "The official objective is established in the Analista EQ TERM (REG) Job Profile. It is not limited to repairing devices: it includes diagnosis, configuration, support, programming, warranty service, and customer care, always with the purpose of ensuring customer satisfaction."}]
+      }
+    },
+    {
+      "Category": "Bloque AET · Perfil y funciones del Analista de Equipo Terminal",
+      "Question Text": {
+        "es-MX": "¿Qué significa realizar el diagnóstico de un equipo?",
+        "en-US": "What does diagnosing a device mean?"
+      },
+      "Options": {
+        "es-MX": [
+          "Revisar la falla reportada, efectuar las pruebas aplicables, identificar su posible causa y determinar la atención correspondiente",
+          "Cambiar componentes sin revisar primero el comportamiento del equipo",
+          "Aceptar como definitiva cualquier explicación del cliente sin efectuar pruebas",
+          "Enviar todos los equipos al proveedor sin documentar su condición"
+        ],
+        "en-US": [
+          "Review the reported fault, perform applicable tests, identify its possible cause, and determine the corresponding service action",
+          "Replace components without first checking the device’s behavior",
+          "Accept any customer explanation as final without performing tests",
+          "Send every device to the supplier without documenting its condition"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Revisar la falla reportada, efectuar las pruebas aplicables, identificar su posible causa y determinar la atención correspondiente",
+        "en-US": "Review the reported fault, perform applicable tests, identify its possible cause, and determine the corresponding service action"
+      },
+      "Explanation": {
+        "es-MX": [{"type": "text", "content": "El diagnóstico permite comprobar el síntoma informado por el cliente y definir si corresponde configuración, actualización, garantía, reparación, canalización o una explicación sobre el funcionamiento normal. Debe realizarse conforme a las pruebas y lineamientos vigentes y dejar la evidencia que corresponda."}],
+        "en-US": [{"type": "text", "content": "Diagnosis confirms the symptom reported by the customer and determines whether configuration, updating, warranty service, repair, referral, or an explanation of normal operation is appropriate. It must follow current tests and guidelines and leave the corresponding evidence."}]
+      }
+    },
+    {
+      "Category": "Bloque AET · Perfil y funciones del Analista de Equipo Terminal",
+      "Question Text": {
+        "es-MX": "¿Cuál es la diferencia entre reparación, configuración, soporte y programación de un equipo?",
+        "en-US": "What is the difference between device repair, configuration, support, and programming?"
+      },
+      "Options": {
+        "es-MX": [
+          "La reparación corrige una falla; la configuración ajusta funciones; el soporte orienta o resuelve problemas; y la programación instala, actualiza o restablece software autorizado",
+          "Son cuatro nombres diferentes para una misma actividad y siempre requieren abrir el equipo",
+          "La configuración cambia piezas, el soporte vende accesorios y la programación autoriza garantías",
+          "La reparación solamente explica el uso y la programación consiste en limpiar físicamente el equipo"
+        ],
+        "en-US": [
+          "Repair corrects a fault; configuration adjusts functions; support provides assistance or solves problems; and programming installs, updates, or restores authorized software",
+          "They are four different names for the same activity and always require opening the device",
+          "Configuration replaces parts, support sells accessories, and programming authorizes warranties",
+          "Repair only explains usage, and programming consists of physically cleaning the device"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "La reparación corrige una falla; la configuración ajusta funciones; el soporte orienta o resuelve problemas; y la programación instala, actualiza o restablece software autorizado",
+        "en-US": "Repair corrects a fault; configuration adjusts functions; support provides assistance or solves problems; and programming installs, updates, or restores authorized software"
+      },
+      "Explanation": {
+        "es-MX": [{"type": "text", "content": "El objetivo del puesto enumera actividades diferentes. No todas implican desarmar un equipo: una configuración puede modificar parámetros, el soporte puede orientar al cliente y la programación puede realizarse conectando el equipo a una computadora para cargar software autorizado."}],
+        "en-US": [{"type": "text", "content": "The job objective lists different activities. Not all of them require disassembling a device: configuration may change settings, support may guide the customer, and programming may be performed by connecting the device to a computer to load authorized software."}]
+      }
+    },
+    {
+      "Category": "Bloque AET · Perfil y funciones del Analista de Equipo Terminal",
+      "Question Text": {
+        "es-MX": "¿Qué es una tarjeta electrónica en el contexto de Servicio Técnico?",
+        "en-US": "What is an electronic board in the context of Technical Service?"
+      },
+      "Options": {
+        "es-MX": [
+          "Una placa de circuito impreso con componentes interconectados que permite ejecutar funciones del equipo",
+          "Una tarjeta de presentación con los datos del centro de atención",
+          "Únicamente una tarjeta SIM utilizada para registrar una línea",
+          "Cualquier documento de plástico que tenga un código de barras"
+        ],
+        "en-US": [
+          "A printed circuit board with interconnected components that enables device functions",
+          "A business card containing the service center’s information",
+          "Only a SIM card used to register a mobile line",
+          "Any plastic document containing a barcode"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Una placa de circuito impreso con componentes interconectados que permite ejecutar funciones del equipo",
+        "en-US": "A printed circuit board with interconnected components that enables device functions"
+      },
+      "Explanation": {
+        "es-MX": [{"type": "text", "content": "La tarjeta electrónica puede ser la placa principal o alguna placa secundaria del dispositivo. Contiene circuitos, memoria, conectores y otros componentes. El equipo es el producto completo; la tarjeta electrónica es uno de sus conjuntos internos."}],
+        "en-US": [{"type": "text", "content": "The electronic board may be the device’s main board or a secondary board. It contains circuits, memory, connectors, and other components. The device is the complete product; the electronic board is one of its internal assemblies."}]
+      }
+    },
+    {
+      "Category": "Bloque AET · Perfil y funciones del Analista de Equipo Terminal",
+      "Question Text": {
+        "es-MX": "¿Una memoria USB o pendrive puede contener una tarjeta electrónica?",
+        "en-US": "Can a USB flash drive or pen drive contain an electronic board?"
+      },
+      "Options": {
+        "es-MX": [
+          "Sí. Contiene una pequeña tarjeta con memoria y controlador, aunque comercialmente se identifica como accesorio o dispositivo de almacenamiento",
+          "No. Una memoria USB funciona sin circuitos electrónicos internos",
+          "Sí, pero solamente cuando se conecta a un teléfono celular",
+          "No. El término tarjeta electrónica se utiliza exclusivamente para tarjetas SIM"
+        ],
+        "en-US": [
+          "Yes. It contains a small board with memory and a controller, although commercially it is identified as an accessory or storage device",
+          "No. A USB flash drive operates without internal electronic circuits",
+          "Yes, but only when it is connected to a mobile phone",
+          "No. The term electronic board is used exclusively for SIM cards"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Sí. Contiene una pequeña tarjeta con memoria y controlador, aunque comercialmente se identifica como accesorio o dispositivo de almacenamiento",
+        "en-US": "Yes. It contains a small board with memory and a controller, although commercially it is identified as an accessory or storage device"
+      },
+      "Explanation": {
+        "es-MX": [{"type": "text", "content": "Un pendrive sirve como ejemplo sencillo porque en su interior existe una placa electrónica. Sin embargo, el concepto es más amplio e incluye las placas de módems, celulares y otros dispositivos. Por eso no debe afirmarse que todas las tarjetas electrónicas son pendrives."}],
+        "en-US": [{"type": "text", "content": "A pen drive is a simple example because it contains an electronic board. However, the concept is broader and includes boards in modems, mobile phones, and other devices. Therefore, not every electronic board should be described as a pen drive."}]
+      }
+    },
+    {
+      "Category": "Bloque AET · Perfil y funciones del Analista de Equipo Terminal",
+      "Question Text": {
+        "es-MX": "¿Qué parte del módem se intervenía cuando se abría y se soldaban cables para conectarlo a una computadora?",
+        "en-US": "Which part of the modem was being worked on when it was opened and cables were soldered to connect it to a computer?"
+      },
+      "Options": {
+        "es-MX": [
+          "La tarjeta electrónica interna, específicamente los puntos o contactos autorizados para establecer la conexión técnica",
+          "La carcasa externa, porque ahí se almacena el software",
+          "La batería, que contiene todos los programas del módem",
+          "La tarjeta SIM del cliente, que funciona como tarjeta principal del equipo"
+        ],
+        "en-US": [
+          "The internal electronic board, specifically the authorized points or contacts used to establish the technical connection",
+          "The outer casing, because that is where the software is stored",
+          "The battery, which contains all of the modem’s programs",
+          "The customer’s SIM card, which functions as the device’s main board"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "La tarjeta electrónica interna, específicamente los puntos o contactos autorizados para establecer la conexión técnica",
+        "en-US": "The internal electronic board, specifically the authorized points or contacts used to establish the technical connection"
+      },
+      "Explanation": {
+        "es-MX": [{"type": "text", "content": "Este es un ejemplo histórico de intervención directa en una tarjeta electrónica. Los cables se soldaban en puntos determinados de la placa para establecer comunicación con la computadora y cargar o recuperar software. La actividad solamente podía efectuarse cuando existían autorización e instrucciones técnicas aplicables."}],
+        "en-US": [{"type": "text", "content": "This is a historical example of direct work on an electronic board. Cables were soldered to specified points on the board to communicate with a computer and load or recover software. The activity could only be performed when applicable authorization and technical instructions existed."}]
+      }
+    },
+    {
+      "Category": "Bloque AET · Perfil y funciones del Analista de Equipo Terminal",
+      "Question Text": {
+        "es-MX": "¿Tener conocimientos para abrir y soldar un equipo significa que el analista puede hacerlo actualmente?",
+        "en-US": "Does having the knowledge to open and solder a device mean that the analyst may currently do so?"
+      },
+      "Options": {
+        "es-MX": [
+          "No. Solamente puede realizarse si las políticas vigentes de la marca, el nivel de servicio y una instrucción autorizada lo permiten",
+          "Sí. La experiencia previa permite abrir cualquier equipo sin consultar políticas",
+          "Sí. Siempre que el cliente otorgue una autorización verbal",
+          "No. Ningún analista puede tener conocimientos relacionados con electrónica"
+        ],
+        "en-US": [
+          "No. It may only be performed if current brand policies, the authorized service level, and an approved instruction allow it",
+          "Yes. Previous experience allows any device to be opened without consulting policies",
+          "Yes. It is always allowed if the customer gives verbal authorization",
+          "No. No analyst may have knowledge related to electronics"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "No. Solamente puede realizarse si las políticas vigentes de la marca, el nivel de servicio y una instrucción autorizada lo permiten",
+        "en-US": "No. It may only be performed if current brand policies, the authorized service level, and an approved instruction allow it"
+      },
+      "Explanation": {
+        "es-MX": [{"type": "text", "content": "La competencia técnica no sustituye la autorización. Algunas actividades se realizaron anteriormente, pero las políticas actuales de las marcas pueden impedir abrir los equipos en el CAC. Debe respetarse el alcance vigente y canalizarse el caso cuando requiera una intervención especializada."}],
+        "en-US": [{"type": "text", "content": "Technical competence does not replace authorization. Some activities were performed in the past, but current brand policies may prohibit opening devices at the CAC. The current service scope must be respected, and cases requiring specialized work must be referred."}]
+      }
+    },
+    {
+      "Category": "Bloque AET · Perfil y funciones del Analista de Equipo Terminal",
+      "Question Text": {
+        "es-MX": "¿Cómo se clasifica la actividad de conectar un equipo por cable a una computadora para instalar o actualizar su software sin desarmarlo?",
+        "en-US": "How is the activity of connecting a device by cable to a computer to install or update its software without disassembling it classified?"
+      },
+      "Options": {
+        "es-MX": [
+          "Como programación, actualización de software o soporte técnico, según el procedimiento aplicable",
+          "Como reparación física obligatoria de la tarjeta electrónica",
+          "Como mensajería de equipos al proveedor",
+          "Como venta de un accesorio al cliente"
+        ],
+        "en-US": [
+          "As programming, software updating, or technical support, according to the applicable procedure",
+          "As mandatory physical repair of the electronic board",
+          "As shipping equipment to the supplier",
+          "As selling an accessory to the customer"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Como programación, actualización de software o soporte técnico, según el procedimiento aplicable",
+        "en-US": "As programming, software updating, or technical support, according to the applicable procedure"
+      },
+      "Explanation": {
+        "es-MX": [{"type": "text", "content": "Aunque el software se almacena en memorias ubicadas en la tarjeta interna, no existe una intervención física directa si el equipo solamente se conecta mediante su puerto autorizado. Después de la carga debe validarse su funcionamiento y documentarse el resultado conforme a la instrucción aplicable."}],
+        "en-US": [{"type": "text", "content": "Although the software is stored in memory located on the internal board, there is no direct physical intervention when the device is connected only through its authorized port. After loading, its operation must be validated and the result documented according to the applicable instruction."}]
+      }
+    },
+    {
+      "Category": "Bloque AET · Perfil y funciones del Analista de Equipo Terminal",
+      "Question Text": {
+        "es-MX": "¿Qué debe hacerse cuando una actividad técnica temporal requiere un instructivo y software que no se encuentran en @Doc?",
+        "en-US": "What should be done when a temporary technical activity requires instructions and software that are not available in @Doc?"
+      },
+      "Options": {
+        "es-MX": [
+          "Solicitarlos al superior para que valide la necesidad y gestione la versión autorizada por el canal correspondiente",
+          "Descargar cualquier versión encontrada en Internet y conservarla permanentemente",
+          "Pedir a un compañero una copia antigua sin verificar modelo, origen o vigencia",
+          "Improvisar los pasos con base en actividades realizadas años atrás"
+        ],
+        "en-US": [
+          "Request them from the supervisor so the need can be validated and the authorized version can be provided through the appropriate channel",
+          "Download any version found on the Internet and keep it permanently",
+          "Ask a coworker for an old copy without checking the model, source, or validity",
+          "Improvise the steps based on activities performed years ago"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Solicitarlos al superior para que valide la necesidad y gestione la versión autorizada por el canal correspondiente",
+        "en-US": "Request them from the supervisor so the need can be validated and the authorized version can be provided through the appropriate channel"
+      },
+      "Explanation": {
+        "es-MX": [{"type": "text", "content": "Un PDF temporal puede ser un instructivo, guía o boletín técnico, sin ser necesariamente un procedimiento de @Doc. Antes de utilizarlo debe confirmarse quién lo emitió, para qué modelo aplica, su fecha o versión y la autorización correspondiente. El software también debe provenir de una fuente institucional autorizada."}],
+        "en-US": [{"type": "text", "content": "A temporary PDF may be a technical instruction, guide, or bulletin without necessarily being an @Doc procedure. Before using it, personnel must confirm who issued it, the applicable model, its date or version, and the corresponding authorization. The software must also come from an authorized institutional source."}]
+      }
+    },
+    {
+      "Category": "Bloque AET · Perfil y funciones del Analista de Equipo Terminal",
+      "Question Text": {
+        "es-MX": "¿Por qué no deben conservarse ni utilizarse instructivos o archivos de software obsoletos?",
+        "en-US": "Why should obsolete instructions or software files not be retained for operational use?"
+      },
+      "Options": {
+        "es-MX": [
+          "Porque podrían aplicarse a un modelo incorrecto, contener una versión reemplazada o autorizar una actividad que ya fue descontinuada",
+          "Porque todos los documentos técnicos pierden vigencia automáticamente después de un día",
+          "Porque solamente el fabricante puede leer cualquier instructivo",
+          "Porque el software nunca requiere control de versión"
+        ],
+        "en-US": [
+          "Because they may be applied to the wrong model, contain a superseded version, or authorize an activity that has been discontinued",
+          "Because every technical document automatically expires after one day",
+          "Because only the manufacturer may read any instructions",
+          "Because software never requires version control"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Porque podrían aplicarse a un modelo incorrecto, contener una versión reemplazada o autorizar una actividad que ya fue descontinuada",
+        "en-US": "Because they may be applied to the wrong model, contain a superseded version, or authorize an activity that has been discontinued"
+      },
+      "Explanation": {
+        "es-MX": [{"type": "text", "content": "Cuando una actividad deja de aplicarse, utilizar copias antiguas genera riesgo de errores, afectación al equipo y pérdida de trazabilidad. Si vuelve a requerirse, debe solicitarse nuevamente la instrucción y el software vigentes al superior o al área autorizada."}],
+        "en-US": [{"type": "text", "content": "When an activity is discontinued, using old copies creates a risk of errors, device damage, and loss of traceability. If it is needed again, the current instruction and software must be requested from the supervisor or authorized area."}]
+      }
+    },
+    {
+      "Category": "Bloque AET · Perfil y funciones del Analista de Equipo Terminal",
+      "Question Text": {
+        "es-MX": "¿Qué debe hacer el analista cuando detecta una inconsistencia en un proceso de atención al cliente?",
+        "en-US": "What should the analyst do when detecting an inconsistency in a customer service process?"
+      },
+      "Options": {
+        "es-MX": [
+          "Informarla por el canal correspondiente y generar o proponer alternativas que permitan agilizar y optimizar el proceso",
+          "Ignorarla mientras el cliente no presente una reclamación formal",
+          "Modificar por cuenta propia el procedimiento publicado",
+          "Ocultarla para evitar que se registre una oportunidad de mejora"
+        ],
+        "en-US": [
+          "Report it through the corresponding channel and generate or propose alternatives to streamline and optimize the process",
+          "Ignore it unless the customer files a formal complaint",
+          "Modify the published procedure independently",
+          "Conceal it to prevent an improvement opportunity from being recorded"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Informarla por el canal correspondiente y generar o proponer alternativas que permitan agilizar y optimizar el proceso",
+        "en-US": "Report it through the corresponding channel and generate or propose alternatives to streamline and optimize the process"
+      },
+      "Explanation": {
+        "es-MX": [{"type": "text", "content": "La primera función básica del perfil es detectar inconsistencias para generar propuestas de mejora. El analista puede identificar oportunidades por su experiencia diaria, pero no debe cambiar unilateralmente un proceso controlado; la propuesta debe evaluarse y autorizarse."}],
+        "en-US": [{"type": "text", "content": "The first basic job function is to detect inconsistencies in order to generate improvement proposals. The analyst may identify opportunities through daily experience but must not unilaterally change a controlled process; the proposal must be evaluated and authorized."}]
+      }
+    },
+    {
+      "Category": "Bloque AET · Perfil y funciones del Analista de Equipo Terminal",
+      "Question Text": {
+        "es-MX": "¿Qué debe hacer el analista ante un requerimiento especial del cliente que no puede resolver directamente?",
+        "en-US": "What should the analyst do when facing a special customer request that cannot be resolved directly?"
+      },
+      "Options": {
+        "es-MX": [
+          "Canalizarlo al área correspondiente y proporcionar la información necesaria para apoyar su solución en el menor tiempo posible",
+          "Prometer una solución no autorizada para evitar que el cliente se inconforme",
+          "Cerrar el caso sin registrar ni comunicar el requerimiento",
+          "Entregar al cliente datos personales del personal del proveedor"
+        ],
+        "en-US": [
+          "Refer it to the corresponding area and provide the necessary information to support its resolution as quickly as possible",
+          "Promise an unauthorized solution to prevent customer dissatisfaction",
+          "Close the case without recording or communicating the request",
+          "Give the customer the supplier staff’s personal information"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Canalizarlo al área correspondiente y proporcionar la información necesaria para apoyar su solución en el menor tiempo posible",
+        "en-US": "Refer it to the corresponding area and provide the necessary information to support its resolution as quickly as possible"
+      },
+      "Explanation": {
+        "es-MX": [{"type": "text", "content": "Canalizar no significa desentenderse del cliente. Implica identificar el área competente, transferir correctamente la información, conservar la evidencia correspondiente y dar el seguimiento que permita el procedimiento."}],
+        "en-US": [{"type": "text", "content": "Referral does not mean abandoning the customer. It means identifying the responsible area, correctly transferring the information, retaining the corresponding evidence, and following up as permitted by the procedure."}]
+      }
+    },
+    {
+      "Category": "Bloque AET · Perfil y funciones del Analista de Equipo Terminal",
+      "Question Text": {
+        "es-MX": "¿Cuál es la finalidad de generar propuestas o alternativas de solución y mejora?",
+        "en-US": "What is the purpose of generating solution and improvement proposals or alternatives?"
+      },
+      "Options": {
+        "es-MX": [
+          "Contribuir a soluciones efectivas que favorezcan la rentabilidad y la fidelidad del cliente",
+          "Sustituir todos los procedimientos vigentes sin autorización",
+          "Eliminar los controles para atender con mayor rapidez",
+          "Evitar que otras áreas conozcan los problemas detectados"
+        ],
+        "en-US": [
+          "Contribute to effective solutions that support profitability and customer loyalty",
+          "Replace every current procedure without authorization",
+          "Remove controls in order to provide faster service",
+          "Prevent other areas from learning about identified problems"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Contribuir a soluciones efectivas que favorezcan la rentabilidad y la fidelidad del cliente",
+        "en-US": "Contribute to effective solutions that support profitability and customer loyalty"
+      },
+      "Explanation": {
+        "es-MX": [{"type": "text", "content": "El perfil establece que las propuestas deben buscar soluciones efectivas o mejoras. Una propuesta útil no elimina controles: debe mejorar el proceso, reducir errores o tiempos y mantener el cumplimiento de políticas y la satisfacción del cliente."}],
+        "en-US": [{"type": "text", "content": "The job profile establishes that proposals should seek effective solutions or improvements. A useful proposal does not remove controls: it should improve the process, reduce errors or time, and maintain compliance with policies and customer satisfaction."}]
+      }
+    },
+    {
+      "Category": "Bloque AET · Perfil y funciones del Analista de Equipo Terminal",
+      "Question Text": {
+        "es-MX": "¿Qué busca asegurar la coordinación de mensajería de equipos entre CAC, STT y CAE?",
+        "en-US": "What does coordinating equipment shipments among CAC, STT, and CAE seek to ensure?"
+      },
+      "Options": {
+        "es-MX": [
+          "Que los envíos y recepciones de equipos se cumplan de acuerdo con las fechas determinadas",
+          "Que los equipos se envíen sin registro para ahorrar tiempo",
+          "Que el cliente seleccione directamente al mensajero",
+          "Que todo equipo permanezca indefinidamente en el CAC"
+        ],
+        "en-US": [
+          "That equipment shipments and receipts are completed according to the established dates",
+          "That equipment is shipped without records to save time",
+          "That the customer directly selects the courier",
+          "That every device remains indefinitely at the CAC"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Que los envíos y recepciones de equipos se cumplan de acuerdo con las fechas determinadas",
+        "en-US": "That equipment shipments and receipts are completed according to the established dates"
+      },
+      "Explanation": {
+        "es-MX": [{"type": "text", "content": "La mensajería forma parte del control logístico. Debe existir correspondencia entre el equipo enviado, la documentación, las fechas y la recepción, permitiendo rastrear dónde se encuentra y evitando pérdidas o retrasos."}],
+        "en-US": [{"type": "text", "content": "Shipping is part of logistics control. The shipped device, documentation, dates, and receipt must match, making it possible to trace its location and prevent losses or delays."}]
+      }
+    },
+    {
+      "Category": "Bloque AET · Perfil y funciones del Analista de Equipo Terminal",
+      "Question Text": {
+        "es-MX": "¿Qué debe verificarse en el soporte documental elaborado en CAC, STT y CAE?",
+        "en-US": "What must be verified in the supporting documentation prepared at CAC, STT, and CAE?"
+      },
+      "Options": {
+        "es-MX": [
+          "Que cumpla con las políticas, procedimientos y promociones vigentes",
+          "Que se base en formatos antiguos guardados por cada empleado",
+          "Que contenga la mayor cantidad posible de datos aunque no sean necesarios",
+          "Que pueda modificarse sin autorización después del cierre"
+        ],
+        "en-US": [
+          "That it complies with current policies, procedures, and promotions",
+          "That it is based on old forms stored by each employee",
+          "That it contains as much data as possible even when unnecessary",
+          "That it can be modified without authorization after closing"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Que cumpla con las políticas, procedimientos y promociones vigentes",
+        "en-US": "That it complies with current policies, procedures, and promotions"
+      },
+      "Explanation": {
+        "es-MX": [{"type": "text", "content": "El soporte documental demuestra qué se hizo, con qué autorización y bajo qué condiciones. Debe ser completo, congruente y corresponder a la versión vigente de las políticas y procedimientos, evitando formatos obsoletos o información innecesaria."}],
+        "en-US": [{"type": "text", "content": "Supporting documentation demonstrates what was done, under what authorization, and under which conditions. It must be complete, consistent, and correspond to current policies and procedures, avoiding obsolete forms or unnecessary information."}]
+      }
+    },
+    {
+      "Category": "Bloque AET · Perfil y funciones del Analista de Equipo Terminal",
+      "Question Text": {
+        "es-MX": "¿Cómo deben atenderse las solicitudes de garantía o servicio de los clientes?",
+        "en-US": "How should customer warranty or service requests be handled?"
+      },
+      "Options": {
+        "es-MX": [
+          "Con base en las políticas y lineamientos operativos vigentes, documentando el diagnóstico y la atención correspondiente",
+          "De acuerdo únicamente con lo que el cliente solicite, aunque contradiga la garantía",
+          "Aplicando la misma solución a todos los equipos sin realizar diagnóstico",
+          "Utilizando cualquier política anterior disponible en la computadora"
+        ],
+        "en-US": [
+          "Based on current policies and operating guidelines, documenting the diagnosis and corresponding service",
+          "Only according to what the customer requests, even if it contradicts the warranty",
+          "Applying the same solution to every device without diagnosis",
+          "Using any previous policy available on the computer"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Con base en las políticas y lineamientos operativos vigentes, documentando el diagnóstico y la atención correspondiente",
+        "en-US": "Based on current policies and operating guidelines, documenting the diagnosis and corresponding service"
+      },
+      "Explanation": {
+        "es-MX": [{"type": "text", "content": "La garantía no depende únicamente de que el cliente manifieste una falla. Deben revisarse el equipo, las condiciones aplicables y la evidencia. Si el caso requiere proveedor o un nivel especializado, se canaliza conforme al procedimiento."}],
+        "en-US": [{"type": "text", "content": "Warranty coverage does not depend only on the customer reporting a fault. The device, applicable conditions, and evidence must be reviewed. If the case requires a supplier or specialized service level, it is referred according to procedure."}]
+      }
+    },
+    {
+      "Category": "Bloque AET · Perfil y funciones del Analista de Equipo Terminal",
+      "Question Text": {
+        "es-MX": "¿Qué incluye proporcionar soporte técnico para la validación de garantías?",
+        "en-US": "What does providing technical support for warranty validation include?"
+      },
+      "Options": {
+        "es-MX": [
+          "Realizar las pruebas autorizadas, documentar el resultado y determinar si procede reparación o posible cambio ante el proveedor",
+          "Autorizar automáticamente el cambio de todos los equipos recibidos",
+          "Modificar el equipo para que parezca que la falla es de fabricación",
+          "Entregar el equipo al cliente sin probarlo para evitar demoras"
+        ],
+        "en-US": [
+          "Perform authorized tests, document the result, and determine whether repair or a possible replacement through the supplier applies",
+          "Automatically authorize replacement of every received device",
+          "Modify the device so the fault appears to be a manufacturing defect",
+          "Return the device to the customer without testing it to avoid delays"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Realizar las pruebas autorizadas, documentar el resultado y determinar si procede reparación o posible cambio ante el proveedor",
+        "en-US": "Perform authorized tests, document the result, and determine whether repair or a possible replacement through the supplier applies"
+      },
+      "Explanation": {
+        "es-MX": [{"type": "text", "content": "La validación técnica permite sustentar la decisión de garantía. El analista aporta resultados y evidencia; la reparación o el cambio se realizan conforme a las facultades, políticas de la marca y participación del proveedor."}],
+        "en-US": [{"type": "text", "content": "Technical validation supports the warranty decision. The analyst provides results and evidence; repair or replacement is performed according to authority levels, brand policies, and supplier involvement."}]
+      }
+    },
+    {
+      "Category": "Bloque AET · Perfil y funciones del Analista de Equipo Terminal",
+      "Question Text": {
+        "es-MX": "¿Por qué debe validarse el funcionamiento de una reparación antes de entregar el equipo?",
+        "en-US": "Why must the operation of a repaired device be validated before delivery?"
+      },
+      "Options": {
+        "es-MX": [
+          "Para asegurar la entrega correcta al cliente y, cuando exista reparación con costo, verificar que el cobro corresponda al trabajo realizado",
+          "Para modificar el diagnóstico original sin dejar evidencia",
+          "Para evitar explicar al cliente qué trabajo se realizó",
+          "Para eliminar los registros del proveedor después de la reparación"
+        ],
+        "en-US": [
+          "To ensure correct delivery to the customer and, when there is a paid repair, verify that the charge corresponds to the work performed",
+          "To change the original diagnosis without leaving evidence",
+          "To avoid explaining to the customer what work was performed",
+          "To delete supplier records after the repair"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Para asegurar la entrega correcta al cliente y, cuando exista reparación con costo, verificar que el cobro corresponda al trabajo realizado",
+        "en-US": "To ensure correct delivery to the customer and, when there is a paid repair, verify that the charge corresponds to the work performed"
+      },
+      "Explanation": {
+        "es-MX": [{"type": "text", "content": "La validación final comprueba que la falla atendida fue corregida y que el equipo se entrega en las condiciones documentadas. También ayuda a prevenir reincidencias, inconformidades y cobros incorrectos."}],
+        "en-US": [{"type": "text", "content": "Final validation confirms that the serviced fault was corrected and that the device is delivered in the documented condition. It also helps prevent repeat issues, customer dissatisfaction, and incorrect charges."}]
+      }
+    },
+    {
+      "Category": "Bloque AET · Perfil y funciones del Analista de Equipo Terminal",
+      "Question Text": {
+        "es-MX": "¿Cómo contribuye la asesoría técnica y comercial del analista?",
+        "en-US": "How does the analyst’s technical and commercial advice contribute?"
+      },
+      "Options": {
+        "es-MX": [
+          "Ayuda al cliente a elegir soluciones compatibles y contribuye a la comercialización responsable de accesorios y dispositivos IoT",
+          "Permite recomendar cualquier producto aunque no sea compatible con el equipo",
+          "Sustituye el diagnóstico técnico por una venta obligatoria",
+          "Autoriza al analista a modificar precios y promociones"
+        ],
+        "en-US": [
+          "It helps the customer choose compatible solutions and contributes to the responsible sale of accessories and IoT devices",
+          "It allows recommending any product even if it is incompatible with the device",
+          "It replaces technical diagnosis with a mandatory sale",
+          "It authorizes the analyst to change prices and promotions"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Ayuda al cliente a elegir soluciones compatibles y contribuye a la comercialización responsable de accesorios y dispositivos IoT",
+        "en-US": "It helps the customer choose compatible solutions and contributes to the responsible sale of accessories and IoT devices"
+      },
+      "Explanation": {
+        "es-MX": [{"type": "text", "content": "La función comercial no debe contradecir la orientación técnica. La recomendación debe basarse en la necesidad del cliente, compatibilidad, características y promociones vigentes, evitando promesas no autorizadas."}],
+        "en-US": [{"type": "text", "content": "The commercial function must not contradict technical guidance. Recommendations should be based on customer needs, compatibility, features, and current promotions, avoiding unauthorized promises."}]
+      }
+    },
+    {
+      "Category": "Bloque AET · Perfil y funciones del Analista de Equipo Terminal",
+      "Question Text": {
+        "es-MX": "¿Qué debe hacerse con los equipos que permanecen más de 90 días en SERTEC conforme al perfil de puesto?",
+        "en-US": "According to the job profile, what should be done with equipment that remains in SERTEC for more than 90 days?"
+      },
+      "Options": {
+        "es-MX": [
+          "Controlarlos para que sean ingresados al almacén para desguace conforme al proceso aplicable",
+          "Entregarlos a cualquier empleado que necesite refacciones",
+          "Eliminarlos sin registro para liberar espacio",
+          "Mantenerlos indefinidamente sin seguimiento"
+        ],
+        "en-US": [
+          "Control them so they can be entered into the warehouse for dismantling according to the applicable process",
+          "Give them to any employee who needs spare parts",
+          "Dispose of them without records to free space",
+          "Keep them indefinitely without follow-up"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Controlarlos para que sean ingresados al almacén para desguace conforme al proceso aplicable",
+        "en-US": "Control them so they can be entered into the warehouse for dismantling according to the applicable process"
+      },
+      "Explanation": {
+        "es-MX": [{"type": "text", "content": "El control de estos equipos evita acumulación, pérdida de trazabilidad o disposición indebida. El ingreso a almacén y el desguace deben realizarse mediante los registros, autorizaciones y controles establecidos."}],
+        "en-US": [{"type": "text", "content": "Controlling this equipment prevents accumulation, loss of traceability, or improper disposal. Warehouse entry and dismantling must follow established records, authorizations, and controls."}]
+      }
+    },
+    {
+      "Category": "Bloque AET · Perfil y funciones del Analista de Equipo Terminal",
+      "Question Text": {
+        "es-MX": "¿Qué conocimientos específicos señala el perfil para el Analista de Equipo Terminal?",
+        "en-US": "Which specific knowledge areas does the job profile identify for the Terminal Equipment Analyst?"
+      },
+      "Options": {
+        "es-MX": [
+          "Actualización de software, configuración de equipos, características de celulares, experiencia del cliente, IoT, LTE, paperless, equipo de laboratorio, normas ISO y medidas de seguridad y salud",
+          "Únicamente contabilidad, nómina y cálculo de impuestos",
+          "Solamente diseño gráfico y administración de redes sociales",
+          "Exclusivamente ventas, sin conocimientos técnicos ni de seguridad"
+        ],
+        "en-US": [
+          "Software updating, device configuration, mobile phone features, customer experience, IoT, LTE, paperless technologies, laboratory equipment, ISO standards, and health and safety measures",
+          "Only accounting, payroll, and tax calculations",
+          "Only graphic design and social media administration",
+          "Exclusively sales, without technical or safety knowledge"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Actualización de software, configuración de equipos, características de celulares, experiencia del cliente, IoT, LTE, paperless, equipo de laboratorio, normas ISO y medidas de seguridad y salud",
+        "en-US": "Software updating, device configuration, mobile phone features, customer experience, IoT, LTE, paperless technologies, laboratory equipment, ISO standards, and health and safety measures"
+      },
+      "Explanation": {
+        "es-MX": [{"type": "text", "content": "El perfil combina conocimientos técnicos, atención al cliente y cumplimiento. Esto explica por qué el analista debe conocer tanto la operación de los equipos como las normas ISO y las medidas generales de seguridad y salud aplicables a sus actividades."}],
+        "en-US": [{"type": "text", "content": "The profile combines technical knowledge, customer service, and compliance. This explains why the analyst must understand both device operation and the ISO standards and general health and safety measures applicable to the work."}]
+      }
+    },
+    {
+      "Category": "Bloque AET · Perfil y funciones del Analista de Equipo Terminal",
+      "Question Text": {
+        "es-MX": "¿Qué competencias generales requiere el puesto?",
+        "en-US": "Which general competencies does the position require?"
+      },
+      "Options": {
+        "es-MX": [
+          "Análisis, organización, trabajo en equipo, comunicación, negociación, orientación al servicio y sensibilidad a lineamientos",
+          "Improvisación, trabajo aislado y rechazo a los procedimientos",
+          "Únicamente velocidad para vender productos",
+          "Capacidad para omitir controles cuando existe mucha demanda"
+        ],
+        "en-US": [
+          "Analysis, organization, teamwork, communication, negotiation, service orientation, and sensitivity to guidelines",
+          "Improvisation, isolated work, and rejection of procedures",
+          "Only speed in selling products",
+          "Ability to bypass controls during periods of high demand"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Análisis, organización, trabajo en equipo, comunicación, negociación, orientación al servicio y sensibilidad a lineamientos",
+        "en-US": "Analysis, organization, teamwork, communication, negotiation, service orientation, and sensitivity to guidelines"
+      },
+      "Explanation": {
+        "es-MX": [{"type": "text", "content": "Estas competencias permiten diagnosticar con método, explicar resultados, coordinarse con otras áreas, atender inconformidades y cumplir lineamientos. La experiencia técnica debe acompañarse de comunicación y orientación al cliente."}],
+        "en-US": [{"type": "text", "content": "These competencies support methodical diagnosis, explanation of results, coordination with other areas, handling dissatisfaction, and compliance with guidelines. Technical experience must be accompanied by communication and customer orientation."}]
+      }
+    },
+    {
+      "Category": "Bloque AET · Perfil y funciones del Analista de Equipo Terminal",
+      "Question Text": {
+        "es-MX": "¿Qué relación tiene el puesto con las normas ISO del Sistema de Gestión Integrado?",
+        "en-US": "How is the position related to the ISO standards in the Integrated Management System?"
+      },
+      "Options": {
+        "es-MX": [
+          "Debe cumplir los requisitos de las normas vigentes aplicables para contribuir a la mejora continua y eficacia de los procesos",
+          "Solamente debe conocer las normas durante la auditoría externa",
+          "Las normas corresponden exclusivamente a la gerencia y no afectan sus actividades",
+          "Puede ignorar un procedimiento si considera que existe una forma más rápida"
+        ],
+        "en-US": [
+          "The analyst must comply with applicable current standard requirements to contribute to continuous improvement and process effectiveness",
+          "The analyst only needs to know the standards during an external audit",
+          "The standards belong exclusively to management and do not affect the analyst’s activities",
+          "The analyst may ignore a procedure if a faster method seems available"
+        ]
+      },
+      "Correct Answer": {
+        "es-MX": "Debe cumplir los requisitos de las normas vigentes aplicables para contribuir a la mejora continua y eficacia de los procesos",
+        "en-US": "The analyst must comply with applicable current standard requirements to contribute to continuous improvement and process effectiveness"
+      },
+      "Explanation": {
+        "es-MX": [{"type": "text", "content": "La función 11 del perfil establece expresamente el cumplimiento de las normas ISO que integran el SGI. Esto se demuestra aplicando procedimientos, protegiendo información, reportando riesgos, conservando evidencia y participando en la mejora continua."}],
+        "en-US": [{"type": "text", "content": "Function 11 of the job profile expressly establishes compliance with the ISO standards included in the IMS. This is demonstrated by applying procedures, protecting information, reporting risks, retaining evidence, and participating in continuous improvement."}]
+      }
+    }
+  ]
+}
