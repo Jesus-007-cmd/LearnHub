@@ -691,7 +691,470 @@
         }
       ]
     }
+  }{
+    "Category": "02 - Matriz de confusión",
+    "Question Text": {
+      "es-MX": [
+        "¿Qué representa un verdadero positivo (VP) en un problema de clasificación binaria?"
+      ],
+      "en-US": [
+        "What does a true positive (TP) represent in a binary classification problem?"
+      ]
+    },
+    "Options": {
+      "es-MX": [
+        "Un caso realmente positivo que el sistema clasifica correctamente como positivo.",
+        "Un caso realmente positivo que el sistema clasifica incorrectamente como negativo.",
+        "Un caso realmente negativo que el sistema clasifica incorrectamente como positivo.",
+        "Un caso realmente negativo que el sistema clasifica correctamente como negativo."
+      ],
+      "en-US": [
+        "An actually positive case that the system correctly classifies as positive.",
+        "An actually positive case that the system incorrectly classifies as negative.",
+        "An actually negative case that the system incorrectly classifies as positive.",
+        "An actually negative case that the system correctly classifies as negative."
+      ]
+    },
+    "Correct Answer": {
+      "es-MX": "Un caso realmente positivo que el sistema clasifica correctamente como positivo.",
+      "en-US": "An actually positive case that the system correctly classifies as positive."
+    },
+    "Explanation": {
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Verdadero positivo: positivo y correcto"
+        },
+        {
+          "type": "text",
+          "content": "Un verdadero positivo (VP) ocurre cuando un caso pertenece realmente a la clase positiva y el sistema también lo clasifica como positivo."
+        },
+        {
+          "type": "text",
+          "content": "Por tanto existen dos elementos simultáneos:\n\nRealidad → POSITIVO.\nPredicción → POSITIVO.\n\nComo la predicción coincide con la realidad, el resultado es VERDADERO."
+        },
+        {
+          "type": "title-h2",
+          "content": "Cómo interpretar las dos palabras"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "VERDADERO indica que la predicción fue correcta.",
+            "POSITIVO indica que el sistema predijo la clase positiva."
+          ]
+        },
+        {
+          "type": "title-h2",
+          "content": "Ejemplo"
+        },
+        {
+          "type": "text",
+          "content": "Si una persona realmente presenta una condición y un sistema de clasificación indica que la condición está presente:\n\nRealidad = positivo.\nPredicción = positivo.\nResultado = verdadero positivo (VP)."
+        },
+        {
+          "type": "title-h2",
+          "content": "Relación con los indicadores"
+        },
+        {
+          "type": "text",
+          "content": "Los verdaderos positivos aparecen en varias métricas importantes. Por ejemplo:\n\nSensibilidad = VP/(VP+FN)\nVPP = VP/(VP+FP)\nF1 = 2VP/(2VP+FP+FN)"
+        },
+        {
+          "type": "title-h2",
+          "content": "No confundir"
+        },
+        {
+          "type": "text",
+          "content": "VP no significa simplemente que el sistema dijo «positivo». También exige que la condición real sea positiva. Si el sistema dice positivo pero la realidad es negativa, el caso es un falso positivo."
+        },
+        {
+          "type": "title-h2",
+          "content": "Mnemotecnia"
+        },
+        {
+          "type": "text",
+          "content": "VP = «DIJO POSITIVO y dijo la VERDAD».\n\nRealidad +\nPredicción +\nResultado = VP"
+        }
+      ],
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "True positive: positive and correct"
+        },
+        {
+          "type": "text",
+          "content": "A true positive occurs when a case is actually positive and the system correctly predicts it as positive."
+        },
+        {
+          "type": "text",
+          "content": "Actual = positive.\nPrediction = positive.\nResult = true positive."
+        },
+        {
+          "type": "title-h2",
+          "content": "Memory rule"
+        },
+        {
+          "type": "text",
+          "content": "TP = the system said POSITIVE and that prediction was TRUE."
+        }
+      ]
+    }
   },
+  {
+    "Category": "02 - Matriz de confusión",
+    "Question Text": {
+      "es-MX": [
+        "¿Qué representa un falso negativo (FN) en un problema de clasificación binaria?"
+      ],
+      "en-US": [
+        "What does a false negative (FN) represent in a binary classification problem?"
+      ]
+    },
+    "Options": {
+      "es-MX": [
+        "Un caso realmente negativo que el sistema clasifica correctamente como negativo.",
+        "Un caso realmente positivo que el sistema clasifica incorrectamente como negativo.",
+        "Un caso realmente negativo que el sistema clasifica incorrectamente como positivo.",
+        "Un caso realmente positivo que el sistema clasifica correctamente como positivo."
+      ],
+      "en-US": [
+        "An actually negative case that the system correctly classifies as negative.",
+        "An actually positive case that the system incorrectly classifies as negative.",
+        "An actually negative case that the system incorrectly classifies as positive.",
+        "An actually positive case that the system correctly classifies as positive."
+      ]
+    },
+    "Correct Answer": {
+      "es-MX": "Un caso realmente positivo que el sistema clasifica incorrectamente como negativo.",
+      "en-US": "An actually positive case that the system incorrectly classifies as negative."
+    },
+    "Explanation": {
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Falso negativo: el positivo que se escapó"
+        },
+        {
+          "type": "text",
+          "content": "Un falso negativo (FN) ocurre cuando un caso es realmente positivo, pero el sistema lo clasifica como negativo."
+        },
+        {
+          "type": "text",
+          "content": "Realidad → POSITIVO.\nPredicción → NEGATIVO.\n\nLa predicción es incorrecta; por eso se denomina FALSO negativo."
+        },
+        {
+          "type": "title-h2",
+          "content": "Cómo interpretar las palabras"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "FALSO indica que la predicción fue incorrecta.",
+            "NEGATIVO indica que el sistema predijo negativo."
+          ]
+        },
+        {
+          "type": "title-h2",
+          "content": "Ejemplo"
+        },
+        {
+          "type": "text",
+          "content": "Si una persona realmente presenta una condición, pero el sistema responde que la condición no está presente:\n\nRealidad = positivo.\nPredicción = negativo.\nResultado = falso negativo (FN)."
+        },
+        {
+          "type": "title-h2",
+          "content": "¿Por qué es especialmente importante?"
+        },
+        {
+          "type": "text",
+          "content": "Un falso negativo representa un positivo real que el sistema no logró detectar. Dependiendo del contexto, este tipo de error puede tener consecuencias importantes porque un caso que requería identificación puede quedar sin detectar."
+        },
+        {
+          "type": "title-h2",
+          "content": "Relación con la sensibilidad"
+        },
+        {
+          "type": "text",
+          "content": "Sensibilidad = VP/(VP+FN)\n\nVP + FN representa todos los positivos reales. Por eso, si aumentan los falsos negativos mientras los demás valores permanecen constantes, la sensibilidad disminuye."
+        },
+        {
+          "type": "title-h2",
+          "content": "Comparación con FP"
+        },
+        {
+          "type": "text",
+          "content": "FN → realmente era positivo, pero el sistema dijo negativo.\n\nFP → realmente era negativo, pero el sistema dijo positivo."
+        },
+        {
+          "type": "title-h2",
+          "content": "Mnemotecnia"
+        },
+        {
+          "type": "text",
+          "content": "FN = «DIJO NEGATIVO, pero era FALSO».\n\nRealidad +\nPredicción −\nResultado = FN"
+        }
+      ],
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "False negative: the positive case that was missed"
+        },
+        {
+          "type": "text",
+          "content": "A false negative occurs when a case is actually positive but the system incorrectly predicts it as negative."
+        },
+        {
+          "type": "text",
+          "content": "Actual = positive.\nPrediction = negative.\nResult = false negative."
+        },
+        {
+          "type": "title-h2",
+          "content": "Memory rule"
+        },
+        {
+          "type": "text",
+          "content": "FN = the system said NEGATIVE, but that prediction was FALSE."
+        }
+      ]
+    }
+  },
+  {
+    "Category": "02 - Matriz de confusión",
+    "Question Text": {
+      "es-MX": [
+        "¿Qué representa un falso positivo (FP) en un problema de clasificación binaria?"
+      ],
+      "en-US": [
+        "What does a false positive (FP) represent in a binary classification problem?"
+      ]
+    },
+    "Options": {
+      "es-MX": [
+        "Un caso realmente positivo que el sistema clasifica incorrectamente como negativo.",
+        "Un caso realmente negativo que el sistema clasifica incorrectamente como positivo.",
+        "Un caso realmente positivo que el sistema clasifica correctamente como positivo.",
+        "Un caso realmente negativo que el sistema clasifica correctamente como negativo."
+      ],
+      "en-US": [
+        "An actually positive case that the system incorrectly classifies as negative.",
+        "An actually negative case that the system incorrectly classifies as positive.",
+        "An actually positive case that the system correctly classifies as positive.",
+        "An actually negative case that the system correctly classifies as negative."
+      ]
+    },
+    "Correct Answer": {
+      "es-MX": "Un caso realmente negativo que el sistema clasifica incorrectamente como positivo.",
+      "en-US": "An actually negative case that the system incorrectly classifies as positive."
+    },
+    "Explanation": {
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Falso positivo: una alarma incorrecta"
+        },
+        {
+          "type": "text",
+          "content": "Un falso positivo (FP) ocurre cuando un caso es realmente negativo, pero el sistema lo clasifica como positivo."
+        },
+        {
+          "type": "text",
+          "content": "Realidad → NEGATIVO.\nPredicción → POSITIVO.\n\nLa predicción fue incorrecta; por eso se denomina FALSO positivo."
+        },
+        {
+          "type": "title-h2",
+          "content": "Cómo interpretar las palabras"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "FALSO indica que la predicción fue incorrecta.",
+            "POSITIVO indica que el sistema predijo positivo."
+          ]
+        },
+        {
+          "type": "title-h2",
+          "content": "Ejemplo"
+        },
+        {
+          "type": "text",
+          "content": "Si una persona realmente no presenta una condición, pero el sistema indica que la condición está presente:\n\nRealidad = negativo.\nPredicción = positivo.\nResultado = falso positivo (FP)."
+        },
+        {
+          "type": "title-h2",
+          "content": "Consecuencias posibles"
+        },
+        {
+          "type": "text",
+          "content": "Los falsos positivos pueden producir alarmas innecesarias, revisiones adicionales, utilización de recursos o intervenciones que finalmente no eran necesarias. Su importancia depende del contexto de aplicación."
+        },
+        {
+          "type": "title-h2",
+          "content": "Relación con especificidad y VPP"
+        },
+        {
+          "type": "text",
+          "content": "Especificidad = VN/(VN+FP)\nVPP = VP/(VP+FP)\n\nPor tanto, los falsos positivos afectan tanto la capacidad para reconocer correctamente negativos como la confiabilidad de las predicciones positivas."
+        },
+        {
+          "type": "title-h2",
+          "content": "Comparación con FN"
+        },
+        {
+          "type": "text",
+          "content": "FP → realmente era negativo, pero el sistema dijo positivo.\n\nFN → realmente era positivo, pero el sistema dijo negativo."
+        },
+        {
+          "type": "title-h2",
+          "content": "Mnemotecnia"
+        },
+        {
+          "type": "text",
+          "content": "FP = «DIJO POSITIVO, pero era FALSO».\n\nRealidad −\nPredicción +\nResultado = FP"
+        }
+      ],
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "False positive: an incorrect alarm"
+        },
+        {
+          "type": "text",
+          "content": "A false positive occurs when a case is actually negative but the system incorrectly predicts it as positive."
+        },
+        {
+          "type": "text",
+          "content": "Actual = negative.\nPrediction = positive.\nResult = false positive."
+        },
+        {
+          "type": "title-h2",
+          "content": "Memory rule"
+        },
+        {
+          "type": "text",
+          "content": "FP = the system said POSITIVE, but that prediction was FALSE."
+        }
+      ]
+    }
+  },
+  {
+    "Category": "02 - Matriz de confusión",
+    "Question Text": {
+      "es-MX": [
+        "¿Qué representa un verdadero negativo (VN) en un problema de clasificación binaria?"
+      ],
+      "en-US": [
+        "What does a true negative (TN) represent in a binary classification problem?"
+      ]
+    },
+    "Options": {
+      "es-MX": [
+        "Un caso realmente negativo que el sistema clasifica correctamente como negativo.",
+        "Un caso realmente negativo que el sistema clasifica incorrectamente como positivo.",
+        "Un caso realmente positivo que el sistema clasifica correctamente como positivo.",
+        "Un caso realmente positivo que el sistema clasifica incorrectamente como negativo."
+      ],
+      "en-US": [
+        "An actually negative case that the system correctly classifies as negative.",
+        "An actually negative case that the system incorrectly classifies as positive.",
+        "An actually positive case that the system correctly classifies as positive.",
+        "An actually positive case that the system incorrectly classifies as negative."
+      ]
+    },
+    "Correct Answer": {
+      "es-MX": "Un caso realmente negativo que el sistema clasifica correctamente como negativo.",
+      "en-US": "An actually negative case that the system correctly classifies as negative."
+    },
+    "Explanation": {
+      "es-MX": [
+        {
+          "type": "title-h2",
+          "content": "Verdadero negativo: negativo y correcto"
+        },
+        {
+          "type": "text",
+          "content": "Un verdadero negativo (VN) ocurre cuando un caso es realmente negativo y el sistema también lo clasifica como negativo."
+        },
+        {
+          "type": "text",
+          "content": "Realidad → NEGATIVO.\nPredicción → NEGATIVO.\n\nComo ambas coinciden, la predicción es VERDADERA."
+        },
+        {
+          "type": "title-h2",
+          "content": "Cómo interpretar las palabras"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "VERDADERO indica que la predicción fue correcta.",
+            "NEGATIVO indica que el sistema predijo la clase negativa."
+          ]
+        },
+        {
+          "type": "title-h2",
+          "content": "Ejemplo"
+        },
+        {
+          "type": "text",
+          "content": "Si una persona realmente no presenta una condición y el sistema también indica que la condición está ausente:\n\nRealidad = negativo.\nPredicción = negativo.\nResultado = verdadero negativo (VN)."
+        },
+        {
+          "type": "title-h2",
+          "content": "Relación con los indicadores"
+        },
+        {
+          "type": "text",
+          "content": "Los verdaderos negativos intervienen directamente en indicadores como:\n\nEspecificidad = VN/(VN+FP)\nVPN = VN/(VN+FN)\nExactitud = (VP+VN)/Total"
+        },
+        {
+          "type": "title-h2",
+          "content": "La regla completa de VP, FN, FP y VN"
+        },
+        {
+          "type": "text",
+          "content": "VP → realidad +, predicción +.\nFN → realidad +, predicción −.\nFP → realidad −, predicción +.\nVN → realidad −, predicción −."
+        },
+        {
+          "type": "title-h2",
+          "content": "El truco más útil"
+        },
+        {
+          "type": "text",
+          "content": "La PRIMERA palabra indica si la predicción fue correcta:\n\nVERDADERO = acertó.\nFALSO = se equivocó.\n\nLa SEGUNDA palabra indica qué predijo el sistema:\n\nPOSITIVO = predijo positivo.\nNEGATIVO = predijo negativo."
+        },
+        {
+          "type": "title-h2",
+          "content": "Mnemotecnia"
+        },
+        {
+          "type": "text",
+          "content": "VN = «DIJO NEGATIVO y dijo la VERDAD».\n\nRealidad −\nPredicción −\nResultado = VN"
+        }
+      ],
+      "en-US": [
+        {
+          "type": "title-h2",
+          "content": "True negative: negative and correct"
+        },
+        {
+          "type": "text",
+          "content": "A true negative occurs when a case is actually negative and the system correctly predicts it as negative."
+        },
+        {
+          "type": "text",
+          "content": "Actual = negative.\nPrediction = negative.\nResult = true negative."
+        },
+        {
+          "type": "title-h2",
+          "content": "Memory rule"
+        },
+        {
+          "type": "text",
+          "content": "TN = the system said NEGATIVE and that prediction was TRUE."
+        }
+      ]
+    }
+  },,
   {
     "Category": "03 - Indicadores de desempeño",
     "Question Text": {
